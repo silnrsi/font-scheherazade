@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='TestStyleSheet.xsl'?>
+<strings label='JoansData test for Scheherazade'>
+
+  <string label='Check'><text>RenderingUnknown</text></string>
+  <string label='Line 2'><text>تِی</text><comment>1&amp;2</comment></string>
+  <string label='Line 3'><text>(interline issue)</text><comment>3&amp;4</comment></string>
+  <string label='Line 4'><text>مبِعِ</text><comment>5&amp;6</comment></string>
+  <string label='Line 4' feats="'cv44' 1"><text>مبِعِ</text><comment>5&amp;6</comment></string>
+  <string label='Line 5'><text>تٛک</text><comment>7&amp;8</comment></string>
+  <string label='Line 6'><text>دِلِڀب</text><comment>9&amp;10</comment></string>
+  <string label='Line 6' feats="'cv12' 1"><text>دِلِڀب</text><comment>9&amp;10</comment></string>
+  <string label='Line 7'><text>ويِي</text><comment>11a&amp;b</comment></string>
+  <string label='Line 8'><text>بکُّی</text><comment>12&amp;13</comment></string>
+  <string label='Line 8' feats="'cv70' 1"><text>بکُّی</text><comment>12&amp;13</comment></string>
+  <string label='Line 8' feats="'cv70' 2"><text>بکُّی</text><comment>12&amp;13</comment></string>
+  <string label='Line 9'><text>بَرْکَ</text><comment>14&amp;15</comment></string>
+  <string label='Line 9' feats="'cv78' 1"><text>بَرْکَ</text><comment>14&amp;15</comment></string>
+  <string label='Line 9' feats="'cv78' 2"><text>بَرْکَ</text><comment>14&amp;15</comment></string>
+  <string label='Line 10'><text>اَللَّه</text><comment>16&amp;17</comment></string>
+  <string label='Line 10' feats="'cv48' 1"><text>اَللَّه</text><comment>16&amp;17</comment></string>
+  <string label='Line 10' feats="'cv48' 2"><text>اَللَّه</text><comment>16&amp;17</comment></string>
+  <string label='Line 10' feats="'cv48' 3"><text>اَللَّه</text><comment>16&amp;17</comment></string>
+  <string label='Line 11'><text>بلْ</text><comment>18&amp;19</comment></string>
+  <string label='Line 11' feats="'cv78' 1"><text>بلْ</text><comment>18&amp;19</comment></string>
+  <string label='Line 11' feats="'cv78' 2"><text>بلْ</text><comment>18&amp;19</comment></string>
+</strings>

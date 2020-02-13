@@ -1,0 +1,456 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	File: SchFeatures.gdl
+//
+//	Graphite feature definitions for Scheherazade.
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+	This file is part of Scheherazade font family 
+	(http://scripts.sil.org/Scheherazade) and is 
+	Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
+	with Reserved Font Names "Scheherazade" and "SIL".
+
+	This Font Software is licensed under the SIL Open Font License,
+	Version 1.1.
+
+	You should have received a copy of the license along with this Font Software.
+	If this is not the case, go to (http://scripts.sil.org/OFL) for all the
+	details including an FAQ.
+*/
+
+
+#include "stddef.gdh"
+
+//------------------------------------------------------------------------------------------
+//
+//	Feature definitions
+//
+
+table(feature)
+
+// Note that the order in which the features are listed below is how they will
+// be presented in the combo-box in WorldPad.
+
+dalAlt {
+	id = "cv12";  	
+	name.1033 = string("Dal");
+	    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        senegal {
+            value = 1;
+            name.1033 = string("Alternate");
+        }
+    }
+    default = std;
+}
+
+meemAlt {
+    id = "cv44";	// was 2002;
+    name.1033 = string("Meem");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        sindhi {
+            value = 1;
+            name.1033 = string("Sindhi-style");
+        }
+    }
+    default = std;
+}
+    
+hehAlt {
+    id = "cv48";	// was 2003;
+    name.1033 = string("Heh");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        kurdish {
+            value = 3;			/* this value is correct; features are ordered alphabetically, not by value */
+            name.1033 = string("Kurdish-style");
+        }
+        sindhi {
+            value = 1;
+            name.1033 = string("Sindhi-style");
+        }
+        urdu {
+            value = 2;
+            name.1033 = string("Urdu-style");
+        }
+    }
+    default = std;
+}
+
+UAlt {
+    id = "cv50";
+    name.1033 = string("Arabic U");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        filled {
+            value = 1;
+            name.1033 = string("Filled");
+        }
+    }
+    default = std;
+}
+
+maddahAlt {
+    id = "cv60";
+    name.1033 = string("Maddah");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Small");
+        }
+        large {
+            value = 1;
+            name.1033 = string("Large");
+        }
+    }
+    default = std;
+}
+
+shaddaKasra {
+    id = "cv62";
+    name.1033 = string("Shadda+kasra placement");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Raised");
+        }
+        sindhiUrdu {
+            value = 1;
+            name.1033 = string("Lowered");
+        }
+    }
+    default = std;
+}
+
+dammaAlt {
+    id = "cv70";
+    name.1033 = string("Damma");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        filled {
+            value = 1;
+            name.1033 = string("Filled");
+        }
+        short {
+            value = 2;
+            name.1033 = string("Short");
+        }
+    }
+    default = std;
+}
+
+dammatanAlt {
+    id = "cv72";	// was 2007;
+    name.1033 = string("Dammatan");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        sixNine {
+            value = 1;
+            name.1033 = string("Six-nine");
+        }
+    }
+    default = std;
+}
+
+ultapeshAlt {
+    id = "cv74";
+    name.1033 = string("Inverted Damma");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        hollow {
+            value = 1;
+            name.1033 = string("Hollow");
+        }
+    }
+    default = std;
+}
+
+daggeralefAlt {
+    id = "cv76";
+    name.1033 = string("Superscript Alef");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Small");
+        }
+        large {
+            value = 1;
+            name.1033 = string("Large");
+        }
+    }
+    default = std;
+}
+
+sukunAlt {
+    id = "cv78";	// was 2005;
+    name.1033 = string("Sukun");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Closed");
+        }
+        jasmDown {
+            value = 1;
+            name.1033 = string("Open down");
+        }
+        jasmLeft {
+            value = 2;
+            name.1033 = string("Open left");
+        }
+    }
+    default = std;
+}
+
+
+endOfAyah {
+    id = "cv80";	// was 2008;
+    name.1033 = string("End of ayah");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        circle {
+            value = 1;
+            name.1033 = string("Simplified A");
+        }
+        square {
+            value = 2;
+            name.1033 = string("Simplified B");
+        }
+    }
+    default = std;
+}
+
+easternDigits {
+    id = "cv82";
+    name.1033 = string("Eastern digits");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        rohingya {
+            value = 4;
+            name.1033 = string("Rohingya-style");
+        }
+        sindhi {
+            value = 1;
+            name.1033 = string("Sindhi-style");
+        }
+        urdu {
+            value = 2;
+            name.1033 = string("Urdu-style");
+        }
+    }
+    default = std;
+}
+
+commaAlt {
+    id = "cv84";	// was 2006;
+    name.1033 = string("Comma");
+    settings {
+        up {
+            value = 0;
+            name.1033 = string("Upward");
+        }
+        down {
+            value = 1;
+            name.1033 = string("Downward");
+        }
+    }
+    default = up;
+}
+
+jehHack {
+	id = "cv90";
+    name.1033 = string("Jeh hack");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        dotHat {
+            value = 1;
+            name.1033 = string("Dot Hat");
+        }
+    }
+    default = std;
+}
+	
+headOfKhahHack {
+    id = "cv92";	// was 2009;
+    name.1033 = string("Dotless head of khah hack");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        openLeft {
+            value = 1;
+            name.1033 = string("Jazm");
+        }
+    }
+    default = std;
+}
+
+graphite1mirror {
+	id = "gr1m";
+	name.1033 = string("Mirroring for Graphite 1");
+	default = false;
+}
+
+
+#if 0
+kasraTcheh {	// temporary - different ways of handling collisions
+    id = 3000;
+    name.1033 = string("Kasra-tcheh adjustment");
+    settings {
+        raise {
+            value = 2;
+            name.1033 = string("Raise kasra");
+        }
+        lower {
+            value = 1;
+            name.1033 = string("Lower kasra");
+        }
+    }
+    default = raise;
+}
+
+#endif
+
+selectDiac {
+    id = "dsel";
+    name.1033 = string("Diacritic selection");
+    settings {
+        off {
+            value = 0;
+            name.1033 = string("False");
+        }
+        on {
+            value = 1;
+            name.1033 = string("True");
+        }
+    }
+    default = on;
+}
+
+invis {
+    id = "invs";
+    name.1033 = string("Show invisible characters");
+    settings {
+        off {
+            value = 0;
+            name.1033 = string("False");
+        }
+        on {
+            value = 1;
+            name.1033 = string("True");
+        }
+    }
+    default = off;
+
+}
+
+#if 0
+
+debug {
+    id = "dbug";
+    name.1033 = string("Debug");
+    settings {
+        off {
+            value = 0;
+            name.1033 = string("False");
+        }
+        on {
+            value = 1;
+            name.1033 = string("True");
+        }
+    }
+    default = on;
+
+}
+
+#endif
+
+endtable; // feature
+
+
+//------------------------------------------------------------------------------------------
+//
+//	Language-specific assignments
+//
+
+table(language)
+
+kurdish {
+    languages = (
+    	"bdh",	// Behdini - obsolete
+    	"ckb",	// Central Kurdish
+    	"kmr",	// Northern Kurdish/Behdini
+    	"kur",  // Kurmanji
+    	"sdh"	// Southern Kurdish/Sorani
+    );
+    hehAlt = kurdish;
+};
+
+rohingya {
+    languages = (
+    	"rhg"	// Rohingya
+    );
+    easternDigits = rohingya;
+    shaddaKasra = sindhiUrdu;
+    dammatanAlt = sixNine;
+};
+
+shina {
+    languages = (
+        "scl",	// Shina
+        "plk"	// Shina, Kohistani
+    );
+    headOfKhahHack = openLeft;
+};
+
+sindhi {
+    languages = ( "snd", "sd" ); // Sindhi
+    meemAlt = sindhi;
+    hehAlt = sindhi;
+    easternDigits = sindhi;
+    shaddaKasra = sindhiUrdu;
+};
+
+urdu {
+    languages = ( "urd", "ur" ); // Urdu
+    hehAlt = urdu;
+    easternDigits = urdu;
+    shaddaKasra = sindhiUrdu;
+};
+
+
+endtable; // language

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WpDoc SYSTEM "WorldPad.dtd">
+<WpDoc wpxVersion="2.0">
+
+<Body docRightToLeft="false">
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run ws="en" fontsize="20000" fontsizeUnit="mpt">Mirrored</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>Check: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >RenderingUnknown</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+0028: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x28; b &#x627; &#x28; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+0029: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x29; b &#x627; &#x29; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+003C: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x3c; b &#x627; &#x3c; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+003E: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x3e; b &#x627; &#x3e; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+005B: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x5b; b &#x627; &#x5b; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+005D: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x5d; b &#x627; &#x5d; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+007B: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x7b; b &#x627; &#x7b; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+007D: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x7d; b &#x627; &#x7d; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+00AB: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#xab; b &#x627; &#xab; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+00BB: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#xbb; b &#x627; &#xbb; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+2018: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x2018; b &#x627; &#x2018; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+2019: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x2019; b &#x627; &#x2019; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+201A: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x201a; b &#x627; &#x201a; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+201C: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x201c; b &#x627; &#x201c; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+201D: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x201d; b &#x627; &#x201d; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+201E: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x201e; b &#x627; &#x201e; &#x628;</Run>
+
+      <Run>    should NOT mirror</Run>      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+2039: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x2039; b &#x627; &#x2039; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+203A: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x203a; b &#x627; &#x203a; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+  <StTxtPara>
+    <Contents16>
+      <Str>
+        <Run>U+221A: </Run>
+        <Run ws="ar" fontsize="22000" fontsizeUnit="mpt" >a &#x221a; b &#x627; &#x221a; &#x628;</Run>
+      </Str>
+    </Contents16>
+  </StTxtPara>
+	</Body>
+
+</WpDoc>

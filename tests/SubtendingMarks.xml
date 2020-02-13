@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='TestStyleSheet.xsl'?>
+<strings label='SubtendingMarks test for Scheherazade'>
+
+  <string label='Check'><text>RenderingUnknown</text></string>
+  <string label='U+0600'><text> &#x628;&#x600;&#x645; &#x600;&#x32; &#x600;&#x32;&#x32; &#x600;&#x32;&#x32;&#x32;</text><comment>absNumberSign</comment></string>
+  <string label='U+0601'><text> &#x628;&#x601;&#x645; &#x601;&#x32; &#x601;&#x32;&#x32; &#x601;&#x32;&#x32;&#x32; &#x601;&#x32;&#x32;&#x32;&#x32;</text><comment>absYearSign</comment></string>
+  <string label='U+0602'><text> &#x628;&#x602;&#x645; &#x602;&#x32; &#x602;&#x32;&#x32;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0603'><text> &#x628;&#x603;&#x645; &#x603;&#x32; &#x603;&#x32;&#x32; &#x603;&#x32;&#x32;&#x32; &#x603;&#x32;&#x32;&#x32;&#x32;</text><comment>absPageSign</comment></string>
+  <string label='U+0604'><text> &#x628;&#x604;&#x645; &#x604;&#x32; &#x604;&#x32;&#x32; &#x604;&#x32;&#x32;&#x32; &#x604;&#x32;&#x32;&#x32;&#x32;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0605'><text> &#x628;&#x605;&#x645; &#x605;&#x32; &#x605;&#x32;&#x32; &#x605;&#x32;&#x32;&#x32; &#x605;&#x32;&#x32;&#x32;&#x32;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+06DD'><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x32; &#x6dd;&#x32;&#x32; &#x6dd;&#x32;&#x32;&#x32;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x32; &#x6dd;&#x32;&#x32; &#x6dd;&#x32;&#x32;&#x32;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x32; &#x6dd;&#x32;&#x32; &#x6dd;&#x32;&#x32;&#x32;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+0600'><text> &#x628;&#x600;&#x645; &#x600;&#x668; &#x600;&#x668;&#x668; &#x600;&#x668;&#x668;&#x668;</text><comment>absNumberSign</comment></string>
+  <string label='U+0601'><text> &#x628;&#x601;&#x645; &#x601;&#x668; &#x601;&#x668;&#x668; &#x601;&#x668;&#x668;&#x668; &#x601;&#x668;&#x668;&#x668;&#x668;</text><comment>absYearSign</comment></string>
+  <string label='U+0602'><text> &#x628;&#x602;&#x645; &#x602;&#x668; &#x602;&#x668;&#x668;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0603'><text> &#x628;&#x603;&#x645; &#x603;&#x668; &#x603;&#x668;&#x668; &#x603;&#x668;&#x668;&#x668; &#x603;&#x668;&#x668;&#x668;&#x668;</text><comment>absPageSign</comment></string>
+  <string label='U+0604'><text> &#x628;&#x604;&#x645; &#x604;&#x668; &#x604;&#x668;&#x668; &#x604;&#x668;&#x668;&#x668; &#x604;&#x668;&#x668;&#x668;&#x668;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0605'><text> &#x628;&#x605;&#x645; &#x605;&#x668; &#x605;&#x668;&#x668; &#x605;&#x668;&#x668;&#x668; &#x605;&#x668;&#x668;&#x668;&#x668;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+06DD'><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x668; &#x6dd;&#x668;&#x668; &#x6dd;&#x668;&#x668;&#x668;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x668; &#x6dd;&#x668;&#x668; &#x6dd;&#x668;&#x668;&#x668;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x668; &#x6dd;&#x668;&#x668; &#x6dd;&#x668;&#x668;&#x668;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+0600'><text> &#x628;&#x600;&#x645; &#x600;&#x6f8; &#x600;&#x6f8;&#x6f8; &#x600;&#x6f8;&#x6f8;&#x6f8;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600'><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' feats="'cv82' 1"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' feats="'cv82' 2"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' feats="'cv82' 3"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' feats="'cv82' 4"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' lang="rhg"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' lang="sd"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0600' lang="ur"><text> &#x628;&#x600;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSign</comment></string>
+  <string label='U+0601'><text> &#x628;&#x601;&#x645; &#x601;&#x6f8; &#x601;&#x6f8;&#x6f8; &#x601;&#x6f8;&#x6f8;&#x6f8; &#x601;&#x6f8;&#x6f8;&#x6f8;&#x6f8;</text><comment>absYearSign</comment></string>
+  <string label='U+0601'><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' feats="'cv82' 1"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' feats="'cv82' 2"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' feats="'cv82' 3"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' feats="'cv82' 4"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' lang="rhg"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' lang="sd"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0601' lang="ur"><text> &#x628;&#x601;&#x6f4;&#x6f6;&#x6f7;</text><comment>absYearSign</comment></string>
+  <string label='U+0602'><text> &#x628;&#x602;&#x645; &#x602;&#x6f8; &#x602;&#x6f8;&#x6f8;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602'><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' feats="'cv82' 1"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' feats="'cv82' 2"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' feats="'cv82' 3"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' feats="'cv82' 4"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' lang="rhg"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' lang="sd"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0602' lang="ur"><text> &#x628;&#x602;&#x6f4;&#x6f6;&#x6f7;</text><comment>absFootnoteSign</comment></string>
+  <string label='U+0603'><text> &#x628;&#x603;&#x645; &#x603;&#x6f8; &#x603;&#x6f8;&#x6f8; &#x603;&#x6f8;&#x6f8;&#x6f8; &#x603;&#x6f8;&#x6f8;&#x6f8;&#x6f8;</text><comment>absPageSign</comment></string>
+  <string label='U+0603'><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' feats="'cv82' 1"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' feats="'cv82' 2"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' feats="'cv82' 3"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' feats="'cv82' 4"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' lang="rhg"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' lang="sd"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0603' lang="ur"><text> &#x628;&#x603;&#x6f4;&#x6f6;&#x6f7;</text><comment>absPageSign</comment></string>
+  <string label='U+0604'><text> &#x628;&#x604;&#x645; &#x604;&#x6f8; &#x604;&#x6f8;&#x6f8; &#x604;&#x6f8;&#x6f8;&#x6f8; &#x604;&#x6f8;&#x6f8;&#x6f8;&#x6f8;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604'><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' feats="'cv82' 1"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' feats="'cv82' 2"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' feats="'cv82' 3"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' feats="'cv82' 4"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' lang="rhg"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' lang="sd"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0604' lang="ur"><text> &#x628;&#x604;&#x6f4;&#x6f6;&#x6f7;</text><comment>absSamvatSign</comment></string>
+  <string label='U+0605'><text> &#x628;&#x605;&#x645; &#x605;&#x6f8; &#x605;&#x6f8;&#x6f8; &#x605;&#x6f8;&#x6f8;&#x6f8; &#x605;&#x6f8;&#x6f8;&#x6f8;&#x6f8;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605'><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' feats="'cv82' 1"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' feats="'cv82' 2"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' feats="'cv82' 3"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' feats="'cv82' 4"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' lang="rhg"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' lang="sd"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+0605' lang="ur"><text> &#x628;&#x605;&#x6f4;&#x6f6;&#x6f7;</text><comment>absNumberSignAbove</comment></string>
+  <string label='U+06DD'><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x6f8; &#x6dd;&#x6f8;&#x6f8; &#x6dd;&#x6f8;&#x6f8;&#x6f8;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD'><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv82' 1"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv82' 2"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv82' 3"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv82' 4"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' lang="rhg"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' lang="sd"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' lang="ur"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x6f8; &#x6dd;&#x6f8;&#x6f8; &#x6dd;&#x6f8;&#x6f8;&#x6f8;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1, 'cv82' 1"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1, 'cv82' 2"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1, 'cv82' 3"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1, 'cv82' 4"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1" lang="rhg"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1" lang="sd"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 1" lang="ur"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2"><text> &#x628;&#x6dd;&#x645; &#x6dd;&#x6f8; &#x6dd;&#x6f8;&#x6f8; &#x6dd;&#x6f8;&#x6f8;&#x6f8;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2, 'cv82' 1"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2, 'cv82' 2"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2, 'cv82' 3"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2, 'cv82' 4"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2" lang="rhg"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2" lang="sd"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+  <string label='U+06DD' feats="'cv80' 2" lang="ur"><text> &#x628;&#x6dd;&#x6f4;&#x6f6;&#x6f7;</text><comment>absEndOfAyah</comment></string>
+</strings>

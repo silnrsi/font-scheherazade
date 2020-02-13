@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='TestStyleSheet.xsl'?>
+<strings label='Mirrored'>
+
+  <string label='Check'><text>RenderingUnknown</text></string>
+  <string label='U+0028'><text>a &#x28; b &#x627; &#x28; &#x628;</text></string>
+  <string label='U+0029'><text>a &#x29; b &#x627; &#x29; &#x628;</text></string>
+  <string label='U+003C'><text>a &#x3c; b &#x627; &#x3c; &#x628;</text></string>
+  <string label='U+003E'><text>a &#x3e; b &#x627; &#x3e; &#x628;</text></string>
+  <string label='U+005B'><text>a &#x5b; b &#x627; &#x5b; &#x628;</text></string>
+  <string label='U+005D'><text>a &#x5d; b &#x627; &#x5d; &#x628;</text></string>
+  <string label='U+007B'><text>a &#x7b; b &#x627; &#x7b; &#x628;</text></string>
+  <string label='U+007D'><text>a &#x7d; b &#x627; &#x7d; &#x628;</text></string>
+  <string label='U+00AB'><text>a &#xab; b &#x627; &#xab; &#x628;</text></string>
+  <string label='U+00BB'><text>a &#xbb; b &#x627; &#xbb; &#x628;</text></string>
+  <string label='U+2018'><text>a &#x2018; b &#x627; &#x2018; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+2019'><text>a &#x2019; b &#x627; &#x2019; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+201A'><text>a &#x201a; b &#x627; &#x201a; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+201C'><text>a &#x201c; b &#x627; &#x201c; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+201D'><text>a &#x201d; b &#x627; &#x201d; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+201E'><text>a &#x201e; b &#x627; &#x201e; &#x628;</text><comment>should NOT mirror</comment></string>
+  <string label='U+2039'><text>a &#x2039; b &#x627; &#x2039; &#x628;</text></string>
+  <string label='U+203A'><text>a &#x203a; b &#x627; &#x203a; &#x628;</text></string>
+  <string label='U+221A'><text>a &#x221a; b &#x627; &#x221a; &#x628;</text></string>
+</strings>

@@ -1,0 +1,250 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	File: SchGlyphs.gdh
+//
+//	Glyph definitions and attachment points for Scheherazade
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*
+	This file is part of Scheherazade font family 
+	(http://scripts.sil.org/Scheherazade) and is 
+	Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
+	with Reserved Font Names "Scheherazade" and "SIL".
+
+	This Font Software is licensed under the SIL Open Font License,
+	Version 1.1.
+
+	You should have received a copy of the license along with this Font Software.
+	If this is not the case, go to (http://scripts.sil.org/OFL) for all the
+	details including an FAQ.
+*/
+
+environment {AttributeOverride = true};
+
+
+table(glyph)
+	
+/********************************************************/
+
+
+//------------------------------------------------------------------------------------------
+//
+// Mirroring
+//
+
+g_radical.mirror.glyph = g_radical_rtl;
+g_radical.mirror.isEncoded = 0;
+
+// Used for Graphite-1 style mirroring:
+
+cMirrorOpen  = (g_parenleft  g_less    g_bracketleft  g_braceleft  g_guilsinglleft  g_guillemotleft  g_radical);
+cMirrorClose = (g_parenright g_greater g_bracketright g_braceright g_guilsinglright g_guillemotright g_radical_rtl);
+
+// Make sure Unicode 5.0 Corrigendum #6 is applied:
+
+cNoMirror = (g_quotedblbase g_quoteleft g_quoteright g_quotedblleft g_quotedblright) {mirror.glyph = 0; mirror.isEncoded = 0};
+
+
+//------------------------------------------------------------------------------------------
+//
+//	Contextual forms
+//
+
+
+// Lowered hamza
+
+cLowHamzaComposed { component {
+			base = box(0, bb.bottom, aw, bb.bottom + (bb.height*5)/8);
+			hamza = box(0, bb.bottom + (bb.height*5)/8, aw, bb.top) }};
+// slight adjustments to components:
+absWawHamzaAbove { component {
+	base.top = bb.bottom + (bb.height*3)/4;
+	hamza.bottom = bb.bottom + (bb.height*3)/4 }};
+absYehHamzaAbove { component.hamza.right = aw*3/4 };
+absYehHamzaAboveMed { component {
+	base.top = bb.bottom + bb.height/2;
+	hamza.bottom = bb.bottom + bb.height/2 }};
+absYehHamzaAboveFin { component.hamza.right = aw*3/4 };
+
+// Subtending marks
+
+cSignTakes4 = (absYearSign absSamvatSign absNumberSignAbove absPageSign); // medium
+
+cSignTakes3Medium = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign);
+cSignTakes3Small  = (absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB);
+
+cSignTakes2 = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB
+	absFootnoteSign); // medium
+
+cSignTakes1 = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB
+	absFootnoteSign); // medium
+	
+cSign4 = (absYearSign_4 absSamvatSign_4 absNumberSignAbove_4 absPageSign_4);
+cSign3Medium = (absYearSign_3 absSamvatSign_3 absNumberSignAbove_3 absNumberSign_3 absPageSign_3);
+cSign3Small  = (absEndOfAyah_3 absEndOfAyah_alt_3 absEndOfAyah_altB_3);
+cSign3 = (cSign3Medium cSign3Small);
+cSign2 = (absYearSign_2 absSamvatSign_2 absNumberSignAbove_2 absNumberSign_2 absPageSign_2 absEndOfAyah_2 
+	absEndOfAyah_alt_2 absEndOfAyah_altB_2 absFootnoteSign_2);
+cSign1 = (absYearSign    absSamvatSign absNumberSignAbove absNumberSign    absPageSign    absEndOfAyah    
+	absEndOfAyah_alt    absEndOfAyah_altB    absFootnoteSign);
+
+
+cSignAll = (cSign1 cSign2 cSign3 cSign4);
+
+cSignDigit = (cDigitsArabicMedium cDigitsArabicSmall 
+			  cDigitsEasternMedium cDigitsEasternSmall 
+			  cDigitsLatinMedium cDigitsLatinSmall) ;
+
+
+
+//------------------------------------------------------------------------------------------
+//
+//	Feature-related variants
+//
+
+cDownward = (absComma_downward absSemicolon_downward);
+cno_Downward = (absComma absSemicolon);
+
+cSixNine = (absDammatan_sixNine);
+cno_SixNine = (absDammatan);
+
+cno_Sukun = (absSukun);
+cSukunDownOpen = (absSukun_downOpen);
+cSukunLeftOpen = (absShortVowelMark);
+
+cno_OpenLeft = (absSmallHighDotlessHeadOfKhah);
+cOpenLeft = (absShortVowelMark);
+
+cLargeAlef = (absSuperscriptAlef_large);
+cno_LargeAlef = (absSuperscriptAlef);
+
+cNoDots = (absYeh_noDots absYehIni_noDots absYehMed_noDots absYehFin_noDots);
+cno_NoDots = (absYeh absYehIni absYehMed absYehFin);
+
+// The next three class must match for substitution:
+
+cEasternDigit = (
+	absEasternFour        absEasternSix        absEasternSeven
+	absEasternFourMedium  absEasternSixMedium  absEasternSevenMedium
+	absEasternFourSmall   absEasternSixSmall   absEasternSevenSmall
+);
+	
+cEasternDigitUrdu = (
+	absEasternFour_urdu        absEasternSix_urdu        absEasternSeven_urdu
+	absEasternFourMedium_urdu  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
+	absEasternFourSmall_urdu   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+);
+
+cEasternDigitSindhi = (
+	absEasternFour        absEasternSix_urdu        absEasternSeven_urdu
+	absEasternFourMedium  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
+	absEasternFourSmall   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+);
+
+cEasternDigitRohingya = (
+	absEasternFour_roh        absEasternSix_urdu        absEasternSeven_urdu
+	absEasternFourMedium_roh  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
+	absEasternFourSmall_roh   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+);
+
+	
+
+cno_Heh     = (absHeh           absHehIni         absHehMed              absHehFin);
+cHehSindhi  = (absHeh_knotted   absHehIni         absHehMed_knottedHigh  absHehFin_knottedHigh);
+cHehUrdu    = (absHeh           absHehIni_hooked  absHehMed_hooked       absHehFin_hooked);
+cHehKurdish = (absHeh_knotted   absHehIni         absHehMed              absHehFin_knottedHigh);
+
+cEndOfAyah        = (absEndOfAyah      absEndOfAyah_2      absEndOfAyah_3);
+cEndOfAyahCircle  = (absEndOfAyah_alt  absEndOfAyah_alt_2  absEndOfAyah_alt_3);
+cEndOfAyahSquare  = (absEndOfAyah_altB absEndOfAyah_altB_2 absEndOfAyah_altB_3);
+
+zeroWidthJoiner = postscript("zerojoin");
+zeroWidthNonJoiner = postscript("zeronojoin");
+leftToRightMark = postscript("leftToRightMark") {dir = DIR_LEFT};
+rightToLeftMark = postscript("rightToLeftMark") {dir = DIR_RIGHT};
+leftToRightEmbedding = postscript("leftToRightEmbedding") {dir = DIR_LRE};
+rightToLeftEmbedding = postscript("rightToLeftEmbedding") {dir = DIR_RLE};
+popDirectionalFormatting = postscript("popDirectionalFormatting") {dir = DIR_PDF};
+leftToRightOverride = postscript("leftToRightOverride") {dir = DIR_LRO};
+rightToLeftOverride = postscript("rightToLeftOverride") {dir = DIR_RLO};
+leftToRightIsolate = postscript("leftToRightIsolate") {dir = DIR_LRI} ;
+rightToLeftIsolate = postscript("rightToLeftIsolate") {dir = DIR_RLI} ;
+firstStrongIsolate = postscript("firstStrongIsolate") {dir = DIR_FSI} ;
+popDirectionalIsolate = postscript("popDirectionalIsolate") {dir = DIR_PDI} ;
+arabicLetterMark = postscript("arabicLetterMark") {dir = DIR_ARABIC} ;
+
+cInvisible = (zeroWidthJoiner zeroWidthNonJoiner leftToRightMark rightToLeftMark leftToRightEmbedding
+	rightToLeftEmbedding popDirectionalFormatting leftToRightOverride rightToLeftOverride
+	leftToRightIsolate rightToLeftIsolate firstStrongIsolate popDirectionalIsolate arabicLetterMark);
+
+zeroWidthSpace = postscript("zerospace");
+
+
+//------------------------------------------------------------------------------------------
+//
+//	Marks
+//
+
+// marks that can combine with vowel marks:
+cMark1Above = (cMarkGroup1A);
+
+cMark1Below = (cMarkGroup1B);
+
+// vowels
+cMark2Above = (cMarkGroup2A cMarkGroup3A);
+
+cMark2Below = (cMarkGroup2B);
+
+// Maddah is different from hamza and shadda in that it goes above the vowels, but below the quranic
+// marks. However, Jonathan warns that this behavior may need to change someday.
+cMark3Above = (cMarkGroup4A);
+
+// (no marks below that behave like maddah)
+
+// quranic marks
+cMark4Above = (cMarkGroup5A);
+
+cMark4Below = (cMarkGroup3B);
+
+// For testing non-canonical ordering:
+r_comma = postscript("comma") { diaA_ = point(aw/2, bb.bottom) };
+cMark4Above += (r_comma);
+
+cMark1 = (cMark1Above cMark1Below);
+cMark2 = (cMark2Above cMark2Below);
+cMark3 = (cMark3Above);
+cMark4 = (cMark4Above cMark4Below);
+
+cAnyMarks = (cMark1 cMark2 cMark3 cMark4);
+cAnyMarksAbove = (cMark1Above cMark2Above cMark3Above cMark4Above);
+cAnyMarksBelow = (cMark1Below cMark2Below cMark4Below);
+
+cMark234 = (cMark2 cMark3 cMark4);
+cMark34  = (cMark3 cMark4);
+
+
+// Not used by Graphite:
+/***
+
+
+
+// TODO: define the components for these ligatures
+cShaddaMarks = (absFathatan absDammatan absFatha 
+	absDamma absSuperscriptAlef);
+cShaddaLigatures = (absShaddaFathatan absShaddaDammatan absShaddaFatha  
+	absShaddaDamma absShaddaAlef);
+
+cHamzaMarks = (absDamma absFatha);
+cHamzaLigatures = (absHamzaDamma absHamzaFatha);
+***/
+
+// Cursive attachment
+
+cHasExit  = (cLamIniBeforeAlef   cLamMedBeforeAlef  );
+cHasEntry = (cAlefFinAfterLamIni cAlefFinAfterLamMed);
+
+endtable; // glyph
+
+endenvironment;
