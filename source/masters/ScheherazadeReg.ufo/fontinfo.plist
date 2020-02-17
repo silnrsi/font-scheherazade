@@ -7,40 +7,11 @@
   <key>capHeight</key>
   <integer>1034</integer>
   <key>copyright</key>
-  <string>Copyright (c) 1994 - 2015 by SIL International. All rights reserved.</string>
+  <string>Copyright (c) 1994 - 2015 SIL International. All rights reserved.</string>
   <key>descender</key>
   <integer>-950</integer>
   <key>familyName</key>
   <string>Scheherazade</string>
-  <key>italicAngle</key>
-  <integer>0</integer>
-  <key>macintoshFONDFamilyID</key>
-  <integer>18074</integer>
-  <key>macintoshFONDName</key>
-  <string>Scheherazade</string>
-  <key>openTypeGaspRangeRecords</key>
-  <array>
-  <dict>
-    <key>rangeGaspBehavior</key>
-      <array>
-        <integer>0</integer>
-        <integer>2</integer>
-      </array>
-    <key>rangeMaxPPEM</key>
-    <integer>16</integer>
-  </dict>
-  <dict>
-    <key>rangeGaspBehavior</key>
-      <array>
-        <integer>0</integer>
-        <integer>1</integer>
-        <integer>2</integer>
-        <integer>3</integer>
-      </array>
-    <key>rangeMaxPPEM</key>
-    <integer>65535</integer>
-  </dict>
-  </array>
   <key>openTypeHeadCreated</key>
   <string>2013/02/25 03:48:00</string>
   <key>openTypeHeadFlags</key>
@@ -61,13 +32,12 @@
   <key>openTypeNameLicense</key>
   <string>Copyright (c) 1994-2015, SIL International (http://www.sil.org/), with Reserved Font Names &quot;Scheherazade&quot; and &quot;SIL&quot;.
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
 
-This license is copied below, and is also available with an FAQ at: http://scripts.sil.org/OFL
 
-----------------------------------------------------
+-----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-----------------------------------------------------
+-----------------------------------------------------------
 
 PREAMBLE
 The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
@@ -75,15 +45,15 @@ The goals of the Open Font License (OFL) are to stimulate worldwide development 
 The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
 
 DEFINITIONS
-&quot;Font Software&quot; refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+"Font Software" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
 
-&quot;Reserved Font Name&quot; refers to any names specified as such after the copyright statement(s).
+"Reserved Font Name" refers to any names specified as such after the copyright statement(s).
 
-&quot;Original Version&quot; refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+"Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
 
-&quot;Modified Version&quot; refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+"Modified Version" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
 
-&quot;Author&quot; refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+"Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
 
 PERMISSION &amp; CONDITIONS
 Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
@@ -102,13 +72,13 @@ TERMINATION
 This license becomes null and void if any of the above conditions are not met.
 
 DISCLAIMER
-THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</string>
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</string>
   <key>openTypeNameLicenseURL</key>
   <string>http://scripts.sil.org/OFL</string>
   <key>openTypeNameManufacturer</key>
   <string>SIL International</string>
   <key>openTypeNameManufacturerURL</key>
-  <string>http://www.sil.org/</string>
+  <string>http://scripts.sil.org/</string>
   <key>openTypeNamePreferredFamilyName</key>
   <string>Scheherazade</string>
   <key>openTypeNamePreferredSubfamilyName</key>
@@ -180,7 +150,7 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
     <integer>31</integer>
   </array>
   <key>openTypeOS2VendorID</key>
-  <string>SIL</string>
+  <string>SIL </string>
   <key>openTypeOS2WeightClass</key>
   <integer>400</integer>
   <key>openTypeOS2WidthClass</key>
@@ -191,10 +161,6 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
   <integer>950</integer>
   <key>postscriptBlueFuzz</key>
   <integer>1</integer>
-  <key>postscriptBlueScale</key>
-  <real>0.363636</real>
-  <key>postscriptBlueShift</key>
-  <integer>7</integer>
   <key>postscriptBlueValues</key>
   <array>
     <integer>-23</integer>
@@ -206,17 +172,8 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
   </array>
   <key>postscriptFontName</key>
   <string>Scheherazade-Regular</string>
-  <key>postscriptForceBold</key>
-  <false/>
   <key>postscriptFullName</key>
   <string>Scheherazade</string>
-  <key>postscriptIsFixedPitch</key>
-  <false/>
-  <key>postscriptOtherBlues</key>
-  <array>
-    <integer>-334</integer>
-    <integer>-330</integer>
-  </array>
   <key>postscriptStemSnapH</key>
   <array>
     <integer>119</integer>
@@ -231,10 +188,6 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
   <real>-59.5</real>
   <key>postscriptUnderlineThickness</key>
   <integer>9</integer>
-  <key>postscriptUniqueID</key>
-  <integer>-1</integer>
-  <key>postscriptWeightName</key>
-  <string>Regular</string>
   <key>styleMapFamilyName</key>
   <string>Scheherazade</string>
   <key>styleMapStyleName</key>
@@ -251,7 +204,5 @@ THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, E
   <integer>100</integer>
   <key>xHeight</key>
   <integer>684</integer>
-  <key>year</key>
-  <integer>2015</integer>
 </dict>
 </plist>
