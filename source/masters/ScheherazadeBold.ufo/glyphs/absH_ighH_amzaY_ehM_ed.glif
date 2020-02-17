@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absHighHamzaYehMed" format="2">
+  <advance width="427"/>
+  <anchor x="165" y="-240" name="diaB"/>
+  <anchor x="211" y="668" name="diaA"/>
+  <anchor x="224" y="576" name="alef"/>
+  <anchor x="165" y="-125" name="diaBtailUp"/>
+  <anchor x="165" y="-800" name="diaBtailDown"/>
+  <anchor x="226" y="389" name="above"/>
+  <anchor x="217" y="-50" name="below"/>
+  <anchor x="258" y="104" name="ring"/>
+  <outline>
+    <component base="absBehNoDotsMed"/>
+    <component base="_hamza" xOffset="375" yOffset="612"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

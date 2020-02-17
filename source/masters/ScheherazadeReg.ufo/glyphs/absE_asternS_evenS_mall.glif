@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternSevenSmall" format="2">
+  <advance width="319"/>
+  <anchor x="319" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <component base="absSevenSmall"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="214" width="-21" />
+      <hstem pos="595" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

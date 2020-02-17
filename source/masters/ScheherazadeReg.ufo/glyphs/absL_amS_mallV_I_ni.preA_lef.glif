@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absLamSmallVIni.preAlef" format="2">
+  <advance width="374"/>
+  <anchor x="0" y="0" name="exit"/>
+  <anchor x="20" y="864" name="alef"/>
+  <anchor x="65" y="-100" name="diaB"/>
+  <anchor x="179" y="1278" name="diaA"/>
+  <anchor x="156" y="1195" name="above"/>
+  <anchor x="116" y="-58" name="below"/>
+  <anchor x="168" y="777" name="through"/>
+  <outline>
+    <component base="absLamIni.preAlef"/>
+    <component base="_smallV" xOffset="159" yOffset="1357"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

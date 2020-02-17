@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absSmallHighRoundedZero" format="2">
+  <unicode hex="06DF"/>
+  <anchor x="120" y="930" name="_diaA"/>
+  <anchor x="90" y="1425" name="diaA"/>
+  <outline>
+    <component base="absSukun"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="987" width="184" />
+      <vstem pos="-94" width="188" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

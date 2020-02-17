@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTahThreeDotsAboveIni" format="2">
+  <advance width="840"/>
+  <anchor x="397" y="-150" name="diaB"/>
+  <anchor x="154" y="1248" name="diaA"/>
+  <anchor x="0" y="748" name="alef"/>
+  <anchor x="491" y="575" name="above"/>
+  <anchor x="380" y="-50" name="below"/>
+  <outline>
+    <component base="absTahIni"/>
+    <component base="_dot3u" xOffset="491" yOffset="806"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathaMeem" format="2">
+  <anchor x="171" y="1050" name="_diaA"/>
+  <anchor x="141" y="1310" name="diaA"/>
+  <outline>
+    <component base="absFatha" xOffset="51" yOffset="30"/>
+    <component base="absSmallHighMeemIsolatedForm" xOffset="-25" yOffset="-83"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1223" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

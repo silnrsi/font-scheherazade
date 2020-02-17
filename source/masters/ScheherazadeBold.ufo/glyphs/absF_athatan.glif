@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathatan" format="2">
+  <unicode hex="064B"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="90" y="1480" name="diaA"/>
+  <outline>
+    <component base="absFatha"/>
+    <component base="absFatha" yOffset="190"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1165" width="-21" />
+      <hstem pos="1223" width="-20" />
+      <hstem pos="1370" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

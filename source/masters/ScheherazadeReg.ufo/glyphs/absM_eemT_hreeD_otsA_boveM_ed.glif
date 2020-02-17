@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absMeemThreeDotsAboveMed" format="2">
+  <advance width="770"/>
+  <anchor x="208" y="472" name="alef"/>
+  <anchor x="339" y="-201" name="diaB"/>
+  <anchor x="316" y="704" name="diaA"/>
+  <anchor x="356" y="406" name="above"/>
+  <anchor x="385" y="-70" name="below"/>
+  <outline>
+    <component base="absMeemMed"/>
+    <component base="_dot3u" xOffset="356" yOffset="637"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathaDotAbove" format="2">
+  <unicode hex="08F5"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="90" y="1290" name="diaA"/>
+  <outline>
+    <component base="absFatha"/>
+    <component base="_dotCircular" xOffset="23" yOffset="1280"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-26 pkm des Created.</string>
+  </dict>
+  </lib>
+</glyph>

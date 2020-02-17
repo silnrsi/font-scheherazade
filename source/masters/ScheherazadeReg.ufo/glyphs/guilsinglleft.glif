@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guilsinglleft" format="2">
+  <unicode hex="2039"/>
+  <advance width="514"/>
+  <outline>
+    <contour>
+      <point x="422" y="-6" type="line"/>
+      <point x="238" y="350" type="line"/>
+      <point x="422" y="705" type="line"/>
+      <point x="381" y="705" type="line"/>
+      <point x="90" y="350" type="line"/>
+      <point x="381" y="-6" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="15" width="-21" />
+      <hstem pos="705" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

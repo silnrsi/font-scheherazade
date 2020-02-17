@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="grave" format="2">
+  <unicode hex="0060"/>
+  <advance width="580"/>
+  <anchor x="294" y="760" name="_above"/>
+  <outline>
+    <contour>
+      <point x="438" y="786" type="line"/>
+      <point x="223" y="1001" type="line" smooth="yes"/>
+      <point x="190" y="1034"/>
+      <point x="160" y="1051"/>
+      <point x="133" y="1051" type="curve" smooth="yes"/>
+      <point x="102" y="1051"/>
+      <point x="86" y="1032"/>
+      <point x="86" y="993" type="curve" smooth="yes"/>
+      <point x="86" y="977"/>
+      <point x="109" y="954"/>
+      <point x="154" y="926" type="curve" smooth="yes"/>
+      <point x="375" y="786" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="807" width="-21" />
+      <hstem pos="1051" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

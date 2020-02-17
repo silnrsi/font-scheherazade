@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYehBarreeDigitThreeAbove" format="2">
+  <unicode hex="077B"/>
+  <advance width="1567"/>
+  <anchor x="385" y="645" name="diaA"/>
+  <anchor x="482" y="-501" name="diaB"/>
+  <anchor x="219" y="358" name="alef"/>
+  <anchor x="434" y="498" name="above"/>
+  <anchor x="759" y="-331" name="below"/>
+  <outline>
+    <component base="absYehBarree"/>
+    <component base="_three" xOffset="342" yOffset="559"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

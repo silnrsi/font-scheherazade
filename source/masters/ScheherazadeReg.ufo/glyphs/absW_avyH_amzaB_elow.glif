@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absWavyHamzaBelow" format="2">
+  <unicode hex="065F"/>
+  <anchor x="75" y="-460" name="_diaB"/>
+  <anchor x="85" y="-817" name="diaB"/>
+  <anchor x="75" y="-460" name="_diaBtailDown"/>
+  <anchor x="78" y="-448" name="_below"/>
+  <anchor x="78" y="-871" name="_above"/>
+  <outline>
+    <component base="_wavyHamza" xOffset="78" yOffset="-700"/>
+  </outline>
+  <guideline x="-1748"/>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-103" width="-21" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

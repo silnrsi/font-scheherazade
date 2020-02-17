@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefFin.postLamIni" format="2">
+  <advance width="608"/>
+  <anchor x="200" y="-181" name="dia2B"/>
+  <anchor x="80" y="1260" name="diaA"/>
+  <anchor x="74" y="1185" name="above"/>
+  <anchor x="446" y="-85" name="below"/>
+  <anchor x="-47" y="860" name="aboveLeft"/>
+  <anchor x="420" y="-152" name="diaB"/>
+  <anchor x="564" y="0" name="entry"/>
+  <outline>
+    <contour>
+      <point x="786" y="213" type="curve" smooth="yes"/>
+      <point x="786" y="267"/>
+      <point x="755" y="340"/>
+      <point x="707" y="420" type="curve" smooth="yes"/>
+      <point x="577" y="637"/>
+      <point x="317" y="912"/>
+      <point x="171" y="1048" type="curve" smooth="yes"/>
+      <point x="160" y="1058"/>
+      <point x="105" y="1102"/>
+      <point x="81" y="1102" type="curve" smooth="yes"/>
+      <point x="62" y="1102"/>
+      <point x="23" y="1008"/>
+      <point x="23" y="910" type="curve" smooth="yes"/>
+      <point x="23" y="871"/>
+      <point x="55" y="826"/>
+      <point x="86" y="791" type="curve" smooth="yes"/>
+      <point x="113" y="762"/>
+      <point x="212" y="669"/>
+      <point x="224" y="669" type="curve" smooth="yes"/>
+      <point x="230" y="669"/>
+      <point x="293" y="717"/>
+      <point x="299" y="725" type="curve"/>
+      <point x="382" y="656"/>
+      <point x="568" y="473"/>
+      <point x="652" y="337" type="curve" smooth="yes"/>
+      <point x="678" y="295"/>
+      <point x="694" y="258"/>
+      <point x="694" y="230" type="curve" smooth="yes"/>
+      <point x="694" y="209"/>
+      <point x="607" y="202"/>
+      <point x="495" y="202" type="curve"/>
+      <point x="470" y="199"/>
+      <point x="448" y="165"/>
+      <point x="448" y="121" type="curve" smooth="yes"/>
+      <point x="448" y="42"/>
+      <point x="472" y="-2"/>
+      <point x="500" y="-2" type="curve" smooth="yes"/>
+      <point x="533" y="-2"/>
+      <point x="651" y="0"/>
+      <point x="651" y="0" type="curve" name="hr01"/>
+      <point x="711" y="0"/>
+      <point x="786" y="130"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-01-30 pkm des Based on absLamAlef, changed various APs.</string>
+  <key>public.markColor</key>
+  <string>1,0.827,0.6,1</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-2" width="204" />
+      <hstem pos="21" width="-21" />
+      <hstem pos="1102" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

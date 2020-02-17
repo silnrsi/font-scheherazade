@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absLamThreeDotsBelowFin" format="2">
+  <advance width="929"/>
+  <anchor x="300" y="800" name="diaA"/>
+  <anchor x="350" y="-632" name="diaB"/>
+  <anchor x="152" y="299" name="alef"/>
+  <anchor x="622" y="1030" name="above"/>
+  <anchor x="676" y="-528" name="below"/>
+  <anchor x="657" y="602" name="through"/>
+  <outline>
+    <component base="absLamFin"/>
+    <component base="_dot3d" xOffset="702" yOffset="-644"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

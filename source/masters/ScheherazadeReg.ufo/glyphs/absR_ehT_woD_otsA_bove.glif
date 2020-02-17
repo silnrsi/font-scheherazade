@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absRehTwoDotsAbove" format="2">
+  <unicode hex="0697"/>
+  <advance width="530"/>
+  <anchor x="150" y="-530" name="diaB"/>
+  <anchor x="229" y="720" name="diaA"/>
+  <anchor x="375" y="394" name="above"/>
+  <anchor x="375" y="-401" name="below"/>
+  <anchor x="365" y="-226" name="ring"/>
+  <anchor x="176" y="64" name="center"/>
+  <anchor x="332" y="-113" name="through"/>
+  <anchor x="232" y="504" name="alef"/>
+  <outline>
+    <component base="absReh"/>
+    <component base="_dot2h" xOffset="373" yOffset="536"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

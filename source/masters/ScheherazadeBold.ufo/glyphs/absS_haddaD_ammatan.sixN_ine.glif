@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absShaddaDammatan.sixNine" format="2">
+  <anchor x="196" y="945" name="_diaA"/>
+  <anchor x="151" y="1350" name="diaA"/>
+  <outline>
+    <component base="absShadda" xOffset="1" yOffset="-40"/>
+    <component base="_damma" xOffset="290" yOffset="1449"/>
+    <contour>
+      <point x="-37" y="1440" type="curve" smooth="yes"/>
+      <point x="57" y="1440"/>
+      <point x="122" y="1561"/>
+      <point x="122" y="1618" type="curve" smooth="yes"/>
+      <point x="122" y="1694"/>
+      <point x="-72" y="1812"/>
+      <point x="-93" y="1812" type="curve" smooth="yes"/>
+      <point x="-102" y="1812"/>
+      <point x="-145" y="1741"/>
+      <point x="-145" y="1721" type="curve" smooth="yes"/>
+      <point x="-145" y="1717"/>
+      <point x="-143" y="1714"/>
+      <point x="-140" y="1712" type="curve" smooth="yes"/>
+      <point x="-114" y="1695"/>
+      <point x="42" y="1591"/>
+      <point x="42" y="1551" type="curve" smooth="yes"/>
+      <point x="42" y="1543"/>
+      <point x="39" y="1528"/>
+      <point x="22" y="1528" type="curve" smooth="yes"/>
+      <point x="-15" y="1528"/>
+      <point x="-40" y="1566"/>
+      <point x="-40" y="1592" type="curve" smooth="yes" name="hr01"/>
+      <point x="-40" y="1654"/>
+      <point x="79" y="1758"/>
+      <point x="267" y="1828" type="curve"/>
+      <point x="244" y="1846"/>
+      <point x="175" y="1870"/>
+      <point x="136" y="1870" type="curve" smooth="yes"/>
+      <point x="58" y="1870"/>
+      <point x="-124" y="1672"/>
+      <point x="-124" y="1552" type="curve" smooth="yes"/>
+      <point x="-124" y="1487"/>
+      <point x="-94" y="1440"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-02 pkm des Created from components _damma and absShadda.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="1461" width="-21" />
+      <hstem pos="1870" width="-20" />
+      <vstem pos="-124" width="84" />
+      <vstem pos="-124" width="246" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

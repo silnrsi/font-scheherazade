@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathaMeem" format="2">
+  <anchor x="160" y="1027" name="_diaA"/>
+  <anchor x="130" y="1297" name="diaA"/>
+  <outline>
+    <component base="absFatha" xOffset="40" yOffset="7"/>
+    <component base="absSmallHighMeemIsolatedForm" xOffset="-67" yOffset="-61"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-26 pkm des Created from absFatha and absMeem components.</string>
+  </dict>
+  </lib>
+</glyph>

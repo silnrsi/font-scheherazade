@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefWavyHamzaAboveFin" format="2">
+  <advance width="389"/>
+  <anchor x="200" y="-179" name="diaB"/>
+  <anchor x="148" y="1144" name="diaA"/>
+  <anchor x="102" y="1464" name="_below"/>
+  <anchor x="102" y="1041" name="_above"/>
+  <anchor x="167" y="1043" name="above"/>
+  <anchor x="239" y="-50" name="below"/>
+  <anchor x="43" y="811" name="aboveLeft"/>
+  <anchor x="-8" y="684" name="alef"/>
+  <outline>
+    <component base="_wavyHamza" xOffset="102" yOffset="1212"/>
+    <component base="absAlefFin"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

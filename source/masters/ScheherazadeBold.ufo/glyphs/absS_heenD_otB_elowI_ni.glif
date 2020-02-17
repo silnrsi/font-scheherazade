@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absSheenDotBelowIni" format="2">
+  <advance width="1074"/>
+  <anchor x="368" y="622" name="alef"/>
+  <anchor x="484" y="716" name="diaA"/>
+  <anchor x="529" y="-236" name="diaB"/>
+  <anchor x="571" y="555" name="above"/>
+  <anchor x="586" y="-71" name="below"/>
+  <outline>
+    <component base="absSeenIni"/>
+    <component base="_dot3u" xOffset="554" yOffset="666"/>
+    <component base="_dot1" xOffset="562" yOffset="-233"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

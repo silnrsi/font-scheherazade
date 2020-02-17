@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absQafNoDots" format="2">
+  <unicode hex="066F"/>
+  <advance width="1104"/>
+  <anchor x="803" y="846" name="above"/>
+  <anchor x="795" y="-236" name="below"/>
+  <anchor x="515" y="954" name="diaA"/>
+  <anchor x="397" y="-372" name="diaB"/>
+  <anchor x="358" y="822" name="alef"/>
+  <outline>
+    <contour>
+      <point x="811" y="769" type="curve" smooth="yes"/>
+      <point x="737" y="769"/>
+      <point x="611" y="578"/>
+      <point x="611" y="404" type="curve" smooth="yes"/>
+      <point x="611" y="317"/>
+      <point x="691" y="272"/>
+      <point x="760" y="272" type="curve" smooth="yes"/>
+      <point x="811" y="272"/>
+      <point x="874" y="288"/>
+      <point x="917" y="348" type="curve"/>
+      <point x="931" y="327"/>
+      <point x="941" y="303"/>
+      <point x="941" y="262" type="curve" smooth="yes"/>
+      <point x="941" y="130"/>
+      <point x="784" y="0"/>
+      <point x="538" y="0" type="curve" smooth="yes"/>
+      <point x="295" y="0"/>
+      <point x="168" y="65"/>
+      <point x="168" y="252" type="curve" smooth="yes"/>
+      <point x="168" y="371"/>
+      <point x="249" y="485"/>
+      <point x="249" y="491" type="curve" smooth="yes"/>
+      <point x="249" y="499"/>
+      <point x="229" y="518"/>
+      <point x="221" y="518" type="curve" smooth="yes"/>
+      <point x="215" y="518"/>
+      <point x="80" y="336"/>
+      <point x="80" y="116" type="curve" smooth="yes"/>
+      <point x="80" y="-50"/>
+      <point x="188" y="-199"/>
+      <point x="452" y="-199" type="curve" smooth="yes"/>
+      <point x="633" y="-199"/>
+      <point x="876" y="-109"/>
+      <point x="977" y="97" type="curve" smooth="yes"/>
+      <point x="1006" y="156"/>
+      <point x="1024" y="276"/>
+      <point x="1024" y="350" type="curve" smooth="yes"/>
+      <point x="1024" y="559"/>
+      <point x="920" y="769"/>
+    </contour>
+    <contour>
+      <point x="832" y="510" type="curve"/>
+      <point x="812" y="488"/>
+      <point x="775" y="478"/>
+      <point x="761" y="478" type="curve" smooth="yes"/>
+      <point x="738" y="478"/>
+      <point x="709" y="495"/>
+      <point x="709" y="525" type="curve" smooth="yes"/>
+      <point x="709" y="546"/>
+      <point x="732" y="568"/>
+      <point x="754" y="568" type="curve" smooth="yes"/>
+      <point x="785" y="568"/>
+      <point x="814" y="535"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>1,0.827,0.6,1</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-199" width="199" />
+      <hstem pos="769" width="-20" />
+      <vstem pos="80" width="88" />
+      <vstem pos="941" width="83" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

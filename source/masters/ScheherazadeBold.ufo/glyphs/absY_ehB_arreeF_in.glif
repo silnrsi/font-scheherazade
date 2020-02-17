@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYehBarreeFin" format="2">
+  <advance width="1130"/>
+  <anchor x="511" y="45" name="above"/>
+  <anchor x="690" y="-805" name="below"/>
+  <anchor x="449" y="220" name="diaA"/>
+  <anchor x="518" y="-962" name="diaB"/>
+  <anchor x="215" y="-101" name="alef"/>
+  <outline>
+    <contour>
+      <point x="1435" y="-608" type="curve" smooth="yes"/>
+      <point x="1435" y="-602"/>
+      <point x="1434" y="-572"/>
+      <point x="1427" y="-572" type="curve" smooth="yes"/>
+      <point x="1408" y="-572"/>
+      <point x="1090" y="-586"/>
+      <point x="955" y="-586" type="curve" smooth="yes" name="hr01"/>
+      <point x="642" y="-586"/>
+      <point x="435" y="-579"/>
+      <point x="228" y="-554" type="curve" smooth="yes"/>
+      <point x="190" y="-550"/>
+      <point x="144" y="-538"/>
+      <point x="144" y="-512" type="curve" smooth="yes"/>
+      <point x="144" y="-451"/>
+      <point x="319" y="-403"/>
+      <point x="390" y="-390" type="curve" smooth="yes"/>
+      <point x="513" y="-368"/>
+      <point x="549" y="-341"/>
+      <point x="593" y="-307" type="curve" smooth="yes"/>
+      <point x="673" y="-245"/>
+      <point x="736" y="-131"/>
+      <point x="812" y="-70" type="curve" smooth="yes"/>
+      <point x="865" y="-27"/>
+      <point x="960" y="0"/>
+      <point x="1049" y="0" type="curve" smooth="yes"/>
+      <point x="1128" y="0" type="line" smooth="yes"/>
+      <point x="1178" y="0"/>
+      <point x="1183" y="72"/>
+      <point x="1183" y="103" type="curve" smooth="yes"/>
+      <point x="1183" y="134"/>
+      <point x="1178" y="205"/>
+      <point x="1128" y="205" type="curve" smooth="yes"/>
+      <point x="1049" y="205" type="line" smooth="yes"/>
+      <point x="961" y="205"/>
+      <point x="867" y="140"/>
+      <point x="777" y="15" type="curve" smooth="yes"/>
+      <point x="695" y="-100"/>
+      <point x="675" y="-118"/>
+      <point x="501" y="-164" type="curve" smooth="yes"/>
+      <point x="412" y="-188"/>
+      <point x="329" y="-221"/>
+      <point x="259" y="-280" type="curve" smooth="yes"/>
+      <point x="140" y="-381"/>
+      <point x="39" y="-512"/>
+      <point x="39" y="-575" type="curve" smooth="yes"/>
+      <point x="39" y="-604"/>
+      <point x="49" y="-702"/>
+      <point x="73" y="-724" type="curve" smooth="yes"/>
+      <point x="125" y="-771"/>
+      <point x="535" y="-787"/>
+      <point x="685" y="-787" type="curve" smooth="yes"/>
+      <point x="799" y="-787"/>
+      <point x="1010" y="-779"/>
+      <point x="1090" y="-759" type="curve" smooth="yes"/>
+      <point x="1201" y="-732"/>
+      <point x="1435" y="-616"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>1,0.827,0.6,1</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-787" width="201" />
+      <hstem pos="-572" width="-20" />
+      <hstem pos="0" width="205" />
+      <vstem pos="39" width="105" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

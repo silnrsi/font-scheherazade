@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternThreeMedium" format="2">
+  <advance width="450"/>
+  <anchor x="450" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <component base="absThreeMedium"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="154" width="-21" />
+      <hstem pos="708" width="-20" />
+      <hstem pos="722" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

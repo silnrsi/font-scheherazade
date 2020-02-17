@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absMaddahAbove" format="2">
+  <unicode hex="0653"/>
+  <anchor x="120" y="1072" name="_diaA"/>
+  <anchor x="90" y="1320" name="diaA"/>
+  <anchor x="133" y="1009" name="_above"/>
+  <outline>
+    <component base="_madda" xOffset="114" yOffset="1128"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1033" width="-21" />
+      <hstem pos="1073" width="109" />
+      <hstem pos="1235" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

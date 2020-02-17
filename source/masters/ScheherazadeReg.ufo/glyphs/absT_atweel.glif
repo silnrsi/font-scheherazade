@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTatweel" format="2">
+  <unicode hex="0640"/>
+  <advance width="250"/>
+  <anchor x="124" y="684" name="diaA"/>
+  <anchor x="111" y="-188" name="diaB"/>
+  <anchor x="119" y="299" name="alef"/>
+  <outline>
+    <contour>
+      <point x="310" y="63" type="curve" smooth="yes"/>
+      <point x="310" y="94"/>
+      <point x="310" y="125"/>
+      <point x="270" y="125" type="curve" smooth="yes"/>
+      <point x="-20" y="125" type="line" smooth="yes"/>
+      <point x="-60" y="125"/>
+      <point x="-60" y="94"/>
+      <point x="-60" y="63" type="curve" smooth="yes"/>
+      <point x="-60" y="32"/>
+      <point x="-60" y="0"/>
+      <point x="-20" y="0" type="curve" smooth="yes"/>
+      <point x="270" y="0" type="line"/>
+      <point x="310" y="0"/>
+      <point x="310" y="32"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="0" width="125" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

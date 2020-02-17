@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absMeemDotBelowIni" format="2">
+  <advance width="639"/>
+  <anchor x="228" y="816" name="diaA"/>
+  <anchor x="304" y="-152" name="diaB"/>
+  <anchor x="144" y="678" name="alef"/>
+  <anchor x="325" y="632" name="above"/>
+  <anchor x="366" y="0" name="below"/>
+  <outline>
+    <component base="absMeemIni"/>
+    <component base="_dot1" xOffset="340" yOffset="-169"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

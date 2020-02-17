@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEmptyCentreHighStop" format="2">
+  <unicode hex="06EB"/>
+  <anchor x="-15" y="937" name="_diaA"/>
+  <outline>
+    <contour>
+      <point x="113" y="1100" type="line"/>
+      <point x="0" y="1212" type="line"/>
+      <point x="-113" y="1100" type="line"/>
+      <point x="0" y="987" type="line"/>
+    </contour>
+    <contour>
+      <point x="84" y="1100" type="line"/>
+      <point x="0" y="1016" type="line"/>
+      <point x="-84" y="1100" type="line"/>
+      <point x="0" y="1184" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="1008" width="-21" />
+      <hstem pos="1212" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

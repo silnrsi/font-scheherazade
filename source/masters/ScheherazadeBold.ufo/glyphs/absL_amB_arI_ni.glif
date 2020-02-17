@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absLamBarIni" format="2">
+  <advance width="411"/>
+  <anchor x="178" y="1156" name="diaA"/>
+  <anchor x="100" y="-150" name="diaB"/>
+  <anchor x="-3" y="784" name="alef"/>
+  <anchor x="140" y="1111" name="above"/>
+  <anchor x="120" y="-50" name="below"/>
+  <anchor x="167" y="691" name="through"/>
+  <outline>
+    <component base="absLamIni"/>
+    <component base="_bar" xOffset="171" yOffset="691"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

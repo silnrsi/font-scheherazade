@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="aring" format="2">
+  <unicode hex="00E5"/>
+  <advance width="766"/>
+  <anchor x="354" y="768" name="above"/>
+  <outline>
+    <component base="a"/>
+    <component base="ring" xOffset="215" yOffset="8"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

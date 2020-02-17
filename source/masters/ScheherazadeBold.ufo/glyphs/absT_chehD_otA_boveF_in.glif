@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTchehDotAboveFin" format="2">
+  <advance width="1112"/>
+  <anchor x="462" y="892" name="diaA"/>
+  <anchor x="432" y="-919" name="diaB"/>
+  <anchor x="337" y="755" name="alef"/>
+  <anchor x="596" y="531" name="above"/>
+  <anchor x="555" y="-233" name="center"/>
+  <outline>
+    <component base="absHahFin"/>
+    <component base="_dot3d" xOffset="581" yOffset="-123"/>
+    <component base="_dot1" xOffset="599" yOffset="746"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

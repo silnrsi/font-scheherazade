@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathaDotAbove" format="2">
+  <unicode hex="08F5"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="90" y="1280" name="diaA"/>
+  <outline>
+    <component base="absFatha"/>
+    <component base="_dotCircular" xOffset="44" yOffset="1233"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1000" width="-21" />
+      <hstem pos="1243" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absOe" format="2">
+  <unicode hex="06C6"/>
+  <advance width="653"/>
+  <anchor x="273" y="-600" name="diaB"/>
+  <anchor x="370" y="700" name="diaA"/>
+  <anchor x="417" y="594" name="above"/>
+  <anchor x="484" y="-497" name="below"/>
+  <anchor x="266" y="-22" name="ring"/>
+  <anchor x="412" y="-90" name="through"/>
+  <anchor x="415" y="-94" name="center"/>
+  <anchor x="246" y="572" name="alef"/>
+  <outline>
+    <component base="absWaw"/>
+    <component base="_smallV" xOffset="389" yOffset="800"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-11 pkm mod Raised small v by 2- units.</string>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

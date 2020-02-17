@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="overscore" format="2">
+  <unicode hex="00AF"/>
+  <advance width="483"/>
+  <outline>
+    <contour>
+      <point x="483" y="848" type="line"/>
+      <point x="483" y="932" type="line"/>
+      <point x="0" y="932" type="line"/>
+      <point x="0" y="848" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="848" width="84" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

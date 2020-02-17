@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="period" format="2">
+  <unicode hex="002E"/>
+  <advance width="693"/>
+  <outline>
+    <contour>
+      <point x="488" y="107" type="line" smooth="yes"/>
+      <point x="488" y="176"/>
+      <point x="431" y="231"/>
+      <point x="362" y="231" type="curve" smooth="yes"/>
+      <point x="294" y="231"/>
+      <point x="237" y="176"/>
+      <point x="237" y="107" type="curve" smooth="yes"/>
+      <point x="237" y="38"/>
+      <point x="294" y="-18"/>
+      <point x="362" y="-18" type="curve" smooth="yes"/>
+      <point x="431" y="-18"/>
+      <point x="488" y="38"/>
+      <point x="488" y="107" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-18" width="249" />
+      <vstem pos="237" width="251" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

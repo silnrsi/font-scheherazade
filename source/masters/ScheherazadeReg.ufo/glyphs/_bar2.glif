@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_bar2" format="2">
+  <anchor x="0" y="63" name="_through"/>
+  <anchor x="0" y="63" name="_center"/>
+  <outline>
+    <component base="_bar" yOffset="63"/>
+    <component base="_bar" yOffset="-73"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-12" width="-21" />
+      <hstem pos="-27" width="64" />
+      <hstem pos="43" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

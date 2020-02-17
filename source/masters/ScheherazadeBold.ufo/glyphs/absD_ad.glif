@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDad" format="2">
+  <unicode hex="0636"/>
+  <advance width="1762"/>
+  <anchor x="550" y="594" name="diaA"/>
+  <anchor x="328" y="-670" name="diaB"/>
+  <anchor x="454" y="204" name="alef"/>
+  <anchor x="1079" y="583" name="above"/>
+  <anchor x="1247" y="-106" name="below"/>
+  <outline>
+    <component base="absSad"/>
+    <component base="_dot1" xOffset="1116" yOffset="772"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEndOfAyah.alt.2" format="2">
+  <advance width="1408"/>
+  <anchor x="485" y="0" name="digit"/>
+  <outline>
+    <component base="absEndOfAyah.alt"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-11-07 pkm mod Changed to use component absEndOfAyah.alt.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-176" width="-21" />
+      <hstem pos="1081" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

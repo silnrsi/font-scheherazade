@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absHamzaDamma.filled" format="2">
+  <anchor x="179" y="962" name="_diaA"/>
+  <anchor x="117" y="1745" name="diaA"/>
+  <anchor x="161" y="1358" name="_below"/>
+  <anchor x="160" y="924" name="_above"/>
+  <outline>
+    <component base="_hamza" xOffset="160" yOffset="1117"/>
+    <component base="_damma.filled" xOffset="181" yOffset="1424"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-09 pkm des Created using components.</string>
+  </dict>
+  </lib>
+</glyph>

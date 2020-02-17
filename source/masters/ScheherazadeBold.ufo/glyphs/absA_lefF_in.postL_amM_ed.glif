@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefFin.postLamMed" format="2">
+  <advance width="571"/>
+  <anchor x="393" y="-164" name="diaB"/>
+  <anchor x="693" y="233" name="entry"/>
+  <anchor x="326" y="-206" name="dia2B"/>
+  <anchor x="84" y="996" name="diaA"/>
+  <anchor x="6" y="685" name="aboveLeft"/>
+  <anchor x="84" y="927" name="above"/>
+  <anchor x="406" y="-154" name="below"/>
+  <outline>
+    <contour>
+      <point x="738" y="248" type="curve" smooth="yes"/>
+      <point x="738" y="261"/>
+      <point x="722" y="304"/>
+      <point x="713" y="320" type="curve" smooth="yes"/>
+      <point x="681" y="378"/>
+      <point x="616" y="471"/>
+      <point x="520" y="573" type="curve" smooth="yes"/>
+      <point x="395" y="707"/>
+      <point x="180" y="848"/>
+      <point x="106" y="848" type="curve" smooth="yes"/>
+      <point x="58" y="848"/>
+      <point x="49" y="752"/>
+      <point x="49" y="673" type="curve" smooth="yes"/>
+      <point x="49" y="579"/>
+      <point x="140" y="541"/>
+      <point x="230" y="489" type="curve" smooth="yes"/>
+      <point x="248" y="479"/>
+      <point x="281" y="463"/>
+      <point x="296" y="463" type="curve" smooth="yes"/>
+      <point x="330" y="463"/>
+      <point x="308" y="512"/>
+      <point x="349" y="512" type="curve" smooth="yes"/>
+      <point x="402" y="512"/>
+      <point x="639" y="326"/>
+      <point x="639" y="200" type="curve" smooth="yes"/>
+      <point x="639" y="189"/>
+      <point x="645" y="167"/>
+      <point x="666" y="167" type="curve" smooth="yes"/>
+      <point x="707" y="167"/>
+      <point x="721" y="190"/>
+      <point x="726" y="198" type="curve" smooth="yes"/>
+      <point x="735" y="211"/>
+      <point x="738" y="236"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-02-07 pkm des Created from part of absLamAlefFin</string>
+  <key>public.markColor</key>
+  <string>1,0.827,0.6,1</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="188" width="-21" />
+      <hstem pos="848" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

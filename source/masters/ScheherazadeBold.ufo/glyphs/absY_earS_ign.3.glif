@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYearSign.3" format="2">
+  <advance width="2199"/>
+  <anchor x="535" y="0" name="digit"/>
+  <outline>
+    <contour>
+      <point x="2169" y="190" type="curve" smooth="yes"/>
+      <point x="2169" y="206"/>
+      <point x="2159" y="217"/>
+      <point x="2145" y="217" type="curve" smooth="yes"/>
+      <point x="2127" y="217"/>
+      <point x="2109" y="204"/>
+      <point x="2040" y="166" type="curve" smooth="yes"/>
+      <point x="1835" y="55"/>
+      <point x="1634" y="21"/>
+      <point x="1227" y="21" type="curve" smooth="yes"/>
+      <point x="785" y="21"/>
+      <point x="515" y="103"/>
+      <point x="482" y="103" type="curve" smooth="yes" name="hr01"/>
+      <point x="445" y="103"/>
+      <point x="431" y="79"/>
+      <point x="411" y="29" type="curve" smooth="yes"/>
+      <point x="386" y="-32"/>
+      <point x="374" y="-61"/>
+      <point x="331" y="-61" type="curve" smooth="yes" name="hr02"/>
+      <point x="315" y="-61"/>
+      <point x="235" y="-54"/>
+      <point x="190" y="-54" type="curve" smooth="yes"/>
+      <point x="146" y="-54"/>
+      <point x="62" y="-215"/>
+      <point x="30" y="-272" type="curve"/>
+      <point x="34" y="-298"/>
+      <point x="53" y="-319"/>
+      <point x="66" y="-319" type="curve"/>
+      <point x="79" y="-306"/>
+      <point x="96" y="-288"/>
+      <point x="114" y="-272" type="curve" smooth="yes"/>
+      <point x="137" y="-251"/>
+      <point x="161" y="-232"/>
+      <point x="184" y="-232" type="curve" smooth="yes"/>
+      <point x="204" y="-232"/>
+      <point x="296" y="-240"/>
+      <point x="316" y="-240" type="curve" smooth="yes"/>
+      <point x="366" y="-240"/>
+      <point x="440" y="-174"/>
+      <point x="473" y="-96" type="curve"/>
+      <point x="692" y="-138"/>
+      <point x="879" y="-158"/>
+      <point x="1166" y="-158" type="curve" smooth="yes" name="hr03"/>
+      <point x="1650" y="-158"/>
+      <point x="1986" y="1"/>
+      <point x="2100" y="97" type="curve" smooth="yes"/>
+      <point x="2146" y="136"/>
+      <point x="2169" y="163"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-11-13 pkm mod Designed bold version.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-298" width="-21" />
+      <hstem pos="-232" width="171" />
+      <hstem pos="-158" width="179" />
+      <hstem pos="-158" width="261" />
+      <hstem pos="217" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absSadThreeDotsAboveFin" format="2">
+  <advance width="1769"/>
+  <anchor x="540" y="613" name="diaA"/>
+  <anchor x="363" y="-675" name="diaB"/>
+  <anchor x="456" y="268" name="alef"/>
+  <anchor x="1139" y="597" name="above"/>
+  <anchor x="1255" y="-174" name="below"/>
+  <outline>
+    <component base="absSadFin"/>
+    <component base="_dot3u" xOffset="1113" yOffset="695"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

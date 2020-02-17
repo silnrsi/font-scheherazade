@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFathaTwoDots" format="2">
+  <unicode hex="065E"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="90" y="1280" name="diaA"/>
+  <outline>
+    <component base="absFatha"/>
+    <contour>
+      <point x="57" y="1210" type="curve"/>
+      <point x="57" y="1212"/>
+      <point x="18" y="1243"/>
+      <point x="12" y="1243" type="curve" smooth="yes"/>
+      <point x="8" y="1243"/>
+      <point x="-20" y="1200"/>
+      <point x="-20" y="1196" type="curve" smooth="yes"/>
+      <point x="-20" y="1190"/>
+      <point x="20" y="1161"/>
+      <point x="25" y="1161" type="curve" smooth="yes"/>
+      <point x="31" y="1161"/>
+      <point x="57" y="1204"/>
+    </contour>
+    <contour>
+      <point x="244" y="1028" type="curve" smooth="yes"/>
+      <point x="244" y="1032"/>
+      <point x="205" y="1063"/>
+      <point x="199" y="1063" type="curve" smooth="yes"/>
+      <point x="195" y="1063"/>
+      <point x="166" y="1018"/>
+      <point x="166" y="1014" type="curve" smooth="yes"/>
+      <point x="166" y="1008"/>
+      <point x="207" y="979"/>
+      <point x="211" y="979" type="curve" smooth="yes"/>
+      <point x="217" y="979"/>
+      <point x="244" y="1024"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="1000" width="-21" />
+      <hstem pos="1243" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

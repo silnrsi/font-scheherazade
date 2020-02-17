@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absHehHatFin" format="2">
+  <advance width="985"/>
+  <anchor x="419" y="968" name="diaA"/>
+  <anchor x="356" y="-195" name="diaB"/>
+  <anchor x="189" y="827" name="alef"/>
+  <anchor x="443" y="744" name="above"/>
+  <anchor x="398" y="-125" name="below"/>
+  <outline>
+    <component base="absHehFin.knottedHigh"/>
+    <component base="_hat" xOffset="426" yOffset="940"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

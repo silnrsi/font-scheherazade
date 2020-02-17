@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEndOfAyah.alt" format="2">
+  <advance width="1408"/>
+  <anchor x="485" y="0" name="digit"/>
+  <outline>
+    <contour>
+      <point x="1292" y="442" type="curve" smooth="yes"/>
+      <point x="1292" y="117"/>
+      <point x="1029" y="-147"/>
+      <point x="704" y="-147" type="curve" smooth="yes"/>
+      <point x="379" y="-147"/>
+      <point x="115" y="117"/>
+      <point x="115" y="442" type="curve" smooth="yes"/>
+      <point x="115" y="767"/>
+      <point x="379" y="1030"/>
+      <point x="704" y="1030" type="curve" smooth="yes"/>
+      <point x="1029" y="1030"/>
+      <point x="1292" y="767"/>
+    </contour>
+    <contour>
+      <point x="1343" y="442" type="curve" smooth="yes"/>
+      <point x="1343" y="795"/>
+      <point x="1057" y="1081"/>
+      <point x="704" y="1081" type="curve" smooth="yes"/>
+      <point x="351" y="1081"/>
+      <point x="65" y="795"/>
+      <point x="65" y="442" type="curve" smooth="yes"/>
+      <point x="65" y="89"/>
+      <point x="351" y="-197"/>
+      <point x="704" y="-197" type="curve" smooth="yes"/>
+      <point x="1057" y="-197"/>
+      <point x="1343" y="89"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-11-07 pkm mod Bolded 10h10v.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-197" width="50" />
+      <hstem pos="1030" width="51" />
+      <vstem pos="65" width="50" />
+      <vstem pos="1292" width="51" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

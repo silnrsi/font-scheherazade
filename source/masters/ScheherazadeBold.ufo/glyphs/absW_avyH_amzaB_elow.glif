@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absWavyHamzaBelow" format="2">
+  <unicode hex="065F"/>
+  <anchor x="138" y="-416" name="_diaB"/>
+  <anchor x="164" y="-827" name="diaB"/>
+  <anchor x="138" y="-416" name="_diaBtailDown"/>
+  <anchor x="143" y="-430" name="_below"/>
+  <anchor x="143" y="-853" name="_above"/>
+  <outline>
+    <component base="_wavyHamza" xOffset="143" yOffset="-682"/>
+  </outline>
+  <guideline y="-500"/>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-23 pkm des Created using _wavyHamza component.</string>
+  </dict>
+  </lib>
+</glyph>

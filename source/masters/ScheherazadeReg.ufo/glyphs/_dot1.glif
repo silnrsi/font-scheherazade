@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_dot1" format="2">
+  <anchor x="2" y="131" name="_below"/>
+  <anchor x="2" y="-134" name="_above"/>
+  <anchor x="0" y="0" name="_center"/>
+  <outline>
+    <contour>
+      <point x="81" y="14" type="curve" smooth="yes"/>
+      <point x="81" y="20"/>
+      <point x="1" y="81"/>
+      <point x="-10" y="81" type="curve" smooth="yes"/>
+      <point x="-18" y="81"/>
+      <point x="-77" y="-7"/>
+      <point x="-77" y="-17" type="curve" smooth="yes"/>
+      <point x="-77" y="-27"/>
+      <point x="7" y="-84"/>
+      <point x="13" y="-84" type="curve" smooth="yes"/>
+      <point x="25" y="-84"/>
+      <point x="81" y="4"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-63" width="-21" />
+      <hstem pos="81" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

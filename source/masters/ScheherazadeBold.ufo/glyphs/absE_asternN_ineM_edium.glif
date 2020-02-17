@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternNineMedium" format="2">
+  <advance width="460"/>
+  <anchor x="460" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <component base="absNineMedium"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="304" width="-21" />
+      <hstem pos="463" width="152" />
+      <hstem pos="693" width="-20" />
+      <hstem pos="678" width="132" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

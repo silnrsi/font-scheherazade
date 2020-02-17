@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefMaksura" format="2">
+  <unicode hex="0649"/>
+  <advance width="1220"/>
+  <anchor x="445" y="584" name="alef"/>
+  <anchor x="402" y="711" name="diaA"/>
+  <anchor x="462" y="-439" name="diaB"/>
+  <anchor x="453" y="583" name="above"/>
+  <anchor x="434" y="-308" name="below"/>
+  <anchor x="433" y="-335" name="ring"/>
+  <outline>
+    <component base="absYeh.noDots"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

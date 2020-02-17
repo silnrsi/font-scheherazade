@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="igrave" format="2">
+  <unicode hex="00EC"/>
+  <advance width="430"/>
+  <anchor x="221" y="760" name="above"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="grave" xOffset="-73"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

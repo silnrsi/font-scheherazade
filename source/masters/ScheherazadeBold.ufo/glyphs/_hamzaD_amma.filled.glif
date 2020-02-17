@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_hamzaDamma.filled" format="2">
+  <anchor x="211" y="45" name="_above"/>
+  <anchor x="212" y="479" name="_below"/>
+  <outline>
+    <component base="_hamza" xOffset="211" yOffset="238"/>
+    <component base="_damma.filled" xOffset="-110" yOffset="78"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-01-18 pkm Created</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absOpenKasratan" format="2">
+  <unicode hex="08F2"/>
+  <anchor x="141" y="-560" name="_diaB"/>
+  <anchor x="165" y="-964" name="diaB"/>
+  <anchor x="141" y="-560" name="_diaBtailDown"/>
+  <anchor x="70" y="-943" name="_diaA"/>
+  <anchor x="191" y="-475" name="diaA"/>
+  <outline>
+    <component base="absFatha" xOffset="-50" yOffset="-1963"/>
+    <component base="absFatha" xOffset="101" yOffset="-1755"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-921" width="-21" />
+      <hstem pos="-553" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

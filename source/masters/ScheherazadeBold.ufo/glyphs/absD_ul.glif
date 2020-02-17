@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDul" format="2">
+  <unicode hex="068E"/>
+  <advance width="664"/>
+  <anchor x="243" y="-219" name="diaB"/>
+  <anchor x="202" y="765" name="alef"/>
+  <anchor x="289" y="887" name="diaA"/>
+  <anchor x="333" y="724" name="above"/>
+  <anchor x="343" y="-58" name="below"/>
+  <anchor x="372" y="59" name="ring"/>
+  <outline>
+    <component base="absDal"/>
+    <component base="_dot3u" xOffset="389" yOffset="864"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

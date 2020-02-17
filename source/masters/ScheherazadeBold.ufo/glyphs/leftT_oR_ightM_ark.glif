@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="leftToRightMark" format="2">
+  <unicode hex="200E"/>
+  <outline>
+    <contour>
+      <point x="100" y="1051" type="line"/>
+      <point x="-70" y="1151" type="line"/>
+      <point x="-70" y="951" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="972" width="-21" />
+      <hstem pos="1151" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

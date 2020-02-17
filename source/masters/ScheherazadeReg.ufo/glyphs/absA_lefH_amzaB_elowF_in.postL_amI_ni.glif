@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefHamzaBelowFin.postLamIni" format="2">
+  <advance width="535"/>
+  <anchor x="80" y="1260" name="diaA"/>
+  <anchor x="420" y="-100" name="diaB"/>
+  <anchor x="535" y="0" name="entry"/>
+  <anchor x="200" y="-136" name="dia2B"/>
+  <anchor x="74" y="1185" name="above"/>
+  <anchor x="446" y="-57" name="below"/>
+  <anchor x="-20" y="902" name="aboveLeft"/>
+  <outline>
+    <component base="absAlefFin.postLamIni"/>
+    <component base="_hamza" xOffset="445" yOffset="-298"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

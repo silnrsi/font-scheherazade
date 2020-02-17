@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFullStop" format="2">
+  <unicode hex="06D4"/>
+  <advance width="722"/>
+  <anchor x="352" y="790" name="diaA"/>
+  <anchor x="351" y="-254" name="diaB"/>
+  <outline>
+    <contour>
+      <point x="486" y="0" type="line"/>
+      <point x="536" y="205" type="line"/>
+      <point x="226" y="205" type="line"/>
+      <point x="174" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="0" width="205" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

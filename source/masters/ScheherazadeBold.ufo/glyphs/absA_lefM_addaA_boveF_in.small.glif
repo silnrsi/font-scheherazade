@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absAlefMaddaAboveFin.small" format="2">
+  <advance width="389"/>
+  <anchor x="200" y="-179" name="diaB"/>
+  <anchor x="148" y="1144" name="diaA"/>
+  <anchor x="171" y="962" name="_above"/>
+  <anchor x="167" y="1043" name="above"/>
+  <anchor x="239" y="-50" name="below"/>
+  <anchor x="43" y="811" name="aboveLeft"/>
+  <anchor x="-8" y="684" name="alef"/>
+  <outline>
+    <component base="_madda.small" xOffset="141" yOffset="1110"/>
+    <component base="absAlefFin"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

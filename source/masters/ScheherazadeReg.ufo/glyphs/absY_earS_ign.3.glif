@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYearSign.3" format="2">
+  <advance width="2062"/>
+  <anchor x="506" y="0" name="digit"/>
+  <outline>
+    <contour>
+      <point x="1113" y="-4" type="curve" smooth="yes"/>
+      <point x="1468" y="-4"/>
+      <point x="1749" y="34"/>
+      <point x="1903" y="122" type="curve" smooth="yes"/>
+      <point x="1980" y="166"/>
+      <point x="1994" y="181"/>
+      <point x="2006" y="181" type="curve" smooth="yes"/>
+      <point x="2023" y="181"/>
+      <point x="2032" y="174"/>
+      <point x="2032" y="156" type="curve" smooth="yes"/>
+      <point x="2032" y="142"/>
+      <point x="2008" y="104"/>
+      <point x="1988" y="91" type="curve" smooth="yes"/>
+      <point x="1760" y="-57"/>
+      <point x="1436" y="-132"/>
+      <point x="1054" y="-132" type="curve" smooth="yes"/>
+      <point x="809" y="-132"/>
+      <point x="598" y="-110"/>
+      <point x="389" y="-56" type="curve"/>
+      <point x="352" y="-145"/>
+      <point x="304" y="-186"/>
+      <point x="248" y="-186" type="curve" smooth="yes"/>
+      <point x="226" y="-186"/>
+      <point x="178" y="-176"/>
+      <point x="167" y="-176" type="curve" smooth="yes"/>
+      <point x="147" y="-176"/>
+      <point x="129" y="-185"/>
+      <point x="91" y="-217" type="curve" smooth="yes"/>
+      <point x="70" y="-236"/>
+      <point x="55" y="-248"/>
+      <point x="51" y="-254" type="curve"/>
+      <point x="43" y="-252"/>
+      <point x="36" y="-242"/>
+      <point x="30" y="-223" type="curve"/>
+      <point x="82" y="-130"/>
+      <point x="129" y="-57"/>
+      <point x="162" y="-57" type="curve" smooth="yes"/>
+      <point x="212" y="-57"/>
+      <point x="247" y="-61"/>
+      <point x="265" y="-61" type="curve" smooth="yes"/>
+      <point x="311" y="-61"/>
+      <point x="330" y="-40"/>
+      <point x="350" y="11" type="curve" smooth="yes"/>
+      <point x="368" y="57"/>
+      <point x="377" y="80"/>
+      <point x="402" y="80" type="curve" smooth="yes"/>
+      <point x="466" y="80"/>
+      <point x="759" y="-4"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-03-04 pkm mod Adjusted position of digit AP, and width of glyph.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-250" width="-21" />
+      <hstem pos="-146" width="146" />
+      <hstem pos="330" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

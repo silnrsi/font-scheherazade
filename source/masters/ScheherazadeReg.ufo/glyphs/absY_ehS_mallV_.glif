@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYehSmallV" format="2">
+  <unicode hex="06CE"/>
+  <advance width="1130"/>
+  <anchor x="436" y="584" name="alef"/>
+  <anchor x="393" y="711" name="diaA"/>
+  <anchor x="453" y="-406" name="diaB"/>
+  <anchor x="444" y="583" name="above"/>
+  <anchor x="410" y="-287" name="below"/>
+  <anchor x="424" y="-335" name="ring"/>
+  <outline>
+    <component base="absYeh.noDots"/>
+    <component base="_smallV" xOffset="447" yOffset="745"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

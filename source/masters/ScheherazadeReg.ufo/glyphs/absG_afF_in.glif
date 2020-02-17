@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absGafFin" format="2">
+  <advance width="1544"/>
+  <anchor x="220" y="728" name="alef"/>
+  <anchor x="600" y="-180" name="diaB"/>
+  <anchor x="508" y="836" name="diaA"/>
+  <anchor x="835" y="788" name="above"/>
+  <anchor x="814" y="-77" name="below"/>
+  <anchor x="1212" y="855" name="ring"/>
+  <anchor x="1302" y="710" name="center"/>
+  <outline>
+    <component base="absKehehFin"/>
+    <component base="_gafBar" xOffset="765" yOffset="788"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

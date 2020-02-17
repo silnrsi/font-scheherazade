@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternSix.urdu" format="2">
+  <advance width="801"/>
+  <outline>
+    <component base="absSix"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-90" width="-21" />
+      <hstem pos="489" width="156" />
+      <hstem pos="727" width="-20" />
+      <vstem pos="150" width="372" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

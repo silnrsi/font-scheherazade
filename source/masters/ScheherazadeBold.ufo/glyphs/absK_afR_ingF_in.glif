@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absKafRingFin" format="2">
+  <advance width="1704"/>
+  <anchor x="508" y="836" name="diaA"/>
+  <anchor x="600" y="-180" name="diaB"/>
+  <anchor x="220" y="754" name="alef"/>
+  <anchor x="946" y="830" name="above"/>
+  <anchor x="949" y="-77" name="below"/>
+  <anchor x="1331" y="838" name="ring"/>
+  <anchor x="1413" y="667" name="center"/>
+  <outline>
+    <component base="absKehehFin"/>
+    <component base="_ring" xOffset="1309" yOffset="697"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

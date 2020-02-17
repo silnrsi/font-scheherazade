@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absNgoehMed" format="2">
+  <advance width="944"/>
+  <anchor x="200" y="-150" name="diaB"/>
+  <anchor x="208" y="1104" name="diaA"/>
+  <anchor x="101" y="1001" name="alef"/>
+  <anchor x="130" y="872" name="above"/>
+  <anchor x="139" y="-48" name="below"/>
+  <anchor x="533" y="981" name="ring"/>
+  <anchor x="608" y="806" name="center"/>
+  <outline>
+    <component base="absKafMed"/>
+    <component base="_gafBar_dot2h" xOffset="60" yOffset="872"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

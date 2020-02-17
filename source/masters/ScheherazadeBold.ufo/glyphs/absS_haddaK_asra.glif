@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absShaddaKasra" format="2">
+  <anchor x="163" y="1005" name="_diaA"/>
+  <anchor x="150" y="1629" name="diaA"/>
+  <outline>
+    <component base="absFatha" xOffset="43" yOffset="-15"/>
+    <component base="absShadda" yOffset="239"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1552" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

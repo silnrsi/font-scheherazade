@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDalTwoVertBelowSmallTah.sen" format="2">
+  <advance width="623"/>
+  <anchor x="220" y="988" name="diaA"/>
+  <anchor x="168" y="865" name="alef"/>
+  <anchor x="265" y="-172" name="diaB"/>
+  <anchor x="319" y="47" name="ring"/>
+  <anchor x="266" y="807" name="above"/>
+  <anchor x="292" y="-84" name="below"/>
+  <outline>
+    <component base="absDal.sen"/>
+    <component base="_tah" xOffset="290" yOffset="911"/>
+    <component base="_dot2v" xOffset="291" yOffset="-302"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

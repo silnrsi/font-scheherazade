@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absHehGoalHamzaAboveFin" format="2">
+  <advance width="510"/>
+  <anchor x="245" y="616" name="diaA"/>
+  <anchor x="207" y="-300" name="diaB"/>
+  <anchor x="116" y="412" name="alef"/>
+  <anchor x="298" y="369" name="above"/>
+  <anchor x="289" y="-177" name="below"/>
+  <outline>
+    <component base="absHehGoalFin"/>
+    <component base="_hamza" xOffset="242" yOffset="554"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

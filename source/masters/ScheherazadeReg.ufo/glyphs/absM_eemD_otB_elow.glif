@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absMeemDotBelow" format="2">
+  <unicode hex="0766"/>
+  <advance width="582"/>
+  <anchor x="165" y="-660" name="diaB"/>
+  <anchor x="248" y="815" name="diaA"/>
+  <anchor x="140" y="616" name="alef"/>
+  <anchor x="297" y="546" name="above"/>
+  <anchor x="339" y="73" name="below"/>
+  <outline>
+    <component base="absMeem"/>
+    <component base="_dot1" xOffset="337" yOffset="-58"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absThousandsSeparator" format="2">
+  <unicode hex="066C"/>
+  <advance width="595"/>
+  <outline>
+    <contour>
+      <point x="419" y="617" type="line"/>
+      <point x="419" y="666"/>
+      <point x="388" y="750"/>
+      <point x="298" y="750" type="curve" smooth="yes"/>
+      <point x="245" y="750"/>
+      <point x="182" y="713"/>
+      <point x="182" y="636" type="curve" smooth="yes"/>
+      <point x="182" y="579"/>
+      <point x="238" y="548"/>
+      <point x="285" y="538" type="curve" smooth="yes"/>
+      <point x="291" y="538"/>
+      <point x="291" y="526"/>
+      <point x="291" y="519" type="curve" smooth="yes"/>
+      <point x="291" y="462"/>
+      <point x="229" y="406"/>
+      <point x="184" y="369" type="curve"/>
+      <point x="235" y="312" type="line"/>
+      <point x="333" y="382"/>
+      <point x="419" y="505"/>
+      <point x="419" y="617" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="333" width="-21" />
+      <hstem pos="750" width="-20" />
+      <vstem pos="182" width="237" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

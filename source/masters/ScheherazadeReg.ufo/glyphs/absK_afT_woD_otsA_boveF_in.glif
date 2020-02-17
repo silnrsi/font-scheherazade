@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absKafTwoDotsAboveFin" format="2">
+  <advance width="1333"/>
+  <anchor x="576" y="1036" name="diaA"/>
+  <anchor x="600" y="-300" name="diaB"/>
+  <anchor x="364" y="868" name="alef"/>
+  <anchor x="612" y="824" name="above"/>
+  <anchor x="1062" y="-107" name="below"/>
+  <outline>
+    <component base="absKafFin"/>
+    <component base="_dot2h" xOffset="610" yOffset="966"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

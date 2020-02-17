@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDoubleRightArrowheadAboveDot" format="2">
+  <unicode hex="08FC"/>
+  <anchor x="135" y="903" name="_diaA"/>
+  <anchor x="317" y="1350" name="diaA"/>
+  <outline>
+    <component base="_dotCircular" xOffset="-71" yOffset="1096"/>
+    <component base="absRightArrowheadAbove"/>
+    <component base="absRightArrowheadAbove" xOffset="230"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-11-06 pkm des Copied from Regular and used new bold components.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="991" width="-21" />
+      <hstem pos="1008" width="-21" />
+      <hstem pos="1196" width="-20" />
+      <hstem pos="1206" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

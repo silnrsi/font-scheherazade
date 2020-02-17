@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fourMedium" format="2">
+  <advance width="460"/>
+  <anchor x="460" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <contour>
+      <point x="439" y="277" type="line"/>
+      <point x="439" y="368" type="line"/>
+      <point x="385" y="368" type="line"/>
+      <point x="385" y="753" type="line"/>
+      <point x="332" y="753" type="line"/>
+      <point x="47" y="368" type="line"/>
+      <point x="47" y="277" type="line"/>
+      <point x="264" y="277" type="line"/>
+      <point x="264" y="142" type="line"/>
+      <point x="385" y="142" type="line"/>
+      <point x="385" y="277" type="line"/>
+    </contour>
+    <contour>
+      <point x="264" y="368" type="line"/>
+      <point x="90" y="368" type="line"/>
+      <point x="264" y="603" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-12-02 pkm mod Replaced Regular outline with full-sized digit scaled to 58.3%.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="163" width="-21" />
+      <hstem pos="277" width="91" />
+      <hstem pos="753" width="-20" />
+      <vstem pos="264" width="121" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

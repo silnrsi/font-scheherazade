@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absJehFin" format="2">
+  <advance width="647"/>
+  <anchor x="303" y="636" name="diaA"/>
+  <anchor x="282" y="-625" name="diaB"/>
+  <anchor x="448" y="343" name="above"/>
+  <anchor x="509" y="-481" name="below"/>
+  <anchor x="482" y="-304" name="ring"/>
+  <anchor x="156" y="0" name="center"/>
+  <anchor x="433" y="-135" name="through"/>
+  <anchor x="306" y="468" name="alef"/>
+  <outline>
+    <component base="absRehFin"/>
+    <component base="_dot3u" xOffset="478" yOffset="451"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absNyehMed" format="2">
+  <advance width="1095"/>
+  <anchor x="365" y="835" name="diaA"/>
+  <anchor x="474" y="-199" name="diaB"/>
+  <anchor x="249" y="756" name="alef"/>
+  <anchor x="568" y="629" name="above"/>
+  <anchor x="522" y="-50" name="below"/>
+  <outline>
+    <component base="absHahMed"/>
+    <component base="_dot2h" xOffset="547" yOffset="-192"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

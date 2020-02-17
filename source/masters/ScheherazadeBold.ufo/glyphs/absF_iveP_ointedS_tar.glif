@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFivePointedStar" format="2">
+  <unicode hex="066D"/>
+  <advance width="948"/>
+  <anchor x="476" y="990" name="diaA"/>
+  <anchor x="475" y="-120" name="diaB"/>
+  <outline>
+    <contour>
+      <point x="730" y="120" type="line"/>
+      <point x="634" y="417" type="line"/>
+      <point x="878" y="619" type="line"/>
+      <point x="576" y="611" type="line"/>
+      <point x="475" y="896" type="line"/>
+      <point x="369" y="608" type="line"/>
+      <point x="70" y="620" type="line"/>
+      <point x="312" y="419" type="line"/>
+      <point x="223" y="120" type="line"/>
+      <point x="475" y="303" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="141" width="-21" />
+      <hstem pos="896" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

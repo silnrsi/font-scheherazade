@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Scaron" format="2">
+  <unicode hex="0160"/>
+  <advance width="858"/>
+  <anchor x="437" y="1090" name="above"/>
+  <outline>
+    <component base="S"/>
+    <component base="caron" xOffset="195" yOffset="330"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

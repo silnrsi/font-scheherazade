@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFeh" format="2">
+  <unicode hex="0641"/>
+  <advance width="1446"/>
+  <anchor x="600" y="-210" name="diaB"/>
+  <anchor x="601" y="917" name="diaA"/>
+  <anchor x="372" y="684" name="alef"/>
+  <anchor x="1162" y="785" name="above"/>
+  <anchor x="1104" y="-6" name="below"/>
+  <outline>
+    <component base="absDotlessFeh"/>
+    <component base="_dot1" xOffset="1160" yOffset="919"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.805,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

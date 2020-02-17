@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDamma" format="2">
+  <unicode hex="064F"/>
+  <anchor x="150" y="1020" name="_diaA"/>
+  <anchor x="105" y="1515" name="diaA"/>
+  <anchor x="169" y="960" name="_above"/>
+  <outline>
+    <component base="_damma" xOffset="188" yOffset="1134"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1413" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

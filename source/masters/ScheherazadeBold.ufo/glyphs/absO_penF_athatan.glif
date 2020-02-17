@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absOpenFathatan" format="2">
+  <unicode hex="08F0"/>
+  <anchor x="121" y="1020" name="_diaA"/>
+  <anchor x="258" y="1574" name="diaA"/>
+  <outline>
+    <component base="absFatha" xOffset="1"/>
+    <component base="absFatha" xOffset="168" yOffset="284"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-26 pkm des Created from absFatha components.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1208" width="-21" />
+      <hstem pos="1223" width="-20" />
+      <hstem pos="1413" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

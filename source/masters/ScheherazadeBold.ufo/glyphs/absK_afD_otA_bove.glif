@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absKafDotAbove" format="2">
+  <unicode hex="06AC"/>
+  <advance width="1020"/>
+  <anchor x="404" y="1036" name="diaA"/>
+  <anchor x="483" y="-210" name="diaB"/>
+  <anchor x="216" y="830" name="alef"/>
+  <anchor x="398" y="794" name="above"/>
+  <anchor x="694" y="-65" name="below"/>
+  <outline>
+    <component base="absKaf"/>
+    <component base="_dot1" xOffset="423" yOffset="975"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-10 pkm mod Moved nukta over to match Regular, adjusted APs.</string>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

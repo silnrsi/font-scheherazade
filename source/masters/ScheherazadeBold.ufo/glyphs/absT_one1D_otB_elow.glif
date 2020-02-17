@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTone1DotBelow" format="2">
+  <unicode hex="08ED"/>
+  <anchor x="189" y="-819" name="diaB"/>
+  <anchor x="127" y="-508" name="_diaB"/>
+  <anchor x="127" y="-508" name="_diaBtailUp"/>
+  <anchor x="127" y="-508" name="_diaBtailDown"/>
+  <outline>
+    <contour>
+      <point x="252" y="-645" type="curve" smooth="yes"/>
+      <point x="252" y="-636"/>
+      <point x="157" y="-563"/>
+      <point x="144" y="-563" type="curve" smooth="yes"/>
+      <point x="135" y="-563"/>
+      <point x="66" y="-669"/>
+      <point x="66" y="-681" type="curve" smooth="yes"/>
+      <point x="66" y="-692"/>
+      <point x="165" y="-761"/>
+      <point x="173" y="-761" type="curve" smooth="yes"/>
+      <point x="186" y="-761"/>
+      <point x="252" y="-657"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-30 pkm des Created.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-740" width="-21" />
+      <hstem pos="-563" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

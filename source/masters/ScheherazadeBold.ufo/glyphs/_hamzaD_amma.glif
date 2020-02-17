@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="_hamzaDamma" format="2">
+  <anchor x="-161" y="-149" name="_above"/>
+  <outline>
+    <component base="_damma" xOffset="-142"/>
+    <component base="_hamza" xOffset="177" yOffset="167"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-49" width="-21" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

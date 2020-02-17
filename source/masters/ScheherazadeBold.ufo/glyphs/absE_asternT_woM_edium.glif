@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternTwoMedium" format="2">
+  <advance width="460"/>
+  <anchor x="460" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <component base="absTwoMedium"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-12-09 pkm mod Decomposed to allow use as a component.2013-12-03 pkm mod Used component absTwoMedium.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="310" width="-21" />
+      <hstem pos="691" width="-20" />
+      <hstem pos="695" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

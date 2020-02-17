@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absYehBarreeHamzaAboveFin" format="2">
+  <advance width="1130"/>
+  <anchor x="518" y="-962" name="diaB"/>
+  <anchor x="449" y="220" name="diaA"/>
+  <anchor x="215" y="-101" name="alef"/>
+  <anchor x="511" y="45" name="above"/>
+  <anchor x="690" y="-805" name="below"/>
+  <outline>
+    <component base="absYehBarreeFin"/>
+    <component base="_hamza" xOffset="486" yOffset="332"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

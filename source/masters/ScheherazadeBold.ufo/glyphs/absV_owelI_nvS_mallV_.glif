@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absVowelInvSmallV" format="2">
+  <unicode hex="065B"/>
+  <anchor x="207" y="949" name="_diaA"/>
+  <anchor x="209" y="1271" name="diaA"/>
+  <anchor x="217" y="1225" name="_below"/>
+  <anchor x="217" y="906" name="_above"/>
+  <outline>
+    <component base="_hat" xOffset="215" yOffset="1044"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1008" width="-21" />
+      <hstem pos="1206" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

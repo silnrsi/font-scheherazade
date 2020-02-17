@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternFiveSmall" format="2">
+  <advance width="323"/>
+  <anchor x="323" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <contour>
+      <point x="285" y="349" type="curve" smooth="yes"/>
+      <point x="285" y="419"/>
+      <point x="233" y="539"/>
+      <point x="177" y="600" type="curve"/>
+      <point x="114" y="543"/>
+      <point x="46" y="403"/>
+      <point x="46" y="318" type="curve" smooth="yes"/>
+      <point x="46" y="280"/>
+      <point x="63" y="233"/>
+      <point x="104" y="233" type="curve" smooth="yes"/>
+      <point x="127" y="233"/>
+      <point x="151" y="249"/>
+      <point x="159" y="268" type="curve"/>
+      <point x="167" y="249"/>
+      <point x="189" y="233"/>
+      <point x="210" y="233" type="curve" smooth="yes"/>
+      <point x="259" y="233"/>
+      <point x="285" y="304"/>
+    </contour>
+    <contour>
+      <point x="254" y="372" type="curve" smooth="yes"/>
+      <point x="254" y="341"/>
+      <point x="237" y="324"/>
+      <point x="208" y="324" type="curve" smooth="yes"/>
+      <point x="189" y="324"/>
+      <point x="172" y="339"/>
+      <point x="164" y="355" type="curve"/>
+      <point x="155" y="338"/>
+      <point x="136" y="329"/>
+      <point x="120" y="329" type="curve" smooth="yes"/>
+      <point x="97" y="329"/>
+      <point x="84" y="345"/>
+      <point x="84" y="367" type="curve" smooth="yes"/>
+      <point x="84" y="412"/>
+      <point x="145" y="471"/>
+      <point x="169" y="489" type="curve"/>
+      <point x="197" y="463"/>
+      <point x="254" y="407"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="233" width="91" />
+      <hstem pos="600" width="-20" />
+      <vstem pos="46" width="239" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

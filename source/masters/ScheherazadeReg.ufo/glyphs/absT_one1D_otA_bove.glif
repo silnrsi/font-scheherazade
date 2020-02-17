@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTone1DotAbove" format="2">
+  <unicode hex="08EA"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="93" y="1238" name="diaA"/>
+  <anchor x="106.443" y="1214.48" name="_below"/>
+  <anchor x="106.443" y="1023.36" name="_above"/>
+  <anchor x="105" y="1120" name="_center"/>
+  <outline>
+    <component base="_dot1" xScale="0.721519" yScale="0.721212" xOffset="105" yOffset="1120"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-08-30 pkm des Replaced path with _dot1 component @ 72%.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1018" width="-21" />
+      <hstem pos="1223" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

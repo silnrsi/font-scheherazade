@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absHamzaDamma" format="2">
+  <anchor x="179" y="962" name="_diaA"/>
+  <anchor x="117" y="1745" name="diaA"/>
+  <anchor x="160" y="1368" name="_below"/>
+  <anchor x="159" y="934" name="_above"/>
+  <outline>
+    <component base="_hamza" xOffset="159" yOffset="1127"/>
+    <component base="_damma" xOffset="215" yOffset="1466"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-09 pkm mod Replaced paths with components.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="1031" width="-21" />
+      <hstem pos="1751" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absNoonTwoDotsBelow" format="2">
+  <unicode hex="0767"/>
+  <advance width="954"/>
+  <anchor x="302" y="494" name="alef"/>
+  <anchor x="419" y="824" name="diaA"/>
+  <anchor x="424" y="-477" name="diaB"/>
+  <anchor x="423" y="441" name="above"/>
+  <anchor x="479" y="-378" name="below"/>
+  <anchor x="504" y="-250" name="ring"/>
+  <outline>
+    <component base="absNoonGhunna"/>
+    <component base="_dot2h" xOffset="466" yOffset="-542"/>
+    <component base="_dot1" xOffset="416" yOffset="640"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-10-11 pkm mod Lowered nukta and two dots below by 300 points to match lowered absNoonGhunna.</string>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

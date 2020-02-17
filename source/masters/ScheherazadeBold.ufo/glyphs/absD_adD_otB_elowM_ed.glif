@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absDadDotBelowMed" format="2">
+  <advance width="1254"/>
+  <anchor x="595" y="944" name="diaA"/>
+  <anchor x="417" y="-362" name="diaB"/>
+  <anchor x="383" y="698" name="alef"/>
+  <anchor x="650" y="615" name="above"/>
+  <anchor x="752" y="-135" name="below"/>
+  <outline>
+    <component base="absSadMed" xOffset="11"/>
+    <component base="_dot1" xOffset="744" yOffset="-246"/>
+    <component base="_dot1" xOffset="646" yOffset="772"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

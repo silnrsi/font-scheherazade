@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEmptyCentreLowStop" format="2">
+  <unicode hex="06EA"/>
+  <anchor x="0" y="-200" name="_diaB"/>
+  <anchor x="0" y="-150" name="_dia2B"/>
+  <anchor x="0" y="-200" name="_diaBtailUp"/>
+  <anchor x="0" y="-200" name="_diaBtailDown"/>
+  <outline>
+    <contour>
+      <point x="113" y="-352" type="line"/>
+      <point x="0" y="-240" type="line"/>
+      <point x="-113" y="-352" type="line"/>
+      <point x="0" y="-465" type="line"/>
+    </contour>
+    <contour>
+      <point x="84" y="-352" type="line"/>
+      <point x="0" y="-436" type="line"/>
+      <point x="-84" y="-352" type="line"/>
+      <point x="0" y="-268" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="-444" width="-21" />
+      <hstem pos="-240" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="periodcentered" format="2">
+  <unicode hex="00B7"/>
+  <advance width="431"/>
+  <outline>
+    <contour>
+      <point x="343" y="513" type="curve" smooth="yes"/>
+      <point x="343" y="582"/>
+      <point x="285" y="640"/>
+      <point x="215" y="640" type="curve" smooth="yes"/>
+      <point x="146" y="640"/>
+      <point x="88" y="582"/>
+      <point x="88" y="513" type="curve" smooth="yes"/>
+      <point x="88" y="442"/>
+      <point x="146" y="384"/>
+      <point x="215" y="384" type="curve" smooth="yes"/>
+      <point x="285" y="384"/>
+      <point x="343" y="442"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="">
+      <hstem pos="384" width="256" />
+      <vstem pos="88" width="255" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

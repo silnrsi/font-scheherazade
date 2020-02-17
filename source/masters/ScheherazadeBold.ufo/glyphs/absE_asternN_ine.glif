@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternNine" format="2">
+  <unicode hex="06F9"/>
+  <advance width="830"/>
+  <outline>
+    <component base="absNine"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-12-09 pkm mod Copied from absNine.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="369" width="225" />
+      <hstem pos="686" width="195" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

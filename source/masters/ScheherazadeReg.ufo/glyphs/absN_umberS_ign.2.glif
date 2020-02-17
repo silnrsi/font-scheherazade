@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absNumberSign.2" format="2">
+  <advance width="1366"/>
+  <anchor x="115" y="0" name="digit"/>
+  <outline>
+    <contour>
+      <point x="1315" y="97" type="curve" smooth="yes"/>
+      <point x="1315" y="120"/>
+      <point x="1311" y="128"/>
+      <point x="1302" y="128" type="curve" smooth="yes"/>
+      <point x="1292" y="128"/>
+      <point x="1203" y="110"/>
+      <point x="1195" y="110" type="curve" smooth="yes"/>
+      <point x="1178" y="110"/>
+      <point x="1174" y="120"/>
+      <point x="1174" y="155" type="curve" smooth="yes"/>
+      <point x="1174" y="200"/>
+      <point x="1183" y="264"/>
+      <point x="1235" y="384" type="curve"/>
+      <point x="1211" y="430" type="line"/>
+      <point x="1157" y="379"/>
+      <point x="1065" y="240"/>
+      <point x="1065" y="114" type="curve" smooth="yes"/>
+      <point x="1065" y="87"/>
+      <point x="1055" y="74"/>
+      <point x="1035" y="74" type="curve" smooth="yes"/>
+      <point x="1011" y="74"/>
+      <point x="884" y="64"/>
+      <point x="551" y="64" type="curve" smooth="yes"/>
+      <point x="311" y="64"/>
+      <point x="156" y="59"/>
+      <point x="89" y="48" type="curve" smooth="yes"/>
+      <point x="64" y="44"/>
+      <point x="51" y="31"/>
+      <point x="51" y="10" type="curve" smooth="yes"/>
+      <point x="51" y="-17"/>
+      <point x="61" y="-32"/>
+      <point x="81" y="-36" type="curve" smooth="yes"/>
+      <point x="142" y="-49"/>
+      <point x="332" y="-56"/>
+      <point x="647" y="-56" type="curve" smooth="yes"/>
+      <point x="972" y="-56"/>
+      <point x="1110" y="-48"/>
+      <point x="1199" y="-34" type="curve" smooth="yes"/>
+      <point x="1239" y="-28"/>
+      <point x="1261" y="-24"/>
+      <point x="1273" y="-16" type="curve" smooth="yes"/>
+      <point x="1291" y="-5"/>
+      <point x="1315" y="36"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-03-04 pkm mod Adjusted digit AP and width of glyph.2013-02-15 pkm mod Dereferenced component of absPageSign.</string>
+  </dict>
+  </lib>
+</glyph>

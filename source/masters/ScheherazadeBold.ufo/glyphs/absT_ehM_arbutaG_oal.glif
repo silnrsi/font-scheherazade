@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absTehMarbutaGoal" format="2">
+  <unicode hex="06C3"/>
+  <advance width="577"/>
+  <anchor x="145" y="715" name="alef"/>
+  <anchor x="264" y="833" name="diaA"/>
+  <anchor x="210" y="-201" name="diaB"/>
+  <anchor x="285" y="647" name="above"/>
+  <anchor x="284" y="-55" name="below"/>
+  <outline>
+    <component base="absAe"/>
+    <component base="_dot2h" xOffset="293" yOffset="829"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>

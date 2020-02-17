@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absEasternSevenMedium" format="2">
+  <advance width="460"/>
+  <anchor x="460" y="0" name="digit"/>
+  <anchor x="0" y="0" name="_digit"/>
+  <outline>
+    <component base="absSevenMedium"/>
+  </outline>
+  <lib>
+  <dict>
+    <key>note</key>
+    <string>2013-12-09 pkm mod Copied from absSeven and reduced to 66%.</string>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="317" width="-21" />
+      <hstem pos="683" width="-20" />
+      <hstem pos="687" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

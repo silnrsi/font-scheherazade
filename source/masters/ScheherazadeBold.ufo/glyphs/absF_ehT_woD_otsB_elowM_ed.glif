@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="absFehTwoDotsBelowMed" format="2">
+  <advance width="632"/>
+  <anchor x="248" y="-201" name="diaB"/>
+  <anchor x="242" y="781" name="alef"/>
+  <anchor x="331" y="970" name="diaA"/>
+  <anchor x="417" y="775" name="above"/>
+  <anchor x="296" y="-82" name="below"/>
+  <outline>
+    <component base="absDotlessFehMed"/>
+    <component base="_dot2h" xOffset="326" yOffset="-206"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>public.markColor</key>
+  <string>0.651,1,0.6,1</string>
+  </dict>
+  </lib>
+</glyph>
