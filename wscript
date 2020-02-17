@@ -11,7 +11,7 @@ APPNAME = "Scheherazade"
 # set the font family name
 FAMILY = APPNAME
 
-DESC_NAME = "Scheherazade"
+##DESC_NAME = "Scheherazade"
 DESC_SHORT = "A general-purpose Arabic script font"
 
 #DEBPKG = 'fonts-sil-scheherazade'
