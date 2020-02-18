@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSmallLowMeem" format="2">
   <unicode hex="06ED"/>
-  <anchor x="0" y="-280" name="_diaB"/>
   <anchor x="0" y="-150" name="_dia2B"/>
+  <anchor x="0" y="-280" name="_diaB"/>
   <anchor x="0" y="-280" name="_diaBtailDown"/>
-  <anchor x="51" y="-803" name="_diaA"/>
   <outline>
     <component base="absSmallHighMeemIsolatedForm" xOffset="21" yOffset="-1812"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-776" width="-21" />
-      <hstem pos="-479" width="-20" />
-      <hstem pos="-412" width="-20" />
-      <hstem pos="-387" width="-20" />
-      <hstem pos="-317" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

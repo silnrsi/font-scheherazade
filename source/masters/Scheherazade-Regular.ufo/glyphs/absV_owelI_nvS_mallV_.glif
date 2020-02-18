@@ -3,22 +3,13 @@
   <unicode hex="065B"/>
   <anchor x="208" y="952" name="_diaA"/>
   <anchor x="205" y="1308" name="diaA"/>
-  <anchor x="210" y="1256" name="_below"/>
-  <anchor x="210" y="937" name="_above"/>
   <outline>
     <component base="_hat" xOffset="208" yOffset="1075"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="1008" width="-21" />
-      <hstem pos="1206" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

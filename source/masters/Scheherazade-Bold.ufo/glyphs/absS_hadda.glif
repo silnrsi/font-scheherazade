@@ -47,20 +47,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-10-02 pkm mod Redrew as bold.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="974" width="129" />
-      <hstem pos="1041" width="62" />
-      <hstem pos="1041" width="131" />
-      <hstem pos="1357" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-10-02 pkm mod Redrew as bold.</string>
+    </dict>
   </lib>
 </glyph>

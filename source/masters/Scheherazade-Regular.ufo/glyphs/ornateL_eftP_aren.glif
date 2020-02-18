@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ornateLeftParen" format="2">
-  <unicode hex="FD3E"/>
   <advance width="842"/>
+  <unicode hex="FD3E"/>
   <outline>
     <contour>
       <point x="801" y="-408" type="curve"/>
@@ -517,18 +517,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-387" width="-21" />
-      <hstem pos="891" width="-20" />
-      <vstem pos="158" width="158" />
-      <vstem pos="461" width="157" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

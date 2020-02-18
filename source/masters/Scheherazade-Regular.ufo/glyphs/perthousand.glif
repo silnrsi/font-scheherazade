@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="perthousand" format="2">
-  <unicode hex="2030"/>
   <advance width="1630"/>
+  <unicode hex="2030"/>
   <outline>
     <contour>
       <point x="1604" y="383" type="curve" smooth="yes"/>
@@ -108,24 +108,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-4" width="-21" />
-      <hstem pos="-23" width="48" />
-      <hstem pos="483" width="47" />
-      <hstem pos="504" width="49" />
-      <hstem pos="1051" width="-20" />
-      <vstem pos="27" width="116" />
-      <vstem pos="549" width="117" />
-      <vstem pos="1008" width="41" />
-      <vstem pos="1104" width="117" />
-      <vstem pos="1563" width="41" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

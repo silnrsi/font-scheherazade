@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absMisraSign" format="2">
-  <unicode hex="060F"/>
   <advance width="979"/>
+  <unicode hex="060F"/>
   <anchor x="100" y="744" name="alef"/>
   <anchor x="354" y="1002" name="diaA"/>
   <anchor x="459" y="-945" name="diaB"/>
@@ -105,21 +105,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-778" width="-21" />
-      <hstem pos="-736" width="203" />
-      <hstem pos="-238" width="186" />
-      <hstem pos="785" width="-20" />
-      <vstem pos="78" width="95" />
-      <vstem pos="131" width="42" />
-      <vstem pos="817" width="87" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

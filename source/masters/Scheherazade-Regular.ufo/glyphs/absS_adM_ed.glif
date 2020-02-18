@@ -2,10 +2,10 @@
 <glyph name="absSadMed" format="2">
   <advance width="1210"/>
   <anchor x="639" y="489" name="above"/>
+  <anchor x="372" y="584" name="alef"/>
   <anchor x="681" y="-87" name="below"/>
   <anchor x="584" y="800" name="diaA"/>
   <anchor x="406" y="-312" name="diaB"/>
-  <anchor x="372" y="584" name="alef"/>
   <outline>
     <contour>
       <point x="1278" y="63" type="curve" smooth="yes"/>
@@ -81,18 +81,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-120" width="-21" />
-      <hstem pos="0" width="113" />
-      <hstem pos="0" width="125" />
-      <hstem pos="340" width="149" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

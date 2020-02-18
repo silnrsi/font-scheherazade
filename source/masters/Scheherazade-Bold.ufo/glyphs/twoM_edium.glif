@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="twoMedium" format="2">
   <advance width="460"/>
-  <anchor x="460" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="460" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="428" y="315" type="line"/>
@@ -38,19 +38,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-02 pkm mod Replaced Regular outline with full-sized digit scaled to 58.3%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="142" width="115" />
-      <hstem pos="649" width="104" />
-      <vstem pos="273" width="127" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-02 pkm mod Replaced Regular outline with full-sized digit scaled to 58.3%.</string>
+    </dict>
   </lib>
 </glyph>

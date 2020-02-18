@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSmallKasra" format="2">
   <unicode hex="061A"/>
+  <anchor x="145" y="-560" name="_dia2B"/>
   <anchor x="145" y="-560" name="_diaB"/>
-  <anchor x="162" y="-771" name="diaB"/>
-  <anchor x="145" y="-560" name="_diaBtailUp"/>
   <anchor x="145" y="-560" name="_diaBtailDown"/>
+  <anchor x="145" y="-560" name="_diaBtailUp"/>
+  <anchor x="162" y="-771" name="diaB"/>
   <outline>
     <contour>
       <point x="245" y="-616" type="curve"/>
@@ -36,16 +37,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-757" width="-21" />
-      <hstem pos="-553" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

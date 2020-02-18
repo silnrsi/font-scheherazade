@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absQafThreeDotsAbove" format="2">
-  <unicode hex="06A8"/>
   <advance width="1104"/>
+  <unicode hex="06A8"/>
   <anchor x="358" y="822" name="alef"/>
-  <anchor x="515" y="954" name="diaA"/>
+  <anchor x="459" y="1367" name="diaA"/>
   <anchor x="397" y="-372" name="diaB"/>
-  <anchor x="803" y="846" name="above"/>
-  <anchor x="795" y="-236" name="below"/>
   <outline>
     <component base="absQafNoDots"/>
     <component base="_dot3u" xOffset="848" yOffset="942"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

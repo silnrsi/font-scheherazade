@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absTone2DotsBelow" format="2">
   <unicode hex="08EE"/>
-  <anchor x="172" y="-814" name="diaB"/>
+  <anchor x="128" y="-526" name="_dia2B"/>
   <anchor x="128" y="-526" name="_diaB"/>
-  <anchor x="128" y="-526" name="_diaBtailUp"/>
   <anchor x="128" y="-526" name="_diaBtailDown"/>
+  <anchor x="128" y="-526" name="_diaBtailUp"/>
+  <anchor x="172" y="-814" name="diaB"/>
   <outline>
     <contour>
       <point x="149" y="-680" type="curve" smooth="yes"/>
@@ -36,19 +37,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-08-30 pkm des Created.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-775" width="-21" />
-      <hstem pos="-598" width="-20" />
-      <hstem pos="-528" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-30 pkm des Created.</string>
+    </dict>
   </lib>
 </glyph>

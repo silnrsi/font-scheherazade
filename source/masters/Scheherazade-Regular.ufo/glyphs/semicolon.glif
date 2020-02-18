@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="semicolon" format="2">
-  <unicode hex="003B"/>
   <advance width="430"/>
+  <unicode hex="003B"/>
   <outline>
     <contour>
       <point x="319" y="631" type="curve" smooth="yes"/>
@@ -43,18 +43,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-237" width="-21" />
-      <hstem pos="-2" width="-21" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="713" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

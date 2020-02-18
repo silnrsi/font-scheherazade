@@ -47,20 +47,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-351" width="-21" />
-      <hstem pos="-43" width="240" />
-      <hstem pos="0" width="-21" />
-      <hstem pos="309" width="208" />
-      <vstem pos="168" width="96" />
-      <vstem pos="243" width="229" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

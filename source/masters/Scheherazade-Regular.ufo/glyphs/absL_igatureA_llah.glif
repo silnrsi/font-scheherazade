@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLigatureAllah" format="2">
-  <unicode hex="FDF2"/>
   <advance width="1323"/>
+  <unicode hex="FDF2"/>
   <outline>
     <contour>
       <point x="853" y="788" type="curve" smooth="yes"/>
@@ -182,25 +182,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="15" width="-21" />
-      <hstem pos="0" width="125" />
-      <hstem pos="1594" width="-20" />
-      <vstem pos="534" width="64" />
-      <vstem pos="587" width="70" />
-      <vstem pos="598" width="151" />
-      <vstem pos="657" width="191" />
-      <vstem pos="749" width="76" />
-      <vstem pos="825" width="150" />
-      <vstem pos="848" width="50" />
-      <vstem pos="898" width="157" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

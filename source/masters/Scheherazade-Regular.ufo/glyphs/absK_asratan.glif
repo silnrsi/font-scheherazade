@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKasratan" format="2">
   <unicode hex="064D"/>
+  <anchor x="141" y="-560" name="_dia2B"/>
   <anchor x="141" y="-560" name="_diaB"/>
-  <anchor x="165" y="-975" name="diaB"/>
-  <anchor x="141" y="-560" name="_diaBtailUp"/>
   <anchor x="141" y="-560" name="_diaBtailDown"/>
-  <anchor x="170" y="-920" name="_diaA"/>
-  <anchor x="140" y="-495" name="diaA"/>
+  <anchor x="141" y="-560" name="_diaBtailUp"/>
+  <anchor x="165" y="-975" name="diaB"/>
   <outline>
     <component base="absFatha" xOffset="50" yOffset="-1940"/>
     <component base="absFatha" xOffset="50" yOffset="-1775"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-921" width="-21" />
-      <hstem pos="-553" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

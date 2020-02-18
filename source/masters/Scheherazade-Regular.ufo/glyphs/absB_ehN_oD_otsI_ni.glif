@@ -2,13 +2,13 @@
 <glyph name="absBehNoDotsIni" format="2">
   <advance width="360"/>
   <anchor x="168" y="504" name="above"/>
+  <anchor x="148" y="640" name="alef"/>
   <anchor x="118" y="-50" name="below"/>
-  <anchor x="176" y="91" name="ring"/>
   <anchor x="155" y="752" name="diaA"/>
   <anchor x="105" y="-249" name="diaB"/>
-  <anchor x="148" y="640" name="alef"/>
-  <anchor x="105" y="-125" name="diaBtailUp"/>
   <anchor x="105" y="-750" name="diaBtailDown"/>
+  <anchor x="105" y="-125" name="diaBtailUp"/>
+  <anchor x="176" y="91" name="ring"/>
   <outline>
     <contour>
       <point x="248" y="264" type="curve" smooth="yes"/>
@@ -40,16 +40,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="125" />
-      <hstem pos="453" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

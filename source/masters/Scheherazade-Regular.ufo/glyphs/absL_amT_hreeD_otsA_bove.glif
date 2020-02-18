@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLamThreeDotsAbove" format="2">
-  <unicode hex="06B7"/>
   <advance width="885"/>
-  <anchor x="400" y="-330" name="diaB"/>
-  <anchor x="360" y="1036" name="diaA"/>
+  <unicode hex="06B7"/>
   <anchor x="200" y="601" name="alef"/>
-  <anchor x="597" y="1143" name="above"/>
-  <anchor x="668" y="-236" name="below"/>
-  <anchor x="648" y="691" name="through"/>
+  <anchor x="164" y="1248" name="diaA"/>
+  <anchor x="400" y="-330" name="diaB"/>
   <outline>
     <component base="absLam"/>
     <component base="_dot3u" xOffset="597" yOffset="1374"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

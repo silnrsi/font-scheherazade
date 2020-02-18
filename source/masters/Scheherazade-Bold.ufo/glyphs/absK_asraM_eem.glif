@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKasraMeem" format="2">
+  <anchor x="154" y="-451" name="_dia2B"/>
   <anchor x="154" y="-451" name="_diaB"/>
-  <anchor x="180" y="-927" name="diaB"/>
   <anchor x="154" y="-451" name="_diaBtailDown"/>
-  <anchor x="6" y="-974" name="_diaA"/>
-  <anchor x="229" y="-552" name="diaA"/>
+  <anchor x="180" y="-927" name="diaB"/>
   <outline>
     <component base="absSmallHighMeemIsolatedForm" xOffset="-24" yOffset="-1983"/>
     <component base="absFatha" xOffset="139" yOffset="-1842"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-08-09 pkm des Created using components absSmallHighMeemIsolatedForm and absFatha.</string>
-  </dict>
+    <dict>
+      <key>note</key>
+      <string>2013-08-09 pkm des Created using components absSmallHighMeemIsolatedForm and absFatha.</string>
+    </dict>
   </lib>
 </glyph>

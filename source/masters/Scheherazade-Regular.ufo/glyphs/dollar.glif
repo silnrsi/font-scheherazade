@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dollar" format="2">
-  <unicode hex="0024"/>
   <advance width="772"/>
+  <unicode hex="0024"/>
   <outline>
     <contour>
       <point x="694" y="254" type="curve" smooth="yes"/>
@@ -61,22 +61,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-96" width="-21" />
-      <hstem pos="-23" width="52" />
-      <hstem pos="989" width="51" />
-      <hstem pos="1110" width="-20" />
-      <vstem pos="82" width="117" />
-      <vstem pos="348" width="49" />
-      <vstem pos="348" width="297" />
-      <vstem pos="575" width="119" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

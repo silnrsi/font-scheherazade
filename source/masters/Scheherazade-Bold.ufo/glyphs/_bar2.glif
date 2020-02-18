@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_bar2" format="2">
-  <anchor x="0" y="-70" name="_through"/>
-  <anchor x="0" y="-70" name="_center"/>
+  <anchor x="0" y="0" name="_center"/>
+  <anchor x="0" y="0" name="_through"/>
   <outline>
     <component base="_bar" yOffset="-70"/>
     <component base="_bar" yOffset="70"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-01-18 pkm Created</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-29" width="62" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-01-18 pkm Created</string>
+    </dict>
   </lib>
 </glyph>

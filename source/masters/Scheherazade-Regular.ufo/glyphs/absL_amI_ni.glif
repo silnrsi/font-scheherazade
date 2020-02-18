@@ -2,11 +2,11 @@
 <glyph name="absLamIni" format="2">
   <advance width="336"/>
   <anchor x="120" y="1111" name="above"/>
+  <anchor x="12" y="784" name="alef"/>
   <anchor x="120" y="-50" name="below"/>
-  <anchor x="137" y="691" name="through"/>
   <anchor x="132" y="1156" name="diaA"/>
   <anchor x="100" y="-150" name="diaB"/>
-  <anchor x="12" y="784" name="alef"/>
+  <anchor x="137" y="691" name="through"/>
   <outline>
     <contour>
       <point x="249" y="371" type="curve" smooth="yes"/>
@@ -44,18 +44,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="125" />
-      <hstem pos="1061" width="-20" />
-      <vstem pos="106" width="76" />
-      <vstem pos="205" width="47" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

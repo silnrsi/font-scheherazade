@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_bar" format="2">
-  <anchor x="0" y="0" name="_through"/>
   <anchor x="0" y="0" name="_center"/>
+  <anchor x="0" y="0" name="_through"/>
   <outline>
     <contour>
       <point x="195" y="25" type="line"/>
@@ -23,17 +23,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-12" width="-21" />
-      <hstem pos="-27" width="64" />
-      <hstem pos="43" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

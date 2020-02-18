@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPercentSign" format="2">
-  <unicode hex="066A"/>
   <advance width="913"/>
+  <unicode hex="066A"/>
   <outline>
     <contour>
       <point x="729" y="1020" type="line"/>
@@ -39,16 +39,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-231" width="-21" />
-      <hstem pos="1020" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

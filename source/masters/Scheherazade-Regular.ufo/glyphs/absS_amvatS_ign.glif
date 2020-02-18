@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSamvatSign" format="2">
-  <unicode hex="0604"/>
   <advance width="1670"/>
+  <unicode hex="0604"/>
   <anchor x="285" y="0" name="digit"/>
   <outline>
     <contour>
@@ -86,30 +86,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-682" width="-21" />
-      <hstem pos="-572" width="-21" />
-      <hstem pos="-244" width="-20" />
-      <hstem pos="-47" width="71" />
-      <hstem pos="-47" width="94" />
-      <hstem pos="-38" width="289" />
-      <hstem pos="59" width="112" />
-      <hstem pos="126" width="125" />
-      <hstem pos="308" width="127" />
-      <hstem pos="353" width="142" />
-      <hstem pos="415" width="-20" />
-      <hstem pos="982" width="129" />
-      <hstem pos="1210" width="-20" />
-      <hstem pos="1377" width="-20" />
-      <vstem pos="425" width="57" />
-      <vstem pos="706" width="57" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

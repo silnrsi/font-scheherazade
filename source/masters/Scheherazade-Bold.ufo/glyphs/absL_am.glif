@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLam" format="2">
-  <unicode hex="0644"/>
   <advance width="935"/>
+  <unicode hex="0644"/>
   <anchor x="624" y="1143" name="above"/>
+  <anchor x="200" y="601" name="alef"/>
   <anchor x="668" y="-236" name="below"/>
-  <anchor x="648" y="691" name="through"/>
   <anchor x="360" y="1036" name="diaA"/>
   <anchor x="400" y="-371" name="diaB"/>
-  <anchor x="200" y="601" name="alef"/>
+  <anchor x="648" y="691" name="through"/>
   <outline>
     <contour>
       <point x="815" y="121" type="curve" smooth="yes"/>
@@ -58,21 +58,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-249" width="204" />
-      <hstem pos="1104" width="-20" />
-      <vstem pos="78" width="99" />
-      <vstem pos="575" width="156" />
-      <vstem pos="732" width="83" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

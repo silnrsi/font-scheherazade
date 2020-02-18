@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternZeroSmall" format="2">
   <advance width="323"/>
-  <anchor x="323" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="323" y="0" name="digit"/>
   <outline>
     <component base="absZeroSmall"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="394" width="-21" />
-      <hstem pos="452" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

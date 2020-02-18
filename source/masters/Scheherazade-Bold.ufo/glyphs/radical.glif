@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="radical" format="2">
-  <unicode hex="221A"/>
   <advance width="937"/>
+  <unicode hex="221A"/>
   <outline>
     <contour>
       <point x="937" y="915" type="line"/>
@@ -18,18 +18,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-07 pkm des Copied from Regular and redrawn/adjusted.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-79" width="-21" />
-      <hstem pos="1004" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-07 pkm des Copied from Regular and redrawn/adjusted.</string>
+    </dict>
   </lib>
 </glyph>

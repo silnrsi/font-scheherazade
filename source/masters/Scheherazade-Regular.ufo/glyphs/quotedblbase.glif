@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="quotedblbase" format="2">
-  <unicode hex="201E"/>
   <advance width="684"/>
+  <unicode hex="201E"/>
   <outline>
     <contour>
       <point x="641" y="-2" type="curve" smooth="yes"/>
@@ -53,18 +53,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-221" width="-21" />
-      <hstem pos="-18" width="168" />
-      <hstem pos="13" width="-21" />
-      <hstem pos="15" width="-21" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

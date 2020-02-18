@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAlefFin.postLamIni" format="2">
   <advance width="608"/>
+  <anchor x="74" y="1185" name="above"/>
+  <anchor x="-47" y="860" name="aboveLeft"/>
+  <anchor x="446" y="-85" name="below"/>
   <anchor x="200" y="-181" name="dia2B"/>
   <anchor x="80" y="1260" name="diaA"/>
-  <anchor x="74" y="1185" name="above"/>
-  <anchor x="446" y="-85" name="below"/>
-  <anchor x="-47" y="860" name="aboveLeft"/>
   <anchor x="420" y="-152" name="diaB"/>
   <anchor x="564" y="0" name="entry"/>
   <outline>
@@ -55,21 +55,13 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-01-30 pkm des Based on absLamAlef, changed various APs.</string>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-2" width="204" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="1102" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-01-30 pkm des Based on absLamAlef, changed various APs.</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

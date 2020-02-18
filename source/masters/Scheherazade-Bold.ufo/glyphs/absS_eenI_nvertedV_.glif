@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSeenInvertedV" format="2">
-  <unicode hex="077E"/>
   <advance width="1530"/>
+  <unicode hex="077E"/>
   <anchor x="416" y="244" name="alef"/>
-  <anchor x="548" y="490" name="diaA"/>
+  <anchor x="521" y="893" name="diaA"/>
   <anchor x="288" y="-670" name="diaB"/>
-  <anchor x="1028" y="528" name="above"/>
-  <anchor x="1093" y="-88" name="below"/>
   <outline>
     <component base="absSeen"/>
     <component base="_hat" xOffset="1038" yOffset="757"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

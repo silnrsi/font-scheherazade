@@ -2,18 +2,16 @@
 <glyph name="absTahTwoDotsAboveMed" format="2">
   <advance width="881"/>
   <anchor x="12" y="800" name="alef"/>
+  <anchor x="175" y="1231" name="diaA"/>
   <anchor x="402" y="-201" name="diaB"/>
-  <anchor x="175" y="1235" name="diaA"/>
-  <anchor x="497" y="559" name="above"/>
-  <anchor x="442" y="-77" name="below"/>
   <outline>
     <component base="absTahMed"/>
     <component base="_dot2h" xOffset="495" yOffset="701"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="logicalnot" format="2">
-  <unicode hex="00AC"/>
   <advance width="922"/>
+  <unicode hex="00AC"/>
   <outline>
     <contour>
       <point x="862" y="281" type="line"/>
@@ -13,17 +13,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="302" width="-21" />
-      <hstem pos="535" width="90" />
-      <vstem pos="772" width="90" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

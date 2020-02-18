@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absStartOfRubElHizb" format="2">
-  <unicode hex="06DE"/>
   <advance width="1631"/>
+  <unicode hex="06DE"/>
   <outline>
     <contour>
       <point x="1564" y="444" type="line"/>
@@ -554,87 +554,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-438" width="-21" />
-      <hstem pos="-31" width="334" />
-      <hstem pos="382" width="125" />
-      <hstem pos="652" width="96" />
-      <hstem pos="860" width="58" />
-      <hstem pos="1347" width="-20" />
-      <vstem pos="342" width="59" />
-      <vstem pos="512" width="96" />
-      <vstem pos="625" width="52" />
-      <vstem pos="753" width="125" />
-      <vstem pos="956" width="52" />
-      <vstem pos="1024" width="101" />
-      <vstem pos="1233" width="71" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="-438" width="-21" />
-      <hstem pos="-31" width="71" />
-      <hstem pos="135" width="102" />
-      <hstem pos="329" width="231" />
-      <hstem pos="586" width="332" />
-      <hstem pos="1347" width="-20" />
-      <vstem pos="342" width="59" />
-      <vstem pos="512" width="96" />
-      <vstem pos="625" width="52" />
-      <vstem pos="700" width="233" />
-      <vstem pos="956" width="52" />
-      <vstem pos="1024" width="101" />
-      <vstem pos="1233" width="71" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="-438" width="-21" />
-      <hstem pos="-31" width="71" />
-      <hstem pos="135" width="102" />
-      <hstem pos="329" width="231" />
-      <hstem pos="652" width="96" />
-      <hstem pos="860" width="58" />
-      <hstem pos="1347" width="-20" />
-      <vstem pos="342" width="59" />
-      <vstem pos="512" width="96" />
-      <vstem pos="625" width="52" />
-      <vstem pos="700" width="233" />
-      <vstem pos="956" width="52" />
-      <vstem pos="1024" width="101" />
-      <vstem pos="1233" width="71" />
-    </hintset>
-    <hintset pointTag="hr04">
-      <hstem pos="-438" width="-21" />
-      <hstem pos="-31" width="334" />
-      <hstem pos="382" width="125" />
-      <hstem pos="586" width="332" />
-      <hstem pos="1347" width="-20" />
-      <vstem pos="342" width="59" />
-      <vstem pos="512" width="96" />
-      <vstem pos="625" width="52" />
-      <vstem pos="753" width="125" />
-      <vstem pos="956" width="52" />
-      <vstem pos="1024" width="101" />
-      <vstem pos="1233" width="71" />
-    </hintset>
-    <hintset pointTag="hr05">
-      <hstem pos="-438" width="-21" />
-      <hstem pos="-31" width="71" />
-      <hstem pos="135" width="102" />
-      <hstem pos="329" width="231" />
-      <hstem pos="586" width="332" />
-      <hstem pos="1347" width="-20" />
-      <vstem pos="342" width="59" />
-      <vstem pos="512" width="96" />
-      <vstem pos="625" width="52" />
-      <vstem pos="700" width="233" />
-      <vstem pos="956" width="52" />
-      <vstem pos="1024" width="101" />
-      <vstem pos="1233" width="71" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

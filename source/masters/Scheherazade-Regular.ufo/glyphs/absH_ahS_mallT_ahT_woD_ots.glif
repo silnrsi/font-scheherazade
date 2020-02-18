@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absHahSmallTahTwoDots" format="2">
-  <unicode hex="076F"/>
   <advance width="1053"/>
-  <anchor x="400" y="-825" name="diaB"/>
-  <anchor x="408" y="750" name="diaA"/>
+  <unicode hex="076F"/>
   <anchor x="280" y="616" name="alef"/>
-  <anchor x="525" y="443" name="above"/>
-  <anchor x="526" y="-200" name="center"/>
+  <anchor x="408" y="750" name="diaA"/>
+  <anchor x="400" y="-825" name="diaB"/>
   <outline>
     <component base="absHah"/>
     <component base="_dot2h_tah" xOffset="544" yOffset="-470"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-06 pkm mod Adjusted position of SmallTahTwoDots away from bowl of Hah.</string>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>note</key>
+      <string>2013-11-06 pkm mod Adjusted position of SmallTahTwoDots away from bowl of Hah.</string>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

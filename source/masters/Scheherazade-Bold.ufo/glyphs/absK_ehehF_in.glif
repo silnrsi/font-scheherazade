@@ -2,12 +2,12 @@
 <glyph name="absKehehFin" format="2">
   <advance width="1704"/>
   <anchor x="946" y="830" name="above"/>
+  <anchor x="220" y="754" name="alef"/>
   <anchor x="949" y="-77" name="below"/>
-  <anchor x="1331" y="838" name="ring"/>
+  <anchor x="1413" y="667" name="center"/>
   <anchor x="508" y="836" name="diaA"/>
   <anchor x="600" y="-180" name="diaB"/>
-  <anchor x="220" y="754" name="alef"/>
-  <anchor x="1413" y="667" name="center"/>
+  <anchor x="1331" y="838" name="ring"/>
   <outline>
     <contour>
       <point x="1771" y="103" type="curve" smooth="yes"/>
@@ -87,21 +87,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-27" width="220" />
-      <hstem pos="0" width="193" />
-      <hstem pos="1090" width="-20" />
-      <vstem pos="72" width="86" />
-      <vstem pos="1103" width="87" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

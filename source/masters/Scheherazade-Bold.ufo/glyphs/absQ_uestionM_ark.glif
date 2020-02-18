@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absQuestionMark" format="2">
-  <unicode hex="061F"/>
   <advance width="695"/>
+  <unicode hex="061F"/>
   <anchor x="308" y="1185" name="diaA"/>
   <anchor x="308" y="-195" name="diaB"/>
   <outline>
@@ -65,22 +65,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-97" width="208" />
-      <hstem pos="574" width="401" />
-      <hstem pos="908" width="67" />
-      <vstem pos="74" width="181" />
-      <vstem pos="256" width="210" />
-      <vstem pos="323" width="75" />
-      <vstem pos="380" width="245" />
-      <vstem pos="495" width="130" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSamvatSign" format="2">
-  <unicode hex="0604"/>
   <advance width="1813"/>
+  <unicode hex="0604"/>
   <anchor x="315" y="0" name="digit"/>
   <outline>
     <contour>
@@ -86,21 +86,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-13 pkm mod Designed bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-157" width="185" />
-      <hstem pos="230" width="214" />
-      <hstem pos="230" width="333" />
-      <hstem pos="291" width="200" />
-      <hstem pos="795" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-13 pkm mod Designed bold version.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternThree" format="2">
-  <unicode hex="06F3"/>
   <advance width="830"/>
+  <unicode hex="06F3"/>
   <outline>
     <component base="absThree" xOffset="-1"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-09 pkm mod Copied from absThree.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="494" width="243" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-09 pkm mod Copied from absThree.</string>
+    </dict>
   </lib>
 </glyph>

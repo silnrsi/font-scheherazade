@@ -2,11 +2,11 @@
 <glyph name="absDalFin" format="2">
   <advance width="762"/>
   <anchor x="468" y="814" name="above"/>
+  <anchor x="348" y="812" name="alef"/>
   <anchor x="417" y="-50" name="below"/>
-  <anchor x="315" y="91" name="ring"/>
   <anchor x="299" y="1000" name="diaA"/>
   <anchor x="300" y="-180" name="diaB"/>
-  <anchor x="348" y="812" name="alef"/>
+  <anchor x="315" y="91" name="ring"/>
   <outline>
     <contour>
       <point x="829" y="63" type="curve" smooth="yes"/>
@@ -59,17 +59,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="125" />
-      <hstem pos="18" width="129" />
-      <hstem pos="754" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

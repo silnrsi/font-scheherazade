@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="germandbls" format="2">
-  <unicode hex="00DF"/>
   <advance width="909"/>
+  <unicode hex="00DF"/>
   <outline>
     <contour>
       <point x="859" y="318" type="line" smooth="yes"/>
@@ -61,36 +61,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="0" width="238" />
-      <hstem pos="564" width="63" />
-      <hstem pos="1000" width="73" />
-      <vstem pos="126" width="215" />
-      <vstem pos="373" width="164" />
-      <vstem pos="574" width="215" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="0" width="238" />
-      <hstem pos="564" width="63" />
-      <hstem pos="1000" width="73" />
-      <vstem pos="126" width="215" />
-      <vstem pos="373" width="164" />
-      <vstem pos="643" width="216" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="12" width="-21" />
-      <hstem pos="564" width="63" />
-      <hstem pos="1000" width="73" />
-      <vstem pos="126" width="215" />
-      <vstem pos="373" width="164" />
-      <vstem pos="643" width="216" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

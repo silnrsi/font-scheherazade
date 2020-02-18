@@ -33,18 +33,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-01-21 pkm mod Used glyph from Reg, which is better designed and further left; more likely to be correct (more recent); existing was not bold.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="32" width="-21" />
-      <hstem pos="681" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-01-21 pkm mod Used glyph from Reg, which is better designed and further left; more likely to be correct (more recent); existing was not bold.</string>
+    </dict>
   </lib>
 </glyph>

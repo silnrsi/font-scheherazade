@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPageSign" format="2">
-  <unicode hex="0603"/>
   <advance width="1452"/>
+  <unicode hex="0603"/>
   <anchor x="157" y="0" name="digit"/>
   <outline>
     <contour>
@@ -64,21 +64,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-13 pkm mod Designed bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-54" width="-21" />
-      <hstem pos="-54" width="91" />
-      <hstem pos="39" width="182" />
-      <hstem pos="393" width="192" />
-      <vstem pos="1281" width="114" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-13 pkm mod Designed bold version.</string>
+    </dict>
   </lib>
 </glyph>

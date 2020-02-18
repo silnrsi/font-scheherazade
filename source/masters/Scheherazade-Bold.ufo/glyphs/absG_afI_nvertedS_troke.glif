@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absGafInvertedStroke" format="2">
-  <unicode hex="08B0"/>
   <advance width="1639"/>
-  <anchor x="585" y="-299" name="diaB"/>
-  <anchor x="540" y="800" name="diaA"/>
+  <unicode hex="08B0"/>
   <anchor x="200" y="616" name="alef"/>
-  <anchor x="919" y="710" name="above"/>
-  <anchor x="1355" y="734" name="ring"/>
-  <anchor x="922" y="-185" name="below"/>
-  <anchor x="1456" y="542" name="center"/>
+  <anchor x="540" y="800" name="diaA"/>
+  <anchor x="585" y="-299" name="diaB"/>
   <outline>
     <component base="absKeheh"/>
     <component base="_gafBarCenter" xOffset="1056" yOffset="470"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

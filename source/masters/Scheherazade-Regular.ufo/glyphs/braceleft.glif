@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="braceleft" format="2">
-  <unicode hex="007B"/>
   <advance width="737"/>
+  <unicode hex="007B"/>
   <outline>
     <contour>
       <point x="584" y="-305" type="line"/>
@@ -46,18 +46,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-311" width="-21" />
-      <hstem pos="1071" width="-20" />
-      <vstem pos="303" width="113" />
-      <vstem pos="338" width="111" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

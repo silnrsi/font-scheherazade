@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKasraDotBelow" format="2">
   <unicode hex="08F6"/>
+  <anchor x="107" y="-549" name="_dia2B"/>
   <anchor x="107" y="-549" name="_diaB"/>
-  <anchor x="175" y="-932" name="diaB"/>
   <anchor x="107" y="-549" name="_diaBtailDown"/>
-  <anchor x="126" y="-753" name="_diaA"/>
-  <anchor x="96" y="-483" name="diaA"/>
+  <anchor x="175" y="-932" name="diaB"/>
   <outline>
-    <component base="absFatha" xOffset="6" yOffset="-1773"/>
     <contour>
       <point x="113" y="-825" type="curve" smooth="yes"/>
       <point x="113" y="-868"/>
@@ -22,20 +20,14 @@
       <point x="147" y="-748"/>
       <point x="113" y="-782"/>
     </contour>
+    <component base="absFatha" xOffset="6" yOffset="-1773"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-08-09 pkm des Created bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-902" width="154" />
-      <vstem pos="113" width="154" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-09 pkm des Created bold version.</string>
+    </dict>
   </lib>
 </glyph>

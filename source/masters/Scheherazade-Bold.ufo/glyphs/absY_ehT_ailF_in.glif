@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absYehTailFin" format="2">
   <advance width="1103"/>
+  <anchor x="469" y="148" name="alef"/>
   <anchor x="473" y="329" name="diaA"/>
   <anchor x="357" y="-732" name="diaB"/>
-  <anchor x="469" y="148" name="alef"/>
   <outline>
     <contour>
       <point x="1115" y="0" type="line"/>
@@ -80,22 +80,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-566" width="199" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="12" width="193" />
-      <vstem pos="49" width="107" />
-      <vstem pos="593" width="406" />
-      <vstem pos="894" width="105" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

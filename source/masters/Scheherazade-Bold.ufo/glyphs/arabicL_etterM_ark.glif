@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arabicLetterMark" format="2">
-  <unicode hex="061C"/>
   <advance width="1024"/>
+  <unicode hex="061C"/>
   <outline>
     <contour>
       <point x="993" y="932" type="line" smooth="yes"/>
@@ -450,186 +450,12 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-05-29 pkm mod Changed from AL to ALM.2013-05-28 pkm des Added new glyph.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="844" width="149" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="844" width="149" />
-    </hintset>
-    <hintset pointTag="hr04">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="657" width="205" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr05">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="631" width="45" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr06">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="479" width="197" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr07">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr08">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="844" width="149" />
-    </hintset>
-    <hintset pointTag="hr09">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr10">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="631" width="45" />
-      <vstem pos="844" width="149" />
-    </hintset>
-    <hintset pointTag="hr11">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="479" width="197" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr12">
-      <hstem pos="0" width="63" />
-      <hstem pos="150" width="63" />
-      <hstem pos="299" width="66" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="330" width="346" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr13">
-      <hstem pos="0" width="321" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="657" width="205" />
-      <vstem pos="930" width="63" />
-    </hintset>
-    <hintset pointTag="hr14">
-      <hstem pos="0" width="321" />
-      <hstem pos="451" width="63" />
-      <hstem pos="600" width="64" />
-      <hstem pos="750" width="63" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="430" width="246" />
-      <vstem pos="780" width="82" />
-      <vstem pos="930" width="63" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-05-29 pkm mod Changed from AL to ALM.
+2013-05-28 pkm des Added new glyph.</string>
+    </dict>
   </lib>
 </glyph>

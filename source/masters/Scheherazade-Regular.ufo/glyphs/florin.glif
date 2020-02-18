@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="florin" format="2">
-  <unicode hex="0192"/>
   <advance width="772"/>
+  <unicode hex="0192"/>
   <outline>
     <contour>
       <point x="754" y="963" type="curve" smooth="yes"/>
@@ -66,16 +66,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-303" width="-21" />
-      <hstem pos="1044" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

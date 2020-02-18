@@ -2,10 +2,10 @@
 <glyph name="absHahMed" format="2">
   <advance width="1095"/>
   <anchor x="568" y="629" name="above"/>
+  <anchor x="249" y="756" name="alef"/>
   <anchor x="522" y="-50" name="below"/>
   <anchor x="365" y="835" name="diaA"/>
   <anchor x="474" y="-199" name="diaB"/>
-  <anchor x="249" y="756" name="alef"/>
   <outline>
     <contour>
       <point x="1162" y="103" type="curve" smooth="yes"/>
@@ -88,19 +88,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="205" />
-      <hstem pos="289" width="158" />
-      <hstem pos="414" width="193" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPlaceOfSajdah" format="2">
-  <unicode hex="06E9"/>
   <advance width="750"/>
+  <unicode hex="06E9"/>
   <anchor x="376" y="1258" name="diaA"/>
   <anchor x="377" y="-262" name="diaB"/>
   <outline>
@@ -102,18 +102,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="21" width="-21" />
-      <hstem pos="20" width="52" />
-      <hstem pos="1100" width="-20" />
-      <vstem3 stem3List="219,227,303,143,303,227" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

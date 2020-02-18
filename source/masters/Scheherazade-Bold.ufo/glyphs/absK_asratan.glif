@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKasratan" format="2">
   <unicode hex="064D"/>
+  <anchor x="141" y="-560" name="_dia2B"/>
   <anchor x="141" y="-560" name="_diaB"/>
-  <anchor x="165" y="-975" name="diaB"/>
-  <anchor x="141" y="-560" name="_diaBtailUp"/>
   <anchor x="141" y="-560" name="_diaBtailDown"/>
-  <anchor x="192" y="-714" name="_diaA"/>
-  <anchor x="162" y="-635" name="diaA"/>
+  <anchor x="141" y="-560" name="_diaBtailUp"/>
+  <anchor x="165" y="-975" name="diaB"/>
   <outline>
     <component base="absFatha" xOffset="72" yOffset="-1734"/>
     <component base="absFatha" xOffset="72" yOffset="-1925"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-08-09 pkm des Created using component absFatha.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-921" width="-21" />
-      <hstem pos="-553" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-09 pkm des Created using component absFatha.</string>
+    </dict>
   </lib>
 </glyph>

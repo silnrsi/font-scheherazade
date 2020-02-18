@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ellipsis" format="2">
-  <unicode hex="2026"/>
   <advance width="1545"/>
+  <unicode hex="2026"/>
   <outline>
     <contour>
       <point x="1413" y="107" type="line" smooth="yes"/>
@@ -50,16 +50,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-18" width="249" />
-      <vstem3 stem3List="132,250,648,249,1163,250" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ampersand" format="2">
-  <unicode hex="0026"/>
   <advance width="1202"/>
+  <unicode hex="0026"/>
   <outline>
     <contour>
       <point x="1153" y="184" type="curve"/>
@@ -90,20 +90,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-25" width="93" />
-      <hstem pos="-25" width="117" />
-      <hstem pos="991" width="53" />
-      <vstem pos="57" width="156" />
-      <vstem pos="307" width="129" />
-      <vstem pos="686" width="88" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

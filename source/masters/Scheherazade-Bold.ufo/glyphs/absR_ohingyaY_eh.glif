@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absRohingyaYeh" format="2">
-  <unicode hex="08AC"/>
   <advance width="1004"/>
-  <anchor x="438" y="-535" name="diaB"/>
-  <anchor x="492" y="898" name="diaA"/>
+  <unicode hex="08AC"/>
   <anchor x="328" y="806" name="alef"/>
-  <anchor x="498" y="-46" name="_below"/>
-  <anchor x="534" y="-369" name="_above"/>
-  <anchor x="530" y="-192" name="_center"/>
+  <anchor x="492" y="898" name="diaA"/>
+  <anchor x="438" y="-535" name="diaB"/>
   <outline>
-    <component base="_dot2h" xOffset="528" yOffset="-192"/>
     <contour>
       <point x="983" y="223" type="curve"/>
       <point x="976" y="230"/>
@@ -77,23 +73,14 @@
       <point x="577" y="477"/>
       <point x="665" y="434"/>
     </contour>
+    <component base="_dot2h" xOffset="528" yOffset="-192"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-19" width="144" />
-      <hstem pos="-19" width="224" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="477" width="203" />
-      <vstem pos="321" width="106" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

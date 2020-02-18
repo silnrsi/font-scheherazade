@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absYehTwoDotsBelowNoonAbove" format="2">
-  <unicode hex="08BA"/>
   <advance width="1220"/>
-  <anchor x="462" y="-439" name="diaB"/>
-  <anchor x="402" y="711" name="diaA"/>
-  <anchor x="453" y="583" name="above"/>
-  <anchor x="434" y="-308" name="below"/>
-  <anchor x="433" y="-335" name="ring"/>
-  <anchor x="445" y="584" name="alef"/>
+  <unicode hex="08BA"/>
+  <anchor x="411" y="1244" name="diaA"/>
+  <anchor x="470" y="-631" name="diaB"/>
   <outline>
     <component base="absYeh.noDots"/>
     <component base="_noon" xOffset="446" yOffset="889"/>
     <component base="_dot2h" xOffset="464" yOffset="-454"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.6,0.997,1,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
   </lib>
 </glyph>

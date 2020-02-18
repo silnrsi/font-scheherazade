@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="threesuperior" format="2">
-  <unicode hex="00B3"/>
   <advance width="516"/>
+  <unicode hex="00B3"/>
   <outline>
     <contour>
       <point x="466" y="597" type="line" smooth="yes"/>
@@ -49,27 +49,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="382" width="339" />
-      <hstem pos="930" width="88" />
-      <vstem pos="283" width="147" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="382" width="59" />
-      <hstem pos="685" width="333" />
-      <vstem pos="329" width="137" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="382" width="123" />
-      <hstem pos="685" width="333" />
-      <vstem pos="329" width="137" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

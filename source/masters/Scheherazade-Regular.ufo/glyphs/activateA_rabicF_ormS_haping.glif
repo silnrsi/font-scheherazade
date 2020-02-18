@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="activateArabicFormShaping" format="2">
-  <unicode hex="206D"/>
   <advance width="1024"/>
+  <unicode hex="206D"/>
   <outline>
     <contour>
       <point x="993" y="932" type="curve" smooth="yes"/>
@@ -475,24 +475,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="63" />
-      <hstem pos="0" width="150" />
-      <hstem pos="129" width="170" />
-      <hstem pos="281" width="172" />
-      <hstem pos="432" width="227" />
-      <hstem pos="899" width="66" />
-      <vstem pos="31" width="63" />
-      <vstem pos="451" width="239" />
-      <vstem pos="670" width="182" />
-      <vstem pos="930" width="63" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

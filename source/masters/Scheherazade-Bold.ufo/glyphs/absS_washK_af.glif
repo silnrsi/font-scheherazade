@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSwashKaf" format="2">
-  <unicode hex="06AA"/>
   <advance width="1772"/>
+  <unicode hex="06AA"/>
+  <anchor x="257" y="824" name="alef"/>
   <anchor x="568" y="1020" name="diaA"/>
   <anchor x="644" y="-210" name="diaB"/>
-  <anchor x="257" y="824" name="alef"/>
   <outline>
     <contour>
       <point x="1700" y="356" type="curve" smooth="yes"/>
@@ -57,21 +57,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="205" />
-      <hstem pos="322" width="185" />
-      <hstem pos="680" width="218" />
-      <vstem pos="330" width="138" />
-      <vstem pos="1605" width="95" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSmallHighUprightRectangularZero" format="2">
   <unicode hex="06E0"/>
-  <anchor x="105" y="967" name="_diaA"/>
+  <anchor x="-8" y="952" name="_diaA"/>
   <outline>
     <contour>
       <point x="218" y="1144" type="curve" smooth="yes"/>
@@ -33,16 +33,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="679" width="-21" />
-      <hstem pos="756" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

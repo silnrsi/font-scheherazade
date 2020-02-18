@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absRay" format="2">
-  <unicode hex="0608"/>
   <advance width="1003"/>
+  <unicode hex="0608"/>
   <outline>
     <contour>
       <point x="758" y="158" type="line"/>
@@ -87,19 +87,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-07 pkm des Copied from Regular and redrawn.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-407" width="165" />
-      <hstem pos="-5" width="406" />
-      <vstem pos="129" width="84" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-07 pkm des Copied from Regular and redrawn.</string>
+    </dict>
   </lib>
 </glyph>

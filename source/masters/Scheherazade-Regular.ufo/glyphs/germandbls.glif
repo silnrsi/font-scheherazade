@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="germandbls" format="2">
-  <unicode hex="00DF"/>
   <advance width="773"/>
+  <unicode hex="00DF"/>
   <outline>
     <contour>
       <point x="723" y="318" type="curve" smooth="yes"/>
@@ -60,21 +60,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="12" width="-21" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="1022" width="51" />
-      <vstem pos="126" width="126" />
-      <vstem pos="324" width="399" />
-      <vstem pos="535" width="126" />
-      <vstem pos="594" width="129" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

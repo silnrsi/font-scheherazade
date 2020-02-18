@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSadThreeDotsBelowIni" format="2">
   <advance width="1287"/>
-  <anchor x="529" y="900" name="diaA"/>
-  <anchor x="428" y="-339" name="diaB"/>
   <anchor x="407" y="721" name="alef"/>
-  <anchor x="613" y="602" name="above"/>
-  <anchor x="729" y="-106" name="below"/>
+  <anchor x="529" y="900" name="diaA"/>
+  <anchor x="441" y="-687" name="diaB"/>
   <outline>
     <component base="absSadIni"/>
     <component base="_dot3d" xOffset="782" yOffset="-227"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

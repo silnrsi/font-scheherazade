@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="twosuperior" format="2">
-  <unicode hex="00B2"/>
   <advance width="524"/>
+  <unicode hex="00B2"/>
   <outline>
     <contour>
       <point x="519" y="565" type="line"/>
@@ -34,17 +34,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="387" width="118" />
-      <hstem pos="913" width="101" />
-      <vstem pos="314" width="149" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

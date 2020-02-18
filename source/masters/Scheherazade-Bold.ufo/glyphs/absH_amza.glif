@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absHamza" format="2">
-  <unicode hex="0621"/>
   <advance width="668"/>
+  <unicode hex="0621"/>
   <anchor x="254" y="562" name="above"/>
   <anchor x="312" y="-181" name="below"/>
   <anchor x="177" y="704" name="diaA"/>
@@ -59,20 +59,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-174" width="-21" />
-      <hstem pos="125" width="182" />
-      <hstem pos="307" width="186" />
-      <vstem pos="31" width="115" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

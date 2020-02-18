@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="trademark" format="2">
-  <unicode hex="2122"/>
   <advance width="1513"/>
+  <unicode hex="2122"/>
   <outline>
     <contour>
       <point x="1487" y="414" type="line"/>
@@ -69,22 +69,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="435" width="-21" />
-      <hstem pos="977" width="45" />
-      <vstem pos="30" width="345" />
-      <vstem pos="248" width="127" />
-      <vstem pos="248" width="350" />
-      <vstem pos="578" width="210" />
-      <vstem pos="741" width="47" />
-      <vstem pos="1278" width="125" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

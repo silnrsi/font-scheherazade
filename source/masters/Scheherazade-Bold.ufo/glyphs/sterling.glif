@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="sterling" format="2">
-  <unicode hex="00A3"/>
   <advance width="787"/>
+  <unicode hex="00A3"/>
   <outline>
     <contour>
       <point x="730" y="350" type="line"/>
@@ -83,20 +83,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-18" width="75" />
-      <hstem pos="180" width="87" />
-      <hstem pos="468" width="101" />
-      <hstem pos="767" width="277" />
-      <vstem pos="8" width="77" />
-      <vstem pos="160" width="215" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

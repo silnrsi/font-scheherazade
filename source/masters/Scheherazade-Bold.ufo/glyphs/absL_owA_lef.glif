@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLowAlef" format="2">
-  <unicode hex="08AD"/>
   <advance width="270"/>
+  <unicode hex="08AD"/>
   <outline>
     <contour>
       <point x="218" y="-264" type="line" smooth="yes"/>
@@ -32,19 +32,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-08-06 pkm des Created</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-361" width="-21" />
-      <hstem pos="166" width="-20" />
-      <vstem pos="147" width="71" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-06 pkm des Created</string>
+    </dict>
   </lib>
 </glyph>

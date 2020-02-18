@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="eightMedium" format="2">
   <advance width="450"/>
-  <anchor x="450" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="450" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="400" y="283" type="curve" smooth="yes"/>
@@ -60,19 +60,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="154" width="-21" />
-      <hstem pos="754" width="-20" />
-      <vstem pos="61" width="66" />
-      <vstem pos="323" width="63" />
-      <vstem pos="338" width="62" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

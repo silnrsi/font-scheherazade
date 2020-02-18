@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternSixMedium" format="2">
   <advance width="460"/>
-  <anchor x="460" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="460" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="388" y="596" type="line"/>
@@ -54,18 +54,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-09 pkm mod Copied from absEasternSix and reduced to 66%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="144" width="-21" />
-      <hstem pos="742" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-09 pkm mod Copied from absEasternSix and reduced to 66%.</string>
+    </dict>
   </lib>
 </glyph>

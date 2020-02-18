@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absYehTail" format="2">
-  <unicode hex="06CD"/>
   <advance width="1233"/>
+  <unicode hex="06CD"/>
+  <anchor x="457" y="584" name="alef"/>
   <anchor x="414" y="711" name="diaA"/>
   <anchor x="474" y="-446" name="diaB"/>
-  <anchor x="457" y="584" name="alef"/>
   <outline>
     <contour>
       <point x="1153" y="678" type="line"/>
@@ -80,20 +80,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-258" width="204" />
-      <hstem pos="512" width="203" />
-      <vstem pos="66" width="103" />
-      <vstem pos="627" width="112" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

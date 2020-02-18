@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dollar" format="2">
-  <unicode hex="0024"/>
   <advance width="787"/>
+  <unicode hex="0024"/>
   <outline>
     <contour>
       <point x="737" y="274" type="line" smooth="yes"/>
@@ -63,35 +63,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-96" width="-21" />
-      <hstem pos="708" width="-20" />
-      <hstem pos="1110" width="-20" />
-      <vstem pos="65" width="93" />
-      <vstem pos="351" width="337" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="-96" width="-21" />
-      <hstem pos="708" width="-20" />
-      <hstem pos="1110" width="-20" />
-      <vstem pos="65" width="93" />
-      <vstem pos="351" width="89" />
-      <vstem pos="558" width="179" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="-96" width="-21" />
-      <hstem pos="708" width="-20" />
-      <hstem pos="1110" width="-20" />
-      <vstem pos="65" width="177" />
-      <vstem pos="351" width="89" />
-      <vstem pos="558" width="179" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

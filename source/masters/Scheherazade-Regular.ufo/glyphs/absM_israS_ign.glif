@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absMisraSign" format="2">
-  <unicode hex="060F"/>
   <advance width="915"/>
+  <unicode hex="060F"/>
+  <anchor x="96" y="752" name="alef"/>
   <anchor x="316" y="900" name="diaA"/>
   <anchor x="432" y="-876" name="diaB"/>
-  <anchor x="96" y="752" name="alef"/>
   <outline>
     <contour>
       <point x="840" y="-322" type="curve" smooth="yes"/>
@@ -105,20 +105,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-758" width="-21" />
-      <hstem pos="-736" width="162" />
-      <hstem pos="-186" width="126" />
-      <hstem pos="664" width="-20" />
-      <vstem pos="82" width="56" />
-      <vstem pos="838" width="60" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

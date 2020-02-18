@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absVerseSign" format="2">
-  <unicode hex="060E"/>
   <advance width="1414"/>
+  <unicode hex="060E"/>
   <outline>
     <contour>
       <point x="1339" y="373" type="line"/>
@@ -65,16 +65,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="51" width="175" />
-      <hstem pos="410" width="164" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

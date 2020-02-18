@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAutoKashida" format="2">
   <advance width="205"/>
+  <anchor x="102" y="529" name="alef"/>
   <anchor x="102" y="790" name="diaA"/>
   <anchor x="102" y="-188" name="diaB"/>
-  <anchor x="102" y="529" name="alef"/>
   <outline>
     <contour>
       <point x="245" y="103" type="curve" smooth="yes"/>
@@ -23,15 +23,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="205" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

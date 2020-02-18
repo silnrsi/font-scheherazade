@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="sixMedium" format="2">
   <advance width="460"/>
-  <anchor x="460" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="460" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="438" y="740" type="curve"/>
@@ -45,21 +45,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-02 pkm mod Replaced Regular outline with full-sized digit scaled to 58.3%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="129" width="394" />
-      <hstem pos="475" width="48" />
-      <hstem pos="475" width="278" />
-      <vstem pos="45" width="136" />
-      <vstem pos="310" width="125" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-02 pkm mod Replaced Regular outline with full-sized digit scaled to 58.3%.</string>
+    </dict>
   </lib>
 </glyph>

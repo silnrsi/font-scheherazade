@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="j" format="2">
-  <unicode hex="006A"/>
   <advance width="521"/>
+  <unicode hex="006A"/>
   <outline>
     <contour>
       <point x="402" y="965" type="line" smooth="yes"/>
@@ -48,18 +48,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-334" width="201" />
-      <hstem pos="711" width="-20" />
-      <hstem pos="838" width="248" />
-      <vstem pos="172" width="215" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

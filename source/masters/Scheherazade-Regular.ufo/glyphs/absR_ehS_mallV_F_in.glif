@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absRehSmallVFin" format="2">
   <advance width="487"/>
+  <anchor x="228" y="700" name="alef"/>
+  <anchor x="288" y="819" name="diaA"/>
   <anchor x="200" y="-540" name="diaB"/>
-  <anchor x="228" y="636" name="diaA"/>
-  <anchor x="232" y="468" name="alef"/>
-  <anchor x="349" y="242" name="above"/>
-  <anchor x="349" y="-432" name="below"/>
-  <anchor x="348" y="-268" name="ring"/>
-  <anchor x="145" y="0" name="center"/>
-  <anchor x="320" y="-164" name="through"/>
   <outline>
     <component base="absRehFin"/>
     <component base="_smallV" xOffset="352" yOffset="404"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

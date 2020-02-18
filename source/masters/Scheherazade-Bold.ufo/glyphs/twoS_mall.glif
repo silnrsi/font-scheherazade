@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="twoSmall" format="2">
   <advance width="323"/>
-  <anchor x="323" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="323" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="293" y="321" type="line"/>
@@ -38,17 +38,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="200" width="81" />
-      <hstem pos="555" width="73" />
-      <vstem pos="184" width="89" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

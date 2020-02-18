@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tilde" format="2">
-  <unicode hex="02DC"/>
   <advance width="514"/>
+  <unicode hex="02DC"/>
   <anchor x="257" y="760" name="_above"/>
   <outline>
     <contour>
@@ -28,17 +28,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="848" width="89" />
-      <hstem pos="920" width="85" />
-      <hstem pos="1013" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

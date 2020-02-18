@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEndOfAyah" format="2">
-  <unicode hex="06DD"/>
   <advance width="1368"/>
+  <unicode hex="06DD"/>
   <anchor x="465" y="0" name="digit"/>
   <outline>
     <contour>
@@ -350,20 +350,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-366" width="-21" />
-      <hstem pos="-8" width="41" />
-      <hstem pos="-8" width="129" />
-      <hstem pos="770" width="127" />
-      <hstem pos="1278" width="-20" />
-      <vstem pos="616" width="136" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

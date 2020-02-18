@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_wavyHamza" format="2">
-  <anchor x="0" y="252" name="_below"/>
   <anchor x="0" y="-171" name="_above"/>
+  <anchor x="0" y="252" name="_below"/>
   <outline>
     <contour>
       <point x="223" y="45" type="curve" smooth="yes"/>
@@ -64,17 +64,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-146" width="127" />
-      <hstem pos="-107" width="88" />
-      <hstem pos="235" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absDateSeparator" format="2">
-  <unicode hex="060D"/>
   <advance width="596"/>
+  <unicode hex="060D"/>
   <outline>
     <contour>
       <point x="524" y="365" type="line" smooth="yes"/>
@@ -36,16 +36,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="61" width="-21" />
-      <hstem pos="456" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ordfeminine" format="2">
-  <unicode hex="00AA"/>
   <advance width="551"/>
+  <unicode hex="00AA"/>
   <outline>
     <contour>
       <point x="551" y="714" type="line"/>
@@ -73,19 +73,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="466" width="60" />
-      <hstem pos="603" width="81" />
-      <hstem pos="870" width="165" />
-      <vstem pos="50" width="139" />
-      <vstem pos="308" width="157" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -3,23 +3,15 @@
   <unicode hex="0619"/>
   <anchor x="159" y="1050" name="_diaA"/>
   <anchor x="138" y="1365" name="diaA"/>
-  <anchor x="170.5" y="1081" name="_above"/>
   <outline>
     <component base="_damma" xScale="0.5" yScale="0.5" xOffset="180" yOffset="1168"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-10-01 pkm mod Replaced with _damma component @ 50%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="1018" width="-21" />
-      <hstem pos="1413" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-10-01 pkm mod Replaced with _damma component @ 50%.</string>
+    </dict>
   </lib>
 </glyph>

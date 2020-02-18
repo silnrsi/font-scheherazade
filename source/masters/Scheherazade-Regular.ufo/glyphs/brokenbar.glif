@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="brokenbar" format="2">
-  <unicode hex="00A6"/>
   <advance width="467"/>
+  <unicode hex="00A6"/>
   <outline>
     <contour>
       <point x="272" y="500" type="line"/>
@@ -17,17 +17,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-274" width="-21" />
-      <hstem pos="1094" width="-20" />
-      <vstem pos="197" width="75" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

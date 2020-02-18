@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Icircumflex" format="2">
-  <unicode hex="00CE"/>
   <advance width="588"/>
-  <anchor x="298" y="1090" name="above"/>
+  <unicode hex="00CE"/>
   <outline>
     <component base="I"/>
     <component base="circumflex" xOffset="51" yOffset="320"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.804,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

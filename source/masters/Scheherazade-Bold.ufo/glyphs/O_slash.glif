@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Oslash" format="2">
-  <unicode hex="00D8"/>
   <advance width="1202"/>
+  <unicode hex="00D8"/>
   <outline>
     <contour>
       <point x="1144" y="511" type="line" smooth="yes"/>
@@ -58,24 +58,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-15" width="-21" />
-      <hstem pos="988" width="56" />
-      <vstem pos="58" width="272" />
-      <vstem pos="872" width="272" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="-22" width="56" />
-      <hstem pos="988" width="56" />
-      <vstem pos="58" width="272" />
-      <vstem pos="872" width="272" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

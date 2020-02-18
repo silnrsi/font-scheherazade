@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="florin" format="2">
-  <unicode hex="0192"/>
   <advance width="787"/>
+  <unicode hex="0192"/>
   <outline>
     <contour>
       <point x="774" y="940" type="line" smooth="yes"/>
@@ -67,17 +67,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-324" width="194" />
-      <hstem pos="858" width="186" />
-      <vstem pos="0" width="143" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

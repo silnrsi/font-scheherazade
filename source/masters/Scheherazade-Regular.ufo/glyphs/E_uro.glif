@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Euro" format="2">
-  <unicode hex="20AC"/>
   <advance width="950"/>
+  <unicode hex="20AC"/>
   <outline>
     <contour>
       <point x="872" y="215" type="line"/>
@@ -62,18 +62,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-25" width="68" />
-      <hstem pos="379" width="74" />
-      <hstem pos="551" width="74" />
-      <hstem pos="991" width="53" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

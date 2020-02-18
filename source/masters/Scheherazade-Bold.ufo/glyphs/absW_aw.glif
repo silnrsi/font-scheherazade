@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absWaw" format="2">
-  <unicode hex="0648"/>
   <advance width="653"/>
+  <unicode hex="0648"/>
   <anchor x="417" y="594" name="above"/>
+  <anchor x="246" y="572" name="alef"/>
   <anchor x="484" y="-497" name="below"/>
-  <anchor x="266" y="-22" name="ring"/>
-  <anchor x="412" y="-90" name="through"/>
   <anchor x="415" y="-94" name="center"/>
   <anchor x="370" y="700" name="diaA"/>
   <anchor x="273" y="-600" name="diaB"/>
-  <anchor x="246" y="572" name="alef"/>
+  <anchor x="266" y="-22" name="ring"/>
+  <anchor x="412" y="-90" name="through"/>
   <outline>
     <contour>
       <point x="602" y="175" type="curve" smooth="yes"/>
@@ -59,20 +59,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-466" width="156" />
-      <hstem pos="544" width="-20" />
-      <vstem pos="246" width="356" />
-      <vstem pos="508" width="94" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

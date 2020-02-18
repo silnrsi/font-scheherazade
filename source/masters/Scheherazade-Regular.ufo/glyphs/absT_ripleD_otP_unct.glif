@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absTripleDotPunct" format="2">
-  <unicode hex="061E"/>
   <advance width="524"/>
+  <unicode hex="061E"/>
   <outline>
     <contour>
       <point x="336" y="350" type="curve" smooth="yes"/>
@@ -47,16 +47,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="27" width="-21" />
-      <hstem pos="430" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

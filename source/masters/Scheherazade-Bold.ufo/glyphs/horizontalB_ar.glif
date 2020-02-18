@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="horizontalBar" format="2">
-  <unicode hex="2015"/>
   <advance width="1485"/>
+  <unicode hex="2015"/>
   <outline>
     <contour>
       <point x="1485" y="289" type="line"/>
@@ -11,15 +11,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="289" width="112" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

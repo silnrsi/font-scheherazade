@@ -2,19 +2,17 @@
 <glyph name="absQafDotBelowFin" format="2">
   <advance width="1026"/>
   <anchor x="264" y="547" name="alef"/>
-  <anchor x="472" y="675" name="diaA"/>
-  <anchor x="424" y="-594" name="diaB"/>
-  <anchor x="742" y="533" name="above"/>
-  <anchor x="734" y="-391" name="below"/>
+  <anchor x="468" y="884" name="diaA"/>
+  <anchor x="256" y="-757" name="diaB"/>
   <outline>
     <component base="absQafNoDotsFin"/>
     <component base="_dot1" xOffset="713" yOffset="-567"/>
     <component base="_dot2h" xOffset="744" yOffset="714"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absTehRing" format="2">
-  <unicode hex="067C"/>
   <advance width="1352"/>
-  <anchor x="651" y="-310" name="diaB"/>
-  <anchor x="660" y="585" name="diaA"/>
-  <anchor x="424" y="564" name="alef"/>
-  <anchor x="662" y="410" name="above"/>
-  <anchor x="657" y="-98" name="below"/>
-  <anchor x="636" y="12" name="ring"/>
+  <unicode hex="067C"/>
+  <anchor x="376" y="644" name="alef"/>
+  <anchor x="602" y="888" name="diaA"/>
+  <anchor x="598" y="-436" name="diaB"/>
   <outline>
     <component base="absBehNoDots"/>
     <component base="_dot2h" xOffset="660" yOffset="552"/>
     <component base="_ring" xOffset="611" yOffset="-129"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

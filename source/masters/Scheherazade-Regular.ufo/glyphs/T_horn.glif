@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Thorn" format="2">
-  <unicode hex="00DE"/>
   <advance width="859"/>
+  <unicode hex="00DE"/>
   <outline>
     <contour>
       <point x="801" y="513" type="curve" smooth="yes"/>
@@ -51,20 +51,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="282" />
-      <hstem pos="230" width="52" />
-      <hstem pos="733" width="58" />
-      <hstem pos="733" width="289" />
-      <vstem pos="171" width="145" />
-      <vstem pos="625" width="176" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

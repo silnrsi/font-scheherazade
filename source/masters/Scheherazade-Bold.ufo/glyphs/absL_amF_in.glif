@@ -2,11 +2,11 @@
 <glyph name="absLamFin" format="2">
   <advance width="929"/>
   <anchor x="622" y="1030" name="above"/>
+  <anchor x="152" y="299" name="alef"/>
   <anchor x="676" y="-528" name="below"/>
-  <anchor x="657" y="602" name="through"/>
   <anchor x="300" y="800" name="diaA"/>
   <anchor x="350" y="-632" name="diaB"/>
-  <anchor x="152" y="299" name="alef"/>
+  <anchor x="657" y="602" name="through"/>
   <outline>
     <contour>
       <point x="946" y="0" type="line"/>
@@ -71,22 +71,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-527" width="202" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="989" width="-20" />
-      <vstem pos="23" width="104" />
-      <vstem pos="666" width="330" />
-      <vstem pos="666" width="80" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -11,7 +11,7 @@ psfnormalize -p checkfix=fix source/masters/*-Bold.ufo    &
 wait
 
 echo "Updating woff metadata xml file..."
-psfmakewoffmetadata -q -n Scheherazade -i org.sil.fonts source/*-Regular.ufo
+psfmakewoffmetadata -q -n Scheherazade -i org.sil.fonts source/masters/*-Regular.ufo
 #psfmakewoffmetadata -q -n "ScheherazadeBold"   -i org.sil.fonts source/masters/*-Bold.ufo     -o "source/Scheherazade-Bold-WOFF-metadata.xml"
 
 echo "Updating glyph orders in Regular..."

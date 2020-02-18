@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKirghizYuFin" format="2">
   <advance width="573"/>
+  <anchor x="300" y="796" name="alef"/>
+  <anchor x="340" y="897" name="diaA"/>
   <anchor x="250" y="-600" name="diaB"/>
-  <anchor x="284" y="652" name="diaA"/>
-  <anchor x="276" y="500" name="alef"/>
-  <anchor x="375" y="397" name="above"/>
-  <anchor x="375" y="-457" name="below"/>
-  <anchor x="231" y="-42" name="ring"/>
-  <anchor x="383" y="-156" name="through"/>
-  <anchor x="383" y="-154" name="center"/>
   <outline>
     <component base="absWawFin"/>
     <component base="_hat" xOffset="373" yOffset="535"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

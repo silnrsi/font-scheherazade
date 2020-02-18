@@ -2,10 +2,10 @@
 <glyph name="absSadFin" format="2">
   <advance width="1769"/>
   <anchor x="1139" y="597" name="above"/>
+  <anchor x="456" y="268" name="alef"/>
   <anchor x="1255" y="-174" name="below"/>
   <anchor x="540" y="613" name="diaA"/>
   <anchor x="363" y="-675" name="diaB"/>
-  <anchor x="456" y="268" name="alef"/>
   <outline>
     <contour>
       <point x="1837" y="103" type="curve" smooth="yes"/>
@@ -99,21 +99,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-518" width="195" />
-      <hstem pos="21" width="-21" />
-      <hstem pos="12" width="195" />
-      <hstem pos="414" width="212" />
-      <vstem pos="29" width="90" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absFathaTwoDots" format="2">
   <unicode hex="065E"/>
-  <anchor x="120" y="1020" name="_diaA"/>
-  <anchor x="90" y="1280" name="diaA"/>
+  <anchor x="105" y="952" name="_diaA"/>
+  <anchor x="105" y="1340" name="diaA"/>
   <outline>
-    <component base="absFatha"/>
     <contour>
       <point x="57" y="1210" type="curve"/>
       <point x="57" y="1212"/>
@@ -33,18 +32,12 @@
       <point x="217" y="979"/>
       <point x="244" y="1024"/>
     </contour>
+    <component base="absFatha"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="1000" width="-21" />
-      <hstem pos="1243" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

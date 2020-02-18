@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="question" format="2">
-  <unicode hex="003F"/>
   <advance width="686"/>
+  <unicode hex="003F"/>
   <outline>
     <contour>
       <point x="625" y="807" type="curve" smooth="yes"/>
@@ -52,19 +52,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="1" width="-21" />
-      <hstem pos="711" width="-20" />
-      <hstem pos="1004" width="40" />
-      <vstem pos="70" width="96" />
-      <vstem pos="483" width="142" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

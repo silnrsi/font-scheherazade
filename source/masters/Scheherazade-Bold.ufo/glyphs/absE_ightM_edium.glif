@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEightMedium" format="2">
   <advance width="460"/>
-  <anchor x="460" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="460" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="433" y="281" type="curve" smooth="yes"/>
@@ -50,18 +50,12 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-02 pkm mod Designed the Bold as 66% version of normal size.2013-11-11 pkm mod Reduced full-sized digit by 68.1%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="149" width="-21" />
-      <hstem pos="725" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-02 pkm mod Designed the Bold as 66% version of normal size.
+2013-11-11 pkm mod Reduced full-sized digit by 68.1%.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arabicLetterMark" format="2">
-  <unicode hex="061C"/>
   <advance width="1024"/>
+  <unicode hex="061C"/>
   <outline>
     <contour>
       <point x="993" y="932" type="curve" smooth="yes"/>
@@ -425,9 +425,10 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-05-29 pkm mod Changed from AL to ALM.2013-05-28 pkm des Added new glyph.</string>
-  </dict>
+    <dict>
+      <key>note</key>
+      <string>2013-05-29 pkm mod Changed from AL to ALM.
+2013-05-28 pkm des Added new glyph.</string>
+    </dict>
   </lib>
 </glyph>

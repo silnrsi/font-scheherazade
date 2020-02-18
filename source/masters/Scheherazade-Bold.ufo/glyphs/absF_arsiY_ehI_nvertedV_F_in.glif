@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absFarsiYehInvertedVFin" format="2">
   <advance width="1140"/>
-  <anchor x="470" y="-705" name="diaB"/>
-  <anchor x="506" y="251" name="alef"/>
-  <anchor x="536" y="415" name="diaA"/>
-  <anchor x="521" y="197" name="above"/>
-  <anchor x="485" y="-607" name="below"/>
-  <anchor x="495" y="-645" name="ring"/>
+  <anchor x="370" y="582" name="alef"/>
+  <anchor x="472" y="681" name="diaA"/>
+  <anchor x="487" y="-705" name="diaB"/>
   <outline>
     <component base="absYehFin.noDots"/>
     <component base="_hat" xOffset="544" yOffset="377"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

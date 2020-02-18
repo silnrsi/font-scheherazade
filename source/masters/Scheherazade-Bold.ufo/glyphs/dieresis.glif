@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dieresis" format="2">
-  <unicode hex="00A8"/>
   <advance width="487"/>
+  <unicode hex="00A8"/>
   <anchor x="245" y="760" name="_above"/>
   <outline>
     <contour>
@@ -34,17 +34,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="848" width="202" />
-      <vstem pos="0" width="202" />
-      <vstem pos="285" width="202" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absComma" format="2">
-  <unicode hex="060C"/>
   <advance width="683"/>
+  <unicode hex="060C"/>
   <anchor x="291" y="660" name="diaA"/>
   <anchor x="291" y="-195" name="diaB"/>
   <outline>
@@ -34,18 +34,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-76" width="240" />
-      <hstem pos="493" width="-20" />
-      <vstem pos="174" width="96" />
-      <vstem pos="174" width="304" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

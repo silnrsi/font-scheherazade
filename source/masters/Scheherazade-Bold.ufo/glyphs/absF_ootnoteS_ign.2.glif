@@ -54,18 +54,12 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-27 pkm mod Widened glyph and moved AP right.2013-11-13 pkm mod Designed bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-100" width="144" />
-      <hstem pos="425" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-27 pkm mod Widened glyph and moved AP right.
+2013-11-13 pkm mod Designed bold version.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLamDoubleBarIni" format="2">
   <advance width="336"/>
+  <anchor x="30" y="888" name="alef"/>
   <anchor x="132" y="1156" name="diaA"/>
   <anchor x="100" y="-150" name="diaB"/>
-  <anchor x="12" y="784" name="alef"/>
-  <anchor x="120" y="1111" name="above"/>
-  <anchor x="120" y="-50" name="below"/>
-  <anchor x="137" y="691" name="through"/>
   <outline>
     <component base="absLamIni"/>
     <component base="_bar" xOffset="137" yOffset="754"/>
     <component base="_bar" xOffset="137" yOffset="618"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

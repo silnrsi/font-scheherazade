@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_dot3d" format="2">
-  <anchor x="-24" y="124" name="_below"/>
   <anchor x="38" y="-429" name="_above"/>
+  <anchor x="-24" y="124" name="_below"/>
   <anchor x="2" y="-121" name="_center"/>
   <outline>
     <contour>
@@ -58,17 +58,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-368" width="-21" />
-      <hstem pos="19" width="-21" />
-      <hstem pos="120" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

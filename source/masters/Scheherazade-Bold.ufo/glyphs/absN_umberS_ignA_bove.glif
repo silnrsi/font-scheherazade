@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absNumberSignAbove" format="2">
-  <unicode hex="0605"/>
   <advance width="859"/>
+  <unicode hex="0605"/>
   <anchor x="204" y="0" name="digit"/>
   <outline>
     <contour>
@@ -44,20 +44,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-13 pkm mod Designed bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="799" width="-21" />
-      <hstem pos="860" width="160" />
-      <hstem pos="860" width="275" />
-      <hstem pos="1021" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-13 pkm mod Designed bold version.</string>
+    </dict>
   </lib>
 </glyph>

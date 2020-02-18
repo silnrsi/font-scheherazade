@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_tah" format="2">
-  <anchor x="-24" y="451" name="_below"/>
   <anchor x="-24" y="-149" name="_above"/>
+  <anchor x="-24" y="451" name="_below"/>
   <anchor x="-26" y="163" name="_center"/>
   <outline>
     <contour>
@@ -61,18 +61,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-06 pkm mod Added weight (4h, 8v) and adjusted various nodes. Maintained height and copied to other tah components.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-106" width="77" />
-      <hstem pos="414" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-06 pkm mod Added weight (4h, 8v) and adjusted various nodes. Maintained height and copied to other tah components.</string>
+    </dict>
   </lib>
 </glyph>

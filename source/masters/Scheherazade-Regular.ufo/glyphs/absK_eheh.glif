@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKeheh" format="2">
-  <unicode hex="06A9"/>
   <advance width="1544"/>
+  <unicode hex="06A9"/>
   <anchor x="835" y="711" name="above"/>
+  <anchor x="200" y="616" name="alef"/>
   <anchor x="811" y="-185" name="below"/>
-  <anchor x="1212" y="752" name="ring"/>
+  <anchor x="1302" y="597" name="center"/>
   <anchor x="540" y="800" name="diaA"/>
   <anchor x="585" y="-299" name="diaB"/>
-  <anchor x="200" y="616" name="alef"/>
-  <anchor x="1302" y="597" name="center"/>
+  <anchor x="1212" y="752" name="ring"/>
   <outline>
     <contour>
       <point x="1550" y="920" type="curve"/>
@@ -71,17 +71,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-135" width="135" />
-      <hstem pos="928" width="-20" />
-      <vstem pos="72" width="51" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

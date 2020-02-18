@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="oe" format="2">
-  <unicode hex="0153"/>
   <advance width="1114"/>
+  <unicode hex="0153"/>
   <outline>
     <contour>
       <point x="1040" y="268" type="line"/>
@@ -64,20 +64,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-23" width="56" />
-      <hstem pos="-23" width="127" />
-      <hstem pos="432" width="49" />
-      <hstem pos="662" width="49" />
-      <vstem pos="51" width="142" />
-      <vstem pos="539" width="112" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

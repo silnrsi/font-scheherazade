@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="percent" format="2">
-  <unicode hex="0025"/>
   <advance width="1335"/>
+  <unicode hex="0025"/>
   <outline>
     <contour>
       <point x="1219" y="383" type="curve" smooth="yes"/>
@@ -83,22 +83,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-23" width="48" />
-      <hstem pos="446" width="54" />
-      <hstem pos="504" width="49" />
-      <hstem pos="1026" width="-20" />
-      <hstem pos="1049" width="-20" />
-      <vstem pos="117" width="119" />
-      <vstem pos="578" width="40" />
-      <vstem pos="719" width="117" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternEight" format="2">
-  <unicode hex="06F8"/>
   <advance width="801"/>
+  <unicode hex="06F8"/>
   <outline>
     <component base="absEight"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-102" width="-21" />
-      <hstem pos="715" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="B" format="2">
-  <unicode hex="0042"/>
   <advance width="1031"/>
+  <unicode hex="0042"/>
   <outline>
     <contour>
       <point x="976" y="279" type="line" smooth="yes"/>
@@ -63,40 +63,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="0" width="60" />
-      <hstem pos="492" width="82" />
-      <hstem pos="932" width="90" />
-      <vstem pos="176" width="237" />
-      <vstem pos="675" width="252" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="0" width="60" />
-      <hstem pos="492" width="82" />
-      <hstem pos="962" width="60" />
-      <vstem pos="176" width="237" />
-      <vstem pos="710" width="266" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="0" width="60" />
-      <hstem pos="492" width="82" />
-      <hstem pos="932" width="90" />
-      <vstem pos="176" width="237" />
-      <vstem pos="675" width="252" />
-    </hintset>
-    <hintset pointTag="hr04">
-      <hstem pos="0" width="89" />
-      <hstem pos="492" width="82" />
-      <hstem pos="932" width="90" />
-      <vstem pos="176" width="237" />
-      <vstem pos="710" width="217" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

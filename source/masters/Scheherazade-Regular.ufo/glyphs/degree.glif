@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="degree" format="2">
-  <unicode hex="00B0"/>
   <advance width="475"/>
+  <unicode hex="00B0"/>
   <outline>
     <contour>
       <point x="401" y="905" type="curve" smooth="yes"/>
@@ -33,18 +33,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="743" width="60" />
-      <hstem pos="1010" width="59" />
-      <vstem pos="74" width="59" />
-      <vstem pos="342" width="59" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

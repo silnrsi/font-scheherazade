@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="divide" format="2">
-  <unicode hex="00F7"/>
   <advance width="1485"/>
+  <unicode hex="00F7"/>
   <outline>
     <contour>
       <point x="850" y="703" type="line" smooth="yes"/>
@@ -41,18 +41,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="83" width="213" />
-      <hstem pos="380" width="132" />
-      <hstem pos="596" width="214" />
-      <vstem pos="636" width="214" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

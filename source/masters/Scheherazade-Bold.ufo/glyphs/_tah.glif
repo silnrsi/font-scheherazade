@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_tah" format="2">
-  <anchor x="-24" y="571" name="_below"/>
   <anchor x="-24" y="-113" name="_above"/>
+  <anchor x="-24" y="571" name="_below"/>
   <anchor x="-6" y="87" name="_center"/>
   <outline>
     <contour>
@@ -61,21 +61,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-108" width="107" />
-      <hstem pos="17" width="-21" />
-      <hstem pos="84" width="118" />
-      <hstem pos="423" width="-20" />
-      <vstem pos="-150" width="97" />
-      <vstem pos="-118" width="65" />
-      <vstem pos="-118" width="344" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

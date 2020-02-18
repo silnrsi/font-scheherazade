@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absDammaMeem" format="2">
-  <anchor x="-35" y="1014" name="_diaA"/>
+  <anchor x="150" y="1020" name="_diaA"/>
   <anchor x="105" y="1515" name="diaA"/>
   <outline>
     <component base="absSmallHighMeemIsolatedForm" xOffset="-20" yOffset="-6"/>
     <component base="_damma" xOffset="238" yOffset="1164"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="1018" width="-21" />
-      <hstem pos="1413" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absFullStop" format="2">
-  <unicode hex="06D4"/>
   <advance width="722"/>
+  <unicode hex="06D4"/>
   <anchor x="352" y="790" name="diaA"/>
   <anchor x="351" y="-254" name="diaB"/>
   <outline>
@@ -13,15 +13,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="205" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

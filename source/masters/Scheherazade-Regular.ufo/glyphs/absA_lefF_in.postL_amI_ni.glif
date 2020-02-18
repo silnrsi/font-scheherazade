@@ -2,12 +2,12 @@
 <glyph name="absAlefFin.postLamIni" format="2">
   <advance width="535"/>
   <anchor x="74" y="1185" name="above"/>
+  <anchor x="-20" y="902" name="aboveLeft"/>
   <anchor x="446" y="-57" name="below"/>
   <anchor x="200" y="-136" name="dia2B"/>
   <anchor x="80" y="1260" name="diaA"/>
   <anchor x="420" y="-100" name="diaB"/>
   <anchor x="535" y="0" name="entry"/>
-  <anchor x="-20" y="902" name="aboveLeft"/>
   <outline>
     <contour>
       <point x="713" y="135" type="curve" smooth="yes"/>
@@ -54,4 +54,10 @@
       <point x="713" y="109"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
+  </lib>
 </glyph>

@@ -2,10 +2,10 @@
 <glyph name="absSeenIni" format="2">
   <advance width="1074"/>
   <anchor x="571" y="555" name="above"/>
+  <anchor x="368" y="622" name="alef"/>
   <anchor x="586" y="-71" name="below"/>
   <anchor x="484" y="716" name="diaA"/>
   <anchor x="529" y="-236" name="diaB"/>
-  <anchor x="368" y="622" name="alef"/>
   <outline>
     <contour>
       <point x="971" y="401" type="curve" smooth="yes"/>
@@ -64,21 +64,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="206" />
-      <hstem pos="0" width="338" />
-      <hstem pos="73" width="133" />
-      <hstem pos="73" width="200" />
-      <hstem pos="587" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

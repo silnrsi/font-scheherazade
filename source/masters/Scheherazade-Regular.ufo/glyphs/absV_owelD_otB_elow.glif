@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absVowelDotBelow" format="2">
   <unicode hex="065C"/>
+  <anchor x="164" y="203" name="_dia2B"/>
   <anchor x="164" y="203" name="_diaB"/>
-  <anchor x="164" y="-211" name="diaB"/>
-  <anchor x="164" y="150" name="_diaBtailUp"/>
   <anchor x="164" y="150" name="_diaBtailDown"/>
+  <anchor x="164" y="150" name="_diaBtailUp"/>
+  <anchor x="164" y="-211" name="diaB"/>
   <outline>
     <contour>
       <point x="274" y="2" type="curve" smooth="yes"/>
@@ -22,16 +23,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-134" width="252" />
-      <vstem pos="62" width="212" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

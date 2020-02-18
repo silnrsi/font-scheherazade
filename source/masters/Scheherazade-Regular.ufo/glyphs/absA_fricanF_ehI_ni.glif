@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAfricanFehIni" format="2">
   <advance width="430"/>
-  <anchor x="144" y="880" name="diaA"/>
-  <anchor x="154" y="-150" name="diaB"/>
   <anchor x="112" y="756" name="alef"/>
-  <anchor x="180" y="634" name="above"/>
-  <anchor x="180" y="-50" name="below"/>
+  <anchor x="144" y="880" name="diaA"/>
+  <anchor x="180" y="-315" name="diaB"/>
   <outline>
     <component base="absDotlessFehIni"/>
     <component base="_dot1" xOffset="178" yOffset="-181"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.6,0.997,1,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absJeemTwoDotsAboveFin" format="2">
   <advance width="1112"/>
+  <anchor x="244" y="848" name="alef"/>
+  <anchor x="461" y="1098" name="diaA"/>
   <anchor x="432" y="-919" name="diaB"/>
-  <anchor x="337" y="755" name="alef"/>
-  <anchor x="462" y="892" name="diaA"/>
-  <anchor x="596" y="531" name="above"/>
-  <anchor x="555" y="-233" name="center"/>
   <outline>
     <component base="absHahFin"/>
     <component base="_dot2h" xOffset="625" yOffset="731"/>
     <component base="_dot1" xOffset="561" yOffset="-194"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

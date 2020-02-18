@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKhah" format="2">
-  <unicode hex="062E"/>
   <advance width="1144"/>
-  <anchor x="457" y="808" name="diaA"/>
+  <unicode hex="062E"/>
+  <anchor x="368" y="824" name="alef"/>
+  <anchor x="489" y="1038" name="diaA"/>
   <anchor x="374" y="-910" name="diaB"/>
-  <anchor x="323" y="697" name="alef"/>
-  <anchor x="578" y="547" name="above"/>
-  <anchor x="569" y="-204" name="center"/>
   <outline>
     <component base="absHah"/>
     <component base="_dot1" xOffset="610" yOffset="735"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="periodcentered" format="2">
-  <unicode hex="00B7"/>
   <advance width="431"/>
+  <unicode hex="00B7"/>
   <outline>
     <contour>
       <point x="343" y="513" type="curve" smooth="yes"/>
@@ -19,16 +19,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="384" width="256" />
-      <vstem pos="88" width="255" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

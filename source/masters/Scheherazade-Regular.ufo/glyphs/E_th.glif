@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Eth" format="2">
-  <unicode hex="00D0"/>
   <advance width="1116"/>
+  <unicode hex="00D0"/>
   <outline>
     <contour>
       <point x="1055" y="519" type="curve" smooth="yes"/>
@@ -55,19 +55,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="54" />
-      <hstem pos="511" width="86" />
-      <hstem pos="967" width="55" />
-      <vstem pos="173" width="145" />
-      <vstem pos="886" width="169" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="daggerdbl" format="2">
-  <unicode hex="2021"/>
   <advance width="772"/>
+  <unicode hex="2021"/>
   <outline>
     <contour>
       <point x="668" y="-10" type="curve" smooth="yes"/>
@@ -103,21 +103,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-313" width="-21" />
-      <hstem pos="-80" width="135" />
-      <hstem pos="684" width="133" />
-      <hstem pos="1071" width="-20" />
-      <vstem pos="104" width="295" />
-      <vstem pos="309" width="150" />
-      <vstem pos="371" width="297" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

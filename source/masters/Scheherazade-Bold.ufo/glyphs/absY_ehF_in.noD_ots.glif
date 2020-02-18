@@ -2,11 +2,11 @@
 <glyph name="absYehFin.noDots" format="2">
   <advance width="1140"/>
   <anchor x="521" y="197" name="above"/>
+  <anchor x="506" y="251" name="alef"/>
   <anchor x="485" y="-607" name="below"/>
   <anchor x="536" y="415" name="diaA"/>
   <anchor x="470" y="-705" name="diaB"/>
   <anchor x="495" y="-645" name="ring"/>
-  <anchor x="506" y="251" name="alef"/>
   <outline>
     <contour>
       <point x="1207" y="103" type="curve" smooth="yes"/>
@@ -68,21 +68,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-566" width="199" />
-      <hstem pos="0" width="205" />
-      <vstem pos="86" width="107" />
-      <vstem pos="630" width="406" />
-      <vstem pos="931" width="105" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -2,13 +2,13 @@
 <glyph name="absStraightWawFin" format="2">
   <advance width="498"/>
   <anchor x="251" y="538" name="above"/>
+  <anchor x="197" y="637" name="alef"/>
   <anchor x="277" y="-540" name="below"/>
+  <anchor x="245" y="-129" name="center"/>
+  <anchor x="231" y="740" name="diaA"/>
+  <anchor x="233" y="-600" name="diaB"/>
   <anchor x="181" y="-67" name="ring"/>
   <anchor x="245" y="-129" name="through"/>
-  <anchor x="231" y="740" name="diaA"/>
-  <anchor x="197" y="637" name="alef"/>
-  <anchor x="233" y="-600" name="diaB"/>
-  <anchor x="245" y="-129" name="center"/>
   <outline>
     <contour>
       <point x="568" y="103" type="curve" smooth="yes"/>
@@ -57,24 +57,13 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-07-25 pkm des Created.</string>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-460" width="-21" />
-      <hstem pos="0" width="205" />
-      <hstem pos="506" width="-20" />
-      <vstem pos="75" width="295" />
-      <vstem pos="264" width="106" />
-      <vstem pos="264" width="153" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-07-25 pkm des Created.</string>
+      <key>public.markColor</key>
+      <string>0.85,0.26,0.06,1</string>
+    </dict>
   </lib>
 </glyph>

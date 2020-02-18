@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_wasla" format="2">
-  <anchor x="-32" y="176" name="_below"/>
   <anchor x="-32" y="-127" name="_above"/>
+  <anchor x="-32" y="176" name="_below"/>
   <outline>
     <contour>
       <point x="88" y="176" type="curve" smooth="yes"/>
@@ -45,17 +45,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-108" width="-21" />
-      <hstem pos="-90" width="99" />
-      <hstem pos="-90" width="266" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

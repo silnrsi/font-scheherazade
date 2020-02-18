@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPageSign" format="2">
-  <unicode hex="0603"/>
   <advance width="1300"/>
+  <unicode hex="0603"/>
   <anchor x="115" y="0" name="digit"/>
   <outline>
     <contour>
@@ -64,20 +64,14 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-05-03 pkm mod Cleaned up mask layer2013-03-04 pkm mod Moved digit AP from x-145 to 115.2013-02-22 pkm mod [ABS-84] Moved digit AP to 145,0; widened glyph by 150.2013-02-15 pkm mod Reduced with from 1600 to 1150, per ABS-84.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-47" width="71" />
-      <hstem pos="-47" width="94" />
-      <hstem pos="59" width="112" />
-      <hstem pos="353" width="142" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-05-03 pkm mod Cleaned up mask layer
+2013-03-04 pkm mod Moved digit AP from x-145 to 115.
+2013-02-22 pkm mod [ABS-84] Moved digit AP to 145,0; widened glyph by 150.
+2013-02-15 pkm mod Reduced with from 1600 to 1150, per ABS-84.</string>
+    </dict>
   </lib>
 </glyph>

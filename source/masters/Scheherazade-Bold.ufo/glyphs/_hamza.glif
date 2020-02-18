@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_hamza" format="2">
-  <anchor x="1" y="241" name="_below"/>
   <anchor x="0" y="-193" name="_above"/>
+  <anchor x="1" y="241" name="_below"/>
   <outline>
     <contour>
       <point x="185" y="13" type="curve" smooth="yes"/>
@@ -55,18 +55,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-10-09 pkm des Redrew.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-159" width="-21" />
-      <hstem pos="203" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-10-09 pkm des Redrew.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="cedilla" format="2">
-  <unicode hex="00B8"/>
   <advance width="371"/>
+  <unicode hex="00B8"/>
   <anchor x="154" y="-50" name="_below"/>
   <outline>
     <contour>
@@ -37,16 +37,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-340" width="65" />
-      <hstem pos="0" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

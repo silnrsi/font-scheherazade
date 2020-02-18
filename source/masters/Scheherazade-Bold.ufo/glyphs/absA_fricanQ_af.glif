@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAfricanQaf" format="2">
-  <unicode hex="08BC"/>
   <advance width="1104"/>
-  <anchor x="397" y="-372" name="diaB"/>
+  <unicode hex="08BC"/>
   <anchor x="358" y="822" name="alef"/>
   <anchor x="515" y="954" name="diaA"/>
-  <anchor x="803" y="846" name="above"/>
-  <anchor x="795" y="-236" name="below"/>
+  <anchor x="397" y="-372" name="diaB"/>
   <outline>
     <component base="absQafNoDots"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.6,0.997,1,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
   </lib>
 </glyph>

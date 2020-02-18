@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absFarsiYehInvertedVIni" format="2">
   <advance width="360"/>
-  <anchor x="105" y="-249" name="diaB"/>
-  <anchor x="155" y="752" name="diaA"/>
-  <anchor x="148" y="640" name="alef"/>
-  <anchor x="105" y="-750" name="diaBtailDown"/>
-  <anchor x="168" y="504" name="above"/>
-  <anchor x="118" y="-50" name="below"/>
-  <anchor x="176" y="91" name="ring"/>
-  <anchor x="105" y="-125" name="diaBtailUp"/>
+  <anchor x="104" y="900" name="alef"/>
+  <anchor x="144" y="936" name="diaA"/>
+  <anchor x="95" y="-466" name="diaB"/>
+  <anchor x="95" y="-750" name="diaBtailDown"/>
   <outline>
     <component base="absBehNoDotsIni"/>
     <component base="_hat" xOffset="166" yOffset="642"/>
     <component base="_dot2h" xOffset="116" yOffset="-192"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

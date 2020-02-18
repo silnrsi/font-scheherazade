@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSadTwoDotsBelowMed" format="2">
   <advance width="1210"/>
-  <anchor x="406" y="-312" name="diaB"/>
-  <anchor x="584" y="800" name="diaA"/>
   <anchor x="372" y="584" name="alef"/>
-  <anchor x="639" y="489" name="above"/>
-  <anchor x="681" y="-87" name="below"/>
+  <anchor x="584" y="800" name="diaA"/>
+  <anchor x="400" y="-461" name="diaB"/>
   <outline>
     <component base="absSadMed"/>
     <component base="_dot2h" xOffset="679" yOffset="-229"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

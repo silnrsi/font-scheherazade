@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absKashmiriYeh" format="2">
-  <unicode hex="0620"/>
   <advance width="1091"/>
+  <unicode hex="0620"/>
   <anchor x="282" y="556" name="alef"/>
-  <anchor x="421" y="-449" name="diaB"/>
   <anchor x="500" y="738" name="diaA"/>
+  <anchor x="421" y="-449" name="diaB"/>
   <outline>
     <contour>
       <point x="1011" y="678" type="line"/>
@@ -59,19 +59,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-249" width="195" />
-      <hstem pos="512" width="203" />
-      <vstem pos="485" width="112" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

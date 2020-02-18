@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_dot2h_tah" format="2">
-  <anchor x="-5" y="648" name="_below"/>
   <anchor x="-6" y="-142" name="_above"/>
+  <anchor x="-5" y="648" name="_below"/>
   <anchor x="0" y="250" name="_center"/>
   <outline>
     <contour>
@@ -99,19 +99,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-06 pkm mod Used new _tah outline.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-69" width="-21" />
-      <hstem pos="143" width="61" />
-      <hstem pos="608" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-06 pkm mod Used new _tah outline.</string>
+    </dict>
   </lib>
 </glyph>

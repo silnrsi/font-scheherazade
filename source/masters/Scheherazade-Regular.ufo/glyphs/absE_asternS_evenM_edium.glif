@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternSevenMedium" format="2">
   <advance width="450"/>
-  <anchor x="450" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="450" y="0" name="digit"/>
   <outline>
     <component base="absSevenMedium"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="154" width="-21" />
-      <hstem pos="694" width="-20" />
-      <hstem pos="700" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

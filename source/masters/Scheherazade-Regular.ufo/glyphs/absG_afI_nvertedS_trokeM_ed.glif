@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absGafInvertedStrokeMed" format="2">
   <advance width="944"/>
-  <anchor x="200" y="-150" name="diaB"/>
-  <anchor x="208" y="1104" name="diaA"/>
   <anchor x="101" y="1001" name="alef"/>
+  <anchor x="208" y="1104" name="diaA"/>
+  <anchor x="200" y="-150" name="diaB"/>
   <outline>
     <contour>
       <point x="1013" y="63" type="curve" smooth="yes"/>
@@ -96,16 +96,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="125" />
-      <hstem pos="1241" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

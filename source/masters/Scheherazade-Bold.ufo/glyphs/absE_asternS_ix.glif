@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternSix" format="2">
-  <unicode hex="06F6"/>
   <advance width="830"/>
+  <unicode hex="06F6"/>
   <outline>
     <contour>
       <point x="697" y="547" type="line"/>
@@ -57,18 +57,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-03 pkm mod Redrew from Regular.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-112" width="-21" />
-      <hstem pos="781" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-03 pkm mod Redrew from Regular.</string>
+    </dict>
   </lib>
 </glyph>

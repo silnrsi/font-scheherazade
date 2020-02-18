@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absNoonGhunna" format="2">
-  <unicode hex="06BA"/>
   <advance width="954"/>
+  <unicode hex="06BA"/>
   <anchor x="423" y="441" name="above"/>
+  <anchor x="302" y="494" name="alef"/>
   <anchor x="479" y="-378" name="below"/>
-  <anchor x="504" y="-250" name="ring"/>
   <anchor x="419" y="824" name="diaA"/>
   <anchor x="424" y="-477" name="diaB"/>
-  <anchor x="302" y="494" name="alef"/>
+  <anchor x="504" y="-250" name="ring"/>
   <outline>
     <contour>
       <point x="870" y="125" type="curve" smooth="yes"/>
@@ -52,22 +52,13 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-10-11 pkm mod Lowered by 300 points to match Regular.</string>
-  <key>public.markColor</key>
-  <string>1,0.827,0.6,1</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-336" width="204" />
-      <hstem pos="638" width="-20" />
-      <vstem pos="80" width="81" />
-      <vstem pos="791" width="79" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-10-11 pkm mod Lowered by 300 points to match Regular.</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

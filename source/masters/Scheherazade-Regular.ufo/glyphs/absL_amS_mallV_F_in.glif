@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absLamSmallVFin" format="2">
   <advance width="850"/>
+  <anchor x="184" y="568" name="alef"/>
+  <anchor x="184" y="1044" name="diaA"/>
   <anchor x="350" y="-600" name="diaB"/>
-  <anchor x="300" y="800" name="diaA"/>
-  <anchor x="152" y="299" name="alef"/>
-  <anchor x="591" y="1023" name="above"/>
-  <anchor x="649" y="-528" name="below"/>
-  <anchor x="602" y="602" name="through"/>
   <outline>
     <component base="absLamFin"/>
     <component base="_smallV" xOffset="594" yOffset="1185"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

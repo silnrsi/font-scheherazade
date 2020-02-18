@@ -85,22 +85,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-13 pkm mod Designed bold version.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-159" width="167" />
-      <hstem pos="230" width="214" />
-      <hstem pos="230" width="333" />
-      <hstem pos="291" width="200" />
-      <hstem pos="795" width="-20" />
-      <vstem pos="1705" width="88" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-13 pkm mod Designed bold version.</string>
+    </dict>
   </lib>
 </glyph>

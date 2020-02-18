@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absRightArrowheadAboveDot" format="2">
   <unicode hex="08FD"/>
-  <anchor x="87" y="903" name="_diaA"/>
-  <anchor x="87" y="1350" name="diaA"/>
+  <anchor x="73" y="903" name="_diaA"/>
+  <anchor x="87" y="1352" name="diaA"/>
   <outline>
     <component base="absRightArrowheadAbove"/>
     <component base="_dotCircular" xOffset="-38" yOffset="1098"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="1008" width="-21" />
-      <hstem pos="1206" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

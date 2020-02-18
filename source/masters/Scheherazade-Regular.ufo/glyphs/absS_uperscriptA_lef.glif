@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSuperscriptAlef" format="2">
   <unicode hex="0670"/>
+  <anchor x="180" y="630" name="_alef"/>
   <anchor x="188" y="673" name="_diaA"/>
   <anchor x="180" y="1230" name="diaA"/>
-  <anchor x="180" y="630" name="_alef"/>
   <outline>
     <contour>
       <point x="213" y="807" type="curve"/>
@@ -27,16 +27,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="660" width="-21" />
-      <hstem pos="1110" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

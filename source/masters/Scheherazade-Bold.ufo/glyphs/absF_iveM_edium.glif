@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absFiveMedium" format="2">
   <advance width="460"/>
-  <anchor x="460" y="0" name="digit"/>
   <anchor x="0" y="0" name="_digit"/>
+  <anchor x="460" y="0" name="digit"/>
   <outline>
     <contour>
       <point x="390" y="460" type="curve" smooth="yes"/>
@@ -40,18 +40,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-02 pkm mod Designed the Bold as 66% version of normal size.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="222" width="132" />
-      <hstem pos="507" width="130" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-02 pkm mod Designed the Bold as 66% version of normal size.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPerTenThousandSign" format="2">
-  <unicode hex="060A"/>
   <advance width="1344"/>
+  <unicode hex="060A"/>
   <outline>
     <contour>
       <point x="748" y="1020" type="line"/>
@@ -71,18 +71,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-11-07 pkm des Copied from Regular and reconstructed using component _dot_percent.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-231" width="-21" />
-      <hstem pos="1023" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-07 pkm des Copied from Regular and reconstructed using component _dot_percent.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_dot4" format="2">
-  <anchor x="-31" y="276" name="_below"/>
   <anchor x="30" y="-276" name="_above"/>
+  <anchor x="-31" y="276" name="_below"/>
   <anchor x="0" y="0" name="_center"/>
   <outline>
     <contour>
@@ -82,18 +82,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-237" width="-21" />
-      <hstem pos="9" width="-21" />
-      <hstem pos="14" width="-21" />
-      <hstem pos="263" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAlefWaslaFin" format="2">
   <advance width="362"/>
+  <anchor x="112" y="1400" name="diaA"/>
   <anchor x="179" y="-179" name="diaB"/>
-  <anchor x="112" y="1144" name="diaA"/>
-  <anchor x="136" y="1043" name="above"/>
-  <anchor x="227" y="-50" name="below"/>
-  <anchor x="47" y="811" name="aboveLeft"/>
-  <anchor x="-4" y="684" name="alef"/>
   <outline>
     <component base="absAlefFin"/>
     <component base="_wasla" xOffset="168" yOffset="1170"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

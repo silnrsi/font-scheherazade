@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="circledash" format="2">
-  <unicode hex="25CC"/>
   <advance width="1024"/>
+  <unicode hex="25CC"/>
+  <anchor x="250" y="1030" name="alef"/>
   <anchor x="520" y="1080" name="diaA"/>
   <anchor x="520" y="-120" name="diaB"/>
-  <anchor x="250" y="1030" name="alef"/>
   <outline>
     <contour>
       <point x="836" y="803" type="curve" smooth="yes"/>
@@ -232,17 +232,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="89" width="-21" />
-      <hstem pos="702" width="-20" />
-      <hstem pos="956" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absRialSign" format="2">
-  <unicode hex="FDFC"/>
   <advance width="1363"/>
+  <unicode hex="FDFC"/>
   <outline>
     <contour>
       <point x="656" y="121" type="curve" smooth="yes"/>
@@ -157,19 +157,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-378" width="-21" />
-      <hstem pos="-340" width="-20" />
-      <hstem pos="1104" width="-20" />
-      <vstem pos="58" width="59" />
-      <vstem pos="767" width="324" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

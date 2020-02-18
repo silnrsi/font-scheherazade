@@ -2,10 +2,10 @@
 <glyph name="absTahIni" format="2">
   <advance width="840"/>
   <anchor x="491" y="575" name="above"/>
+  <anchor x="0" y="748" name="alef"/>
   <anchor x="380" y="-50" name="below"/>
   <anchor x="154" y="1248" name="diaA"/>
   <anchor x="397" y="-150" name="diaB"/>
-  <anchor x="0" y="748" name="alef"/>
   <outline>
     <contour>
       <point x="772" y="344" type="curve" smooth="yes"/>
@@ -69,18 +69,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="0" width="129" />
-      <hstem pos="348" width="150" />
-      <hstem pos="1059" width="-20" />
-      <vstem pos="193" width="51" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absTurnedDammaBelow" format="2">
   <unicode hex="08E3"/>
+  <anchor x="0" y="-463" name="_dia2B"/>
   <anchor x="0" y="-463" name="_diaB"/>
-  <anchor x="-60" y="-940" name="diaB"/>
-  <anchor x="0" y="-463" name="_diaBtailUp"/>
   <anchor x="0" y="-463" name="_diaBtailDown"/>
+  <anchor x="0" y="-463" name="_diaBtailUp"/>
+  <anchor x="-60" y="-940" name="diaB"/>
   <outline>
     <contour>
       <point x="-65" y="-859" type="curve" smooth="yes"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absThree" format="2">
-  <unicode hex="0663"/>
   <advance width="830"/>
+  <unicode hex="0663"/>
   <outline>
     <contour>
       <point x="762" y="717" type="curve"/>
@@ -63,21 +63,12 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-09 pkm mod Adjusted vertical position.2013-12-02 pkm mod Cleaned up points.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-113" width="-21" />
-      <hstem pos="437" width="170" />
-      <hstem pos="437" width="205" />
-      <hstem pos="779" width="-20" />
-      <vstem pos="320" width="68" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-09 pkm mod Adjusted vertical position.
+2013-12-02 pkm mod Cleaned up points.</string>
+    </dict>
   </lib>
 </glyph>

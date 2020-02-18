@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEmptyCentreLowStop" format="2">
   <unicode hex="06EA"/>
-  <anchor x="0" y="-200" name="_diaB"/>
   <anchor x="0" y="-150" name="_dia2B"/>
-  <anchor x="0" y="-200" name="_diaBtailUp"/>
+  <anchor x="0" y="-200" name="_diaB"/>
   <anchor x="0" y="-200" name="_diaBtailDown"/>
+  <anchor x="0" y="-200" name="_diaBtailUp"/>
   <outline>
     <contour>
       <point x="133" y="-352" type="line"/>
@@ -20,16 +20,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-464" width="-21" />
-      <hstem pos="-220" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

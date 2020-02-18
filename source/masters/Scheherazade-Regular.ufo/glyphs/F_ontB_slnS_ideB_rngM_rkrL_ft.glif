@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="FontBslnSideBrngMrkrLft" format="2">
-  <unicode hex="F130"/>
   <advance width="340"/>
+  <unicode hex="F130"/>
   <outline>
     <contour>
       <point x="340" y="-295" type="line"/>
@@ -13,16 +13,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-757" width="-21" />
-      <hstem pos="-553" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

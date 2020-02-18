@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absReh" format="2">
-  <unicode hex="0631"/>
   <advance width="530"/>
+  <unicode hex="0631"/>
   <anchor x="375" y="394" name="above"/>
+  <anchor x="232" y="504" name="alef"/>
   <anchor x="375" y="-401" name="below"/>
-  <anchor x="365" y="-226" name="ring"/>
   <anchor x="176" y="64" name="center"/>
-  <anchor x="332" y="-113" name="through"/>
   <anchor x="229" y="720" name="diaA"/>
   <anchor x="150" y="-530" name="diaB"/>
-  <anchor x="232" y="504" name="alef"/>
+  <anchor x="365" y="-226" name="ring"/>
+  <anchor x="332" y="-113" name="through"/>
   <outline>
     <contour>
       <point x="453" y="49" type="curve" smooth="yes"/>
@@ -45,17 +45,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-378" width="-21" />
-      <hstem pos="-340" width="-20" />
-      <hstem pos="344" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

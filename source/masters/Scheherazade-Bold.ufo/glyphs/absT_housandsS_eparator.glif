@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absThousandsSeparator" format="2">
-  <unicode hex="066C"/>
   <advance width="595"/>
+  <unicode hex="066C"/>
   <outline>
     <contour>
       <point x="419" y="617" type="line"/>
@@ -27,17 +27,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="333" width="-21" />
-      <hstem pos="750" width="-20" />
-      <vstem pos="182" width="237" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

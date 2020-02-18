@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_invSmallV" format="2">
-  <anchor x="-3" y="157" name="_below"/>
   <anchor x="0" y="-162" name="_above"/>
+  <anchor x="-3" y="157" name="_below"/>
   <outline>
     <contour>
       <point x="180" y="-105" type="curve" smooth="yes"/>
@@ -34,16 +34,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-92" width="-21" />
-      <hstem pos="106" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

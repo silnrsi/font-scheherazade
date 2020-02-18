@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="atilde" format="2">
-  <unicode hex="00E3"/>
   <advance width="686"/>
-  <anchor x="336" y="760" name="above"/>
+  <unicode hex="00E3"/>
   <outline>
     <component base="a"/>
     <component base="tilde" xOffset="79"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.804,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

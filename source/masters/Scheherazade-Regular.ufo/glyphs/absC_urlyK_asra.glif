@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absCurlyKasra" format="2">
   <unicode hex="08E6"/>
+  <anchor x="145" y="-560" name="_dia2B"/>
   <anchor x="145" y="-560" name="_diaB"/>
-  <anchor x="165" y="-810" name="diaB"/>
   <anchor x="145" y="-560" name="_diaBtailDown"/>
-  <anchor x="167" y="-777" name="_diaA"/>
-  <anchor x="137" y="-473" name="diaA"/>
+  <anchor x="165" y="-810" name="diaB"/>
   <outline>
     <component base="absCurlyFatha" xOffset="47" yOffset="-1797"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="-757" width="-21" />
-      <hstem pos="-553" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

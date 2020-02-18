@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absZero" format="2">
-  <unicode hex="0660"/>
   <advance width="801"/>
+  <unicode hex="0660"/>
   <outline>
     <contour>
       <point x="498" y="233" type="curve" smooth="yes"/>
@@ -19,16 +19,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="80" width="-21" />
-      <hstem pos="356" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

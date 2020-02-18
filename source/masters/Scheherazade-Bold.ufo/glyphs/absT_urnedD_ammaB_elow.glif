@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absTurnedDammaBelow" format="2">
   <unicode hex="08E3"/>
+  <anchor x="0" y="-407" name="_dia2B"/>
   <anchor x="0" y="-407" name="_diaB"/>
-  <anchor x="-84" y="-943" name="diaB"/>
-  <anchor x="0" y="-407" name="_diaBtailUp"/>
   <anchor x="0" y="-407" name="_diaBtailDown"/>
+  <anchor x="0" y="-407" name="_diaBtailUp"/>
+  <anchor x="-84" y="-943" name="diaB"/>
   <outline>
     <contour>
       <point x="-84" y="-863" type="curve" smooth="yes"/>
@@ -43,19 +44,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-842" width="-21" />
-      <hstem pos="-499" width="-20" />
-      <hstem pos="-453" width="-20" />
-      <vstem pos="-151" width="84" />
-      <vstem pos="-151" width="226" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

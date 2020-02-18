@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absAinThreeDotsAbove" format="2">
-  <unicode hex="06A0"/>
   <advance width="1134"/>
-  <anchor x="352" y="1014" name="diaA"/>
+  <unicode hex="06A0"/>
+  <anchor x="82" y="1283" name="alef"/>
+  <anchor x="268" y="1565" name="diaA"/>
   <anchor x="320" y="-918" name="diaB"/>
-  <anchor x="203" y="851" name="alef"/>
-  <anchor x="313" y="1383" name="_below"/>
-  <anchor x="368" y="831" name="_above"/>
-  <anchor x="360" y="1046" name="_center"/>
-  <anchor x="398" y="816" name="above"/>
-  <anchor x="525" y="92" name="below"/>
   <outline>
     <component base="_dot3u" xOffset="390" yOffset="939"/>
     <component base="absAin"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

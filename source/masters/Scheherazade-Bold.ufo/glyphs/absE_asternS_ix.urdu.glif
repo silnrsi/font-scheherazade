@@ -5,17 +5,12 @@
     <component base="absSix" xOffset="-10"/>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-12-09 pkm mod Decomposed to allow use as a component.2013-12-03 pkm mod Replaced with absSix component.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="528" width="240" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-12-09 pkm mod Decomposed to allow use as a component.
+2013-12-03 pkm mod Replaced with absSix component.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absDotlessFeh" format="2">
-  <unicode hex="06A1"/>
   <advance width="1446"/>
+  <unicode hex="06A1"/>
   <anchor x="1162" y="785" name="above"/>
+  <anchor x="372" y="684" name="alef"/>
   <anchor x="1104" y="-6" name="below"/>
   <anchor x="601" y="917" name="diaA"/>
   <anchor x="600" y="-210" name="diaB"/>
-  <anchor x="372" y="684" name="alef"/>
   <outline>
     <contour>
       <point x="1360" y="399" type="curve" smooth="yes"/>
@@ -68,18 +68,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-6" width="123" />
-      <hstem pos="733" width="-20" />
-      <vstem pos="88" width="55" />
-      <vstem pos="1042" width="318" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

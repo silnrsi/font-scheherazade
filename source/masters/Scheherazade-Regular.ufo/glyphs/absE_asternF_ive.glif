@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absEasternFive" format="2">
-  <unicode hex="06F5"/>
   <advance width="801"/>
+  <unicode hex="06F5"/>
   <outline>
     <contour>
       <point x="663" y="207" type="curve" smooth="yes"/>
@@ -45,18 +45,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-25" width="119" />
-      <hstem pos="690" width="-20" />
-      <vstem pos="139" width="72" />
-      <vstem pos="616" width="56" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

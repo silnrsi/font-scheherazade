@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_gafBarCenter" format="2">
+  <guideline y="534"/>
   <anchor x="266" y="113" name="_center"/>
   <outline>
     <contour>
@@ -32,20 +33,12 @@
       <point x="555" y="183"/>
     </contour>
   </outline>
-  <guideline y="534"/>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-01-21 pkm Created, added AP.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="43" width="-21" />
-      <hstem pos="44" width="-21" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-01-21 pkm Created, added AP.</string>
+    </dict>
   </lib>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ornateLeftParen" format="2">
-  <unicode hex="FD3E"/>
   <advance width="842"/>
+  <unicode hex="FD3E"/>
   <outline>
     <contour>
       <point x="801" y="-408" type="line"/>
@@ -531,52 +531,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-387" width="-21" />
-      <hstem pos="13" width="162" />
-      <hstem pos="214" width="60" />
-      <hstem pos="313" width="161" />
-      <hstem pos="891" width="-20" />
-      <vstem pos="158" width="163" />
-      <vstem pos="358" width="61" />
-      <vstem pos="457" width="161" />
-    </hintset>
-    <hintset pointTag="hr02">
-      <hstem pos="-387" width="-21" />
-      <hstem pos="13" width="121" />
-      <hstem pos="166" width="156" />
-      <hstem pos="355" width="119" />
-      <hstem pos="891" width="-20" />
-      <vstem pos="158" width="119" />
-      <vstem pos="309" width="110" />
-      <vstem pos="500" width="118" />
-    </hintset>
-    <hintset pointTag="hr03">
-      <hstem pos="-387" width="-21" />
-      <hstem pos="13" width="162" />
-      <hstem pos="214" width="60" />
-      <hstem pos="313" width="161" />
-      <hstem pos="891" width="-20" />
-      <vstem pos="158" width="163" />
-      <vstem pos="358" width="61" />
-      <vstem pos="457" width="161" />
-    </hintset>
-    <hintset pointTag="hr04">
-      <hstem pos="-387" width="-21" />
-      <hstem pos="13" width="121" />
-      <hstem pos="166" width="156" />
-      <hstem pos="355" width="119" />
-      <hstem pos="891" width="-20" />
-      <vstem pos="158" width="119" />
-      <vstem pos="309" width="152" />
-      <vstem pos="500" width="118" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

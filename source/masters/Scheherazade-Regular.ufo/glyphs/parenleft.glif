@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="parenleft" format="2">
-  <unicode hex="0028"/>
   <advance width="547"/>
+  <unicode hex="0028"/>
   <outline>
     <contour>
       <point x="502" y="-362" type="line"/>
@@ -33,17 +33,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-354" width="-21" />
-      <hstem pos="864" width="-20" />
-      <vstem pos="76" width="129" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

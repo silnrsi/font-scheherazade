@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_highHamza" format="2">
-  <anchor x="211" y="25" name="_above"/>
-  <anchor x="212" y="459" name="_below"/>
+  <anchor x="0" y="0" name="_above"/>
   <outline>
     <component base="_hamza" xOffset="211" yOffset="218"/>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="lsb">
-      <hstem pos="73" width="-21" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

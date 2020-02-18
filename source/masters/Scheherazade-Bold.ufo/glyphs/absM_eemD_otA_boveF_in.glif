@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absMeemDotAboveFin" format="2">
   <advance width="838"/>
-  <anchor x="333" y="777" name="diaA"/>
+  <anchor x="201" y="746" name="alef"/>
+  <anchor x="336" y="1011" name="diaA"/>
   <anchor x="170" y="-779" name="diaB"/>
-  <anchor x="188" y="452" name="alef"/>
-  <anchor x="463" y="452" name="above"/>
-  <anchor x="456" y="-315" name="below"/>
   <outline>
     <component base="absMeemFin"/>
     <component base="_dot1" xOffset="435" yOffset="650"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

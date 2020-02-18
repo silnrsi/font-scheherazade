@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSeenFourDotsAbove" format="2">
-  <unicode hex="075C"/>
   <advance width="1348"/>
-  <anchor x="300" y="-600" name="diaB"/>
-  <anchor x="490" y="450" name="diaA"/>
+  <unicode hex="075C"/>
   <anchor x="372" y="244" name="alef"/>
-  <anchor x="927" y="449" name="above"/>
-  <anchor x="1004" y="-23" name="below"/>
+  <anchor x="489" y="744" name="diaA"/>
+  <anchor x="300" y="-600" name="diaB"/>
   <outline>
     <component base="absSeen"/>
     <component base="_dot4" xOffset="927" yOffset="676"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

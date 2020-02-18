@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_two" format="2">
-  <anchor x="11" y="-37" name="_aboveLeft"/>
   <anchor x="-1" y="-37" name="_above"/>
+  <anchor x="11" y="-37" name="_aboveLeft"/>
   <outline>
     <contour>
       <point x="105" y="338" type="curve" smooth="yes"/>
@@ -46,19 +46,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-01-21 pkm Created; added APs.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-14" width="-21" />
-      <hstem pos="410" width="-20" />
-      <vstem pos="-17" width="122" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-01-21 pkm Created; added APs.</string>
+    </dict>
   </lib>
 </glyph>

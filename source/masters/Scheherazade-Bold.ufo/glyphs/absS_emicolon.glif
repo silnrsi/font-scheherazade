@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSemicolon" format="2">
-  <unicode hex="061B"/>
   <advance width="681"/>
+  <unicode hex="061B"/>
   <anchor x="296" y="930" name="diaA"/>
   <anchor x="296" y="-195" name="diaB"/>
   <outline>
@@ -48,19 +48,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-107" width="208" />
-      <hstem pos="213" width="240" />
-      <hstem pos="782" width="-20" />
-      <vstem pos="168" width="96" />
-      <vstem pos="243" width="229" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

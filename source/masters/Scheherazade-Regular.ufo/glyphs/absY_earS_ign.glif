@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absYearSign" format="2">
-  <unicode hex="0601"/>
   <advance width="1180"/>
+  <unicode hex="0601"/>
   <anchor x="506" y="0" name="digit"/>
   <outline>
     <contour>
@@ -53,19 +53,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-03-04 pkm mod Adjusted position of digit AP, and width of glyph.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-250" width="-21" />
-      <hstem pos="-146" width="146" />
-      <hstem pos="330" width="-20" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-03-04 pkm mod Adjusted position of digit AP, and width of glyph.</string>
+    </dict>
   </lib>
 </glyph>

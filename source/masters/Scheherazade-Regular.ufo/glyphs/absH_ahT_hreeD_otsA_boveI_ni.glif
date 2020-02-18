@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absHahThreeDotsAboveIni" format="2">
   <advance width="977"/>
+  <anchor x="212" y="888" name="alef"/>
+  <anchor x="384" y="1150" name="diaA"/>
   <anchor x="450" y="-150" name="diaB"/>
-  <anchor x="352" y="750" name="diaA"/>
-  <anchor x="224" y="684" name="alef"/>
-  <anchor x="441" y="505" name="above"/>
-  <anchor x="441" y="-50" name="below"/>
   <outline>
     <component base="absHahIni"/>
     <component base="_dot3u" xOffset="441" yOffset="736"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.805,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

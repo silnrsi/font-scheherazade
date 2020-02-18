@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absSmallWaw" format="2">
-  <unicode hex="06E5"/>
   <advance width="292"/>
+  <unicode hex="06E5"/>
   <outline>
     <contour>
       <point x="272" y="302" type="curve" smooth="yes"/>
@@ -51,20 +51,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-07-26 pkm des Replaced regular outline with bold, reduced to 50%.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="16" width="70" />
-      <hstem pos="466" width="-20" />
-      <vstem pos="114" width="158" />
-      <vstem pos="230" width="42" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-07-26 pkm des Replaced regular outline with bold, reduced to 50%.</string>
+    </dict>
   </lib>
 </glyph>

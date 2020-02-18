@@ -140,19 +140,9 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="hr01">
-      <hstem pos="-253" width="263" />
-      <hstem pos="703" width="-20" />
-      <hstem pos="1021" width="-20" />
-      <vstem pos="60" width="157" />
-      <vstem pos="635" width="333" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
   </lib>
 </glyph>

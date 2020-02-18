@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absBehSmallVBelow" format="2">
-  <unicode hex="08A0"/>
   <advance width="1352"/>
-  <anchor x="660" y="585" name="diaA"/>
+  <unicode hex="08A0"/>
   <anchor x="424" y="564" name="alef"/>
-  <anchor x="651" y="-310" name="diaB"/>
-  <anchor x="662" y="410" name="above"/>
-  <anchor x="657" y="-98" name="below"/>
-  <anchor x="636" y="12" name="ring"/>
+  <anchor x="660" y="585" name="diaA"/>
+  <anchor x="620" y="-521" name="diaB"/>
   <outline>
     <component base="absBehNoDots"/>
     <component base="_smallV" xOffset="660" yOffset="-295"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>

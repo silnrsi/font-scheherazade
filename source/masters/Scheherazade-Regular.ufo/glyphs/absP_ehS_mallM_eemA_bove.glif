@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absPehSmallMeemAbove" format="2">
-  <unicode hex="08B7"/>
   <advance width="1352"/>
-  <anchor x="651" y="-310" name="diaB"/>
-  <anchor x="660" y="585" name="diaA"/>
+  <unicode hex="08B7"/>
   <anchor x="424" y="564" name="alef"/>
-  <anchor x="662" y="410" name="above"/>
-  <anchor x="657" y="-98" name="below"/>
-  <anchor x="636" y="12" name="ring"/>
+  <anchor x="669" y="915" name="diaA"/>
+  <anchor x="657" y="-560" name="diaB"/>
   <outline>
     <component base="absBehNoDots"/>
     <component base="_meem" xOffset="690" yOffset="627"/>
     <component base="_dot3d" xOffset="656" yOffset="-238"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.6,0.997,1,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
   </lib>
 </glyph>

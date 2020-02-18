@@ -66,20 +66,11 @@
     </contour>
   </outline>
   <lib>
-  <dict>
-    <key>note</key>
-    <string>2013-03-04 pkm mod Adjusted digit AP and width of glyph.</string>
-  <key>com.adobe.type.autohint</key>
-  <data>
-  <hintSetList>
-    <hintset pointTag="">
-      <hstem pos="-47" width="71" />
-      <hstem pos="-47" width="94" />
-      <hstem pos="59" width="112" />
-      <hstem pos="353" width="142" />
-    </hintset>
-  </hintSetList>
-  </data>
-  </dict>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-03-04 pkm mod Adjusted digit AP and width of glyph.</string>
+    </dict>
   </lib>
 </glyph>

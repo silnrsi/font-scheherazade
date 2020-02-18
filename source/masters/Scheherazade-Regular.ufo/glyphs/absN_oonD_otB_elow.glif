@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="absNoonDotBelow" format="2">
-  <unicode hex="06B9"/>
   <advance width="824"/>
-  <anchor x="353" y="779" name="diaA"/>
-  <anchor x="384" y="-410" name="diaB"/>
-  <anchor x="284" y="436" name="alef"/>
-  <anchor x="391" y="391" name="above"/>
-  <anchor x="410" y="-336" name="below"/>
-  <anchor x="421" y="-213" name="ring"/>
+  <unicode hex="06B9"/>
+  <anchor x="220" y="616" name="alef"/>
+  <anchor x="344" y="822" name="diaA"/>
+  <anchor x="425" y="-675" name="diaB"/>
   <outline>
     <component base="absNoonGhunna"/>
     <component base="_dot1" xOffset="389" yOffset="525"/>
     <component base="_dot1" xOffset="408" yOffset="-467"/>
   </outline>
   <lib>
-  <dict>
-  <key>public.markColor</key>
-  <string>0.651,1,0.6,1</string>
-  </dict>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
   </lib>
 </glyph>
