@@ -17,10 +17,10 @@ DESC_SHORT = "A general-purpose Arabic script font"
 #DEBPKG = 'fonts-sil-scheherazade'
 
 # Get version info from Regular UFO; must be first function call:
-getufoinfo('source/' + FAMILY + '-Regular' + '.ufo')
+getufoinfo('source/masters/' + FAMILY + '-Regular' + '.ufo')
 # BUILDLABEL = 'beta'
 
-ftmlTest('tests/ftml-smith.xsl', fonts = ['../tests/reference/Scheherazade-Regular-1_001.ttf'], addfontindex = 1, fontmode = 'collect')
+###ftmlTest('tests/ftml-smith.xsl', fonts = ['../tests/reference/Scheherazade-Regular-1_001.ttf'], addfontindex = 1, fontmode = 'collect')
 
 # APs to omit:
 OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_H,_L,_O,_U,_R,above,below,center,ring,through,H,L,O,U,R"'
@@ -28,8 +28,8 @@ OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_H,_L,_O,_U,_R,above,
 # iterate over designspace
 designspace('source/Scheherazade.designspace',
     instanceparams='-l ' + genout + '${DS:FILENAME_BASE}_createintance.log',
-    target = process('${DS:FILENAME_BASE}.ttf',
-        cmd('${PSFCHANGETTFGLYPHNAMES} ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']),
+    target = process('${DS:FILENAME_BASE}.ttf'
+###       , cmd('${PSFCHANGETTFGLYPHNAMES} ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']),
 #        Note: ttfautohint-generated hints don't maintain stroke thickness at joins, so we're not hinting these fonts
 #        cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}')
     ),

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE all_features SYSTEM "feat_all.dtd">
+<all_features version="1.0">
+	<feature name="Language" value="Default" tag="Lng">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Kurdish" tag="Kur">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>			
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>	# shadda-kasra raised
+			<cmd name="gr_feat" args="{gr_cv48} 3"/>	# heh
+		</value>
+		<value name="Rohingya" tag="Rhg">
+			<cmd name="encode" args="06F4 uni06F4.roh"/>
+			<cmd name="encode" args="06F6 uni06F6.urdu"/>
+			<cmd name="encode" args="06F7 uni06F7.urdu"/>
+			<cmd name="gr_feat" args="{gr_cv82} 4"/>	# eastern digits
+		</value>
+		<value name="Sindhi" tag="Sin">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>	
+			<cmd name="gr_feat" args="{gr_cv44} 1"/>	# meem alternates
+			<cmd name="gr_feat" args="{gr_cv48} 1"/>	# heh
+			<cmd name="gr_feat" args="{gr_cv82} 1"/>	# eastern digits
+		</value>
+		<value name="Urdu" tag="Urd">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduCALT}"/>	
+			<cmd name="gr_feat" args="{gr_cv48} 2"/>	# heh
+			<cmd name="gr_feat" args="{gr_cv82} 2"/>	# eastern digits
+		</value>
+		<value name="Wolof" tag="Wol">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WolofCALT}"/>	
+			<cmd name="gr_feat" args="{gr_cv12} 1"/>	# dal alternates
+			<cmd name="gr_feat" args="{gr_cv70} 2"/>	# damma short
+		</value>
+	</feature>
+
+	<feature name="Alef diacritic placement" value="Standard" tag="Al">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Hamza touching" tag="HzTo">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WarshAlternatesTT1}"/>
+			<cmd name="gr_feat" args="{gr_cv02} 1"/>
+		</value>
+		<value name="Touching" tag="To">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WarshAlternatesTT2}"/>
+			<cmd name="gr_feat" args="{gr_cv02} 2"/>
+		</value>
+	</feature>
+
+	<feature name="Jeem/Hah" value="Standard" tag="JeHa">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Handwritten" tag="Hand">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {JeemHahMedAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv08} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Dal" value="Standard" tag="Dal">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Alternate" tag="Alt">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DalAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv12} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Sad/Dad" value="Standard" tag="SdDd">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Half" tag="Half">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SadDadAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv20} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Meem" value="Standard" tag="Meem">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Sindhi-style" tag="Sin">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MeemAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv44} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Heh" value="Standard" tag="Heh">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Kurdish-style" tag="Kur">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
+			<cmd name="gr_feat" args="{gr_cv48} 3"/>
+		</value>
+		<value name="Sindhi-style" tag="Sin">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiHeh}"/>	
+			<cmd name="gr_feat" args="{gr_cv48} 1"/>
+		</value>
+		<value name="Urdu-style" tag="Urd">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduHeh}"/>	
+			<cmd name="gr_feat" args="{gr_cv48} 2"/>
+		</value>
+	</feature>
+
+	<feature name="Arabic U" value="Standard" tag="ArabicU">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Filled" tag="Fi">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv50} 1"/>
+		</value>
+	</feature>
+
+
+	<feature name="Maddah" value="Small" tag="Mda">
+		<value name="Small" tag="Sm">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Large" tag="Lg">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MaddahAlternate}"/>	<!-- must be via lookup -->
+			<cmd name="gr_feat" args="{gr_cv60} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Shadda+kasra placement" value="Default" tag="Kas">
+		<!-- see also the interactions section -->
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Lowered" tag="Low">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Raised" tag="High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>
+		</value>
+	</feature>
+
+	<feature name="Damma" value="Default" tag="Dma">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Filled" tag="Fi">
+			<cmd name="encode" args="064F uni064F.filled"/>
+		</value>
+		<value name="Short" tag="Sh">
+			<cmd name="encode" args="064F uni064F.short"/>
+		</value>
+	</feature>
+
+	<feature name="Dammatan" value="Standard" tag="Dmtan">		<!-- was "Six-nine dammatan", "SixNine" -->
+		<value name="Standard" tag="Std">					<!-- was "False", "F" -->
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Six-nine" tag="69">						<!-- was "True", "T" -->
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanAlternate}"/>	
+			<cmd name="gr_feat" args="{gr_cv72} 1"/>
+		</value>
+	</feature>
+
+	<feature name="Inverted Damma" value="Default" tag="InvDma">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Hollow" tag="Ho">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Filled" tag="Fi">
+			<cmd name="encode" args="0657 uni0657.filled"/>
+		</value>
+	</feature>
+
+	<feature name="Superscript Alef" value="Default" tag="Sal">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Large" tag="Lg">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DaggerAlefToLarge}"/>	<!-- must be via lookup -->
+			<cmd name="gr_feat" args="{gr_cv76} 1"/>
+		</value>
+		<value name="Small" tag="Sm">
+			<cmd name="null" args="null"/>
+		</value>
+	</feature>
+
+	<feature name="Sukun" value="Closed" tag="Su">
+		<value name="Closed" tag="Cl">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Open down" tag="Dn">
+			<cmd name="encode" args="0652 uni0652.downOpen"/>
+		</value>
+		<value name="Open left" tag="Lt">
+			<cmd name="encode" args="0652 uni08FF"/>
+		</value>	
+	</feature>
+
+	<feature name="End of ayah" value="Standard" tag="Ayah">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Simplified A" tag="A">
+			<cmd name="encode" args="06DD uni06DD.alt"/>
+		</value>
+		<value name="Simplified B" tag="B">
+			<cmd name="encode" args="06DD uni06DD.altB"/>
+		</value>
+	</feature>
+
+	<feature name="Eastern digits" value="Standard" tag="Dig">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Rohingya-style" tag="Roh">
+			<cmd name="encode" args="06F4 uni06F4.roh"/>
+			<cmd name="encode" args="06F6 uni06F6.urdu"/>
+			<cmd name="encode" args="06F7 uni06F7.urdu"/>
+		</value>
+		<value name="Sindhi-style" tag="Sin">
+			<cmd name="encode" args="06F6 uni06F6.urdu"/>
+			<cmd name="encode" args="06F7 uni06F7.urdu"/>
+		</value>
+		<value name="Urdu-style" tag="Urd">
+			<cmd name="encode" args="06F4 uni06F4.urdu"/>
+			<cmd name="encode" args="06F6 uni06F6.urdu"/>
+			<cmd name="encode" args="06F7 uni06F7.urdu"/>
+		</value>
+	</feature>
+
+
+	<feature name="Comma" value="Upward" tag="Cma"> 		<!-- was "Downward comma", "Dc" -->
+		<value name="Upward" tag="Up">						<!-- was "False", "F" -->
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Downward" tag="Dn">					<!-- was "True", "T" -->
+			<cmd name="encode" args="060C uni060C.downward"/>
+			<cmd name="encode" args="061B uni061B.downward"/>
+		</value>
+	</feature>
+
+	<feature name="Line spacing" value="Normal"	tag="LnSpc">
+		<value name="Normal" tag="Nrml">
+			<cmd name="null" args="2080 1274"/>
+		</value>
+		<value name="Loose" tag="Ls">
+			<cmd name="line_gap" args="3067 2006"/>
+		</value>
+		<value name="1.0 Compatible Normal" tag="1.0N">
+			<cmd name="line_gap" args="2080 1274"/>
+		</value>
+		<value name="1.0 Compatible Loose" tag="1.0L">
+			<cmd name="line_gap" args="2970 1948"/>
+		</value>
+		<value name="Imported" tag="Im">
+			<cmd name="line_metrics_scaled" args="null"/>
+		</value>
+	</feature>
+
+	<interactions>
+	    <test select="Lng-Rhg Kas-High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>
+	    </test>
+	    <test select="Lng-Sin Kas-High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>
+	    </test>
+	    <test select="Lng-Urd Kas-High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>
+	    </test>
+	    <test select="Lng-Wol Kas-High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="gr_feat" args="{gr_cv62} 2"/>
+	    </test>
+	</interactions>
+
+	<cmd_blocks/>
+
+	<!-- Alias definitions will be inserted by smith (using psftuneraliases) -->
+	<aliases/>
+	
+	<old_names>
+		<old_feature  name="Six-nine dammatan" tag="Dmtan"/>
+		<old_value feature="Six-nine dammatan" name="False" tag="Std"/>
+		<old_value feature="Six-nine dammatan" name="True"  tag="69"/> 
+
+		<old_feature  name="Downward comma" tag="Comma"/>
+		<old_value feature="Downward comma" name="False" tag="Up"/>
+		<old_value feature="Downward comma" name="True"  tag="Dn"/>
+	</old_names>
+
+</all_features>
