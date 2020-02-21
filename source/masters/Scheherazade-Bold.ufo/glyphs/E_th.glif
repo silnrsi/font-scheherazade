@@ -4,7 +4,7 @@
   <unicode hex="00D0"/>
   <outline>
     <contour>
-      <point x="1042" y="511" type="line" smooth="yes"/>
+      <point x="1042" y="511" type="curve" smooth="yes"/>
       <point x="1042" y="705"/>
       <point x="952" y="874"/>
       <point x="791" y="961" type="curve" smooth="yes"/>
@@ -33,10 +33,9 @@
       <point x="532" y="0" type="line" smooth="yes"/>
       <point x="853" y="0"/>
       <point x="1042" y="220"/>
-      <point x="1042" y="511" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="770" y="511" type="line"/>
+      <point x="770" y="511" type="curve"/>
       <point x="770" y="308"/>
       <point x="709" y="87"/>
       <point x="499" y="87" type="curve" smooth="yes" name="hr01"/>
@@ -53,7 +52,6 @@
       <point x="462" y="933" type="curve" smooth="yes"/>
       <point x="703" y="933"/>
       <point x="770" y="706"/>
-      <point x="770" y="511" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>
