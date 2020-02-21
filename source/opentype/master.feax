@@ -376,6 +376,11 @@ lookup HeadOfKhahHack {
 #  Positioning Lookups
 #**********************************
 
+lookup LamAlefConnection {
+	lookupflag IgnoreMarks RightToLeft;
+  pos cursive @entry @exit;
+} LamAlefConnection;
+
 lookup mark_to_base {
   lookupflag 0;
   pos base @diaA mark @_diaA;
@@ -405,6 +410,157 @@ lookup mark_to_mark_below {
 } mark_to_mark_below;
 
 
+# Subtending mark positioning
+
+lookup SubtendingMarks {
+  lookupflag IgnoreMarks ;
+    # This code is taken from Harmattan.
+    # In Graphite we use mark attachment rules. However, in OpenType positioning digits on 
+    # subtending marks has to be done with adjustments rather than attachment since for some 
+    # engines the digits will ordered *before* the subtending mark.
+    
+    # Additionally, the adjustment value records depend on font face (bold vs regular). Therefore
+    # we use feax extentions to calculate the value records based on glyph advancewidths and digit AP coordinates.
+    
+    # In each "do" template, the first rule is ordered for Uniscribe or HarfBuzz 'latin', the second for HarfBuzz 'arab'
+    
+    # U+06DD End of Ayah
+    do let w = -ADVx("absZeroSmall"); let x1 = APx("absEndOfAyah.3", "digitR") - ADVx("absEndOfAyah.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos @AyahAny @DigitsAnySmall' <$x1 0 $w 0>   @DigitsAnySmall' <$x2 0 $w 0>   @DigitsAnySmall' <$x3 0 $w 0> ;
+        pos          @DigitsAnySmall' <$x3 0 $w 0>   @DigitsAnySmall' <$x2 0 $w 0>   @DigitsAnySmall' <$x1 0 $w 0>  @AyahAny ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absEndOfAyah.2", "digitR") - ADVx("absEndOfAyah.2"); let x2 = x1 - w; 
+    {
+        pos @AyahAny @DigitsAnyMedium' <$x1 0 $w 0>  @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos          @DigitsAnyMedium' <$x2 0 $w 0>  @DigitsAnyMedium' <$x1 0 $w 0>  @AyahAny ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absEndOfAyah", "digitR") - ADVx("absEndOfAyah");
+    {
+        pos @AyahAny @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos          @DigitsAnyMedium' <$x1 0 $w 0> @AyahAny ;
+    }
+
+    # U+0600 Number sign
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSign.3", "digitR") - ADVx("absNumberSign.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos absNumberSign.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absNumberSign.3 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSign.2", "digitR") - ADVx("absNumberSign.2"); let x2 = x1 - w;
+    {
+        pos absNumberSign.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absNumberSign.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSign", "digitR") - ADVx("absNumberSign"); 
+    {
+        pos absNumberSign   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x1 0 $w 0> absNumberSign ;
+    }
+    
+    # U+0601 Year sign
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absYearSign.4", "digitR") - ADVx("absYearSign.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
+    {
+        pos absYearSign.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0> ;
+        pos           @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absYearSign.4 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absYearSign.3", "digitR") - ADVx("absYearSign.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos absYearSign.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
+        pos           @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absYearSign.3 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absYearSign.2", "digitR") - ADVx("absYearSign.2"); let x2 = x1 - w;
+    {
+        pos absYearSign.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos           @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absYearSign.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absYearSign", "digitR") - ADVx("absYearSign"); 
+    {
+        pos absYearSign   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos           @DigitsAnyMedium' <$x1 0 $w 0> absYearSign ;
+    }
+    
+    # U+0602 Footnote Marker
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absFootnoteSign.2", "digitR") - ADVx("absFootnoteSign.2"); let x2 = x1 - w;
+    {
+        pos absFootnoteSign.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos                     @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absFootnoteSign.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absFootnoteSign", "digitR") - ADVx("absFootnoteSign"); 
+    {
+        pos absFootnoteSign   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos                     @DigitsAnyMedium' <$x1 0 $w 0> absFootnoteSign ;
+    }
+    
+    # U+0603 Page Number
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absPageSign.4", "digitR") - ADVx("absPageSign.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
+    {
+        pos absPageSign.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
+        pos                 @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absPageSign.4 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absPageSign.3", "digitR") - ADVx("absPageSign.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos absPageSign.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absPageSign.3 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absPageSign.2", "digitR") - ADVx("absPageSign.2"); let x2 = x1 - w;
+    {
+        pos absPageSign.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absPageSign.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absPageSign", "digitR") - ADVx("absPageSign"); 
+    {
+        pos absPageSign   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x1 0 $w 0> absPageSign ;
+    }
+    
+    # U+0604 Samvat sign
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absSamvatSign.4", "digitR") - ADVx("absSamvatSign.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
+    {
+        pos absSamvatSign.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
+        pos             @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absSamvatSign.4 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absSamvatSign.3", "digitR") - ADVx("absSamvatSign.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos absSamvatSign.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absSamvatSign.3 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absSamvatSign.2", "digitR") - ADVx("absSamvatSign.2"); let x2 = x1 - w;
+    {
+        pos absSamvatSign.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absSamvatSign.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absSamvatSign", "digitR") - ADVx("absSamvatSign"); 
+    {
+        pos absSamvatSign   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos             @DigitsAnyMedium' <$x1 0 $w 0> absSamvatSign ;
+    }
+    
+    # U+0605 Number mark
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSignAbove.4", "digitR") - ADVx("absNumberSignAbove.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
+    {
+        pos absNumberSignAbove.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
+        pos                 @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absNumberSignAbove.4 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSignAbove.3", "digitR") - ADVx("absNumberSignAbove.3"); let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos absNumberSignAbove.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absNumberSignAbove.3 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSignAbove.2", "digitR") - ADVx("absNumberSignAbove.2"); let x2 = x1 - w;
+    {
+        pos absNumberSignAbove.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> absNumberSignAbove.2 ;
+    }
+    do let w = -ADVx("absZeroMedium"); let x1 = APx("absNumberSignAbove", "digitR") - ADVx("absNumberSignAbove"); 
+    {
+        pos absNumberSignAbove   @DigitsAnyMedium' <$x1 0 $w 0> ;
+        pos                 @DigitsAnyMedium' <$x1 0 $w 0> absNumberSignAbove ;
+    }
+
+} SubtendingMarks;
+
+
 #**********************************
 #  FEATURES
 #**********************************
@@ -413,38 +569,17 @@ lookup mark_to_mark_below {
 
 feature init {  # Initial Forms
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup ltrInit;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup ltrInit;
-        language SND  exclude_dflt;  # Sindhi
-            lookup ltrInit;
-        language URD  exclude_dflt;  # Urdu
-            lookup ltrInit;
+      lookup ltrInit;
 } init ;
 
 feature medi {  # Medial Forms
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup ltrMedi;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup ltrMedi;
-        language SND  exclude_dflt;  # Sindhi
-            lookup ltrMedi;
-        language URD  exclude_dflt;  # Urdu
-            lookup ltrMedi;
+      lookup ltrMedi;
 } medi ;
 
 feature fina {  # Terminal Forms
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup ltrFina;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup ltrFina;
-        language SND  exclude_dflt;  # Sindhi
-            lookup ltrFina;
-        language URD  exclude_dflt;  # Urdu
-            lookup ltrFina;
+      lookup ltrFina;
 } fina ;
 
 
@@ -510,14 +645,7 @@ feature ccmp {  # Glyph Composition/Decomposition
 
 feature cv12 {  # Character Variant 12
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup DalAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup DalAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup DalAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup DalAlternates;
+      lookup DalAlternates;
 } cv12 ;
 
 feature cv44 {  # Character Variant 44
@@ -538,29 +666,11 @@ feature cv48 {  # Character Variant 48
 
 feature cv50 {  # Character Variant 50
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup ArabicUAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup ArabicUAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup ArabicUAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup ArabicUAlternates;
+      lookup ArabicUAlternates;
 } cv50 ;
 
 feature cv60 {  # Character Variant 60
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup MaddahAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup MaddahAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup MaddahAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup MaddahAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup MaddahAlternates;
+		lookup MaddahAlternates;
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
@@ -575,93 +685,27 @@ feature cv62 {  # Character Variant 62
 } cv62 ;
 
 feature cv70 {  # Character Variant 70
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup DammaAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup DammaAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup DammaAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup DammaAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup DammaAlternates;
+		lookup DammaAlternates;
 } cv70 ;
 
 feature cv72 {  # Character Variant 72
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup DammatanAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup DammatanAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup DammatanAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup DammatanAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup DammatanAlternates;
+		lookup DammatanAlternates;
 } cv72 ;
 
 feature cv74 {  # Character Variant 74
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup UltapeshAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup UltapeshAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup UltapeshAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup UltapeshAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup UltapeshAlternates;
+		lookup UltapeshAlternates;
 } cv74 ;
 
 feature cv76 {  # Character Variant 76
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup DaggerAlefToLarge;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup DaggerAlefToLarge;
-        language SND  exclude_dflt;  # Sindhi
-            lookup DaggerAlefToLarge;
-        language URD  exclude_dflt;  # Urdu
-            lookup DaggerAlefToLarge;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup DaggerAlefToLarge;
+		lookup DaggerAlefToLarge;
 } cv76 ;
 
 feature cv78 {  # Character Variant 78
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup SukunAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup SukunAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup SukunAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup SukunAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup SukunAlternates;
+		lookup SukunAlternates;
 } cv78 ;
 
 feature cv80 {  # Character Variant 80
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup AyahAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup AyahAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup AyahAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup AyahAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup AyahAlternates;
+		lookup AyahAlternates;
 } cv80 ;
 
 feature cv82 {  # Character Variant 82
@@ -673,48 +717,15 @@ feature cv82 {  # Character Variant 82
 } cv82 ;
 
 feature cv84 {  # Character Variant 84
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup CommaAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup CommaAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup CommaAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup CommaAlternates;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup CommaAlternates;
+		lookup CommaAlternates;
 } cv84 ;
 
 feature cv90 {  # Character Variant 90
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup JehHack;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup JehHack;
-        language SND  exclude_dflt;  # Sindhi
-            lookup JehHack;
-        language URD  exclude_dflt;  # Urdu
-            lookup JehHack;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup JehHack;
+		lookup JehHack;
 } cv90 ;
 
 feature cv92 {  # Character Variant 92
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup HeadOfKhahHack;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup HeadOfKhahHack;
-        language SND  exclude_dflt;  # Sindhi
-            lookup HeadOfKhahHack;
-        language URD  exclude_dflt;  # Urdu
-            lookup HeadOfKhahHack;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup HeadOfKhahHack;
+		lookup HeadOfKhahHack;
 } cv92 ;
 
 feature rlig {  # Required Ligatures
@@ -744,30 +755,13 @@ feature rlig {  # Required Ligatures
 } rlig ;
 
 feature rtlm {  # Right-To-Left Mirrored Forms
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup Mirror;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup Mirror;
-        language SND  exclude_dflt;  # Sindhi
-            lookup Mirror;
-        language URD  exclude_dflt;  # Urdu
-            lookup Mirror;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup Mirror;
+		lookup Mirror;
 } rtlm ;
 
 feature salt {  # Stylistic Alternates
     script arab;  # Arabic
+      lookup AyahAlternates;
         language dflt;  # Default
-            lookup AyahAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup AyahAlternates;
-        language SND  exclude_dflt;  # Sindhi
-            lookup AyahAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup AyahAlternates;
 } salt ;
 
 
@@ -778,8 +772,8 @@ feature mark {  # Mark to base Positioning
         lookup mark_to_base;
         lookup alef_to_base;
     script arab;  # Arabic
-        lookup AlefMark2BelowAfterLam;
-        lookup MarkKern;
+####        lookup AlefMark2BelowAfterLam;
+####        lookup MarkKern;
       # Force other languages to include Arabic script lookups
       language KUR  ;
       language SND  ;
@@ -845,64 +839,43 @@ feature mkmk {  # Mark to mark Positioning
 
 feature curs {  # Cursive Positioning
     script arab;  # Arabic
-        language dflt;  # Default
-            lookup LamAlefConnection;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup LamAlefConnection;
-        language SND  exclude_dflt;  # Sindhi
-            lookup LamAlefConnection;
-        language URD  exclude_dflt;  # Urdu
-            lookup LamAlefConnection;
+      lookup LamAlefConnection;
 } curs ;
 
 
 feature kern {  # Kerning
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup Reh;
-            lookup SubtendingAyah;
-            lookup Subtending0600;
-            lookup Subtending0601;
-            lookup Subtending0602;
-            lookup Subtending0603;
-            lookup Subtending0604;
-            lookup Subtending0605;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup Reh;
-            lookup Marks;
-            lookup SubtendingAyah;
-            lookup Subtending0600;
-            lookup Subtending0601;
-            lookup Subtending0602;
-            lookup Subtending0603;
-            lookup Subtending0604;
-            lookup Subtending0605;
-        language SND  exclude_dflt;  # Sindhi
-            lookup Reh;
-            lookup SubtendingAyah;
-            lookup Subtending0600;
-            lookup Subtending0601;
-            lookup Subtending0602;
-            lookup Subtending0603;
-            lookup Subtending0604;
-            lookup Subtending0605;
-        language URD  exclude_dflt;  # Urdu
-            lookup Reh;
-            lookup SubtendingAyah;
-            lookup Subtending0600;
-            lookup Subtending0601;
-            lookup Subtending0602;
-            lookup Subtending0603;
-            lookup Subtending0604;
-            lookup Subtending0605;
-    script latn;  # Latin
-        language dflt;  # Default
-            lookup SubtendingAyah;
-            lookup Subtending0600;
-            lookup Subtending0601;
-            lookup Subtending0602;
-            lookup Subtending0603;
-            lookup Subtending0604;
-            lookup Subtending0605;
+    # Same for latin & arabic:
+        lookup SubtendingMarks;
 } kern ;
+
+####feature kern {  # Kerning
+####    script arab;  # Arabic
+####        language dflt;  # Default
+####            lookup Reh;
+####            lookup SubtendingAyah;
+####            lookup Subtending0600;
+####            lookup Subtending0601;
+####            lookup Subtending0602;
+####            lookup Subtending0603;
+####            lookup Subtending0604;
+####            lookup Subtending0605;
+####        language KUR  exclude_dflt;  # Kurdish
+####            lookup Reh;
+####            lookup Marks;
+####            lookup SubtendingAyah;
+####            lookup Subtending0600;
+####            lookup Subtending0601;
+####            lookup Subtending0602;
+####            lookup Subtending0603;
+####            lookup Subtending0604;
+####            lookup Subtending0605;
+####        language SND  exclude_dflt;  # Sindhi
+####            ...
+####        language URD  exclude_dflt;  # Urdu
+####            ...
+####    script latn;  # Latin
+####        language dflt;  # Default
+####            lookup SubtendingAyah;
+####            ...
+####} kern ;
 
