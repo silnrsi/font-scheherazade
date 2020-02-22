@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="marksidewaysnoonghunna-ar" format="2">
+  <unicode hex="08FF"/>
+  <anchor x="140" y="941" name="_diaA"/>
+  <anchor x="140" y="1348" name="diaA"/>
+  <outline>
+    <contour>
+      <point x="249" y="1123" type="curve" smooth="yes"/>
+      <point x="249" y="1231"/>
+      <point x="145" y="1270"/>
+      <point x="43" y="1275" type="curve"/>
+      <point x="14" y="1213" type="line"/>
+      <point x="79" y="1206"/>
+      <point x="165" y="1177"/>
+      <point x="165" y="1107" type="curve" smooth="yes"/>
+      <point x="165" y="1039"/>
+      <point x="86" y="999"/>
+      <point x="0" y="993" type="curve"/>
+      <point x="4" y="965" type="line"/>
+      <point x="106" y="965"/>
+      <point x="249" y="1022"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

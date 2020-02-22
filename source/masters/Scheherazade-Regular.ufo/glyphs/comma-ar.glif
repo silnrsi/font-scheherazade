@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="comma-ar" format="2">
+  <advance width="641"/>
+  <unicode hex="060C"/>
+  <anchor x="270" y="660" name="diaA"/>
+  <anchor x="270" y="-195" name="diaB"/>
+  <outline>
+    <contour>
+      <point x="436" y="27" type="curve" smooth="yes"/>
+      <point x="436" y="76"/>
+      <point x="387" y="127"/>
+      <point x="338" y="127" type="curve" smooth="yes"/>
+      <point x="313" y="127"/>
+      <point x="274" y="100"/>
+      <point x="268" y="100" type="curve" smooth="yes"/>
+      <point x="252" y="100"/>
+      <point x="242" y="176"/>
+      <point x="242" y="186" type="curve" smooth="yes"/>
+      <point x="242" y="307"/>
+      <point x="328" y="399"/>
+      <point x="367" y="438" type="curve"/>
+      <point x="342" y="473" type="line"/>
+      <point x="303" y="457"/>
+      <point x="223" y="360"/>
+      <point x="190" y="268" type="curve" smooth="yes"/>
+      <point x="176" y="227"/>
+      <point x="174" y="188"/>
+      <point x="174" y="154" type="curve" smooth="yes"/>
+      <point x="174" y="45"/>
+      <point x="227" y="-76"/>
+      <point x="336" y="-76" type="curve" smooth="yes"/>
+      <point x="393" y="-76"/>
+      <point x="436" y="-31"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
