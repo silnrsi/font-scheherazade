@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sheenDotbelow-ar.init" format="2">
+  <advance width="918"/>
+  <anchor x="276" y="768" name="alef"/>
+  <anchor x="410" y="1000" name="diaA"/>
+  <anchor x="500" y="-400" name="diaB"/>
+  <outline>
+    <component base="seen-ar.init"/>
+    <component base="_dot3u" xOffset="500" yOffset="660"/>
+    <component base="_dot1" xOffset="502" yOffset="-176"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

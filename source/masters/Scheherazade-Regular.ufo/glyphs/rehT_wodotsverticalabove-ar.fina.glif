@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rehTwodotsverticalabove-ar.fina" format="2">
+  <advance width="487"/>
+  <anchor x="192" y="656" name="alef"/>
+  <anchor x="258" y="843" name="diaA"/>
+  <anchor x="200" y="-540" name="diaB"/>
+  <outline>
+    <component base="reh-ar.fina"/>
+    <component base="_dot2v" xOffset="348" yOffset="462"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
