@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathatwodots-ar" format="2">
+  <unicode hex="065E"/>
+  <anchor x="105" y="945" name="_diaA"/>
+  <anchor x="105" y="1319" name="diaA"/>
+  <outline>
+    <contour>
+      <point x="64" y="1246" type="curve" smooth="yes"/>
+      <point x="64" y="1250"/>
+      <point x="5" y="1296"/>
+      <point x="-3" y="1296" type="curve" smooth="yes"/>
+      <point x="-11" y="1296"/>
+      <point x="-52" y="1231"/>
+      <point x="-52" y="1226" type="curve" smooth="yes"/>
+      <point x="-52" y="1215"/>
+      <point x="8" y="1172"/>
+      <point x="15" y="1172" type="curve" smooth="yes"/>
+      <point x="25" y="1172"/>
+      <point x="64" y="1237"/>
+    </contour>
+    <contour>
+      <point x="286" y="1021" type="curve" smooth="yes"/>
+      <point x="286" y="1025"/>
+      <point x="227" y="1071"/>
+      <point x="219" y="1071" type="curve" smooth="yes"/>
+      <point x="211" y="1071"/>
+      <point x="170" y="1006"/>
+      <point x="170" y="1001" type="curve" smooth="yes"/>
+      <point x="170" y="990"/>
+      <point x="230" y="947"/>
+      <point x="237" y="947" type="curve" smooth="yes"/>
+      <point x="247" y="947"/>
+      <point x="286" y="1012"/>
+    </contour>
+    <component base="fatha-ar"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

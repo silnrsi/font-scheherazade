@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ghain-ar.fina" format="2">
+  <advance width="921"/>
+  <anchor x="160" y="825" name="alef"/>
+  <anchor x="354" y="1106" name="diaA"/>
+  <anchor x="441" y="-898" name="diaB"/>
+  <outline>
+    <component base="ain-ar.fina"/>
+    <component base="_dot1" xOffset="411" yOffset="801"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

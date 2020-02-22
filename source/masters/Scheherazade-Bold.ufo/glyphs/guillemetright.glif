@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="guillemetright" format="2">
+  <advance width="772"/>
+  <unicode hex="00BB"/>
+  <outline>
+    <contour>
+      <point x="102" y="-6" type="line"/>
+      <point x="419" y="350" type="line"/>
+      <point x="102" y="705" type="line"/>
+      <point x="29" y="705" type="line"/>
+      <point x="213" y="350" type="line"/>
+      <point x="29" y="-6" type="line"/>
+    </contour>
+    <contour>
+      <point x="412" y="-6" type="line"/>
+      <point x="725" y="350" type="line"/>
+      <point x="412" y="705" type="line"/>
+      <point x="341" y="705" type="line"/>
+      <point x="525" y="350" type="line"/>
+      <point x="341" y="-6" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

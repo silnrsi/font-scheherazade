@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathaDotabove-ar" format="2">
+  <unicode hex="08F5"/>
+  <anchor x="150" y="1005" name="_diaA"/>
+  <anchor x="112" y="1418" name="diaA"/>
+  <outline>
+    <component base="fatha-ar"/>
+    <component base="_dotCircular" xOffset="23" yOffset="1280"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>note</key>
+      <string>2013-08-26 pkm des Created.</string>
+    </dict>
+  </lib>
+</glyph>
