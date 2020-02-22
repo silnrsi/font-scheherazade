@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="openfathatan-ar" format="2">
+  <unicode hex="08F0"/>
+  <anchor x="179" y="962" name="_diaA"/>
+  <anchor x="117" y="1551" name="diaA"/>
+  <outline>
+    <component base="fatha-ar" xOffset="1"/>
+    <component base="fatha-ar" xOffset="168" yOffset="284"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-26 pkm des Created from absFatha components.</string>
+    </dict>
+  </lib>
+</glyph>

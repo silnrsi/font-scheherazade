@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="openkasratan-ar" format="2">
+  <unicode hex="08F2"/>
+  <anchor x="118" y="-487" name="_dia2B"/>
+  <anchor x="118" y="-487" name="_diaB"/>
+  <anchor x="118" y="-487" name="_diaBtailDown"/>
+  <anchor x="261" y="-1033" name="diaB"/>
+  <outline>
+    <component base="fatha-ar" xOffset="1" yOffset="-2003"/>
+    <component base="fatha-ar" xOffset="168" yOffset="-1719"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-09 pkm des Created from component absKasra.</string>
+    </dict>
+  </lib>
+</glyph>
