@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kafRing-ar.medi" format="2">
+  <advance width="1006"/>
+  <anchor x="125" y="1001" name="alef"/>
+  <anchor x="247" y="1104" name="diaA"/>
+  <anchor x="206" y="-150" name="diaB"/>
+  <outline>
+    <component base="kaf-ar.medi"/>
+    <component base="_ring" xOffset="550" yOffset="791"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

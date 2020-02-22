@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hamzaabove-ar" format="2">
+  <unicode hex="0654"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="60" y="1410" name="diaA"/>
+  <outline>
+    <component base="_hamza" xOffset="136" yOffset="1166"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
