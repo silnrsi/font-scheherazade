@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="five-persian.medium" format="2">
+  <advance width="450"/>
+  <anchor x="0" y="0" name="digitL"/>
+  <anchor x="450" y="0" name="digitR"/>
+  <outline>
+    <contour>
+      <point x="384" y="348" type="curve" smooth="yes"/>
+      <point x="384" y="453"/>
+      <point x="326" y="599"/>
+      <point x="243" y="690" type="curve"/>
+      <point x="153" y="605"/>
+      <point x="66" y="428"/>
+      <point x="66" y="301" type="curve" smooth="yes"/>
+      <point x="66" y="247"/>
+      <point x="94" y="183"/>
+      <point x="147" y="183" type="curve" smooth="yes"/>
+      <point x="174" y="183"/>
+      <point x="197" y="202"/>
+      <point x="217" y="222" type="curve"/>
+      <point x="235" y="202"/>
+      <point x="256" y="183"/>
+      <point x="284" y="183" type="curve" smooth="yes"/>
+      <point x="348" y="183"/>
+      <point x="384" y="282"/>
+    </contour>
+    <contour>
+      <point x="351" y="354" type="curve" smooth="yes"/>
+      <point x="351" y="307"/>
+      <point x="314" y="270"/>
+      <point x="284" y="270" type="curve" smooth="yes"/>
+      <point x="261" y="270"/>
+      <point x="238" y="296"/>
+      <point x="223" y="315" type="curve"/>
+      <point x="210" y="296"/>
+      <point x="186" y="276"/>
+      <point x="165" y="276" type="curve" smooth="yes"/>
+      <point x="136" y="276"/>
+      <point x="108" y="315"/>
+      <point x="108" y="346" type="curve" smooth="yes"/>
+      <point x="108" y="411"/>
+      <point x="186" y="519"/>
+      <point x="231" y="554" type="curve"/>
+      <point x="278" y="516"/>
+      <point x="351" y="406"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

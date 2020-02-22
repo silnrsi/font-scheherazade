@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="one-persian.medium" format="2">
+  <advance width="450"/>
+  <anchor x="0" y="0" name="digitL"/>
+  <anchor x="450" y="0" name="digitR"/>
+  <outline>
+    <component base="one-ar.medium"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

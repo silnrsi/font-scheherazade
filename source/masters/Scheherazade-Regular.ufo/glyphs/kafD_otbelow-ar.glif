@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kafDotbelow-ar" format="2">
+  <advance width="940"/>
+  <unicode hex="08B4"/>
+  <anchor x="216" y="896" name="alef"/>
+  <anchor x="372" y="1036" name="diaA"/>
+  <anchor x="662" y="-330" name="diaB"/>
+  <outline>
+    <component base="kaf-ar"/>
+    <component base="_dot1" xOffset="660" yOffset="-196"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>

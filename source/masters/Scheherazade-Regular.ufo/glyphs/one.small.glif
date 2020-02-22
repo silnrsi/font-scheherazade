@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="one.small" format="2">
+  <advance width="319"/>
+  <anchor x="0" y="0" name="digitL"/>
+  <anchor x="319" y="0" name="digitR"/>
+  <outline>
+    <contour>
+      <point x="242" y="200" type="line"/>
+      <point x="242" y="212" type="line"/>
+      <point x="188" y="212"/>
+      <point x="188" y="226"/>
+      <point x="188" y="275" type="curve" smooth="yes"/>
+      <point x="188" y="634" type="line"/>
+      <point x="178" y="634" type="line"/>
+      <point x="76" y="582" type="line"/>
+      <point x="80" y="572" type="line"/>
+      <point x="90" y="576"/>
+      <point x="100" y="582"/>
+      <point x="113" y="582" type="curve" smooth="yes"/>
+      <point x="136" y="582"/>
+      <point x="137" y="553"/>
+      <point x="137" y="533" type="curve" smooth="yes"/>
+      <point x="137" y="275" type="line" smooth="yes"/>
+      <point x="137" y="224"/>
+      <point x="137" y="212"/>
+      <point x="82" y="212" type="curve"/>
+      <point x="82" y="200" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
