@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="doublerightarrowheadDotabove-ar" format="2">
+  <unicode hex="08FC"/>
+  <anchor x="135" y="903" name="_diaA"/>
+  <anchor x="135" y="1364" name="diaA"/>
+  <outline>
+    <component base="_dotCircular" xOffset="-71" yOffset="1096"/>
+    <component base="rightarrowheadabove-ar"/>
+    <component base="rightarrowheadabove-ar" xOffset="230"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-11-06 pkm des Copied from Regular and used new bold components.</string>
+    </dict>
+  </lib>
+</glyph>

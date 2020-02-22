@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="four.small" format="2">
+  <advance width="323"/>
+  <anchor x="0" y="0" name="digitL"/>
+  <anchor x="323" y="0" name="digitR"/>
+  <outline>
+    <contour>
+      <point x="294" y="294" type="line"/>
+      <point x="294" y="358" type="line"/>
+      <point x="256" y="358" type="line"/>
+      <point x="256" y="628" type="line"/>
+      <point x="219" y="628" type="line"/>
+      <point x="19" y="358" type="line"/>
+      <point x="19" y="294" type="line"/>
+      <point x="171" y="294" type="line"/>
+      <point x="171" y="200" type="line"/>
+      <point x="256" y="200" type="line"/>
+      <point x="256" y="294" type="line"/>
+    </contour>
+    <contour>
+      <point x="171" y="358" type="line"/>
+      <point x="49" y="358" type="line"/>
+      <point x="171" y="523" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

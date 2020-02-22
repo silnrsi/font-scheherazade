@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="five-ar.small" format="2">
+  <advance width="323"/>
+  <anchor x="0" y="0" name="digitL"/>
+  <anchor x="323" y="0" name="digitR"/>
+  <outline>
+    <contour>
+      <point x="271" y="425" type="curve" smooth="yes"/>
+      <point x="271" y="486"/>
+      <point x="210" y="550"/>
+      <point x="158" y="550" type="curve" smooth="yes"/>
+      <point x="129" y="550"/>
+      <point x="104" y="512"/>
+      <point x="80" y="451" type="curve" smooth="yes"/>
+      <point x="61" y="404"/>
+      <point x="51" y="373"/>
+      <point x="51" y="343" type="curve" smooth="yes"/>
+      <point x="51" y="288"/>
+      <point x="112" y="256"/>
+      <point x="148" y="256" type="curve" smooth="yes"/>
+      <point x="192" y="256"/>
+      <point x="222" y="288"/>
+      <point x="235" y="309" type="curve" smooth="yes"/>
+      <point x="253" y="336"/>
+      <point x="271" y="375"/>
+    </contour>
+    <contour>
+      <point x="230" y="374" type="curve" smooth="yes"/>
+      <point x="230" y="363"/>
+      <point x="217" y="350"/>
+      <point x="175" y="350" type="curve" smooth="yes"/>
+      <point x="135" y="350"/>
+      <point x="96" y="363"/>
+      <point x="96" y="392" type="curve" smooth="yes"/>
+      <point x="96" y="402"/>
+      <point x="111" y="458"/>
+      <point x="130" y="458" type="curve" smooth="yes"/>
+      <point x="166" y="458"/>
+      <point x="230" y="392"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

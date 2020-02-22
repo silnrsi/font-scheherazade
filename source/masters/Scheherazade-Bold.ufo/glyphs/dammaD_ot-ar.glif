@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dammaDot-ar" format="2">
+  <unicode hex="08FE"/>
+  <anchor x="103" y="797" name="_diaA"/>
+  <anchor x="82" y="1361" name="diaA"/>
+  <outline>
+    <component base="_damma" xOffset="191" yOffset="985"/>
+    <component base="_dotCircular" xOffset="-91" yOffset="1075"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>note</key>
+      <string>2013-10-01 pkm des Created from components _dotCircular and _damma.</string>
+    </dict>
+  </lib>
+</glyph>
