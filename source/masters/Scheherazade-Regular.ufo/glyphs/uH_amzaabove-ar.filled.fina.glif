@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uHamzaabove-ar.filled.fina" format="2">
+  <advance width="573"/>
+  <anchor x="348" y="1016" name="diaA"/>
+  <anchor x="250" y="-600" name="diaB"/>
+  <outline>
+    <component base="waw-ar.fina"/>
+    <component base="_damma.filled" xOffset="288" yOffset="571"/>
+    <component base="_hamza" xOffset="562" yOffset="668"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
