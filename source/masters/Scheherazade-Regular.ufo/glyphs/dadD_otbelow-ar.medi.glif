@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dadDotbelow-ar.medi" format="2">
+  <advance width="1210"/>
+  <anchor x="432" y="680" name="alef"/>
+  <anchor x="552" y="920" name="diaA"/>
+  <anchor x="402" y="-380" name="diaB"/>
+  <outline>
+    <component base="sad-ar.medi"/>
+    <component base="_dot1" xOffset="637" yOffset="623"/>
+    <component base="_dot1" xOffset="679" yOffset="-218"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

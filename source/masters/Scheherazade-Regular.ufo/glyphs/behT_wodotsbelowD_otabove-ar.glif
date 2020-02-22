@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behTwodotsbelowDotabove-ar" format="2">
+  <advance width="1352"/>
+  <unicode hex="0754"/>
+  <anchor x="404" y="676" name="alef"/>
+  <anchor x="602" y="888" name="diaA"/>
+  <anchor x="624" y="-487" name="diaB"/>
+  <outline>
+    <component base="behDotless-ar"/>
+    <component base="_dot1" xOffset="660" yOffset="544"/>
+    <component base="_dot2h" xOffset="655" yOffset="-240"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

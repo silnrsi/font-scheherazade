@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ainThreedotsbelow-ar" format="2">
+  <advance width="1043"/>
+  <unicode hex="08B3"/>
+  <anchor x="180" y="776" name="alef"/>
+  <anchor x="305" y="900" name="diaA"/>
+  <anchor x="335" y="-840" name="diaB"/>
+  <outline>
+    <component base="ain-ar"/>
+    <component base="_dot3d" xOffset="489" yOffset="-37"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>

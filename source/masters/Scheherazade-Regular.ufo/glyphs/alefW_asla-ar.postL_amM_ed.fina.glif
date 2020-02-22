@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefWasla-ar.postLamMed.fina" format="2">
+  <advance width="500"/>
+  <anchor x="300" y="-154" name="dia2B"/>
+  <anchor x="32" y="1280" name="diaA"/>
+  <anchor x="420" y="-100" name="diaB"/>
+  <anchor x="650" y="250" name="entry"/>
+  <outline>
+    <component base="alef-ar.postLamMed.fina"/>
+    <component base="_wasla" xOffset="116" yOffset="1054"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

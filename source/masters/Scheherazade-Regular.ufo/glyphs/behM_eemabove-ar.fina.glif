@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behMeemabove-ar.fina" format="2">
+  <advance width="1378"/>
+  <anchor x="400" y="560" name="alef"/>
+  <anchor x="656" y="805" name="diaA"/>
+  <anchor x="581" y="-397" name="diaB"/>
+  <outline>
+    <component base="behDotless-ar.fina"/>
+    <component base="_meem" xOffset="677" yOffset="517"/>
+    <component base="_dot1" xOffset="579" yOffset="-263"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>

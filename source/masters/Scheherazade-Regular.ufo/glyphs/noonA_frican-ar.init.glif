@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonAfrican-ar.init" format="2">
+  <advance width="360"/>
+  <anchor x="155" y="752" name="diaA"/>
+  <anchor x="105" y="-249" name="diaB"/>
+  <outline>
+    <component base="behDotless-ar.init"/>
+    <component base="_dot1" xOffset="166" yOffset="638"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>
