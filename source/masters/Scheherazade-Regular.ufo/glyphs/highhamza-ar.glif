@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="highhamza-ar" format="2">
+  <unicode hex="0674"/>
+  <anchor x="112" y="1354" name="diaA"/>
+  <anchor x="150" y="885" name="diaB"/>
+  <outline>
+    <component base="_hamza" xOffset="163" yOffset="1047"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-02-12 pkm mod Added diaB AP at 150,885.</string>
+    </dict>
+  </lib>
+</glyph>

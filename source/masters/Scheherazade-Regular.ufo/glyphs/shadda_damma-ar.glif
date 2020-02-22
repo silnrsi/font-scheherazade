@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="shadda_damma-ar" format="2">
+  <anchor x="165" y="990" name="_diaA"/>
+  <anchor x="118" y="1748" name="diaA"/>
+  <outline>
+    <component base="shadda-ar"/>
+    <component base="_damma" xOffset="218" yOffset="1433"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

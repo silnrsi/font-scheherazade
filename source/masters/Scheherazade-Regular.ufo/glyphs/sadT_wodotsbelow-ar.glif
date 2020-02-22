@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sadTwodotsbelow-ar" format="2">
+  <advance width="1602"/>
+  <unicode hex="069D"/>
+  <anchor x="392" y="204" name="alef"/>
+  <anchor x="500" y="468" name="diaA"/>
+  <anchor x="300" y="-600" name="diaB"/>
+  <outline>
+    <component base="sad-ar"/>
+    <component base="_dot2h" xOffset="1083" yOffset="-232"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
