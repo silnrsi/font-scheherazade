@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yu-ar" format="2">
+  <advance width="573"/>
+  <unicode hex="06C8"/>
+  <anchor x="240" y="880" name="alef"/>
+  <anchor x="340" y="1060" name="diaA"/>
+  <anchor x="250" y="-600" name="diaB"/>
+  <outline>
+    <component base="waw-ar"/>
+    <component base="_vline" xOffset="384" yOffset="718"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

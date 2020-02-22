@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hamzabelow-ar" format="2">
+  <unicode hex="0655"/>
+  <anchor x="105" y="-120" name="_dia2B"/>
+  <anchor x="147" y="-120" name="_diaB"/>
+  <anchor x="147" y="-120" name="_diaBtailDown"/>
+  <anchor x="147" y="-120" name="_diaBtailUp"/>
+  <anchor x="135" y="-450" name="diaB"/>
+  <outline>
+    <component base="_hamza" xOffset="163" yOffset="-344"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

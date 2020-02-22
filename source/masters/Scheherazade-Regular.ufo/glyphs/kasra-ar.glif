@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kasra-ar" format="2">
+  <unicode hex="0650"/>
+  <anchor x="145" y="-560" name="_dia2B"/>
+  <anchor x="145" y="-560" name="_diaB"/>
+  <anchor x="145" y="-560" name="_diaBtailDown"/>
+  <anchor x="145" y="-560" name="_diaBtailUp"/>
+  <anchor x="165" y="-810" name="diaB"/>
+  <outline>
+    <component base="fatha-ar" xOffset="50" yOffset="-1775"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
