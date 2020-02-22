@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamDotabove-ar.preAlef.init" format="2">
+  <advance width="502"/>
+  <anchor x="53" y="745" name="alef"/>
+  <anchor x="226" y="1646" name="diaA"/>
+  <anchor x="161" y="-159" name="diaB"/>
+  <anchor x="63" y="0" name="exit"/>
+  <outline>
+    <component base="lam-ar.preAlef.init"/>
+    <component base="_dot1" xOffset="230" yOffset="1385"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamThreedotsabove-ar" format="2">
+  <advance width="935"/>
+  <unicode hex="06B7"/>
+  <anchor x="200" y="601" name="alef"/>
+  <anchor x="155" y="1287" name="diaA"/>
+  <anchor x="400" y="-371" name="diaB"/>
+  <outline>
+    <component base="lam-ar"/>
+    <component base="_dot3u" xOffset="642" yOffset="1286"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

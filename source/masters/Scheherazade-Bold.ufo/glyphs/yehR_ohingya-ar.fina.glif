@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehRohingya-ar.fina" format="2">
+  <advance width="861"/>
+  <guideline y="125"/>
+  <anchor x="328" y="745" name="alef"/>
+  <anchor x="527" y="898" name="diaA"/>
+  <anchor x="495" y="-616" name="diaB"/>
+  <outline>
+    <contour>
+      <point x="440" y="405" type="curve" smooth="yes"/>
+      <point x="440" y="436"/>
+      <point x="502" y="477"/>
+      <point x="536" y="477" type="curve" smooth="yes"/>
+      <point x="604" y="477"/>
+      <point x="678" y="428"/>
+      <point x="678" y="393" type="curve" smooth="yes"/>
+      <point x="678" y="366"/>
+      <point x="629" y="323"/>
+      <point x="558" y="283" type="curve"/>
+      <point x="490" y="325"/>
+      <point x="440" y="374"/>
+    </contour>
+    <contour>
+      <point x="593" y="680" type="curve" smooth="yes"/>
+      <point x="537" y="680"/>
+      <point x="460" y="612"/>
+      <point x="408" y="522" type="curve" smooth="yes"/>
+      <point x="373" y="461"/>
+      <point x="348" y="390"/>
+      <point x="348" y="323" type="curve" smooth="yes"/>
+      <point x="348" y="296"/>
+      <point x="367" y="241"/>
+      <point x="388" y="210" type="curve"/>
+      <point x="350" y="184"/>
+      <point x="268" y="177"/>
+      <point x="206" y="177" type="curve" smooth="yes"/>
+      <point x="115" y="177"/>
+      <point x="52" y="119"/>
+      <point x="52" y="-7" type="curve" smooth="yes"/>
+      <point x="52" y="-104"/>
+      <point x="126" y="-211"/>
+      <point x="186" y="-268" type="curve"/>
+      <point x="187" y="-269"/>
+      <point x="198" y="-277"/>
+      <point x="207" y="-277" type="curve" smooth="yes"/>
+      <point x="218" y="-277"/>
+      <point x="237" y="-259"/>
+      <point x="237" y="-247" type="curve" smooth="yes"/>
+      <point x="237" y="-237"/>
+      <point x="222" y="-222"/>
+      <point x="218" y="-217" type="curve" smooth="yes"/>
+      <point x="189" y="-180"/>
+      <point x="167" y="-147"/>
+      <point x="167" y="-104" type="curve" smooth="yes"/>
+      <point x="167" y="-40"/>
+      <point x="230" y="-18"/>
+      <point x="334" y="-18" type="curve" smooth="yes"/>
+      <point x="393" y="-18"/>
+      <point x="490" y="-5"/>
+      <point x="558" y="71" type="curve"/>
+      <point x="632" y="23"/>
+      <point x="693" y="0"/>
+      <point x="795" y="0" type="curve" smooth="yes" name="hr01"/>
+      <point x="855" y="0" type="line" smooth="yes"/>
+      <point x="914" y="0"/>
+      <point x="928" y="37"/>
+      <point x="928" y="103" type="curve" smooth="yes"/>
+      <point x="928" y="170"/>
+      <point x="914" y="205"/>
+      <point x="855" y="205" type="curve" smooth="yes" name="hr02"/>
+      <point x="787" y="205" type="line" smooth="yes"/>
+      <point x="754" y="205"/>
+      <point x="717" y="213"/>
+      <point x="680" y="225" type="curve"/>
+      <point x="746" y="301"/>
+      <point x="765" y="380"/>
+      <point x="765" y="452" type="curve" smooth="yes"/>
+      <point x="765" y="539"/>
+      <point x="681" y="680"/>
+    </contour>
+    <component base="_dot2h" xOffset="590" yOffset="-265"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-08-08 pkm des Created bold version.</string>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
