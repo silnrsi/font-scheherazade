@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathaDotabove-ar" format="2">
+  <unicode hex="08F5"/>
+  <anchor x="126" y="1012" name="_diaA"/>
+  <anchor x="105" y="1376" name="diaA"/>
+  <outline>
+    <component base="fatha-ar"/>
+    <component base="_dotCircular" xOffset="44" yOffset="1233"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

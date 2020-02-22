@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="openkasratan-ar" format="2">
+  <unicode hex="08F2"/>
+  <anchor x="141" y="-560" name="_dia2B"/>
+  <anchor x="141" y="-560" name="_diaB"/>
+  <anchor x="141" y="-560" name="_diaBtailDown"/>
+  <anchor x="165" y="-964" name="diaB"/>
+  <outline>
+    <component base="fatha-ar" xOffset="-50" yOffset="-1963"/>
+    <component base="fatha-ar" xOffset="101" yOffset="-1755"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

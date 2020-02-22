@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathatanCurly-ar" format="2">
+  <unicode hex="08E7"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="54" y="1485" name="diaA"/>
+  <outline>
+    <component base="fathaCurly-ar"/>
+    <component base="fathaCurly-ar" xOffset="-49" yOffset="191"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>

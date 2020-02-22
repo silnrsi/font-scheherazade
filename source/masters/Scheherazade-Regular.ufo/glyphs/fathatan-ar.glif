@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="fathatan-ar" format="2">
+  <unicode hex="064B"/>
+  <anchor x="120" y="1020" name="_diaA"/>
+  <anchor x="90" y="1396" name="diaA"/>
+  <outline>
+    <component base="fatha-ar"/>
+    <component base="fatha-ar" yOffset="148"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
