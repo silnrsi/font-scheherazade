@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="rightarrowheadDotabove-ar" format="2">
+  <unicode hex="08FD"/>
+  <anchor x="73" y="903" name="_diaA"/>
+  <anchor x="87" y="1352" name="diaA"/>
+  <outline>
+    <component base="rightarrowheadabove-ar"/>
+    <component base="_dotCircular" xOffset="-38" yOffset="1098"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+    </dict>
+  </lib>
+</glyph>
