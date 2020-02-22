@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehTwodotsbelowNoonabove-ar.fina" format="2">
+  <advance width="1140"/>
+  <anchor x="479" y="858" name="diaA"/>
+  <anchor x="521" y="-930" name="diaB"/>
+  <outline>
+    <component base="yeh-ar.noDots.fina"/>
+    <component base="_noon" xOffset="514" yOffset="503"/>
+    <component base="_dot2h" xOffset="515" yOffset="-753"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>

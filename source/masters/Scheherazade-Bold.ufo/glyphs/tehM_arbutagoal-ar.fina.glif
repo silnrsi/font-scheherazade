@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tehMarbutagoal-ar.fina" format="2">
+  <advance width="510"/>
+  <anchor x="121" y="726" name="alef"/>
+  <anchor x="206" y="877" name="diaA"/>
+  <anchor x="207" y="-300" name="diaB"/>
+  <outline>
+    <component base="hehgoal-ar.fina"/>
+    <component base="_dot2h" xOffset="283" yOffset="537"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
