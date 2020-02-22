@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonThreedotsabove-ar" format="2">
+  <advance width="954"/>
+  <unicode hex="06BD"/>
+  <anchor x="183" y="1009" name="alef"/>
+  <anchor x="329" y="1204" name="diaA"/>
+  <anchor x="424" y="-477" name="diaB"/>
+  <outline>
+    <component base="noonghunna-ar"/>
+    <component base="_dot3u" xOffset="429" yOffset="619"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>note</key>
+      <string>2013-10-11 pkm mod Lowered three dots above by 300 points to match lowered absNoonGhunna.</string>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

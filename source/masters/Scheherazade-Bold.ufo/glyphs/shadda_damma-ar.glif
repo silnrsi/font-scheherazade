@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="shadda_damma-ar" format="2">
+  <anchor x="179" y="962" name="_diaA"/>
+  <anchor x="117" y="1745" name="diaA"/>
+  <outline>
+    <component base="_damma" xOffset="215" yOffset="1466"/>
+    <component base="shadda-ar"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint</key>
+      <string>b''</string>
+      <key>note</key>
+      <string>2013-10-09 pkm mod Replaced paths with components.</string>
+    </dict>
+  </lib>
+</glyph>

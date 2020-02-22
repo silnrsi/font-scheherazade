@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonTahabove-ar.medi" format="2">
+  <advance width="427"/>
+  <anchor x="81" y="1422" name="diaA"/>
+  <anchor x="165" y="-240" name="diaB"/>
+  <anchor x="165" y="-800" name="diaBtailDown"/>
+  <anchor x="165" y="-125" name="diaBtailUp"/>
+  <outline>
+    <component base="behDotless-ar.medi"/>
+    <component base="_dot1_tah" xOffset="209" yOffset="553"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
