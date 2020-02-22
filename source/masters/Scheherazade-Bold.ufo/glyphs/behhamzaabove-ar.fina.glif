@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behhamzaabove-ar.fina" format="2">
+  <advance width="1498"/>
+  <anchor x="436" y="799" name="alef"/>
+  <anchor x="614" y="990" name="diaA"/>
+  <anchor x="592" y="-590" name="diaB"/>
+  <outline>
+    <component base="behDotless-ar.fina"/>
+    <component base="_hamza" xOffset="680" yOffset="609"/>
+    <component base="_dot1" xOffset="644" yOffset="-283"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

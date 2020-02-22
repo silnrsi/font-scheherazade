@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="behVinvertedbelow-ar" format="2">
+  <advance width="1505"/>
+  <unicode hex="0755"/>
+  <anchor x="444" y="564" name="alef"/>
+  <anchor x="739" y="640" name="diaA"/>
+  <anchor x="678" y="-611" name="diaB"/>
+  <outline>
+    <component base="behDotless-ar"/>
+    <component base="_invSmallV" xOffset="736" yOffset="-237"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="qafAfrican-ar.medi" format="2">
+  <advance width="632"/>
+  <anchor x="242" y="781" name="alef"/>
+  <anchor x="417" y="1141" name="diaA"/>
+  <anchor x="248" y="-201" name="diaB"/>
+  <outline>
+    <component base="fehDotless-ar.medi"/>
+    <component base="_dot1" xOffset="417" yOffset="960"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.600,0.996,1,1</string>
+    </dict>
+  </lib>
+</glyph>

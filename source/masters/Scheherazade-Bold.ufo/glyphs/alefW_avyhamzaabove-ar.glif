@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefWavyhamzaabove-ar" format="2">
+  <advance width="357"/>
+  <unicode hex="0672"/>
+  <anchor x="161" y="1620" name="diaA"/>
+  <anchor x="205" y="-92" name="diaB"/>
+  <outline>
+    <component base="_wavyHamza" xOffset="174" yOffset="1273"/>
+    <component base="alef-ar"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
