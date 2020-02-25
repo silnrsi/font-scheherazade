@@ -39,8 +39,10 @@ g_radical.mirror.isEncoded = 0;
 
 // Used for Graphite-1 style mirroring:
 
-cMirrorOpen  = (g_parenleft  g_less    g_bracketleft  g_braceleft  g_guilsinglleft  g_guillemotleft  g_radical);
-cMirrorClose = (g_parenright g_greater g_bracketright g_braceright g_guilsinglright g_guillemotright g_radical_rtl);
+// guillemetleft/right is a bug!!!!
+
+cMirrorOpen  = (g_parenleft  g_less    g_bracketleft  g_braceleft  g_guilsinglleft  g_guillemetleft  g_radical);
+cMirrorClose = (g_parenright g_greater g_bracketright g_braceright g_guilsinglright g_guillemetright g_radical_rtl);
 
 // Make sure Unicode 5.0 Corrigendum #6 is applied:
 
@@ -59,36 +61,36 @@ cLowHamzaComposed { component {
 			base = box(0, bb.bottom, aw, bb.bottom + (bb.height*5)/8);
 			hamza = box(0, bb.bottom + (bb.height*5)/8, aw, bb.top) }};
 // slight adjustments to components:
-absWawHamzaAbove { component {
+g_waw_hamzaabove_ar { component {
 	base.top = bb.bottom + (bb.height*3)/4;
 	hamza.bottom = bb.bottom + (bb.height*3)/4 }};
-absYehHamzaAbove { component.hamza.right = aw*3/4 };
-absYehHamzaAboveMed { component {
+g_yeh_hamzaabove_ar { component.hamza.right = aw*3/4 };
+g_yeh_hamzaabove_ar_medi { component {
 	base.top = bb.bottom + bb.height/2;
 	hamza.bottom = bb.bottom + bb.height/2 }};
-absYehHamzaAboveFin { component.hamza.right = aw*3/4 };
+g_yeh_hamzaabove_ar_fina { component.hamza.right = aw*3/4 };
 
 // Subtending marks
 
-cSignTakes4 = (absYearSign absSamvatSign absNumberSignAbove absPageSign); // medium
+cSignTakes4 = (g_year_ar g_samvat_ar g_numbermark_ar g_pagenumber_ar); // medium
 
-cSignTakes3Medium = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign);
-cSignTakes3Small  = (absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB);
+cSignTakes3Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar);
+cSignTakes3Small  = (g_endofayah_ar  g_endofayah_ar_alt  g_endofayah_ar_alt_b);
 
-cSignTakes2 = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB
-	absFootnoteSign); // medium
+cSignTakes2 = (g_year_ar g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar  g_endofayah_ar  g_endofayah_ar_alt  
+	g_endofayah_ar_alt_b	g_footnotemarker_ar); // medium
 
-cSignTakes1 = (absYearSign absSamvatSign absNumberSignAbove absNumberSign absPageSign absEndOfAyah absEndOfAyah_alt absEndOfAyah_altB
-	absFootnoteSign); // medium
+cSignTakes1 = (g_year_ar g_samvat_ar  g_numbermark_ar g_number_ar g_pagenumber_ar g_endofayah_ar g_endofayah_ar_alt g_endofayah_ar_alt_b
+	g_footnotemarker_ar); // medium
 	
-cSign4 = (absYearSign_4 absSamvatSign_4 absNumberSignAbove_4 absPageSign_4);
-cSign3Medium = (absYearSign_3 absSamvatSign_3 absNumberSignAbove_3 absNumberSign_3 absPageSign_3);
-cSign3Small  = (absEndOfAyah_3 absEndOfAyah_alt_3 absEndOfAyah_altB_3);
-cSign3 = (cSign3Medium cSign3Small);
-cSign2 = (absYearSign_2 absSamvatSign_2 absNumberSignAbove_2 absNumberSign_2 absPageSign_2 absEndOfAyah_2 
-	absEndOfAyah_alt_2 absEndOfAyah_altB_2 absFootnoteSign_2);
-cSign1 = (absYearSign    absSamvatSign absNumberSignAbove absNumberSign    absPageSign    absEndOfAyah    
-	absEndOfAyah_alt    absEndOfAyah_altB    absFootnoteSign);
+cSign4 = (g_year_ar_4  g_samvat_ar_4  g_numbermark_ar_4  g_pagenumber_ar_4);
+cSign3Medium = (g_year_ar_3 g_samvat_ar_3 g_numbermark_ar_3 g_number_ar_3 g_pagenumber_ar_3);
+cSign3Small  = (g_endofayah_ar_3 g_endofayah_ar_alt_3 g_endofayah_ar_alt_b_3);
+cSign3 = (cSign3Medium  cSign3Small);
+cSign2 = (g_year_ar_2  g_samvat_ar_2 g_numbermark_ar_2 g_number_ar_2 g_pagenumber_ar_2 g_endofayah_ar_2 
+	g_endofayah_ar_alt_2 g_endofayah_ar_alt_b_2  g_footnotemarker_ar_2);
+cSign1 = (g_year_ar    g_samvat_ar g_numbermark_ar g_number_ar       g_pagenumber_ar   g_endofayah_ar    
+	g_endofayah_ar_alt   g_endofayah_ar_alt_b    g_footnotemarker_ar);
 
 
 cSignAll = (cSign1 cSign2 cSign3 cSign4);
@@ -104,82 +106,82 @@ cSignDigit = (cDigitsArabicMedium cDigitsArabicSmall
 //	Feature-related variants
 //
 
-cDownward = (absComma_downward absSemicolon_downward);
-cno_Downward = (absComma absSemicolon);
+cDownward = (g_comma_ar_downward  g_semicolon_ar_downward);
+cno_Downward = (g_comma_ar  g_semicolon_ar);
 
-cSixNine = (absDammatan_sixNine);
-cno_SixNine = (absDammatan);
+cSixNine = (g_dammatan_ar_six_nine);
+cno_SixNine = (g_dammatan_ar);
 
-cno_Sukun = (absSukun);
-cSukunDownOpen = (absSukun_downOpen);
-cSukunLeftOpen = (absShortVowelMark);
+cno_Sukun = (g_sukun_ar);
+cSukunDownOpen = (g_sukun_ar_down_open);
+cSukunLeftOpen = (g_marksidewaysnoonghunna_ar);
 
-cno_OpenLeft = (absSmallHighDotlessHeadOfKhah);
-cOpenLeft = (absShortVowelMark);
+cno_OpenLeft = (g_hahabove_ar);
+cOpenLeft = (g_marksidewaysnoonghunna_ar);
 
-cLargeAlef = (absSuperscriptAlef_large);
-cno_LargeAlef = (absSuperscriptAlef);
+cno_LargeAlef = (g_alefabove_ar);
+cLargeAlef = (g_alefabove_ar_large);
 
-cNoDots = (absYeh_noDots absYehIni_noDots absYehMed_noDots absYehFin_noDots);
-cno_NoDots = (absYeh absYehIni absYehMed absYehFin);
+cNoDots = (g_yeh_ar_no_dots  g_yeh_ar_no_dots_init  g_yeh_ar_no_dots_medi  g_yeh_ar_no_dots_fina);
+cno_NoDots = (g_yeh_ar  g_yeh_ar_init  g_yeh_ar_medi  g_yeh_ar_fina);
 
 // The next three class must match for substitution:
 
 cEasternDigit = (
-	absEasternFour        absEasternSix        absEasternSeven
-	absEasternFourMedium  absEasternSixMedium  absEasternSevenMedium
-	absEasternFourSmall   absEasternSixSmall   absEasternSevenSmall
+	g_four_persian         g_six_persian         g_seven_persian
+	g_four_persian_medium  g_six_persian_medium  g_seven_persian_medium
+	g_four_persian_small   g_six_persian_small   g_seven_persian_small
 );
 	
 cEasternDigitUrdu = (
-	absEasternFour_urdu        absEasternSix_urdu        absEasternSeven_urdu
-	absEasternFourMedium_urdu  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
-	absEasternFourSmall_urdu   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+	g_four_persian_urdu         g_six_persian_urdu         g_seven_persian
+	g_four_persian_urdu_medium  g_six_persian_urdu_medium  g_seven_persian_urdu_medium
+	g_four_persian_urdu_small   g_six_persian_urdu_small   g_seven_persian_urdu_small
 );
 
 cEasternDigitSindhi = (
-	absEasternFour        absEasternSix_urdu        absEasternSeven_urdu
-	absEasternFourMedium  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
-	absEasternFourSmall   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+	g_four_persian         g_six_persian_urdu         g_seven_persian
+	g_four_persian_medium  g_six_persian_urdu_medium  g_seven_persian_urdu_medium
+	g_four_persian_small   g_six_persian_urdu_small   g_seven_persian_urdu_small
 );
 
 cEasternDigitRohingya = (
-	absEasternFour_roh        absEasternSix_urdu        absEasternSeven_urdu
-	absEasternFourMedium_roh  absEasternSixMedium_urdu  absEasternSevenMedium_urdu
-	absEasternFourSmall_roh   absEasternSixSmall_urdu   absEasternSevenSmall_urdu
+	g_four_persian_roh         g_six_persian_urdu         g_seven_persian
+	g_four_persian_roh_medium  g_six_persian_urdu_medium  g_seven_persian_urdu_medium
+	g_four_persian_roh_small   g_six_persian_urdu_small   g_seven_persian_urdu_small
 );
 
 	
 
-cno_Heh     = (absHeh           absHehIni         absHehMed              absHehFin);
-cHehSindhi  = (absHeh_knotted   absHehIni         absHehMed_knottedHigh  absHehFin_knottedHigh);
-cHehUrdu    = (absHeh           absHehIni_hooked  absHehMed_hooked       absHehFin_hooked);
-cHehKurdish = (absHeh_knotted   absHehIni         absHehMed              absHehFin_knottedHigh);
+cno_Heh     = (g_heh_ar           g_heh_ar_init         g_heh_ar_medi              g_heh_ar_fina);
+cHehSindhi  = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_knotted_high_medi g_heh_ar_knotted_high_fina);
+cHehUrdu    = (g_heh_ar           g_heh_ar_hooked_init  g_heh_ar_hooked_medi       g_heh_ar_hooked_fina);
+cHehKurdish = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_medi              g_heh_ar_knotted_high_fina);
 
-cEndOfAyah        = (absEndOfAyah      absEndOfAyah_2      absEndOfAyah_3);
-cEndOfAyahCircle  = (absEndOfAyah_alt  absEndOfAyah_alt_2  absEndOfAyah_alt_3);
-cEndOfAyahSquare  = (absEndOfAyah_altB absEndOfAyah_altB_2 absEndOfAyah_altB_3);
+cEndOfAyah        = (g_endofayah_ar        g_endofayah_ar_2        g_endofayah_ar_3);
+cEndOfAyahCircle  = (g_endofayah_ar_alt    g_endofayah_ar_alt_2    g_endofayah_ar_alt_3);
+cEndOfAyahSquare  = (g_endofayah_ar_alt_b  g_endofayah_ar_alt_b_2  g_endofayah_ar_alt_b_3);
 
-zeroWidthJoiner = postscript("zerojoin");
-zeroWidthNonJoiner = postscript("zeronojoin");
-leftToRightMark = postscript("leftToRightMark") {dir = DIR_LEFT};
-rightToLeftMark = postscript("rightToLeftMark") {dir = DIR_RIGHT};
-leftToRightEmbedding = postscript("leftToRightEmbedding") {dir = DIR_LRE};
-rightToLeftEmbedding = postscript("rightToLeftEmbedding") {dir = DIR_RLE};
-popDirectionalFormatting = postscript("popDirectionalFormatting") {dir = DIR_PDF};
-leftToRightOverride = postscript("leftToRightOverride") {dir = DIR_LRO};
-rightToLeftOverride = postscript("rightToLeftOverride") {dir = DIR_RLO};
-leftToRightIsolate = postscript("leftToRightIsolate") {dir = DIR_LRI} ;
-rightToLeftIsolate = postscript("rightToLeftIsolate") {dir = DIR_RLI} ;
-firstStrongIsolate = postscript("firstStrongIsolate") {dir = DIR_FSI} ;
-popDirectionalIsolate = postscript("popDirectionalIsolate") {dir = DIR_PDI} ;
-arabicLetterMark = postscript("arabicLetterMark") {dir = DIR_ARABIC} ;
+zeroWidthJoiner = postscript("zerowidthjoiner");
+zeroWidthNonJoiner = postscript("zerowidthnonjoiner");
+leftToRightMark = postscript("lefttorightmark") {directionality = 1};
+rightToLeftMark = postscript("righttoleftmark") {directionality = 2};
+leftToRightEmbedding = postscript("lefttorightembedding") {directionality = 13};
+rightToLeftEmbedding = postscript("righttoleftembedding") {directionality = 14};
+popDirectionalFormatting = postscript("popdirectionalformatting") {directionality = 15};
+leftToRightOverride = postscript("lefttorightoverride") {directionality = 11};
+rightToLeftOverride = postscript("righttoleftoverride") {directionality = 12};
+leftToRightIsolate = postscript("lefttorightisolate") {directionality = 17} ;
+rightToLeftIsolate = postscript("righttoleftisolate") {directionality = 18} ;
+firstStrongIsolate = postscript("firststrongisolate") {directionality = 19} ;
+popDirectionalIsolate = postscript("popdirectionalisolate") {directionality = 20} ;
+//arabicLetterMark = postscript("arabiclettermark") {directionality = 3} ;
 
 cInvisible = (zeroWidthJoiner zeroWidthNonJoiner leftToRightMark rightToLeftMark leftToRightEmbedding
-	rightToLeftEmbedding popDirectionalFormatting leftToRightOverride rightToLeftOverride
-	leftToRightIsolate rightToLeftIsolate firstStrongIsolate popDirectionalIsolate arabicLetterMark);
+rightToLeftEmbedding popDirectionalFormatting leftToRightOverride rightToLeftOverride
+leftToRightIsolate rightToLeftIsolate firstStrongIsolate popDirectionalIsolate /*arabicLetterMark*/);
 
-zeroWidthSpace = postscript("zerospace");
+zeroWidthSpace = postscript("zerowidthspace");
 
 
 //------------------------------------------------------------------------------------------
@@ -209,7 +211,7 @@ cMark4Above = (cMarkGroup5A);
 cMark4Below = (cMarkGroup3B);
 
 // For testing non-canonical ordering:
-r_comma = postscript("comma") { diaA_ = point(aw/2, bb.bottom) };
+r_comma = postscript("comma") { diaAM = point(aw/2, bb.bottom) };
 cMark4Above += (r_comma);
 
 cMark1 = (cMark1Above cMark1Below);
@@ -227,7 +229,6 @@ cMark34  = (cMark3 cMark4);
 
 // Not used by Graphite:
 /***
-
 
 
 // TODO: define the components for these ligatures

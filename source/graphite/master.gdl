@@ -80,7 +80,7 @@ quranic marks, so multiples don't work right.
 #include "cp1252.gdl"
 
 // Glyph and class definitions -- generated automatically from VOLT source.
-#include "ScheherazadeRegVoltDefs.gdh"
+//////#include "ScheherazadeRegVoltDefs.gdh"
 
 // Hard-coded glyph and class definitions:
 #include "SchGlyphs.gdh"
@@ -117,7 +117,7 @@ pass(1)	// Encoding, decomposition, mirroring
 
 	
 	// QUESTION: are there more things that need to be decomposed?
-	cAlefPlusMark _ >  absAlef:1  cAlefMark$1:1 ;
+	cAlefPlusMark _ >  g_alef_ar:1  cAlefMark$1:1 ;
 		
 	if (graphite1mirror)
 		(cMirrorOpen cMirrorClose)  >  (cMirrorClose cMirrorOpen);
@@ -157,10 +157,10 @@ pass(3)	// ligature diacritics
 
 	if (shaddaKasra == std)
 	    if (selectDiac)
-		absShadda  cShaddaKasraMarks  > 
+		g_shadda_ar  cShaddaKasraMarks  > 
 		_  cShaddaKasraLigatures:(1 2) { comp.shadda.ref = @1; comp.kasra.ref = @2 };
 	    else
-		absShadda  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(1 2);
+		g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(1 2);
 	    endif;
 	endif;
 	
@@ -188,8 +188,8 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
 	// All other contextual forms
 	
-	(cDualLinkIsol cDualLinkFina absTatweel g_zerojoin) (cDualLinkIsol cRightLinkIsol absTatweel g_zerojoin) > 
-		(cDualLinkInit cDualLinkMedi absTatweel g_zerojoin) (cDualLinkFina cRightLinkFina absTatweel g_zerojoin)
+	(cDualLinkIsol cDualLinkFina g_kashida_ar zeroWidthJoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar zeroWidthJoiner) > 
+		(cDualLinkInit cDualLinkMedi g_kashida_ar zeroWidthJoiner) (cDualLinkFina cRightLinkFina g_kashida_ar zeroWidthJoiner)
 		/ _  MARKS ^ _ ;
 
 
@@ -215,10 +215,10 @@ endpass; // 4
 pass(5)	// Features, special behaviors
 
 	if (selectDiac)
-		cLowHamzaBase  absHamzaAbove  >
+		cLowHamzaBase  g_hamzaabove_ar  >
 			cLowHamzaComposed:(1 2) { component { base.ref = @1; hamza.ref = @2 }}  _;
 	else
-		cLowHamzaBase  absHamzaAbove  >  cLowHamzaComposed:(1 2)  _;
+		cLowHamzaBase  g_hamzaabove_ar  >  cLowHamzaComposed:(1 2)  _;
 	endif;
 	
 	// Features
@@ -261,11 +261,11 @@ pass(5)	// Features, special behaviors
 	endif;
 
 	if (daggeralefAlt == large)
-		absSuperscriptAlef  >  absSuperscriptAlef_large  /  cTakesLargeDaggerAlef  _;
+		g_alefabove_ar  >  g_alefabove_ar_large  /  cTakesLargeDaggerAlef  _;
 	endif;	
 
 	if (ultapeshAlt == hollow)
-		absUltaPesh > absUltaPesh_open;
+		g_dammainverted_ar > g_dammainverted_ar_open;
 	endif;
 
 	if (sukunAlt == jasmDown)
@@ -302,7 +302,7 @@ pass(5)	// Features, special behaviors
 	endif;
 	
 	if (headOfKhahHack == openLeft)
-		absSmallHighDotlessHeadOfKhah > absShortVowelMark;
+		cno_OpenLeft > cOpenLeft;
 	endif;
 	
 	if (!invis)
@@ -324,29 +324,29 @@ table (positioning)
 pass(1)
 
 	// Lam-alef components:
-	cHasExit=L {alefAttached = true}  cHasEntry=A {attach {to=@L; at=exit; with=entry}; insert=true}
+	cHasExit=L {alefAttached = true}  cHasEntry=A {attach {to=@L; at=exitS; with=entryS}; insert=true}
 		/ ^ _ {alefAttached == false}  MARKS  _;
 	
 	// Marks above
 
 	// Note: the superscript-alef may have both the _alef and _diaA att pts; the ordering of these
 	// rules assumes the alef AP should be used if there are no intervening marks.
-	cHasAlefAP=B  cMarkSuperscriptAlefs {attach {to=@B; at=alef; with=alef_}; insert = true}  / _ ^ MARKSBELOW _ ;
+	cHasAlefAP=B  cMarkSuperscriptAlefs {attach {to=@B; at=alefS; with=alefM}; insert = true}  / _ ^ MARKSBELOW _ ;
 	
 	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
-	absShadda=S
-		(absFatha absDamma absFathatan absDammatan)
-			{attach {to=@S; at=point(diaA.x,diaA.y-80m); with=diaA_}; insert = selectDiac}
+	g_shadda_ar=S
+		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
+			{attach {to=@S; at=point(diaAS.x,diaAS.y-80m); with=diaAM}; insert = selectDiac}
 		/ _ ^ MARKSBELOW  _;
 
-	absHamzaAbove=H
-		(absFatha absDamma absFathatan absDammatan)
-			{attach {to=@H; at=point(diaA.x+40m,diaA.y-80m); with=diaA_}; insert = selectDiac}
+	g_hamzaabove_ar=H
+		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
+			{attach {to=@H; at=point(diaAS.x+40m,diaAS.y-80m); with=diaAM}; insert = selectDiac}
 		/ _ ^ MARKSBELOW  _;
 		
 
 	// Normal case:
-	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove){attach {to=@B; at=diaA; with=diaA_}; insert = selectDiac}
+	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM}; insert = selectDiac}
 		/ _ ^ MARKSBELOW  _;
 
 
@@ -355,46 +355,46 @@ pass(1)
 	// so we attach the left-most (logically first) to the sign, and proceed to the right.
 	
 	
-	cSignDigit=D4 { attach {to=@D3; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D3 { attach {to=@D2; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
+	cSignDigit=D4 { attach {to=@D3; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D3 { attach {to=@D2; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
 	cSign4=S;
 
-	cSignDigit=D3 { attach {to=@D2; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
+	cSignDigit=D3 { attach {to=@D2; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
 	cSign3=S;
 
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
 	cSign2=S;
 
-	cSignDigit { attach {to=@S;  at=digit; with=digit_ }; insert = true}
+	cSignDigit { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
 	cSign1=S;
 	
 	// However, there is a bug in some integrations (e.g., Firefox) 
 	// such that the glyps are still in logical order:
 	
 	cSign4=S
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D3 { attach {to=@D2; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D4 { attach {to=@D3; at=digit; with=digit_ }; insert = true};
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D3 { attach {to=@D2; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D4 { attach {to=@D3; at=digitRS; with=digitLS }; insert = true};
 	
 	cSign3=S
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true}
-	cSignDigit=D3 { attach {to=@D2; at=digit; with=digit_ }; insert = true};
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D3 { attach {to=@D2; at=digitRS; with=digitLS }; insert = true};
 	
 
 	cSign2=S
-	cSignDigit=D1 { attach {to=@S;  at=digit; with=digit_ }; insert = true}
-	cSignDigit=D2 { attach {to=@D1; at=digit; with=digit_ }; insert = true};
+	cSignDigit=D1 { attach {to=@S;  at=digitRS; with=digitLS }; insert = true}
+	cSignDigit=D2 { attach {to=@D1; at=digitRS; with=digitLS }; insert = true};
 	
 
 	cSign1=S
-	cSignDigit { attach {to=@S;  at=digit; with=digit_ }; insert = true};
+	cSignDigit { attach {to=@S;  at=digitRS; with=digitLS }; insert = true};
 	
 	
 
@@ -405,11 +405,11 @@ pass(2)
 	// Marks below
 
 	// Special attachment points for lam-alef ligatures, to avoid collisions:
-	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2B; with=dia2B_}; insert = selectDiac}
-		/ (absLamThreeDotsBelowIni_preAlef absLamThreeDotsBelowMed_preAlef cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
+	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM}; insert = selectDiac}
+		/ (g_lam_threedotsabove_ar_pre_alef_init g_lam_threedotsabove_ar_pre_alef_medi cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
 	// Normal case:
-	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaB; with=diaB_};  insert = selectDiac}
+	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM};  insert = selectDiac}
 		/ _ ^ MARKSABOVE  _;
 
 endpass; // 2
@@ -422,7 +422,7 @@ pass(3)
 	cRehKernGaf {advance.x -= 300m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
 	
 	// loosen from following alef when with something below it
-	(absAlefHamzaBelow absAlefWavyHamzaBelow) {advance.x += 130m} / cRehWawAll MARKS _ ;
+	(g_alef_hamzabelow_ar g_alef_wavyhamzabelow_ar) {advance.x += 130m} / cRehWawAll MARKS _ ;
 	cAlefIso {advance.x += 130m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
 	// loosen from following narrow initials with something below
