@@ -113,15 +113,19 @@ endtable; // glyph
 
 table(substitution)
 
-pass(1)	// Encoding, decomposition, mirroring
+pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
 
 	
+	// NB: This pass also includes cp1252 compositions
+	
+	// NB: I think that even though this is an ABS decomposition, it can be done in a LTR pass because
+	//     the reverser will make sure the mark always follows the base:
 	// QUESTION: are there more things that need to be decomposed?
 	cAlefPlusMark _ >  g_alef_ar:1  cAlefMark$1:1 ;
-		
-	if (graphite1mirror)
-		(cMirrorOpen cMirrorClose)  >  (cMirrorClose cMirrorOpen);
-	endif;
+	
+//	if (graphite1mirror)    // No longer support Graphite 1 mirroring?
+//		(cMirrorOpen cMirrorClose)  >  (cMirrorClose cMirrorOpen);
+//	endif;
 	
 	// The following is a debugging tool so you can find out whether the app is rendering with Graphite or not.
 	// The string "RenderingUnknown" will be rendered as "RenderingGraphite":
@@ -130,6 +134,24 @@ pass(1)	// Encoding, decomposition, mirroring
 	codepoint("G") codepoint("r") codepoint("a") codepoint("p") codepoint("h") codepoint("i") codepoint("t") codepoint("e"):16  / 
 		codepoint("R") codepoint("e") codepoint("n") codepoint("d") codepoint("e") codepoint("r") codepoint("i") codepoint("n") codepoint("g")  _ _ _ _ _ _ _ _;
 
+	// Subtending marks
+	// This is in a LTR pass because they are category (AN) and the digits that follow are collected into
+	// a LTR sequence by the bidi algorithm.
+	
+	cSignTakes4 cDigitsAny cDigitsAny cDigitsAny cDigitsAny  >
+		cSign4 cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
+
+	cSignTakes3Medium cDigitsAny cDigitsAny cDigitsAny  >
+		cSign3Medium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
+		
+	cSignTakes3Small cDigitsAny cDigitsAny cDigitsAny  >
+		cSign3Small cDigitsAnySmall cDigitsAnySmall cDigitsAnySmall;
+		
+	cSignTakes2 cDigitsAny cDigitsAny  >
+		cSign2 cDigitsAnyMedium cDigitsAnyMedium;
+
+	cSignTakes1 cDigitsAny  >  cSign1  cDigitsAnyMedium;
+	
 endpass; // 1
 
 
@@ -150,7 +172,6 @@ pass(2)	// Reorder marks to "logical" order (this allows for canonical order inp
 	// Note: Jonathan says inserting circles is a bad idea for minority language support.
 
 endpass; // 2
-
 
 
 pass(3)	// ligature diacritics
@@ -191,23 +212,6 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 	(cDualLinkIsol cDualLinkFina g_kashida_ar zeroWidthJoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar zeroWidthJoiner) > 
 		(cDualLinkInit cDualLinkMedi g_kashida_ar zeroWidthJoiner) (cDualLinkFina cRightLinkFina g_kashida_ar zeroWidthJoiner)
 		/ _  MARKS ^ _ ;
-
-
-	// Subtending marks
-	
-	cSignTakes4 cDigitsAny cDigitsAny cDigitsAny cDigitsAny  >
-		cSign4 cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
-
-	cSignTakes3Medium cDigitsAny cDigitsAny cDigitsAny  >
-		cSign3Medium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
-		
-	cSignTakes3Small cDigitsAny cDigitsAny cDigitsAny  >
-		cSign3Small cDigitsAnySmall cDigitsAnySmall cDigitsAnySmall;
-		
-	cSignTakes2 cDigitsAny cDigitsAny  >
-		cSign2 cDigitsAnyMedium cDigitsAnyMedium;
-
-	cSignTakes1 cDigitsAny  >  cSign1  cDigitsAnyMedium;
 
 endpass; // 4
 
@@ -662,7 +666,7 @@ pass(3)	// Collisions and adjustments
 endpass;
 
 endif;
-#endif
+#endif  // SC's collision fixes
 
 endtable; // pos
 

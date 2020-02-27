@@ -1,8 +1,8 @@
 /*
-	This file is part of Scheherazade font family 
-	(http://scripts.sil.org/Scheherazade) and is 
-	Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
-	with Reserved Font Names "Scheherazade" and "SIL".
+	This file is part of Harmattan font family 
+	(http://scripts.sil.org/Harmattan) and is 
+	Copyright (c) 2014-2020 SIL International (http://www.sil.org/),
+	with Reserved Font Names "Harmattan" and "SIL".
 
 	This Font Software is licensed under the SIL Open Font License,
 	Version 1.1.
@@ -11,6 +11,7 @@
 	If this is not the case, go to (http://scripts.sil.org/OFL) for all the
 	details including an FAQ.
 */
+
 
 //	Standard abbreviations:
 
@@ -54,6 +55,13 @@
 #define DIR_LRE 13
 #define DIR_RLE 14
 #define DIR_PDF 15
+#define DIR_NSM 16
+#define DIR_LRI 17
+#define DIR_RLI 18
+#define DIR_FSI 19
+#define DIR_PDI 20
+#define DIR_OPP 21
+#define DIR_CPP 22
 
 #define BREAK_WHITESPACE 10
 #define BREAK_WORD 15
@@ -66,10 +74,11 @@
 #define VERTICAL_FROM_LEFT 4
 #define VERTICAL_FROM_RIGHT 8
 
+#define LEFT_TO_RIGHT 1
+#define RIGHT_TO_LEFT 2
+
 #define JMODE_NORMAL 0
 #define JMODE_MEASURE 1
 #define JMODE_JUSTIFY 2
 
 #define LG_USENG 0x0409
-
-

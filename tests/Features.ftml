@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='ftml.xsl'?>
+<ftml version='1.0'>
+  <testgroup label='Rendering engine'>
+  	<test label=''><string>RenderingUnknown</string></test>
+  </testgroup>
+  <testgroup label="End of Ayah">
+  	<test label='standard' stylename='' rtl='True'>          <string>\u06DD\u0661 \u06DD\u0665\u0663 \u06DD\u0667\u0663\u0661</string><comment>default</comment></test>
+  	<test label='simplified A' stylename='cv80_1' rtl='True'><string>\u06DD\u0661 \u06DD\u0665\u0663 \u06DD\u0667\u0663\u0661</string><comment>cv80=1</comment></test>
+  	<test label='simplified B' stylename='cv80_2' rtl='True'><string>\u06DD\u0661 \u06DD\u0665\u0663 \u06DD\u0667\u0663\u0661</string><comment>cv80=2</comment></test>
+  	<test label='standard' stylename=''>          <string>\u06DD\u06f1 \u06DD\u06f1\u06f2 \u06DD\u06f1\u06f2\u06f3</string><comment></comment></test>
+  	<test label='simplified A' stylename='cv80_1'><string>\u06DD\u06f1 \u06DD\u06f1\u06f2 \u06DD\u06f1\u06f2\u06f3</string><comment>cv80=1</comment></test>
+  	<test label='simplified B' stylename='cv80_2' rtl='True'><string>\u06DD\u06f1 \u06DD\u06f1\u06f2 \u06DD\u06f1\u06f2\u06f3</string><comment>cv80=2</comment></test>
+  	<test label='standard- 6 52 987' stylename='' rtl='True'><string>\u06DD\u0036 \u06DD\u0035\u0032 \u06DD\u0039\u0038\u0037</string><comment></comment></test>
+  	<test label='simplified A' stylename='cv80_1' rtl='True'><string>\u06DD\u0036 \u06DD\u0035\u0032 \u06DD\u0039\u0038\u0037</string><comment>cv80=1</comment></test>
+  	<test label='simplified B' stylename='cv80_2' rtl='True'><string>\u06DD\u0036 \u06DD\u0035\u0032 \u06DD\u0039\u0038\u0037</string><comment>cv80=2</comment></test>
+  </testgroup>
+
+  <testgroup label="Dal and friends">
+  	<test label='standard' stylename=''>       <string>\u062f \u0630 \u0688 \u0689 \u068a \u068B \u068c \u068D \u068E \u068F \u0690 \u06ee \u0759 \u075A \u08ae</string><comment>default</comment></test>
+  	<test label='alternate' stylename='cv12_1'><string>\u062f \u0630 \u0688 \u0689 \u068a \u068B \u068c \u068D \u068E \u068F \u0690 \u06ee \u0759 \u075A \u08ae</string><comment>cv12=1</comment></test>
+  </testgroup>
+  <testgroup label="Meem and friends">
+  	<test label='standard' stylename=''>    <string>\u0645 \u0765 \u0766 \u08a7</string><comment>default</comment></test>
+  	<test label='Sindhi' stylename='cv44_1'><string>\u0645 \u0765 \u0766 \u08a7</string><comment>cv44=1</comment></test>
+  </testgroup>
+  <testgroup label="Heh">
+  	<test label='standard' stylename=''>      <string>\u0647 \u0647\u0647\u0647</string><comment>default</comment></test>
+  	<test label='Sindhi' stylename='cv48_1'>  <string>\u0647 \u0647\u0647\u0647</string><comment>cv48=1</comment></test>
+  	<test label='Urdu' stylename='cv48_2'>    <string>\u0647 \u0647\u0647\u0647</string><comment>cv48=2</comment></test>
+   	<test label='Kurdish' stylename='cv48_3'><string>\u0647 \u0647\u0647\u0647</string><comment>cv48=3</comment></test>
+  </testgroup>
+  <testgroup label="Arabic U">
+  	<test label='standard' stylename=''>      <string>\u06C7 \u0677 \u0644\u06C7 \u0644\u0677</string><comment>default</comment></test>
+  	<test label='filled' stylename='cv50_1'>  <string>\u06C7 \u0677 \u0644\u06C7 \u0644\u0677</string><comment>cv50=1</comment></test>
+  </testgroup>
+  <testgroup label="Maddah">
+  	<test label='small' stylename=''>      <string>\u25cc\u0653 \u0622 \u0644\u0622 \u0644\u0622 \u0628\u0644\u0622</string><comment>default</comment></test>
+  	<test label='large' stylename='cv60_1'><string>\u25cc\u0653 \u0622 \u0644\u0622 \u0644\u0622 \u0628\u0644\u0622</string><comment>cv60=1</comment></test>
+  </testgroup>
+  <testgroup label="Kasra (with Shadda)">
+  	<test label='standard' stylename=''>      <string>\u0628\u0650\u0651 \u0628\u064d\u0651</string><comment>default</comment></test>
+  	<test label='lowered'  stylename='cv62_1'><string>\u0628\u0650\u0651 \u0628\u064d\u0651</string><comment>cv62=1</comment></test>
+  	<test label='raised'   stylename='cv62_2'><string>\u0628\u0650\u0651 \u0628\u064d\u0651</string><comment>cv62=2</comment></test>
+  </testgroup>
+  <testgroup label="Damma">
+  	<test label='standard' stylename=''>      <string>\u0628\u064f \u0628\u064f\u0651 \u0628\u0651\u064f \u0628\u0654\u064f</string><comment>default</comment></test>
+  	<test label='filled'   stylename='cv70_1'><string>\u0628\u064f \u0628\u064f\u0651 \u0628\u0651\u064f \u0628\u0654\u064f</string><comment>cv70=1</comment></test>
+  	<test label='short'    stylename='cv70_2'><string>\u0628\u064f \u0628\u064f\u0651 \u0628\u0651\u064f \u0628\u0654\u064f</string><comment>cv70=2</comment></test>
+  </testgroup>
+  <testgroup label="Dammatan">
+  	<test label='standard' stylename=''>      <string>\u0628\u064c</string><comment>default</comment></test>
+  	<test label='six-nine' stylename='cv72_1'><string>\u0628\u064c</string><comment>cv72=1</comment></test>
+  </testgroup>
+  <testgroup label="Damma Inverted">
+  	<test label='standard' stylename=''>      <string>\u0628\u0657</string><comment>default</comment></test>
+  	<test label='hollow'   stylename='cv74_1'><string>\u0628\u0657</string><comment>cv74=1</comment></test>
+  </testgroup>
+  <testgroup label="Dagger Alef">
+  	<test label='small' stylename=''>      <string>\u0634\u0670 \u0628\u064a\u0670 \u06fb\u0670</string><comment>default</comment></test>
+  	<test label='large' stylename='cv76_1'><string>\u0634\u0670 \u0628\u064a\u0670 \u06fb\u0670</string><comment>cv76=1</comment></test>
+  	<test label='default - no effect' stylename=''>    <string>\u0644\u0633\u0670\u0646 \u0641\u0670 \u062a\u06ba\u0670</string><comment>default</comment></test>
+  	<test label='small - no effect' stylename='cv76_1'><string>\u0644\u0633\u0670\u0646 \u0641\u0670 \u062a\u06ba\u0670</string><comment>cv76=1</comment></test>
+  </testgroup>
+  <testgroup label="Sukun">
+  	<test label='closed' stylename=''>         <string>\u0644\u0652</string><comment>default</comment></test>
+  	<test label='open down' stylename='cv78_1'><string>\u0644\u0652</string><comment>cv78=1</comment></test>
+  	<test label='open left' stylename='cv78_2'><string>\u0644\u0652</string><comment>cv78=2</comment></test>
+  </testgroup>
+  <testgroup label="Persian Digits">
+  	<test label='standard' stylename=''>      <string>\u06f0 \u06f1 \u06f2 \u06f3 \u06f4 \u06f5 \u06f6 \u06f7 \u06f8 \u06f9</string><comment>default</comment></test>
+  	<test label='Sindhi' stylename='cv82_1'>  <string>\u06f0 \u06f1 \u06f2 \u06f3 \u06f4 \u06f5 \u06f6 \u06f7 \u06f8 \u06f9</string><comment>cv82=1</comment></test>
+  	<test label='Urdu' stylename='cv82_2'>    <string>\u06f0 \u06f1 \u06f2 \u06f3 \u06f4 \u06f5 \u06f6 \u06f7 \u06f8 \u06f9</string><comment>cv82=2</comment></test>
+   	<test label='Kurdish' stylename='cv82_3'> <string>\u06f0 \u06f1 \u06f2 \u06f3 \u06f4 \u06f5 \u06f6 \u06f7 \u06f8 \u06f9</string><comment>cv82=3</comment></test>
+   	<test label='Rohingya' stylename='cv82_4'><string>\u06f0 \u06f1 \u06f2 \u06f3 \u06f4 \u06f5 \u06f6 \u06f7 \u06f8 \u06f9</string><comment>cv82=4</comment></test>
+  </testgroup>
+  <testgroup label="Comma and Semicolon">
+  	<test label='standard' stylename=''>      <string>\u060c \u061b</string><comment>default</comment></test>
+  	<test label='downward' stylename='cv84_1'><string>\u060c \u061b</string><comment>cv84=1</comment></test>
+  </testgroup>
+  <testgroup label="Hacks">
+  	<test label='standard' stylename=''>     <string>\u0698\u06e1</string><comment>default</comment></test>
+  	<test label='downward' stylename='hacks'><string>\u0698\u06e1</string><comment>cv84=1</comment></test>
+  </testgroup>
+
+<head>
+  <fontscale>300</fontscale>
+  <fontsrc>url("./reference/Scheherazade-Regular_2.1.ttf")</fontsrc>
+  <fontsrc>url(../results/Scheherazade-Regular.ttf)</fontsrc>
+  <fontsrc>url(../results/Scheherazade-Bold.ttf)</fontsrc>
+    <styles>
+      <!-- <style feats="'cv02' 1" name="cv02_1"/>
+      <style feats="'cv02' 1, 'cv60' 1" name="cv02_1_cv60_1"/>
+      <style feats="'cv02' 2" name="cv02_2"/>
+      <style feats="'cv02' 2, 'cv60' 1" name="cv02_2_cv60_1"/>
+      <style feats="'cv08' 1" name="cv08_1"/>
+      -->
+      
+      <style feats="'cv12' 1" name="cv12_1"/>
+      <style feats="'cv44' 1" name="cv44_1"/>
+      <style feats="'cv48' 1" name="cv48_1"/>
+      <style feats="'cv48' 2" name="cv48_2"/>
+      <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv60' 1" name="cv60_1"/>
+      <style feats="'cv62' 1" name="cv62_1"/>
+      <style feats="'cv62' 2" name="cv62_2"/>
+      <style feats="'cv70' 1" name="cv70_1"/>
+      <style feats="'cv70' 2" name="cv70_2"/>
+      <style feats="'cv72' 1" name="cv72_1"/>
+      <style feats="'cv74' 1" name="cv74_1"/>
+      <style feats="'cv74' 2" name="cv74_2"/>
+      <style feats="'cv76' 1" name="cv76_1"/>
+      <style feats="'cv76' 2" name="cv76_2"/>
+      <style feats="'cv78' 1" name="cv78_1"/>
+      <style feats="'cv78' 2" name="cv78_2"/>
+      <style feats="'cv80' 1" name="cv80_1"/>
+      <style feats="'cv80' 2" name="cv80_2"/>
+      <style feats="'cv82' 1" name="cv82_1"/>
+      <style feats="'cv82' 2" name="cv82_2"/>
+      <style feats="'cv82' 3" name="cv82_3"/>
+      <style feats="'cv82' 4" name="cv82_4"/>
+      <style feats="'cv84' 1" name="cv84_1"/>
+      <style feats="'cv90' 1, 'cv92' 1" name="hacks"/>
+      <style lang="ku" name="ku"/>
+      <style lang="rhg" name="rhg"/>
+      <style lang="sd" name="sd"/>
+      <style lang="ur" name="ur"/>
+      <style lang="wo" name="wo"/>
+    </styles>
+  <title>Features</title>
+  </head>
+</ftml>

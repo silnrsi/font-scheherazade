@@ -19,6 +19,7 @@ languagesystem arab dflt ;
 languagesystem arab KUR  ;
 languagesystem arab SND  ;
 languagesystem arab URD  ;
+#languagesystem arab ROH ;  -- does not exist
 languagesystem latn dflt ;
 
 
@@ -150,38 +151,32 @@ lookup UrduCALT {
     sub heh-ar.fina by heh-ar.hooked.fina ;
 } UrduCALT;
 
+# Subtending mark digits
+
 lookup SignWith_4digits_target {
   lookupflag IgnoreMarks ;
-    sub year-ar by year-ar.4 ;
-    sub samvat-ar by samvat-ar.4 ;
-    sub numbermark-ar by numbermark-ar.4 ;
-    sub pagenumber-ar by pagenumber-ar.4 ;
+    sub @cno_4 by @c_4 ;
 } SignWith_4digits_target ;
 
 lookup SignWith_3digits_target {
   lookupflag IgnoreMarks ;
-    sub number-ar by number-ar.3 ;
-    sub year-ar by year-ar.3 ;
-    sub samvat-ar by samvat-ar.3 ;
-    sub pagenumber-ar by pagenumber-ar.3 ;
-    sub endofayah-ar by endofayah-ar.3 ;
-    sub endofayah-ar.alt by endofayah-ar.alt.3 ;
-    sub endofayah-ar.altB by endofayah-ar.altB.3 ;
-    sub numbermark-ar by numbermark-ar.3 ;
+    sub @cno_3 by @c_3 ;
 } SignWith_3digits_target ;
 
 lookup SignWith_2digits_target {
   lookupflag IgnoreMarks ;
-    sub number-ar by number-ar.2 ;
-    sub year-ar by year-ar.2 ;
-    sub samvat-ar by samvat-ar.2 ;
-    sub footnotemarker-ar by footnotemarker-ar.2 ;
-    sub pagenumber-ar by pagenumber-ar.2 ;
-    sub endofayah-ar by endofayah-ar.2 ;
-    sub endofayah-ar.alt by endofayah-ar.alt.2 ;
-    sub endofayah-ar.altB by endofayah-ar.altB.2 ;
-    sub numbermark-ar by numbermark-ar.2 ;
+    sub @cno_2 by @c_2 ;
 } SignWith_2digits_target ;
+
+lookup SignDigits_ToMedium_target {
+  lookupflag IgnoreMarks ;
+    sub @DigitsAny by @DigitsAnyMedium ;
+} SignDigits_ToMedium_target ;
+
+lookup SignDigits_ToSmall_target {
+  lookupflag IgnoreMarks ;
+    sub @DigitsAny by @DigitsAnySmall ;
+} SignDigits_ToSmall_target ;
 
 lookup SignWith {
   lookupflag IgnoreMarks ;
@@ -197,16 +192,6 @@ lookup SignWith {
 } SignWith;
 
 
-lookup SignDigits_ToMedium_target {
-  lookupflag IgnoreMarks ;
-    sub @DigitsAny by @DigitsAnyMedium ;
-} SignDigits_ToMedium_target ;
-
-lookup SignDigits_ToSmall_target {
-  lookupflag IgnoreMarks ;
-    sub @DigitsAny by @DigitsAnySmall ;
-} SignDigits_ToSmall_target ;
-
 lookup SignDigits {
   lookupflag IgnoreMarks ;
   # Subtable: SignDigits\ToMedium
@@ -220,9 +205,9 @@ lookup SignDigits {
     sub @DigitsAnySmall @DigitsAny' lookup SignDigits_ToSmall_target ;
     sub @TakesSmallDigits @DigitsAny' lookup SignDigits_ToSmall_target ;
     sub @DigitsAny' lookup SignDigits_ToSmall_target @TakesSmallDigits ;
-    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @TakesSmallDigits ;
-    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @DigitsEastern @TakesSmallDigits ;
-    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @DigitsEastern @DigitsEastern @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsAny @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsAny @DigitsAny @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsAny @DigitsAny @DigitsAny @TakesSmallDigits ;
 } SignDigits;
 
 lookup MaddaVowel1_target {
@@ -691,6 +676,15 @@ feature salt {  # Stylistic Alternates
 feature cv12 {  # Character Variant 12
     script arab;  # Arabic
       lookup DalAlternates;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
+            } ;
 } cv12 ;
 
 feature cv44 {  # Character Variant 44
@@ -701,21 +695,43 @@ feature cv44 {  # Character Variant 44
             lookup MeemAlternates;
         language URD  exclude_dflt;  # Urdu
             lookup MeemAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
+    } ;
 } cv44 ;
 
 feature cv48 {  # Character Variant 48
     script arab;  # Arabic
         language dflt;  # Default
             lookup HehAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
+    } ;
 } cv48 ;
 
 feature cv50 {  # Character Variant 50
     script arab;  # Arabic
       lookup ArabicUAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
+    } ;
 } cv50 ;
 
 feature cv60 {  # Character Variant 60
 		lookup MaddahAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
+    } ;
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
@@ -727,30 +743,69 @@ feature cv62 {  # Character Variant 62
     script latn;  # Latin
         language dflt;  # Default
             lookup KasraLowered;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Lowered" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
+    } ;
 } cv62 ;
 
 feature cv70 {  # Character Variant 70
 		lookup DammaAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
+    } ;
 } cv70 ;
 
 feature cv72 {  # Character Variant 72
 		lookup DammatanAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
+    } ;
 } cv72 ;
 
 feature cv74 {  # Character Variant 74
 		lookup DammaInvertedAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
+    } ;
 } cv74 ;
 
 feature cv76 {  # Character Variant 76
 		lookup DaggerAlefToLarge;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
+    } ;
 } cv76 ;
 
 feature cv78 {  # Character Variant 78
 		lookup SukunAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Sukun"     ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Open down" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Open left" ; };
+    } ;
 } cv78 ;
 
 feature cv80 {  # Character Variant 80
 		lookup AyahAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "End of ayah"  ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Simplified A" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Simplified B" ; };
+    } ;
 } cv80 ;
 
 feature cv82 {  # Character Variant 82
@@ -759,10 +814,23 @@ feature cv82 {  # Character Variant 82
             lookup PersianDigitAlternates;
         language KUR  exclude_dflt;  # Kurdish
             lookup PersianDigitAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Rohingya-style" ; };
+    } ;
 } cv82 ;
 
 feature cv84 {  # Character Variant 84
 		lookup CommaAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Comma"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
+    } ;
 } cv84 ;
 
 feature cv90 {  # Character Variant 90
