@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="_dot3u_tah" format="2">
-  <anchor x="0" y="-145" name="_above"/>
-  <anchor x="-56" y="832" name="_below"/>
-  <anchor x="-31" y="311" name="_center"/>
+<glyph name="_dot2h_smallV" format="2">
+  <anchor x="0" y="-146" name="_above"/>
   <outline>
-    <component base="_tah" xOffset="-20" yOffset="450"/>
-    <component base="_dot3u" yOffset="86"/>
+    <component base="_smallV" yOffset="270"/>
+    <component base="_dot2h"/>
   </outline>
   <lib>
     <dict>
