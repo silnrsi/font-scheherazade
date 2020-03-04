@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tehTehabove-ar.medi" format="2">
+  <advance width="367"/>
+  <anchor x="192" y="524" name="alef"/>
+  <anchor x="184" y="-50" name="below"/>
+  <anchor x="182" y="628" name="diaA"/>
+  <anchor x="153" y="-249" name="diaB"/>
+  <anchor x="153" y="-750" name="diaBtailDown"/>
+  <anchor x="153" y="-125" name="diaBtailUp"/>
+  <anchor x="215" y="106" name="ring"/>
+  <outline>
+    <component base="behDotless-ar.medi"/>
+    <component base="_teh" xOffset="184" yOffset="452"/>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="pehVabove-ar.medi" format="2">
+  <advance width="427"/>
+  <anchor x="279" y="-603" name="_above"/>
+  <anchor x="226" y="763" name="_below"/>
+  <anchor x="243" y="-295" name="_center"/>
+  <anchor x="224" y="576" name="alef"/>
+  <anchor x="211" y="668" name="diaA"/>
+  <anchor x="165" y="-240" name="diaB"/>
+  <anchor x="165" y="-800" name="diaBtailDown"/>
+  <anchor x="165" y="-125" name="diaBtailUp"/>
+  <anchor x="258" y="104" name="ring"/>
+  <outline>
+    <component base="behDotless-ar.medi"/>
+    <component base="_smallV" xOffset="226" yOffset="598"/>
+    <component base="_dot3d" xOffset="241" yOffset="-174"/>
+  </outline>
+</glyph>

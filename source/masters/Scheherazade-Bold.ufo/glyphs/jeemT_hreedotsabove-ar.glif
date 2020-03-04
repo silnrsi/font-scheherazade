@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="jeemThreedotsabove-ar" format="2">
+  <advance width="1144"/>
+  <unicode hex="08C5"/>
+  <anchor x="569" y="-389" name="_above"/>
+  <anchor x="569" y="-23" name="_below"/>
+  <anchor x="570" y="762" name="_center"/>
+  <anchor x="323" y="697" name="alef"/>
+  <anchor x="457" y="808" name="diaA"/>
+  <anchor x="374" y="-910" name="diaB"/>
+  <outline>
+    <component base="hah-ar"/>
+    <component base="_dot3u" xOffset="600" yOffset="655"/>
+    <component base="_dot1" xOffset="569" yOffset="-204"/>
+  </outline>
+</glyph>
