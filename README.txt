@@ -5,7 +5,7 @@ Scheherazade
 Thank you for your interest in the Scheherazade font.
 We hope you find it useful!
 
-Scheherazade supports most of the Unicode 8.0 Arabic character 
+Scheherazade supports most of the Unicode 13.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
 recommended for normal use). 
 
