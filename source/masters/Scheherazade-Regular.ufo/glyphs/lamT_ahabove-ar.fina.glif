@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamTahabove-ar.fina" format="2">
   <advance width="850"/>
-  <anchor x="591" y="1623" name="_below"/>
-  <anchor x="589" y="1335" name="_center"/>
   <anchor x="152" y="299" name="alef"/>
-  <anchor x="649" y="-528" name="below"/>
   <anchor x="300" y="800" name="diaA"/>
   <anchor x="350" y="-600" name="diaB"/>
-  <anchor x="602" y="602" name="through"/>
   <outline>
     <component base="lam-ar.fina"/>
     <component base="_tah" xOffset="615" yOffset="1172"/>
