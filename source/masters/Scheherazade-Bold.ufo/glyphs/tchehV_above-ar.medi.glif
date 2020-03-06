@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tchehVabove-ar.medi" format="2">
   <advance width="1095"/>
-  <anchor x="249" y="756" name="alef"/>
-  <anchor x="365" y="835" name="diaA"/>
-  <anchor x="474" y="-199" name="diaB"/>
+  <anchor x="463" y="1126" name="alef"/>
+  <anchor x="538" y="1276" name="diaA"/>
+  <anchor x="526" y="-711" name="diaB"/>
   <outline>
     <component base="hah-ar.medi"/>
     <component base="_smallV" xOffset="568" yOffset="838"/>
@@ -12,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
+      <string>0.98,0.36,0.67,1</string>
     </dict>
   </lib>
 </glyph>

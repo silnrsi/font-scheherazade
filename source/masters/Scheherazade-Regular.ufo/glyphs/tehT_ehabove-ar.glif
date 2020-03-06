@@ -2,8 +2,8 @@
 <glyph name="tehTehabove-ar" format="2">
   <advance width="1352"/>
   <unicode hex="08B8"/>
-  <anchor x="424" y="564" name="alef"/>
-  <anchor x="660" y="585" name="diaA"/>
+  <anchor x="424" y="794" name="alef"/>
+  <anchor x="610" y="835" name="diaA"/>
   <anchor x="651" y="-310" name="diaB"/>
   <outline>
     <component base="behDotless-ar"/>
@@ -12,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
+      <string>0.98,0.36,0.67,1</string>
     </dict>
   </lib>
 </glyph>

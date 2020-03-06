@@ -2,8 +2,8 @@
 <glyph name="qafAfricanThreedotsabove-ar" format="2">
   <advance width="981"/>
   <unicode hex="08C4"/>
-  <anchor x="287" y="730" name="alef"/>
-  <anchor x="464" y="874" name="diaA"/>
+  <anchor x="287" y="1100" name="alef"/>
+  <anchor x="642" y="1369" name="diaA"/>
   <anchor x="363" y="-300" name="diaB"/>
   <outline>
     <component base="qafDotless-ar"/>
@@ -12,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
+      <string>0.98,0.36,0.67,1</string>
     </dict>
   </lib>
 </glyph>

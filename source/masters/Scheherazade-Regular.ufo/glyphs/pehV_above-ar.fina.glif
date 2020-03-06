@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="pehVabove-ar.fina" format="2">
   <advance width="1378"/>
-  <anchor x="400" y="560" name="alef"/>
-  <anchor x="660" y="585" name="diaA"/>
-  <anchor x="659" y="-310" name="diaB"/>
+  <anchor x="370" y="620" name="alef"/>
+  <anchor x="637" y="834" name="diaA"/>
+  <anchor x="557" y="-656" name="diaB"/>
   <outline>
     <component base="behDotless-ar.fina"/>
     <component base="_smallV" xOffset="652" yOffset="462"/>
@@ -12,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
+      <string>0.98,0.36,0.67,1</string>
     </dict>
   </lib>
 </glyph>
