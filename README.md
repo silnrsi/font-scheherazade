@@ -1,6 +1,6 @@
 # Scheherazade
 
-Scheherazade is a smart open font designed by SIL International. It is intended to support most of the characters in the Arabic Unicode 13.0 blocks.
+Scheherazade is a smart open font designed by SIL International. It is designed as a general-purpose Arabic style and is intended to support most of the characters in the Unicode 13.0 Arabic blocks.
 
 ### Project status [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_Scheherazade/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_Scheherazade&guest=1)
 

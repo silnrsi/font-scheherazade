@@ -18,8 +18,8 @@ tchehVabove-ar = hah-ar + _smallV@above + _dot3d@hah-ar:center | 08C1
 tchehVabove-ar.fina = hah-ar.fina + _smallV@above + _dot3d@hah-ar.fina:center
 tchehVabove-ar.medi = hah-ar.medi + _smallV@above + _dot3d@hah-ar.medi:below
 tchehVabove-ar.init = hah-ar.init + _smallV@above + _dot3d@hah-ar.init:below
-jeemThreedotsabove-ar = hah-ar + _dot3u@above + _dot1@hah-ar:center | 08C5
-jeemThreedotsabove-ar.fina = hah-ar.fina + _dot3u@above + _dot1@hah-ar.fina:center
+jeemThreedotsabove-ar = hah-ar + _dot3u@above[shift=0,-70] + _dot1@hah-ar:center | 08C5
+jeemThreedotsabove-ar.fina = hah-ar.fina + _dot3u@above[shift=0,-40] + _dot1@hah-ar.fina:center
 jeemThreedotsabove-ar.medi = hah-ar.medi + _dot3u@above + _dot1@hah-ar.medi:below
 jeemThreedotsabove-ar.init = hah-ar.init + _dot3u@above + _dot1@hah-ar.init:below
 jeemThreedotsbelow-ar = hah-ar + _dot1_dot3d@center | 08C6

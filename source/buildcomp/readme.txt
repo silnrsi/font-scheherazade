@@ -17,3 +17,5 @@ The files are:
 
 tehTehabove-ar - _teh@above[shift=0,-200]
 tehTehabove-ar.fina - _teh@above[shift=0,-150]
+jeemThreedotsabove-ar - _dot3u@above[shift=0,-70]
+jeemThreedotsabove.fina-ar - _dot3u@above[shift=0,-40]
