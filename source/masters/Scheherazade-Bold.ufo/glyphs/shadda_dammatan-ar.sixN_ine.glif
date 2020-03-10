@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="shadda_dammatan-ar.sixNine" format="2">
-  <anchor x="179" y="962" name="_diaA"/>
-  <anchor x="100" y="1886" name="diaA"/>
+  <anchor x="260" y="1395" name="_diaA"/>
+  <anchor x="145" y="2735" name="diaA"/>
   <outline>
     <contour>
-      <point x="-37" y="1440" type="curve" smooth="yes"/>
-      <point x="57" y="1440"/>
-      <point x="122" y="1561"/>
-      <point x="122" y="1618" type="curve" smooth="yes"/>
-      <point x="122" y="1694"/>
-      <point x="-72" y="1812"/>
-      <point x="-93" y="1812" type="curve" smooth="yes"/>
-      <point x="-102" y="1812"/>
-      <point x="-145" y="1741"/>
-      <point x="-145" y="1721" type="curve" smooth="yes"/>
-      <point x="-145" y="1717"/>
-      <point x="-143" y="1714"/>
-      <point x="-140" y="1712" type="curve" smooth="yes"/>
-      <point x="-114" y="1695"/>
-      <point x="42" y="1591"/>
-      <point x="42" y="1551" type="curve" smooth="yes"/>
-      <point x="42" y="1543"/>
-      <point x="39" y="1528"/>
-      <point x="22" y="1528" type="curve" smooth="yes"/>
-      <point x="-15" y="1528"/>
-      <point x="-40" y="1566"/>
-      <point x="-40" y="1592" type="curve" smooth="yes" name="hr01"/>
-      <point x="-40" y="1654"/>
-      <point x="79" y="1758"/>
-      <point x="267" y="1828" type="curve"/>
-      <point x="244" y="1846"/>
-      <point x="175" y="1870"/>
-      <point x="136" y="1870" type="curve" smooth="yes"/>
-      <point x="58" y="1870"/>
-      <point x="-124" y="1672"/>
-      <point x="-124" y="1552" type="curve" smooth="yes"/>
-      <point x="-124" y="1487"/>
-      <point x="-94" y="1440"/>
+      <point x="-54" y="2088" type="curve" smooth="yes"/>
+      <point x="83" y="2088"/>
+      <point x="177" y="2263"/>
+      <point x="177" y="2346" type="curve" smooth="yes"/>
+      <point x="177" y="2456"/>
+      <point x="-104" y="2627"/>
+      <point x="-135" y="2627" type="curve" smooth="yes"/>
+      <point x="-148" y="2627"/>
+      <point x="-210" y="2524"/>
+      <point x="-210" y="2495" type="curve" smooth="yes"/>
+      <point x="-210" y="2490"/>
+      <point x="-207" y="2485"/>
+      <point x="-203" y="2482" type="curve" smooth="yes"/>
+      <point x="-165" y="2458"/>
+      <point x="61" y="2307"/>
+      <point x="61" y="2249" type="curve" smooth="yes"/>
+      <point x="61" y="2237"/>
+      <point x="57" y="2216"/>
+      <point x="32" y="2216" type="curve" smooth="yes"/>
+      <point x="-22" y="2216"/>
+      <point x="-58" y="2271"/>
+      <point x="-58" y="2308" type="curve" smooth="yes" name="hr01"/>
+      <point x="-58" y="2398"/>
+      <point x="115" y="2549"/>
+      <point x="387" y="2651" type="curve"/>
+      <point x="354" y="2677"/>
+      <point x="254" y="2712"/>
+      <point x="197" y="2712" type="curve" smooth="yes"/>
+      <point x="84" y="2712"/>
+      <point x="-180" y="2424"/>
+      <point x="-180" y="2250" type="curve" smooth="yes"/>
+      <point x="-180" y="2156"/>
+      <point x="-136" y="2088"/>
     </contour>
-    <component base="shadda-ar" xOffset="1" yOffset="-40"/>
-    <component base="_damma" xOffset="290" yOffset="1449"/>
+    <component base="shadda-ar" xOffset="1" yOffset="-58"/>
+    <component base="_damma" xOffset="421" yOffset="2101"/>
   </outline>
   <lib>
     <dict>

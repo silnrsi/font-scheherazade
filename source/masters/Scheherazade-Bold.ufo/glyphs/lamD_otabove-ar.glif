@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamDotabove-ar" format="2">
-  <advance width="935"/>
+  <advance width="1356"/>
   <unicode hex="06B6"/>
-  <anchor x="200" y="601" name="alef"/>
-  <anchor x="217" y="1135" name="diaA"/>
-  <anchor x="400" y="-371" name="diaB"/>
+  <anchor x="290" y="871" name="alef"/>
+  <anchor x="315" y="1646" name="diaA"/>
+  <anchor x="580" y="-538" name="diaB"/>
   <outline>
     <component base="lam-ar"/>
-    <component base="_dot1" xOffset="609" yOffset="1321"/>
+    <component base="_dot1" xOffset="883" yOffset="1915"/>
   </outline>
   <lib>
     <dict>

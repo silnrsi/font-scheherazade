@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ghainDotbelow-ar.fina" format="2">
-  <advance width="799"/>
-  <anchor x="180" y="676" name="alef"/>
-  <anchor x="341" y="955" name="diaA"/>
-  <anchor x="441" y="-800" name="diaB"/>
+  <advance width="1159"/>
+  <anchor x="261" y="980" name="alef"/>
+  <anchor x="494" y="1385" name="diaA"/>
+  <anchor x="639" y="-1160" name="diaB"/>
   <outline>
     <component base="ain-ar.fina"/>
-    <component base="_dot1" xOffset="409" yOffset="654"/>
-    <component base="_dot1" xOffset="414" yOffset="-131"/>
+    <component base="_dot1" xOffset="593" yOffset="948"/>
+    <component base="_dot1" xOffset="600" yOffset="-190"/>
   </outline>
   <lib>
     <dict>

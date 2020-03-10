@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="fehAfrican-ar.init" format="2">
-  <advance width="510"/>
-  <anchor x="134" y="911" name="alef"/>
-  <anchor x="177" y="1049" name="diaA"/>
-  <anchor x="205" y="-416" name="diaB"/>
+  <advance width="740"/>
+  <anchor x="194" y="1321" name="alef"/>
+  <anchor x="257" y="1521" name="diaA"/>
+  <anchor x="297" y="-603" name="diaB"/>
   <outline>
     <component base="fehDotless-ar.init"/>
-    <component base="_dot1" xOffset="205" yOffset="-231"/>
+    <component base="_dot1" xOffset="297" yOffset="-335"/>
   </outline>
   <lib>
     <dict>

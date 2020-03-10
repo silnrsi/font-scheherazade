@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="fehDotbelowThreedotsabove-ar" format="2">
-  <advance width="1446"/>
+  <advance width="2097"/>
   <unicode hex="08A4"/>
-  <anchor x="372" y="684" name="alef"/>
-  <anchor x="633" y="1100" name="diaA"/>
-  <anchor x="600" y="-210" name="diaB"/>
+  <anchor x="539" y="992" name="alef"/>
+  <anchor x="918" y="1595" name="diaA"/>
+  <anchor x="870" y="-305" name="diaB"/>
   <outline>
     <component base="fehDotless-ar"/>
-    <component base="_dot3u" xOffset="1162" yOffset="1016"/>
-    <component base="_dot1" xOffset="1102" yOffset="-137"/>
+    <component base="_dot3u" xOffset="1685" yOffset="1473"/>
+    <component base="_dot1" xOffset="1598" yOffset="-199"/>
   </outline>
   <lib>
     <dict>

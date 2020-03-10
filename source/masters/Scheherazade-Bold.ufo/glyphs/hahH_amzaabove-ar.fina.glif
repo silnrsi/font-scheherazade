@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hahHamzaabove-ar.fina" format="2">
-  <advance width="1112"/>
-  <anchor x="302" y="950" name="alef"/>
-  <anchor x="509" y="1098" name="diaA"/>
-  <anchor x="432" y="-919" name="diaB"/>
+  <advance width="1612"/>
+  <anchor x="438" y="1378" name="alef"/>
+  <anchor x="738" y="1592" name="diaA"/>
+  <anchor x="626" y="-1333" name="diaB"/>
   <outline>
     <component base="hah-ar.fina"/>
-    <component base="_hamza" xOffset="609" yOffset="783"/>
+    <component base="_hamza" xOffset="883" yOffset="1135"/>
   </outline>
   <lib>
     <dict>

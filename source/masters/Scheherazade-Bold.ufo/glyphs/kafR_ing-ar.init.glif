@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="kafRing-ar.init" format="2">
-  <advance width="934"/>
-  <anchor x="161" y="948" name="alef"/>
-  <anchor x="261" y="1008" name="diaA"/>
-  <anchor x="217" y="-175" name="diaB"/>
+  <advance width="1354"/>
+  <anchor x="233" y="1375" name="alef"/>
+  <anchor x="378" y="1462" name="diaA"/>
+  <anchor x="315" y="-254" name="diaB"/>
   <outline>
     <component base="kaf-ar.init"/>
-    <component base="_ring" xOffset="525" yOffset="705"/>
+    <component base="_ring" xOffset="761" yOffset="1022"/>
   </outline>
   <lib>
     <dict>

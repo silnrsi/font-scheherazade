@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehFourbelow-farsi.medi" format="2">
-  <advance width="427"/>
-  <anchor x="224" y="576" name="alef"/>
-  <anchor x="211" y="668" name="diaA"/>
-  <anchor x="193" y="-599" name="diaB"/>
-  <anchor x="193" y="-800" name="diaBtailDown"/>
+  <advance width="619"/>
+  <anchor x="325" y="835" name="alef"/>
+  <anchor x="306" y="969" name="diaA"/>
+  <anchor x="280" y="-869" name="diaB"/>
+  <anchor x="280" y="-1160" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.medi"/>
-    <component base="_four" xOffset="225" yOffset="-455"/>
+    <component base="_four" xOffset="326" yOffset="-660"/>
   </outline>
   <lib>
     <dict>

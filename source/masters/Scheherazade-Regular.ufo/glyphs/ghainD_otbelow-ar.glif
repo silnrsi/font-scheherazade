@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ghainDotbelow-ar" format="2">
-  <advance width="1043"/>
+  <advance width="1512"/>
   <unicode hex="06FC"/>
-  <anchor x="168" y="904" name="alef"/>
-  <anchor x="305" y="1088" name="diaA"/>
-  <anchor x="335" y="-840" name="diaB"/>
+  <anchor x="244" y="1311" name="alef"/>
+  <anchor x="442" y="1578" name="diaA"/>
+  <anchor x="486" y="-1218" name="diaB"/>
   <outline>
     <component base="ain-ar"/>
-    <component base="_dot1" xOffset="327" yOffset="825"/>
-    <component base="_dot1" xOffset="488" yOffset="-28"/>
+    <component base="_dot1" xOffset="474" yOffset="1196"/>
+    <component base="_dot1" xOffset="708" yOffset="-41"/>
   </outline>
   <lib>
     <dict>

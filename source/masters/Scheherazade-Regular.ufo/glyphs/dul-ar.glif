@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dul-ar" format="2">
-  <advance width="621"/>
+  <advance width="900"/>
   <unicode hex="068E"/>
-  <anchor x="176" y="1096" name="alef"/>
-  <anchor x="258" y="1211" name="diaA"/>
-  <anchor x="250" y="-180" name="diaB"/>
+  <anchor x="255" y="1589" name="alef"/>
+  <anchor x="374" y="1756" name="diaA"/>
+  <anchor x="363" y="-261" name="diaB"/>
   <outline>
     <component base="dal-ar"/>
-    <component base="_dot3u" xOffset="313" yOffset="877"/>
+    <component base="_dot3u" xOffset="454" yOffset="1272"/>
   </outline>
   <lib>
     <dict>

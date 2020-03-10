@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehHamzaabove-ar.init" format="2">
-  <advance width="360"/>
-  <anchor x="96" y="968" name="alef"/>
-  <anchor x="135" y="1020" name="diaA"/>
-  <anchor x="98" y="-201" name="diaB"/>
-  <anchor x="98" y="-750" name="diaBtailDown"/>
-  <anchor x="98" y="-125" name="diaBtailUp"/>
+  <advance width="522"/>
+  <anchor x="139" y="1404" name="alef"/>
+  <anchor x="196" y="1479" name="diaA"/>
+  <anchor x="142" y="-291" name="diaB"/>
+  <anchor x="142" y="-1088" name="diaBtailDown"/>
+  <anchor x="142" y="-181" name="diaBtailUp"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_hamza" xOffset="167" yOffset="682"/>
+    <component base="_hamza" xOffset="242" yOffset="989"/>
   </outline>
   <lib>
     <dict>

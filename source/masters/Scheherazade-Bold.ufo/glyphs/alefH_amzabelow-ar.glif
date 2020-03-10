@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefHamzabelow-ar" format="2">
-  <advance width="357"/>
+  <advance width="518"/>
   <unicode hex="0625"/>
-  <anchor x="18" y="684" name="alef"/>
-  <anchor x="185" y="1100" name="diaA"/>
-  <anchor x="116" y="-515" name="diaB"/>
+  <anchor x="26" y="992" name="alef"/>
+  <anchor x="268" y="1595" name="diaA"/>
+  <anchor x="168" y="-747" name="diaB"/>
   <outline>
-    <component base="_hamza" xOffset="161" yOffset="-265"/>
+    <component base="_hamza" xOffset="233" yOffset="-384"/>
     <component base="alef-ar"/>
   </outline>
   <lib>

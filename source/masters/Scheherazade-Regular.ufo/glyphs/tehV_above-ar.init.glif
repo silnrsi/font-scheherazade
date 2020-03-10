@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehVabove-ar.init" format="2">
-  <advance width="360"/>
-  <anchor x="85" y="1142" name="alef"/>
-  <anchor x="139" y="1235" name="diaA"/>
-  <anchor x="105" y="-249" name="diaB"/>
-  <anchor x="105" y="-750" name="diaBtailDown"/>
-  <anchor x="105" y="-125" name="diaBtailUp"/>
+  <advance width="522"/>
+  <anchor x="123" y="1656" name="alef"/>
+  <anchor x="202" y="1791" name="diaA"/>
+  <anchor x="152" y="-361" name="diaB"/>
+  <anchor x="152" y="-1088" name="diaBtailDown"/>
+  <anchor x="152" y="-181" name="diaBtailUp"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_smallV" xOffset="168" yOffset="920"/>
-    <component base="_dot2h" xOffset="168" yOffset="650"/>
+    <component base="_smallV" xOffset="244" yOffset="1334"/>
+    <component base="_dot2h" xOffset="244" yOffset="943"/>
   </outline>
   <lib>
     <dict>

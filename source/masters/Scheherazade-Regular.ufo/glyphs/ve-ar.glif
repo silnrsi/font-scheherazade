@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ve-ar" format="2">
-  <advance width="573"/>
+  <advance width="831"/>
   <unicode hex="06CB"/>
-  <anchor x="220" y="900" name="alef"/>
-  <anchor x="328" y="1060" name="diaA"/>
-  <anchor x="250" y="-600" name="diaB"/>
+  <anchor x="319" y="1305" name="alef"/>
+  <anchor x="476" y="1537" name="diaA"/>
+  <anchor x="363" y="-870" name="diaB"/>
   <outline>
     <component base="waw-ar"/>
-    <component base="_dot3u" xOffset="381" yOffset="728"/>
+    <component base="_dot3u" xOffset="552" yOffset="1056"/>
   </outline>
   <lib>
     <dict>

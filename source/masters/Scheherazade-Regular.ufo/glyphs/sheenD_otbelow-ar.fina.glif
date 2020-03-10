@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="sheenDotbelow-ar.fina" format="2">
-  <advance width="1407"/>
-  <anchor x="380" y="264" name="alef"/>
-  <anchor x="524" y="648" name="diaA"/>
-  <anchor x="338" y="-602" name="diaB"/>
+  <advance width="2040"/>
+  <anchor x="551" y="383" name="alef"/>
+  <anchor x="760" y="940" name="diaA"/>
+  <anchor x="490" y="-873" name="diaB"/>
   <outline>
     <component base="seen-ar.fina"/>
-    <component base="_dot3u" xOffset="969" yOffset="564"/>
-    <component base="_dot1" xOffset="1034" yOffset="-196"/>
+    <component base="_dot3u" xOffset="1405" yOffset="818"/>
+    <component base="_dot1" xOffset="1499" yOffset="-284"/>
   </outline>
   <lib>
     <dict>

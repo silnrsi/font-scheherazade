@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehThreedotsabove-farsi" format="2">
-  <advance width="1130"/>
+  <advance width="1639"/>
   <unicode hex="063F"/>
-  <anchor x="324" y="1060" name="alef"/>
-  <anchor x="384" y="1116" name="diaA"/>
-  <anchor x="453" y="-406" name="diaB"/>
+  <anchor x="470" y="1537" name="alef"/>
+  <anchor x="557" y="1618" name="diaA"/>
+  <anchor x="657" y="-589" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots"/>
-    <component base="_dot3u" xOffset="444" yOffset="814"/>
+    <component base="_dot3u" xOffset="644" yOffset="1180"/>
   </outline>
   <lib>
     <dict>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="behThreedotsupbelow-ar.init" format="2">
-  <advance width="439"/>
-  <anchor x="183" y="804" name="alef"/>
-  <anchor x="205" y="927" name="diaA"/>
-  <anchor x="174" y="-760" name="diaB"/>
-  <anchor x="174" y="-800" name="diaBtailDown"/>
+  <advance width="637"/>
+  <anchor x="265" y="1166" name="alef"/>
+  <anchor x="297" y="1344" name="diaA"/>
+  <anchor x="252" y="-1102" name="diaB"/>
+  <anchor x="252" y="-1160" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_dot3u" xOffset="228" yOffset="-497"/>
+    <component base="_dot3u" xOffset="331" yOffset="-721"/>
   </outline>
   <lib>
     <dict>

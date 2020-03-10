@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonVabove-ar.init" format="2">
-  <advance width="360"/>
-  <anchor x="104" y="1176" name="alef"/>
-  <anchor x="136" y="1280" name="diaA"/>
-  <anchor x="105" y="-249" name="diaB"/>
-  <anchor x="105" y="-750" name="diaBtailDown"/>
-  <anchor x="105" y="-125" name="diaBtailUp"/>
+  <advance width="522"/>
+  <anchor x="151" y="1705" name="alef"/>
+  <anchor x="197" y="1856" name="diaA"/>
+  <anchor x="152" y="-361" name="diaB"/>
+  <anchor x="152" y="-1088" name="diaBtailDown"/>
+  <anchor x="152" y="-181" name="diaBtailUp"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_dot1_smallV" xOffset="172" yOffset="638"/>
+    <component base="_dot1_smallV" xOffset="249" yOffset="925"/>
   </outline>
   <lib>
     <dict>

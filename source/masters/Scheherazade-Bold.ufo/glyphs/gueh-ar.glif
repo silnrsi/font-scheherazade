@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gueh-ar" format="2">
-  <advance width="1640"/>
+  <advance width="2378"/>
   <unicode hex="06B3"/>
-  <anchor x="200" y="616" name="alef"/>
-  <anchor x="540" y="930" name="diaA"/>
-  <anchor x="387" y="-434" name="diaB"/>
+  <anchor x="290" y="893" name="alef"/>
+  <anchor x="783" y="1349" name="diaA"/>
+  <anchor x="561" y="-629" name="diaB"/>
   <outline>
     <component base="keheh-ar"/>
-    <component base="_dot2v" xOffset="885" yOffset="-408"/>
-    <component base="_gafBarShort" xOffset="819" yOffset="693"/>
+    <component base="_dot2v" xOffset="1283" yOffset="-592"/>
+    <component base="_gafBarShort" xOffset="1188" yOffset="1005"/>
   </outline>
   <lib>
     <dict>

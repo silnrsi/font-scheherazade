@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamTahabove-ar.preAlef.medi" format="2">
-  <advance width="602"/>
-  <anchor x="47" y="1456" name="alef"/>
-  <anchor x="204" y="1723" name="diaA"/>
-  <anchor x="297" y="-158" name="diaB"/>
-  <anchor x="179" y="233" name="exit"/>
+  <advance width="873"/>
+  <anchor x="68" y="2111" name="alef"/>
+  <anchor x="296" y="2498" name="diaA"/>
+  <anchor x="431" y="-229" name="diaB"/>
+  <anchor x="260" y="338" name="exit"/>
   <outline>
     <component base="lam-ar.preAlef.medi"/>
-    <component base="_tah" xOffset="317" yOffset="1133"/>
+    <component base="_tah" xOffset="460" yOffset="1643"/>
   </outline>
   <lib>
     <dict>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="behMeemabove-ar.fina" format="2">
-  <advance width="1498"/>
-  <anchor x="460" y="720" name="alef"/>
-  <anchor x="673" y="1113" name="diaA"/>
-  <anchor x="648" y="-498" name="diaB"/>
+  <advance width="2172"/>
+  <anchor x="667" y="1044" name="alef"/>
+  <anchor x="976" y="1614" name="diaA"/>
+  <anchor x="940" y="-722" name="diaB"/>
   <outline>
     <component base="behDotless-ar.fina"/>
-    <component base="_meem" xOffset="673" yOffset="714"/>
-    <component base="_dot1" xOffset="648" yOffset="-313"/>
+    <component base="_meem" xOffset="976" yOffset="1035"/>
+    <component base="_dot1" xOffset="940" yOffset="-454"/>
   </outline>
   <lib>
     <dict>

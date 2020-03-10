@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefWasla-ar" format="2">
-  <advance width="297"/>
+  <advance width="431"/>
   <unicode hex="0671"/>
-  <anchor x="124" y="1392" name="diaA"/>
-  <anchor x="100" y="-180" name="diaB"/>
+  <anchor x="180" y="2018" name="diaA"/>
+  <anchor x="145" y="-261" name="diaB"/>
   <outline>
     <component base="alef-ar"/>
-    <component base="_wasla" xOffset="180" yOffset="1166"/>
+    <component base="_wasla" xOffset="261" yOffset="1691"/>
   </outline>
   <lib>
     <dict>

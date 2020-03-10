@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="wawTwodots-ar" format="2">
-  <advance width="573"/>
+  <advance width="831"/>
   <unicode hex="06CA"/>
-  <anchor x="292" y="836" name="alef"/>
-  <anchor x="340" y="930" name="diaA"/>
-  <anchor x="250" y="-600" name="diaB"/>
+  <anchor x="423" y="1212" name="alef"/>
+  <anchor x="493" y="1349" name="diaA"/>
+  <anchor x="363" y="-870" name="diaB"/>
   <outline>
     <component base="waw-ar"/>
-    <component base="_dot2h" xOffset="379" yOffset="639"/>
+    <component base="_dot2h" xOffset="550" yOffset="927"/>
   </outline>
   <lib>
     <dict>

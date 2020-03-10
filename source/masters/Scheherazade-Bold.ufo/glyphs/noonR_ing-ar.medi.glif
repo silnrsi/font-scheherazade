@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonRing-ar.medi" format="2">
-  <advance width="427"/>
-  <anchor x="158" y="900" name="alef"/>
-  <anchor x="171" y="1078" name="diaA"/>
-  <anchor x="161" y="-419" name="diaB"/>
-  <anchor x="161" y="-800" name="diaBtailDown"/>
+  <advance width="619"/>
+  <anchor x="229" y="1305" name="alef"/>
+  <anchor x="248" y="1563" name="diaA"/>
+  <anchor x="233" y="-608" name="diaB"/>
+  <anchor x="233" y="-1160" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.medi"/>
-    <component base="_ring" xOffset="213" yOffset="-35"/>
-    <component base="_dot1" xOffset="209" yOffset="567"/>
+    <component base="_ring" xOffset="309" yOffset="-51"/>
+    <component base="_dot1" xOffset="303" yOffset="822"/>
   </outline>
   <lib>
     <dict>

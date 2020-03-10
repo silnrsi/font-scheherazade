@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tahTwodotsabove-ar.init" format="2">
-  <advance width="840"/>
-  <anchor x="0" y="748" name="alef"/>
-  <anchor x="154" y="1248" name="diaA"/>
-  <anchor x="397" y="-150" name="diaB"/>
+  <advance width="1218"/>
+  <anchor x="0" y="1085" name="alef"/>
+  <anchor x="223" y="1810" name="diaA"/>
+  <anchor x="576" y="-218" name="diaB"/>
   <outline>
     <component base="tah-ar.init"/>
-    <component base="_dot2h" xOffset="489" yOffset="717"/>
+    <component base="_dot2h" xOffset="709" yOffset="1040"/>
   </outline>
   <lib>
     <dict>

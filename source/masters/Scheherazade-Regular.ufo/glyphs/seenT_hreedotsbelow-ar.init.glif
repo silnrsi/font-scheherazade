@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="seenThreedotsbelow-ar.init" format="2">
-  <advance width="918"/>
-  <anchor x="316" y="540" name="alef"/>
-  <anchor x="428" y="616" name="diaA"/>
-  <anchor x="500" y="-600" name="diaB"/>
+  <advance width="1331"/>
+  <anchor x="458" y="783" name="alef"/>
+  <anchor x="621" y="893" name="diaA"/>
+  <anchor x="725" y="-870" name="diaB"/>
   <outline>
     <component base="seen-ar.init"/>
-    <component base="_dot3d" xOffset="503" yOffset="-185"/>
+    <component base="_dot3d" xOffset="729" yOffset="-268"/>
   </outline>
   <lib>
     <dict>
