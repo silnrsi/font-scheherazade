@@ -1,5 +1,5 @@
 sources/graphite/README.txt
-Scheherazade 2.020
+Scheherazade 2.200
 ==================
 
 This file describes the Graphite source files included with the Scheherazade
@@ -8,7 +8,7 @@ fonts and any derivative works.
 
 These files are part of Scheherazade font family 
 (http://software.sil.org/scheherazade/) and are 
-Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
+Copyright (c) 1994-2020 SIL International (http://www.sil.org/),
 with Reserved Font Names "Scheherazade" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License,

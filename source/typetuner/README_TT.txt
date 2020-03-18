@@ -22,7 +22,7 @@ See the FONTLOG for information on this and previous releases.
 For further information about this font, including Unicode ranges
 supported, Graphite and OpenType font features and how to use them, 
 and licensing, please see the documentation on the website 
-(http://scripts.sil.org/Scheherazade) or in the documentation 
+(http://software.sil.org/scheherazade) or in the documentation 
 subfolder of this font package.
 
 TYPETUNER
@@ -47,7 +47,7 @@ and Windows 8. Graphite capabilities have been tested on Graphite-supported
 platforms.
 
 If you do find a problem, please do report it through the website: 
-http://scripts.sil.org/Support.
+http://software.sil.org/scheherazade/support.
 We can't guarantee any direct response, but will try to fix reported bugs in
 future versions. 
 
@@ -67,16 +67,12 @@ This font does not include any keyboarding helps or utilities. You may use the
 built-in keyboards of the operating system. You may also need to install an
 appropriate keyboard and input method for the characters of the language you
 wish to use. If you want to enter characters that are not supported by any
-system keyboard, the Keyman program (www.tavultesoft.com) can be helpful
-on Windows systems. Also available for Windows is MSKLC 
-(http://www.microsoft.com/globaldev/tools/msklc.mspx). 
-For other platforms, KMFL (http://kmfl.sourceforge.net/), 
-XKB (http://www.x.org/wiki/XKB) or Ukelele (http://scripts.sil.org/ukelele) 
-can be helpful.
+system keyboard, the Keyman program (www.keyman.com) can be helpful
+on Windows, macOS, and Linux systems. 
 
 If you want to enter characters that are not supported by any system
 keyboard, and to access the full Unicode range, you might try charmap.exe
-on Windows or, on Ubuntu or similar software,  gucharmap or kcharselect.
+on Windows or, on Ubuntu or similar software, gucharmap or kcharselect.
 
 Another method of entering some symbols is provided by a few applications such
 as Adobe InDesign or LibreOffice.org. They can display a glyph palette or input

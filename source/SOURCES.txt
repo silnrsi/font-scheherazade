@@ -1,5 +1,5 @@
 ﻿sources/SOURCES.txt
-Scheherazade 2.020
+Scheherazade 2.200
 ==================
 
 This file describes the source files included with the Scheherazade
@@ -8,7 +8,7 @@ fonts and any derivative works.
 
 These files are part of Scheherazade font family 
 (http://software.sil.org/scheherazade/) and are 
-Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
+Copyright (c) 1994-2020 SIL International (http://www.sil.org/),
 with Reserved Font Names "Scheherazade" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License,
@@ -18,31 +18,33 @@ You should have received a copy of the license along with this Font Software.
 If this is not the case, go to (http://scripts.sil.org/OFL) for all the
 details including an FAQ.
 
-FontLab "*-designsource.vfb" file: The .vfb file is a FontLab file and 
-contains all the glyph outline data for the font. Please note that it is not
-possible to generate a font from this file that is identical to the final
-version, as postprocessing is done on the font after generation from
-FontLab.
+Source files and folders included:
 
-"*.enc" file: This is a plain-text file that identifes the required glyph
-order for this font. It can be used as a FontLab encoding file to sort
-glyphs prior to exporting the font. There may be glyphs identified in this
-file that are not present in the font, in which case those can simply
-be ignored.
+graphite/
+    Graphite code: See the graphite/README.txt for details
 
-OpenType "*-designsource.otf" files: These are CFF-flavored OpenType fonts 
-containing PostScript-style outlines. These are not intended as installable fonts, 
-and we do not support that use. They are provided as a non-proprietary 
-source of PostScript-style bézier outlines and can be opened by many font 
-design programs, including FontForge.
+opentype/
+    OpenType code: See the opentype/README.txt for details
 
-Anchor "*-anchors.xml" file: This is the XML file containing data on anchors
-(attachment points) used in creating composite glyphs and OpenType/Graphite
-code. This anchor data is present in the .vfb files, but this is a separate,
-non-proprietary, text-based source for that information.
+typetuner/
+    TypeTuner code
 
-VOLT code: The code used to insert OpenType tables into the font is included in
-a VOLT font format. See the README.txt file in the VOLT folder for details.
+Scheherazade-*.ufo/
+    Font sources in Unified Font Object format
 
-Graphite code: See the README.txt file in the graphite folder for details.
+Scheherazade-RB.designspace
+    DesignSpace document used to open the UFOs in GlyphsApp
+
+glyph_data.csv
+    Complete list of glyphs (and metadata regarding them) for the project
+
+FromAndika.csv
+    List of glyphs pulled from SIL's Andika font project to provide the 
+    character repertoire recommended by SIL for non-Roman faces. (see 
+    http://scriptsource.org/entry/gg5wm9hhd3 for details)
+
+classes.xml
+    Glyph classes used in by the Graphite and OpenType logic but which
+    cannot be algorithmically generated.
+
 
