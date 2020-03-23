@@ -5,11 +5,11 @@
 
 echo ""
 echo "Converting .glyphs to UFO3..."
-if psfglyphs2ufo --nofea source/masters/Scheherazade.glyphs source/masters
+if psfglyphs2ufo --nofea source/masters/ScheherazadeNew.glyphs source/masters
 then
   # Success. Now fix up the advance width of damma-ar.ss0
-  psfremovegliflibkeys source/masters/Scheherazade-Regular.ufo com.schriftgestaltung.Glyphs.originalWidth
-  psfremovegliflibkeys source/masters/Scheherazade-Bold.ufo    com.schriftgestaltung.Glyphs.originalWidth
+  psfremovegliflibkeys source/masters/ScheherazadeNew-Regular.ufo com.schriftgestaltung.Glyphs.originalWidth
+  psfremovegliflibkeys source/masters/ScheherazadeNew-Bold.ufo    com.schriftgestaltung.Glyphs.originalWidth
   ./preflight
 else
   # Something went wrong... abort

@@ -6,12 +6,12 @@ DOCDIR = ["documentation", "web"]  # add "web" to default
 genout = "generated/"
 
 # set package name
-APPNAME = "Scheherazade"
+APPNAME = "ScheherazadeNew"
 
 # set the font family name
 FAMILY = APPNAME
 
-##DESC_NAME = "Scheherazade"
+##DESC_NAME = "Scheherazade New"
 DESC_SHORT = "A general-purpose Arabic script font"
 
 #DEBPKG = 'fonts-sil-scheherazade'
@@ -23,10 +23,10 @@ getufoinfo('source/masters/' + FAMILY + '-Regular' + '.ufo')
 ###ftmlTest('tests/ftml-smith.xsl', fonts = ['../tests/reference/Scheherazade-Regular-1_001.ttf'], addfontindex = 1, fontmode = 'collect')
 
 # APs to omit:
-OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_H,_L,_O,_U,_R,above,below,center,ring,through,H,L,O,U,R"'
+OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_U,_R,above,below,center,ring,through,aboveLeft,H,L,O,U,R"'
 
 # iterate over designspace
-designspace('source/Scheherazade.designspace',
+designspace('source/ScheherazadeNew.designspace',
     instanceparams='-l ' + genout + '${DS:FILENAME_BASE}_createintance.log',
     target = process('${DS:FILENAME_BASE}.ttf'
 ###       , cmd('${PSFCHANGETTFGLYPHNAMES} ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']),
@@ -51,7 +51,7 @@ designspace('source/Scheherazade.designspace',
     classes = 'source/classes.xml',
     script='arab',
     pdf=fret(genout + '${DS:FILENAME_BASE}-fret.pdf', params='-r -o i -m 48'),
-    woff=woff('web/${DS:FILENAME_BASE}.woff', params='-v ' + VERSION + ' -m ../source/${DS:FAMILYNAME}-WOFF-metadata.xml'),
+    woff=woff('web/${DS:FILENAME_BASE}.woff', params='-v ' + VERSION + ' -m ../source/${FAMILY}-WOFF-metadata.xml'),
     )
 
 def configure(ctx):
