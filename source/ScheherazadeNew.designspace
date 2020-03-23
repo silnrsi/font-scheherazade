@@ -6,28 +6,28 @@
         </axis>
     </axes>
     <sources>
-        <source name="Scheherazade Regular" familyname="Scheherazade" filename="masters/Scheherazade-Regular.ufo" stylename="Regular">
+        <source name="Scheherazade New Regular" familyname="Scheherazade New" filename="masters/ScheherazadeNew-Regular.ufo" stylename="Regular">
             <lib copy="1" />
             <info copy="1" />
             <location>
                 <dimension name="weight" xvalue="400" />
             </location>
         </source>
-        <source name="Scheherazade Bold" familyname="Scheherazade" filename="masters/Scheherazade-Bold.ufo" stylename="Bold">
+        <source name="Scheherazade New Bold" familyname="Scheherazade New" filename="masters/ScheherazadeNew-Bold.ufo" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="700" />
             </location>
         </source>
     </sources>
     <instances>
-        <instance name="Scheherazade Regular" familyname="Scheherazade" filename="instances/Scheherazade-Regular.ufo" stylename="Regular">
+        <instance name="Scheherazade New Regular" familyname="Scheherazade New" filename="instances/ScheherazadeNew-Regular.ufo" stylename="Regular">
             <location>
                 <dimension name="weight" xvalue="400" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance name="Scheherazade Bold" familyname="Scheherazade" filename="instances/Scheherazade-Bold.ufo" stylename="Bold">
+        <instance name="Scheherazade New Bold" familyname="Scheherazade New" filename="instances/ScheherazadeNew-Bold.ufo" stylename="Bold">
             <location>
                 <dimension name="weight" xvalue="700" />
             </location>
