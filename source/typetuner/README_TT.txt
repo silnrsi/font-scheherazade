@@ -1,11 +1,11 @@
 README
-Scheherazade
-========================
+Scheherazade New
+=================
 
-Thank you for your interest in the Scheherazade font.
+Thank you for your interest in the Scheherazade New font.
 We hope you find it useful!
 
-Scheherazade supports most of the Unicode 8.0 Arabic character 
+Scheherazade New supports most of the Unicode 13.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
 recommended for normal use). 
 
@@ -13,7 +13,7 @@ Font smarts are implemented using OpenType and Graphite technologies.
 A number of glyph variations are accessible through font features
 available via both OpenType and Graphite technologies. 
 
-Scheherazade is released under the SIL Open Font License.
+Scheherazade New is released under the SIL Open Font License.
 Scheherazade is a trademark of SIL International.
 	
 See the OFL and OFL-FAQ for details of the SIL Open Font License.
@@ -29,7 +29,7 @@ TYPETUNER
 %ISODATE%
 =========
 
-This package contains a TypeTuned version of the Scheherazade fonts.
+This package contains a TypeTuned version of the Scheherazade New fonts.
 
 The TypeTuner settings file used to generate the enclosed font
 is included in the package as feat_set_tuned.xml.
@@ -88,8 +88,7 @@ adequate level of support for Graphite or OpenType.
 
 CONTACT
 ========
-For more information please visit the Scheherazade page on SIL International's
+For more information please visit the Scheherazade New page on SIL International's
 Computers and Writing systems website: http://software.sil.org/scheherazade/
 
 Support through the website: http://software.sil.org/scheherazade/support
-

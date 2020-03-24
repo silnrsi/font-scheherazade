@@ -1,5 +1,5 @@
 FONTLOG 
-Scheherazade font
+Scheherazade New font
 =================
 
 This file provides detailed information on the Scheherazade font software. 
@@ -9,7 +9,7 @@ and any derivative works.
 Basic Font Information
 ----------------------
 
-Scheherazade, named after the heroine of the classic Arabian Nights tale, 
+Scheherazade New, named after the heroine of the classic Arabian Nights tale, 
 is designed in a similar style to traditional typefaces such as Monotype Naskh, 
 extended to cover the full Unicode Arabic repertoire.
 
@@ -27,10 +27,10 @@ literate communities.
 
 Two fonts from this typeface family are included in this release:
 
-     * Scheherazade Regular
-     * Scheherazade Bold
+     * Scheherazade New Regular
+     * Scheherazade New Bold
 
-This release supports virtually all of the Unicode 8.0 Arabic character 
+This release supports virtually all of the Unicode 13.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
 recommended for normal use). Font smarts are implemented using OpenType 
 and Graphite technologies.
@@ -63,11 +63,19 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-%ISODATE% (SIL TypeTuner) Tuned version of Scheherazade Version 2.020 (maintenance release)
+%ISODATE% (SIL TypeTuner) Tuned version of Scheherazade Version 2.200 (dev release)
 - Tuned and delivered by SIL TypeTuner 
 (http://scripts.sil.org/ttw/fonts2go.cgi).
 - See included xml file for details of feature changes.
 
+2020-03-24 (SIL WSTech team) Scheherazade New Version 2.200 (development)
+- Renamed font to Scheherazade New
+- Resized glyphs to better fit standard Arabic script fonts
+- Updated Arabic script character repertoire to support most characters in the 
+  Unicode 13.0 BMP Arabic blocks
+- Update Latin script repertoire to support "Recommended characters for Non-Roman fonts"
+  https://scriptsource.org/entry/gg5wm9hhd3
+  
 2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
 - Renamed postscript name of Scheherazade Regular from "Scheherazade" 
   to "Scheherazade-Regular"
@@ -205,6 +213,11 @@ Acknowledgements
 be sure to add your name (N), email (E), web-address (W) and description
 (D). This list is sorted by last name in alphabetical order.)
 
+N: Sharon Correll
+E: fonts@sil.org
+W: http://scripts.sil.org/
+D: Graphite, OpenType, and TypeTuner code, and build support
+
 N: Bob Hallissy
 E: fonts@sil.org
 W: http://scripts.sil.org/
@@ -232,7 +245,6 @@ D: Contributing Designer
 
 The Scheherazade project is maintained by SIL International.
 
-For more information please visit the Scheherazade font page on 
+For more information please visit the Scheherazade New font page on 
 SIL International's Computers and Writing Systems website:
 http://software.sil.org/scheherazade/
-
