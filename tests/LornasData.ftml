@@ -1,0 +1,2951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc>url(reference/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv12_1" name="cv12_1"/>
+      <style feats="'cv44_1" name="cv44_1"/>
+      <style feats="'cv48_1" name="cv48_1"/>
+      <style feats="'cv48_2" name="cv48_2"/>
+      <style feats="'cv48_3" name="cv48_3"/>
+      <style feats="'cv50_1" name="cv50_1"/>
+      <style feats="'cv60_1" name="cv60_1"/>
+      <style feats="'cv62_1" name="cv62_1"/>
+      <style feats="'cv62_2" name="cv62_2"/>
+      <style feats="'cv70_1" name="cv70_1"/>
+      <style feats="'cv70_2" name="cv70_2"/>
+      <style feats="'cv72_1" name="cv72_1"/>
+      <style feats="'cv74' 0" name="cv74_0"/>
+      <style feats="'cv74_1" name="cv74_1"/>
+      <style feats="'cv76_1" name="cv76_1"/>
+      <style feats="'cv76_2" name="cv76_2"/>
+      <style feats="'cv78_1" name="cv78_1"/>
+      <style feats="'cv78_2" name="cv78_2"/>
+      <style feats="'cv80_1" name="cv80_1"/>
+      <style feats="'cv80_2" name="cv80_2"/>
+      <style feats="'cv82_1" name="cv82_1"/>
+      <style feats="'cv82_2" name="cv82_2"/>
+      <style feats="'cv82_3" name="cv82_3"/>
+      <style feats="'cv82_4" name="cv82_4"/>
+      <style feats="'cv84_1" name="cv84_1"/>
+      <style lang="ku" name="ku"/>
+      <style lang="rhg" name="rhg"/>
+      <style lang="sd" name="sd"/>
+      <style lang="ur" name="ur"/>
+      <style lang="wo" name="wo"/>
+    </styles>
+    <title>LornasData test for Scheherazade</title>
+  </head>
+  <testgroup label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Encoded characters">
+    <test label="Line 2">
+      <string>آدَمَ</string>
+      <comment>maddah is shortened for Wolof</comment>
+    </test>
+    <test label="Line 2" stylename="cv60_1">
+      <string>آدَمَ</string>
+      <comment>maddah is shortened for Wolof</comment>
+    </test>
+    <test label="Line 2" stylename="cv12_1">
+      <string>آدَمَ</string>
+      <comment>maddah is shortened for Wolof</comment>
+    </test>
+    <test label="Line 2" stylename="cv12_1, 'cv60_1">
+      <string>آدَمَ</string>
+      <comment>maddah is shortened for Wolof</comment>
+    </test>
+    <test label="Line 3">
+      <string>آرٗونَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 3" stylename="cv74_1">
+      <string>آرٗونَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 3" stylename="cv60_1">
+      <string>آرٗونَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 3" stylename="cv60_1, 'cv74_1">
+      <string>آرٗونَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 4">
+      <string>اَوَ</string>
+      <comment>fathas are close</comment>
+    </test>
+    <test label="Line 5">
+      <string>اَيٗوبَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 5" stylename="cv74_1">
+      <string>اَيٗوبَ</string>
+      <comment>0657 (alternate) might run into maddah</comment>
+    </test>
+    <test label="Line 6">
+      <string>فِرَوْنَ</string>
+      <comment>kasra might be too close to reh</comment>
+    </test>
+    <test label="Line 7">
+      <string>گࣷلْيࣵتّ</string>
+      <comment>good test for 08F5 and 08F7</comment>
+    </test>
+    <test label="Line 8">
+      <string>اِبْلِيسْ</string>
+      <comment>2nd kasra might be to close to dot nukta?</comment>
+    </test>
+    <test label="Line 9">
+      <string>اِلْيَاسْ</string>
+      <comment>fatha might be too close to lam?</comment>
+    </test>
+    <test label="Line 10">
+      <string>اِسْمَيࣹلْ</string>
+      <comment>good test for 08F9</comment>
+    </test>
+    <test label="Line 11">
+      <string>اِسْرَيِلْ</string>
+      <comment>kasra might be too close to reh</comment>
+    </test>
+    <test label="Line 12">
+      <string>کِرِسْتّ</string>
+      <comment>make sure kasras don't touch</comment>
+    </test>
+    <test label="Line 13">
+      <string>نٗويِنْ</string>
+      <comment>kasra might be too close to was</comment>
+    </test>
+    <test label="Line 13" stylename="cv74_1">
+      <string>نٗويِنْ</string>
+      <comment>kasra might be too close to was</comment>
+    </test>
+    <test label="Line 14">
+      <string>يَنْقٗوبَ</string>
+      <comment>lots of clutter, make sure 0657 (alt) looks okay</comment>
+    </test>
+    <test label="Line 14" stylename="cv74_1">
+      <string>يَنْقٗوبَ</string>
+      <comment>lots of clutter, make sure 0657 (alt) looks okay</comment>
+    </test>
+    <test label="Line 15">
+      <string>يُنُسْ</string>
+      <comment>two dammas in a row (short). Look okay?</comment>
+    </test>
+    <test label="Line 15" stylename="cv70_1">
+      <string>يُنُسْ</string>
+      <comment>two dammas in a row (short). Look okay?</comment>
+    </test>
+    <test label="Line 15" stylename="cv70_2">
+      <string>يُنُسْ</string>
+      <comment>two dammas in a row (short). Look okay?</comment>
+    </test>
+    <test label="Line 16">
+      <string>مࣹݧّ</string>
+      <comment>shadda is smaller in SenAjami!</comment>
+    </test>
+    <test label="Line 17">
+      <string>مَـتْ</string>
+      <comment>sukun is closer in SenAjami</comment>
+    </test>
+    <test label="Line 18">
+      <string>نَتُّ</string>
+      <comment>shadda and damma might be a ligature?</comment>
+    </test>
+    <test label="Line 18" stylename="cv70_1">
+      <string>نَتُّ</string>
+      <comment>shadda and damma might be a ligature?</comment>
+    </test>
+    <test label="Line 18" stylename="cv70_2">
+      <string>نَتُّ</string>
+      <comment>shadda and damma might be a ligature?</comment>
+    </test>
+    <test label="Line 19">
+      <string>وَرَ</string>
+      <comment>make sure fathas aren't too close together</comment>
+    </test>
+    <test label="Line 20">
+      <string>رَوْ</string>
+      <comment>SenAjami has sidebearings changed (closer)</comment>
+    </test>
+    <test label="Line 21">
+      <string>ݧࣹيْ وَ</string>
+      <comment>make sure 08F9 does not collide with yeh</comment>
+    </test>
+    <test label="Line 22">
+      <string>ݧࣹتِّ دࣴرࣴمْ</string>
+      <comment>"look at 08F4 (dbl) looks okay, kasra needs to be moved up"</comment>
+    </test>
+    <test label="Line 22" stylename="cv12_1">
+      <string>ݧࣹتِّ دࣴرࣴمْ</string>
+      <comment>"look at 08F4 (dbl) looks okay, kasra needs to be moved up"</comment>
+    </test>
+    <test label="Line 23">
+      <string>نࣵݧّ</string>
+      <comment>test for 08F5</comment>
+    </test>
+    <test label="Line 24">
+      <string>دࣴالْ</string>
+      <comment>SenAjami has sukun moved inside lam</comment>
+    </test>
+    <test label="Line 24" stylename="cv12_1">
+      <string>دࣴالْ</string>
+      <comment>SenAjami has sukun moved inside lam</comment>
+    </test>
+    <test label="Line 25">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 25" stylename="cv70_1">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 25" stylename="cv70_2">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 25" stylename="cv12_1">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 25" stylename="cv12_1, 'cv70_1">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 25" stylename="cv12_1, 'cv70_2">
+      <string>اࣵدُّنَ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 26">
+      <string>آوࣷومْ اَمْ نَ </string>
+      <comment>maddah next to 08F7 could be an issue</comment>
+    </test>
+    <test label="Line 26" stylename="cv60_1">
+      <string>آوࣷومْ اَمْ نَ </string>
+      <comment>maddah next to 08F7 could be an issue</comment>
+    </test>
+    <test label="Line 27">
+      <string>وࣴيࣴݝْ</string>
+      <comment>interesting to see how 2 08F4 look together</comment>
+    </test>
+    <test label="Line 28">
+      <string>جࣹيخْ نَ</string>
+      <comment>check 08F9 under 062C</comment>
+    </test>
+    <test label="Line 29">
+      <string>فࣷوفَ</string>
+      <comment>SenAjami has the fatha much lower</comment>
+    </test>
+    <test label="Line 30">
+      <string>فࣵتّࣹ نَا</string>
+      <comment>shadda should be close to nukta</comment>
+    </test>
+    <test label="Line 31">
+      <string>اِبْرَهِيمَ</string>
+      <comment>"lots of marks, just check they are right, sukun maybe closer?"</comment>
+    </test>
+    <test label="Line 32">
+      <string>وࣷلࣷفْ لاَ</string>
+      <comment>"08F7 closer?, sukun closer?"</comment>
+    </test>
+    <test label="Line 33">
+      <string>بࣴگّ</string>
+      <comment>shadda closer? Check 08F4 next to schehe</comment>
+    </test>
+    <test label="Line 34">
+      <string>ݧُولْ کُکّ</string>
+      <comment>damma next to keheh?</comment>
+    </test>
+    <test label="Line 35">
+      <string>مࣵگَّلْ</string>
+      <comment>08F5 next to schehe?</comment>
+    </test>
+    <test label="Line 36">
+      <string>بࣷرࣷومْ کࣵتَّنْ</string>
+      <comment>"08F5 next to fatha, shadda"</comment>
+    </test>
+    <test label="Line 37">
+      <string>مَلاَکَ</string>
+      <comment>fatha above lam/alif next to keheh too close?</comment>
+    </test>
+    <test label="Line 38">
+      <string>لاَگࣷ</string>
+      <comment>schehe too close to lam/alif?</comment>
+    </test>
+    <test label="Line 39">
+      <string>ݒࣹݒّ مِ</string>
+      <comment>SenAjami has kasra tucked under meem</comment>
+    </test>
+    <test label="Line 40">
+      <string>أملْقِي</string>
+      <comment>kasra okay?</comment>
+    </test>
+    <test label="Line 41">
+      <string>أمَسفوّج</string>
+      <comment>shadda too far?</comment>
+    </test>
+    <test label="Line 42">
+      <string>أوَا</string>
+      <comment>fatha too tight with first alif?</comment>
+    </test>
+    <test label="Line 43">
+      <string>أَبارّانِي</string>
+      <comment>kasra too close to yeh</comment>
+    </test>
+    <test label="Line 44">
+      <string>أَبارّانِي-يا</string>
+      <comment>kasra too close to yeh</comment>
+    </test>
+    <test label="Line 45">
+      <string>أَبلِيغ</string>
+      <comment>"kasra with nukta, probably okay"</comment>
+    </test>
+    <test label="Line 46">
+      <string>أَبُولُّوس</string>
+      <comment>lots of combining marks</comment>
+    </test>
+    <test label="Line 47">
+      <string>أَبُولُّونِييا</string>
+      <comment>lots of combining marks</comment>
+    </test>
+    <test label="Line 48">
+      <string>أَبُولِّييُون</string>
+      <comment>lots of combining marks</comment>
+    </test>
+    <test label="Line 49">
+      <string>أَبُوهالِي</string>
+      <comment>kasra too close to yeh</comment>
+    </test>
+    <test label="Line 50">
+      <string>أَبِيلِينِي</string>
+      <comment>kasra too close to yeh</comment>
+    </test>
+    <test label="Line 51">
+      <string>أَجالِيلِي</string>
+      <comment>kasra too close to yeh</comment>
+    </test>
+    <test label="Line 52">
+      <string>أَخاربِيل</string>
+      <comment>kasra too close to reh?</comment>
+    </test>
+    <test label="Line 53">
+      <string>أَخايِيكُوس</string>
+      <comment>below nuktas too close?</comment>
+    </test>
+    <test label="Line 54">
+      <string>أَربِّي</string>
+      <comment>one dot nukta too close to yeh?</comment>
+    </test>
+    <test label="Line 55">
+      <string>أَربِّي</string>
+      <comment>one dot nukta too close to yeh?</comment>
+    </test>
+    <test label="Line 56">
+      <string>أَرجُووانِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 57">
+      <string>أَرخُوغ</string>
+      <comment>look at waw and ain spacing</comment>
+    </test>
+    <test label="Line 58">
+      <string>أَرشْثِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 59">
+      <string>أَرنِيغ</string>
+      <comment>kasra and reh too close?</comment>
+    </test>
+    <test label="Line 60">
+      <string>أَرِييُوبا</string>
+      <comment>below nuktas too close?</comment>
+    </test>
+    <test label="Line 61">
+      <string>أَرِييّقن</string>
+      <comment>below nuktas too close?</comment>
+    </test>
+    <test label="Line 62">
+      <string>أَرُّوحانِي</string>
+      <comment>"lots of combining marks close, kasra touching yeh?"</comment>
+    </test>
+    <test label="Line 63">
+      <string>أَرْبِيع</string>
+      <comment>kasra very close</comment>
+    </test>
+    <test label="Line 64">
+      <string>أَرْخِيلاوُس</string>
+      <comment>damma close to lam/alif</comment>
+    </test>
+    <test label="Line 65">
+      <string>أَزُوثُو</string>
+      <comment>check positioning of damma above nukta</comment>
+    </test>
+    <test label="Line 66">
+      <string>أَسّارِييُون</string>
+      <comment>nukta below too close together?</comment>
+    </test>
+    <test label="Line 67">
+      <string>أَشكِّي</string>
+      <comment>kasra/shadda too high?</comment>
+    </test>
+    <test label="Line 68">
+      <string>أَعِيبرانِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 69">
+      <string>أَقّا-يِي</string>
+      <comment>2dot nukta too close to yeh?</comment>
+    </test>
+    <test label="Line 70">
+      <string>أَكثاثبِْي</string>
+      <comment>kasra not forming? (wrong position?)</comment>
+    </test>
+    <test label="Line 71">
+      <string>أَكشُّوض</string>
+      <comment>shadda/damma over 3 dots interesting</comment>
+    </test>
+    <test label="Line 72">
+      <string>أَلِيكسانذرِييُو</string>
+      <comment>lots going on (dbl nukta below too close?)</comment>
+    </test>
+    <test label="Line 73">
+      <string>أَلُّون</string>
+      <comment>above stuff too close?</comment>
+    </test>
+    <test label="Line 74">
+      <string>أَماكّابايِي</string>
+      <comment>2nukta below too close to yeh?</comment>
+    </test>
+    <test label="Line 75">
+      <string>أَمثِيقِّي</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 76">
+      <string>أَمحضايِي</string>
+      <comment>too close to yeh?</comment>
+    </test>
+    <test label="Line 77">
+      <string>أَمسكِّي</string>
+      <comment>shadda/kasra above keheh - too far?</comment>
+    </test>
+    <test label="Line 78">
+      <string>أَمشقّاف</string>
+      <comment>shadda above…too far left?</comment>
+    </test>
+    <test label="Line 79">
+      <string>أَنذرُونِيكُوس</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 80">
+      <string>أَنهزِّي</string>
+      <comment>an interesting word</comment>
+    </test>
+    <test label="Line 81">
+      <string>أَنّا</string>
+      <comment>lots close together</comment>
+    </test>
+    <test label="Line 82">
+      <string>أَهُولِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 83">
+      <string>أَوارنِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 84">
+      <string>أَيزِّيم</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 85">
+      <string>أَيُونانِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 86">
+      <string>أَيِي</string>
+      <comment>2 nukta too close to yeh?</comment>
+    </test>
+    <test label="Line 87">
+      <string>أَيِي-د</string>
+      <comment>2 nukta too close to yeh?</comment>
+    </test>
+    <test label="Line 88">
+      <string>أَيِيس</string>
+      <comment>dbl nuktas too close?</comment>
+    </test>
+    <test label="Line 89">
+      <string>أَيْلِيزِيم</string>
+      <comment>2nukta too close to kasra?</comment>
+    </test>
+    <test label="Line 90">
+      <string>ؤزُُومِّي</string>
+      <comment>damma in wrong place?</comment>
+    </test>
+    <test label="Line 91">
+      <string>ؤزُِيل</string>
+      <comment>damma in wrong place?</comment>
+    </test>
+    <test label="Line 92">
+      <string>ؤضُُوف</string>
+      <comment>damma in wrong place?</comment>
+    </test>
+    <test label="Line 93">
+      <string>ؤفُُغ</string>
+      <comment>damma in wrong place?</comment>
+    </test>
+    <test label="Line 94">
+      <string>ؤيُُورُوم</string>
+      <comment>damma in wrong place?</comment>
+    </test>
+    <test label="Line 95">
+      <string>ؤُباريُوض</string>
+      <comment>damma above hamza</comment>
+    </test>
+    <test label="Line 96">
+      <string>ؤُبارّانِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 97">
+      <string>ؤُبلّاع</string>
+      <comment>shadda above lam/alif</comment>
+    </test>
+    <test label="Line 98">
+      <string>ؤُجامّاضِين</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 99">
+      <string>ؤُجمّاضِين</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 100">
+      <string>ؤُحُولِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 101">
+      <string>ؤُخشْخُوش</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 102">
+      <string>ؤُخطُّو</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 103">
+      <string>ؤُخنفُوش</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 104">
+      <string>ؤُدُّولِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 105">
+      <string>ؤُزلّاض</string>
+      <comment>shadda above lam/alif</comment>
+    </test>
+    <test label="Line 106">
+      <string>ؤُصضْحِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 107">
+      <string>ؤُصغْضاص</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 108">
+      <string>ؤُصُوضِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 109">
+      <string>ؤُعسكارِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 110">
+      <string>ؤُعُولِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 111">
+      <string>ؤُغارّابُو</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 112">
+      <string>ؤُغلِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 113">
+      <string>ؤُفوُشّح</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 114">
+      <string>ؤُكارُّو</string>
+      <comment>make sure damma/keheh not too close</comment>
+    </test>
+    <test label="Line 115">
+      <string>ؤُمُونِي</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 116">
+      <string>إتِْبارّحن</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 117">
+      <string>إتِْواجّ</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 118">
+      <string>إتِْواسّكّن</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 119">
+      <string>إتِْواغْفار</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 120">
+      <string>إتِْخصّ</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 121">
+      <string>إذِْول</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 122">
+      <string>إرُِوح</string>
+      <comment>damma AND kasra used</comment>
+    </test>
+    <test label="Line 123">
+      <string>إزِْرا</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 124">
+      <string>إسُِو</string>
+      <comment>damma AND kasra used</comment>
+    </test>
+    <test label="Line 125">
+      <string>إشُِووّارن</string>
+      <comment>damma AND kasra used</comment>
+    </test>
+    <test label="Line 126">
+      <string>إشِْث</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 127">
+      <string>إشِْقِي</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 128">
+      <string>إصِْفان</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 129">
+      <string>إقِِّيم</string>
+      <comment>dbl kasra?</comment>
+    </test>
+    <test label="Line 130">
+      <string>إكِْسِي</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 131">
+      <string>إلِِيم</string>
+      <comment>dbl kasra?</comment>
+    </test>
+    <test label="Line 132">
+      <string>إلِِّي</string>
+      <comment>dbl kasra?</comment>
+    </test>
+    <test label="Line 133">
+      <string>إمِغار</string>
+      <comment>hamza below and kasra positioning</comment>
+    </test>
+    <test label="Line 134">
+      <string>إمُِورن</string>
+      <comment>damma AND kasra used</comment>
+    </test>
+    <test label="Line 135">
+      <string>إمِْ</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 136">
+      <string>إمِْغارن</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 137">
+      <string>إمِْكاشافن</string>
+      <comment>sukun AND kasra used</comment>
+    </test>
+    <test label="Line 138">
+      <string>إنِيّ</string>
+      <comment>kasra too close to yeh?</comment>
+    </test>
+    <test label="Line 139">
+      <string>إٍلِيم</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 140">
+      <string>إِباربارِييّن</string>
+      <comment>dbl nukta too close?</comment>
+    </test>
+    <test label="Line 141">
+      <string>إِبطِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 142">
+      <string>إِبكّس</string>
+      <comment>shadda too high?</comment>
+    </test>
+    <test label="Line 143">
+      <string>إِبلّعن</string>
+      <comment>shadda too high?</comment>
+    </test>
+    <test label="Line 144">
+      <string>إِبِيكُورِييّن</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 145">
+      <string>إِبِيلارن</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 146">
+      <string>إِبُّوهْلِي</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 147">
+      <string>إِتارجِيجِي</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 148">
+      <string>إِتتْواسّبطّل</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 149">
+      <string>إِتِيسِّيقّ</string>
+      <comment>chk shadda</comment>
+    </test>
+    <test label="Line 150">
+      <string>إِتِيسِّيقّن</string>
+      <comment>chk shadda</comment>
+    </test>
+    <test label="Line 151">
+      <string>إِتِيشّن</string>
+      <comment>chk shadda</comment>
+    </test>
+    <test label="Line 152">
+      <string>إِتِيقّن</string>
+      <comment>chk shadda</comment>
+    </test>
+    <test label="Line 153">
+      <string>إِتِيكّوِيض</string>
+      <comment>chk shadda</comment>
+    </test>
+    <test label="Line 154">
+      <string>إِتِيلون</string>
+      <comment>two kasras</comment>
+    </test>
+    <test label="Line 155">
+      <string>إِتِيلِي</string>
+      <comment>lots of kasras</comment>
+    </test>
+    <test label="Line 156">
+      <string>إِتْشضِيضِيح</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 157">
+      <string>إِتْشعشِيعن</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 158">
+      <string>إِتْشفشُوفن</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 159">
+      <string>إِتْشفْشُوفن</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 160">
+      <string>إِتْشكِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 161">
+      <string>إِتْواسلّكن</string>
+      <comment>shadda too close?</comment>
+    </test>
+    <test label="Line 162">
+      <string>إِتْواسّقنُونِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 163">
+      <string>إِتْواسُّوعلا</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 164">
+      <string>إِتْواسُّوفّغ</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 165">
+      <string>إِتْواعُولِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 166">
+      <string>إِتْوِيلِي</string>
+      <comment>kasra close to previous nukta</comment>
+    </test>
+    <test label="Line 167">
+      <string>إِتْوِيلِين</string>
+      <comment>kasra close to previous nukta</comment>
+    </test>
+    <test label="Line 168">
+      <string>إِثِيسالُونِيكِييّن</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 169">
+      <string>إِثِييُوبِييا</string>
+      <comment>kasra close to waw</comment>
+    </test>
+    <test label="Line 170">
+      <string>إِخِيرُوبِينن</string>
+      <comment>kasra close to waw</comment>
+    </test>
+    <test label="Line 171">
+      <string>إِزلِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 172">
+      <string>إِزلِْي</string>
+      <comment>sukun AND kasra</comment>
+    </test>
+    <test label="Line 173">
+      <string>إِزّرز</string>
+      <comment>how do you pronounce this!</comment>
+    </test>
+    <test label="Line 174">
+      <string>إِزُّو</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 175">
+      <string>إِزِّيلّز</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 176">
+      <string>إِزْلِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 177">
+      <string>إِسامارِييّن</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 178">
+      <string>إِستاذِييّن</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 179">
+      <string>إِستاذِِييّن</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 180">
+      <string>إِسثاذِييّن</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 181">
+      <string>إِسخارِييُوطِي</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 182">
+      <string>إِسرايِيلِي</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 183">
+      <string>إِسرايِيلِييّن</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 184">
+      <string>إِسكانذارِييا</string>
+      <comment>dbl nuktas touching?</comment>
+    </test>
+    <test label="Line 185">
+      <string>إِسِيرِينِييّن</string>
+      <comment>kasra touching previous nukta?</comment>
+    </test>
+    <test label="Line 186">
+      <string>إِسّتوِّيج</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 187">
+      <string>إِسّذُولِي</string>
+      <comment>kasra touching yeh?</comment>
+    </test>
+    <test label="Line 188">
+      <string>إِسّعُولِّي</string>
+      <comment>very high!</comment>
+    </test>
+    <test label="Line 189">
+      <string>إِسّقُوقُوع</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 190">
+      <string>إِشدِّييّن</string>
+      <comment>dbl nukta too close?</comment>
+    </test>
+    <test label="Line 191">
+      <string>إِفنْثرُوسن</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 192">
+      <string>إِفُوشُّوحن</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 193">
+      <string>إِفُّو</string>
+      <comment>very high</comment>
+    </test>
+    <test label="Line 194">
+      <string>إِكرِيثِييّن</string>
+      <comment>kasra touching previous nukta</comment>
+    </test>
+    <test label="Line 195">
+      <string>إِلِيكسانذرِييّن</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 196">
+      <string>إِلِيم</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 197">
+      <string>إِمهْلاش</string>
+      <comment>heh</comment>
+    </test>
+    <test label="Line 198">
+      <string>إِمّارنِي</string>
+      <comment>kasra touching yeh</comment>
+    </test>
+    <test label="Line 199">
+      <string>إِناصِيرِييّن</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 200">
+      <string>إِويِينت</string>
+      <comment>kasra touching was?</comment>
+    </test>
+    <test label="Line 201">
+      <string>إِوِي</string>
+      <comment>kasra touching each other</comment>
+    </test>
+    <test label="Line 202">
+      <string>إِوْثِي</string>
+      <comment>kasra touching yeh?</comment>
+    </test>
+    <test label="Line 203">
+      <string>إِوْيِي</string>
+      <comment>dbl nukta touching yeh</comment>
+    </test>
+    <test label="Line 204">
+      <string>إِوْيِي-د</string>
+      <comment>dbl nukta touching yeh</comment>
+    </test>
+    <test label="Line 205">
+      <string>إِيلِيزام</string>
+      <comment>kasra touching dbl nukta</comment>
+    </test>
+    <test label="Line 206">
+      <string>ايِي</string>
+      <comment>dbl nukta touching yeh</comment>
+    </test>
+    <test label="Line 207">
+      <string>بارنِيكِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 208">
+      <string>بايثِيسذا</string>
+      <comment>kasra touching dbl nukta</comment>
+    </test>
+    <test label="Line 209">
+      <string>بَيْث-لَحْم</string>
+      <comment>kasra touching sukun</comment>
+    </test>
+    <test label="Line 210">
+      <string>بُو-يِيخارِّيقن</string>
+      <comment>dbl nukta touching?</comment>
+    </test>
+    <test label="Line 211">
+      <string>تْزُومِّيغ</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 212">
+      <string>تْواسّغضِيصن</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 213">
+      <string>تْوِيلِين</string>
+      <comment>kasra touching dbl nukta</comment>
+    </test>
+    <test label="Line 214">
+      <string>ثارقّ</string>
+      <comment>shadda off center?</comment>
+    </test>
+    <test label="Line 215">
+      <string>ثارِييّقم</string>
+      <comment>shadda too close to dbl nukta?</comment>
+    </test>
+    <test label="Line 216">
+      <string>ثارْبِيعث</string>
+      <comment>kasra touching reh</comment>
+    </test>
+    <test label="Line 217">
+      <string>ثاقُوبّانشث</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 218">
+      <string>ثاكهّانث</string>
+      <comment>heh</comment>
+    </test>
+    <test label="Line 219">
+      <string>ثانذِْينت</string>
+      <comment>sukun AND kasra</comment>
+    </test>
+    <test label="Line 220">
+      <string>ثايرِْي</string>
+      <comment>sukun AND kasra</comment>
+    </test>
+    <test label="Line 221">
+      <string>ثتمْعالْام</string>
+      <comment>lam/alif sukun</comment>
+    </test>
+    <test label="Line 222">
+      <string>ثتْواسلّكم</string>
+      <comment>shadda touching keheh</comment>
+    </test>
+    <test label="Line 223">
+      <string>ثتْواسُّوفُّوغم</string>
+      <comment>busy</comment>
+    </test>
+    <test label="Line 224">
+      <string>ثتْوِيلِين</string>
+      <comment>kasra touching previous dbl nukta</comment>
+    </test>
+    <test label="Line 225">
+      <string>ثسّهلّكذ</string>
+      <comment>shadda touching keheh</comment>
+    </test>
+    <test label="Line 226">
+      <string>ثشثْشام</string>
+      <comment>looks like a flower</comment>
+    </test>
+    <test label="Line 227">
+      <string>ثمسْلايِين</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 228">
+      <string>ثمسْلايِين</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 229">
+      <string>ثوْشِِيذ</string>
+      <comment>dbl kasra?</comment>
+    </test>
+    <test label="Line 230">
+      <string>ثِيسالُونِيكِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 231">
+      <string>ثِيسّالُونِيكا</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 232">
+      <string>ثِيسّالُونِيكِي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 233">
+      <string>ثِيوِْي-د</string>
+      <comment>kasra AND ukun</comment>
+    </test>
+    <test label="Line 234">
+      <string>ثْزهّجنت</string>
+      <comment>heh</comment>
+    </test>
+    <test label="Line 235">
+      <string>ثْسخّارم</string>
+      <comment>test meem alt</comment>
+    </test>
+    <test label="Line 236">
+      <string>ثْسسّم</string>
+      <comment>test meem alt</comment>
+    </test>
+    <test label="Line 237">
+      <string>ثْسمّحم</string>
+      <comment>test meem alt</comment>
+    </test>
+    <test label="Line 238">
+      <string>ثْسُولّاثِين</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 239">
+      <string>ثْعُورِّيشِين</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 240">
+      <string>ثْغُويِّيث</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 241">
+      <string>ثْلالّاث</string>
+      <comment>dbl lam/alif</comment>
+    </test>
+    <test label="Line 242">
+      <string>ثْهتّكم</string>
+      <comment>"heh, shaddah touching"</comment>
+    </test>
+    <test label="Line 243">
+      <string>ثْواطا</string>
+      <comment>strange word</comment>
+    </test>
+    <test label="Line 244">
+      <string>جاهنّاما</string>
+      <comment>heh</comment>
+    </test>
+    <test label="Line 245">
+      <string>حِِيدعاش</string>
+      <comment>dbl kasra</comment>
+    </test>
+    <test label="Line 246">
+      <string>خافِي-د</string>
+      <comment>kasra </comment>
+    </test>
+    <test label="Line 247">
+      <string>خُوينِيكس</string>
+      <comment>kasra touching dbl nukta</comment>
+    </test>
+    <test label="Line 248">
+      <string>خِيثْسِيمانِي</string>
+      <comment>kasra touching yeh</comment>
+    </test>
+    <test label="Line 249">
+      <string>خِيرُوبِين</string>
+      <comment>kasra touching waw</comment>
+    </test>
+    <test label="Line 250">
+      <string>خْْزار</string>
+      <comment>dbl sukun</comment>
+    </test>
+    <test label="Line 251">
+      <string>دُّولِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 252">
+      <string>ذِيربِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 253">
+      <string>ذِيمِيثرِييُو</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 254">
+      <string>زهّجنت</string>
+      <comment>heh with shadda</comment>
+    </test>
+    <test label="Line 255">
+      <string>زِييّار</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 256">
+      <string>زِييّارغ</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 257">
+      <string>زِييّارم</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 258">
+      <string>زِييّارن</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 259">
+      <string>زّاثِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 260">
+      <string>زّهِير</string>
+      <comment>heh with kasra (chk alt)</comment>
+    </test>
+    <test label="Line 261">
+      <string>زِّيياذا</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 262">
+      <string>سارذِييُوس</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 263">
+      <string>سامُوثراكِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 264">
+      <string>سمِْيرالذا</string>
+      <comment>sukun AND kasra</comment>
+    </test>
+    <test label="Line 265">
+      <string>سُوسِيباثرُوس</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 266">
+      <string>سّنُوقُّوبن</string>
+      <comment>very tall</comment>
+    </test>
+    <test label="Line 267">
+      <string>شارهغ</string>
+      <comment>heh (ck alt)</comment>
+    </test>
+    <test label="Line 268">
+      <string>شهّذغ</string>
+      <comment>heh with shadda </comment>
+    </test>
+    <test label="Line 269">
+      <string>ضِيدّ-لمَسيح</string>
+      <comment>right shaping with tatweel?</comment>
+    </test>
+    <test label="Line 270">
+      <string>عُوزِّييا</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 271">
+      <string>قِيرِينِييُوس</string>
+      <comment>kasra touching?</comment>
+    </test>
+    <test label="Line 272">
+      <string>كلُوذِييُوس</string>
+      <comment>dbl nukta touching</comment>
+    </test>
+    <test label="Line 273">
+      <string>كُولُوسِّي</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 274">
+      <string>لوهِي</string>
+      <comment>"heh, yeh intersting"</comment>
+    </test>
+    <test label="Line 275">
+      <string>لُوذِييا</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 276">
+      <string>لْكُومْبانِييّث</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 277">
+      <string>لْماخطُوطاث</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 278">
+      <string>ملِي</string>
+      <comment>kasra close to yeh</comment>
+    </test>
+    <test label="Line 279">
+      <string>ملّكن</string>
+      <comment>shaddah close to keheh</comment>
+    </test>
+    <test label="Line 280">
+      <string>مُوذِييُوس</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 281">
+      <string>مِيذِييان</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 282">
+      <string>ناثانايِيل</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 283">
+      <string>نتْواسّحشِّيم</string>
+      <comment>kasra/shadda</comment>
+    </test>
+    <test label="Line 284">
+      <string>نِيكُوبُولِيس</string>
+      <comment>cool word</comment>
+    </test>
+    <test label="Line 285">
+      <string>نّيّث</string>
+      <comment>shadda close together</comment>
+    </test>
+    <test label="Line 286">
+      <string>هايلِي</string>
+      <comment>kasra touching dbl nukta</comment>
+    </test>
+    <test label="Line 287">
+      <string>هتّكغ</string>
+      <comment>shadda touching keheh</comment>
+    </test>
+    <test label="Line 288">
+      <string>هتّكن</string>
+      <comment>shadda touching keheh</comment>
+    </test>
+    <test label="Line 289">
+      <string>ويسُْوم</string>
+      <comment>sukun AND damma</comment>
+    </test>
+    <test label="Line 290">
+      <string>ياهُوذِييّا</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 291">
+      <string>يُولِي</string>
+      <comment>kasra touching yeh</comment>
+    </test>
+    <test label="Line 292">
+      <string>يُُشا</string>
+      <comment>dbl damma</comment>
+    </test>
+    <test label="Line 293">
+      <string>يِيجذِي</string>
+      <comment>dbl nukta</comment>
+    </test>
+    <test label="Line 294">
+      <string>ݣوُمُورّا</string>
+      <comment>damma close to nukta</comment>
+    </test>
+    <test label="Line 295">
+      <string>ݣوّذذ</string>
+      <comment>shadda close to nukta</comment>
+    </test>
+    <test label="Line 296">
+      <string>ݣّوّذم</string>
+      <comment>cluttered</comment>
+    </test>
+    <test label="Line 297">
+      <string>آیہ</string>
+      <comment>"yeh, heh"</comment>
+    </test>
+    <test label="Line 298">
+      <string>اتھ</string>
+      <comment>heh</comment>
+    </test>
+    <test label="Line 299">
+      <string>اتھۍپوٚت</string>
+      <comment>"v above, 06CD"</comment>
+    </test>
+    <test label="Line 300">
+      <string>ازلَے</string>
+      <comment>use of 06D2</comment>
+    </test>
+    <test label="Line 301">
+      <string>اسۍٲسۍسونتٕکِہ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 302">
+      <string>اشۍوانہِ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 303">
+      <string>اکہ</string>
+      <comment>heh shaping</comment>
+    </test>
+    <test label="Line 304">
+      <string>ایمہ</string>
+      <comment>heh shaping with meem</comment>
+    </test>
+    <test label="Line 305">
+      <string>بجہِ</string>
+      <comment>heh shaping with kasra</comment>
+    </test>
+    <test label="Line 306">
+      <string>بنیٚوو</string>
+      <comment>"v above, 06CD"</comment>
+    </test>
+    <test label="Line 307">
+      <string>"بوزتہٕ،"</string>
+      <comment>hamza below</comment>
+    </test>
+    <test label="Line 308">
+      <string>بوٗزِو</string>
+      <comment>ulta pesh</comment>
+    </test>
+    <test label="Line 309">
+      <string>بوٚر</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 310">
+      <string>بٲتھ</string>
+      <comment>alif hamza</comment>
+    </test>
+    <test label="Line 311">
+      <string>بہارُک</string>
+      <comment>06c1</comment>
+    </test>
+    <test label="Line 312">
+      <string>بہترین</string>
+      <comment>06c1</comment>
+    </test>
+    <test label="Line 313">
+      <string>بہودر۔</string>
+      <comment>06c1</comment>
+    </test>
+    <test label="Line 314">
+      <string>بہٕ</string>
+      <comment>06C1 hamza below</comment>
+    </test>
+    <test label="Line 315">
+      <string>تاپٕچ</string>
+      <comment>collision of hamza below 067e with 0686</comment>
+    </test>
+    <test label="Line 316">
+      <string>تاپہٕ</string>
+      <comment>hamza below could collide with 3 nukta in some fonts (Nastaliq)</comment>
+    </test>
+    <test label="Line 317">
+      <string>تتھۍپروگرامس</string>
+      <comment>nice long word</comment>
+    </test>
+    <test label="Line 318">
+      <string>ترٛاونس</string>
+      <comment>hat above close to 2nukta</comment>
+    </test>
+    <test label="Line 319">
+      <string>تٲنۍظۅن</string>
+      <comment>use of 06C5</comment>
+    </test>
+    <test label="Line 320">
+      <string>تچھُن</string>
+      <comment>damma above heh</comment>
+    </test>
+    <test label="Line 321">
+      <string>تھاوُن</string>
+      <comment>damma above waw</comment>
+    </test>
+    <test label="Line 322">
+      <string>جادیُک</string>
+      <comment>damma close to next letter</comment>
+    </test>
+    <test label="Line 323">
+      <string>خدمتشیٚچھۍ</string>
+      <comment>"long word, v above"</comment>
+    </test>
+    <test label="Line 324">
+      <string>خٲلۍباسان</string>
+      <comment>"lam, 06CD"</comment>
+    </test>
+    <test label="Line 325">
+      <string>درٛاو</string>
+      <comment>hat above (doesn't shape in Urdu font)</comment>
+    </test>
+    <test label="Line 326">
+      <string>دہہِ</string>
+      <comment>06C1 x2</comment>
+    </test>
+    <test label="Line 327">
+      <string>دۅہن</string>
+      <comment>06C1 x2</comment>
+    </test>
+    <test label="Line 328">
+      <string>دۅہَے</string>
+      <comment>06C1 x2</comment>
+    </test>
+    <test label="Line 329">
+      <string>دۅہہہ</string>
+      <comment>06C1 x2</comment>
+    </test>
+    <test label="Line 330">
+      <string>رلاونُک</string>
+      <comment>damma collision</comment>
+    </test>
+    <test label="Line 331">
+      <string>رٔنگۍاستعمال۔</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 332">
+      <string>رٔچھۍنَے</string>
+      <comment>fatha above</comment>
+    </test>
+    <test label="Line 333">
+      <string>رٲچھۍدردٕچ</string>
+      <comment>hamza below close to reh</comment>
+    </test>
+    <test label="Line 334">
+      <string>زانہہ</string>
+      <comment>interesting</comment>
+    </test>
+    <test label="Line 335">
+      <string>زمانہ</string>
+      <comment>interesting</comment>
+    </test>
+    <test label="Line 336">
+      <string>زن٘ہہ</string>
+      <comment>interesting</comment>
+    </test>
+    <test label="Line 337">
+      <string>زنہٕ</string>
+      <comment>hamza below</comment>
+    </test>
+    <test label="Line 338">
+      <string>سرٛیٚہہ</string>
+      <comment>v above and hat above (don't shape in Urdu font)</comment>
+    </test>
+    <test label="Line 339">
+      <string>سٍتۍمشخص</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 340">
+      <string>سٹوٗڈیوہس</string>
+      <comment>0679 turns into ulta pesh below? Does that need documenting?</comment>
+    </test>
+    <test label="Line 341">
+      <string>سپدِتھ</string>
+      <comment>kasra collision in Nastaliq</comment>
+    </test>
+    <test label="Line 342">
+      <string>سیٖنہ</string>
+      <comment>0656 might be too low? In Urdu it collides</comment>
+    </test>
+    <test label="Line 343">
+      <string>سیٚدٮ۪ن</string>
+      <comment>"use of 06EA, doesn't shape in Urdu"</comment>
+    </test>
+    <test label="Line 344">
+      <string>شریف</string>
+      <comment>2 nukta below collide with preceeding character in Urdu font</comment>
+    </test>
+    <test label="Line 345">
+      <string>صوفۍصٲبنۍہٹۍ۔</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 346">
+      <string>صٲبُن</string>
+      <comment>collision of damma with preceding hamza above</comment>
+    </test>
+    <test label="Line 347">
+      <string>عازمؔن</string>
+      <comment>used of 0614 (is shape correct?)</comment>
+    </test>
+    <test label="Line 348">
+      <string>لٲگِتھ</string>
+      <comment>damma above alif</comment>
+    </test>
+    <test label="Line 349">
+      <string>لیکھنٕچ۔</string>
+      <comment>hamza below almost colliding</comment>
+    </test>
+    <test label="Line 350">
+      <string>مانٹُک</string>
+      <comment>damma above colliding with keheh</comment>
+    </test>
+    <test label="Line 351">
+      <string>مےٚچٲنۍپٔدۍپمپوش</string>
+      <comment>"ugly, long word"</comment>
+    </test>
+    <test label="Line 352">
+      <string>نِگار</string>
+      <comment>collision in Urdy Typesetting</comment>
+    </test>
+    <test label="Line 353">
+      <string>نیٖرۍشیٚہجارٕ</string>
+      <comment>long word with various unusual characters</comment>
+    </test>
+    <test label="Line 354">
+      <string>وٮ۪گلیوو</string>
+      <comment>06EA almost touching waw</comment>
+    </test>
+    <test label="Line 355">
+      <string>ویہِ</string>
+      <comment>kasra almost touching 2nukta</comment>
+    </test>
+    <test label="Line 356">
+      <string>پرٛٮ۪تھ</string>
+      <comment>06EA almost touching reh</comment>
+    </test>
+    <test label="Line 357">
+      <string>پُژپار</string>
+      <comment>damma touches 3 nukta above in Urdu Typesetting</comment>
+    </test>
+    <test label="Line 358">
+      <string>"پٲٹھۍپٲغام،"</string>
+      <comment>"lots of above marks, potential for collisions"</comment>
+    </test>
+    <test label="Line 359">
+      <string>پیشکش</string>
+      <comment>nukta below touching?</comment>
+    </test>
+    <test label="Line 360">
+      <string>ژیٚۍگامٕچہ</string>
+      <comment>2 nukta below touching</comment>
+    </test>
+    <test label="Line 361">
+      <string>"کتھٕے،"</string>
+      <comment>hamza below VERY close to 06D2</comment>
+    </test>
+    <test label="Line 362">
+      <string>گٮ۪وۍمتۍ</string>
+      <comment>06CD touching meem?</comment>
+    </test>
+    <test label="Line 363">
+      <string>گٹہٕ</string>
+      <comment>"0679 ""b"" touching previous char?"</comment>
+    </test>
+    <test label="Line 364">
+      <string>گیٚوُکھ</string>
+      <comment>"v above touching previous char, damma?"</comment>
+    </test>
+    <test label="Line 365">
+      <string>گیٚوٗر</string>
+      <comment>v above touching previous char</comment>
+    </test>
+    <test label="Line 366">
+      <string>ہندۍپوشنوٗل</string>
+      <comment>long word with various unusual characters</comment>
+    </test>
+    <test label="Line 367">
+      <string>ہندۍپٲٹھۍ</string>
+      <comment>long word with various unusual characters</comment>
+    </test>
+    <test label="Line 368">
+      <string>ہندۍہاونۍباونۍ</string>
+      <comment>long word with various unusual characters</comment>
+    </test>
+    <test label="Line 369">
+      <string>ییٚمۍسازن</string>
+      <comment>2 nukta below touching</comment>
+    </test>
+    <test label="Line 370">
+      <string>آسمانٚ</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 371">
+      <string>آفریننده‌یٚ</string>
+      <comment>"heh, v above"</comment>
+    </test>
+    <test label="Line 372">
+      <string>آگاه</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 373">
+      <string>آگاهی</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 374">
+      <string>ابرامَ</string>
+      <comment>fatha</comment>
+    </test>
+    <test label="Line 375">
+      <string>ابرامٚ</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 376">
+      <string>ابراهیمِ</string>
+      <comment>kasra</comment>
+    </test>
+    <test label="Line 377">
+      <string>اُردنِ</string>
+      <comment>damma above</comment>
+    </test>
+    <test label="Line 378">
+      <string>ارییل</string>
+      <comment>2nukta collide</comment>
+    </test>
+    <test label="Line 379">
+      <string>اسحاقٚ‌ره</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 380">
+      <string>اِسْخَریوطی</string>
+      <comment>"sukun, long word"</comment>
+    </test>
+    <test label="Line 381">
+      <string>اسماعیلَ</string>
+      <comment>fatha</comment>
+    </test>
+    <test label="Line 382">
+      <string>اصطلاحه</string>
+      <comment>interesting shapes</comment>
+    </test>
+    <test label="Line 383">
+      <string>اَطویی‌یه</string>
+      <comment>2nukta collide with yeh</comment>
+    </test>
+    <test label="Line 384">
+      <string>الاغی‌یه</string>
+      <comment>interesting shapes</comment>
+    </test>
+    <test label="Line 385">
+      <string>اَمَرَ</string>
+      <comment>3 fatha above</comment>
+    </test>
+    <test label="Line 386">
+      <string>اَمره‌ییدی</string>
+      <comment>2nukta collide</comment>
+    </test>
+    <test label="Line 387">
+      <string>اَموییدی</string>
+      <comment>2nukta collide</comment>
+    </test>
+    <test label="Line 388">
+      <string>اوسَده‌ییدی</string>
+      <comment>2nukta collide</comment>
+    </test>
+    <test label="Line 389">
+      <string>اوشأنٚ‌ره</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 390">
+      <string>ایپچه</string>
+      <comment>nukta below colliding</comment>
+    </test>
+    <test label="Line 391">
+      <string>ایتأییم</string>
+      <comment>nukta below colliding</comment>
+    </test>
+    <test label="Line 392">
+      <string>ایسه‌یی</string>
+      <comment>nukta below colliding with yeh</comment>
+    </test>
+    <test label="Line 393">
+      <string>ایسه‌ییدی</string>
+      <comment>nukta below colliding</comment>
+    </test>
+    <test label="Line 394">
+      <string>ایشکنه‌یی</string>
+      <comment>nukta below colliding with yeh</comment>
+    </test>
+    <test label="Line 395">
+      <string>اَییم</string>
+      <comment>nukta below colliding </comment>
+    </test>
+    <test label="Line 396">
+      <string>بارْاَبّا</string>
+      <comment>fatha hitting shadda?</comment>
+    </test>
+    <test label="Line 397">
+      <string>بارْاَبّایه</string>
+      <comment>fatha hitting shadda?</comment>
+    </test>
+    <test label="Line 398">
+      <string>بترسه‌ییدی</string>
+      <comment>2nukta below</comment>
+    </test>
+    <test label="Line 399">
+      <string>بدأشتیدی</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 400">
+      <string>بدَییم</string>
+      <comment>2nukta below</comment>
+    </test>
+    <test label="Line 401">
+      <string>برنجأنه‌ییدی</string>
+      <comment>2nukta below</comment>
+    </test>
+    <test label="Line 402">
+      <string>بزرگَ</string>
+      <comment>fatha</comment>
+    </test>
+    <test label="Line 403">
+      <string>بلایی</string>
+      <comment>2nukta below</comment>
+    </test>
+    <test label="Line 404">
+      <string>بلوطٚ</string>
+      <comment>v abv</comment>
+    </test>
+    <test label="Line 405">
+      <string>بَموییم</string>
+      <comment>2nukta below</comment>
+    </test>
+    <test label="Line 406">
+      <string>بیت‌ایلٚ</string>
+      <comment>v abv</comment>
+    </test>
+    <test label="Line 407">
+      <string>بیت‌حِسْدا</string>
+      <comment>sukun</comment>
+    </test>
+    <test label="Line 408">
+      <string>پُره</string>
+      <comment>damma</comment>
+    </test>
+    <test label="Line 409">
+      <string>پِطرُسم</string>
+      <comment>damma</comment>
+    </test>
+    <test label="Line 410">
+      <string>پورحاصلترینه</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 411">
+      <string>پیشاپیشه</string>
+      <comment>very close nuktas below</comment>
+    </test>
+    <test label="Line 412">
+      <string>پیشخدمتأنه</string>
+      <comment>very close nuktas below</comment>
+    </test>
+    <test label="Line 413">
+      <string>پیشگویی</string>
+      <comment>nukta collisions</comment>
+    </test>
+    <test label="Line 414">
+      <string>پیشگویی‌یه</string>
+      <comment>nukta collisions</comment>
+    </test>
+    <test label="Line 415">
+      <string>پیشوازٚ</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 416">
+      <string>پیلاتُسَ</string>
+      <comment>damma above</comment>
+    </test>
+    <test label="Line 417">
+      <string>پیمانأنَ</string>
+      <comment>nukta collisions</comment>
+    </test>
+    <test label="Line 418">
+      <string>ترَ</string>
+      <comment>fatha close to nukta</comment>
+    </test>
+    <test label="Line 419">
+      <string>ترسه‌ییدی</string>
+      <comment>nukta collisions</comment>
+    </test>
+    <test label="Line 420">
+      <string>تقسیمبندی‌یه</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 421">
+      <string>چابوکی</string>
+      <comment>longish word</comment>
+    </test>
+    <test label="Line 422">
+      <string>چوپانیم</string>
+      <comment>nukta close to waw</comment>
+    </test>
+    <test label="Line 423">
+      <string>چهارپایأنی</string>
+      <comment>nukta close to reh</comment>
+    </test>
+    <test label="Line 424">
+      <string>حتماً</string>
+      <comment>fathatan</comment>
+    </test>
+    <test label="Line 425">
+      <string>خداحافظی</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 426">
+      <string>سنگرٚ</string>
+      <comment>v above is close</comment>
+    </test>
+    <test label="Line 427">
+      <string>صبحٚ</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 428">
+      <string>قشنگ</string>
+      <comment>line not parallel</comment>
+    </test>
+    <test label="Line 429">
+      <string>قشنگی</string>
+      <comment>line parallel</comment>
+    </test>
+    <test label="Line 430">
+      <string>قوچٚ</string>
+      <comment>v is very high</comment>
+    </test>
+    <test label="Line 431">
+      <string>کاملاً</string>
+      <comment>fathatan</comment>
+    </test>
+    <test label="Line 432">
+      <string>کَدُرلاعُمَر</string>
+      <comment>damma</comment>
+    </test>
+    <test label="Line 433">
+      <string>منوّره</string>
+      <comment>shadda</comment>
+    </test>
+    <test label="Line 434">
+      <string>وأگرد</string>
+      <comment>hamza is very close to next letter</comment>
+    </test>
+    <test label="Line 435">
+      <string>وزأکأنه</string>
+      <comment>keheh okay next to hamza?</comment>
+    </test>
+    <test label="Line 436">
+      <string>هیچ</string>
+      <comment>are 3 nukta touching the letter?</comment>
+    </test>
+    <test label="Line 437">
+      <string>هیچ‌کدام</string>
+      <comment>are 3 nukta touching the letter?</comment>
+    </test>
+    <test label="Line 438">
+      <string>یریٰ</string>
+      <comment>0670 above (why is 0670 so much bigger than 0656?)</comment>
+    </test>
+    <test label="Line 439">
+      <string>آتانگئزئنگ</string>
+      <comment>strange that line on keheh is parallel mid and not parallel final</comment>
+    </test>
+    <test label="Line 440">
+      <string>آتلاندئرئلان</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 441">
+      <string>آخئرسوُنگوندا</string>
+      <comment>damma</comment>
+    </test>
+    <test label="Line 442">
+      <string>آدامدئغئنگئ</string>
+      <comment>heh above yeh</comment>
+    </test>
+    <test label="Line 443">
+      <string>آراسّالایارسئنگئز</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 444">
+      <string>آغاچلارئنئ</string>
+      <comment>complicated word</comment>
+    </test>
+    <test label="Line 445">
+      <string>آل-دا</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 446">
+      <string>آلئنگ</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 447">
+      <string>آلالئنگ</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 448">
+      <string>آلتئ</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 449">
+      <string>آلتئن-کوٚموٚش</string>
+      <comment>v above</comment>
+    </test>
+    <test label="Line 450">
+      <string>آلجئرادئلار</string>
+      <comment>madda collision</comment>
+    </test>
+    <test label="Line 451">
+      <string>آچگؤزلوٚکدِن</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 452">
+      <string>ائنانیارسئنگئزمئ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 453">
+      <string>اوُبِدینگ</string>
+      <comment>kasra touches waw</comment>
+    </test>
+    <test label="Line 454">
+      <string>اوُتورغئچلارئنئ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 455">
+      <string>اوُغلانلارئ</string>
+      <comment>2x lam alif in one word</comment>
+    </test>
+    <test label="Line 456">
+      <string>اوٚزوٚم</string>
+      <comment>v abv touch alif?</comment>
+    </test>
+    <test label="Line 457">
+      <string>اِبِدیلیک</string>
+      <comment>kasra looks like one line</comment>
+    </test>
+    <test label="Line 458">
+      <string>اِتمَندیلِر</string>
+      <comment>kasra almost touches nukta</comment>
+    </test>
+    <test label="Line 459">
+      <string>أکیتدیلِر-ده</string>
+      <comment>kasra almost touches nukta</comment>
+    </test>
+    <test label="Line 460">
+      <string>ایبِردیلِر</string>
+      <comment>kasra almost touches nukta</comment>
+    </test>
+    <test label="Line 461">
+      <string>ایبِریلِن</string>
+      <comment>kasra almost touches nukta</comment>
+    </test>
+    <test label="Line 462">
+      <string>ایچِریسیندَکیلِره</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 463">
+      <string>ایکییوٚزلوٚلیکدِن</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 464">
+      <string>اییِنلِرینده</string>
+      <comment>nukta almost touching?</comment>
+    </test>
+    <test label="Line 465">
+      <string>اییِنوُغام</string>
+      <comment>damma</comment>
+    </test>
+    <test label="Line 466">
+      <string>بوُلاندئقلارئنئ</string>
+      <comment>2 lam alif ligs</comment>
+    </test>
+    <test label="Line 467">
+      <string>بؤلِک-بؤلِک</string>
+      <comment>keheh very close to lam</comment>
+    </test>
+    <test label="Line 468">
+      <string>بِریپدینگ</string>
+      <comment>nukta almost touching?</comment>
+    </test>
+    <test label="Line 469">
+      <string>بِگِنِندِن</string>
+      <comment>many kasra</comment>
+    </test>
+    <test label="Line 470">
+      <string>بِیگِلدیلِر</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 471">
+      <string>بیری-بیریلِرینه</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 472">
+      <string>بیری-بیریلِرینی</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 473">
+      <string>دوشمانلارئنگئزئ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 474">
+      <string>دوُغا-دیلِگ</string>
+      <comment>kasra close to nukta</comment>
+    </test>
+    <test label="Line 475">
+      <string>دییسِلِر-ده</string>
+      <comment>nukta touching?</comment>
+    </test>
+    <test label="Line 476">
+      <string>راضئلاشمادئنگمئ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 477">
+      <string>سؤوداسئنئنگ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 478">
+      <string>صاداقانئنگئ</string>
+      <comment>long word</comment>
+    </test>
+    <test label="Line 479">
+      <string>مِریِم</string>
+      <comment>kasra touching reh?</comment>
+    </test>
+    <test label="Line 480">
+      <string>مِریِمینگ</string>
+      <comment>kasra touching reh?</comment>
+    </test>
+    <test label="Line 481">
+      <string>کؤپلِری</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 482">
+      <string>گؤتِریلِرین</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 483">
+      <string>گِتیردیلِر</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 484">
+      <string>اَبَافٛرٛدِتُسْ</string>
+      <comment>lots of vowels</comment>
+    </test>
+    <test label="Line 485">
+      <string>اَبَدّٛنْ</string>
+      <comment>vowel above shadda</comment>
+    </test>
+    <test label="Line 486">
+      <string>اَتَّوْرَ</string>
+      <comment>fatha over alif touching shadda</comment>
+    </test>
+    <test label="Line 487">
+      <string>اَدِّ</string>
+      <comment>kasra under shadda</comment>
+    </test>
+    <test label="Line 487" stylename="cv62_1">
+      <string>اَدِّ</string>
+      <comment>kasra under shadda</comment>
+    </test>
+    <test label="Line 488">
+      <string>اَرَنْدٜعٜنْ</string>
+      <comment>imale e</comment>
+    </test>
+    <test label="Line 489">
+      <string>اَرَنْدٜىٰرٜ</string>
+      <comment>imale e</comment>
+    </test>
+    <test label="Line 490">
+      <string>اَرِسْتٛبُلُسْ</string>
+      <comment>hat touch damma</comment>
+    </test>
+    <test label="Line 491">
+      <string>اَرْتَيْعٛنْ</string>
+      <comment>lots of vowels</comment>
+    </test>
+    <test label="Line 492">
+      <string>اَرْتُٻٜ</string>
+      <comment>imale e under nukta</comment>
+    </test>
+    <test label="Line 493">
+      <string>اَرْتُٻٜيَمْ</string>
+      <comment>imale e under nukta</comment>
+    </test>
+    <test label="Line 494">
+      <string>اَرْفَکَشَادِ</string>
+      <comment>2nd fatha touches keheh</comment>
+    </test>
+    <test label="Line 495">
+      <string>اَسْبَانِيَ</string>
+      <comment>kasra touch yeh</comment>
+    </test>
+    <test label="Line 496">
+      <string>اَفٛلٛونِيَ</string>
+      <comment>2hats touching</comment>
+    </test>
+    <test label="Line 497">
+      <string>اَلَتَاعٛنْ</string>
+      <comment>many fathas</comment>
+    </test>
+    <test label="Line 498">
+      <string>اَلَنَيْعٛنْ</string>
+      <comment>sukun and fatha touching?</comment>
+    </test>
+    <test label="Line 499">
+      <string>اَلُکِيَمْ</string>
+      <comment>damma close to keheh</comment>
+    </test>
+    <test label="Line 500">
+      <string>اَلِي</string>
+      <comment>kasra touch yeh</comment>
+    </test>
+    <test label="Line 501">
+      <string>اَلّٛوجٜ</string>
+      <comment>"hat over shadda, imala e low"</comment>
+    </test>
+    <test label="Line 502">
+      <string>اَلٛيِ</string>
+      <comment>narrow characters with diacritics</comment>
+    </test>
+    <test label="Line 503">
+      <string>اَلٜىٰ</string>
+      <comment>imale e close to yeh</comment>
+    </test>
+    <test label="Line 504">
+      <string>اَنَّبَاکُوجِ</string>
+      <comment>fatha touching shadda?</comment>
+    </test>
+    <test label="Line 505">
+      <string>اَنْتَاکِيَ</string>
+      <comment>fatha touching sukun?</comment>
+    </test>
+    <test label="Line 506">
+      <string>اُمَّ</string>
+      <comment>fatha above shadda</comment>
+    </test>
+    <test label="Line 507">
+      <string>اُمَّنْتٛوطُمَّ</string>
+      <comment>lots of stuff above</comment>
+    </test>
+    <test label="Line 508">
+      <string>اُمِّدِنِيعٜنْ</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 508" stylename="cv62_1">
+      <string>اُمِّدِنِيعٜنْ</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 509">
+      <string>اُمِّلَوٛو</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 509" stylename="cv62_1">
+      <string>اُمِّلَوٛو</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 510">
+      <string>اُمِّنَنَيْيَمْ</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 510" stylename="cv62_1">
+      <string>اُمِّنَنَيْيَمْ</string>
+      <comment>test with kasra below</comment>
+    </test>
+    <test label="Line 511">
+      <string>اُمّٛيَاکِ</string>
+      <comment>fatha touching shadda?</comment>
+    </test>
+    <test label="Line 512">
+      <string>اُمّٛيْتٛ</string>
+      <comment>sukun touching shadda?</comment>
+    </test>
+    <test label="Line 513">
+      <string>اُمّٛيٛو</string>
+      <comment>hat touching shadda?</comment>
+    </test>
+    <test label="Line 514">
+      <string>اُوُدُعٜنْ</string>
+      <comment>dammas touching?</comment>
+    </test>
+    <test label="Line 515">
+      <string>اِبْرَانِيَنْکٜىٰجٛ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 516">
+      <string>اِتِيٛوفِيَنْکٜىٰجٛ</string>
+      <comment>hat touching nukta?</comment>
+    </test>
+    <test label="Line 517">
+      <string>اِتَّتَا</string>
+      <comment>fatha touching shadda?</comment>
+    </test>
+    <test label="Line 518">
+      <string>اِتَّنَيَمْ</string>
+      <comment>fatha touching shadda?</comment>
+    </test>
+    <test label="Line 519">
+      <string>اِتَّنَيَمْطُمْ</string>
+      <comment>fatha touching shadda?</comment>
+    </test>
+    <test label="Line 520">
+      <string>اِتَّنٛوٻٜعٛنْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 521">
+      <string>اِتّٜتٜىٰنغٜلْ</string>
+      <comment>3 imala e</comment>
+    </test>
+    <test label="Line 522">
+      <string>اِسْرَاعِيلَنْکٛعٜنْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 523">
+      <string>اِسْرَاعِيلَنْکٜىٰجٛ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 524">
+      <string>اٛنٛنْ</string>
+      <comment>2 hats</comment>
+    </test>
+    <test label="Line 525">
+      <string>اٜلِيٜىٰجَ</string>
+      <comment>interesting with kasra and imala e</comment>
+    </test>
+    <test label="Line 526">
+      <string>اٜلْتَيْٻٜعٜنْ</string>
+      <comment>lots below</comment>
+    </test>
+    <test label="Line 527">
+      <string>اٜکِّتِنِرَايِٻٜ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 528">
+      <string>اٜکِّتِنْطٛيَمْطُمْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 529">
+      <string>بَلْتِنَيْطٛ</string>
+      <comment>fatha and sukun touching</comment>
+    </test>
+    <test label="Line 530">
+      <string>بُرْتٛيْتٛوندِ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 531">
+      <string>بِيطٛعٛنْکَ</string>
+      <comment>sukun touching keheh?</comment>
+    </test>
+    <test label="Line 532">
+      <string>بٛطُّمْ</string>
+      <comment>damma above shadda goes very high</comment>
+    </test>
+    <test label="Line 533">
+      <string>بٛنَّيْنغٛلْ</string>
+      <comment>very close marks</comment>
+    </test>
+    <test label="Line 534">
+      <string>بٛيٛوٻٜ</string>
+      <comment>2hats close</comment>
+    </test>
+    <test label="Line 535">
+      <string>تَبُّتُطُمْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 536">
+      <string>تَبُّتُکَ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 537">
+      <string>تَتَّبَرَحٛيْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 538">
+      <string>تَٻّٛيَاکِمٛ</string>
+      <comment>two fathas look like a line through shadda!</comment>
+    </test>
+    <test label="Line 539">
+      <string>تَکِّ</string>
+      <comment>fatha touching keheh?</comment>
+    </test>
+    <test label="Line 540">
+      <string>تُتَّنَمٛ</string>
+      <comment>marks are close</comment>
+    </test>
+    <test label="Line 541">
+      <string>تُتَّيْعٛنْ</string>
+      <comment>marks are close</comment>
+    </test>
+    <test label="Line 542">
+      <string>تٛرَّ</string>
+      <comment>marks are close</comment>
+    </test>
+    <test label="Line 543">
+      <string>تٛرَّيْنٛوطٛعٜنْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 544">
+      <string>تٛرُّکِمٛ</string>
+      <comment>marks are close</comment>
+    </test>
+    <test label="Line 545">
+      <string>تٛرّٛدٛتٛوطٜنْ</string>
+      <comment>"wow, many hats"</comment>
+    </test>
+    <test label="Line 546">
+      <string>تٛرٛتٛوطٛمٛ</string>
+      <comment>"many, many hats"</comment>
+    </test>
+    <test label="Line 547">
+      <string>جَالَاکِنغٛلْ</string>
+      <comment>lam alif touch keheh?</comment>
+    </test>
+    <test label="Line 548">
+      <string>حُطَتَيَمْ</string>
+      <comment>fatha touching?</comment>
+    </test>
+    <test label="Line 549">
+      <string>حِرْتٛيٛو</string>
+      <comment>hat touching nukta?</comment>
+    </test>
+    <test label="Line 550">
+      <string>حِسْنَتَيَمْ</string>
+      <comment>fatha touching?</comment>
+    </test>
+    <test label="Line 551">
+      <string>حِنُّکِ</string>
+      <comment>shadda touching keheh?</comment>
+    </test>
+    <test label="Line 552">
+      <string>حِيتٛتٛمٛ</string>
+      <comment>hats touching?</comment>
+    </test>
+    <test label="Line 553">
+      <string>حِڤِّي</string>
+      <comment>this is tall!</comment>
+    </test>
+    <test label="Line 553" stylename="cv62_1">
+      <string>حِڤِّي</string>
+      <comment>this is tall!</comment>
+    </test>
+    <test label="Line 554">
+      <string>حٛشَّيْعٛنْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 555">
+      <string>حٛلُّکِعٛنْ</string>
+      <comment>shadda touching keheh?</comment>
+    </test>
+    <test label="Line 556">
+      <string>حٛکَّتَيَمْ</string>
+      <comment>fathas touching?</comment>
+    </test>
+    <test label="Line 557">
+      <string>دَݧٜىٰکِ</string>
+      <comment>alif above close to keheh?</comment>
+    </test>
+    <test label="Line 558">
+      <string>دِوْنُکِ</string>
+      <comment>damma touching keheh</comment>
+    </test>
+    <test label="Line 559">
+      <string>دِيٛنِيسِيُسْ</string>
+      <comment>kasra touching nukta?</comment>
+    </test>
+    <test label="Line 560">
+      <string>رَارِيٻٜ</string>
+      <comment>interesting with vertical nukta and imala e</comment>
+    </test>
+    <test label="Line 561">
+      <string>رٜمٜرْغٛ</string>
+      <comment>imale e touching reh?</comment>
+    </test>
+    <test label="Line 562">
+      <string>رٜىٰنَٻٜ</string>
+      <comment>combining alif very close to fatha</comment>
+    </test>
+    <test label="Line 563">
+      <string>رٜىٰنُکِ</string>
+      <comment>combining alif very close to damma</comment>
+    </test>
+    <test label="Line 564">
+      <string>رٜىٰنٛوٻٜ</string>
+      <comment>combinging alif very close to hat</comment>
+    </test>
+    <test label="Line 565">
+      <string>سَنْکُتُکِطُمْ</string>
+      <comment>lots going on</comment>
+    </test>
+    <test label="Line 566">
+      <string>سِرْيٛوتِرِيعٜنْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 567">
+      <string>سِفْتٛرَنَعٛنْطُمْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 568">
+      <string>سِفْتٛرَنْکِعٛنْطُمْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 569">
+      <string>شَکّٜتٜىٰطٜ</string>
+      <comment>why is imale e AP different on these letters?</comment>
+    </test>
+    <test label="Line 570">
+      <string>طَٻُّتُٻٜ</string>
+      <comment>fatha and damma too close?</comment>
+    </test>
+    <test label="Line 571">
+      <string>طَٻِّتٛتٛنْ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 571" stylename="cv62_1">
+      <string>طَٻِّتٛتٛنْ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 572">
+      <string>طَٻِّتٛتٛيْيَمْ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 572" stylename="cv62_1">
+      <string>طَٻِّتٛتٛيْيَمْ</string>
+      <comment>lots of clutter</comment>
+    </test>
+    <test label="Line 573">
+      <string>غَدَّيْٻٜکٛيْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 574">
+      <string>فٛوطَنَيْٻٜ</string>
+      <comment>fatha and sukun touching?</comment>
+    </test>
+    <test label="Line 575">
+      <string>لٜىٰوِيَنْکٛعٜنْ</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 576">
+      <string>لٜىٰوِيَنْکٜىٰجٛ</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 577">
+      <string>مَنْتٛرْتَاکٛطُمْ</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 578">
+      <string>مَوْنُکِ</string>
+      <comment>damma touching keheh</comment>
+    </test>
+    <test label="Line 579">
+      <string>نجَرٜتٜىٰطَمْ</string>
+      <comment>busy word</comment>
+    </test>
+    <test label="Line 580">
+      <string>نغَنّٛتٛنْمٛ</string>
+      <comment>collisions?</comment>
+    </test>
+    <test label="Line 581">
+      <string>نغُلِّرٛيْتٛومٛ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 581" stylename="cv62_1">
+      <string>نغُلِّرٛيْتٛومٛ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 582">
+      <string>نَنُنٛوطٛنْ</string>
+      <comment>damma touching hat?</comment>
+    </test>
+    <test label="Line 583">
+      <string>وَلُّکِٻٜ</string>
+      <comment>interesting word</comment>
+    </test>
+    <test label="Line 584">
+      <string>وَنُّکِيَمْ</string>
+      <comment>lots of marks</comment>
+    </test>
+    <test label="Line 585">
+      <string>وُرْتٛيٛو</string>
+      <comment>2nd hat touching nukta?</comment>
+    </test>
+    <test label="Line 586">
+      <string>يَاکُبُعٜنْ</string>
+      <comment>dammas touch?</comment>
+    </test>
+    <test label="Line 587">
+      <string>يَمْطِتِنَيْعٛنْ</string>
+      <comment>fatha and sukun touching?</comment>
+    </test>
+    <test label="Line 588">
+      <string>يٛٻَيْٻٜ</string>
+      <comment>hat and fatha touch</comment>
+    </test>
+    <test label="Line 589">
+      <string>يٛٻُدُکِ</string>
+      <comment>hat and damma touch</comment>
+    </test>
+    <test label="Line 590">
+      <string>ٻِٻّٜىٰجِ</string>
+      <comment>kasra and imale e close</comment>
+    </test>
+    <test label="Line 591">
+      <string>ٻِکّٛيْ</string>
+      <comment>odd shaped word</comment>
+    </test>
+    <test label="Line 592">
+      <string>ٻٛرْنٛتٛوطٜنْ</string>
+      <comment>lots of hats</comment>
+    </test>
+    <test label="Line 593">
+      <string>پَٻِّيطُمْ</string>
+      <comment>lots of nukta</comment>
+    </test>
+    <test label="Line 593" stylename="cv62_1">
+      <string>پَٻِّيطُمْ</string>
+      <comment>lots of nukta</comment>
+    </test>
+    <test label="Line 594">
+      <string>پِيپَمْجِ</string>
+      <comment>lots of nukta</comment>
+    </test>
+    <test label="Line 595">
+      <string>کَٻَّاٻٜ</string>
+      <comment>fatha touching?</comment>
+    </test>
+    <test label="Line 596">
+      <string>کَٻُّطُمْعٜنْ</string>
+      <comment>fatha damma touching?</comment>
+    </test>
+    <test label="Line 597">
+      <string>کَٻِّندِرْطُمّٛ</string>
+      <comment>fatha shadda touching?</comment>
+    </test>
+    <test label="Line 597" stylename="cv62_1">
+      <string>کَٻِّندِرْطُمّٛ</string>
+      <comment>fatha shadda touching?</comment>
+    </test>
+    <test label="Line 598">
+      <string>کٛولٜلْ</string>
+      <comment>imala e touching waw?</comment>
+    </test>
+    <test label="Line 599">
+      <string>کٛکُّطٛمَ</string>
+      <comment>hat touching keheh?</comment>
+    </test>
+    <test label="Line 600">
+      <string>کٛکِّتِرْنٛوطٛنْ</string>
+      <comment>hat touching keheh?</comment>
+    </test>
+    <test label="Line 600" stylename="cv62_1">
+      <string>کٛکِّتِرْنٛوطٛنْ</string>
+      <comment>hat touching keheh?</comment>
+    </test>
+    <test label="Line 601">
+      <string>هێژ</string>
+      <comment>"v too close to base (06CE) medial, heh initial"</comment>
+    </test>
+    <test label="Line 601" stylename="cv48_1">
+      <string>هێژ</string>
+      <comment>"v too close to base (06CE) medial, heh initial"</comment>
+    </test>
+    <test label="Line 601" stylename="cv48_2">
+      <string>هێژ</string>
+      <comment>"v too close to base (06CE) medial, heh initial"</comment>
+    </test>
+    <test label="Line 601" stylename="cv48_3">
+      <string>هێژ</string>
+      <comment>"v too close to base (06CE) medial, heh initial"</comment>
+    </test>
+    <test label="Line 602">
+      <string>یڤێ</string>
+      <comment>v too close to base (06CE) final</comment>
+    </test>
+    <test label="Line 603">
+      <string>ته</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 603" stylename="cv48_1">
+      <string>ته</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 603" stylename="cv48_2">
+      <string>ته</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 603" stylename="cv48_3">
+      <string>ته</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 604">
+      <string>بۆ</string>
+      <comment>v too close to base (final)</comment>
+    </test>
+    <test label="Line 605">
+      <string>ێکوپێکي</string>
+      <comment>v too close to base (initial and medial)</comment>
+    </test>
+    <test label="Line 606">
+      <string>مێ</string>
+      <comment>v too close to base (final)</comment>
+    </test>
+    <test label="Line 607">
+      <string>هێرودێسي</string>
+      <comment>v too close to base (medial and initial)</comment>
+    </test>
+    <test label="Line 607" stylename="cv48_1">
+      <string>هێرودێسي</string>
+      <comment>v too close to base (medial and initial)</comment>
+    </test>
+    <test label="Line 607" stylename="cv48_2">
+      <string>هێرودێسي</string>
+      <comment>v too close to base (medial and initial)</comment>
+    </test>
+    <test label="Line 607" stylename="cv48_3">
+      <string>هێرودێسي</string>
+      <comment>v too close to base (medial and initial)</comment>
+    </test>
+    <test label="Line 608">
+      <string>زیاده</string>
+      <comment>heh final (actually isolate)</comment>
+    </test>
+    <test label="Line 608" stylename="cv48_1">
+      <string>زیاده</string>
+      <comment>heh final (actually isolate)</comment>
+    </test>
+    <test label="Line 608" stylename="cv48_2">
+      <string>زیاده</string>
+      <comment>heh final (actually isolate)</comment>
+    </test>
+    <test label="Line 608" stylename="cv48_3">
+      <string>زیاده</string>
+      <comment>heh final (actually isolate)</comment>
+    </test>
+    <test label="Line 609">
+      <string>هے</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 609" stylename="cv48_1">
+      <string>هے</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 609" stylename="cv48_2">
+      <string>هے</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 609" stylename="cv48_3">
+      <string>هے</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 610">
+      <string>که</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 610" stylename="cv48_1">
+      <string>که</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 610" stylename="cv48_2">
+      <string>که</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 610" stylename="cv48_3">
+      <string>که</string>
+      <comment>heh final</comment>
+    </test>
+    <test label="Line 611">
+      <string>هاں</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 611" stylename="cv48_1">
+      <string>هاں</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 611" stylename="cv48_2">
+      <string>هاں</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 611" stylename="cv48_3">
+      <string>هاں</string>
+      <comment>heh initial</comment>
+    </test>
+    <test label="Line 612">
+      <string>حصّه</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 612" stylename="cv48_1">
+      <string>حصّه</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 612" stylename="cv48_2">
+      <string>حصّه</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 612" stylename="cv48_3">
+      <string>حصّه</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 613">
+      <string>بھائی</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 613" stylename="cv48_1">
+      <string>بھائی</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 613" stylename="cv48_2">
+      <string>بھائی</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 613" stylename="cv48_3">
+      <string>بھائی</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 614">
+      <string>حیران ہونا</string>
+    </test>
+    <test label="Line 615">
+      <string>مہمان</string>
+    </test>
+    <test label="Line 616">
+      <string>ڈھیر</string>
+    </test>
+    <test label="Line 617">
+      <string>مکتوب الیہ</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 618">
+      <string>تمهید</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 618" stylename="cv48_1">
+      <string>تمهید</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 618" stylename="cv48_2">
+      <string>تمهید</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 618" stylename="cv48_3">
+      <string>تمهید</string>
+      <comment>heh shaping?</comment>
+    </test>
+    <test label="Line 619">
+      <string>موچي</string>
+      <comment>meem initial</comment>
+    </test>
+    <test label="Line 619" stylename="cv44_1">
+      <string>موچي</string>
+      <comment>meem initial</comment>
+    </test>
+    <test label="Line 620">
+      <string>ڏينهن</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 620" stylename="cv48_1">
+      <string>ڏينهن</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 620" stylename="cv48_2">
+      <string>ڏينهن</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 620" stylename="cv48_3">
+      <string>ڏينهن</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 621">
+      <string>اڏام</string>
+      <comment>meem shaping</comment>
+    </test>
+    <test label="Line 621" stylename="cv44_1">
+      <string>اڏام</string>
+      <comment>meem shaping</comment>
+    </test>
+    <test label="Line 622">
+      <string>گهوڙا</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 622" stylename="cv48_1">
+      <string>گهوڙا</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 622" stylename="cv48_2">
+      <string>گهوڙا</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 622" stylename="cv48_3">
+      <string>گهوڙا</string>
+      <comment>heh shaping medial</comment>
+    </test>
+    <test label="Line 623">
+      <string>هاءِ </string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 623" stylename="cv48_1">
+      <string>هاءِ </string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 623" stylename="cv48_2">
+      <string>هاءِ </string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 623" stylename="cv48_3">
+      <string>هاءِ </string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 624">
+      <string>ھڻ</string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 624" stylename="cv48_1">
+      <string>ھڻ</string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 624" stylename="cv48_2">
+      <string>ھڻ</string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 624" stylename="cv48_3">
+      <string>ھڻ</string>
+      <comment>heh shaping initial</comment>
+    </test>
+    <test label="Line 625">
+      <string>اُتَمَ </string>
+      <comment>meem final</comment>
+    </test>
+    <test label="Line 625" stylename="cv44_1">
+      <string>اُتَمَ </string>
+      <comment>meem final</comment>
+    </test>
+    <test label="Line 626">
+      <string>جِسمُ </string>
+      <comment>meem final</comment>
+    </test>
+    <test label="Line 626" stylename="cv44_1">
+      <string>جِسمُ </string>
+      <comment>meem final</comment>
+    </test>
+    <test label="Line 627">
+      <string>ڪامُ</string>
+      <comment>meem</comment>
+    </test>
+    <test label="Line 627" stylename="cv44_1">
+      <string>ڪامُ</string>
+      <comment>meem</comment>
+    </test>
+    <test label="Line 628">
+      <string>اُڏامِڻُ</string>
+      <comment>meem</comment>
+    </test>
+    <test label="Line 628" stylename="cv44_1">
+      <string>اُڏامِڻُ</string>
+      <comment>meem</comment>
+    </test>
+    <test label="Line 629">
+      <string>جۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 629" stylename="cv50_1">
+      <string>جۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 630">
+      <string>ممۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 630" stylename="cv50_1">
+      <string>ممۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 631">
+      <string>مهۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 631" stylename="cv50_1">
+      <string>مهۇ</string>
+      <comment>absU filled</comment>
+    </test>
+    <test label="Line 632">
+      <string>جوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 632" stylename="cv70_1">
+      <string>جوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 632" stylename="cv70_2">
+      <string>جوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 633">
+      <string>مموُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 633" stylename="cv70_1">
+      <string>مموُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 633" stylename="cv70_2">
+      <string>مموُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 634">
+      <string>مهوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 634" stylename="cv70_1">
+      <string>مهوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 634" stylename="cv70_2">
+      <string>مهوُ</string>
+      <comment>damma filled</comment>
+    </test>
+    <test label="Line 635">
+      <string>رنا طفلةٌ</string>
+      <comment>dammatan</comment>
+    </test>
+    <test label="Line 635" stylename="cv72_1">
+      <string>رنا طفلةٌ</string>
+      <comment>dammatan</comment>
+    </test>
+    <test label="Line 636">
+      <string>سِباعٌ و ضِباعٌ و عِراكٌ</string>
+      <comment>dammatan</comment>
+    </test>
+    <test label="Line 636" stylename="cv72_1">
+      <string>سِباعٌ و ضِباعٌ و عِراكٌ</string>
+      <comment>dammatan</comment>
+    </test>
+  </testgroup>
+</ftml>

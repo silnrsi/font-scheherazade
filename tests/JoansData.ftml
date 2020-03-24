@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc>url(reference/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv12' 1" name="cv12_1"/>
+      <style feats="'cv44' 1" name="cv44_1"/>
+      <style feats="'cv48' 1" name="cv48_1"/>
+      <style feats="'cv48' 2" name="cv48_2"/>
+      <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv60' 1" name="cv60_1"/>
+      <style feats="'cv62' 1" name="cv62_1"/>
+      <style feats="'cv62' 2" name="cv62_2"/>
+      <style feats="'cv70' 1" name="cv70_1"/>
+      <style feats="'cv70' 2" name="cv70_2"/>
+      <style feats="'cv72' 1" name="cv72_1"/>
+      <style feats="'cv74' 0" name="cv74_0"/>
+      <style feats="'cv74' 1" name="cv74_1"/>
+      <style feats="'cv76' 1" name="cv76_1"/>
+      <style feats="'cv76' 2" name="cv76_2"/>
+      <style feats="'cv78' 1" name="cv78_1"/>
+      <style feats="'cv78' 2" name="cv78_2"/>
+      <style feats="'cv80' 1" name="cv80_1"/>
+      <style feats="'cv80' 2" name="cv80_2"/>
+      <style feats="'cv82' 1" name="cv82_1"/>
+      <style feats="'cv82' 2" name="cv82_2"/>
+      <style feats="'cv82' 3" name="cv82_3"/>
+      <style feats="'cv82' 4" name="cv82_4"/>
+      <style feats="'cv84' 1" name="cv84_1"/>
+      <style lang="ku" name="ku"/>
+      <style lang="rhg" name="rhg"/>
+      <style lang="sd" name="sd"/>
+      <style lang="ur" name="ur"/>
+      <style lang="wo" name="wo"/>
+    </styles>
+    <title>JoansData test for Scheherazade</title>
+  </head>
+  <testgroup label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Encoded characters">
+    <test label="Line 2">
+      <comment>1&amp;2</comment>
+      <string>تِی</string>
+    </test>
+    <test label="Line 3">
+      <comment>3&amp;4</comment>
+      <string>(interline issue)</string>
+    </test>
+    <test label="Line 4">
+      <comment>5&amp;6</comment>
+      <string>مبِعِ</string>
+    </test>
+    <test label="Line 4" stylename="cv44_1">
+      <comment>5&amp;6</comment>
+      <string>مبِعِ</string>
+    </test>
+    <test label="Line 5">
+      <comment>7&amp;8</comment>
+      <string>تٛک</string>
+    </test>
+    <test label="Line 6">
+      <comment>9&amp;10</comment>
+      <string>دِلِڀب</string>
+    </test>
+    <test label="Line 6" stylename="cv12_1">
+      <comment>9&amp;10</comment>
+      <string>دِلِڀب</string>
+    </test>
+    <test label="Line 7">
+      <comment>11a&amp;b</comment>
+      <string>ويِي</string>
+    </test>
+    <test label="Line 8">
+      <comment>12&amp;13</comment>
+      <string>بکُّی</string>
+    </test>
+    <test label="Line 8" stylename="cv70_1">
+      <comment>12&amp;13</comment>
+      <string>بکُّی</string>
+    </test>
+    <test label="Line 8" stylename="cv70_2">
+      <comment>12&amp;13</comment>
+      <string>بکُّی</string>
+    </test>
+    <test label="Line 9">
+      <comment>14&amp;15</comment>
+      <string>بَرْکَ</string>
+    </test>
+    <test label="Line 9" stylename="cv78_1">
+      <comment>14&amp;15</comment>
+      <string>بَرْکَ</string>
+    </test>
+    <test label="Line 9" stylename="cv78_2">
+      <comment>14&amp;15</comment>
+      <string>بَرْکَ</string>
+    </test>
+    <test label="Line 10">
+      <comment>16&amp;17</comment>
+      <string>اَللَّه</string>
+    </test>
+    <test label="Line 10" stylename="cv48_1">
+      <comment>16&amp;17</comment>
+      <string>اَللَّه</string>
+    </test>
+    <test label="Line 10" stylename="cv48_2">
+      <comment>16&amp;17</comment>
+      <string>اَللَّه</string>
+    </test>
+    <test label="Line 10" stylename="cv48_3">
+      <comment>16&amp;17</comment>
+      <string>اَللَّه</string>
+    </test>
+    <test label="Line 11">
+      <comment>18&amp;19</comment>
+      <string>بلْ</string>
+    </test>
+    <test label="Line 11" stylename="cv78_1">
+      <comment>18&amp;19</comment>
+      <string>بلْ</string>
+    </test>
+    <test label="Line 11" stylename="cv78_2">
+      <comment>18&amp;19</comment>
+      <string>بلْ</string>
+    </test>
+  </testgroup>
+</ftml>
+
