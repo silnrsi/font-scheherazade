@@ -1,10 +1,9 @@
-# Scheherazade
+# Scheherazade New
 
-Scheherazade is a smart open font designed by SIL International. It is designed as a general-purpose Arabic style and is intended to support most of the characters in the Unicode 13.0 Arabic blocks.
+Scheherazade New is a smart open font designed by SIL International. It is designed as a general-purpose Arabic style and is intended to support most of the characters in the Unicode 13.0 Arabic blocks.
 
-### Project status [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_Scheherazade/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_Scheherazade&guest=1)
+### Project status [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_ScheherazadeNew/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_ScheherazadeNew&guest=1)
 
-Scheherazade v2.100 has been released. Version 2.200 is under development.
 
 ## Copyright and License
 For copyright and licensing - including any Reserved Font Names - see [OFL.txt](OFL.txt).
@@ -22,10 +21,11 @@ or in the documentation subfolder.
 
 ## Building
 
-The Scheherazade project can be built from source using [smith](https://github.com/silnrsi/smith). 
-Normally this is done via the sequence:
+The Scheherazade New project can be built from source using [smith](https://github.com/silnrsi/smith). This is done via the sequence:
 ```
     smith distclean
     smith configure
-    smith build test
+    smith build
+	smith alltests
 ```
+See all the details in the [SIL FontDev guide](https://silnrsi.github.io/silfontdev/).
