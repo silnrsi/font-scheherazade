@@ -20,7 +20,7 @@ DESC_SHORT = "A general-purpose Arabic script font"
 getufoinfo('source/masters/' + FAMILY + '-Regular' + '.ufo')
 # BUILDLABEL = 'beta'
 
-###ftmlTest('tests/ftml-smith.xsl', fonts = ['../tests/reference/Scheherazade-Regular-1_001.ttf'], addfontindex = 1, fontmode = 'collect')
+ftmlTest('tests/ftml-smith.xsl')
 
 # APs to omit:
 OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_U,_R,above,below,center,ring,through,aboveLeft,H,L,O,U,R"'
