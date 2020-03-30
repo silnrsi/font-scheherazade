@@ -125,7 +125,7 @@ lookup SindhiCALT {
     sub heh-ar by heh-ar.knotted ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
-    sub dammatan-ar by dammatan-ar.sixNine ;
+##    sub dammatan-ar by dammatan-ar.sixNine ;  # old bug
     sub @Meem by @Meem.sindhi ;
 } SindhiCALT;
 
@@ -138,6 +138,13 @@ lookup UrduCALT {
     sub heh-ar.medi by heh-ar.hooked.medi ;
     sub heh-ar.fina by heh-ar.hooked.fina ;
 } UrduCALT;
+
+lookup WolofCALT {
+  lookupflag 0 ;
+    sub @cno_loclWLF by @c_loclWLF ;
+    sub @Damma by @Damma.short ;
+    sub @Kasra by @Kasra_lowered ;
+} WolofCALT;
 
 # Subtending mark digits
 
@@ -248,7 +255,7 @@ lookup DalAlternates {
 
 lookup MeemAlternates {
   lookupflag IgnoreMarks ;
-    sub @Meem by @Meem.sindhi ;
+    sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
 } MeemAlternates;
 
 lookup HehAlternates {
@@ -346,16 +353,17 @@ lookup CommaAlternates {
     sub semicolon-ar by semicolon-ar.downward ;
 } CommaAlternates;
 
-lookup JehHack {
-  lookupflag IgnoreMarks ;
-    sub @Jeh by @Jeh.dotHat ;
-} JehHack;
+#--- OBSOLETE HACKS ---
+#lookup JehHack {
+#  lookupflag IgnoreMarks ;
+#    sub @Jeh by @Jeh.dotHat ;
+#} JehHack;
 
-lookup HeadOfKhahHack {
-  lookupflag 0 ;
-    sub hahabove-ar by marksidewaysnoonghunna-ar ;
-} HeadOfKhahHack;
-
+#lookup HeadOfKhahHack {
+#  lookupflag 0 ;
+#    sub hahabove-ar by marksidewaysnoonghunna-ar ;
+#} HeadOfKhahHack;
+#----------------------
 
 lookup ShaddaLigatures {
   lookupflag MarkAttachmentType @ShaddaLigatureParts ;
@@ -572,16 +580,31 @@ lookup SubtendingMarks {
 feature init {  # Initial Forms
     script arab;  # Arabic
       lookup ltrInit;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
 } init ;
 
 feature medi {  # Medial Forms
     script arab;  # Arabic
       lookup ltrMedi;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
 } medi ;
 
 feature fina {  # Terminal Forms
     script arab;  # Arabic
       lookup ltrFina;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
 } fina ;
 
 feature ccmp {  # Glyph Composition/Decomposition
@@ -669,6 +692,8 @@ feature calt {  # Contextual Alternates
             #lookup SignDigits;
             lookup MaddaVowel1;
             lookup MaddaVowel2;
+        language  WLF  exclude_dflt;  # Wolof
+        		lookup WolofCALT;
     script latn;  # Latin
         language dflt;  # Default
             lookup SignWithDigits;
@@ -692,6 +717,8 @@ feature calt {  # Contextual Alternates
         lookup SindhiCALT ;
       language URD ; # Urdu
         lookup UrduCALT ;
+      language WLF ; # Wolof
+        lookup WolofCALT ;
     script latn;
       lookup SignWithDigits;
 } calt ;
@@ -711,6 +738,7 @@ feature cv12 {  # Character Variant 12
       language KUR  ;
       language SND  ;
       language URD  ;
+      # language WLF  ;  but not this one since we enable it in the WolofCALT
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
@@ -718,9 +746,12 @@ feature cv12 {  # Character Variant 12
             } ;
 } cv12 ;
 
+# Use meem alternates for languages other than Sindhi
 feature cv44 {  # Character Variant 44
     script arab;  # Arabic
         language dflt;  # Default
+            lookup MeemAlternates;
+        language URD  exclude_dflt;  # Urdu
             lookup MeemAlternates;
         language KUR  exclude_dflt;  # Kurdish
             lookup MeemAlternates;
@@ -778,7 +809,11 @@ feature cv62 {  # Character Variant 62
 
 
 feature cv70 {  # Character Variant 70
-		lookup DammaAlternates;
+    # Same for latin & arabic:
+        lookup DammaAlternates;
+    # Except Wolof where it is already set to short
+    script arab ;
+        language WLF exclude_dflt ;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -786,6 +821,7 @@ feature cv70 {  # Character Variant 70
         ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
     } ;
 } cv70 ;
+
 
 feature cv72 {  # Character Variant 72
 		lookup DammatanAlternates;
@@ -859,13 +895,13 @@ feature cv84 {  # Character Variant 84
     } ;
 } cv84 ;
 
-feature cv90 {  # Character Variant 90
-		lookup JehHack;
-} cv90 ;
+#feature cv90 {  # Character Variant 90
+#		lookup JehHack;
+#} cv90 ;
 
-feature cv92 {  # Character Variant 92
-		lookup HeadOfKhahHack;
-} cv92 ;
+#feature cv92 {  # Character Variant 92
+#		lookup HeadOfKhahHack;
+#} cv92 ;
 
 
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
@@ -959,11 +995,16 @@ feature mkmk {  # Mark to mark Positioning
 feature curs {  # Cursive Positioning
     script arab;  # Arabic
       lookup LamAlefConnection;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
 } curs ;
 
 
 feature kern {  # Kerning
-    # Same for latin & arabic:
+    # Same behavior for latin & arabic:
         lookup SubtendingMarks;
 } kern ;
 
