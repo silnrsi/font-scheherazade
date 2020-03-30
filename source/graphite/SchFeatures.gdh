@@ -287,6 +287,7 @@ commaAlt {
     default = up;
 }
 
+/* --- OBSOLETE HACKS ---
 jehHack {
 	id = "cv90";
     name.1033 = string("Jeh hack");
@@ -318,6 +319,7 @@ headOfKhahHack {
     }
     default = std;
 }
+------------------------*/
 
 graphite1mirror {
 	id = "gr1m";
@@ -411,11 +413,12 @@ table(language)
 
 kurdish {
     languages = (
-    	"bdh",	// Behdini - obsolete
-    	"ckb",	// Central Kurdish
-    	"kmr",	// Northern Kurdish/Behdini
-    	"kur",  // Kurmanji
-    	"sdh"	// Southern Kurdish/Sorani
+    	"bdh",    // Behdini - obsolete
+    	"ckb",    // Central Kurdish
+    	"kmr",    // Northern Kurdish/Behdini
+    	"ku",     // Kurdish macrolanguage
+    	"kur",    // Kurmanji
+    	"sdh"     // Southern Kurdish/Sorani
     );
     hehAlt = kurdish;
 };
@@ -429,13 +432,15 @@ rohingya {
     dammatanAlt = sixNine;
 };
 
+/***
 shina {
     languages = (
-        "scl",	// Shina
-        "plk"	// Shina, Kohistani
+        "scl",    // Shina
+        "plk"     // Shina, Kohistani
     );
-    headOfKhahHack = openLeft;
+    headOfKhahHack = openLeft;  -- OBSOLETE
 };
+***/
 
 sindhi {
     languages = ( "snd", "sd" ); // Sindhi
@@ -450,6 +455,12 @@ urdu {
     hehAlt = urdu;
     easternDigits = urdu;
     shaddaKasra = sindhiUrdu;
+};
+
+wolof {
+    languages = ( "wol", "wo" );  // Wolof
+    dalAlt = 1;
+    dammaAlt = 2;  // short damma
 };
 
 

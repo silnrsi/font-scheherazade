@@ -210,10 +210,6 @@ cMark4Above = (cMarkGroup5A);
 
 cMark4Below = (cMarkGroup3B);
 
-// For testing non-canonical ordering:
-r_comma = postscript("comma") { diaAM = point(aw/2, bb.bottom) };
-cMark4Above += (r_comma);
-
 cMark1 = (cMark1Above cMark1Below);
 cMark2 = (cMark2Above cMark2Below);
 cMark3 = (cMark3Above);

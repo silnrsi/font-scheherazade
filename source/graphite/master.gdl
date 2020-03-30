@@ -301,13 +301,14 @@ pass(5)	// Features, special behaviors
 		cno_Downward  >  cDownward;
 	endif;
 	
+/*--- OBSOLETE FEATURES ---
 	if (jehHack == dotHat)
 		cJeh > cJeh_dotHat;
 	endif;
 	
 	if (headOfKhahHack == openLeft)
-		cno_OpenLeft > cOpenLeft;
-	endif;
+		cno_OpenLeft > cOpenLeft;	endif;
+-------------------------*/
 	
 	if (!invis)
 		// Note that substitution changes the directionality to the defaults for the
