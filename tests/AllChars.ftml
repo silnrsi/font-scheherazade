@@ -3,7 +3,6 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc>url(reference/Scheherazade-Regular.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
@@ -38,7 +37,7 @@
       <style lang="ur" name="ur"/>
       <style lang="wo" name="wo"/>
     </styles>
-    <title>AllChars (NG)</title>
+    <title>AllChars</title>
   </head>
   <testgroup label="Rendering Check">
     <test label="check">
