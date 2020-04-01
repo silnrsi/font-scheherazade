@@ -2181,7 +2181,7 @@ lookup SindhiCALT {
     sub heh-ar by heh-ar.knotted;
     sub six-persian by six-persian.urdu;
     sub seven-persian by seven-persian.urdu;
-    sub dammatan-ar by dammatan-ar.sixNine;
+    ##    sub dammatan-ar by dammatan-ar.sixNine ;  # old bug
     sub @Meem by @Meem.sindhi;
 } SindhiCALT;
 
@@ -2194,6 +2194,13 @@ lookup UrduCALT {
     sub heh-ar.medi by heh-ar.hooked.medi;
     sub heh-ar.fina by heh-ar.hooked.fina;
 } UrduCALT;
+
+lookup WolofCALT {
+    lookupflag 0;
+    sub @cno_loclWLF by @c_loclWLF;
+    sub @Damma by @Damma.short;
+    sub @Kasra by @Kasra_lowered;
+} WolofCALT;
 
 # Subtending mark digits
 lookup SignWith_4digits_target {
@@ -2396,6 +2403,7 @@ lookup DalAlternates {
 lookup MeemAlternates {
     lookupflag IgnoreMarks;
     sub @Meem by @Meem.sindhi;
+    # also used by Kurdish and Urdu
 } MeemAlternates;
 
 lookup HehAlternates {
@@ -2495,16 +2503,16 @@ lookup CommaAlternates {
     sub semicolon-ar by semicolon-ar.downward;
 } CommaAlternates;
 
-lookup JehHack {
-    lookupflag IgnoreMarks;
-    sub @Jeh by @Jeh.dotHat;
-} JehHack;
-
-lookup HeadOfKhahHack {
-    lookupflag 0;
-    sub hahabove-ar by marksidewaysnoonghunna-ar;
-} HeadOfKhahHack;
-
+#--- OBSOLETE HACKS ---
+#lookup JehHack {
+#  lookupflag IgnoreMarks ;
+#    sub @Jeh by @Jeh.dotHat ;
+#} JehHack;
+#lookup HeadOfKhahHack {
+#  lookupflag 0 ;
+#    sub hahabove-ar by marksidewaysnoonghunna-ar ;
+#} HeadOfKhahHack;
+#----------------------
 lookup ShaddaLigatures {
     lookupflag MarkAttachmentType @ShaddaLigatureParts;
     sub shadda-ar fathatan-ar by shadda_fathatan-ar;
@@ -4016,6 +4024,11 @@ feature init {
     script arab;
     # Arabic
     lookup ltrInit;
+    # Force other languages to include Arabic script lookups
+    language KUR;
+    language SND;
+    language URD;
+    language WLF;
 } init;
 
 feature medi {
@@ -4023,6 +4036,11 @@ feature medi {
     script arab;
     # Arabic
     lookup ltrMedi;
+    # Force other languages to include Arabic script lookups
+    language KUR;
+    language SND;
+    language URD;
+    language WLF;
 } medi;
 
 feature fina {
@@ -4030,6 +4048,11 @@ feature fina {
     script arab;
     # Arabic
     lookup ltrFina;
+    # Force other languages to include Arabic script lookups
+    language KUR;
+    language SND;
+    language URD;
+    language WLF;
 } fina;
 
 feature ccmp {
@@ -4118,6 +4141,7 @@ feature rlig {
 #lookup SignDigits;
 # Urdu
 #lookup SignDigits;
+# Wolof
 # Latin
 # Default
 #lookup SignDigits;
@@ -4140,6 +4164,9 @@ feature calt {
     language URD;
     # Urdu
     lookup UrduCALT;
+    language WLF;
+    # Wolof
+    lookup WolofCALT;
     script latn;
     lookup SignWithDigits;
 } calt;
@@ -4163,6 +4190,7 @@ feature cv12 {
     language KUR;
     language SND;
     language URD;
+    # language WLF  ;  but not this one since we enable it in the WolofCALT
         cvParameters {
                 FeatUILabelNameID {
             name "Dal";
@@ -4180,12 +4208,16 @@ feature cv12 {
 
 } cv12;
 
+# Use meem alternates for languages other than Sindhi
 feature cv44 {
     # Character Variant 44
     script arab;
     # Arabic
     language dflt;
     # Default
+    lookup MeemAlternates;
+    language URD exclude_dflt;
+    # Urdu
     lookup MeemAlternates;
     language KUR exclude_dflt;
     # Kurdish
@@ -4311,7 +4343,11 @@ feature cv62 {
 
 feature cv70 {
     # Character Variant 70
+    # Same for latin & arabic:
     lookup DammaAlternates;
+    # Except Wolof where it is already set to short
+    script arab;
+    language WLF exclude_dflt;
         cvParameters {
                 FeatUILabelNameID {
             name "Damma";
@@ -4500,16 +4536,12 @@ feature cv84 {
 
 } cv84;
 
-feature cv90 {
-    # Character Variant 90
-    lookup JehHack;
-} cv90;
-
-feature cv92 {
-    # Character Variant 92
-    lookup HeadOfKhahHack;
-} cv92;
-
+#feature cv90 {  # Character Variant 90
+#		lookup JehHack;
+#} cv90 ;
+#feature cv92 {  # Character Variant 92
+#		lookup HeadOfKhahHack;
+#} cv92 ;
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
 # same or later pass as cv62 itself, and it has to execute whether or not cv62 feature is requested,
 # so it has to be part of some other feature. In Harfbuzz, we could use either clig, or liga since they
@@ -4599,11 +4631,16 @@ feature curs {
     script arab;
     # Arabic
     lookup LamAlefConnection;
+    # Force other languages to include Arabic script lookups
+    language KUR;
+    language SND;
+    language URD;
+    language WLF;
 } curs;
 
 feature kern {
     # Kerning
-    # Same for latin & arabic:
+    # Same behavior for latin & arabic:
     lookup SubtendingMarks;
 } kern;
 

@@ -180,6 +180,7 @@
 /quotedblleft Hello!/quotedblright</string>
     <string>123H?!¿/question-ar/kaf-ar.fina/seen-ar.init  </string>
     <string>«/beh-ar.fina/kaf-ar.medi/seen-ar.init/guilsinglright  /guilsinglleft Hello»</string>
+    <string>/hungarumlaut</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -727,7 +728,6 @@
     <string>dalVinvertedbelow-ar</string>
     <string>dalVinvertedbelow-ar.fina</string>
     <string>dalVinvertedbelow-ar.loclWLF</string>
-    <string>dalVinvertedbelow-ar.fina.loclWLF</string>
     <string>dalThreedotsbelow-ar</string>
     <string>dalThreedotsbelow-ar.fina</string>
     <string>dalThreedotsbelow-ar.loclWLF</string>
@@ -2247,7 +2247,6 @@
     <string>dalVinvertedbelow-ar</string>
     <string>dalVinvertedbelow-ar.fina</string>
     <string>dalVinvertedbelow-ar.loclWLF</string>
-    <string>dalVinvertedbelow-ar.fina.loclWLF</string>
     <string>dalThreedotsbelow-ar</string>
     <string>dalThreedotsbelow-ar.fina</string>
     <string>dalThreedotsbelow-ar.loclWLF</string>
@@ -3633,8 +3632,6 @@
     <string>uni075A</string>
     <key>dalVinvertedbelow-ar.fina</key>
     <string>uni075A.fina</string>
-    <key>dalVinvertedbelow-ar.fina.loclWLF</key>
-    <string>uni075A.fina.loclWLF</string>
     <key>dalVinvertedbelow-ar.loclWLF</key>
     <string>uni075A.loclWLF</string>
     <key>damma-ar</key>
@@ -4340,7 +4337,7 @@
     <key>khah-ar.init</key>
     <string>uni062E.init</string>
     <key>khah-ar.medi</key>
-    <string>uni062E.fina</string>
+    <string>uni062E.medi</string>
     <key>kirghizoe-ar</key>
     <string>uni06C5</string>
     <key>kirghizoe-ar.fina</key>
