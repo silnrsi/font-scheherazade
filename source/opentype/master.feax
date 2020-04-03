@@ -134,9 +134,9 @@ lookup UrduCALT {
     sub four-persian by four-persian.urdu ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
-    sub heh-ar.init by heh-ar.hooked.init ;
-    sub heh-ar.medi by heh-ar.hooked.medi ;
-    sub heh-ar.fina by heh-ar.hooked.fina ;
+##    sub heh-ar.init by heh-ar.hooked.init ; -- no longer used for Urdu
+##    sub heh-ar.medi by heh-ar.hooked.medi ;
+##    sub heh-ar.fina by heh-ar.hooked.fina ;
 } UrduCALT;
 
 lookup WolofCALT {
@@ -239,13 +239,14 @@ lookup KurdishHeh {
     sub heh-ar by heh-ar.knotted ;
 } KurdishHeh;
 
-lookup UrduHeh {
-  lookupflag IgnoreMarks ;
-  # Used only by TypeTuner
-    sub heh-ar.init by heh-ar.hooked.init ;
-    sub heh-ar.medi by heh-ar.hooked.medi ;
-    sub heh-ar.fina by heh-ar.hooked.fina ;
-} UrduHeh;
+# heh-hook is no longer defined for Urdu
+##lookup UrduHeh {
+##  lookupflag IgnoreMarks ;
+##  # Used only by TypeTuner
+##    sub heh-ar.init by heh-ar.hooked.init ;
+##    sub heh-ar.medi by heh-ar.hooked.medi ;
+##    sub heh-ar.fina by heh-ar.hooked.fina ;
+##} UrduHeh;
 
 
 lookup DalAlternates {

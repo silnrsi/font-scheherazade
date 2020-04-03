@@ -452,7 +452,7 @@ sindhi {
 
 urdu {
     languages = ( "urd", "ur" ); // Urdu
-    hehAlt = urdu;
+//    hehAlt = urdu; // removed
     easternDigits = urdu;
     shaddaKasra = sindhiUrdu;
 };
