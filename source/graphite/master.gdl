@@ -271,6 +271,7 @@ pass(5)	// Features, special behaviors
 	if (ultapeshAlt == hollow)
 		g_dammainverted_ar > g_dammainverted_ar_open;
 	endif;
+	// ultapeshAlt == 2 -> remains filled
 
 	if (sukunAlt == jasmDown)
 		cno_Sukun  >  cSukunDownOpen;

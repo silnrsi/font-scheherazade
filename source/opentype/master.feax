@@ -261,11 +261,11 @@ lookup MeemAlternates {
 
 lookup HehAlternates {
   lookupflag IgnoreMarks ;
-  # 0=Sindhi; 1=Urdu; 1=Kurdish
-    sub heh-ar from [ heh-ar.knotted heh-ar heh-ar.knotted ] ;
-    sub heh-ar.fina from [ heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.knottedHigh.fina ] ;
-    sub heh-ar.init from [ heh-ar.init heh-ar.hooked.init heh-ar.init ] ;
-    sub heh-ar.medi from [ heh-ar.knottedHigh.medi heh-ar.hooked.medi heh-ar.medi ] ;
+    #   0=default;         1=Sindhi;                2=Urdu;             3=Kurdish
+    sub heh-ar      from [ heh-ar.knotted           heh-ar              heh-ar.knotted ] ;
+    sub heh-ar.fina from [ heh-ar.knottedHigh.fina  heh-ar.hooked.fina  heh-ar.knottedHigh.fina ] ;
+    sub heh-ar.init from [ heh-ar.init              heh-ar.hooked.init  heh-ar.init ] ;
+    sub heh-ar.medi from [ heh-ar.knottedHigh.medi  heh-ar.hooked.medi  heh-ar.medi ] ;
 } HehAlternates;
 
 lookup ArabicUAlternates {
@@ -291,16 +291,16 @@ lookup KasraHigh {
 
 lookup KasraAlternates {
   lookupflag 0 ;
-    # NB: This is writen so it doesn't matter which shadda-kasra behavior is active.
-    sub @Kasra_lowered from [ @Kasra_lowered @Kasra ];
-    sub @Kasra         from [ @Kasra_lowered @Kasra ];
+    # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
+    sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
+    sub @Kasra         from [ @Kasra_lowered  @Kasra ];
 } KasraAlternates;
 
 lookup DammaAlternates {
   lookupflag 0 ;
-    sub damma-ar from [ damma-ar.filled damma-ar.short ] ;
-    sub hamza_damma-ar from [ hamza_damma-ar.filled hamza_damma-ar.short ] ;
-    sub shadda_damma-ar from [ shadda_damma-ar.filled shadda_damma-ar.short ] ;
+    sub damma-ar        from [ damma-ar.filled         damma-ar.short ] ;
+    sub hamza_damma-ar  from [ hamza_damma-ar.filled   hamza_damma-ar.short ] ;
+    sub shadda_damma-ar from [ shadda_damma-ar.filled  shadda_damma-ar.short ] ;
 } DammaAlternates;
 
 lookup DammatanAlternates {
@@ -310,7 +310,8 @@ lookup DammatanAlternates {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
-    sub dammainverted-ar by dammainverted-ar.open ;
+  	#   0=default (filled);     1=hollow;              2=filled
+    sub dammainverted-ar from [ dammainverted-ar.open  dammainverted-ar ];
 } DammaInvertedAlternates;
 
 lookup DaggerAlefToLarge_target {
@@ -330,22 +331,22 @@ lookup SukunAlternates {
 
 lookup AyahAlternates {
   lookupflag 0 ;
-    sub endofayah-ar from [ endofayah-ar.alt endofayah-ar.altB ] ;
-    sub endofayah-ar.2 from [ endofayah-ar.alt.2 endofayah-ar.altB.2 ] ;
-    sub endofayah-ar.3 from [ endofayah-ar.alt.3 endofayah-ar.altB.3 ] ;
+    sub endofayah-ar   from [ endofayah-ar.alt    endofayah-ar.altB ] ;
+    sub endofayah-ar.2 from [ endofayah-ar.alt.2  endofayah-ar.altB.2 ] ;
+    sub endofayah-ar.3 from [ endofayah-ar.alt.3  endofayah-ar.altB.3 ] ;
 } AyahAlternates;
 
 lookup PersianDigitAlternates {
   lookupflag 0 ;
-    sub four-persian from [ four-persian four-persian.urdu four-persian four-persian.roh ] ;
-    sub four-persian.medium from [ four-persian.medium four-persian.urdu.medium four-persian.medium four-persian.roh.medium ] ;
-    sub four-persian.small from [ four-persian.small four-persian.urdu.small four-persian.small four-persian.roh.small ] ;
-    sub seven-persian from [ seven-persian.urdu seven-persian.urdu seven-persian seven-persian.urdu ] ;
+    sub four-persian         from [ four-persian              four-persian.urdu         four-persian         four-persian.roh ] ;
+    sub four-persian.medium  from [ four-persian.medium       four-persian.urdu.medium  four-persian.medium  four-persian.roh.medium ] ;
+    sub four-persian.small   from [ four-persian.small        four-persian.urdu.small   four-persian.small   four-persian.roh.small ] ;
+    sub seven-persian        from [ seven-persian.urdu        seven-persian.urdu        seven-persian        seven-persian.urdu ] ;
     sub seven-persian.medium from [ seven-persian.urdu.medium seven-persian.urdu.medium seven-persian.medium seven-persian.urdu.medium ] ;
-    sub seven-persian.small from [ seven-persian.urdu.small seven-persian.urdu.small seven-persian.small seven-persian.urdu.small ] ;
-    sub six-persian from [ six-persian.urdu six-persian.urdu six-persian six-persian.urdu ] ;
-    sub six-persian.medium from [ six-persian.urdu.medium six-persian.urdu.medium six-persian.medium six-persian.urdu.medium ] ;
-    sub six-persian.small from [ six-persian.urdu.small six-persian.urdu.small six-persian.small six-persian.urdu.small ] ;
+    sub seven-persian.small  from [ seven-persian.urdu.small  seven-persian.urdu.small  seven-persian.small  seven-persian.urdu.small ] ;
+    sub six-persian          from [ six-persian.urdu          six-persian.urdu          six-persian          six-persian.urdu ] ;
+    sub six-persian.medium   from [ six-persian.urdu.medium   six-persian.urdu.medium   six-persian.medium   six-persian.urdu.medium ] ;
+    sub six-persian.small    from [ six-persian.urdu.small    six-persian.urdu.small    six-persian.small    six-persian.urdu.small ] ;
 } PersianDigitAlternates;
 
 lookup CommaAlternates {
@@ -772,7 +773,7 @@ feature cv48 {  # Character Variant 48
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
     } ;
