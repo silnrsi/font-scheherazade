@@ -1415,7 +1415,7 @@ markClass _two <anchor 16 -54> @_aboveLeft;
 # baseClass toneloopabove-ar <anchor 135 1876> @diaA_MarkBase;
 # baseClass toneonedotabove-ar <anchor 133 1807> @diaA_MarkBase;
 # baseClass tonetwodotsabove-ar <anchor 112 1884> @diaA_MarkBase;
-# baseClass vabove-ar <anchor 286 1849> @diaA_MarkBase;
+# baseClass vabove-ar <anchor 286 1869> @diaA_MarkBase;
 # baseClass vinvertedabove-ar <anchor 303 1843> @diaA_MarkBase;
 
 # AP: diaB
@@ -3896,7 +3896,7 @@ lookup mark_to_mark_above {
     pos mark toneloopabove-ar <anchor 135 1876> mark @_diaA;
     pos mark toneonedotabove-ar <anchor 133 1807> mark @_diaA;
     pos mark tonetwodotsabove-ar <anchor 112 1884> mark @_diaA;
-    pos mark vabove-ar <anchor 286 1849> mark @_diaA;
+    pos mark vabove-ar <anchor 286 1869> mark @_diaA;
     pos mark vinvertedabove-ar <anchor 303 1843> mark @_diaA;
 } mark_to_mark_above;
 
