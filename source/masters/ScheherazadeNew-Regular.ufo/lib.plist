@@ -174,12 +174,6 @@
   <string>1286</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
-    <string>(Hello) (/yeh-ar.fina/seen-ar.medi/keheh-ar.init )  /parenleft-ar/lam-ar.fina/sad-ar.medi/tah-ar.init/parenright-ar  </string>
-    <string>/quoteleft Hello world/quoteright  
-/quotedblleft !/noon-ar.fina/tah-ar.medi/noon-ar.medi/teh-ar.init/quotedblright 
-/quotedblleft Hello!/quotedblright</string>
-    <string>123H?!¿/question-ar/kaf-ar.fina/seen-ar.init  </string>
-    <string>«/beh-ar.fina/kaf-ar.medi/seen-ar.init/guilsinglright  /guilsinglleft Hello»</string>
     <string>/alef-ar.fina/noon-ar.medi/tah-ar.medi/seen-ar.init/salaamuhualaynaa-ar/ain-ar.fina/seen-ar.init</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
@@ -662,10 +656,10 @@
     <string>hahTahbelow-ar.fina</string>
     <string>hahTahbelow-ar.medi</string>
     <string>hahTahbelow-ar.init</string>
-    <string>hahTahTwodotshorizontalabove-ar</string>
-    <string>hahTahTwodotshorizontalabove-ar.fina</string>
-    <string>hahTahTwodotshorizontalabove-ar.medi</string>
-    <string>hahTahTwodotshorizontalabove-ar.init</string>
+    <string>hahTahTwodotshorizontalbelow-ar</string>
+    <string>hahTahTwodotshorizontalbelow-ar.fina</string>
+    <string>hahTahTwodotshorizontalbelow-ar.medi</string>
+    <string>hahTahTwodotshorizontalbelow-ar.init</string>
     <string>hahTahabove-ar</string>
     <string>hahTahabove-ar.fina</string>
     <string>hahTahabove-ar.medi</string>
@@ -799,10 +793,10 @@
     <string>seenFourdotsabove-ar.fina</string>
     <string>seenFourdotsabove-ar.medi</string>
     <string>seenFourdotsabove-ar.init</string>
-    <string>seenTwodotshorizontalabove-ar</string>
-    <string>seenTwodotshorizontalabove-ar.fina</string>
-    <string>seenTwodotshorizontalabove-ar.medi</string>
-    <string>seenTwodotshorizontalabove-ar.init</string>
+    <string>seenTwodotsverticalabove-ar</string>
+    <string>seenTwodotsverticalabove-ar.fina</string>
+    <string>seenTwodotsverticalabove-ar.medi</string>
+    <string>seenTwodotsverticalabove-ar.init</string>
     <string>seenTahTwodotshorizontalabove-ar</string>
     <string>seenTahTwodotshorizontalabove-ar.fina</string>
     <string>seenTahTwodotshorizontalabove-ar.medi</string>
@@ -1380,14 +1374,14 @@
     <string>jeemabove-ar</string>
     <string>threedotsabove-ar</string>
     <string>seenabove-ar</string>
-    <string>asteriskArt-ar</string>
+    <string>hizb-ar</string>
     <string>sukunround-ar</string>
     <string>sukunoval-ar</string>
     <string>hahabove-ar</string>
     <string>seenbelow-ar</string>
     <string>maddalong-ar</string>
     <string>wawSmall-ar</string>
-    <string>yehbelow-ar</string>
+    <string>yehSmall-ar</string>
     <string>yehabove-ar</string>
     <string>noonabove-ar</string>
     <string>sajdah-ar</string>
@@ -2181,10 +2175,10 @@
     <string>hahTahbelow-ar.fina</string>
     <string>hahTahbelow-ar.medi</string>
     <string>hahTahbelow-ar.init</string>
-    <string>hahTahTwodotshorizontalabove-ar</string>
-    <string>hahTahTwodotshorizontalabove-ar.fina</string>
-    <string>hahTahTwodotshorizontalabove-ar.medi</string>
-    <string>hahTahTwodotshorizontalabove-ar.init</string>
+    <string>hahTahTwodotshorizontalbelow-ar</string>
+    <string>hahTahTwodotshorizontalbelow-ar.fina</string>
+    <string>hahTahTwodotshorizontalbelow-ar.medi</string>
+    <string>hahTahTwodotshorizontalbelow-ar.init</string>
     <string>hahTahabove-ar</string>
     <string>hahTahabove-ar.fina</string>
     <string>hahTahabove-ar.medi</string>
@@ -2318,10 +2312,10 @@
     <string>seenFourdotsabove-ar.fina</string>
     <string>seenFourdotsabove-ar.medi</string>
     <string>seenFourdotsabove-ar.init</string>
-    <string>seenTwodotshorizontalabove-ar</string>
-    <string>seenTwodotshorizontalabove-ar.fina</string>
-    <string>seenTwodotshorizontalabove-ar.medi</string>
-    <string>seenTwodotshorizontalabove-ar.init</string>
+    <string>seenTwodotsverticalabove-ar</string>
+    <string>seenTwodotsverticalabove-ar.fina</string>
+    <string>seenTwodotsverticalabove-ar.medi</string>
+    <string>seenTwodotsverticalabove-ar.init</string>
     <string>seenTahTwodotshorizontalabove-ar</string>
     <string>seenTahTwodotshorizontalabove-ar.fina</string>
     <string>seenTahTwodotshorizontalabove-ar.medi</string>
@@ -2899,14 +2893,14 @@
     <string>jeemabove-ar</string>
     <string>threedotsabove-ar</string>
     <string>seenabove-ar</string>
-    <string>asteriskArt-ar</string>
+    <string>hizb-ar</string>
     <string>sukunround-ar</string>
     <string>sukunoval-ar</string>
     <string>hahabove-ar</string>
     <string>seenbelow-ar</string>
     <string>maddalong-ar</string>
     <string>wawSmall-ar</string>
-    <string>yehbelow-ar</string>
+    <string>yehSmall-ar</string>
     <string>yehabove-ar</string>
     <string>noonabove-ar</string>
     <string>sajdah-ar</string>
@@ -3436,8 +3430,6 @@
     <string>uniFDF2</string>
     <key>asterisk-ar</key>
     <string>uni066D</string>
-    <key>asteriskArt-ar</key>
-    <string>uni06DE</string>
     <key>beeh-ar</key>
     <string>uni067B</string>
     <key>beeh-ar.fina</key>
@@ -3996,13 +3988,13 @@
     <string>uni0681.init</string>
     <key>hahHamzaabove-ar.medi</key>
     <string>uni0681.medi</string>
-    <key>hahTahTwodotshorizontalabove-ar</key>
+    <key>hahTahTwodotshorizontalbelow-ar</key>
     <string>uni076F</string>
-    <key>hahTahTwodotshorizontalabove-ar.fina</key>
+    <key>hahTahTwodotshorizontalbelow-ar.fina</key>
     <string>uni076F.fina</string>
-    <key>hahTahTwodotshorizontalabove-ar.init</key>
+    <key>hahTahTwodotshorizontalbelow-ar.init</key>
     <string>uni076F.init</string>
-    <key>hahTahTwodotshorizontalabove-ar.medi</key>
+    <key>hahTahTwodotshorizontalbelow-ar.medi</key>
     <string>uni076F.medi</string>
     <key>hahTahabove-ar</key>
     <string>uni0772</string>
@@ -4150,6 +4142,8 @@
     <string>uni0678.medi</string>
     <key>highwaw-ar</key>
     <string>uni08F3</string>
+    <key>hizb-ar</key>
+    <string>uni06DE</string>
     <key>horizontalbar</key>
     <string>uni2015</string>
     <key>hyphenationpoint</key>
@@ -4994,13 +4988,13 @@
     <string>uni069B.init</string>
     <key>seenThreedotsbelow-ar.medi</key>
     <string>uni069B.medi</string>
-    <key>seenTwodotshorizontalabove-ar</key>
+    <key>seenTwodotsverticalabove-ar</key>
     <string>uni076D</string>
-    <key>seenTwodotshorizontalabove-ar.fina</key>
+    <key>seenTwodotsverticalabove-ar.fina</key>
     <string>uni076D.fina</string>
-    <key>seenTwodotshorizontalabove-ar.init</key>
+    <key>seenTwodotsverticalabove-ar.init</key>
     <string>uni076D.init</string>
-    <key>seenTwodotshorizontalabove-ar.medi</key>
+    <key>seenTwodotsverticalabove-ar.medi</key>
     <string>uni076D.medi</string>
     <key>seenVinvertedabove-ar</key>
     <string>uni077E</string>
@@ -5462,6 +5456,8 @@
     <string>uni08AC</string>
     <key>yehRohingya-ar.fina</key>
     <string>uni08AC.fina</string>
+    <key>yehSmall-ar</key>
+    <string>uni06E6</string>
     <key>yehTail-ar</key>
     <string>uni06CD</string>
     <key>yehTail-ar.fina</key>
@@ -5572,8 +5568,6 @@
     <string>uni077A.init</string>
     <key>yehbarreeTwoabove-ar.medi</key>
     <string>uni077A.medi</string>
-    <key>yehbelow-ar</key>
-    <string>uni06E6</string>
     <key>yu-ar</key>
     <string>uni06C8</string>
     <key>yu-ar.fina</key>

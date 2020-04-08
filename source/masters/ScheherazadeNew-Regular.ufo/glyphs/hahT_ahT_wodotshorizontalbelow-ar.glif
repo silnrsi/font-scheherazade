@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="hahTahTwodotshorizontalabove-ar.fina" format="2">
-  <advance width="1422"/>
+<glyph name="hahTahTwodotshorizontalbelow-ar" format="2">
+  <advance width="1527"/>
+  <unicode hex="076F"/>
   <anchor x="406" y="893" name="alef"/>
   <anchor x="592" y="1088" name="diaA"/>
-  <anchor x="586" y="-1218" name="diaB"/>
+  <anchor x="580" y="-1196" name="diaB"/>
   <outline>
-    <component base="hah-ar.fina"/>
-    <component base="_dot2h_tah" xOffset="792" yOffset="-682"/>
+    <component base="hah-ar"/>
+    <component base="_dot2h_tah" xOffset="789" yOffset="-682"/>
   </outline>
   <lib>
     <dict>
