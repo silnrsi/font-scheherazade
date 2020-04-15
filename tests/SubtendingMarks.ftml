@@ -2,9 +2,10 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <fontscale>250</fontscale>
+    <fontscale>200</fontscale>
     <fontsrc>url(reference/Scheherazade-Regular.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
       <style feats="'cv80' 1" name="cv80_1"/>
@@ -37,7 +38,7 @@
       <style feats="'cv80' 1" lang="wo" name="wo_cv80_1"/>
       <style feats="'cv80' 2" lang="wo" name="wo_cv80_2"/>
     </styles>
-    <title>Subtending Marks (NG)</title>
+    <title>Subtending Marks</title>
   </head>
   <testgroup label="Rendering Check">
     <test label="check">
@@ -213,18 +214,6 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
-    <test label="U+06DD urdu" stylename="ku">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
-    <test label="U+06DD urdu" stylename="ku_cv80_1">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
-    <test label="U+06DD urdu" stylename="ku_cv80_2">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
     <test label="U+06DD urdu" stylename="sd">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -246,6 +235,18 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD urdu" stylename="ur_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ku">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ku_cv80_1">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ku_cv80_2">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>

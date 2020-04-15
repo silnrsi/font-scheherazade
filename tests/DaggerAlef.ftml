@@ -2,18 +2,16 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <fontscale>250</fontscale>
+    <fontscale>200</fontscale>
     <fontsrc>url(reference/Scheherazade-Regular.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
-      <style feats="'cv20' 1" name="cv20_1"/>
-      <style feats="'cv20' 1, 'cv76' 1" name="cv20_1_cv76_1"/>
-      <style feats="'cv20' 1, 'cv76' 2" name="cv20_1_cv76_2"/>
       <style feats="'cv76' 1" name="cv76_1"/>
       <style feats="'cv76' 2" name="cv76_2"/>
     </styles>
-    <title>DaggerAlef (NG)</title>
+    <title>DaggerAlef</title>
   </head>
   <testgroup label="Rendering Check">
     <test label="check">
@@ -201,21 +199,6 @@ U+0670" stylename="cv76_2">
       <comment>sad-ar alefabove-ar</comment>
       <string>\u000635\u000670 \u000635\u000670\u00200D \u00200D\u000635\u000670\u00200D \u00200D\u000635\u000670 \u000635\u000670\u000635\u000670\u000635\u000670 </string>
     </test>
-    <test label="U+0635
-U+0670" stylename="cv20_1">
-      <comment>sad-ar alefabove-ar</comment>
-      <string>\u000635\u000670 \u000635\u000670\u00200D \u00200D\u000635\u000670\u00200D \u00200D\u000635\u000670 \u000635\u000670\u000635\u000670\u000635\u000670 </string>
-    </test>
-    <test label="U+0635
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>sad-ar alefabove-ar</comment>
-      <string>\u000635\u000670 \u000635\u000670\u00200D \u00200D\u000635\u000670\u00200D \u00200D\u000635\u000670 \u000635\u000670\u000635\u000670\u000635\u000670 </string>
-    </test>
-    <test label="U+0635
-U+0670" stylename="cv20_1_cv76_2">
-      <comment>sad-ar alefabove-ar</comment>
-      <string>\u000635\u000670 \u000635\u000670\u00200D \u00200D\u000635\u000670\u00200D \u00200D\u000635\u000670 \u000635\u000670\u000635\u000670\u000635\u000670 </string>
-    </test>
     <test label="U+0636
 U+0670">
       <comment>dad-ar alefabove-ar</comment>
@@ -228,21 +211,6 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+0636
 U+0670" stylename="cv76_2">
-      <comment>dad-ar alefabove-ar</comment>
-      <string>\u000636\u000670 \u000636\u000670\u00200D \u00200D\u000636\u000670\u00200D \u00200D\u000636\u000670 \u000636\u000670\u000636\u000670\u000636\u000670 </string>
-    </test>
-    <test label="U+0636
-U+0670" stylename="cv20_1">
-      <comment>dad-ar alefabove-ar</comment>
-      <string>\u000636\u000670 \u000636\u000670\u00200D \u00200D\u000636\u000670\u00200D \u00200D\u000636\u000670 \u000636\u000670\u000636\u000670\u000636\u000670 </string>
-    </test>
-    <test label="U+0636
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>dad-ar alefabove-ar</comment>
-      <string>\u000636\u000670 \u000636\u000670\u00200D \u00200D\u000636\u000670\u00200D \u00200D\u000636\u000670 \u000636\u000670\u000636\u000670\u000636\u000670 </string>
-    </test>
-    <test label="U+0636
-U+0670" stylename="cv20_1_cv76_2">
       <comment>dad-ar alefabove-ar</comment>
       <string>\u000636\u000670 \u000636\u000670\u00200D \u00200D\u000636\u000670\u00200D \u00200D\u000636\u000670 \u000636\u000670\u000636\u000670\u000636\u000670 </string>
     </test>
@@ -261,21 +229,6 @@ U+0670" stylename="cv76_2">
       <comment>sadTwodotsbelow-ar alefabove-ar</comment>
       <string>\u00069D\u000670 \u00069D\u000670\u00200D \u00200D\u00069D\u000670\u00200D \u00200D\u00069D\u000670 \u00069D\u000670\u00069D\u000670\u00069D\u000670 </string>
     </test>
-    <test label="U+069D
-U+0670" stylename="cv20_1">
-      <comment>sadTwodotsbelow-ar alefabove-ar</comment>
-      <string>\u00069D\u000670 \u00069D\u000670\u00200D \u00200D\u00069D\u000670\u00200D \u00200D\u00069D\u000670 \u00069D\u000670\u00069D\u000670\u00069D\u000670 </string>
-    </test>
-    <test label="U+069D
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>sadTwodotsbelow-ar alefabove-ar</comment>
-      <string>\u00069D\u000670 \u00069D\u000670\u00200D \u00200D\u00069D\u000670\u00200D \u00200D\u00069D\u000670 \u00069D\u000670\u00069D\u000670\u00069D\u000670 </string>
-    </test>
-    <test label="U+069D
-U+0670" stylename="cv20_1_cv76_2">
-      <comment>sadTwodotsbelow-ar alefabove-ar</comment>
-      <string>\u00069D\u000670 \u00069D\u000670\u00200D \u00200D\u00069D\u000670\u00200D \u00200D\u00069D\u000670 \u00069D\u000670\u00069D\u000670\u00069D\u000670 </string>
-    </test>
     <test label="U+069E
 U+0670">
       <comment>sadThreedots-ar alefabove-ar</comment>
@@ -288,21 +241,6 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+069E
 U+0670" stylename="cv76_2">
-      <comment>sadThreedots-ar alefabove-ar</comment>
-      <string>\u00069E\u000670 \u00069E\u000670\u00200D \u00200D\u00069E\u000670\u00200D \u00200D\u00069E\u000670 \u00069E\u000670\u00069E\u000670\u00069E\u000670 </string>
-    </test>
-    <test label="U+069E
-U+0670" stylename="cv20_1">
-      <comment>sadThreedots-ar alefabove-ar</comment>
-      <string>\u00069E\u000670 \u00069E\u000670\u00200D \u00200D\u00069E\u000670\u00200D \u00200D\u00069E\u000670 \u00069E\u000670\u00069E\u000670\u00069E\u000670 </string>
-    </test>
-    <test label="U+069E
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>sadThreedots-ar alefabove-ar</comment>
-      <string>\u00069E\u000670 \u00069E\u000670\u00200D \u00200D\u00069E\u000670\u00200D \u00200D\u00069E\u000670 \u00069E\u000670\u00069E\u000670\u00069E\u000670 </string>
-    </test>
-    <test label="U+069E
-U+0670" stylename="cv20_1_cv76_2">
       <comment>sadThreedots-ar alefabove-ar</comment>
       <string>\u00069E\u000670 \u00069E\u000670\u00200D \u00200D\u00069E\u000670\u00200D \u00200D\u00069E\u000670 \u00069E\u000670\u00069E\u000670\u00069E\u000670 </string>
     </test>
@@ -321,21 +259,6 @@ U+0670" stylename="cv76_2">
       <comment>dadDotbelow-ar alefabove-ar</comment>
       <string>\u0006FB\u000670 \u0006FB\u000670\u00200D \u00200D\u0006FB\u000670\u00200D \u00200D\u0006FB\u000670 \u0006FB\u000670\u0006FB\u000670\u0006FB\u000670 </string>
     </test>
-    <test label="U+06FB
-U+0670" stylename="cv20_1">
-      <comment>dadDotbelow-ar alefabove-ar</comment>
-      <string>\u0006FB\u000670 \u0006FB\u000670\u00200D \u00200D\u0006FB\u000670\u00200D \u00200D\u0006FB\u000670 \u0006FB\u000670\u0006FB\u000670\u0006FB\u000670 </string>
-    </test>
-    <test label="U+06FB
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>dadDotbelow-ar alefabove-ar</comment>
-      <string>\u0006FB\u000670 \u0006FB\u000670\u00200D \u00200D\u0006FB\u000670\u00200D \u00200D\u0006FB\u000670 \u0006FB\u000670\u0006FB\u000670\u0006FB\u000670 </string>
-    </test>
-    <test label="U+06FB
-U+0670" stylename="cv20_1_cv76_2">
-      <comment>dadDotbelow-ar alefabove-ar</comment>
-      <string>\u0006FB\u000670 \u0006FB\u000670\u00200D \u00200D\u0006FB\u000670\u00200D \u00200D\u0006FB\u000670 \u0006FB\u000670\u0006FB\u000670\u0006FB\u000670 </string>
-    </test>
     <test label="U+08AF
 U+0670">
       <comment>sadThreedotsbelow-ar alefabove-ar</comment>
@@ -348,21 +271,6 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+08AF
 U+0670" stylename="cv76_2">
-      <comment>sadThreedotsbelow-ar alefabove-ar</comment>
-      <string>\u0008AF\u000670 \u0008AF\u000670\u00200D \u00200D\u0008AF\u000670\u00200D \u00200D\u0008AF\u000670 \u0008AF\u000670\u0008AF\u000670\u0008AF\u000670 </string>
-    </test>
-    <test label="U+08AF
-U+0670" stylename="cv20_1">
-      <comment>sadThreedotsbelow-ar alefabove-ar</comment>
-      <string>\u0008AF\u000670 \u0008AF\u000670\u00200D \u00200D\u0008AF\u000670\u00200D \u00200D\u0008AF\u000670 \u0008AF\u000670\u0008AF\u000670\u0008AF\u000670 </string>
-    </test>
-    <test label="U+08AF
-U+0670" stylename="cv20_1_cv76_1">
-      <comment>sadThreedotsbelow-ar alefabove-ar</comment>
-      <string>\u0008AF\u000670 \u0008AF\u000670\u00200D \u00200D\u0008AF\u000670\u00200D \u00200D\u0008AF\u000670 \u0008AF\u000670\u0008AF\u000670\u0008AF\u000670 </string>
-    </test>
-    <test label="U+08AF
-U+0670" stylename="cv20_1_cv76_2">
       <comment>sadThreedotsbelow-ar alefabove-ar</comment>
       <string>\u0008AF\u000670 \u0008AF\u000670\u00200D \u00200D\u0008AF\u000670\u00200D \u00200D\u0008AF\u000670 \u0008AF\u000670\u0008AF\u000670\u0008AF\u000670 </string>
     </test>
@@ -473,17 +381,17 @@ U+0670" stylename="cv76_2">
     </test>
     <test label="U+076D
 U+0670">
-      <comment>seenTwodotshorizontalabove-ar alefabove-ar</comment>
+      <comment>seenTwodotsverticalabove-ar alefabove-ar</comment>
       <string>\u00076D\u000670 \u00076D\u000670\u00200D \u00200D\u00076D\u000670\u00200D \u00200D\u00076D\u000670 \u00076D\u000670\u00076D\u000670\u00076D\u000670 </string>
     </test>
     <test label="U+076D
 U+0670" stylename="cv76_1">
-      <comment>seenTwodotshorizontalabove-ar alefabove-ar</comment>
+      <comment>seenTwodotsverticalabove-ar alefabove-ar</comment>
       <string>\u00076D\u000670 \u00076D\u000670\u00200D \u00200D\u00076D\u000670\u00200D \u00200D\u00076D\u000670 \u00076D\u000670\u00076D\u000670\u00076D\u000670 </string>
     </test>
     <test label="U+076D
 U+0670" stylename="cv76_2">
-      <comment>seenTwodotshorizontalabove-ar alefabove-ar</comment>
+      <comment>seenTwodotsverticalabove-ar alefabove-ar</comment>
       <string>\u00076D\u000670 \u00076D\u000670\u00200D \u00200D\u00076D\u000670\u00200D \u00200D\u00076D\u000670 \u00076D\u000670\u00076D\u000670\u00076D\u000670 </string>
     </test>
     <test label="U+0770

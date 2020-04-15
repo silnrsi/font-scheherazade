@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 'generate ftml tests from glyph_data.csv and UFO'
 __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018,2020 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
@@ -31,7 +31,7 @@ joinGroupKeys = {
     'Ain' : 1,
     'Alef' : 2,
     'Beh' : 3,
-    'Yeh' : 4, 'Farsi_Yeh' :4 , # Near Beh Due To Medial Form
+    'Yeh' : 4, 'Farsi_Yeh' : 4, # Near Beh Due To Medial Form
     'Noon' :5, 'African_Noon' : 5,  # Near Yeh Due To Medial Form
     'Nya' : 6,  # Near Noon Due To Final Form
     'Sad' : 7,  # Near Noon Due To Final Form
@@ -41,17 +41,18 @@ joinGroupKeys = {
     'Yeh_Barree' : 11, 'Burushaski_Yeh_Barree' : 11,
     'Dal' : 12,
     'Feh' : 13, 'African_Feh' : 13,
-    'Gaf' : 14, 'Kaf' : 14,
-    'Swash_Kaf' :15 ,
-    'Hah' : 16,
-    'Heh' : 17,
-    'Heh_Goal' : 18,
-    'Teh_Marbuta' : 19, 'Teh_Marbuta_Goal' : 19,
-    'Knotted_Heh' :20,
-    'Lam' : 21,
-    'Meem' : 22,
-    'Qaf' : 23, 'African_Qaf' : 23,
-    'Reh' :24 ,
+    'Kaf' : 14,
+    'Gaf' : 15,
+    'Swash_Kaf' : 16,
+    'Hah' : 17,
+    'Heh' : 18,
+    'Heh_Goal' : 19,
+    'Teh_Marbuta' : 20, 'Teh_Marbuta_Goal' : 20,
+    'Knotted_Heh' :21,
+    'Lam' : 22,
+    'Meem' : 23,
+    'Qaf' : 24, 'African_Qaf' : 24,
+    'Reh' : 25 ,
     'Tah' : 26,
     'Waw' : 27,
     'Straight_Waw' : 28,
@@ -69,6 +70,9 @@ def doit(args):
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
+
+    def basenameSortKey(uid:int):
+        return builder.char(uid).basename.lower()
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
@@ -179,6 +183,21 @@ def doit(args):
         ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0651\u0670\u0647", label = "a-l-zwj-l-s-da-h", comment = "Rule 4a: shouldn't match")
         ftml.closeTest()
 
+    if test.lower().startswith("al sorted"):
+        # all AL chars, sorted by shape:
+        ftml.startTestGroup('Arabic Letters')
+        for uid in sorted(filter(lambda u: get_ucd(u, 'bc') == 'AL', builder.uids()), key=joinGoupSortKey):
+            c = builder.char(uid)
+            for featlist in builder.permuteFeatures(uids = (uid,)):
+                ftml.setFeatures(featlist)
+                builder.render((uid,), ftml)
+            ftml.clearFeatures()
+            if len(c.langs):
+                for langID in builder.allLangs:
+                    ftml.setLang(langID)
+                    builder.render((uid,), ftml)
+                ftml.clearLang()
+
     if test.lower().startswith("diac"):
         # Diac attachment:
 
@@ -287,7 +306,10 @@ def doit(args):
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
                         ftml.setLang(langID)
-                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],)):
+                            ftml.setFeatures(featlist)
+                            ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                        ftml.clearFeatures()
                     ftml.clearLang()
                     ftml.closeTest()
 
@@ -328,11 +350,10 @@ def doit(args):
     if test.lower().startswith('kern'):
         rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids() ))
         waws = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Waw', builder.uids()))
-        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()))
+        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()), key=joinGoupSortKey)
         # NB: I wondered about including punctuation, i.e.,  get_ucd(uid, 'gc').startswith('P'), but the default
         #     spacing is pretty good and graphite collision avoidance makes it worse, so the only one we need is FDFE
-        uids = sorted(uids, key=joinGoupSortKey)
-        #
+
         dbehf = chr(0x066E) + chr(0x200D)  # dotless beh final
         alef = chr(0x0627)   # alef
         zwj  = chr(0x200D)   # Zero width joiner
@@ -440,7 +461,39 @@ def doit(args):
                         ftml.clearFeatures()
                         ftml.closeTest()
 
+    if test.lower().startswith('yehbar'):
+        # Yehbarree tail interacting with diacs below previous char
+        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D',), builder.uids()), key=basenameSortKey)
+        markbelow = r'\u064D'  # kasratan
+        markabove = r'\u06EC'  # dotStopabove-ar
+        zwj = r'\u200D'   # Zero width joiner
 
+        ftml.startTestGroup('U+06D2 yehbarree')
+        yehbarree = r'\u06D2'
+        for uid in uids:
+            if uid < 32: continue
+            c = r'\u{:04X}'.format(uid)
+            label = 'U+{:04X}'.format(uid)
+            comment = builder.char(uid).basename
+            for featlist in builder.permuteFeatures(uids = (uid,)):
+                ftml.setFeatures(featlist)
+                ftml.addToTest(uid, f"{c}{markabove}{yehbarree} {zwj}{c}{markabove}{yehbarree} {c}{markbelow}{markabove}{yehbarree} {zwj}{c}{markbelow}{markabove}{yehbarree}", label, comment)
+                ftml.closeTest()
+            ftml.clearFeatures()
+
+        # Also test other forms of yehbarree (yehbarreeHamzaabove-ar, yehbarreeTwoabove, yehbarreeThreeabove-ar)
+        ftml.startTestGroup('yehbarree-like')
+        for yehbarree in filter(lambda x: x in builder.uids(), (0x06D3, 0x077A, 0x077B)):
+            for uid in filter(lambda x: x in builder.uids(),(0x06A0, 0x08B3)):
+                c = r'\u{:04X}'.format(uid)
+                yb = r'\u{:04X}'.format(yehbarree)
+                label = 'U+{:04X} U+{:04X}'.format(uid, yehbarree)
+                comment = builder.char(uid).basename + ' ' + builder.char(yehbarree).basename
+                for featlist in builder.permuteFeatures(uids=(uid,)):
+                    ftml.setFeatures(featlist)
+                    ftml.addToTest(uid, f"{c}{markabove}{yb} {zwj}{c}{markabove}{yb} {c}{markbelow}{markabove}{yb} {zwj}{c}{markbelow}{markabove}{yb}", label, comment)
+                    ftml.closeTest()
+                ftml.clearFeatures()
 
     if test.lower().startswith('classes'):
         zwj = chr(0x200D)
