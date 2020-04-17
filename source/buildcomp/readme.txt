@@ -10,6 +10,9 @@ This folder is used to generate glyphs from components. The component definition
   
 	 - Use the -a option to do a dry run and see errors before the real thing.
 	 
+After running these scripts, APs need to be checked and cleaned up on the generated glyphs.
+
+	 
 The files are:
 
 * glyphs2build.csv - a subset of absGlyphList.csv containing only the new glyphs to be processed.
