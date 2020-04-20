@@ -128,11 +128,15 @@ shaddaKasra {
     settings {
         std {
             value = 0;
-            name.1033 = string("Raised");
+            name.1033 = string("Default");  // ie, unchanged from raised
         }
-        sindhiUrdu {
+        lowered {
             value = 1;
             name.1033 = string("Lowered");
+        }
+        raised {
+            value = 2;
+            name.1033 = string("Raised");  // overriding a language preference
         }
     }
     default = std;
@@ -429,7 +433,7 @@ rohingya {
     	"rhg"	// Rohingya
     );
     easternDigits = rohingya;
-    shaddaKasra = sindhiUrdu;
+    shaddaKasra = lowered;
     dammatanAlt = sixNine;
 };
 
@@ -444,24 +448,25 @@ shina {
 ***/
 
 sindhi {
-    languages = ( "snd", "sd" ); // Sindhi
+    languages = ( "snd", "sd" );  // Sindhi
     meemAlt = sindhi;
     hehAlt = sindhi;
     easternDigits = sindhi;
-    shaddaKasra = sindhiUrdu;
+    shaddaKasra = lowered;
 };
 
 urdu {
-    languages = ( "urd", "ur" ); // Urdu
+    languages = ( "urd", "ur" );  // Urdu
 //    hehAlt = urdu; // removed
     easternDigits = urdu;
-    shaddaKasra = sindhiUrdu;
+    shaddaKasra = lowered;
 };
 
 wolof {
     languages = ( "wol", "wo" );  // Wolof
     dalAlt = 1;
     dammaAlt = 2;  // short damma
+    shaddaKasra = lowered;
 };
 
 

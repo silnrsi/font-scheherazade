@@ -16,10 +16,11 @@
 #**********************************
 
 languagesystem arab dflt ;
-languagesystem arab KUR  ;
-languagesystem arab SND  ;
-languagesystem arab URD  ;
-#languagesystem arab ROH ;  -- does not exist
+languagesystem arab KUR  ;    # Kurdish
+languagesystem arab RHG  ;    # Rohingya -- supported by Harfbuzz
+languagesystem arab SND  ;    # Sindhi
+languagesystem arab URD  ;    # Urdu
+languagesystem arab WLF  ;    # Wolof
 languagesystem latn dflt ;
 
 
@@ -118,6 +119,15 @@ lookup HamzaLigatures {
     sub @HamzaMarks hamzaabove-ar by @HamzaLigatures ;
 } HamzaLigatures;
 
+lookup RohingyaCALT {
+  lookupflag 0 ;
+    sub four-persian by four-persian.roh ;
+    sub six-persian by six-persian.urdu ;
+    sub seven-persian by seven-persian.urdu ;
+    sub @cno_sixNine by @c_sixNine ;
+    sub @Kasra by @Kasra_lowered ;
+} RohingyaCALT  ;
+
 lookup SindhiCALT {
   lookupflag 0 ;
     sub heh-ar.medi by heh-ar.knottedHigh.medi ;
@@ -127,16 +137,18 @@ lookup SindhiCALT {
     sub seven-persian by seven-persian.urdu ;
 ##    sub dammatan-ar by dammatan-ar.sixNine ;  # old bug
     sub @Meem by @Meem.sindhi ;
+    sub @Kasra by @Kasra_lowered;
 } SindhiCALT;
 
 lookup UrduCALT {
-  lookupflag IgnoreMarks ;
+  lookupflag 0 ;
     sub four-persian by four-persian.urdu ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
 ##    sub heh-ar.init by heh-ar.hooked.init ; -- no longer used for Urdu
 ##    sub heh-ar.medi by heh-ar.hooked.medi ;
 ##    sub heh-ar.fina by heh-ar.hooked.fina ;
+    sub @Kasra by @Kasra_lowered;
 } UrduCALT;
 
 lookup WolofCALT {
@@ -292,6 +304,7 @@ lookup KasraHigh {
 lookup KasraAlternates {
   lookupflag 0 ;
     # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
+    #   0=default (raised)    1=lowered       2=raised
     sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
     sub @Kasra         from [ @Kasra_lowered  @Kasra ];
 } KasraAlternates;
@@ -316,7 +329,9 @@ lookup DammaInvertedAlternates {
 
 lookup DaggerAlefToLarge_target {
   lookupflag 0 ;
-    sub alefabove-ar by alefabove-ar.large ;
+  	# 0=default;            1=large;            2=small
+  	sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
+    #sub alefabove-ar by alefabove-ar.large ;
 } DaggerAlefToLarge_target ;
 
 lookup DaggerAlefToLarge {
@@ -580,37 +595,41 @@ lookup SubtendingMarks {
 #--- Substitution ---
 
 feature init {  # Initial Forms
-    script arab;  # Arabic
+    script arab;
       lookup ltrInit;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
 } init ;
 
 feature medi {  # Medial Forms
-    script arab;  # Arabic
+    script arab;
       lookup ltrMedi;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
 } medi ;
 
 feature fina {  # Terminal Forms
-    script arab;  # Arabic
+    script arab;
       lookup ltrFina;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
 } fina ;
 
+# TODO: simplify this code:
 feature ccmp {  # Glyph Composition/Decomposition
-    script arab;  # Arabic
+    script arab;
         language dflt;  # Default
             lookup SmallMaddah;
             lookup DecomposeForColor;
@@ -621,12 +640,22 @@ feature ccmp {  # Glyph Composition/Decomposition
             lookup DecomposeForColor;
             lookup FontCheck1;
             lookup FontCheck2;
+        language RHG  exclude_dflt;  # Rohingya
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
         language SND  exclude_dflt;  # Sindhi
             lookup SmallMaddah;
             lookup DecomposeForColor;
             lookup FontCheck1;
             lookup FontCheck2;
         language URD  exclude_dflt;  # Urdu
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
+        language WLF  exclude_dflt;  # Wolof
             lookup SmallMaddah;
             lookup DecomposeForColor;
             lookup FontCheck1;
@@ -643,7 +672,7 @@ feature rtlm {  # Right-To-Left Mirrored Forms
 } rtlm ;
 
 feature rlig {  # Required Ligatures
-    script arab;  # Arabic
+    script arab;
         language dflt;  # Default
             lookup Ligatures;
             lookup ShaddaLigatures;
@@ -654,6 +683,11 @@ feature rlig {  # Required Ligatures
             lookup Ligatures;
             lookup ShaddaLigatures;
             #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
+            lookup ComposeLowHamzaAbove;
+            lookup HamzaLigatures;
+        language RHG  exclude_dflt;  # Rohingya
+            lookup Ligatures;
+            lookup ShaddaLigatures;
             lookup ComposeLowHamzaAbove;
             lookup HamzaLigatures;
         language SND  exclude_dflt;  # Sindhi
@@ -670,18 +704,20 @@ feature rlig {  # Required Ligatures
 
 do if False; {
 feature calt {  # Contextual Alternates
-    script arab;  # Arabic
+    script arab;
         language dflt;  # Default
             lookup SignWithDigits;
             #lookup SignDigits;
             lookup MaddaVowel1;
             lookup MaddaVowel2;
         language KUR  exclude_dflt;  # Kurdish
+            lookup KurdishHeh;
             lookup SignWithDigits;
             #lookup SignDigits;
             lookup MaddaVowel1;
             lookup MaddaVowel2;
-            lookup KurdishHeh;
+        language RHG ; # Rohingya  ?????????
+            lookup RohingyaCALT ;
         language SND  exclude_dflt;  # Sindhi
             lookup SindhiCALT;
             lookup SignWithDigits;
@@ -696,7 +732,7 @@ feature calt {  # Contextual Alternates
             lookup MaddaVowel2;
         language  WLF  exclude_dflt;  # Wolof
         		lookup WolofCALT;
-    script latn;  # Latin
+    script latn;
         language dflt;  # Default
             lookup SignWithDigits;
             #lookup SignDigits;
@@ -712,9 +748,11 @@ feature calt {  # Contextual Alternates
         # lookup SignDigits;
         lookup MaddaVowel1;
         lookup MaddaVowel2;
-    script arab;  # Arabic
+    script arab;
       language KUR ; # Kurdish
         lookup KurdishHeh ;
+      language RHG ; #Rohingya
+        lookup RohingyaCALT ;
       language SND ; # Sindhi
         lookup SindhiCALT ;
       language URD ; # Urdu
@@ -726,7 +764,7 @@ feature calt {  # Contextual Alternates
 } calt ;
 
 feature salt {  # Stylistic Alternates
-    script arab;  # Arabic
+    script arab;
       lookup AyahAlternates;
         language dflt;  # Default
 } salt ;
@@ -734,13 +772,14 @@ feature salt {  # Stylistic Alternates
 #--- Character Variants ---
 
 feature cv12 {  # Character Variant 12
-    script arab;  # Arabic
-      lookup DalAlternates;
+    script arab;
+        lookup DalAlternates;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
-      # language WLF  ;  but not this one since we enable it in the WolofCALT
+      # language WLF;  -- but not this one since we enable it in the WolofCALT
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
@@ -750,15 +789,14 @@ feature cv12 {  # Character Variant 12
 
 # Use meem alternates for languages other than Sindhi
 feature cv44 {  # Character Variant 44
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup MeemAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup MeemAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup MeemAlternates;
-        language URD  exclude_dflt;  # Urdu
-            lookup MeemAlternates;
+    script arab;
+        lookup MeemAlternates;
+      # Force other languages to include Arabic script lookups
+      language URD;  # Urdu
+      language KUR;  # Kurdish
+      language RHG;  # Rohingya
+      # language SND; -- but not this one since we enable it in SindhiCALT
+      language WLF;  # Wolof
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
@@ -767,9 +805,11 @@ feature cv44 {  # Character Variant 44
 } cv44 ;
 
 feature cv48 {  # Character Variant 48
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup HehAlternates;
+    script arab;
+      language dflt;  # Default
+          lookup HehAlternates;
+        language RHG;  # Rohingya
+        language WLF;  # Wolof
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
@@ -780,8 +820,7 @@ feature cv48 {  # Character Variant 48
 } cv48 ;
 
 feature cv50 {  # Character Variant 50
-    script arab;  # Arabic
-      lookup ArabicUAlternates;
+    lookup ArabicUAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
@@ -799,8 +838,7 @@ feature cv60 {  # Character Variant 60
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
-    # Same for latin & arabic:
-        lookup KasraAlternates;
+    lookup KasraAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -809,10 +847,8 @@ feature cv62 {  # Character Variant 62
     } ;
 } cv62 ;
 
-
 feature cv70 {  # Character Variant 70
-    # Same for latin & arabic:
-        lookup DammaAlternates;
+    lookup DammaAlternates;
     # Except Wolof where it is already set to short
     script arab ;
         language WLF exclude_dflt ;
@@ -873,11 +909,12 @@ feature cv80 {  # Character Variant 80
 } cv80 ;
 
 feature cv82 {  # Character Variant 82
-    script arab;  # Arabic
-        language dflt;  # Default
-            lookup PersianDigitAlternates;
-        language KUR  exclude_dflt;  # Kurdish
-            lookup PersianDigitAlternates;
+    script arab;
+      language dflt;  # Default
+        lookup PersianDigitAlternates;
+      # This language uses the default behavior:
+      language WLF;  # Wolof
+      # Other languages impose the language-specific forms.
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
@@ -908,7 +945,7 @@ feature cv84 {  # Character Variant 84
 
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
 # same or later pass as cv62 itself, and it has to execute whether or not cv62 feature is requested,
-# so it has to be part of some other feature. In Harfbuzz, we could use either clig, or liga since they
+# so it has to be part of some other feature. In Harfbuzz, we could use either clig or liga, since they
 # are pulled in from the Horizontal features that follow shaper-specific features and are, therefore
 # executed at the same time as cvXX.
 
@@ -928,18 +965,19 @@ feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
         lookup mark_to_base;
         lookup alef_to_base;
-    script arab;  # Arabic
+    script arab;
 ####        lookup AlefMark2BelowAfterLam;
 ####        lookup MarkKern;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
 } mark ;
 
 #feature mark {  # Mark Positioning
-#    script arab;  # Arabic
+#    script arab;
 #        language dflt;  # Default
 #            lookup Marks;
 #            lookup MarksBelowTailDown;
@@ -960,7 +998,7 @@ feature mark {  # Mark to base Positioning
 #            lookup MarksBelowTailDown;
 #            lookup MarksBelowTailUp;
 #            lookup AlefMark2BelowAfterLam;
-#    script latn;  # Latin
+#    script latn;
 #        language dflt;  # Default
 #            lookup Marks;
 #            lookup AlefMark2BelowAfterLam;
@@ -974,11 +1012,14 @@ feature mkmk {  # Mark to mark Positioning
 
 
 #feature mkmk {  # Mark to Mark Positioning
-#    script arab;  # Arabic
+#    script arab;
 #        language dflt;  # Default
 #            lookup MarksToMarkBelow;
 #            lookup MarksToMarkAbove;
 #        language KUR  exclude_dflt;  # Kurdish
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#        language RHG  exclude_dflt;  # Rohingya
 #            lookup MarksToMarkBelow;
 #            lookup MarksToMarkAbove;
 #        language SND  exclude_dflt;  # Sindhi
@@ -987,7 +1028,7 @@ feature mkmk {  # Mark to mark Positioning
 #        language URD  exclude_dflt;  # Urdu
 #            lookup MarksToMarkBelow;
 #            lookup MarksToMarkAbove;
-#    script latn;  # Latin
+#    script latn;
 #        language dflt;  # Default
 #            lookup MarksToMarkBelow;
 #            lookup MarksToMarkAbove;
@@ -995,10 +1036,11 @@ feature mkmk {  # Mark to mark Positioning
 
 
 feature curs {  # Cursive Positioning
-    script arab;  # Arabic
+    script arab;
       lookup LamAlefConnection;
       # Force other languages to include Arabic script lookups
       language KUR  ;
+      language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
@@ -1012,7 +1054,7 @@ feature kern {  # Kerning
 
 
 ####feature kern {  # Kerning
-####    script arab;  # Arabic
+####    script arab;
 ####        language dflt;  # Default
 ####            lookup Reh;
 ####            lookup SubtendingAyah;
@@ -1036,7 +1078,7 @@ feature kern {  # Kerning
 ####            ...
 ####        language URD  exclude_dflt;  # Urdu
 ####            ...
-####    script latn;  # Latin
+####    script latn;
 ####        language dflt;  # Default
 ####            lookup SubtendingAyah;
 ####            ...
