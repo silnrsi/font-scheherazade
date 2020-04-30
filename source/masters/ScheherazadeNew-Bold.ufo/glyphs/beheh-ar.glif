@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="beheh-ar" format="2">
-  <advance width="2182"/>
+  <advance width="1964"/>
   <unicode hex="0680"/>
-  <anchor x="644" y="818" name="alef"/>
-  <anchor x="1072" y="928" name="diaA"/>
-  <anchor x="992" y="-1214" name="diaB"/>
+  <anchor x="580" y="736" name="alef"/>
+  <anchor x="965" y="835" name="diaA"/>
+  <anchor x="893" y="-1093" name="diaB"/>
   <outline>
     <component base="behDotless-ar"/>
-    <component base="_dot4" xOffset="1069" yOffset="-541"/>
+    <component base="_dot4" xScale="0.9" yScale="0.9" xOffset="962" yOffset="-487"/>
   </outline>
   <lib>
     <dict>

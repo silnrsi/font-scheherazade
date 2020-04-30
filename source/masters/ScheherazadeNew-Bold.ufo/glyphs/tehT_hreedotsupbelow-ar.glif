@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehThreedotsupbelow-ar" format="2">
-  <advance width="2182"/>
+  <advance width="1964"/>
   <unicode hex="0753"/>
-  <anchor x="516" y="1089" name="alef"/>
-  <anchor x="890" y="1362" name="diaA"/>
-  <anchor x="987" y="-1214" name="diaB"/>
+  <anchor x="464" y="980" name="alef"/>
+  <anchor x="801" y="1226" name="diaA"/>
+  <anchor x="888" y="-1093" name="diaB"/>
   <outline>
     <component base="behDotless-ar"/>
-    <component base="_dot2h" xOffset="1016" yOffset="929"/>
-    <component base="_dot3u" xOffset="1125" yOffset="-819"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="914" yOffset="836"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="1013" yOffset="-737"/>
   </outline>
   <lib>
     <dict>

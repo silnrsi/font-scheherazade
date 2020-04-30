@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="kehehDotabove-ar.init" format="2">
-  <advance width="1354"/>
-  <anchor x="32" y="1757" name="alef"/>
-  <anchor x="170" y="1888" name="diaA"/>
-  <anchor x="315" y="-254" name="diaB"/>
+  <advance width="1219"/>
+  <anchor x="29" y="1581" name="alef"/>
+  <anchor x="153" y="1699" name="diaA"/>
+  <anchor x="284" y="-229" name="diaB"/>
   <outline>
     <component base="kaf-ar.init"/>
-    <component base="_dot1" xOffset="220" yOffset="1449"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="198" yOffset="1304"/>
   </outline>
   <lib>
     <dict>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="seenTahTwodotshorizontalabove-ar.medi" format="2">
-  <advance width="1594"/>
-  <anchor x="320" y="1615" name="alef"/>
-  <anchor x="629" y="2107" name="diaA"/>
-  <anchor x="666" y="-419" name="diaB"/>
+  <advance width="1435"/>
+  <anchor x="288" y="1454" name="alef"/>
+  <anchor x="566" y="1896" name="diaA"/>
+  <anchor x="599" y="-377" name="diaB"/>
   <outline>
     <component base="seen-ar.medi"/>
-    <component base="_dot2h_tah" xOffset="854" yOffset="945"/>
+    <component base="_dot2h_tah" xScale="0.9" yScale="0.9" xOffset="769" yOffset="851"/>
   </outline>
   <lib>
     <dict>

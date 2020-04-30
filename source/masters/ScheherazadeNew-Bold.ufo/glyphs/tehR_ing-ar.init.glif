@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehRing-ar.init" format="2">
-  <advance width="637"/>
-  <anchor x="145" y="1614" name="alef"/>
-  <anchor x="203" y="1768" name="diaA"/>
-  <anchor x="216" y="-510" name="diaB"/>
-  <anchor x="216" y="-1160" name="diaBtailDown"/>
+  <advance width="573"/>
+  <anchor x="131" y="1453" name="alef"/>
+  <anchor x="183" y="1591" name="diaA"/>
+  <anchor x="194" y="-459" name="diaB"/>
+  <anchor x="194" y="-1044" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_ring" xOffset="284" yOffset="-67"/>
-    <component base="_dot2h" xOffset="325" yOffset="1243"/>
+    <component base="_ring" xScale="0.9" yScale="0.9" xOffset="256" yOffset="-60"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="293" yOffset="1119"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dadDotbelow-ar" format="2">
-  <advance width="2555"/>
+  <advance width="2300"/>
   <unicode hex="06FB"/>
-  <anchor x="658" y="296" name="alef"/>
-  <anchor x="798" y="1006" name="diaA"/>
-  <anchor x="476" y="-972" name="diaB"/>
+  <anchor x="592" y="266" name="alef"/>
+  <anchor x="718" y="905" name="diaA"/>
+  <anchor x="428" y="-875" name="diaB"/>
   <outline>
     <component base="sad-ar"/>
-    <component base="_dot1" xOffset="1575" yOffset="1061"/>
-    <component base="_dot1" xOffset="1775" yOffset="-357"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="1418" yOffset="955"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="1598" yOffset="-321"/>
   </outline>
   <lib>
     <dict>

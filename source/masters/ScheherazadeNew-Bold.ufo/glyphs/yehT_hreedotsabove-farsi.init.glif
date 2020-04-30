@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehThreedotsabove-farsi.init" format="2">
-  <advance width="637"/>
-  <anchor x="186" y="1897" name="alef"/>
-  <anchor x="209" y="2060" name="diaA"/>
-  <anchor x="212" y="-728" name="diaB"/>
-  <anchor x="212" y="-1160" name="diaBtailDown"/>
+  <advance width="573"/>
+  <anchor x="167" y="1707" name="alef"/>
+  <anchor x="188" y="1854" name="diaA"/>
+  <anchor x="191" y="-655" name="diaB"/>
+  <anchor x="191" y="-1044" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_dot3u" xOffset="360" yOffset="1177"/>
-    <component base="_dot2h" xOffset="273" yOffset="-290"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="324" yOffset="1059"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="246" yOffset="-261"/>
   </outline>
   <lib>
     <dict>

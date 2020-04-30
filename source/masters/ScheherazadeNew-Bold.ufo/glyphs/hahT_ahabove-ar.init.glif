@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hahTahabove-ar.init" format="2">
-  <advance width="1624"/>
-  <anchor x="377" y="1546" name="alef"/>
-  <anchor x="625" y="1962" name="diaA"/>
-  <anchor x="776" y="-319" name="diaB"/>
+  <advance width="1462"/>
+  <anchor x="339" y="1391" name="alef"/>
+  <anchor x="563" y="1766" name="diaA"/>
+  <anchor x="698" y="-287" name="diaB"/>
   <outline>
     <component base="hah-ar.init"/>
-    <component base="_tah" xOffset="790" yOffset="1202"/>
+    <component base="_tah" xScale="0.9" yScale="0.9" xOffset="711" yOffset="1082"/>
   </outline>
   <lib>
     <dict>

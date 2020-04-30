@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dad-ar.medi" format="2">
-  <advance width="1818"/>
-  <anchor x="461" y="1243" name="alef"/>
-  <anchor x="750" y="1610" name="diaA"/>
-  <anchor x="589" y="-525" name="diaB"/>
+  <advance width="1636"/>
+  <anchor x="415" y="1119" name="alef"/>
+  <anchor x="675" y="1449" name="diaA"/>
+  <anchor x="530" y="-473" name="diaB"/>
   <outline>
-    <component base="sad-ar.medi" xOffset="16"/>
-    <component base="_dot1" xOffset="900" yOffset="1118"/>
+    <component base="sad-ar.medi" xOffset="14"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="810" yOffset="1006"/>
   </outline>
   <lib>
     <dict>

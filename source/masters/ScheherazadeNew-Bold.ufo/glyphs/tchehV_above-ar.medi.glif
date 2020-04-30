@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tchehVabove-ar.medi" format="2">
-  <advance width="1588"/>
-  <anchor x="671" y="1633" name="alef"/>
-  <anchor x="780" y="1850" name="diaA"/>
-  <anchor x="763" y="-1031" name="diaB"/>
+  <advance width="1429"/>
+  <anchor x="604" y="1470" name="alef"/>
+  <anchor x="702" y="1665" name="diaA"/>
+  <anchor x="687" y="-928" name="diaB"/>
   <outline>
     <component base="hah-ar.medi"/>
-    <component base="_smallV" xOffset="824" yOffset="1215"/>
-    <component base="_dot3d" xOffset="792" yOffset="-252"/>
+    <component base="_smallV" xScale="0.9" yScale="0.9" xOffset="742" yOffset="1094"/>
+    <component base="_dot3d" xScale="0.9" yScale="0.9" xOffset="713" yOffset="-227"/>
   </outline>
   <lib>
     <dict>

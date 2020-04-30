@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hehVinvertedabove-ar.medi" format="2">
-  <advance width="1250"/>
-  <anchor x="242" y="1769" name="alef"/>
-  <anchor x="413" y="1910" name="diaA"/>
-  <anchor x="428" y="-242" name="diaB"/>
+  <advance width="1125"/>
+  <anchor x="218" y="1592" name="alef"/>
+  <anchor x="372" y="1719" name="diaA"/>
+  <anchor x="385" y="-218" name="diaB"/>
   <outline>
     <component base="heh-ar.knottedHigh.medi"/>
-    <component base="_hat" xOffset="457" yOffset="1436"/>
+    <component base="_hat" xScale="0.9" yScale="0.9" xOffset="411" yOffset="1292"/>
   </outline>
   <lib>
     <dict>

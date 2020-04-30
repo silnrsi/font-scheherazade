@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehMarbutagoal-ar" format="2">
-  <advance width="837"/>
+  <advance width="753"/>
   <unicode hex="06C3"/>
-  <anchor x="204" y="1502" name="alef"/>
-  <anchor x="284" y="1724" name="diaA"/>
-  <anchor x="305" y="-291" name="diaB"/>
+  <anchor x="184" y="1352" name="alef"/>
+  <anchor x="256" y="1552" name="diaA"/>
+  <anchor x="275" y="-262" name="diaB"/>
   <outline>
     <component base="ae-ar"/>
-    <component base="_dot2h" xOffset="425" yOffset="1202"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="383" yOffset="1082"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="pehVabove-ar.init" format="2">
-  <advance width="637"/>
-  <anchor x="181" y="1662" name="alef"/>
-  <anchor x="297" y="2014" name="diaA"/>
-  <anchor x="271" y="-1025" name="diaB"/>
-  <anchor x="274" y="-1160" name="diaBtailDown"/>
+  <advance width="573"/>
+  <anchor x="163" y="1496" name="alef"/>
+  <anchor x="267" y="1813" name="diaA"/>
+  <anchor x="244" y="-923" name="diaB"/>
+  <anchor x="247" y="-1044" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_smallV" xOffset="297" yOffset="1302"/>
-    <component base="_dot3d" xOffset="297" yOffset="-281"/>
+    <component base="_smallV" xScale="0.9" yScale="0.9" xOffset="267" yOffset="1172"/>
+    <component base="_dot3d" xScale="0.9" yScale="0.9" xOffset="267" yOffset="-253"/>
   </outline>
   <lib>
     <dict>

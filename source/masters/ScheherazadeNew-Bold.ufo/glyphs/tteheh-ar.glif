@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tteheh-ar" format="2">
-  <advance width="2182"/>
+  <advance width="1964"/>
   <unicode hex="067A"/>
-  <anchor x="539" y="1292" name="alef"/>
-  <anchor x="873" y="1685" name="diaA"/>
-  <anchor x="990" y="-450" name="diaB"/>
+  <anchor x="485" y="1163" name="alef"/>
+  <anchor x="786" y="1517" name="diaA"/>
+  <anchor x="891" y="-405" name="diaB"/>
   <outline>
     <component base="behDotless-ar"/>
-    <component base="_dot2v" xOffset="1006" yOffset="1083"/>
+    <component base="_dot2v" xScale="0.9" yScale="0.9" xOffset="905" yOffset="975"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonTwodotsbelow-ar" format="2">
-  <advance width="1383"/>
+  <advance width="1245"/>
   <unicode hex="0767"/>
-  <anchor x="313" y="1132" name="alef"/>
-  <anchor x="537" y="1466" name="diaA"/>
-  <anchor x="600" y="-1204" name="diaB"/>
+  <anchor x="282" y="1019" name="alef"/>
+  <anchor x="483" y="1319" name="diaA"/>
+  <anchor x="540" y="-1084" name="diaB"/>
   <outline>
     <component base="noonghunna-ar"/>
-    <component base="_dot2h" xOffset="676" yOffset="-786"/>
-    <component base="_dot1" xOffset="603" yOffset="928"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="608" yOffset="-707"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="543" yOffset="835"/>
   </outline>
   <lib>
     <dict>

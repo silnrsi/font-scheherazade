@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gafInvertedstroke-ar" format="2">
-  <advance width="2377"/>
+  <advance width="2139"/>
   <unicode hex="08B0"/>
-  <anchor x="290" y="893" name="alef"/>
-  <anchor x="783" y="1160" name="diaA"/>
-  <anchor x="848" y="-434" name="diaB"/>
+  <anchor x="261" y="804" name="alef"/>
+  <anchor x="705" y="1044" name="diaA"/>
+  <anchor x="763" y="-391" name="diaB"/>
   <outline>
     <component base="keheh-ar"/>
-    <component base="_gafBarCenter" xOffset="1531" yOffset="682"/>
+    <component base="_gafBarCenter" xScale="0.9" yScale="0.9" xOffset="1378" yOffset="614"/>
   </outline>
   <lib>
     <dict>

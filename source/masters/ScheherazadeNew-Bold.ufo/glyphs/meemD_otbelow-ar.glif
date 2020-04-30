@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="meemDotbelow-ar" format="2">
-  <advance width="957"/>
+  <advance width="861"/>
   <unicode hex="0766"/>
-  <anchor x="220" y="1011" name="alef"/>
-  <anchor x="389" y="1259" name="diaA"/>
-  <anchor x="239" y="-1077" name="diaB"/>
+  <anchor x="198" y="910" name="alef"/>
+  <anchor x="350" y="1133" name="diaA"/>
+  <anchor x="215" y="-969" name="diaB"/>
   <outline>
     <component base="meem-ar"/>
-    <component base="_dot1" xOffset="550" yOffset="-115"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="495" yOffset="-104"/>
   </outline>
   <lib>
     <dict>

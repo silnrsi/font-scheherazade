@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehThreeabove-farsi.init" format="2">
-  <advance width="637"/>
-  <anchor x="294" y="1897" name="diaA"/>
-  <anchor x="212" y="-728" name="diaB"/>
-  <anchor x="212" y="-1160" name="diaBtailDown"/>
+  <advance width="573"/>
+  <anchor x="265" y="1707" name="diaA"/>
+  <anchor x="191" y="-655" name="diaB"/>
+  <anchor x="191" y="-1044" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_three" xOffset="318" yOffset="1108"/>
-    <component base="_dot2h" xOffset="273" yOffset="-290"/>
+    <component base="_three" xScale="0.9" yScale="0.9" xOffset="286" yOffset="997"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="246" yOffset="-261"/>
   </outline>
   <lib>
     <dict>

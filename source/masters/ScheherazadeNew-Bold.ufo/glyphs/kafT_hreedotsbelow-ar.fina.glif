@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="kafThreedotsbelow-ar.fina" format="2">
-  <advance width="2053"/>
-  <anchor x="528" y="1259" name="alef"/>
-  <anchor x="861" y="1502" name="diaA"/>
-  <anchor x="845" y="-1015" name="diaB"/>
+  <advance width="1848"/>
+  <anchor x="475" y="1133" name="alef"/>
+  <anchor x="775" y="1352" name="diaA"/>
+  <anchor x="761" y="-914" name="diaB"/>
   <outline>
     <component base="kaf-ar.fina"/>
-    <component base="_dot3d" xOffset="1581" yOffset="-312"/>
+    <component base="_dot3d" xScale="0.9" yScale="0.9" xOffset="1423" yOffset="-281"/>
   </outline>
   <lib>
     <dict>

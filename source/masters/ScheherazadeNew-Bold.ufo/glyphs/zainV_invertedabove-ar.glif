@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="zainVinvertedabove-ar" format="2">
-  <advance width="902"/>
+  <advance width="812"/>
   <unicode hex="08B2"/>
-  <anchor x="490" y="1801" name="diaA"/>
-  <anchor x="197" y="-909" name="diaB"/>
+  <anchor x="441" y="1621" name="diaA"/>
+  <anchor x="177" y="-818" name="diaB"/>
   <outline>
     <component base="reh-ar"/>
-    <component base="_dot1_hat" xOffset="584" yOffset="934"/>
+    <component base="_dot1_hat" xScale="0.9" yScale="0.9" xOffset="526" yOffset="841"/>
   </outline>
   <lib>
     <dict>

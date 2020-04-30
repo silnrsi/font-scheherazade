@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hahThreedotsupbelow-ar.medi" format="2">
-  <advance width="1588"/>
-  <anchor x="361" y="1096" name="alef"/>
-  <anchor x="529" y="1211" name="diaA"/>
-  <anchor x="642" y="-1138" name="diaB"/>
+  <advance width="1429"/>
+  <anchor x="325" y="986" name="alef"/>
+  <anchor x="476" y="1090" name="diaA"/>
+  <anchor x="578" y="-1024" name="diaB"/>
   <outline>
     <component base="hah-ar.medi"/>
-    <component base="_dot3u" xOffset="795" yOffset="-719"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="716" yOffset="-647"/>
   </outline>
   <lib>
     <dict>

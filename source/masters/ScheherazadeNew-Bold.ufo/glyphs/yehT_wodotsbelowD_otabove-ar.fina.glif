@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehTwodotsbelowDotabove-ar.fina" format="2">
-  <advance width="1653"/>
-  <anchor x="486" y="793" name="alef"/>
-  <anchor x="602" y="969" name="diaA"/>
-  <anchor x="634" y="-1472" name="diaB"/>
+  <advance width="1488"/>
+  <anchor x="437" y="714" name="alef"/>
+  <anchor x="542" y="872" name="diaA"/>
+  <anchor x="571" y="-1325" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots.fina"/>
-    <component base="_dot1" xOffset="700" yOffset="510"/>
-    <component base="_dot2h" xOffset="683" yOffset="-1080"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="630" yOffset="459"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="615" yOffset="-972"/>
   </outline>
   <lib>
     <dict>

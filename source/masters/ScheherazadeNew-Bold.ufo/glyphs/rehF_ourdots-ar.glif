@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rehFourdots-ar" format="2">
-  <advance width="925"/>
+  <advance width="833"/>
   <unicode hex="0699"/>
-  <anchor x="364" y="1624" name="diaA"/>
-  <anchor x="197" y="-909" name="diaB"/>
+  <anchor x="328" y="1462" name="diaA"/>
+  <anchor x="177" y="-818" name="diaB"/>
   <outline>
     <component base="reh-ar"/>
-    <component base="_dot4" xOffset="595" yOffset="1117"/>
+    <component base="_dot4" xScale="0.9" yScale="0.9" xOffset="536" yOffset="1005"/>
   </outline>
   <lib>
     <dict>

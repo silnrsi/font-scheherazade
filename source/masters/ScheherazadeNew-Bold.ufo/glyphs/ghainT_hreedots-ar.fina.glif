@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ghainThreedots-ar.fina" format="2">
-  <advance width="1335"/>
-  <anchor x="232" y="2030" name="alef"/>
-  <anchor x="423" y="2369" name="diaA"/>
-  <anchor x="639" y="-1302" name="diaB"/>
+  <advance width="1202"/>
+  <anchor x="209" y="1827" name="alef"/>
+  <anchor x="381" y="2132" name="diaA"/>
+  <anchor x="575" y="-1172" name="diaB"/>
   <outline>
     <component base="ain-ar.fina"/>
-    <component base="_dot1_dot3u" xOffset="590" yOffset="1160"/>
+    <component base="_dot1_dot3u" xScale="0.9" yScale="0.9" xOffset="531" yOffset="1044"/>
   </outline>
   <lib>
     <dict>

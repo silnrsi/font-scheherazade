@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehTwodotsbelowNoonabove-ar" format="2">
-  <advance width="1769"/>
+  <advance width="1592"/>
   <unicode hex="08BA"/>
-  <anchor x="596" y="1804" name="diaA"/>
-  <anchor x="682" y="-915" name="diaB"/>
+  <anchor x="536" y="1624" name="diaA"/>
+  <anchor x="614" y="-824" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots"/>
-    <component base="_noon" xOffset="647" yOffset="1289"/>
-    <component base="_dot2h" xOffset="673" yOffset="-658"/>
+    <component base="_noon" xScale="0.9" yScale="0.9" xOffset="582" yOffset="1160"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="606" yOffset="-592"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehVinverted-farsi.medi" format="2">
-  <advance width="619"/>
-  <anchor x="222" y="1201" name="alef"/>
-  <anchor x="241" y="1337" name="diaA"/>
-  <anchor x="245" y="-790" name="diaB"/>
-  <anchor x="245" y="-1160" name="diaBtailDown"/>
+  <advance width="557"/>
+  <anchor x="200" y="1081" name="alef"/>
+  <anchor x="217" y="1203" name="diaA"/>
+  <anchor x="221" y="-711" name="diaB"/>
+  <anchor x="221" y="-1044" name="diaBtailDown"/>
   <outline>
     <component base="behDotless-ar.medi"/>
-    <component base="_hat" xOffset="315" yOffset="825"/>
-    <component base="_dot2h" xOffset="319" yOffset="-297"/>
+    <component base="_hat" xScale="0.9" yScale="0.9" xOffset="284" yOffset="743"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="287" yOffset="-267"/>
   </outline>
   <lib>
     <dict>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefMadda-ar.postLamIni.small.fina" format="2">
-  <advance width="882"/>
-  <anchor x="290" y="-262" name="dia2B"/>
-  <anchor x="58" y="2207" name="diaA"/>
-  <anchor x="609" y="-220" name="diaB"/>
-  <anchor x="818" y="0" name="entry"/>
+  <advance width="794"/>
+  <anchor x="261" y="-236" name="dia2B"/>
+  <anchor x="52" y="1986" name="diaA"/>
+  <anchor x="548" y="-198" name="diaB"/>
+  <anchor x="736" y="0" name="entry"/>
   <outline>
     <component base="alef-ar.postLamIni.fina"/>
-    <component base="_madda.small" xOffset="59" yOffset="1892"/>
+    <component base="_madda.small" xScale="0.9" yScale="0.9" xOffset="53" yOffset="1703"/>
   </outline>
   <lib>
     <dict>

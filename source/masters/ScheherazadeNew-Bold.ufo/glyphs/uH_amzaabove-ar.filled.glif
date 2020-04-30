@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uHamzaabove-ar.filled" format="2">
-  <advance width="947"/>
-  <anchor x="486" y="1798" name="diaA"/>
-  <anchor x="396" y="-870" name="diaB"/>
+  <advance width="852"/>
+  <anchor x="437" y="1618" name="diaA"/>
+  <anchor x="356" y="-783" name="diaB"/>
   <outline>
     <component base="waw-ar"/>
-    <component base="_damma.filled" xOffset="444" yOffset="1117"/>
-    <component base="_hamza" xOffset="895" yOffset="1256"/>
+    <component base="_damma.filled" xScale="0.9" yScale="0.9" xOffset="400" yOffset="1005"/>
+    <component base="_hamza" xScale="0.9" yScale="0.9" xOffset="806" yOffset="1130"/>
   </outline>
   <lib>
     <dict>

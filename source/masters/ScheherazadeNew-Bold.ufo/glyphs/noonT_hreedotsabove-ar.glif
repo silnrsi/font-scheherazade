@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonThreedotsabove-ar" format="2">
-  <advance width="1383"/>
+  <advance width="1245"/>
   <unicode hex="06BD"/>
-  <anchor x="265" y="1463" name="alef"/>
-  <anchor x="477" y="1746" name="diaA"/>
-  <anchor x="615" y="-692" name="diaB"/>
+  <anchor x="239" y="1317" name="alef"/>
+  <anchor x="429" y="1571" name="diaA"/>
+  <anchor x="554" y="-623" name="diaB"/>
   <outline>
     <component base="noonghunna-ar"/>
-    <component base="_dot3u" xOffset="622" yOffset="898"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="560" yOffset="808"/>
   </outline>
   <lib>
     <dict>

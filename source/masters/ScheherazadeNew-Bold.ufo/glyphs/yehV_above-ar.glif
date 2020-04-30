@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehVabove-ar" format="2">
-  <advance width="1769"/>
+  <advance width="1592"/>
   <unicode hex="06CE"/>
-  <anchor x="380" y="1505" name="alef"/>
-  <anchor x="587" y="1620" name="diaA"/>
-  <anchor x="682" y="-637" name="diaB"/>
+  <anchor x="342" y="1355" name="alef"/>
+  <anchor x="528" y="1458" name="diaA"/>
+  <anchor x="614" y="-573" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots"/>
-    <component base="_smallV" xOffset="664" yOffset="1118"/>
+    <component base="_smallV" xScale="0.9" yScale="0.9" xOffset="598" yOffset="1006"/>
   </outline>
   <lib>
     <dict>

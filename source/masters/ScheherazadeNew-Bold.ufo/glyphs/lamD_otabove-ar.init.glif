@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamDotabove-ar.init" format="2">
-  <advance width="596"/>
-  <anchor x="-12" y="786" name="alef"/>
-  <anchor x="189" y="2292" name="diaA"/>
-  <anchor x="145" y="-218" name="diaB"/>
+  <advance width="536"/>
+  <anchor x="-11" y="707" name="alef"/>
+  <anchor x="170" y="2063" name="diaA"/>
+  <anchor x="131" y="-196" name="diaB"/>
   <outline>
     <component base="lam-ar.init"/>
-    <component base="_dot1" xOffset="212" yOffset="1862"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="191" yOffset="1676"/>
   </outline>
   <lib>
     <dict>

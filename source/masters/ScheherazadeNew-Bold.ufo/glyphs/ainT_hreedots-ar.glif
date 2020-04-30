@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ainThreedots-ar" format="2">
-  <advance width="1644"/>
+  <advance width="1480"/>
   <unicode hex="06A0"/>
-  <anchor x="119" y="1860" name="alef"/>
-  <anchor x="389" y="2269" name="diaA"/>
-  <anchor x="464" y="-1331" name="diaB"/>
+  <anchor x="107" y="1674" name="alef"/>
+  <anchor x="350" y="2042" name="diaA"/>
+  <anchor x="418" y="-1198" name="diaB"/>
   <outline>
-    <component base="_dot3u" xOffset="566" yOffset="1362"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="509" yOffset="1226"/>
     <component base="ain-ar"/>
   </outline>
   <lib>

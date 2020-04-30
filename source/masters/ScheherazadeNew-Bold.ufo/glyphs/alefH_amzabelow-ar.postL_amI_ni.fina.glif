@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefHamzabelow-ar.postLamIni.fina" format="2">
-  <advance width="882"/>
-  <anchor x="667" y="-803" name="dia2B"/>
-  <anchor x="116" y="1827" name="diaA"/>
-  <anchor x="674" y="-805" name="diaB"/>
-  <anchor x="818" y="0" name="entry"/>
+  <advance width="794"/>
+  <anchor x="600" y="-723" name="dia2B"/>
+  <anchor x="104" y="1644" name="diaA"/>
+  <anchor x="607" y="-725" name="diaB"/>
+  <anchor x="736" y="0" name="entry"/>
   <outline>
     <component base="alef-ar.postLamIni.fina"/>
-    <component base="_hamza" xOffset="641" yOffset="-447"/>
+    <component base="_hamza" xScale="0.9" yScale="0.9" xOffset="577" yOffset="-402"/>
   </outline>
   <lib>
     <dict>

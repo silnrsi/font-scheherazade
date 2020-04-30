@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehTwoabove-farsi.fina" format="2">
-  <advance width="1653"/>
-  <anchor x="348" y="753" name="alef"/>
-  <anchor x="606" y="1070" name="diaA"/>
-  <anchor x="706" y="-1022" name="diaB"/>
+  <advance width="1488"/>
+  <anchor x="313" y="678" name="alef"/>
+  <anchor x="545" y="963" name="diaA"/>
+  <anchor x="635" y="-920" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots.fina"/>
-    <component base="_two" xOffset="721" yOffset="299"/>
+    <component base="_two" xScale="0.9" yScale="0.9" xOffset="649" yOffset="269"/>
   </outline>
   <lib>
     <dict>

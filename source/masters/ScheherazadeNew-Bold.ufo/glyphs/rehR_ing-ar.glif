@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rehRing-ar" format="2">
-  <advance width="925"/>
+  <advance width="833"/>
   <unicode hex="0693"/>
-  <anchor x="383" y="731" name="alef"/>
-  <anchor x="397" y="1044" name="diaA"/>
-  <anchor x="331" y="-1063" name="diaB"/>
+  <anchor x="345" y="658" name="alef"/>
+  <anchor x="357" y="940" name="diaA"/>
+  <anchor x="298" y="-957" name="diaB"/>
   <outline>
     <component base="reh-ar"/>
-    <component base="_ring" xOffset="644" yOffset="-602"/>
+    <component base="_ring" xScale="0.9" yScale="0.9" xOffset="580" yOffset="-542"/>
   </outline>
   <lib>
     <dict>

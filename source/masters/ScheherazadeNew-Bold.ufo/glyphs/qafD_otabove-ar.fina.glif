@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="qafDotabove-ar.fina" format="2">
-  <advance width="1488"/>
-  <anchor x="383" y="793" name="alef"/>
-  <anchor x="642" y="1160" name="diaA"/>
-  <anchor x="615" y="-861" name="diaB"/>
+  <advance width="1339"/>
+  <anchor x="345" y="714" name="alef"/>
+  <anchor x="578" y="1044" name="diaA"/>
+  <anchor x="554" y="-775" name="diaB"/>
   <outline>
     <component base="qafDotless-ar.fina"/>
-    <component base="_dot1" xOffset="1067" yOffset="1050"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="960" yOffset="945"/>
   </outline>
   <lib>
     <dict>

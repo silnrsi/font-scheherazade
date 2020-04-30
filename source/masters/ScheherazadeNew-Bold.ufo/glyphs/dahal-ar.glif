@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dahal-ar" format="2">
-  <advance width="963"/>
+  <advance width="867"/>
   <unicode hex="068C"/>
-  <anchor x="219" y="1566" name="alef"/>
-  <anchor x="354" y="1791" name="diaA"/>
-  <anchor x="352" y="-318" name="diaB"/>
+  <anchor x="197" y="1409" name="alef"/>
+  <anchor x="319" y="1612" name="diaA"/>
+  <anchor x="317" y="-286" name="diaB"/>
   <outline>
     <component base="dal-ar"/>
-    <component base="_dot2h" xOffset="489" yOffset="1283"/>
+    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="440" yOffset="1155"/>
   </outline>
   <lib>
     <dict>

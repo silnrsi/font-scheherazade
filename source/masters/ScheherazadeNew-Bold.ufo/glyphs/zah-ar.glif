@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="zah-ar" format="2">
-  <advance width="1782"/>
+  <advance width="1604"/>
   <unicode hex="0638"/>
-  <anchor x="361" y="998" name="alef"/>
-  <anchor x="695" y="1785" name="diaA"/>
-  <anchor x="812" y="-261" name="diaB"/>
+  <anchor x="325" y="898" name="alef"/>
+  <anchor x="626" y="1607" name="diaA"/>
+  <anchor x="731" y="-235" name="diaB"/>
   <outline>
     <component base="tah-ar"/>
-    <component base="_dot1" xOffset="1196" yOffset="1147"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="1076" yOffset="1032"/>
   </outline>
   <lib>
     <dict>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="wawDotabove-ar.fina" format="2">
-  <advance width="947"/>
-  <anchor x="386" y="1433" name="alef"/>
-  <anchor x="444" y="1649" name="diaA"/>
-  <anchor x="455" y="-870" name="diaB"/>
+  <advance width="852"/>
+  <anchor x="347" y="1290" name="alef"/>
+  <anchor x="400" y="1484" name="diaA"/>
+  <anchor x="410" y="-783" name="diaB"/>
   <outline>
     <component base="waw-ar.fina"/>
-    <component base="_dot1" xOffset="539" yOffset="1103"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="485" yOffset="993"/>
   </outline>
   <lib>
     <dict>

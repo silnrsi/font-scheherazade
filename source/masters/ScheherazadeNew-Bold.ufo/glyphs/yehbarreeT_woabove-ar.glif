@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehbarreeTwoabove-ar" format="2">
-  <advance width="2272"/>
+  <advance width="2045"/>
   <unicode hex="077A"/>
-  <anchor x="123" y="1003" name="alef"/>
-  <anchor x="513" y="1533" name="diaA"/>
-  <anchor x="699" y="-726" name="diaB"/>
+  <anchor x="111" y="903" name="alef"/>
+  <anchor x="462" y="1380" name="diaA"/>
+  <anchor x="629" y="-653" name="diaB"/>
   <outline>
     <component base="yehbarree-ar"/>
-    <component base="_two" xOffset="566" yOffset="816"/>
+    <component base="_two" xScale="0.9" yScale="0.9" xOffset="509" yOffset="734"/>
   </outline>
   <lib>
     <dict>

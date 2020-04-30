@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamThreedotsabove-ar.preAlef.medi" format="2">
-  <advance width="873"/>
-  <anchor x="157" y="758" name="alef"/>
-  <anchor x="318" y="2456" name="diaA"/>
-  <anchor x="431" y="-229" name="diaB"/>
-  <anchor x="260" y="338" name="exit"/>
+  <advance width="786"/>
+  <anchor x="141" y="682" name="alef"/>
+  <anchor x="286" y="2210" name="diaA"/>
+  <anchor x="388" y="-206" name="diaB"/>
+  <anchor x="234" y="304" name="exit"/>
   <outline>
     <component base="lam-ar.preAlef.medi"/>
-    <component base="_dot3u" xOffset="479" yOffset="1682"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="431" yOffset="1514"/>
   </outline>
   <lib>
     <dict>

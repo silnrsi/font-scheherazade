@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rnoon-ar" format="2">
-  <advance width="1383"/>
+  <advance width="1245"/>
   <unicode hex="06BB"/>
-  <anchor x="215" y="1234" name="alef"/>
-  <anchor x="405" y="1660" name="diaA"/>
-  <anchor x="615" y="-692" name="diaB"/>
+  <anchor x="194" y="1111" name="alef"/>
+  <anchor x="365" y="1494" name="diaA"/>
+  <anchor x="554" y="-623" name="diaB"/>
   <outline>
     <component base="noonghunna-ar"/>
-    <component base="_tah" xOffset="631" yOffset="914"/>
+    <component base="_tah" xScale="0.9" yScale="0.9" xOffset="568" yOffset="823"/>
   </outline>
   <lib>
     <dict>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="wawTwoabove-ar" format="2">
-  <advance width="947"/>
+  <advance width="852"/>
   <unicode hex="0778"/>
-  <anchor x="505" y="1673" name="diaA"/>
-  <anchor x="396" y="-870" name="diaB"/>
+  <anchor x="455" y="1506" name="diaA"/>
+  <anchor x="356" y="-783" name="diaB"/>
   <outline>
     <component base="waw-ar"/>
-    <component base="_two" xOffset="592" yOffset="915"/>
+    <component base="_two" xScale="0.9" yScale="0.9" xOffset="533" yOffset="824"/>
   </outline>
   <lib>
     <dict>

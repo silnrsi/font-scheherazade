@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefThreeabove-ar" format="2">
-  <advance width="518"/>
+  <advance width="466"/>
   <unicode hex="0774"/>
-  <anchor x="100" y="1895" name="diaA"/>
-  <anchor x="297" y="-133" name="diaB"/>
+  <anchor x="90" y="1706" name="diaA"/>
+  <anchor x="267" y="-120" name="diaB"/>
   <outline>
-    <component base="_three" xOffset="41" yOffset="1163"/>
+    <component base="_three" xScale="0.9" yScale="0.9" xOffset="37" yOffset="1047"/>
     <component base="alef-ar"/>
   </outline>
   <lib>

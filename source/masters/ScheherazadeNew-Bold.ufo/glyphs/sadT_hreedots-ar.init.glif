@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="sadThreedots-ar.init" format="2">
-  <advance width="1866"/>
-  <anchor x="457" y="1625" name="alef"/>
-  <anchor x="774" y="1902" name="diaA"/>
-  <anchor x="621" y="-492" name="diaB"/>
+  <advance width="1679"/>
+  <anchor x="411" y="1463" name="alef"/>
+  <anchor x="697" y="1712" name="diaA"/>
+  <anchor x="559" y="-443" name="diaB"/>
   <outline>
     <component base="sad-ar.init"/>
-    <component base="_dot3u" xOffset="967" yOffset="1072"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="870" yOffset="965"/>
   </outline>
   <lib>
     <dict>

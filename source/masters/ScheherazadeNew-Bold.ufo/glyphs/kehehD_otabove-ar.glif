@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="kehehDotabove-ar" format="2">
-  <advance width="2378"/>
+  <advance width="2140"/>
   <unicode hex="0762"/>
-  <anchor x="290" y="893" name="alef"/>
-  <anchor x="783" y="1523" name="diaA"/>
-  <anchor x="848" y="-434" name="diaB"/>
+  <anchor x="261" y="804" name="alef"/>
+  <anchor x="705" y="1371" name="diaA"/>
+  <anchor x="763" y="-391" name="diaB"/>
   <outline>
     <component base="keheh-ar"/>
-    <component base="_dot1" xOffset="1262" yOffset="1288"/>
+    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="1136" yOffset="1159"/>
   </outline>
   <lib>
     <dict>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ainThreedotsbelow-ar" format="2">
-  <advance width="1644"/>
+  <advance width="1480"/>
   <unicode hex="08B3"/>
-  <anchor x="294" y="1234" name="alef"/>
-  <anchor x="510" y="1470" name="diaA"/>
-  <anchor x="464" y="-1331" name="diaB"/>
+  <anchor x="265" y="1111" name="alef"/>
+  <anchor x="459" y="1323" name="diaA"/>
+  <anchor x="418" y="-1198" name="diaB"/>
   <outline>
     <component base="ain-ar"/>
-    <component base="_dot3d" xOffset="796" yOffset="-46"/>
+    <component base="_dot3d" xScale="0.9" yScale="0.9" xOffset="716" yOffset="-41"/>
   </outline>
   <lib>
     <dict>

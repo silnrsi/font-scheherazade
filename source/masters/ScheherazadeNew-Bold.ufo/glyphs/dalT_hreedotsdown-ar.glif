@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dalThreedotsdown-ar" format="2">
-  <advance width="963"/>
+  <advance width="867"/>
   <unicode hex="068F"/>
-  <anchor x="307" y="2001" name="alef"/>
-  <anchor x="383" y="2108" name="diaA"/>
-  <anchor x="352" y="-318" name="diaB"/>
+  <anchor x="276" y="1801" name="alef"/>
+  <anchor x="345" y="1897" name="diaA"/>
+  <anchor x="317" y="-286" name="diaB"/>
   <outline>
     <component base="dal-ar"/>
-    <component base="_dot3d" xOffset="522" yOffset="1636"/>
+    <component base="_dot3d" xScale="0.9" yScale="0.9" xOffset="470" yOffset="1472"/>
   </outline>
   <lib>
     <dict>

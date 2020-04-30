@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ng-ar" format="2">
-  <advance width="1479"/>
+  <advance width="1331"/>
   <unicode hex="06AD"/>
-  <anchor x="267" y="1844" name="alef"/>
-  <anchor x="523" y="2210" name="diaA"/>
-  <anchor x="700" y="-305" name="diaB"/>
+  <anchor x="240" y="1660" name="alef"/>
+  <anchor x="471" y="1989" name="diaA"/>
+  <anchor x="630" y="-275" name="diaB"/>
   <outline>
     <component base="kaf-ar"/>
-    <component base="_dot3u" xOffset="674" yOffset="1395"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="607" yOffset="1256"/>
   </outline>
   <lib>
     <dict>

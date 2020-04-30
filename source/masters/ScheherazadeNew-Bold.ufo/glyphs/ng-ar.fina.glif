@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ng-ar.fina" format="2">
-  <advance width="2053"/>
-  <anchor x="457" y="1950" name="alef"/>
-  <anchor x="802" y="2292" name="diaA"/>
-  <anchor x="870" y="-435" name="diaB"/>
+  <advance width="1848"/>
+  <anchor x="411" y="1755" name="alef"/>
+  <anchor x="722" y="2063" name="diaA"/>
+  <anchor x="783" y="-392" name="diaB"/>
   <outline>
     <component base="kaf-ar.fina"/>
-    <component base="_dot3u" xOffset="954" yOffset="1466"/>
+    <component base="_dot3u" xScale="0.9" yScale="0.9" xOffset="859" yOffset="1319"/>
   </outline>
   <lib>
     <dict>

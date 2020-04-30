@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hehgoalHamzaabove-ar.init" format="2">
-  <advance width="624"/>
-  <anchor x="117" y="1649" name="alef"/>
-  <anchor x="265" y="1842" name="diaA"/>
-  <anchor x="271" y="-766" name="diaB"/>
+  <advance width="562"/>
+  <anchor x="105" y="1484" name="alef"/>
+  <anchor x="239" y="1658" name="diaA"/>
+  <anchor x="244" y="-689" name="diaB"/>
   <outline>
     <component base="hehgoal-ar.init"/>
-    <component base="_hamza" xOffset="284" yOffset="1286"/>
+    <component base="_hamza" xScale="0.9" yScale="0.9" xOffset="256" yOffset="1157"/>
   </outline>
   <lib>
     <dict>

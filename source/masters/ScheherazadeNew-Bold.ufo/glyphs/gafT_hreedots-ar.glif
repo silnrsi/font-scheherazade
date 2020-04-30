@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gafThreedots-ar" format="2">
-  <advance width="2378"/>
+  <advance width="2140"/>
   <unicode hex="06B4"/>
-  <anchor x="290" y="893" name="alef"/>
-  <anchor x="666" y="2147" name="diaA"/>
-  <anchor x="848" y="-434" name="diaB"/>
+  <anchor x="261" y="804" name="alef"/>
+  <anchor x="599" y="1932" name="diaA"/>
+  <anchor x="763" y="-391" name="diaB"/>
   <outline>
     <component base="keheh-ar"/>
-    <component base="_gafBarShort_dot3u" xOffset="1188" yOffset="1003"/>
+    <component base="_gafBarShort_dot3u" xScale="0.9" yScale="0.9" xOffset="1069" yOffset="903"/>
   </outline>
   <lib>
     <dict>

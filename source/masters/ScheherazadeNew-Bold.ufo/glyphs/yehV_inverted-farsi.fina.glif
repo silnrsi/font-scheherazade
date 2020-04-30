@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehVinverted-farsi.fina" format="2">
-  <advance width="1653"/>
-  <anchor x="537" y="844" name="alef"/>
-  <anchor x="684" y="987" name="diaA"/>
-  <anchor x="706" y="-1022" name="diaB"/>
+  <advance width="1488"/>
+  <anchor x="483" y="760" name="alef"/>
+  <anchor x="616" y="888" name="diaA"/>
+  <anchor x="635" y="-920" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots.fina"/>
-    <component base="_hat" xOffset="789" yOffset="597"/>
+    <component base="_hat" xScale="0.9" yScale="0.9" xOffset="710" yOffset="537"/>
   </outline>
   <lib>
     <dict>
