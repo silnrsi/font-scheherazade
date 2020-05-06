@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="highhamzaAlef-ar" format="2">
-  <advance width="466"/>
+  <advance width="480"/>
   <unicode hex="0675"/>
-  <anchor x="-5" y="893" name="alef"/>
-  <anchor x="149" y="2004" name="diaA"/>
-  <anchor x="131" y="-235" name="diaB"/>
+  <anchor x="-5" y="920" name="alef"/>
+  <anchor x="153" y="2064" name="diaA"/>
+  <anchor x="135" y="-242" name="diaB"/>
   <outline>
-    <component base="_hamza" xScale="0.9" yScale="0.9" xOffset="411" yOffset="1660"/>
-    <component base="alef-ar"/>
+    <component base="_hamza" xScale="0.927" yScale="0.927" xOffset="423" yOffset="1710"/>
+    <component base="alef-ar" xScale="1.03" yScale="1.03"/>
   </outline>
   <lib>
     <dict>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehTehabove-ar.init" format="2">
-  <advance width="573"/>
-  <anchor x="111" y="1617" name="alef"/>
-  <anchor x="215" y="1784" name="diaA"/>
-  <anchor x="158" y="-325" name="diaB"/>
-  <anchor x="158" y="-1044" name="diaBtailDown"/>
-  <anchor x="158" y="-163" name="diaBtailUp"/>
+  <advance width="590"/>
+  <anchor x="114" y="1666" name="alef"/>
+  <anchor x="221" y="1838" name="diaA"/>
+  <anchor x="163" y="-335" name="diaB"/>
+  <anchor x="163" y="-1075" name="diaBtailDown"/>
+  <anchor x="163" y="-168" name="diaBtailUp"/>
   <outline>
     <component base="behDotless-ar.init"/>
-    <component base="_teh" xScale="0.9" yScale="0.9" xOffset="267" yOffset="1365"/>
+    <component base="_teh" xScale="0.927" yScale="0.927" xOffset="275" yOffset="1406"/>
   </outline>
   <lib>
     <dict>

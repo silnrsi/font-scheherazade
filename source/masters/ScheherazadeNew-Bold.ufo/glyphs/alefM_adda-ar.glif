@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefMadda-ar" format="2">
-  <advance width="466"/>
+  <advance width="480"/>
   <unicode hex="0622"/>
-  <anchor x="183" y="1871" name="diaA"/>
-  <anchor x="248" y="-235" name="diaB"/>
+  <anchor x="188" y="1927" name="diaA"/>
+  <anchor x="255" y="-242" name="diaB"/>
   <outline>
-    <component base="_madda" xScale="0.9" yScale="0.9" xOffset="212" yOffset="1612"/>
-    <component base="alef-ar"/>
+    <component base="_madda" xScale="0.927" yScale="0.927" xOffset="218" yOffset="1660"/>
+    <component base="alef-ar" xScale="1.03" yScale="1.03"/>
   </outline>
   <lib>
     <dict>

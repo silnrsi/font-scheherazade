@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="alefThreeabove-ar" format="2">
-  <advance width="466"/>
+  <advance width="480"/>
   <unicode hex="0774"/>
-  <anchor x="90" y="1706" name="diaA"/>
-  <anchor x="267" y="-120" name="diaB"/>
+  <anchor x="93" y="1757" name="diaA"/>
+  <anchor x="275" y="-124" name="diaB"/>
   <outline>
-    <component base="_three" xScale="0.9" yScale="0.9" xOffset="37" yOffset="1047"/>
-    <component base="alef-ar"/>
+    <component base="_three" xScale="0.927" yScale="0.927" xOffset="38" yOffset="1078"/>
+    <component base="alef-ar" xScale="1.03" yScale="1.03"/>
   </outline>
   <lib>
     <dict>

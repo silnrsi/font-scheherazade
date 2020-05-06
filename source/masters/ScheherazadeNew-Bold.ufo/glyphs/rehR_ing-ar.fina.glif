@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rehRing-ar.fina" format="2">
-  <advance width="844"/>
-  <anchor x="424" y="611" name="alef"/>
-  <anchor x="420" y="830" name="diaA"/>
-  <anchor x="461" y="-1005" name="diaB"/>
+  <advance width="869"/>
+  <anchor x="437" y="629" name="alef"/>
+  <anchor x="433" y="855" name="diaA"/>
+  <anchor x="475" y="-1035" name="diaB"/>
   <outline>
     <component base="reh-ar.fina"/>
-    <component base="_ring" xScale="0.9" yScale="0.9" xOffset="598" yOffset="-577"/>
+    <component base="_ring" xScale="0.927" yScale="0.927" xOffset="616" yOffset="-594"/>
   </outline>
   <lib>
     <dict>

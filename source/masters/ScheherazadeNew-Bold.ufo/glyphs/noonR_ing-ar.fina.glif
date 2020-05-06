@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonRing-ar.fina" format="2">
-  <advance width="1345"/>
-  <anchor x="322" y="652" name="alef"/>
-  <anchor x="534" y="988" name="diaA"/>
-  <anchor x="630" y="-1143" name="diaB"/>
+  <advance width="1385"/>
+  <anchor x="332" y="672" name="alef"/>
+  <anchor x="550" y="1018" name="diaA"/>
+  <anchor x="649" y="-1177" name="diaB"/>
   <outline>
     <component base="noonghunna-ar.fina"/>
-    <component base="_ring" xScale="0.9" yScale="0.9" xOffset="617" yOffset="-754"/>
-    <component base="_dot1" xScale="0.9" yScale="0.9" xOffset="633" yOffset="531"/>
+    <component base="_ring" xScale="0.927" yScale="0.927" xOffset="636" yOffset="-777"/>
+    <component base="_dot1" xScale="0.927" yScale="0.927" xOffset="652" yOffset="547"/>
   </outline>
   <lib>
     <dict>

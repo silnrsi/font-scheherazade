@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gafTwodotsbelow-ar.init" format="2">
-  <advance width="1219"/>
-  <anchor x="75" y="1363" name="alef"/>
-  <anchor x="290" y="1607" name="diaA"/>
-  <anchor x="212" y="-718" name="diaB"/>
+  <advance width="1256"/>
+  <anchor x="77" y="1404" name="alef"/>
+  <anchor x="299" y="1655" name="diaA"/>
+  <anchor x="218" y="-740" name="diaB"/>
   <outline>
     <component base="kaf-ar.init"/>
-    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="296" yOffset="-258"/>
-    <component base="_gafBarShort" xScale="0.9" yScale="0.9" xOffset="163" yOffset="1022"/>
+    <component base="_dot2h" xScale="0.927" yScale="0.927" xOffset="305" yOffset="-266"/>
+    <component base="_gafBarShort" xScale="0.927" yScale="0.927" xOffset="168" yOffset="1053"/>
   </outline>
   <lib>
     <dict>

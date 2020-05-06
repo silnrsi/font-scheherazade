@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehTwodotsbelowHamzaabove-ar" format="2">
-  <advance width="1592"/>
+  <advance width="1640"/>
   <unicode hex="08A8"/>
-  <anchor x="350" y="1274" name="alef"/>
-  <anchor x="510" y="1484" name="diaA"/>
-  <anchor x="560" y="-969" name="diaB"/>
+  <anchor x="361" y="1312" name="alef"/>
+  <anchor x="525" y="1529" name="diaA"/>
+  <anchor x="577" y="-998" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots"/>
-    <component base="_dot2h" xScale="0.9" yScale="0.9" xOffset="626" yOffset="-595"/>
-    <component base="_hamza" xScale="0.9" yScale="0.9" xOffset="617" yOffset="1093"/>
+    <component base="_dot2h" xScale="0.927" yScale="0.927" xOffset="645" yOffset="-613"/>
+    <component base="_hamza" xScale="0.927" yScale="0.927" xOffset="636" yOffset="1126"/>
   </outline>
   <lib>
     <dict>
