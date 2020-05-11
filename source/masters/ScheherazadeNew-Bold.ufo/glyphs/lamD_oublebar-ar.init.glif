@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamDoublebar-ar.init" format="2">
   <advance width="552"/>
-  <anchor x="6" y="1171" name="alef"/>
-  <anchor x="239" y="1553" name="diaA"/>
+  <anchor x="6" y="1261" name="alef"/>
+  <anchor x="239" y="1643" name="diaA"/>
   <anchor x="135" y="-202" name="diaB"/>
   <outline>
     <component base="lam-ar.init"/>
-    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="225" yOffset="830"/>
-    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="225" yOffset="1014"/>
+    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="225" yOffset="920"/>
+    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="225" yOffset="1104"/>
   </outline>
   <lib>
     <dict>
