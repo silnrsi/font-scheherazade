@@ -181,6 +181,7 @@
 </string>
     <string>/hehgoal-ar.allah.fina/lam-ar.allah2.medi/lam-ar.allah1.init/alef-ar.fina  /lam-ar.medi  /heh-ar.allah.fina/lam-ar.allah2.medi/lam-ar.allah1.medi/feh-ar.init  </string>
     <string> /allah-ar</string>
+    <string>/wawSmall-ar</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -1522,6 +1523,13 @@
     <string>endofayah-ar.altB.2</string>
     <string>endofayah-ar.altB.3</string>
     <string>allah-ar</string>
+    <string>alef-ar.allah</string>
+    <string>alef-ar.allah.fina</string>
+    <string>lam-ar.allah1.init</string>
+    <string>lam-ar.allah1.medi</string>
+    <string>lam-ar.allah2.medi</string>
+    <string>heh-ar.allah.fina</string>
+    <string>hehgoal-ar.allah.fina</string>
     <string>rial</string>
     <string>dammaturnedbelow-ar</string>
     <string>fathaCurly-ar</string>
@@ -3041,6 +3049,13 @@
     <string>endofayah-ar.altB.2</string>
     <string>endofayah-ar.altB.3</string>
     <string>allah-ar</string>
+    <string>alef-ar.allah</string>
+    <string>alef-ar.allah.fina</string>
+    <string>lam-ar.allah1.init</string>
+    <string>lam-ar.allah1.medi</string>
+    <string>lam-ar.allah2.medi</string>
+    <string>heh-ar.allah.fina</string>
+    <string>hehgoal-ar.allah.fina</string>
     <string>rial</string>
     <string>dammaturnedbelow-ar</string>
     <string>fathaCurly-ar</string>
@@ -3336,6 +3351,10 @@
     <string>uni0611</string>
     <key>alef-ar</key>
     <string>uni0627</string>
+    <key>alef-ar.allah</key>
+    <string>uni0627.allah</string>
+    <key>alef-ar.allah.fina</key>
+    <string>uni0627.allah.fina</string>
     <key>alef-ar.fina</key>
     <string>uni0627.fina</string>
     <key>alef-ar.postLamIni.fina</key>
@@ -4070,6 +4089,8 @@
     <string>uni0655</string>
     <key>heh-ar</key>
     <string>uni0647</string>
+    <key>heh-ar.allah.fina</key>
+    <string>uni0647.allah.fina</string>
     <key>heh-ar.fina</key>
     <string>uni0647.fina</string>
     <key>heh-ar.hooked.fina</key>
@@ -4110,6 +4131,8 @@
     <string>uni06FF.medi</string>
     <key>hehgoal-ar</key>
     <string>uni06C1</string>
+    <key>hehgoal-ar.allah.fina</key>
+    <string>uni06C1.allah.fina</string>
     <key>hehgoal-ar.fina</key>
     <string>uni06C1.fina</string>
     <key>hehgoal-ar.init</key>
@@ -4348,6 +4371,12 @@
     <string>uni06C9.fina</string>
     <key>lam-ar</key>
     <string>uni0644</string>
+    <key>lam-ar.allah1.init</key>
+    <string>uni0644.allah1.init</string>
+    <key>lam-ar.allah1.medi</key>
+    <string>uni0644.allah1.medi</string>
+    <key>lam-ar.allah2.medi</key>
+    <string>uni0644.allah2.medi</string>
     <key>lam-ar.fina</key>
     <string>uni0644.fina</string>
     <key>lam-ar.init</key>
