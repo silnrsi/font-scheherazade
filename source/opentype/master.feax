@@ -920,14 +920,6 @@ feature cv80 {  # Character Variant 80
 
 feature cv82 {  # Character Variant 82
       lookup DigitAlternates;  # Latin and Arabic
-    # Except these languages:
-    script arab ;
-        language KUR  ;
-        language RHG  ;
-        language SND  ;
-        language URD  ;
-        language WLF  ;
-
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };

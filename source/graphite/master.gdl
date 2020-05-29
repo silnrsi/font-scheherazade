@@ -79,9 +79,6 @@ quranic marks, so multiples don't work right.
 // Glyph definitions and rules for codepage 1252 composites
 #include "cp1252.gdl"
 
-// Glyph and class definitions -- generated automatically from VOLT source.
-//////#include "ScheherazadeRegVoltDefs.gdh"
-
 // Hard-coded glyph and class definitions:
 #include "SchGlyphs.gdh"
 
@@ -90,6 +87,13 @@ quranic marks, so multiples don't work right.
 
 
 #define alefAttached user1
+
+#ifndef opt2
+#define opt(x)      [x]?
+#define opt2(x)     [opt(x) x]?
+#define opt3(x)     [opt2(x) x]?
+#define opt4(x)     [opt3(x) x]?
+#endif
 
 
 // Now add additional classes we need:
@@ -155,21 +159,22 @@ pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
 endpass; // 1
 
 
-pass(2)	// Reorder marks to "logical" order (this allows for canonical order input,
-	// as Unicode got the canonical order wrong!)	
-				
-	// NB: Only cMark2 (vowel marks) and cMark4 (quranic marks) can have multiples.
-	// The rules below allow for up to 3 vowel marks and up to 3 quranic marks,
-	// with a total of 4 marks.
+pass(2)
+
+	// Simulation of UTR53 - mark reordering
 	
-	// We don't swap the glyphs, because that would mess up the original order,
-	// rather we delete and insert.
-	
-	_  cMark1  >  @e:e  _  / _  ^  cMark234 [ cMark234 cMark234? ]?  _=e;
-	_  cMark2  >  @e:e  _  / _  ^  cMark34  [ cMark34  cMark34?  ]?  _=e;
-	_  cMark3  >  @e:e  _  / _  ^  cMark4   [ cMark4   cMark4?   ]?  _=e;
-	
-	// Note: Jonathan says inserting circles is a bad idea for minority language support.
+	// Notes:
+	// 1) We don't swap the glyphs, because that would mess up the original order,
+	//    rather we delete and insert.
+	// 2) glyphs for fixed-position combining classes (other than shadda and daggeralef)
+	//    won't be ordered correctly relative to each other, but usually not more than one anyway.
+
+	_  cUTR53_1_skip  cUTR53_1  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_1_skip)  _; // move 220 MCM to front
+	_  cUTR53_2_skip  cUTR53_2  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_2_skip)  _; // move 230 MCM to just after 220 MCM
+	_  cUTR53_3_skip  cUTR53_3  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_3_ctx)   _; // shadda is next
+	_  cUTR53_4_skip  cUTR53_4  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_4_ctx)   _; // other fixed position glyphs (except daggeralef)
+	_  cUTR53_5_skip  cUTR53_5  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_5_ctx)   _; // daggeralef
+	_  cUTR53_6_skip  cUTR53_6  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_6_skip)  _; // other 220 in front of remaining 230.
 
 endpass; // 2
 
@@ -324,6 +329,12 @@ endpass; // 5
 endtable; // sub
 
 
+//table(glyph)
+//cMark1Below_volt += (g_graphemejoinercomb);
+//cMark2Below_volt += (g_graphemejoinercomb);
+//cAnyMarksBelow += (g_graphemejoinercomb);
+//endtable;
+
 table (positioning)
 
 // Must allow for at least cMark1Below and/or cMark2Below to intervene between base and marks above.
@@ -335,13 +346,14 @@ pass(1)
 	cHasExit=L {alefAttached = true}  cHasEntry=A {attach {to=@L; at=exitS; with=entryS}; insert=true}
 		/ ^ _ {alefAttached == false}  MARKS  _;
 	
-	// Marks above
+	// Mark attachment
 
 	// Note: the superscript-alef may have both the _alef and _diaA att pts; the ordering of these
 	// rules assumes the alef AP should be used if there are no intervening marks.
 	cHasAlefAP=B  cMarkSuperscriptAlefs {attach {to=@B; at=alefS; with=alefM}; insert = true}  / _ ^ MARKSBELOW _ ;
 	
 	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
+/****
 	g_shadda_ar=S
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
 			{attach {to=@S; at=point(diaAS.x,diaAS.y-80m); with=diaAM}; insert = selectDiac}
@@ -351,11 +363,16 @@ pass(1)
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
 			{attach {to=@H; at=point(diaAS.x+40m,diaAS.y-80m); with=diaAM}; insert = selectDiac}
 		/ _ ^ MARKSBELOW  _;
-		
+****/
 
-	// Normal case:
-	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM}; insert = selectDiac}
-		/ _ ^ MARKSBELOW  _;
+	calefDia {attach {to = @1; at = alefS; with = alefM}} / cTakesalefDia opt4(cndiaADia) _;
+	cdiaADia {attach {to = @1; at = diaAS; with = diaAM}} / cTakesdiaADia opt4(cndiaADia) _;
+	cdiaBDia {attach {to = @1; at = diaBS; with = diaBM}} / cTakesdiaBDia opt4(cndiaBDia) _;
+
+
+	// Normal case - OLD
+//	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM}; insert = selectDiac}
+//		/ _ ^ MARKSBELOW  _;
 
 
 	// Subtending marks
@@ -416,9 +433,9 @@ pass(2)
 	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM}; insert = selectDiac}
 		/ (g_lam_threedotsabove_ar_pre_alef_init g_lam_threedotsabove_ar_pre_alef_medi cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
-	// Normal case:
-	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM};  insert = selectDiac}
-		/ _ ^ MARKSABOVE  _;
+	// Normal case - OLD
+//	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM};  insert = selectDiac}
+//		/ _ ^ MARKSABOVE  _;
 
 endpass; // 2
 

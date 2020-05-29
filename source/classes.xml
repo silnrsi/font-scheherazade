@@ -555,6 +555,55 @@
         alefMadda-ar.small alefMadda-ar.small.fina madda-ar.small alefMadda-ar.postLamIni.small.fina		
         alefMadda-ar.postLamMed.small.fina 	
     </class>
+    
+    <!-- 
+    ===============================
+    Mark classes and positioning
+    ===============================
+    -->
+
+    <!-- For UTR53 implementation -->
+
+    <!-- NB: The following 7 classes were generated algorithmically based on Unicode properties (see tools/absgenclasses.py) -->
+
+    <class name='UTR53_220MCM'>
+        hamzabelow-ar seenbelow-ar
+    </class>
+
+    <class name='UTR53_230MCM'>
+        hamzaabove-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar
+    </class>
+
+    <class name='UTR53_shadda'>
+        shadda-ar
+    </class>
+
+    <class name='UTR53_fixedPos'>
+        damma-ar damma-ar.filled damma-ar.short dammasmall-ar dammatan-ar dammatan-ar.sixNine fatha-ar
+        fathasmall-ar fathatan-ar kasra-ar kasra-ar.lowered kasrasmall-ar kasratan-ar kasratan-ar.lowered opendammatan-ar openfathatan-ar
+        openkasratan-ar sukun-ar sukun-ar.downOpen sukun-ar.leftOpen
+    </class>
+
+    <class name='UTR53_alef'>
+    	alefabove-ar alefabove-ar.large 
+    </class>
+
+    <class name='UTR53_220other'>
+        alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar
+        meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar
+    </class>
+
+    <class name='UTR53_230other'>
+        ainabove-ar alefLamYehabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammainverted-ar.filled dammareversed-ar dammatanCurly-ar
+        dotStopabove-ar doublerightarrowheadDotabove-ar doublerightarrowheadabove-ar fathaCurly-ar fathaDotabove-ar fathaHorizont-ar
+        fathaRing-ar fathatanCurly-ar fathatwodots-ar hahabove-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar madda-ar madda-ar.small
+        maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar rehDadabove-ar rehHahabove-ar
+        rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar sukunoval-ar
+        sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar
+        vinvertedabove-ar zainabove-ar
+    </class>
+
+    <!-- For OpenType sorting -->
 
     <class name="MarkGroup1A">
         shadda-ar hamzaabove-ar noonghunnaabove-ar 	
@@ -931,5 +980,8 @@
         @LamIniBeforeAlef @LamMedBeforeAlef @Meem.sindhi @RightLinkFina @RightLinkIsol @U.filled @Whitespace @ltrOther		
         heh-ar.knotted heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.hooked.medi heh-ar.knottedHigh.medi heh-ar.hooked.init 	
     </class>
+    
+    
+
 
 </classes>
