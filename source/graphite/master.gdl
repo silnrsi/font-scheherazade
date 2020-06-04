@@ -183,10 +183,12 @@ pass(3)	// ligature diacritics
 
 if (shaddaKasra == std || shaddaKasra == raised)
   if (selectDiac)
-    g_shadda_ar  cShaddaKasraMarks  > 
-        _  cShaddaKasraLigatures:(1 2) { comp.shadda.ref = @1; comp.kasra.ref = @2 };
+	g_shadda_ar  cShaddaKasraMarks  > 
+		_  cShaddaKasraLigatures:(S K) { comp.shadda.ref = @S; comp.kasra.ref = @K }
+		/  _=S  _=K;
   else
-		g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(1 2);
+	g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)
+		/  _=S  _=K;
   endif;
 endif;
 
@@ -230,6 +232,38 @@ pass(5)	// Features, special behaviors
 	else
 		cLowHamzaBase  g_hamzaabove_ar  >  cLowHamzaComposed:(1 2)  _;
 	endif;
+	
+	// Allah ligatures:
+	// Also see pass 6 below.
+
+	// Rule 3:
+	
+	// alefIso-lam-lam-heh
+	g_alef_ar  g_lam_ar_init  g_lam_ar_medi  _  _  (g_heh_ar_fina g_hehgoal_ar_fina) 
+		> g_alef_ar_allah  g_lam_ar_allah1_init  g_lam_ar_allah2_medi=L  g_shadda_ar:L  g_alefabove_ar:L  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina) 
+		/ _ MARKS _ _ _ _ _;
+
+	// Rule 2:
+
+	// lamInit-lam-shadda-alef-heh
+	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
+		> g_lam_ar_allah1_init  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
+
+	// lamInit-lam-alef-shadda-heh
+	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
+		> g_lam_ar_allah1_init  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
+
+	// lamMedi-lam-shadda-alef-heh
+	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
+		> g_lam_ar_allah1_medi  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
+
+	// lamMedi-lam-alef-shadda-heh
+	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
+		> g_lam_ar_allah1_medi  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
 	
 	// Features
 
@@ -326,6 +360,15 @@ pass(5)	// Features, special behaviors
 	
 endpass; // 5
 
+
+pass(6)
+	// Allah clean-up.
+	(g_alef_ar  g_alef_ar_fina)                >  (g_alef_ar_allah g_alef_ar_allah_fina)          /  _  MARKS  g_lam_ar_allah1_init;
+	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_allah_fina):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_allah1_init;
+
+	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_allah2_medi  _  _;
+endpass;
+
 endtable; // sub
 
 
@@ -352,17 +395,17 @@ pass(1)
 	// rules assumes the alef AP should be used if there are no intervening marks.
 	cHasAlefAP=B  cMarkSuperscriptAlefs {attach {to=@B; at=alefS; with=alefM}; insert = true}  / _ ^ MARKSBELOW _ ;
 	
-	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
 /****
+	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
 	g_shadda_ar=S
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
 			{attach {to=@S; at=point(diaAS.x,diaAS.y-80m); with=diaAM}; insert = selectDiac}
-		/ _ ^ MARKSBELOW  _;
+		/ _ ^ opt4(cndiaADia)  _;
 
 	g_hamzaabove_ar=H
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
 			{attach {to=@H; at=point(diaAS.x+40m,diaAS.y-80m); with=diaAM}; insert = selectDiac}
-		/ _ ^ MARKSBELOW  _;
+		/ _ ^ opt4(cndiaADia)  _;
 ****/
 
 	calefDia {attach {to = @1; at = alefS; with = alefM}} / cTakesalefDia opt4(cndiaADia) _;
@@ -471,6 +514,7 @@ pass(3)
 	
 endpass; // 3	
 
+///////////////////////////////////////////////////////////////////
 
 #if 0   // SC's actual collision handling disabled for now
 	

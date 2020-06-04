@@ -45,22 +45,18 @@
   <test label='U+06E3'><comment>U+064A U+0647 U+06E3 U+0650</comment><string>\u064A\u0647\u06E3\u0650</string></test>
   <test label='U+06E3'><comment>U+064A U+0647 U+06E3 U+034F U+0650</comment><string>\u064A\u0647\u06E3\u034F\u0650</string></test>
   <test label='U+06E7'><comment>ARABIC SMALL HIGH YEH</comment><string>\u25cc\u06E7</string></test>
-  
-  <test label='shadda+kasra' stylename='cv62_1'><comment>U+0641 U+0650 U+0651</comment><string>\u0641\u0650\u0651</string></test>
-  <test label='shadda+kasra' stylename='cv62_1'><comment>U+0641 U+0650 U+034F U+0651</comment><string>\u0641\u0650\u034F\u0651</string></test>
-  <test label='shadda+kasra' stylename='cv62_2'><comment>U+0641 U+0650 U+0651</comment><string>\u0641\u0650\u0651</string></test>
-  <test label='shadda+kasra' stylename='cv62_2'><comment>U+0641 U+0650 U+034F U+0651</comment><string>\u0641\u0650\u034F\u0651</string></test>
-  
-  <test label='U+06E7' stylename='cv62_1'><comment>U+0640 U+0650 U+0651 U+06E7</comment><string>\u0640\u0650\u0651\u06E7</string></test>
-  <test label='U+06E7' stylename='cv62_1'><comment>U+0640 U+0650 U+0651 U+034F U+06E7</comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
-  <test label='U+06E7' stylename='cv62_1'><comment>U+0640 U+0650 U+06E7 U+0651</comment><string>\u0640\u0650\u06E7\u0651</string></test>
-  <test label='U+06E7' stylename='cv62_1'><comment>U+0640 U+0650 U+06E7 U+034F U+0651</comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
-
-  <test label='U+06E7' stylename='cv62_2'><comment>U+062A U+0650 U+0651 U+06E7</comment><string>\u062A\u0650\u0651\u06E7</string></test>
-  <test label='U+06E7' stylename='cv62_2'><comment>U+062A U+0650 U+0651 U+034F U+06E7</comment><string>\u062A\u0650\u0651\u034F\u06E7</string></test>
-  <test label='U+06E7' stylename='cv62_2'><comment>U+062A U+0650 U+06E7 U+0651</comment><string>\u062A\u0650\u06E7\u0651</string></test>
-  <test label='U+06E7' stylename='cv62_2'><comment>U+062A U+0650 U+06E7 U+034F U+0651</comment><string>\u062A\u0650\u06E7\u034F\u0651</string></test>
-  
+  <test label='U+0650 U+0651 lowered' stylename='cv62_1'><comment>U+0641 U+0650 U+0651</comment><string>\u0641\u0650\u0651</string></test>
+  <test label='U+0650 U+0651 lowered' stylename='cv62_1'><comment>U+0641 U+0650 U+034F U+0651</comment><string>\u0641\u0650\u034F\u0651</string></test>
+  <test label='U+0650 U+0651 raised' stylename='cv62_2'><comment>U+0641 U+0650 U+0651</comment><string>\u0641\u0650\u0651</string></test>
+  <test label='U+0650 U+0651 raised' stylename='cv62_2'><comment>U+0641 U+0650 U+034F U+0651</comment><string>\u0641\u0650\u034F\u0651</string></test>
+  <test label='U+0650 U+0651 U+06E7 lowered' stylename='cv62_1'><comment>U+0640 U+0650 U+0651 U+06E7</comment><string>\u0640\u0650\u0651\u06E7</string></test>
+  <test label='U+0650 U+0651 U+06E7 lowered' stylename='cv62_1'><comment>U+0640 U+0650 U+0651 U+034F U+06E7</comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
+  <test label='U+0650 U+0651 U+06E7 lowered' stylename='cv62_1'><comment>U+0640 U+0650 U+06E7 U+0651</comment><string>\u0640\u0650\u06E7\u0651</string></test>
+  <test label='U+0650 U+0651 U+06E7 lowered' stylename='cv62_1'><comment>U+0640 U+0650 U+06E7 U+034F U+0651</comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
+  <test label='U+0650 U+0651 U+06E7 raised' stylename='cv62_2'><comment>U+062A U+0650 U+0651 U+06E7</comment><string>\u062A\u0650\u0651\u06E7</string></test>
+  <test label='U+0650 U+0651 U+06E7 raised' stylename='cv62_2'><comment>U+062A U+0650 U+0651 U+034F U+06E7</comment><string>\u062A\u0650\u0651\u034F\u06E7</string></test>
+  <test label='U+0650 U+0651 U+06E7 raised' stylename='cv62_2'><comment>U+062A U+0650 U+06E7 U+0651</comment><string>\u062A\u0650\u06E7\u0651</string></test>
+  <test label='U+0650 U+0651 U+06E7 raised' stylename='cv62_2'><comment>U+062A U+0650 U+06E7 U+034F U+0651</comment><string>\u062A\u0650\u06E7\u034F\u0651</string></test>
   <test label='U+06E8'><comment>ARABIC SMALL HIGH NOON</comment><string>\u25cc\u06E8</string></test>
   <test label='U+06E8'><comment>U+0640 U+0652 U+06E8</comment><string>\u0640\u0652\u06E8</string></test>
   <test label='U+06E8'><comment>U+0640 U+0652 U+034F U+06E8</comment><string>\u0640\u0652\u034F\u06E8</string></test>
