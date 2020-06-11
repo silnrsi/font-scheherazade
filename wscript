@@ -12,7 +12,7 @@ APPNAME = "ScheherazadeNew"
 FAMILY = APPNAME
 
 ##DESC_NAME = "Scheherazade New"
-DESC_SHORT = "A general-purpose Arabic script font"
+DESC_SHORT = "Arabic-script font designed in the traditional Naskh style"
 
 #DEBPKG = 'fonts-sil-scheherazade'
 
