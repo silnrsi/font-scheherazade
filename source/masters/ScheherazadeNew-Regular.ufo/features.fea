@@ -1844,12 +1844,11 @@ markClass zainabove-ar <anchor 537 1430> @_diaA;
 # baseClass wawbelow-ar <anchor 30 -942> @diaB_MarkBase;
 
 # AP: aboveLeft
-@aboveLeft = [alef-ar alef-ar.allah.fina alef-ar.postLamIni.fina alef-ar.postLamMed.fina radiAllaahuAnhaa-ar];
+@aboveLeft = [alef-ar alef-ar.allah.fina alef-ar.postLamIni.fina alef-ar.postLamMed.fina];
 # baseClass alef-ar <anchor 52 1154> @aboveLeft;
 # baseClass alef-ar.allah.fina <anchor -78 1176> @aboveLeft;
 # baseClass alef-ar.postLamIni.fina <anchor -29 1308> @aboveLeft;
 # baseClass alef-ar.postLamMed.fina <anchor 9 993> @aboveLeft;
-# baseClass radiAllaahuAnhaa-ar <anchor 0 2521> @aboveLeft;
 
 # AP: dia2B
 @dia2B = [alef-ar.postLamIni.fina alefHamzaabove-ar.postLamIni.fina alefMadda-ar.postLamIni.fina alefMadda-ar.postLamIni.small.fina alefThreeabove-ar.postLamIni.fina alefTwoabove-ar.postLamIni.fina alefWasla-ar.postLamIni.fina alefWavyhamzaabove-ar.postLamIni.fina highhamzaAlef-ar.postLamIni.fina alef-ar.postLamMed.fina alefHamzaabove-ar.postLamMed.fina alefMadda-ar.postLamMed.fina alefMadda-ar.postLamMed.small.fina alefThreeabove-ar.postLamMed.fina alefTwoabove-ar.postLamMed.fina alefWasla-ar.postLamMed.fina alefWavyhamzaabove-ar.postLamMed.fina highhamzaAlef-ar.postLamMed.fina alefHamzabelow-ar.postLamIni.fina alefHamzabelow-ar.postLamMed.fina alefWavyhamzabelow-ar.postLamIni.fina alefWavyhamzabelow-ar.postLamMed.fina];
