@@ -1488,7 +1488,7 @@ markClass _two <anchor 16 -54> @_aboveLeft;
 # baseClass wordArRubabove-ar <anchor 0 2973> @diaA_MarkBase;
 # baseClass wordAsSajdaabove-ar <anchor 0 2809> @diaA_MarkBase;
 # baseClass wordSaktaabove-ar <anchor 0 2928> @diaA_MarkBase;
-# baseClass wordWaqfaabove-ar <anchor 0 2825> @diaA_MarkBase;
+# baseClass wordWaqfaabove-ar <anchor 21 2825> @diaA_MarkBase;
 # baseClass yehabove-ar <anchor 24 1976> @diaA_MarkBase;
 # baseClass zainabove-ar <anchor 467 2379> @diaA_MarkBase;
 
@@ -1907,7 +1907,7 @@ markClass wordAnNisfabove-ar <anchor 0 1627> @_diaA;
 markClass wordArRubabove-ar <anchor 0 1429> @_diaA;
 markClass wordAsSajdaabove-ar <anchor 0 1700> @_diaA;
 markClass wordAthThalathaabove-ar <anchor -1 1700> @_diaA;
-markClass wordSaktaabove-ar <anchor -1 1694> @_diaA;
+markClass wordSaktaabove-ar <anchor 0 1694> @_diaA;
 markClass wordWaqfaabove-ar <anchor 0 1335> @_diaA;
 markClass yehabove-ar <anchor 23 1214> @_diaA;
 markClass zainabove-ar <anchor 506 1378> @_diaA;
@@ -1958,7 +1958,7 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 # baseClass tehRing-ar.medi <anchor 248 -1075> @diaBtailDown;
 # baseClass yehFourbelow-farsi.medi <anchor 260 -1075> @diaBtailDown;
 # baseClass yehKashmiri-ar.init <anchor 143 -1075> @diaBtailDown;
-# baseClass wordWaqfaabove-ar <anchor -90 -1075> @diaBtailDown_MarkBase;
+# baseClass wordWaqfaabove-ar <anchor -244 -1075> @diaBtailDown_MarkBase;
 
 # AP: diaBtailUp
 @diaBtailUp = [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehTehabove-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehTehabove-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi];
@@ -4206,7 +4206,7 @@ lookup mark_to_mark_above {
     pos mark wordArRubabove-ar <anchor 0 2973> mark @_diaA;
     pos mark wordAsSajdaabove-ar <anchor 0 2809> mark @_diaA;
     pos mark wordSaktaabove-ar <anchor 0 2928> mark @_diaA;
-    pos mark wordWaqfaabove-ar <anchor 0 2825> mark @_diaA;
+    pos mark wordWaqfaabove-ar <anchor 21 2825> mark @_diaA;
     pos mark yehabove-ar <anchor 24 1976> mark @_diaA;
     pos mark zainabove-ar <anchor 467 2379> mark @_diaA;
 } mark_to_mark_above;
