@@ -86,57 +86,6 @@ lookup ltrInit {
     sub @DualLinkIsol by @DualLinkInit ;
 } ltrInit;
 
-################  LAM-TAH  ################
-
-lookup LamTah_init {
-	lookupflag IgnoreMarks;
-	  sub lamTahabove-ar  by  lamTahabove-ar.init;
-} LamTah_init;
-
-lookup LamTah_medi {
-	lookupflag IgnoreMarks;
-	  sub lamTahabove-ar  by  lamTahabove-ar.medi;
-} LamTah_medi;
-
-lookup LamTah_fina {
-	lookupflag IgnoreMarks;
-	  sub lamTahabove-ar  by  lamTahabove-ar.fina;
-} LamTah_fina;
-
-
-lookup ltSpecFina {
-  lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkFina ;
-    sub @RightLinkIsol by @RightLinkFina ;
-} ltSpecFina;
-
-lookup ltSpecMedi {
-  lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkMedi ;
-    sub @DualLinkFina by @DualLinkMedi ;
-    sub @DualLinkInit by @DualLinkMedi ;
-} ltSpecMedi;
-
-lookup ltSpecInit {
-  lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkInit ;
-} ltSpecInit;
-
-lookup LamTah {
-	lookupflag IgnoreMarks;
-		sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit  lamTahabove-ar' lookup LamTah_medi  [@DualLinkIsol @RightLinkIsol]' lookup ltrFina;
-		sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi  lamTahabove-ar' lookup LamTah_medi  [@DualLinkIsol @RightLinkIsol]' lookup ltrFina;
-		sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit  lamTahabove-ar' lookup LamTah_medi  [@DualLinkInit]'                lookup ltrMedi;
-		sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi  lamTahabove-ar' lookup LamTah_medi  [@DualLinkInit]'                lookup ltrMedi;
-
-		sub lamTahabove-ar' lookup LamTah_init  [@DualLinkIsol @RightLinkIsol]' lookup ltSpecFina ;
-		sub lamTahabove-ar' lookup LamTah_init  [@DualLinkInit]'                lookup ltSpecMedi ;
-		
-	  sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit  lamTahabove-ar' lookup LamTah_fina ;
-	  sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi  lamTahabove-ar' lookup LamTah_fina ;
-} LamTah;
-
-#########################################
 
 #********
 # Allah "ligature" (implemented by variant forms for glyphs rather than by ligature glyph):
@@ -387,9 +336,10 @@ lookup UrduCALT {
 
 lookup WolofCALT {
   lookupflag 0 ;
-    sub @cno_loclWLF by @c_loclWLF ;
-    sub @Damma by @Damma_short ;
-    sub @Kasra by @Kasra_lowered ;
+    sub @cno_loclWLF     by  @c_loclWLF ;
+    sub @Damma           by  @Damma_short ;
+    sub @Kasra           by  @Kasra_lowered ;
+    sub dammainverted-ar by  dammainverted-ar.open ;
 } WolofCALT;
 
 lookup MaddaVowel1_target {
@@ -507,8 +457,9 @@ lookup DammatanAlternates {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
-  	#   0=default (filled);     1=hollow;              2=filled
-    sub dammainverted-ar from [ dammainverted-ar.open  dammainverted-ar ];
+  	#   0=default (filled);              1=hollow;              2=filled
+    sub dammainverted-ar      from [ dammainverted-ar.open  dammainverted-ar ];
+    sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
 } DammaInvertedAlternates;
 
 lookup DaggerAlefToLarge_target {
@@ -992,7 +943,6 @@ feature calt {  # Contextual Alternates
 
 feature calt {  # Contextual Alternates
     script arab;
-        lookup LamTah ;
         #lookup SignWithDigits;
         # lookup SignDigits;
         lookup MaddaVowel1;

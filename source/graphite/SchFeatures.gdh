@@ -190,7 +190,10 @@ ultapeshAlt {
             value = 1;
             name.1033 = string("Hollow");
         }
-        // filled value = 2 -- not needed for Scheherazade
+        filled {
+            value = 2;  // needed for Wolof
+            name.1033 = string("Filled");
+        }
     }
     default = std;
 }
@@ -464,9 +467,10 @@ urdu {
 
 wolof {
     languages = ( "wol", "wo" );  // Wolof
-    dalAlt = 1;
-    dammaAlt = 2;  // short damma
+    dalAlt = senegal;
+    dammaAlt = short;
     shaddaKasra = lowered;
+    ultapeshAlt = hollow;
 };
 
 
