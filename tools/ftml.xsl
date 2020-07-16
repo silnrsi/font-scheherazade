@@ -19,7 +19,13 @@
 	<head>
         <script>
             function regtochar(match, p1) {
-                return String.fromCharCode(parseInt(p1, 16));
+                p1 = parseInt(p1,16);
+                if (p1 > 0xFFFF) {    // must generate UTF-16
+                    p1 -= 0x10000;
+                    return String.fromCharCode(0xD800 + (p1 >> 10), 0xDC00 + (p1 &amp; 0x3FF));
+                } else {
+                    return String.fromCharCode(p1);
+                }
             };
             function init() {
                 var tw = document.createTreeWalker(document.body , NodeFilter.SHOW_TEXT, null, false);
@@ -89,10 +95,20 @@
 	<h2><xsl:value-of select="@label"/></h2>
 	<p><xsl:value-of select="comment"/></p>
 	<table>
+	<xsl:if test="@background">
+		<xsl:attribute name="style">background-color: <xsl:value-of select="@background"/>;</xsl:attribute>
+	</xsl:if>
 		<thead>
 			<th>label</th>
 <xsl:for-each select="//fontsrc">
+	<xsl:choose>
+		<xsl:when test="@label">
+			<th><xsl:value-of select="@label"/></th>
+		</xsl:when>
+		<xsl:otherwise>
 			<th><xsl:value-of select="."/></th>
+		</xsl:otherwise>
+	</xsl:choose>
 </xsl:for-each>			
 <xsl:if test="/ftml/testgroup/test/comment">
 			<th>comment</th>
