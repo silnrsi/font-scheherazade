@@ -159,7 +159,7 @@ pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
 endpass; // 1
 
 
-pass(2)
+pass(2) {MaxRuleLoop = 10}
 
 	// Simulation of UTR53 - mark reordering
 	
@@ -169,12 +169,12 @@ pass(2)
 	// 2) glyphs for fixed-position combining classes (other than shadda and daggeralef)
 	//    won't be ordered correctly relative to each other, but usually not more than one anyway.
 
-	_  cUTR53_1_skip  cUTR53_1  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_1_skip)  _; // move 220 MCM to front
-	_  cUTR53_2_skip  cUTR53_2  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_2_skip)  _; // move 230 MCM to just after 220 MCM
-	_  cUTR53_3_skip  cUTR53_3  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_3_ctx)   _; // shadda is next
-	_  cUTR53_4_skip  cUTR53_4  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_4_ctx)   _; // other fixed position glyphs (except daggeralef)
-	_  cUTR53_5_skip  cUTR53_5  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_5_ctx)   _; // daggeralef
-	_  cUTR53_6_skip  cUTR53_6  > @7:7  @2  _ / _  ^  _  opt4(cUTR53_6_skip)  _; // other 220 in front of remaining 230.
+	_  cUTR53_1_skip=S  cUTR53_1=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_1_skip)  _; // move 220 MCM to front
+	_  cUTR53_2_skip=S  cUTR53_2=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_2_skip)  _; // move 230 MCM to just after 220 MCM
+	_  cUTR53_3_skip=S  cUTR53_3=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_3_ctx)   _; // shadda is next
+	_  cUTR53_4_skip=S  cUTR53_4=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_4_ctx)   _; // other fixed position glyphs (except daggeralef)
+	_  cUTR53_5_skip=S  cUTR53_5=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_5_ctx)   _; // daggeralef
+	_  cUTR53_6_skip=S  cUTR53_6=M  > @M:M  @S  _ /  ^  _  _  opt4(cUTR53_6_skip)  _; // other 220 in front of remaining 230.
 
 endpass; // 2
 
@@ -182,14 +182,18 @@ endpass; // 2
 pass(3)	// ligature diacritics
 
 if (shaddaKasra == std || shaddaKasra == raised)
-  if (selectDiac)
-	g_shadda_ar  cShaddaKasraMarks  > 
-		_  cShaddaKasraLigatures:(S K) { comp.shadda.ref = @S; comp.kasra.ref = @K }
-		/  _=S  _=K;
-  else
-	g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)
-		/  _=S  _=K;
-  endif;
+		if (selectDiac)
+				g_shadda_ar  cShaddaKasraMarks
+					>  _  cShaddaKasraLigatures:(S K) { comp.shadda.ref = @S; comp.kasra.ref = @K }
+					/  _=S  g_graphemejoinercomb?  _=K;
+
+				cShaddaKasraMarks  g_shadda_ar  
+					>  cShaddaKasraLigatures:(K S) { comp.shadda.ref = @S; comp.kasra.ref = @K }  _
+					/  _=K  g_graphemejoinercomb?  _=S;
+		else
+				g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)  /  _=S  g_graphemejoinercomb?  _=K;
+				cShaddaKasraMarks  g_shadda_ar  >  cShaddaKasraLigatures:(K S)  _  /  _=K  g_graphemejoinercomb?  _=S;
+		endif;
 endif;
 
 	
