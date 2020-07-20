@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="wordAthThalathaabove-ar" format="2">
   <unicode hex="08DB"/>
-  <anchor x="-1" y="1700" name="_diaA"/>
+  <anchor x="-1" y="1580" name="_diaA"/>
   <anchor x="0" y="2790" name="diaA"/>
   <outline>
     <contour>
@@ -194,7 +194,8 @@
       <point x="1490" y="1830"/>
       <point x="1543" y="1981"/>
     </contour>
-    <component base="hehgoal-ar" xScale="0.60606" yScale="0.60606" xOffset="-1568" yOffset="1835"/>
-    <component base="_dot2h" xScale="0.60606" yScale="0.60606" xOffset="-1334" yOffset="2522"/>
+    <component base="hehgoal-ar" xScale="0.61" yScale="0.61" xOffset="-1568" yOffset="1835"/>
+    <component base="_dot2h" xScale="0.61" yScale="0.61" xOffset="-1334" yOffset="2522"/>
+    <component base="_dot1" xScale="0.61" yScale="0.61" xOffset="-179" yOffset="1763"/>
   </outline>
 </glyph>

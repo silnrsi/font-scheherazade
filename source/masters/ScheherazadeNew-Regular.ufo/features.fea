@@ -103,7 +103,7 @@
 @TakesSmallDigits = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3];
 @U = [uHamzaabove-ar u-ar uHamzaabove-ar.fina u-ar.fina];
 @U.filled = [uHamzaabove-ar.filled u-ar.filled uHamzaabove-ar.filled.fina u-ar.filled.fina];
-@UTR53_220MCM = [hamzabelow-ar seenbelow-ar];
+@UTR53_220MCM = [hamzabelow-ar seenbelow-ar wawbelow-ar];
 @UTR53_220other = [alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar];
 @UTR53_230MCM = [hamzaabove-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar];
 @UTR53_230other = [ainabove-ar alefLamYehabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammareversed-ar dammatanCurly-ar dotStopabove-ar doublerightarrowheadDotabove-ar doublerightarrowheadabove-ar fathaCurly-ar fathaDotabove-ar fathaHorizont-ar fathaRing-ar fathatanCurly-ar fathatwodots-ar hahabove-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar madda-ar madda-ar.small maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar rehDadabove-ar rehHahabove-ar rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar sukunoval-ar sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar vinvertedabove-ar zainabove-ar];
@@ -505,7 +505,8 @@ markClass vinvertedabove-ar <anchor 302 1380> @_diaA;
 markClass wawSmall-ar <anchor 171 -42> @_diaA;
 markClass wordAnNisfabove-ar <anchor 2 1447> @_diaA;
 markClass wordArRubabove-ar <anchor 0 1259> @_diaA;
-markClass [wordAsSajdaabove-ar wordAthThalathaabove-ar] <anchor 0 1493> @_diaA;
+markClass wordAsSajdaabove-ar <anchor 0 1493> @_diaA;
+markClass wordAthThalathaabove-ar <anchor 0 1463> @_diaA;
 markClass wordQifabove-ar <anchor 0 1434> @_diaA;
 markClass wordSaktaabove-ar <anchor 0 1488> @_diaA;
 markClass wordWaqfaabove-ar <anchor 0 1231> @_diaA;
@@ -2109,24 +2110,24 @@ lookup DecomposeForColor {
     sub alefHamzabelow-ar by alef-ar hamzabelow-ar;
 } DecomposeForColor;
 
-lookup FontCheck1_target {
+lookup _FontCheck1_target {
     lookupflag IgnoreMarks;
     sub U n k n o w n by O;
-} FontCheck1_target;
+} _FontCheck1_target;
 
 lookup FontCheck1 {
     lookupflag IgnoreMarks;
-    sub [R] e n d e r i n g U' lookup FontCheck1_target n' k' n' o' w' n';
+    sub [R] e n d e r i n g U' lookup _FontCheck1_target n' k' n' o' w' n';
 } FontCheck1;
 
-lookup FontCheck2_target {
+lookup _FontCheck2_target {
     lookupflag IgnoreMarks;
     sub O by O p e n T y p e;
-} FontCheck2_target;
+} _FontCheck2_target;
 
 lookup FontCheck2 {
     lookupflag IgnoreMarks;
-    sub [R] e n d e r i n g O' lookup FontCheck2_target;
+    sub [R] e n d e r i n g O' lookup _FontCheck2_target;
 } FontCheck2;
 
 lookup Mirror {
@@ -2150,53 +2151,6 @@ lookup ltrInit {
     sub @DualLinkIsol by @DualLinkInit;
 } ltrInit;
 
-################  LAM-TAH  ################
-lookup LamTah_init {
-    lookupflag IgnoreMarks;
-    sub lamTahabove-ar by lamTahabove-ar.init;
-} LamTah_init;
-
-lookup LamTah_medi {
-    lookupflag IgnoreMarks;
-    sub lamTahabove-ar by lamTahabove-ar.medi;
-} LamTah_medi;
-
-lookup LamTah_fina {
-    lookupflag IgnoreMarks;
-    sub lamTahabove-ar by lamTahabove-ar.fina;
-} LamTah_fina;
-
-lookup ltSpecFina {
-    lookupflag IgnoreMarks;
-    sub @DualLinkIsol by @DualLinkFina;
-    sub @RightLinkIsol by @RightLinkFina;
-} ltSpecFina;
-
-lookup ltSpecMedi {
-    lookupflag IgnoreMarks;
-    sub @DualLinkIsol by @DualLinkMedi;
-    sub @DualLinkFina by @DualLinkMedi;
-    sub @DualLinkInit by @DualLinkMedi;
-} ltSpecMedi;
-
-lookup ltSpecInit {
-    lookupflag IgnoreMarks;
-    sub @DualLinkIsol by @DualLinkInit;
-} ltSpecInit;
-
-lookup LamTah {
-    lookupflag IgnoreMarks;
-    sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit lamTahabove-ar' lookup LamTah_medi [@DualLinkIsol @RightLinkIsol]' lookup ltrFina;
-    sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi lamTahabove-ar' lookup LamTah_medi [@DualLinkIsol @RightLinkIsol]' lookup ltrFina;
-    sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit lamTahabove-ar' lookup LamTah_medi [@DualLinkInit]' lookup ltrMedi;
-    sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi lamTahabove-ar' lookup LamTah_medi [@DualLinkInit]' lookup ltrMedi;
-    sub lamTahabove-ar' lookup LamTah_init [@DualLinkIsol @RightLinkIsol]' lookup ltSpecFina;
-    sub lamTahabove-ar' lookup LamTah_init [@DualLinkInit]' lookup ltSpecMedi;
-    sub [@DualLinkIsol @RightLinkIsol]' lookup ltSpecInit lamTahabove-ar' lookup LamTah_fina;
-    sub [@DualLinkFina @RightLinkFina]' lookup ltSpecMedi lamTahabove-ar' lookup LamTah_fina;
-} LamTah;
-
-#########################################
 #********
 # Allah "ligature" (implemented by variant forms for glyphs rather than by ligature glyph):
 lookup AllahSubs1 {
@@ -2252,34 +2206,40 @@ lookup AllahLigatures {
     sub [@DualLinkInit @DualLinkMedi] @MarksAny' @MarksAny' lam-ar.medi' lookup AllahSubs1 lam-ar.medi' lookup AllahSubs2 [alefabove-ar fatha-ar]' shadda-ar' [heh-ar.fina hehgoal-ar.fina]' lookup AllahSubs2;
 } AllahLigatures;
 
-lookup Ligatures_Part1_target {
+# Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
+# Mark glyphs not included will be skipped over when trying to find a hamzaAbove
+@HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb];
+# Include in this filter hamzaBelow plus any mark glyphs that should stop any ligation.
+# Mark glyphs not included will be skipped over when trying to find a hamzaBelow
+@HamzaBelowFilter = [@UTR53_220MCM @UTR53_220other graphemejoinercomb];
+lookup _Ligatures_Part1_target {
     lookupflag IgnoreMarks;
     sub @LamIni by @LamIniBeforeAlef;
     sub @LamMed by @LamMedBeforeAlef;
-} Ligatures_Part1_target;
+} _Ligatures_Part1_target;
 
-lookup Ligatures_Part2a_target {
+lookup _Ligatures_Part2a_target {
     lookupflag IgnoreMarks;
     sub @AlefFin by @AlefFinAfterLamIni;
-} Ligatures_Part2a_target;
+} _Ligatures_Part2a_target;
 
-lookup Ligatures_Part2b_target {
+lookup _Ligatures_Part2b_target {
     lookupflag IgnoreMarks;
     sub @AlefFin by @AlefFinAfterLamMed;
-} Ligatures_Part2b_target;
+} _Ligatures_Part2b_target;
 
 lookup Ligatures {
     lookupflag IgnoreMarks;
     # Subtable: Ligatures\Part1
-    sub [@LamIni @LamMed]' lookup Ligatures_Part1_target @AlefFin;
+    sub [@LamIni @LamMed]' lookup _Ligatures_Part1_target @AlefFin;
     # Subtable: Ligatures\Part2a
-    sub @LamIniBeforeAlef @AlefFin' lookup Ligatures_Part2a_target;
+    sub @LamIniBeforeAlef @AlefFin' lookup _Ligatures_Part2a_target;
     # Subtable: Ligatures\Part2b
-    sub @LamMedBeforeAlef @AlefFin' lookup Ligatures_Part2b_target;
+    sub @LamMedBeforeAlef @AlefFin' lookup _Ligatures_Part2b_target;
 } Ligatures;
 
 lookup ComposeLowHamzaAbove {
-    lookupflag UseMarkFilteringSet @HamzaAbove;
+    lookupflag UseMarkFilteringSet @HamzaAboveFilter;
     sub waw-ar hamzaabove-ar by wawHamzaabove-ar;
     sub yeh-ar hamzaabove-ar by yehHamzaabove-ar;
     sub ae-ar hamzaabove-ar by hehHamzaabove-ar;
@@ -2294,17 +2254,52 @@ lookup ComposeLowHamzaAbove {
     sub hehgoal-ar.init hamzaabove-ar by hehgoalHamzaabove-ar.init;
 } ComposeLowHamzaAbove;
 
-lookup HamzaLigatures {
-    lookupflag UseMarkFilteringSet @HamzaLigatureParts;
+@LigateHamzaMarksFilter = [hamzaabove-ar @HamzaMarks];
+lookup _LigateHamzaMarks {
+    lookupflag UseMarkFilteringSet @LigateHamzaMarksFilter;
     sub hamzaabove-ar fatha-ar by hamza_fatha-ar;
     sub hamzaabove-ar damma-ar by hamza_damma-ar;
     sub hamzaabove-ar damma-ar.short by hamza_damma-ar.short;
     sub hamzaabove-ar damma-ar.filled by hamza_damma-ar.filled;
-    sub fatha-ar hamzaabove-ar by hamza_fatha-ar;
-    sub damma-ar hamzaabove-ar by hamza_damma-ar;
-    sub damma-ar.short hamzaabove-ar by hamza_damma-ar.short;
-    sub damma-ar.filled hamzaabove-ar by hamza_damma-ar.filled;
+} _LigateHamzaMarks;
+
+@HamzaLigatureFilter = [@HamzaAboveFilter @HamzaMarks shadda-ar];
+lookup HamzaLigatures {
+    lookupflag UseMarkFilteringSet @HamzaLigatureFilter;
+    # shouldn't ligate hamza + following fatha|damma when hamza preceded by non-MCM 230 because 
+    # UTR53 would have moved the fatha|damma to before the 230 marks but could not move the 
+    # hamza as it isn't at the beginning of the 230 sequence.
+    ignore sub @UTR53_230other hamzaabove-ar';
+    ignore sub @UTR53_230other @UTR53_230MCM hamzaabove-ar';
+    # shouldn't ligate fatha|damma + following hamza when a 230MCM follows the hamza because
+    # UTR53 would have moved both hamza and following 230MCM to before the fatha|damma at which
+    # point the 230MCM would be between the hamza and the fatha|damma, blocking ligation.
+    ignore sub @HamzaMarks' hamzaabove-ar @UTR53_230MCM;
+    ignore sub @HamzaMarks' @UTR53_230MCM hamzaabove-ar @UTR53_230MCM;
+    # otherwise we can ligate in these situations:
+    sub hamzaabove-ar' lookup _LigateHamzaMarks @HamzaMarks;
+    sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other @HamzaMarks;
+    sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other [@UTR53_230other @UTR53_230MCM] @HamzaMarks;
+    sub @HamzaMarks' lookup _LigateHamzaMarks hamzaabove-ar;
+    sub @HamzaMarks' lookup _LigateHamzaMarks @UTR53_230MCM hamzaabove-ar;
 } HamzaLigatures;
+
+# Including graphemejoinercomb allows it to interrupt the ligature formation,
+#		otherwise the lookupflag causes it to be ignored.
+@ShaddaLigatureFilter = [@ShaddaMarks @ShaddaKasraMarks shadda-ar graphemejoinercomb];
+lookup ShaddaLigatures {
+    lookupflag UseMarkFilteringSet @ShaddaLigatureFilter;
+    sub shadda-ar fathatan-ar by shadda_fathatan-ar;
+    sub shadda-ar dammatan-ar by shadda_dammatan-ar;
+    sub shadda-ar fatha-ar by shadda_fatha-ar;
+    sub shadda-ar damma-ar by shadda_damma-ar;
+    sub shadda-ar alefabove-ar by shadda_alef-ar;
+    sub fathatan-ar shadda-ar by shadda_fathatan-ar;
+    sub dammatan-ar shadda-ar by shadda_dammatan-ar;
+    sub fatha-ar shadda-ar by shadda_fatha-ar;
+    sub damma-ar shadda-ar by shadda_damma-ar;
+    sub alefabove-ar shadda-ar by shadda_alef-ar;
+} ShaddaLigatures;
 
 lookup RohingyaCALT {
     lookupflag 0;
@@ -2343,9 +2338,10 @@ lookup WolofCALT {
     sub @cno_loclWLF by @c_loclWLF;
     sub @Damma by @Damma_short;
     sub @Kasra by @Kasra_lowered;
+    sub dammainverted-ar by dammainverted-ar.open;
 } WolofCALT;
 
-lookup MaddaVowel1_target {
+lookup _MaddaVowel1_target {
     lookupflag 0;
     sub shadda-ar by shadda-ar madda-ar.small;
     sub hamzaabove-ar by hamzaabove-ar madda-ar.small;
@@ -2402,14 +2398,14 @@ lookup MaddaVowel1_target {
     sub opendammatan-ar by opendammatan-ar madda-ar.small;
     sub fatha_meem-ar by fatha_meem-ar madda-ar.small;
     sub damma_meem-ar by damma_meem-ar madda-ar.small;
-} MaddaVowel1_target;
+} _MaddaVowel1_target;
 
 lookup MaddaVowel1 {
     lookupflag 0;
-    sub madda-ar.small [@MarkGroup1A @MarkGroup2A @MarkGroup3A]' lookup MaddaVowel1_target;
+    sub madda-ar.small [@MarkGroup1A @MarkGroup2A @MarkGroup3A]' lookup _MaddaVowel1_target;
 } MaddaVowel1;
 
-lookup MaddaVowel2_target {
+lookup _MaddaVowel2_target {
     lookupflag 0;
     sub madda-ar.small shadda-ar by shadda-ar;
     sub madda-ar.small hamzaabove-ar by hamzaabove-ar;
@@ -2466,11 +2462,11 @@ lookup MaddaVowel2_target {
     sub madda-ar.small opendammatan-ar by opendammatan-ar;
     sub madda-ar.small fatha_meem-ar by fatha_meem-ar;
     sub madda-ar.small damma_meem-ar by damma_meem-ar;
-} MaddaVowel2_target;
+} _MaddaVowel2_target;
 
 lookup MaddaVowel2 {
     lookupflag 0;
-    sub madda-ar.small' lookup MaddaVowel2_target [@MarkGroup1A @MarkGroup2A @MarkGroup3A]' madda-ar.small;
+    sub madda-ar.small' lookup _MaddaVowel2_target [@MarkGroup1A @MarkGroup2A @MarkGroup3A]' madda-ar.small;
 } MaddaVowel2;
 
 lookup SindhiHeh {
@@ -2570,8 +2566,9 @@ lookup DammatanAlternates {
 
 lookup DammaInvertedAlternates {
     lookupflag 0;
-    #   0=default (filled);     1=hollow;              2=filled
+    #   0=default (filled);              1=hollow;              2=filled
     sub dammainverted-ar from [dammainverted-ar.open dammainverted-ar];
+    sub dammainverted-ar.open from [dammainverted-ar.open dammainverted-ar];
 } DammaInvertedAlternates;
 
 lookup DaggerAlefToLarge_target {
@@ -2630,26 +2627,16 @@ lookup CommaAlternates {
 #    sub hahabove-ar by marksidewaysnoonghunna-ar ;
 #} HeadOfKhahHack;
 #----------------------
-lookup ShaddaLigatures {
-    lookupflag MarkAttachmentType @ShaddaLigatureParts;
-    sub shadda-ar fathatan-ar by shadda_fathatan-ar;
-    sub shadda-ar dammatan-ar by shadda_dammatan-ar;
-    sub shadda-ar fatha-ar by shadda_fatha-ar;
-    sub shadda-ar damma-ar by shadda_damma-ar;
-    sub shadda-ar alefabove-ar by shadda_alef-ar;
-    sub fathatan-ar shadda-ar by shadda_fathatan-ar;
-    sub dammatan-ar shadda-ar by shadda_dammatan-ar;
-    sub fatha-ar shadda-ar by shadda_fatha-ar;
-    sub damma-ar shadda-ar by shadda_damma-ar;
-    sub alefabove-ar shadda-ar by shadda_alef-ar;
-} ShaddaLigatures;
-
 lookup ShaddaKasraLigatures {
     lookupflag MarkAttachmentType @ShaddaLigatureParts;
     sub kasratan-ar shadda-ar by shadda_kasratan-ar;
     sub kasra-ar shadda-ar by shadda_kasra-ar;
+    sub kasratan-ar graphemejoinercomb shadda-ar by shadda_kasratan-ar;
+    sub kasra-ar graphemejoinercomb shadda-ar by shadda_kasra-ar;
     sub shadda-ar kasratan-ar by shadda_kasratan-ar;
     sub shadda-ar kasra-ar by shadda_kasra-ar;
+    sub shadda-ar graphemejoinercomb kasratan-ar by shadda_kasratan-ar;
+    sub shadda-ar graphemejoinercomb kasra-ar by shadda_kasra-ar;
 } ShaddaKasraLigatures;
 
 # Subtending mark digits
@@ -4338,7 +4325,6 @@ feature rlig {
 feature calt {
     # Contextual Alternates
     script arab;
-    lookup LamTah;
     #lookup SignWithDigits;
     # lookup SignDigits;
     lookup MaddaVowel1;
