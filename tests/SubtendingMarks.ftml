@@ -3,10 +3,10 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc>url(../references/Scheherazade-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
-    <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
       <style feats="'cv80' 1" name="cv80_1"/>
       <style feats="'cv80' 1, 'cv82' 1" name="cv80_1_cv82_1"/>
@@ -40,7 +40,7 @@
     </styles>
     <title>Subtending Marks</title>
   </head>
-  <testgroup label="Rendering Check">
+  <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
       <string>RenderingUnknown</string>
     </test>
