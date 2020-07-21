@@ -11,9 +11,6 @@ APPNAME = "ScheherazadeNew"
 # set the font family name
 FAMILY = APPNAME
 
-##DESC_NAME = "Scheherazade New"
-DESC_SHORT = "Arabic script font designed in a traditional Naskh style"
-
 #DEBPKG = 'fonts-sil-scheherazade'
 
 # Get version info from Regular UFO; must be first function call:
