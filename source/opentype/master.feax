@@ -504,16 +504,16 @@ lookup DammaInvertedAlternates {
     sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
 } DammaInvertedAlternates;
 
-lookup DaggerAlefToLarge_target {
+lookup _DaggerAlefToLarge_target {
   lookupflag 0 ;
   	# 0=default;            1=large;            2=small
   	sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
     #sub alefabove-ar by alefabove-ar.large ;
-} DaggerAlefToLarge_target ;
+} _DaggerAlefToLarge_target ;
 
 lookup DaggerAlefToLarge {
   lookupflag 0 ;
-    sub @TakesLargeDaggerAlef alefabove-ar' lookup DaggerAlefToLarge_target ;
+    sub @TakesLargeDaggerAlef alefabove-ar' lookup _DaggerAlefToLarge_target ;
 } DaggerAlefToLarge;
 
 lookup SukunAlternates {

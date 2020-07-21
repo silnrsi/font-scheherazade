@@ -184,7 +184,7 @@ ultapeshAlt {
     settings {
         std {
             value = 0;
-            name.1033 = string("Standard");
+            name.1033 = string("Standard");  // filled
         }
         hollow {
             value = 1;
@@ -352,8 +352,8 @@ kasraTcheh {	// temporary - different ways of handling collisions
     }
     default = raise;
 }
-
 #endif
+
 
 selectDiac {
     id = "dsel";

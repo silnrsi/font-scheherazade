@@ -6,56 +6,47 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish" tag="Kur">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>			
+			<cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
-			<cmd name="gr_feat" args="{gr_cv62} 2"/>	# shadda-kasra raised
 			<cmd name="gr_feat" args="{gr_cv48} 3"/>	# heh
 		</value>
 		<value name="Rohingya" tag="Rhg">
+			<cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {RohingyaCALT}"/>
+			<!--
 			<cmd name="encode" args="06F4 uni06F4.roh"/>
 			<cmd name="encode" args="06F6 uni06F6.urdu"/>
 			<cmd name="encode" args="06F7 uni06F7.urdu"/>
+			<cmd name="encode" args="064C uni064C.sixNine"/>
+			<cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_del" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			-->	
+			<cmd name="gr_feat" args="{gr_cv72} 1"/>	# dammatan six-nine
 			<cmd name="gr_feat" args="{gr_cv82} 4"/>	# eastern digits
+			<cmd name="gr_feat" args="{gr_cv62} 1"/>  # shadda+kasra lowered
+
 		</value>
 		<value name="Sindhi" tag="Sin">
+			<cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>	
 			<cmd name="gr_feat" args="{gr_cv44} 1"/>	# meem alternates
 			<cmd name="gr_feat" args="{gr_cv48} 1"/>	# heh
 			<cmd name="gr_feat" args="{gr_cv82} 1"/>	# eastern digits
+			<cmd name="gr_feat" args="{gr_cv62} 1"/>  # shadda+kasra lowered
 		</value>
 		<value name="Urdu" tag="Urd">
+			<cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduCALT}"/>	
 			<cmd name="gr_feat" args="{gr_cv48} 2"/>	# heh
 			<cmd name="gr_feat" args="{gr_cv82} 2"/>	# eastern digits
 		</value>
 		<value name="Wolof" tag="Wol">
+			<cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WolofCALT}"/>	
 			<cmd name="gr_feat" args="{gr_cv12} 1"/>	# dal alternates
 			<cmd name="gr_feat" args="{gr_cv70} 2"/>	# damma short
-		</value>
-	</feature>
-
-	<feature name="Alef diacritic placement" value="Standard" tag="Al">
-		<value name="Standard" tag="Std">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Hamza touching" tag="HzTo">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WarshAlternatesTT1}"/>
-			<cmd name="gr_feat" args="{gr_cv02} 1"/>
-		</value>
-		<value name="Touching" tag="To">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WarshAlternatesTT2}"/>
-			<cmd name="gr_feat" args="{gr_cv02} 2"/>
-		</value>
-	</feature>
-
-	<feature name="Jeem/Hah" value="Standard" tag="JeHa">
-		<value name="Standard" tag="Std">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Handwritten" tag="Hand">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {JeemHahMedAlternate}"/>	
-			<cmd name="gr_feat" args="{gr_cv08} 1"/>
+			<cmd name="gr_feat" args="{gr_cv62} 1"/>  # shadda+kasra lowered
+			<cmd name="gr_feat" args="{gr_cv74} 1"/>  # hollow inverted damma
 		</value>
 	</feature>
 
@@ -68,17 +59,7 @@
 			<cmd name="gr_feat" args="{gr_cv12} 1"/>
 		</value>
 	</feature>
-
-	<feature name="Sad/Dad" value="Standard" tag="SdDd">
-		<value name="Standard" tag="Std">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Half" tag="Half">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SadDadAlternate}"/>	
-			<cmd name="gr_feat" args="{gr_cv20} 1"/>
-		</value>
-	</feature>
-
+  
 	<feature name="Meem" value="Standard" tag="Meem">
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
@@ -117,7 +98,6 @@
 		</value>
 	</feature>
 
-
 	<feature name="Maddah" value="Small" tag="Mda">
 		<value name="Small" tag="Sm">
 			<cmd name="null" args="null"/>
@@ -137,7 +117,7 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Raised" tag="High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/> <!-- ???? -->
 			<cmd name="gr_feat" args="{gr_cv62} 2"/>
 		</value>
 	</feature>
@@ -231,6 +211,7 @@
 			<cmd name="encode" args="06F6 uni06F6.urdu"/>
 			<cmd name="encode" args="06F7 uni06F7.urdu"/>
 		</value>
+		<!-- Kurdish = 3 not included -->
 	</feature>
 
 
@@ -262,23 +243,37 @@
 		</value>
 	</feature>
 
-	<interactions>
-	    <test select="Lng-Rhg Kas-High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
-			<cmd name="gr_feat" args="{gr_cv62} 2"/>
-	    </test>
-	    <test select="Lng-Sin Kas-High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
-			<cmd name="gr_feat" args="{gr_cv62} 2"/>
-	    </test>
-	    <test select="Lng-Urd Kas-High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
-			<cmd name="gr_feat" args="{gr_cv62} 2"/>
-	    </test>
-	    <test select="Lng-Wol Kas-High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
-			<cmd name="gr_feat" args="{gr_cv62} 2"/>
-	    </test>
+	<interactions>	    
+		<test select="Lng-Def Kas-Low">
+			<cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_del" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+		</test>
+		<test select="Lng-Kur Kas-Low"> <!-- default=high -->
+			<cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_del" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			<!-- <cmd name="gr_feat" args="{gr_cv62} 1"/> -->
+		</test>
+		<test select="Lng-Rhg Kas-High"> <!-- lowered -->
+			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			<!-- <cmd name="gr_feat" args="{gr_cv62} 2"/> -->
+		</test>
+		<test select="Lng-Snd Kas-High"> <!-- lowered -->
+			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			<!-- <cmd name="gr_feat" args="{gr_cv62} 2"/> -->
+		</test>
+		<test select="Lng-Urd Kas-High"> <!-- lowered -->
+			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			<!-- <cmd name="gr_feat" args="{gr_cv62} 2"/> -->
+		</test>
+		<test select="Lng-Wol Kas-High"> <!-- lowered -->
+			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
+			<!-- <cmd name="gr_feat" args="{gr_cv62} 2"/> -->
+		</test>
+
 	</interactions>
 
 	<cmd_blocks/>
