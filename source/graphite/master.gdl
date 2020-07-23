@@ -182,18 +182,8 @@ endpass; // 2
 pass(3)	// ligature diacritics
 
 if (shaddaKasra == std || shaddaKasra == raised)
-		if (selectDiac)
-				g_shadda_ar  cShaddaKasraMarks
-					>  _  cShaddaKasraLigatures:(S K) { comp.shadda.ref = @S; comp.kasra.ref = @K }
-					/  _=S  g_graphemejoinercomb?  _=K;
-
-				cShaddaKasraMarks  g_shadda_ar  
-					>  cShaddaKasraLigatures:(K S) { comp.shadda.ref = @S; comp.kasra.ref = @K }  _
-					/  _=K  g_graphemejoinercomb?  _=S;
-		else
-				g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)  /  _=S  g_graphemejoinercomb?  _=K;
-				cShaddaKasraMarks  g_shadda_ar  >  cShaddaKasraLigatures:(K S)  _  /  _=K  g_graphemejoinercomb?  _=S;
-		endif;
+		g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)  /  _=S  g_graphemejoinercomb?  _=K;
+		cShaddaKasraMarks  g_shadda_ar  >  cShaddaKasraLigatures:(K S)  _  /  _=K  g_graphemejoinercomb?  _=S;
 endif;
 
 	
@@ -230,12 +220,7 @@ endpass; // 4
 
 pass(5)	// Features, special behaviors
 
-	if (selectDiac)
-		cLowHamzaBase  g_hamzaabove_ar  >
-			cLowHamzaComposed:(1 2) { component { base.ref = @1; hamza.ref = @2 }}  _;
-	else
-		cLowHamzaBase  g_hamzaabove_ar  >  cLowHamzaComposed:(1 2)  _;
-	endif;
+	cLowHamzaBase  g_hamzaabove_ar  >  cLowHamzaComposed:(1 2)  _;
 	
 	// Allah ligatures:
 	// Also see pass 6 below.
@@ -405,12 +390,12 @@ pass(1)
 	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
 	g_shadda_ar=S
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
-			{attach {to=@S; at=point(diaAS.x,diaAS.y-80m); with=diaAM}; insert = selectDiac}
+			{attach {to=@S; at=point(diaAS.x,diaAS.y-80m); with=diaAM} }
 		/ _ ^ opt4(cndiaADia)  _;
 
 	g_hamzaabove_ar=H
 		(g_fatha_ar  g_damma_ar  g_fathatan_ar  g_dammatan_ar)
-			{attach {to=@H; at=point(diaAS.x+40m,diaAS.y-80m); with=diaAM}; insert = selectDiac}
+			{attach {to=@H; at=point(diaAS.x+40m,diaAS.y-80m); with=diaAM} }
 		/ _ ^ opt4(cndiaADia)  _;
 ****/
 
@@ -420,7 +405,7 @@ pass(1)
 
 
 	// Normal case - OLD
-//	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM}; insert = selectDiac}
+//	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM} }
 //		/ _ ^ MARKSBELOW  _;
 
 
@@ -479,11 +464,11 @@ pass(2)
 	// Marks below
 
 	// Special attachment points for lam-alef ligatures, to avoid collisions:
-	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM}; insert = selectDiac}
+	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM} }
 		/ (g_lam_threedotsabove_ar_pre_alef_init g_lam_threedotsabove_ar_pre_alef_medi cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
 	// Normal case - OLD
-//	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM};  insert = selectDiac}
+//	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM} }
 //		/ _ ^ MARKSABOVE  _;
 
 endpass; // 2

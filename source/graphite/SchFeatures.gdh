@@ -354,23 +354,6 @@ kasraTcheh {	// temporary - different ways of handling collisions
 }
 #endif
 
-
-selectDiac {
-    id = "dsel";
-    name.1033 = string("Diacritic selection");
-    settings {
-        off {
-            value = 0;
-            name.1033 = string("False");
-        }
-        on {
-            value = 1;
-            name.1033 = string("True");
-        }
-    }
-    default = off;
-}
-
 invis {
     id = "invs";
     name.1033 = string("Show invisible characters");
