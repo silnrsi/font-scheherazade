@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Testing.xsl"?>
+<ftml version="1.0">
+  <head>
+    <columns comment="30%" label="15%" string="50%" style="5%" />
+    <fontsrc>url(..\results\Sch-Reg-graide.ttf)</fontsrc>
+    <styles>
+      <style feats="eofa=2" name="fset1339" />
+      <style feats="cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1385" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1386" />
+      <style feats="cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1387" />
+      <style feats="cv62=2" name="fset1388" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 invs=0" name="fset1389" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
+      <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
+      <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
+      <style feats="cv60=0 cv12=0 cv44=0 cv48=0 cv50=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset29" />
+      <style feats="cv48=0 cv50=0 cv60=0 cv12=0 cv44=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset30" />
+      <style lang="ckb" name="fset31" />
+      <style lang="kur" name="fset32" />
+      <style lang="scl" name="fset33" />
+      <style lang="ur" name="fset34" />
+      <style lang="sd" name="fset35" />
+      <style lang="rhg" name="fset37" />
+      <style lang="snd" name="fset38" />
+      <style feats="cv62=1" name="fset46" />
+      <style feats="cv62=2" lang="ur" name="fset53" />
+      <style feats="cv62=1" lang="ku" name="fset66" />
+    </styles>
+  </head>
+  <testgroup label="main">
+    <test class="fset28" label="simple" rtl="True">
+      <string>بسف</string>
+    </test>
+    <test class="fset29" label="RenderingUnknown">
+      <string>RenderingUnknown</string>
+    </test>
+    <test class="fset1339" label="end of ayah">
+      <string>۝١ ۝٣٥١</string>
+    </test>
+    <test class="fset27" label="footnote marker">
+      <string>؂۳۱</string>
+    </test>
+    <test class="fset26" label="fatha + alef diac" rtl="True">
+      <string>مࣃَٰس</string>
+    </test>
+    <test class="fset27" label="08B8 - tehTehabove" rtl="True">
+      <string>مࢸَس مࢸَ ࢸَس ࢸَ</string>
+    </test>
+    <test class="fset30" label="08BE - pehVAbove" rtl="True">
+      <string>مࢾَس مࢾَ ࢾَس ࢾَ</string>
+    </test>
+    <test class="fset27" label="08BF - tehVAbove" rtl="True">
+      <string>مࢿَس مࢿَ ࢿَس ࢿَ</string>
+    </test>
+    <test class="fset29" label="08C1 - tchehVabove" rtl="True">
+      <string>مࣁَس مࣁَ ࣁَس ࣁَ  ࣀَ</string>
+    </test>
+    <test class="fset29" label="08C2 - kehehVabove" rtl="True">
+      <string>مࣂَس مࣂَ ࣂَس ࣂَ</string>
+    </test>
+    <test class="fset30" label="08C3 - ghainThreedots" rtl="True">
+      <string>مࣃَس مࣃَ ࣃَس ࣃَ ثَ</string>
+    </test>
+    <test class="fset29" label="08C4 - qafAfricanThreedotsabove" rtl="True">
+      <string>مࣄَس مࣄَ ࣄَس ࣄَ  ثَ</string>
+    </test>
+    <test class="fset29" label="08C5 - jeemThreedotsabove" rtl="True">
+      <string>مࣅَس مࣅَ ࣅَس ࣅَ  ثَ</string>
+    </test>
+    <test class="fset29" label="08C6 - jeemThreedotsbelow" rtl="True">
+      <string>مࣆَس مࣆَ ࣆَس ࣆَ</string>
+    </test>
+    <test class="fset29" label="08C7 - lamTahabove" rtl="True">
+      <string>مࣇَس مࣇَ ࣇَس ࣇَ</string>
+    </test>
+    <test class="fset31" label="Kurdish heh - Central Kurdish" rtl="True">
+      <string>ه ههه</string>
+    </test>
+    <test class="fset32" label="Kurdish heh - Kurmanji" rtl="True">
+      <string>ه ههه</string>
+    </test>
+    <test class="fset35" label="Sindhi heh" rtl="True">
+      <string>ه ههه</string>
+    </test>
+    <test class="fset34" label="Urdu heh - standard" rtl="True">
+      <string>ه ههه</string>
+    </test>
+    <test class="fset33" label="heh - Shina (fail)" rtl="True">
+      <string>ه ههه</string>
+    </test>
+    <test class="fset1385" label="digits (default)">
+      <string>۴ ۶ ۷</string>
+    </test>
+    <test class="fset37" label="digits - Rohingya">
+      <string>۴ ۶ ۷</string>
+    </test>
+    <test class="fset38" label="digits - Sindhi">
+      <string>۴ ۶ ۷</string>
+    </test>
+    <test class="fset34" label="digits - Urdu">
+      <string>۴ ۶ ۷</string>
+    </test>
+    <test class="fset1386" label="shadda kasra - default" rtl="True">
+      <string>بِّ</string>
+    </test>
+    <test class="fset46" label="shadda kasra - lowered" rtl="True">
+      <string>بِّ</string>
+    </test>
+    <test class="fset34" label="shadda kasra - Urdu (lowered)" rtl="True">
+      <string>بِّ</string>
+    </test>
+    <test class="fset53" label="shadda kasra - Urdu + raised" rtl="True">
+      <string>بِّ</string>
+    </test>
+    <test class="fset66" label="shadda kasra - Kurdish (raised) + lowered" rtl="True">
+      <string>بِّ</string>
+    </test>
+    <test class="fset1386" label="lam alef" rtl="True">
+      <string>لا بلا  ڶٱ سࣇٲ</string>
+    </test>
+  </testgroup>
+  <testgroup label="Allah">
+    <test class="fset1386" label="FDF2" rtl="True">
+      <string>ﷲ</string>
+    </test>
+    <test class="fset1386" label="heh = 0647" rtl="True">
+      <string>الله</string>
+    </test>
+    <test class="fset1386" label="heh = 0647, shadda+alef" rtl="True">
+      <string>اللّٰه</string>
+    </test>
+    <test class="fset1386" label="heh = 0647, shadda+fatha" rtl="True">
+      <string>اللَّه</string>
+    </test>
+    <test class="fset1386" label="heh = 06C1" rtl="True">
+      <string>اللہ</string>
+    </test>
+    <test class="fset1386" label="heh = 06C1, s+a, final diac" rtl="True">
+      <string>اللّٰہُ</string>
+    </test>
+    <test class="fset1386" label="heh = 06C1, shadda+fatha" rtl="True">
+      <string>اللَّہ</string>
+    </test>
+    <test class="fset1386" label="no alef, dual-connecting, 0647, s+a" rtl="True">
+      <string>فللّٰه</string>
+    </test>
+    <test class="fset1386" label="no alef, right-connecting, 06C1, s+a" rtl="True">
+      <string>دُللّٰہ</string>
+    </test>
+    <test class="fset1386" label="final alef, 0647, s+f" rtl="True">
+      <string>ساللَّه</string>
+    </test>
+    <test class="fset1386" label="alef wasla / madda" rtl="True">
+      <string>ٱللّٰہ آللّٰہ</string>
+    </test>
+    <test class="fset1386" label="final alef wasla / madda" rtl="True">
+      <string>سٱللّٰہ فآللّٰہ</string>
+    </test>
+    <test background="#55aaff" class="fset1386" label="NO LIGATURE FORM" rtl="True">
+      <string />
+    </test>
+    <test class="fset1386" label="final alef, 06C1, no diacs - NO" rtl="True">
+      <string>سالله</string>
+    </test>
+    <test class="fset1386" label="non-final heh - NO" rtl="True">
+      <string>اللّٰهم</string>
+    </test>
+    <test class="fset1386" label="diac on first lam - NO" rtl="True">
+      <string>الّله</string>
+    </test>
+    <test class="fset1386" label="ZWJ - NO" rtl="True">
+      <string>ال‍له</string>
+    </test>
+  </testgroup>
+  <testgroup label="AMTRA">
+    <test class="fset1386" label="damma + hamza" rtl="True">
+      <string>ىِٕ  ىِ͏ٕ  </string>
+    </test>
+    <test class="fset1386" label="fatha + shadda + hamza" rtl="True">
+      <string>سَّٔ سَ͏ّٔ سَّ͏ٔ</string>
+    </test>
+    <test class="fset1386" label="fatha + ng-mark" rtl="True">
+      <string>بَ٘ بَ͏٘</string>
+    </test>
+    <test class="fset1386" label="high-seen + sukun" rtl="True">
+      <string>بصْۜ بصۜ͏ْ بصْۜ بصْ͏ۜ</string>
+    </test>
+    <test class="fset1386" label="kasra + small-yeh + shadda" rtl="True">
+      <string>ـِّۧ ـِۧ͏ّ</string>
+    </test>
+    <test class="fset1386" label="sukun + small-noon" rtl="True">
+      <string>ـْۨ</string>
+    </test>
+    <test class="fset1388" label="kasra + shadda + small - raised" rtl="True">
+      <string>بِّۧ بِّۧ بِۧ͏ّ</string>
+    </test>
+    <test class="fset46" label="kasra + shadda + small - lowered" rtl="True">
+      <string>ـِّۧ بِّۧ ـِۧ͏ّ</string>
+    </test>
+  </testgroup>
+  <testgroup label="honorific ligs">
+    <test class="fset1387" label="Salaamuhu Alaynaa" rtl="True">
+      <string>سَلامه عَلَينا     </string>
+    </test>
+    <test class="fset1387" label="Ahayhi As-Salaam" rtl="True">
+      <string>عٰليۡهِ السّلاٰم   </string>
+    </test>
+    <test class="fset1387" label="Alayhim As-Salaam" rtl="True">
+      <string>عٰليهِم السّلاٰم   </string>
+    </test>
+    <test class="fset1386" label="Alayhaa As-Salaam" rtl="True">
+      <string>عَليها السّلاٰم   </string>
+    </test>
+    <test class="fset1387" label="Rahimahu Allaah" rtl="True">
+      <string>رَحمَه اللّٰهُ   </string>
+    </test>
+    <test class="fset1387" label="Radi Allaahu Anh (u)" rtl="True">
+      <string>رَضِي اللّٰهُ عنهُ   </string>
+    </test>
+    <test class="fset1387" label="Radi Allaahu Anhaa" rtl="True">
+      <string>رَضِي اللّٰهُ عنهُا   </string>
+    </test>
+    <test class="fset1385" label="Radi Allahu Anhum" rtl="True">
+      <string>رَضِي اللّٰهُ عنهُم   </string>
+    </test>
+    <test class="fset1387" label="Radi Allahu Anhumaa" rtl="True">
+      <string>رَضِي اللّٰهُ عنهُما   </string>
+    </test>
+    <test class="fset1387" label="Radi Allahu Anhunna" rtl="True">
+      <string>رَضِي اللّٰهُ عنهُنَّ   </string>
+    </test>
+    <test class="fset1385" label="Sallallaahu Alayhi Wa-Aalih" rtl="True">
+      <string>صَلَّي اللّٰهُ عَليَۡهِ وٰالهٖ     </string>
+    </test>
+    <test class="fset1385" label="Alayhimaa As-Salaam" rtl="True">
+      <string>عٰليهِما السَّلاٰم   </string>
+    </test>
+    <test class="fset1385" label="Alayhi As-Salaatu Was-Salaam" rtl="True">
+      <string>عَليۡهِ الصَّلاة والسَّلاَمُ    </string>
+    </test>
+    <test class="fset46" label="Quddisa Sirrah" rtl="True">
+      <string>قدِّسَ سرُّه   </string>
+    </test>
+    <test class="fset1385" label="Sallallahu Alayhi Wa-Aalihee Wa-Sallam" rtl="True">
+      <string>صَلَّي اللّٰهُ عَليَۡه وَٰاله وَسَلّمَ   </string>
+    </test>
+    <test class="fset1385" label="Subhaanahu Wa Taaalaa" rtl="True">
+      <string>سُبجانہُ وَۡ تَعَاليٰ   </string>
+    </test>
+    <test class="fset1385" label="Azza Wa Jall" rtl="True">
+      <string>عَزَّ وَجَلّ   </string>
+    </test>
+    <test background="#ffaaff" class="fset1385" label="NOT PRIORITY 1" rtl="True">
+      <string />
+    </test>
+    <test background="#ffaaff" class="fset1386" label="Sallallahou Alayhewasallam" rtl="True">
+      <string>صلى الله عليه وسلم   ﷺ</string>
+    </test>
+    <test class="fset1387" label="Sallallahou Alayhe Wasallam" rtl="True">
+      <string>صللى الله عليه وسلم</string>
+    </test>
+    <test background="#ffaaff" class="fset1386" label="Sallallahou Alayhi Wa-Aalih" rtl="True">
+      <string>صَلَّياللّٰهُ عَليَۡهِ وٰا لهٖ    </string>
+    </test>
+    <test background="#ffaaff" class="fset1386" label="Jallajalalouhou" rtl="True">
+      <string>جل جلاله   ﷻ </string>
+    </test>
+  </testgroup>
+  <testgroup label="kerning">
+    <test background="#55aaff" class="fset1389" label="REH" rtl="True">
+      <string />
+    </test>
+    <test class="fset1389" label="no change" rtl="True">
+      <string>وپب مرࣆ رݙ وڛ رݡ وݠب</string>
+    </test>
+    <test class="fset1389" label="reh yeh" rtl="True">
+      <string>ریب</string>
+    </test>
+    <test class="fset1389" label="reh ain" rtl="True">
+      <string>رع</string>
+    </test>
+    <test class="fset1389" label="reh keheh - tighten" rtl="True">
+      <string>رک وؼت</string>
+    </test>
+    <test class="fset1389" label="reh alef-hamza-below - loosen" rtl="True">
+      <string>رٳ وإ وٳ زڸل ۅڸ</string>
+    </test>
+    <test class="fset1389" label="reh/waw  alef + mark-below - loosen" rtl="True">
+      <string>واِ زإٓ</string>
+    </test>
+    <test class="fset1389" label="reh/waw narrow-ini + mark-below - loosen" rtl="True">
+      <string>ۄیٕس ژڣٖض ڙلِت</string>
+    </test>
+    <test class="fset1389" label="reh/waw - don't change" rtl="True">
+      <string>ژفٖض ڙلِ بۊُمَ</string>
+    </test>
+    <test class="fset1389" label="reh/waw ain - tighten more" rtl="True">
+      <string>رعس ݹغم ۊݝم</string>
+    </test>
+    <test class="fset1389" label="reh/waw ain - marks below - don't change" rtl="True">
+      <string>رعِس ݹغٕم ۊݝۣم</string>
+    </test>
+    <test class="fset1389" label="reh/waw ain-isolates" rtl="True">
+      <string>ۄع زࣃ رع</string>
+    </test>
+  </testgroup>
+  <testgroup label="collisions">
+    <test class="fset1389" label="kaf rnoon/high-hamza-yeh" rtl="True">
+      <string>کڻب کٸب ڱڻس</string>
+    </test>
+    <test class="fset1389" label="qaf-three-dots rnoon" rtl="True">
+      <string>ګڻب ګٸب</string>
+    </test>
+    <test class="fset1389" label="yeh-barree-two" rtl="True">
+      <string>ݺؽ ݺݺب</string>
+    </test>
+    <test class="fset1389" label="keheh/tcheh/noon/alef rreh" rtl="True">
+      <string>کڑ بچڑ بنڑ</string>
+    </test>
+    <test class="fset1389" label="alef rreh" rtl="True">
+      <string>اڑ باڑ </string>
+    </test>
+    <test class="fset1389" label="takhallus" rtl="True">
+      <string>اہؔ ساهؔب</string>
+    </test>
+  </testgroup>
+</ftml>

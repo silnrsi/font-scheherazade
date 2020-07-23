@@ -2,11 +2,12 @@
 
     <class name="AinLikeInit">
         ain-ar.init ghain-ar.init ainThreedots-ar.init ghainDotbelow-ar.init ainTwodotshorizontalabove-ar.init ainThreedotsdownabove-ar.init		
-        ainTwodotsverticalabove-ar.init 	
+        ainTwodotsverticalabove-ar.init ghainThreedots-ar.init ghainDotbelow-ar.init
     </class>
 
     <class name="AinLikeIsol">
-        ain-ar ghain-ar ainThreedots-ar ghainDotbelow-ar ainTwodotshorizontalabove-ar ainThreedotsdownabove-ar ainTwodotsverticalabove-ar 	
+        ain-ar ghain-ar ainThreedots-ar ghainDotbelow-ar ainTwodotshorizontalabove-ar ainThreedotsdownabove-ar
+        ainTwodotsverticalabove-ar ghainThreedots-ar ghainDotbelow-ar
     </class>
 
     <class name="AlefFin">
@@ -34,6 +35,10 @@
         alefWavyhamzabelow-ar highhamzaAlef-ar alefWasla-ar alefTwoabove-ar alefThreeabove-ar 	
     </class>
 
+    <class name="AlefLamWBelow">  <!-- reh/waw kerning -->
+    	alefHamzabelow-ar alefWavyhamzabelow-ar lamThreedotsbelow-ar lamThreedotsbelow-ar.init
+    </class>
+    
     <class name="AlefMark">
         madda-ar madda-ar.small hamzaabove-ar hamzabelow-ar 	
     </class>
@@ -715,7 +720,7 @@
         meemDotabove-ar.sindhi.fina meemDotbelow-ar.sindhi.fina meemThreedotsabove-ar.sindhi.fina 	
     </class>
 
-    <class name="NarrowIni">
+    <class name="NarrowIni"> <!-- reh/waw kerning -->
         yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init		
         highhamzaYeh-ar.init yeh-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehVinverted-farsi.init		
         yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehVabove-ar.init e-ar.init yehThreedotsbelow-ar.init		
