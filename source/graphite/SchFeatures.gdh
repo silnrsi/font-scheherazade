@@ -354,6 +354,7 @@ kasraTcheh {	// temporary - different ways of handling collisions
 }
 #endif
 
+/****
 invis {
     id = "invs";
     name.1033 = string("Show invisible characters");
@@ -370,6 +371,7 @@ invis {
     default = off;
 
 }
+****/
 
 debug {
     id = "dbug";
