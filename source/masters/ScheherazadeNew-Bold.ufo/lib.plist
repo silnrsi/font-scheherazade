@@ -224,7 +224,6 @@
   /wordAsSajdaabove-ar      /wordArRubabove-ar       /wordAthThalathaabove-ar</string>
     <string>/salaamuhuAlaynaa-ar/noon-ar.fina/jeem-ar.init/quddisaSirrah-ar/tchehDotabove-ar/azzaWaJall-ar/waw-ar.fina/lam-ar.init/alayhaaAsSalaam-ar/ain-ar.fina/seen-ar.init/alayhiAsSalaam-ar/heh-ar/alayhimAsSalaam-ar/qaf-ar/alayhimaaAsSalaam-ar/teh-ar/alayhiAsSalaatuWaSalaam-ar/dal-ar/sallallahuAlayhiWaAaliheeWaSallam-ar/meem-ar/sallallaahuAlayhiWaAalih-ar/beh-ar.fina/sad-ar.init/subhaanahuWaTaaalaa-ar/seen-ar/radiAllaahuAnh-ar/ghain-ar/radiAllaahuAnhaa-ar/alef-ar.postLamIni.fina/lam-ar.preAlef.init/radiAllaahuAnhum-ar/meem-ar.fina/meem-ar.init/radiAllaahuAnhumaa-ar/feh-ar/radiAllaahuAnhunna-ar/yehbarree-ar.fina/qaf-ar.init 
 /reh-ar.fina/seen-ar.medi/lam-ar.init/rahimahuAllaah-ar/meem-ar</string>
-    <string>/wordQifabove-ar</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -1375,8 +1374,6 @@
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
     <string>absAutoKashida</string>
-    <string>sadabove-ar</string>
-    <string>ainabove-ar</string>
     <string>takhallusabove-ar</string>
     <string>tahabove-ar</string>
     <string>alefLamYehabove-ar</string>
@@ -1435,6 +1432,21 @@
     <string>yehSmall-ar</string>
     <string>yehabove-ar</string>
     <string>noonabove-ar</string>
+    <string>wawbelow-ar</string>
+    <string>wordArRubabove-ar</string>
+    <string>sadabove-ar</string>
+    <string>ainabove-ar</string>
+    <string>qafabove-ar</string>
+    <string>noonKasraabove-ar</string>
+    <string>noonKasrabelow-ar</string>
+    <string>wordAthThalathaabove-ar</string>
+    <string>wordAsSajdaabove-ar</string>
+    <string>wordAnNisfabove-ar</string>
+    <string>wordSaktaabove-ar</string>
+    <string>wordQifabove-ar</string>
+    <string>wordWaqfaabove-ar</string>
+    <string>footnotemarkerabove-ar</string>
+    <string>pagenumberabove-ar</string>
     <string>sajdah-ar</string>
     <string>rhombusStopbelow-ar</string>
     <string>rhombusStopabove-ar</string>
@@ -1574,7 +1586,26 @@
     <string>lam-ar.allah2.medi</string>
     <string>heh-ar.allah.fina</string>
     <string>hehgoal-ar.allah.fina</string>
+    <string>jallajalalouhou-ar</string>
     <string>rial</string>
+    <string>bismillah-ar</string>
+    <string>salaamuhuAlaynaa-ar</string>
+    <string>alayhiAsSalaam-ar</string>
+    <string>alayhimAsSalaam-ar</string>
+    <string>alayhaaAsSalaam-ar</string>
+    <string>rahimahuAllaah-ar</string>
+    <string>radiAllaahuAnh-ar</string>
+    <string>radiAllaahuAnhaa-ar</string>
+    <string>radiAllaahuAnhum-ar</string>
+    <string>radiAllaahuAnhumaa-ar</string>
+    <string>radiAllaahuAnhunna-ar</string>
+    <string>sallallaahuAlayhiWaAalih-ar</string>
+    <string>alayhimaaAsSalaam-ar</string>
+    <string>alayhiAsSalaatuWaSalaam-ar</string>
+    <string>quddisaSirrah-ar</string>
+    <string>sallallahuAlayhiWaAaliheeWaSallam-ar</string>
+    <string>subhaanahuWaTaaalaa-ar</string>
+    <string>azzaWaJall-ar</string>
     <string>dammaturnedbelow-ar</string>
     <string>fathaCurly-ar</string>
     <string>dammaCurly-ar</string>
@@ -2903,8 +2934,6 @@
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
     <string>absAutoKashida</string>
-    <string>sadabove-ar</string>
-    <string>ainabove-ar</string>
     <string>takhallusabove-ar</string>
     <string>tahabove-ar</string>
     <string>alefLamYehabove-ar</string>
@@ -2963,6 +2992,21 @@
     <string>yehSmall-ar</string>
     <string>yehabove-ar</string>
     <string>noonabove-ar</string>
+    <string>wawbelow-ar</string>
+    <string>wordArRubabove-ar</string>
+    <string>sadabove-ar</string>
+    <string>ainabove-ar</string>
+    <string>qafabove-ar</string>
+    <string>noonKasraabove-ar</string>
+    <string>noonKasrabelow-ar</string>
+    <string>wordAthThalathaabove-ar</string>
+    <string>wordAsSajdaabove-ar</string>
+    <string>wordAnNisfabove-ar</string>
+    <string>wordSaktaabove-ar</string>
+    <string>wordQifabove-ar</string>
+    <string>wordWaqfaabove-ar</string>
+    <string>footnotemarkerabove-ar</string>
+    <string>pagenumberabove-ar</string>
     <string>sajdah-ar</string>
     <string>rhombusStopbelow-ar</string>
     <string>rhombusStopabove-ar</string>
@@ -3102,7 +3146,26 @@
     <string>lam-ar.allah2.medi</string>
     <string>heh-ar.allah.fina</string>
     <string>hehgoal-ar.allah.fina</string>
+    <string>jallajalalouhou-ar</string>
     <string>rial</string>
+    <string>bismillah-ar</string>
+    <string>salaamuhuAlaynaa-ar</string>
+    <string>alayhiAsSalaam-ar</string>
+    <string>alayhimAsSalaam-ar</string>
+    <string>alayhaaAsSalaam-ar</string>
+    <string>rahimahuAllaah-ar</string>
+    <string>radiAllaahuAnh-ar</string>
+    <string>radiAllaahuAnhaa-ar</string>
+    <string>radiAllaahuAnhum-ar</string>
+    <string>radiAllaahuAnhumaa-ar</string>
+    <string>radiAllaahuAnhunna-ar</string>
+    <string>sallallaahuAlayhiWaAalih-ar</string>
+    <string>alayhimaaAsSalaam-ar</string>
+    <string>alayhiAsSalaatuWaSalaam-ar</string>
+    <string>quddisaSirrah-ar</string>
+    <string>sallallahuAlayhiWaAaliheeWaSallam-ar</string>
+    <string>subhaanahuWaTaaalaa-ar</string>
+    <string>azzaWaJall-ar</string>
     <string>dammaturnedbelow-ar</string>
     <string>fathaCurly-ar</string>
     <string>dammaCurly-ar</string>
@@ -3395,7 +3458,17 @@
     <key>ainTwodotsverticalabove-ar.medi</key>
     <string>uni075F.medi</string>
     <key>ainabove-ar</key>
-    <string>uni0611</string>
+    <string>uni08D6</string>
+    <key>alayhaaAsSalaam-ar</key>
+    <string>uniE005</string>
+    <key>alayhiAsSalaam-ar</key>
+    <string>uniE003</string>
+    <key>alayhiAsSalaatuWaSalaam-ar</key>
+    <string>uniE00E</string>
+    <key>alayhimAsSalaam-ar</key>
+    <string>uniE004</string>
+    <key>alayhimaaAsSalaam-ar</key>
+    <string>uniE00D</string>
     <key>alef-ar</key>
     <string>uni0627</string>
     <key>alef-ar.allah</key>
@@ -3502,6 +3575,8 @@
     <string>uniFDF2</string>
     <key>asterisk-ar</key>
     <string>uni066D</string>
+    <key>azzaWaJall-ar</key>
+    <string>uniE012</string>
     <key>beeh-ar</key>
     <string>uni067B</string>
     <key>beeh-ar.fina</key>
@@ -3606,6 +3681,8 @@
     <string>uni08A1.init</string>
     <key>behhamzaabove-ar.medi</key>
     <string>uni08A1.medi</string>
+    <key>bismillah-ar</key>
+    <string>uniFDFD</string>
     <key>bulletoperator</key>
     <string>uni2219</string>
     <key>colontriangularmod</key>
@@ -3930,6 +4007,8 @@
     <string>uni0602</string>
     <key>footnotemarker-ar.2</key>
     <string>uni0602.2</string>
+    <key>footnotemarkerabove-ar</key>
+    <string>uni08E0</string>
     <key>four-ar</key>
     <string>uni0664</string>
     <key>four-ar.medium</key>
@@ -4234,6 +4313,8 @@
     <string>dotlessi</string>
     <key>inhibitformshaping-ar</key>
     <string>uni206C</string>
+    <key>jallajalalouhou-ar</key>
+    <string>uniFDFB</string>
     <key>jeem-ar</key>
     <string>uni062C</string>
     <key>jeem-ar.fina</key>
@@ -4664,6 +4745,10 @@
     <string>uni06B9.init</string>
     <key>noonDotbelow-ar.medi</key>
     <string>uni06B9.medi</string>
+    <key>noonKasraabove-ar</key>
+    <string>uni08D8</string>
+    <key>noonKasrabelow-ar</key>
+    <string>uni08D9</string>
     <key>noonRing-ar</key>
     <string>uni06BC</string>
     <key>noonRing-ar.fina</key>
@@ -4770,6 +4855,8 @@
     <string>uni0603.3</string>
     <key>pagenumber-ar.4</key>
     <string>uni0603.4</string>
+    <key>pagenumberabove-ar</key>
+    <string>uni08E1</string>
     <key>paragraphseparator</key>
     <string>uni2029</string>
     <key>parenleft-ar</key>
@@ -4878,8 +4965,24 @@
     <string>uni06A8.init</string>
     <key>qafThreedotsabove-ar.medi</key>
     <string>uni06A8.medi</string>
+    <key>qafabove-ar</key>
+    <string>uni08D7</string>
+    <key>quddisaSirrah-ar</key>
+    <string>uniE00F</string>
     <key>question-ar</key>
     <string>uni061F</string>
+    <key>radiAllaahuAnh-ar</key>
+    <string>uniE007</string>
+    <key>radiAllaahuAnhaa-ar</key>
+    <string>uniE008</string>
+    <key>radiAllaahuAnhum-ar</key>
+    <string>uniE009</string>
+    <key>radiAllaahuAnhumaa-ar</key>
+    <string>uniE00A</string>
+    <key>radiAllaahuAnhunna-ar</key>
+    <string>uniE00B</string>
+    <key>rahimahuAllaah-ar</key>
+    <string>uniE006</string>
     <key>ray-ar</key>
     <string>uni0608</string>
     <key>reh-ar</key>
@@ -5015,9 +5118,15 @@
     <key>sadTwodotsbelow-ar.medi</key>
     <string>uni069D.medi</string>
     <key>sadabove-ar</key>
-    <string>uni0610</string>
+    <string>uni08D5</string>
     <key>sajdah-ar</key>
     <string>uni06E9</string>
+    <key>salaamuhuAlaynaa-ar</key>
+    <string>uniE002</string>
+    <key>sallallaahuAlayhiWaAalih-ar</key>
+    <string>uniE00C</string>
+    <key>sallallahuAlayhiWaAaliheeWaSallam-ar</key>
+    <string>uniE010</string>
     <key>samvat-ar</key>
     <string>uni0604</string>
     <key>samvat-ar.2</key>
@@ -5188,6 +5297,8 @@
     <string>uni2006</string>
     <key>softhyphen</key>
     <string>uni00AD</string>
+    <key>subhaanahuWaTaaalaa-ar</key>
+    <string>uniE011</string>
     <key>sukun-ar</key>
     <string>uni0652</string>
     <key>sukun-ar.downOpen</key>
@@ -5476,10 +5587,26 @@
     <string>uni06CA</string>
     <key>wawTwodots-ar.fina</key>
     <string>uni06CA.fina</string>
+    <key>wawbelow-ar</key>
+    <string>uni08D3</string>
     <key>wawring-ar</key>
     <string>uni06C4</string>
     <key>wawring-ar.fina</key>
     <string>uni06C4.fina</string>
+    <key>wordAnNisfabove-ar</key>
+    <string>uni08DC</string>
+    <key>wordArRubabove-ar</key>
+    <string>uni08D4</string>
+    <key>wordAsSajdaabove-ar</key>
+    <string>uni08DB</string>
+    <key>wordAthThalathaabove-ar</key>
+    <string>uni08DA</string>
+    <key>wordQifabove-ar</key>
+    <string>uni08DE</string>
+    <key>wordSaktaabove-ar</key>
+    <string>uni08DD</string>
+    <key>wordWaqfaabove-ar</key>
+    <string>uni08DF</string>
     <key>wordjoiner</key>
     <string>uni2060</string>
     <key>year-ar</key>
@@ -5696,6 +5823,10 @@
     <string>uni200C</string>
     <key>zerowidthspace</key>
     <string>uni200B</string>
+    <key>objectReplacementCharacter</key>
+    <string>uniFFFC</string>
+    <key>replacementCharacter</key>
+    <string>uniFFFD</string>
   </dict>
 </dict>
 </plist>
