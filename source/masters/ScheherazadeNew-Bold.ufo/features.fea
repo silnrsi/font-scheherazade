@@ -4438,53 +4438,26 @@ feature fina {
     language WLF;
 } fina;
 
-# TODO: simplify this code:
 feature ccmp {
     # Glyph Composition/Decomposition
+    # Same for latin & arabic:
+    lookup SmallMaddah;
+    lookup FontCheck1;
+    lookup FontCheck2;
+    # According to Amiri font developer Khaled Hosney:
+    #    Kashida justification as implemented in most, if not all, applications is
+    #    broken by design; it inserts kashidas *after* doing OT layout which makes it
+    #    impossible for OT code to interact with those kashidas breaking all sorts of
+    #    things.
+    #    To trick LibreOffice/MS Office to not do kashida justification we set the
+    #    default kashida to a zero width, blank glyph which makes them to think there
+    #    is no suitable kashida glyph, resorting back to regular justification
+    #    To get manually inserted kashida working we use an rlig feature to map to the
+    #    actual kashida glyph(s).
+    # See https://github.com/alif-type/amiri/blob/main/sources/kashida.fea
+    sub kashida-ar by kashida-ar.haswidth;
     script arab;
-    language dflt;
-    # Default
-    lookup SmallMaddah;
     lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    language KUR exclude_dflt;
-    # Kurdish
-    lookup SmallMaddah;
-    lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    language RHG exclude_dflt;
-    # Rohingya
-    lookup SmallMaddah;
-    lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    language SND exclude_dflt;
-    # Sindhi
-    lookup SmallMaddah;
-    lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    language URD exclude_dflt;
-    # Urdu
-    lookup SmallMaddah;
-    lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    language WLF exclude_dflt;
-    # Wolof
-    lookup SmallMaddah;
-    lookup DecomposeForColor;
-    lookup FontCheck1;
-    lookup FontCheck2;
-    script latn;
-    # Latin
-    language dflt;
-    # Default
-    lookup SmallMaddah;
-    lookup FontCheck1;
-    lookup FontCheck2;
 } ccmp;
 
 feature rtlm {
