@@ -689,13 +689,13 @@
         @MarkGroup2A 	
     </class>
 
-    <!-- GRAPHITE -->
-    <class name="MarksAbove">
+    <!-- GRAPHITE - avoid name conflict with OT-specific class -->
+    <class name="MarksAbove_Gr">
         @Mark1Above_volt @Mark2Above_volt 	
     </class>
 
-    <!-- GRAPHITE -->
-    <class name="MarksBelow">
+    <!-- GRAPHITE - avoid name conflict with OT-specific  -->
+    <class name="MarksBelow_Gr">
         @Mark1Below_volt @Mark2Below_volt 	
     </class>
 

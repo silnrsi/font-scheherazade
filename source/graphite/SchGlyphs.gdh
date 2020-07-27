@@ -25,7 +25,12 @@ environment {AttributeOverride = true};
 
 
 table(glyph)
-	
+
+
+cMarksAbove = (cMarksAbove_Gr);  // defined in classes.xml
+cMarksBelow = (cMarksBelow_Gr);
+
+
 /********************************************************/
 
 

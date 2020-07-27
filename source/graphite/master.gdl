@@ -473,13 +473,15 @@ pass(2)
 
 endpass; // 2
 
+if (debug == false)
+
 pass(3)
 	// Kerning of reh-like and waw-like
 	
 	// tighten to following gaf-like 
 	cRehKernGaf {advance.x -= 450m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
 	
-	// loosen from following alef/lam when with something below it
+	// loosen from following alef/lam when it has something below it
 	g_alef_wavyhamzabelow_ar  {advance.x += 200m}  /  g_reh_ar  MARKS _ MARKS ANY?; // this combination needs a little more
 	cAlefLamWBelow {advance.x += 150m} / cRehWawAll MARKS _ ;
 	cAlefIso {advance.x += 150m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
@@ -492,8 +494,8 @@ pass(3)
 	cRehKernOtherMA              / (cRehWawTighten cRehWawTightenMore) MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
 	 
 	// otherwise tighten against most things
-	(cRehKernAlef cRehKernOther cRehKernOtherMB) {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-	(cRehKernOther cRehKernOtherMB) {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKSABOVE _ ;
+	cRehKernAlef {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
+	(cRehKernOther cRehKernOtherMB) {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ;  // previous version required only one "direction" of marks, no idea why
 
 	// tighter against Ain-like initials unless it has marks Below
 	cAinLikeInit                     / (cRehWawTighten cRehWawTightenMore) MARKS _ MARKS cMarksBelow ;
@@ -503,7 +505,10 @@ pass(3)
 	// tighter still for some reh/wah followed by Ain-like isolates
 	cAinLikeIsol {advance.x -= 400m} / cRehWawNothingBelow MARKSABOVE _ ;
 	
-endpass; // 3	
+endpass; // 3
+
+endif;
+
 
 ///////////////////////////////////////////////////////////////////
 

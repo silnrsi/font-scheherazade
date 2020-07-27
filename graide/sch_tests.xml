@@ -11,6 +11,8 @@
       <style feats="cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1387" />
       <style feats="cv62=2" name="fset1388" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 invs=0" name="fset1389" />
+      <style feats="dbug=1" name="fset1390" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 invs=0 dbug=0" name="fset1391" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -268,7 +270,7 @@
     </test>
   </testgroup>
   <testgroup label="kerning">
-    <test background="#55aaff" class="fset1389" label="REH" rtl="True">
+    <test background="#55aaff" class="fset1389" label="REH / WAW" rtl="True">
       <string />
     </test>
     <test class="fset1389" label="no change" rtl="True">
@@ -280,28 +282,40 @@
     <test class="fset1389" label="reh ain" rtl="True">
       <string>رع</string>
     </test>
-    <test class="fset1389" label="reh keheh - tighten" rtl="True">
+    <test class="fset1390" label="RW keheh - OFF" rtl="True">
       <string>رک وؼت</string>
     </test>
-    <test class="fset1389" label="reh alef-hamza-below - loosen" rtl="True">
+    <test label="RW keheh - tighten" rtl="True">
+      <string>رک وؼت</string>
+    </test>
+    <test class="fset1390" label="RW alef-hamza-below - loosen - OFF" rtl="True">
       <string>رٳ وإ وٳ زڸل ۅڸ</string>
     </test>
-    <test class="fset1389" label="reh/waw  alef + mark-below - loosen" rtl="True">
+    <test class="fset1389" label="RW alef-hamza-below - loosen" rtl="True">
+      <string>رٳ وإ وٳ زڸل ۅڸ</string>
+    </test>
+    <test class="fset1389" label="RW  alef + mark-below - loosen" rtl="True">
       <string>واِ زإٓ</string>
     </test>
-    <test class="fset1389" label="reh/waw narrow-ini + mark-below - loosen" rtl="True">
+    <test class="fset1389" label="RW  narrow-ini + mark-below - loosen" rtl="True">
       <string>ۄیٕس ژڣٖض ڙلِت</string>
     </test>
-    <test class="fset1389" label="reh/waw - don't change" rtl="True">
-      <string>ژفٖض ڙلِ بۊُمَ</string>
+    <test class="fset1389" label="RW - don't change" rtl="True">
+      <string>ژفٖض ڙلِ بۊُمَ رِا</string>
     </test>
-    <test class="fset1389" label="reh/waw ain - tighten more" rtl="True">
-      <string>رعس ݹغم ۊݝم</string>
+    <test class="fset1391" label="RW - most - tighten" rtl="True">
+      <string>وِأ ݬا</string>
     </test>
-    <test class="fset1389" label="reh/waw ain - marks below - don't change" rtl="True">
+    <test class="fset1391" label="RW - most - tighten" rtl="True">
+      <string>رُس ڙٕض ړْٰظْ ۅق</string>
+    </test>
+    <test class="fset1389" label="RW ain - marks below - don't change" rtl="True">
       <string>رعِس ݹغٕم ۊݝۣم</string>
     </test>
-    <test class="fset1389" label="reh/waw ain-isolates" rtl="True">
+    <test class="fset1389" label="RW ain - tighten more" rtl="True">
+      <string>رعس ݹغم ۊݝم</string>
+    </test>
+    <test class="fset1389" label="RW ain-isolates" rtl="True">
       <string>ۄع زࣃ رع</string>
     </test>
   </testgroup>

@@ -371,8 +371,6 @@ invis {
 
 }
 
-#if 0
-
 debug {
     id = "dbug";
     name.1033 = string("Debug");
@@ -386,11 +384,10 @@ debug {
             name.1033 = string("True");
         }
     }
-    default = on;
+    default = off;
 
 }
 
-#endif
 
 endtable; // feature
 
