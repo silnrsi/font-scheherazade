@@ -246,11 +246,13 @@ def doit(args):
             repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC)))
             lamlist = list(filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6)))
             aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
+            kasralist = list(filter(lambda x: x in builder.uids(), (0x0650, 0x064D)))
         else:
             repDiac = list(filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x0654, 0x0670)))
             repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628)))
             lamlist = list(filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6)))
             aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
+            kasralist = list(filter(lambda x: x in builder.uids(), (0x0650,)))
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
@@ -302,7 +304,7 @@ def doit(args):
 
         ftml.startTestGroup('Special cases')
         builder.render((0x064A, 0x064E), ftml)   # Yeh + Fatha should keep dots
-        builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
+        builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should lose dots
         ftml.closeTest()
 
         ftml.startTestGroup('LamAlef ligatures')
@@ -321,6 +323,17 @@ def doit(args):
                 ftml.clearFeatures()
                 ftml.clearBackground()
                 ftml.closeTest()
+        
+        ftml.startTestGroup('Shadda + Kasra')
+        shadda = 0x0651
+        base = 0x0628
+        for kasra in kasralist:
+            for featlist in builder.permuteFeatures(feats=('cv62',)):
+                ftml.setFeatures(featlist)
+                builder.render((base,kasra,shadda), ftml, addBreaks=False)
+            ftml.clearFeatures()
+            ftml.clearBackground()
+            ftml.closeTest()
 
     if test.lower().startswith("subtending"):
         # Generates sample data for all subtending marks. Data includes sequences of 0 to n+1

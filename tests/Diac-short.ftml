@@ -29,6 +29,8 @@
       <style feats="'cv60' 1" name="cv60_1"/>
       <style feats="'cv60' 1, 'cv76' 1" name="cv60_1_cv76_1"/>
       <style feats="'cv60' 1, 'cv76' 2" name="cv60_1_cv76_2"/>
+      <style feats="'cv62' 1" name="cv62_1"/>
+      <style feats="'cv62' 2" name="cv62_2"/>
       <style feats="'cv70' 1" name="cv70_1"/>
       <style feats="'cv70' 2" name="cv70_2"/>
       <style feats="'cv72' 1" name="cv72_1"/>
@@ -6112,6 +6114,26 @@ U+0773">
 U+0774">
       <comment>lamDoublebar-ar alefThreeabove-ar</comment>
       <string>\u0008A6\u000774 \u00200D\u0008A6\u000774  \u0008A6\u00064B\u000774\u00064B \u00200D\u0008A6\u00064B\u000774\u00064B  \u0008A6\u00064D\u000774 \u00200D\u0008A6\u00064D\u000774  \u0008A6\u000774\u00064D \u00200D\u0008A6\u000774\u00064D  \u0008A6\u00064D\u000774\u00064D \u00200D\u0008A6\u00064D\u000774\u00064D </string>
+    </test>
+  </testgroup>
+  <testgroup label="Shadda + Kasra">
+    <test label="U+0628
+U+0650
+U+0651">
+      <comment>beh-ar kasra-ar shadda-ar</comment>
+      <string>\u000628\u000650\u000651 \u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651 \u000628\u000650\u000651\u000628\u000650\u000651\u000628\u000650\u000651 </string>
+    </test>
+    <test label="U+0628
+U+0650
+U+0651" stylename="cv62_1">
+      <comment>beh-ar kasra-ar shadda-ar</comment>
+      <string>\u000628\u000650\u000651 \u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651 \u000628\u000650\u000651\u000628\u000650\u000651\u000628\u000650\u000651 </string>
+    </test>
+    <test label="U+0628
+U+0650
+U+0651" stylename="cv62_2">
+      <comment>beh-ar kasra-ar shadda-ar</comment>
+      <string>\u000628\u000650\u000651 \u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651\u00200D \u00200D\u000628\u000650\u000651 \u000628\u000650\u000651\u000628\u000650\u000651\u000628\u000650\u000651 </string>
     </test>
   </testgroup>
 </ftml>
