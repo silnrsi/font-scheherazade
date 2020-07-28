@@ -82,12 +82,10 @@
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiHeh}"/>	
 			<cmd name="gr_feat" args="{gr_cv48} 1"/>
 		</value>
-		<!-- no longer defined for Urdu
 		<value name="Urdu-style" tag="Urd">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduHeh}"/>	
 			<cmd name="gr_feat" args="{gr_cv48} 2"/>
 		</value>
-		-->
 	</feature>
 
 	<feature name="Arabic U" value="Standard" tag="ArabicU">
