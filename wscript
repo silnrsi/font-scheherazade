@@ -22,14 +22,23 @@ ftmlTest('tools/ftml-smith.xsl')
 # APs to omit:
 OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_U,_R,above,below,center,ring,through,aboveLeft,H,L,O,U,R"'
 
+# smith project-specific options:
+#   --autohint - autohint the font
+#   --norename - omit glyph rename step
+opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'})
+
+cmds = [ ]
+if '--norename' not in opts:
+    cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/masters/${DS:FILENAME_BASE}.ufo']))
+if '--autohint' in opts:
+    # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
+    cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
+
+
 # iterate over designspace
 designspace('source/ScheherazadeNew.designspace',
     instanceparams='-l ' + genout + '${DS:FILENAME_BASE}_createintance.log',
-    target = process('${DS:FILENAME_BASE}.ttf'
-###       , cmd('${PSFCHANGETTFGLYPHNAMES} ${SRC} ${DEP} ${TGT}', ['source/${DS:FILENAME_BASE}.ufo']),
-#        Note: ttfautohint-generated hints don't maintain stroke thickness at joins, so we're not hinting these fonts
-#        cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}')
-    ),
+    target = process('${DS:FILENAME_BASE}.ttf', *cmds),
     ap = genout + '${DS:FILENAME_BASE}.xml',
     version=VERSION,  # Needed to ensure dev information on version string
 
@@ -52,6 +61,5 @@ designspace('source/ScheherazadeNew.designspace',
     )
 
 def configure(ctx):
-    ctx.find_program('psfchangettfglyphnames')
-#    ctx.find_program('ttfautohint')
+    ctx.find_program('ttfautohint')
 
