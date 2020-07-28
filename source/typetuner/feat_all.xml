@@ -93,7 +93,7 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Filled" tag="Fi">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UAlternate}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {ArabicUAlternate}"/>	
 			<cmd name="gr_feat" args="{gr_cv50} 1"/>
 		</value>
 	</feature>
