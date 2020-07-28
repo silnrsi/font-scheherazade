@@ -434,15 +434,15 @@ lookup KurdishHeh {
 ##} UrduHeh;
 
 
-lookup DalAlternates {
+lookup DalAlternate {
   lookupflag IgnoreMarks ;
     sub @DalIso by @DalIso.sen ;
-} DalAlternates;
+} DalAlternate;
 
-lookup MeemAlternates {
+lookup MeemAlternate {
   lookupflag IgnoreMarks ;
     sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
-} MeemAlternates;
+} MeemAlternate;
 
 lookup HehAlternates {
   lookupflag IgnoreMarks ;
@@ -456,15 +456,15 @@ lookup HehAlternates {
     sub heh-ar.knottedHigh.fina from   [ heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.knottedHigh.fina ] ;
 } HehAlternates;
 
-lookup ArabicUAlternates {
+lookup ArabicUAlternate {
   lookupflag IgnoreMarks ;
     sub @U by @U.filled ;
-} ArabicUAlternates;
+} ArabicUAlternate;
 
-lookup MaddahAlternates {
+lookup MaddahAlternate {
   lookupflag 0 ;
     sub @Maddah.small by @Maddah ;
-} MaddahAlternates;
+} MaddahAlternate;
 
 #TypeTuner lookups:
 lookup KasraLow {
@@ -492,10 +492,10 @@ lookup DammaAlternates {
     sub @Damma_short  from [ @Damma_filled  @Damma_short ];
 } DammaAlternates;
 
-lookup DammatanAlternates {
+lookup DammatanAlternate {
   lookupflag 0 ;
     sub @Dammatan by @Dammatan.sixNine ;
-} DammatanAlternates;
+} DammatanAlternate;
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
@@ -975,6 +975,7 @@ feature ccmp {  # Glyph Composition/Decomposition
         #    To get manually inserted kashida working we use an rlig feature to map to the
         #    actual kashida glyph(s).
         # See https://github.com/alif-type/amiri/blob/main/sources/kashida.fea
+        # Except we do this in ccmp since we don't have curvy kashida glyphs.
         sub kashida-ar by kashida-ar.haswidth ;
             
     script arab;
@@ -1092,7 +1093,7 @@ feature salt {  # Stylistic Alternates
 
 feature cv12 {  # Character Variant 12
     script arab;
-        lookup DalAlternates;
+        lookup DalAlternate;
       # Force other languages to include Arabic script lookups
       language KUR  ;
       language RHG  ;
@@ -1109,7 +1110,7 @@ feature cv12 {  # Character Variant 12
 # Use meem alternates for languages other than Sindhi
 feature cv44 {  # Character Variant 44
     script arab;
-        lookup MeemAlternates;
+        lookup MeemAlternate;
       # Force other languages to include Arabic script lookups
       language URD;  # Urdu
       language KUR;  # Kurdish
@@ -1143,7 +1144,7 @@ feature cv48 {  # Character Variant 48
 } cv48 ;
 
 feature cv50 {  # Character Variant 50
-    lookup ArabicUAlternates;
+    lookup ArabicUAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
@@ -1152,7 +1153,7 @@ feature cv50 {  # Character Variant 50
 } cv50 ;
 
 feature cv60 {  # Character Variant 60
-		lookup MaddahAlternates;
+		lookup MaddahAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
@@ -1182,7 +1183,7 @@ feature cv70 {  # Character Variant 70
 
 
 feature cv72 {  # Character Variant 72
-		lookup DammatanAlternates;
+		lookup DammatanAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
