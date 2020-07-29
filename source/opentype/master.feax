@@ -527,20 +527,56 @@ lookup AyahAlternates {
     sub endofayah-ar.3 from [ endofayah-ar.alt.3  endofayah-ar.altB.3 ] ;
 } AyahAlternates;
 
+
+# TypeTuner lookups:
+
+lookup DigitSindhi {
+  lookupflag 0;
+    sub four-persian.urdu   by four-persian;
+    sub four-persian.roh    by four-persian;
+    sub six-persian         by six-persian.urdu;
+    sub seven-persian       by seven-persian.urdu;
+} DigitSindhi;
+
+lookup DigitUrdu {
+  lookupflag 0;
+    sub four-persian        by four-persian.urdu;
+    sub four-persian.roh    by four-persian.urdu;
+    sub six-persian         by six-persian.urdu;
+    sub seven-persian       by seven-persian.urdu;
+} DigitUrdu;
+
+lookup DigitKurdish {
+  lookupflag 0;
+    sub four-persian.urdu   by four-persian;
+    sub four-persian.roh    by four-persian;
+    sub six-persian.urdu    by six-persian;
+    sub seven-persian.urdu  by seven-persian;
+} DigitKurdish;
+
+lookup DigitRohingya {
+    sub four-persian        by four-persian.roh;
+    sub four-persian.urdu   by four-persian.roh;
+    sub six-persian         by six-persian.urdu;
+    sub seven-persian       by seven-persian.urdu;
+} DigitRohingya;
+
 @FourPersian = [ four-persian  four-persian.medium four-persian.small ];
 @FourPersianUrdu = [ four-persian.urdu  four-persian.urdu.medium four-persian.urdu.small ];
 @FourPersianRoh = [ four-persian.roh  four-persian.roh.medium four-persian.roh.small ];
 
 # Only used for cv82, not language-specific modifications:
+# We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
+# They are simply the standard Persian forms.
 lookup DigitAlternates {
-  lookupflag 0 ;        #        1 = Sindhi-style     2 = Urdu-style       3 = Kurdish-style 4 = Rohingya-style
-    sub four-persian       from [four-persian         four-persian.urdu    four-persian      four-persian.roh  ];
-    sub four-persian.urdu  from [four-persian         four-persian.urdu    four-persian      four-persian.roh  ];
-    sub four-persian.roh   from [four-persian         four-persian.urdu    four-persian      four-persian.roh  ];
-    sub six-persian        from [six-persian.urdu     six-persian.urdu     six-persian       six-persian.urdu  ];
-    sub six-persian.urdu   from [six-persian.urdu     six-persian.urdu     six-persian       six-persian.urdu  ];
-    sub seven-persian      from [seven-persian.urdu   seven-persian.urdu   seven-persian     seven-persian.urdu];
-    sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu   seven-persian     seven-persian.urdu];
+  lookupflag 0 ;        #        1 = Sindhi-style     2 = Urdu-style       3 = Kurdish-style   4 = Rohingya-style
+    sub four-persian       from [four-persian         four-persian.urdu    four-persian        four-persian.roh  ];
+    sub four-persian.urdu  from [four-persian         four-persian.urdu    four-persian        four-persian.roh  ];
+    sub four-persian.roh   from [four-persian         four-persian.urdu    four-persian        four-persian.roh  ];
+    sub six-persian        from [six-persian.urdu     six-persian.urdu     six-persian         six-persian.urdu  ];
+    sub six-persian.urdu   from [six-persian.urdu     six-persian.urdu     six-persian         six-persian.urdu  ];
+    sub seven-persian      from [seven-persian.urdu   seven-persian.urdu   seven-persian       seven-persian.urdu];
+    sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu   seven-persian       seven-persian.urdu];
 } DigitAlternates;
 
 lookup CommaAlternates {
@@ -916,8 +952,6 @@ lookup RehWawKerning {
 } RehWawKerning;
 
 
-
-
 #**********************************
 #  FEATURES
 #**********************************
@@ -978,7 +1012,9 @@ feature ccmp {  # Glyph Composition/Decomposition
         sub kashida-ar by kashida-ar.haswidth ;
             
     script arab;
-            lookup DecomposeForColor;
+        lookup DecomposeForColor;
+    script latn;
+        lookup KasraHigh;
 } ccmp ;
 
 feature rtlm {  # Right-To-Left Mirrored Forms
@@ -1143,7 +1179,8 @@ feature cv48 {  # Character Variant 48
 } cv48 ;
 
 feature cv50 {  # Character Variant 50
-    lookup ArabicUAlternate;
+    # Same for latin & arabic:
+    	lookup ArabicUAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
@@ -1152,7 +1189,8 @@ feature cv50 {  # Character Variant 50
 } cv50 ;
 
 feature cv60 {  # Character Variant 60
-		lookup MaddahAlternate;
+		# Same for latin & arabic:
+			lookup MaddahAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
@@ -1161,7 +1199,8 @@ feature cv60 {  # Character Variant 60
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
-    lookup KasraAlternates;
+    # Same for latin & arabic:
+    	lookup KasraAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1171,7 +1210,8 @@ feature cv62 {  # Character Variant 62
 } cv62 ;
 
 feature cv70 {  # Character Variant 70
-    lookup DammaAlternates;
+    # Same for latin & arabic:
+    	lookup DammaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1182,7 +1222,8 @@ feature cv70 {  # Character Variant 70
 
 
 feature cv72 {  # Character Variant 72
-		lookup DammatanAlternate;
+		# Same for latin & arabic:
+			lookup DammatanAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
@@ -1191,7 +1232,8 @@ feature cv72 {  # Character Variant 72
 } cv72 ;
 
 feature cv74 {  # Character Variant 74
-		lookup DammaInvertedAlternates;
+		# Same for latin & arabic:
+			lookup DammaInvertedAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
@@ -1200,7 +1242,8 @@ feature cv74 {  # Character Variant 74
 } cv74 ;
 
 feature cv76 {  # Character Variant 76
-		lookup DaggerAlefToLarge;
+		# Same for latin & arabic:
+			lookup DaggerAlefToLarge;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
@@ -1209,7 +1252,8 @@ feature cv76 {  # Character Variant 76
 } cv76 ;
 
 feature cv78 {  # Character Variant 78
-		lookup SukunAlternates;
+		# Same for latin & arabic:
+			lookup SukunAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Sukun"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
@@ -1219,7 +1263,8 @@ feature cv78 {  # Character Variant 78
 } cv78 ;
 
 feature cv80 {  # Character Variant 80
-		lookup AyahAlternates;
+		# Same for latin & arabic:
+			lookup AyahAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "End of ayah"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
@@ -1229,6 +1274,7 @@ feature cv80 {  # Character Variant 80
 } cv80 ;
 
 feature cv82 {  # Character Variant 82
+    # Same for latin & arabic:
       lookup DigitAlternates;  # Latin and Arabic
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
@@ -1241,7 +1287,8 @@ feature cv82 {  # Character Variant 82
 } cv82 ;
 
 feature cv84 {  # Character Variant 84
-		lookup CommaAlternates;
+		# Same for latin & arabic:
+			lookup CommaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Comma"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };

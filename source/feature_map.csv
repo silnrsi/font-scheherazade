@@ -1,0 +1,24 @@
+# Mapping from css feature and language tags to TypeTuner features and values
+
+# Langage tag mapping,TT feat,value
+lang=ku,Language,Kurdish
+lang=rhg,Language,Rohingya
+lang=sd,Language,Sindhi
+lang=ur,Language,Urdu
+lang=wo,Language,Wolof
+
+# feat tag mappings,TT feat,default,value 1,value 2,value 3,value 4
+cv12,Dal,Standard,Alternate
+cv44,Meem,Standard,Sindhi-style
+cv48,Heh,Standard,Sindhi-style,Urdu-style,Kurdish-style
+cv50,Arabic U,Standard,Filled
+cv60,Maddah,Small,Large
+cv62,Shadda+kasra placement,Default,Lowered,Raised
+cv70,Damma,Standard,Filled,Short
+cv72,Dammatan,Standard,Six-nine
+cv74,Inverted Damma,Standard,Hollow,Filled
+cv76,Superscript Alef,Default,Large,Small
+cv78,Sukun,Closed,Open down,Open left
+cv80,End of ayah,Standard,Simplified A,Simplified B
+cv82,Eastern digits,Standard,Sindhi-style,Urdu-style,Kurdish-style,Rohingya-style
+cv84,Comma,Upward,Downward
