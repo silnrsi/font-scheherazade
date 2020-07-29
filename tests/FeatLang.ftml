@@ -4,8 +4,10 @@
   <head>
     <comment>In this test, the comment column indicates whether the feature is expected to function with the given language tag. </comment>
     <fontscale>250</fontscale>
-    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
       <style feats="'cv12' 1" name="cv12_1"/>
       <style feats="'cv44' 1" name="cv44_1"/>

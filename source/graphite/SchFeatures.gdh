@@ -435,7 +435,7 @@ shina {
 sindhi {
     languages = ( "snd", "sd" );  // Sindhi
     meemAlt = sindhi;
-    hehAlt = sindhi;
+//  hehAlt = sindhi;  // remove for now, to match OT
     easternDigits = sindhi;
     shaddaKasra = lowered;
 };
