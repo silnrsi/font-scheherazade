@@ -629,7 +629,8 @@ markClass _two <anchor 16 -54> @_aboveLeft;
 # baseClass [kafswash-ar kafswash-ar.fina] <anchor 346 1108> @alef;
 # baseClass kafswash-ar.init <anchor 243 1225> @alef;
 # baseClass kafswash-ar.medi <anchor 272 1182> @alef;
-# baseClass [kashida-ar kashida-ar.haswidth] <anchor 203 492> @alef;
+# baseClass kashida-ar <anchor 0 492> @alef;
+# baseClass kashida-ar.haswidth <anchor 203 492> @alef;
 # baseClass [kehehThreedotsabove-ar.init ng-ar.init] <anchor 0 2012> @alef;
 # baseClass [kehehThreedotsabove-ar.medi ng-ar.medi] <anchor 128 2142> @alef;
 # baseClass kehehVabove-ar <anchor 269 1686> @alef;
@@ -1102,7 +1103,8 @@ markClass _two <anchor 16 -54> @_aboveLeft;
 # baseClass kafswash-ar.fina <anchor 792 1502> @diaA;
 # baseClass kafswash-ar.init <anchor 542 1371> @diaA;
 # baseClass kafswash-ar.medi <anchor 591 1511> @diaA;
-# baseClass [kashida-ar kashida-ar.haswidth] <anchor 209 1034> @diaA;
+# baseClass kashida-ar <anchor 0 1034> @diaA;
+# baseClass kashida-ar.haswidth <anchor 209 1034> @diaA;
 # baseClass kehehDotabove-ar <anchor 726 1557> @diaA;
 # baseClass kehehDotabove-ar.fina <anchor 683 1454> @diaA;
 # baseClass kehehThreedotsabove-ar <anchor 690 1818> @diaA;
@@ -1680,7 +1682,8 @@ markClass _two <anchor 16 -54> @_aboveLeft;
 # baseClass kafswash-ar <anchor 866 -283> @diaB;
 # baseClass [kafswash-ar.fina kafswash-ar.init] <anchor 938 -283> @diaB;
 # baseClass kafswash-ar.medi <anchor 869 -283> @diaB;
-# baseClass [kashida-ar kashida-ar.haswidth] <anchor 198 -311> @diaB;
+# baseClass kashida-ar <anchor 0 -311> @diaB;
+# baseClass kashida-ar.haswidth <anchor 198 -311> @diaB;
 # baseClass kehehThreedotsbelow-ar <anchor 539 -676> @diaB;
 # baseClass kehehThreedotsbelow-ar.fina <anchor 576 -700> @diaB;
 # baseClass kehehThreedotsupbelow-ar <anchor 481 -438> @diaB;
@@ -2574,24 +2577,24 @@ lookup KurdishHeh {
     sub heh-ar by heh-ar.knotted;
 } KurdishHeh;
 
-# heh-hook is no longer defined for Urdu
-##lookup UrduHeh {
-##  lookupflag IgnoreMarks ;
-##  # Used only by TypeTuner
-##    sub heh-ar.init by heh-ar.hooked.init ;
-##    sub heh-ar.medi by heh-ar.hooked.medi ;
-##    sub heh-ar.fina by heh-ar.hooked.fina ;
-##} UrduHeh;
-lookup DalAlternates {
+# heh-hook is no longer defined for Urdu; used only for TypeTuner
+lookup UrduHeh {
+    lookupflag IgnoreMarks;
+    sub heh-ar.init by heh-ar.hooked.init;
+    sub heh-ar.medi by heh-ar.hooked.medi;
+    sub heh-ar.fina by heh-ar.hooked.fina;
+} UrduHeh;
+
+lookup DalAlternate {
     lookupflag IgnoreMarks;
     sub @DalIso by @DalIso.sen;
-} DalAlternates;
+} DalAlternate;
 
-lookup MeemAlternates {
+lookup MeemAlternate {
     lookupflag IgnoreMarks;
     sub @Meem by @Meem.sindhi;
     # also used by Kurdish and Urdu
-} MeemAlternates;
+} MeemAlternate;
 
 lookup HehAlternates {
     lookupflag IgnoreMarks;
@@ -2605,15 +2608,15 @@ lookup HehAlternates {
     sub heh-ar.knottedHigh.fina from [heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.knottedHigh.fina];
 } HehAlternates;
 
-lookup ArabicUAlternates {
+lookup ArabicUAlternate {
     lookupflag IgnoreMarks;
     sub @U by @U.filled;
-} ArabicUAlternates;
+} ArabicUAlternate;
 
-lookup MaddahAlternates {
+lookup MaddahAlternate {
     lookupflag 0;
     sub @Maddah.small by @Maddah;
-} MaddahAlternates;
+} MaddahAlternate;
 
 #TypeTuner lookups:
 lookup KasraLow {
@@ -2649,10 +2652,10 @@ lookup DammaAlternates {
     sub hamza_damma-ar.short from [hamza_damma-ar.filled hamza_damma-ar.short];
 } DammaAlternates;
 
-lookup DammatanAlternates {
+lookup DammatanAlternate {
     lookupflag 0;
     sub @Dammatan by @Dammatan.sixNine;
-} DammatanAlternates;
+} DammatanAlternate;
 
 lookup DammaInvertedAlternates {
     lookupflag 0;
@@ -2685,13 +2688,47 @@ lookup AyahAlternates {
     sub endofayah-ar.3 from [endofayah-ar.alt.3 endofayah-ar.altB.3];
 } AyahAlternates;
 
+# TypeTuner lookups:
+lookup DigitSindhi {
+    lookupflag 0;
+    sub four-persian.urdu by four-persian;
+    sub four-persian.roh by four-persian;
+    sub six-persian by six-persian.urdu;
+    sub seven-persian by seven-persian.urdu;
+} DigitSindhi;
+
+lookup DigitUrdu {
+    lookupflag 0;
+    sub four-persian by four-persian.urdu;
+    sub four-persian.roh by four-persian.urdu;
+    sub six-persian by six-persian.urdu;
+    sub seven-persian by seven-persian.urdu;
+} DigitUrdu;
+
+lookup DigitKurdish {
+    lookupflag 0;
+    sub four-persian.urdu by four-persian;
+    sub four-persian.roh by four-persian;
+    sub six-persian.urdu by six-persian;
+    sub seven-persian.urdu by seven-persian;
+} DigitKurdish;
+
+lookup DigitRohingya {
+    sub four-persian by four-persian.roh;
+    sub four-persian.urdu by four-persian.roh;
+    sub six-persian by six-persian.urdu;
+    sub seven-persian by seven-persian.urdu;
+} DigitRohingya;
+
 @FourPersian = [four-persian four-persian.medium four-persian.small];
 @FourPersianUrdu = [four-persian.urdu four-persian.urdu.medium four-persian.urdu.small];
 @FourPersianRoh = [four-persian.roh four-persian.roh.medium four-persian.roh.small];
 # Only used for cv82, not language-specific modifications:
+# We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
+# They are simply the standard Persian forms.
 lookup DigitAlternates {
     lookupflag 0;
-    #        1 = Sindhi-style     2 = Urdu-style       3 = Kurdish-style 4 = Rohingya-style
+    #        1 = Sindhi-style     2 = Urdu-style       3 = Kurdish-style   4 = Rohingya-style
     sub four-persian from [four-persian four-persian.urdu four-persian four-persian.roh];
     sub four-persian.urdu from [four-persian four-persian.urdu four-persian four-persian.roh];
     sub four-persian.roh from [four-persian four-persian.urdu four-persian four-persian.roh];
@@ -3053,7 +3090,8 @@ lookup mark_to_base {
     pos base kafswash-ar.fina <anchor 792 1502> mark @_diaA;
     pos base kafswash-ar.init <anchor 542 1371> mark @_diaA;
     pos base kafswash-ar.medi <anchor 591 1511> mark @_diaA;
-    pos base [kashida-ar kashida-ar.haswidth] <anchor 209 1034> mark @_diaA;
+    pos base kashida-ar <anchor 0 1034> mark @_diaA;
+    pos base kashida-ar.haswidth <anchor 209 1034> mark @_diaA;
     pos base kehehDotabove-ar <anchor 726 1557> mark @_diaA;
     pos base kehehDotabove-ar.fina <anchor 683 1454> mark @_diaA;
     pos base kehehThreedotsabove-ar <anchor 690 1818> mark @_diaA;
@@ -3541,7 +3579,8 @@ lookup mark_to_base {
     pos base kafswash-ar <anchor 866 -283> mark @_diaB;
     pos base [kafswash-ar.fina kafswash-ar.init] <anchor 938 -283> mark @_diaB;
     pos base kafswash-ar.medi <anchor 869 -283> mark @_diaB;
-    pos base [kashida-ar kashida-ar.haswidth] <anchor 198 -311> mark @_diaB;
+    pos base kashida-ar <anchor 0 -311> mark @_diaB;
+    pos base kashida-ar.haswidth <anchor 198 -311> mark @_diaB;
     pos base kehehThreedotsbelow-ar <anchor 539 -676> mark @_diaB;
     pos base kehehThreedotsbelow-ar.fina <anchor 576 -700> mark @_diaB;
     pos base kehehThreedotsupbelow-ar <anchor 481 -438> mark @_diaB;
@@ -3858,7 +3897,8 @@ lookup alef_to_base {
     pos base [kafswash-ar kafswash-ar.fina] <anchor 346 1108> mark @_alef;
     pos base kafswash-ar.init <anchor 243 1225> mark @_alef;
     pos base kafswash-ar.medi <anchor 272 1182> mark @_alef;
-    pos base [kashida-ar kashida-ar.haswidth] <anchor 203 492> mark @_alef;
+    pos base kashida-ar <anchor 0 492> mark @_alef;
+    pos base kashida-ar.haswidth <anchor 203 492> mark @_alef;
     pos base [kehehThreedotsabove-ar.init ng-ar.init] <anchor 0 2012> mark @_alef;
     pos base [kehehThreedotsabove-ar.medi ng-ar.medi] <anchor 128 2142> mark @_alef;
     pos base kehehVabove-ar <anchor 269 1686> mark @_alef;
@@ -4455,9 +4495,12 @@ feature ccmp {
     #    To get manually inserted kashida working we use an rlig feature to map to the
     #    actual kashida glyph(s).
     # See https://github.com/alif-type/amiri/blob/main/sources/kashida.fea
+    # Except we do this in ccmp since we don't have curvy kashida glyphs.
     sub kashida-ar by kashida-ar.haswidth;
     script arab;
     lookup DecomposeForColor;
+    script latn;
+    lookup KasraHigh;
 } ccmp;
 
 feature rtlm {
@@ -4562,7 +4605,7 @@ feature salt {
 feature cv12 {
     # Character Variant 12
     script arab;
-    lookup DalAlternates;
+    lookup DalAlternate;
     # Force other languages to include Arabic script lookups
     language KUR;
     language RHG;
@@ -4590,7 +4633,7 @@ feature cv12 {
 feature cv44 {
     # Character Variant 44
     script arab;
-    lookup MeemAlternates;
+    lookup MeemAlternate;
     # Force other languages to include Arabic script lookups
     language URD;
     # Urdu
@@ -4657,7 +4700,8 @@ feature cv48 {
 
 feature cv50 {
     # Character Variant 50
-    lookup ArabicUAlternates;
+    # Same for latin & arabic:
+    lookup ArabicUAlternate;
         cvParameters {
                 FeatUILabelNameID {
             name "Arabic U";
@@ -4677,7 +4721,8 @@ feature cv50 {
 
 feature cv60 {
     # Character Variant 60
-    lookup MaddahAlternates;
+    # Same for latin & arabic:
+    lookup MaddahAlternate;
         cvParameters {
                 FeatUILabelNameID {
             name "Maddah";
@@ -4697,6 +4742,7 @@ feature cv60 {
 
 feature cv62 {
     # Character Variant 62
+    # Same for latin & arabic:
     lookup KasraAlternates;
         cvParameters {
                 FeatUILabelNameID {
@@ -4721,6 +4767,7 @@ feature cv62 {
 
 feature cv70 {
     # Character Variant 70
+    # Same for latin & arabic:
     lookup DammaAlternates;
         cvParameters {
                 FeatUILabelNameID {
@@ -4745,7 +4792,8 @@ feature cv70 {
 
 feature cv72 {
     # Character Variant 72
-    lookup DammatanAlternates;
+    # Same for latin & arabic:
+    lookup DammatanAlternate;
         cvParameters {
                 FeatUILabelNameID {
             name "Dammatan";
@@ -4765,6 +4813,7 @@ feature cv72 {
 
 feature cv74 {
     # Character Variant 74
+    # Same for latin & arabic:
     lookup DammaInvertedAlternates;
         cvParameters {
                 FeatUILabelNameID {
@@ -4785,6 +4834,7 @@ feature cv74 {
 
 feature cv76 {
     # Character Variant 76
+    # Same for latin & arabic:
     lookup DaggerAlefToLarge;
         cvParameters {
                 FeatUILabelNameID {
@@ -4805,6 +4855,7 @@ feature cv76 {
 
 feature cv78 {
     # Character Variant 78
+    # Same for latin & arabic:
     lookup SukunAlternates;
         cvParameters {
                 FeatUILabelNameID {
@@ -4829,6 +4880,7 @@ feature cv78 {
 
 feature cv80 {
     # Character Variant 80
+    # Same for latin & arabic:
     lookup AyahAlternates;
         cvParameters {
                 FeatUILabelNameID {
@@ -4853,6 +4905,7 @@ feature cv80 {
 
 feature cv82 {
     # Character Variant 82
+    # Same for latin & arabic:
     lookup DigitAlternates;
     # Latin and Arabic
         cvParameters {
@@ -4886,6 +4939,7 @@ feature cv82 {
 
 feature cv84 {
     # Character Variant 84
+    # Same for latin & arabic:
     lookup CommaAlternates;
         cvParameters {
                 FeatUILabelNameID {
