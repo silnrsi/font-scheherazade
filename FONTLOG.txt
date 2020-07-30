@@ -63,13 +63,25 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-2020-03-24 (SIL WSTech team) Scheherazade New Version 2.200 (development)
+2020-03-24 (SIL WSTech team) Scheherazade New Version 2.180 (alpha)
 - Renamed font to Scheherazade New
 - Resized glyphs to better fit standard Arabic script fonts
-- Updated Arabic script character repertoire to support most characters in the 
-  Unicode 13.0 BMP Arabic blocks
+- Adjusted line-spacing to reflect larger characters
+- Adjusted vertical position of isolate keheh-like characters
+- Updated Arabic script character repertoire to support all characters in the 
+  Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
 - Update Latin script repertoire to support "Recommended characters for Non-Roman fonts"
   https://scriptsource.org/entry/gg5wm9hhd3
+- Improved reh/waw kerning
+- Implemented new Allah ligature rules
+- Implemented support for UNICODE ARABIC MARK RENDERING (UTR #53) 
+- Removed support for Urdu-style heh when Urdu language is selected
+- Removed "Show invisible characters" feature
+- Added UI name strings for Graphite and OpenType features
+- Added U+FDFB (jallajalalouhou) and U+FDFD (bismillah)
+- Added Private Use Area honorific ligatures (all of these are in the Unicode pipeline 
+  at non-stable codepoints).
+
 
 2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
 - Renamed postscript name of Scheherazade Regular from "Scheherazade" 
