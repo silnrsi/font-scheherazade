@@ -6,8 +6,8 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish" tag="Kur">
-			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
+			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>  -->
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>
 			<cmd name="gr_feat" args="{gr_cv48} 3"/>	# heh
 		</value>
 		<value name="Rohingya" tag="Rng">
@@ -30,14 +30,14 @@
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>	
 			<cmd name="gr_feat" args="{gr_cv44} 1"/>	# meem alternates
-			<cmd name="gr_feat" args="{gr_cv48} 1"/>	# heh
+			<!-- <cmd name="gr_feat" args="{gr_cv48} 1"/>	-->  # heh
 			<cmd name="gr_feat" args="{gr_cv82} 1"/>	# eastern digits
 			<cmd name="gr_feat" args="{gr_cv62} 1"/>  # shadda+kasra lowered
 		</value>
 		<value name="Urdu" tag="Urd">
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduCALT}"/>	
-			<cmd name="gr_feat" args="{gr_cv48} 2"/>	# heh
+			<!-- <cmd name="gr_feat" args="{gr_cv48} 2"/> --> 	# heh
 			<cmd name="gr_feat" args="{gr_cv82} 2"/>	# eastern digits
 		</value>
 		<value name="Wolof" tag="Wol">
@@ -75,7 +75,7 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish-style" tag="Ku">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
+			<!-- <cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	 -->
 			<cmd name="gr_feat" args="{gr_cv48} 3"/>
 		</value>
 		<value name="Sindhi-style" tag="Sn">
@@ -108,7 +108,7 @@
 		</value>
 	</feature>
 
-	<feature name="Shadda+kasra placement" value="Default" tag="Kas">
+	<feature name="Shadda+kasra placement" value="Default" tag="Def">
 		<!-- see also the interactions section -->
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
@@ -123,7 +123,7 @@
 	</feature>
 
 	<feature name="Damma" value="Default" tag="Dma">
-		<value name="Standard" tag="Std">
+		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Filled" tag="Fi">
@@ -145,7 +145,7 @@
 	</feature>
 
 	<feature name="Inverted Damma" value="Default" tag="IDma">
-		<value name="Standard" tag="Std">
+		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Hollow" tag="Ho">
