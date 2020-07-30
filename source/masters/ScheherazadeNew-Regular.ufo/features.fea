@@ -2067,10 +2067,6 @@ markClass graphemejoinercomb <anchor 0 0> @_none;
 @exit = [lam-ar.preAlef.init lamBar-ar.preAlef.init lamDotabove-ar.preAlef.init lamDoublebar-ar.preAlef.init lamTahabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init lamThreedotsbelow-ar.preAlef.init lamVabove-ar.preAlef.init lam-ar.preAlef.medi lamBar-ar.preAlef.medi lamDotabove-ar.preAlef.medi lamDoublebar-ar.preAlef.medi lamTahabove-ar.preAlef.medi lamThreedotsabove-ar.preAlef.medi lamThreedotsbelow-ar.preAlef.medi lamVabove-ar.preAlef.medi];
 # baseClass [lam-ar.preAlef.init lamBar-ar.preAlef.init lamDotabove-ar.preAlef.init lamDoublebar-ar.preAlef.init lamTahabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init lamThreedotsbelow-ar.preAlef.init lamVabove-ar.preAlef.init] <anchor 0 0> @exit;
 # baseClass [lam-ar.preAlef.medi lamBar-ar.preAlef.medi lamDotabove-ar.preAlef.medi lamDoublebar-ar.preAlef.medi lamTahabove-ar.preAlef.medi lamThreedotsabove-ar.preAlef.medi lamThreedotsbelow-ar.preAlef.medi lamVabove-ar.preAlef.medi] <anchor 218 363> @exit;
-
-# AP:  new anchor
-@ new anchor = [sallallahuAlayhiWaAaliheeWaSallam-ar];
-# baseClass sallallahuAlayhiWaAaliheeWaSallam-ar <anchor 1860 2044> @ new anchor;
 #**********************************
 # This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
 # and is Copyright (c) 2020 SIL International (http://www.sil.org/),
