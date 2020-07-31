@@ -31,9 +31,8 @@ TIPS
 As this font is distributed at no cost, we are unable to provide a 
 commercial level of personal technical support. The font has, however, 
 been through some testing on various platforms to be sure it works in most
-situations. In particular, it has been tested and shown to work on Windows 7
-and Windows 8. Graphite capabilities have been tested on Graphite-supported 
-platforms.
+situations. In particular, it has been tested and shown to work on Windows 10. 
+Graphite capabilities have been tested on Graphite-supported platforms.
 
 If you do find a problem, please do report it through the website: 
 http://software.sil.org/scheherazade/support.
@@ -62,6 +61,9 @@ on Windows, macOS, and Linux systems.
 If you want to enter characters that are not supported by any system
 keyboard, and to access the full Unicode range, you might try charmap.exe
 on Windows or, on Ubuntu or similar software, gucharmap or kcharselect.
+
+In Microsoft Word, you can type the USV (e.g., 0627), then select "0627",
+then type Alt-X. It will convert it to the character.
 
 Another method of entering some symbols is provided by a few applications such
 as Adobe InDesign or LibreOffice.org. They can display a glyph palette or input
