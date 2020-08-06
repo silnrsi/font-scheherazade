@@ -115,6 +115,8 @@ endtable; // glyph
 #define MARKSABOVE [ cAnyMarksAbove [ cAnyMarksAbove cAnyMarksAbove? ]? ]?
 
 
+//-- Substitution ---
+
 table(substitution)
 
 pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
@@ -370,6 +372,8 @@ endtable; // sub
 //cMark2Below_volt += (g_graphemejoinercomb);
 //cAnyMarksBelow += (g_graphemejoinercomb);
 //endtable;
+
+//-- Positioning ---
 
 table (positioning)
 
