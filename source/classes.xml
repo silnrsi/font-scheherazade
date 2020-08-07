@@ -930,12 +930,13 @@
         kasratan-ar kasra-ar 	
     </class>
 
+		<!-- shadda-alef combination is only used for Allah ligature, so it is not included here. -->
     <class name="ShaddaLigatures">
-        shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar shadda_alef-ar 	
+        shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar 	
     </class>
 
     <class name="ShaddaMarks">
-        fathatan-ar dammatan-ar fatha-ar damma-ar alefabove-ar 	
+        fathatan-ar dammatan-ar fatha-ar damma-ar 	
     </class>
 
 		<!-- Including graphemejoinercomb allows it to interrupt the ligature formation,
