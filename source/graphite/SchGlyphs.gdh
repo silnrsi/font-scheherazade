@@ -39,8 +39,13 @@ cMarksBelow = (cMarksBelow_Gr);
 // Mirroring
 //
 
-g_radical.mirror.glyph = g_radical_rtl;
-g_radical.mirror.isEncoded = 0;
+g_partialdiff.mirror   {glyph = g_partialdiff_rtl;   isEncoded = 0 };
+g_summation.mirror     {glyph = g_summation_rtl;     isEncoded = 0 };
+g_radical.mirror       {glyph = g_radical_rtl;       isEncoded = 0 };
+g_integral.mirror      {glyph = g_integral_rtl;      isEncoded = 0 };
+g_approxequal.mirror   {glyph = g_approxequal_rtl;   isEncoded = 0 };
+g_notequal.mirror      {glyph = g_notequal_rtl;      isEncoded = 0 };
+// g_divisionslash.mirror {glyph = g_divisionslash_rtl; isEncoded = 0 };
 
 // Used for Graphite-1 style mirroring:
 
@@ -48,9 +53,7 @@ g_radical.mirror.isEncoded = 0;
 
 cMirrorOpen  = (g_parenleft  g_less    g_bracketleft  g_braceleft  g_guilsinglleft  g_guillemetleft  g_radical);
 cMirrorClose = (g_parenright g_greater g_bracketright g_braceright g_guilsinglright g_guillemetright g_radical_rtl);
-
 // Make sure Unicode 5.0 Corrigendum #6 is applied:
-
 cNoMirror = (g_quotedblbase g_quoteleft g_quoteright g_quotedblleft g_quotedblright) {mirror.glyph = 0; mirror.isEncoded = 0};
 
 

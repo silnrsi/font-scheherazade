@@ -26,9 +26,10 @@
   </testgroup>
 <head>
   <fontscale>300</fontscale>
-    <fontsrc>url(../references/Scheherazade-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
   <styles>
   </styles>
   <title>Mirrored test</title>

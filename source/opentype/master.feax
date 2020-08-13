@@ -66,7 +66,7 @@ lookup FontCheck2 {
 
 lookup Mirror {
   lookupflag IgnoreMarks ;
-    sub radical by radical.rtl ;
+    sub @cno_rtl by @c_rtl ;
 } Mirror;
 
 
@@ -395,32 +395,34 @@ lookup WolofCALT {
 } WolofCALT;
 
 
-#********
-# Madda
+#********************
+# Reordering of madda: moving it beyond any mark with 0 < ccc < 230
+#
+# If Harfbuzz is rendering, UTR53 will already have been executed, thus the following will do nothing
+# Otherwise, we can't do a lot of reordering but we'll move the madda out past vowels
+# in a way that is compatible with UTR53.
 
-lookup _MaddaVowel1_target {
-  lookupflag 0 ;
-    sub @MarkGroup1A by @MarkGroup1A madda-ar.small ;
-    sub @MarkGroup2A by @MarkGroup2A madda-ar.small ;
-    sub @MarkGroup3A by @MarkGroup3A madda-ar.small ;
-} _MaddaVowel1_target ;
+@MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
 
-lookup MaddaVowel1 {
+lookup ReorderMaddaVowel1_target {
   lookupflag 0 ;
-    sub madda-ar.small [ @MarkGroup1A @MarkGroup2A @MarkGroup3A ]' lookup _MaddaVowel1_target ;
-} MaddaVowel1;
+    sub @MaddaSkip by @MaddaSkip madda-ar.small ;
+} ReorderMaddaVowel1_target ;
 
-lookup _MaddaVowel2_target {
+lookup ReorderMaddaVowel1 {
   lookupflag 0 ;
-    sub madda-ar.small @MarkGroup1A by @MarkGroup1A ;
-    sub madda-ar.small @MarkGroup2A by @MarkGroup2A ;
-    sub madda-ar.small @MarkGroup3A by @MarkGroup3A ;
-} _MaddaVowel2_target ;
+    sub madda-ar.small @MaddaSkip' lookup ReorderMaddaVowel1_target ;
+} ReorderMaddaVowel1;
 
-lookup MaddaVowel2 {
+lookup ReorderMaddaVowel2_target {
   lookupflag 0 ;
-    sub madda-ar.small' lookup _MaddaVowel2_target [ @MarkGroup1A @MarkGroup2A @MarkGroup3A ]'  madda-ar.small ;
-} MaddaVowel2;
+    sub madda-ar.small @MaddaSkip by @MaddaSkip ;
+} ReorderMaddaVowel2_target ;
+
+lookup ReorderMaddaVowel2 {
+  lookupflag 0 ;
+    sub madda-ar.small' lookup ReorderMaddaVowel2_target @MaddaSkip madda-ar.small ;
+} ReorderMaddaVowel2;
 
 
 #********
@@ -1026,7 +1028,9 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup SmallMaddah;
         lookup FontCheck1;
         lookup FontCheck2;
-            
+        lookup ReorderMaddaVowel1;
+        lookup ReorderMaddaVowel2;
+        
         # According to Amiri font developer Khaled Hosney:
         #    Kashida justification as implemented in most, if not all, applications is
         #    broken by design; it inserts kashidas *after* doing OT layout which makes it
@@ -1079,8 +1083,6 @@ feature calt {  # Contextual Alternates
     script arab;
         #lookup SignWithDigits;
         # lookup SignDigits;
-        lookup MaddaVowel1;
-        lookup MaddaVowel2;
     script arab;
       language KUR ; # Kurdish
         lookup KurdishHeh ;
