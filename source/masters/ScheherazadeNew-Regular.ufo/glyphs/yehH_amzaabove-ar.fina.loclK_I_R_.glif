@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="highhamzaYeh-ar.fina" format="2">
+<glyph name="yehHamzaabove-ar.fina.loclKIR" format="2">
   <advance width="1421"/>
-  <anchor x="793" y="734" name="alef"/>
-  <anchor x="900" y="962" name="diaA"/>
+  <anchor x="731" y="756" name="alef"/>
+  <anchor x="902" y="972" name="diaA"/>
   <anchor x="653" y="-916" name="diaB"/>
   <outline>
     <component base="yeh-ar.noDots.fina"/>
-    <component base="_hamza" xOffset="1216" yOffset="497"/>
+    <component base="_hamza" xOffset="965" yOffset="486"/>
   </outline>
   <lib>
     <dict>

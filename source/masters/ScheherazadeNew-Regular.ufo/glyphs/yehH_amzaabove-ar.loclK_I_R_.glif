@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="yehHamzaabove-ar.loclKIR" format="2">
+  <advance width="1639"/>
+  <anchor x="827" y="1474" name="alef"/>
+  <anchor x="956" y="1659" name="diaA"/>
+  <anchor x="657" y="-589" name="diaB"/>
+  <outline>
+    <component base="yeh-ar.noDots"/>
+    <component base="_hamza" xOffset="1046" yOffset="1179"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>
