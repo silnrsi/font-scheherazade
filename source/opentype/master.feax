@@ -911,61 +911,61 @@ lookup SubtendingMarks {
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 
-lookup _kern90 {
-  pos @RehWawAll <90 0  90 0>;
-} _kern90;
+lookup _kern130 { # fixed
+  pos @RehWawAll <130 0  130 0>;
+} _kern130;
 
-lookup _kern150 {
-  pos @RehWawAll <150 0  150 0>;
-} _kern150;
+lookup _kern215 { # fixed
+  pos @RehWawAll <215 0  215 0>;
+} _kern215;
 
-lookup _kern200 {
+lookup _kern290 { # fixed
   pos @RehWawTightenAll <200 0  200 0>;
-} _kern200;
+} _kern290;
 
-lookup _kern_130 {
-  pos @RehWawTightenAll <-130 0  -130 0>;
-} _kern_130;
+lookup _kern_190 {  # fixed
+  pos @RehWawTightenAll <-190 0  -190 0>;
+} _kern_190;
 
-lookup _kern_150 {
-  pos @RehWawTightenAll <-150 0  -130 0>;
-} _kern_150;
+lookup _kern_215 { # fixed
+  pos @RehWawTightenAll <-215 0  -215 0>;
+} _kern_215;
 
-lookup _kern_200 {
-  pos @RehWawTightenAll <-200 0  -200 0>;
-} _kern_200;
+lookup _kern_290 { # fixed
+  pos @RehWawTightenAll <-290 0  -290 0>;
+} _kern_290;
 
-lookup _kern_400 {
-  pos @RehWawTightenAll <-400 0  -400 0>;
-} _kern_400;
+lookup _kern_580 { # fixed
+  pos @RehWawTightenAll <-580 0  -580 0>;
+} _kern_580;
 
-lookup _kern_450 {
-  pos @RehWawTightenAll <-450 0  -450 0>;
-} _kern_450;
+lookup _kern_650 {
+  pos @RehWawTightenAll <-650 0  -650 0>;
+} _kern_650;
 
 lookup RehWawKerning {
 	# Tighten to following gaf-like
-	pos @RehWawTightenAll' lookup _kern_450                @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_450 @_diaB         @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_450 @_diaB @_diaB  @RehKernGaf ;
+	pos @RehWawTightenAll' lookup _kern_650                @RehKernGaf ;
+	pos @RehWawTightenAll' lookup _kern_650 @_diaB         @RehKernGaf ;
+	pos @RehWawTightenAll' lookup _kern_650 @_diaB @_diaB  @RehKernGaf ;
 	
 	# Loosen from following alef/lam when it has something below it
-	pos reh-ar' lookup _kern200                      alefWavyhamzabelow-ar ;
-	pos reh-ar' lookup _kern200 @MarksAny            alefWavyhamzabelow-ar ;
-	pos reh-ar' lookup _kern200 @MarksAny @MarksAny  alefWavyhamzabelow-ar ;
+	pos reh-ar' lookup _kern290                      alefWavyhamzabelow-ar ;
+	pos reh-ar' lookup _kern290 @MarksAny            alefWavyhamzabelow-ar ;
+	pos reh-ar' lookup _kern290 @MarksAny @MarksAny  alefWavyhamzabelow-ar ;
 		
-	pos @RehWawAll' lookup _kern150                      @AlefLamWBelow ;
-	pos @RehWawAll' lookup _kern150 @MarksAny            @AlefLamWBelow ;
-	pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @AlefLamWBelow ;
+	pos @RehWawAll' lookup _kern215                      @AlefLamWBelow ;
+	pos @RehWawAll' lookup _kern215 @MarksAny            @AlefLamWBelow ;
+	pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefLamWBelow ;
 	
-	pos @RehWawAll' lookup _kern150                      @AlefIso @_diaB ;
-	pos @RehWawAll' lookup _kern150 @MarksAny            @AlefIso @_diaB ;
-	pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @AlefIso @_diaB ;
+	pos @RehWawAll' lookup _kern215                      @AlefIso @_diaB ;
+	pos @RehWawAll' lookup _kern215 @MarksAny            @AlefIso @_diaB ;
+	pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefIso @_diaB ;
 	
 	# Loosen from following narrow initials with something below:
-	pos @RehWawAll' lookup _kern90                      @NarrowIni;
-	pos @RehWawAll' lookup _kern90 @MarksAny            @NarrowIni;
-	pos @RehWawAll' lookup _kern90 @MarksAny @MarksAny  @NarrowIni;
+	pos @RehWawAll' lookup _kern130                      @NarrowIni;
+	pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni;
+	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni;
 	
 	# Leave certain cases alone:
 	ignore pos @RehWawTightenAll                       @RehKernAlefOrOther @_diaB ;                            
@@ -976,29 +976,29 @@ lookup RehWawKerning {
 	ignore pos @RehWawTightenAll @MarksAny @_diaA     @RehKernOtherMA ;
 	
 	# Otherwise tighten against most things:
-	pos @RehWawTightenAll' lookup _kern_130                @RehKernAlef;
-	pos @RehWawTightenAll' lookup _kern_130 @_diaB         @RehKernAlef;
-	pos @RehWawTightenAll' lookup _kern_130 @_diaB @_diaB  @RehKernAlef;
+	pos @RehWawTightenAll' lookup _kern_190                @RehKernAlef;
+	pos @RehWawTightenAll' lookup _kern_190 @_diaB         @RehKernAlef;
+	pos @RehWawTightenAll' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
 	
-	pos @RehWawTightenAll' lookup _kern_130                      @RehKernMost;
-	pos @RehWawTightenAll' lookup _kern_130 @MarksAny            @RehKernMost;
-	pos @RehWawTightenAll' lookup _kern_130 @MarksAny @MarksAny  @RehKernMost;
+	pos @RehWawTightenAll' lookup _kern_190                      @RehKernMost;
+	pos @RehWawTightenAll' lookup _kern_190 @MarksAny            @RehKernMost;
+	pos @RehWawTightenAll' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
 	
 	ignore pos @RehWawTightenAll                      @AinLikeInit @_diaB;
 	ignore pos @RehWawTightenAll @MarksAny            @AinLikeInit @_diaB;
 	ignore pos @RehWawTightenAll @MarksAny @MarksAny  @AinLikeInit @_diaB;
 	
-	pos @RehWawTighten' lookup _kern_150                      @AinLikeInit;
-	pos @RehWawTighten' lookup _kern_150 @MarksAny            @AinLikeInit;
-	pos @RehWawTighten' lookup _kern_150 @MarksAny @MarksAny  @AinLikeInit;
+	pos @RehWawTighten' lookup _kern_215                      @AinLikeInit;
+	pos @RehWawTighten' lookup _kern_215 @MarksAny            @AinLikeInit;
+	pos @RehWawTighten' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
 	
-	pos @RehWawTightenMore' lookup _kern_200                      @AinLikeInit;
-	pos @RehWawTightenMore' lookup _kern_200 @MarksAny            @AinLikeInit;
-	pos @RehWawTightenMore' lookup _kern_200 @MarksAny @MarksAny  @AinLikeInit;
+	pos @RehWawTightenMore' lookup _kern_290                      @AinLikeInit;
+	pos @RehWawTightenMore' lookup _kern_290 @MarksAny            @AinLikeInit;
+	pos @RehWawTightenMore' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
 	
-	pos @RehWawNothingBelow' lookup _kern_400                      @AinLikeIsol;
-	pos @RehWawNothingBelow' lookup _kern_400 @MarksAny            @AinLikeIsol;
-	pos @RehWawNothingBelow' lookup _kern_400 @MarksAny @MarksAny  @AinLikeIsol;
+	pos @RehWawNothingBelow' lookup _kern_580                      @AinLikeIsol;
+	pos @RehWawNothingBelow' lookup _kern_580 @MarksAny            @AinLikeIsol;
+	pos @RehWawNothingBelow' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
 		
 } RehWawKerning;
 

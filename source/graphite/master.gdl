@@ -493,31 +493,31 @@ pass(3)
 	// Kerning of reh-like and waw-like
 	
 	// tighten to following gaf-like 
-	cRehKernGaf {advance.x -= 450m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
+	cRehKernGaf {advance.x -= 650m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
 	
 	// loosen from following alef/lam when it has something below it
-	g_alef_wavyhamzabelow_ar  {advance.x += 200m}  /  g_reh_ar  MARKS _ MARKS ANY?; // this combination needs a little more
-	cAlefLamWBelow {advance.x += 150m} / cRehWawAll MARKS _ ;
-	cAlefIso {advance.x += 150m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
+	g_alef_wavyhamzabelow_ar  {advance.x += 290m}  /  g_reh_ar  MARKS _ MARKS ANY?; // this combination needs a little more
+	cAlefLamWBelow {advance.x += 215m} / cRehWawAll MARKS _ ;
+	cAlefIso {advance.x += 215m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
 	// loosen from following narrow initials with something below
-	cNarrowIni {advance.x += 90m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
+	cNarrowIni {advance.x += 130m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
 	// leave certain cases alone:
 	(cRehKernAlef cRehKernOther) / (cRehWawTighten cRehWawTightenMore) MARKS                   _ MARKS cAnyMarksBelow ;
 	cRehKernOtherMA              / (cRehWawTighten cRehWawTightenMore) MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
 	 
 	// otherwise tighten against most things
-	cRehKernAlef {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-	(cRehKernOther cRehKernOtherMB) {advance.x -= 130m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ;  // previous version required only one "direction" of marks, no idea why
+	cRehKernAlef {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
+	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ;  // previous version required only one "direction" of marks, no idea why
 
 	// tighter against Ain-like initials unless it has marks Below
 	cAinLikeInit                     / (cRehWawTighten cRehWawTightenMore) MARKS _ MARKS cMarksBelow ;
-	cAinLikeInit {advance.x -= 150m} / cRehWawTighten     MARKS _ ;
-	cAinLikeInit {advance.x -= 200m} / cRehWawTightenMore MARKS _ ;
+	cAinLikeInit {advance.x -= 215m} / cRehWawTighten     MARKS _ ;
+	cAinLikeInit {advance.x -= 290m} / cRehWawTightenMore MARKS _ ;
 	
 	// tighter still for some reh/wah followed by Ain-like isolates
-	cAinLikeIsol {advance.x -= 400m} / cRehWawNothingBelow MARKSABOVE _ ;
+	cAinLikeIsol {advance.x -= 580m} / cRehWawNothingBelow MARKSABOVE _ ;
 	
 endpass; // 3
 
