@@ -106,6 +106,38 @@ UAlt {
     default = std;
 }
 
+kirghizOeAlt {
+    id = "cv51";
+    name.1033 = string("Kirghiz OE");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        kirghiz {
+            value = 1;
+            name.1033 = string("Kirghiz-style");
+        }
+    }
+    default = std;
+}
+
+yehHamzaAlt {
+    id = "cv54";
+    name.1033 = string("Yeh Hamza Alt");
+    settings {
+        std {
+            value = 0;
+            name.1033 = string("Standard");
+        }
+        kirghiz {
+            value = 1;
+            name.1033 = string("Kirghiz-style");
+        }
+    }
+    default = std;
+}
+
 maddahAlt {
     id = "cv60";
     name.1033 = string("Maddah");
@@ -455,5 +487,10 @@ wolof {
     ultapeshAlt = hollow;
 };
 
+kyrgyz {
+	languages = ( "kir", "ky" );  // Kirghiz / Kyrgyz
+	kirghizOeAlt = kirghiz;
+	yehHamzaAlt = kirghiz;
+};
 
 endtable; // language

@@ -13,6 +13,12 @@
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 invs=0" name="fset1389" />
       <style feats="dbug=1" name="fset1390" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 invs=0 dbug=0" name="fset1391" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv51=0 cv54=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dbug=0" name="fset1392" />
+      <style feats="cv51=1" name="fset1393" />
+      <style feats="cv44=1" name="fset1396" />
+      <style lang="kir" name="fset1400" />
+      <style feats="cv54=1" name="fset1401" />
+      <style lang="ky" name="fset1402" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -76,13 +82,16 @@
     <test class="fset29" label="08C7 - lamTahabove" rtl="True">
       <string>مࣇَس مࣇَ ࣇَس ࣇَ</string>
     </test>
+    <test class="fset1392" label="Default heh" rtl="True">
+      <string>ه ههه</string>
+    </test>
     <test class="fset31" label="Kurdish heh - Central Kurdish" rtl="True">
       <string>ه ههه</string>
     </test>
     <test class="fset32" label="Kurdish heh - Kurmanji" rtl="True">
       <string>ه ههه</string>
     </test>
-    <test class="fset35" label="Sindhi heh" rtl="True">
+    <test class="fset35" label="Sindhi heh (now default)" rtl="True">
       <string>ه ههه</string>
     </test>
     <test class="fset34" label="Urdu heh - standard" rtl="True">
@@ -120,6 +129,30 @@
     </test>
     <test class="fset1386" label="lam alef" rtl="True">
       <string>لا بلا  ڶٱ سࣇٲ</string>
+    </test>
+    <test class="fset1392" label="Kirghiz OE - default" rtl="True">
+      <string>ۅ سۅ</string>
+    </test>
+    <test class="fset1393" label="Kirghiz OE - Kirghiz" rtl="True">
+      <string>ۅ سۅ</string>
+    </test>
+    <test class="fset1392" label="yeh hamza - default" rtl="True">
+      <string>ئ ئئئ</string>
+    </test>
+    <test class="fset1401" label="yeh hamza - Kirghiz" rtl="True">
+      <string>ئ ئئئ</string>
+    </test>
+    <test class="fset1402" label="kir language" rtl="True">
+      <string>ۅ سۅ ئ ئئئ</string>
+    </test>
+    <test class="fset1392" label="Default meem" rtl="True">
+      <string>م ممم</string>
+    </test>
+    <test class="fset1400" label="Sindhi meem - sd language" rtl="True">
+      <string>م ممم</string>
+    </test>
+    <test class="fset1396" label="Sindhi meem - feature" rtl="True">
+      <string>م ممم</string>
     </test>
   </testgroup>
   <testgroup label="Allah">
