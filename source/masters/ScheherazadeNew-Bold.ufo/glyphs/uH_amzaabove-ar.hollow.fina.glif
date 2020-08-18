@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uHamzaabove-ar.filled.fina" format="2">
+<glyph name="uHamzaabove-ar.hollow.fina" format="2">
   <advance width="878"/>
-  <anchor x="439" y="1622" name="diaA"/>
+  <anchor x="431" y="1577" name="diaA"/>
   <anchor x="422" y="-806" name="diaB"/>
   <outline>
     <component base="waw-ar.fina"/>
-    <component base="_damma.filled" xScale="0.927" yScale="0.927" xOffset="348" yOffset="1009"/>
+    <component base="_damma" xScale="0.927" yScale="0.927" xOffset="341" yOffset="943"/>
     <component base="_hamza" xScale="0.927" yScale="0.927" xOffset="792" yOffset="1147"/>
   </outline>
   <lib>

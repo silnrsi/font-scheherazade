@@ -2,13 +2,12 @@
 <glyph name="uHamzaabove-ar" format="2">
   <advance width="878"/>
   <unicode hex="0677"/>
-  <guideline y="3584"/>
-  <anchor x="464" y="1667" name="diaA"/>
+  <anchor x="450" y="1667" name="diaA"/>
   <anchor x="367" y="-846" name="diaB"/>
   <outline>
     <component base="waw-ar"/>
-    <component base="_damma" xScale="0.927" yScale="0.927" xOffset="388" yOffset="1016"/>
-    <component base="_hamza" xScale="0.927" yScale="0.927" xOffset="821" yOffset="1210"/>
+    <component base="_damma.filled" xScale="0.927" yScale="0.927" xOffset="412" yOffset="1035"/>
+    <component base="_hamza" xScale="0.927" yScale="0.927" xOffset="830" yOffset="1164"/>
   </outline>
   <lib>
     <dict>
