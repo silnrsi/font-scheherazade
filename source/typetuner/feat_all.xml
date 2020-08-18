@@ -5,6 +5,10 @@
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Kirghiz" tag="kir">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KirghizCALT}"/>
+			<cmd name="gr_feat" args="{gr_cv54} 1"/>  # right-shifted hamza on yeh
+		</value>
 		<value name="Kurdish" tag="Kur">
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/>  -->
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>

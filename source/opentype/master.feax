@@ -397,7 +397,7 @@ lookup WolofCALT {
 
 lookup KirghizCALT {
 	lookupflag 0;
-		sub @cno_loclKIR  by  @c_loclKIR;
+		sub @cno_loclKIR  by  @c_loclKIR;   # yeh-hamza
 } KirghizCALT;
 
 
@@ -484,10 +484,11 @@ lookup MeemAlternate {
     sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
 } MeemAlternate;
 
-lookup ArabicUAlternate {
-  lookupflag IgnoreMarks ;
-    sub @U by @U.filled ;
-} ArabicUAlternate;
+# obsolete
+#lookup ArabicUAlternate {
+#  lookupflag IgnoreMarks ;
+#    sub @U by @U.filled ;
+#} ArabicUAlternate;
 
 lookup MaddahAlternate {
   lookupflag 0 ;
@@ -558,16 +559,16 @@ lookup AyahAlternates {
 
 lookup KirghizOeAlternates {
 	lookupflag 0;
-		sub kirghizoe-ar       by  kirghizoe-ar.loclKIR;
-		sub kirghizoe-ar.fina  by  kirghizoe-ar.fina.loclKIR;
+		sub kirghizoe-ar       by  kirghizoe-ar.bar;
+		sub kirghizoe-ar.fina  by  kirghizoe-ar.bar.fina;
 } KirghizOeAlternates;
 
 lookup YehHamzaAlternates {
 	lookupflag 0;
 		sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
-		#sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
-		#sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
-		sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
+		#sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.loclKIR.init;
+		#sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.loclKIR.medi;
+		sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.loclKIR.fina;
 } YehHamzaAlternates;
 
 #********
@@ -1193,23 +1194,23 @@ feature cv48 {  # Character Variant 48
     } ;
 } cv48 ;
 
-feature cv50 {  # Character Variant 50
-    # Same for latin & arabic:
-    	lookup ArabicUAlternate;
-    cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
-    } ;
-} cv50 ;
+#feature cv50 {  # Character Variant 50
+#    # Same for latin & arabic:
+#    	lookup ArabicUAlternate;
+#    cvParameters {
+#        FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
+#        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+#        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
+#    } ;
+#} cv50 ;
 
 feature cv51 {  # Character Variant 51
     # Same for latin & arabic:
     	lookup KirghizOeAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kirghiz OE" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Kirghiz-style"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
     } ;
 } cv51 ;
 

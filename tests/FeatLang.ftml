@@ -14,7 +14,6 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
-      <style feats="'cv50' 1" name="cv50_1"/>
       <style feats="'cv51' 1" name="cv51_1"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
@@ -42,7 +41,6 @@
       <style feats="'cv48' 1" lang="ky" name="ky_cv48_1"/>
       <style feats="'cv48' 2" lang="ky" name="ky_cv48_2"/>
       <style feats="'cv48' 3" lang="ky" name="ky_cv48_3"/>
-      <style feats="'cv50' 1" lang="ky" name="ky_cv50_1"/>
       <style feats="'cv51' 1" lang="ky" name="ky_cv51_1"/>
       <style feats="'cv54' 1" lang="ky" name="ky_cv54_1"/>
       <style feats="'cv60' 1" lang="ky" name="ky_cv60_1"/>
@@ -70,7 +68,6 @@
       <style feats="'cv48' 1" lang="ku" name="ku_cv48_1"/>
       <style feats="'cv48' 2" lang="ku" name="ku_cv48_2"/>
       <style feats="'cv48' 3" lang="ku" name="ku_cv48_3"/>
-      <style feats="'cv50' 1" lang="ku" name="ku_cv50_1"/>
       <style feats="'cv51' 1" lang="ku" name="ku_cv51_1"/>
       <style feats="'cv54' 1" lang="ku" name="ku_cv54_1"/>
       <style feats="'cv60' 1" lang="ku" name="ku_cv60_1"/>
@@ -98,7 +95,6 @@
       <style feats="'cv48' 1" lang="rhg" name="rhg_cv48_1"/>
       <style feats="'cv48' 2" lang="rhg" name="rhg_cv48_2"/>
       <style feats="'cv48' 3" lang="rhg" name="rhg_cv48_3"/>
-      <style feats="'cv50' 1" lang="rhg" name="rhg_cv50_1"/>
       <style feats="'cv51' 1" lang="rhg" name="rhg_cv51_1"/>
       <style feats="'cv54' 1" lang="rhg" name="rhg_cv54_1"/>
       <style feats="'cv60' 1" lang="rhg" name="rhg_cv60_1"/>
@@ -126,7 +122,6 @@
       <style feats="'cv48' 1" lang="sd" name="sd_cv48_1"/>
       <style feats="'cv48' 2" lang="sd" name="sd_cv48_2"/>
       <style feats="'cv48' 3" lang="sd" name="sd_cv48_3"/>
-      <style feats="'cv50' 1" lang="sd" name="sd_cv50_1"/>
       <style feats="'cv51' 1" lang="sd" name="sd_cv51_1"/>
       <style feats="'cv54' 1" lang="sd" name="sd_cv54_1"/>
       <style feats="'cv60' 1" lang="sd" name="sd_cv60_1"/>
@@ -154,7 +149,6 @@
       <style feats="'cv48' 1" lang="ur" name="ur_cv48_1"/>
       <style feats="'cv48' 2" lang="ur" name="ur_cv48_2"/>
       <style feats="'cv48' 3" lang="ur" name="ur_cv48_3"/>
-      <style feats="'cv50' 1" lang="ur" name="ur_cv50_1"/>
       <style feats="'cv51' 1" lang="sd" name="sd_cv51_1"/>
       <style feats="'cv54' 1" lang="sd" name="sd_cv54_1"/>
       <style feats="'cv60' 1" lang="ur" name="ur_cv60_1"/>
@@ -182,7 +176,6 @@
       <style feats="'cv48' 1" lang="wo" name="wo_cv48_1"/>
       <style feats="'cv48' 2" lang="wo" name="wo_cv48_2"/>
       <style feats="'cv48' 3" lang="wo" name="wo_cv48_3"/>
-      <style feats="'cv50' 1" lang="wo" name="wo_cv50_1"/>
       <style feats="'cv51' 1" lang="wo" name="wo_cv51_1"/>
       <style feats="'cv54' 1" lang="wo" name="wo_cv54_1"/>
       <style feats="'cv60' 1" lang="wo" name="wo_cv60_1"/>
@@ -416,6 +409,7 @@
       <string>\u000647 \u000647\u00200D \u00200D\u000647\u00200D \u00200D\u000647 </string>
     </test>
   </testgroup>
+<!-- obsolete
   <testgroup label="cv50 U alternates">
     <test label="U+0677" rtl="True">
       <string>\u000677 \u00200D\u000677 </string>
@@ -466,6 +460,7 @@
       <string>\u000677 \u00200D\u000677 </string>
     </test>
   </testgroup>
+-->
   <testgroup label="cv51 Kirghiz OE alternates">
     <test label="U+0677" rtl="True">
       <string>\u0006C5 \u00200D\u0006C5 </string>

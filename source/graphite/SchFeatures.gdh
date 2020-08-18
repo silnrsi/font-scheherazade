@@ -90,36 +90,38 @@ hehAlt {
     default = std;
 }
 
+/****  The hollow form is not needed  ****
 UAlt {
     id = "cv50";
     name.1033 = string("Arabic U");
     settings {
         std {
             value = 0;
-            name.1033 = string("Standard");
+            name.1033 = string("Standard");  // filled
         }
         filled {
             value = 1;
-            name.1033 = string("Filled");
+            name.1033 = string("Hollow");
         }
     }
     default = std;
 }
+*********************************************/
 
 kirghizOeAlt {
     id = "cv51";
     name.1033 = string("Kirghiz OE");
     settings {
-        std {
+        loop {
             value = 0;
-            name.1033 = string("Standard");
+            name.1033 = string("Loop");
         }
-        kirghiz {
+        bar {
             value = 1;
-            name.1033 = string("Kirghiz-style");
+            name.1033 = string("Bar");
         }
     }
-    default = std;
+    default = loop;
 }
 
 yehHamzaAlt {
@@ -489,7 +491,7 @@ wolof {
 
 kyrgyz {
 	languages = ( "kir", "ky" );  // Kirghiz / Kyrgyz
-	kirghizOeAlt = kirghiz;
+	//kirghizOeAlt = kirghiz;
 	yehHamzaAlt = kirghiz;
 };
 

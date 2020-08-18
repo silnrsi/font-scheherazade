@@ -276,16 +276,17 @@ pass(5)	// Features, special behaviors
 		cno_Heh  >  cHehUrdu;
 	endif;
 
-	if (UAlt == filled)
-		cU  >  cU_filled;
-	endif;
+// obsolete
+//	if (UAlt == filled)
+//		cU  >  cU_filled;
+//	endif;
 
-	if (kirghizOeAlt == kirghiz)
-		(g_kirghizoe_ar  g_kirghizoe_ar_fina)  >  (g_kirghizoe_ar_locl_k_i_r  g_kirghizoe_ar_fina_locl_k_i_r);
+	if (kirghizOeAlt == bar)
+		(g_kirghizoe_ar  g_kirghizoe_ar_fina)  >  (g_kirghizoe_ar_bar  g_kirghizoe_ar_bar_fina);
 	endif;
 
 	if (yehHamzaAlt == kirghiz)
-		(g_yeh_hamzaabove_ar  g_yeh_hamzaabove_ar_fina)  >  (g_yeh_hamzaabove_ar_locl_k_i_r  g_yeh_hamzaabove_ar_fina_locl_k_i_r);
+		(g_yeh_hamzaabove_ar  g_yeh_hamzaabove_ar_fina)  >  (g_yeh_hamzaabove_ar_locl_k_i_r  g_yeh_hamzaabove_ar_locl_k_i_r_fina);
 	endif;
 
 	if (maddahAlt != large)
