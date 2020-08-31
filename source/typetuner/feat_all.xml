@@ -232,17 +232,19 @@
 
 	<feature name="Line spacing" value="Normal"	tag="LnSp">
 		<value name="Normal" tag="Nrml">
-			<cmd name="null" args="2080 1274"/>
+			<cmd name="null" args="2750 1427"/>
 		</value>
 		<value name="Loose" tag="Ls">
-			<cmd name="line_gap" args="3067 2006"/>
+			<cmd name="line_gap" args="3600 1427"/>
 		</value>
+		<!--
 		<value name="1.0 Compatible Normal" tag="1.0N">
 			<cmd name="line_gap" args="2080 1274"/>
 		</value>
 		<value name="1.0 Compatible Loose" tag="1.0L">
 			<cmd name="line_gap" args="2970 1948"/>
 		</value>
+		-->
 		<value name="Imported" tag="Im">
 			<cmd name="line_metrics_scaled" args="null"/>
 		</value>
