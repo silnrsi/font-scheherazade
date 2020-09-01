@@ -371,6 +371,10 @@ pass(6)
 	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_allah_fina):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_allah1_init;
 
 	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_allah2_medi  _  _;
+
+	// Other:
+	g_hamzaabove_ar  (g_damma_ar  g_damma_ar_filled  g_damma_ar_short)  
+		>  _  (g_hamza_damma_ar  g_hamza_damma_ar_filled  g_hamza_damma_ar_short):(1 2);
 endpass;
 
 endtable; // sub
