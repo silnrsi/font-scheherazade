@@ -19,6 +19,7 @@
       <style lang="kir" name="fset1400" />
       <style feats="cv54=1" name="fset1401" />
       <style lang="ky" name="fset1402" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv51=0 cv54=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dbug=0" name="fset1403" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -154,6 +155,9 @@
     <test class="fset1396" label="Sindhi meem - feature" rtl="True">
       <string>م ممم</string>
     </test>
+    <test class="fset1403" label="hamza-damma lig" rtl="True">
+      <string>بُٔ</string>
+    </test>
   </testgroup>
   <testgroup label="Allah">
     <test class="fset1386" label="FDF2" rtl="True">
@@ -171,8 +175,8 @@
     <test class="fset1386" label="heh = 06C1" rtl="True">
       <string>اللہ</string>
     </test>
-    <test class="fset1386" label="heh = 06C1, s+a, final diac" rtl="True">
-      <string>اللّٰہُ</string>
+    <test class="fset1386" label="s+a, final diac" rtl="True">
+      <string>اللّٰہُ اللّٰهُ</string>
     </test>
     <test class="fset1386" label="heh = 06C1, shadda+fatha" rtl="True">
       <string>اللَّہ</string>
@@ -206,6 +210,9 @@
     </test>
     <test class="fset1386" label="ZWJ - NO" rtl="True">
       <string>ال‍له</string>
+    </test>
+    <test class="fset1403" label="Allah + sukun" rtl="True">
+      <string>اللّٰهْ اللّٰہْ</string>
     </test>
   </testgroup>
   <testgroup label="AMTRA">
@@ -350,6 +357,39 @@
     </test>
     <test class="fset1389" label="RW ain-isolates" rtl="True">
       <string>ۄع زࣃ رع</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="WAW + KAF" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="kaf" rtl="True">
+      <string>کؤکۆکۇکۋکۈکۉک</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="YEH / PEH DOTS" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="schyeh" rtl="True">
+      <string>يِيݧٚي</string>
+    </test>
+    <test class="fset1403" label="peh peh peh" rtl="True">
+      <string>پپپپ</string>
+    </test>
+    <test class="fset1403" label="beh-Vbelow + beh-Vbelow" rtl="True">
+      <string>ࢠࢠی ݕݕی</string>
+    </test>
+    <test class="fset1403" label="horizontal dots below" rtl="True">
+      <string>ݐپݐی پݐی ݐݐݐی ݐݐݐی</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="TEH / NOON DOTS" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="teh teh teh / theh theh theh" rtl="True">
+      <string>تتتت ثثثث ٿٿٿٿ</string>
+    </test>
+    <test class="fset1403" label="teh w/ teh" rtl="True">
+      <string>ࢸࢸࢸࢸ ࢸࢸٹࢸڻࢸ ࢸࢸنࢸتࢸ</string>
+    </test>
+    <test class="fset1403" label="tteh tteh tteh / rnoon rnoon rnoon" rtl="True">
+      <string>ٹٹٹٹ ڻڻڻڻ ݨݨݨݨ </string>
     </test>
   </testgroup>
   <testgroup label="collisions">

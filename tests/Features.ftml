@@ -80,17 +80,19 @@
   	<test label='Urdu' stylename='cv48_2'>    <string>\u0647 \u0647\u0647\u0647</string><comment>cv48=2</comment></test>
    	<test label='Kurdish' stylename='cv48_3'><string>\u0647 \u0647\u0647\u0647</string><comment>cv48=3</comment></test>
   </testgroup>
+  <!--
   <testgroup label="Arabic U">
   	<test label='standard' stylename=''>      <string>\u06C7 \u0677 \u0644\u06C7 \u0644\u0677</string><comment>default</comment></test>
   	<test label='filled' stylename='cv50_1'>  <string>\u06C7 \u0677 \u0644\u06C7 \u0644\u0677</string><comment>cv50=1</comment></test>
   </testgroup>
+  -->
   <testgroup label="Kirguiz OE">
-  	<test label='standard' stylename=''>      <string>\u06C5 \u0644\u06C5</string><comment>default</comment></test>
-  	<test label='kirghiz' stylename='cv51_1'>  <string>\u06C5 \u0644\u06C5</string><comment>cv51=1</comment></test>  	
+  	<test label='loop' stylename=''>      <string>\u06C5 \u0644\u06C5</string><comment>default</comment></test>
+  	<test label='bar' stylename='cv51_1'>  <string>\u06C5 \u0644\u06C5</string><comment>cv51=1</comment></test>  	
   </testgroup>
-  <testgroup label="Kirghiz Yeh Hamza">
+  <testgroup label="Yeh Hamza">
   	<test label='standard' stylename=''>      <string>\u0626 \u0626\u0626\u0626</string><comment>default</comment></test>
-  	<test label='kirghiz' stylename='cv54_1'>  <string>\u0626 \u0626\u0626\u0626</string><comment>cv54=1</comment></test>  	  	
+  	<test label='right hamza' stylename='cv54_1'>  <string>\u0626 \u0626\u0626\u0626</string><comment>cv54=1</comment></test>  	  	
   </testgroup>
   <testgroup label="Maddah">
   	<test label='small' stylename=''>      <string>\u25cc\u0653 \u0622 \u0644\u0622 \u0644\u0622 \u0628\u0644\u0622</string><comment>default</comment></test>
