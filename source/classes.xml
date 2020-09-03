@@ -993,6 +993,108 @@
     </class>
     
     
+    <!-- KERNING -->
+    
+    <!-- not used; incomplete classes
+    <class name="Tooth1wBelow">
+    	beh-ar.init beeh-ar.init e-ar.init
+    	beh-ar.medi beeh-ar.medi e-ar.medi
+    </class>
+    
+    <class name="Tooth2wAboveInit">
+    	pehVabove-ar.medi teh-ar.init tehRing-ar.init tehThreeDotsdown-ar.init tehVabove-ar.init theh-ar.init tteh-ar.init
+    </class>
 
+    <class name="Tooth2wAboveMedi">
+    	pehVabove-ar.medi teh-ar.medi tehRing-ar.medi tehThreeDotsdown-ar.medi tehVabove-ar.medi theh-ar.medi tteh-ar.medi
+    </class>
+    
+    <class name="Tooth2wAboveInitMedi">
+    	@Tooth2wAboveInit @Tooth2wAboveMedi
+    </class>
+    -->
+    
+    <class name="Tooth2wBelowInit">
+    	peh-ar.init pehVabove-ar.init beheh-ar.init behThreedotsupbelow-ar.init tehThreedotsupbelow-ar.init
+			behTwodotsbelowDotabove-ar.init behVinvertedbelow-ar.init behVbelow-ar.init noonTwodotsbelow-ar.init
+			noonThreedotsabove-ar.init yeh-ar.init yehVabove-ar.init yehTwodotsbelowHamzaabove-ar.init
+			yehTwodotsbelowDotabove-ar.init yehVinverted-farsi.init yeh-farsi.init yehTwodotsabove-farsi.init
+			yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehThreedotsbelow-ar.init
+			yehTwodotsbelowNoonabove-ar.init yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init pehMeemabove-ar.init
+    </class>
+
+    <class name="Tooth2wBelowMedi">
+    	peh-ar.medi pehVabove-ar.medi beheh-ar.medi behThreedotsupbelow-ar.medi tehThreedotsupbelow-ar.medi
+			behTwodotsbelowDotabove-ar.medi behVinvertedbelow-ar.medi behVbelow-ar.medi noonTwodotsbelow-ar.medi
+			noonThreedotsabove-ar.medi yeh-ar.medi yehVabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi
+			yehTwodotsbelowDotabove-ar.medi yehVinverted-farsi.medi yeh-farsi.medi yehTwodotsabove-farsi.medi
+			yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehThreeabove-farsi.medi yehThreedotsbelow-ar.medi
+			yehTwodotsbelowNoonabove-ar.medi yehbarreeTwoabove-ar.medi yehbarreeThreeabove-ar.medi pehMeemabove-ar.medi
+    </class>
+    
+    <class name="Tooth2wBelowInitMedi">
+    	@Tooth2wBelowInit @Tooth2wBelowMedi
+    </class>
+    
+    <class name="Tooth2wwBelowInit">
+    	behVbelow-ar.init behVinvertedbelow-ar.init
+    </class>
+    
+    <class name="Tooth2wwBelowMedi">
+    	behVbelow-ar.medi behVinvertedbelow-ar.medi
+    </class>
+    
+    <class name="Tooth3wBelowInit">
+    	behThreedotshorizontalbelow-ar.init
+    </class>
+    
+    <class name="Tooth3wBelowMedi">
+    	behThreedotshorizontalbelow-ar.medi
+    </class>
+    
+    <class name="Tooth2wAboveInit">
+    	pehVabove-ar.init teh-ar.init tehRing-ar.init tehThreedotsdown-ar.init tehVabove-ar.init theh-ar.init
+			tteh-ar.init ttehVabove-ar.init teheh-ar.init behThreedotsupabove-ar.init tehThreedotsupbelow-ar.init
+			behVabove-ar.init behhamzaabove-ar.init behMeemabove-ar.init pehMeemabove-ar.init rnoon-ar.init noonTahabove-ar.init
+			noonVabove-ar.init yehHamzaabove-ar.init yehVabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVinverted-farsi.init
+			yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehTwodotsbelowNoonabove-ar.init
+		</class>
+		
+		<class name="Tooth2wAboveMedi">
+			pehVabove-ar.medi teh-ar.medi tehRing-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi theh-ar.medi
+			tteh-ar.medi ttehVabove-ar.medi teheh-ar.medi behThreedotsupabove-ar.medi tehThreedotsupbelow-ar.medi
+			behVabove-ar.medi behhamzaabove-ar.medi behMeemabove-ar.medi pehMeemabove-ar.medi rnoon-ar.medi noonTahabove-ar.medi
+			noonVabove-ar.medi yehHamzaabove-ar.medi yehVabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVinverted-farsi.medi
+			yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehTwodotsbelowNoonabove-ar.medi
+    </class>
+    
+    <class name="Tooth2wAbove">
+    	@Tooth2wAboveInit @Tooth2wAboveMedi
+    </class>
+    
+    <class name="Tooth2wwAboveInit">
+    	tteh-ar.init rnoon-ar.init noonTahabove-ar.init tehTehabove-ar.init
+    </class>
+    
+    <class name="Tooth2wwAboveMedi">
+    	tteh-ar.medi rnoon-ar.medi noonTahabove-ar.medi tehTehabove-ar.medi
+    </class>
+    
+    <class name="Tooth2wwAbove">
+    	@Tooth2wwAboveInit @Tooth2wwAboveMedi
+    </class>
+
+<!--
+    <class name="Tooth3wAbove">
+    	tehTehabove-ar.init tehTehabove-ar.medi
+    </class>
+-->
+    
+    <class name="YehLikeFina">
+    	alefMaksura-ar.fina yeh-ar.fina yeh-ar.noDots.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina
+    	yehTwodotsbelowDotabove-ar.fina yehVinverted-farsi.fina yeh-farsi.fina yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina
+    	yehTwoabove-farsi.fina yehThreeabove-farsi.fina yehFourbelow-farsi.fina yehTail-ar.fina yehKashmiri-ar.fina 
+    	highhamzaYeh-ar.fina
+    </class>
 
 </classes>

@@ -713,6 +713,60 @@ lookup SignWithDigits {
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
 } SignWithDigits;
 
+#********
+# Kashida insertion to handle collision avoidance
+
+#	(cTooth3wBelowInit cTooth3wBelowMedi cTooth2wBelowInit cTooth2wBelowMedi)  _  _  
+#		>  @1 g_abs_auto_kashida:MF g_abs_auto_kashida:MF
+#		/  _ MARKS _ _ cTooth3wBelowMedi=MF;
+
+#	(cTooth3wBelowInit cTooth3wBelowMedi)  _  >  @1 g_abs_auto_kashida:F
+#		/  _ MARKS _ cYehLikeFina=F;
+
+#	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
+
+#####@PostTooth2wKashida = [ @Tooth2wBelowMedi @YehLikeFina ];
+@Tooth3wBelowIM = [ @Tooth3wBelowInit @Tooth3wBelowMedi ];
+@Tooth2wBelowIM = [ @Tooth2wBelowInit @Tooth2wBelowMedi ];
+@Tooth2w3wBelowInit = [ @Tooth2wBelowInit @Tooth3wBelowInit ];
+@Tooth2w3wBelowMedi = [ @Tooth2wBelowMedi @Tooth3wBelowMedi ];
+@Tooth2w3wBelow = [ @Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi ];
+
+
+lookup _InsertKashida {
+	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
+	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;
+	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;
+} _InsertKashida;
+
+lookup _Insert2Kashidas {
+	sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
+} _Insert2Kashidas;
+
+# Using separate lookups allows us to handle a sequence.
+
+lookup ToothKashidasIM {  # initial + medial
+	lookupflag IgnoreMarks;
+		sub @Tooth2w3wBelowInit' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
+		sub @Tooth2w3wBelowInit' lookup _InsertKashida    @Tooth2wBelowMedi;
+		
+		sub tehTehabove-ar.init' lookup _InsertKashida    @Tooth2wAboveMedi;
+		sub @Tooth2wwAboveInit'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+} ToothKashidasIM;
+
+lookup ToothKashidasMM {  # medial + medial
+	lookupflag IgnoreMarks;		
+		sub @Tooth2w3wBelowMedi' lookup _Insert2Kashidas   @Tooth3wBelowMedi;
+		# 2w + 2w doesn't need a kashida
+
+		sub tehTehabove-ar.medi' lookup _InsertKashida    @Tooth2wAboveMedi;
+		sub @Tooth2wwAboveMedi'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+} ToothKashidasMM;
+
+lookup ToothKashidasIMF {  #initial/medial + final
+	lookupflag IgnoreMarks;
+		sub @Tooth2w3wBelow' lookup _InsertKashida   @YehLikeFina;
+} ToothKashidasIMF;
 
 
 #**********************************
@@ -905,38 +959,38 @@ lookup SubtendingMarks {
 
 
 #********
-# Kerning
+# Kerning for collision avoidance
 
 @RehWawTightenAll = [@RehWawTighten @RehWawTightenMore];
 @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 
-lookup _kern130 { # fixed
+lookup _kern130 {
   pos @RehWawAll <130 0  130 0>;
 } _kern130;
 
-lookup _kern215 { # fixed
+lookup _kern215 {
   pos @RehWawAll <215 0  215 0>;
 } _kern215;
 
-lookup _kern290 { # fixed
+lookup _kern290 {
   pos @RehWawTightenAll <200 0  200 0>;
 } _kern290;
 
-lookup _kern_190 {  # fixed
+lookup _kern_190 {
   pos @RehWawTightenAll <-190 0  -190 0>;
 } _kern_190;
 
-lookup _kern_215 { # fixed
+lookup _kern_215 {
   pos @RehWawTightenAll <-215 0  -215 0>;
 } _kern_215;
 
-lookup _kern_290 { # fixed
+lookup _kern_290 {
   pos @RehWawTightenAll <-290 0  -290 0>;
 } _kern_290;
 
-lookup _kern_580 { # fixed
+lookup _kern_580 {
   pos @RehWawTightenAll <-580 0  -580 0>;
 } _kern_580;
 
@@ -1002,6 +1056,35 @@ lookup RehWawKerning {
 	pos @RehWawNothingBelow' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
 		
 } RehWawKerning;
+
+#********
+# Kashida kerning for yeh/peh forms
+
+lookup _kern_10 {
+  pos absAutoKashida     <-10 0  -10 0>;
+  pos @Tooth3wBelowMedi  <-10 0  -10 0>;
+} _kern_10;
+
+lookup _kern_40 {
+  pos absAutoKashida     <-40 0  -40 0>;
+  pos @Tooth3wBelowMedi  <-40 0  -40 0>;
+} _kern_40;
+
+lookup ToothKashidaKerningIM {
+	ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;
+	pos @Tooth3wBelowInit  absAutoKashida' lookup _kern_10  absAutoKashida' lookup _kern_10  @Tooth3wBelowMedi' lookup _kern_10;
+	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  absAutoKashida' lookup _kern_40  @Tooth3wBelowMedi' lookup _kern_40;
+	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  @Tooth2wBelowMedi;
+} ToothKashidaKerningIM;
+
+lookup ToothKashidaKerningMM {
+	pos @Tooth3wBelowInit  absAutoKashida' lookup _kern_10  absAutoKashida' lookup _kern_10  @Tooth3wBelowMedi' lookup _kern_10;
+	pos @Tooth2wBelowMedi  absAutoKashida' lookup _kern_40  absAutoKashida' lookup _kern_40  @Tooth3wBelowMedi' lookup _kern_40;
+} ToothKashidaKerningMM;
+
+lookup ToothKashidaKerningIMF {
+	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  @YehLikeFina;
+} ToothKashidaKerningIMF;
 
 
 #**********************************
@@ -1105,10 +1188,12 @@ feature rlig {  # Required Ligatures
 } rlig ;
 
 feature calt {  # Contextual Alternates
-    script arab;
         #lookup SignWithDigits;
         # lookup SignDigits;
-    script arab;
+        lookup ToothKashidasIM;
+        lookup ToothKashidasMM;
+        lookup ToothKashidasIMF;
+
       language KUR ; # Kurdish
         lookup KurdishHeh ;
       language RHG ; #Rohingya
@@ -1121,8 +1206,6 @@ feature calt {  # Contextual Alternates
         lookup WolofCALT ;
       language KIR ; # Kirghiz
       	lookup KirghizCALT ;
-    script latn;
-      lookup SignWithDigits;
 } calt ;
 
 feature salt {  # Stylistic Alternates
@@ -1220,7 +1303,7 @@ feature cv54 {  # Character Variant 54
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Yeh-Hamza" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Kirghiz-style"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
     } ;
 } cv54 ;
 
@@ -1460,6 +1543,9 @@ feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
         lookup RehWawKerning;
+        lookup ToothKashidaKerningIM;
+        lookup ToothKashidaKerningMM;
+        lookup ToothKashidaKerningIMF;
 } kern ;
 
 
