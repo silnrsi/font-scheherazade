@@ -102,6 +102,19 @@
 @TakesLargeDaggerAlef = [yehTail-ar yeh-ar yeh-farsi e-ar yehThreedotsbelow-ar yehFourbelow-farsi alefMaksura-ar seen-ar sheen-ar seenDotbelowDotabove-ar seenThreedotsbelow-ar sheenThreedotsbelow-ar sheenDotbelow-ar seenTahTwodotshorizontalabove-ar seenFourdotsabove-ar seenTwodotsverticalabove-ar seenFourabove-ar seenVinvertedabove-ar sad-ar dad-ar sadTwodotsbelow-ar sadThreedots-ar dadDotbelow-ar sadThreedotsbelow-ar yehTail-ar.fina yeh-ar.fina yeh-farsi.fina e-ar.fina yehThreedotsbelow-ar.fina yehFourbelow-farsi.fina alefMaksura-ar.fina seen-ar.fina sheen-ar.fina seenDotbelowDotabove-ar.fina seenThreedotsbelow-ar.fina sheenThreedotsbelow-ar.fina sheenDotbelow-ar.fina seenTahTwodotshorizontalabove-ar.fina seenFourdotsabove-ar.fina seenTwodotsverticalabove-ar.fina seenFourabove-ar.fina seenVinvertedabove-ar.fina sad-ar.fina dad-ar.fina sadTwodotsbelow-ar.fina sadThreedots-ar.fina dadDotbelow-ar.fina sadThreedotsbelow-ar.fina];
 @TakesMediumDigits = [number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 number-ar.2 number-ar.3 year-ar.2 year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4];
 @TakesSmallDigits = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3];
+@Tooth2wAboveInit = [pehVabove-ar.init teh-ar.init tehRing-ar.init tehThreedotsdown-ar.init tehVabove-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init teheh-ar.init behThreedotsupabove-ar.init tehThreedotsupbelow-ar.init behVabove-ar.init behhamzaabove-ar.init behMeemabove-ar.init pehMeemabove-ar.init rnoon-ar.init noonTahabove-ar.init noonVabove-ar.init yehHamzaabove-ar.init yehVabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVinverted-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehTwodotsbelowNoonabove-ar.init];
+@Tooth2wAboveMedi = [pehVabove-ar.medi teh-ar.medi tehRing-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi teheh-ar.medi behThreedotsupabove-ar.medi tehThreedotsupbelow-ar.medi behVabove-ar.medi behhamzaabove-ar.medi behMeemabove-ar.medi pehMeemabove-ar.medi rnoon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi yehHamzaabove-ar.medi yehVabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVinverted-farsi.medi yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehTwodotsbelowNoonabove-ar.medi];
+@Tooth2wAbove = [@Tooth2wAboveInit @Tooth2wAboveMedi];
+@Tooth2wBelowInit = [peh-ar.init pehVabove-ar.init beheh-ar.init behThreedotsupbelow-ar.init tehThreedotsupbelow-ar.init behTwodotsbelowDotabove-ar.init behVinvertedbelow-ar.init behVbelow-ar.init noonTwodotsbelow-ar.init noonThreedotsabove-ar.init yeh-ar.init yehVabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehTwodotsbelowDotabove-ar.init yehVinverted-farsi.init yeh-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehThreedotsbelow-ar.init yehTwodotsbelowNoonabove-ar.init yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init pehMeemabove-ar.init];
+@Tooth2wBelowMedi = [peh-ar.medi pehVabove-ar.medi beheh-ar.medi behThreedotsupbelow-ar.medi tehThreedotsupbelow-ar.medi behTwodotsbelowDotabove-ar.medi behVinvertedbelow-ar.medi behVbelow-ar.medi noonTwodotsbelow-ar.medi noonThreedotsabove-ar.medi yeh-ar.medi yehVabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehTwodotsbelowDotabove-ar.medi yehVinverted-farsi.medi yeh-farsi.medi yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehThreeabove-farsi.medi yehThreedotsbelow-ar.medi yehTwodotsbelowNoonabove-ar.medi yehbarreeTwoabove-ar.medi yehbarreeThreeabove-ar.medi pehMeemabove-ar.medi];
+@Tooth2wBelowInitMedi = [@Tooth2wBelowInit @Tooth2wBelowMedi];
+@Tooth2wwAboveInit = [tteh-ar.init rnoon-ar.init noonTahabove-ar.init tehTehabove-ar.init];
+@Tooth2wwAboveMedi = [tteh-ar.medi rnoon-ar.medi noonTahabove-ar.medi tehTehabove-ar.medi];
+@Tooth2wwAbove = [@Tooth2wwAboveInit @Tooth2wwAboveMedi];
+@Tooth2wwBelowInit = [behVbelow-ar.init behVinvertedbelow-ar.init];
+@Tooth2wwBelowMedi = [behVbelow-ar.medi behVinvertedbelow-ar.medi];
+@Tooth3wBelowInit = [behThreedotshorizontalbelow-ar.init];
+@Tooth3wBelowMedi = [behThreedotshorizontalbelow-ar.medi];
 @U = [uHamzaabove-ar u-ar uHamzaabove-ar.fina u-ar.fina];
 @U.filled = [u-ar.filled u-ar.filled.fina];
 @UTR53_220MCM = [hamzabelow-ar seenbelow-ar wawbelow-ar];
@@ -112,6 +125,7 @@
 @UTR53_fixedPos = [damma-ar damma-ar.filled damma-ar.short dammasmall-ar dammatan-ar dammatan-ar.sixNine fatha-ar fathasmall-ar fathatan-ar kasra-ar kasra-ar.lowered kasrasmall-ar kasratan-ar kasratan-ar.lowered opendammatan-ar openfathatan-ar openkasratan-ar sukun-ar sukun-ar.downOpen sukun-ar.leftOpen];
 @UTR53_shadda = [shadda-ar];
 @Whitespace = [space nbspace enquad emquad enspace emspace threeperemspace fourperemspace sixperemspace figurespace punctuationspace thinspace hairspace zerowidthspace narrownbspace];
+@YehLikeFina = [alefMaksura-ar.fina yeh-ar.fina yeh-ar.noDots.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowDotabove-ar.fina yehVinverted-farsi.fina yeh-farsi.fina yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina yehTwoabove-farsi.fina yehThreeabove-farsi.fina yehFourbelow-farsi.fina yehTail-ar.fina yehKashmiri-ar.fina highhamzaYeh-ar.fina];
 @c_2 = [endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 footnotemarker-ar.2 number-ar.2 numbermark-ar.2 pagenumber-ar.2 samvat-ar.2 year-ar.2];
 @cno_2 = [endofayah-ar endofayah-ar.alt endofayah-ar.altB footnotemarker-ar number-ar numbermark-ar pagenumber-ar samvat-ar year-ar];
 @c_3 = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 number-ar.3 numbermark-ar.3 pagenumber-ar.3 samvat-ar.3 year-ar.3];
@@ -1071,7 +1085,7 @@ markClass zainabove-ar <anchor 537 1430> @_diaA;
 # baseClass hahTwodotsverticalabove-ar.medi <anchor 667 1595> @diaA;
 # baseClass hairspace <anchor 63 992> @diaA;
 # baseClass [hamza-ar sindhiampersand-ar] <anchor 220 893> @diaA;
-# baseClass heh-ar.allah.fina <anchor 349 1151> @diaA;
+# baseClass heh-ar.allah.fina <anchor 299 1151> @diaA;
 # baseClass [heh-ar.hooked.fina hehgoal-ar.fina] <anchor 261 893> @diaA;
 # baseClass [heh-ar.hooked.init hehgoal-ar.init] <anchor 220 992> @diaA;
 # baseClass [heh-ar.hooked.medi hehgoal-ar.medi] <anchor 296 934> @diaA;
@@ -1086,7 +1100,7 @@ markClass zainabove-ar <anchor 537 1430> @_diaA;
 # baseClass hehVinvertedabove-ar.fina <anchor 481 1473> @diaA;
 # baseClass hehVinvertedabove-ar.init <anchor 371 1537> @diaA;
 # baseClass hehVinvertedabove-ar.medi <anchor 390 1537> @diaA;
-# baseClass hehgoal-ar.allah.fina <anchor 241 893> @diaA;
+# baseClass hehgoal-ar.allah.fina <anchor 121 893> @diaA;
 # baseClass hehgoalHamzaabove-ar.fina <anchor 290 1282> @diaA;
 # baseClass hehgoalHamzaabove-ar.init <anchor 203 1415> @diaA;
 # baseClass hehgoalHamzaabove-ar.medi <anchor 432 1221> @diaA;
@@ -2760,6 +2774,163 @@ lookup SignWithDigits {
     sub @DigitsAny' lookup SignDigits_ToMedium_target [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB];
 } SignWithDigits;
 
+#********
+# Kashida insertion to handle collision avoidance
+#	(cTooth3wBelowInit cTooth3wBelowMedi cTooth2wBelowInit cTooth2wBelowMedi)  _  _  
+#		>  @1 g_abs_auto_kashida:MF g_abs_auto_kashida:MF
+#		/  _ MARKS _ _ cTooth3wBelowMedi=MF;
+#	(cTooth3wBelowInit cTooth3wBelowMedi)  _  >  @1 g_abs_auto_kashida:F
+#		/  _ MARKS _ cYehLikeFina=F;
+#	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
+#####@PostTooth2wKashida = [ @Tooth2wBelowMedi @YehLikeFina ];
+@Tooth3wBelowIM = [@Tooth3wBelowInit @Tooth3wBelowMedi];
+@Tooth2wBelowIM = [@Tooth2wBelowInit @Tooth2wBelowMedi];
+@Tooth2w3wBelowInit = [@Tooth2wBelowInit @Tooth3wBelowInit];
+@Tooth2w3wBelowMedi = [@Tooth2wBelowMedi @Tooth3wBelowMedi];
+@Tooth2w3wBelow = [@Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi];
+lookup _InsertKashida {
+    sub peh-ar.init by peh-ar.init absAutoKashida;
+    sub pehVabove-ar.init by pehVabove-ar.init absAutoKashida;
+    sub beheh-ar.init by beheh-ar.init absAutoKashida;
+    sub behThreedotsupbelow-ar.init by behThreedotsupbelow-ar.init absAutoKashida;
+    sub tehThreedotsupbelow-ar.init by tehThreedotsupbelow-ar.init absAutoKashida;
+    sub behTwodotsbelowDotabove-ar.init by behTwodotsbelowDotabove-ar.init absAutoKashida;
+    sub behVinvertedbelow-ar.init by behVinvertedbelow-ar.init absAutoKashida;
+    sub behVbelow-ar.init by behVbelow-ar.init absAutoKashida;
+    sub noonTwodotsbelow-ar.init by noonTwodotsbelow-ar.init absAutoKashida;
+    sub noonThreedotsabove-ar.init by noonThreedotsabove-ar.init absAutoKashida;
+    sub yeh-ar.init by yeh-ar.init absAutoKashida;
+    sub yehVabove-ar.init by yehVabove-ar.init absAutoKashida;
+    sub yehTwodotsbelowHamzaabove-ar.init by yehTwodotsbelowHamzaabove-ar.init absAutoKashida;
+    sub yehTwodotsbelowDotabove-ar.init by yehTwodotsbelowDotabove-ar.init absAutoKashida;
+    sub yehVinverted-farsi.init by yehVinverted-farsi.init absAutoKashida;
+    sub yeh-farsi.init by yeh-farsi.init absAutoKashida;
+    sub yehTwodotsabove-farsi.init by yehTwodotsabove-farsi.init absAutoKashida;
+    sub yehThreedotsabove-farsi.init by yehThreedotsabove-farsi.init absAutoKashida;
+    sub yehTwoabove-farsi.init by yehTwoabove-farsi.init absAutoKashida;
+    sub yehThreeabove-farsi.init by yehThreeabove-farsi.init absAutoKashida;
+    sub yehThreedotsbelow-ar.init by yehThreedotsbelow-ar.init absAutoKashida;
+    sub yehTwodotsbelowNoonabove-ar.init by yehTwodotsbelowNoonabove-ar.init absAutoKashida;
+    sub yehbarreeTwoabove-ar.init by yehbarreeTwoabove-ar.init absAutoKashida;
+    sub yehbarreeThreeabove-ar.init by yehbarreeThreeabove-ar.init absAutoKashida;
+    sub pehMeemabove-ar.init by pehMeemabove-ar.init absAutoKashida;
+    sub peh-ar.medi by peh-ar.medi absAutoKashida;
+    sub pehVabove-ar.medi by pehVabove-ar.medi absAutoKashida;
+    sub beheh-ar.medi by beheh-ar.medi absAutoKashida;
+    sub behThreedotsupbelow-ar.medi by behThreedotsupbelow-ar.medi absAutoKashida;
+    sub tehThreedotsupbelow-ar.medi by tehThreedotsupbelow-ar.medi absAutoKashida;
+    sub behTwodotsbelowDotabove-ar.medi by behTwodotsbelowDotabove-ar.medi absAutoKashida;
+    sub behVinvertedbelow-ar.medi by behVinvertedbelow-ar.medi absAutoKashida;
+    sub behVbelow-ar.medi by behVbelow-ar.medi absAutoKashida;
+    sub noonTwodotsbelow-ar.medi by noonTwodotsbelow-ar.medi absAutoKashida;
+    sub noonThreedotsabove-ar.medi by noonThreedotsabove-ar.medi absAutoKashida;
+    sub yeh-ar.medi by yeh-ar.medi absAutoKashida;
+    sub yehVabove-ar.medi by yehVabove-ar.medi absAutoKashida;
+    sub yehTwodotsbelowHamzaabove-ar.medi by yehTwodotsbelowHamzaabove-ar.medi absAutoKashida;
+    sub yehTwodotsbelowDotabove-ar.medi by yehTwodotsbelowDotabove-ar.medi absAutoKashida;
+    sub yehVinverted-farsi.medi by yehVinverted-farsi.medi absAutoKashida;
+    sub yeh-farsi.medi by yeh-farsi.medi absAutoKashida;
+    sub yehTwodotsabove-farsi.medi by yehTwodotsabove-farsi.medi absAutoKashida;
+    sub yehThreedotsabove-farsi.medi by yehThreedotsabove-farsi.medi absAutoKashida;
+    sub yehTwoabove-farsi.medi by yehTwoabove-farsi.medi absAutoKashida;
+    sub yehThreeabove-farsi.medi by yehThreeabove-farsi.medi absAutoKashida;
+    sub yehThreedotsbelow-ar.medi by yehThreedotsbelow-ar.medi absAutoKashida;
+    sub yehTwodotsbelowNoonabove-ar.medi by yehTwodotsbelowNoonabove-ar.medi absAutoKashida;
+    sub yehbarreeTwoabove-ar.medi by yehbarreeTwoabove-ar.medi absAutoKashida;
+    sub yehbarreeThreeabove-ar.medi by yehbarreeThreeabove-ar.medi absAutoKashida;
+    sub pehMeemabove-ar.medi by pehMeemabove-ar.medi absAutoKashida;
+    sub behThreedotshorizontalbelow-ar.init by behThreedotshorizontalbelow-ar.init absAutoKashida;
+    sub behThreedotshorizontalbelow-ar.medi by behThreedotshorizontalbelow-ar.medi absAutoKashida;
+    sub tteh-ar.init by tteh-ar.init absAutoKashida;
+    sub rnoon-ar.init by rnoon-ar.init absAutoKashida;
+    sub noonTahabove-ar.init by noonTahabove-ar.init absAutoKashida;
+    sub tehTehabove-ar.init by tehTehabove-ar.init absAutoKashida;
+    sub tteh-ar.medi by tteh-ar.medi absAutoKashida;
+    sub rnoon-ar.medi by rnoon-ar.medi absAutoKashida;
+    sub noonTahabove-ar.medi by noonTahabove-ar.medi absAutoKashida;
+    sub tehTehabove-ar.medi by tehTehabove-ar.medi absAutoKashida;
+} _InsertKashida;
+
+lookup _Insert2Kashidas {
+    sub peh-ar.init by peh-ar.init absAutoKashida absAutoKashida;
+    sub pehVabove-ar.init by pehVabove-ar.init absAutoKashida absAutoKashida;
+    sub beheh-ar.init by beheh-ar.init absAutoKashida absAutoKashida;
+    sub behThreedotsupbelow-ar.init by behThreedotsupbelow-ar.init absAutoKashida absAutoKashida;
+    sub tehThreedotsupbelow-ar.init by tehThreedotsupbelow-ar.init absAutoKashida absAutoKashida;
+    sub behTwodotsbelowDotabove-ar.init by behTwodotsbelowDotabove-ar.init absAutoKashida absAutoKashida;
+    sub behVinvertedbelow-ar.init by behVinvertedbelow-ar.init absAutoKashida absAutoKashida;
+    sub behVbelow-ar.init by behVbelow-ar.init absAutoKashida absAutoKashida;
+    sub noonTwodotsbelow-ar.init by noonTwodotsbelow-ar.init absAutoKashida absAutoKashida;
+    sub noonThreedotsabove-ar.init by noonThreedotsabove-ar.init absAutoKashida absAutoKashida;
+    sub yeh-ar.init by yeh-ar.init absAutoKashida absAutoKashida;
+    sub yehVabove-ar.init by yehVabove-ar.init absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowHamzaabove-ar.init by yehTwodotsbelowHamzaabove-ar.init absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowDotabove-ar.init by yehTwodotsbelowDotabove-ar.init absAutoKashida absAutoKashida;
+    sub yehVinverted-farsi.init by yehVinverted-farsi.init absAutoKashida absAutoKashida;
+    sub yeh-farsi.init by yeh-farsi.init absAutoKashida absAutoKashida;
+    sub yehTwodotsabove-farsi.init by yehTwodotsabove-farsi.init absAutoKashida absAutoKashida;
+    sub yehThreedotsabove-farsi.init by yehThreedotsabove-farsi.init absAutoKashida absAutoKashida;
+    sub yehTwoabove-farsi.init by yehTwoabove-farsi.init absAutoKashida absAutoKashida;
+    sub yehThreeabove-farsi.init by yehThreeabove-farsi.init absAutoKashida absAutoKashida;
+    sub yehThreedotsbelow-ar.init by yehThreedotsbelow-ar.init absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowNoonabove-ar.init by yehTwodotsbelowNoonabove-ar.init absAutoKashida absAutoKashida;
+    sub yehbarreeTwoabove-ar.init by yehbarreeTwoabove-ar.init absAutoKashida absAutoKashida;
+    sub yehbarreeThreeabove-ar.init by yehbarreeThreeabove-ar.init absAutoKashida absAutoKashida;
+    sub pehMeemabove-ar.init by pehMeemabove-ar.init absAutoKashida absAutoKashida;
+    sub peh-ar.medi by peh-ar.medi absAutoKashida absAutoKashida;
+    sub pehVabove-ar.medi by pehVabove-ar.medi absAutoKashida absAutoKashida;
+    sub beheh-ar.medi by beheh-ar.medi absAutoKashida absAutoKashida;
+    sub behThreedotsupbelow-ar.medi by behThreedotsupbelow-ar.medi absAutoKashida absAutoKashida;
+    sub tehThreedotsupbelow-ar.medi by tehThreedotsupbelow-ar.medi absAutoKashida absAutoKashida;
+    sub behTwodotsbelowDotabove-ar.medi by behTwodotsbelowDotabove-ar.medi absAutoKashida absAutoKashida;
+    sub behVinvertedbelow-ar.medi by behVinvertedbelow-ar.medi absAutoKashida absAutoKashida;
+    sub behVbelow-ar.medi by behVbelow-ar.medi absAutoKashida absAutoKashida;
+    sub noonTwodotsbelow-ar.medi by noonTwodotsbelow-ar.medi absAutoKashida absAutoKashida;
+    sub noonThreedotsabove-ar.medi by noonThreedotsabove-ar.medi absAutoKashida absAutoKashida;
+    sub yeh-ar.medi by yeh-ar.medi absAutoKashida absAutoKashida;
+    sub yehVabove-ar.medi by yehVabove-ar.medi absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowHamzaabove-ar.medi by yehTwodotsbelowHamzaabove-ar.medi absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowDotabove-ar.medi by yehTwodotsbelowDotabove-ar.medi absAutoKashida absAutoKashida;
+    sub yehVinverted-farsi.medi by yehVinverted-farsi.medi absAutoKashida absAutoKashida;
+    sub yeh-farsi.medi by yeh-farsi.medi absAutoKashida absAutoKashida;
+    sub yehTwodotsabove-farsi.medi by yehTwodotsabove-farsi.medi absAutoKashida absAutoKashida;
+    sub yehThreedotsabove-farsi.medi by yehThreedotsabove-farsi.medi absAutoKashida absAutoKashida;
+    sub yehTwoabove-farsi.medi by yehTwoabove-farsi.medi absAutoKashida absAutoKashida;
+    sub yehThreeabove-farsi.medi by yehThreeabove-farsi.medi absAutoKashida absAutoKashida;
+    sub yehThreedotsbelow-ar.medi by yehThreedotsbelow-ar.medi absAutoKashida absAutoKashida;
+    sub yehTwodotsbelowNoonabove-ar.medi by yehTwodotsbelowNoonabove-ar.medi absAutoKashida absAutoKashida;
+    sub yehbarreeTwoabove-ar.medi by yehbarreeTwoabove-ar.medi absAutoKashida absAutoKashida;
+    sub yehbarreeThreeabove-ar.medi by yehbarreeThreeabove-ar.medi absAutoKashida absAutoKashida;
+    sub pehMeemabove-ar.medi by pehMeemabove-ar.medi absAutoKashida absAutoKashida;
+    sub behThreedotshorizontalbelow-ar.init by behThreedotshorizontalbelow-ar.init absAutoKashida absAutoKashida;
+    sub behThreedotshorizontalbelow-ar.medi by behThreedotshorizontalbelow-ar.medi absAutoKashida absAutoKashida;
+} _Insert2Kashidas;
+
+# Using separate lookups allows us to handle a sequence.
+lookup ToothKashidasIM {
+    # initial + medial
+    lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelowInit' lookup _Insert2Kashidas @Tooth3wBelowMedi;
+    sub @Tooth2w3wBelowInit' lookup _InsertKashida @Tooth2wBelowMedi;
+    sub tehTehabove-ar.init' lookup _InsertKashida @Tooth2wAboveMedi;
+    sub @Tooth2wwAboveInit' lookup _InsertKashida @Tooth2wwAboveMedi;
+} ToothKashidasIM;
+
+lookup ToothKashidasMM {
+    # medial + medial
+    lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelowMedi' lookup _Insert2Kashidas @Tooth3wBelowMedi;
+    # 2w + 2w doesn't need a kashida
+    sub tehTehabove-ar.medi' lookup _InsertKashida @Tooth2wAboveMedi;
+    sub @Tooth2wwAboveMedi' lookup _InsertKashida @Tooth2wwAboveMedi;
+} ToothKashidasMM;
+
+lookup ToothKashidasIMF {
+    #initial/medial + final
+    lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelow' lookup _InsertKashida @YehLikeFina;
+} ToothKashidasIMF;
+
 #**********************************
 #  Positioning Lookups
 #**********************************
@@ -2959,7 +3130,7 @@ lookup mark_to_base {
     pos base hahTwodotsverticalabove-ar.medi <anchor 667 1595> mark @_diaA;
     pos base hairspace <anchor 63 992> mark @_diaA;
     pos base [hamza-ar sindhiampersand-ar] <anchor 220 893> mark @_diaA;
-    pos base heh-ar.allah.fina <anchor 349 1151> mark @_diaA;
+    pos base heh-ar.allah.fina <anchor 299 1151> mark @_diaA;
     pos base [heh-ar.hooked.fina hehgoal-ar.fina] <anchor 261 893> mark @_diaA;
     pos base [heh-ar.hooked.init hehgoal-ar.init] <anchor 220 992> mark @_diaA;
     pos base [heh-ar.hooked.medi hehgoal-ar.medi] <anchor 296 934> mark @_diaA;
@@ -2974,7 +3145,7 @@ lookup mark_to_base {
     pos base hehVinvertedabove-ar.fina <anchor 481 1473> mark @_diaA;
     pos base hehVinvertedabove-ar.init <anchor 371 1537> mark @_diaA;
     pos base hehVinvertedabove-ar.medi <anchor 390 1537> mark @_diaA;
-    pos base hehgoal-ar.allah.fina <anchor 241 893> mark @_diaA;
+    pos base hehgoal-ar.allah.fina <anchor 121 893> mark @_diaA;
     pos base hehgoalHamzaabove-ar.fina <anchor 290 1282> mark @_diaA;
     pos base hehgoalHamzaabove-ar.init <anchor 203 1415> mark @_diaA;
     pos base hehgoalHamzaabove-ar.medi <anchor 432 1221> mark @_diaA;
@@ -4260,43 +4431,36 @@ lookup SubtendingMarks {
 } SubtendingMarks;
 
 #********
-# Kerning
+# Kerning for collision avoidance
 @RehWawTightenAll = [@RehWawTighten @RehWawTightenMore];
 @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 lookup _kern130 {
-    # fixed
     pos @RehWawAll <130 0 130 0>;
 } _kern130;
 
 lookup _kern215 {
-    # fixed
     pos @RehWawAll <215 0 215 0>;
 } _kern215;
 
 lookup _kern290 {
-    # fixed
     pos @RehWawTightenAll <200 0 200 0>;
 } _kern290;
 
 lookup _kern_190 {
-    # fixed
     pos @RehWawTightenAll <-190 0 -190 0>;
 } _kern_190;
 
 lookup _kern_215 {
-    # fixed
     pos @RehWawTightenAll <-215 0 -215 0>;
 } _kern_215;
 
 lookup _kern_290 {
-    # fixed
     pos @RehWawTightenAll <-290 0 -290 0>;
 } _kern_290;
 
 lookup _kern_580 {
-    # fixed
     pos @RehWawTightenAll <-580 0 -580 0>;
 } _kern_580;
 
@@ -4349,6 +4513,34 @@ lookup RehWawKerning {
     pos @RehWawNothingBelow' lookup _kern_580 @MarksAny @AinLikeIsol;
     pos @RehWawNothingBelow' lookup _kern_580 @MarksAny @MarksAny @AinLikeIsol;
 } RehWawKerning;
+
+#********
+# Kashida kerning for yeh/peh forms
+lookup _kern_10 {
+    pos absAutoKashida <-10 0 -10 0>;
+    pos @Tooth3wBelowMedi <-10 0 -10 0>;
+} _kern_10;
+
+lookup _kern_40 {
+    pos absAutoKashida <-40 0 -40 0>;
+    pos @Tooth3wBelowMedi <-40 0 -40 0>;
+} _kern_40;
+
+lookup ToothKashidaKerningIM {
+    ignore pos @Tooth2wwBelowInit absAutoKashida @Tooth2wwBelowMedi;
+    pos @Tooth3wBelowInit absAutoKashida' lookup _kern_10 absAutoKashida' lookup _kern_10 @Tooth3wBelowMedi' lookup _kern_10;
+    pos @Tooth2wBelowInit absAutoKashida' lookup _kern_40 absAutoKashida' lookup _kern_40 @Tooth3wBelowMedi' lookup _kern_40;
+    pos @Tooth2wBelowInit absAutoKashida' lookup _kern_40 @Tooth2wBelowMedi;
+} ToothKashidaKerningIM;
+
+lookup ToothKashidaKerningMM {
+    pos @Tooth3wBelowInit absAutoKashida' lookup _kern_10 absAutoKashida' lookup _kern_10 @Tooth3wBelowMedi' lookup _kern_10;
+    pos @Tooth2wBelowMedi absAutoKashida' lookup _kern_40 absAutoKashida' lookup _kern_40 @Tooth3wBelowMedi' lookup _kern_40;
+} ToothKashidaKerningMM;
+
+lookup ToothKashidaKerningIMF {
+    pos @Tooth2wBelowInit absAutoKashida' lookup _kern_40 @YehLikeFina;
+} ToothKashidaKerningIMF;
 
 #**********************************
 #  FEATURES
@@ -4453,10 +4645,11 @@ feature rlig {
 
 feature calt {
     # Contextual Alternates
-    script arab;
     #lookup SignWithDigits;
     # lookup SignDigits;
-    script arab;
+    lookup ToothKashidasIM;
+    lookup ToothKashidasMM;
+    lookup ToothKashidasIMF;
     language KUR;
     # Kurdish
     lookup KurdishHeh;
@@ -4475,8 +4668,6 @@ feature calt {
     language KIR;
     # Kirghiz
     lookup KirghizCALT;
-    script latn;
-    lookup SignWithDigits;
 } calt;
 
 feature salt {
@@ -4643,7 +4834,7 @@ feature cv54 {
         };
 
                 ParamUILabelNameID {
-            name "Kirghiz-style";
+            name "Right hamza";
         };
 
     };
@@ -5010,6 +5201,9 @@ feature kern {
     # Same behavior for latin & arabic:
     lookup SubtendingMarks;
     lookup RehWawKerning;
+    lookup ToothKashidaKerningIM;
+    lookup ToothKashidaKerningMM;
+    lookup ToothKashidaKerningIMF;
 } kern;
 
 ####feature kern {  # Kerning
