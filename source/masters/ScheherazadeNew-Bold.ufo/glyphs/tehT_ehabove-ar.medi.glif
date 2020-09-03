@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehTehabove-ar.medi" format="2">
-  <advance width="574"/>
-  <anchor x="155" y="1284" name="alef"/>
-  <anchor x="233" y="1463" name="diaA"/>
-  <anchor x="221" y="-322" name="diaB"/>
-  <anchor x="221" y="-1075" name="diaBtailDown"/>
-  <anchor x="221" y="-168" name="diaBtailUp"/>
+  <advance width="724"/>
+  <anchor x="235" y="1284" name="alef"/>
+  <anchor x="313" y="1463" name="diaA"/>
+  <anchor x="301" y="-322" name="diaB"/>
+  <anchor x="301" y="-1075" name="diaBtailDown"/>
+  <anchor x="301" y="-168" name="diaBtailUp"/>
   <outline>
-    <component base="behDotless-ar.medi"/>
-    <component base="_teh" xScale="0.927" yScale="0.927" xOffset="304" yOffset="1003"/>
+    <contour>
+      <point x="816" y="140" type="curve" smooth="yes"/>
+      <point x="816" y="228"/>
+      <point x="810" y="275"/>
+      <point x="742" y="275" type="curve" smooth="yes"/>
+      <point x="691" y="275" type="line" smooth="yes"/>
+      <point x="548" y="275"/>
+      <point x="524" y="314"/>
+      <point x="511" y="377" type="curve" smooth="yes"/>
+      <point x="497" y="444"/>
+      <point x="484" y="451"/>
+      <point x="472" y="451" type="curve" smooth="yes"/>
+      <point x="430" y="451"/>
+      <point x="433" y="275"/>
+      <point x="33" y="275" type="curve" smooth="yes"/>
+      <point x="-15" y="275" type="line" smooth="yes"/>
+      <point x="-83" y="275"/>
+      <point x="-90" y="225"/>
+      <point x="-90" y="140" type="curve" smooth="yes"/>
+      <point x="-90" y="48"/>
+      <point x="-83" y="0"/>
+      <point x="-15" y="0" type="curve" smooth="yes"/>
+      <point x="33" y="0" type="line" smooth="yes"/>
+      <point x="287" y="0"/>
+      <point x="350" y="55"/>
+      <point x="429" y="162" type="curve"/>
+      <point x="447" y="110"/>
+      <point x="477" y="66"/>
+      <point x="506" y="42" type="curve" smooth="yes"/>
+      <point x="540" y="12"/>
+      <point x="590" y="0"/>
+      <point x="691" y="0" type="curve" smooth="yes"/>
+      <point x="742" y="0" type="line" smooth="yes"/>
+      <point x="810" y="0"/>
+      <point x="816" y="53"/>
+    </contour>
+    <component base="_teh" xScale="0.927" yScale="0.927" xOffset="384" yOffset="1003"/>
   </outline>
   <lib>
     <dict>

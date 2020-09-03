@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tehTehabove-ar.init" format="2">
-  <advance width="522"/>
-  <anchor x="80" y="1520" name="alef"/>
-  <anchor x="181" y="1627" name="diaA"/>
-  <anchor x="152" y="-361" name="diaB"/>
-  <anchor x="152" y="-1088" name="diaBtailDown"/>
-  <anchor x="152" y="-181" name="diaBtailUp"/>
+  <advance width="622"/>
+  <anchor x="344" y="731" name="above"/>
+  <anchor x="180" y="1520" name="alef"/>
+  <anchor x="271" y="-73" name="below"/>
+  <anchor x="281" y="1627" name="diaA"/>
+  <anchor x="252" y="-361" name="diaB"/>
+  <anchor x="252" y="-1088" name="diaBtailDown"/>
+  <anchor x="252" y="-181" name="diaBtailUp"/>
+  <anchor x="355" y="132" name="ring"/>
   <outline>
-    <component base="behDotless-ar.init"/>
-    <component base="_teh" xOffset="244" yOffset="1117"/>
+    <contour>
+      <point x="460" y="383" type="curve" smooth="yes"/>
+      <point x="460" y="476"/>
+      <point x="438" y="561"/>
+      <point x="394" y="657" type="curve"/>
+      <point x="383" y="641"/>
+      <point x="296" y="505"/>
+      <point x="296" y="479" type="curve" smooth="yes"/>
+      <point x="296" y="460"/>
+      <point x="391" y="303"/>
+      <point x="391" y="280" type="curve" smooth="yes"/>
+      <point x="391" y="267"/>
+      <point x="370" y="238"/>
+      <point x="329" y="218" type="curve" smooth="yes"/>
+      <point x="284" y="196"/>
+      <point x="246" y="181"/>
+      <point x="36" y="181" type="curve" smooth="yes"/>
+      <point x="-17" y="181" type="line" smooth="yes"/>
+      <point x="-90" y="181"/>
+      <point x="-97" y="136"/>
+      <point x="-97" y="91" type="curve" smooth="yes"/>
+      <point x="-97" y="46"/>
+      <point x="-90" y="0"/>
+      <point x="-17" y="0" type="curve" smooth="yes"/>
+      <point x="36" y="0" type="line" smooth="yes"/>
+      <point x="318" y="0"/>
+      <point x="460" y="57"/>
+    </contour>
+    <component base="_teh" xOffset="344" yOffset="1117"/>
   </outline>
   <lib>
     <dict>
