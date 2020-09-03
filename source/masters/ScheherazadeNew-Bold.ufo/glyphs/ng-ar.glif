@@ -2,12 +2,57 @@
 <glyph name="ng-ar" format="2">
   <advance width="1371"/>
   <unicode hex="06AD"/>
-  <anchor x="197" y="1710" name="alef"/>
-  <anchor x="435" y="2049" name="diaA"/>
+  <anchor x="197" y="1630" name="alef"/>
+  <anchor x="435" y="1969" name="diaA"/>
   <anchor x="649" y="-283" name="diaB"/>
   <outline>
-    <component base="kaf-ar"/>
-    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="575" yOffset="1294"/>
+    <contour>
+      <point x="1264" y="400" type="curve" smooth="yes"/>
+      <point x="1264" y="592"/>
+      <point x="1114" y="1058"/>
+      <point x="1114" y="1213" type="curve" smooth="yes"/>
+      <point x="1114" y="1278"/>
+      <point x="1162" y="1333"/>
+      <point x="1189" y="1365" type="curve"/>
+      <point x="1039" y="1565" type="line"/>
+      <point x="967" y="1524"/>
+      <point x="905" y="1400"/>
+      <point x="905" y="1332" type="curve" smooth="yes"/>
+      <point x="905" y="1173"/>
+      <point x="1146" y="511"/>
+      <point x="1146" y="382" type="curve" smooth="yes"/>
+      <point x="1146" y="365"/>
+      <point x="1146" y="338"/>
+      <point x="1130" y="327" type="curve" smooth="yes"/>
+      <point x="1063" y="277"/>
+      <point x="770" y="274"/>
+      <point x="544" y="274" type="curve" smooth="yes"/>
+      <point x="287" y="274"/>
+      <point x="236" y="283"/>
+      <point x="236" y="348" type="curve" smooth="yes"/>
+      <point x="236" y="358"/>
+      <point x="243" y="397"/>
+      <point x="243" y="403" type="curve" smooth="yes"/>
+      <point x="243" y="414"/>
+      <point x="230" y="421"/>
+      <point x="220" y="421" type="curve" smooth="yes"/>
+      <point x="204" y="421"/>
+      <point x="195" y="413"/>
+      <point x="192" y="406" type="curve" smooth="yes"/>
+      <point x="177" y="367"/>
+      <point x="105" y="200"/>
+      <point x="105" y="81" type="curve" smooth="yes"/>
+      <point x="105" y="-15"/>
+      <point x="266" y="-15"/>
+      <point x="514" y="-15" type="curve" smooth="yes"/>
+      <point x="811" y="-15"/>
+      <point x="1074" y="-5"/>
+      <point x="1110" y="31" type="curve" smooth="yes"/>
+      <point x="1173" y="96"/>
+      <point x="1264" y="347"/>
+    </contour>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="575" yOffset="1214"/>
+    <component base="_kafSquiggle" xOffset="388" yOffset="53"/>
   </outline>
   <lib>
     <dict>

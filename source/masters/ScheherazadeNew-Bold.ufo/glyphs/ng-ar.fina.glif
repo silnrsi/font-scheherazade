@@ -1,12 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ng-ar.fina" format="2">
   <advance width="1903"/>
-  <anchor x="423" y="1808" name="alef"/>
-  <anchor x="744" y="2125" name="diaA"/>
+  <anchor x="423" y="1663" name="alef"/>
+  <anchor x="744" y="1980" name="diaA"/>
   <anchor x="806" y="-404" name="diaB"/>
   <outline>
-    <component base="kaf-ar.fina"/>
-    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="885" yOffset="1359"/>
+    <contour>
+      <point x="1995" y="138" type="curve" smooth="yes"/>
+      <point x="1995" y="228"/>
+      <point x="1989" y="275"/>
+      <point x="1921" y="275" type="curve" smooth="yes"/>
+      <point x="1868" y="275" type="line" smooth="yes"/>
+      <point x="1703" y="275"/>
+      <point x="1687" y="358"/>
+      <point x="1668" y="571" type="curve" smooth="yes"/>
+      <point x="1660" y="665"/>
+      <point x="1637" y="1180"/>
+      <point x="1624" y="1362" type="curve" smooth="yes"/>
+      <point x="1620" y="1417"/>
+      <point x="1609" y="1456"/>
+      <point x="1581" y="1456" type="curve" smooth="yes"/>
+      <point x="1529" y="1456"/>
+      <point x="1452" y="1351"/>
+      <point x="1452" y="1254" type="curve" smooth="yes"/>
+      <point x="1452" y="1175"/>
+      <point x="1535" y="777"/>
+      <point x="1535" y="502" type="curve" smooth="yes" name="hr01"/>
+      <point x="1535" y="419"/>
+      <point x="1508" y="337"/>
+      <point x="1439" y="281" type="curve" smooth="yes"/>
+      <point x="1288" y="165"/>
+      <point x="849" y="95"/>
+      <point x="652" y="95" type="curve" smooth="yes"/>
+      <point x="371" y="95"/>
+      <point x="212" y="177"/>
+      <point x="212" y="353" type="curve" smooth="yes"/>
+      <point x="212" y="401"/>
+      <point x="237" y="507"/>
+      <point x="237" y="520" type="curve" smooth="yes"/>
+      <point x="237" y="528"/>
+      <point x="220" y="553"/>
+      <point x="187" y="553" type="curve" smooth="yes"/>
+      <point x="181" y="553"/>
+      <point x="97" y="269"/>
+      <point x="97" y="173" type="curve" smooth="yes"/>
+      <point x="97" y="-19"/>
+      <point x="209" y="-179"/>
+      <point x="610" y="-179" type="curve" smooth="yes" name="hr02"/>
+      <point x="996" y="-179"/>
+      <point x="1282" y="-53"/>
+      <point x="1402" y="33" type="curve" smooth="yes"/>
+      <point x="1502" y="105"/>
+      <point x="1555" y="239"/>
+      <point x="1586" y="302" type="curve"/>
+      <point x="1666" y="58"/>
+      <point x="1701" y="0"/>
+      <point x="1868" y="0" type="curve" smooth="yes" name="hr03"/>
+      <point x="1921" y="0" type="line" smooth="yes"/>
+      <point x="1989" y="0"/>
+      <point x="1995" y="33"/>
+    </contour>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="885" yOffset="1214"/>
+    <component base="_kafSquiggle" xOffset="590"/>
   </outline>
   <lib>
     <dict>
