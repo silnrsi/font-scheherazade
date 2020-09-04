@@ -1090,11 +1090,46 @@
     </class>
 -->
     
+    <class name="HehLikeIsolate">
+    	heh-ar hehgoal-ar tehMarbuta-ar
+    </class>
+
+    <class name="JeemAinLikeFina">
+    	jeem-ar.fina tcheh-ar.fina tcheheh-ar.fina tchehDotabove-ar.fina tchehVabove-ar.fina nyeh-ar.fina
+    	dyeh-ar.fina hah-ar.fina hahHamzaabove-ar.fina hahTwodotsverticalabove-ar.fina hahTwodotshorizontalabove-ar.fina
+    	hahThreedotsabove-ar.fina hahThreedotsupbelow-ar.fina khah-ar.fina hahTahbelow-ar.fina hahTahTwodotshorizontalbelow-ar.fina
+    	hahTahabove-ar.fina hahFourbelow-ar.fina jeemTwodotsabove-ar.fina jeemThreedotsabove-ar.fina jeemThreedotsbelow-ar.fina
+    	ain-ar.fina ainThreedots-ar.fina ainTwodotshorizontalabove-ar.fina ainThreedotsdownabove-ar.fina 
+    	ainTwodotsverticalabove-ar.fina ainThreedotsbelow-ar.fina ghain-ar.fina ghainThreedots-ar.fina ghainDotbelow-ar.fina
+    </class>
+
+    <class name="KafLikeInit">
+    	kaf-ar.init kafDotbelow-ar.init keheh-ar.init kehehTwodotsabove-ar.init kehehThreedotsbelow-ar.init
+    	kehehDotabove-ar.init kehehThreedotsabove-ar.init kehehThreedotsupbelow-ar.init kehehVabove-ar.init
+    	gar-ar.init gafRing-ar.init gafThreedots-ar.init kafRing-ar.init kafDotabove-ar.init kafTwodotshorizontalabove-ar.init
+    	kafThreedotsbelow-ar.init gafTwodotsbelow-ar.init gafInvertedstroke-ar.init ng-ar.init ngoeh-ar.init gueh-ar.init
+    </class>
+    
+    <class name="KafLikeMedi">
+    	kaf-ar.medi kafDotbelow-ar.medi keheh-ar.medi kehehTwodotsabove-ar.medi kehehThreedotsbelow-ar.medi
+    	kehehDotabove-ar.medi kehehThreedotsabove-ar.medi kehehThreedotsupbelow-ar.medi kehehVabove-ar.medi
+    	gar-ar.medi gafRing-ar.medi gafThreedots-ar.medi kafRing-ar.medi kafDotabove-ar.medi kafTwodotshorizontalabove-ar.medi
+    	kafThreedotsbelow-ar.medi gafTwodotsbelow-ar.medi gafInvertedstroke-ar.medi ng-ar.medi ngoeh-ar.medi gueh-ar.medi
+    </class>
+    
+    <class name="KafLikeInitMedi">
+    	@KafLikeInit @KafLikeMedi
+    </class>
+    
     <class name="YehLikeFina">
     	alefMaksura-ar.fina yeh-ar.fina yeh-ar.noDots.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina
     	yehTwodotsbelowDotabove-ar.fina yehVinverted-farsi.fina yeh-farsi.fina yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina
     	yehTwoabove-farsi.fina yehThreeabove-farsi.fina yehFourbelow-farsi.fina yehTail-ar.fina yehKashmiri-ar.fina 
     	highhamzaYeh-ar.fina
     </class>
-
+    
+    <class name="YehBarreeFina">
+    	yehbarree-ar.fina yehbarreeHamzaabove-ar.fina yehbarreeTwoabove-ar.fina yehbarreeThreeabove-ar.fina
+    </class>
+    
 </classes>
