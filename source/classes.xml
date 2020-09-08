@@ -1093,6 +1093,24 @@
     <class name="HehLikeIsolate">
     	heh-ar hehgoal-ar tehMarbuta-ar
     </class>
+    
+    <class name="JeemLikeInit">
+    	jeem-ar.init tcheh-ar.init tcheheh-ar.init tchehDotabove-ar.init tchehVabove-ar.init nyeh-ar.init
+    	dyeh-ar.init hah-ar.init hahHamzaabove-ar.init hahTwodotsverticalabove-ar.init hahTwodotshorizontalabove-ar.init
+    	hahThreedotsabove-ar.init hahThreedotsupbelow-ar.init khah-ar.init hahTahbelow-ar.init hahTahTwodotshorizontalbelow-ar.init
+    	hahTahabove-ar.init hahFourbelow-ar.init jeemTwodotsabove-ar.init jeemThreedotsabove-ar.init jeemThreedotsbelow-ar.init
+    </class>
+    
+    <class name="JeemLikeMedi">
+    	jeem-ar.medi tcheh-ar.medi tcheheh-ar.medi tchehDotabove-ar.medi tchehVabove-ar.medi nyeh-ar.medi
+    	dyeh-ar.medi hah-ar.medi hahHamzaabove-ar.medi hahTwodotsverticalabove-ar.medi hahTwodotshorizontalabove-ar.medi
+    	hahThreedotsabove-ar.medi hahThreedotsupbelow-ar.medi khah-ar.medi hahTahbelow-ar.medi hahTahTwodotshorizontalbelow-ar.medi
+    	hahTahabove-ar.medi hahFourbelow-ar.medi jeemTwodotsabove-ar.medi jeemThreedotsabove-ar.medi jeemThreedotsbelow-ar.medi
+    </class>
+    
+    <class name="JeemLikeInitMedi">
+    	@JeemLikeInit @JeemLikeMedi
+    </class>
 
     <class name="JeemAinLikeFina">
     	jeem-ar.fina tcheh-ar.fina tcheheh-ar.fina tchehDotabove-ar.fina tchehVabove-ar.fina nyeh-ar.fina
@@ -1106,14 +1124,14 @@
     <class name="KafLikeInit">
     	kaf-ar.init kafDotbelow-ar.init keheh-ar.init kehehTwodotsabove-ar.init kehehThreedotsbelow-ar.init
     	kehehDotabove-ar.init kehehThreedotsabove-ar.init kehehThreedotsupbelow-ar.init kehehVabove-ar.init
-    	gar-ar.init gafRing-ar.init gafThreedots-ar.init kafRing-ar.init kafDotabove-ar.init kafTwodotshorizontalabove-ar.init
+    	gaf-ar.init gafRing-ar.init gafThreedots-ar.init kafRing-ar.init kafDotabove-ar.init kafTwodotshorizontalabove-ar.init
     	kafThreedotsbelow-ar.init gafTwodotsbelow-ar.init gafInvertedstroke-ar.init ng-ar.init ngoeh-ar.init gueh-ar.init
     </class>
     
     <class name="KafLikeMedi">
     	kaf-ar.medi kafDotbelow-ar.medi keheh-ar.medi kehehTwodotsabove-ar.medi kehehThreedotsbelow-ar.medi
     	kehehDotabove-ar.medi kehehThreedotsabove-ar.medi kehehThreedotsupbelow-ar.medi kehehVabove-ar.medi
-    	gar-ar.medi gafRing-ar.medi gafThreedots-ar.medi kafRing-ar.medi kafDotabove-ar.medi kafTwodotshorizontalabove-ar.medi
+    	gar-af.medi gafRing-ar.medi gafThreedots-ar.medi kafRing-ar.medi kafDotabove-ar.medi kafTwodotshorizontalabove-ar.medi
     	kafThreedotsbelow-ar.medi gafTwodotsbelow-ar.medi gafInvertedstroke-ar.medi ng-ar.medi ngoeh-ar.medi gueh-ar.medi
     </class>
     
@@ -1132,4 +1150,68 @@
     	yehbarree-ar.fina yehbarreeHamzaabove-ar.fina yehbarreeTwoabove-ar.fina yehbarreeThreeabove-ar.fina
     </class>
     
+    <class name="RnoonLikeNarrow">
+    	rnoon-ar.medi rreh-ar.fina highhamzaYeh-ar.medi
+    </class>
+    
+    <!-- COLLISIONS -->
+    
+		<!-- In the following two groups define "tooth" shapes with dots or something else below,
+					the number of dots below is based on vertical height requirements: -->
+
+		<!-- zero dots high below -->
+    <class name="Tooth0Below">
+    	teh-ar.init  theh-ar.init  tteh-ar.init  tteheh-ar.init
+			behVabove-ar.init  tehThreedotsdown-ar.init  teheh-ar.init
+			yehHamzaabove-ar.init  alefMaksura-ar.init  yeh-ar.noDots.init  highhamzaYeh-ar.init
+			noon-ar.init  noonTahabove-ar.init  noonghunna-ar.init  rnoon-ar.init  noonVabove-ar.init
+			noonAfrican-ar.init  noonThreedotsabove-ar.init
+
+			teh-ar.medi  theh-ar.medi  tteh-ar.medi  tteheh-ar.medi
+			behVabove-ar.medi  tehThreedotsdown-ar.medi  teheh-ar.medi
+			yehHamzaabove-ar.medi  alefMaksura-ar.medi  yeh-ar.noDots.medi  highhamzaYeh-ar.medi
+			noon-ar.medi  noonTahabove-ar.medi  noonghunna-ar.medi  rnoon-ar.medi  noonVabove-ar.medi
+			noonAfrican-ar.medi  noonThreedotsabove-ar.medi
+    </class>
+
+		<!-- one dot high below -->
+		<class name="Tooth1hBelow">
+			beh-ar.init  behThreedotsupbelow-ar.init  behThreedotshorizontalbelow-ar.init
+			behTwodotsbelowDotabove-ar.init  behhamzaabove-ar.init
+			yehVinverted-farsi.init  yehTwodotsabove-farsi.init
+			yehThreedotsabove-farsi.init  yeh-ar.init  yeh-farsi.init  yehVabove-ar.init
+			yehTwoabove-farsi.init  yehThreeabove-farsi.init
+			yehTwodotsbelowHamzaabove-ar.init  yehTwodotsbelowDotabove-ar.init
+			yehbarreeTwoabove-ar.init  yehbarreeThreeabove-ar.init
+			noonDotbelow-ar.init  noonTwodotsbelow-ar.init  noonRing-ar.init  tehRing-ar.init
+
+			beh-ar.medi  behThreedotsupbelow-ar.medi  behThreedotshorizontalbelow-ar.medi
+			behTwodotsbelowDotabove-ar.medi  behhamzaabove-ar.medi
+			yehVinverted-farsi.medi  yehTwodotsabove-farsi.medi
+			yehThreedotsabove-farsi.medi  yeh-ar.init  yeh-farsi.medi  yehVabove-ar.medi
+			yehTwoabove-farsi.medi  yehThreeabove-farsi.medi
+			yehTwodotsbelowHamzaabove-ar.medi  yehTwodotsbelowDotabove-ar.medi
+			yehbarreeTwoabove-ar.medi  yehbarreeThreeabove-ar.medi
+			noonDotbelow-ar.medi  noonTwodotsbelow-ar.medi  noonRing-ar.medi  tehRing-ar.medi
+		</class>
+		
+		<!-- multiple dots high below -->
+		<class name="Tooth2hBelow">
+			peh-ar.init  beheh-ar.init  beeh-ar.init
+			tehThreedotsupbelow-ar.init  behThreedotsupbelow-ar.init
+			behVinvertedbelow-ar.init  behVbelow-ar.init  yehKashmiri-ar.init
+			e-ar.init  yehThreedotsbelow-ar.init  yehFourbelow-farsi.init
+			noonThreedotsabove-ar.init
+			
+			peh-ar.medi  beheh-ar.medi  beeh-ar.medi
+			tehThreedotsupbelow-ar.medi  behThreedotsupbelow-ar.medi
+			behVinvertedbelow-ar.medi  behVbelow-ar.medi  yehKashmiri-ar.medi
+			e-ar.medi  yehThreedotsbelow-ar.medi  yehFourbelow-farsi.medi
+			noonThreedotsabove-ar.medi
+		</class>
+		
+		<class name="ToothRing">
+			noonRing-ar.init tehRing-ar.init noonRing-ar.medi tehRing-ar.medi
+		</class>
+
 </classes>

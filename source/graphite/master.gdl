@@ -539,7 +539,7 @@ table(glyph)	// classes for collision handling
 
 cNoonGhunna = (g_noonghunna_ar g_noonghunna_ar_init g_noonghunna_ar_medi g_noonghunna_ar_fina);
 
-cRnoonLikeMed = (g_rnoon_ar_medi  g_highhamza_yeh_ar_medi);	// Expanded to 5.1  // TODO: extend this group?
+cRnoonLikeMedi = (g_rnoon_ar_medi  g_highhamza_yeh_ar_medi);	// Expanded to 5.1  // TODO: extend this group?
 
 /*cKafLikeIniMed = // Kaf-like in initial or medial  // TODO: SC included absQafThreeDotsAbove ?
 		(g_keheh_ar_init  g_gaf_ar_init  g_gaf_ring_ar_init  g_gaf_threedots_ar_init  g_gaf_twodotsbelow_ar_init  
@@ -564,59 +564,6 @@ cKehehLikeFin = (
 		g_gaf_ar_fina  g_gaf_ring_ar_fina  g_gaf_threedots_ar_fina  g_gaf_twodotsbelow_ar_fina
 		g_gaf_invertedstroke_ar_fina  g_ngoeh_ar_fina  g_gueh_ar_fina );
 		
-
-cTooth0Below = // nothing below		// TODO: SC included absTehRingIni/Med -- what about absNoonRingIni/Med?
-								// I think these two should be in cTooth1hBelow, so I've put them there.
-		(g_teh_ar_init  g_theh_ar_init  g_tteh_ar_init  g_tteheh_ar_init  // g_teh_ring_ar_init ???
-		g_beh_vabove_ar_init  g_teh_threedotsdown_ar_init  g_teheh_ar_init
-		g_yeh_hamzaabove_ar_init  g_alef_maksura_ar_init  g_yeh_ar_no_dots_init  g_highhamza_yeh_ar_init
-		g_noon_ar_init  g_noon_tahabove_ar_init   g_noonghunna_ar_init  g_rnoon_ar_init  g_noon_vabove_ar_init
-		g_noon_african_ar_init  g_noon_threedotsabove_ar_init
-
-		g_teh_ar_medi  g_theh_ar_medi  g_tteh_ar_medi  g_tteheh_ar_medi  // g_teh_ring_ar_medi ???
-		g_beh_vabove_ar_medi  g_teh_threedotsdown_ar_medi  g_teheh_ar_medi
-		g_yeh_hamzaabove_ar_medi  g_alef_maksura_ar_medi  g_yeh_ar_no_dots_medi  g_highhamza_yeh_ar_medi
-		g_noon_ar_medi  g_noon_tahabove_ar_medi   g_noonghunna_ar_medi  g_rnoon_ar_medi  g_noon_vabove_ar_medi
-		g_noon_african_ar_medi  g_noon_threedotsabove_ar_medi );
-
-// In the following two groups define "tooth" shapes with dots or something else below,
-// the number of dots below is based on vertical height requirements:
-
-cTooth1hBelow = // one dot high below
-		(g_beh_ar_init  g_beh_threedotsupbelow_ar_init  g_beh_threedotshorizontalbelow_ar_init
-		g_beh_twodotsbelow_dotabove_ar_init  g_behhamzaabove_ar_init
-		g_yeh_vinverted_farsi_init  g_yeh_twodotsabove_farsi_init
-		g_yeh_threedotsabove_farsi_init  g_yeh_ar_init  g_yeh_farsi_init  g_yeh_vabove_ar_init
-		g_yeh_twoabove_farsi_init  g_yeh_threeabove_farsi_init
-		g_yeh_twodotsbelow_hamzaabove_ar_init  g_yeh_twodotsbelow_dotabove_ar_init
-		g_yehbarree_twoabove_ar_init  g_yehbarree_threeabove_ar_init
-		g_noon_dotbelow_ar_init  g_noon_twodotsbelow_ar_init  g_noon_ring_ar_init  g_teh_ring_ar_init
-
-		g_beh_ar_medi  g_beh_threedotsupbelow_ar_medi  g_beh_threedotshorizontalbelow_ar_medi
-		g_beh_twodotsbelow_dotabove_ar_medi  g_behhamzaabove_ar_medi
-		g_yeh_vinverted_farsi_medi  g_yeh_twodotsabove_farsi_medi
-		g_yeh_threedotsabove_farsi_medi  g_yeh_ar_medi  g_yeh_farsi_medi  g_yeh_vabove_ar_medi
-		g_yeh_twoabove_farsi_medi  g_yeh_threeabove_farsi_medi
-		g_yeh_twodotsbelow_hamzaabove_ar_medi  g_yeh_twodotsbelow_dotabove_ar_medi
-		g_yehbarree_twoabove_ar_medi  g_yehbarree_threeabove_ar_medi
-		g_noon_dotbelow_ar_medi  g_noon_twodotsbelow_ar_medi  g_noon_ring_ar_medi  g_teh_ring_ar_medi
-); 
-		
-
-cTooth2hBelow = // multiple dot high below
-		(g_peh_ar_init  g_beheh_ar_init  g_beeh_ar_init
-		g_teh_threedotsupbelow_ar_init  g_beh_threedotsupbelow_ar_init
-		g_beh_vinvertedbelow_ar_init  g_beh_vbelow_ar_init  g_yeh_kashmiri_ar_init
-		g_e_ar_init  g_yeh_threedotsbelow_ar_init  g_yeh_fourbelow_farsi_init
-		g_noon_threedotsabove_ar_init
-
-		g_peh_ar_medi  g_beheh_ar_medi  g_beeh_ar_medi
-		g_teh_threedotsupbelow_ar_medi  g_beh_threedotsupbelow_ar_medi
-		g_beh_vinvertedbelow_ar_medi  g_beh_vbelow_ar_medi  g_yeh_kashmiri_ar_medi
-		g_e_ar_medi  g_yeh_threedotsbelow_ar_medi  g_yeh_fourbelow_farsi_medi
-		g_noon_threedotsabove_ar_medi	); 
-
-		
 cTchehLikeFin = (				// Expanded to 6.1 
 								// Now including AIN
 
@@ -634,7 +581,7 @@ cTchehLikeFin = (				// Expanded to 6.1
 		g_yehbarree_twoabove_ar_fina  g_yehbarree_threeabove_ar_fina );
 		
 g_abs_auto_kashida {dbgAw = aw; dbgBbW = bb.width};
-		
+
 endtable; // glyph
 
 table(subs)
@@ -643,11 +590,7 @@ pass(6)
 	// Insert kashidas to handle collisions; however, the kashida we're inserting is
 	// 250m, wider than we really need, so in a later pass we kern out some of the extra space.
 
-	cKafLikeInitMedi  _  >  @1 g_abs_auto_kashida:R / _ MARKS _ cRnoonLikeMed=R;
-	
-	(g_keheh_ar_init  g_gaf_ar_init  g_tcheh_ar_init  g_tcheh_ar_medi  g_noon_ar_medi) _
-		     >  @1  g_abs_auto_kashida:R
-		     / _  MARKS  _  g_rreh_ar_fina=R ;
+	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  _  >  @1 g_abs_auto_kashida:R / _ MARKS _ cRnoonLikeNarrow=R;
 	
 	(cTooth3wBelowInit cTooth3wBelowMedi cTooth2wBelowInit cTooth2wBelowMedi)  _  _  
 		>  @1 g_abs_auto_kashida:MF g_abs_auto_kashida:MF
@@ -671,30 +614,26 @@ pass(3)	// Collisions and adjustments
 
 	// Kashidas
 	
-	// kaf + rnoon
-	cKafLikeInitMedi  MARKS  g_abs_auto_kashida {kern.x = -30m}  cRnoonLikeMed {kern.x = -30m};
-
-	// keheh-rreh
-	(g_keheh_ar_init  g_gaf_ar_init  g_tcheh_ar_init  g_tcheh_ar_medi  g_noon_ar_medi) MARKS  // 363 - 80 = 283
-		g_abs_auto_kashida {kern.x = -40m}  g_rreh_ar_fina {kern.x = -40m };
-
-
 	// yeh/peh + yeh/peh
 	cTooth2wwBelowInit MARKS  g_abs_auto_kashida cTooth2wwBelowMedi; // wider, don't kern - 363
 
-	(cTooth3wBelowInit cTooth3wBelowMedi)  g_abs_auto_kashida {kern.x = -10m} g_abs_auto_kashida {kern.x = -10m} // 696 - 726 - 30
-						cTooth3wBelowMedi {kern.x = -10m}  /  _ MARKS _ _ ^ _;
+	(cTooth3wBelowInit cTooth3wBelowMedi)  g_abs_auto_kashida {adv.x -= 20m} g_abs_auto_kashida {adv.x -= 20m} // 726 - 60
+						cTooth3wBelowMedi {adv.x -= 20m}  /  _ MARKS _ _ ^ _;
 
-	(cTooth2wBelowInit cTooth2wBelowMedi) g_abs_auto_kashida {kern.x = -40m} g_abs_auto_kashida {kern.x = -40m}  // 726 - 
-						cTooth3wBelowMedi {kern.x = -50m}  /  _ MARKS _ _ ^ _;
+	(cTooth2wBelowInit cTooth2wBelowMedi) g_abs_auto_kashida {adv.x -= 65m} g_abs_auto_kashida {adv.x -= 65m}  // 726 - 140
+						cTooth3wBelowMedi {adv.x -= 10m}  /  _ MARKS _ _ ^ _;
 
-	cTooth2wBelowInit  g_abs_auto_kashida {kern.x = -20m}  (cTooth2wBelowMedi cYehLikeFina) {kern.x = -20m}  // -323
+	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}   // 363 - 80
 		/ _ MARKS _ ^ _;
+	
+	// kaf + rnoon
+	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;
+	
 	
 	// Simple adjustments
 		
 	// alef-rreh
-	(g_alef_ar  g_alef_ar_fina) MARKS g_rreh_ar {kern.x = 70m} ;
+	(g_alef_ar  g_alef_ar_fina) MARKS g_rreh_ar {advance.x += 80m} ;
 
 	// alef-nameMarker
 	(g_alef_ar g_alef_ar_fina) MARKS  g_hehgoal_ar_init
@@ -703,9 +642,9 @@ pass(3)	// Collisions and adjustments
 		g_takhallusabove_ar {shift.y = 150m}; // or: {shift.x = 250m};
 	(g_alef_ar g_alef_ar_fina) MARKS cHehLikeIsolate
 		g_takhallusabove_ar {shift.y = 320m}; // or: {shift.x = 250m};
-	(g_alef_twoabove_ar g_alef_threeabove_ar) MARKS  g_teh_marbuta_ar
+	(g_alef_twoabove_ar g_alef_threeabove_ar g_alef_twoabove_ar_fina g_alef_threeabove_ar_fina) MARKS  g_teh_marbuta_ar
 		g_takhallusabove_ar {shift {x = -450m; y = 220m}};
-	(g_alef_twoabove_ar g_alef_threeabove_ar) MARKS  cHehLikeIsolate 
+	(g_alef_twoabove_ar g_alef_threeabove_ar g_alef_twoabove_ar_fina g_alef_threeabove_ar_fina) MARKS  cHehLikeIsolate 
 		g_takhallusabove_ar {shift {x = -350m; y = 430m}};
 		
 	// noonGhunna-vowelInvSmallV - tighten up (why is this needed?)
@@ -713,41 +652,44 @@ pass(3)	// Collisions and adjustments
 	cNoonGhunna (g_noonghunnaabove_ar g_vinvertedabove_ar) {shift.y = -180m};
 
 	// beh-kasra-tcheh -- kasra collides with tail of tcheh/ain/yeh-barree
+	cToothRing g_kasra_ar                              cYehBarreeFina  / _ _ MARKS _;  // okay for yeh-barree
+	cToothRing g_kasratan_ar {shift {x=-120m; y=180m}} cYehBarreeFina  / _ _ MARKS _;  // special case
+
 	cTooth1hBelow g_kasra_ar    {shift.y = 145m}   cYehBarreeFina  / _ _ MARKS _;
-	cTooth2hBelow g_kasra_ar    {shift.y = -165m}  cYehBarreeFina  / _ _ MARKS _;
-	cTooth0Below g_kasratan_ar  {shift.y = 150m}   cYehBarreeFina  / _ _ MARKS _;
-	cTooth1hBelow g_kasratan_ar {shift{x = -200m; y = 290m}}   cYehBarreeFina  / _ _ MARKS _; // tight!
+	cTooth2hBelow g_kasra_ar    {shift.y = -205m}  cYehBarreeFina  / _ _ MARKS _;
+	cTooth0Below  g_kasratan_ar {shift.y = 150m}   cYehBarreeFina  / _ _ MARKS _;
+	cTooth1hBelow g_kasratan_ar {shift {x = -200m; y = 290m}}   cYehBarreeFina  / _ _ MARKS _; // tight!
 	cTooth2hBelow g_kasratan_ar {shift.y = -200m}  cYehBarreeFina  / _ _ MARKS _;
 
-	cTooth1hBelow g_kasra_ar    {shift.x = -120m; shift.y = 150m}  cTchehLikeFin  / _ _ MARKS _;
-	cTooth1hBelow g_kasratan_ar {shift.x = -100m; shift.y = 30m}   cTchehLikeFin  / _ _ MARKS _;
-
-//	if (shaddaKasra == std || shaddaKasra == raised) -- not clear how shadda-kasra comb is affected
-//		cTooth1hBelow g_kasra_ar   {shift.x = -60m; shift.y = 125m}  cTchehLikeFin  / _ _ MARKS _;
-//		cTooth1hBelow g_kasratan_ar {shift.x = -100m; shift.y = 30m} cTchehLikeFin  / _ _ MARKS _;
-//	endif;
-//	if (shaddaKasra == lowered)
-//	 	cTooth1hBelow g_kasra_ar    {shift.x = -40m; shift.y = -200m} cTchehLikeFin  / _ _ MARKS _;
-//	 	cTooth1hBelow g_kasratan_ar {shift.x = -60m; shift.y = -130m} cTchehLikeFin  / _ _ MARKS _;
-//	endif;
-
-	cTooth2hBelow g_kasra_ar    {shift.y = -50m}  cJeemAinLikeFina / _ _ MARKS _;
+	cTooth1hBelow g_kasra_ar    {shift.x = -120m; shift.y = 150m}  cJeemAinLikeFina  / _ _ MARKS _;
+	cTooth1hBelow g_kasratan_ar {shift.x = -100m; shift.y = 30m}   cJeemAinLikeFina  / _ _ MARKS _;
+	cTooth2hBelow g_kasra_ar    {shift.y = -100m} cJeemAinLikeFina / _ _ MARKS _;
 	cTooth2hBelow g_kasratan_ar {shift.x = -50m}  cJeemAinLikeFina / _ _ MARKS _;
 	cTooth0Below  g_kasratan_ar {shift.x = -100m} cJeemAinLikeFina / _ _ MARKS _;
+
+//	if (shaddaKasra == std || shaddaKasra == raised) -- not clear how shadda-kasra comb is affected
+//		cTooth1hBelow g_kasra_ar   {shift.x = -60m; shift.y = 125m}  cJeemAinLikeFina  / _ _ MARKS _;
+//		cTooth1hBelow g_kasratan_ar {shift.x = -100m; shift.y = 30m} cJeemAinLikeFina  / _ _ MARKS _;
+//	endif;
+//	if (shaddaKasra == lowered)
+//	 	cTooth1hBelow g_kasra_ar    {shift.x = -40m; shift.y = -200m} cJeemAinLikeFina  / _ _ MARKS _;
+//	 	cTooth1hBelow g_kasratan_ar {shift.x = -60m; shift.y = -130m} cJeemAinLikeFina  / _ _ MARKS _;
+//	endif;
+
 	
 	// alef-maddah-gaf
-	// absAlef absMaddahAbove {shift.x = -130m} absGaf {kern.x = 30m};
-	// absAlef absMaddahAbove {shift.x = -120m} absGafIni {kern.x = 70m};
+	// absAlef absMaddahAbove {shift.x = -130m} absGaf {adv.x += 30m};
+	// absAlef absMaddahAbove {shift.x = -120m} absGafIni {adv.x += 70m};
 
 	// beh-rehBar
-	// cTooth1hBelow MARKS absRehBarFin {kern.x = 50m};
-	//cTooth2hBelow MARKS absRehBarFin {kern.x = 70m};
+	// cTooth1hBelow MARKS absRehBarFin {adv.x += 50m};
+	//cTooth2hBelow MARKS absRehBarFin {adv.x += 70m};
 
 	// beh-fatha-jehRetro
-	// (cTooth1hBelow cTooth2hBelow cTooth0Below) MARKS cMark2Above MARKS absRehSmallTahTwoDotsFin {kern.x = 65m};
+	// (cTooth1hBelow cTooth2hBelow cTooth0Below) MARKS cMark2Above MARKS absRehSmallTahTwoDotsFin {adv.x += 65m};
 
 	// kehehDots-keheh
-	// (absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {kern.x = 70m};
+	// (absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
 	
 	// was a test: 
 	// absBeh absKasra {shift.x = 200m};

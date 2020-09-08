@@ -732,18 +732,23 @@ lookup SignWithDigits {
 @Tooth2w3wBelowMedi = [ @Tooth2wBelowMedi @Tooth3wBelowMedi ];
 @Tooth2w3wBelow = [ @Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi ];
 
-
+# When the class expansion bug gets fixed, replace the small classes with the bigger ones.
 lookup _InsertKashida {
 	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
-	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;
-	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;
+	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAbove
+	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAbove
+	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
+	sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
+	sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
+	sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
+	sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
 } _InsertKashida;
 
 lookup _Insert2Kashidas {
 	sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
 } _Insert2Kashidas;
 
-# Using separate lookups allows us to handle a sequence.
+# Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
 lookup ToothKashidasIM {  # initial + medial
 	lookupflag IgnoreMarks;
@@ -765,8 +770,15 @@ lookup ToothKashidasMM {  # medial + medial
 
 lookup ToothKashidasIMF {  #initial/medial + final
 	lookupflag IgnoreMarks;
-		sub @Tooth2w3wBelow' lookup _InsertKashida   @YehLikeFina;
+		sub @Tooth2w3wBelow' lookup _InsertKashida  @YehLikeFina;
 } ToothKashidasIMF;
+
+lookup KafRnoonKashidas {
+	lookupflag IgnoreMarks;
+		sub @KafLikeInitMedi'  lookup _InsertKashida  @RnoonLikeNarrow;
+		sub @JeemLikeInitMedi' lookup _InsertKashida  @RnoonLikeNarrow;
+		sub noon-ar.medi'      lookup _InsertKashida  @RnoonLikeNarrow;
+} KafRnoonKashidas;
 
 
 #**********************************
@@ -966,6 +978,10 @@ lookup SubtendingMarks {
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 
+lookup _kern70 {
+  pos @RehWawAll <70 0  70 0>;
+} _kern70;
+
 lookup _kern130 {
   pos @RehWawAll <130 0  130 0>;
 } _kern130;
@@ -1057,34 +1073,91 @@ lookup RehWawKerning {
 		
 } RehWawKerning;
 
+lookup MiscKerning {
+	pos alef-ar'      lookup _kern70  rreh-ar;
+	pos alef-ar.fina' lookup _kern70  rreh-ar;
+} MiscKerning;
+
+@AlefForms = [alef-ar alef-ar.fina];
+@AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
+
+# Note that shifting in RTL works the opposite in OpenType compared to Graphite.
+
+lookup DiacShifting {
+	# takhallus
+	pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
+	pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
+	pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
+	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;
+	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;
+
+	# kasra + jeem/ain finals and yeh-barree
+	ignore pos @ToothRing  kasra-ar'                  @YehBarreeFina;  # okay with yeh-barree
+	pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case
+	pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;
+	pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
+	pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
+	pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;
+	pos @Tooth2hBelow  kasratan-ar' <  0 -200 0 0>  @YehBarreeFina;
+	
+	pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;
+	pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
+	pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
+	pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
+	pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
+} DiacShifting;
+
 #********
-# Kashida kerning for yeh/peh forms
+# Kashida kerning for yeh/peh forms, etc.
 
-lookup _kern_10 {
-  pos absAutoKashida     <-10 0  -10 0>;
-  pos @Tooth3wBelowMedi  <-10 0  -10 0>;
-} _kern_10;
+# When we kern the kashida, we shift it a bit further to the right, just to avoid it hanging too far
+# off the left edge of the following glyph. Not really necessary, but a precaution.
+# (In Graphite we do this by splitting the kerning between the kashida and the following glyph.)
 
-lookup _kern_40 {
-  pos absAutoKashida     <-40 0  -40 0>;
-  pos @Tooth3wBelowMedi  <-40 0  -40 0>;
-} _kern_40;
+# Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
+
+lookup _kkern_60 {
+  pos absAutoKashida     <30 0  -60 0>;
+} _kkern_60;
+
+lookup _kkern_80 {
+  pos absAutoKashida     <40 0  -80 0>;
+} _kkern_80;
+
+lookup _kkern_120 {
+  pos absAutoKashida     <60 0  -120 0>;
+} _kkern_120;
+
+lookup _kkern_140 {
+  pos absAutoKashida     <70 0  -140 0>;
+} _kkern_140;
+
 
 lookup ToothKashidaKerningIM {
-	ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;
-	pos @Tooth3wBelowInit  absAutoKashida' lookup _kern_10  absAutoKashida' lookup _kern_10  @Tooth3wBelowMedi' lookup _kern_10;
-	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  absAutoKashida' lookup _kern_40  @Tooth3wBelowMedi' lookup _kern_40;
-	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  @Tooth2wBelowMedi;
+	lookupflag IgnoreMarks;
+		ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
+		pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;
+		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
+		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
 } ToothKashidaKerningIM;
 
 lookup ToothKashidaKerningMM {
-	pos @Tooth3wBelowInit  absAutoKashida' lookup _kern_10  absAutoKashida' lookup _kern_10  @Tooth3wBelowMedi' lookup _kern_10;
-	pos @Tooth2wBelowMedi  absAutoKashida' lookup _kern_40  absAutoKashida' lookup _kern_40  @Tooth3wBelowMedi' lookup _kern_40;
+	lookupflag IgnoreMarks;
+		pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida  @Tooth3wBelowMedi;
+		pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
 } ToothKashidaKerningMM;
 
 lookup ToothKashidaKerningIMF {
-	pos @Tooth2wBelowInit  absAutoKashida' lookup _kern_40  @YehLikeFina;
+	lookupflag IgnoreMarks;
+		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
 } ToothKashidaKerningIMF;
+
+lookup KafKashidaKerning {
+	lookupflag IgnoreMarks;
+		pos @KafLikeInitMedi   absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+		pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+		pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+} KafKashidaKerning;
 
 
 #**********************************
@@ -1193,6 +1266,7 @@ feature calt {  # Contextual Alternates
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
+        lookup KafRnoonKashidas;
 
       language KUR ; # Kurdish
         lookup KurdishHeh ;
@@ -1543,9 +1617,12 @@ feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
         lookup RehWawKerning;
+        lookup MiscKerning;
+        lookup DiacShifting;
         lookup ToothKashidaKerningIM;
         lookup ToothKashidaKerningMM;
         lookup ToothKashidaKerningIMF;
+        lookup KafKashidaKerning;
 } kern ;
 
 
