@@ -20,6 +20,7 @@
       <style feats="cv54=1" name="fset1401" />
       <style lang="ky" name="fset1402" />
       <style feats="cv12=0 cv44=0 cv48=0 cv51=0 cv54=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dbug=0" name="fset1403" />
+      <style feats="cv60=1" name="fset1404" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -426,7 +427,7 @@
     <test class="fset1403" label="alef-two/three heh takhallus" rtl="True">
       <string>سݳهؔ ݴةؔ ݳهؔ</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="KASRA JEEM / AIN" rtl="True">
+    <test background="#55aaff" class="fset1403" label="KASRA JEEM / AIN / YEH-BARREE" rtl="True">
       <string />
     </test>
     <test class="fset1403" label="yeh kasra ain" rtl="True">
@@ -459,23 +460,32 @@
     <test class="fset1403" label="noon/tah-ring kasra yehbarree" rtl="True">
       <string>ڼِۓ سڼٍۓ لټِۓ ټٍۓ</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="alef-madda gaf" rtl="True">
-      <string>آگ آگی</string>
+    <test background="#55aaff" class="fset1403" label="OTHER" rtl="True">
+      <string />
     </test>
-    <test background="#ffff00" class="fset1403" label="alef-madda lam" rtl="True">
-      <string>آل آلپ آڵپ آل آلپ</string>
+    <test class="fset1403" label="alef-madda gaf" rtl="True">
+      <string>آگ آگی سآگ مآگی</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="beh-like reh-bar" rtl="True">
-      <string>بݛ پݛ</string>
+    <test class="fset1404" label="alef-madda (large) gaf" rtl="True">
+      <string>آگ آگی سآگ مآگی</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="beh upper-dia reh-tah" rtl="True">
-      <string>بَݱ بًݱ بݱ پٌݱ تًݱ</string>
+    <test background="#aaaa7f" class="fset1404" label="alef-madda (large) lam" rtl="True">
+      <string>آل آلپ آڵپ سآل آلپ</string>
+    </test>
+    <test class="fset1403" label="beh-like reh-bar" rtl="True">
+      <string>بݛ پَݛ ٻّݛ یݛ یْݛ نِݛ</string>
+    </test>
+    <test class="fset1403" label="beh upper-dia reh-tah" rtl="True">
+      <string>بَݱ بًݱ بݱ پٌݱ تݱ</string>
     </test>
     <test class="fset1403" label="noonghunna mark kaf" rtl="True">
       <string>ں٘کس ںٛگ</string>
     </test>
     <test background="#aaaa7f" class="fset1389" label="qaf-three-dots rnoon" rtl="True">
       <string>ڨڻب ڨٸب</string>
+    </test>
+    <test background="#aaaa7f" class="fset1403" label="keheh-three-dots keheh-fina" rtl="True">
+      <string>ݣک</string>
     </test>
   </testgroup>
 </ftml>

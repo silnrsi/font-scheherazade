@@ -602,14 +602,15 @@ pass(6)
 
 	// Currently these do not need kerning later:
 	g_teh_tehabove_ar_medi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wAbove=M;
-	cTooth2wwAbove _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAbove=M;
+	cTooth2wwAbove          _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAbove=M;
+
+	cTooth2wBelow _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
 
 endpass; // 6
 
 endtable; // sub
 
 
-////if (debug == 0)
 pass(3)	// Collisions and adjustments
 
 	// Kashidas
@@ -677,27 +678,29 @@ pass(3)	// Collisions and adjustments
 //	endif;
 
 	
-	// alef-maddah-gaf
-	// absAlef absMaddahAbove {shift.x = -130m} absGaf {adv.x += 30m};
-	// absAlef absMaddahAbove {shift.x = -120m} absGafIni {adv.x += 70m};
+	// alef-maddah + gaf
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar_small {shift.x = -20m}  cGafIsolInit {adv.x += 130m};
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -90m}  cGafIsolInit {adv.x += 170m};
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -70m}  cLamLikeIsolInit {adv.x += 170m};
 
-	// beh-rehBar
-	// cTooth1hBelow MARKS absRehBarFin {adv.x += 50m};
-	//cTooth2hBelow MARKS absRehBarFin {adv.x += 70m};
+	// beh + reh-stroke
+	////cTooth2wBelow  MARKS  g_abs_auto_kashida {adv.x -= 90m}  g_reh_stroke_ar_fina {adv.x -= 90m}; - doesn't need kerning
+	(cTooth1hBelow cTooth2hBelow ) MARKS g_reh_stroke_ar_fina {adv.x += 100m};  // slight kerning doesn't need a kashida
 
-	// beh-fatha-jehRetro
-	// (cTooth1hBelow cTooth2hBelow cTooth0Below) MARKS cMark2Above MARKS absRehSmallTahTwoDotsFin {adv.x += 65m};
+	// beh-like + something above + reh-tah
+	cToothPlusAbove MARKS  g_reh_twodotshorizontalabove_tahabove_ar_fina {adv.x += 130m};
+	(cTooth1hBelow cTooth2hBelow cTooth0Below)
+		cMark2Above {shift.x = -50m}
+		g_reh_twodotshorizontalabove_tahabove_ar_fina {adv.x += 140m};
 
-	// kehehDots-keheh
-	// (absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
+	// kehehDots-keheh - no longer needed
+	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
 	
 	// was a test: 
 	// absBeh absKasra {shift.x = 200m};
 	// absBeeh absKasra {shift.x = -200m};
 	
 endpass;
-
-////endif;
 
 endtable; // pos
 

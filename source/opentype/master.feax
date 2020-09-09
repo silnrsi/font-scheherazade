@@ -742,6 +742,7 @@ lookup _InsertKashida {
 	sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
 	sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
 	sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
+	sub @Tooth2wBelow       by  @Tooth2wBelow       absAutoKashida;
 } _InsertKashida;
 
 lookup _Insert2Kashidas {
@@ -773,12 +774,14 @@ lookup ToothKashidasIMF {  #initial/medial + final
 		sub @Tooth2w3wBelow' lookup _InsertKashida  @YehLikeFina;
 } ToothKashidasIMF;
 
-lookup KafRnoonKashidas {
+lookup MiscKashidas {
 	lookupflag IgnoreMarks;
 		sub @KafLikeInitMedi'  lookup _InsertKashida  @RnoonLikeNarrow;
 		sub @JeemLikeInitMedi' lookup _InsertKashida  @RnoonLikeNarrow;
 		sub noon-ar.medi'      lookup _InsertKashida  @RnoonLikeNarrow;
-} KafRnoonKashidas;
+		
+		sub @Tooth2wBelow' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
+} MiscKashidas;
 
 
 #**********************************
@@ -982,9 +985,26 @@ lookup _kern70 {
   pos @RehWawAll <70 0  70 0>;
 } _kern70;
 
+lookup _kern100 {
+  pos @Tooth1hBelow <100 0  100 0>;
+  pos @Tooth2hBelow <100 0  100 0>;
+} _kern100;
+
 lookup _kern130 {
-  pos @RehWawAll <130 0  130 0>;
+  pos @RehWawAll      <130 0  130 0>;
+  pos alef-ar         <130 0  130 0>;
+  pos @ToothPlusAbove <130 0  130 0>;
 } _kern130;
+
+lookup _kern140 {
+  pos @Tooth  <140 0  140 0>;
+} _kern140;
+
+lookup _kern170 {
+  pos @RehWawAll    <170 0  170 0>;
+  pos alef-ar       <170 0  170 0>;
+  pos @Tooth2wBelow <170 0  170 0>;
+} _kern170;
 
 lookup _kern215 {
   pos @RehWawAll <215 0  215 0>;
@@ -1073,13 +1093,26 @@ lookup RehWawKerning {
 		
 } RehWawKerning;
 
-lookup MiscKerning {
-	pos alef-ar'      lookup _kern70  rreh-ar;
-	pos alef-ar.fina' lookup _kern70  rreh-ar;
-} MiscKerning;
-
 @AlefForms = [alef-ar alef-ar.fina];
 @AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
+
+lookup MiscKerning {
+	lookupflag IgnoreMarks;
+		pos @AlefForms' lookup _kern70  rreh-ar;
+		
+		pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
+		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;
+} MiscKerning;
+
+lookup MiscKerningWDiacs {
+	# does not ignore diacritics
+		pos @AlefForms' lookup _kern130  madda-ar.small  @GafIsolInit;      # also see shift rules below
+		pos @AlefForms' lookup _kern170  madda-ar        @GafIsolInit;
+		pos @AlefForms' lookup _kern170  madda-ar        @LamLikeIsolInit;
+
+		pos @Tooth' lookup _kern140  @MarksAbove  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see shift rule below
+} MiscKerningWDiacs;
+
 
 # Note that shifting in RTL works the opposite in OpenType compared to Graphite.
 
@@ -1105,6 +1138,12 @@ lookup DiacShifting {
 	pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
 	pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
 	pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
+	
+	pos @AlefForms  madda-ar.small' < 20 0 0 0>  @GafIsolInit;  # also see kern rules above
+	pos @AlefForms  madda-ar'       < 90 0 0 0>  @GafIsolInit;
+	pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
+	
+	pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
 } DiacShifting;
 
 #********
@@ -1132,6 +1171,10 @@ lookup _kkern_140 {
   pos absAutoKashida     <70 0  -140 0>;
 } _kkern_140;
 
+lookup _kkern_180 {
+  pos absAutoKashida     <90 0  -180 0>;
+} _kkern_180;
+
 
 lookup ToothKashidaKerningIM {
 	lookupflag IgnoreMarks;
@@ -1152,12 +1195,14 @@ lookup ToothKashidaKerningIMF {
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
 } ToothKashidaKerningIMF;
 
-lookup KafKashidaKerning {
+lookup MiscKashidaKerning {
 	lookupflag IgnoreMarks;
 		pos @KafLikeInitMedi   absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
 		pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
 		pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-} KafKashidaKerning;
+		
+		#pos @Tooth2wBelow      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
+} MiscKashidaKerning;
 
 
 #**********************************
@@ -1266,7 +1311,7 @@ feature calt {  # Contextual Alternates
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
-        lookup KafRnoonKashidas;
+        lookup MiscKashidas;
 
       language KUR ; # Kurdish
         lookup KurdishHeh ;
@@ -1618,11 +1663,12 @@ feature kern {  # Kerning
         lookup SubtendingMarks;
         lookup RehWawKerning;
         lookup MiscKerning;
+        lookup MiscKerningWDiacs;
         lookup DiacShifting;
         lookup ToothKashidaKerningIM;
         lookup ToothKashidaKerningMM;
         lookup ToothKashidaKerningIMF;
-        lookup KafKashidaKerning;
+        lookup MiscKashidaKerning;
 } kern ;
 
 
