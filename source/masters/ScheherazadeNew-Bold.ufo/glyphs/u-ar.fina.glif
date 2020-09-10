@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="u-ar.fina" format="2">
   <advance width="878"/>
-  <anchor x="287" y="1526" name="alef"/>
-  <anchor x="434" y="1641" name="diaA"/>
+  <unicode hex="FBD8"/>
+  <anchor x="338" y="1453" name="alef"/>
+  <anchor x="466" y="1561" name="diaA"/>
   <anchor x="422" y="-806" name="diaB"/>
   <outline>
     <component base="waw-ar.fina"/>
-    <component base="_damma" xScale="0.927" yScale="0.927" xOffset="553" yOffset="1034"/>
+    <component base="_uighurComma" xOffset="347" yOffset="-640"/>
+    <component base="_uComma" xOffset="310" yOffset="-681"/>
   </outline>
   <lib>
     <dict>
