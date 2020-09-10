@@ -762,11 +762,17 @@ lookup ToothKashidasIM {  # initial + medial
 
 lookup ToothKashidasMM {  # medial + medial
 	lookupflag IgnoreMarks;		
-		sub @Tooth2w3wBelowMedi' lookup _Insert2Kashidas   @Tooth3wBelowMedi;
+		sub @Tooth2w3wBelowMedi' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
 		# 2w + 2w doesn't need a kashida
 
 		sub tehTehabove-ar.medi' lookup _InsertKashida    @Tooth2wAboveMedi;
 		sub @Tooth2wwAboveMedi'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+
+#ifinfo(styleName, "Bold") {}
+#		sub @Tooth2wBelowMedi'     lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
+#		sub @Tooth2wAboveMedi'     lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
+#}
+		
 } ToothKashidasMM;
 
 lookup ToothKashidasIMF {  #initial/medial + final
@@ -1179,7 +1185,7 @@ lookup _kkern_180 {
 lookup ToothKashidaKerningIM {
 	lookupflag IgnoreMarks;
 		ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
-		pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;
+		pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
 } ToothKashidaKerningIM;
@@ -1326,6 +1332,7 @@ feature calt {  # Contextual Alternates
       language KIR ; # Kirghiz
       	lookup KirghizCALT ;
 } calt ;
+
 
 feature salt {  # Stylistic Alternates
     script arab;

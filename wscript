@@ -44,7 +44,7 @@ designspace('source/ScheherazadeNew.designspace',
 
     graphite=gdl(genout + '${DS:FILENAME_BASE}.gdl',
         depends=['source/graphite/cp1252.gdl', 'source/graphite/SchFeatures.gdh', 'source/graphite/SchGlyphs.gdh', 'source/graphite/stddef.gdh'],
-        master = 'source/graphite/master.gdl',
+        master = 'source/graphite/master_${DS:STYLENAME}.gdl',
         make_params = OMITAPS + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
         params = '-d -q -e ${DS:FILENAME_BASE}_gdlerr.txt',
         ),
