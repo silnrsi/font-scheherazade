@@ -768,10 +768,10 @@ lookup ToothKashidasMM {  # medial + medial
 		sub tehTehabove-ar.medi' lookup _InsertKashida    @Tooth2wAboveMedi;
 		sub @Tooth2wwAboveMedi'  lookup _InsertKashida    @Tooth2wwAboveMedi;
 
-ifinfo(styleName, "Bold") {
+#ifinfo(styleName, "Bold") {
   	sub @Tooth2wBelowMedi'     lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
 		sub @Tooth2wAboveMedi'     lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
-}
+#}
 		
 } ToothKashidasMM;
 
