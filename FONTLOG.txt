@@ -63,6 +63,18 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
+2020-03-24 (SIL WSTech team) Scheherazade New Version 3.000 (beta)
+- Changed design of small v and inverted small v characters
+- Changed design of U+06C5 for Kyrgyz language and added feature cv51	Kirghiz OE 
+  supporting the bar design
+- Changed design of U+0677 and U+06C7 and removed feature cv50 Arabic U	
+- Added cv54 Yeh hamza feature for Kyrgyz language
+- Added Kyrgyz language support in Graphite and OpenType
+- Improved reh/waw kerning
+- Added collision fixes for certain combinations
+- Updated linespacing
+- Adjustments to the weight and position of some dashes to make them consistent
+
 2020-03-24 (SIL WSTech team) Scheherazade New Version 2.180 (alpha)
 - Renamed font to Scheherazade New
 - Resized glyphs to better fit standard Arabic script fonts
@@ -213,6 +225,24 @@ ChangeLog
 2005-06-03 (SIL NRSI team) Scheherazade Version 1.0
 - First public version
 - Released under the SIL Freeware License
+
+
+Information for Contributors
+----------------------------
+We welcome contributions to this font project, such as new glyphs, enhanced 
+smart font code, or bug fixes. The best way to begin the process is to file 
+an issue in the Github project [add link here] or respond to an existing issue 
+and express your interest. Then we can begin to correspond with you regarding 
+what all might be required and discuss how to best submit your contributions.
+
+To enable us to accept contributions in a way that honours your contribution 
+and respects your copyright while preserving long-term flexibility for open 
+source licensing, you would also need to agree to the SIL International 
+Contributor License Agreement for Font Software (v1.0) prior to sending us 
+your contribution. To read more about this requirement and find out how to 
+submit the required form, please visit the CLA information page
+(https://software.sil.org/fontcla).
+
 
 Acknowledgements
 ----------------
