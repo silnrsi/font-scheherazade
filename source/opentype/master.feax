@@ -734,12 +734,15 @@ lookup SignWithDigits {
 
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
 lookup _InsertKashida {
+	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;
+	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
 	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;
 	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;
 	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
-	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAbove
-	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAbove
-	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
+	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAboveInitMedi
+	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAboveInitMedi
+	sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
+	sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
 	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
 	sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
 	sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
@@ -760,6 +763,12 @@ lookup ToothKashidasIM {  # initial + medial
 		
 		sub tehTehabove-ar.init' lookup _InsertKashida    @Tooth2wAboveMedi;
 		sub @Tooth2wwAboveInit'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+		
+		# also qaf is similar to an initial (high) tooth
+ifinfo(styleName, "Bold") {
+		sub @Tooth2wAboveInit'   lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
+		sub @FehQaf2wAboveInit'  lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
+}
 } ToothKashidasIM;
 
 lookup ToothKashidasMM {  # medial + medial
@@ -773,6 +782,8 @@ lookup ToothKashidasMM {  # medial + medial
 ifinfo(styleName, "Bold") {
   	sub @Tooth2wBelowMedi'   lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
 		sub @Tooth2wAboveMedi'   lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
+		
+		sub @FehQaf2wAboveMedi'  lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
 }
 		
 } ToothKashidasMM;
@@ -1199,6 +1210,14 @@ ifinfo(styleName, "Regular") {
 
 # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
+#lookup _kkern_30 {
+#  pos absAutoKashida     <15 0  -30 0>;
+#} _kkern_30;
+
+lookup _kkern_40 {
+  pos absAutoKashida     <20 0  -40 0>;
+} _kkern_40;
+
 lookup _kkern_60 {
   pos absAutoKashida     <30 0  -60 0>;
 } _kkern_60;
@@ -1206,6 +1225,10 @@ lookup _kkern_60 {
 lookup _kkern_80 {
   pos absAutoKashida     <40 0  -80 0>;
 } _kkern_80;
+
+lookup _kkern_100 {
+  pos absAutoKashida     <50 0  -100 0>;
+} _kkern_100;
 
 lookup _kkern_120 {
   pos absAutoKashida     <60 0  -120 0>;
@@ -1215,9 +1238,17 @@ lookup _kkern_140 {
   pos absAutoKashida     <70 0  -140 0>;
 } _kkern_140;
 
+lookup _kkern_160 {
+  pos absAutoKashida     <80 0  -160 0>;
+} _kkern_160;
+
 lookup _kkern_180 {
   pos absAutoKashida     <90 0  -180 0>;
 } _kkern_180;
+
+lookup _kkern_240 {
+  pos absAutoKashida     <120 0  -240 0>;
+} _kkern_240;
 
 
 lookup ToothKashidaKerningIM {
@@ -1230,8 +1261,11 @@ ifinfo(styleName, "Regular") {
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
 		
 ifinfo(styleName, "Bold") {
-  	pos @Tooth2wBelowMedi' absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
-		pos @Tooth2wAboveMedi' absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
+  	pos @Tooth2wBelowMedi absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
+		pos @Tooth2wAboveMedi absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
+		
+		pos @Tooth2wAboveInit'  absAutoKashida' lookup _kkern_100  @FehQaf2wAboveMedi;  # BOLD
+		pos @FehQaf2wAboveInit' absAutoKashida' lookup _kkern_60   @FehQaf2wAboveMedi;  # BOLD		
 		
 		pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
 }
@@ -1244,6 +1278,11 @@ ifinfo(styleName, "Regular") {
 		pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
 }
 		pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
+		
+ifinfo(styleName, "Bold") {
+		pos @FehQaf2wAboveMedi' absAutoKashida' lookup _kkern_240  @FehQaf2wAboveMedi;  # BOLD		
+}
+
 } ToothKashidaKerningMM;
 
 lookup ToothKashidaKerningIMF {

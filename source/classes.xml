@@ -995,6 +995,17 @@
     
     <!-- KERNING -->
     
+    <!-- feh/qaf-like forms with at least 2 dots above -->
+    <class name="FehQaf2wAboveInit">
+    	qaf-ar.init veh-ar.init peheh-ar.init fehDotbelowThreedotsabove-ar.init qafThreedotsabove-ar.init
+    	qafDotbelow-ar.init qafAfricanThreedotsabove-ar.init
+    </class>
+    
+    <class name="FehQaf2wAboveMedi">
+    	qaf-ar.medi veh-ar.medi peheh-ar.medi fehDotbelowThreedotsabove-ar.medi qafThreedotsabove-ar.medi
+    	qafDotbelow-ar.medi qafAfricanThreedotsabove-ar.medi
+    </class>
+    
     <class name="GafIsolInit">
     	gaf-ar  gaf-ar.init  gafRing-ar  gafRing-ar.init  gafThreedots-ar  gafThreedots-ar.init
     	gafTwodotsbelow-ar  gafTwodotsbelow-ar.init  gafInvertedstroke-ar  gafInvertedstroke-ar.init
@@ -1076,24 +1087,12 @@
 		<!-- In the following two groups define "tooth" shapes with dots or something else below,
 					the number of dots below is based on vertical height requirements: -->
 
-    <!-- not used; incomplete classes
     <class name="Tooth1wBelow">
-    	beh-ar.init beeh-ar.init e-ar.init
-    	beh-ar.medi beeh-ar.medi e-ar.medi
+    	beh-ar.init  beeh-ar.init  tehRing-ar.init  behThreedotsupabove-ar.init  behhamzaabove-ar.init
+			noonDotbelow-ar.init  noonRing-ar.init  yehKashmiri-ar.init  e-ar.init  yehFourbelow-farsi-ar.init
+    	beh-ar.medi beeh-ar.medi  tehRing-ar.medi  behThreedotsupabove-ar.medi  behhamzaabove-ar.medi
+			noonDotbelow-ar.medi  noonRing-ar.medi  yehKashmiri-ar.medi  e-ar.medi  yehFourbelow-farsi-ar.medi
     </class>
-    
-    <class name="Tooth2wAboveInit">
-    	pehVabove-ar.medi teh-ar.init tehRing-ar.init tehThreeDotsdown-ar.init tehVabove-ar.init theh-ar.init tteh-ar.init
-    </class>
-
-    <class name="Tooth2wAboveMedi">
-    	pehVabove-ar.medi teh-ar.medi tehRing-ar.medi tehThreeDotsdown-ar.medi tehVabove-ar.medi theh-ar.medi tteh-ar.medi
-    </class>
-    
-    <class name="Tooth2wAboveInitMedi">
-    	@Tooth2wAboveInit @Tooth2wAboveMedi
-    </class>
-    -->
     
     <class name="Tooth2wBelowInit">
     	peh-ar.init pehVabove-ar.init beheh-ar.init behThreedotsupbelow-ar.init tehThreedotsupbelow-ar.init
@@ -1149,7 +1148,7 @@
 			yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehTwodotsbelowNoonabove-ar.medi
     </class>
     
-    <class name="Tooth2wAbove">
+    <class name="Tooth2wAboveInitMedi">
     	@Tooth2wAboveInit @Tooth2wAboveMedi
     </class>
     
@@ -1161,7 +1160,7 @@
     	tteh-ar.medi rnoon-ar.medi noonTahabove-ar.medi tehTehabove-ar.medi
     </class>
     
-    <class name="Tooth2wwAbove">
+    <class name="Tooth2wwAboveInitMedi">
     	@Tooth2wwAboveInit @Tooth2wwAboveMedi
     </class>
 

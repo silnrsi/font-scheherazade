@@ -572,13 +572,16 @@ pass(6)
 if (STYLE == BOLD)
 	cTooth2wBelowMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wBelowMedi=M;
 	cTooth2wAboveMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wAboveMedi=M;
+
+	cTooth2wAboveInit  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cFehQaf2wAboveMedi=M;
+	(cFehQaf2wAboveInit cFehQaf2wAboveMedi)  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cFehQaf2wAboveMedi=M;
 endif
 
 	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
 
 	// Currently these do not need kerning later:
-	g_teh_tehabove_ar_medi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wAbove=M;
-	cTooth2wwAbove          _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAbove=M;
+	g_teh_tehabove_ar_medi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wAboveInitMedi=M;
+	cTooth2wwAboveInitMedi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAboveInitMedi=M;
 
 	cTooth2wBelowRstrk _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
 
@@ -605,6 +608,10 @@ pass(3)	// Collisions and adjustments
 #if (STYLE == BOLD)		
 	cTooth2wBelowMedi g_abs_auto_kashida {adv.x -=30m}  cTooth2wBelowMedi {adv.x -= 30m}  /  _ MARKS _ ^ _;
 	cTooth2wAboveMedi g_abs_auto_kashida {adv.x -=30m}  cTooth2wAboveMedi {adv.x -= 30m}  /  _ MARKS _ ^ _;
+
+	cTooth2wAboveInit  g_abs_auto_kashida {adv.x -= 50} cFehQaf2wAboveMedi {adv.x -= 50m} /  _ MARKS _ ^ _;
+	cFehQaf2wAboveInit g_abs_auto_kashida {adv.x -= 30} cFehQaf2wAboveMedi {adv.x -= 30m} /  _ MARKS _ ^ _;
+	cFehQaf2wAboveMedi g_abs_auto_kashida {adv.x -= 120} cFehQaf2wAboveMedi {adv.x -= 120m} /  _ MARKS _ ^ _;
 #endif
 
 	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}   // 363 - 80
