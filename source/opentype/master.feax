@@ -734,15 +734,17 @@ lookup SignWithDigits {
 
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
 lookup _InsertKashida {
+	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;
+	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;
 	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
 	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAbove
 	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAbove
+	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
 	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
 	sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
 	sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
 	sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
 	sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
-	sub @Tooth2wBelow       by  @Tooth2wBelow       absAutoKashida;
 } _InsertKashida;
 
 lookup _Insert2Kashidas {
@@ -768,10 +770,10 @@ lookup ToothKashidasMM {  # medial + medial
 		sub tehTehabove-ar.medi' lookup _InsertKashida    @Tooth2wAboveMedi;
 		sub @Tooth2wwAboveMedi'  lookup _InsertKashida    @Tooth2wwAboveMedi;
 
-#ifinfo(styleName, "Bold") {
-  	sub @Tooth2wBelowMedi'     lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
-		sub @Tooth2wAboveMedi'     lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
-#}
+ifinfo(styleName, "Bold") {
+  	sub @Tooth2wBelowMedi'   lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
+		sub @Tooth2wAboveMedi'   lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
+}
 		
 } ToothKashidasMM;
 
@@ -786,7 +788,7 @@ lookup MiscKashidas {
 		sub @JeemLikeInitMedi' lookup _InsertKashida  @RnoonLikeNarrow;
 		sub noon-ar.medi'      lookup _InsertKashida  @RnoonLikeNarrow;
 		
-		sub @Tooth2wBelow' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
+		sub @Tooth2wBelowRstrk' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
 } MiscKashidas;
 
 
@@ -994,6 +996,7 @@ lookup _kern70 {
 lookup _kern100 {
   pos @Tooth1hBelow <100 0  100 0>;
   pos @Tooth2hBelow <100 0  100 0>;
+  pos teheh-ar.init <100 0  100 0>;
 } _kern100;
 
 lookup _kern130 {
@@ -1007,9 +1010,9 @@ lookup _kern140 {
 } _kern140;
 
 lookup _kern170 {
-  pos @RehWawAll    <170 0  170 0>;
-  pos alef-ar       <170 0  170 0>;
-  pos @Tooth2wBelow <170 0  170 0>;
+  pos @RehWawAll         <170 0  170 0>;
+  pos alef-ar            <170 0  170 0>;
+  pos @Tooth2wBelowRstrk <170 0  170 0>;
 } _kern170;
 
 lookup _kern215 {
@@ -1032,6 +1035,10 @@ lookup _kern_290 {
   pos @RehWawTightenAll <-290 0  -290 0>;
 } _kern_290;
 
+lookup _kern_380 {
+  pos @RehWawTightenAll <-380 0  -380 0>;
+} _kern_380;
+
 lookup _kern_580 {
   pos @RehWawTightenAll <-580 0  -580 0>;
 } _kern_580;
@@ -1042,10 +1049,17 @@ lookup _kern_650 {
 
 lookup RehWawKerning {
 	# Tighten to following gaf-like
+ifinfo(styleName, "Bold") {
+	pos @RehWawTightenAll' lookup _kern_380                @RehKernGaf ;
+	pos @RehWawTightenAll' lookup _kern_380 @_diaB         @RehKernGaf ;
+	pos @RehWawTightenAll' lookup _kern_380 @_diaB @_diaB  @RehKernGaf ;
+}
+ifinfo(styleName, "Regular") {
 	pos @RehWawTightenAll' lookup _kern_650                @RehKernGaf ;
 	pos @RehWawTightenAll' lookup _kern_650 @_diaB         @RehKernGaf ;
 	pos @RehWawTightenAll' lookup _kern_650 @_diaB @_diaB  @RehKernGaf ;
-	
+}
+
 	# Loosen from following alef/lam when it has something below it
 	pos reh-ar' lookup _kern290                      alefWavyhamzabelow-ar ;
 	pos reh-ar' lookup _kern290 @MarksAny            alefWavyhamzabelow-ar ;
@@ -1123,23 +1137,47 @@ lookup MiscKerningWDiacs {
 # Note that shifting in RTL works the opposite in OpenType compared to Graphite.
 
 lookup DiacShifting {
-	# takhallus
+	# alef + takhallus (name marker)
 	pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
 	pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
 	pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
-	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;
-	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;
+ifinfo(styleName, "Bold") {
+	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 550 220  0 0>;  # BOLD
+	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 550 430  0 0>;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;  # REGULAR
+	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;  # REGULAR
+}
 
-	# kasra + jeem/ain finals and yeh-barree
-	ignore pos @ToothRing  kasra-ar'                  @YehBarreeFina;  # okay with yeh-barree
-	pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case
-	pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;
-	pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
-	pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
-	pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;
-	pos @Tooth2hBelow  kasratan-ar' <  0 -200 0 0>  @YehBarreeFina;
+	# beh + kasra +jeem/ain/yeh-barree finals
+ifinfo(styleName, "Bold") {
+	pos @ToothRing  kasra-ar'    <  0   75 0 0>  @YehBarreeFina;  # special case - BOLD
+	pos @ToothRing  kasratan-ar' <120 -450 0 0>  @YehBarreeFina;  # special case - BOLD
+}
+ifinfo(styleName, "Regular") {
+	ignore pos @ToothRing  kasra-ar'                @YehBarreeFina;  # okay with yeh-barree - REGULAR
+	pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case - REGULAR
+}
 	
-	pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;
+ifinfo(styleName, "Bold") {
+	pos @Tooth1hBelow  kasra-ar'    <  0 -300 0 0>  @YehBarreeFina;  # BOLD
+	pos @Tooth1hBelow  kasratan-ar' <100 -200 0 0>  @YehBarreeFina;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+	pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;  # REGULAR
+	pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;  # REGULAR
+}
+	pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
+	pos @Tooth2hBelow  kasratan-ar' <  0 -100 0 0>  @YehBarreeFina;
+	pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
+	
+ifinfo(styleName, "Bold") {
+	pos @Tooth1hBelow  kasra-ar'    < 10 -300 0 0>  @JeemAinLikeFina;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+	pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;  # REGULAR
+}
 	pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
 	pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
 	pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
@@ -1185,14 +1223,26 @@ lookup _kkern_180 {
 lookup ToothKashidaKerningIM {
 	lookupflag IgnoreMarks;
 		ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
+ifinfo(styleName, "Regular") {
 		pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
+}
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
+		
+ifinfo(styleName, "Bold") {
+  	pos @Tooth2wBelowMedi' absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
+		pos @Tooth2wAboveMedi' absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
+		
+		pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
+}
+
 } ToothKashidaKerningIM;
 
 lookup ToothKashidaKerningMM {
 	lookupflag IgnoreMarks;
-		pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida  @Tooth3wBelowMedi;
+ifinfo(styleName, "Regular") {
+		pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
+}
 		pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
 } ToothKashidaKerningMM;
 
@@ -1207,7 +1257,7 @@ lookup MiscKashidaKerning {
 		pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
 		pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
 		
-		#pos @Tooth2wBelow      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
+		#pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
 } MiscKashidaKerning;
 
 

@@ -569,10 +569,10 @@ pass(6)
 		/  _ MARKS _ _ cTooth3wBelowMedi=MF;
 	(cTooth3wBelowInit cTooth3wBelowMedi)  _  >  @1 g_abs_auto_kashida:F
 		/  _ MARKS _ cYehLikeFina=F;
-#if (STYLE == BOLD)
+if (STYLE == BOLD)
 	cTooth2wBelowMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wBelowMedi=M;
 	cTooth2wAboveMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wAboveMedi=M;
-#endif
+endif
 
 	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
 
@@ -580,7 +580,7 @@ pass(6)
 	g_teh_tehabove_ar_medi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wAbove=M;
 	cTooth2wwAbove          _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAbove=M;
 
-	cTooth2wBelow _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
+	cTooth2wBelowRstrk _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
 
 endpass; // 6
 
@@ -623,7 +623,7 @@ pass(3)	// Collisions and adjustments
 	// alef-rreh
 	(g_alef_ar  g_alef_ar_fina) MARKS g_rreh_ar {advance.x += 80m} ;
 
-	// alef-nameMarker
+	// alef + takhallus (name marker)
 	(g_alef_ar g_alef_ar_fina) MARKS  g_hehgoal_ar_init
 		g_takhallusabove_ar {shift.x = 350m; shift.y = 300m};
 	(g_alef_ar g_alef_ar_fina) MARKS g_teh_marbuta_ar  // teh-marbuta doesn't need so much shift
@@ -643,31 +643,29 @@ pass(3)	// Collisions and adjustments
 #endif
 	
 	// noonGhunna-vowelInvSmallV - tighten up (why is this needed?)
+	// TODO - put this into OpenType????
 //	cNoonGhunna (g_noonghunnaabove_ar g_vinvertedabove_ar) {shift.y = -75m}  / cKafLikeInitMedi _ _;   -- don't know why this was needed
 	cNoonGhunna (g_noonghunnaabove_ar g_vinvertedabove_ar) {shift.y = -180m};
 
-	// beh-kasra-tcheh -- kasra collides with tail of tcheh/ain/yeh-barree
+	// beh + kasra +jeem/ain/yeh-barree finals -- kasra collides with tail of tcheh/ain/yeh-barree
 #if (STYLE == BOLD)
-	cToothRing g_kasra_ar {shift.y = 75m}               cYehBarreeFina  / _ _ MARKS _;  // special case
-	cToothRing g_kasratan_ar {shift {x=-120m; y=-300m}} cYehBarreeFina  / _ _ MARKS _;  // special case
+	cToothRing g_kasra_ar    {shift.y = 75m}            cYehBarreeFina  / _ _ MARKS _;  // special case
+	cToothRing g_kasratan_ar {shift {x=-120m; y=-450m}} cYehBarreeFina  / _ _ MARKS _;  // special case
 #else
 	cToothRing g_kasra_ar                              cYehBarreeFina  / _ _ MARKS _;  // okay for yeh-barree
 	cToothRing g_kasratan_ar {shift {x=-120m; y=180m}} cYehBarreeFina  / _ _ MARKS _;  // special case
 #endif
 
 #if (STYLE == BOLD)
-	cTooth1hBelow g_kasra_ar    {shift.y = -300m}   cYehBarreeFina  / _ _ MARKS _;
+	cTooth1hBelow g_kasra_ar    {shift.y = -300m}               cYehBarreeFina  / _ _ MARKS _;
+	cTooth1hBelow g_kasratan_ar {shift {x = -100m; y = -200m}}  cYehBarreeFina  / _ _ MARKS _;
 #else
-	cTooth1hBelow g_kasra_ar    {shift.y = 145m}   cYehBarreeFina  / _ _ MARKS _;
-#endif
-	cTooth2hBelow g_kasra_ar    {shift.y = -205m}  cYehBarreeFina  / _ _ MARKS _;
-	cTooth0Below  g_kasratan_ar {shift.y = 150m}   cYehBarreeFina  / _ _ MARKS _;
-#if (STYLE == BOLD)
-	cTooth1hBelow g_kasratan_ar {shift {x = -100m; y = -200m}}   cYehBarreeFina  / _ _ MARKS _;
-#else
+	cTooth1hBelow g_kasra_ar    {shift.y = 145m}                cYehBarreeFina  / _ _ MARKS _;
 	cTooth1hBelow g_kasratan_ar {shift {x = -200m; y = 290m}}   cYehBarreeFina  / _ _ MARKS _; // tight!
 #endif
-	cTooth2hBelow g_kasratan_ar {shift.y = -170m}  cYehBarreeFina  / _ _ MARKS _;
+	cTooth2hBelow g_kasra_ar    {shift.y = -200m}  cYehBarreeFina  / _ _ MARKS _;
+	cTooth2hBelow g_kasratan_ar {shift.y = -100m}  cYehBarreeFina  / _ _ MARKS _;
+	cTooth0Below  g_kasratan_ar {shift.y =  150m}  cYehBarreeFina  / _ _ MARKS _;
 
 #if (STYLE == BOLD)
 	cTooth1hBelow g_kasra_ar    {shift.x = -10m; shift.y = -300m}  cJeemAinLikeFina  / _ _ MARKS _;
