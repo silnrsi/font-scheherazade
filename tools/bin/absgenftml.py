@@ -165,6 +165,17 @@ def doit(args):
                     ftml.clearFeatures()
                 ftml.clearBackground()
 
+        # Add low-hamza combinations
+        ftml.startTestGroup('Low-hamza combinations')
+        for base in (0x0647, 0x064A, 0x06C1, 0X06D5, ):
+            for featlist in builder.permuteFeatures(uids=(base, 0x0654)):
+                ftml.setFeatures(featlist)
+                builder.render((base,), ftml)
+                builder.render((base, 0x0654), ftml)
+                ftml.closeTest()
+            ftml.clearFeatures()
+
+
         # Add Allah data manually
         ftml.startTestGroup('Allah ligatures')
         ftml.addToTest(0xFDF2, r"\uFDF2", comment="Rule 1")

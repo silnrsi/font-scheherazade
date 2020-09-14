@@ -2843,6 +2843,71 @@ U+0774">
       <string>\u0008C7\u000774 \u00200D\u0008C7\u000774 </string>
     </test>
   </testgroup>
+  <testgroup label="Low-hamza combinations">
+    <test label="U+0647">
+      <comment>heh-ar</comment>
+      <string>\u000647 \u000647\u00200D \u00200D\u000647\u00200D \u00200D\u000647 \u000647\u000647\u000647 </string>
+    </test>
+    <test label="U+0647
+U+0654">
+      <comment>heh-ar hamzaabove-ar</comment>
+      <string>\u000647\u000654 \u000647\u000654\u00200D \u00200D\u000647\u000654\u00200D \u00200D\u000647\u000654 \u000647\u000654\u000647\u000654\u000647\u000654 </string>
+    </test>
+    <test label="U+0647" stylename="cv48_1">
+      <comment>heh-ar</comment>
+      <string>\u000647 \u000647\u00200D \u00200D\u000647\u00200D \u00200D\u000647 \u000647\u000647\u000647 </string>
+    </test>
+    <test label="U+0647
+U+0654" stylename="cv48_1">
+      <comment>heh-ar hamzaabove-ar</comment>
+      <string>\u000647\u000654 \u000647\u000654\u00200D \u00200D\u000647\u000654\u00200D \u00200D\u000647\u000654 \u000647\u000654\u000647\u000654\u000647\u000654 </string>
+    </test>
+    <test label="U+0647" stylename="cv48_2">
+      <comment>heh-ar</comment>
+      <string>\u000647 \u000647\u00200D \u00200D\u000647\u00200D \u00200D\u000647 \u000647\u000647\u000647 </string>
+    </test>
+    <test label="U+0647
+U+0654" stylename="cv48_2">
+      <comment>heh-ar hamzaabove-ar</comment>
+      <string>\u000647\u000654 \u000647\u000654\u00200D \u00200D\u000647\u000654\u00200D \u00200D\u000647\u000654 \u000647\u000654\u000647\u000654\u000647\u000654 </string>
+    </test>
+    <test label="U+0647" stylename="cv48_3">
+      <comment>heh-ar</comment>
+      <string>\u000647 \u000647\u00200D \u00200D\u000647\u00200D \u00200D\u000647 \u000647\u000647\u000647 </string>
+    </test>
+    <test label="U+0647
+U+0654" stylename="cv48_3">
+      <comment>heh-ar hamzaabove-ar</comment>
+      <string>\u000647\u000654 \u000647\u000654\u00200D \u00200D\u000647\u000654\u00200D \u00200D\u000647\u000654 \u000647\u000654\u000647\u000654\u000647\u000654 </string>
+    </test>
+    <test label="U+064A">
+      <comment>yeh-ar</comment>
+      <string>\u00064A \u00064A\u00200D \u00200D\u00064A\u00200D \u00200D\u00064A \u00064A\u00064A\u00064A </string>
+    </test>
+    <test label="U+064A
+U+0654">
+      <comment>yeh-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000654 \u00064A\u000654\u00200D \u00200D\u00064A\u000654\u00200D \u00200D\u00064A\u000654 \u00064A\u000654\u00064A\u000654\u00064A\u000654 </string>
+    </test>
+    <test label="U+06C1">
+      <comment>hehgoal-ar</comment>
+      <string>\u0006C1 \u0006C1\u00200D \u00200D\u0006C1\u00200D \u00200D\u0006C1 \u0006C1\u0006C1\u0006C1 </string>
+    </test>
+    <test label="U+06C1
+U+0654">
+      <comment>hehgoal-ar hamzaabove-ar</comment>
+      <string>\u0006C1\u000654 \u0006C1\u000654\u00200D \u00200D\u0006C1\u000654\u00200D \u00200D\u0006C1\u000654 \u0006C1\u000654\u0006C1\u000654\u0006C1\u000654 </string>
+    </test>
+    <test label="U+06D5">
+      <comment>ae-ar</comment>
+      <string>\u0006D5 \u00200D\u0006D5 </string>
+    </test>
+    <test label="U+06D5
+U+0654">
+      <comment>ae-ar hamzaabove-ar</comment>
+      <string>\u0006D5\u000654 \u00200D\u0006D5\u000654 </string>
+    </test>
+  </testgroup>
   <testgroup label="Allah ligatures">
     <test label="U+FDF2">
       <comment>Rule 1</comment>
