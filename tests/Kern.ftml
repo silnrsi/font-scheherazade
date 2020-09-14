@@ -14,6 +14,7 @@
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
       <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
     </styles>
     <title>Kerning</title>
@@ -369,6 +370,10 @@
       <string>\u00200D\u000631\u000620\u00200D \u000631\u000620\u00200D \u00200D\u000631\u000620 \u000631\u000620</string>
     </test>
     <test label="U+0626">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u00200D\u000631\u000626\u00200D \u000631\u000626\u00200D \u00200D\u000631\u000626 \u000631\u000626</string>
+    </test>
+    <test label="U+0626" stylename="cv54_1">
       <comment>yehHamzaabove-ar</comment>
       <string>\u00200D\u000631\u000626\u00200D \u000631\u000626\u00200D \u00200D\u000631\u000626 \u000631\u000626</string>
     </test>
@@ -1411,6 +1416,10 @@
       <string>\u00200D\u000648\u000620\u00200D \u000648\u000620\u00200D \u00200D\u000648\u000620 \u000648\u000620</string>
     </test>
     <test label="U+0626">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u00200D\u000648\u000626\u00200D \u000648\u000626\u00200D \u00200D\u000648\u000626 \u000648\u000626</string>
+    </test>
+    <test label="U+0626" stylename="cv54_1">
       <comment>yehHamzaabove-ar</comment>
       <string>\u00200D\u000648\u000626\u00200D \u000648\u000626\u00200D \u00200D\u000648\u000626 \u000648\u000626</string>
     </test>

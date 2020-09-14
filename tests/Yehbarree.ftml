@@ -12,6 +12,7 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv54' 1" name="cv54_1"/>
     </styles>
     <title>Yehbarree</title>
   </head>
@@ -658,6 +659,10 @@
       <string>\u0777\u06EC\u06D2 \u200D\u0777\u06EC\u06D2 \u0777\u064D\u06EC\u06D2 \u200D\u0777\u064D\u06EC\u06D2</string>
     </test>
     <test label="U+0626">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u0626\u06EC\u06D2 \u200D\u0626\u06EC\u06D2 \u0626\u064D\u06EC\u06D2 \u200D\u0626\u064D\u06EC\u06D2</string>
+    </test>
+    <test label="U+0626" stylename="cv54_1">
       <comment>yehHamzaabove-ar</comment>
       <string>\u0626\u06EC\u06D2 \u200D\u0626\u06EC\u06D2 \u0626\u064D\u06EC\u06D2 \u200D\u0626\u064D\u06EC\u06D2</string>
     </test>

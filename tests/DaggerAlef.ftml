@@ -8,6 +8,9 @@
     <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
+      <style feats="'cv54' 1" name="cv54_1"/>
+      <style feats="'cv54' 1, 'cv76' 1" name="cv54_1_cv76_1"/>
+      <style feats="'cv54' 1, 'cv76' 2" name="cv54_1_cv76_2"/>
       <style feats="'cv76' 1" name="cv76_1"/>
       <style feats="'cv76' 2" name="cv76_2"/>
     </styles>
@@ -46,6 +49,21 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+0626
 U+0670" stylename="cv76_2">
+      <comment>yehHamzaabove-ar alefabove-ar</comment>
+      <string>\u000626\u000670 \u000626\u000670\u00200D \u00200D\u000626\u000670\u00200D \u00200D\u000626\u000670 \u000626\u000670\u000626\u000670\u000626\u000670 </string>
+    </test>
+    <test label="U+0626
+U+0670" stylename="cv54_1">
+      <comment>yehHamzaabove-ar alefabove-ar</comment>
+      <string>\u000626\u000670 \u000626\u000670\u00200D \u00200D\u000626\u000670\u00200D \u00200D\u000626\u000670 \u000626\u000670\u000626\u000670\u000626\u000670 </string>
+    </test>
+    <test label="U+0626
+U+0670" stylename="cv54_1_cv76_1">
+      <comment>yehHamzaabove-ar alefabove-ar</comment>
+      <string>\u000626\u000670 \u000626\u000670\u00200D \u00200D\u000626\u000670\u00200D \u00200D\u000626\u000670 \u000626\u000670\u000626\u000670\u000626\u000670 </string>
+    </test>
+    <test label="U+0626
+U+0670" stylename="cv54_1_cv76_2">
       <comment>yehHamzaabove-ar alefabove-ar</comment>
       <string>\u000626\u000670 \u000626\u000670\u00200D \u00200D\u000626\u000670\u00200D \u00200D\u000626\u000670 \u000626\u000670\u000626\u000670\u000626\u000670 </string>
     </test>

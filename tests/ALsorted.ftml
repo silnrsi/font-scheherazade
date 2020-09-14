@@ -14,6 +14,7 @@
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
       <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
       <style feats="'cv84' 1" name="cv84_1"/>
       <style lang="ku" name="ku"/>
@@ -223,6 +224,30 @@
       <string>\u000620 \u000620\u00200D \u00200D\u000620\u00200D \u00200D\u000620 \u000620\u000620\u000620 </string>
     </test>
     <test label="U+0626">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="cv54_1">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="sd">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="ur">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="ku">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="wo">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="rhg">
       <comment>yehHamzaabove-ar</comment>
       <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
     </test>
@@ -1410,6 +1435,26 @@
       <comment>uHamzaabove-ar</comment>
       <string>\u000677 \u00200D\u000677 </string>
     </test>
+    <test label="U+0677" stylename="sd">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="ur">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="ku">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="wo">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="rhg">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
     <test label="U+06C4">
       <comment>wawring-ar</comment>
       <string>\u0006C4 \u00200D\u0006C4 </string>
@@ -1427,6 +1472,26 @@
       <string>\u0006C7 \u00200D\u0006C7 </string>
     </test>
     <test label="U+06C7" stylename="cv50_1">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="sd">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="ur">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="ku">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="wo">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="rhg">
       <comment>u-ar</comment>
       <string>\u0006C7 \u00200D\u0006C7 </string>
     </test>
@@ -1530,9 +1595,9 @@
       <comment>allah-ar</comment>
       <string>\u00FDF2</string>
     </test>
-    <test label="U+FDFC">
-      <comment>rial</comment>
-      <string>\u00FDFC</string>
+    <test label="U+FDFB">
+      <comment>jallajalalouhou-ar</comment>
+      <string>\u00FDFB \u00FDFC</string>
     </test>
   </testgroup>
 </ftml>

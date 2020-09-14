@@ -14,6 +14,7 @@
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
       <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
       <style feats="'cv62' 1" name="cv62_1"/>
       <style feats="'cv62' 2" name="cv62_2"/>
@@ -232,6 +233,30 @@
       <string>\u000625 \u00200D\u000625 </string>
     </test>
     <test label="U+0626">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="cv54_1">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="sd">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="ur">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="ku">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="wo">
+      <comment>yehHamzaabove-ar</comment>
+      <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
+    </test>
+    <test label="U+0626" stylename="rhg">
       <comment>yehHamzaabove-ar</comment>
       <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
     </test>
@@ -628,6 +653,26 @@
       <string>\u000677 \u00200D\u000677 </string>
     </test>
     <test label="U+0677" stylename="cv50_1">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="sd">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="ur">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="ku">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="wo">
+      <comment>uHamzaabove-ar</comment>
+      <string>\u000677 \u00200D\u000677 </string>
+    </test>
+    <test label="U+0677" stylename="rhg">
       <comment>uHamzaabove-ar</comment>
       <string>\u000677 \u00200D\u000677 </string>
     </test>
@@ -1168,6 +1213,26 @@
       <string>\u0006C7 \u00200D\u0006C7 </string>
     </test>
     <test label="U+06C7" stylename="cv50_1">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="sd">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="ur">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="ku">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="wo">
+      <comment>u-ar</comment>
+      <string>\u0006C7 \u00200D\u0006C7 </string>
+    </test>
+    <test label="U+06C7" stylename="rhg">
       <comment>u-ar</comment>
       <string>\u0006C7 \u00200D\u0006C7 </string>
     </test>
@@ -1911,6 +1976,10 @@
       <comment>lamTahabove-ar</comment>
       <string>\u0008C7 \u0008C7\u00200D \u00200D\u0008C7\u00200D \u00200D\u0008C7 \u0008C7\u0008C7\u0008C7 </string>
     </test>
+    <test label="U+08D3">
+      <comment>wawbelow-ar</comment>
+      <string>\u000628\u0008D3 \u000628\u0008D4 \u000628\u0008D5 \u000628\u0008D6 \u000628\u0008D7 \u000628\u0008D8 \u000628\u0008D9 \u000628\u0008DA \u000628\u0008DB \u000628\u0008DC \u000628\u0008DD \u000628\u0008DE \u000628\u0008DF \u000628\u0008E0 \u000628\u0008E1</string>
+    </test>
     <test label="U+08E3">
       <comment>dammaturnedbelow-ar</comment>
       <string>\u000628\u0008E3 \u000628\u0008E4 \u000628\u0008E5 \u000628\u0008E6 \u000628\u0008E7 \u000628\u0008E8 \u000628\u0008E9 \u000628\u0008EA \u000628\u0008EB \u000628\u0008EC \u000628\u0008ED \u000628\u0008EE \u000628\u0008EF \u000628\u0008F0 \u000628\u0008F1 \u000628\u0008F2 \u000628\u0008F3 \u000628\u0008F4 \u000628\u0008F5 \u000628\u0008F6 \u000628\u0008F7 \u000628\u0008F8 \u000628\u0008F9 \u000628\u0008FA \u000628\u0008FB \u000628\u0008FC \u000628\u0008FD \u000628\u0008FE \u000628\u0008FF</string>
@@ -2043,6 +2112,10 @@
       <comment>dottedCircle</comment>
       <string>\u0025CC</string>
     </test>
+    <test label="U+E002">
+      <comment>salaamuhuAlaynaa-ar</comment>
+      <string>\u00E002 \u00E003 \u00E004 \u00E005 \u00E006 \u00E007 \u00E008 \u00E009 \u00E00A \u00E00B \u00E00C \u00E00D \u00E00E \u00E00F \u00E010 \u00E011 \u00E012</string>
+    </test>
     <test label="U+F130">
       <comment>FontBslnSideBrngMrkrLft</comment>
       <string>\u00F130 \u00F131</string>
@@ -2059,9 +2132,9 @@
       <comment>allah-ar</comment>
       <string>\u00FDF2</string>
     </test>
-    <test label="U+FDFC">
-      <comment>rial</comment>
-      <string>\u00FDFC</string>
+    <test label="U+FDFB">
+      <comment>jallajalalouhou-ar</comment>
+      <string>\u00FDFB \u00FDFC \u00FDFD</string>
     </test>
     <test label="U+FE00">
       <comment>VS1</comment>
