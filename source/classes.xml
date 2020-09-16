@@ -880,7 +880,6 @@
         rehStroke-ar.fina  	
     </class>
     
-    
     <class name="RehWawTightedToGafR">
     	rehv-ar rehTwodotsverticalabove-ar rehv-ar.fina jeh-ar rehFourdots-ar.fina
     </class>
@@ -1067,6 +1066,19 @@
     	lamThreedotsbelow-ar.init  lamBar-ar.init  lamDoublebar-ar.init
     </class>
     
+    <class name="RehLikeIsol">
+        reh-ar  zain-ar  rreh-ar  rehNoonabove-ar  rehv-ar  rehRing-ar  rehDotbelow-ar  rehVbelow-ar rehDotbelowdotabove-ar		
+        rehTwodots-ar  jeh-ar  rehFourdots-ar  rehTwodotsverticalabove-ar  rehHamzaabove-ar  rehTwodotshorizontalaboveTahabove-ar
+        zainVinverted above-ar  rehVinvertedabove-ar rehStroke-ar rehLoop-ar
+    </class>
+    
+    <class name="RehLikeFina">
+				reh-ar.fina  zain-ar.fina  rreh-ar.fina		
+        rehNoonabove-ar.fina  rehv-ar.fina  rehRing-ar.fina  rehDotbelow-ar.fina rehVbelow-ar.fina  rehDotbelowdotabove-ar.fina		
+        rehTwodots-ar.fina  jeh-ar.fina  rehFourdots-ar.fina  rehTwodotsverticalabove-ar.fina  rehHamzaabove-ar.fina  rehTwodotshorizontalaboveTahabove-ar.fina		
+        zainVinvertedabove-ar.fina  rehVinvertedabove-ar.fina  rehStroke-ar.fina  rehLoop-ar.fina 	
+    </class>
+
     <class name="YehLikeFina">
     	alefMaksura-ar.fina yeh-ar.fina yeh-ar.noDots.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina
     	yehTwodotsbelowDotabove-ar.fina yehVinverted-farsi.fina yeh-farsi.fina yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina
@@ -1080,6 +1092,22 @@
     
     <class name="RnoonLikeNarrow">
     	rnoon-ar.medi rreh-ar.fina highhamzaYeh-ar.medi
+    </class>
+    
+    <class name="WawLikeIsol">
+        waw-ar  wawHamzaabove-ar  highhamzaWaw-ar  uHamzaabove-ar  uHamzaabove-ar.filled  
+        wawring-ar  kirghizoe-ar  oe-ar  u-ar  u-ar.filled	yu-ar  kirghizyu-ar  wawTwodots-ar  
+        ve-ar  wawDotabove-ar  wawTwoabove-ar  wawThreeAbove-ar  wawDotcenter-ar reh-ar		
+		</class>
+		
+		<class name="WawLikeFina">
+				waw-ar.fina  wawHamzaabove-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina  uHamzaabove-ar.filled.fina		
+        wawring-ar.fina  kirghizoe-ar.fina  oe-ar.fina  u-ar.fina  u-ar.filled.fina  yu-ar.fina  kirghizyu-ar.fina  wawTwodots-ar.fina
+        ve-ar.fina	 wawDotabove-ar.fina  wawTwoabove-ar.fina  wawThreeAbove-ar.fina  wawDotcenter-ar.fina
+    </class>
+    
+    <class name="WawLike">
+    	@WawLikeIsol  @WawLikeFina
     </class>
     
     <!-- COLLISIONS -->
