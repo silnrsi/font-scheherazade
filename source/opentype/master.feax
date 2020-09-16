@@ -1432,6 +1432,7 @@ feature rlig {  # Required Ligatures
 } rlig ;
 
 feature calt {  # Contextual Alternates
+		script arab;
         #lookup SignWithDigits;
         # lookup SignDigits;
         lookup ToothKashidasIM;
