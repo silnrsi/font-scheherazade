@@ -496,7 +496,13 @@ if (debug == false)
 
 pass(3)
 	// Kerning of reh-like and waw-like
-	
+
+#if (STYLE == BOLD)
+	cWawLikeIsol {adv.x +=50m} cRehLikeIsol  /  _ MARKS ^ _;
+	cWawLikeFina {adv.x +=50m} cRehLikeIsol  /  _ MARKS ^ _;
+#endif
+	cRehWawAll cRehWawAll  / _ MARKS ^ _;  // standard spacing is pretty good - don't futz with it.
+
 	// tighten to following gaf-like 
 #if (STYLE == BOLD)
 	cRehKernGaf {advance.x -= 380m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
@@ -518,7 +524,11 @@ pass(3)
 	 
 	// otherwise tighten against most things
 	cRehKernAlef {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ;  // previous version required only one "direction" of marks, no idea why
+
+	// I don't understand why the rule below tries to adjust reh-waw sequences. And why it permits only marks-above.
+	// At the very least it shouldn't adjust waw+reh. This first rule is a kludge to handle the ^ in the waw+reh rules above.
+	cRehWawAll  /  cRehWawAll  _;
+	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSABOVE _ ; 
 
 	// tighter against Ain-like initials unless it has marks Below
 	cAinLikeInit                     / (cRehWawTighten cRehWawTightenMore) MARKS _ MARKS cMarksBelow ;
@@ -527,6 +537,8 @@ pass(3)
 	
 	// tighter still for some reh/wah followed by Ain-like isolates
 	cAinLikeIsol {advance.x -= 580m} / cRehWawNothingBelow MARKSABOVE _ ;
+
+
 	
 endpass; // 3
 
@@ -554,6 +566,8 @@ cKehehLikeFin = (
 	
 g_abs_auto_kashida {dbgAw = aw; dbgBbW = bb.width};
 
+cMarksAny = (cMarksAbove cMarksBelow);
+
 endtable; // glyph
 
 table(subs)
@@ -569,19 +583,27 @@ pass(6)
 		/  _ MARKS _ _ cTooth3wBelowMedi=MF;
 	(cTooth3wBelowInit cTooth3wBelowMedi)  _  >  @1 g_abs_auto_kashida:F
 		/  _ MARKS _ cYehLikeFina=F;
-if (STYLE == BOLD)
+#if (STYLE == BOLD)
 	cTooth2wBelowMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wBelowMedi=M;
 	cTooth2wAboveMedi  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cTooth2wAboveMedi=M;
 
 	cTooth2wAboveInit  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cFehQaf2wAboveMedi=M;
 	(cFehQaf2wAboveInit cFehQaf2wAboveMedi)  _  >  @1  g_abs_auto_kashida:M  /  _ MARKS _ cFehQaf2wAboveMedi=M;
-endif
+#endif
 
 	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
 
 	// Currently these do not need kerning later:
 	g_teh_tehabove_ar_medi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wAboveInitMedi=M;
 	cTooth2wwAboveInitMedi  _  >  @1 g_abs_auto_kashida:M  / _ MARKS _ cTooth2wwAboveInitMedi=M;
+
+	cTooth g_alefabove_ar cTooth cMarksAbove  /  _ _ cMarksBelow? ^ _ _; // dagger-alef doesn't need kashida
+	cTooth cMarksAbove cTooth g_alefabove_ar  /  _ _ cMarksBelow? ^ _ _;
+
+	// tooth forms with two diacritics above; keep this rule after the ones above
+	cTooth cMarksAbove  _  cTooth cMarksAbove  >  @T1 @D1  g_abs_auto_kashida:T2  @T2  @D2  / _=T1 _=D1 cMarksAny? _ ^ _=T2 _=D2;
+
+	cTooth cMarksAbove  _  g_teh_marbuta_ar_fina=TM  >  @1 @2 g_abs_auto_kashida:TM  @TM  / _ _ cMarksAny? _ _;
 
 	cTooth2wBelowRstrk _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
 
@@ -592,17 +614,17 @@ endtable; // sub
 
 pass(3)	// Collisions and adjustments
 
-	// Kashidas
+	// Kashida kerning
 	
 	// yeh/peh + yeh/peh
 	cTooth2wwBelowInit MARKS  g_abs_auto_kashida cTooth2wwBelowMedi; // wider, don't kern - 363
 
 #if (STYLE == REGULAR)
-	(cTooth3wBelowInit cTooth3wBelowMedi)  g_abs_auto_kashida {adv.x -= 20m} g_abs_auto_kashida {adv.x -= 20m} // 726 - 60
+	(cTooth3wBelowInit cTooth3wBelowMedi)  g_abs_auto_kashida {adv.x -= 20m} g_abs_auto_kashida {adv.x -= 20m}
 						cTooth3wBelowMedi {adv.x -= 20m}  /  _ MARKS _ _ ^ _;
 #endif
 
-	(cTooth2wBelowInit cTooth2wBelowMedi) g_abs_auto_kashida {adv.x -= 65m} g_abs_auto_kashida {adv.x -= 65m}  // 726 - 140
+	(cTooth2wBelowInit cTooth2wBelowMedi) g_abs_auto_kashida {adv.x -= 65m} g_abs_auto_kashida {adv.x -= 65m}
 						cTooth3wBelowMedi {adv.x -= 10m}  /  _ MARKS _ _ ^ _;
 						
 #if (STYLE == BOLD)		
@@ -614,12 +636,14 @@ pass(3)	// Collisions and adjustments
 	cFehQaf2wAboveMedi g_abs_auto_kashida {adv.x -= 120} cFehQaf2wAboveMedi {adv.x -= 120m} /  _ MARKS _ ^ _;
 #endif
 
-	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}   // 363 - 80
+	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}
 		/ _ MARKS _ ^ _;
 		
 #if (STYLE == BOLD)
 	g_teheh_ar_init MARKS  g_teheh_ar_medi  {adv.x += 100m}; 
 #endif
+
+	cTooth  g_abs_auto_kashida  {adv.x -= 50m}  g_teh_marbuta_ar_fina {adv.x -= 50m}  /  _ MARKS _  _ ;
 	
 	// kaf + rnoon
 	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;

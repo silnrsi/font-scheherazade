@@ -734,13 +734,17 @@ lookup SignWithDigits {
 
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
 lookup _InsertKashida {
-	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;
-	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
-	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;
-	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;
-	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
-	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAboveInitMedi
-	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAboveInitMedi
+	# all tooth forms:
+	sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
+	sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
+	sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
+#	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;
+#	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
+#	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;
+#	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;
+#	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
+#	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAboveInitMedi
+#	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAboveInitMedi
 	sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
 	sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
 	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
@@ -769,6 +773,7 @@ ifinfo(styleName, "Bold") {
 		sub @Tooth2wAboveInit'   lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
 		sub @FehQaf2wAboveInit'  lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
 }
+
 } ToothKashidasIM;
 
 lookup ToothKashidasMM {  # medial + medial
@@ -801,6 +806,17 @@ lookup MiscKashidas {
 		
 		sub @Tooth2wBelowRstrk' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
 } MiscKashidas;
+
+# kashidas needed due to colliding marks
+lookup MarkKashidas {
+		# Add kashida when upper diacritics are next to each other.
+		# Note that we should ideally break this into separate rules to handle medial-medial separately, but I'm lazy.
+		ignore sub @Tooth alefabove-ar  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
+		ignore sub @Tooth @MarksAbove   @Tooth alefabove-ar;
+		sub @Tooth' lookup _InsertKashida  @MarksAbove  @Tooth  @MarksAbove;
+		
+		sub @Tooth' lookup _InsertKashida  @MarksAbove  tehMarbuta-ar.fina;
+} MarkKashidas;
 
 
 #**********************************
@@ -1000,6 +1016,10 @@ lookup SubtendingMarks {
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 
+lookup _kern50 {
+  pos @RehWawAll <50 0  50 0>;
+} _kern50;
+
 lookup _kern70 {
   pos @RehWawAll <70 0  70 0>;
 } _kern70;
@@ -1059,6 +1079,15 @@ lookup _kern_650 {
 } _kern_650;
 
 lookup RehWawKerning {
+ifinfo(styleName, "Bold") {
+  pos @WawLike' lookup _kern50                     @RehLikeIsol; 
+  pos @WawLike' lookup _kern50 @MarksAny           @RehLikeIsol; 
+  pos @WawLike' lookup _kern50 @MarksAny @MarksAny @RehLikeIsol;
+}
+	ignore pos @RehWawAll                     @RehWawAll;
+	ignore pos @RehWawAll @MarksAny           @RehWawAll;
+	ignore pos @RehWawAll @MarksAny @MarksAny @RehWawAll;
+	
 	# Tighten to following gaf-like
 ifinfo(styleName, "Bold") {
 	pos @RehWawTightenAll' lookup _kern_380                @RehKernGaf ;
@@ -1211,43 +1240,43 @@ ifinfo(styleName, "Regular") {
 # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
 #lookup _kkern_30 {
-#  pos absAutoKashida     <15 0  -30 0>;
+#  pos absAutoKashida     <-15 0  -30 0>;
 #} _kkern_30;
 
 lookup _kkern_40 {
-  pos absAutoKashida     <20 0  -40 0>;
+  pos absAutoKashida     <-20 0  -40 0>;
 } _kkern_40;
 
 lookup _kkern_60 {
-  pos absAutoKashida     <30 0  -60 0>;
+  pos absAutoKashida     <-30 0  -60 0>;
 } _kkern_60;
 
 lookup _kkern_80 {
-  pos absAutoKashida     <40 0  -80 0>;
+  pos absAutoKashida     <-40 0  -80 0>;
 } _kkern_80;
 
 lookup _kkern_100 {
-  pos absAutoKashida     <50 0  -100 0>;
+  pos absAutoKashida     <-50 0  -100 0>;
 } _kkern_100;
 
 lookup _kkern_120 {
-  pos absAutoKashida     <60 0  -120 0>;
+  pos absAutoKashida     <-60 0  -120 0>;
 } _kkern_120;
 
 lookup _kkern_140 {
-  pos absAutoKashida     <70 0  -140 0>;
+  pos absAutoKashida     <-70 0  -140 0>;
 } _kkern_140;
 
 lookup _kkern_160 {
-  pos absAutoKashida     <80 0  -160 0>;
+  pos absAutoKashida     <-80 0  -160 0>;
 } _kkern_160;
 
 lookup _kkern_180 {
-  pos absAutoKashida     <90 0  -180 0>;
+  pos absAutoKashida     <-90 0  -180 0>;
 } _kkern_180;
 
 lookup _kkern_240 {
-  pos absAutoKashida     <120 0  -240 0>;
+  pos absAutoKashida     <-120 0  -240 0>;
 } _kkern_240;
 
 
@@ -1288,6 +1317,8 @@ ifinfo(styleName, "Bold") {
 lookup ToothKashidaKerningIMF {
 	lookupflag IgnoreMarks;
 		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
+		
+		pos @Tooth absAutoKashida' lookup _kkern_100  tehMarbuta-ar.fina;
 } ToothKashidaKerningIMF;
 
 lookup MiscKashidaKerning {
@@ -1407,6 +1438,7 @@ feature calt {  # Contextual Alternates
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
         lookup MiscKashidas;
+        lookup MarkKashidas;
 
       language KUR ; # Kurdish
         lookup KurdishHeh ;
