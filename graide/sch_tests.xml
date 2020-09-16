@@ -3,7 +3,7 @@
 <ftml version="1.0">
   <head>
     <columns comment="30%" label="15%" string="50%" style="5%" />
-    <fontsrc>url(..\results\Sch-Bold-graide.ttf)</fontsrc>
+    <fontsrc>url(..\results\Sch-Reg-graide.ttf)</fontsrc>
     <styles>
       <style feats="eofa=2" name="fset1339" />
       <style feats="cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1385" />
@@ -359,6 +359,12 @@
     <test class="fset1389" label="RW ain-isolates" rtl="True">
       <string>ۄع زࣃ رع عوع</string>
     </test>
+    <test class="fset1403" label="RW isolate RW" rtl="True">
+      <string>رورزوږڑۇژؤۆۄݫ</string>
+    </test>
+    <test class="fset1403" label="RW final RW" rtl="True">
+      <string>لرر لږو لوو لوز</string>
+    </test>
     <test background="#55aaff" class="fset1403" label="ALEF" rtl="True">
       <string />
     </test>
@@ -390,6 +396,9 @@
     </test>
     <test class="fset1389" label="yeh-barree-two" rtl="True">
       <string>ݺؽ ݺݺب</string>
+    </test>
+    <test class="fset1403" label="peh/yeh yeh-final" rtl="True">
+      <string>پی یی لپی سیی</string>
     </test>
     <test background="#55aaff" class="fset1403" label="TEH / NOON DOTS" rtl="True">
       <string />
@@ -464,7 +473,7 @@
       <string>تقا ثڨا ثڦا تتت</string>
     </test>
     <test class="fset1403" label="qaf qaf qaf" rtl="True">
-      <string>ققا ڦڦڦا تتتا</string>
+      <string>ققا ڦڦڦا ثققا  تتتا</string>
     </test>
     <test background="#55aaff" class="fset1403" label="OTHER" rtl="True">
       <string />
@@ -487,11 +496,20 @@
     <test class="fset1403" label="noonghunna mark kaf" rtl="True">
       <string>ں٘کس ںٛگ</string>
     </test>
-    <test background="#aaaa7f" class="fset1389" label="qaf-three-dots rnoon" rtl="True">
+    <test background="#ff0000" class="fset1389" label="qaf-three-dots rnoon" rtl="True">
       <string>ڨڻب ڨٸب</string>
     </test>
     <test background="#aaaa7f" class="fset1403" label="keheh-three-dots keheh-fina" rtl="True">
       <string>ݣک</string>
+    </test>
+    <test class="fset1403" label="beh U-diac beh U-diac" rtl="True">
+      <string>بَبۡا نَتۡا تࣥنۡا تّنۡا تّبۡا تَبَا</string>
+    </test>
+    <test class="fset1403" label="beh u-diac beh u-diac - overcorrection" rtl="True">
+      <string>بٰبَم بّبٰق ثَبَل</string>
+    </test>
+    <test class="fset1403" label="examples" rtl="True">
+      <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
     </test>
   </testgroup>
 </ftml>
