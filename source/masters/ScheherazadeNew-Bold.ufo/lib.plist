@@ -1206,6 +1206,8 @@
     <string>noonAfrican-ar.fina</string>
     <string>noonAfrican-ar.medi</string>
     <string>noonAfrican-ar.init</string>
+    <string>ae-ar</string>
+    <string>ae-ar.fina</string>
     <string>heh-ar</string>
     <string>heh-ar.fina</string>
     <string>heh-ar.medi</string>
@@ -1238,20 +1240,14 @@
     <string>tehMarbuta-ar.fina</string>
     <string>tehMarbutagoal-ar</string>
     <string>tehMarbutagoal-ar.fina</string>
-    <string>ae-ar</string>
-    <string>ae-ar.fina</string>
     <string>waw-ar</string>
     <string>waw-ar.fina</string>
     <string>highhamzaWaw-ar</string>
     <string>highhamzaWaw-ar.fina</string>
     <string>uHamzaabove-ar</string>
     <string>uHamzaabove-ar.fina</string>
-    <string>uHamzaabove-ar.filled</string>
-    <string>uHamzaabove-ar.filled.fina</string>
     <string>u-ar</string>
     <string>u-ar.fina</string>
-    <string>u-ar.filled</string>
-    <string>u-ar.filled.fina</string>
     <string>wawring-ar</string>
     <string>wawring-ar.fina</string>
     <string>wawTwodots-ar</string>
@@ -1270,8 +1266,8 @@
     <string>wawStraight-ar.fina</string>
     <string>kirghizoe-ar</string>
     <string>kirghizoe-ar.fina</string>
-    <string>kirghizoe-ar.loclKIR</string>
-    <string>kirghizoe-ar.fina.loclKIR</string>
+    <string>kirghizoe-ar.bar</string>
+    <string>kirghizoe-ar.fina.bar</string>
     <string>oe-ar</string>
     <string>oe-ar.fina</string>
     <string>yu-ar</string>
@@ -1376,6 +1372,7 @@
     <string>highhamzaYeh-ar.medi</string>
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
+    <string>kashida-ar.haswidth</string>
     <string>absAutoKashida</string>
     <string>sadabove-ar</string>
     <string>ainabove-ar</string>
@@ -1720,6 +1717,7 @@
     <string>summation.rtl</string>
     <string>minus</string>
     <string>divisionslash</string>
+    <string>reverseSolidusOperator</string>
     <string>bulletoperator</string>
     <string>radical</string>
     <string>radical.rtl</string>
@@ -2772,6 +2770,8 @@
     <string>noonAfrican-ar.fina</string>
     <string>noonAfrican-ar.medi</string>
     <string>noonAfrican-ar.init</string>
+    <string>ae-ar</string>
+    <string>ae-ar.fina</string>
     <string>heh-ar</string>
     <string>heh-ar.fina</string>
     <string>heh-ar.medi</string>
@@ -2804,20 +2804,14 @@
     <string>tehMarbuta-ar.fina</string>
     <string>tehMarbutagoal-ar</string>
     <string>tehMarbutagoal-ar.fina</string>
-    <string>ae-ar</string>
-    <string>ae-ar.fina</string>
     <string>waw-ar</string>
     <string>waw-ar.fina</string>
     <string>highhamzaWaw-ar</string>
     <string>highhamzaWaw-ar.fina</string>
     <string>uHamzaabove-ar</string>
     <string>uHamzaabove-ar.fina</string>
-    <string>uHamzaabove-ar.filled</string>
-    <string>uHamzaabove-ar.filled.fina</string>
     <string>u-ar</string>
     <string>u-ar.fina</string>
-    <string>u-ar.filled</string>
-    <string>u-ar.filled.fina</string>
     <string>wawring-ar</string>
     <string>wawring-ar.fina</string>
     <string>wawTwodots-ar</string>
@@ -2836,8 +2830,8 @@
     <string>wawStraight-ar.fina</string>
     <string>kirghizoe-ar</string>
     <string>kirghizoe-ar.fina</string>
-    <string>kirghizoe-ar.loclKIR</string>
-    <string>kirghizoe-ar.fina.loclKIR</string>
+    <string>kirghizoe-ar.bar</string>
+    <string>kirghizoe-ar.fina.bar</string>
     <string>oe-ar</string>
     <string>oe-ar.fina</string>
     <string>yu-ar</string>
@@ -2942,6 +2936,7 @@
     <string>highhamzaYeh-ar.medi</string>
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
+    <string>kashida-ar.haswidth</string>
     <string>absAutoKashida</string>
     <string>sadabove-ar</string>
     <string>ainabove-ar</string>
@@ -3286,6 +3281,7 @@
     <string>summation.rtl</string>
     <string>minus</string>
     <string>divisionslash</string>
+    <string>reverseSolidusOperator</string>
     <string>bulletoperator</string>
     <string>radical</string>
     <string>radical.rtl</string>
@@ -4510,12 +4506,12 @@
     <string>uni062E.medi</string>
     <key>kirghizoe-ar</key>
     <string>uni06C5</string>
+    <key>kirghizoe-ar.bar</key>
+    <string>uni06C5.bar</string>
     <key>kirghizoe-ar.fina</key>
     <string>uni06C5.fina</string>
-    <key>kirghizoe-ar.fina.loclKIR</key>
-    <string>uni06C5.fina</string>
-    <key>kirghizoe-ar.loclKIR</key>
-    <string>uni06C5</string>
+    <key>kirghizoe-ar.fina.bar</key>
+    <string>uni06C5.fina.bar</string>
     <key>kirghizyu-ar</key>
     <string>uni06C9</string>
     <key>kirghizyu-ar.fina</key>
@@ -5070,6 +5066,8 @@
     <string>uni0692.fina</string>
     <key>replacementCharacter</key>
     <string>uniFFFD</string>
+    <key>reverseSolidusOperator</key>
+    <string>uni29F5</string>
     <key>rhombusStopabove-ar</key>
     <string>uni06EB</string>
     <key>rhombusStopbelow-ar</key>
@@ -5540,18 +5538,10 @@
     <string>uni06F2.small</string>
     <key>u-ar</key>
     <string>uni06C7</string>
-    <key>u-ar.filled</key>
-    <string>uni06C7.filled</string>
-    <key>u-ar.filled.fina</key>
-    <string>uni06C7.filled.fina</string>
     <key>u-ar.fina</key>
     <string>uni06C7.fina</string>
     <key>uHamzaabove-ar</key>
     <string>uni0677</string>
-    <key>uHamzaabove-ar.filled</key>
-    <string>uni0677.filled</string>
-    <key>uHamzaabove-ar.filled.fina</key>
-    <string>uni0677.filled.fina</string>
     <key>uHamzaabove-ar.fina</key>
     <string>uni0677.fina</string>
     <key>vabove-ar</key>

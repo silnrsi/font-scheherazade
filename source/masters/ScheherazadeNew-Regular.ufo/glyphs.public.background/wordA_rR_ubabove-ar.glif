@@ -142,6 +142,19 @@
       <point x="378" y="646"/>
       <point x="425" y="640"/>
     </contour>
-    <component base="_dot1" xOffset="540" yOffset="445"/>
+    <contour>
+      <point x="657" y="465" type="curve" smooth="yes"/>
+      <point x="657" y="474"/>
+      <point x="541" y="562"/>
+      <point x="525" y="562" type="curve" smooth="yes"/>
+      <point x="514" y="562"/>
+      <point x="428" y="435"/>
+      <point x="428" y="420" type="curve" smooth="yes"/>
+      <point x="428" y="406"/>
+      <point x="550" y="323"/>
+      <point x="559" y="323" type="curve" smooth="yes"/>
+      <point x="576" y="323"/>
+      <point x="657" y="451"/>
+    </contour>
   </outline>
 </glyph>
