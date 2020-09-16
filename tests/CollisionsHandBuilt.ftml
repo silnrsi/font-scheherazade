@@ -6,8 +6,8 @@
     <fontsrc label="No Kern">url(../references/ScheherazadeNew-Regular_noKern.ttf)</fontsrc>
     <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc> -->
     <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
-    <!-- <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc> -->
-    <!-- <fontsrc label="OT Bold">url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc> -->
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <fontsrc label="OT Bold">url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc>
     <styles>
     	<style feats="'dbug' 1" name="debug"/>
       <style feats="'cv12' 1" name="cv12_1"/>
@@ -63,17 +63,21 @@
     <test class="fset1403" label="tteh tteh tteh / rnoon rnoon rnoon" rtl="True">
       <string>ٹٹٹٹ ڻڻڻڻ ݨݨݨݨ </string>
     </test>
-    <test background="#55aaff" class="fset1403" label="QAF/TEH / QAF DOTS" rtl="True">
+    <test background="#55aaff" class="fset1403" label="OTHER DOTS" rtl="True">
       <string />
     </test>
     <test class="fset1403" label="teh qaf" rtl="True">
-      <string>\u062a\u0642\u0627 \u062b\u06A8\u0627 \u062b\u06A6\u0627</string>
+      <string>تقا ثڨا ثڦا تتت</string>
     </test>
-    <test class="fset1403" label="qaf qaf" rtl="True">
-      <string>\u0642\u0642\u0627 \u06A6\u06A6\u06A6\u0627 \u062b\u0642\u0642\u0627</string>
+    <test class="fset1403" label="qaf qaf qaf" rtl="True">
+      <string>ققا ڦڦڦا ثققا  تتتا</string>
     </test>
-
-
+    <test class="fset1403" label="teh waw-3-dots" rtl="True">
+      <string>تۋ</string>
+    </test>
+    <test class="fset1403" label="kaf teh" rtl="True">
+      <string>کتا لکتا </string>
+    </test>
     <test background="#55aaff" class="fset1403" label="KAF RNOON" rtl="True">
       <string />
     </test>

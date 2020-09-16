@@ -4,8 +4,8 @@
   <head>
     <fontscale>200</fontscale>
     <fontsrc label="No Kern">url(../references/ScheherazadeNew-Regular_noKern.ttf)</fontsrc>
-    <!-- <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc> -->
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc label="Graphite Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <fontsrc label="OT Bold">url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc>
     <styles>
@@ -160,5 +160,13 @@
       <string>اڑ باڑ </string>
     </test>
   </testgroup>
-
+  
+  <testgroup label="AE">
+    <test class="fset1403" label="final" rtl="True">
+      <string>پەکن پەگن</string>
+    </test>
+    <test class="fset1403" label="isolate" rtl="True">
+      <string>ەکن ەگن</string>
+    </test>
+	</testgroup>
 </ftml>

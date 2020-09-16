@@ -1026,10 +1026,15 @@ lookup _kern70 {
   pos @RehWawAll <70 0  70 0>;
 } _kern70;
 
+lookup _kern90 {
+  pos @Tooth2wAboveInit <90 0  90 0>;
+} _kern90;
+
 lookup _kern100 {
   pos @Tooth1hBelow <100 0  100 0>;
   pos @Tooth2hBelow <100 0  100 0>;
   pos teheh-ar.init <100 0  100 0>;
+  pos @KafLikeInit  <100 0  100 0>;
 } _kern100;
 
 lookup _kern130 {
@@ -1067,6 +1072,11 @@ lookup _kern_215 {
 lookup _kern_290 {
   pos @RehWawTightenAll <-290 0  -290 0>;
 } _kern_290;
+
+lookup _kern_300 {
+  pos ae-ar       <-300 0  -300 0>;
+  pos ae-ar.fina  <-300 0  -300 0>;
+} _kern_300;
 
 lookup _kern_380 {
   pos @RehWawTightenAll <-380 0  -380 0>;
@@ -1164,6 +1174,9 @@ lookup MiscKerning {
 		
 		pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
 		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;
+		
+		pos ae-ar'      lookup _kern_300  @KafLikeInit;
+		pos ae-ar.fina' lookup _kern_300  @KafLikeInit;
 } MiscKerning;
 
 lookup MiscKerningWDiacs {
@@ -1299,6 +1312,9 @@ ifinfo(styleName, "Bold") {
 		pos @FehQaf2wAboveInit' absAutoKashida' lookup _kkern_60   @FehQaf2wAboveMedi;  # BOLD		
 		
 		pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
+		
+		pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFina;
+		pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;
 }
 
 } ToothKashidaKerningIM;
