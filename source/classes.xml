@@ -756,6 +756,7 @@
 
     </class>
     
+    <!-- OBSOLETE
     <class name="RehKernOtherR">
     	yeh-ar.init yeh-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init
     	yehVinverted-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init 
@@ -768,13 +769,12 @@
       behTwodotsbelowDotabove-ar.init tahTwodotsabove-ar.init 		
 			lamBar-ar.preAlef.init noonDotbelow-ar.init	noonTwodotsbelow-ar.init 
     </class>
+    -->
 
     <class name="RehKernOther">
         dal-ar thal-ar ddal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dahal-ar dul-ar dalThreedotsdown-ar		
         dalFourdots-ar dalVinvertedabove-ar dal-ar.loclWLF thal-ar.loclWLF ddal-ar.loclWLF dalRing-ar.loclWLF dalDotbelow-ar.loclWLF		
         dalDotbelowTah-ar.loclWLF dahal-ar.loclWLF dul-ar.loclWLF dalThreedotsdown-ar.loclWLF dalFourdots-ar.loclWLF dalVinvertedabove-ar.loclWLF		
-        reh-ar zain-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar		
-        jeh-ar rehFourdots-ar rehTwodotsverticalabove-ar rehHamzaabove-ar rehTwodotshorizontalaboveTahabove-ar rehVinvertedabove-ar rehStroke-ar tah-ar zah-ar		
         tahThreedots-ar tahTwodotsabove-ar lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamBar-ar lamDoublebar-ar		
         meem-ar.sindhi meemDotabove-ar.sindhi meemDotbelow-ar.sindhi meemThreedotsabove-ar.sindhi hehDoachashmee-ar hehVinvertedabove-ar		
         heh-ar.knotted ae-ar tehMarbuta-ar hehHamzaabove-ar hehgoal-ar hehgoalHamzaabove-ar tehMarbutagoal-ar yehHamzaabove-ar.init		
@@ -787,6 +787,12 @@
         lamVabove-ar.preAlef.init lamDotabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init 
         lamDoublebar-ar.preAlef.init 
     </class>
+    	<!-- Removed from RehKernOther: 
+    			        reh-ar zain-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar 
+    			        rehTwodots-ar	jeh-ar rehFourdots-ar rehTwodotsverticalabove-ar rehHamzaabove-ar 
+    			        rehTwodotshorizontalaboveTahabove-ar rehVinvertedabove-ar rehStroke-ar tah-ar zah-ar
+    	-->
+
 
     <class name="RehKernOtherMA">
         reh-ar zain-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar		

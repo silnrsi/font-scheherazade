@@ -1090,16 +1090,23 @@ lookup _kern_650 {
   pos @RehWawTightenAll <-650 0  -650 0>;
 } _kern_650;
 
-lookup RehWawKerning {
+
+# Break this into a separate lookup to handle a sequence like waw + reh + alef
+lookup RehWawKerning1 {
+	lookupflag IgnoreMarks;
+	
 ifinfo(styleName, "Bold") {
-  pos @WawLike' lookup _kern50                     @RehLikeIsol; 
-  pos @WawLike' lookup _kern50 @MarksAny           @RehLikeIsol; 
-  pos @WawLike' lookup _kern50 @MarksAny @MarksAny @RehLikeIsol;
+  pos @WawLike' lookup _kern50  @RehLikeIsol; 
+}
+ifinfo(styleName, "Regular") {
+  ignore pos @WawLike @RehLikeIsol;
 }
 	# standard spacing is pretty good - don't futz with it.
-	ignore pos @RehWawAll                     @RehWawAll;
-	ignore pos @RehWawAll @MarksAny           @RehWawAll;
-	ignore pos @RehWawAll @MarksAny @MarksAny @RehWawAll;
+	#ignore pos @RehWawAll  @RehWawAll;
+} RehWawKerning1;
+
+lookup RehWawKerning {
+	# does not ignore diacritics
 	
 	# Tighten to following gaf-like
 ifinfo(styleName, "Bold") {
@@ -1173,20 +1180,27 @@ lookup MiscKerning {
 	lookupflag IgnoreMarks;
 		pos @AlefForms' lookup _kern70  rreh-ar;
 		
+		# beh + reh-stroke
 		pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
-		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;
-		
-		pos ae-ar'      lookup _kern_300  @KafLikeInit;
-		pos ae-ar.fina' lookup _kern_300  @KafLikeInit;
+		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;	
 } MiscKerning;
 
 lookup MiscKerningWDiacs {
 	# does not ignore diacritics
+	
+		# alef-maddah + gaf
 		pos @AlefForms' lookup _kern130  madda-ar.small  @GafIsolInit;      # also see shift rules below
 		pos @AlefForms' lookup _kern170  madda-ar        @GafIsolInit;
 		pos @AlefForms' lookup _kern170  madda-ar        @LamLikeIsolInit;
 
+		# beh-like + something above + reh-tah
 		pos @Tooth' lookup _kern140  @MarksAbove  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see shift rule below
+		
+		# AE + kaf
+		pos ae-ar'      lookup _kern_300          @KafLikeInit;
+		pos ae-ar'      lookup _kern_300  @_diaB  @KafLikeInit;
+		pos ae-ar.fina' lookup _kern_300          @KafLikeInit;
+		pos ae-ar.fina' lookup _kern_300  @_diaB  @KafLikeInit;
 } MiscKerningWDiacs;
 
 
@@ -1809,6 +1823,7 @@ feature curs {  # Cursive Positioning
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
+        lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup MiscKerning;
         lookup MiscKerningWDiacs;

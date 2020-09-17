@@ -524,10 +524,6 @@ pass(3)
 	 
 	// otherwise tighten against most things
 	cRehKernAlef {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-
-	// I don't understand why the rule below tries to adjust reh-waw sequences. And why it permits only marks-above.
-	// At the very least it shouldn't adjust waw+reh. This first rule is a kludge to handle the ^ in the waw+reh rules above.
-	cRehWawAll  /  cRehWawAll  _;
 	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSABOVE _ ; 
 
 	// tighter against Ain-like initials unless it has marks Below
@@ -656,7 +652,7 @@ pass(3)	// Collisions and adjustments
 	// Simple adjustments
 		
 	// alef-rreh
-	(g_alef_ar  g_alef_ar_fina) MARKS g_rreh_ar {advance.x += 80m} ;
+	(g_alef_ar  g_alef_ar_fina) MARKS g_rreh_ar {advance.x += 70m} ;
 
 	// alef + takhallus (name marker)
 	(g_alef_ar g_alef_ar_fina) MARKS  g_hehgoal_ar_init
@@ -713,9 +709,9 @@ pass(3)	// Collisions and adjustments
 	cTooth0Below  g_kasratan_ar {shift.x = -100m} cJeemAinLikeFina / _ _ MARKS _;
 	
 	// alef-maddah + gaf
-	(g_alef_ar g_alef_ar_fina)  g_madda_ar_small {shift.x = -20m}  cGafIsolInit {adv.x += 130m};
-	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -90m}  cGafIsolInit {adv.x += 170m};
-	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -70m}  cLamLikeIsolInit {adv.x += 170m};
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar_small {shift.x = -20m}  cGafIsolInit {adv.x += 130m}     / _ _ MARKS _;
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -90m}  cGafIsolInit {adv.x += 170m}     / _ _ MARKS _;
+	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -70m}  cLamLikeIsolInit {adv.x += 170m} / _ _ MARKS _;
 
 	// beh + reh-stroke
 	////cTooth2wBelow  MARKS  g_abs_auto_kashida {adv.x -= 90m}  g_reh_stroke_ar_fina {adv.x -= 90m}; - doesn't need kerning
@@ -727,7 +723,8 @@ pass(3)	// Collisions and adjustments
 		cMark2Above {shift.x = -50m}
 		g_reh_twodotshorizontalabove_tahabove_ar_fina {adv.x += 140m};
 
-	(g_ae_ar g_ae_ar_fina) cKafLikeInit {adv.x -= 300m};
+	// AE + kaf
+	(g_ae_ar g_ae_ar_fina) cKafLikeInit {adv.x -= 300m}  /  _ MARKSBELOW  _;
 
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};

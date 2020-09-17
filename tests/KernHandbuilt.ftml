@@ -26,7 +26,6 @@
     </test>
   </testgroup>
   <testgroup label="Rehs and waws">
-
     <test label="no change">
     	<string>\u0648\u067E\u0628</string>
     </test>
@@ -163,10 +162,10 @@
   
   <testgroup label="AE">
     <test class="fset1403" label="final" rtl="True">
-      <string>پەکن پەگن</string>
+      <string>پەِکن پەگن پەّکن</string>
     </test>
     <test class="fset1403" label="isolate" rtl="True">
-      <string>ەکن ەگن</string>
+      <string>ەِّکن ەِکن ەگن</string>
     </test>
 	</testgroup>
 </ftml>
