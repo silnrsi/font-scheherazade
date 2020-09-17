@@ -365,11 +365,23 @@
     <test class="fset1403" label="RW final RW" rtl="True">
       <string>لرر لږو لوو لوز</string>
     </test>
+    <test class="fset1403" label="Graham's examples" rtl="True">
+      <string>زتی زنی ژثی تزتی بژنس زلو</string>
+    </test>
     <test background="#55aaff" class="fset1403" label="ALEF" rtl="True">
       <string />
     </test>
     <test class="fset1403" label="alef rreh" rtl="True">
       <string>اڑ باڑ </string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="AE" rtl="True">
+      <string />
+    </test>
+    <test background="#ff0000" class="fset1403" label="final" rtl="True">
+      <string>پەکن پەگن</string>
+    </test>
+    <test background="#ff0000" class="fset1403" label="isolate" rtl="True">
+      <string>ەکن ەگن</string>
     </test>
   </testgroup>
   <testgroup label="intra-word collisions">
@@ -411,6 +423,21 @@
     </test>
     <test class="fset1403" label="tteh tteh tteh / rnoon rnoon rnoon" rtl="True">
       <string>ٹٹٹٹ ڻڻڻڻ ݨݨݨݨ </string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="OTHER DOTS" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="teh qaf" rtl="True">
+      <string>تقا ثڨا ثڦا تتت</string>
+    </test>
+    <test class="fset1403" label="qaf qaf qaf" rtl="True">
+      <string>ققا ڦڦڦا ثققا  تتتا</string>
+    </test>
+    <test background="#ff0000" class="fset1403" label="teh waw-3-dots" rtl="True">
+      <string>تۋ</string>
+    </test>
+    <test background="#ff0000" class="fset1403" label="kaf teh" rtl="True">
+      <string>کتا لکتا </string>
     </test>
     <test background="#55aaff" class="fset1403" label="KAF RNOON" rtl="True">
       <string />
@@ -469,12 +496,6 @@
     <test class="fset1403" label="noon/tah-ring kasra yehbarree" rtl="True">
       <string>ڼِۓ سڼٍۓ لټِۓ ټٍۓ</string>
     </test>
-    <test class="fset1403" label="teh qaf" rtl="True">
-      <string>تقا ثڨا ثڦا تتت</string>
-    </test>
-    <test class="fset1403" label="qaf qaf qaf" rtl="True">
-      <string>ققا ڦڦڦا ثققا  تتتا</string>
-    </test>
     <test background="#55aaff" class="fset1403" label="OTHER" rtl="True">
       <string />
     </test>
@@ -484,7 +505,7 @@
     <test class="fset1404" label="alef-madda (large) gaf" rtl="True">
       <string>آگ آگی سآگ مآگی</string>
     </test>
-    <test background="#aaaa7f" class="fset1404" label="alef-madda (large) lam" rtl="True">
+    <test class="fset1404" label="alef-madda (large) lam" rtl="True">
       <string>آل آلپ آڵپ سآل آلپ</string>
     </test>
     <test class="fset1403" label="beh-like reh-bar" rtl="True">
@@ -508,8 +529,11 @@
     <test class="fset1403" label="beh u-diac beh u-diac - overcorrection" rtl="True">
       <string>بٰبَم بّبٰق ثَبَل</string>
     </test>
-    <test class="fset1403" label="examples" rtl="True">
+    <test class="fset1403" label="words with teh-marbuta" rtl="True">
       <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
+    </test>
+    <test background="#ff0000" class="fset1403" label="lam-alef teh" rtl="True">
+      <string>بلاتتی بلاثتی</string>
     </test>
   </testgroup>
 </ftml>

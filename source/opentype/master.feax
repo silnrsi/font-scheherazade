@@ -1096,6 +1096,7 @@ ifinfo(styleName, "Bold") {
   pos @WawLike' lookup _kern50 @MarksAny           @RehLikeIsol; 
   pos @WawLike' lookup _kern50 @MarksAny @MarksAny @RehLikeIsol;
 }
+	# standard spacing is pretty good - don't futz with it.
 	ignore pos @RehWawAll                     @RehWawAll;
 	ignore pos @RehWawAll @MarksAny           @RehWawAll;
 	ignore pos @RehWawAll @MarksAny @MarksAny @RehWawAll;
@@ -1126,9 +1127,9 @@ ifinfo(styleName, "Regular") {
 	pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefIso @_diaB ;
 	
 	# Loosen from following narrow initials with something below:
-	pos @RehWawAll' lookup _kern130                      @NarrowIni;
-	pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni;
-	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni;
+	pos @RehWawAll' lookup _kern130                      @NarrowIni @_diaB ;
+	pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni @_diaB ;
+	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
 	
 	# Leave certain cases alone:
 	ignore pos @RehWawTightenAll                       @RehKernAlefOrOther @_diaB ;                            
@@ -1143,7 +1144,7 @@ ifinfo(styleName, "Regular") {
 	pos @RehWawTightenAll' lookup _kern_190 @_diaB         @RehKernAlef;
 	pos @RehWawTightenAll' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
 	
-	pos @RehWawTightenAll' lookup _kern_190                      @RehKernMost;
+	pos @RehWawTightenAll' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
 	pos @RehWawTightenAll' lookup _kern_190 @MarksAny            @RehKernMost;
 	pos @RehWawTightenAll' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
 	

@@ -510,15 +510,15 @@ pass(3)
 	cRehKernGaf {advance.x -= 650m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
 #endif
 	
-	// loosen from following alef/lam when it has something below it
+	// Loosen from following alef/lam when it has something below it
 	g_alef_wavyhamzabelow_ar  {advance.x += 290m}  /  g_reh_ar  MARKS _ MARKS ANY?; // this combination needs a little more
 	cAlefLamWBelow {advance.x += 215m} / cRehWawAll MARKS _ ;
 	cAlefIso {advance.x += 215m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
-	// loosen from following narrow initials with something below
+	// Loosen from following narrow initials with something below
 	cNarrowIni {advance.x += 130m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
-	// leave certain cases alone:
+	// Leave certain cases alone:
 	(cRehKernAlef cRehKernOther) / (cRehWawTighten cRehWawTightenMore) MARKS                   _ MARKS cAnyMarksBelow ;
 	cRehKernOtherMA              / (cRehWawTighten cRehWawTightenMore) MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
 	 
