@@ -631,9 +631,15 @@ pass(3)	// Collisions and adjustments
 	cFehQaf2wAboveInit g_abs_auto_kashida {adv.x -= 30} cFehQaf2wAboveMedi {adv.x -= 30m} /  _ MARKS _ ^ _;
 	cFehQaf2wAboveMedi g_abs_auto_kashida {adv.x -= 120} cFehQaf2wAboveMedi {adv.x -= 120m} /  _ MARKS _ ^ _;
 
-	// no kashida
-	cTooth2wAboveInit  cWawLikeFina {adv.x += 90m};
-	cKafLikeInit  cTooth2wAboveMedi {adv.x += 100m};
+	// teh + waw w/ something above
+	cWawLikeFinaMA {adv.x += 90m}   /  cTooth2wAboveInit MARKS _;  // no kashida
+	
+	// kaf + teh
+	cTooth2wAboveMedi {adv.x += 100m}  /  cKafLikeInit MARKS _;  // no kashida
+	
+	// lam-alef + teh
+	cTooth2wAboveInit {adv.x += 90}  /  (g_alef_ar_post_lam_ini_fina g_alef_ar_post_lam_med_fina) MARKS _;
+	
 #endif
 
 	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}

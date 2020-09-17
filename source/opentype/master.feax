@@ -1027,7 +1027,9 @@ lookup _kern70 {
 } _kern70;
 
 lookup _kern90 {
-  pos @Tooth2wAboveInit <90 0  90 0>;
+  pos @Tooth2wAboveInit        <90 0  90 0>;
+  pos alef-ar.postLamIni.fina  <90 0  90 0>;
+  pos alef-ar.postLamMed.fina  <90 0  90 0>;  
 } _kern90;
 
 lookup _kern100 {
@@ -1099,6 +1101,7 @@ ifinfo(styleName, "Bold") {
   pos @WawLike' lookup _kern50  @RehLikeIsol; 
 }
 ifinfo(styleName, "Regular") {
+	# bogus, but it seems to be needed to make the build happy:
   ignore pos @WawLike @RehLikeIsol;
 }
 	# standard spacing is pretty good - don't futz with it.
@@ -1328,8 +1331,14 @@ ifinfo(styleName, "Bold") {
 		
 		pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
 		
-		pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFina;
-		pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;
+		# teh + waw w/ something above
+		pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFinaMA;  # no kashida
+		
+		# kaf + teh
+		pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
+		
+		pos alef-ar.postLamIni.fina'  lookup _kern90  @Tooth2wAboveInit;
+		pos alef-ar.postLamMed.fina'  lookup _kern90  @Tooth2wAboveInit;
 }
 
 } ToothKashidaKerningIM;

@@ -3,7 +3,7 @@
 <ftml version="1.0">
   <head>
     <columns comment="30%" label="15%" string="50%" style="5%" />
-    <fontsrc>url(..\results\Sch-Reg-graide.ttf)</fontsrc>
+    <fontsrc>url(..\results\Sch-Bold-graide.ttf)</fontsrc>
     <styles>
       <style feats="eofa=2" name="fset1339" />
       <style feats="cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1385" />
@@ -377,11 +377,14 @@
     <test background="#55aaff" class="fset1403" label="AE" rtl="True">
       <string />
     </test>
-    <test background="#ff0000" class="fset1403" label="final" rtl="True">
-      <string>پەکن پەگن</string>
+    <test class="fset1403" label="final" rtl="True">
+      <string>پەِکن پەگن پەّکن</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="isolate" rtl="True">
-      <string>ەکن ەگن</string>
+    <test class="fset46" label="isolate" rtl="True">
+      <string>ەِّکن ەِکن ەگن</string>
+    </test>
+    <test class="fset1403" label="waw reh [kern] alef" rtl="True">
+      <string>ورا</string>
     </test>
   </testgroup>
   <testgroup label="intra-word collisions">
@@ -434,10 +437,10 @@
       <string>ققا ڦڦڦا ثققا  تتتا</string>
     </test>
     <test background="#ff0000" class="fset1403" label="teh waw-3-dots" rtl="True">
-      <string>تۋ</string>
+      <string>تۋ تِۋ</string>
     </test>
     <test background="#ff0000" class="fset1403" label="kaf teh" rtl="True">
-      <string>کتا لکتا </string>
+      <string>کَتا لکتا </string>
     </test>
     <test background="#55aaff" class="fset1403" label="KAF RNOON" rtl="True">
       <string />

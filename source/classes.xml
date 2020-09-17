@@ -1102,19 +1102,29 @@
     
     <class name="WawLikeIsol">
         waw-ar  wawHamzaabove-ar  highhamzaWaw-ar  uHamzaabove-ar  uHamzaabove-ar.filled  
-        wawring-ar  kirghizoe-ar  oe-ar  u-ar  u-ar.filled	yu-ar  kirghizyu-ar  wawTwodots-ar  
-        ve-ar  wawDotabove-ar  wawTwoabove-ar  wawThreeAbove-ar  wawDotcenter-ar reh-ar		
+        wawring-ar  kirghizoe-ar  kirghizoe-ar.bar  oe-ar  u-ar  u-ar.filled	yu-ar  kirghizyu-ar  
+        wawTwodots-ar  ve-ar  wawDotabove-ar  wawTwoabove-ar  wawThreeAbove-ar
+        wawDotcenter-ar reh-ar		
 		</class>
 		
 		<class name="WawLikeFina">
 				waw-ar.fina  wawHamzaabove-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina  uHamzaabove-ar.filled.fina		
-        wawring-ar.fina  kirghizoe-ar.fina  oe-ar.fina  u-ar.fina  u-ar.filled.fina  yu-ar.fina  kirghizyu-ar.fina  wawTwodots-ar.fina
-        ve-ar.fina	 wawDotabove-ar.fina  wawTwoabove-ar.fina  wawThreeAbove-ar.fina  wawDotcenter-ar.fina
+        wawring-ar.fina  kirghizoe-ar.fina  kirghizoe-ar.bar.fina  oe-ar.fina  u-ar.fina  u-ar.filled.fina  yu-ar.fina  
+        kirghizyu-ar.fina  wawTwodots-ar.fina  ve-ar.fina  wawDotabove-ar.fina  wawTwoabove-ar.fina  wawThreeAbove-ar.fina  
+        wawDotcenter-ar.fina
     </class>
     
     <class name="WawLike">
     	@WawLikeIsol  @WawLikeFina
     </class>
+    
+    <!-- with something above the base -->
+		<class name="WawLikeFinaMA">
+				wawHamzaabove-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina  uHamzaabove-ar.filled.fina		
+        oe-ar.fina  u-ar.fina  u-ar.filled.fina  kirghizyu-ar.fina  wawTwodots-ar.fina
+        ve-ar.fina	 wawDotabove-ar.fina  wawTwoabove-ar.fina  wawThreeAbove-ar.fina
+    </class>
+    <!-- yu-ar.fina - doesn't create a collision -->
     
     <!-- COLLISIONS -->
     
