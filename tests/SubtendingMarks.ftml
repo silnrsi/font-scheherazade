@@ -25,6 +25,9 @@
       <style lang="ku" name="ku"/>
       <style feats="'cv80' 1" lang="ku" name="ku_cv80_1"/>
       <style feats="'cv80' 2" lang="ku" name="ku_cv80_2"/>
+      <style lang="ky" name="ky"/>
+      <style feats="'cv80' 1" lang="ky" name="ky_cv80_1"/>
+      <style feats="'cv80' 2" lang="ky" name="ky_cv80_2"/>
       <style lang="rhg" name="rhg"/>
       <style feats="'cv80' 1" lang="rhg" name="rhg_cv80_1"/>
       <style feats="'cv80' 2" lang="rhg" name="rhg_cv80_2"/>
@@ -271,6 +274,18 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD urdu" stylename="rhg_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ky">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ky_cv80_1">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="ky_cv80_2">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
