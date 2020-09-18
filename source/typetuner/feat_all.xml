@@ -5,7 +5,7 @@
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
-		<value name="Kirghiz" tag="kir">
+		<value name="Kyrgyz" tag="Kyr">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KirghizCALT}"/>
 			<cmd name="gr_feat" args="{gr_cv54} 1"/>  # right-shifted hamza on yeh
 		</value>
@@ -92,6 +92,7 @@
 		</value>
 	</feature>
 
+	<!-- OBSOLETE FEATURE
 	<feature name="Arabic U" value="Standard" tag="ArU">
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
@@ -101,7 +102,8 @@
 			<cmd name="gr_feat" args="{gr_cv50} 1"/>
 		</value>
 	</feature>
-
+	-->
+	
 	<feature name="Maddah" value="Small" tag="Mda">
 		<value name="Small" tag="Sm">
 			<cmd name="null" args="null"/>

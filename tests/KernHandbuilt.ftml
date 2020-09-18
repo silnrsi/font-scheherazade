@@ -92,6 +92,12 @@
     <test label="RW - don't change">
     	<string>\u0628\u06CA\u064F\u0645\u064E \u0628\u06CA\u064F\u0645\u064E</string>
     </test>
+    <test class="fset1403" label="kirghizoe special cases" rtl="True">
+      <string>ۅن ۅو ۅے</string>
+    </test>
+    <test class="fset1403" label="kirghizoe special cases" rtl="True">
+      <string>یۅن نۅو لۅے</string>
+    </test>
     <test label="RW alef - tighten">
     	<string>\u0648\u0650\u0627\u0654</string>
     </test>

@@ -1013,7 +1013,6 @@ lookup SubtendingMarks {
 #********
 # Kerning for collision avoidance
 
-@RehWawTightenAll = [@RehWawTighten @RehWawTightenMore];
 @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
@@ -1060,19 +1059,19 @@ lookup _kern215 {
 } _kern215;
 
 lookup _kern290 {
-  pos @RehWawTightenAll <200 0  200 0>;
+  pos @RehWawTighten <200 0  200 0>;
 } _kern290;
 
 lookup _kern_190 {
-  pos @RehWawTightenAll <-190 0  -190 0>;
+  pos @RehWawTighten <-190 0  -190 0>;
 } _kern_190;
 
 lookup _kern_215 {
-  pos @RehWawTightenAll <-215 0  -215 0>;
+  pos @RehWawTighten <-215 0  -215 0>;
 } _kern_215;
 
 lookup _kern_290 {
-  pos @RehWawTightenAll <-290 0  -290 0>;
+  pos @RehWawTighten <-290 0  -290 0>;
 } _kern_290;
 
 lookup _kern_300 {
@@ -1081,15 +1080,15 @@ lookup _kern_300 {
 } _kern_300;
 
 lookup _kern_380 {
-  pos @RehWawTightenAll <-380 0  -380 0>;
+  pos @RehWawTighten <-380 0  -380 0>;
 } _kern_380;
 
 lookup _kern_580 {
-  pos @RehWawTightenAll <-580 0  -580 0>;
+  pos @RehWawTighten <-580 0  -580 0>;
 } _kern_580;
 
 lookup _kern_650 {
-  pos @RehWawTightenAll <-650 0  -650 0>;
+  pos @RehWawTighten <-650 0  -650 0>;
 } _kern_650;
 
 
@@ -1113,14 +1112,14 @@ lookup RehWawKerning {
 	
 	# Tighten to following gaf-like
 ifinfo(styleName, "Bold") {
-	pos @RehWawTightenAll' lookup _kern_380                @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_380 @_diaB         @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_380 @_diaB @_diaB  @RehKernGaf ;
+	pos @RehWawTighten' lookup _kern_380                @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_380 @_diaB         @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
 }
 ifinfo(styleName, "Regular") {
-	pos @RehWawTightenAll' lookup _kern_650                @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_650 @_diaB         @RehKernGaf ;
-	pos @RehWawTightenAll' lookup _kern_650 @_diaB @_diaB  @RehKernGaf ;
+	pos @RehWawTighten' lookup _kern_650                @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_650 @_diaB         @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_650 @_diaB @_diaB  @RehKernKaf ;
 }
 
 	# Loosen from following alef/lam when it has something below it
@@ -1142,12 +1141,12 @@ ifinfo(styleName, "Regular") {
 	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
 	
 	# Leave certain cases alone:
-	ignore pos @RehWawTightenAll                       @RehKernAlefOrOther @_diaB ;                            
-	ignore pos @RehWawTightenAll @MarksAny             @RehKernAlefOrOther @_diaB ;                            
-	ignore pos @RehWawTightenAll @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
+	ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
+	ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            
+	ignore pos @RehWawTighten @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
 	
-	ignore pos @RehWawTightenAll @_diaA               @RehKernOtherMA ;
-	ignore pos @RehWawTightenAll @MarksAny @_diaA     @RehKernOtherMA ;
+	ignore pos @RehWawTighten @_diaA               @RehKernOtherMA ;
+	ignore pos @RehWawTighten @MarksAny @_diaA     @RehKernOtherMA ;
 	
 	# Kirghiz-OE (waw-loop) has a different shape:
 	ignore pos kirghizoe-ar noon-ar;
@@ -1156,29 +1155,29 @@ ifinfo(styleName, "Regular") {
 	ignore pos kirghizoe-ar.fina yehbarree-ar;
 
 	# Otherwise tighten against most things:
-	pos @RehWawTightenAll' lookup _kern_190                @RehKernAlef;
-	pos @RehWawTightenAll' lookup _kern_190 @_diaB         @RehKernAlef;
-	pos @RehWawTightenAll' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
+	pos @RehWawTighten' lookup _kern_190                @RehKernAlef;
+	pos @RehWawTighten' lookup _kern_190 @_diaB         @RehKernAlef;
+	pos @RehWawTighten' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
 	
-	pos @RehWawTightenAll' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
-	pos @RehWawTightenAll' lookup _kern_190 @MarksAny            @RehKernMost;
-	pos @RehWawTightenAll' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
+	pos @RehWawTighten' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
+	pos @RehWawTighten' lookup _kern_190 @MarksAny            @RehKernMost;
+	pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
 	
-	ignore pos @RehWawTightenAll                      @AinLikeInit @_diaB;
-	ignore pos @RehWawTightenAll @MarksAny            @AinLikeInit @_diaB;
-	ignore pos @RehWawTightenAll @MarksAny @MarksAny  @AinLikeInit @_diaB;
+	ignore pos @RehWawTighten                      @AinLikeInit @_diaB;
+	ignore pos @RehWawTighten @MarksAny            @AinLikeInit @_diaB;
+	ignore pos @RehWawTighten @MarksAny @MarksAny  @AinLikeInit @_diaB;
 	
-	pos @RehWawTighten' lookup _kern_215                      @AinLikeInit;
-	pos @RehWawTighten' lookup _kern_215 @MarksAny            @AinLikeInit;
-	pos @RehWawTighten' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
+	pos @RehWawTightenToAin' lookup _kern_215                      @AinLikeInit;
+	pos @RehWawTightenToAin' lookup _kern_215 @MarksAny            @AinLikeInit;
+	pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
 	
-	pos @RehWawTightenMore' lookup _kern_290                      @AinLikeInit;
-	pos @RehWawTightenMore' lookup _kern_290 @MarksAny            @AinLikeInit;
-	pos @RehWawTightenMore' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
+	pos @RehWawTightenToAinX' lookup _kern_290                      @AinLikeInit;
+	pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny            @AinLikeInit;
+	pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
 	
-	pos @RehWawNothingBelow' lookup _kern_580                      @AinLikeIsol;
-	pos @RehWawNothingBelow' lookup _kern_580 @MarksAny            @AinLikeIsol;
-	pos @RehWawNothingBelow' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
+	pos @RehWawTightenToAinIsol' lookup _kern_580                      @AinLikeIsol;
+	pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny            @AinLikeIsol;
+	pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
 		
 } RehWawKerning;
 
@@ -1530,8 +1529,8 @@ feature cv12 {  # Character Variant 12
       # language WLF;  -- but not this one since we enable it in the WolofCALT
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
             } ;
 } cv12 ;
 
@@ -1548,8 +1547,8 @@ feature cv44 {  # Character Variant 44
       language WLF;  # Wolof
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
     } ;
 } cv44 ;
 
@@ -1566,7 +1565,7 @@ feature cv48 {  # Character Variant 48
       language WLF ;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
@@ -1587,9 +1586,9 @@ feature cv51 {  # Character Variant 51
     # Same for latin & arabic:
     	lookup KirghizOeAlternates;
     cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Kirghiz OE" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
+        FeatUILabelNameID  { name 3 1 0x0409 "Kyrgyz OE" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
     } ;
 } cv51 ;
 
@@ -1598,8 +1597,8 @@ feature cv54 {  # Character Variant 54
     	lookup YehHamzaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Yeh-Hamza" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
     } ;
 } cv54 ;
 
@@ -1608,8 +1607,8 @@ feature cv60 {  # Character Variant 60
 			lookup MaddahAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
     } ;
 } cv60 ;
 
@@ -1618,7 +1617,7 @@ feature cv62 {  # Character Variant 62
     	lookup KasraAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Lowered" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
     } ;
@@ -1629,7 +1628,7 @@ feature cv70 {  # Character Variant 70
     	lookup DammaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
     } ;
@@ -1641,8 +1640,8 @@ feature cv72 {  # Character Variant 72
 			lookup DammatanAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
     } ;
 } cv72 ;
 
@@ -1651,8 +1650,8 @@ feature cv74 {  # Character Variant 74
 			lookup DammaInvertedAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
     } ;
 } cv74 ;
 
@@ -1661,8 +1660,8 @@ feature cv76 {  # Character Variant 76
 			lookup DaggerAlefToLarge;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
     } ;
 } cv76 ;
 
@@ -1671,7 +1670,7 @@ feature cv78 {  # Character Variant 78
 			lookup SukunAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Sukun"     ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open down" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open left" ; };
     } ;
@@ -1682,7 +1681,7 @@ feature cv80 {  # Character Variant 80
 			lookup AyahAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "End of ayah"  ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified A" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified B" ; };
     } ;
@@ -1693,7 +1692,7 @@ feature cv82 {  # Character Variant 82
       lookup DigitAlternates;  # Latin and Arabic
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
@@ -1706,8 +1705,8 @@ feature cv84 {  # Character Variant 84
 			lookup CommaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Comma"    ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
-        #ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
     } ;
 } cv84 ;
 

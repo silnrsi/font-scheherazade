@@ -110,7 +110,7 @@ UAlt {
 
 kirghizOeAlt {
     id = "cv51";
-    name.1033 = string("Kirghiz OE");
+    name.1033 = string("Kyrgyz OE");
     settings {
         loop {
             value = 0;
@@ -491,7 +491,7 @@ wolof {
 
 kyrgyz {
 	languages = ( "kir", "ky" );  // Kirghiz / Kyrgyz
-	//kirghizOeAlt = kirghiz;
+	//kirghizOeAlt = loop; -- now default
 	yehHamzaAlt = kirghiz;
 };
 

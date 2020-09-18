@@ -494,6 +494,15 @@ endpass; // 2
 
 if (debug == false)
 
+table(glyph)
+// debuggers
+cNotMA = cRehKernOther;
+cNotMA -= cRehKernOtherMA;
+
+cNotMB = cRehKernOther;
+cNotMB -= cRehKernOtherMB;
+endtable;
+
 pass(3)
 	// Kerning of reh-like and waw-like
 
@@ -505,9 +514,9 @@ pass(3)
 
 	// tighten to following gaf-like 
 #if (STYLE == BOLD)
-	cRehKernGaf {advance.x -= 380m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
+	cRehKernKaf {advance.x -= 380m} / cRehWawTighten MARKSBELOW _ ;
 #else
-	cRehKernGaf {advance.x -= 650m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
+	cRehKernKaf {advance.x -= 650m} / cRehWawTighten MARKSBELOW _ ;
 #endif
 	
 	// Loosen from following alef/lam when it has something below it
@@ -519,26 +528,26 @@ pass(3)
 	cNarrowIni {advance.x += 130m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
 	
 	// Leave certain cases alone:
-	(cRehKernAlef cRehKernOther) / (cRehWawTighten cRehWawTightenMore) MARKS                   _ MARKS cAnyMarksBelow ;
-	cRehKernOtherMA              / (cRehWawTighten cRehWawTightenMore) MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
+	// Bottom of RW interferes with mark below following:
+	(cRehKernAlef cRehKernOther) / cRehWawTighten MARKS                   _ MARKS cAnyMarksBelow ;
+	// Mark above RW interferes with mark above following:
+	cRehKernOtherMA              / cRehWawTighten MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
 
-	// Kirghiz-OE (waw-loop) has a different shape:
+	// Kirghiz-OE (waw-loop) has a different shape from other waw-likes:
 	(g_kirghizoe_ar g_kirghizoe_ar_fina) (g_noon_ar g_yehbarree_ar) / _ MARKS _; // don't kern in
 	 
 	// otherwise tighten against most things
-	cRehKernAlef {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ; 
+	cRehKernAlef {advance.x -= 190m} / cRehWawTighten MARKSBELOW _ ;
+	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / cRehWawTighten MARKS _ ; 
 
 	// tighter against Ain-like initials unless it has marks Below
-	cAinLikeInit                     / (cRehWawTighten cRehWawTightenMore) MARKS _ MARKS cMarksBelow ;
-	cAinLikeInit {advance.x -= 215m} / cRehWawTighten     MARKS _ ;
-	cAinLikeInit {advance.x -= 290m} / cRehWawTightenMore MARKS _ ;
+	cAinLikeInit                     / cRehWawTighten MARKS _ MARKS cMarksBelow ;
+	cAinLikeInit {advance.x -= 215m} / cRehWawTightenToAin  MARKS _ ;
+	cAinLikeInit {advance.x -= 290m} / cRehWawTightenToAinX MARKS _ ;
 	
 	// tighter still for some reh/wah followed by Ain-like isolates
-	cAinLikeIsol {advance.x -= 580m} / cRehWawNothingBelow MARKSABOVE _ ;
+	cAinLikeIsol {advance.x -= 580m} / cRehWawTightenToAinIsol MARKSABOVE _ ;
 
-
-	
 endpass; // 3
 
 endif;
