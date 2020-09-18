@@ -374,8 +374,11 @@
     <test class="fset1403" label="alef rreh" rtl="True">
       <string>اڑ باڑ </string>
     </test>
-    <test background="#ff0000" class="fset1403" label="lam-alef teh" rtl="True">
+    <test class="fset1403" label="lam-alef teh" rtl="True">
       <string>بلاتتی بلاثتی لاتتی لاثتی</string>
+    </test>
+    <test class="fset1403" label="isolate lam-alef" rtl="True">
+      <string>لاس لاش لار لاز لاد لاذ لام لاھ لاب لاپ لابم لاپم</string>
     </test>
     <test background="#55aaff" class="fset1403" label="AE" rtl="True">
       <string />
@@ -389,7 +392,7 @@
     <test class="fset1403" label="waw reh alef - chain" rtl="True">
       <string>ورا</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="WAW LOOP" rtl="True">
+    <test background="#55aaff" class="fset1403" label="KIRGHIZ OE" rtl="True">
       <string />
     </test>
     <test class="fset1403" label="isolate" rtl="True">
