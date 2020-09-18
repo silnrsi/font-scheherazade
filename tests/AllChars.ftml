@@ -13,7 +13,7 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
-      <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv51' 1" name="cv51_1"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
       <style feats="'cv62' 1" name="cv62_1"/>
@@ -40,7 +40,7 @@
       <style lang="ur" name="ur"/>
       <style lang="wo" name="wo"/>
     </styles>
-    <title>AllChars</title>
+    <title>AllChars (auto)</title>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -652,30 +652,6 @@
       <comment>uHamzaabove-ar</comment>
       <string>\u000677 \u00200D\u000677 </string>
     </test>
-    <test label="U+0677" stylename="cv50_1">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
-    <test label="U+0677" stylename="sd">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
-    <test label="U+0677" stylename="ur">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
-    <test label="U+0677" stylename="ku">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
-    <test label="U+0677" stylename="wo">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
-    <test label="U+0677" stylename="rhg">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677 \u00200D\u000677 </string>
-    </test>
     <test label="U+0678">
       <comment>highhamzaYeh-ar</comment>
       <string>\u000678 \u000678\u00200D \u00200D\u000678\u00200D \u00200D\u000678 \u000678\u000678\u000678 </string>
@@ -1204,35 +1180,15 @@
       <comment>kirghizoe-ar</comment>
       <string>\u0006C5 \u00200D\u0006C5 </string>
     </test>
+    <test label="U+06C5" stylename="cv51_1">
+      <comment>kirghizoe-ar</comment>
+      <string>\u0006C5 \u00200D\u0006C5 </string>
+    </test>
     <test label="U+06C6">
       <comment>oe-ar</comment>
       <string>\u0006C6 \u00200D\u0006C6 </string>
     </test>
     <test label="U+06C7">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="cv50_1">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="sd">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="ur">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="ku">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="wo">
-      <comment>u-ar</comment>
-      <string>\u0006C7 \u00200D\u0006C7 </string>
-    </test>
-    <test label="U+06C7" stylename="rhg">
       <comment>u-ar</comment>
       <string>\u0006C7 \u00200D\u0006C7 </string>
     </test>
@@ -2111,6 +2067,10 @@
     <test label="U+25CC">
       <comment>dottedCircle</comment>
       <string>\u0025CC</string>
+    </test>
+    <test label="U+29F5">
+      <comment>reverseSolidusOperator</comment>
+      <string>\u0029F5 LTR: \u00202A\u0029F5\u00202C RTL: \u00202B\u0029F5\u00202C</string>
     </test>
     <test label="U+E002">
       <comment>salaamuhuAlaynaa-ar</comment>

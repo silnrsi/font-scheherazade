@@ -13,11 +13,11 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
-      <style feats="'cv50' 1" name="cv50_1"/>
+      <style feats="'cv51' 1" name="cv51_1"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
     </styles>
-    <title>Kerning</title>
+    <title>Kerning (auto)</title>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -119,10 +119,6 @@
       <comment>uHamzaabove-ar</comment>
       <string>\u000677\u00066E\u00200D \u00200D\u000677\u00066E\u00200D</string>
     </test>
-    <test label="U+0677" stylename="cv50_1">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u000677\u00066E\u00200D \u00200D\u000677\u00066E\u00200D</string>
-    </test>
     <test label="U+06C4">
       <comment>wawring-ar</comment>
       <string>\u0006C4\u00066E\u00200D \u00200D\u0006C4\u00066E\u00200D</string>
@@ -131,15 +127,15 @@
       <comment>kirghizoe-ar</comment>
       <string>\u0006C5\u00066E\u00200D \u00200D\u0006C5\u00066E\u00200D</string>
     </test>
+    <test label="U+06C5" stylename="cv51_1">
+      <comment>kirghizoe-ar</comment>
+      <string>\u0006C5\u00066E\u00200D \u00200D\u0006C5\u00066E\u00200D</string>
+    </test>
     <test label="U+06C6">
       <comment>oe-ar</comment>
       <string>\u0006C6\u00066E\u00200D \u00200D\u0006C6\u00066E\u00200D</string>
     </test>
     <test label="U+06C7">
-      <comment>u-ar</comment>
-      <string>\u0006C7\u00066E\u00200D \u00200D\u0006C7\u00066E\u00200D</string>
-    </test>
-    <test label="U+06C7" stylename="cv50_1">
       <comment>u-ar</comment>
       <string>\u0006C7\u00066E\u00200D \u00200D\u0006C7\u00066E\u00200D</string>
     </test>
@@ -1157,10 +1153,6 @@
       <comment>uHamzaabove-ar</comment>
       <string>\u00200D\u000631\u000677 \u000631\u000677</string>
     </test>
-    <test label="U+0677" stylename="cv50_1">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u00200D\u000631\u000677 \u000631\u000677</string>
-    </test>
     <test label="U+06C4">
       <comment>wawring-ar</comment>
       <string>\u00200D\u000631\u0006C4 \u000631\u0006C4</string>
@@ -1169,15 +1161,15 @@
       <comment>kirghizoe-ar</comment>
       <string>\u00200D\u000631\u0006C5 \u000631\u0006C5</string>
     </test>
+    <test label="U+06C5" stylename="cv51_1">
+      <comment>kirghizoe-ar</comment>
+      <string>\u00200D\u000631\u0006C5 \u000631\u0006C5</string>
+    </test>
     <test label="U+06C6">
       <comment>oe-ar</comment>
       <string>\u00200D\u000631\u0006C6 \u000631\u0006C6</string>
     </test>
     <test label="U+06C7">
-      <comment>u-ar</comment>
-      <string>\u00200D\u000631\u0006C7 \u000631\u0006C7</string>
-    </test>
-    <test label="U+06C7" stylename="cv50_1">
       <comment>u-ar</comment>
       <string>\u00200D\u000631\u0006C7 \u000631\u0006C7</string>
     </test>
@@ -2203,10 +2195,6 @@
       <comment>uHamzaabove-ar</comment>
       <string>\u00200D\u000648\u000677 \u000648\u000677</string>
     </test>
-    <test label="U+0677" stylename="cv50_1">
-      <comment>uHamzaabove-ar</comment>
-      <string>\u00200D\u000648\u000677 \u000648\u000677</string>
-    </test>
     <test label="U+06C4">
       <comment>wawring-ar</comment>
       <string>\u00200D\u000648\u0006C4 \u000648\u0006C4</string>
@@ -2215,15 +2203,15 @@
       <comment>kirghizoe-ar</comment>
       <string>\u00200D\u000648\u0006C5 \u000648\u0006C5</string>
     </test>
+    <test label="U+06C5" stylename="cv51_1">
+      <comment>kirghizoe-ar</comment>
+      <string>\u00200D\u000648\u0006C5 \u000648\u0006C5</string>
+    </test>
     <test label="U+06C6">
       <comment>oe-ar</comment>
       <string>\u00200D\u000648\u0006C6 \u000648\u0006C6</string>
     </test>
     <test label="U+06C7">
-      <comment>u-ar</comment>
-      <string>\u00200D\u000648\u0006C7 \u000648\u0006C7</string>
-    </test>
-    <test label="U+06C7" stylename="cv50_1">
       <comment>u-ar</comment>
       <string>\u00200D\u000648\u0006C7 \u000648\u0006C7</string>
     </test>

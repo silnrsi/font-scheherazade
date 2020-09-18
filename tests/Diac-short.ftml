@@ -23,9 +23,9 @@
       <style feats="'cv48' 3" name="cv48_3"/>
       <style feats="'cv48' 3, 'cv76' 1" name="cv48_3_cv76_1"/>
       <style feats="'cv48' 3, 'cv76' 2" name="cv48_3_cv76_2"/>
-      <style feats="'cv50' 1" name="cv50_1"/>
-      <style feats="'cv50' 1, 'cv76' 1" name="cv50_1_cv76_1"/>
-      <style feats="'cv50' 1, 'cv76' 2" name="cv50_1_cv76_2"/>
+      <style feats="'cv51' 1" name="cv51_1"/>
+      <style feats="'cv51' 1, 'cv76' 1" name="cv51_1_cv76_1"/>
+      <style feats="'cv51' 1, 'cv76' 2" name="cv51_1_cv76_2"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv54' 1, 'cv76' 1" name="cv54_1_cv76_1"/>
       <style feats="'cv54' 1, 'cv76' 2" name="cv54_1_cv76_2"/>
@@ -44,7 +44,7 @@
       <style feats="'cv78' 1" name="cv78_1"/>
       <style feats="'cv78' 2" name="cv78_2"/>
     </styles>
-    <title>Diac Short</title>
+    <title>Diac Short (auto)</title>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -1195,37 +1195,7 @@ U+0670" stylename="cv76_2">
     <test label="U+0677
 U+064E">
       <comment>uHamzaabove-ar fatha-ar</comment>
-      <string>\u000677\u00064E \u00200D\u000677\u00064E </string>
-    </test>
-    <test label="U+0677
-U+064E" stylename="cv50_1">
-      <comment>uHamzaabove-ar fatha-ar</comment>
-      <string>\u000677\u00064E \u00200D\u000677\u00064E </string>
-    </test>
-    <test label="U+0677
-U+0650">
-      <comment>uHamzaabove-ar kasra-ar</comment>
-      <string>\u000677\u000650 \u00200D\u000677\u000650 </string>
-    </test>
-    <test label="U+0677
-U+0650" stylename="cv50_1">
-      <comment>uHamzaabove-ar kasra-ar</comment>
-      <string>\u000677\u000650 \u00200D\u000677\u000650 </string>
-    </test>
-    <test label="U+0677
-U+0654">
-      <comment>uHamzaabove-ar hamzaabove-ar</comment>
-      <string>\u000677\u000654 \u00200D\u000677\u000654 </string>
-    </test>
-    <test label="U+0677
-U+0654" stylename="cv50_1">
-      <comment>uHamzaabove-ar hamzaabove-ar</comment>
-      <string>\u000677\u000654 \u00200D\u000677\u000654 </string>
-    </test>
-    <test label="U+0677
-U+0670">
-      <comment>uHamzaabove-ar alefabove-ar</comment>
-      <string>\u000677\u000670 \u00200D\u000677\u000670 </string>
+      <string>\u000677\u00064E \u00200D\u000677\u00064E  \u000677\u000650 \u00200D\u000677\u000650  \u000677\u000654 \u00200D\u000677\u000654  \u000677\u000670 \u00200D\u000677\u000670 </string>
     </test>
     <test label="U+0677
 U+0670" stylename="cv76_1">
@@ -1234,21 +1204,6 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+0677
 U+0670" stylename="cv76_2">
-      <comment>uHamzaabove-ar alefabove-ar</comment>
-      <string>\u000677\u000670 \u00200D\u000677\u000670 </string>
-    </test>
-    <test label="U+0677
-U+0670" stylename="cv50_1">
-      <comment>uHamzaabove-ar alefabove-ar</comment>
-      <string>\u000677\u000670 \u00200D\u000677\u000670 </string>
-    </test>
-    <test label="U+0677
-U+0670" stylename="cv50_1_cv76_1">
-      <comment>uHamzaabove-ar alefabove-ar</comment>
-      <string>\u000677\u000670 \u00200D\u000677\u000670 </string>
-    </test>
-    <test label="U+0677
-U+0670" stylename="cv50_1_cv76_2">
       <comment>uHamzaabove-ar alefabove-ar</comment>
       <string>\u000677\u000670 \u00200D\u000677\u000670 </string>
     </test>
@@ -2815,7 +2770,37 @@ U+0670" stylename="cv76_2">
     <test label="U+06C5
 U+064E">
       <comment>kirghizoe-ar fatha-ar</comment>
-      <string>\u0006C5\u00064E \u00200D\u0006C5\u00064E  \u0006C5\u000650 \u00200D\u0006C5\u000650  \u0006C5\u000654 \u00200D\u0006C5\u000654  \u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
+      <string>\u0006C5\u00064E \u00200D\u0006C5\u00064E </string>
+    </test>
+    <test label="U+06C5
+U+064E" stylename="cv51_1">
+      <comment>kirghizoe-ar fatha-ar</comment>
+      <string>\u0006C5\u00064E \u00200D\u0006C5\u00064E </string>
+    </test>
+    <test label="U+06C5
+U+0650">
+      <comment>kirghizoe-ar kasra-ar</comment>
+      <string>\u0006C5\u000650 \u00200D\u0006C5\u000650 </string>
+    </test>
+    <test label="U+06C5
+U+0650" stylename="cv51_1">
+      <comment>kirghizoe-ar kasra-ar</comment>
+      <string>\u0006C5\u000650 \u00200D\u0006C5\u000650 </string>
+    </test>
+    <test label="U+06C5
+U+0654">
+      <comment>kirghizoe-ar hamzaabove-ar</comment>
+      <string>\u0006C5\u000654 \u00200D\u0006C5\u000654 </string>
+    </test>
+    <test label="U+06C5
+U+0654" stylename="cv51_1">
+      <comment>kirghizoe-ar hamzaabove-ar</comment>
+      <string>\u0006C5\u000654 \u00200D\u0006C5\u000654 </string>
+    </test>
+    <test label="U+06C5
+U+0670">
+      <comment>kirghizoe-ar alefabove-ar</comment>
+      <string>\u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
     </test>
     <test label="U+06C5
 U+0670" stylename="cv76_1">
@@ -2824,6 +2809,21 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+06C5
 U+0670" stylename="cv76_2">
+      <comment>kirghizoe-ar alefabove-ar</comment>
+      <string>\u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
+    </test>
+    <test label="U+06C5
+U+0670" stylename="cv51_1">
+      <comment>kirghizoe-ar alefabove-ar</comment>
+      <string>\u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
+    </test>
+    <test label="U+06C5
+U+0670" stylename="cv51_1_cv76_1">
+      <comment>kirghizoe-ar alefabove-ar</comment>
+      <string>\u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
+    </test>
+    <test label="U+06C5
+U+0670" stylename="cv51_1_cv76_2">
       <comment>kirghizoe-ar alefabove-ar</comment>
       <string>\u0006C5\u000670 \u00200D\u0006C5\u000670 </string>
     </test>
@@ -2845,37 +2845,7 @@ U+0670" stylename="cv76_2">
     <test label="U+06C7
 U+064E">
       <comment>u-ar fatha-ar</comment>
-      <string>\u0006C7\u00064E \u00200D\u0006C7\u00064E </string>
-    </test>
-    <test label="U+06C7
-U+064E" stylename="cv50_1">
-      <comment>u-ar fatha-ar</comment>
-      <string>\u0006C7\u00064E \u00200D\u0006C7\u00064E </string>
-    </test>
-    <test label="U+06C7
-U+0650">
-      <comment>u-ar kasra-ar</comment>
-      <string>\u0006C7\u000650 \u00200D\u0006C7\u000650 </string>
-    </test>
-    <test label="U+06C7
-U+0650" stylename="cv50_1">
-      <comment>u-ar kasra-ar</comment>
-      <string>\u0006C7\u000650 \u00200D\u0006C7\u000650 </string>
-    </test>
-    <test label="U+06C7
-U+0654">
-      <comment>u-ar hamzaabove-ar</comment>
-      <string>\u0006C7\u000654 \u00200D\u0006C7\u000654 </string>
-    </test>
-    <test label="U+06C7
-U+0654" stylename="cv50_1">
-      <comment>u-ar hamzaabove-ar</comment>
-      <string>\u0006C7\u000654 \u00200D\u0006C7\u000654 </string>
-    </test>
-    <test label="U+06C7
-U+0670">
-      <comment>u-ar alefabove-ar</comment>
-      <string>\u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
+      <string>\u0006C7\u00064E \u00200D\u0006C7\u00064E  \u0006C7\u000650 \u00200D\u0006C7\u000650  \u0006C7\u000654 \u00200D\u0006C7\u000654  \u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
     </test>
     <test label="U+06C7
 U+0670" stylename="cv76_1">
@@ -2884,21 +2854,6 @@ U+0670" stylename="cv76_1">
     </test>
     <test label="U+06C7
 U+0670" stylename="cv76_2">
-      <comment>u-ar alefabove-ar</comment>
-      <string>\u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
-    </test>
-    <test label="U+06C7
-U+0670" stylename="cv50_1">
-      <comment>u-ar alefabove-ar</comment>
-      <string>\u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
-    </test>
-    <test label="U+06C7
-U+0670" stylename="cv50_1_cv76_1">
-      <comment>u-ar alefabove-ar</comment>
-      <string>\u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
-    </test>
-    <test label="U+06C7
-U+0670" stylename="cv50_1_cv76_2">
       <comment>u-ar alefabove-ar</comment>
       <string>\u0006C7\u000670 \u00200D\u0006C7\u000670 </string>
     </test>
