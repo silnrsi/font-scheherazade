@@ -521,10 +521,13 @@ pass(3)
 	// Leave certain cases alone:
 	(cRehKernAlef cRehKernOther) / (cRehWawTighten cRehWawTightenMore) MARKS                   _ MARKS cAnyMarksBelow ;
 	cRehKernOtherMA              / (cRehWawTighten cRehWawTightenMore) MARKS cMarksAbove MARKS _ MARKS cAnyMarksAbove ;
+
+	// Kirghiz-OE (waw-loop) has a different shape:
+	(g_kirghizoe_ar g_kirghizoe_ar_fina) (g_noon_ar g_yehbarree_ar) / _ MARKS _; // don't kern in
 	 
 	// otherwise tighten against most things
 	cRehKernAlef {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSBELOW _ ;
-	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKSABOVE _ ; 
+	(cRehKernOther cRehKernOtherMB) {advance.x -= 190m} / (cRehWawTighten cRehWawTightenMore) MARKS _ ; 
 
 	// tighter against Ain-like initials unless it has marks Below
 	cAinLikeInit                     / (cRehWawTighten cRehWawTightenMore) MARKS _ MARKS cMarksBelow ;

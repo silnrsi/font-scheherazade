@@ -323,7 +323,7 @@
     <test class="fset1389" label="reh ain" rtl="True">
       <string>رع</string>
     </test>
-    <test class="fset1390" label="RW keheh - OFF" rtl="True">
+    <test class="fset1390" label="RW keheh - OFF (debug)" rtl="True">
       <string>رک وؼت</string>
     </test>
     <test label="RW keheh - tighten" rtl="True">
@@ -374,6 +374,9 @@
     <test class="fset1403" label="alef rreh" rtl="True">
       <string>اڑ باڑ </string>
     </test>
+    <test background="#ff0000" class="fset1403" label="lam-alef teh" rtl="True">
+      <string>بلاتتی بلاثتی لاتتی لاثتی</string>
+    </test>
     <test background="#55aaff" class="fset1403" label="AE" rtl="True">
       <string />
     </test>
@@ -383,8 +386,17 @@
     <test class="fset46" label="isolate" rtl="True">
       <string>ەِّکن ەِکن ەگن</string>
     </test>
-    <test class="fset1403" label="waw reh [kern] alef" rtl="True">
+    <test class="fset1403" label="waw reh alef - chain" rtl="True">
       <string>ورا</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="WAW LOOP" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="isolate" rtl="True">
+      <string>ۅن ۅو ۅے</string>
+    </test>
+    <test class="fset1403" label="final" rtl="True">
+      <string>یۅن نۅو لۅے</string>
     </test>
   </testgroup>
   <testgroup label="intra-word collisions">
@@ -436,10 +448,10 @@
     <test class="fset1403" label="qaf qaf qaf" rtl="True">
       <string>ققا ڦڦڦا ثققا  تتتا</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="teh waw-3-dots" rtl="True">
-      <string>تۋ تِۋ</string>
+    <test class="fset1403" label="teh waw-3-dots" rtl="True">
+      <string>تۋ ثِۆ ثِۈ ثو</string>
     </test>
-    <test background="#ff0000" class="fset1403" label="kaf teh" rtl="True">
+    <test class="fset1403" label="kaf teh" rtl="True">
       <string>کَتا لکتا </string>
     </test>
     <test background="#55aaff" class="fset1403" label="KAF RNOON" rtl="True">
@@ -534,9 +546,6 @@
     </test>
     <test class="fset1403" label="words with teh-marbuta" rtl="True">
       <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
-    </test>
-    <test background="#ff0000" class="fset1403" label="lam-alef teh" rtl="True">
-      <string>بلاتتی بلاثتی</string>
     </test>
   </testgroup>
 </ftml>
