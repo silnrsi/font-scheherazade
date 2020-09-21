@@ -3,7 +3,7 @@
 <ftml version="1.0">
   <head>
     <columns comment="30%" label="15%" string="50%" style="5%" />
-    <fontsrc>url(..\results\Sch-Bold-graide.ttf)</fontsrc>
+    <fontsrc>url(..\results\Sch-Reg-graide.ttf)</fontsrc>
     <styles>
       <style feats="eofa=2" name="fset1339" />
       <style feats="cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1385" />
@@ -341,14 +341,17 @@
     <test class="fset1389" label="RW  narrow-ini + mark-below - loosen" rtl="True">
       <string>ۄیٕس ژڣٖض ڙلِت</string>
     </test>
-    <test class="fset1389" label="RW - don't change" rtl="True">
-      <string>ژفٖض ڙلِ بۊُمَ رِا</string>
+    <test class="fset1389" label="RW - don't change - tail / mark below" rtl="True">
+      <string>ژفٖض ڙلِ</string>
+    </test>
+    <test class="fset1403" label="RW - don't change - 2 marks above" rtl="True">
+      <string>بۊُمَ رَسُ</string>
+    </test>
+    <test class="fset1391" label="RW - alef - tighten " rtl="True">
+      <string>وِأ ݬا رِا</string>
     </test>
     <test class="fset1391" label="RW - most - tighten" rtl="True">
-      <string>وِأ ݬا</string>
-    </test>
-    <test class="fset1391" label="RW - most - tighten" rtl="True">
-      <string>رُس ڙٕض ړْٰظْ ۅق</string>
+      <string>رُس ڙٕض ړْٰظْ ۅق رَسُ</string>
     </test>
     <test class="fset1389" label="RW ain - marks below - don't change" rtl="True">
       <string>رعِس ݹغٕم ۊݝۣم</string>
@@ -396,10 +399,10 @@
       <string />
     </test>
     <test class="fset1403" label="isolate" rtl="True">
-      <string>ۅن ۅو ۅے</string>
+      <string>ۅن ۅے ۅو </string>
     </test>
     <test class="fset1403" label="final" rtl="True">
-      <string>یۅن نۅو لۅے</string>
+      <string>یۅن لۅے نۅو</string>
     </test>
   </testgroup>
   <testgroup label="intra-word collisions">

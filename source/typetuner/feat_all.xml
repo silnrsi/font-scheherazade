@@ -104,6 +104,26 @@
 	</feature>
 	-->
 	
+	<feature name="Kyrgyz OE" tag="Koe">
+		<value name="Loop" tag="Lp">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Bar" tag="Bar">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KirghizOeAlternates}"/>
+			<cmd name="gr_feat" args="{gr_cv51} 1"/>
+		</value>
+	</feature>
+	
+	<feature name="Yeh Hamza" tag="Yhmz">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Right hamza" tag="Rt">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {YehHamzaAlternates}"/>
+			<cmd name="gr_feat" args="{gr_cv54} 1"/>
+		</value>
+	</feature>
+	
 	<feature name="Maddah" value="Small" tag="Mda">
 		<value name="Small" tag="Sm">
 			<cmd name="null" args="null"/>
