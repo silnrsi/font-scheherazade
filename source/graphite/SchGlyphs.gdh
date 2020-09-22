@@ -283,8 +283,8 @@ cHamzaLigatures = (absHamzaDamma absHamzaFatha);
 
 // Cursive attachment
 
-cHasExit  = (cLamIniBeforeAlef   cLamMedBeforeAlef  );
-cHasEntry = (cAlefFinAfterLamIni cAlefFinAfterLamMed);
+cHasExit  = (cLamIniPreAlef   cLamMedPreAlef  );
+cHasEntry = (cAlefFinPostLamIni cAlefFinPostLamMed);
 
 endtable; // glyph
 

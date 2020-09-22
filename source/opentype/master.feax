@@ -281,18 +281,18 @@ lookup AllahLigatures {
 
 lookup _Ligatures_Part1_target {
   lookupflag IgnoreMarks ;
-    sub @LamIni by @LamIniBeforeAlef ;
-    sub @LamMed by @LamMedBeforeAlef ;
+    sub @LamIni by @LamIniPreAlef ;
+    sub @LamMed by @LamMedPreAlef ;
 } _Ligatures_Part1_target ;
 
 lookup _Ligatures_Part2a_target {
   lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinAfterLamIni ;
+    sub @AlefFin by @AlefFinPostLamIni ;
 } _Ligatures_Part2a_target ;
 
 lookup _Ligatures_Part2b_target {
   lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinAfterLamMed ;
+    sub @AlefFin by @AlefFinPostLamMed ;
 } _Ligatures_Part2b_target ;
 
 lookup Ligatures {
@@ -300,9 +300,9 @@ lookup Ligatures {
   # Subtable: Ligatures\Part1
     sub [ @LamIni @LamMed ]' lookup _Ligatures_Part1_target @AlefFin ;
   # Subtable: Ligatures\Part2a
-    sub @LamIniBeforeAlef @AlefFin' lookup _Ligatures_Part2a_target ;
+    sub @LamIniPreAlef @AlefFin' lookup _Ligatures_Part2a_target ;
   # Subtable: Ligatures\Part2b
-    sub @LamMedBeforeAlef @AlefFin' lookup _Ligatures_Part2b_target ;
+    sub @LamMedPreAlef @AlefFin' lookup _Ligatures_Part2b_target ;
 } Ligatures;
 
 
@@ -1191,6 +1191,18 @@ ifinfo(styleName, "Regular") {
 		
 } RehWawKerning;
 
+lookup LamAlefKerning {
+	lookupflag IgnoreMarks;
+
+ifinfo(styleName, "Bold") {
+		pos @AlefFinPostLamIni <-30 0 -30 0>  @LamAlefKern;
+}
+ifinfo(styleName, "Regular") {
+	  pos @AlefFinPostLamIni <-70 0 -70 0>  @LamAlefKern;
+}
+
+} LamAlefKerning;
+
 @AlefForms = [alef-ar alef-ar.fina];
 @AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
 
@@ -1850,6 +1862,7 @@ feature kern {  # Kerning
         lookup SubtendingMarks;
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
+        lookup LamAlefKerning;
         lookup MiscKerning;
         lookup MiscKerningWDiacs;
         lookup DiacShifting;

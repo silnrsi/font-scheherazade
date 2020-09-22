@@ -5,8 +5,9 @@
     <fontscale>200</fontscale>
     <fontsrc>url(../references/Scheherazade-Regular.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-<!--    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>  -->
+    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc>
     <styles>
       <style feats="'cv12' 1" name="cv12_1"/>
       <style feats="'cv44' 1" name="cv44_1"/>
@@ -103,7 +104,7 @@
       <string>\u0627\u06EB\u0644\u0644\u0647</string>
     </test>
     <test label="aW-l-l-h">
-      <string>\u0671\u0644\u0644\u0647</string>
+      <string>\u0671\u0644\u0644\u0651\u0670\u0647</string>
     </test>
     <test label="a-l-l-s-da-hf-diac">
       <comment>Rule 2 (daggeralef)</comment>
@@ -151,6 +152,9 @@
     <test label="a-l-l-s-da-hf-jeem">
       <comment>Rule 2a: shouldn't match due to non-final heh</comment>
       <string>\u0627\u0644\u0644\u0651\u0670\u0647\u062c</string>
+    </test>
+    <test label="aW-l-l-h - no diacs">
+      <string>\u0671\u0644\u0644\u0647</string>
     </test>
   	
   </testgroup>

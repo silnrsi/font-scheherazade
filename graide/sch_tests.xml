@@ -21,6 +21,7 @@
       <style lang="ky" name="fset1402" />
       <style feats="cv12=0 cv44=0 cv48=0 cv51=0 cv54=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dbug=0" name="fset1403" />
       <style feats="cv60=1" name="fset1404" />
+      <style feats="cv12=1" name="fset1405" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -403,6 +404,36 @@
     </test>
     <test class="fset1403" label="final" rtl="True">
       <string>یۅن لۅے نۅو</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="LAM-ALEF" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="isolate beh-like" rtl="True">
+      <string>لاِب لاࢿ لاپ لآࣀ</string>
+    </test>
+    <test class="fset1403" label="initial beh-like" rtl="True">
+      <string>لاِبم لاپم لآݐم لاݒم </string>
+    </test>
+    <test class="fset1403" label="seen-like" rtl="True">
+      <string>لاِس  لآݾ لاښ | لاݭ</string>
+    </test>
+    <test class="fset1403" label="meem-like" rtl="True">
+      <string>لاْم لاْمل</string>
+    </test>
+    <test class="fset1403" label="heh-like" rtl="True">
+      <string>لاْہ لاہل لاُھ لاھل</string>
+    </test>
+    <test class="fset1403" label="dal-like" rtl="True">
+      <string>لاِد لآد لاڍ لاݚ | لاۮ</string>
+    </test>
+    <test class="fset1405" label="dal-like alternate" rtl="True">
+      <string>لاِد لآد لاڍ لاݚ | لاذ</string>
+    </test>
+    <test class="fset1403" label="reh-like" rtl="True">
+      <string>لاِر لآز لاږ لاݚ | لاۮ</string>
+    </test>
+    <test class="fset1403" label="jeem-like" rtl="True">
+      <string>لاجل لاڇل لاځل لاݗل </string>
     </test>
   </testgroup>
   <testgroup label="intra-word collisions">

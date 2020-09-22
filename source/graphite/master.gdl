@@ -208,8 +208,8 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 		/ _  MARKS  _  MARKS ^;
 ***/
 	// ...but we're using two separate glyphs, because of all the combinations.
-	cLamIso cAlefIso  >  cLamIniBeforeAlef {alefAttached = false}  cAlefFinAfterLamIni  / _ MARKS ^ _ ;
-	cLamFin cAlefIso  >  cLamMedBeforeAlef {alefAttached = false}  cAlefFinAfterLamMed  / _ MARKS ^ _ ;
+	cLamIso cAlefIso  >  cLamIniPreAlef {alefAttached = false}  cAlefFinPostLamIni  / _ MARKS ^ _ ;
+	cLamFin cAlefIso  >  cLamMedPreAlef {alefAttached = false}  cAlefFinPostLamMed  / _ MARKS ^ _ ;
 
 	// All other contextual forms
 	
@@ -483,7 +483,7 @@ pass(2)
 	// Marks below
 
 	// Special attachment points for lam-alef ligatures, to avoid collisions:
-	cAllAlefFinAfterLam=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM} }
+	cAlefFinPostLamAll=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM} }
 		/ (g_lam_threedotsabove_ar_pre_alef_init g_lam_threedotsabove_ar_pre_alef_medi cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
 	// Normal case - OLD
@@ -491,8 +491,6 @@ pass(2)
 //		/ _ ^ MARKSABOVE  _;
 
 endpass; // 2
-
-if (debug == false)
 
 table(glyph)
 // debuggers
@@ -502,6 +500,9 @@ cNotMA -= cRehKernOtherMA;
 cNotMB = cRehKernOther;
 cNotMB -= cRehKernOtherMB;
 endtable;
+
+
+if (debug == false)
 
 pass(3)
 	// Kerning of reh-like and waw-like
@@ -547,6 +548,15 @@ pass(3)
 	
 	// tighter still for some reh/wah followed by Ain-like isolates
 	cAinLikeIsol {advance.x -= 580m} / cRehWawTightenToAinIsol MARKSABOVE _ ;
+
+
+	// Kerning after isolate lam-alef
+
+#if (STYLE == BOLD)
+	  cLamAlefKern {advance.x -= 30m}  /  cAlefFinPostLamIni  MARKS ^ _;
+#else
+	  cLamAlefKern {advance.x -= 70m}  /  cAlefFinPostLamIni  MARKS ^ _;
+#endif
 
 endpass; // 3
 
