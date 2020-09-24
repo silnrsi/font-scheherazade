@@ -63,24 +63,26 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-%ISODATE% (SIL TypeTuner) Tuned version of Scheherazade New Version 3.000 (beta)
+%ISODATE% (SIL TypeTuner) Tuned version of Scheherazade New Version 2.900 (beta)
 - Tuned and delivered by SIL TypeTuner 
 (http://scripts.sil.org/ttw/fonts2go.cgi).
 - See included xml file for details of feature changes.
 
-2020-09-24 (SIL WSTech team) Scheherazade New Version 3.000 (beta)
-- Changed design of small v and inverted small v characters
-- Changed design of U+06C5 for Kyrgyz language and added feature cv51	Kirghiz OE 
+2020-09-24 (SIL WSTech team) Scheherazade New Version 2.900 (beta)
+- Changed design of small v and inverted small v characters (U+063D, U+065A,
+  U+065B, U+0692, U+06B5, U+06C9, U+06CE, U+06EE, U+06EF, U+06FF, U+0756,
+  U+0769, U+077E, U+08B2, U+08BE..U+08C2)
+- Changed design of U+06C5 for Kyrgyz language and added feature cv51, Kyrgyz OE,	 
   supporting the bar design
-- Changed design of U+0677 and U+06C7 and removed feature cv50 Arabic U	
-- Changed design of high hamza characters U+0674..U+0678
-- Added cv54 Yeh hamza feature for Kyrgyz language
+- Changed design of U+0677 and U+06C7 and removed feature cv50, Arabic U	
+- Changed design of high hamza characters (U+0674..U+0678)
+- Added feature cv54, Yeh hamza, for Kyrgyz language
 - Added Kyrgyz language support in Graphite and OpenType
-- Improved reh/waw kerning
+- Improved kerning - reh/waw, lam-alef ligature, AE+kaf-like initials, and others
 - Added collision fixes for certain combinations
 - Updated linespacing
 - Adjusted underline and strikethrough positions and weight
-- Adjustments to the weight and position of some dashes to make them consistent
+- Adjusted the weight and position of some dashes to make them consistent
 
 2020-07-31 (SIL WSTech team) Scheherazade New Version 2.180 (alpha)
 - Renamed font to Scheherazade New
