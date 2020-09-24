@@ -15,7 +15,7 @@ FAMILY = APPNAME
 
 # Get version info from Regular UFO; must be first function call:
 getufoinfo('source/masters/' + FAMILY + '-Regular' + '.ufo')
-BUILD_VERSION = BUILDLABEL  # include alpha/beta
+BUILDVERSION = BUILDLABEL  # include alpha/beta
 
 ftmlTest('tools/ftml-smith.xsl')
 
