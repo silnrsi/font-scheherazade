@@ -492,6 +492,9 @@ pass(2)
 
 endpass; // 2
 
+#ifndef NOKERN
+// Start of kerning code
+
 table(glyph)
 // debuggers
 cNotMA = cRehKernOther;
@@ -758,6 +761,9 @@ pass(3)	// Collisions and adjustments
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
 	
 endpass;
+
+// End of kerning code
+#endif
 
 endtable; // pos
 

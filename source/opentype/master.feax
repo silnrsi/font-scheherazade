@@ -725,6 +725,9 @@ lookup SignWithDigits {
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
 } SignWithDigits;
 
+do if opt("nokern") != "yes";
+{   # start of kerning substitutions
+
 #********
 # Kashida insertion to handle collision avoidance
 
@@ -830,6 +833,7 @@ lookup MarkKashidas {
 		sub @Tooth' lookup _InsertKashida  @MarksAbove  tehMarbuta-ar.fina;
 } MarkKashidas;
 
+}	# end of kerning substitutions
 
 #**********************************
 #  Positioning Lookups
@@ -1019,6 +1023,9 @@ lookup SubtendingMarks {
 
 } SubtendingMarks;
 
+
+do if opt("nokern") != "yes";
+{	# start of kerning positioning lookups
 
 #********
 # Kerning for collision avoidance
@@ -1399,6 +1406,7 @@ lookup MiscKashidaKerning {
 		#pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
 } MiscKashidaKerning;
 
+}	# end of kashida positioning lookups
 
 #**********************************
 #  FEATURES
@@ -1505,11 +1513,14 @@ feature calt {  # Contextual Alternates
 		script arab;
         #lookup SignWithDigits;
         # lookup SignDigits;
+do if opt("nokern") != "yes";
+{   # start of kerning substitutions
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
         lookup MiscKashidas;
         lookup MarkKashidas;
+}   # end of kerning substitutions
 
       language KUR ; # Kurdish
         lookup KurdishHeh ;
@@ -1860,6 +1871,8 @@ feature curs {  # Cursive Positioning
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
+do if opt("nokern") != "yes";
+{   # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup LamAlefKerning;
@@ -1870,6 +1883,7 @@ feature kern {  # Kerning
         lookup ToothKashidaKerningMM;
         lookup ToothKashidaKerningIMF;
         lookup MiscKashidaKerning;
+}   # end of kerning positioning
 } kern ;
 
 

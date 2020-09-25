@@ -21,12 +21,12 @@ BUILDVERSION = BUILDLABEL  # include alpha/beta
 ftmlTest('tools/ftml-smith.xsl')
 
 # APs to omit:
-OMITAPS = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_U,_R,above,below,center,ring,through,aboveLeft,H,L,O,U,R"'
+omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_U,_R,above,below,center,ring,through,aboveLeft,H,L,O,U,R"'
 
 # smith project-specific options:
 #   --autohint - autohint the font
 #   --norename - omit glyph rename step
-opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'})
+opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'})
 
 cmds = [ ]
 if '--norename' not in opts:
@@ -34,7 +34,8 @@ if '--norename' not in opts:
 if '--autohint' in opts:
     # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
     cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
-
+noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
+noGRkern = '_nokern' if '--quick' in opts else ''
 
 # iterate over designspace
 designspace('source/ScheherazadeNew.designspace',
@@ -45,14 +46,14 @@ designspace('source/ScheherazadeNew.designspace',
 
     graphite=gdl(genout + '${DS:FILENAME_BASE}.gdl',
         depends=['source/graphite/cp1252.gdl', 'source/graphite/SchFeatures.gdh', 'source/graphite/SchGlyphs.gdh', 'source/graphite/stddef.gdh'],
-        master = 'source/graphite/master_${DS:STYLENAME}.gdl',
-        make_params = OMITAPS + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
+        master = 'source/graphite/master_${DS:STYLENAME}' + noGRkern + '.gdl',
+        make_params = omitaps + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
         params = '-d -q -e ${DS:FILENAME_BASE}_gdlerr.txt',
         ),
     opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
         mapfile = genout + "${DS:FILENAME_BASE}.map",
         master = 'source/opentype/master.feax',
-        make_params = OMITAPS,
+        make_params = omitaps + noOTkern,
         ),
     typetuner = typetuner("source/typetuner/feat_all.xml"),
     classes = 'source/classes.xml',
