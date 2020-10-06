@@ -7,7 +7,7 @@ set -e
 # Check and normalize all UFOs first -- assumes no other steps de-normalize
 echo "Fixing FontForge debris and normalizing UFOs..."
 psffixffglifs -p checkfix=fix source/masters/*-Regular.ufo  &
-psffixffglifs -p checkfix=fix source/masters/*-Light.ufo    &
+psffixffglifs -p checkfix=fix source/masters/*-Bold.ufo     &
 wait
 
 echo "Updating glyph orders in Regular..."
@@ -20,12 +20,11 @@ echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/*.designspace
 
 echo "Updating woff metadata files..."
-psfmakewoffmetadata -q -n  Alkalami        -i org.sil.fonts source/masters/*-Regular.ufo -o "source/Alkalami-WOFF-metadata.xml"
-psfmakewoffmetadata -q -n "AlkalamiLight"  -i org.sil.fonts source/masters/*-Light.ufo   -o "source/Alkalami-Light-WOFF-metadata.xml"
+psfmakewoffmetadata -q -n "ScheherazadeNew" -i org.sil.fonts source/masters/*-Regular.ufo -o "source/ScheherazadeNew-WOFF-metadata.xml"
 
 echo "Building internal fea..."
-psfmakefea -q -o source/masters/Alkalami-Regular.ufo/features.fea -l Alkalami-Regular-psfmakefea.log -i source/opentype/master.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" source/masters/*-Regular.ufo &
-psfmakefea -q -o source/masters/Alkalami-Light.ufo/features.fea   -l Alkalami-Light-psfmakefea.log   -i source/opentype/master.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" source/masters/*-Light.ufo   &
+psfmakefea -q -o source/masters/ScheherazadeNew-Regular.ufo/features.fea -l ScheherazadeNew-Regular-psfmakefea.log -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Regular.ufo &
+psfmakefea -q -o source/masters/ScheherazadeNew-Bold.ufo/features.fea    -l ScheherazadeNew-Light-psfmakefea.log   -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Bold.ufo    &
 wait
 
-echo "preflight completed!"
+echo "preflightff completed!"
