@@ -33,6 +33,16 @@ languagesystem latn dflt ;
 #  Substitution Lookups
 #**********************************
 
+#---  rtlm feature  ---
+
+lookup Mirror {
+  lookupflag IgnoreMarks ;
+    sub @cno_rtl by @c_rtl ;
+} Mirror;
+
+
+#---  ccmp feature  ---
+
 lookup SmallMaddah {
   lookupflag 0 ;
     sub @Maddah by @Maddah.small ;
@@ -65,11 +75,7 @@ lookup FontCheck2 {
 } FontCheck2;
 
 
-lookup Mirror {
-  lookupflag IgnoreMarks ;
-    sub @cno_rtl by @c_rtl ;
-} Mirror;
-
+#---  fina feature  ---
 
 lookup ltrFina {
   lookupflag IgnoreMarks ;
@@ -77,16 +83,22 @@ lookup ltrFina {
     sub @RightLinkIsol by @RightLinkFina ;
 } ltrFina;
 
+#---  medi feature  ---
+
 lookup ltrMedi {
   lookupflag IgnoreMarks ;
     sub @DualLinkIsol by @DualLinkMedi ;
 } ltrMedi;
+
+#---  init  feature  ---
 
 lookup ltrInit {
   lookupflag IgnoreMarks ;
     sub @DualLinkIsol by @DualLinkInit ;
 } ltrInit;
 
+
+#---  rlig feature  ---
 
 #********
 # Allah "ligature" (implemented by variant forms for glyphs rather than by ligature glyph):
@@ -112,7 +124,6 @@ lookup _AllahSubs3 {
 } _AllahSubs3;
 
 # Note: the shadda-alef ligature is created in a separate lookup.
-
 
 lookup AllahLigatures {
   lookupflag 0;
@@ -279,31 +290,31 @@ lookup AllahLigatures {
 # Mark glyphs not included will be skipped over when trying to find a hamzaBelow
 @HamzaBelowFilter = [@UTR53_220MCM @UTR53_220other graphemejoinercomb ] ;
 
-lookup _Ligatures_Part1_target {
+lookup _LamAlefLig_Part1 {
   lookupflag IgnoreMarks ;
     sub @LamIni by @LamIniPreAlef ;
     sub @LamMed by @LamMedPreAlef ;
-} _Ligatures_Part1_target ;
+} _LamAlefLig_Part1 ;
 
-lookup _Ligatures_Part2a_target {
+lookup _LamAlefLig_Part2a {
   lookupflag IgnoreMarks ;
     sub @AlefFin by @AlefFinPostLamIni ;
-} _Ligatures_Part2a_target ;
+} _LamAlefLig_Part2a ;
 
-lookup _Ligatures_Part2b_target {
+lookup _LamAlefLig_Part2b {
   lookupflag IgnoreMarks ;
     sub @AlefFin by @AlefFinPostLamMed ;
-} _Ligatures_Part2b_target ;
+} _LamAlefLig_Part2b ;
 
-lookup Ligatures {
+lookup LamAlefLigatures {
   lookupflag IgnoreMarks ;
   # Subtable: Ligatures\Part1
-    sub [ @LamIni @LamMed ]' lookup _Ligatures_Part1_target @AlefFin ;
+    sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
   # Subtable: Ligatures\Part2a
-    sub @LamIniPreAlef @AlefFin' lookup _Ligatures_Part2a_target ;
+    sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
   # Subtable: Ligatures\Part2b
-    sub @LamMedPreAlef @AlefFin' lookup _Ligatures_Part2b_target ;
-} Ligatures;
+    sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
+} LamAlefLigatures;
 
 
 #********
@@ -361,6 +372,9 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.allah2.medi shadda-ar' alefabove-ar'  by  shadda_alef-ar;
     sub lam-ar.allah2.medi alefabove-ar' shadda-ar'  by  shadda_alef-ar;
 } ShaddaAlefLigatures;
+
+
+#---  calt feature  ---
 
 #********
 # Language-specific shaping
@@ -422,24 +436,24 @@ lookup KirghizCALT {
 
 @MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
 
-lookup ReorderMaddaVowel1_target {
+lookup _ReorderMaddaVowel1 {
   lookupflag 0 ;
     sub @MaddaSkip by @MaddaSkip madda-ar.small ;
-} ReorderMaddaVowel1_target ;
+} _ReorderMaddaVowel1 ;
 
 lookup ReorderMaddaVowel1 {
   lookupflag 0 ;
-    sub madda-ar.small @MaddaSkip' lookup ReorderMaddaVowel1_target ;
+    sub madda-ar.small @MaddaSkip' lookup _ReorderMaddaVowel1 ;
 } ReorderMaddaVowel1;
 
-lookup ReorderMaddaVowel2_target {
+lookup _ReorderMaddaVowel2 {
   lookupflag 0 ;
     sub madda-ar.small @MaddaSkip by @MaddaSkip ;
-} ReorderMaddaVowel2_target ;
+} _ReorderMaddaVowel2 ;
 
 lookup ReorderMaddaVowel2 {
   lookupflag 0 ;
-    sub madda-ar.small' lookup ReorderMaddaVowel2_target @MaddaSkip madda-ar.small ;
+    sub madda-ar.small' lookup _ReorderMaddaVowel2  @MaddaSkip madda-ar.small ;
 } ReorderMaddaVowel2;
 
 
@@ -562,7 +576,7 @@ lookup SukunAlternates {
     sub sukun-ar from [ sukun-ar.downOpen sukun-ar.leftOpen ] ;
 } SukunAlternates;
 
-lookup AyahAlternates {
+lookup AyahAlternates {  # salt feature
   lookupflag 0 ;
     sub endofayah-ar   from [ endofayah-ar.alt    endofayah-ar.altB ] ;
     sub endofayah-ar.2 from [ endofayah-ar.alt.2  endofayah-ar.altB.2 ] ;
@@ -655,6 +669,7 @@ lookup CommaAlternates {
 #} HeadOfKhahHack;
 #----------------------
 
+#---  liga feature  ---
 
 #********
 # Shadda+kasra handling
@@ -671,7 +686,7 @@ lookup ShaddaKasraLigatures {
 #********
 # Subtending mark digits
 
-# Keep after cv82
+# Keep after cv82 (DigitAlternates)
 
 lookup SignWith_4digits_target {
   lookupflag IgnoreMarks ;
@@ -724,6 +739,8 @@ lookup SignWithDigits {
     sub @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
 } SignWithDigits;
+
+
 
 do if opt("nokern") != "yes";
 {   # start of kerning substitutions
@@ -833,44 +850,15 @@ lookup MarkKashidas {
 		sub @Tooth' lookup _InsertKashida  @MarksAbove  tehMarbuta-ar.fina;
 } MarkKashidas;
 
-}	# end of kerning substitutions
+}	# end of do - kerning substitutions
+
+
 
 #**********************************
 #  Positioning Lookups
 #**********************************
 
-lookup LamAlefConnection {
-	lookupflag IgnoreMarks RightToLeft;
-  pos cursive @entry @exit;
-} LamAlefConnection;
-
-lookup mark_to_base {
-  lookupflag 0;
-  pos base @diaA mark @_diaA;
-  pos base @diaB mark @_diaB;
-} mark_to_base;
-
-lookup alef_to_base {
-  lookupflag 0;
-  pos base @alef mark @_alef;
-} alef_to_base;
-
-lookup mark2_to_base {
-  lookupflag 0;
-  pos base @dia2B mark @_diaB;
-} mark2_to_base;
-
-@MarkFilter_diaA = [@diaA_MarkBase @_diaA];
-lookup mark_to_mark_above {
-  lookupflag UseMarkFilteringSet @MarkFilter_diaA;
-  pos mark @diaA_MarkBase mark @_diaA;
-} mark_to_mark_above;
-
-@MarkFilter_diaB = [@diaB_MarkBase @_diaB];
-lookup mark_to_mark_below {
-  lookupflag UseMarkFilteringSet @MarkFilter_diaB;
-  pos mark @diaB_MarkBase mark @_diaB;
-} mark_to_mark_below;
+#---  kern feature  ---
 
 #********
 # Subtending mark positioning
@@ -1022,7 +1010,6 @@ lookup SubtendingMarks {
     }
 
 } SubtendingMarks;
-
 
 do if opt("nokern") != "yes";
 {	# start of kerning positioning lookups
@@ -1251,7 +1238,6 @@ lookup MiscKerningWDiacs {
 		pos ae-ar.fina' lookup _kern_300  @_diaB  @KafLikeInit;
 } MiscKerningWDiacs;
 
-
 # Note that shifting in RTL works the opposite in OpenType compared to Graphite.
 
 lookup DiacShifting {
@@ -1417,7 +1403,50 @@ lookup MiscKashidaKerning {
 		#pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
 } MiscKashidaKerning;
 
-}	# end of kashida positioning lookups
+}	# end of do - kashida positioning lookups
+
+
+#---  curs feature  ---
+
+lookup LamAlefConnection {
+	lookupflag IgnoreMarks RightToLeft;
+  pos cursive @entry @exit;
+} LamAlefConnection;
+
+
+#---  mark feature  ---
+
+lookup mark_to_base {
+  lookupflag 0;
+  pos base @diaA mark @_diaA;
+  pos base @diaB mark @_diaB;
+} mark_to_base;
+
+lookup alef_to_base {
+  lookupflag 0;
+  pos base @alef mark @_alef;
+} alef_to_base;
+
+lookup mark2_to_base {
+  lookupflag 0;
+  pos base @dia2B mark @_diaB;
+} mark2_to_base;
+
+
+#---  mkmk feature  ---
+
+@MarkFilter_diaA = [@diaA_MarkBase @_diaA];
+lookup mark_to_mark_above {
+  lookupflag UseMarkFilteringSet @MarkFilter_diaA;
+  pos mark @diaA_MarkBase mark @_diaA;
+} mark_to_mark_above;
+
+@MarkFilter_diaB = [@diaB_MarkBase @_diaB];
+lookup mark_to_mark_below {
+  lookupflag UseMarkFilteringSet @MarkFilter_diaB;
+  pos mark @diaB_MarkBase mark @_diaB;
+} mark_to_mark_below;
+
 
 #**********************************
 #  FEATURES
@@ -1425,41 +1454,10 @@ lookup MiscKashidaKerning {
 
 #--- Substitution ---
 
-feature init {  # Initial Forms
-    script arab;
-      lookup ltrInit;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} init ;
+feature rtlm {  # Right-To-Left Mirrored Forms
+		lookup Mirror;
+} rtlm ;
 
-feature medi {  # Medial Forms
-    script arab;
-      lookup ltrMedi;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} medi ;
-
-feature fina {  # Terminal Forms
-    script arab;
-      lookup ltrFina;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} fina ;
 
 feature ccmp {  # Glyph Composition/Decomposition
 		# Same for latin & arabic:
@@ -1497,20 +1495,53 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup KasraHigh;
 } ccmp ;
 
-feature rtlm {  # Right-To-Left Mirrored Forms
-		lookup Mirror;
-} rtlm ;
+feature fina {  # Terminal Forms
+    script arab;
+      lookup ltrFina;
+      # Force other languages to include Arabic script lookups
+      language KIR ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
+} fina ;
+
+feature medi {  # Medial Forms
+    script arab;
+      lookup ltrMedi;
+      # Force other languages to include Arabic script lookups
+      language KIR ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
+} medi ;
+
+feature init {  # Initial Forms
+    script arab;
+      lookup ltrInit;
+      # Force other languages to include Arabic script lookups
+      language KIR ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
+} init ;
+
 
 feature rlig {  # Required Ligatures
 		# lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
     script arab;
     		lookup AllahLigatures;
-        lookup Ligatures;
+        lookup LamAlefLigatures;
+        lookup ComposeLowHamzaAbove;
+        lookup HamzaLigatures;
         lookup ShaddaLigatures;
         lookup ShaddaAlefLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
-        lookup ComposeLowHamzaAbove;
-        lookup HamzaLigatures;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
@@ -1520,10 +1551,11 @@ feature rlig {  # Required Ligatures
       language WLF ;
 } rlig ;
 
+
 feature calt {  # Contextual Alternates
 		script arab;
-        #lookup SignWithDigits;
-        # lookup SignDigits;
+        #lookup SignWithDigits;  # moved to liga feature
+        
 do if opt("nokern") != "yes";
 {   # start of kerning substitutions
         lookup ToothKashidasIM;
@@ -1783,102 +1815,6 @@ feature liga {  # Ligatures  -- we use this because liga is done in the same pas
 
 #--- Positioning ---
 
-feature mark {  # Mark to base Positioning
-    # Same for latin & arabic:
-        lookup mark_to_base;
-        lookup alef_to_base;
-    script arab;
-####        lookup AlefMark2BelowAfterLam;
-####        lookup MarkKern;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} mark ;
-
-#feature mark {  # Mark Positioning
-#    script arab;
-#        language dflt;  # Default
-#            lookup Marks;
-#            lookup MarksBelowTailDown;
-#            lookup MarksBelowTailUp;
-#            lookup AlefMark2BelowAfterLam;
-#        language KIR  exclude_dflt;  # Kirghiz
-#            lookup Marks;
-#            lookup MarksBelowTailDown;
-#            lookup MarksBelowTailUp;
-#            lookup AlefMark2BelowAfterLam;
-#        language KUR  exclude_dflt;  # Kurdish
-#            lookup Marks;
-#            lookup MarksBelowTailDown;
-#            lookup MarksBelowTailUp;
-#            lookup AlefMark2BelowAfterLam;
-#        language SND  exclude_dflt;  # Sindhi
-#            lookup Marks;
-#            lookup MarksBelowTailDown;
-#            lookup MarksBelowTailUp;
-#            lookup AlefMark2BelowAfterLam;
-#        language URD  exclude_dflt;  # Urdu
-#            lookup Marks;
-#            lookup MarksBelowTailDown;
-#            lookup MarksBelowTailUp;
-#            lookup AlefMark2BelowAfterLam;
-#    script latn;
-#        language dflt;  # Default
-#            lookup Marks;
-#            lookup AlefMark2BelowAfterLam;
-#} mark ;
-
-feature mkmk {  # Mark to mark Positioning
-    # Same for latin & arabic:
-        lookup mark_to_mark_above;
-        lookup mark_to_mark_below;
-} mkmk ;
-
-
-#feature mkmk {  # Mark to Mark Positioning
-#    script arab;
-#        language dflt;  # Default
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#        language KIR  exclude_dflt;  # Kirghiz
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#        language KUR  exclude_dflt;  # Kurdish
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#        language RHG  exclude_dflt;  # Rohingya
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#        language SND  exclude_dflt;  # Sindhi
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#        language URD  exclude_dflt;  # Urdu
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#    script latn;
-#        language dflt;  # Default
-#            lookup MarksToMarkBelow;
-#            lookup MarksToMarkAbove;
-#} mkmk ;
-
-
-feature curs {  # Cursive Positioning
-    script arab;
-      lookup LamAlefConnection;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} curs ;
-
-
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
@@ -1898,34 +1834,37 @@ do if opt("nokern") != "yes";
 } kern ;
 
 
-####feature kern {  # Kerning
-####    script arab;
-####        language dflt;  # Default
-####            lookup Reh;
-####            lookup SubtendingAyah;
-####            lookup Subtending0600;
-####            lookup Subtending0601;
-####            lookup Subtending0602;
-####            lookup Subtending0603;
-####            lookup Subtending0604;
-####            lookup Subtending0605;
-####        language KUR  exclude_dflt;  # Kurdish
-####            lookup Reh;
-####            lookup Marks;
-####            lookup SubtendingAyah;
-####            lookup Subtending0600;
-####            lookup Subtending0601;
-####            lookup Subtending0602;
-####            lookup Subtending0603;
-####            lookup Subtending0604;
-####            lookup Subtending0605;
-####        language SND  exclude_dflt;  # Sindhi
-####            ...
-####        language URD  exclude_dflt;  # Urdu
-####            ...
-####    script latn;
-####        language dflt;  # Default
-####            lookup SubtendingAyah;
-####            ...
-####} kern ;
+feature curs {  # Cursive Positioning
+    script arab;
+      lookup LamAlefConnection;
+      # Force other languages to include Arabic script lookups
+      language KIR ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
+} curs ;
 
+feature mark {  # Mark to base Positioning
+    # Same for latin & arabic:
+        lookup mark_to_base;
+        lookup alef_to_base;
+    script arab;
+####        lookup AlefMark2BelowAfterLam;
+####        lookup MarkKern;
+      # Force other languages to include Arabic script lookups
+      language KIR ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
+} mark ;
+
+
+feature mkmk {  # Mark to mark Positioning
+    # Same for latin & arabic:
+        lookup mark_to_mark_above;
+        lookup mark_to_mark_below;
+} mkmk ;
