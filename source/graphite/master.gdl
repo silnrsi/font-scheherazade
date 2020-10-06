@@ -213,8 +213,8 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
 	// All other contextual forms
 	
-	(cDualLinkIsol cDualLinkFina g_kashida_ar zeroWidthJoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar zeroWidthJoiner) > 
-		(cDualLinkInit cDualLinkMedi g_kashida_ar zeroWidthJoiner) (cDualLinkFina cRightLinkFina g_kashida_ar zeroWidthJoiner)
+	(cDualLinkIsol cDualLinkFina g_kashida_ar zeroWidthJoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar zeroWidthJoiner)
+		> (cDualLinkInit cDualLinkMedi g_kashida_ar zeroWidthJoiner) (cDualLinkFina cRightLinkFina g_kashida_ar zeroWidthJoiner)
 		/ _  MARKS ^ _ ;
 
 endpass; // 4
@@ -530,7 +530,11 @@ pass(3)
 	
 	// Loosen from following narrow initials with something below
 	cNarrowIni {advance.x += 130m} / cRehWawAll MARKS _ MARKS cAnyMarksBelow ;
-	
+
+#if (STYLE == BOLD)
+	cTooth2wBelowInit {advance.x += 150m} / cRehWawAll MARKS _ MARKS ;
+#endif
+
 	// Leave certain cases alone:
 	// Bottom of RW interferes with mark below following:
 	(cRehKernAlef cRehKernOther) / cRehWawTighten MARKS                   _ MARKS cAnyMarksBelow ;
@@ -626,7 +630,9 @@ pass(6)
 
 	cTooth cMarksAbove  _  g_teh_marbuta_ar_fina=TM  >  @1 @2 g_abs_auto_kashida:TM  @TM  / _ _ cMarksAny? _ _;
 
-	cTooth2wBelowRstrk _  >  @1 g_abs_auto_kashida:R  /  _ MARKS _ g_reh_stroke_ar_fina=R;
+	cTooth2wBelowRstrk _  >  @T  g_abs_auto_kashida:R  /  _=T  MARKS _ g_reh_stroke_ar_fina=R;
+
+	cLamLikeInitMedi _  >  @L  g_abs_auto_kashida:L  /  _=L  cMarksBelow cMarksAbove? _ ^ (cYehLikeFina cTooth2wBelowMedi);
 
 endpass; // 6
 
@@ -678,6 +684,8 @@ pass(3)	// Collisions and adjustments
 	
 	// kaf + rnoon
 	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;
+
+//	cLamLikeInitMedi g_abs_auto_kashida {adv.x -=50} (cYehLikeFina cTooth2wBelowMedi) {adv.x -=50m} / _ MARKS _ ^ _;
 	
 	
 	// Simple adjustments
@@ -759,7 +767,7 @@ pass(3)	// Collisions and adjustments
 
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
-	
+
 endpass;
 
 // End of kerning code

@@ -1,65 +1,57 @@
 <classes>
 
-    <class name="AinLikeInit">
-        ain-ar.init ghain-ar.init ainThreedots-ar.init ghainDotbelow-ar.init ainTwodotshorizontalabove-ar.init ainThreedotsdownabove-ar.init		
-        ainTwodotsverticalabove-ar.init ghainThreedots-ar.init ghainDotbelow-ar.init
+    <!-- *NEXT 4 CLASSES MUST MATCH* -->
+    <class name="AlefIso" fixed="0">
+        alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar
+        alefHamzabelow-ar  alef-ar  alefWavyhamzaabove-ar		
+        alefWavyhamzabelow-ar  highhamzaAlef-ar
+        alefWasla-ar  alefTwoabove-ar  alefThreeabove-ar 	
     </class>
 
-    <class name="AinLikeIsol">
-        ain-ar ghain-ar ainThreedots-ar ghainDotbelow-ar ainTwodotshorizontalabove-ar ainThreedotsdownabove-ar
-        ainTwodotsverticalabove-ar ghainThreedots-ar ghainDotbelow-ar
+    <class name="AlefFin" fixed="0">
+        alefMadda-ar.fina  alefMadda-ar.small.fina  alefHamzaabove-ar.fina  
+        alefHamzabelow-ar.fina  alef-ar.fina	alefWavyhamzaabove-ar.fina  
+        alefWavyhamzabelow-ar.fina  highhamzaAlef-ar.fina 
+        alefWasla-ar.fina  alefTwoabove-ar.fina		alefThreeabove-ar.fina 	
     </class>
 
-    <class name="AlefFin">
-        alefMadda-ar.fina alefMadda-ar.small.fina alefHamzaabove-ar.fina alefHamzabelow-ar.fina alef-ar.fina		
-        alefWavyhamzaabove-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina alefWasla-ar.fina alefTwoabove-ar.fina		
-        alefThreeabove-ar.fina 	
+    <class name="AlefFinPostLamIni" fixed="0">
+        alefMadda-ar.postLamIni.fina  alefMadda-ar.postLamIni.small.fina  alefHamzaabove-ar.postLamIni.fina  
+        alefHamzabelow-ar.postLamIni.fina   alef-ar.postLamIni.fina  alefWavyhamzaabove-ar.postLamIni.fina	
+        alefWavyhamzabelow-ar.postLamIni.fina highhamzaAlef-ar.postLamIni.fina
+        alefWasla-ar.postLamIni.fina	alefTwoabove-ar.postLamIni.fina  alefThreeabove-ar.postLamIni.fina 	
     </class>
 
-    <class name="AlefFinPostLamIni">
-        alefMadda-ar.postLamIni.fina alefMadda-ar.postLamIni.small.fina alefHamzaabove-ar.postLamIni.fina		
-        alefHamzabelow-ar.postLamIni.fina alef-ar.postLamIni.fina alefWavyhamzaabove-ar.postLamIni.fina		
-        alefWavyhamzabelow-ar.postLamIni.fina highhamzaAlef-ar.postLamIni.fina alefWasla-ar.postLamIni.fina		
-        alefTwoabove-ar.postLamIni.fina alefThreeabove-ar.postLamIni.fina 	
-    </class>
-
-    <class name="AlefFinPostLamMed">
-        alefMadda-ar.postLamMed.fina alefMadda-ar.postLamMed.small.fina alefHamzaabove-ar.postLamMed.fina		
-        alefHamzabelow-ar.postLamMed.fina alef-ar.postLamMed.fina alefWavyhamzaabove-ar.postLamMed.fina		
-        alefWavyhamzabelow-ar.postLamMed.fina highhamzaAlef-ar.postLamMed.fina alefWasla-ar.postLamMed.fina		
-        alefTwoabove-ar.postLamMed.fina alefThreeabove-ar.postLamMed.fina 	
+    <class name="AlefFinPostLamMed" fixed="0">
+        alefMadda-ar.postLamMed.fina  alefMadda-ar.postLamMed.small.fina  alefHamzaabove-ar.postLamMed.fina		
+        alefHamzabelow-ar.postLamMed.fina  alef-ar.postLamMed.fina  alefWavyhamzaabove-ar.postLamMed.fina		
+        alefWavyhamzabelow-ar.postLamMed.fina  highhamzaAlef-ar.postLamMed.fina
+        alefWasla-ar.postLamMed.fina  alefTwoabove-ar.postLamMed.fina  alefThreeabove-ar.postLamMed.fina 	
     </class>
 
     <class name="AlefFinPostLamAll">
-        @AlefFinPostLamIni @AlefFinPostLamMed 	
+        @AlefFinPostLamIni  @AlefFinPostLamMed 	
     </class>
 
-    <class name="AlefIso">
-        alefMadda-ar alefMadda-ar.small alefHamzaabove-ar alefHamzabelow-ar alef-ar alefWavyhamzaabove-ar		
-        alefWavyhamzabelow-ar highhamzaAlef-ar alefWasla-ar alefTwoabove-ar alefThreeabove-ar 	
+		<!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <class name="AlefMark" fixed="0">
+        madda-ar  madda-ar.small  hamzaabove-ar  hamzabelow-ar 	
     </class>
 
-    <class name="AlefLamWBelow">  <!-- reh/waw kerning -->
-    	alefHamzabelow-ar alefWavyhamzabelow-ar lamThreedotsbelow-ar lamThreedotsbelow-ar.init
-    </class>
-    
-    <class name="AlefMark">
-        madda-ar madda-ar.small hamzaabove-ar hamzabelow-ar 	
+    <class name="AlefPlusMark" fixed="0">
+        alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar  alefHamzabelow-ar 	
     </class>
 
-    <class name="AlefPlusMark">
-        alefMadda-ar alefMadda-ar.small alefHamzaabove-ar alefHamzabelow-ar 	
-    </class>
-
-    <class name="Ayah">
+		<!-- *NEXT 3 CLASSES MUST MATCH* -->
+    <class name="Ayah" fixed="0">
         endofayah-ar endofayah-ar.2 endofayah-ar.3 	
     </class>
 
-    <class name="Ayah.alt">
+    <class name="Ayah.alt" fixed="0">
         endofayah-ar.alt endofayah-ar.alt.2 endofayah-ar.alt.3 	
     </class>
 
-    <class name="Ayah.altB">
+    <class name="Ayah.altB" fixed="0">
         endofayah-ar.altB endofayah-ar.altB.2 endofayah-ar.altB.3 	
     </class>
 
@@ -75,105 +67,116 @@
     </class>
     -->
     
-    <class name="DalIso">
-        dal-ar thal-ar ddal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dahal-ar ddahal-ar dul-ar		
-        dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar		
-        dalThreedotsbelow-ar 	
+    <!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <class name="DalIso" fixed="0">
+        dal-ar  thal-ar  ddal-ar  dalRing-ar  dalDotbelow-ar  dalDotbelowTah-ar
+        dahal-ar  ddahal-ar  dul-ar	 dalThreedotsdown-ar  dalFourdots-ar
+        dalVinvertedabove-ar  dalTwodotsverticalbelowTah-ar
+        dalVinvertedbelow-ar	dalThreedotsbelow-ar 	
     </class>
 
-    <class name="DalIso.sen">
-        dal-ar.loclWLF thal-ar.loclWLF ddal-ar.loclWLF dalRing-ar.loclWLF dalDotbelow-ar.loclWLF dalDotbelowTah-ar.loclWLF dahal-ar.loclWLF ddahal-ar.loclWLF		
-        dul-ar.loclWLF dalThreedotsdown-ar.loclWLF dalFourdots-ar.loclWLF dalVinvertedabove-ar.loclWLF dalTwodotsverticalbelowTah-ar.loclWLF		
-        dalVinvertedbelow-ar.loclWLF dalThreedotsbelow-ar.loclWLF 	
+    <class name="DalIso.sen" fixed="0">
+        dal-ar.loclWLF  thal-ar.loclWLF  ddal-ar.loclWLF  dalRing-ar.loclWLF  dalDotbelow-ar.loclWLF  dalDotbelowTah-ar.loclWLF
+        dahal-ar.loclWLF  ddahal-ar.loclWLF	 dul-ar.loclWLF  dalThreedotsdown-ar.loclWLF  dalFourdots-ar.loclWLF
+        dalVinvertedabove-ar.loclWLF  dalTwodotsverticalbelowTah-ar.loclWLF		
+        dalVinvertedbelow-ar.loclWLF  dalThreedotsbelow-ar.loclWLF 	
     </class>
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="Damma">
-        damma-ar shadda_damma-ar hamza_damma-ar 	
+    <class name="Damma" fixed="0">
+        damma-ar  shadda_damma-ar  hamza_damma-ar 	
     </class>
 
-    <class name="Damma_filled">
-        damma-ar.filled shadda_damma-ar.filled hamza_damma-ar.filled 	
+    <class name="Damma_filled" fixed="0">
+        damma-ar.filled  shadda_damma-ar.filled  hamza_damma-ar.filled 	
     </class>
 
-    <class name="Damma_short">
-        damma-ar.short shadda_damma-ar.short hamza_damma-ar.short 	
+    <class name="Damma_short" fixed="0">
+        damma-ar.short  shadda_damma-ar.short  hamza_damma-ar.short 	
     </class>
 
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Dammatan">
-        dammatan-ar shadda_dammatan-ar 	
+    <class name="Dammatan" fixed="0">
+        dammatan-ar  shadda_dammatan-ar 	
     </class>
 
-    <class name="Dammatan.sixNine">
-        dammatan-ar.sixNine shadda_dammatan-ar.sixNine 	
-    </class>
-
-		<!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsArabic">
-        zero-ar one-ar two-ar three-ar four-ar five-ar six-ar seven-ar eight-ar nine-ar 	
-    </class>
-
-    <class name="DigitsArabicMedium">
-        zero-ar.medium one-ar.medium two-ar.medium three-ar.medium four-ar.medium five-ar.medium six-ar.medium seven-ar.medium		
-        eight-ar.medium nine-ar.medium 	
-    </class>
-
-    <class name="DigitsArabicSmall">
-        zero-ar.small one-ar.small two-ar.small three-ar.small four-ar.small five-ar.small six-ar.small seven-ar.small eight-ar.small		
-        nine-ar.small 	
+    <class name="Dammatan.sixNine" fixed="0">
+        dammatan-ar.sixNine  shadda_dammatan-ar.sixNine 	
     </class>
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsEastern">
-        zero-persian one-persian two-persian three-persian four-persian four-persian.urdu four-persian.roh		
-        five-persian six-persian six-persian.urdu seven-persian seven-persian.urdu eight-persian nine-persian 	
+    <class name="DigitsArabic" fixed="0">
+        zero-ar  one-ar  two-ar  three-ar  four-ar
+        five-ar  six-ar  seven-ar  eight-ar  nine-ar 	
     </class>
 
-    <class name="DigitsEasternMedium">
-        zero-persian.medium one-persian.medium two-persian.medium three-persian.medium four-persian.medium		
-        four-persian.urdu.medium four-persian.roh.medium five-persian.medium six-persian.medium six-persian.urdu.medium		
-        seven-persian.medium seven-persian.urdu.medium eight-persian.medium nine-persian.medium 	
+    <class name="DigitsArabicMedium" fixed="0">
+        zero-ar.medium  one-ar.medium  two-ar.medium  three-ar.medium  four-ar.medium
+        five-ar.medium  six-ar.medium seven-ar.medium	 eight-ar.medium  nine-ar.medium 	
     </class>
 
-    <class name="DigitsEasternSmall">
-        zero-persian.small one-persian.small two-persian.small three-persian.small four-persian.small four-persian.urdu.small		
-        four-persian.roh.small five-persian.small six-persian.small six-persian.urdu.small seven-persian.small		
-        seven-persian.urdu.small eight-persian.small nine-persian.small 	
-    </class>
-
-		<!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsLatin">
-        zero one two three four five six seven eight nine 	
-    </class>
-
-    <class name="DigitsLatinMedium">
-        zero.medium one.medium two.medium three.medium four.medium five.medium six.medium seven.medium eight.medium nine.medium 	
-    </class>
-
-    <class name="DigitsLatinSmall">
-        zero.small one.small two.small three.small four.small five.small six.small seven.small eight.small nine.small 	
+    <class name="DigitsArabicSmall" fixed="0">
+        zero-ar.small  one-ar.small  two-ar.small  three-ar.small  four-ar.small
+        five-ar.small  six-ar.small seven-ar.small  eight-ar.small  nine-ar.small 	
     </class>
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsAny">
-        @DigitsArabic @DigitsEastern @DigitsLatin 	
+    <class name="DigitsEastern" fixed="0">
+        zero-persian  one-persian  two-persian  three-persian  four-persian
+        four-persian.urdu  four-persian.roh		
+        five-persian  six-persian  six-persian.urdu  seven-persian  seven-persian.urdu
+        eight-persian  nine-persian 	
     </class>
 
-    <class name="DigitsAnyMedium">
-        @DigitsArabicMedium @DigitsEasternMedium @DigitsLatinMedium 	
+    <class name="DigitsEasternMedium" fixed="0">
+        zero-persian.medium  one-persian.medium  two-persian.medium  three-persian.medium  four-persian.medium		
+        four-persian.urdu.medium  four-persian.roh.medium
+        five-persian.medium  six-persian.medium  six-persian.urdu.medium  seven-persian.medium  seven-persian.urdu.medium
+        eight-persian.medium  nine-persian.medium 	
     </class>
 
-    <class name="DigitsAnySmall">
-        @DigitsArabicSmall @DigitsEasternSmall @DigitsLatinSmall 	
+    <class name="DigitsEasternSmall" fixed="0">
+        zero-persian.small  one-persian.small  two-persian.small  three-persian.small  four-persian.small
+        four-persian.urdu.small  four-persian.roh.small
+        five-persian.small  six-persian.small  six-persian.urdu.small  seven-persian.small  seven-persian.urdu.small 	
+        eight-persian.small  nine-persian.small 	
+    </class>
+
+		<!-- *NEXT 3 CLASSES MUST MATCH* -->
+    <class name="DigitsLatin" fixed="0">
+        zero  one  two  three  four
+        five  six  seven  eight  nine 	
+    </class>
+
+    <class name="DigitsLatinMedium" fixed="0">
+        zero.medium  one.medium  two.medium  three.medium  four.medium
+        five.medium  six.medium  seven.medium  eight.medium  nine.medium 	
+    </class>
+
+    <class name="DigitsLatinSmall" fixed="0">
+        zero.small  one.small  two.small  three.small  four.small
+        five.small  six.small  seven.small  eight.small  nine.small 	
+    </class>
+
+		<!-- *NEXT 3 CLASSES MUST MATCH* -->
+    <class name="DigitsAny" fixed="0">
+        @DigitsArabic  @DigitsEastern  @DigitsLatin 	
+    </class>
+
+    <class name="DigitsAnyMedium" fixed="0">
+        @DigitsArabicMedium  @DigitsEasternMedium  @DigitsLatinMedium 	
+    </class>
+
+    <class name="DigitsAnySmall" fixed="0">
+        @DigitsArabicSmall  @DigitsEasternSmall  @DigitsLatinSmall 	
     </class>
 
     <class name="DigitsAnyMedOrSmall">
-        @DigitsAnyMedium @DigitsAnySmall 	
+        @DigitsAnyMedium  @DigitsAnySmall 	
     </class>
 
 		<!-- *NEXT 4 CLASSES MUST MATCH* -->
-    <class name="DualLinkIsol">
+    <class name="DualLinkIsol" fixed="0">
         yehbarreeTwoabove-ar yehbarreeThreeabove-ar yehHamzaabove-ar yeh-ar yeh-ar.noDots 
         highhamzaYeh-ar yeh-farsi yehTwoabove-farsi yehThreeabove-farsi yehVinverted-farsi 
         yehTwodotsabove-farsi yehThreedotsabove-farsi yehVabove-ar e-ar yehThreedotsbelow-ar 
@@ -203,7 +206,7 @@
         jeemThreedotsbelow-ar ghainThreedots-ar qafAfricanThreedotsabove-ar kehehVabove-ar lamTahabove-ar
     </class>
     
-    <class name="DualLinkFina">
+    <class name="DualLinkFina" fixed="0">
         yehbarreeTwoabove-ar.fina yehbarreeThreeabove-ar.fina yehHamzaabove-ar.fina yeh-ar.fina yeh-ar.noDots.fina		
         highhamzaYeh-ar.fina yeh-farsi.fina yehTwoabove-farsi.fina yehThreeabove-farsi.fina yehVinverted-farsi.fina		
         yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina yehVabove-ar.fina e-ar.fina yehThreedotsbelow-ar.fina		
@@ -233,7 +236,7 @@
         jeemThreedotsbelow-ar.fina ghainThreedots-ar.fina qafAfricanThreedotsabove-ar.fina kehehVabove-ar.fina lamTahabove-ar.fina
     </class>
 
-    <class name="DualLinkMedi">
+    <class name="DualLinkMedi" fixed="0">
         yehbarreeTwoabove-ar.medi yehbarreeThreeabove-ar.medi yehHamzaabove-ar.medi yeh-ar.medi yeh-ar.noDots.medi		
         highhamzaYeh-ar.medi yeh-farsi.medi yehTwoabove-farsi.medi yehThreeabove-farsi.medi yehVinverted-farsi.medi		
         yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehVabove-ar.medi e-ar.medi yehThreedotsbelow-ar.medi		
@@ -266,7 +269,7 @@
         jeemThreedotsbelow-ar.medi ghainThreedots-ar.medi qafAfricanThreedotsabove-ar.medi kehehVabove-ar.medi lamTahabove-ar.medi
     </class>
 
-    <class name="DualLinkInit">
+    <class name="DualLinkInit" fixed="0">
         yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init		
         highhamzaYeh-ar.init yeh-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehVinverted-farsi.init		
         yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehVabove-ar.init e-ar.init yehThreedotsbelow-ar.init		
@@ -310,12 +313,13 @@
         hamzaabove-ar 	
     </class>
 
-    <class name="HamzaLigatures">
-        hamza_fatha-ar hamza_damma-ar hamza_damma-ar.short hamza_damma-ar.filled 	
+		<!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <class name="HamzaLigatures" fixed="0">
+        hamza_fatha-ar  hamza_damma-ar  hamza_damma-ar.short  hamza_damma-ar.filled 	
     </class>
 
-    <class name="HamzaMarks">
-        fatha-ar damma-ar damma-ar.short damma-ar.filled 	
+    <class name="HamzaMarks" fixed="0">
+        fatha-ar  damma-ar  damma-ar.short  damma-ar.filled 	
     </class>
 
     <class name="HamzaLigatureParts">
@@ -498,135 +502,137 @@
 		-->
 		
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Jeh">
-        jeh-ar jeh-ar.fina 	
+    <class name="Jeh" fixed="0">
+        jeh-ar  jeh-ar.fina 	
     </class>
 
-    <class name="Jeh.dotHat">
-        zainVinvertedabove-ar zainVinvertedabove-ar.fina 	
+    <class name="Jeh.dotHat" fixed="0">
+        zainVinvertedabove-ar  zainVinvertedabove-ar.fina 	
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Kasra">
-        kasra-ar kasratan-ar
+    <class name="Kasra" fixed="0">
+        kasra-ar  kasratan-ar
     </class>
     
-    <class name="Kasra_lowered">
-        kasra-ar.lowered kasratan-ar.lowered
+    <class name="Kasra_lowered" fixed="0">
+        kasra-ar.lowered  kasratan-ar.lowered
     </class>
     
-    <class name="LamFin">
-        lam-ar.fina lamVabove-ar.fina lamDotabove-ar.fina lamThreedotsabove-ar.fina lamThreedotsbelow-ar.fina 
-        lamBar-ar.fina lamDoublebar-ar.fina lamTahabove-ar.fina
+		
+    <!-- *NEXT 6 CLASSES MUST MATCH* -->
+    <class name="LamIso" fixed="0">
+        lam-ar  lamVabove-ar lamDotabove-ar  lamThreedotsabove-ar
+        lamThreedotsbelow-ar  lamBar-ar  lamDoublebar-ar  lamTahabove-ar
     </class>
 
-    <class name="LamIni">
-        lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamThreedotsbelow-ar.init
-        lamBar-ar.init lamDoublebar-ar.init	lamTahabove-ar.init
+    <!-- also used for collision fixing -->
+    <class name="LamIni" fixed="0">
+        lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init  
+        lamThreedotsbelow-ar.init  lamBar-ar.init  lamDoublebar-ar.init	lamTahabove-ar.init
     </class>
 
-    <class name="LamIniPreAlef">
-        lam-ar.preAlef.init lamVabove-ar.preAlef.init lamDotabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init		
-        lamThreedotsbelow-ar.preAlef.init lamBar-ar.preAlef.init lamDoublebar-ar.preAlef.init lamTahabove-ar.preAlef.init	
+    <class name="LamIniPreAlef" fixed="0">
+        lam-ar.preAlef.init  lamVabove-ar.preAlef.init  lamDotabove-ar.preAlef.init  lamThreedotsabove-ar.preAlef.init		
+        lamThreedotsbelow-ar.preAlef.init  lamBar-ar.preAlef.init  lamDoublebar-ar.preAlef.init  lamTahabove-ar.preAlef.init	
     </class>
 
-    <class name="LamIso">
-        lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamBar-ar lamDoublebar-ar lamTahabove-ar
+    <!-- also used for collision fixing -->
+    <class name="LamMed" fixed="0">
+        lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi 
+        lamThreedotsbelow-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi  lamTahabove-ar.medi
     </class>
 
-    <class name="LamMed">
-        lam-ar.medi lamVabove-ar.medi lamDotabove-ar.medi lamThreedotsabove-ar.medi lamThreedotsbelow-ar.medi 
-        lamBar-ar.medi lamDoublebar-ar.medi	lamTahabove-ar.medi
+    <class name="LamMedPreAlef" fixed="0">
+        lam-ar.preAlef.medi  lamVabove-ar.preAlef.medi  lamDotabove-ar.preAlef.medi  lamThreedotsabove-ar.preAlef.medi		
+        lamThreedotsbelow-ar.preAlef.medi  lamBar-ar.preAlef.medi  lamDoublebar-ar.preAlef.medi  lamTahabove-ar.preAlef.medi
     </class>
 
-    <class name="LamMedPreAlef">
-        lam-ar.preAlef.medi lamVabove-ar.preAlef.medi lamDotabove-ar.preAlef.medi lamThreedotsabove-ar.preAlef.medi		
-        lamThreedotsbelow-ar.preAlef.medi lamBar-ar.preAlef.medi lamDoublebar-ar.preAlef.medi lamTahabove-ar.preAlef.medi
+    <class name="LamFin" fixed="0">
+        lam-ar.fina  lamVabove-ar.fina  lamDotabove-ar.fina  lamThreedotsabove-ar.fina  lamThreedotsbelow-ar.fina 
+        lamBar-ar.fina  lamDoublebar-ar.fina  lamTahabove-ar.fina
     </class>
-
-    <class name="Lam">
-        @LamFin @LamIniPreAlef @LamIso @LamMed @LamMedPreAlef 	
-    </class>
-
 
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="LowHamzaBase">
+    <class name="LowHamzaBase" fixed="0">
         waw-ar yeh-ar ae-ar hehgoal-ar
         waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina 
         yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init 	
     </class>
 
-    <class name="LowHamzaComposed">
+    <class name="LowHamzaComposed" fixed="0">
         wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar
         wawHamzaabove-ar.fina yehHamzaabove-ar.fina hehHamzaabove-ar.fina hehgoalHamzaabove-ar.fina 
         yehHamzaabove-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init hehgoalHamzaabove-ar.init 	
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Maddah">
+    <class name="Maddah" fixed="0">
         alefMadda-ar alefMadda-ar.fina madda-ar alefMadda-ar.postLamIni.fina 
         alefMadda-ar.postLamMed.fina 	
     </class>
 
-    <class name="Maddah.small">
+    <class name="Maddah.small" fixed="0">
         alefMadda-ar.small alefMadda-ar.small.fina madda-ar.small alefMadda-ar.postLamIni.small.fina		
         alefMadda-ar.postLamMed.small.fina 	
     </class>
     
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Meem">
+    <class name="Meem" fixed="0">
         meem-ar  meemDotabove-ar  meemDotbelow-ar  meemThreedotsabove-ar meem-ar.fina 
         meemDotabove-ar.fina  meemDotbelow-ar.fina  meemThreedotsabove-ar.fina 	
     </class>
 
-    <class name="Meem.sindhi">
+    <class name="Meem.sindhi" fixed="0">
         meem-ar.sindhi  meemDotabove-ar.sindhi  meemDotbelow-ar.sindhi  meemThreedotsabove-ar.sindhi  meem-ar.sindhi.fina		
         meemDotabove-ar.sindhi.fina  meemDotbelow-ar.sindhi.fina  meemThreedotsabove-ar.sindhi.fina 	
     </class>
     
-    <class name="RightLinkFina">
-        alefMadda-ar.fina alefMadda-ar.small.fina alefHamzaabove-ar.fina alefHamzabelow-ar.fina alef-ar.fina		
-        alefWavyhamzaabove-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina alefWasla-ar.fina alefTwoabove-ar.fina		
-        alefThreeabove-ar.fina wawHamzaabove-ar.fina waw-ar.fina highhamzaWaw-ar.fina uHamzaabove-ar.fina wawring-ar.fina kirghizoe-ar.fina		
-        oe-ar.fina u-ar.fina yu-ar.fina kirghizyu-ar.fina wawTwodots-ar.fina ve-ar.fina wawDotabove-ar.fina wawTwoabove-ar.fina		
-        wawThreeAbove-ar.fina wawDotcenter-ar.fina dal-ar.fina thal-ar.fina ddal-ar.fina dalRing-ar.fina dalDotbelow-ar.fina		
-        dalDotbelowTah-ar.fina dahal-ar.fina ddahal-ar.fina dul-ar.fina dalThreedotsdown-ar.fina dalFourdots-ar.fina		
-        dalVinvertedabove-ar.fina dalTwodotsverticalbelowTah-ar.fina dalVinvertedbelow-ar.fina dalThreedotsbelow-ar.fina reh-ar.fina zain-ar.fina rreh-ar.fina		
-        rehNoonabove-ar.fina rehv-ar.fina rehRing-ar.fina rehDotbelow-ar.fina rehVbelow-ar.fina rehDotbelowdotabove-ar.fina		
-        rehTwodots-ar.fina jeh-ar.fina rehFourdots-ar.fina rehTwodotsverticalabove-ar.fina rehHamzaabove-ar.fina rehTwodotshorizontalaboveTahabove-ar.fina		
-        zainVinvertedabove-ar.fina rehVinvertedabove-ar.fina rehStroke-ar.fina rehLoop-ar.fina yehTail-ar.fina wawStraight-ar.fina yehbarree-ar.fina		
-        yehbarreeHamzaabove-ar.fina yehRohingya-ar.fina ae-ar.fina tehMarbuta-ar.fina hehHamzaabove-ar.fina tehMarbutagoal-ar.fina 	
+    <!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <class name="RightLinkFina" fixed="0">
+        alefMadda-ar.fina  alefMadda-ar.small.fina  alefHamzaabove-ar.fina  alefHamzabelow-ar.fina  alef-ar.fina		
+        alefWavyhamzaabove-ar.fina  alefWavyhamzabelow-ar.fina  highhamzaAlef-ar.fina  alefWasla-ar.fina  alefTwoabove-ar.fina		
+        alefThreeabove-ar.fina  wawHamzaabove-ar.fina  waw-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina  wawring-ar.fina  kirghizoe-ar.fina		
+        oe-ar.fina  u-ar.fina  yu-ar.fina  kirghizyu-ar.fina  wawTwodots-ar.fina  ve-ar.fina  wawDotabove-ar.fina  wawTwoabove-ar.fina		
+        wawThreeAbove-ar.fina  wawDotcenter-ar.fina  dal-ar.fina  thal-ar.fina  ddal-ar.fina  dalRing-ar.fina  dalDotbelow-ar.fina		
+        dalDotbelowTah-ar.fina  dahal-ar.fina  ddahal-ar.fina  dul-ar.fina  dalThreedotsdown-ar.fina  dalFourdots-ar.fina		
+        dalVinvertedabove-ar.fina  dalTwodotsverticalbelowTah-ar.fina  dalVinvertedbelow-ar.fina  dalThreedotsbelow-ar.fina  reh-ar.fina  zain-ar.fina
+        rreh-ar.fina	rehNoonabove-ar.fina  rehv-ar.fina  rehRing-ar.fina  rehDotbelow-ar.fina  rehVbelow-ar.fina  rehDotbelowdotabove-ar.fina		
+        rehTwodots-ar.fina  jeh-ar.fina  rehFourdots-ar.fina  rehTwodotsverticalabove-ar.fina  rehHamzaabove-ar.fina  rehTwodotshorizontalaboveTahabove-ar.fina		
+        zainVinvertedabove-ar.fina  rehVinvertedabove-ar.fina  rehStroke-ar.fina  rehLoop-ar.fina  yehTail-ar.fina  wawStraight-ar.fina  yehbarree-ar.fina		
+        yehbarreeHamzaabove-ar.fina  yehRohingya-ar.fina  ae-ar.fina  tehMarbuta-ar.fina  hehHamzaabove-ar.fina  tehMarbutagoal-ar.fina 	
     </class>
 
-    <class name="RightLinkIsol">
-        alefMadda-ar alefMadda-ar.small alefHamzaabove-ar alefHamzabelow-ar alef-ar alefWavyhamzaabove-ar		
-        alefWavyhamzabelow-ar highhamzaAlef-ar alefWasla-ar alefTwoabove-ar alefThreeabove-ar wawHamzaabove-ar waw-ar		
-        highhamzaWaw-ar uHamzaabove-ar wawring-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar wawTwodots-ar ve-ar		
-        wawDotabove-ar wawTwoabove-ar wawThreeAbove-ar wawDotcenter-ar dal-ar thal-ar ddal-ar dalRing-ar dalDotbelow-ar		
-        dalDotbelowTah-ar dahal-ar ddahal-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar		
-        dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar dalThreedotsbelow-ar reh-ar zain-ar rreh-ar rehNoonabove-ar		
-        rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar		
-        rehFourdots-ar rehTwodotsverticalabove-ar rehHamzaabove-ar rehTwodotshorizontalaboveTahabove-ar zainVinvertedabove-ar rehVinvertedabove-ar rehStroke-ar rehLoop-ar		
-        yehTail-ar wawStraight-ar yehbarree-ar yehbarreeHamzaabove-ar yehRohingya-ar ae-ar tehMarbuta-ar hehHamzaabove-ar		
-        tehMarbutagoal-ar 	
+    <class name="RightLinkIsol" fixed="0">
+        alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar  alefHamzabelow-ar  alef-ar
+        alefWavyhamzaabove-ar	 alefWavyhamzabelow-ar  highhamzaAlef-ar  alefWasla-ar  alefTwoabove-ar
+        alefThreeabove-ar  wawHamzaabove-ar  waw-ar	highhamzaWaw-ar  uHamzaabove-ar  wawring-ar  kirghizoe-ar
+        oe-ar  u-ar  yu-ar  kirghizyu-ar  wawTwodots-ar  ve-ar  wawDotabove-ar  wawTwoabove-ar
+        wawThreeAbove-ar  wawDotcenter-ar  dal-ar  thal-ar  ddal-ar  dalRing-ar  dalDotbelow-ar		
+        dalDotbelowTah-ar  dahal-ar  ddahal-ar  dul-ar  dalThreedotsdown-ar  dalFourdots-ar
+        dalVinvertedabove-ar  dalTwodotsverticalbelowTah-ar  dalVinvertedbelow-ar  dalThreedotsbelow-ar  reh-ar  zain-ar
+        rreh-ar  rehNoonabove-ar  rehv-ar  rehRing-ar  rehDotbelow-ar  rehVbelow-ar  rehDotbelowdotabove-ar
+        rehTwodots-ar  jeh-ar	 rehFourdots-ar  rehTwodotsverticalabove-ar  rehHamzaabove-ar  rehTwodotshorizontalaboveTahabove-ar
+        zainVinvertedabove-ar  rehVinvertedabove-ar  rehStroke-ar  rehLoop-ar  yehTail-ar  wawStraight-ar  yehbarree-ar
+        yehbarreeHamzaabove-ar  yehRohingya-ar  ae-ar  tehMarbuta-ar  hehHamzaabove-ar  tehMarbutagoal-ar 	
     </class>
 
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="ShaddaKasraLigatures">
+    <class name="ShaddaKasraLigatures" fixed="0">
         shadda_kasratan-ar shadda_kasra-ar 	
     </class>
 
-    <class name="ShaddaKasraMarks">
+    <class name="ShaddaKasraMarks" fixed="0">
         kasratan-ar kasra-ar 	
     </class>
 
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
 		<!-- shadda-alef combination is only used for Allah ligature, so it is not included here. -->
-    <class name="ShaddaLigatures">
+    <class name="ShaddaLigatures" fixed="0">
         shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar 	
     </class>
 
-    <class name="ShaddaMarks">
+    <class name="ShaddaMarks" fixed="0">
         fathatan-ar dammatan-ar fatha-ar damma-ar 	
     </class>
 
@@ -830,6 +836,20 @@
     Kerning and collision fixing
     ============================
     -->
+    
+    <class name="AinLikeInit">
+        ain-ar.init ghain-ar.init ainThreedots-ar.init ghainDotbelow-ar.init ainTwodotshorizontalabove-ar.init ainThreedotsdownabove-ar.init		
+        ainTwodotsverticalabove-ar.init ghainThreedots-ar.init ghainDotbelow-ar.init
+    </class>
+
+    <class name="AinLikeIsol">
+        ain-ar ghain-ar ainThreedots-ar ghainDotbelow-ar ainTwodotshorizontalabove-ar ainThreedotsdownabove-ar
+        ainTwodotsverticalabove-ar ghainThreedots-ar ghainDotbelow-ar
+    </class>
+    
+    <class name="AlefLamWBelow">  <!-- reh/waw kerning -->
+    	alefHamzabelow-ar alefWavyhamzabelow-ar lamThreedotsbelow-ar lamThreedotsbelow-ar.init
+    </class>
 
 		<!-- Narrow initials for reh/waw kerning - loosen when there is a mark below. -->
     <class name="NarrowIni">
@@ -1123,6 +1143,10 @@
     	lamThreedotsbelow-ar  lamBar-ar  lamDoublebar-ar
     	lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init  lamTahabove-ar.init
     	lamThreedotsbelow-ar.init  lamBar-ar.init  lamDoublebar-ar.init
+    </class>
+    
+    <class name="LamLikeInitMedi">
+    	@LamIni @LamMed
     </class>
     
     <class name="RehLikeIsol">

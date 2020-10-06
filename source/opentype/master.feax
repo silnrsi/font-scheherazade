@@ -540,7 +540,7 @@ lookup DammatanAlternate {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
-  	#   0=default (filled);              1=hollow;              2=filled
+  	#   0=default (filled);        1=hollow;                2=filled
     sub dammainverted-ar      from [ dammainverted-ar.open  dammainverted-ar ];
     sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
 } DammaInvertedAlternates;
@@ -1065,6 +1065,10 @@ lookup _kern140 {
   pos @Tooth  <140 0  140 0>;
 } _kern140;
 
+lookup _kern150 {
+  pos @RehWawAll  <150 0  150 0>;
+} _kern150;
+
 lookup _kern170 {
   pos @RehWawAll         <170 0  170 0>;
   pos alef-ar            <170 0  170 0>;
@@ -1156,7 +1160,14 @@ ifinfo(styleName, "Regular") {
 	pos @RehWawAll' lookup _kern130                      @NarrowIni @_diaB ;
 	pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni @_diaB ;
 	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
-	
+
+ifinfo(styleName, "Bold") {
+	# Loosen from following narrow initials with dots below:
+	pos @RehWawAll' lookup _kern150                      @Tooth2wBelowInit ;
+	pos @RehWawAll' lookup _kern150 @MarksAny            @Tooth2wBelowInit ;
+	pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @Tooth2wBelowInit ;
+}
+
 	# Leave certain cases alone:
 	ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
 	ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            

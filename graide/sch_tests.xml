@@ -3,7 +3,7 @@
 <ftml version="1.0">
   <head>
     <columns comment="30%" label="15%" string="50%" style="5%" />
-    <fontsrc>url(..\results\Sch-Reg-graide.ttf)</fontsrc>
+    <fontsrc>url(..\results\Sch-Bold-graide.ttf)</fontsrc>
     <styles>
       <style feats="eofa=2" name="fset1339" />
       <style feats="cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv12=0 cv44=0 cv48=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 gr1m=0 dsel=1 invs=0" name="fset1385" />
@@ -311,15 +311,12 @@
       <string>جل جلاله   ﷻ </string>
     </test>
   </testgroup>
-  <testgroup label="inter-word kerning">
+  <testgroup label="inter-segment kerning">
     <test background="#55aaff" class="fset1389" label="REH / WAW" rtl="True">
       <string />
     </test>
     <test class="fset1389" label="no change" rtl="True">
       <string>وپب مرࣆ رݙ وڛ رݡ وݠب</string>
-    </test>
-    <test class="fset1389" label="reh yeh" rtl="True">
-      <string>ریب</string>
     </test>
     <test class="fset1389" label="reh ain" rtl="True">
       <string>رع</string>
@@ -341,6 +338,9 @@
     </test>
     <test class="fset1389" label="RW  narrow-ini + mark-below - loosen" rtl="True">
       <string>ۄیٕس ژڣٖض ڙلِت</string>
+    </test>
+    <test class="fset1403" label="RW yeh-init" rtl="True">
+      <string>طَوِيلَةْ  ریب</string>
     </test>
     <test class="fset1389" label="RW - don't change - tail / mark below" rtl="True">
       <string>ژفٖض ڙلِ</string>
@@ -436,7 +436,7 @@
       <string>لاجل لاڇل لاځل لاݗل </string>
     </test>
   </testgroup>
-  <testgroup label="intra-word collisions">
+  <testgroup label="intra-segment collisions">
     <test background="#55aaff" class="fset1403" label="WAW + KAF" rtl="True">
       <string />
     </test>
@@ -502,6 +502,12 @@
     </test>
     <test class="fset1389" label="jeem/tcheh/noon + reh-tah" rtl="True">
       <string>جڑ بچّڑ بنڑ</string>
+    </test>
+    <test background="#55aaff" class="fset1403" label="DIACRITICS" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="lam lower-diac yeh" rtl="True">
+      <string>لِلْوَالِي  لِيسِيَاسْ</string>
     </test>
     <test background="#55aaff" class="fset1403" label="TAKHALLUS" rtl="True">
       <string />
