@@ -231,29 +231,29 @@ pass(5)	// Features, special behaviors
 	
 	// alefIso-lam-lam-heh
 	g_alef_ar  g_lam_ar_init  g_lam_ar_medi  _  _  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_alef_ar_allah  g_lam_ar_allah1_init  g_lam_ar_allah2_medi=L  g_shadda_ar:L  g_alefabove_ar:L  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina) 
+		> g_alef_ar_allah  g_lam_ar_init_allah1  g_lam_ar_medi_allah2=L  g_shadda_ar:L  g_alefabove_ar:L  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah) 
 		/ _ MARKS _ _ _ _ _;
 
 	// Rule 2:
 
 	// lamInit-lam-shadda-alef-heh
 	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_allah1_init  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		> g_lam_ar_init_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
 		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
 
 	// lamInit-lam-alef-shadda-heh
 	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_allah1_init  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		> g_lam_ar_init_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
 		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
 
 	// lamMedi-lam-shadda-alef-heh
 	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_allah1_medi  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		> g_lam_ar_medi_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
 		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
 
 	// lamMedi-lam-alef-shadda-heh
 	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_allah1_medi  g_lam_ar_allah2_medi  (g_heh_ar_allah_fina g_hehgoal_ar_allah_fina)
+		> g_lam_ar_medi_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
 		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
 	
 	// Features
@@ -367,10 +367,10 @@ endpass; // 5
 
 pass(6)
 	// Allah clean-up.
-	(g_alef_ar  g_alef_ar_fina)                >  (g_alef_ar_allah g_alef_ar_allah_fina)          /  _  MARKS  g_lam_ar_allah1_init;
-	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_allah_fina):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_allah1_init;
+	(g_alef_ar  g_alef_ar_fina)                >  (g_alef_ar_allah g_alef_ar_fina_allah)          /  _  MARKS  g_lam_ar_init_allah1;
+	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_fina_allah):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_init_allah1;
 
-	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_allah2_medi  _  _;
+	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_medi_allah2  _  _;
 
 	// Other:
 	g_hamzaabove_ar  (g_damma_ar  g_damma_ar_filled  g_damma_ar_short)  
@@ -484,7 +484,7 @@ pass(2)
 
 	// Special attachment points for lam-alef ligatures, to avoid collisions:
 	cAlefFinPostLamAll=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM} }
-		/ (g_lam_threedotsabove_ar_pre_alef_init g_lam_threedotsabove_ar_pre_alef_medi cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
+		/ (g_lam_threedotsabove_ar_init_pre_alef g_lam_threedotsabove_ar_medi_pre_alef cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
 	// Normal case - OLD
 //	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM} }
@@ -669,7 +669,7 @@ pass(3)	// Collisions and adjustments
 	cTooth2wAboveMedi {adv.x += 100m}  /  cKafLikeInit MARKS _;  // no kashida
 	
 	// lam-alef + teh
-	cTooth2wAboveInit {adv.x += 90}  /  (g_alef_ar_post_lam_ini_fina g_alef_ar_post_lam_med_fina) MARKS _;
+	cTooth2wAboveInit {adv.x += 90}  /  (g_alef_ar_fina_post_lam_ini g_alef_ar_fina_post_lam_med) MARKS _;
 	
 #endif
 

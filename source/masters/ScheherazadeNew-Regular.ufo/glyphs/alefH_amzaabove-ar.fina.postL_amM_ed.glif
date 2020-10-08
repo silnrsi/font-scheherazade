@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefHamzaabove-ar.fina.postLamMed" format="2">
+  <advance width="725"/>
+  <anchor x="435" y="-223" name="dia2B"/>
+  <anchor x="58" y="2024" name="diaA"/>
+  <anchor x="609" y="-145" name="diaB"/>
+  <anchor x="943" y="363" name="entry"/>
+  <outline>
+    <component base="alef-ar.fina.postLamMed"/>
+    <component base="_hamza" xOffset="120" yOffset="1602"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

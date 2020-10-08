@@ -106,21 +106,21 @@ lookup ltrInit {
 lookup _AllahSubs1 {
   lookupflag 0;
   	sub alef-ar      by alef-ar.allah;
-  	sub alef-ar.fina by alef-ar.allah.fina;
-    sub lam-ar.init  by lam-ar.allah1.init;
-    sub lam-ar.medi  by lam-ar.allah1.medi;
+  	sub alef-ar.fina by alef-ar.fina.allah;
+    sub lam-ar.init  by lam-ar.init.allah1;
+    sub lam-ar.medi  by lam-ar.medi.allah1;
 } _AllahSubs1;
 
 lookup _AllahSubs2 {
   lookupflag 0;
-    sub lam-ar.medi     by lam-ar.allah2.medi;
-    sub heh-ar.fina     by heh-ar.allah.fina;
-    sub hehgoal-ar.fina by hehgoal-ar.allah.fina;
+    sub lam-ar.medi     by lam-ar.medi.allah2;
+    sub heh-ar.fina     by heh-ar.fina.allah;
+    sub hehgoal-ar.fina by hehgoal-ar.fina.allah;
 } _AllahSubs2;
 
 lookup _AllahSubs3 {
   lookupflag 0;
-    sub lam-ar.medi  by  lam-ar.allah2.medi shadda_alef-ar ;  # insert shadda-alef
+    sub lam-ar.medi  by  lam-ar.medi.allah2 shadda_alef-ar ;  # insert shadda-alef
 } _AllahSubs3;
 
 # Note: the shadda-alef ligature is created in a separate lookup.
@@ -369,8 +369,8 @@ lookup ShaddaLigatures {
 # In theory we could do this up where we create the Allah ligature, but this simpler:
 lookup ShaddaAlefLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
-    sub lam-ar.allah2.medi shadda-ar' alefabove-ar'  by  shadda_alef-ar;
-    sub lam-ar.allah2.medi alefabove-ar' shadda-ar'  by  shadda_alef-ar;
+    sub lam-ar.medi.allah2 shadda-ar' alefabove-ar'  by  shadda_alef-ar;
+    sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'  by  shadda_alef-ar;
 } ShaddaAlefLigatures;
 
 
@@ -390,8 +390,8 @@ lookup RohingyaCALT {
 
 lookup SindhiCALT {
   lookupflag 0 ;
-    #sub heh-ar.medi by heh-ar.knottedHigh.medi ; -- done by HehAlternates
-    #sub heh-ar.fina by heh-ar.knottedHigh.fina ;
+    #sub heh-ar.medi by heh-ar.medi.knottedHigh ; -- done by HehAlternates
+    #sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     #sub heh-ar by heh-ar.knotted ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
@@ -405,9 +405,9 @@ lookup UrduCALT {
     sub four-persian by four-persian.urdu ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
-##    sub heh-ar.init by heh-ar.hooked.init ; -- no longer used for Urdu
-##    sub heh-ar.medi by heh-ar.hooked.medi ;
-##    sub heh-ar.fina by heh-ar.hooked.fina ;
+##    sub heh-ar.init by heh-ar.init.hooked ; -- no longer used for Urdu
+##    sub heh-ar.medi by heh-ar.medi.hooked ;
+##    sub heh-ar.fina by heh-ar.fina.hooked ;
     sub @Kasra by @Kasra_lowered;
 } UrduCALT;
 
@@ -463,24 +463,24 @@ lookup ReorderMaddaVowel2 {
 lookup SindhiHeh {
   lookupflag IgnoreMarks ;
   # Used only by TypeTuner
-    sub heh-ar.medi by heh-ar.knottedHigh.medi ;
-    sub heh-ar.fina by heh-ar.knottedHigh.fina ;
+    sub heh-ar.medi by heh-ar.medi.knottedHigh ;
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
 } SindhiHeh;
 
 lookup KurdishHeh {
   lookupflag IgnoreMarks ;
   # Used only by TypeTuner
-    sub heh-ar.fina by heh-ar.knottedHigh.fina ;
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
 } KurdishHeh;
 
 # heh-hook is no longer defined for Urdu; used only for TypeTuner
 lookup UrduHeh {
   lookupflag IgnoreMarks ;
-    sub heh-ar.init by heh-ar.hooked.init ;
-    sub heh-ar.medi by heh-ar.hooked.medi ;
-    sub heh-ar.fina by heh-ar.hooked.fina ;
+    sub heh-ar.init by heh-ar.init.hooked ;
+    sub heh-ar.medi by heh-ar.medi.hooked ;
+    sub heh-ar.fina by heh-ar.fina.hooked ;
 } UrduHeh;
 
 
@@ -488,12 +488,12 @@ lookup HehAlternates {
   lookupflag IgnoreMarks ;
     #   0=default;         1=Sindhi;                2=Urdu;             3=Kurdish
     sub heh-ar      from [ heh-ar.knotted           heh-ar              heh-ar.knotted ] ;
-    sub heh-ar.fina from [ heh-ar.knottedHigh.fina  heh-ar.hooked.fina  heh-ar.knottedHigh.fina ] ;
-    sub heh-ar.init from [ heh-ar.init              heh-ar.hooked.init  heh-ar.init ] ;
-    sub heh-ar.medi from [ heh-ar.knottedHigh.medi  heh-ar.hooked.medi  heh-ar.medi ] ;
+    sub heh-ar.fina from [ heh-ar.fina.knottedHigh  heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
+    sub heh-ar.init from [ heh-ar.init              heh-ar.init.hooked  heh-ar.init ] ;
+    sub heh-ar.medi from [ heh-ar.medi.knottedHigh  heh-ar.medi.hooked  heh-ar.medi ] ;
     # In case Kurdish lang has been selected:
     sub heh-ar.knotted          from   [ heh-ar.knotted          heh-ar             heh-ar.knotted          ] ;
-    sub heh-ar.knottedHigh.fina from   [ heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.knottedHigh.fina ] ;
+    sub heh-ar.fina.knottedHigh from   [ heh-ar.fina.knottedHigh heh-ar.fina.hooked heh-ar.fina.knottedHigh ] ;
 } HehAlternates;
 
 
@@ -1031,8 +1031,8 @@ lookup _kern70 {
 
 lookup _kern90 {
   pos @Tooth2wAboveInit        <90 0  90 0>;
-  pos alef-ar.postLamIni.fina  <90 0  90 0>;
-  pos alef-ar.postLamMed.fina  <90 0  90 0>;  
+  pos alef-ar.fina.postLamIni  <90 0  90 0>;
+  pos alef-ar.fina.postLamMed  <90 0  90 0>;  
 } _kern90;
 
 lookup _kern100 {
@@ -1314,8 +1314,8 @@ ifinfo(styleName, "Bold") {
 		# kaf + teh
 		pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
 		
-		pos alef-ar.postLamIni.fina'  lookup _kern90  @Tooth2wAboveInit;
-		pos alef-ar.postLamMed.fina'  lookup _kern90  @Tooth2wAboveInit;
+		pos alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
+		pos alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
 }
 
 } ToothKashidaKerningIM;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="meemThreedotsabove-ar.fina.sindhi" format="2">
+  <advance width="1416"/>
+  <anchor x="390" y="1233" name="alef"/>
+  <anchor x="754" y="1808" name="diaA"/>
+  <anchor x="656" y="-310" name="diaB"/>
+  <outline>
+    <component base="meem-ar.fina.sindhi"/>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="986" yOffset="1030"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.651,1,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

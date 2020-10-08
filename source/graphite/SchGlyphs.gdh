@@ -162,9 +162,9 @@ cEasternDigitRohingya = (
 	
 
 cno_Heh     = (g_heh_ar           g_heh_ar_init         g_heh_ar_medi              g_heh_ar_fina);
-cHehSindhi  = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_knotted_high_medi g_heh_ar_knotted_high_fina);
-cHehUrdu    = (g_heh_ar           g_heh_ar_hooked_init  g_heh_ar_hooked_medi       g_heh_ar_hooked_fina);
-cHehKurdish = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_medi              g_heh_ar_knotted_high_fina);
+cHehSindhi  = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_medi_knotted_high g_heh_ar_fina_knotted_high);
+cHehUrdu    = (g_heh_ar           g_heh_ar_init_hooked  g_heh_ar_medi_hooked       g_heh_ar_fina_hooked);
+cHehKurdish = (g_heh_ar_knotted   g_heh_ar_init         g_heh_ar_medi              g_heh_ar_fina_knotted_high);
 
 cEndOfAyah        = (g_endofayah_ar        g_endofayah_ar_2        g_endofayah_ar_3);
 cEndOfAyahCircle  = (g_endofayah_ar_alt    g_endofayah_ar_alt_2    g_endofayah_ar_alt_3);

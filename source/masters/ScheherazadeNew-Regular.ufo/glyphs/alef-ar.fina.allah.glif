@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alef-ar.fina.allah" format="2">
+  <advance width="379"/>
+  <anchor x="51" y="1512" name="above"/>
+  <anchor x="-78" y="1176" name="aboveLeft"/>
+  <anchor x="-152" y="992" name="alef"/>
+  <anchor x="183" y="-73" name="below"/>
+  <anchor x="16" y="1659" name="diaA"/>
+  <anchor x="114" y="-260" name="diaB"/>
+  <outline>
+    <contour>
+      <point x="478" y="91" type="curve" smooth="yes"/>
+      <point x="478" y="136"/>
+      <point x="470" y="181"/>
+      <point x="398" y="181" type="curve" smooth="yes"/>
+      <point x="344" y="181" type="line" smooth="yes"/>
+      <point x="288" y="181"/>
+      <point x="222" y="190"/>
+      <point x="192" y="264" type="curve" smooth="yes"/>
+      <point x="160" y="345"/>
+      <point x="98" y="1085"/>
+      <point x="72" y="1408" type="curve"/>
+      <point x="72" y="1431"/>
+      <point x="61" y="1437"/>
+      <point x="58" y="1437" type="curve"/>
+      <point x="47" y="1437"/>
+      <point x="-30" y="1301"/>
+      <point x="-30" y="1280" type="curve" smooth="yes"/>
+      <point x="-30" y="1212"/>
+      <point x="-7" y="1050"/>
+      <point x="16" y="870" type="curve" smooth="yes"/>
+      <point x="43" y="657"/>
+      <point x="67" y="400"/>
+      <point x="82" y="247" type="curve" smooth="yes"/>
+      <point x="101" y="42"/>
+      <point x="217" y="0"/>
+      <point x="344" y="0" type="curve" smooth="yes"/>
+      <point x="398" y="0" type="line"/>
+      <point x="470" y="0"/>
+      <point x="478" y="46"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.827,0.600,1</string>
+    </dict>
+  </lib>
+</glyph>

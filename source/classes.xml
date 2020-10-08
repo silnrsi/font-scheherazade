@@ -9,24 +9,24 @@
     </class>
 
     <class name="AlefFin" fixed="0">
-        alefMadda-ar.fina  alefMadda-ar.small.fina  alefHamzaabove-ar.fina  
+        alefMadda-ar.fina  alefMadda-ar.fina.small  alefHamzaabove-ar.fina  
         alefHamzabelow-ar.fina  alef-ar.fina	alefWavyhamzaabove-ar.fina  
         alefWavyhamzabelow-ar.fina  highhamzaAlef-ar.fina 
         alefWasla-ar.fina  alefTwoabove-ar.fina		alefThreeabove-ar.fina 	
     </class>
 
     <class name="AlefFinPostLamIni" fixed="0">
-        alefMadda-ar.postLamIni.fina  alefMadda-ar.postLamIni.small.fina  alefHamzaabove-ar.postLamIni.fina  
-        alefHamzabelow-ar.postLamIni.fina   alef-ar.postLamIni.fina  alefWavyhamzaabove-ar.postLamIni.fina	
-        alefWavyhamzabelow-ar.postLamIni.fina highhamzaAlef-ar.postLamIni.fina
-        alefWasla-ar.postLamIni.fina	alefTwoabove-ar.postLamIni.fina  alefThreeabove-ar.postLamIni.fina 	
+        alefMadda-ar.fina.postLamIni  alefMadda-ar.fina.postLamIni.small  alefHamzaabove-ar.fina.postLamIni  
+        alefHamzabelow-ar.fina.postLamIni   alef-ar.fina.postLamIni  alefWavyhamzaabove-ar.fina.postLamIni	
+        alefWavyhamzabelow-ar.fina.postLamIni highhamzaAlef-ar.fina.postLamIni
+        alefWasla-ar.fina.postLamIni	alefTwoabove-ar.fina.postLamIni  alefThreeabove-ar.fina.postLamIni 	
     </class>
 
     <class name="AlefFinPostLamMed" fixed="0">
-        alefMadda-ar.postLamMed.fina  alefMadda-ar.postLamMed.small.fina  alefHamzaabove-ar.postLamMed.fina		
-        alefHamzabelow-ar.postLamMed.fina  alef-ar.postLamMed.fina  alefWavyhamzaabove-ar.postLamMed.fina		
-        alefWavyhamzabelow-ar.postLamMed.fina  highhamzaAlef-ar.postLamMed.fina
-        alefWasla-ar.postLamMed.fina  alefTwoabove-ar.postLamMed.fina  alefThreeabove-ar.postLamMed.fina 	
+        alefMadda-ar.fina.postLamMed  alefMadda-ar.fina.postLamMed.small  alefHamzaabove-ar.fina.postLamMed		
+        alefHamzabelow-ar.fina.postLamMed  alef-ar.fina.postLamMed  alefWavyhamzaabove-ar.fina.postLamMed		
+        alefWavyhamzabelow-ar.fina.postLamMed  highhamzaAlef-ar.fina.postLamMed
+        alefWasla-ar.fina.postLamMed  alefTwoabove-ar.fina.postLamMed  alefThreeabove-ar.fina.postLamMed 	
     </class>
 
     <class name="AlefFinPostLamAll">
@@ -63,7 +63,7 @@
     <class name="BaseAny">
         @AlefFinPostLamIni @AlefFinPostLamMed @DalIso.sen @DualLinkFina @DualLinkInit @DualLinkIsol @DualLinkMedi		
         @LamIniPreAlef @LamMedPreAlef @Meem.sindhi @RightLinkFina @RightLinkIsol @Whitespace @ltrOther		
-        heh-ar.knotted heh-ar.knottedHigh.fina heh-ar.hooked.fina heh-ar.hooked.medi heh-ar.knottedHigh.medi heh-ar.hooked.init 	
+        heh-ar.knotted heh-ar.fina.knottedHigh heh-ar.fina.hooked heh-ar.medi.hooked heh-ar.medi.knottedHigh heh-ar.init.hooked 	
     </class>
     -->
     
@@ -389,11 +389,11 @@
         kafThreedotsbelow-ar.fina keheh-ar.fina kafRing-ar.fina gaf-ar.fina gafRing-ar.fina ngoeh-ar.fina gafTwodotsbelow-ar.fina gueh-ar.fina		
         gafThreedots-ar.fina kehehDotabove-ar.fina kehehThreedotsabove-ar.fina kehehThreedotsupbelow-ar.fina kehehTwodotshorizontalabove-ar.fina		
         kehehThreedotsbelow-ar.fina gafInvertedstroke-ar.fina kafswash-ar.fina lam-ar.fina lamVabove-ar.fina lamDotabove-ar.fina		
-        lamThreedotsabove-ar.fina lamThreedotsbelow-ar.fina lamBar-ar.fina lamDoublebar-ar.fina meem-ar.fina meem-ar.sindhi.fina		
-        meemDotabove-ar.fina meemDotabove-ar.sindhi.fina meemDotbelow-ar.fina meemDotbelow-ar.sindhi.fina meemThreedotsabove-ar.fina		
-        meemThreedotsabove-ar.sindhi.fina noon-ar.fina noonDotbelow-ar.fina noonghunna-ar.fina rnoon-ar.fina noonRing-ar.fina		
+        lamThreedotsabove-ar.fina lamThreedotsbelow-ar.fina lamBar-ar.fina lamDoublebar-ar.fina meem-ar.fina meem-ar.fina.sindhi		
+        meemDotabove-ar.fina meemDotabove-ar.fina.sindhi meemDotbelow-ar.fina meemDotbelow-ar.fina.sindhi meemThreedotsabove-ar.fina		
+        meemThreedotsabove-ar.fina.sindhi noon-ar.fina noonDotbelow-ar.fina noonghunna-ar.fina rnoon-ar.fina noonRing-ar.fina		
         noonThreedotsabove-ar.fina noonTwodotsbelow-ar.fina noonTahabove-ar.fina noonVabove-ar.fina hehDoachashmee-ar.fina hehVinvertedabove-ar.fina		
-        heh-ar.fina heh-ar.knottedHigh.fina heh-ar.hooked.fina ae-ar.fina tehMarbuta-ar.fina hehHamzaabove-ar.fina hehgoal-ar.fina		
+        heh-ar.fina heh-ar.fina.knottedHigh heh-ar.fina.hooked ae-ar.fina tehMarbuta-ar.fina hehHamzaabove-ar.fina hehgoal-ar.fina		
         hehgoalHamzaabove-ar.fina tehMarbutagoal-ar.fina yehHamzaabove-ar.medi yeh-ar.medi yeh-ar.noDots.medi highhamzaYeh-ar.medi		
         yeh-farsi.medi yehVinverted-farsi.medi yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehVabove-ar.medi e-ar.medi		
         yehThreedotsbelow-ar.medi yehFourbelow-farsi.medi alefMaksura-ar.medi yehKashmiri-ar.medi yehTwodotsbelowHamzaabove-ar.medi		
@@ -418,7 +418,7 @@
         lamThreedotsabove-ar.medi lamThreedotsbelow-ar.medi lamBar-ar.medi lamDoublebar-ar.medi meem-ar.medi meemDotabove-ar.medi		
         meemDotbelow-ar.medi meemThreedotsabove-ar.medi noon-ar.medi noonDotbelow-ar.medi noonghunna-ar.medi noonRing-ar.medi		
         noonThreedotsabove-ar.medi noonTwodotsbelow-ar.medi noonVabove-ar.medi hehDoachashmee-ar.medi hehVinvertedabove-ar.medi heh-ar.medi		
-        heh-ar.hooked.medi heh-ar.knottedHigh.medi hehgoal-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init		
+        heh-ar.medi.hooked heh-ar.medi.knottedHigh hehgoal-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init		
         highhamzaYeh-ar.init yeh-farsi.init yehVinverted-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init		
         yehVabove-ar.init e-ar.init yehThreedotsbelow-ar.init yehFourbelow-farsi.init alefMaksura-ar.init yehKashmiri-ar.init		
         yehTwodotsbelowHamzaabove-ar.init yehTwodotsbelowDotabove-ar.init behDotless-ar.init beh-ar.init teh-ar.init theh-ar.init beeh-ar.init		
@@ -442,10 +442,10 @@
         lamThreedotsabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init meem-ar.init meemDotabove-ar.init		
         meemDotbelow-ar.init meemThreedotsabove-ar.init noon-ar.init noonDotbelow-ar.init noonghunna-ar.init noonRing-ar.init		
         noonThreedotsabove-ar.init noonTwodotsbelow-ar.init noonVabove-ar.init hehDoachashmee-ar.init hehVinvertedabove-ar.init heh-ar.init		
-        heh-ar.hooked.init hehgoal-ar.init hehgoalHamzaabove-ar.init misraComma-ar absAutoKashida lam-ar.preAlef.init		
-        lamVabove-ar.preAlef.init lamDotabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init lamThreedotsbelow-ar.preAlef.init		
-        lamBar-ar.preAlef.init lamDoublebar-ar.preAlef.init lam-ar.preAlef.medi lamVabove-ar.preAlef.medi lamDotabove-ar.preAlef.medi		
-        lamThreedotsabove-ar.preAlef.medi lamThreedotsbelow-ar.preAlef.medi lamBar-ar.preAlef.medi lamDoublebar-ar.preAlef.medi 	
+        heh-ar.init.hooked hehgoal-ar.init hehgoalHamzaabove-ar.init misraComma-ar absAutoKashida lam-ar.init.preAlef		
+        lamVabove-ar.init.preAlef lamDotabove-ar.init.preAlef lamThreedotsabove-ar.init.preAlef lamThreedotsbelow-ar.init.preAlef		
+        lamBar-ar.init.preAlef lamDoublebar-ar.init.preAlef lam-ar.medi.preAlef lamVabove-ar.medi.preAlef lamDotabove-ar.medi.preAlef		
+        lamThreedotsabove-ar.medi.preAlef lamThreedotsbelow-ar.medi.preAlef lamBar-ar.medi.preAlef lamDoublebar-ar.medi.preAlef 	
         tehTehabove-ar pehVabove-ar tehVabove-ar ttehVabove-ar tchehVabove-ar jeemThreedotsabove-ar 
         jeemThreedotsbelow-ar ghainThreedots-ar qafAfricanThreedotsabove-ar kehehVabove-ar lamTahabove-ar
         tehTehabove-ar.fina pehVabove-ar.fina tehVabove-ar.fina ttehVabove-ar.fina tchehVabove-ar.fina jeemThreedotsabove-ar.fina
@@ -533,8 +533,8 @@
     </class>
 
     <class name="LamIniPreAlef" fixed="0">
-        lam-ar.preAlef.init  lamVabove-ar.preAlef.init  lamDotabove-ar.preAlef.init  lamThreedotsabove-ar.preAlef.init		
-        lamThreedotsbelow-ar.preAlef.init  lamBar-ar.preAlef.init  lamDoublebar-ar.preAlef.init  lamTahabove-ar.preAlef.init	
+        lam-ar.init.preAlef  lamVabove-ar.init.preAlef  lamDotabove-ar.init.preAlef  lamThreedotsabove-ar.init.preAlef		
+        lamThreedotsbelow-ar.init.preAlef  lamBar-ar.init.preAlef  lamDoublebar-ar.init.preAlef  lamTahabove-ar.init.preAlef	
     </class>
 
     <!-- also used for collision fixing -->
@@ -544,8 +544,8 @@
     </class>
 
     <class name="LamMedPreAlef" fixed="0">
-        lam-ar.preAlef.medi  lamVabove-ar.preAlef.medi  lamDotabove-ar.preAlef.medi  lamThreedotsabove-ar.preAlef.medi		
-        lamThreedotsbelow-ar.preAlef.medi  lamBar-ar.preAlef.medi  lamDoublebar-ar.preAlef.medi  lamTahabove-ar.preAlef.medi
+        lam-ar.medi.preAlef  lamVabove-ar.medi.preAlef  lamDotabove-ar.medi.preAlef  lamThreedotsabove-ar.medi.preAlef		
+        lamThreedotsbelow-ar.medi.preAlef  lamBar-ar.medi.preAlef  lamDoublebar-ar.medi.preAlef  lamTahabove-ar.medi.preAlef
     </class>
 
     <class name="LamFin" fixed="0">
@@ -568,13 +568,13 @@
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="Maddah" fixed="0">
-        alefMadda-ar alefMadda-ar.fina madda-ar alefMadda-ar.postLamIni.fina 
-        alefMadda-ar.postLamMed.fina 	
+        alefMadda-ar alefMadda-ar.fina madda-ar alefMadda-ar.fina.postLamIni 
+        alefMadda-ar.fina.postLamMed 	
     </class>
 
     <class name="Maddah.small" fixed="0">
-        alefMadda-ar.small alefMadda-ar.small.fina madda-ar.small alefMadda-ar.postLamIni.small.fina		
-        alefMadda-ar.postLamMed.small.fina 	
+        alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small alefMadda-ar.fina.postLamIni.small		
+        alefMadda-ar.fina.postLamMed.small 	
     </class>
     
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
@@ -584,13 +584,13 @@
     </class>
 
     <class name="Meem.sindhi" fixed="0">
-        meem-ar.sindhi  meemDotabove-ar.sindhi  meemDotbelow-ar.sindhi  meemThreedotsabove-ar.sindhi  meem-ar.sindhi.fina		
-        meemDotabove-ar.sindhi.fina  meemDotbelow-ar.sindhi.fina  meemThreedotsabove-ar.sindhi.fina 	
+        meem-ar.sindhi  meemDotabove-ar.sindhi  meemDotbelow-ar.sindhi  meemThreedotsabove-ar.sindhi  meem-ar.fina.sindhi		
+        meemDotabove-ar.fina.sindhi  meemDotbelow-ar.fina.sindhi  meemThreedotsabove-ar.fina.sindhi 	
     </class>
     
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="RightLinkFina" fixed="0">
-        alefMadda-ar.fina  alefMadda-ar.small.fina  alefHamzaabove-ar.fina  alefHamzabelow-ar.fina  alef-ar.fina		
+        alefMadda-ar.fina  alefMadda-ar.fina.small  alefHamzaabove-ar.fina  alefHamzabelow-ar.fina  alef-ar.fina		
         alefWavyhamzaabove-ar.fina  alefWavyhamzabelow-ar.fina  highhamzaAlef-ar.fina  alefWasla-ar.fina  alefTwoabove-ar.fina		
         alefThreeabove-ar.fina  wawHamzaabove-ar.fina  waw-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina  wawring-ar.fina  kirghizoe-ar.fina		
         oe-ar.fina  u-ar.fina  yu-ar.fina  kirghizyu-ar.fina  wawTwodots-ar.fina  ve-ar.fina  wawDotabove-ar.fina  wawTwoabove-ar.fina		
@@ -670,7 +670,7 @@
     </class>
 
     <class name="U.filled">
-        uHamzaabove-ar.filled u-ar.filled uHamzaabove-ar.filled.fina u-ar.filled.fina 	
+        uHamzaabove-ar.filled u-ar.filled uHamzaabove-ar.fina.filled u-ar.fina.filled 	
     </class>
     -->
 
@@ -867,7 +867,7 @@
         fehDotbelow-ar.init veh-ar.init fehThreedotsbelow-ar.init peheh-ar.init fehTwodotsbelow-ar.init fehThreedotsupbelow-ar.init		
         fehDotbelowThreedotsabove-ar.init lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamThreedotsbelow-ar.init		
         lamBar-ar.init lamDoublebar-ar.init noon-ar.init noonDotbelow-ar.init noonghunna-ar.init noonAfrican-ar.init rnoon-ar.init noonRing-ar.init		
-        noonThreedotsabove-ar.init noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init heh-ar.hooked.init hehgoal-ar.init		
+        noonThreedotsabove-ar.init noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init heh-ar.init.hooked hehgoal-ar.init		
         hehgoalHamzaabove-ar.init 	
     </class>
 
@@ -906,7 +906,7 @@
     	behhamzaabove-ar.init behMeemabove-ar.init 
     	pehMeemabove-ar.init		
       behTwodotsbelowDotabove-ar.init tahTwodotsabove-ar.init 		
-			lamBar-ar.preAlef.init noonDotbelow-ar.init	noonTwodotsbelow-ar.init 
+			lamBar-ar.init.preAlef noonDotbelow-ar.init	noonTwodotsbelow-ar.init 
     </class>
     -->
 
@@ -931,8 +931,8 @@
         qafAfricanThreedotsabove-ar.init
         lam-ar  lamVabove-ar  lamDotabove-ar lamThreedotsabove-ar lamBar-ar lamDoublebar-ar		
         lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamBar-ar.init 
-        lamDoublebar-ar.init lam-ar.preAlef.init	
-        lamVabove-ar.preAlef.init lamDotabove-ar.preAlef.init lamThreedotsabove-ar.preAlef.init lamDoublebar-ar.preAlef.init 
+        lamDoublebar-ar.init lam-ar.init.preAlef	
+        lamVabove-ar.init.preAlef lamDotabove-ar.init.preAlef lamThreedotsabove-ar.init.preAlef lamDoublebar-ar.init.preAlef 
         meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init meemThreedotsabove-ar.init
         meem-ar.sindhi meemDotabove-ar.sindhi meemDotbelow-ar.sindhi meemThreedotsabove-ar.sindhi 
         noon-ar.init  noonghunna-ar.init	noonAfrican-ar.init rnoon-ar.init noonTahabove-ar.init noonVabove-ar.init 
@@ -967,7 +967,7 @@
         qafDotabove-ar.init qafThreedotsabove-ar.init qafDotbelow-ar.init meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init		
         meemThreedotsabove-ar.init noon-ar.init noonDotbelow-ar.init noonghunna-ar.init noonAfrican-ar.init rnoon-ar.init noonRing-ar.init		
         noonThreedotsabove-ar.init noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init hehDoachashmee-ar.init hehVinvertedabove-ar.init		
-        heh-ar.init heh-ar.hooked.init hehgoal-ar.init hehgoalHamzaabove-ar.init 	
+        heh-ar.init heh-ar.init.hooked hehgoal-ar.init hehgoalHamzaabove-ar.init 	
     </class>
 
     <class name="RehKernOtherMB">
@@ -1414,7 +1414,7 @@
     	seen-ar.init  seenDotbelowDotabove-ar.init  seenThreedotsbelow-ar.init  seenVinvertedabove-ar.init
     	<!-- heh-like with nothing above -->
     	heh-ar  heh-ar.knotted  hehgoal-ar  ae-ar  
-    	heh-ar.init  heh-ar.hooked.init  hehgoal-ar.init
+    	heh-ar.init  heh-ar.init.hooked  hehgoal-ar.init
     	hehDoachashmee-ar  tehMarbuta-ar  
     	hehDoachashmee-ar.init
     	<!-- all isolate beh-like -->
