@@ -398,6 +398,8 @@ lookup SindhiCALT {
 ##    sub dammatan-ar by dammatan-ar.sixNine ;  # old bug
     sub @Meem by @Meem.sindhi ;
     sub @Kasra by @Kasra_lowered;
+    sub comma-ar by comma-ar.downward ;
+    sub semicolon-ar by semicolon-ar.downward ;
 } SindhiCALT;
 
 lookup UrduCALT {
@@ -1021,6 +1023,9 @@ do if opt("nokern") != "yes";
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
 @RehKernMost = [@RehKernOther @RehKernOtherMB];
 
+@AlefForms = [alef-ar alef-ar.fina];
+@AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
+
 lookup _kern50 {
   pos @RehWawAll <50 0  50 0>;
 } _kern50;
@@ -1044,8 +1049,8 @@ lookup _kern100 {
 
 lookup _kern130 {
   pos @RehWawAll      <130 0  130 0>;
-  pos alef-ar         <130 0  130 0>;
   pos @ToothPlusAbove <130 0  130 0>;
+  pos @AlefForms      <130 0  130 0>;
 } _kern130;
 
 lookup _kern140 {
@@ -1058,8 +1063,8 @@ lookup _kern150 {
 
 lookup _kern170 {
   pos @RehWawAll         <170 0  170 0>;
-  pos alef-ar            <170 0  170 0>;
   pos @Tooth2wBelowRstrk <170 0  170 0>;
+  pos @AlefForms         <170 0  170 0>;
 } _kern170;
 
 lookup _kern215 {
@@ -1207,9 +1212,6 @@ ifinfo(styleName, "Regular") {
 }
 
 } LamAlefKerning;
-
-@AlefForms = [alef-ar alef-ar.fina];
-@AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
 
 lookup MiscKerning {
 	lookupflag IgnoreMarks;

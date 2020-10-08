@@ -32,17 +32,18 @@
 		</value>
 		<value name="Sindhi" tag="Snd">
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>
 			<cmd name="gr_feat" args="{gr_cv44} 1"/>	# meem alternates
-			<!-- <cmd name="gr_feat" args="{gr_cv48} 1"/>	-->  # heh
 			<cmd name="gr_feat" args="{gr_cv82} 1"/>	# eastern digits
 			<cmd name="gr_feat" args="{gr_cv62} 1"/>  # shadda+kasra lowered
+			<cmd name="gr_feat" args="{gr_cv84} 1"/>  # comma downward
+			<!-- <cmd name="gr_feat" args="{gr_cv48} 1"/>	-->  # heh
 		</value>
 		<value name="Urdu" tag="Urd">
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduCALT}"/>	
-			<!-- <cmd name="gr_feat" args="{gr_cv48} 2"/> --> 	# heh
 			<cmd name="gr_feat" args="{gr_cv82} 2"/>	# eastern digits
+			<!-- <cmd name="gr_feat" args="{gr_cv48} 2"/> --> 	# heh
 		</value>
 		<value name="Wolof" tag="Wol">
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->

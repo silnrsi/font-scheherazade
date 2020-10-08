@@ -469,16 +469,19 @@ shina {
 sindhi {
     languages = ( "snd", "sd" );  // Sindhi
     meemAlt = sindhi;
-//  hehAlt = sindhi;  // remove for now, to match OT
     easternDigits = sindhi;
     shaddaKasra = lowered;
+    commaAlt = down;
+
+//  hehAlt = sindhi;  // remove for now, to match OT
 };
 
 urdu {
     languages = ( "urd", "ur" );  // Urdu
-//    hehAlt = urdu; // removed
     easternDigits = urdu;
     shaddaKasra = lowered;
+
+//    hehAlt = urdu; // removed
 };
 
 wolof {
@@ -491,8 +494,9 @@ wolof {
 
 kyrgyz {
 	languages = ( "kir", "ky" );  // Kirghiz / Kyrgyz
-	//kirghizOeAlt = loop; -- now default
 	yehHamzaAlt = kirghiz;
+
+	//kirghizOeAlt = loop; -- now default
 };
 
 endtable; // language

@@ -180,6 +180,15 @@
 		<test class="fset1403" label="lam-alef teh" rtl="True">
       <string>بلاتتی بلاثتی لاتتی لاثتی</string>
     </test>
+    <test class="fset1403" label="alef-madda gaf" rtl="True">
+      <string>بآگ بآگی آگ آگی</string>
+    </test>
+    <test stylename="cv60_1" label="alef-madda (large) gaf" rtl="True">
+      <string>بآگ بآگی آگ آگی</string>
+    </test>
+    <test stylename="cv60_1" label="alef-madda (large) lam" rtl="True">
+      <string>آل آلپ آڵپ سآل آلپ</string>
+    </test>
   </testgroup>
   
   <testgroup label="AE">
