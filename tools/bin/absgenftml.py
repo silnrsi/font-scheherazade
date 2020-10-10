@@ -649,7 +649,8 @@ def doit(args):
     if test.lower().startswith('feature-lang'):
         # Testing of language and feature interactions
 
-        tests = (
+        # test only the features from this list that are implemented in this font
+        tests = filter(lambda x : x[0] in builder.features, (
             # feat, langs where it is expected to work (1) or not (0), data seq,  comment
             ('cv02', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0623,), 'Warsh alternates'),
             ('cv08', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x062C,), 'Jeem/Hah alternates'),
@@ -668,7 +669,7 @@ def doit(args):
             ('cv80', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x06DD,), 'Ayah alternates'),
             ('cv82', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x06F4, 0x06F6, 0x06F7, 0x0020, 0x06DD, 0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
             ('cv84', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x060C,), 'Comma alternates'),
-        )
+        ))
 
         ftml._fxml.head.comment = 'In this test, the comment column indicates whether the feature is expected to ' \
                                   'function with the given language tag. '
