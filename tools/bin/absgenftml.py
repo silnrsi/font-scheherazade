@@ -409,13 +409,26 @@ def doit(args):
 
     if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
-            if get_ucd(uid,'jg') not in ('Sad', 'Seen', 'Yeh'):
+            if get_ucd(uid,'jg') not in ('Sad', 'Seen', 'Yeh', 'Farsi_Yeh', 'Yeh_With_Tail'):
                 # If not Yeh, Sad or seen joining group we're not interested
                 continue
-            flagUnicodeVersion((uid,))
-            for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
-                ftml.setFeatures(featlist)
-                builder.render((uid, 0x0670), ftml)
+            # if isLateef and uid in (0626,063D,063E,063F,06CE,0675, 0676,)
+            if "special" not in test:
+                setBackgroundColor((uid,))
+                for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
+                    ftml.setFeatures(featlist)
+                    builder.render((uid, 0x0670), ftml)
+            else:
+                if uid in (0x0626, 0x63D, 0x0678, 0x06CD, 0x06CE):
+                    ftml.setBackground('yellow')
+                comment = builder._charFromUID[uid].basename
+                if uid in (0x0620, 0x063E, 0x063F, 0x0775, 0x0776, 0x0777, 0x077D, 0x077E, 0x8A8, 0x08A9, 0x08BE):
+                    ftml.setBackground('orange')
+                    comment += ' NEW'
+                if uid in (0x063D, 0x0770):
+                    comment += ' added to 1.2'
+                ftml.setFeatures([['cv76','1'],])
+                builder.render((uid, 0x0670), ftml, comment=comment)
             ftml.clearFeatures()
             ftml.clearBackground()
             ftml.closeTest()
