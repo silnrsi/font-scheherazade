@@ -88,8 +88,9 @@ def doit(args):
             if len(args.fontsrc):
                 width = int(round(int(width)/len(args.fontsrc)))
             widths = {'string': f'{width}{units}'}
+            logger.log(f'width: {args.width} --> {widths["string"]}', 'I')
         except:
-            logger.log('Unable to parse width argument "{args.width}"', 'W')
+            logger.log(f'Unable to parse width argument "{args.width}"', 'W')
     # split labels from fontsource parameter
     fontsrc = []
     labels = []
