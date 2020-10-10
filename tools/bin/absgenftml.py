@@ -387,6 +387,10 @@ def doit(args):
                     ftml.clearLang()
                     ftml.closeTest()
                     ftml.clearBackground()
+        # One more test to evaluate vertical position of digits over all the marks
+        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in [*range(0x0600, 0x0606), 0x06DD]])
+        ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
+        ftml.closeTest()
 
     if test.lower().startswith("showinv"):
         # Sample data for chars that have a "show invisible" feature
