@@ -289,5 +289,8 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="Vert alignment" rtl="True">
+      <string>\u0006002 \u0640 \u0006012 \u0640 \u0006022 \u0640 \u0006032 \u0640 \u0006042 \u0640 \u0006052 \u0640 \u0006DD2</string>
+    </test>
   </testgroup>
 </ftml>
