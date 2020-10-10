@@ -63,7 +63,8 @@ def joinGoupSortKey(uid:int):
     return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
 
 ageToFlag = 13.0
-ageColor = "#FFE0E0"  # very light red
+ageColor = "#FFC8A0"      # light orange -- marks if there is a char from above Unicode version or later
+missingColor = "#FFE0E0"  # light red -- mark if a char is missing from UFO
 
 def doit(args):
     logger = args.logger
@@ -103,9 +104,12 @@ def doit(args):
     ftml = FB.FTML(test, logger, rendercheck=not args.norendercheck, fontscale=args.scale, widths=widths,
                    xslfn=args.xsl, fontsrc=fontsrc, fontlabel=labels, defaultrtl=args.rtl)
 
-    def flagUnicodeVersion(uids):
-        # if any uid in uids has Unicode age >= ageToFlag, then set the test background color to ageColor
-        if max(map(lambda x: float(get_ucd(x, 'age')), uids)) >= ageToFlag:
+    def setBackgroundColor(uids):
+        # if any uid in uids is missing from the UFO, set test background color to missingColor
+        if any(uid in builder.uidsMissingFromUFO for uid in uids):
+            ftml.setBackground(missingColor)
+        # else if any uid in uids has Unicode age >= ageToFlag, then set the test background color to ageColor
+        elif max(map(lambda x: float(get_ucd(x, 'age')), uids)) >= ageToFlag:
             ftml.setBackground(ageColor)
 
     if test.lower().startswith("allchars"):
@@ -114,7 +118,7 @@ def doit(args):
         for uid in sorted(builder.uids()):
             if uid < 32: continue
             c = builder.char(uid)
-            flagUnicodeVersion((uid,))
+            setBackgroundColor((uid,))
             for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
@@ -130,7 +134,7 @@ def doit(args):
         ftml.startTestGroup('Specials & ligatures from glyph_data')
         for basename in sorted(builder.specials()):
             special = builder.special(basename)
-            flagUnicodeVersion(special.uids)
+            setBackgroundColor(special.uids)
             for featlist in builder.permuteFeatures(uids=special.uids, feats=special.feats):
                 ftml.setFeatures(featlist)
                 builder.render(special.uids, ftml)
@@ -150,7 +154,7 @@ def doit(args):
         aleflist = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Alef', builder.uids()))
         for lam in lamlist:
             for alef in aleflist:
-                flagUnicodeVersion((lam, alef))
+                setBackgroundColor((lam, alef))
                 for featlist in builder.permuteFeatures(uids=(lam, alef)):
                     ftml.setFeatures(featlist)
                     builder.render((lam, alef), ftml)
@@ -165,7 +169,7 @@ def doit(args):
                     ftml.clearFeatures()
                 ftml.clearBackground()
 
-        # Add low-hamza combinations
+        # Add low-hamza combinations manually
         ftml.startTestGroup('Low-hamza combinations')
         for base in (0x0647, 0x064A, 0x06C1, 0X06D5, ):
             for featlist in builder.permuteFeatures(uids=(base, 0x0654)):
@@ -174,7 +178,6 @@ def doit(args):
                 builder.render((base, 0x0654), ftml)
                 ftml.closeTest()
             ftml.clearFeatures()
-
 
         # Add Allah data manually
         ftml.startTestGroup('Allah ligatures')
@@ -234,7 +237,7 @@ def doit(args):
         ftml.startTestGroup('Arabic Letters')
         for uid in sorted(filter(lambda u: get_ucd(u, 'bc') == 'AL', builder.uids()), key=joinGoupSortKey):
             c = builder.char(uid)
-            flagUnicodeVersion((uid,))
+            setBackgroundColor((uid,))
             for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
@@ -272,7 +275,7 @@ def doit(args):
             # Always process Lo, but others only if that take marks:
             if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
-                    flagUnicodeVersion((uid,diac))
+                    setBackgroundColor((uid,diac))
                     for featlist in builder.permuteFeatures(uids=(uid,diac)):
                         ftml.setFeatures(featlist)
                         builder.render((uid,diac), ftml, addBreaks=False, dualJoinMode=2)
@@ -296,7 +299,7 @@ def doit(args):
             c = builder.char(uid)
             if c.general == 'Mn':
                 for base in repBase:
-                    flagUnicodeVersion((uid,base))
+                    setBackgroundColor((uid,base))
                     for featlist in builder.permuteFeatures(uids=(uid,base)):
                         ftml.setFeatures(featlist)
                         builder.render((base,uid), ftml, keyUID=uid, addBreaks=False, dualJoinMode=2)
@@ -323,7 +326,7 @@ def doit(args):
         diaA = 0x064B
         for lam in lamlist:
             for alef in aleflist:
-                flagUnicodeVersion((lam,alef))
+                setBackgroundColor((lam,alef))
                 for featlist in builder.permuteFeatures(uids=(lam,alef)):
                     ftml.setFeatures(featlist)
                     builder.render((lam, alef),             ftml, addBreaks=False)
@@ -334,7 +337,7 @@ def doit(args):
                 ftml.clearFeatures()
                 ftml.clearBackground()
                 ftml.closeTest()
-        
+                
         ftml.startTestGroup('Shadda + Kasra')
         shadda = 0x0651
         base = 0x0628
@@ -356,7 +359,7 @@ def doit(args):
                 c = chr(uid)
                 label = "U+{0:04X} {1}".format(uid, 'latn' if digitOne == 0x0031 else 'arab' if digitOne == 0x0661 else 'urdu')
                 comment = builder.char(uid).basename
-                flagUnicodeVersion((uid,))
+                setBackgroundColor((uid,))
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
                     ftml.addToTest(uid, "\u0628" + c + "\u0645", label, comment)
@@ -369,7 +372,7 @@ def doit(args):
 
                 if uid == 0x06DD and digitOne == 0x06F1:
                     # Extra items for Eastern digits
-                    flagUnicodeVersion((uid,))
+                    setBackgroundColor((uid,))
                     for featlist in builder.permuteFeatures(uids=(uid, 0x06F7)):
                         ftml.setFeatures(featlist)
                         ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
@@ -452,7 +455,7 @@ def doit(args):
                 c = chr(uid)
                 label = 'U+{0:04X}'.format(uid)
                 comment = builder.char(uid).basename
-                flagUnicodeVersion((uid,))
+                setBackgroundColor((uid,))
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
                     ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
@@ -465,7 +468,7 @@ def doit(args):
                 c = chr(uid)
                 label = 'U+{0:04X}'.format(uid)
                 comment = builder.char(uid).basename
-                flagUnicodeVersion((uid,))
+                setBackgroundColor((uid,))
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
                     ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
@@ -481,7 +484,7 @@ def doit(args):
                     c2 = chr(uid2)
                     comment = builder.char(uid2).basename
                     label = 'U+{:04X}'.format(uid2)
-                    flagUnicodeVersion((uid1,uid2))
+                    setBackgroundColor((uid1,uid2))
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
                         if get_ucd(uid2, 'jt') == 'D':
@@ -575,7 +578,7 @@ def doit(args):
                         0xFD3E,  # ORNATE LEFT PARENTHESIS
                         # 0xFD3F,  # ORNATE RIGHT PARENTHESIS
                         )):
-                    flagUnicodeVersion((uid1,uid2))
+                    setBackgroundColor((uid1,uid2))
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
                         builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
@@ -612,7 +615,7 @@ def doit(args):
                     res += line[lastEnd:]
                     # figure features based only on what matched
                     matchedUids = list(map(ord, list(matches)))
-                    flagUnicodeVersion(matchedUids)
+                    setBackgroundColor(matchedUids)
                     for featlist in builder.permuteFeatures(uids=matchedUids):
                         ftml.setFeatures(featlist)
                         # Add to test:
@@ -635,7 +638,7 @@ def doit(args):
             c = r'\u{:04X}'.format(uid)
             label = 'U+{:04X}'.format(uid)
             comment = builder.char(uid).basename
-            flagUnicodeVersion((uid,))
+            setBackgroundColor((uid,))
             for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 ftml.addToTest(uid, f"{c}{markabove}{yehbarree} {zwj}{c}{markabove}{yehbarree} {c}{markbelow}{markabove}{yehbarree} {zwj}{c}{markbelow}{markabove}{yehbarree}", label, comment)
@@ -651,7 +654,7 @@ def doit(args):
                 yb = r'\u{:04X}'.format(yehbarree)
                 label = 'U+{:04X} U+{:04X}'.format(uid, yehbarree)
                 comment = builder.char(uid).basename + ' ' + builder.char(yehbarree).basename
-                flagUnicodeVersion((uid,yehbarree))
+                setBackgroundColor((uid,yehbarree))
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
                     ftml.addToTest(uid, f"{c}{markabove}{yb} {zwj}{c}{markabove}{yb} {c}{markbelow}{markabove}{yb} {zwj}{c}{markbelow}{markabove}{yb}", label, comment)
@@ -700,7 +703,7 @@ def doit(args):
                         # Yes!
                         featcombinations = list(builder.permuteFeatures(feats=special.feats))
                         break
-            flagUnicodeVersion(uids)
+            setBackgroundColor(uids)
             for featlist in featcombinations:
                 ftml.setFeatures(featlist)
                 builder.render(uids, ftml, rtl=True, dualJoinMode=1, comment="")
