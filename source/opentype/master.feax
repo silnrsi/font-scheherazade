@@ -1096,13 +1096,13 @@ lookup _kern_380 {
   pos @RehWawTighten <-380 0  -380 0>;
 } _kern_380;
 
+lookup _kern_550 {
+  pos @RehWawTighten <-550 0  -550 0>;
+} _kern_550;
+
 lookup _kern_580 {
   pos @RehWawTighten <-580 0  -580 0>;
 } _kern_580;
-
-lookup _kern_650 {
-  pos @RehWawTighten <-650 0  -650 0>;
-} _kern_650;
 
 
 # Break this into a separate lookup to handle a sequence like waw + reh + alef
@@ -1130,9 +1130,9 @@ ifinfo(styleName, "Bold") {
 	pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
 }
 ifinfo(styleName, "Regular") {
-	pos @RehWawTighten' lookup _kern_650                @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_650 @_diaB         @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_650 @_diaB @_diaB  @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_550                @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_550 @_diaB         @RehKernKaf ;
+	pos @RehWawTighten' lookup _kern_550 @_diaB @_diaB  @RehKernKaf ;
 }
 
 	# Loosen from following alef/lam when it has something below it
@@ -1398,9 +1398,13 @@ lookup mark_to_mark_below {
 
 #---  kern feature (cont'd)  ---
 
+do if opt("nokern") != "yes";
+{   # more kerning substitutions
+
 # These need to go after mark attachment.
 
 lookup DiacShifting {
+
 	# alef + takhallus (name marker)
 	pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
 	pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
@@ -1452,8 +1456,10 @@ ifinfo(styleName, "Regular") {
 	pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
 	
 	pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
+	
 } DiacShifting;
 
+} # end of kerning substitutions
 
 
 #**********************************

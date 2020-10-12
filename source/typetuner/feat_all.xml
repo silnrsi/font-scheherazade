@@ -80,7 +80,7 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish-style" tag="Ku">
-			<!-- <cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	 -->
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>
 			<cmd name="gr_feat" args="{gr_cv48} 3"/>
 		</value>
 		<value name="Sindhi-style" tag="Sn">

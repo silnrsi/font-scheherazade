@@ -170,26 +170,10 @@ cEndOfAyah        = (g_endofayah_ar        g_endofayah_ar_2        g_endofayah_a
 cEndOfAyahCircle  = (g_endofayah_ar_alt    g_endofayah_ar_alt_2    g_endofayah_ar_alt_3);
 cEndOfAyahSquare  = (g_endofayah_ar_alt_b  g_endofayah_ar_alt_b_2  g_endofayah_ar_alt_b_3);
 
-zeroWidthJoiner = postscript("zerowidthjoiner");
-zeroWidthNonJoiner = postscript("zerowidthnonjoiner");
-leftToRightMark = postscript("lefttorightmark") {directionality = 1};
-rightToLeftMark = postscript("righttoleftmark") {directionality = 2};
-leftToRightEmbedding = postscript("lefttorightembedding") {directionality = 13};
-rightToLeftEmbedding = postscript("righttoleftembedding") {directionality = 14};
-popDirectionalFormatting = postscript("popdirectionalformatting") {directionality = 15};
-leftToRightOverride = postscript("lefttorightoverride") {directionality = 11};
-rightToLeftOverride = postscript("righttoleftoverride") {directionality = 12};
-leftToRightIsolate = postscript("lefttorightisolate") {directionality = 17} ;
-rightToLeftIsolate = postscript("righttoleftisolate") {directionality = 18} ;
-firstStrongIsolate = postscript("firststrongisolate") {directionality = 19} ;
-popDirectionalIsolate = postscript("popdirectionalisolate") {directionality = 20} ;
-//arabicLetterMark = postscript("arabiclettermark") {directionality = 3} ;
 
-cInvisible = (zeroWidthJoiner zeroWidthNonJoiner leftToRightMark rightToLeftMark leftToRightEmbedding
-rightToLeftEmbedding popDirectionalFormatting leftToRightOverride rightToLeftOverride
-leftToRightIsolate rightToLeftIsolate firstStrongIsolate popDirectionalIsolate /*arabicLetterMark*/);
-
-zeroWidthSpace = postscript("zerowidthspace");
+cInvisible = (g_zerowidthjoiner  g_zerowidthnonjoiner  g_lefttorightmark  g_righttoleftmark  g_lefttorightembedding
+	g_righttoleftembedding  g_popdirectionalformatting  g_lefttorightoverride  g_righttoleftoverride
+	g_lefttorightisolate  g_righttoleftisolate  g_firststrongisolate  g_popdirectionalisolate  /*arabicLetterMark*/);
 
 
 //------------------------------------------------------------------------------------------

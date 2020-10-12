@@ -213,8 +213,8 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
 	// All other contextual forms
 	
-	(cDualLinkIsol cDualLinkFina g_kashida_ar zeroWidthJoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar zeroWidthJoiner)
-		> (cDualLinkInit cDualLinkMedi g_kashida_ar zeroWidthJoiner) (cDualLinkFina cRightLinkFina g_kashida_ar zeroWidthJoiner)
+	(cDualLinkIsol cDualLinkFina g_kashida_ar g_zerowidthjoiner) (cDualLinkIsol cRightLinkIsol g_kashida_ar g_zerowidthjoiner)
+		> (cDualLinkInit cDualLinkMedi g_kashida_ar g_zerowidthjoiner) (cDualLinkFina cRightLinkFina g_kashida_ar g_zerowidthjoiner)
 		/ _  MARKS ^ _ ;
 
 endpass; // 4
@@ -358,7 +358,7 @@ pass(5)	// Features, special behaviors
 	
 		// Note that substitution changes the directionality to the defaults for the
 		// substituted glyph. :-( So be sure to fix it:
-		cInvisible > zeroWidthSpace {directionality = @1.directionality};
+		cInvisible > g_zerowidthspace {directionality = @1.directionality};
 		
 	//endif; 
 	
@@ -520,7 +520,7 @@ pass(3)
 #if (STYLE == BOLD)
 	cRehKernKaf {advance.x -= 380m} / cRehWawTighten MARKSBELOW _ ;
 #else
-	cRehKernKaf {advance.x -= 650m} / cRehWawTighten MARKSBELOW _ ;
+	cRehKernKaf {advance.x -= 550m} / cRehWawTighten MARKSBELOW _ ;
 #endif
 	
 	// Loosen from following alef/lam when it has something below it
@@ -763,7 +763,7 @@ pass(3)	// Collisions and adjustments
 		g_reh_twodotshorizontalabove_tahabove_ar_fina {adv.x += 140m};
 
 	// AE + kaf
-	(g_ae_ar g_ae_ar_fina) cKafLikeInit {adv.x -= 300m}  /  _ MARKSBELOW  _;
+	cKafLikeInit {adv.x -= 300m}  /  (g_ae_ar g_ae_ar_fina)  MARKSBELOW  _;
 
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
