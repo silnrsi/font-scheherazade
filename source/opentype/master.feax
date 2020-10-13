@@ -373,6 +373,27 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'  by  shadda_alef-ar;
 } ShaddaAlefLigatures;
 
+#********
+# Kashida kludge
+
+# According to Amiri font developer Khaled Hosney:
+#    Kashida justification as implemented in most, if not all, applications is
+#    broken by design; it inserts kashidas *after* doing OT layout which makes it
+#    impossible for OT code to interact with those kashidas breaking all sorts of
+#    things.
+#    To trick LibreOffice/MS Office to not do kashida justification we set the
+#    default kashida to a zero width, blank glyph which makes them to think there
+#    is no suitable kashida glyph, resorting back to regular justification.
+#    To get manually inserted kashida working we use an rlig feature to map to the
+#    actual kashida glyph(s).
+# See https://github.com/alif-type/amiri/blob/main/sources/kashida.fea
+# [Originally we tried to do this in ccmp since we don't have a curvy kashida glyph, 
+# but that broke kashida handling in InDesign. It has to be rlig.]
+
+lookup FixKashida {
+	sub kashida-ar by kashida-ar.haswidth ;
+} FixKashida;
+
 
 #---  calt feature  ---
 
@@ -1479,22 +1500,7 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup FontCheck1;
         lookup FontCheck2;
         lookup ReorderMaddaVowel1;
-        lookup ReorderMaddaVowel2;
-        
-        # According to Amiri font developer Khaled Hosney:
-        #    Kashida justification as implemented in most, if not all, applications is
-        #    broken by design; it inserts kashidas *after* doing OT layout which makes it
-        #    impossible for OT code to interact with those kashidas breaking all sorts of
-        #    things.
-        #    To trick LibreOffice/MS Office to not do kashida justification we set the
-        #    default kashida to a zero width, blank glyph which makes them to think there
-        #    is no suitable kashida glyph, resorting back to regular justification
-        #    To get manually inserted kashida working we use an rlig feature to map to the
-        #    actual kashida glyph(s).
-        # See https://github.com/alif-type/amiri/blob/main/sources/kashida.fea
-        # Except we do this in ccmp since we don't have curvy kashida glyphs.
-        sub kashida-ar by kashida-ar.haswidth ;
-            
+        lookup ReorderMaddaVowel2;            
     script arab;
         lookup DecomposeForColor;
       # Force other languages to include Arabic script lookups
@@ -1556,6 +1562,7 @@ feature rlig {  # Required Ligatures
         lookup ShaddaLigatures;
         lookup ShaddaAlefLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
+        lookup FixKashida;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
