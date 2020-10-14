@@ -634,6 +634,8 @@ pass(6)
 
 	cLamLikeInitMedi _  >  @L  g_abs_auto_kashida:L  /  _=L  cMarksBelow cMarksAbove? _ ^ (cYehLikeFina cTooth2wBelowMedi);
 
+	g_kashida_ar  >  g_kashida_ar_haswidth;
+
 endpass; // 6
 
 endtable; // sub
