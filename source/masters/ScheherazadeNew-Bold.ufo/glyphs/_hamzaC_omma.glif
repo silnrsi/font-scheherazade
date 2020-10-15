@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="_hamzaComma" format="2">
-  <advance width="600"/>
-  <outline/>
+  <outline>
+    <component base="_hamza" xOffset="726" yOffset="1852"/>
+    <component base="_uComma"/>
+  </outline>
 </glyph>
