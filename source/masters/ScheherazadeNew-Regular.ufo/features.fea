@@ -2459,9 +2459,7 @@ lookup WolofCALT {
 
 lookup KirghizCALT {
     lookupflag 0;
-    # The way the glyphs are named means @c_loclKIR doesn't have both glyphs. Just list them.
-    sub yehHamzaabove-ar by yehHamzaabove-ar.loclKIR;
-    sub yehHamzaabove-ar.fina by yehHamzaabove-ar.loclKIR.fina;
+    sub @cno_loclKIR by @c_loclKIR;
 } KirghizCALT;
 
 #********************
@@ -2702,16 +2700,15 @@ lookup AyahAlternates {
 
 lookup KirghizOeAlternates {
     lookupflag 0;
-    sub kirghizoe-ar by kirghizoe-ar.bar;
-    sub kirghizoe-ar.fina by kirghizoe-ar.bar.fina;
+    sub @cno_bar by @c_bar;
 } KirghizOeAlternates;
 
 lookup YehHamzaAlternates {
     lookupflag 0;
     sub yehHamzaabove-ar by yehHamzaabove-ar.loclKIR;
-    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.loclKIR.init;
-    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.loclKIR.medi;
-    sub yehHamzaabove-ar.fina by yehHamzaabove-ar.loclKIR.fina;
+    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
+    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
+    sub yehHamzaabove-ar.fina by yehHamzaabove-ar.fina.loclKIR;
 } YehHamzaAlternates;
 
 #********
