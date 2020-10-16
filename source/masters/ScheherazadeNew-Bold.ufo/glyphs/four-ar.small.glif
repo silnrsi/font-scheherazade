@@ -5,12 +5,9 @@
   <anchor x="468" y="0" name="digitR"/>
   <outline>
     <contour>
-      <point x="381" y="405" type="curve"/>
-      <point x="381" y="405"/>
-      <point x="377" y="406"/>
-      <point x="365" y="407" type="curve" smooth="yes"/>
-      <point x="328" y="412"/>
-      <point x="213" y="444"/>
+      <point x="381" y="405" type="curve" smooth="yes"/>
+      <point x="293" y="419"/>
+      <point x="213" y="442"/>
       <point x="213" y="467" type="curve" smooth="yes"/>
       <point x="213" y="497"/>
       <point x="332" y="595"/>
@@ -41,9 +38,9 @@
       <point x="116" y="358" type="curve" smooth="yes"/>
       <point x="116" y="328"/>
       <point x="268" y="274"/>
-      <point x="351" y="274" type="curve"/>
-      <point x="354" y="274"/>
-      <point x="381" y="399"/>
+      <point x="351" y="274" type="curve" smooth="yes"/>
+      <point x="365" y="274"/>
+      <point x="388" y="404"/>
     </contour>
   </outline>
 </glyph>
