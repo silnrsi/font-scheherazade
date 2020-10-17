@@ -106,7 +106,7 @@
 	</feature>
 	-->
 	
-	<feature name="Kyrgyz OE" tag="Koe">
+	<feature name="Kyrgyz OE" value= "Loop" tag="Koe">
 		<value name="Loop" tag="Lp">
 			<cmd name="null" args="null"/>
 		</value>
@@ -116,7 +116,7 @@
 		</value>
 	</feature>
 	
-	<feature name="Yeh Hamza" tag="Yhmz">
+	<feature name="Yeh Hamza" value="Standard" tag="Yhmz">
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
