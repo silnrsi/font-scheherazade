@@ -400,6 +400,11 @@ lookup FixKashida {
 #********
 # Language-specific shaping
 
+lookup dfltCALT {
+  lookupflag 0 ;
+     sub tab by tab;   # Need a dummy lookup for Typetuner
+} dfltCALT;
+
 lookup RohingyaCALT {
   lookupflag 0 ;
     sub four-persian by four-persian.roh ;
@@ -1583,6 +1588,8 @@ do if opt("nokern") != "yes";
         lookup MarkKashidas;
 }   # end of kerning substitutions
 
+      language dflt ;   # Must have a lookup here for TypeTuner to work.
+        lookup dfltCALT ;
       language KUR ; # Kurdish
         lookup KurdishHeh ;
       language RHG ; #Rohingya
