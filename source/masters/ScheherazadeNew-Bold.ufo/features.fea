@@ -2504,6 +2504,12 @@ lookup FixKashida {
 #---  calt feature  ---
 #********
 # Language-specific shaping
+lookup dfltCALT {
+    lookupflag 0;
+    sub tab by tab;
+    # Need a dummy lookup for Typetuner
+} dfltCALT;
+
 lookup RohingyaCALT {
     lookupflag 0;
     sub four-persian by four-persian.roh;
@@ -5278,6 +5284,9 @@ feature calt {
         lookup MiscKashidas;
         lookup MarkKashidas;
 
+    language dflt;
+    # Must have a lookup here for TypeTuner to work.
+    lookup dfltCALT;
     language KUR;
     # Kurdish
     lookup KurdishHeh;
