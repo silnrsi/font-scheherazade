@@ -230,12 +230,10 @@
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
-		<!--
 		<value name="Kurdish-style" tag="Ku">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitKurdish}"/>
-			<cmd name="gr_feat" args="{gr_cv82} 3"/> 	 <!- eastern digits ->
+		<!--			<cmd name="gr_feat" args="{gr_cv82} 3"/> 	 <!- eastern digits -> 		-->
 		</value>
-		-->
 				<value name="Rohingya-style" tag="Ro">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitRohingya}"/>
 			<cmd name="gr_feat" args="{gr_cv82} 4"/>	 <!-- eastern digits -->
