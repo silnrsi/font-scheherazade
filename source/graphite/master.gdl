@@ -194,6 +194,12 @@ endif;
 	//absShadda     cShaddaMarks >  _  cShaddaLigatures:(1 2);
 	//absHamzaAbove cHamzaMarks  >   _ cHamzaLigatures:(1 2);
 
+	// The large madda is what comes in initially. It would seem more straightforward to
+	// replace it with the smaller form only if the large-madda feature is not turned on, 
+	// but that turned out to be problematic with Harfbuzz. So we switch it first and then
+	// maybe switch it back.
+	g_madda_ar  >  g_madda_ar_small;
+
 endpass; // 3
 
 
@@ -282,15 +288,15 @@ pass(5)	// Features, special behaviors
 //	endif;
 
 	if (kirghizOeAlt == bar)
-		(g_kirghizoe_ar  g_kirghizoe_ar_fina)  >  (g_kirghizoe_ar_bar  g_kirghizoe_ar_fina_bar);
+		cno_bar  >  cbar;
 	endif;
 
 	if (yehHamzaAlt == kirghiz)
-		(g_yeh_hamzaabove_ar  g_yeh_hamzaabove_ar_fina)  >  (g_yeh_hamzaabove_ar_locl_k_i_r  g_yeh_hamzaabove_ar_fina_locl_k_i_r);
+		cno_loclKIR  >  cloclKIR;
 	endif;
 
-	if (maddahAlt != large)
-		cMaddah > cMaddah_small;
+	if (maddahAlt == large)
+		cMaddah_small > cMaddah;
 	endif;
 	
 	if (dammaAlt == filled)
