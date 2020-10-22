@@ -5,6 +5,9 @@
   <anchor x="156" y="-273" name="diaB"/>
   <outline>
     <contour>
+      <point x="0" y="0" type="curve" smooth="yes"/>
+      <point x="101" y="0"/>
+      <point x="187" y="86"/>
       <point x="248" y="262" type="curve"/>
       <point x="303" y="100"/>
       <point x="336" y="0"/>
@@ -38,9 +41,6 @@
       <point x="-100" y="145" type="curve" smooth="yes"/>
       <point x="-100" y="85"/>
       <point x="-69" y="0"/>
-      <point x="0" y="0" type="curve" smooth="yes"/>
-      <point x="101" y="0"/>
-      <point x="187" y="86"/>
     </contour>
   </outline>
 </glyph>
