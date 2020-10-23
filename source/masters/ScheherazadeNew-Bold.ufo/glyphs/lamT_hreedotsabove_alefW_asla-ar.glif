@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamThreedotsabove_alefWasla-ar" format="2">
+  <advance width="1493"/>
+  <anchor x="932" y="965" name="alef"/>
+  <anchor x="269" y="-243" name="dia2B"/>
+  <anchor x="1064" y="2650" name="diaA"/>
+  <anchor x="1034" y="-214" name="diaB"/>
+  <outline>
+    <component base="alef-ar.fina.postLamIni" xScale="1.03" yScale="1.03"/>
+    <component base="_wasla" xScale="0.927" yScale="0.927" xOffset="131" yOffset="1893"/>
+    <component base="lam-ar.init.preAlef" xOffset="818"/>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="1167" yOffset="1913"/>
+  </outline>
+</glyph>

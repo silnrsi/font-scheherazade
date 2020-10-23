@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lamDotabove_alefWavyhamzaabove-ar" format="2">
+  <advance width="1318"/>
+  <anchor x="799" y="1102" name="alef"/>
+  <anchor x="290" y="-197" name="dia2B"/>
+  <anchor x="41" y="2337" name="diaA"/>
+  <anchor x="609" y="-145" name="diaB"/>
+  <outline>
+    <component base="alef-ar.fina.postLamIni"/>
+    <component base="_wavyHamza" xOffset="107" yOffset="1966"/>
+    <component base="lam-ar.init.preAlef" xOffset="776"/>
+    <component base="_dot1" xOffset="999" yOffset="1927"/>
+  </outline>
+</glyph>

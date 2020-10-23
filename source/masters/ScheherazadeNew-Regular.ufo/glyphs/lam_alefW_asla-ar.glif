@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lam_alefWasla-ar" format="2">
+  <advance width="1318"/>
+  <anchor x="1002" y="1733" name="above"/>
+  <anchor x="805" y="1253" name="alef"/>
+  <anchor x="944" y="-84" name="below"/>
+  <anchor x="290" y="-197" name="dia2B"/>
+  <anchor x="1036" y="1853" name="diaA_1"/>
+  <anchor x="35" y="2192" name="diaA_2"/>
+  <anchor x="870" y="-145" name="diaB_1"/>
+  <anchor x="609" y="-145" name="diaB_2"/>
+  <anchor x="1020" y="1127" name="through"/>
+  <outline>
+    <component base="alef-ar.fina.postLamIni"/>
+    <component base="_wasla" xOffset="154" yOffset="1902"/>
+    <component base="lam-ar.init.preAlef" xOffset="776"/>
+  </outline>
+</glyph>
