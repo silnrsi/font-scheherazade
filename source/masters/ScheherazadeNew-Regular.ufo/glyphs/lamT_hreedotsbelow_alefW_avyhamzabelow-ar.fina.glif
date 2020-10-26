@@ -2,14 +2,14 @@
 <glyph name="lamThreedotsbelow_alefWavyhamzabelow-ar.fina" format="2">
   <advance width="1482"/>
   <anchor x="893" y="1154" name="alef"/>
-  <anchor x="696" y="-755" name="dia2B"/>
+  <anchor x="510" y="-752" name="dia2B"/>
   <anchor x="1109" y="1612" name="diaA_1"/>
   <anchor x="122" y="1444" name="diaA_2"/>
-  <anchor x="696" y="-755" name="diaB"/>
   <anchor x="1137" y="-829" name="diaB_1"/>
+  <anchor x="670" y="-722" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamMed"/>
-    <component base="_wavyHamza" xOffset="635" yOffset="-494"/>
+    <component base="_wavyHamza" xOffset="595" yOffset="-494"/>
     <component base="lam-ar.medi.preAlef" xOffset="725"/>
     <component base="_dot3d" xOffset="1093" yOffset="-302"/>
   </outline>

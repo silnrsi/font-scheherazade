@@ -2601,6 +2601,12 @@ lookup dfltCALT {
     # Need a dummy lookup for Typetuner
 } dfltCALT;
 
+lookup KurdishCALT {
+    lookupflag 0;
+    sub heh-ar.fina by heh-ar.fina.knottedHigh;
+    sub heh-ar by heh-ar.knotted;
+} KurdishCALT;
+
 lookup RohingyaCALT {
     lookupflag 0;
     sub four-persian by four-persian.roh;
@@ -2776,6 +2782,9 @@ lookup UrduHeh {
     sub heh-ar.init by heh-ar.init.hooked;
     sub heh-ar.medi by heh-ar.medi.hooked;
     sub heh-ar.fina by heh-ar.fina.hooked;
+    # In case Lang=Kurdish set:
+    sub heh-ar.knotted by heh-ar;
+    sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked;
 } UrduHeh;
 
 lookup HehAlternates {
@@ -5408,7 +5417,7 @@ feature calt {
     lookup dfltCALT;
     language KUR;
     # Kurdish
-    lookup KurdishHeh;
+    lookup KurdishCALT;
     language RHG;
     #Rohingya
     lookup RohingyaCALT;

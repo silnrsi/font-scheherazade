@@ -2,15 +2,15 @@
 <glyph name="lamThreedotsbelow_alefWavyhamzabelow-ar" format="2">
   <advance width="1318"/>
   <anchor x="805" y="1253" name="alef"/>
-  <anchor x="670" y="-702" name="dia2B"/>
+  <anchor x="510" y="-702" name="dia2B"/>
   <anchor x="1084" y="1853" name="diaA_1"/>
   <anchor x="116" y="1827" name="diaA_2"/>
-  <anchor x="670" y="-702" name="diaB"/>
-  <anchor x="999" y="-824" name="diaB_1"/>
+  <anchor x="1049" y="-824" name="diaB_1"/>
+  <anchor x="670" y="-702" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamIni"/>
-    <component base="_wavyHamza" xOffset="647" yOffset="-448"/>
+    <component base="_wavyHamza" xOffset="477" yOffset="-448"/>
     <component base="lam-ar.init.preAlef" xOffset="776"/>
-    <component base="_dot3d" xOffset="943" yOffset="-287"/>
+    <component base="_dot3d" xOffset="993" yOffset="-287"/>
   </outline>
 </glyph>
