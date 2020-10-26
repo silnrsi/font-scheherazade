@@ -202,6 +202,9 @@ endif;
 
 endpass; // 3
 
+table(glyph)
+g_alefPlaceholder = pseudo(glyphid(1));
+endtable;
 
 pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
@@ -212,10 +215,15 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 	(absLam absLamFin)=L  absAlef=A  > 
 		(absLamAlef absLamAlefFin):(L A) {component {lam.ref = @L; alef.ref=@A } } gAlefPlaceholder
 		/ _  MARKS  _  MARKS ^;
-***/
-	// ...but we're using two separate glyphs, because of all the combinations.
+
+	// Here is how to do it with separate glyphs:
 	cLamIso cAlefIso  >  cLamIniPreAlef {alefAttached = false}  cAlefFinPostLamIni  / _ MARKS ^ _ ;
 	cLamFin cAlefIso  >  cLamMedPreAlef {alefAttached = false}  cAlefFinPostLamMed  / _ MARKS ^ _ ;
+***/
+
+	(g_lam_ar  g_lam_ar_fina)  g_alef_ar  >  (g_lam_alef_ar  g_lam_alef_ar_fina)  g_alefPlaceholder  
+		/  _=L MARKS  _=A  MARKS ^;
+
 
 	// All other contextual forms
 	
@@ -400,6 +408,15 @@ table (positioning)
 // The code below is more general.
 
 pass(1)
+
+	// For lam-alef ligatures, the g_alefPlaceHolder glyph distinguishes between marks that go on the
+	// lam side (using diaA_1, diaB_1) and those on the alef side (diaA_2, diaB_2).
+
+	cdiaADia {attach {to = @1; at = diaA_1S; with = diaAM}} / cTakesdiaA_1Dia opt4(cndiaADia) _;
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia opt4(cndiaADia) MARKS g_alefPlaceholder _;
+	cdiaBDia {attach {to = @1; at = diaB_1S; with = diaBM}} / cTakesdiaB_1Dia opt4(cndiaBDia) _;
+	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder _;
+
 
 	// Lam-alef components:
 	cHasExit=L {alefAttached = true}  cHasEntry=A {attach {to=@L; at=exitS; with=entryS}; insert=true}

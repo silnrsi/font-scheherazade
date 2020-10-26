@@ -306,7 +306,7 @@ lookup _LamAlefLig_Part2b {
     sub @AlefFin by @AlefFinPostLamMed ;
 } _LamAlefLig_Part2b ;
 
-lookup LamAlefLigatures {
+lookup LamAlefLigatures_OLD {
   lookupflag IgnoreMarks ;
   # Subtable: Ligatures\Part1
     sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
@@ -314,6 +314,17 @@ lookup LamAlefLigatures {
     sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
   # Subtable: Ligatures\Part2b
     sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
+} LamAlefLigatures_OLD;
+
+
+lookup LamAlefLigatures {
+	lookupflag IgnoreMarks ;
+		sub @LamNoLig  alef-ar.fina                by  @LamAlefLig ;
+		sub @LamNoLig  alefWasla-ar.fina           by  @LamAlefWaslaLig ;
+		sub @LamNoLig  alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
+		sub @LamNoLig  alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
+		sub @LamNoLig  alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
+		sub @LamNoLig  alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
 } LamAlefLigatures;
 
 
@@ -1398,19 +1409,41 @@ lookup LamAlefConnection {
 
 lookup mark_to_base {
   lookupflag 0;
-  pos base @diaA mark @_diaA;
-  pos base @diaB mark @_diaB;
+  	pos base @diaA  mark @_diaA;
+  	pos base @diaB  mark @_diaB;
 } mark_to_base;
 
 lookup alef_to_base {
   lookupflag 0;
-  pos base @alef mark @_alef;
+  	pos base @alef  mark @_alef;
 } alef_to_base;
 
 lookup mark2_to_base {
   lookupflag 0;
-  pos base @dia2B mark @_diaB;
+  	pos base @dia2B  mark @_diaB;
 } mark2_to_base;
+
+lookup mark_to_lig {
+	lookupflag 0;
+	
+		# Does not parse:
+#  	pos ligature @LamAlefLig		@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+#  				ligComponent				@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+
+		# This works okay:
+		pos ligature lam_alef-ar	<anchor 1036 1853> mark @_diaA		<anchor 870 -145> mark @_diaB
+					ligComponent 				<anchor 116 1827>  mark @_diaA		<anchor 609 -145> mark @_diaB;
+
+
+# Experiments:
+#		pos ligature lam_alef-ar                           <anchor 1036 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
+#		pos ligature lamBar_alef-ar                        <anchor 1060 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
+#		pos ligature lamBar_alefTwoabove-ar.fina           <anchor 1089 1612> mark @_diaA  ligComponent <anchor -41 1792>  mark @_diaA;
+#		pos ligature lamBar_alefWavyhamzabelow-ar.fina <anchor 1036 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
+		
+#		pos ligature lam_alef-ar                 <anchor 870 -145> mark @_diaB  ligComponent <anchor 609 -145>  mark @_diaB;
+#		pos ligature lam_alefWavyhamzabelow-ar   <anchor 1144 -305> mark @_diaB  ligComponent <anchor 670 -702>  mark @_diaB;
+} mark_to_lig;
 
 
 #---  mkmk feature  ---
@@ -1885,6 +1918,7 @@ feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
         lookup mark_to_base;
         lookup alef_to_base;
+        lookup mark_to_lig;
     script arab;
 ####        lookup AlefMark2BelowAfterLam;
 ####        lookup MarkKern;
