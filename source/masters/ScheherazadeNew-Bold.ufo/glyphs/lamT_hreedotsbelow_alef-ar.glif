@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamThreedotsbelow_alef-ar" format="2">
   <advance width="1493"/>
-  <anchor x="99" y="1687" name="above"/>
-  <anchor x="-63" y="1251" name="aboveLeft"/>
   <anchor x="906" y="1262" name="alef"/>
-  <anchor x="599" y="-114" name="below"/>
   <anchor x="269" y="-243" name="dia2B"/>
   <anchor x="1167" y="1818" name="diaA_1"/>
   <anchor x="107" y="1788" name="diaA_2"/>
   <anchor x="1114" y="-991" name="diaB_1"/>
-  <anchor x="564" y="-204" name="diaB_2"/>
+  <anchor x="333" y="-214" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamIni"/>
     <component base="lam-ar.init.preAlef" xOffset="818"/>
