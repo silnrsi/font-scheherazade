@@ -385,7 +385,7 @@ lookup ShaddaAlefLigatures {
 } ShaddaAlefLigatures;
 
 #********
-# Kashida kludge
+# Kashida kludge - no longer used
 
 # According to Amiri font developer Khaled Hosney:
 #    Kashida justification as implemented in most, if not all, applications is
@@ -1426,13 +1426,25 @@ lookup mark2_to_base {
 lookup mark_to_lig {
 	lookupflag 0;
 	
-		# Does not parse:
-#  	pos ligature @LamAlefLig		@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-#  				ligComponent				@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-
+  	pos ligature @LamAlefLig						@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  	pos ligature @LamAlefWaslaLig				@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  	pos ligature @LamAlefWavyHAboveLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  	pos ligature @LamAlefWavyHBelowLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  	pos ligature @LamAlefTwoAboveLig		@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  	pos ligature @LamAlefThreeAboveLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
+  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  						
 		# This works okay:
-		pos ligature lam_alef-ar	<anchor 1036 1853> mark @_diaA		<anchor 870 -145> mark @_diaB
-					ligComponent 				<anchor 116 1827>  mark @_diaA		<anchor 609 -145> mark @_diaB;
+#		pos ligature lam_alef-ar	<anchor 1036 1853> mark @_diaA		<anchor 870 -145> mark @_diaB
+#					ligComponent 				<anchor 116 1827>  mark @_diaA		<anchor 609 -145> mark @_diaB;
+					
+#		pos ligature lamVabove_alefWasla-ar	<anchor 1011 2413> mark @_diaA		<anchor 870 -145> mark @_diaB
+#					ligComponent 				<anchor 35 2192>  mark @_diaA		<anchor 609 -145> mark @_diaB;
 
 
 # Experiments:
@@ -1606,7 +1618,9 @@ feature rlig {  # Required Ligatures
         lookup ShaddaLigatures;
         lookup ShaddaAlefLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
-        lookup FixKashida;
+        
+        # Hopefully we don't need this anymore:
+        #lookup FixKashida;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
