@@ -553,12 +553,19 @@
         lamBar-ar.fina  lamDoublebar-ar.fina  lamTahabove-ar.fina
     </class>
 
-    <!-- *NEXT 7 CLASSES MUST MATCH* -->
+    <!-- *NEXT 8 CLASSES MUST MATCH* -->
     <class name="LamNoLig">
     	lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init
     	lamThreedotsbelow-ar.init  lamTahabove-ar.init  lamBar-ar.init  lamDoublebar-ar.init
     	lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi
     	lamThreedotsbelow-ar.medi  lamTahabove-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi
+    </class>
+    
+    <class name="LamNoLigIsolFina">  <!-- Graphite -->
+    	lam-ar  lamVabove-ar  lamDotabove-ar  lamThreedotsabove-ar
+    	lamThreedotsbelow-ar  lamTahabove-ar  lamBar-ar  lamDoublebar-ar
+    	lam-ar.fina  lamVabove-ar.fina  lamDotabove-ar.fina  lamThreedotsabove-ar.fina
+    	lamThreedotsbelow-ar.fina  lamTahabove-ar.fina  lamBar-ar.fina  lamDoublebar-ar.fina
     </class>
 
     <class name="LamAlefLig">

@@ -221,9 +221,12 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 	cLamFin cAlefIso  >  cLamMedPreAlef {alefAttached = false}  cAlefFinPostLamMed  / _ MARKS ^ _ ;
 ***/
 
-	(g_lam_ar  g_lam_ar_fina)  g_alef_ar  >  (g_lam_alef_ar  g_lam_alef_ar_fina)  g_alefPlaceholder  
-		/  _=L MARKS  _=A  MARKS ^;
-
+	cLamNoLigIsolFina  g_alef_ar                 >  cLamAlefLig            g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
+	cLamNoLigIsolFina  g_alef_wasla_ar           >  cLamAlefWaslaLig       g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
+	cLamNoLigIsolFina  g_alef_wavyhamzaabove_ar  >  cLamAlefWavyHAboveLig  g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
+	cLamNoLigIsolFina  g_alef_wavyhamzabelow_ar  >  cLamAlefWavyHBelowLig  g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
+	cLamNoLigIsolFina  g_alef_twoabove_ar        >  cLamAlefTwoAboveLig    g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
+	cLamNoLigIsolFina  g_alef_threeabove_ar      >  cLamAlefThreeAboveLig  g_alefPlaceholder  /  _=L MARKS  _=A  MARKS ^;
 
 	// All other contextual forms
 	
