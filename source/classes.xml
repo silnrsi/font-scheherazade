@@ -554,56 +554,56 @@
     </class>
 
     <!-- *NEXT 8 CLASSES MUST MATCH* -->
-    <class name="LamNoLig">
+    <class name="LamNoLig" fixed="0">
     	lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init
     	lamThreedotsbelow-ar.init  lamTahabove-ar.init  lamBar-ar.init  lamDoublebar-ar.init
     	lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi
     	lamThreedotsbelow-ar.medi  lamTahabove-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi
     </class>
     
-    <class name="LamNoLigIsolFina">  <!-- Graphite -->
+    <class name="LamNoLigIsolFina" fixed="0">  <!-- Graphite -->
     	lam-ar  lamVabove-ar  lamDotabove-ar  lamThreedotsabove-ar
     	lamThreedotsbelow-ar  lamTahabove-ar  lamBar-ar  lamDoublebar-ar
     	lam-ar.fina  lamVabove-ar.fina  lamDotabove-ar.fina  lamThreedotsabove-ar.fina
     	lamThreedotsbelow-ar.fina  lamTahabove-ar.fina  lamBar-ar.fina  lamDoublebar-ar.fina
     </class>
 
-    <class name="LamAlefLig">
+    <class name="LamAlefLig" fixed="0">
     	lam_alef-ar  lamVabove_alef-ar  lamDotabove_alef-ar  lamThreedotsabove_alef-ar
     	lamThreedotsbelow_alef-ar  lamTahabove_alef-ar  lamBar_alef-ar  lamDoublebar_alef-ar
     	lam_alef-ar.fina  lamVabove_alef-ar.fina  lamDotabove_alef-ar.fina  lamThreedotsabove_alef-ar.fina
     	lamThreedotsbelow_alef-ar.fina  lamTahabove_alef-ar.fina  lamBar_alef-ar.fina  lamDoublebar_alef-ar.fina
     </class>
     
-    <class name="LamAlefWaslaLig">
+    <class name="LamAlefWaslaLig" fixed="0">
     	lam_alefWasla-ar  lamVabove_alefWasla-ar  lamDotabove_alefWasla-ar  lamThreedotsabove_alefWasla-ar
     	lamThreedotsbelow_alefWasla-ar  lamTahabove_alefWasla-ar  lamBar_alefWasla-ar  lamDoublebar_alefWasla-ar
     	lam_alefWasla-ar.fina  lamVabove_alefWasla-ar.fina  lamDotabove_alefWasla-ar.fina  lamThreedotsabove_alefWasla-ar.fina
     	lamThreedotsbelow_alefWasla-ar.fina  lamTahabove_alefWasla-ar.fina  lamBar_alefWasla-ar.fina  lamDoublebar_alefWasla-ar.fina
     </class>
     
-    <class name="LamAlefWavyHAboveLig">
+    <class name="LamAlefWavyHAboveLig" fixed="0">
     	lam_alefWavyhamzaabove-ar  lamVabove_alefWavyhamzaabove-ar  lamDotabove_alefWavyhamzaabove-ar  lamThreedotsabove_alefWavyhamzaabove-ar
     	lamThreedotsbelow_alefWavyhamzaabove-ar  lamTahabove_alefWavyhamzaabove-ar  lamBar_alefWavyhamzaabove-ar  lamDoublebar_alefWavyhamzaabove-ar
     	lam_alefWavyhamzaabove-ar.fina  lamVabove_alefWavyhamzaabove-ar.fina  lamDotabove_alefWavyhamzaabove-ar.fina  lamThreedotsabove_alefWavyhamzaabove-ar.fina
     	lamThreedotsbelow_alefWavyhamzaabove-ar.fina  lamTahabove_alefWavyhamzaabove-ar.fina  lamBar_alefWavyhamzaabove-ar.fina  lamDoublebar_alefWavyhamzaabove-ar.fina
     </class>
     
-    <class name="LamAlefWavyHBelowLig">
+    <class name="LamAlefWavyHBelowLig" fixed="0">
     	lam_alefWavyhamzabelow-ar  lamVabove_alefWavyhamzabelow-ar  lamDotabove_alefWavyhamzabelow-ar  lamThreedotsabove_alefWavyhamzabelow-ar
     	lamThreedotsbelow_alefWavyhamzabelow-ar  lamTahabove_alefWavyhamzabelow-ar  lamBar_alefWavyhamzabelow-ar  lamDoublebar_alefWavyhamzabelow-ar
     	lam_alefWavyhamzabelow-ar.fina  lamVabove_alefWavyhamzabelow-ar.fina  lamDotabove_alefWavyhamzabelow-ar.fina  lamThreedotsabove_alefWavyhamzabelow-ar.fina
     	lamThreedotsbelow_alefWavyhamzabelow-ar.fina  lamTahabove_alefWavyhamzabelow-ar.fina  lamBar_alefWavyhamzabelow-ar.fina  lamDoublebar_alefWavyhamzabelow-ar.fina
     </class>
     
-    <class name="LamAlefTwoAboveLig">
+    <class name="LamAlefTwoAboveLig" fixed="0">
     	lam_alefTwoabove-ar  lamVabove_alefTwoabove-ar  lamDotabove_alefTwoabove-ar  lamThreedotsabove_alefTwoabove-ar
     	lamThreedotsbelow_alefTwoabove-ar  lamTahabove_alefTwoabove-ar  lamBar_alefTwoabove-ar  lamDoublebar_alefTwoabove-ar
     	lam_alefTwoabove-ar.fina  lamVabove_alefTwoabove-ar.fina  lamDotabove_alefTwoabove-ar.fina  lamThreedotsabove_alefTwoabove-ar.fina
     	lamThreedotsbelow_alefTwoabove-ar.fina  lamTahabove_alefTwoabove-ar.fina  lamBar_alefTwoabove-ar.fina  lamDoublebar_alefTwoabove-ar.fina
     </class>
     
-    <class name="LamAlefThreeAboveLig">
+    <class name="LamAlefThreeAboveLig" fixed="0">
     	lam_alefThreeabove-ar  lamVabove_alefThreeabove-ar  lamDotabove_alefThreeabove-ar  lamThreedotsabove_alefThreeabove-ar
     	lamThreedotsbelow_alefThreeabove-ar  lamTahabove_alefThreeabove-ar  lamBar_alefThreeabove-ar  lamDoublebar_alefThreeabove-ar
     	lam_alefThreeabove-ar.fina  lamVabove_alefThreeabove-ar.fina  lamDotabove_alefThreeabove-ar.fina  lamThreedotsabove_alefThreeabove-ar.fina
