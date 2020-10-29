@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamDotabove_alefWasla-ar.fina" format="2">
-  <advance width="1577"/>
-  <anchor x="893" y="856" name="alef"/>
+  <advance width="1501"/>
+  <anchor x="818" y="856" name="alef"/>
   <anchor x="439" y="-277" name="dia2B"/>
-  <anchor x="1119" y="2067" name="diaA_1"/>
+  <anchor x="1044" y="2067" name="diaA_1"/>
   <anchor x="18" y="1829" name="diaA_2"/>
-  <anchor x="1167" y="-212" name="diaB_1"/>
+  <anchor x="1092" y="-212" name="diaB_1"/>
   <anchor x="528" y="-220" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamMed"/>
     <component base="_wasla" xScale="0.927" yScale="0.927" xOffset="165" yOffset="1487"/>
-    <component base="lam-ar.medi.preAlef" xOffset="767"/>
-    <component base="_dot1" xScale="0.927" yScale="0.927" xOffset="1137" yOffset="1692"/>
+    <component base="lam-ar.medi.preAlef" xOffset="692"/>
+    <component base="_dot1" xScale="0.927" yScale="0.927" xOffset="1062" yOffset="1692"/>
   </outline>
 </glyph>

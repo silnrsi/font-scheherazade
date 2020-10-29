@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamVabove_alefWavyhamzabelow-ar.fina" format="2">
-  <advance width="1577"/>
-  <anchor x="886" y="910" name="alef"/>
+  <advance width="1501"/>
+  <anchor x="810" y="910" name="alef"/>
   <anchor x="636" y="-750" name="dia2B"/>
-  <anchor x="1188" y="2110" name="diaA_1"/>
+  <anchor x="1112" y="2110" name="diaA_1"/>
   <anchor x="113" y="1402" name="diaA_2"/>
-  <anchor x="1297" y="-212" name="diaB_1"/>
+  <anchor x="1221" y="-212" name="diaB_1"/>
   <outline>
     <component base="alef-ar.fina.postLamMed"/>
     <component base="_wavyHamza" xScale="0.927" yScale="0.927" xOffset="594" yOffset="-454"/>
-    <component base="lam-ar.medi.preAlef" xOffset="767"/>
-    <component base="_smallV" xScale="0.927" yScale="0.927" xOffset="1188" yOffset="1718"/>
+    <component base="lam-ar.medi.preAlef" xOffset="691"/>
+    <component base="_smallV" xScale="0.927" yScale="0.927" xOffset="1112" yOffset="1718"/>
   </outline>
 </glyph>
