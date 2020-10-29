@@ -546,6 +546,7 @@ pass(3)
 #if (STYLE == BOLD)
 	cRehKernKaf {advance.x -= 380m} / cRehWawTighten MARKSBELOW _ ;
 #else
+	cRehKernKaf {advance.x -= 410m} / g_u_ar         MARKSBELOW _;  // special case
 	cRehKernKaf {advance.x -= 550m} / cRehWawTighten MARKSBELOW _ ;
 #endif
 	
@@ -660,8 +661,6 @@ pass(6)
 
 	cLamLikeInitMedi _  >  @L  g_abs_auto_kashida:L  /  _=L  cMarksBelow cMarksAbove? _ ^ (cYehLikeFina cTooth2wBelowMedi);
 
-	g_kashida_ar  >  g_kashida_ar_haswidth;
-
 endpass; // 6
 
 endtable; // sub
@@ -697,7 +696,7 @@ pass(3)	// Collisions and adjustments
 	cTooth2wAboveMedi {adv.x += 100m}  /  cKafLikeInit MARKS _;  // no kashida
 	
 	// lam-alef + teh
-	cTooth2wAboveInit {adv.x += 90}  /  (g_alef_ar_fina_post_lam_ini g_alef_ar_fina_post_lam_med) MARKS _;
+	cTooth2wAboveInit {adv.x += 90m}  /  (g_alef_ar_fina_post_lam_ini g_alef_ar_fina_post_lam_med) MARKS _;
 	
 #endif
 
@@ -792,6 +791,10 @@ pass(3)	// Collisions and adjustments
 
 	// AE + kaf
 	cKafLikeInit {adv.x -= 300m}  /  (g_ae_ar g_ae_ar_fina)  MARKSBELOW  _;
+
+#if (STYLE == BOLD)
+	g_highhamza_ar cTooth2wAboveInit {adv.x += 50m};
+#endif
 
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
