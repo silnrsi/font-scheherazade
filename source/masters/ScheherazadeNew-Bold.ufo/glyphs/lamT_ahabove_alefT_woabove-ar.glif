@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamTahabove_alefTwoabove-ar" format="2">
-  <advance width="1493"/>
-  <anchor x="830" y="2268" name="alef"/>
+  <advance width="1364"/>
+  <anchor x="701" y="2268" name="alef"/>
   <anchor x="269" y="-243" name="dia2B"/>
-  <anchor x="1032" y="2527" name="diaA_1"/>
+  <anchor x="903" y="2527" name="diaA_1"/>
   <anchor x="-97" y="2054" name="diaA_2"/>
-  <anchor x="1018" y="-214" name="diaB_1"/>
+  <anchor x="889" y="-214" name="diaB_1"/>
   <anchor x="564" y="-204" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamIni" xScale="1.03" yScale="1.03"/>
     <component base="_two" xScale="0.927" yScale="0.927" xOffset="-71" yOffset="1338"/>
-    <component base="lam-ar.init.preAlef" xOffset="818"/>
-    <component base="_tah" xScale="0.927" yScale="0.927" xOffset="1180" yOffset="1858"/>
+    <component base="lam-ar.init.preAlef" xOffset="689"/>
+    <component base="_tah" xScale="0.927" yScale="0.927" xOffset="1051" yOffset="1858"/>
   </outline>
 </glyph>

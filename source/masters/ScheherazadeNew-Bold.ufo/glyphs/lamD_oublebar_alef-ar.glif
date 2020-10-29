@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="lamDoublebar_alef-ar" format="2">
-  <advance width="1493"/>
-  <anchor x="956" y="1352" name="alef"/>
+  <advance width="1364"/>
+  <anchor x="827" y="1352" name="alef"/>
   <anchor x="269" y="-243" name="dia2B"/>
-  <anchor x="1167" y="1818" name="diaA_1"/>
+  <anchor x="1038" y="1818" name="diaA_1"/>
   <anchor x="107" y="1788" name="diaA_2"/>
-  <anchor x="1034" y="-214" name="diaB_1"/>
+  <anchor x="905" y="-214" name="diaB_1"/>
   <anchor x="564" y="-204" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamIni"/>
-    <component base="lam-ar.init.preAlef" xOffset="818"/>
-    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1161" yOffset="982"/>
-    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1161" yOffset="1179"/>
+    <component base="lam-ar.init.preAlef" xOffset="689"/>
+    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1032" yOffset="982"/>
+    <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1032" yOffset="1179"/>
   </outline>
 </glyph>
