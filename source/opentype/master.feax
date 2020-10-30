@@ -384,6 +384,7 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'  by  shadda_alef-ar;
 } ShaddaAlefLigatures;
 
+
 #---  calt feature  ---
 
 #********
@@ -416,7 +417,6 @@ lookup SindhiCALT {
     #sub heh-ar by heh-ar.knotted ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
-##    sub dammatan-ar by dammatan-ar.sixNine ;  # old bug
     sub @Meem by @Meem.sindhi ;
     sub @Kasra by @Kasra_lowered;
     sub comma-ar by comma-ar.downward ;
@@ -428,9 +428,6 @@ lookup UrduCALT {
     sub four-persian by four-persian.urdu ;
     sub six-persian by six-persian.urdu ;
     sub seven-persian by seven-persian.urdu ;
-##    sub heh-ar.init by heh-ar.init.hooked ; -- no longer used for Urdu
-##    sub heh-ar.medi by heh-ar.medi.hooked ;
-##    sub heh-ar.fina by heh-ar.fina.hooked ;
     sub @Kasra by @Kasra_lowered;
 } UrduCALT;
 
@@ -533,12 +530,6 @@ lookup MeemAlternate {
   lookupflag IgnoreMarks ;
     sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
 } MeemAlternate;
-
-# obsolete
-#lookup ArabicUAlternate {
-#  lookupflag IgnoreMarks ;
-#    sub @U by @U.filled ;
-#} ArabicUAlternate;
 
 lookup MaddahAlternate {
   lookupflag 0 ;
@@ -680,17 +671,6 @@ lookup CommaAlternates {
     sub semicolon-ar by semicolon-ar.downward ;
 } CommaAlternates;
 
-#--- OBSOLETE HACKS ---
-#lookup JehHack {
-#  lookupflag IgnoreMarks ;
-#    sub @Jeh by @Jeh.dotHat ;
-#} JehHack;
-
-#lookup HeadOfKhahHack {
-#  lookupflag 0 ;
-#    sub hahabove-ar by marksidewaysnoonghunna-ar ;
-#} HeadOfKhahHack;
-#----------------------
 
 #---  liga feature  ---
 
@@ -771,16 +751,6 @@ do if opt("nokern") != "yes";
 #********
 # Kashida insertion to handle collision avoidance
 
-#	(cTooth3wBelowInit cTooth3wBelowMedi cTooth2wBelowInit cTooth2wBelowMedi)  _  _  
-#		>  @1 g_abs_auto_kashida:MF g_abs_auto_kashida:MF
-#		/  _ MARKS _ _ cTooth3wBelowMedi=MF;
-
-#	(cTooth3wBelowInit cTooth3wBelowMedi)  _  >  @1 g_abs_auto_kashida:F
-#		/  _ MARKS _ cYehLikeFina=F;
-
-#	(cTooth2wBelowInit cTooth3wBelowInit)  _  >  @1 g_abs_auto_kashida:MF / _ MARKS _ (cTooth2wBelowMedi cYehLikeFina)=MF;
-
-#####@PostTooth2wKashida = [ @Tooth2wBelowMedi @YehLikeFina ];
 @Tooth3wBelowIM = [ @Tooth3wBelowInit @Tooth3wBelowMedi ];
 @Tooth2wBelowIM = [ @Tooth2wBelowInit @Tooth2wBelowMedi ];
 @Tooth2w3wBelowInit = [ @Tooth2wBelowInit @Tooth3wBelowInit ];
@@ -793,13 +763,13 @@ lookup _InsertKashida {
 	sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
 	sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
 	sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
-#	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;
-#	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;
-#	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;
-#	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;
-#	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;
-#	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # @Tooth2wwAboveInitMedi
-#	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # @Tooth2wwAboveInitMedi
+#	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;  # redundant
+#	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;  # redundant
+#	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;  # redundant
+#	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;  # redundant
+#	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;  # redundant
+#	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # redundant
+#	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # redundant
 	sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
 	sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
 	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
@@ -1286,10 +1256,6 @@ lookup MiscKerningWDiacs {
 
 # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
-#lookup _kkern_30 {
-#  pos absAutoKashida     <-15 0  -30 0>;
-#} _kkern_30;
-
 lookup _kkern_40 {
   pos absAutoKashida     <-20 0  -40 0>;
 } _kkern_40;
@@ -1426,23 +1392,6 @@ lookup mark_to_lig {
   						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
   	pos ligature @LamAlefThreeAboveLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
   						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  						
-		# This works okay:
-#		pos ligature lam_alef-ar	<anchor 1036 1853> mark @_diaA		<anchor 870 -145> mark @_diaB
-#					ligComponent 				<anchor 116 1827>  mark @_diaA		<anchor 609 -145> mark @_diaB;
-					
-#		pos ligature lamVabove_alefWasla-ar	<anchor 1011 2413> mark @_diaA		<anchor 870 -145> mark @_diaB
-#					ligComponent 				<anchor 35 2192>  mark @_diaA		<anchor 609 -145> mark @_diaB;
-
-
-# Experiments:
-#		pos ligature lam_alef-ar                       <anchor 1036 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
-#		pos ligature lamBar_alef-ar                    <anchor 1060 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
-#		pos ligature lamBar_alefTwoabove-ar.fina       <anchor 1089 1612> mark @_diaA  ligComponent <anchor -41 1792>  mark @_diaA;
-#		pos ligature lamBar_alefWavyhamzabelow-ar.fina <anchor 1036 1853> mark @_diaA  ligComponent <anchor 116 1827>  mark @_diaA;
-		
-#		pos ligature lam_alef-ar                 <anchor 870 -145> mark @_diaB  ligComponent <anchor 609 -145>  mark @_diaB;
-#		pos ligature lam_alefWavyhamzabelow-ar   <anchor 1144 -305> mark @_diaB  ligComponent <anchor 670 -702>  mark @_diaB;
 } mark_to_lig;
 
 
@@ -1733,16 +1682,6 @@ feature cv48 {  # Character Variant 48
     } ;
 } cv48 ;
 
-#feature cv50 {  # Character Variant 50
-#    # Same for latin & arabic:
-#    	lookup ArabicUAlternate;
-#    cvParameters {
-#        FeatUILabelNameID  { name 3 1 0x0409 "Arabic U" ; };
-#        ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-#        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
-#    } ;
-#} cv50 ;
-
 feature cv51 {  # Character Variant 51
     # Same for latin & arabic:
     	lookup KirghizOeAlternates;
@@ -1870,14 +1809,6 @@ feature cv84 {  # Character Variant 84
        #ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
     } ;
 } cv84 ;
-
-#feature cv90 {  # Character Variant 90
-#		lookup JehHack;
-#} cv90 ;
-
-#feature cv92 {  # Character Variant 92
-#		lookup HeadOfKhahHack;
-#} cv92 ;
 
 
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the

@@ -252,19 +252,6 @@ cAnyMarksBelow = (cMark1Below cMark2Below cMark4Below);
 cMark234 = (cMark2 cMark3 cMark4);
 cMark34  = (cMark3 cMark4);
 
-
-// Not used by Graphite:
-/***
-// TODO: define the components for these ligatures
-cShaddaMarks = (absFathatan absDammatan absFatha 
-	absDamma absSuperscriptAlef);
-cShaddaLigatures = (absShaddaFathatan absShaddaDammatan absShaddaFatha  
-	absShaddaDamma absShaddaAlef);
-
-cHamzaMarks = (absDamma absFatha);
-cHamzaLigatures = (absHamzaDamma absHamzaFatha);
-***/
-
 // Cursive attachment
 
 cHasExit  = (cLamIniPreAlef   cLamMedPreAlef  );

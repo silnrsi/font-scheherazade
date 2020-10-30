@@ -129,16 +129,13 @@ pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
 	// QUESTION: are there more things that need to be decomposed?
 	cAlefPlusMark _ >  g_alef_ar:1  cAlefMark$1:1 ;
 	
-//	if (graphite1mirror)    // No longer support Graphite 1 mirroring?
-//		(cMirrorOpen cMirrorClose)  >  (cMirrorClose cMirrorOpen);
-//	endif;
-	
 	// The following is a debugging tool so you can find out whether the app is rendering with Graphite or not.
 	// The string "RenderingUnknown" will be rendered as "RenderingGraphite":
 	
 	codepoint("U") codepoint("n") codepoint("k") codepoint("n") codepoint("o") codepoint("w") codepoint("n") _               > 
 	codepoint("G") codepoint("r") codepoint("a") codepoint("p") codepoint("h") codepoint("i") codepoint("t") codepoint("e"):16  / 
-		codepoint("R") codepoint("e") codepoint("n") codepoint("d") codepoint("e") codepoint("r") codepoint("i") codepoint("n") codepoint("g")  _ _ _ _ _ _ _ _;
+		codepoint("R") codepoint("e") codepoint("n") codepoint("d") codepoint("e") codepoint("r") codepoint("i") 
+				codepoint("n") codepoint("g")  _ _ _ _ _ _ _ _;
 
 	// Subtending marks
 	// This is in a LTR pass because they are category (AN) and the digits that follow are collected into
@@ -187,12 +184,6 @@ if (shaddaKasra == std || shaddaKasra == raised)
 		g_shadda_ar  cShaddaKasraMarks  >  _  cShaddaKasraLigatures:(S K)  /  _=S  g_graphemejoinercomb?  _=K;
 		cShaddaKasraMarks  g_shadda_ar  >  cShaddaKasraLigatures:(K S)  _  /  _=K  g_graphemejoinercomb?  _=S;
 endif;
-
-	
-	// QUESTION: do we really need these if we're doing the reordering above?
-	// TODO: if we use them, make them into real ligatures
-	//absShadda     cShaddaMarks >  _  cShaddaLigatures:(1 2);
-	//absHamzaAbove cHamzaMarks  >   _ cHamzaLigatures:(1 2);
 
 	// The large madda is what comes in initially. It would seem more straightforward to
 	// replace it with the smaller form only if the large-madda feature is not turned on, 
@@ -293,11 +284,6 @@ pass(5)	// Features, special behaviors
 		cno_Heh  >  cHehUrdu;
 	endif;
 
-// obsolete
-//	if (UAlt == filled)
-//		cU  >  cU_filled;
-//	endif;
-
 	if (kirghizOeAlt == bar)
 		cno_bar  >  cbar;
 	endif;
@@ -362,15 +348,6 @@ pass(5)	// Features, special behaviors
 		cno_Downward  >  cDownward;
 	endif;
 	
-/*--- OBSOLETE FEATURES ---
-	if (jehHack == dotHat)
-		cJeh > cJeh_dotHat;
-	endif;
-	
-	if (headOfKhahHack == openLeft)
-		cno_OpenLeft > cOpenLeft;	endif;
--------------------------*/
-	
 	//if (!invis) // always true now that we have disabled the feature
 	
 		// Note that substitution changes the directionality to the defaults for the
@@ -383,10 +360,11 @@ endpass; // 5
 
 
 pass(6)
-	// Allah clean-up.
+	// Allah clean-up: use appropriate form of alef.
 	(g_alef_ar  g_alef_ar_fina)                >  (g_alef_ar_allah g_alef_ar_fina_allah)          /  _  MARKS  g_lam_ar_init_allah1;
 	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_fina_allah):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_init_allah1;
 
+	// Use appropriate form of shadda-dagger-alef.
 	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_medi_allah2  _  _;
 
 	// Other:
@@ -396,12 +374,6 @@ endpass;
 
 endtable; // sub
 
-
-//table(glyph)
-//cMark1Below_volt += (g_graphemejoinercomb);
-//cMark2Below_volt += (g_graphemejoinercomb);
-//cAnyMarksBelow += (g_graphemejoinercomb);
-//endtable;
 
 //-- Positioning ---
 
@@ -451,16 +423,9 @@ pass(1)
 	cdiaADia {attach {to = @1; at = diaAS; with = diaAM}} / cTakesdiaADia opt4(cndiaADia) _;
 	cdiaBDia {attach {to = @1; at = diaBS; with = diaBM}} / cTakesdiaBDia opt4(cndiaBDia) _;
 
-
-	// Normal case - OLD
-//	(cBaseAny cMark1Above_volt cMarkSuperscriptAlefs)=B  (cAnyMarksAbove) {attach {to=@B; at=diaAS; with=diaAM} }
-//		/ _ ^ MARKSBELOW  _;
-
-
 	// Subtending marks
 	// NB: at this point digits should be in visual order, right to left,
 	// so we attach the left-most (logically first) to the sign, and proceed to the right.
-	
 	
 	cSignDigit=D4 { attach {to=@D3; at=digitRS; with=digitLS }; insert = true}
 	cSignDigit=D3 { attach {to=@D2; at=digitRS; with=digitLS }; insert = true}
@@ -502,8 +467,6 @@ pass(1)
 
 	cSign1=S
 	cSignDigit { attach {to=@S;  at=digitRS; with=digitLS }; insert = true};
-	
-	
 
 endpass; // 1
 
@@ -515,24 +478,20 @@ pass(2)
 	cAlefFinPostLamAll=B cAnyMarksBelow {attach {to=@B; at=dia2BS; with=dia2BM} }
 		/ (g_lam_threedotsabove_ar_init_pre_alef g_lam_threedotsabove_ar_medi_pre_alef cAnyMarksBelow) MARKSABOVE _ ^ MARKSABOVE _ ;
 
-	// Normal case - OLD
-//	(cBaseAny cMark1Below_volt)=B  cAnyMarksBelow {attach {to=@B; at=diaBS; with=diaBM} }
-//		/ _ ^ MARKSABOVE  _;
-
 endpass; // 2
 
 #ifndef NOKERN
 // Start of kerning code
 
+/*** Debuggers ***
 table(glyph)
-// debuggers
 cNotMA = cRehKernOther;
 cNotMA -= cRehKernOtherMA;
 
 cNotMB = cRehKernOther;
 cNotMB -= cRehKernOtherMB;
 endtable;
-
+******************/
 
 if (debug == false)
 
@@ -608,16 +567,7 @@ table(glyph)	// classes for collision handling
 
 cNoonGhunna = (g_noonghunna_ar g_noonghunna_ar_init g_noonghunna_ar_medi g_noonghunna_ar_fina);
 
-cRnoonLikeMedi = (g_rnoon_ar_medi  g_highhamza_yeh_ar_medi);	// Expanded to 5.1  // TODO: extend this group?
-
-/*
-cKehehLikeFin = (
-		g_keheh_twodotshorizontalabove_ar_fina  g_keheh_threedotsbelow_ar_fina
-		g_keheh_ar_fina  g_keheh_dotabove_ar_fina  g_keheh_threedotsabove_ar_fina
-		g_keheh_threedotsupbelow_ar_fina  g_kaf_ring_ar_fina  
-		g_gaf_ar_fina  g_gaf_ring_ar_fina  g_gaf_threedots_ar_fina  g_gaf_twodotsbelow_ar_fina
-		g_gaf_invertedstroke_ar_fina  g_ngoeh_ar_fina  g_gueh_ar_fina );
-*/
+cRnoonLikeMedi = (g_rnoon_ar_medi  g_highhamza_yeh_ar_medi);
 	
 g_abs_auto_kashida {dbgAw = aw; dbgBbW = bb.width};
 
@@ -713,10 +663,7 @@ pass(3)	// Collisions and adjustments
 	cTooth  g_abs_auto_kashida  {adv.x -= 50m}  g_teh_marbuta_ar_fina {adv.x -= 50m}  /  _ MARKS _  _ ;
 	
 	// kaf + rnoon
-	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;
-
-//	cLamLikeInitMedi g_abs_auto_kashida {adv.x -=50} (cYehLikeFina cTooth2wBelowMedi) {adv.x -=50m} / _ MARKS _ ^ _;
-	
+	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;	
 	
 	// Simple adjustments
 		
