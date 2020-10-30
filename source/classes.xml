@@ -610,6 +610,10 @@
     	lamThreedotsbelow_alefThreeabove-ar.fina  lamTahabove_alefThreeabove-ar.fina  lamBar_alefThreeabove-ar.fina  lamDoublebar_alefThreeabove-ar.fina
     </class>
     
+    <class name="AllLamAlefLig">
+    	@LamAlefLig  @LamAlefWaslaLig  @LamAlefWavyHAboveLig  @LamAlefWavyHBelowLig  @LamAlefTwoAboveLig  @LamAlefThreeAboveLig
+    </class>
+    
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="LowHamzaBase" fixed="0">
         waw-ar yeh-ar ae-ar hehgoal-ar
