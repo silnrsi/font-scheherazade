@@ -186,6 +186,26 @@
       <string>آ فآ آ سآ لآ تلآ</string>
     </test>
   </testgroup>
+  <testgroup label="lam-alef ligatures">
+    <test class="fset1403" label="basic" rtl="True">
+      <string>لا سلا</string>
+    </test>
+    <test class="fset1403" label="with diacs" rtl="True">
+      <string>لَاُ  لّاِ</string>
+    </test>
+    <test class="fset1403" label="other" rtl="True">
+      <string>فڷٲ ڷٳ</string>
+    </test>
+    <test class="fset1403" label="lam whatever" rtl="True">
+      <string>لٱٰ سلِْٳِْ</string>
+    </test>
+    <test class="fset1403" label="08C7 lam-tah" rtl="True">
+      <string>فࣇا ࣇٱ</string>
+    </test>
+    <test class="fset1403" label="two lower diacs" rtl="True">
+      <string>فࣇٍْاِ ࣇِٱٍ لٍأٍ</string>
+    </test>
+  </testgroup>
   <testgroup label="Allah">
     <test class="fset1386" label="FDF2" rtl="True">
       <string>ﷲ</string>
@@ -463,6 +483,12 @@
     <test class="fset1403" label="jeem-like" rtl="True">
       <string>لاجل لاڇل لاځل لاݗل </string>
     </test>
+    <test background="#55aaff" class="fset1403" label="OTHER" rtl="True">
+      <string />
+    </test>
+    <test class="fset1403" label="waw w/ above kaf/gaf" rtl="True">
+      <string>ۇک ۇگس بۇگس | ۆگق ۋک</string>
+    </test>
   </testgroup>
   <testgroup label="intra-segment collisions">
     <test background="#55aaff" class="fset1403" label="WAW + KAF" rtl="True">
@@ -617,6 +643,9 @@
     </test>
     <test class="fset1403" label="words with teh-marbuta" rtl="True">
       <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
+    </test>
+    <test class="fset1403" label="high-hamza teh" rtl="True">
+      <string>ٴتا</string>
     </test>
   </testgroup>
 </ftml>
