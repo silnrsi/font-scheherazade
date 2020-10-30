@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont>
+  <JSTF>
+    <Version value="0x00010000"/>
+    <JstfScriptRecord index="0">
+      <JstfScriptTag value="arab"/>
+      <JstfScript>
+        <ExtenderGlyph>
+          <ExtenderGlyph index="0" value="absAutoKashida"/>
+          <ExtenderGlyph index="1" value="kashida-ar"/>
+        </ExtenderGlyph>
+      </JstfScript>
+    </JstfScriptRecord>
+  </JSTF>
+</ttFont>
