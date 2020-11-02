@@ -75,7 +75,7 @@ ChangeLog
 - Adjusted underline and strikethrough positions and weight
 - Updated Arabic script character repertoire to support all characters in the 
   Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
-- Update Latin script repertoire to support "Recommended characters for Non-Roman fonts"
+- Updated Latin script repertoire to support "Recommended characters for Non-Roman fonts"
   https://scriptsource.org/entry/gg5wm9hhd3
 - Added U+204F and U+2E41 for Sindhi language support
 - Added U+FDFA (sallallahou alayhe wasallam), U+FDFB (jallajalalouhou), and U+FDFD (bismillah)
@@ -87,7 +87,7 @@ ChangeLog
   U+0769, U+077E, U+08B2, U+08BE..U+08C2)
 - Changed design of U+06C5 for Kyrgyz language and added feature cv51, Kyrgyz OE,	 
   supporting the bar design
-- Changed design of U+0677 and U+06C7 and removed feature cv50, Arabic U	
+- Changed design of U+0677 and U+06C7
 - Changed design of high hamza characters (U+0674..U+0678)
 - Adjusted the weight and position of some dashes to make them consistent
 - Implemented new Allah ligature rules
@@ -98,6 +98,7 @@ ChangeLog
 - Added UI name strings for Graphite and OpenType features
 - Removed support for Sindhi-style heh when Sindhi language is selected
 - Removed support for Urdu-style heh when Urdu language is selected
+- Removed "Arabic U" feature
 - Removed "Show invisible characters" feature
 - Removed "Jeh hack" feature
 - Removed "Dotless head of Khah hack" feature
@@ -162,7 +163,6 @@ ChangeLog
 - 0603 now supports up to 4 digits
 - fixed lam+alef collisions with combining marks below 
 - upper vowel changed to render below maddah (except for 065E)
-
     
 2013-04-18 (SIL NRSI team) Scheherazade Version 1.930 (test release)
 - Typetuner now adjusts Graphite features as well as OpenType 
@@ -263,7 +263,7 @@ be sure to add your name (N), email (E), web-address (W) and description
 N: Sharon Correll
 E: fonts@sil.org
 W: http://scripts.sil.org/
-D: Graphite, OpenType, and TypeTuner code, and build support
+D: Contributing Designer, Graphite, OpenType, and TypeTuner code, and build support
 
 N: Bob Hallissy
 E: fonts@sil.org
