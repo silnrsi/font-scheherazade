@@ -63,7 +63,20 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-2020-09-24 (SIL WSTech team) Scheherazade New Version 2.900 (beta)
+2020-11-5 (SIL WSTech team) Scheherazade New Version 3.000 (official release)
+- Renamed font to Scheherazade New
+- Resized glyphs to better fit standard Arabic script fonts
+- Adjusted line-spacing to reflect larger characters
+- Adjusted underline and strikethrough positions and weight
+- Updated Arabic script character repertoire to support all characters in the 
+  Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
+- Update Latin script repertoire to support "Recommended characters for Non-Roman fonts"
+  https://scriptsource.org/entry/gg5wm9hhd3
+- Added U+204F and U+2E41 for Sindhi language support
+- Added U+FDFA (sallallahou alayhe wasallam), U+FDFB (jallajalalouhou), and U+FDFD (bismillah)
+- Added Private Use Area honorific ligatures (all of these are in the Unicode pipeline 
+  at non-stable codepoints).
+- Adjusted vertical position of isolate keheh-like characters
 - Changed design of small v and inverted small v characters (U+063D, U+065A,
   U+065B, U+0692, U+06B5, U+06C9, U+06CE, U+06EE, U+06EF, U+06FF, U+0756,
   U+0769, U+077E, U+08B2, U+08BE..U+08C2)
@@ -71,32 +84,22 @@ ChangeLog
   supporting the bar design
 - Changed design of U+0677 and U+06C7 and removed feature cv50, Arabic U	
 - Changed design of high hamza characters (U+0674..U+0678)
-- Added feature cv54, Yeh hamza, for Kyrgyz language
-- Added Kyrgyz language support in Graphite and OpenType
-- Improved kerning - reh/waw, lam-alef ligature, AE+kaf-like initials, and others
-- Added collision fixes for certain combinations
-- Updated linespacing
-- Adjusted underline and strikethrough positions and weight
 - Adjusted the weight and position of some dashes to make them consistent
-
-2020-07-31 (SIL WSTech team) Scheherazade New Version 2.180 (alpha)
-- Renamed font to Scheherazade New
-- Resized glyphs to better fit standard Arabic script fonts
-- Adjusted line-spacing to reflect larger characters
-- Adjusted vertical position of isolate keheh-like characters
-- Updated Arabic script character repertoire to support all characters in the 
-  Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
-- Update Latin script repertoire to support "Recommended characters for Non-Roman fonts"
-  https://scriptsource.org/entry/gg5wm9hhd3
-- Improved reh/waw kerning
 - Implemented new Allah ligature rules
 - Implemented support for UNICODE ARABIC MARK RENDERING (UTR #53) 
+- Improved kerning - reh/waw, lam-alef ligature, AE+kaf-like initials, and others
+- Added collision fixes for certain combinations
+- Fixed bug in forming of lam/alef ligatures when automatic kashida justification is turned on
+- Added UI name strings for Graphite and OpenType features
+- Removed support for Sindhi-style heh when Sindhi language is selected
 - Removed support for Urdu-style heh when Urdu language is selected
 - Removed "Show invisible characters" feature
-- Added UI name strings for Graphite and OpenType features
-- Added U+FDFB (jallajalalouhou) and U+FDFD (bismillah)
-- Added Private Use Area honorific ligatures (all of these are in the Unicode pipeline 
-  at non-stable codepoints).
+- Removed "Jeh hack" feature
+- Removed "Dotless head of Khah hack" feature
+- Added feature cv54, Yeh hamza, for Kyrgyz language
+- Added Kyrgyz language support in Graphite and OpenType
+- Added Wolof language support in Graphite and OpenType
+- Added support for Comma downward when Sindhi language is selected
 
 2015-08-19 (SIL NRSI team) Scheherazade Version 2.100 (official release)
 - Renamed postscript name of Scheherazade Regular from "Scheherazade" 
