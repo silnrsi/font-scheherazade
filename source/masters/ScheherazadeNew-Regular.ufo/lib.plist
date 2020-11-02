@@ -1580,8 +1580,10 @@
     <string>fullstop-ar</string>
     <string>comma-ar</string>
     <string>comma-ar.downward</string>
+    <string>commareversed</string>
     <string>semicolon-ar</string>
     <string>semicolon-ar.downward</string>
+    <string>reversedsemicolon</string>
     <string>mark-ar</string>
     <string>question-ar</string>
     <string>percent-ar</string>
@@ -3244,8 +3246,10 @@
     <string>fullstop-ar</string>
     <string>comma-ar</string>
     <string>comma-ar.downward</string>
+    <string>commareversed</string>
     <string>semicolon-ar</string>
     <string>semicolon-ar.downward</string>
+    <string>reversedsemicolon</string>
     <string>mark-ar</string>
     <string>question-ar</string>
     <string>percent-ar</string>
@@ -3860,6 +3864,8 @@
     <string>uni060C</string>
     <key>comma-ar.downward</key>
     <string>uni060C.downward</string>
+    <key>commareversed</key>
+    <string>uni2E41</string>
     <key>cuberoot-ar</key>
     <string>uni0606</string>
     <key>dad-ar</key>
@@ -5418,6 +5424,8 @@
     <string>uniFFFD</string>
     <key>reverseSolidusOperator</key>
     <string>uni29F5</string>
+    <key>reversedsemicolon</key>
+    <string>uni204F</string>
     <key>rhombusStopabove-ar</key>
     <string>uni06EB</string>
     <key>rhombusStopbelow-ar</key>
