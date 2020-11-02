@@ -28,7 +28,7 @@ omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_
 #   --norename - omit glyph rename step
 opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'})
 
-cmds = [ ]
+cmds = [cmd('ttx -m ${DEP} -o ${TGT} ${SRC}', ['source/jstf.ttx']) ]
 if '--norename' not in opts:
     cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/masters/${DS:FILENAME_BASE}.ufo']))
 if '--autohint' in opts:
