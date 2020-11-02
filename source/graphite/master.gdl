@@ -388,13 +388,26 @@ pass(1)
 	// lam side (using diaA_1, diaB_1) and those on the alef side (diaA_2, diaB_2).
 
 	// The second lower diac uses an alternate AP:
-	cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} / cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder cdiaADia? _;
+	cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} / cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder _=DB;
+	cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} 
+		cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
+		/ cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder  _=DB _=DA;
+	// A decomposed hamza comes before the lower diac in the glyph stream:
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
+		cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} 
+		/ cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder  _=DA _=DB;
 
-	// NB: the cdiaADia is is needed for a hamza that has been decomposed from the alef.
 	cdiaADia {attach {to = @1; at = diaA_1S; with = diaAM}} / cTakesdiaA_1Dia opt4(cndiaADia) _;
-	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia opt4(cndiaADia) MARKS g_alefPlaceholder cdiaADia? _;
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia opt4(cndiaADia) MARKS g_alefPlaceholder _;
 	cdiaBDia {attach {to = @1; at = diaB_1S; with = diaBM}} / cTakesdiaB_1Dia opt4(cndiaBDia) _;
-	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder cdiaADia? _;
+	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder _;
+	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} 
+		cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
+		/ cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder   _=DB _=DA;
+	// A decomposed hamza comes before the lower diac in the glyph stream:
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
+		cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} 
+		/ cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder   _=DA _=DB;
 
 
 	// Lam-alef components:

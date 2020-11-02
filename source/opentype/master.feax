@@ -1116,6 +1116,7 @@ ifinfo(styleName, "Regular") {
 	#ignore pos @RehWawAll  @RehWawAll;
 } RehWawKerning1;
 
+
 lookup RehWawKerning {
 	# does not ignore diacritics
 	
@@ -1126,9 +1127,9 @@ ifinfo(styleName, "Bold") {
 	pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
 }
 ifinfo(styleName, "Regular") {
-	pos @RehWawTighten' lookup _kern_410                u-ar ;  # special case
-	pos @RehWawTighten' lookup _kern_410 @_diaB         u-ar ;
-	pos @RehWawTighten' lookup _kern_410 @_diaB @_diaB  u-ar ;
+	pos u-ar' lookup _kern_410                @RehKernKaf ;  # special case
+	pos u-ar' lookup _kern_410 @_diaB         @RehKernKaf ;
+	pos u-ar' lookup _kern_410 @_diaB @_diaB  @RehKernKaf ;
 
 	pos @RehWawTighten' lookup _kern_550                @RehKernKaf ;
 	pos @RehWawTighten' lookup _kern_550 @_diaB         @RehKernKaf ;

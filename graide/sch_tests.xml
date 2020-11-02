@@ -205,6 +205,9 @@
     <test class="fset1403" label="two lower diacs" rtl="True">
       <string>فࣇٍْاِ ࣇِٱٍ لٍأٍ</string>
     </test>
+    <test class="fset1403" label="alef madda/hamza" rtl="True">
+      <string>للآٍ لأِ  بلِأِ لاٍْ سلٍاٍْ</string>
+    </test>
   </testgroup>
   <testgroup label="Allah">
     <test class="fset1386" label="FDF2" rtl="True">
@@ -488,6 +491,12 @@
     </test>
     <test class="fset1403" label="waw w/ above kaf/gaf" rtl="True">
       <string>ۇک ۇگس بۇگس | ۆگق ۋک</string>
+    </test>
+    <test class="fset1403" label="reh U" rtl="True">
+      <string>برۇ</string>
+    </test>
+    <test class="fset1403" label="U U" rtl="True">
+      <string>سۇۇ</string>
     </test>
   </testgroup>
   <testgroup label="intra-segment collisions">
