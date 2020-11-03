@@ -1086,7 +1086,7 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 # baseClass yeh-ar.noDots.fina <anchor 720 558> @diaA;
 # baseClass [yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar] <anchor 525 1529> @diaA;
 # baseClass [yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina] <anchor 643 1001> @diaA;
-# baseClass yehHamzaabove-ar.fina.loclKIR <anchor 1123 1151> @diaA;
+# baseClass yehHamzaabove-ar.fina.loclKIR <anchor 1123 1031> @diaA;
 # baseClass yehHamzaabove-ar.loclKIR <anchor 1145 1679> @diaA;
 # baseClass yehKashmiri-ar <anchor 673 992> @diaA;
 # baseClass yehKashmiri-ar.fina <anchor 665 493> @diaA;
@@ -1618,7 +1618,7 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 # baseClass yeh-ar.noDots.fina <anchor 681 338> @alef;
 # baseClass [yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar] <anchor 361 1312> @alef;
 # baseClass [yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina] <anchor 439 762> @alef;
-# baseClass yehHamzaabove-ar.fina.loclKIR <anchor 899 912> @alef;
+# baseClass yehHamzaabove-ar.fina.loclKIR <anchor 899 792> @alef;
 # baseClass yehHamzaabove-ar.loclKIR <anchor 981 1462> @alef;
 # baseClass yehKashmiri-ar <anchor 379 747> @alef;
 # baseClass yehKashmiri-ar.fina <anchor 436 317> @alef;
@@ -2004,6 +2004,35 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 # baseClass wavyhamzabelow-ar <anchor 238 -1199> @diaB_MarkBase;
 # baseClass wawbelow-ar <anchor 10 -1016> @diaB_MarkBase;
 
+# AP: diaBtailDown
+@diaBtailDown = [alayhiAsSalaam-ar alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi beh-ar.medi behDotless-ar.medi behThreedotsupabove-ar.medi behVabove-ar.medi behhamzaabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonDotbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi beeh-ar.init e-ar.init yehFourbelow-farsi.init beeh-ar.medi behThreedotsupbelow-ar.init e-ar.medi tehThreedotsupbelow-ar.init beh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar.init behhamzaabove-ar.init noonThreedotsabove-ar.init peh-ar.init yehThreedotsbelow-ar.init behThreedotshorizontalbelow-ar.medi peh-ar.medi yehThreedotsbelow-ar.medi behThreedotsupbelow-ar.medi behVbelow-ar.init behVinvertedbelow-ar.init tehThreedotsupbelow-ar.medi behTwodotsbelowDotabove-ar.init noonTwodotsbelow-ar.init yeh-ar.init yeh-farsi.init yehThreeabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehTwodotsabove-farsi.init yehTwodotsbelowDotabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVabove-ar.init yehVinverted-farsi.init yehbarreeThreeabove-ar.init yehbarreeTwoabove-ar.init behTwodotsbelowDotabove-ar.medi noonTwodotsbelow-ar.medi yeh-ar.medi yeh-farsi.medi yehKashmiri-ar.medi yehThreeabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehTwodotsabove-farsi.medi yehTwodotsbelowDotabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVabove-ar.medi yehVinverted-farsi.medi yehbarreeThreeabove-ar.medi yehbarreeTwoabove-ar.medi behVbelow-ar.medi behVinvertedbelow-ar.medi beheh-ar.init beheh-ar.medi noonDotbelow-ar.init noonRing-ar.init tehRing-ar.init noonRing-ar.medi noonThreedotsabove-ar.medi pehVabove-ar.init pehVabove-ar.medi tehRing-ar.medi tehTehabove-ar.init tehTehabove-ar.medi yehFourbelow-farsi.medi yehKashmiri-ar.init];
+@diaBtailDown_MarkBase = [wordWaqfaabove-ar];
+# baseClass alayhiAsSalaam-ar <anchor 1372 -578> @diaBtailDown;
+# baseClass [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init] <anchor 163 -1075> @diaBtailDown;
+# baseClass [alefMaksura-ar.medi beh-ar.medi behDotless-ar.medi behThreedotsupabove-ar.medi behVabove-ar.medi behhamzaabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonDotbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi] <anchor 221 -1075> @diaBtailDown;
+# baseClass [beeh-ar.init e-ar.init yehFourbelow-farsi.init] <anchor 230 -1075> @diaBtailDown;
+# baseClass [beeh-ar.medi behThreedotsupbelow-ar.init e-ar.medi tehThreedotsupbelow-ar.init] <anchor 234 -1075> @diaBtailDown;
+# baseClass [beh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar.init behhamzaabove-ar.init noonThreedotsabove-ar.init peh-ar.init yehThreedotsbelow-ar.init] <anchor 225 -1075> @diaBtailDown;
+# baseClass [behThreedotshorizontalbelow-ar.medi peh-ar.medi yehThreedotsbelow-ar.medi] <anchor 241 -1075> @diaBtailDown;
+# baseClass [behThreedotsupbelow-ar.medi behVbelow-ar.init behVinvertedbelow-ar.init tehThreedotsupbelow-ar.medi] <anchor 191 -1075> @diaBtailDown;
+# baseClass [behTwodotsbelowDotabove-ar.init noonTwodotsbelow-ar.init yeh-ar.init yeh-farsi.init yehThreeabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehTwodotsabove-farsi.init yehTwodotsbelowDotabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVabove-ar.init yehVinverted-farsi.init yehbarreeThreeabove-ar.init yehbarreeTwoabove-ar.init] <anchor 197 -1075> @diaBtailDown;
+# baseClass [behTwodotsbelowDotabove-ar.medi noonTwodotsbelow-ar.medi yeh-ar.medi yeh-farsi.medi yehKashmiri-ar.medi yehThreeabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehTwodotsabove-farsi.medi yehTwodotsbelowDotabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVabove-ar.medi yehVinverted-farsi.medi yehbarreeThreeabove-ar.medi yehbarreeTwoabove-ar.medi] <anchor 228 -1075> @diaBtailDown;
+# baseClass behVbelow-ar.medi <anchor 218 -1075> @diaBtailDown;
+# baseClass behVinvertedbelow-ar.medi <anchor 198 -1075> @diaBtailDown;
+# baseClass beheh-ar.init <anchor 243 -1075> @diaBtailDown;
+# baseClass beheh-ar.medi <anchor 206 -1075> @diaBtailDown;
+# baseClass [noonDotbelow-ar.init noonRing-ar.init tehRing-ar.init] <anchor 200 -1075> @diaBtailDown;
+# baseClass noonRing-ar.medi <anchor 216 -1075> @diaBtailDown;
+# baseClass noonThreedotsabove-ar.medi <anchor 245 -1075> @diaBtailDown;
+# baseClass pehVabove-ar.init <anchor 254 -1075> @diaBtailDown;
+# baseClass pehVabove-ar.medi <anchor 289 -1075> @diaBtailDown;
+# baseClass tehRing-ar.medi <anchor 248 -1075> @diaBtailDown;
+# baseClass tehTehabove-ar.init <anchor 263 -1075> @diaBtailDown;
+# baseClass tehTehabove-ar.medi <anchor 301 -1075> @diaBtailDown;
+# baseClass yehFourbelow-farsi.medi <anchor 260 -1075> @diaBtailDown;
+# baseClass yehKashmiri-ar.init <anchor 143 -1075> @diaBtailDown;
+# baseClass wordWaqfaabove-ar <anchor -244 -1075> @diaBtailDown_MarkBase;
+
 # AP: aboveLeft
 @aboveLeft = [alef-ar alef-ar.fina alef-ar.fina.allah alef-ar.fina.postLamIni alef-ar.fina.postLamMed];
 # baseClass alef-ar <anchor 68 1150> @aboveLeft;
@@ -2032,34 +2061,6 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 @entry = [alef-ar.fina.postLamIni alefHamzaabove-ar.fina.postLamIni alefHamzabelow-ar.fina.postLamIni alefMadda-ar.fina.postLamIni alefMadda-ar.fina.postLamIni.small alefThreeabove-ar.fina.postLamIni alefTwoabove-ar.fina.postLamIni alefWasla-ar.fina.postLamIni alefWavyhamzaabove-ar.fina.postLamIni alefWavyhamzabelow-ar.fina.postLamIni highhamzaAlef-ar.fina.postLamIni alef-ar.fina.postLamMed alefHamzaabove-ar.fina.postLamMed alefHamzabelow-ar.fina.postLamMed alefMadda-ar.fina.postLamMed alefMadda-ar.fina.postLamMed.small alefThreeabove-ar.fina.postLamMed alefTwoabove-ar.fina.postLamMed alefWasla-ar.fina.postLamMed alefWavyhamzaabove-ar.fina.postLamMed alefWavyhamzabelow-ar.fina.postLamMed highhamzaAlef-ar.fina.postLamMed];
 # baseClass [alef-ar.fina.postLamIni alefHamzaabove-ar.fina.postLamIni alefHamzabelow-ar.fina.postLamIni alefMadda-ar.fina.postLamIni alefMadda-ar.fina.postLamIni.small alefThreeabove-ar.fina.postLamIni alefTwoabove-ar.fina.postLamIni alefWasla-ar.fina.postLamIni alefWavyhamzaabove-ar.fina.postLamIni alefWavyhamzabelow-ar.fina.postLamIni highhamzaAlef-ar.fina.postLamIni] <anchor 758 0> @entry;
 # baseClass [alef-ar.fina.postLamMed alefHamzaabove-ar.fina.postLamMed alefHamzabelow-ar.fina.postLamMed alefMadda-ar.fina.postLamMed alefMadda-ar.fina.postLamMed.small alefThreeabove-ar.fina.postLamMed alefTwoabove-ar.fina.postLamMed alefWasla-ar.fina.postLamMed alefWavyhamzaabove-ar.fina.postLamMed alefWavyhamzabelow-ar.fina.postLamMed highhamzaAlef-ar.fina.postLamMed] <anchor 932 313> @entry;
-
-# AP: diaBtailDown
-@diaBtailDown = [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi beh-ar.medi behDotless-ar.medi behThreedotsupabove-ar.medi behVabove-ar.medi behhamzaabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonDotbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi beeh-ar.init e-ar.init yehFourbelow-farsi.init beeh-ar.medi behThreedotsupbelow-ar.init e-ar.medi tehThreedotsupbelow-ar.init beh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar.init behhamzaabove-ar.init noonThreedotsabove-ar.init peh-ar.init yehThreedotsbelow-ar.init behThreedotshorizontalbelow-ar.medi peh-ar.medi yehThreedotsbelow-ar.medi behThreedotsupbelow-ar.medi behVbelow-ar.init behVinvertedbelow-ar.init tehThreedotsupbelow-ar.medi behTwodotsbelowDotabove-ar.init noonTwodotsbelow-ar.init yeh-ar.init yeh-farsi.init yehThreeabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehTwodotsabove-farsi.init yehTwodotsbelowDotabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVabove-ar.init yehVinverted-farsi.init yehbarreeThreeabove-ar.init yehbarreeTwoabove-ar.init behTwodotsbelowDotabove-ar.medi noonTwodotsbelow-ar.medi yeh-ar.medi yeh-farsi.medi yehKashmiri-ar.medi yehThreeabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehTwodotsabove-farsi.medi yehTwodotsbelowDotabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVabove-ar.medi yehVinverted-farsi.medi yehbarreeThreeabove-ar.medi yehbarreeTwoabove-ar.medi behVbelow-ar.medi behVinvertedbelow-ar.medi beheh-ar.init beheh-ar.medi noonDotbelow-ar.init noonRing-ar.init tehRing-ar.init noonRing-ar.medi noonThreedotsabove-ar.medi pehVabove-ar.init pehVabove-ar.medi tehRing-ar.medi tehTehabove-ar.init tehTehabove-ar.medi yehFourbelow-farsi.medi yehKashmiri-ar.init];
-@diaBtailDown_MarkBase = [wordWaqfaabove-ar];
-# baseClass [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init] <anchor 163 -1075> @diaBtailDown;
-# baseClass [alefMaksura-ar.medi beh-ar.medi behDotless-ar.medi behThreedotsupabove-ar.medi behVabove-ar.medi behhamzaabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonDotbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi] <anchor 221 -1075> @diaBtailDown;
-# baseClass [beeh-ar.init e-ar.init yehFourbelow-farsi.init] <anchor 230 -1075> @diaBtailDown;
-# baseClass [beeh-ar.medi behThreedotsupbelow-ar.init e-ar.medi tehThreedotsupbelow-ar.init] <anchor 234 -1075> @diaBtailDown;
-# baseClass [beh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar.init behhamzaabove-ar.init noonThreedotsabove-ar.init peh-ar.init yehThreedotsbelow-ar.init] <anchor 225 -1075> @diaBtailDown;
-# baseClass [behThreedotshorizontalbelow-ar.medi peh-ar.medi yehThreedotsbelow-ar.medi] <anchor 241 -1075> @diaBtailDown;
-# baseClass [behThreedotsupbelow-ar.medi behVbelow-ar.init behVinvertedbelow-ar.init tehThreedotsupbelow-ar.medi] <anchor 191 -1075> @diaBtailDown;
-# baseClass [behTwodotsbelowDotabove-ar.init noonTwodotsbelow-ar.init yeh-ar.init yeh-farsi.init yehThreeabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehTwodotsabove-farsi.init yehTwodotsbelowDotabove-ar.init yehTwodotsbelowHamzaabove-ar.init yehVabove-ar.init yehVinverted-farsi.init yehbarreeThreeabove-ar.init yehbarreeTwoabove-ar.init] <anchor 197 -1075> @diaBtailDown;
-# baseClass [behTwodotsbelowDotabove-ar.medi noonTwodotsbelow-ar.medi yeh-ar.medi yeh-farsi.medi yehKashmiri-ar.medi yehThreeabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehTwodotsabove-farsi.medi yehTwodotsbelowDotabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi yehVabove-ar.medi yehVinverted-farsi.medi yehbarreeThreeabove-ar.medi yehbarreeTwoabove-ar.medi] <anchor 228 -1075> @diaBtailDown;
-# baseClass behVbelow-ar.medi <anchor 218 -1075> @diaBtailDown;
-# baseClass behVinvertedbelow-ar.medi <anchor 198 -1075> @diaBtailDown;
-# baseClass beheh-ar.init <anchor 243 -1075> @diaBtailDown;
-# baseClass beheh-ar.medi <anchor 206 -1075> @diaBtailDown;
-# baseClass [noonDotbelow-ar.init noonRing-ar.init tehRing-ar.init] <anchor 200 -1075> @diaBtailDown;
-# baseClass noonRing-ar.medi <anchor 216 -1075> @diaBtailDown;
-# baseClass noonThreedotsabove-ar.medi <anchor 245 -1075> @diaBtailDown;
-# baseClass pehVabove-ar.init <anchor 254 -1075> @diaBtailDown;
-# baseClass pehVabove-ar.medi <anchor 289 -1075> @diaBtailDown;
-# baseClass tehRing-ar.medi <anchor 248 -1075> @diaBtailDown;
-# baseClass tehTehabove-ar.init <anchor 263 -1075> @diaBtailDown;
-# baseClass tehTehabove-ar.medi <anchor 301 -1075> @diaBtailDown;
-# baseClass yehFourbelow-farsi.medi <anchor 260 -1075> @diaBtailDown;
-# baseClass yehKashmiri-ar.init <anchor 143 -1075> @diaBtailDown;
-# baseClass wordWaqfaabove-ar <anchor -244 -1075> @diaBtailDown_MarkBase;
 
 # AP: diaBtailUp
 @diaBtailUp = [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi tehTehabove-ar.init tehTehabove-ar.medi];
@@ -4355,7 +4356,7 @@ lookup mark_to_base {
     pos base yeh-ar.noDots.fina <anchor 720 558> mark @_diaA;
     pos base [yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar] <anchor 525 1529> mark @_diaA;
     pos base [yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina] <anchor 643 1001> mark @_diaA;
-    pos base yehHamzaabove-ar.fina.loclKIR <anchor 1123 1151> mark @_diaA;
+    pos base yehHamzaabove-ar.fina.loclKIR <anchor 1123 1031> mark @_diaA;
     pos base yehHamzaabove-ar.loclKIR <anchor 1145 1679> mark @_diaA;
     pos base yehKashmiri-ar <anchor 673 992> mark @_diaA;
     pos base yehKashmiri-ar.fina <anchor 665 493> mark @_diaA;
@@ -5125,7 +5126,7 @@ lookup alef_to_base {
     pos base yeh-ar.noDots.fina <anchor 681 338> mark @_alef;
     pos base [yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar] <anchor 361 1312> mark @_alef;
     pos base [yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina] <anchor 439 762> mark @_alef;
-    pos base yehHamzaabove-ar.fina.loclKIR <anchor 899 912> mark @_alef;
+    pos base yehHamzaabove-ar.fina.loclKIR <anchor 899 792> mark @_alef;
     pos base yehHamzaabove-ar.loclKIR <anchor 981 1462> mark @_alef;
     pos base yehKashmiri-ar <anchor 379 747> mark @_alef;
     pos base yehKashmiri-ar.fina <anchor 436 317> mark @_alef;
