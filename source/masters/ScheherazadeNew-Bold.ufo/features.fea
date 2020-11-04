@@ -3601,6 +3601,7 @@ lookup SubtendingMarks {
         pos @RehWawAll <130 0 130 0>;
         pos @ToothPlusAbove <130 0 130 0>;
         pos @AlefForms <130 0 130 0>;
+        pos highhamza-ar <130 0 130 0>;
     } _kern130;
 
     lookup _kern140 {
@@ -3728,8 +3729,7 @@ lookup SubtendingMarks {
         pos @AlefForms' lookup _kern70 rreh-ar;
         pos @Tooth1hBelow' lookup _kern100 rehStroke-ar.fina;
         pos @Tooth2hBelow' lookup _kern100 rehStroke-ar.fina;
-                    pos highhamza-ar' lookup _kern50 @Tooth2wAboveInit;
-
+        pos highhamza-ar' lookup _kern130 @Tooth2wAboveInit;
     } MiscKerning;
 
     lookup MiscKerningWDiacs {
