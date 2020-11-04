@@ -262,6 +262,9 @@
 		<value name="Normal" tag="Nrml">
 			<cmd name="null" args="2750 1427"/>
 		</value>
+		<value name="Tight" tag="Tt">
+			<cmd name="line_gap" args="2324 1377"/>
+		</value>
 		<value name="Loose" tag="Ls">
 			<cmd name="line_gap" args="3600 1427"/>
 		</value>
