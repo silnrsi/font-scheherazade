@@ -756,9 +756,7 @@ pass(3)	// Collisions and adjustments
 	// AE + kaf
 	cKafLikeInit {adv.x -= 300m}  /  (g_ae_ar g_ae_ar_fina)  MARKSBELOW  _;
 
-#if (STYLE == BOLD)
-	g_highhamza_ar cTooth2wAboveInit {adv.x += 50m};
-#endif
+	g_highhamza_ar cTooth2wAboveInit {adv.x += 130m};
 
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};

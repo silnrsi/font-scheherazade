@@ -1029,7 +1029,7 @@ lookup _kern70 {
 lookup _kern90 {
   pos @Tooth2wAboveInit        <90 0  90 0>;
   pos alef-ar.fina.postLamIni  <90 0  90 0>;
-  pos alef-ar.fina.postLamMed  <90 0  90 0>;  
+  pos alef-ar.fina.postLamMed  <90 0  90 0>; 
 } _kern90;
 
 lookup _kern100 {
@@ -1043,6 +1043,7 @@ lookup _kern130 {
   pos @RehWawAll      <130 0  130 0>;
   pos @ToothPlusAbove <130 0  130 0>;
   pos @AlefForms      <130 0  130 0>;
+  pos highhamza-ar    <130 0  130 0>;
 } _kern130;
 
 lookup _kern140 {
@@ -1222,9 +1223,7 @@ lookup MiscKerning {
 		pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
 		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;	
 
-ifinfo(styleName, "Bold") {
-		pos highhamza-ar' lookup _kern50  @Tooth2wAboveInit;
-}
+		pos highhamza-ar' lookup _kern130  @Tooth2wAboveInit;
 
 } MiscKerning;
 

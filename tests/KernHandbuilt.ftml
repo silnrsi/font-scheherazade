@@ -229,5 +229,14 @@
       <string>لاجل لاڇل لاځل لاݗل </string>
     </test>
 	</testgroup>
+	
+	<testgroup label="Other">
+		<test label="high-hamza teh" rtl="True">
+      <string>ٴتا</string>
+    </test>
+		<test label="high-hamza noon" rtl="True">
+      <string>\u0674\u0646\u0627</string>
+    </test>
+	</testgroup>
 
 </ftml>
