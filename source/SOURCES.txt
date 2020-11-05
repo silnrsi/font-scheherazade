@@ -1,12 +1,12 @@
 ﻿sources/SOURCES.txt
-Scheherazade 3.000
+Scheherazade New 3.000
 ==================
 
 This file describes the source files included with the Scheherazade
 font family. This information should be distributed along with the Scheherazade
 fonts and any derivative works.
 
-These files are part of Scheherazade font family 
+These files are part of the Scheherazade font family 
 (http://software.sil.org/scheherazade/) and are 
 Copyright (c) 1994-2020 SIL International (http://www.sil.org/),
 with Reserved Font Names "Scheherazade" and "SIL".
@@ -51,4 +51,5 @@ classes.xml
     Glyph classes used in by the Graphite and OpenType logic but which
     cannot be algorithmically generated.
 
-
+jstf.ttx
+    Code to add a JSTF table to the font
