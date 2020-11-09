@@ -1,0 +1,874 @@
+#**********************************
+# This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
+# and is Copyright (c) 2020 SIL International (http://www.sil.org/),
+# with Reserved Font Names "Scheherazade" and "SIL".
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+#
+# You should have received a copy of the license along with this Font Software.
+# If this is not the case, go to (http://scripts.sil.org/OFL) for all the
+# details including an FAQ.
+#**********************************
+
+
+#**********************************
+#  Language Systems
+#**********************************
+
+languagesystem arab dflt ;
+languagesystem arab KUR  ;
+languagesystem arab SND  ;
+languagesystem arab URD  ;
+languagesystem latn dflt ;
+
+
+#**********************************
+#  Substitution Lookups
+#**********************************
+
+lookup SmallMaddah {
+  lookupflag 0 ;
+    sub @Maddah by @Maddah.small ;
+} SmallMaddah;
+
+lookup DecomposeForColor {
+  lookupflag 0 ;
+    sub @AlefPlusMark by alef-ar @AlefMark ;
+} DecomposeForColor;
+
+lookup FontCheck1_target {
+  lookupflag IgnoreMarks ;
+    sub U n k n o w n by O ;
+} FontCheck1_target ;
+
+lookup FontCheck1 {
+  lookupflag IgnoreMarks ;
+    sub [ R ]e n d e r i n g U' lookup FontCheck1_target n'  k'  n'  o'  w'  n'  ;
+} FontCheck1;
+
+lookup FontCheck2_target {
+  lookupflag IgnoreMarks ;
+    sub O by O p e n T y p e ;
+} FontCheck2_target ;
+
+lookup FontCheck2 {
+  lookupflag IgnoreMarks ;
+    sub [ R ]e n d e r i n g O' lookup FontCheck2_target ;
+} FontCheck2;
+
+lookup Mirror {
+  lookupflag IgnoreMarks ;
+    sub radical by radical.rtl ;
+} Mirror;
+
+lookup ltrFina {
+  lookupflag IgnoreMarks ;
+    sub @DualLinkIsol by @DualLinkFina ;
+    sub @RightLinkIsol by @RightLinkFina ;
+} ltrFina;
+
+lookup ltrMedi {
+  lookupflag IgnoreMarks ;
+    sub @DualLinkIsol by @DualLinkMedi ;
+} ltrMedi;
+
+lookup ltrInit {
+  lookupflag IgnoreMarks ;
+    sub @DualLinkIsol by @DualLinkInit ;
+} ltrInit;
+
+lookup Ligatures_Part1_target {
+  lookupflag IgnoreMarks ;
+    sub @LamIni by @LamIniBeforeAlef ;
+    sub @LamMed by @LamMedBeforeAlef ;
+} Ligatures_Part1_target ;
+
+lookup Ligatures_Part2a_target {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinAfterLamIni ;
+} Ligatures_Part2a_target ;
+
+lookup Ligatures_Part2b_target {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinAfterLamMed ;
+} Ligatures_Part2b_target ;
+
+lookup Ligatures {
+  lookupflag IgnoreMarks ;
+  # Subtable: Ligatures\Part1
+    sub [ @LamIni @LamMed ]' lookup Ligatures_Part1_target @AlefFin ;
+  # Subtable: Ligatures\Part2a
+    sub @LamIniBeforeAlef @AlefFin' lookup Ligatures_Part2a_target ;
+  # Subtable: Ligatures\Part2b
+    sub @LamMedBeforeAlef @AlefFin' lookup Ligatures_Part2b_target ;
+} Ligatures;
+
+lookup ShaddaLigatures {
+  lookupflag MarkAttachmentType @ShaddaLigatureParts ;
+    sub shadda-ar @ShaddaMarks by @ShaddaLigatures ;
+    sub @ShaddaMarks shadda-ar by @ShaddaLigatures ;
+} ShaddaLigatures;
+
+lookup ShaddaKasraLigatures {
+  lookupflag MarkAttachmentType @ShaddaLigatureParts ;
+    sub @ShaddaKasraMarks shadda-ar by @ShaddaKasraLigatures ;
+    sub shadda-ar @ShaddaKasraMarks by @ShaddaKasraLigatures ;
+} ShaddaKasraLigatures;
+
+lookup ComposeLowHamzaAbove {
+  lookupflag UseMarkFilteringSet @HamzaAbove ;
+    sub @LowHamzaBase hamzaAbove-ar by @LowHamzaComposed ;
+} ComposeLowHamzaAbove;
+
+lookup HamzaLigatures {
+  lookupflag UseMarkFilteringSet @HamzaLigatureParts ;
+    sub hamzaAbove-ar @HamzaMarks by @HamzaLigatures ;
+    sub @HamzaMarks hamzaAbove-ar by @HamzaLigatures ;
+} HamzaLigatures;
+
+lookup SindhiCALT {
+  lookupflag 0 ;
+    sub heh-ar.medi by heh-ar.medi.knottedHigh ;
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
+    sub heh-ar by heh-ar.knotted ;
+    sub easternSix-ar by easternSix-ar.urdu ;
+    sub easternSeven-ar by easternSeven-ar.urdu ;
+    sub dammatan-ar by dammatan-ar.sixNine ;
+    sub @Meem by @Meem.sindhi ;
+} SindhiCALT;
+
+lookup UrduCALT {
+  lookupflag IgnoreMarks ;
+    sub easternFour-ar by easternFour-ar.urdu ;
+    sub easternSix-ar by easternSix-ar.urdu ;
+    sub easternSeven-ar by easternSeven-ar.urdu ;
+    sub heh-ar.init by heh-ar.init.hooked ;
+    sub heh-ar.medi by heh-ar.medi.hooked ;
+    sub heh-ar.fina by heh-ar.fina.hooked ;
+} UrduCALT;
+
+lookup SignWith_4digits_target {
+  lookupflag IgnoreMarks ;
+    sub year-ar by year-ar.4 ;
+    sub samvat-ar by samvat-ar.4 ;
+    sub numbermarkabove-ar by numbermarkabove-ar.4 ;
+    sub pagenumber-ar by pagenumber-ar.4 ;
+} SignWith_4digits_target ;
+
+lookup SignWith_3digits_target {
+  lookupflag IgnoreMarks ;
+    sub numbermark-ar by numbermark-ar.3 ;
+    sub year-ar by year-ar.3 ;
+    sub samvat-ar by samvat-ar.3 ;
+    sub pagenumber-ar by pagenumber-ar.3 ;
+    sub endofayah-ar by endofayah-ar.3 ;
+    sub endofayah-ar.alt by endofayah-ar.alt.3 ;
+    sub endofayah-ar.altB by endofayah-ar.altB.3 ;
+    sub numbermarkabove-ar by numbermarkabove-ar.3 ;
+} SignWith_3digits_target ;
+
+lookup SignWith_2digits_target {
+  lookupflag IgnoreMarks ;
+    sub numbermark-ar by numbermark-ar.2 ;
+    sub year-ar by year-ar.2 ;
+    sub samvat-ar by samvat-ar.2 ;
+    sub footnotemarker-ar by footnotemarker-ar.2 ;
+    sub pagenumber-ar by pagenumber-ar.2 ;
+    sub endofayah-ar by endofayah-ar.2 ;
+    sub endofayah-ar.alt by endofayah-ar.alt.2 ;
+    sub endofayah-ar.altB by endofayah-ar.altB.2 ;
+    sub numbermarkabove-ar by numbermarkabove-ar.2 ;
+} SignWith_2digits_target ;
+
+lookup SignWith {
+  lookupflag IgnoreMarks ;
+  # Subtable: SignWith\4digits
+    sub [ year-ar samvat-ar numbermarkabove-ar pagenumber-ar ]' lookup SignWith_4digits_target @DigitsAny @DigitsAny @DigitsAny @DigitsAny ;
+    sub @DigitsAny @DigitsAny @DigitsAny @DigitsAny [ year-ar samvat-ar numbermarkabove-ar pagenumber-ar ]' lookup SignWith_4digits_target ;
+  # Subtable: SignWith\3digits
+    sub [ numbermark-ar year-ar samvat-ar pagenumber-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB absNumberSignAbove ]' lookup SignWith_3digits_target @DigitsAny @DigitsAny @DigitsAny ;
+    sub @DigitsAny @DigitsAny @DigitsAny [ numbermark-ar year-ar samvat-ar pagenumber-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB absNumberSignAbove ]' lookup SignWith_3digits_target ;
+  # Subtable: SignWith\2digits
+    sub [ numbermark-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB numbermarkabove-ar ]' lookup SignWith_2digits_target @DigitsAny @DigitsAny ;
+    sub @DigitsAny @DigitsAny [ numbermark-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB numbermarkabove-ar ]' lookup SignWith_2digits_target ;
+} SignWith;
+
+lookup SignDigits_ToMedium_target {
+  lookupflag IgnoreMarks ;
+    sub @DigitsAny by @DigitsAnyMedium ;
+} SignDigits_ToMedium_target ;
+
+lookup SignDigits_ToSmall_target {
+  lookupflag IgnoreMarks ;
+    sub @DigitsAny by @DigitsAnySmall ;
+} SignDigits_ToSmall_target ;
+
+lookup SignDigits {
+  lookupflag IgnoreMarks ;
+  # Subtable: SignDigits\ToMedium
+    sub @DigitsAnyMedium @DigitsAny' lookup SignDigits_ToMedium_target ;
+    sub @TakesMediumDigits @DigitsAny' lookup SignDigits_ToMedium_target ;
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @TakesMediumDigits ;
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny @TakesMediumDigits ;
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny @DigitsAny @TakesMediumDigits ;
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny @DigitsAny @DigitsAny @TakesMediumDigits ;
+  # Subtable: SignDigits\ToSmall
+    sub @DigitsAnySmall @DigitsAny' lookup SignDigits_ToSmall_target ;
+    sub @TakesSmallDigits @DigitsAny' lookup SignDigits_ToSmall_target ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @DigitsEastern @TakesSmallDigits ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target @DigitsEastern @DigitsEastern @DigitsEastern @TakesSmallDigits ;
+} SignDigits;
+
+lookup MaddaVowel1_target {
+  lookupflag 0 ;
+    sub @MarkGroup1A by @MarkGroup1A madda-ar.small ;
+    sub @MarkGroup2A by @MarkGroup2A madda-ar.small ;
+    sub @MarkGroup3A by @MarkGroup3A madda-ar.small ;
+} MaddaVowel1_target ;
+
+lookup MaddaVowel1 {
+  lookupflag 0 ;
+    sub madda-ar.small [ @MarkGroup1A @MarkGroup2A @MarkGroup3A ]' lookup MaddaVowel1_target ;
+} MaddaVowel1;
+
+lookup MaddaVowel2_target {
+  lookupflag 0 ;
+    sub madda-ar.small @MarkGroup1A by @MarkGroup1A ;
+    sub madda-ar.small @MarkGroup2A by @MarkGroup2A ;
+    sub madda-ar.small @MarkGroup3A by @MarkGroup3A ;
+} MaddaVowel2_target ;
+
+lookup MaddaVowel2 {
+  lookupflag 0 ;
+    sub madda-ar.small' lookup MaddaVowel2_target [ @MarkGroup1A @MarkGroup2A @MarkGroup3A ]'  madda-ar.small ;
+} MaddaVowel2;
+
+lookup SindhiHeh {
+  lookupflag IgnoreMarks ;
+  # Used only by TypeTuner
+    sub heh-ar.medi by heh-ar.medi.knottedHigh ;
+    sub heh-ar.fina by heh-ar. fina.knottedHigh ;
+    sub heh-ar by heh-ar.knotted ;
+} SindhiHeh;
+
+lookup KurdishHeh {
+  lookupflag IgnoreMarks ;
+  # Used only by TypeTuner
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
+    sub heh-ar by heh-ar.knotted ;
+} KurdishHeh;
+
+lookup UrduHeh {
+  lookupflag IgnoreMarks ;
+  # Used only by TypeTuner
+    sub heh-ar.init by heh-ar.init.hooked ;
+    sub heh-ar.medi by heh-ar.medi.hooked ;
+    sub heh-ar.fina by heh-ar.fina.hooked ;
+} UrduHeh;
+
+lookup AyahAlternates {
+  lookupflag 0 ;
+    sub endofayah-ar from [ endofayah-ar.alt endofayah-ar.altB ] ;
+    sub endofayah-ar.2 from [ endofayah-ar.alt.2 endofayah-ar.altB.2 ] ;
+    sub endofayah-ar.3 from [ endofayah-ar.alt.3 endofayah-ar.altB.3 ] ;
+} AyahAlternates;
+
+lookup DalAlternates {
+  lookupflag IgnoreMarks ;
+    sub @DalIso by @DalIso.sen ;
+} DalAlternates;
+
+lookup MeemAlternates {
+  lookupflag IgnoreMarks ;
+    sub @Meem by @Meem.sindhi ;
+} MeemAlternates;
+
+lookup HehAlternates {
+  lookupflag IgnoreMarks ;
+  # 0=Sindhi; 1=Urdu; 1=Kurdish
+    sub heh-ar from [ heh-ar.knotted heh-ar heh-ar.knotted ] ;
+    sub heh-ar.fina from [ heh-ar.fina.knottedHigh heh-ar.fina.hooked heh-ar.fina.knottedHigh ] ;
+    sub heh-ar.init from [ heh-ar.init heh-ar.init.hooked heh-ar.init ] ;
+    sub heh-ar.medi from [ heh-ar.medi.knottedHigh heh-ar.medi.hooked heh-ar.medi ] ;
+} HehAlternates;
+
+lookup ArabicUAlternates {
+  lookupflag IgnoreMarks ;
+    sub @U by @U.filled ;
+} ArabicUAlternates;
+
+lookup KasraLowered {
+  lookupflag 0 ;
+  # This is a hack since it is being used in a cvxx lookup, but this is about the only way to do this task.
+    sub @ShaddaKasraLigatures by shadda-ar @ShaddaKasraMarks ;
+} KasraLowered;
+
+lookup DammaAlternates {
+  lookupflag 0 ;
+    sub damma-ar from [ damma-ar.filled damma-ar.short ] ;
+    sub hamza_damma-ar from [ hamza_damma-ar.filled hamza_damma-ar.short ] ;
+    sub shadda_damma-ar from [ shadda_damma-ar.filled shadda_damma-ar.short ] ;
+} DammaAlternates;
+
+lookup DammatanAlternates {
+  lookupflag 0 ;
+    sub @Dammatan by @Dammatan.sixNine ;
+} DammatanAlternates;
+
+lookup MaddahAlternates {
+  lookupflag 0 ;
+    sub @Maddah.small by @Maddah ;
+} MaddahAlternates;
+
+lookup UltapeshAlternates {
+  lookupflag 0 ;
+    sub ultapesh-ar by ultapesh-ar.open ;
+} UltapeshAlternates;
+
+lookup DaggerAlefToLarge_target {
+  lookupflag 0 ;
+    sub alefabove-ar by alefabove-ar.large ;
+} DaggerAlefToLarge_target ;
+
+lookup DaggerAlefToLarge {
+  lookupflag 0 ;
+    sub @TakesLargeDaggerAlef alefabove-ar' lookup DaggerAlefToLarge_target ;
+} DaggerAlefToLarge;
+
+lookup SukunAlternates {
+  lookupflag 0 ;
+    sub sukun-ar from [ sukun-ar.downOpen sukun-ar.leftOpen ] ;
+} SukunAlternates;
+
+lookup EasternDigitAlternates {
+  lookupflag 0 ;
+    sub easternFour-ar from [ easternFour-ar easternFour-ar.urdu easternFour-ar easternFour-ar.roh ] ;
+    sub easternFour-ar.medium from [ easternFour-ar.medium easternFour-ar.medium.urdu easternFour-ar.medium easternFour-ar.medium.roh ] ;
+    sub easternFour-ar.small from [ easternFour-ar.small easternFour-ar.small.urdu easternFour-ar.small easternFour-ar.small.roh ] ;
+    sub easternSeven-ar from [ easternSeven-ar.urdu easternSeven-ar.urdu easternSeven-ar easternSeven-ar.urdu ] ;
+    sub easternSeven-ar.medium from [ easternSeven-ar.medium.urdu easternSeven-ar.medium.urdu easternSeven-ar.medium easternSeven-ar.medium.urdu ] ;
+    sub easternSeven-ar.small from [ easternSeven-ar.small.urdu easternSeven-ar.small.urdu easternSeven-ar.small easternSeven-ar.small.urdu ] ;
+    sub easternSix-ar from [ easternSix-ar.urdu easternSix-ar.urdu easternSix-ar easternSix-ar.urdu ] ;
+    sub easternSix-ar.medium from [ easternSix-ar.medium.urdu easternSix-ar.medium.urdu easternSix-ar.medium easternSix-ar.medium.urdu ] ;
+    sub easternSix-ar.small from [ easternSix-ar.small.urdu easternSix-ar.small.urdu easternSix-ar.small easternSix-ar.small.urdu ] ;
+} EasternDigitAlternates;
+
+lookup CommaAlternates {
+  lookupflag IgnoreMarks ;
+    sub comma-ar by comma-ar.downward ;
+    sub semicolon-ar by semicolon-ar.downward ;
+} CommaAlternates;
+
+lookup JehHack {
+  lookupflag IgnoreMarks ;
+    sub @Jeh by @Jeh.dotHat ;
+} JehHack;
+
+lookup HeadOfKhahHack {
+  lookupflag 0 ;
+    sub smallHighDotlessHeadOfKhah-ar by shortVowelMark-ar ;
+} HeadOfKhahHack;
+
+#**********************************
+#  FEATURES
+#**********************************
+
+#--- Substitution
+
+feature init {  # Initial Forms
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup ltrInit;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup ltrInit;
+        language SND  exclude_dflt;  # Sindhi
+            lookup ltrInit;
+        language URD  exclude_dflt;  # Urdu
+            lookup ltrInit;
+} init ;
+
+feature medi {  # Medial Forms
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup ltrMedi;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup ltrMedi;
+        language SND  exclude_dflt;  # Sindhi
+            lookup ltrMedi;
+        language URD  exclude_dflt;  # Urdu
+            lookup ltrMedi;
+} medi ;
+
+feature fina {  # Terminal Forms
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup ltrFina;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup ltrFina;
+        language SND  exclude_dflt;  # Sindhi
+            lookup ltrFina;
+        language URD  exclude_dflt;  # Urdu
+            lookup ltrFina;
+} fina ;
+
+
+feature calt {  # Contextual Alternates
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup SignWith;
+            lookup SignDigits;
+            lookup MaddaVowel1;
+            lookup MaddaVowel2;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup SignWith;
+            lookup SignDigits;
+            lookup MaddaVowel1;
+            lookup MaddaVowel2;
+            lookup KurdishHeh;
+        language SND  exclude_dflt;  # Sindhi
+            lookup SindhiCALT;
+            lookup SignWith;
+            lookup SignDigits;
+            lookup MaddaVowel1;
+            lookup MaddaVowel2;
+        language URD  exclude_dflt;  # Urdu
+            lookup UrduCALT;
+            lookup SignWith;
+            lookup SignDigits;
+            lookup MaddaVowel1;
+            lookup MaddaVowel2;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup SignWith;
+            lookup SignDigits;
+} calt ;
+
+feature ccmp {  # Glyph Composition/Decomposition
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
+        language SND  exclude_dflt;  # Sindhi
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
+        language URD  exclude_dflt;  # Urdu
+            lookup SmallMaddah;
+            lookup DecomposeForColor;
+            lookup FontCheck1;
+            lookup FontCheck2;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup SmallMaddah;
+            lookup FontCheck1;
+            lookup FontCheck2;
+} ccmp ;
+
+feature cv12 {  # Character Variant 12
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup DalAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup DalAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup DalAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup DalAlternates;
+} cv12 ;
+
+feature cv44 {  # Character Variant 44
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup MeemAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup MeemAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup MeemAlternates;
+} cv44 ;
+
+feature cv48 {  # Character Variant 48
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup HehAlternates;
+} cv48 ;
+
+feature cv50 {  # Character Variant 50
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup ArabicUAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup ArabicUAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup ArabicUAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup ArabicUAlternates;
+} cv50 ;
+
+feature cv60 {  # Character Variant 60
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup MaddahAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup MaddahAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup MaddahAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup MaddahAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup MaddahAlternates;
+} cv60 ;
+
+feature cv62 {  # Character Variant 62
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup KasraLowered;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup KasraLowered;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup KasraLowered;
+} cv62 ;
+
+feature cv70 {  # Character Variant 70
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup DammaAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup DammaAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup DammaAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup DammaAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup DammaAlternates;
+} cv70 ;
+
+feature cv72 {  # Character Variant 72
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup DammatanAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup DammatanAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup DammatanAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup DammatanAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup DammatanAlternates;
+} cv72 ;
+
+feature cv74 {  # Character Variant 74
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup UltapeshAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup UltapeshAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup UltapeshAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup UltapeshAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup UltapeshAlternates;
+} cv74 ;
+
+feature cv76 {  # Character Variant 76
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup DaggerAlefToLarge;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup DaggerAlefToLarge;
+        language SND  exclude_dflt;  # Sindhi
+            lookup DaggerAlefToLarge;
+        language URD  exclude_dflt;  # Urdu
+            lookup DaggerAlefToLarge;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup DaggerAlefToLarge;
+} cv76 ;
+
+feature cv78 {  # Character Variant 78
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup SukunAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup SukunAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup SukunAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup SukunAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup SukunAlternates;
+} cv78 ;
+
+feature cv80 {  # Character Variant 80
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup AyahAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup AyahAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup AyahAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup AyahAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup AyahAlternates;
+} cv80 ;
+
+feature cv82 {  # Character Variant 82
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup EasternDigitAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup EasternDigitAlternates;
+} cv82 ;
+
+feature cv84 {  # Character Variant 84
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup CommaAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup CommaAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup CommaAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup CommaAlternates;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup CommaAlternates;
+} cv84 ;
+
+feature cv90 {  # Character Variant 90
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup JehHack;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup JehHack;
+        language SND  exclude_dflt;  # Sindhi
+            lookup JehHack;
+        language URD  exclude_dflt;  # Urdu
+            lookup JehHack;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup JehHack;
+} cv90 ;
+
+feature cv92 {  # Character Variant 92
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup HeadOfKhahHack;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup HeadOfKhahHack;
+        language SND  exclude_dflt;  # Sindhi
+            lookup HeadOfKhahHack;
+        language URD  exclude_dflt;  # Urdu
+            lookup HeadOfKhahHack;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup HeadOfKhahHack;
+} cv92 ;
+
+feature rlig {  # Required Ligatures
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup Ligatures;
+            lookup ShaddaLigatures;
+            lookup ShaddaKasraLigatures;
+            lookup ComposeLowHamzaAbove;
+            lookup HamzaLigatures;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup Ligatures;
+            lookup ShaddaLigatures;
+            lookup ShaddaKasraLigatures;
+            lookup ComposeLowHamzaAbove;
+            lookup HamzaLigatures;
+        language SND  exclude_dflt;  # Sindhi
+            lookup Ligatures;
+            lookup ShaddaLigatures;
+            lookup ComposeLowHamzaAbove;
+            lookup HamzaLigatures;
+        language URD  exclude_dflt;  # Urdu
+            lookup Ligatures;
+            lookup ShaddaLigatures;
+            lookup ComposeLowHamzaAbove;
+            lookup HamzaLigatures;
+} rlig ;
+
+feature rtlm {  # Right-To-Left Mirrored Forms
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup Mirror;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup Mirror;
+        language SND  exclude_dflt;  # Sindhi
+            lookup Mirror;
+        language URD  exclude_dflt;  # Urdu
+            lookup Mirror;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup Mirror;
+} rtlm ;
+
+feature salt {  # Stylistic Alternates
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup AyahAlternates;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup AyahAlternates;
+        language SND  exclude_dflt;  # Sindhi
+            lookup AyahAlternates;
+        language URD  exclude_dflt;  # Urdu
+            lookup AyahAlternates;
+} salt ;
+
+
+#--- Positioning
+
+feature mark {  # Mark to base Positioning
+    # Same for latin & arabic:
+        lookup mark_to_base;
+        lookup alef_to_base;
+    script arab;  # Arabic
+        lookup AlefMark2BelowAfterLam;
+        lookup MarkKern;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
+} mark ;
+
+#feature mark {  # Mark Positioning
+#    script arab;  # Arabic
+#        language dflt;  # Default
+#            lookup Marks;
+#            lookup MarksBelowTailDown;
+#            lookup MarksBelowTailUp;
+#            lookup AlefMark2BelowAfterLam;
+#        language KUR  exclude_dflt;  # Kurdish
+#            lookup Marks;
+#            lookup MarksBelowTailDown;
+#            lookup MarksBelowTailUp;
+#            lookup AlefMark2BelowAfterLam;
+#        language SND  exclude_dflt;  # Sindhi
+#            lookup Marks;
+#            lookup MarksBelowTailDown;
+#            lookup MarksBelowTailUp;
+#            lookup AlefMark2BelowAfterLam;
+#        language URD  exclude_dflt;  # Urdu
+#            lookup Marks;
+#            lookup MarksBelowTailDown;
+#            lookup MarksBelowTailUp;
+#            lookup AlefMark2BelowAfterLam;
+#    script latn;  # Latin
+#        language dflt;  # Default
+#            lookup Marks;
+#            lookup AlefMark2BelowAfterLam;
+#} mark ;
+
+feature mkmk {  # Mark to mark Positioning
+    # Same for latin & arabic:
+        lookup mark_to_mark_above;
+        lookup mark_to_mark_below;
+} mkmk ;
+
+
+#feature mkmk {  # Mark to Mark Positioning
+#    script arab;  # Arabic
+#        language dflt;  # Default
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#        language KUR  exclude_dflt;  # Kurdish
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#        language SND  exclude_dflt;  # Sindhi
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#        language URD  exclude_dflt;  # Urdu
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#    script latn;  # Latin
+#        language dflt;  # Default
+#            lookup MarksToMarkBelow;
+#            lookup MarksToMarkAbove;
+#} mkmk ;
+
+
+feature curs {  # Cursive Positioning
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup LamAlefConnection;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup LamAlefConnection;
+        language SND  exclude_dflt;  # Sindhi
+            lookup LamAlefConnection;
+        language URD  exclude_dflt;  # Urdu
+            lookup LamAlefConnection;
+} curs ;
+
+
+feature kern {  # Kerning
+    script arab;  # Arabic
+        language dflt;  # Default
+            lookup Reh;
+            lookup SubtendingAyah;
+            lookup Subtending0600;
+            lookup Subtending0601;
+            lookup Subtending0602;
+            lookup Subtending0603;
+            lookup Subtending0604;
+            lookup Subtending0605;
+        language KUR  exclude_dflt;  # Kurdish
+            lookup Reh;
+            lookup Marks;
+            lookup SubtendingAyah;
+            lookup Subtending0600;
+            lookup Subtending0601;
+            lookup Subtending0602;
+            lookup Subtending0603;
+            lookup Subtending0604;
+            lookup Subtending0605;
+        language SND  exclude_dflt;  # Sindhi
+            lookup Reh;
+            lookup SubtendingAyah;
+            lookup Subtending0600;
+            lookup Subtending0601;
+            lookup Subtending0602;
+            lookup Subtending0603;
+            lookup Subtending0604;
+            lookup Subtending0605;
+        language URD  exclude_dflt;  # Urdu
+            lookup Reh;
+            lookup SubtendingAyah;
+            lookup Subtending0600;
+            lookup Subtending0601;
+            lookup Subtending0602;
+            lookup Subtending0603;
+            lookup Subtending0604;
+            lookup Subtending0605;
+    script latn;  # Latin
+        language dflt;  # Default
+            lookup SubtendingAyah;
+            lookup Subtending0600;
+            lookup Subtending0601;
+            lookup Subtending0602;
+            lookup Subtending0603;
+            lookup Subtending0604;
+            lookup Subtending0605;
+} kern ;
+
