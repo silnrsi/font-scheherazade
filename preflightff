@@ -23,8 +23,8 @@ echo "Updating woff metadata files..."
 psfmakewoffmetadata -q -n "ScheherazadeNew" -i org.sil.fonts source/masters/*-Regular.ufo -o "source/ScheherazadeNew-WOFF-metadata.xml"
 
 echo "Building internal fea..."
-psfmakefea -q -o source/masters/ScheherazadeNew-Regular.ufo/features.fea -l ScheherazadeNew-Regular-psfmakefea.log -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Regular.ufo &
-psfmakefea -q -o source/masters/ScheherazadeNew-Bold.ufo/features.fea    -l ScheherazadeNew-Bold-psfmakefea.log    -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Bold.ufo    &
+psfmakefea -q -o source/masters/ScheherazadeNew-Regular.ufo/features.fea -l source/logs/ScheherazadeNew-Regular-psfmakefea.log -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Regular.ufo &
+psfmakefea -q -o source/masters/ScheherazadeNew-Bold.ufo/features.fea    -l source/logs/ScheherazadeNew-Bold-psfmakefea.log    -i source/opentype/master.feax --omitaps "_above,_below,_center,_ring,_through,above,below,center,ring,through,U,L,O" source/masters/*-Bold.ufo    &
 wait
 
 echo "preflightff completed!"
