@@ -90,6 +90,11 @@
       ---------
       (This should list both major and minor changes, most recent first.)
       
+      2021-xx-xx (SIL WSTech team) Scheherazade New Version 3.100 (official release)
+      - Created calligraphic forms of honorific ligatures
+      - Added feature to support turning on simple forms of honorific ligatures
+      - Fixed bug related to spacing of U+2E41 in Graphite rendering
+      
       2020-11-5 (SIL WSTech team) Scheherazade New Version 3.000 (official release)
       - Renamed font to Scheherazade New
       - Resized glyphs to better fit standard Arabic script fonts
@@ -262,7 +267,7 @@
   </description>
   <license url="http://scripts.sil.org/OFL" id="org.sil.ofl.1.1">
     <text lang="en">
-      Copyright (c) 1994-2020, SIL International (http://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL".
+      Copyright (c) 1994-2021, SIL International (http://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL".
       
       This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
       
@@ -309,7 +314,7 @@
   </license>
   <copyright>
     <text lang="en">
-      Copyright (c) 1994-2020, SIL International (http://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL".
+      Copyright (c) 1994-2021, SIL International (http://www.sil.org/), with Reserved Font Names "Scheherazade" and "SIL".
       
       This Font Software is licensed under the SIL Open Font License, Version 1.1. 
     </text>
