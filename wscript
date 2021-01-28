@@ -34,6 +34,10 @@ if '--norename' not in opts:
 if '--autohint' in opts:
     # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
     cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
+
+# To shrink font files for release:
+#cmds.append(cmd('ttfsubset -s arab,latn ${DEP} ${TGT}'))
+
 noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
 noGRkern = '_nokern' if '--quick' in opts else ''
 
