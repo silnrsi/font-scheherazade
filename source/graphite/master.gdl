@@ -348,6 +348,10 @@ pass(5)	// Features, special behaviors
 		cno_Downward  >  cDownward;
 	endif;
 	
+	if (honLigs == simplified)
+	  cHonLigCall  >  cHonLigSmpl;
+	endif;
+	
 	//if (!invis) // always true now that we have disabled the feature
 	
 		// Note that substitution changes the directionality to the defaults for the
@@ -370,6 +374,7 @@ pass(6)
 	// Other:
 	g_hamzaabove_ar  (g_damma_ar  g_damma_ar_filled  g_damma_ar_short)  
 		>  _  (g_hamza_damma_ar  g_hamza_damma_ar_filled  g_hamza_damma_ar_short):(1 2);
+		
 endpass;
 
 endtable; // sub
@@ -386,6 +391,14 @@ pass(1)
 
 	// For lam-alef ligatures, the g_alefPlaceHolder glyph distinguishes between marks that go on the
 	// lam side (using diaA_1, diaB_1) and those on the alef side (diaA_2, diaB_2).
+	
+	// Bob's simplified rules:
+	/***
+	cdiaADia {attach {to = @1; at = diaA_1S; with = diaAM}} / cTakesdiaA_1Dia opt4(cndiaADia) _;
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia MARKS g_alefPlaceholder opt4(cndiaADia) _;
+	cdiaBDia {attach {to = @1; at = diaB_1S; with = diaBM}} / cTakesdiaB_1Dia opt4(cndiaBDia) _;
+	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia MARKS g_alefPlaceholder opt4(cndiaBDia) _;
+	***/
 
 	// The second lower diac uses an alternate AP:
 	cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} / cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder _=DB;
@@ -397,17 +410,17 @@ pass(1)
 		cdiaBDia {attach {to = @1; at = dia2BS; with = diaBM}} 
 		/ cTakesdia2BDia cdiaBDia MARKS g_alefPlaceholder  _=DA _=DB;
 
-	cdiaADia {attach {to = @1; at = diaA_1S; with = diaAM}} / cTakesdiaA_1Dia opt4(cndiaADia) _;
-	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia opt4(cndiaADia) MARKS g_alefPlaceholder _;
-	cdiaBDia {attach {to = @1; at = diaB_1S; with = diaBM}} / cTakesdiaB_1Dia opt4(cndiaBDia) _;
-	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder _;
+	cdiaADia {attach {to = @1; at = diaA_1S; with = diaAM}} / cTakesdiaA_1Dia opt4(cndiaADia)         _;
+	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}} / cTakesdiaA_2Dia MARKS g_alefPlaceholder _;
+	cdiaBDia {attach {to = @1; at = diaB_1S; with = diaBM}} / cTakesdiaB_1Dia opt4(cndiaBDia)         _;
+	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} / cTakesdiaB_2Dia MARKS g_alefPlaceholder _;
 	cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} 
 		cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
-		/ cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder   _=DB _=DA;
+		/ cTakesdiaB_2Dia MARKS g_alefPlaceholder   _=DB opt2(cdiaBDia)  _=DA;
 	// A decomposed hamza comes before the lower diac in the glyph stream:
 	cdiaADia {attach {to = @1; at = diaA_2S; with = diaAM}}
 		cdiaBDia {attach {to = @1; at = diaB_2S; with = diaBM}} 
-		/ cTakesdiaB_2Dia opt4(cndiaBDia) MARKS g_alefPlaceholder   _=DA _=DB;
+		/ cTakesdiaB_2Dia MARKS g_alefPlaceholder   _=DA _=DB;
 
 
 	// Lam-alef components:
@@ -416,10 +429,6 @@ pass(1)
 	
 	// Mark attachment
 
-	// Note: the superscript-alef may have both the _alef and _diaA att pts; the ordering of these
-	// rules assumes the alef AP should be used if there are no intervening marks.
-	cHasAlefAP=B  cMarkSuperscriptAlefs {attach {to=@B; at=alefS; with=alefM}; insert = true}  / _ ^ MARKSBELOW _ ;
-	
 /****
 	// Special case: cozy up these diacritics a little, so they look more like the built-in ligatures:
 	g_shadda_ar=S
@@ -433,6 +442,8 @@ pass(1)
 		/ _ ^ opt4(cndiaADia)  _;
 ****/
 
+	// Note: the superscript-alef may have both the _alef and _diaA att pts; the ordering of these
+	// rules assumes the alef AP should be used if there are no intervening marks.
 	calefDia {attach {to = @1; at = alefS; with = alefM}} / cTakesalefDia opt4(cndiaADia) _;
 	cdiaADia {attach {to = @1; at = diaAS; with = diaAM}} / cTakesdiaADia opt4(cndiaADia) _;
 	cdiaBDia {attach {to = @1; at = diaBS; with = diaBM}} / cTakesdiaBDia opt4(cndiaBDia) _;

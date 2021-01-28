@@ -598,6 +598,11 @@ lookup AyahAlternates {  # salt feature
     sub endofayah-ar.3 from [ endofayah-ar.alt.3  endofayah-ar.altB.3 ] ;
 } AyahAlternates;
 
+lookup HonLigAlternates {
+	lookupflag 0;
+		sub @HonLigCall from @HonLigSmpl ;
+} HonLigAlternates;
+
 lookup KirghizOeAlternates {
 	lookupflag 0;
 		sub @cno_bar  by  @c_bar;
@@ -1371,6 +1376,7 @@ lookup mark_to_base {
   	pos base @diaB  mark @_diaB;
 } mark_to_base;
 
+# Override mark positioning in the case of dagger-alef on certain chars:
 lookup alef_to_base {
   lookupflag 0;
   	pos base @alef  mark @_alef;
@@ -1786,6 +1792,16 @@ feature cv80 {  # Character Variant 80
         ParamUILabelNameID { name 3 1 0x0409 "Simplified B" ; };
     } ;
 } cv80 ;
+
+feature cv81 {  # Character Variant 81
+		# Same for latin and arabic:
+			lookup HonLigAlternates;
+		cvParameters {
+			FeatUILabelNameID  { name 3 1 0x0409 "Honorific ligatures" ; };
+		 #ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
+			ParamUILabelNameID { name 3 1 0x0409 "Simplified" ; };
+		} ;
+} cv81 ;
 
 feature cv82 {  # Character Variant 82
     # Same for latin & arabic:

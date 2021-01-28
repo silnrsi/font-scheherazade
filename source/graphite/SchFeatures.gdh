@@ -289,6 +289,22 @@ endOfAyah {
     default = std;
 }
 
+honLigs {
+		id = "cv81";
+    name.1033 = string("Honorific ligatures");
+    settings {
+        calligraphic {
+            value = 0;
+            name.1033 = string("Calligraphic");
+        }
+        simplified {
+            value = 1;
+            name.1033 = string("Simplified");
+        }
+    }
+    default = calligraphic;
+}
+
 easternDigits {
     id = "cv82";
     name.1033 = string("Eastern digits");

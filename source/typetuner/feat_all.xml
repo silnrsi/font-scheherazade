@@ -225,6 +225,16 @@
 			<cmd name="encode" args="06DD uni06DD.altB"/>
 		</value>
 	</feature>
+	
+	<feature name="Honorific ligatures" value="Calligraphic" tag="HnLg">
+		<value name="Calligraphic" tag="Cal">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Simplified" tag="Sim">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {HonorificLigs}"/>
+			<cmd name="gr_feat" args="{gr_cv81} 1"/>
+		</value>"
+	</feature>
 
 	<feature name="Eastern digits" value="Standard" tag="Dig">
 		<value name="Standard" tag="Std">

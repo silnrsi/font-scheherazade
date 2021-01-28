@@ -185,6 +185,9 @@
     <test class="fset1404" label="madda - large" rtl="True">
       <string>آ فآ آ سآ لآ تلآ</string>
     </test>
+    <test class="fset1403" label="bug" rtl="True">
+      <string>كِنِيتَْةْ</string>
+    </test>
   </testgroup>
   <testgroup label="lam-alef ligatures">
     <test class="fset1403" label="basic" rtl="True">
@@ -651,7 +654,7 @@
       <string>بٰبَم بّبٰق ثَبَل</string>
     </test>
     <test class="fset1403" label="words with teh-marbuta" rtl="True">
-      <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
+      <string>بِنَیَّةْ  عُدْرِیَّةْ كِنِيتَةْ</string>
     </test>
     <test class="fset1403" label="high-hamza teh" rtl="True">
       <string>ٴتا ٴنا</string>
