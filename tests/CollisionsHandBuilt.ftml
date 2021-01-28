@@ -4,7 +4,7 @@
   <head>
     <fontscale>400</fontscale>
     <fontsrc label="No Kern">url(../references/ScheherazadeNew-Regular_noKern.ttf)</fontsrc>
-    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc> -->
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <fontsrc label="OT Bold">url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc>
@@ -27,133 +27,133 @@
   </testgroup>
 
   <testgroup label="all">
-    <test background="#55aaff" class="fset1403" label="WAW + KAF" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="WAW + KAF" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="kaf" rtl="True">
+    <test stylename="fset1403" label="kaf" rtl="True">
       <string>کؤکۆکۇکۋکۈکۉک</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="YEH / PEH DOTS" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="YEH / PEH DOTS" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="schyeh" rtl="True">
+    <test stylename="fset1403" label="schyeh" rtl="True">
       <string>يِيݧٚي</string>
     </test>
-    <test class="fset1403" label="peh peh peh" rtl="True">
+    <test stylename="fset1403" label="peh peh peh" rtl="True">
       <string>پپپپ</string>
     </test>
-    <test class="fset1403" label="beh-Vbelow + beh-Vbelow" rtl="True">
+    <test stylename="fset1403" label="beh-Vbelow + beh-Vbelow" rtl="True">
       <string>ࢠࢠی ݕݕی</string>
     </test>
-    <test class="fset1403" label="horizontal dots below" rtl="True">
+    <test stylename="fset1403" label="horizontal dots below" rtl="True">
       <string>ݐپݐی پݐی ݐݐݐی ݐݐݐی</string>
     </test>
-    <test class="fset1389" label="yeh-barree-two" rtl="True">
+    <test stylename="fset1389" label="yeh-barree-two" rtl="True">
       <string>ݺؽ ݺݺب</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="TEH / NOON DOTS" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="TEH / NOON DOTS" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="teh teh teh / theh theh theh" rtl="True">
+    <test stylename="fset1403" label="teh teh teh / theh theh theh" rtl="True">
       <string>تتتت ثثثث ٿٿٿٿ</string>
     </test>
-    <test class="fset1403" label="teh w/ teh" rtl="True">
+    <test stylename="fset1403" label="teh w/ teh" rtl="True">
       <string>ࢸࢸࢸَࢸ ࢸࢸُٹࢸڻࢸ ࢸِࢸنࢸتࢸ</string>
     </test>
-    <test class="fset1403" label="tteh tteh tteh / rnoon rnoon rnoon" rtl="True">
+    <test stylename="fset1403" label="tteh tteh tteh / rnoon rnoon rnoon" rtl="True">
       <string>ٹٹٹٹ ڻڻڻڻ ݨݨݨݨ </string>
     </test>
-    <test background="#55aaff" class="fset1403" label="OTHER DOTS" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="OTHER DOTS" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="teh qaf" rtl="True">
+    <test stylename="fset1403" label="teh qaf" rtl="True">
       <string>تقا ثڨا ثڦا تتت</string>
     </test>
-    <test class="fset1403" label="qaf qaf qaf" rtl="True">
+    <test stylename="fset1403" label="qaf qaf qaf" rtl="True">
       <string>ققا ڦڦڦا ثققا  تتتا</string>
     </test>
-    <test class="fset1403" label="teh waw-3-dots" rtl="True">
+    <test stylename="fset1403" label="teh waw-3-dots" rtl="True">
       <string>تۋ ثِۆ ثِۈ ثو</string>
     </test>
-    <test class="fset1403" label="kaf teh" rtl="True">
+    <test stylename="fset1403" label="kaf teh" rtl="True">
       <string>کَتا لکتا </string>
     </test>
-    <test background="#55aaff" class="fset1403" label="KAF RNOON" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="KAF RNOON" rtl="True">
       <string />
     </test>
-    <test class="fset1389" label="kaf rnoon/high-hamza-yeh" rtl="True">
+    <test stylename="fset1389" label="kaf rnoon/high-hamza-yeh" rtl="True">
       <string>کڻب کٸب ڱڻس</string>
     </test>
-    <test class="fset1403" label="kaf reh/noon" rtl="True">
+    <test stylename="fset1403" label="kaf reh/noon" rtl="True">
       <string>کُڻو مکُڻو مکڻو کُڻو کُڻو کڑ چڑ گڑ گنڑ پنڑ</string>
     </test>
-    <test class="fset1389" label="jeem/tcheh/noon + reh-tah" rtl="True">
+    <test stylename="fset1389" label="jeem/tcheh/noon + reh-tah" rtl="True">
       <string>جڑ بچّڑ بنڑ</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="TAKHALLUS" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="TAKHALLUS" rtl="True">
       <string />
     </test>
-    <test class="fset1389" label="takhallus" rtl="True">
+    <test stylename="fset1389" label="takhallus" rtl="True">
       <string>اہؔ ساهؔب</string>
     </test>
-    <test class="fset1403" label="takhallus" rtl="True">
+    <test stylename="fset1403" label="takhallus" rtl="True">
       <string>یاہؔ اہؔ یاہؔ اہؔپ  اهؔ  اهؔ اهؔپ اةؔ </string>
     </test>
-    <test class="fset1403" label="alef-two/three heh takhallus" rtl="True">
+    <test stylename="fset1403" label="alef-two/three heh takhallus" rtl="True">
       <string>سݳهؔ ݴةؔ ݳهؔ</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="KASRA JEEM / AIN" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="KASRA JEEM / AIN" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="yeh kasra ain" rtl="True">
+    <test stylename="fset1403" label="yeh kasra ain" rtl="True">
       <string>بِع بِغ سبِغ پِع ٻِغ ڀِع ٽِع بِع</string>
     </test>
-    <test class="fset1403" label="beh-like 0 kasra jeem-like (no fix needed)" rtl="True">
+    <test stylename="fset1403" label="beh-like 0 kasra jeem-like (no fix needed)" rtl="True">
       <string>نِج تِخ ٽِچ</string>
     </test>
-    <test class="fset1403" label="beh-like1 kasra jeem-like" rtl="True">
+    <test stylename="fset1403" label="beh-like1 kasra jeem-like" rtl="True">
       <string>بِج یِڃ سࢡِچ ݐِچ لټِج</string>
     </test>
-    <test class="fset1403" label="beh-like 2 kasra jeem-like" rtl="True">
+    <test stylename="fset1403" label="beh-like 2 kasra jeem-like" rtl="True">
       <string>پِځ ٻِڃ ڀِخ</string>
     </test>
-    <test class="fset1403" label="beh-like 0 kasratan jeem-like" rtl="True">
+    <test stylename="fset1403" label="beh-like 0 kasratan jeem-like" rtl="True">
       <string>نٍج تٍخ ٽٍچ</string>
     </test>
-    <test class="fset1403" label="beh-like 1 kasratan jeem-like" rtl="True">
+    <test stylename="fset1403" label="beh-like 1 kasratan jeem-like" rtl="True">
       <string>بٍچ ظبٍځ بٍڃ سبٍچ فټٍح</string>
     </test>
-    <test class="fset1403" label="beh-like 2 kasratan jeem-like" rtl="True">
+    <test stylename="fset1403" label="beh-like 2 kasratan jeem-like" rtl="True">
       <string>پٍځ ٻٍڃ لقڀٍج</string>
     </test>
-    <test class="fset1403" label="beh-like kasra yeh-barree" rtl="True">
+    <test stylename="fset1403" label="beh-like kasra yeh-barree" rtl="True">
       <string>ٽِۓ بِے ڼِۓ لڹِݻ مسیِے پِݺ ٻِے ڀِے</string>
     </test>
-    <test class="fset1403" label="beh-like kasratan yehbarree" rtl="True">
+    <test stylename="fset1403" label="beh-like kasratan yehbarree" rtl="True">
       <string>بٍے بٍے بٍݻ سبٍݺ کپٍے ٻٍۓ طڀٍۓ ٽٍے</string>
     </test>
-    <test class="fset1403" label="noon-ring kasra yehbarree" rtl="True">
+    <test stylename="fset1403" label="noon-ring kasra yehbarree" rtl="True">
       <string>ڼِۓ سڼٍۓ لټِۓ ټٍۓ</string>
     </test>
-    <test class="fset1403" label="beh-like reh-bar" rtl="True">
+    <test stylename="fset1403" label="beh-like reh-bar" rtl="True">
       <string>بݛ پݛ ٻݛ یݛ نݛ</string>
     </test>
-    <test class="fset1403" label="beh upper-dia reh-tah" rtl="True">
+    <test stylename="fset1403" label="beh upper-dia reh-tah" rtl="True">
       <string>بَݱ بًݱ بݱ پٌݱ تًݱ</string>
     </test>
-    <test class="fset1403" label="noonghunna mark kaf" rtl="True">
+    <test stylename="fset1403" label="noonghunna mark kaf" rtl="True">
       <string>ں٘کس ںٛگ</string>
     </test>
-    <test background="#aaaa7f" class="fset1389" label="qaf-three-dots rnoon" rtl="True">
+    <test background="#aaaa7f" stylename="fset1389" label="qaf-three-dots rnoon" rtl="True">
       <string>ڨڻب ڨٸب</string>
     </test>
-    <test class="fset1403" label="beh U-diac beh U-diac" rtl="True">
+    <test stylename="fset1403" label="beh U-diac beh U-diac" rtl="True">
       <string>بَبۡا نَتۡا تࣥنۡا تّنۡا تّبۡا</string>
     </test>
-    <test class="fset1403" label="beh u-diac beh u-diac - overcorrection" rtl="True">
+    <test stylename="fset1403" label="beh u-diac beh u-diac - overcorrection" rtl="True">
       <string>بٰبَم بّبٰق ثَبَل</string>
     </test>
-    <test class="fset1403" label="examples" rtl="True">
+    <test stylename="fset1403" label="examples" rtl="True">
       <string>بِنَیَّةْ  عُدْرِیَّةْ</string>
     </test>
 

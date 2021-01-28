@@ -105,10 +105,10 @@
     <test label="RW - don't change">
     	<string>\u0628\u06CA\u064F\u0645\u064E \u0628\u06CA\u064F\u0645\u064E</string>
     </test>
-    <test class="fset1403" label="kirghizoe special cases" rtl="True">
+    <test stylename="fset1403" label="kirghizoe special cases" rtl="True">
       <string>ۅن ۅو ۅے</string>
     </test>
-    <test class="fset1403" label="kirghizoe special cases" rtl="True">
+    <test stylename="fset1403" label="kirghizoe special cases" rtl="True">
       <string>یۅن نۅو لۅے</string>
     </test>
     <test label="RW alef - tighten">
@@ -159,28 +159,28 @@
     <test label="RW ain-isolates">
     	<string>\u0631\u0639</string>
     </test>
-    <test class="fset1403" label="RW isolate RW" rtl="True">
+    <test stylename="fset1403" label="RW isolate RW" rtl="True">
       <string>رورزوږڑۇژؤۆۄݫ</string>
     </test>
-    <test class="fset1403" label="RW final RW" rtl="True">
+    <test stylename="fset1403" label="RW final RW" rtl="True">
       <string>لرر لږو لوو لوز</string>
     </test>
-    <test background="#55aaff" class="fset1403" label="WAW + KAF" rtl="True">
+    <test background="#55aaff" stylename="fset1403" label="WAW + KAF" rtl="True">
       <string />
     </test>
-    <test class="fset1403" label="kaf" rtl="True">
+    <test stylename="fset1403" label="kaf" rtl="True">
       <string>کؤکۆکۇکۋکۈکۉک</string>
     </test>
   </testgroup>
   
   <testgroup label="Alef">
-    <test class="fset1389" label="alef rreh" rtl="True">
+    <test stylename="fset1389" label="alef rreh" rtl="True">
       <string>اڑ باڑ </string>
     </test>
-		<test class="fset1403" label="lam-alef teh" rtl="True">
+		<test stylename="fset1403" label="lam-alef teh" rtl="True">
       <string>بلاتتی بلاثتی لاتتی لاثتی</string>
     </test>
-    <test class="fset1403" label="alef-madda gaf" rtl="True">
+    <test stylename="fset1403" label="alef-madda gaf" rtl="True">
       <string>بآگ بآگی آگ آگی</string>
     </test>
     <test stylename="cv60_1" label="alef-madda (large) gaf" rtl="True">
@@ -192,40 +192,40 @@
   </testgroup>
   
   <testgroup label="AE">
-    <test class="fset1403" label="final" rtl="True">
+    <test stylename="fset1403" label="final" rtl="True">
       <string>پەِکن پەگن پەّکن</string>
     </test>
-    <test class="fset1403" label="isolate" rtl="True">
+    <test stylename="fset1403" label="isolate" rtl="True">
       <string>ەِّکن ەِکن ەگن</string>
     </test>
 	</testgroup>
 	
   <testgroup label="Lam Alef">
-    <test class="fset1403" label="isolate beh-like" rtl="True">
+    <test stylename="fset1403" label="isolate beh-like" rtl="True">
       <string>لاِب لاࢿ لاپ لآࣀ</string>
     </test>
-    <test class="fset1403" label="initial beh-like" rtl="True">
+    <test stylename="fset1403" label="initial beh-like" rtl="True">
       <string>لاِبم لاپم لآݐم لاݒم </string>
     </test>
-    <test class="fset1403" label="seen-like" rtl="True">
+    <test stylename="fset1403" label="seen-like" rtl="True">
       <string>لاِس  لآݾ لاښ | لاݭ</string>
     </test>
-    <test class="fset1403" label="meem-like" rtl="True">
+    <test stylename="fset1403" label="meem-like" rtl="True">
       <string>لاْم لاْمل</string>
     </test>
-    <test class="fset1403" label="heh-like" rtl="True">
+    <test stylename="fset1403" label="heh-like" rtl="True">
       <string>لاْہ لاہل لاُھ لاھل</string>
     </test>
-    <test class="fset1403" label="dal-like" rtl="True">
+    <test stylename="fset1403" label="dal-like" rtl="True">
       <string>لاِد لآد لاڍ لاݚ | لاۮ</string>
     </test>
-    <test class="fset1405" label="dal-like alternate" rtl="True">
+    <test stylename="fset1405" label="dal-like alternate" rtl="True">
       <string>لاِد لآد لاڍ لاݚ | لاذ</string>
     </test>
-    <test class="fset1403" label="reh-like" rtl="True">
+    <test stylename="fset1403" label="reh-like" rtl="True">
       <string>لاِر لآز لاږ لاݚ | لاۮ</string>
     </test>
-    <test class="fset1403" label="jeem-like" rtl="True">
+    <test stylename="fset1403" label="jeem-like" rtl="True">
       <string>لاجل لاڇل لاځل لاݗل </string>
     </test>
 	</testgroup>

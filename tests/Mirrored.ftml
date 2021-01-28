@@ -1,6 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type='text/xsl' href='../tools/ftml.xsl'?>
 <ftml version='1.0'>
+	<head>
+  <fontscale>300</fontscale>
+    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+  <styles>
+  </styles>
+  <title>Mirrored test</title>
+  </head>
+
   <testgroup label='Rendering check'>
   <test label='Check'><string>RenderingUnknown</string></test>
   </testgroup>
@@ -24,14 +35,4 @@
   <test label='U+2248'><string>a \u2248 b \u0627 \u2248 \u0628</string></test>
   <test label='U+2260'><string>a \u2260 b \u0627 \u2260 \u0628</string></test>
   </testgroup>
-<head>
-  <fontscale>300</fontscale>
-    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
-    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
-    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
-  <styles>
-  </styles>
-  <title>Mirrored test</title>
-  </head>
 </ftml>

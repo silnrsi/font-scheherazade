@@ -47,24 +47,24 @@
   </testgroup>
   <testgroup label="Encoded characters">
     <test label="0628 064E 06EA 06E4">
-      <string>&#x0628;&#x064E;&#x06EA;&#x06E4;</string>
       <comment>includes lower diac between fatha and high small maddah</comment>
+      <string>&#x0628;&#x064E;&#x06EA;&#x06E4;</string>
     </test>
     <test label="0628 064E 06E4">
-      <string>&#x0628;&#x064E;&#x06E4;</string>
       <comment>no intervening lower diac</comment>
+      <string>&#x0628;&#x064E;&#x06E4;</string>
     </test>
     <test label="0628 06E4">
-      <string>&#x0628;&#x06E4;</string>
       <comment>includes lower diac between fatha and high small maddah</comment>
+      <string>&#x0628;&#x06E4;</string>
     </test>
     <test label="0627 0653">
-      <string>&#x0627;&#x0653;</string>
       <comment>alef maddah</comment>
+      <string>&#x0627;&#x0653;</string>
     </test>
     <test label="0627 06E4">
-      <string>&#x0627;&#x06E4;</string>
       <comment>alef small-high-maddah</comment>
+      <string>&#x0627;&#x06E4;</string>
     </test>
 
   </testgroup>
