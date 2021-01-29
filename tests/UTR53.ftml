@@ -19,7 +19,7 @@
     </test>
   </testgroup>
   <testgroup label='MCM Characters (USV order)'>
-  <test><comment>U+0628 U+0618 U+0619 U+064e U+064f U+0654 U+0658 U+0653 U+0654 U+0651 U+0656 U+0651 U+065c U+0655 U+0650 test to make the line extra tall test to make the line extra tall test to make the line extra tall test to make the line extra tall test to make the line extra tall test to make the line extra tall test to make the line extra tall </comment><string>\u0628\u0618\u0619\u064e\u064f\u0654\u0658\u0653\u0654\u0651\u0656\u0651\u065c\u0655\u0650</string></test>
+  <test label='U+0628 U+0618 U+0619 U+064e U+064f U+0654 U+0658 U+0653 U+0654 U+0651 U+0656 U+0651 U+065c U+0655 U+0650'><comment>UTR53 Artificial Test Case</comment><string>\u0628\u0618\u0619\u064e\u064f\u0654\u0658\u0653\u0654\u0651\u0656\u0651\u065c\u0655\u0650</string></test>
   <test label='U+0654'><comment>ARABIC HAMZA ABOVE</comment><string>\u25cc\u0654</string></test>
   <test label='U+0654'><comment>beh damma hamza</comment><string>\u0628\u064F\u0654</string></test>
   <test label='U+0654'><comment>beh damma cgj hamza</comment><string>\u0628\u064F\u034f\u0654</string></test>
