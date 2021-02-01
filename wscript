@@ -26,11 +26,13 @@ omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_
 # smith project-specific options:
 #   --autohint - autohint the font
 #   --norename - omit glyph rename step
-opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'})
+opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'}, {'opt': '-d'})
 
 cmds = [cmd('ttx -m ${DEP} -o ${TGT} ${SRC}', ['source/jstf.ttx']) ]
 if '--norename' not in opts:
     cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['source/masters/${DS:FILENAME_BASE}.ufo']))
+if '-d' not in opts:
+    cmds.append(cmd('ttfsubset -s latn,arab ${DEP} ${TGT}'))
 if '--autohint' in opts:
     # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
     cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
