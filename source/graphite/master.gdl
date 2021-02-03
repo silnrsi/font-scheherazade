@@ -505,6 +505,8 @@ pass(2)
 
 endpass; // 2
 
+endtable; // pos
+
 
 #ifndef NOKERN
 // Start of kerning code
@@ -518,6 +520,8 @@ cNotMB = cRehKernOther;
 cNotMB -= cRehKernOtherMB;
 endtable;
 ******************/
+
+table(pos)
 
 if (debug == false)
 
@@ -582,10 +586,9 @@ pass(3)
 
 endpass; // 3
 
-endtable; // pos
-
 endif; // debug == false
 
+endtable; // pos
 
 
 ///////////////////////////////////////////////////////////////////
@@ -606,6 +609,8 @@ endtable; // glyph
 
 
 table(subs)
+
+if (debug == false)
 
 pass(7)
 	// Insert kashidas to handle collisions; however, the kashida we're inserting is
@@ -649,11 +654,16 @@ pass(7)
 
 endpass; // 7
 
+endif; // debug == false
+
 endtable; // sub
+
 
 table(pos)
 
-pass(3)	// Collisions and adjustments
+if (debug == false)
+
+pass(4)	// Collisions and adjustments - kashidas
 
 	// Kashida kerning
 	
@@ -676,6 +686,28 @@ pass(3)	// Collisions and adjustments
 	cFehQaf2wAboveInit g_abs_auto_kashida {adv.x -= 30} cFehQaf2wAboveMedi {adv.x -= 30m} /  _ MARKS _ ^ _;
 	cFehQaf2wAboveMedi g_abs_auto_kashida {adv.x -= 120} cFehQaf2wAboveMedi {adv.x -= 120m} /  _ MARKS _ ^ _;
 
+#endif
+
+	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}
+		/ _ MARKS _ ^ _;
+		
+	cTooth  g_abs_auto_kashida  {adv.x -= 50m}  g_teh_marbuta_ar_fina {adv.x -= 50m}  /  _ MARKS _  _ ;
+	
+	// kaf + rnoon
+	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;	
+	
+	// beh + reh-stroke - doesn't need kerning - see below
+	////cTooth2wBelow  MARKS  g_abs_auto_kashida {adv.x -= 90m}  g_reh_stroke_ar_fina {adv.x -= 90m};
+
+
+// Break into two passes to reduce the size of the FSM and also make compilation faster.
+
+endpass; // 4
+
+pass(5)  // Collisions and adjustments - other than kashida
+
+	
+#if (STYLE == BOLD)
 	// teh + waw w/ something above
 	cWawLikeFinaMA {adv.x += 90m}   /  cTooth2wAboveInit MARKS _;  // no kashida
 	
@@ -685,20 +717,9 @@ pass(3)	// Collisions and adjustments
 	// lam-alef + teh
 	cTooth2wAboveInit {adv.x += 90m}  /  (g_alef_ar_fina_post_lam_ini g_alef_ar_fina_post_lam_med) MARKS _;
 	
-#endif
-
-	cTooth2wBelowInit  g_abs_auto_kashida {adv.x -= 40m}  (cTooth2wBelowMedi cYehLikeFina) {adv.x -= 40m}
-		/ _ MARKS _ ^ _;
-		
-#if (STYLE == BOLD)
 	g_teheh_ar_init MARKS  g_teheh_ar_medi  {adv.x += 100m}; 
 #endif
 
-	cTooth  g_abs_auto_kashida  {adv.x -= 50m}  g_teh_marbuta_ar_fina {adv.x -= 50m}  /  _ MARKS _  _ ;
-	
-	// kaf + rnoon
-	(cKafLikeInitMedi cJeemLikeInitMedi  g_noon_ar_medi)  MARKS  g_abs_auto_kashida {adv.x -= 120m}  cRnoonLikeNarrow;	
-	
 	// Simple adjustments
 		
 	// alef-rreh
@@ -763,9 +784,9 @@ pass(3)	// Collisions and adjustments
 	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -90m}  cGafIsolInit {adv.x += 170m}     / _ _ MARKS _;
 	(g_alef_ar g_alef_ar_fina)  g_madda_ar       {shift.x = -70m}  cLamLikeIsolInit {adv.x += 170m} / _ _ MARKS _;
 
-	// beh + reh-stroke
-	////cTooth2wBelow  MARKS  g_abs_auto_kashida {adv.x -= 90m}  g_reh_stroke_ar_fina {adv.x -= 90m}; - doesn't need kerning
-	(cTooth1hBelow cTooth2hBelow ) MARKS g_reh_stroke_ar_fina {adv.x += 100m};  // slight kerning doesn't need a kashida
+	// beh + reh-stroke - slight kerning doesn't need a kashida
+	////cTooth2wBelow  MARKS  g_abs_auto_kashida {adv.x -= 90m}  g_reh_stroke_ar_fina {adv.x -= 90m};
+	(cTooth1hBelow cTooth2hBelow ) MARKS g_reh_stroke_ar_fina {adv.x += 100m};
 
 	// beh-like + something above + reh-tah
 	cToothPlusAbove MARKS  g_reh_twodotshorizontalabove_tahabove_ar_fina {adv.x += 130m};
@@ -781,13 +802,12 @@ pass(3)	// Collisions and adjustments
 	// kehehDots-keheh - no longer needed
 	//(absKehehThreeDotsAboveIni absKehehThreeDotsAboveMed) MARKS cKehehLikeFin {adv.x += 70m};
 
-endpass;
+endpass; // 4
+
+endif;  // debug == false
 
 endtable; // pos
 
 #endif   //  end of collision fixing code
-
-
-
 
 endenvironment;
