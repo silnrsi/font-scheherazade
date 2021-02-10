@@ -280,56 +280,11 @@ lookup AllahLigatures {
 } AllahLigatures;  
 
 #********
-# Lam-Alef Ligatures
+# Hamza ligation
 
 # Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
 # Mark glyphs not included will be skipped over when trying to find a hamzaAbove
 @HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb ] ;
-
-# Include in this filter hamzaBelow plus any mark glyphs that should stop any ligation.
-# Mark glyphs not included will be skipped over when trying to find a hamzaBelow
-@HamzaBelowFilter = [@UTR53_220MCM @UTR53_220other graphemejoinercomb ] ;
-
-lookup _LamAlefLig_Part1 {
-  lookupflag IgnoreMarks ;
-    sub @LamIni by @LamIniPreAlef ;
-    sub @LamMed by @LamMedPreAlef ;
-} _LamAlefLig_Part1 ;
-
-lookup _LamAlefLig_Part2a {
-  lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinPostLamIni ;
-} _LamAlefLig_Part2a ;
-
-lookup _LamAlefLig_Part2b {
-  lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinPostLamMed ;
-} _LamAlefLig_Part2b ;
-
-lookup LamAlefLigatures_OLD {
-  lookupflag IgnoreMarks ;
-  # Subtable: Ligatures\Part1
-    sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
-  # Subtable: Ligatures\Part2a
-    sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
-  # Subtable: Ligatures\Part2b
-    sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
-} LamAlefLigatures_OLD;
-
-
-lookup LamAlefLigatures {
-	lookupflag IgnoreMarks ;
-		sub @LamNoLig  alef-ar.fina                by  @LamAlefLig ;
-		sub @LamNoLig  alefWasla-ar.fina           by  @LamAlefWaslaLig ;
-		sub @LamNoLig  alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
-		sub @LamNoLig  alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
-		sub @LamNoLig  alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
-		sub @LamNoLig  alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
-} LamAlefLigatures;
-
-
-#********
-# Hamza ligation
 
 lookup ComposeLowHamzaAbove {
   lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
@@ -341,6 +296,7 @@ lookup ComposeLowHamzaAbove {
 lookup _LigateHamzaMarks {
   lookupflag UseMarkFilteringSet @LigateHamzaMarksFilter ;
     sub hamzaabove-ar @HamzaMarks by @HamzaLigatures ;
+    sub @HamzaMarks hamzaabove-ar by @HamzaLigatures ;
 } _LigateHamzaMarks;
 
 @HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks shadda-ar ] ;
@@ -749,6 +705,47 @@ lookup SignWithDigits {
 } SignWithDigits;
 
 
+#********
+# Lam-Alef Ligatures
+
+# =====  obsolete  =====
+lookup _LamAlefLig_Part1 {
+  lookupflag IgnoreMarks ;
+    sub @LamIni by @LamIniPreAlef ;
+    sub @LamMed by @LamMedPreAlef ;
+} _LamAlefLig_Part1 ;
+
+lookup _LamAlefLig_Part2a {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinPostLamIni ;
+} _LamAlefLig_Part2a ;
+
+lookup _LamAlefLig_Part2b {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinPostLamMed ;
+} _LamAlefLig_Part2b ;
+
+lookup LamAlefLigatures_OLD {
+  lookupflag IgnoreMarks ;
+  # Subtable: Ligatures\Part1
+    sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
+  # Subtable: Ligatures\Part2a
+    sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
+  # Subtable: Ligatures\Part2b
+    sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
+} LamAlefLigatures_OLD;
+# ======================
+
+lookup LamAlefLigatures {
+	lookupflag IgnoreMarks ;
+		sub @LamNoLig  alef-ar.fina                by  @LamAlefLig ;
+		sub @LamNoLig  alefWasla-ar.fina           by  @LamAlefWaslaLig ;
+		sub @LamNoLig  alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
+		sub @LamNoLig  alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
+		sub @LamNoLig  alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
+		sub @LamNoLig  alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
+} LamAlefLigatures;
+
 
 do if opt("nokern") != "yes";
 {   # start of kerning substitutions
@@ -830,9 +827,9 @@ lookup ToothKashidasIMF {  #initial/medial + final
 
 lookup MiscKashidas {
 	lookupflag IgnoreMarks;
-		sub @KafLikeInitMedi'  lookup _InsertKashida  @RnoonLikeNarrow;
-		sub @JeemLikeInitMedi' lookup _InsertKashida  @RnoonLikeNarrow;
-		sub noon-ar.medi'      lookup _InsertKashida  @RnoonLikeNarrow;
+		sub @KafLikeInitMedi'   lookup _InsertKashida  @RnoonLikeNarrow;
+		sub @JeemLikeInitMedi'  lookup _InsertKashida  @RnoonLikeNarrow;
+		sub noon-ar.medi'       lookup _InsertKashida  @RnoonLikeNarrow;
 		
 		sub @Tooth2wBelowRstrk' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
 } MiscKashidas;
@@ -1362,10 +1359,10 @@ lookup MiscKashidaKerning {
 
 #---  curs feature  ---
 
-lookup LamAlefConnection {
+lookup cursive_exit_entry {
 	lookupflag IgnoreMarks RightToLeft;
   pos cursive @entry @exit;
-} LamAlefConnection;
+} cursive_exit_entry;
 
 
 #---  mark feature  ---
@@ -1401,22 +1398,22 @@ lookup mark_to_lig {
 } mark_to_lig;
 
 
-lookup _mark2_to_base {
-  lookupflag 0;
-  	# Class are not expanded recursively, so enumerate them. :-(
-  	pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  	pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  	pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  	pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  	pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  	pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-} _mark2_to_base;
-
 # Use the dia2B AP when you have two diacritics below a lam-alef.
-lookup LamAlefMark2Adjust {
-	lookupflag UseMarkFilteringSet @MarksBelow;
-		pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
-} LamAlefMark2Adjust;
+##lookup _mark2_to_base {
+##  lookupflag 0;
+##  	# Class are not expanded recursively, so enumerate them. :-(
+##  	pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##  	pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##  	pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##  	pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##  	pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##  	pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##} _mark2_to_base;
+
+##lookup LamAlefMark2Adjust {
+##	lookupflag UseMarkFilteringSet @MarksBelow;
+##		pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
+##} LamAlefMark2Adjust;
 
 
 #---  mkmk feature  ---
@@ -1573,7 +1570,7 @@ feature rlig {  # Required Ligatures
 		# lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
     script arab;
     		lookup AllahLigatures;
-        lookup LamAlefLigatures;
+        #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
         lookup ComposeLowHamzaAbove;
         lookup HamzaLigatures;
         lookup ShaddaLigatures;
@@ -1837,10 +1834,14 @@ feature cv84 {  # Character Variant 84
 # But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't 
 # fire clig, so liga must be the one to use!
 
+# Finally, the LamAlefLigatures must execute after we've ligated mark combinations, including shadda-kasra,
+# or otherwise Word gets confused and ligates shadda-kasra in a sequence such as lam-shadda-alef-kasra.
+
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cv62
     # Same for latin & arabic:
-        lookup ShaddaKasraLigatures;
+        lookup ShaddaKasraLigatures;     # Must be after language-specific CALTs and cv62
         lookup SignWithDigits;
+        lookup LamAlefLigatures;         # Must be after all mark ligatures (including cv62)
 } liga ;
 
 
@@ -1868,7 +1869,7 @@ do if opt("nokern") != "yes";
 
 feature curs {  # Cursive Positioning
     script arab;
-      lookup LamAlefConnection;
+      lookup cursive_exit_entry;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
@@ -1882,9 +1883,9 @@ feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
         lookup mark_to_base;
         lookup alef_to_base;
-        lookup mark_to_lig;
     script arab;
-        lookup LamAlefMark2Adjust;
+    		lookup mark_to_lig;
+        #####lookup LamAlefMark2Adjust;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
