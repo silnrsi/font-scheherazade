@@ -760,6 +760,7 @@ do if opt("nokern") != "yes";
 @Tooth2w3wBelow = [ @Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi ];
 
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
+# OBSOLETE
 lookup _InsertKashida {
 	# all tooth forms:
 	sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
@@ -783,108 +784,71 @@ lookup _InsertKashida {
 	sub @MarksAny  by  @MarksAny  absAutoKashida;
 } _InsertKashida;
 
+# OBSOLETE
 lookup _Insert2Kashidas {
 	sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
 	sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
 } _Insert2Kashidas;
 
+lookup _InsertKashidaBefore {
+	sub @RnoonLikeNarrow  by  absAutoKashida  @RnoonLikeNarrow;
+} _InsertKashidaBefore;
+
+lookup _Insert2KashidasBefore {
+	sub @RnoonLikeNarrow  by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
+} _Insert2KashidasBefore;
+
 
 # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
-lookup ToothKashidasIM_wMarks {  # initial + medial
-	lookupflag 0; # Don't ignore marks!
-		sub @Tooth2w3wBelowInit  @MarksAny' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
-		sub @Tooth2w3wBelowInit  @MarksAny' lookup _InsertKashida    @Tooth2wBelowMedi;
-		
-		sub tehTehabove-ar.init  @MarksAny' lookup _InsertKashida    @Tooth2wAboveMedi;
-		sub @Tooth2wwAboveInit   @MarksAny' lookup _InsertKashida    @Tooth2wwAboveMedi;
-		
-		# also qaf is similar to an initial (high) tooth
-ifinfo(styleName, "Bold") {
-		sub @Tooth2wAboveInit    @MarksAny' lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
-		sub @FehQaf2wAboveInit   @MarksAny' lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
-}
-
-} ToothKashidasIM_wMarks;
-
 lookup ToothKashidasIM {  # initial + medial
 	lookupflag IgnoreMarks;
-		sub @Tooth2w3wBelowInit' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
-		sub @Tooth2w3wBelowInit' lookup _InsertKashida    @Tooth2wBelowMedi;
+		sub @Tooth2w3wBelowInit  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
+		sub @Tooth2w3wBelowInit  @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;
 		
-		sub tehTehabove-ar.init' lookup _InsertKashida    @Tooth2wAboveMedi;
-		sub @Tooth2wwAboveInit'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+		sub tehTehabove-ar.init  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+		sub @Tooth2wwAboveInit   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
 		
 		# also qaf is similar to an initial (high) tooth
 ifinfo(styleName, "Bold") {
-		sub @Tooth2wAboveInit'   lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
-		sub @FehQaf2wAboveInit'  lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
+		sub @Tooth2wAboveInit    @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+		sub @FehQaf2wAboveInit   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
 }
 
 } ToothKashidasIM;
 
 
-lookup ToothKashidasMM_wMarks {  # medial + medial
-	lookupflag 0; # don't ignore marks!	
-		sub @Tooth2w3wBelowMedi  @MarksAny' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
-		# 2w + 2w doesn't need a kashida
-
-		sub tehTehabove-ar.medi  @MarksAny' lookup _InsertKashida    @Tooth2wAboveMedi;
-		sub @Tooth2wwAboveMedi   @MarksAny' lookup _InsertKashida    @Tooth2wwAboveMedi;
-
-ifinfo(styleName, "Bold") {
-  	sub @Tooth2wBelowMedi    @MarksAny' lookup _InsertKashida    @Tooth2wBelowMedi;  # BOLD
-		sub @Tooth2wAboveMedi    @MarksAny' lookup _InsertKashida    @Tooth2wAboveMedi;  # BOLD
-		
-		sub @FehQaf2wAboveMedi   @MarksAny' lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
-}
-		
-} ToothKashidasMM_wMarks;
-
 lookup ToothKashidasMM {  # medial + medial
 	lookupflag IgnoreMarks;		
-		sub @Tooth2w3wBelowMedi' lookup _Insert2Kashidas  @Tooth3wBelowMedi;
+		sub @Tooth2w3wBelowMedi  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
 		# 2w + 2w doesn't need a kashida
 
-		sub tehTehabove-ar.medi' lookup _InsertKashida    @Tooth2wAboveMedi;
-		sub @Tooth2wwAboveMedi'  lookup _InsertKashida    @Tooth2wwAboveMedi;
+		sub tehTehabove-ar.medi  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+		sub @Tooth2wwAboveMedi   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
 
 ifinfo(styleName, "Bold") {
-  	sub @Tooth2wBelowMedi'   lookup _InsertKashida    @Tooth2wBelowMedi;   # BOLD
-		sub @Tooth2wAboveMedi'   lookup _InsertKashida    @Tooth2wAboveMedi;   # BOLD
+  	sub @Tooth2wBelowMedi    @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;   # BOLD
+		sub @Tooth2wAboveMedi    @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;   # BOLD
 		
-		sub @FehQaf2wAboveMedi'  lookup _InsertKashida    @FehQaf2wAboveMedi;  # BOLD
+		sub @FehQaf2wAboveMedi   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
 }
 		
 } ToothKashidasMM;
 
 
-lookup ToothKashidasIMF_wMarks {  #initial/medial + final
-	lookupflag 0;  # don't ignore marks
-		sub @Tooth2w3wBelow  @MarksAny'  lookup _InsertKashida  @YehLikeFina;
-} ToothKashidasIMF_wMarks;
-
 lookup ToothKashidasIMF {  #initial/medial + final
 	lookupflag IgnoreMarks;
-		sub @Tooth2w3wBelow' lookup _InsertKashida  @YehLikeFina;
+		sub @Tooth2w3wBelow  @YehLikeFina' lookup _InsertKashidaBefore;
 } ToothKashidasIMF;
 
-lookup MiscKashidas_wMarks {
-	# Don't ignore marks!
-		sub @KafLikeInitMedi              @MarksAny' lookup _InsertKashida  @RnoonLikeNarrow;
-		sub @JeemLikeInitMedi             @MarksAny' lookup _InsertKashida  @RnoonLikeNarrow;
-		sub noon-ar.medi                  @MarksAny' lookup _InsertKashida  @RnoonLikeNarrow;
-
-#		sub @KafLikeInitMedi  @MarksAny  @RnoonLikeNarrow'  lookup _InsertKashida  ;
-} MiscKashidas_wMarks;
 
 lookup MiscKashidas {
 	lookupflag IgnoreMarks;
-		sub @KafLikeInitMedi'   lookup _InsertKashida  @RnoonLikeNarrow;
-		sub @JeemLikeInitMedi'  lookup _InsertKashida  @RnoonLikeNarrow;
-		sub noon-ar.medi'       lookup _InsertKashida  @RnoonLikeNarrow;
-		
-		sub @Tooth2wBelowRstrk' lookup _InsertKashida  rehStroke-ar.fina;  # no kerning needed
+  	sub @KafLikeInitMedi   @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+    sub @JeemLikeInitMedi  @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+    sub noon-ar.medi       @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+        
+    sub @Tooth2wBelowRstrk rehStroke-ar.fina' lookup _InsertKashidaBefore;
 } MiscKashidas;
 
 # kashidas needed due to colliding marks
@@ -1645,13 +1609,9 @@ feature calt {  # Contextual Alternates
         
 do if opt("nokern") != "yes";
 {   # start of kerning substitutions
-				lookup ToothKashidasIM_wMarks;
         lookup ToothKashidasIM;
-        lookup ToothKashidasMM_wMarks;
         lookup ToothKashidasMM;
-        lookup ToothKashidasIMF_wMarks;
         lookup ToothKashidasIMF;
-        lookup MiscKashidas_wMarks;
         lookup MiscKashidas;
         lookup MarkKashidas;
 }   # end of kerning substitutions

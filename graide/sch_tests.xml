@@ -25,6 +25,7 @@
       <style feats="cv84=1" name="fset1406" />
       <style feats="cv48=2" name="fset1407" />
       <style feats="cv48=1" name="fset1408" />
+      <style feats="cv12=0 cv44=0 cv48=0 cv51=0 cv54=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv81=0 cv82=0 cv84=0 gr1m=0 dbug=0" name="fset1409" />
       <style feats="cv12=0 cv44=0 cv48=0 cv50=0 cv60=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset26" />
       <style feats="cv50=0 cv60=0 cv12=0 cv44=0 cv48=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset27" />
       <style feats="cv44=0 cv48=0 cv50=0 cv60=0 cv12=0 cv62=0 cv70=0 cv72=0 cv74=0 cv76=0 cv78=0 cv80=0 cv82=0 cv84=0 cv90=0 cv92=0 gr1m=0 dsel=1 invs=0" name="fset28" />
@@ -187,6 +188,9 @@
     </test>
     <test class="fset1403" label="bug" rtl="True">
       <string>كِنِيتَْةْ</string>
+    </test>
+    <test class="fset1409" label="analysis" rtl="True">
+      <string>کُڻو</string>
     </test>
   </testgroup>
   <testgroup label="lam-alef ligatures">
