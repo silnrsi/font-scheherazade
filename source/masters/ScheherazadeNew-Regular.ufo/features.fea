@@ -48,8 +48,8 @@
 @HamzaMarks = [fatha-ar damma-ar damma-ar.short damma-ar.filled];
 @HamzaLigatureParts = [@HamzaAbove @HamzaMarks];
 @HehLikeIsolate = [heh-ar hehgoal-ar tehMarbuta-ar];
-@HonLigCall = [allahlong-ar jallajalalouhou-ar bismillah-ar salaamuhuAlaynaa-ar alayhiAsSalaam-ar alayhimAsSalaam-ar alayhaaAsSalaam-ar rahimahuAllaah-ar radiAllaahuAnh-ar radiAllaahuAnhaa-ar radiAllaahuAnhum-ar radiAllaahuAnhumaa-ar radiAllaahuAnhunna-ar sallallaahuAlayhiWaAalih-ar alayhimaaAsSalaam-ar alayhiAsSalaatuWaSalaam-ar quddisaSirrah-ar sallallahuAlayhiWaAaliheeWaSallam-ar subhaanahuWaTaaalaa-ar azzaWaJall-ar];
-@HonLigSmpl = [allahlong-ar.smpl jallajalalouhou-ar.smpl bismillah-ar.smpl salaamuhuAlaynaa-ar.smpl alayhiAsSalaam-ar.smpl alayhimAsSalaam-ar.smpl alayhaaAsSalaam-ar.smpl rahimahuAllaah-ar.smpl radiAllaahuAnh-ar.smpl radiAllaahuAnhaa-ar.smpl radiAllaahuAnhum-ar.smpl radiAllaahuAnhumaa-ar.smpl radiAllaahuAnhunna-ar.smpl sallallaahuAlayhiWaAalih-ar.smpl alayhimaaAsSalaam-ar.smpl alayhiAsSalaatuWaSalaam-ar.smpl quddisaSirrah-ar.smpl sallallahuAlayhiWaAaliheeWaSallam-ar.smpl subhaanahuWaTaaalaa-ar.smpl azzaWaJall-ar.smpl];
+@HonLigCall = [allahlong-ar jallajalalouhou-ar bismillah-ar salaamuhuAlaynaa-ar alayhiAsSalaam-ar alayhimAsSalaam-ar alayhaaAsSalaam-ar rahimahuAllaah-ar rahimahumAllaah-ar radiAllaahuAnh-ar radiAllaahuAnhaa-ar radiAllaahuAnhum-ar radiAllaahuAnhumaa-ar radiAllaahuAnhunna-ar sallallaahuAlayhiWaAalih-ar alayhimaaAsSalaam-ar alayhiAsSalaatuWaSalaam-ar quddisaSirrah-ar sallallahuAlayhiWaAaliheeWaSallam-ar subhaanahuWaTaaalaa-ar azzaWaJall-ar tabaarakaWaTaaalaa-ar];
+@HonLigSmpl = [allahlong-ar.smpl jallajalalouhou-ar.smpl bismillah-ar.smpl salaamuhuAlaynaa-ar.smpl alayhiAsSalaam-ar.smpl alayhimAsSalaam-ar.smpl alayhaaAsSalaam-ar.smpl rahimahuAllaah-ar.smpl rahimahumAllaah-ar.smpl radiAllaahuAnh-ar.smpl radiAllaahuAnhaa-ar.smpl radiAllaahuAnhum-ar.smpl radiAllaahuAnhumaa-ar.smpl radiAllaahuAnhunna-ar.smpl sallallaahuAlayhiWaAalih-ar.smpl alayhimaaAsSalaam-ar.smpl alayhiAsSalaatuWaSalaam-ar.smpl quddisaSirrah-ar.smpl sallallahuAlayhiWaAaliheeWaSallam-ar.smpl subhaanahuWaTaaalaa-ar.smpl azzaWaJall-ar.smpl tabaarakaWaTaaalaa-ar.smpl];
 @JeemAinLikeFina = [jeem-ar.fina tcheh-ar.fina tcheheh-ar.fina tchehDotabove-ar.fina tchehVabove-ar.fina nyeh-ar.fina dyeh-ar.fina hah-ar.fina hahHamzaabove-ar.fina hahTwodotsverticalabove-ar.fina hahTwodotshorizontalabove-ar.fina hahThreedotsabove-ar.fina hahThreedotsupbelow-ar.fina khah-ar.fina hahTahbelow-ar.fina hahTahTwodotshorizontalbelow-ar.fina hahTahabove-ar.fina hahFourbelow-ar.fina jeemTwodotsabove-ar.fina jeemThreedotsabove-ar.fina jeemThreedotsbelow-ar.fina ain-ar.fina ainThreedots-ar.fina ainTwodotshorizontalabove-ar.fina ainThreedotsdownabove-ar.fina ainTwodotsverticalabove-ar.fina ainThreedotsbelow-ar.fina ghain-ar.fina ghainThreedots-ar.fina ghainDotbelow-ar.fina];
 @JeemLikeInit = [jeem-ar.init tcheh-ar.init tcheheh-ar.init tchehDotabove-ar.init tchehVabove-ar.init nyeh-ar.init dyeh-ar.init hah-ar.init hahHamzaabove-ar.init hahTwodotsverticalabove-ar.init hahTwodotshorizontalabove-ar.init hahThreedotsabove-ar.init hahThreedotsupbelow-ar.init khah-ar.init hahTahbelow-ar.init hahTahTwodotshorizontalbelow-ar.init hahTahabove-ar.init hahFourbelow-ar.init jeemTwodotsabove-ar.init jeemThreedotsabove-ar.init jeemThreedotsbelow-ar.init];
 @JeemLikeMedi = [jeem-ar.medi tcheh-ar.medi tcheheh-ar.medi tchehDotabove-ar.medi tchehVabove-ar.medi nyeh-ar.medi dyeh-ar.medi hah-ar.medi hahHamzaabove-ar.medi hahTwodotsverticalabove-ar.medi hahTwodotshorizontalabove-ar.medi hahThreedotsabove-ar.medi hahThreedotsupbelow-ar.medi khah-ar.medi hahTahbelow-ar.medi hahTahTwodotshorizontalbelow-ar.medi hahTahabove-ar.medi hahFourbelow-ar.medi jeemTwodotsabove-ar.medi jeemThreedotsabove-ar.medi jeemThreedotsbelow-ar.medi];
@@ -2755,6 +2755,7 @@ lookup HonLigAlternates {
     sub alayhimAsSalaam-ar from [alayhimAsSalaam-ar.smpl];
     sub alayhaaAsSalaam-ar from [alayhaaAsSalaam-ar.smpl];
     sub rahimahuAllaah-ar from [rahimahuAllaah-ar.smpl];
+    sub rahimahumAllaah-ar from [rahimahumAllaah-ar.smpl];
     sub radiAllaahuAnh-ar from [radiAllaahuAnh-ar.smpl];
     sub radiAllaahuAnhaa-ar from [radiAllaahuAnhaa-ar.smpl];
     sub radiAllaahuAnhum-ar from [radiAllaahuAnhum-ar.smpl];
@@ -2767,6 +2768,7 @@ lookup HonLigAlternates {
     sub sallallahuAlayhiWaAaliheeWaSallam-ar from [sallallahuAlayhiWaAaliheeWaSallam-ar.smpl];
     sub subhaanahuWaTaaalaa-ar from [subhaanahuWaTaaalaa-ar.smpl];
     sub azzaWaJall-ar from [azzaWaJall-ar.smpl];
+    sub tabaarakaWaTaaalaa-ar from [tabaarakaWaTaaalaa-ar.smpl];
 } HonLigAlternates;
 
 lookup KirghizOeAlternates {
