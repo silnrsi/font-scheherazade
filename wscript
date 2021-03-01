@@ -49,7 +49,7 @@ designspace('source/ScheherazadeNew.designspace',
     version=VERSION,  # Needed to ensure dev information on version string
 
     graphite=gdl(genout + '${DS:FILENAME_BASE}.gdl',
-        depends=['source/graphite/cp1252.gdl', 'source/graphite/SchFeatures.gdh', 'source/graphite/SchGlyphs.gdh', 'source/graphite/stddef.gdh'],
+        depends=['source/graphite/master.gdl', 'source/graphite/cp1252.gdl', 'source/graphite/SchFeatures.gdh', 'source/graphite/SchGlyphs.gdh', 'source/graphite/stddef.gdh'],
         master = 'source/graphite/master_${DS:STYLENAME}' + noGRkern + '.gdl',
         make_params = omitaps + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
         params = '-d -q -e ${DS:FILENAME_BASE}_gdlerr.txt',
@@ -63,7 +63,10 @@ designspace('source/ScheherazadeNew.designspace',
     classes = 'source/classes.xml',
     script='arab',
     pdf=fret(genout + '${DS:FILENAME_BASE}-fret.pdf', params='-r -o i -m 48'),
-    woff=woff('web/${DS:FILENAME_BASE}.woff', params='-v ' + VERSION + ' -m ../source/${FAMILY}-WOFF-metadata.xml'),
+    woff = woff('web/${DS:FILENAME_BASE}.woff',
+        metadata=f'../source/{FAMILY}-WOFF-metadata.xml',
+        cmd='psfwoffit -m ${SRC[1]} --woff ${TGT} --woff2 ${TGT}2 ${SRC[0]}'
+        ),
     )
 
 def configure(ctx):
