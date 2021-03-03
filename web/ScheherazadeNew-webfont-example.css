@@ -1,9 +1,9 @@
 /*
 Scheherazade-webfont-example.css
-Scheherazade v3.000
-2 Nov 2020
+Scheherazade v3.100
+3 Mar 2021
 This file is part of Scheherazade font family (http://software.sil.org/scheherazade)
-and is Copyright (c) 1994-2020 SIL International (http://www.sil.org/),
+and is Copyright (c) 1994-2021 SIL International (http://www.sil.org/),
 with Reserved Font Names "Scheherazade" and "SIL". This Font Software is licensed
 under the SIL Open Font License, Version 1.1. You should have received a copy
 of the license along with this Font Software. If this is not the case, go to
@@ -13,11 +13,11 @@ of the license along with this Font Software. If this is not the case, go to
 /* use Scheherazade - Regular in .woff format */
 @font-face {
   font-family: ScheherazadeRW;
-  src: url(ScheherazadeNew-Regular.woff);
+  src: url(ScheherazadeNew-Regular.woff2);
 }
 @font-face {
   font-family: ScheherazadeBW;
-  src: url(ScheherazadeNew-Bold.woff);
+  src: url(ScheherazadeNew-Bold.woff2);
 }
 
 
