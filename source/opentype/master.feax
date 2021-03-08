@@ -885,171 +885,93 @@ lookup MarkKashidas {
 
 lookup SubtendingMarks {
   lookupflag IgnoreMarks ;
-    # This code is taken from Harmattan.
     # In Graphite we use mark attachment rules. However, in OpenType positioning digits on 
     # subtending marks has to be done with adjustments rather than attachment since for some 
     # engines the digits will ordered *before* the subtending mark.
     
-    # Additionally, the adjustment value records depend on font face (bold vs regular). Therefore
+    # Additionally, the adjustment value records depend on font face (e.g. bold vs regular). Therefore
     # we use feax extentions to calculate the value records based on glyph advancewidths and digit AP coordinates.
     
     # In each "do" template, the first rule is ordered for Uniscribe or HarfBuzz 'latin', the second for HarfBuzz 'arab'
-    
-    # U+08E2 End of Ayah Disputed
-    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar.3", "digitR") - ADVx("endofayahdisputed-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-        let v = APy("endofayahdisputed-ar.3", "digitR") - APy("zero.medium", "digitL");
+
+    # Those that take 4 medium digits
+    do for m = @c_4 ;
+       let y = APy(m, "digitR") - APy("zero.medium", "digitL");
+       let w = -ADVx("zero.medium"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+       let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
     {
-        pos endofayahdisputed-ar.3 @DigitsAnySmall' <$x1 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x3 $v $w 0> ;
-        pos                        @DigitsAnySmall' <$x3 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x1 $v $w 0>  endofayahdisputed-ar.3 ;
-    }
-    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar.2", "digitR") - ADVx("endofayahdisputed-ar.2"); let x2 = x1 - w;
-        let v = APy("endofayahdisputed-ar.2", "digitR") - APy("zero.medium", "digitL");
-    {
-        pos endofayahdisputed-ar.2 @DigitsAnySmall' <$x1 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0> ;
-        pos                        @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x1 $v $w 0>  endofayahdisputed-ar.2 ;
-    }
-    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar", "digitR") - ADVx("endofayahdisputed-ar");
-        let v = APy("endofayahdisputed-ar", "digitR") - APy("zero.medium", "digitL");
-    {
-        pos endofayahdisputed-ar @DigitsAnySmall' <$x1 $v $w 0> ;
-        pos                      @DigitsAnySmall' <$x1 $v $w 0> endofayahdisputed-ar;
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x4 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x4 $y $w 0> @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0> $m ;
     }
     
-    # U+06DD End of Ayah
-    do let w = -ADVx("zero.small"); let x1 = APx("endofayah-ar.3", "digitR") - ADVx("endofayah-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
+    # Those that take 3 medium digits
+    do for m = [ number-ar.3 year-ar.3 pagenumber-ar.3 samvat-ar.3 numbermark-ar.3 ] ;
+       let y = APy(m, "digitR") - APy("zero.medium", "digitL");
+       let w = -ADVx("zero.medium"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+       let x2 = x1 - w; let x3 = x2 - w;
     {
-        pos @AyahAny @DigitsAnySmall' <$x1 0 $w 0>   @DigitsAnySmall' <$x2 0 $w 0>   @DigitsAnySmall' <$x3 0 $w 0> ;
-        pos          @DigitsAnySmall' <$x3 0 $w 0>   @DigitsAnySmall' <$x2 0 $w 0>   @DigitsAnySmall' <$x1 0 $w 0>  @AyahAny ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("endofayah-ar.2", "digitR") - ADVx("endofayah-ar.2"); let x2 = x1 - w; 
-    {
-        pos @AyahAny @DigitsAnyMedium' <$x1 0 $w 0>  @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos          @DigitsAnyMedium' <$x2 0 $w 0>  @DigitsAnyMedium' <$x1 0 $w 0>  @AyahAny ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("endofayah-ar", "digitR") - ADVx("endofayah-ar");
-    {
-        pos @AyahAny @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos          @DigitsAnyMedium' <$x1 0 $w 0> @AyahAny ;
-    }
-    
-    # U+0600 Number sign
-    do let w = -ADVx("zero.medium"); let x1 = APx("number-ar.3", "digitR") - ADVx("number-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-    {
-        pos number-ar.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> number-ar.3 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("number-ar.2", "digitR") - ADVx("number-ar.2"); let x2 = x1 - w;
-    {
-        pos number-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> number-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("number-ar", "digitR") - ADVx("number-ar"); 
-    {
-        pos number-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x1 0 $w 0> number-ar ;
-    }
-    
-    # U+0601 Year sign
-    do let w = -ADVx("zero.medium"); let x1 = APx("year-ar.4", "digitR") - ADVx("year-ar.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
-    {
-        pos year-ar.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0> ;
-        pos           @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> year-ar.4 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("year-ar.3", "digitR") - ADVx("year-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-    {
-        pos year-ar.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
-        pos           @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> year-ar.3 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("year-ar.2", "digitR") - ADVx("year-ar.2"); let x2 = x1 - w;
-    {
-        pos year-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos           @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> year-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("year-ar", "digitR") - ADVx("year-ar"); 
-    {
-        pos year-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos           @DigitsAnyMedium' <$x1 0 $w 0> year-ar ;
-    }
-    
-    # U+0602 Footnote Marker
-    do let w = -ADVx("zero.medium"); let x1 = APx("footnotemarker-ar.2", "digitR") - ADVx("footnotemarker-ar.2"); let x2 = x1 - w;
-    {
-        pos footnotemarker-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos                     @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> footnotemarker-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("footnotemarker-ar", "digitR") - ADVx("footnotemarker-ar"); 
-    {
-        pos footnotemarker-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos                     @DigitsAnyMedium' <$x1 0 $w 0> footnotemarker-ar ;
-    }
-    
-    # U+0603 Page Number
-    do let w = -ADVx("zero.medium"); let x1 = APx("pagenumber-ar.4", "digitR") - ADVx("pagenumber-ar.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
-    {
-        pos pagenumber-ar.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
-        pos                 @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> pagenumber-ar.4 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("pagenumber-ar.3", "digitR") - ADVx("pagenumber-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-    {
-        pos pagenumber-ar.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> pagenumber-ar.3 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("pagenumber-ar.2", "digitR") - ADVx("pagenumber-ar.2"); let x2 = x1 - w;
-    {
-        pos pagenumber-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> pagenumber-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("pagenumber-ar", "digitR") - ADVx("pagenumber-ar"); 
-    {
-        pos pagenumber-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x1 0 $w 0> pagenumber-ar ;
-    }
-    
-    # U+0604 Samvat sign
-    do let w = -ADVx("zero.medium"); let x1 = APx("samvat-ar.4", "digitR") - ADVx("samvat-ar.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
-    {
-        pos samvat-ar.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
-        pos             @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> samvat-ar.4 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("samvat-ar.3", "digitR") - ADVx("samvat-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-    {
-        pos samvat-ar.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> samvat-ar.3 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("samvat-ar.2", "digitR") - ADVx("samvat-ar.2"); let x2 = x1 - w;
-    {
-        pos samvat-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> samvat-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("samvat-ar", "digitR") - ADVx("samvat-ar"); 
-    {
-        pos samvat-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos             @DigitsAnyMedium' <$x1 0 $w 0> samvat-ar ;
-    }
-    
-    # U+0605 Number mark
-    do let w = -ADVx("zero.medium"); let x1 = APx("numbermark-ar.4", "digitR") - ADVx("numbermark-ar.4"); let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
-    {
-        pos numbermark-ar.4 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x4 0 $w 0>;
-        pos                 @DigitsAnyMedium' <$x4 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> numbermark-ar.4 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("numbermark-ar.3", "digitR") - ADVx("numbermark-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
-    {
-        pos numbermark-ar.3 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x3 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x3 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> numbermark-ar.3 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("numbermark-ar.2", "digitR") - ADVx("numbermark-ar.2"); let x2 = x1 - w;
-    {
-        pos numbermark-ar.2 @DigitsAnyMedium' <$x1 0 $w 0> @DigitsAnyMedium' <$x2 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x2 0 $w 0> @DigitsAnyMedium' <$x1 0 $w 0> numbermark-ar.2 ;
-    }
-    do let w = -ADVx("zero.medium"); let x1 = APx("numbermark-ar", "digitR") - ADVx("numbermark-ar"); 
-    {
-        pos numbermark-ar   @DigitsAnyMedium' <$x1 0 $w 0> ;
-        pos                 @DigitsAnyMedium' <$x1 0 $w 0> numbermark-ar ;
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x3 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
     }
 
+    # Those that take 3 small digits (default for @c_3)
+    do for m = [ endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3  endofayahdisputed-ar.3] ;
+       let y = APy(m, "digitR") - APy("zero.small", "digitL");
+       let w = -ADVx("zero.small"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+       let x2 = x1 - w; let x3 = x2 - w;
+    {
+        pos $m  @DigitsAnySmall' <$x1 $y $w 0>  @DigitsAnySmall' <$x2 $y $w 0>  @DigitsAnySmall' <$x3 $y $w 0> ;
+        pos     @DigitsAnySmall' <$x3 $y $w 0>  @DigitsAnySmall' <$x2 $y $w 0>  @DigitsAnySmall' <$x1 $y $w 0>  $m ;
+    }
+
+    # Those that take 2 small digits
+    do for m = [ endofayahdisputed-ar.2 ] ;
+       let y = APy(m, "digitR") - APy("zero.small", "digitL");
+       let w = -ADVx("zero.small"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+       let x2 = x1 - w; 
+    {
+        pos $m  @DigitsAnySmall' <$x1 $y $w 0>  @DigitsAnySmall' <$x2 $y $w 0> ;
+        pos     @DigitsAnySmall' <$x2 $y $w 0>  @DigitsAnySmall' <$x1 $y $w 0>  $m ;
+    }
+
+    # Those that take 2 medium digits (default for @c_2)
+    do for m = @c_2 ;
+       let y = APy(m, "digitR") - APy("zero.medium", "digitL");
+       let w = -ADVx("zero.medium"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+       let x2 = x1 - w; 
+    {
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
+    }
+    
+    # Those that take 1 small digit
+    do for m = [ endofayahdisputed-ar ] ;
+       let y = APy(m, "digitR") - APy("zero.small", "digitL");
+       let w = -ADVx("zero.small"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+    {
+        pos $m  @DigitsAnySmall' <$x1 $y $w 0> ;
+        pos     @DigitsAnySmall' <$x1 $y $w 0>  $m ;
+    }
+
+    # Those that take 1 medium digit (default)
+    do for m = @cno_2 ;
+       let y = APy(m, "digitR") - APy("zero.medium", "digitL");
+       let w = -ADVx("zero.medium"); 
+       let x1 = APx(m, "digitR") - ADVx(m); 
+    {
+        pos $m @DigitsAnyMedium' <$x1 $y $w 0> ;
+        pos    @DigitsAnyMedium' <$x1 $y $w 0> $m ;
+    }
+ 
 } SubtendingMarks;
+
+
 
 do if opt("nokern") != "yes";
 {	# start of kerning positioning lookups
