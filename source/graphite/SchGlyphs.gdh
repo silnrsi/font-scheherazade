@@ -80,26 +80,35 @@ g_yeh_hamzaabove_ar_fina { component.hamza.right = aw*3/4 };
 
 // Subtending marks
 
-cSignTakes4 = (g_year_ar g_samvat_ar g_numbermark_ar g_pagenumber_ar); // medium
+cSignTakes4Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_pagenumber_ar);
+cSign4Medium = (g_year_ar_4  g_samvat_ar_4  g_numbermark_ar_4  g_pagenumber_ar_4);
+
+cSignTakes3Small  = (g_endofayah_ar  g_endofayah_ar_alt  g_endofayah_ar_alt_b  g_endofayahdisputed_ar);
+cSign3Small = (g_endofayah_ar_3 g_endofayah_ar_alt_3 g_endofayah_ar_alt_b_3  g_endofayahdisputed_ar_3);
 
 cSignTakes3Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar);
-cSignTakes3Small  = (g_endofayah_ar  g_endofayah_ar_alt  g_endofayah_ar_alt_b);
-
-cSignTakes2 = (g_year_ar g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar  g_endofayah_ar  g_endofayah_ar_alt  
-	g_endofayah_ar_alt_b	g_footnotemarker_ar); // medium
-
-cSignTakes1 = (g_year_ar g_samvat_ar  g_numbermark_ar g_number_ar g_pagenumber_ar g_endofayah_ar g_endofayah_ar_alt g_endofayah_ar_alt_b
-	g_footnotemarker_ar); // medium
-	
-cSign4 = (g_year_ar_4  g_samvat_ar_4  g_numbermark_ar_4  g_pagenumber_ar_4);
 cSign3Medium = (g_year_ar_3 g_samvat_ar_3 g_numbermark_ar_3 g_number_ar_3 g_pagenumber_ar_3);
-cSign3Small  = (g_endofayah_ar_3 g_endofayah_ar_alt_3 g_endofayah_ar_alt_b_3);
-cSign3 = (cSign3Medium  cSign3Small);
-cSign2 = (g_year_ar_2  g_samvat_ar_2 g_numbermark_ar_2 g_number_ar_2 g_pagenumber_ar_2 g_endofayah_ar_2 
-	g_endofayah_ar_alt_2 g_endofayah_ar_alt_b_2  g_footnotemarker_ar_2);
-cSign1 = (g_year_ar    g_samvat_ar g_numbermark_ar g_number_ar       g_pagenumber_ar   g_endofayah_ar    
-	g_endofayah_ar_alt   g_endofayah_ar_alt_b    g_footnotemarker_ar);
 
+cSignTakes2Small = (g_endofayahdisputed_ar);
+cSign2Small = (g_endofayahdisputed_ar_2);
+
+cSignTakes2Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar
+	g_endofayah_ar  g_endofayah_ar_alt  g_endofayah_ar_alt_b	g_footnotemarker_ar);
+cSign2Medium = (g_year_ar_2  g_samvat_ar_2  g_numbermark_ar_2  g_number_ar_2  g_pagenumber_ar_2 
+	g_endofayah_ar_2  g_endofayah_ar_alt_2  g_endofayah_ar_alt_b_2  g_endofayahdisputed_ar_2  g_footnotemarker_ar_2);
+
+cSignTakes1Small = (g_endofayahdisputed_ar);
+cSign1Small = (g_endofayahdisputed_ar);
+
+cSignTakes1Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar 
+	g_endofayah_ar  g_endofayah_ar_alt  g_endofayah_ar_alt_b  g_footnotemarker_ar);
+cSign1Medium = (g_year_ar  g_samvat_ar  g_numbermark_ar  g_number_ar  g_pagenumber_ar  g_endofayah_ar    
+	g_endofayah_ar_alt  g_endofayah_ar_alt_b  g_endofayahdisputed_ar  g_footnotemarker_ar);
+
+cSign4 = (cSign4Medium);
+cSign3 = (cSign3Medium  cSign3Small);
+cSign2 = (cSign2Medium  cSign2Small);
+cSign1 = (cSign1Medium  cSign1Small);
 
 cSignAll = (cSign1 cSign2 cSign3 cSign4);
 

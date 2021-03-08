@@ -44,6 +44,9 @@
     </styles>
   </head>
   <testgroup label="main">
+    <test class="fset1409" label="analysis" rtl="True">
+      <string>کُڻو</string>
+    </test>
     <test class="fset28" label="simple" rtl="True">
       <string>بسف</string>
     </test>
@@ -189,8 +192,8 @@
     <test class="fset1403" label="bug" rtl="True">
       <string>كِنِيتَْةْ</string>
     </test>
-    <test class="fset1409" label="analysis" rtl="True">
-      <string>کُڻو</string>
+    <test class="fset1409" label="disputed end of ayah">
+      <string>࣢٤ ࣢٤٢ ࣢٣٩٢  ۝٣٥١</string>
     </test>
   </testgroup>
   <testgroup label="lam-alef ligatures">

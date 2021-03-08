@@ -42,21 +42,25 @@
         alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar  alefHamzabelow-ar 	
     </class>
 
-		<!-- *NEXT 3 CLASSES MUST MATCH* -->
+		<!-- *NEXT 4 CLASSES MUST MATCH* -->
     <class name="Ayah" fixed="0">
-        endofayah-ar endofayah-ar.2 endofayah-ar.3 	
+        endofayah-ar  endofayah-ar.2  endofayah-ar.3
     </class>
 
     <class name="Ayah.alt" fixed="0">
-        endofayah-ar.alt endofayah-ar.alt.2 endofayah-ar.alt.3 	
+        endofayah-ar.alt  endofayah-ar.alt.2  endofayah-ar.alt.3 	
     </class>
 
     <class name="Ayah.altB" fixed="0">
-        endofayah-ar.altB endofayah-ar.altB.2 endofayah-ar.altB.3 	
+        endofayah-ar.altB  endofayah-ar.altB.2  endofayah-ar.altB.3 	
+    </class>
+    
+    <class name="AyahDisputed" fixed="0">
+    	endofayahdisputed-ar  endofayaydisputed-ar.2  endofayahdisputed-ar.3
     </class>
 
     <class name="AyahAny">
-        @Ayah @Ayah.alt @Ayah.altB 	
+        @Ayah  @Ayah.alt  @Ayah.altB 	@AyahDisputed
     </class>
 
     <!-- OBSOLETE
@@ -611,7 +615,8 @@
     </class>
 
     <class name="TakesSmallDigits">
-        endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 	
+        endofayah-ar.3  endofayah-ar.alt.3  endofayah-ar.altB.3
+        endofayahdisputed-ar  endofayahdisputed-ar.2  endofayahdisputed-ar.3
     </class>
 
 		<!-- OBSOLETE

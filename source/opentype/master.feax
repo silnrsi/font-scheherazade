@@ -685,23 +685,31 @@ lookup SignWithDigits {
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
     sub [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar ]' lookup SignWith_3digits_target 
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
-    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_3digits_target 
+    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayahdisputed-ar]' lookup SignWith_3digits_target 
         @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target ;
     sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target 
-        @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
+        @DigitsAny' lookup SignDigits_ToMedium_target  @DigitsAny' lookup SignDigits_ToMedium_target ;
     sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]
         @DigitsAny' lookup SignDigits_ToMedium_target ;
+    sub [ endofayahdisputed-ar ]' lookup SignWith_2digits_target
+        @DigitsAny' lookup SignDigits_ToSmall_target   @DigitsAny' lookup SignDigits_ToSmall_target;
+    sub [ endofayahdisputed-ar ]
+        @DigitsAny' lookup SignDigits_ToSmall_target;
   # HarfBuzz 'arab'
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
         [ year-ar samvat-ar pagenumber-ar numbermark-ar ]' lookup SignWith_4digits_target ;
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar ]' lookup SignWith_3digits_target ;
     sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  
-        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_3digits_target ;
+        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayahdisputed-ar]' lookup SignWith_3digits_target ;
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target ;
     sub @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target
+        [ endofayahdisputed-ar ]'  lookup SignWith_2digits_target;
+    sub @DigitsAny' lookup SignDigits_ToSmall_target
+        [ endofayahdisputed-ar ];
 } SignWithDigits;
 
 
@@ -887,6 +895,26 @@ lookup SubtendingMarks {
     
     # In each "do" template, the first rule is ordered for Uniscribe or HarfBuzz 'latin', the second for HarfBuzz 'arab'
     
+    # U+08E2 End of Ayah Disputed
+    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar.3", "digitR") - ADVx("endofayahdisputed-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
+        let v = APy("endofayahdisputed-ar.3", "digitR") - APy("zero.medium", "digitL");
+    {
+        pos endofayahdisputed-ar.3 @DigitsAnySmall' <$x1 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x3 $v $w 0> ;
+        pos                        @DigitsAnySmall' <$x3 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x1 $v $w 0>  endofayahdisputed-ar.3 ;
+    }
+    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar.2", "digitR") - ADVx("endofayahdisputed-ar.2"); let x2 = x1 - w;
+        let v = APy("endofayahdisputed-ar.2", "digitR") - APy("zero.medium", "digitL");
+    {
+        pos endofayahdisputed-ar.2 @DigitsAnySmall' <$x1 $v $w 0>  @DigitsAnySmall' <$x2 $v $w 0> ;
+        pos                        @DigitsAnySmall' <$x2 $v $w 0>  @DigitsAnySmall' <$x1 $v $w 0>  endofayahdisputed-ar.2 ;
+    }
+    do let w = -ADVx("zero.small"); let x1 = APx("endofayahdisputed-ar", "digitR") - ADVx("endofayahdisputed-ar");
+        let v = APy("endofayahdisputed-ar", "digitR") - APy("zero.medium", "digitL");
+    {
+        pos endofayahdisputed-ar @DigitsAnySmall' <$x1 $v $w 0> ;
+        pos                      @DigitsAnySmall' <$x1 $v $w 0> endofayahdisputed-ar;
+    }
+    
     # U+06DD End of Ayah
     do let w = -ADVx("zero.small"); let x1 = APx("endofayah-ar.3", "digitR") - ADVx("endofayah-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
     {
@@ -903,7 +931,7 @@ lookup SubtendingMarks {
         pos @AyahAny @DigitsAnyMedium' <$x1 0 $w 0> ;
         pos          @DigitsAnyMedium' <$x1 0 $w 0> @AyahAny ;
     }
-
+    
     # U+0600 Number sign
     do let w = -ADVx("zero.medium"); let x1 = APx("number-ar.3", "digitR") - ADVx("number-ar.3"); let x2 = x1 - w; let x3 = x2 - w;
     {

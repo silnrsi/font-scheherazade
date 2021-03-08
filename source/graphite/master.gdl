@@ -141,19 +141,24 @@ pass(1) {Direction = LEFT_TO_RIGHT}	// Encoding, decomposition, mirroring
 	// This is in a LTR pass because they are category (AN) and the digits that follow are collected into
 	// a LTR sequence by the bidi algorithm.
 	
-	cSignTakes4 cDigitsAny cDigitsAny cDigitsAny cDigitsAny  >
-		cSign4 cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
+	cSignTakes4Medium  cDigitsAny  cDigitsAny  cDigitsAny  cDigitsAny  >
+		cSign4Medium  cDigitsAnyMedium  cDigitsAnyMedium  cDigitsAnyMedium  cDigitsAnyMedium;
 
-	cSignTakes3Medium cDigitsAny cDigitsAny cDigitsAny  >
-		cSign3Medium cDigitsAnyMedium cDigitsAnyMedium cDigitsAnyMedium;
-		
-	cSignTakes3Small cDigitsAny cDigitsAny cDigitsAny  >
-		cSign3Small cDigitsAnySmall cDigitsAnySmall cDigitsAnySmall;
-		
-	cSignTakes2 cDigitsAny cDigitsAny  >
-		cSign2 cDigitsAnyMedium cDigitsAnyMedium;
+	cSignTakes3Small  cDigitsAny  cDigitsAny  cDigitsAny  >
+		cSign3Small  cDigitsAnySmall  cDigitsAnySmall  cDigitsAnySmall;
 
-	cSignTakes1 cDigitsAny  >  cSign1  cDigitsAnyMedium;
+	cSignTakes3Medium  cDigitsAny  cDigitsAny  cDigitsAny  >
+		cSign3Medium  cDigitsAnyMedium  cDigitsAnyMedium  cDigitsAnyMedium;
+		
+	cSignTakes2Small  cDigitsAny  cDigitsAny  >
+		cSign2Small  cDigitsAnySmall  cDigitsAnySmall;
+		
+	cSignTakes2Medium  cDigitsAny  cDigitsAny  >
+		cSign2Medium  cDigitsAnyMedium  cDigitsAnyMedium;
+
+	cSignTakes1Small  cDigitsAny  >  cSign1Small  cDigitsAnySmall;
+
+	cSignTakes1Medium  cDigitsAny  >  cSign1Medium  cDigitsAnyMedium;
 	
 endpass; // 1
 
