@@ -179,6 +179,21 @@
       </dict>
     </dict>
   </dict>
+  <key>com.github.googlei18n.ufo2ft.filters</key>
+  <array>
+    <dict>
+      <key>name</key>
+      <string>decomposeTransformedComponents</string>
+      <key>pre</key>
+      <integer>1</integer>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>flattenComponents</string>
+      <key>pre</key>
+      <integer>1</integer>
+    </dict>
+  </array>
   <key>com.schriftgestaltung.Glyphs.fontUserData</key>
   <dict>
     <key>com.schriftgestaltung.Glyphs.groupsNotInFeature</key>
