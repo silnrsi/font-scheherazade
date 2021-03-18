@@ -231,7 +231,7 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="Simplified" tag="Sim">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {HonorificLigs}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {HonLigAlternates}"/>
 			<cmd name="gr_feat" args="{gr_cv81} 1"/>
 		</value>"
 	</feature>
