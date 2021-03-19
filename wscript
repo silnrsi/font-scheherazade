@@ -15,8 +15,7 @@ FAMILY = APPNAME
 
 # Get version info from Regular UFO; must be first function call:
 getufoinfo('source/masters/' + FAMILY + '-Regular' + '.ufo')
-#BUILDLABEL = "beta"  # shouldn't be needed
-BUILDVERSION = BUILDLABEL  # include alpha/beta
+#BUILDVERSION = BUILDLABEL  # include alpha/beta
 
 ftmlTest('tools/ftml-smith.xsl')
 
@@ -35,7 +34,7 @@ if '--autohint' in opts:
     # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
     cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
 
-# To shrink font files for release:
+# To shrink font files for release - no longer needed?
 #cmds.append(cmd('ttfsubset -s arab,latn ${DEP} ${TGT}'))
 
 noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
