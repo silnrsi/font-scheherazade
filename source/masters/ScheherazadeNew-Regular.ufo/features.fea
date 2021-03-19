@@ -2056,10 +2056,6 @@ markClass rightarrowheadbelow-ar <anchor 115 -660> @_diaBtailDown;
 markClass seenbelow-ar <anchor 0 -218> @_diaBtailDown;
 markClass wavyhamzabelow-ar <anchor 109 -667> @_diaBtailDown;
 
-# AP: new anchor
-@new anchor_MarkBase = [alefbelow-ar];
-# baseClass alefbelow-ar <anchor 162 -203> @new anchor_MarkBase;
-
 # AP: ring
 @ring = [behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina noonghunna-ar noonghunna-ar.fina reh-ar reh-ar.fina tehTehabove-ar.init waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina];
 # baseClass behDotless-ar <anchor 922 17> @ring;
