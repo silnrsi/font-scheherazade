@@ -4,7 +4,7 @@ Scheherazade New is a smart open font designed by SIL International. It is desig
 
 ### Project status [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_ScheherazadeNew/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_ScheherazadeNew&guest=1)
 
-Scheherazade New v3.000 has been released.
+Scheherazade New v3.100 has been released.
 
 Scheherazade New is a mature product with no major changes anticipated. We will be releasing maintenance updates to fix bugs.
 
