@@ -1,0 +1,39 @@
+/*
+This file is from the Scheherazade New project (https://software.sil.org/scheherazade/).
+Copyright (c) 1994-2021 SIL International (http://www.sil.org/) with Reserved
+Font Names "Scheherazade" and "SIL". This Font Software is licensed under the SIL
+Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
+*/
+@font-face {
+    font-family: ScheherazadeNew-R;
+    src: url("../../../web/ScheherazadeNew-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: ScheherazadeNew-B;
+    src: url("../../../web/ScheherazadeNew-Bold.woff2") format("woff2");
+}
+.sch-dflt-R { font-family: ScheherazadeNew-R; rtl=1;}
+.sch-dflt-B { font-family: ScheherazadeNew-B;}
+.sch-cv12-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv12" 1;}
+.sch-cv44-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv44" 1;}
+.sch-cv48-1-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv48" 1;} 
+.sch-cv48-2-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv48" 2;}
+.sch-cv48-3-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv48" 3;}
+.sch-cv51-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv51" 1;}
+.sch-cv54-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv54" 1;}
+.sch-cv60-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv60" 1;}
+.sch-cv62-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv62" 1;}
+.sch-cv70-1-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv70" 1;} 
+.sch-cv70-2-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv70" 2;}
+.sch-cv72-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv72" 1;}
+.sch-cv74-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv74" 1;}
+.sch-cv76-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv76" 1;}
+.sch-cv78-1-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv78" 1;} 
+.sch-cv78-2-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv78" 2;}
+.sch-cv80-1-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv80" 1;}
+.sch-cv80-2-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv80" 2;}
+.sch-cv81-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv81" 1;}
+.sch-cv82-1-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv82" 1;} 
+.sch-cv82-2-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv82" 2;}
+.sch-cv82-4-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv82" 4;}
+.sch-cv84-R { font-family: ScheherazadeNew-R; font-feature-settings:"cv84" 1;}
