@@ -1,5 +1,5 @@
 sources/graphite/README.txt
-Scheherazade New 3.100
+Scheherazade New 3.200
 ==================
 
 This file describes the Graphite source files included with the Scheherazade
