@@ -64,7 +64,7 @@ ChangeLog
 (This should list both major and minor changes, most recent first.)
 
 2021-07-15 (SIL WSTech team) Scheherazade New Version 3.200 (official release)
-- Reencoded honorifics from PUA codepoints to official Unicode 14.0 codepoints
+- Double-encoded honorifics to use both PUA codepoints and official Unicode 14.0 codepoints
 
 2021-03-26 (SIL WSTech team) Scheherazade New Version 3.100 (official release)
 - Fixed Graphite bug related to spacing of U+2E41
