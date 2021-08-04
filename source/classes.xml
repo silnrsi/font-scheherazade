@@ -56,7 +56,7 @@
     </class>
     
     <class name="AyahDisputed" fixed="0">
-    	endofayahdisputed-ar  endofayaydisputed-ar.2  endofayahdisputed-ar.3
+    	disputedendofayah-ar  disputedendofayah-ar.2  disputedendofayah-ar.3
     </class>
 
     <class name="AyahAny">
@@ -207,7 +207,7 @@
         noonRing-ar noonThreedotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar hehDoachashmee-ar 
         hehVinvertedabove-ar heh-ar hehgoal-ar hehgoalHamzaabove-ar
         tehTehabove-ar pehVabove-ar tehVabove-ar ttehVabove-ar tchehVabove-ar jeemThreedotsabove-ar 
-        jeemThreedotsbelow-ar ghainThreedots-ar qafAfricanThreedotsabove-ar kehehVabove-ar lamTahabove-ar
+        jeemThreedotsbelow-ar ghainThreedotsabove-ar qafThreedotsaboveAfrican-ar kehehVabove-ar lamTahabove-ar
     </class>
     
     <class name="DualLinkFina" fixed="0">
@@ -237,7 +237,7 @@
         noonRing-ar.fina noonThreedotsabove-ar.fina noonTwodotsbelow-ar.fina noonTahabove-ar.fina noonVabove-ar.fina hehDoachashmee-ar.fina		
         hehVinvertedabove-ar.fina heh-ar.fina hehgoal-ar.fina hehgoalHamzaabove-ar.fina
         tehTehabove-ar.fina pehVabove-ar.fina tehVabove-ar.fina ttehVabove-ar.fina tchehVabove-ar.fina jeemThreedotsabove-ar.fina
-        jeemThreedotsbelow-ar.fina ghainThreedots-ar.fina qafAfricanThreedotsabove-ar.fina kehehVabove-ar.fina lamTahabove-ar.fina
+        jeemThreedotsbelow-ar.fina ghainThreedotsabove-ar.fina qafThreedotsaboveAfrican-ar.fina kehehVabove-ar.fina lamTahabove-ar.fina
     </class>
 
     <class name="DualLinkMedi" fixed="0">
@@ -270,7 +270,7 @@
         noonTwodotsbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi hehDoachashmee-ar.medi		
         hehVinvertedabove-ar.medi heh-ar.medi hehgoal-ar.medi hehgoalHamzaabove-ar.medi
         tehTehabove-ar.medi pehVabove-ar.medi tehVabove-ar.medi ttehVabove-ar.medi tchehVabove-ar.medi jeemThreedotsabove-ar.medi
-        jeemThreedotsbelow-ar.medi ghainThreedots-ar.medi qafAfricanThreedotsabove-ar.medi kehehVabove-ar.medi lamTahabove-ar.medi
+        jeemThreedotsbelow-ar.medi ghainThreedotsabove-ar.medi qafThreedotsaboveAfrican-ar.medi kehehVabove-ar.medi lamTahabove-ar.medi
     </class>
 
     <class name="DualLinkInit" fixed="0">
@@ -303,7 +303,7 @@
         noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init hehDoachashmee-ar.init		
         hehVinvertedabove-ar.init heh-ar.init hehgoal-ar.init hehgoalHamzaabove-ar.init
         tehTehabove-ar.init pehVabove-ar.init tehVabove-ar.init ttehVabove-ar.init tchehVabove-ar.init jeemThreedotsabove-ar.init 
-        jeemThreedotsbelow-ar.init ghainThreedots-ar.init qafAfricanThreedotsabove-ar.init kehehVabove-ar.init lamTahabove-ar.init
+        jeemThreedotsbelow-ar.init ghainThreedotsabove-ar.init qafThreedotsaboveAfrican-ar.init kehehVabove-ar.init lamTahabove-ar.init
     </class>
 
     <!-- OBSOLETE
@@ -616,7 +616,7 @@
 
     <class name="TakesSmallDigits">
         endofayah-ar.3  endofayah-ar.alt.3  endofayah-ar.altB.3
-        endofayahdisputed-ar  endofayahdisputed-ar.2  endofayahdisputed-ar.3
+        disputedendofayah-ar  disputedendofayah-ar.2  disputedendofayah-ar.3
     </class>
 
 		<!-- OBSOLETE
@@ -789,12 +789,12 @@
     
     <class name="AinLikeInit">
         ain-ar.init ghain-ar.init ainThreedots-ar.init ghainDotbelow-ar.init ainTwodotshorizontalabove-ar.init ainThreedotsdownabove-ar.init		
-        ainTwodotsverticalabove-ar.init ghainThreedots-ar.init ghainDotbelow-ar.init
+        ainTwodotsverticalabove-ar.init ghainThreedotsabove-ar.init ghainDotbelow-ar.init
     </class>
 
     <class name="AinLikeIsol">
         ain-ar ghain-ar ainThreedots-ar ghainDotbelow-ar ainTwodotshorizontalabove-ar ainThreedotsdownabove-ar
-        ainTwodotsverticalabove-ar ghainThreedots-ar ghainDotbelow-ar
+        ainTwodotsverticalabove-ar ghainThreedotsabove-ar ghainDotbelow-ar
     </class>
     
     <class name="AlefLamWBelow">  <!-- reh/waw kerning -->
@@ -874,11 +874,11 @@
         feh-ar  veh-ar  fehDotless-ar  fehDotmovedbelow-ar  fehDotbelow-ar  fehThreedotsbelow-ar peheh-ar
         fehTwodotsbelow-ar fehThreedotsupbelow-ar fehDotbelowThreedotsabove-ar fehAfrican-ar
         qafDotless-ar  qaf-ar  qafDotabove-ar  qafThreedotsabove-ar  qafDotbelow-ar  qafAfrican-ar
-        qafAfricanThreedotsabove-ar
+        qafThreedotsaboveAfrican-ar
         feh-ar.init  veh-ar.init  fehDotless-ar.init  fehDotmovedbelow-ar.init  fehDotbelow-ar.init  fehThreedotsbelow-ar.init
         peheh-ar.init  fehTwodotsbelow-ar.init  fehThreedotsupbelow-ar.init  fehDotbelowThreedotsabove-ar.init  fehAfrican-ar.init
         qafDotless-ar.init  qaf-ar.init  qafDotabove-ar.init  qafThreedotsabove-ar.init  qafDotbelow-ar.init  qafAfrican-ar.init
-        qafAfricanThreedotsabove-ar.init
+        qafThreedotsaboveAfrican-ar.init
         lam-ar  lamVabove-ar  lamDotabove-ar lamThreedotsabove-ar lamBar-ar lamDoublebar-ar		
         lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamBar-ar.init 
         lamDoublebar-ar.init lam-ar.init.preAlef	
@@ -1025,12 +1025,12 @@
     <!-- feh/qaf-like forms with at least 2 dots above -->
     <class name="FehQaf2wAboveInit">
     	qaf-ar.init veh-ar.init peheh-ar.init fehDotbelowThreedotsabove-ar.init qafThreedotsabove-ar.init
-    	qafDotbelow-ar.init qafAfricanThreedotsabove-ar.init
+    	qafDotbelow-ar.init qafThreedotsaboveAfrican-ar.init
     </class>
     
     <class name="FehQaf2wAboveMedi">
     	qaf-ar.medi veh-ar.medi peheh-ar.medi fehDotbelowThreedotsabove-ar.medi qafThreedotsabove-ar.medi
-    	qafDotbelow-ar.medi qafAfricanThreedotsabove-ar.medi
+    	qafDotbelow-ar.medi qafThreedotsaboveAfrican-ar.medi
     </class>
     
     <!-- these collide with alef-madda -->
@@ -1067,7 +1067,7 @@
     	hahThreedotsabove-ar.fina hahThreedotsupbelow-ar.fina khah-ar.fina hahTahbelow-ar.fina hahTahTwodotshorizontalbelow-ar.fina
     	hahTahabove-ar.fina hahFourbelow-ar.fina jeemTwodotsabove-ar.fina jeemThreedotsabove-ar.fina jeemThreedotsbelow-ar.fina
     	ain-ar.fina ainThreedots-ar.fina ainTwodotshorizontalabove-ar.fina ainThreedotsdownabove-ar.fina 
-    	ainTwodotsverticalabove-ar.fina ainThreedotsbelow-ar.fina ghain-ar.fina ghainThreedots-ar.fina ghainDotbelow-ar.fina
+    	ainTwodotsverticalabove-ar.fina ainThreedotsbelow-ar.fina ghain-ar.fina ghainThreedotsabove-ar.fina ghainDotbelow-ar.fina
     </class>
 
     <class name="KafLikeInit">
