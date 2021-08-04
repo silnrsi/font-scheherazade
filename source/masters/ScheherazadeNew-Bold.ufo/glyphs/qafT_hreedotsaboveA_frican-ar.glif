@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="qafThreedotsaboveAfrican-ar" format="2">
+  <advance width="1484"/>
+  <unicode hex="08C4"/>
+  <anchor x="481" y="1790" name="alef"/>
+  <anchor x="923" y="2168" name="diaA"/>
+  <anchor x="534" y="-500" name="diaB"/>
+  <outline>
+    <component base="qafDotless-ar"/>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="1108" yOffset="1282"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -685,15 +685,15 @@ lookup SignWithDigits {
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
     sub [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar ]' lookup SignWith_3digits_target 
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
-    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayahdisputed-ar]' lookup SignWith_3digits_target 
+    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup SignWith_3digits_target 
         @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target ;
     sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target 
         @DigitsAny' lookup SignDigits_ToMedium_target  @DigitsAny' lookup SignDigits_ToMedium_target ;
     sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]
         @DigitsAny' lookup SignDigits_ToMedium_target ;
-    sub [ endofayahdisputed-ar ]' lookup SignWith_2digits_target
+    sub [ disputedendofayah-ar ]' lookup SignWith_2digits_target
         @DigitsAny' lookup SignDigits_ToSmall_target   @DigitsAny' lookup SignDigits_ToSmall_target;
-    sub [ endofayahdisputed-ar ]
+    sub [ disputedendofayah-ar ]
         @DigitsAny' lookup SignDigits_ToSmall_target;
   # HarfBuzz 'arab'
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
@@ -701,15 +701,15 @@ lookup SignWithDigits {
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar ]' lookup SignWith_3digits_target ;
     sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  
-        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayahdisputed-ar]' lookup SignWith_3digits_target ;
+        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup SignWith_3digits_target ;
     sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target ;
     sub @DigitsAny' lookup SignDigits_ToMedium_target 
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
     sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target
-        [ endofayahdisputed-ar ]'  lookup SignWith_2digits_target;
+        [ disputedendofayah-ar ]'  lookup SignWith_2digits_target;
     sub @DigitsAny' lookup SignDigits_ToSmall_target
-        [ endofayahdisputed-ar ];
+        [ disputedendofayah-ar ];
 } SignWithDigits;
 
 
@@ -917,7 +917,7 @@ lookup SubtendingMarks {
     }
 
     # Those that take 3 small digits (default for @c_3)
-    do for m = [ endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3  endofayahdisputed-ar.3] ;
+    do for m = [ endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3  disputedendofayah-ar.3] ;
        let y = APy(m, "digitR") - APy("zero.small", "digitL");
        let w = -ADVx("zero.small"); 
        let x1 = APx(m, "digitR") - ADVx(m); 
@@ -928,7 +928,7 @@ lookup SubtendingMarks {
     }
 
     # Those that take 2 small digits
-    do for m = [ endofayahdisputed-ar.2 ] ;
+    do for m = [ disputedendofayah-ar.2 ] ;
        let y = APy(m, "digitR") - APy("zero.small", "digitL");
        let w = -ADVx("zero.small"); 
        let x1 = APx(m, "digitR") - ADVx(m); 
@@ -950,7 +950,7 @@ lookup SubtendingMarks {
     }
     
     # Those that take 1 small digit
-    do for m = [ endofayahdisputed-ar ] ;
+    do for m = [ disputedendofayah-ar ] ;
        let y = APy(m, "digitR") - APy("zero.small", "digitL");
        let w = -ADVx("zero.small"); 
        let x1 = APx(m, "digitR") - ADVx(m); 
