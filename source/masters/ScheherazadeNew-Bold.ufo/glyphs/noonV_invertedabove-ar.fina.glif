@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonVinvertedabove-ar.fina" format="2">
+  <advance width="1334"/>
+  <anchor x="336" y="696" name="alef"/>
+  <anchor x="499" y="1183" name="diaA"/>
+  <anchor x="631" y="-870" name="diaB"/>
+  <outline>
+    <component base="noonghunna-ar.fina"/>
+    <component base="_hat" xOffset="695" yOffset="409"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

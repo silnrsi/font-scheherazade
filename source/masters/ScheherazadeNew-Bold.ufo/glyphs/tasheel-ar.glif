@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="tasheel-ar" format="2">
+  <unicode hex="089B"/>
+  <anchor x="0" y="-86" name="_diaB"/>
+  <anchor x="0" y="-1117" name="diaB"/>
+  <outline>
+    <component base="teh-ar.init" xScale="0.5" yScale="0.5" xOffset="966" yOffset="-803"/>
+    <component base="seen-ar.medi" xScale="0.5" yScale="0.5" xOffset="198" yOffset="-803"/>
+    <component base="heh-ar.medi" xScale="0.5" yScale="0.5" xOffset="-349" yOffset="-803"/>
+    <component base="yeh-ar.medi" xScale="0.5" yScale="0.5" xOffset="-654" yOffset="-803"/>
+    <component base="lam-ar.fina" xScale="0.5" yScale="0.5" xOffset="-1300" yOffset="-803"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Correct the UFOs.  Uses checkfix=None since otherwise it would report errors and warnings prior them being fixed by the script
+echo "-----Updating the UFOs"
+set -e
+psffixfontlab source/masters/ScheherazadeNew-Regular.ufo/ -p checkfix=none
+psffixfontlab source/masters/ScheherazadeNew-Bold.ufo/ -p checkfix=none
+# Once running smoothly, can add "&" to end of above 4 lines and uncomment the "wait" below.
+# For now better not having log messages mixed together
+# wait
+
+# Delete old backups
+echo "-----Deleting backup UFOs created by FontLab"
+
+if ls source/masters/ScheherazadeNew-*.*-*.ufo > /dev/null 2>&1
+then
+  rm -r source/masters/ScheherazadeNew-*.*-*.ufo
+fi
+
+
+./preflight
+

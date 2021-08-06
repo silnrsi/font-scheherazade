@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="alefBottomrightkasraattachedDotabove-ar.fina" format="2">
+  <advance width="532"/>
+  <unicode hex="087D"/>
+  <anchor x="137" y="1886" name="diaA"/>
+  <anchor x="393" y="-124" name="diaB"/>
+  <outline>
+    <component base="alef-ar.fina"/>
+    <component base="kasra-ar" xOffset="349" yOffset="1245"/>
+    <component base="_dot1" xOffset="170" yOffset="1660"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

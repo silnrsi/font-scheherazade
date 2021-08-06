@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ishmaambelow-ar" format="2">
+  <unicode hex="0899"/>
+  <anchor x="0" y="-110" name="_diaB"/>
+  <anchor x="0" y="-983" name="diaB"/>
+  <outline>
+    <component base="alef-ar" xScale="0.5" yScale="0.5" xOffset="860" yOffset="-900"/>
+    <component base="sheen-ar.init" xScale="0.5" yScale="0.5" xOffset="265" yOffset="-900"/>
+    <component base="meem-ar.medi" xScale="0.5" yScale="0.5" xOffset="-305" yOffset="-900"/>
+    <component base="lam-ar.medi" xScale="0.5" yScale="0.5" xOffset="-625" yOffset="-900"/>
+    <component base="tehMarbuta-ar.fina" xScale="0.5" yScale="0.5" xOffset="-1055" yOffset="-900"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehElongatedhamzaabove-ar.fina" format="2">
+  <advance width="2246"/>
+  <anchor x="887" y="1195" name="above"/>
+  <anchor x="528" y="1259" name="alef"/>
+  <anchor x="1540" y="-155" name="below"/>
+  <anchor x="835" y="1502" name="diaA"/>
+  <anchor x="870" y="-435" name="diaB"/>
+  <outline>
+    <component base="keheh-ar.fina"/>
+    <component base="_elongatedHamza" xOffset="1076" yOffset="1079"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

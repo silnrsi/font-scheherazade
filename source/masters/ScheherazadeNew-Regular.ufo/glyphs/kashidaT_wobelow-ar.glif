@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kashidaTwobelow-ar" format="2">
+  <advance width="541"/>
+  <unicode hex="0885"/>
+  <anchor x="266" y="805" name="diaA"/>
+  <anchor x="284" y="-415" name="diaB"/>
+  <outline>
+    <component base="_dot2h" xOffset="270" yOffset="-200"/>
+    <contour>
+      <point x="610" y="91" type="curve" smooth="yes"/>
+      <point x="610" y="136"/>
+      <point x="610" y="181"/>
+      <point x="552" y="181" type="curve" smooth="yes"/>
+      <point x="11" y="181" type="line" smooth="yes"/>
+      <point x="-47" y="181"/>
+      <point x="-47" y="136"/>
+      <point x="-47" y="91" type="curve" smooth="yes"/>
+      <point x="-47" y="46"/>
+      <point x="-47" y="0"/>
+      <point x="11" y="0" type="curve" smooth="yes"/>
+      <point x="552" y="0" type="line" smooth="yes"/>
+      <point x="610" y="0"/>
+      <point x="610" y="46"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

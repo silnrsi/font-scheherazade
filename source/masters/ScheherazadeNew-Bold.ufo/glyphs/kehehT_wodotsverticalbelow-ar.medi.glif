@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kehehTwodotsverticalbelow-ar.medi" format="2">
+  <advance width="1369"/>
+  <anchor x="146" y="1451" name="alef"/>
+  <anchor x="302" y="1601" name="diaA"/>
+  <anchor x="215" y="-858" name="diaB"/>
+  <outline>
+    <component base="kaf-ar.medi"/>
+    <component base="_dot2v" xOffset="202" yOffset="-399"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
+</glyph>

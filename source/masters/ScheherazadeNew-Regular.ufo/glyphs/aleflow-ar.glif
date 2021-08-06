@@ -2,6 +2,8 @@
 <glyph name="aleflow-ar" format="2">
   <advance width="313"/>
   <unicode hex="08AD"/>
+  <anchor x="85" y="333" name="diaA"/>
+  <anchor x="191" y="-739" name="diaB"/>
   <outline>
     <contour>
       <point x="252" y="-368" type="curve" smooth="yes"/>
@@ -30,4 +32,10 @@
       <point x="252" y="-390"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.6,1,1</string>
+    </dict>
+  </lib>
 </glyph>
