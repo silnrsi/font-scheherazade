@@ -3,6 +3,7 @@
   <anchor x="260" y="1395" name="_diaA"/>
   <anchor x="170" y="2530" name="diaA"/>
   <outline>
+    <component base="_hamza" xOffset="232" yOffset="1633"/>
     <contour>
       <point x="-132" y="1994" type="curve"/>
       <point x="-99" y="1968"/>
@@ -40,6 +41,5 @@
       <point x="245" y="2317"/>
       <point x="194" y="2365"/>
     </contour>
-    <component base="_hamza" xOffset="232" yOffset="1633"/>
   </outline>
 </glyph>

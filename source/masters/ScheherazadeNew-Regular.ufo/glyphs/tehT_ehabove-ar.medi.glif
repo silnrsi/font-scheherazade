@@ -8,6 +8,7 @@
   <anchor x="302" y="-1088" name="diaBtailDown"/>
   <anchor x="302" y="-181" name="diaBtailUp"/>
   <outline>
+    <component base="_teh" xOffset="347" yOffset="829"/>
     <contour>
       <point x="782" y="91" type="curve" smooth="yes"/>
       <point x="782" y="136"/>
@@ -44,7 +45,6 @@
       <point x="775" y="0"/>
       <point x="782" y="46"/>
     </contour>
-    <component base="_teh" xOffset="347" yOffset="829"/>
   </outline>
   <lib>
     <dict>

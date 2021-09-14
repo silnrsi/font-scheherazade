@@ -5,6 +5,9 @@
   <anchor x="21" y="2825" name="diaA"/>
   <anchor x="-244" y="-1075" name="diaBtailDown"/>
   <outline>
+    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="216" yOffset="2619"/>
+    <component base="_dot1" xScale="0.56182" yScale="0.56182" xOffset="-159" yOffset="2580"/>
+    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="-567" yOffset="2300"/>
     <contour>
       <point x="250" y="2243" type="curve" smooth="yes"/>
       <point x="250" y="2237"/>
@@ -159,8 +162,5 @@
       <point x="-488" y="1855"/>
       <point x="-464" y="1835"/>
     </contour>
-    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="216" yOffset="2619"/>
-    <component base="_dot1" xScale="0.56182" yScale="0.56182" xOffset="-159" yOffset="2580"/>
-    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="-567" yOffset="2300"/>
   </outline>
 </glyph>

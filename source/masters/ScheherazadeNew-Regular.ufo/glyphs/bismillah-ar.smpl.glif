@@ -2,6 +2,14 @@
 <glyph name="bismillah-ar.smpl" format="2">
   <advance width="7000"/>
   <outline>
+    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="3198" yOffset="-218"/>
+    <component base="_smallv.cal" xOffset="3418" yOffset="-257"/>
+    <component base="sukun-ar" xScale="0.55684" yScale="0.55684" xOffset="6360" yOffset="-370"/>
+    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="1533" yOffset="-297"/>
+    <component base="_smallv.cal" xOffset="6152" yOffset="548"/>
+    <component base="_smallv.cal" xOffset="2008" yOffset="742"/>
+    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="2353" yOffset="-323"/>
+    <component base="_smallv.cal" xOffset="4485" yOffset="401"/>
     <contour>
       <point x="3739" y="375" type="curve" smooth="yes"/>
       <point x="3723" y="375"/>
@@ -977,13 +985,5 @@
       <point x="1095" y="951"/>
       <point x="1127" y="918"/>
     </contour>
-    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="3198" yOffset="-218"/>
-    <component base="_smallv.cal" xOffset="3418" yOffset="-257"/>
-    <component base="sukun-ar" xScale="0.55684" yScale="0.55684" xOffset="6360" yOffset="-370"/>
-    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="1533" yOffset="-297"/>
-    <component base="_smallv.cal" xOffset="6152" yOffset="548"/>
-    <component base="_smallv.cal" xOffset="2008" yOffset="742"/>
-    <component base="_comma.cal" xScale="0.8227" yScale="0.8227" xOffset="2353" yOffset="-323"/>
-    <component base="_smallv.cal" xOffset="4485" yOffset="401"/>
   </outline>
 </glyph>

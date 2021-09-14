@@ -4,6 +4,7 @@
   <anchor x="0" y="1259" name="_diaA"/>
   <anchor x="0" y="2560" name="diaA"/>
   <outline>
+    <component base="_dot1" xScale="0.60606" yScale="0.60606" xOffset="-87" yOffset="1891"/>
     <contour>
       <point x="590" y="1904" type="curve"/>
       <point x="543" y="2304" type="line"/>
@@ -145,6 +146,5 @@
       <point x="-132" y="2056"/>
       <point x="-104" y="2053"/>
     </contour>
-    <component base="_dot1" xScale="0.60606" yScale="0.60606" xOffset="-87" yOffset="1891"/>
   </outline>
 </glyph>

@@ -4,6 +4,7 @@
   <anchor x="218" y="1479" name="_diaA"/>
   <anchor x="0" y="2485" name="diaA"/>
   <outline>
+    <component base="dammaCurly-ar" xOffset="-10" yOffset="9"/>
     <contour>
       <point x="187" y="2326" type="curve" smooth="yes"/>
       <point x="102" y="2326"/>
@@ -48,6 +49,5 @@
       <point x="287" y="2159"/>
       <point x="236" y="2326"/>
     </contour>
-    <component base="dammaCurly-ar" xOffset="-10" yOffset="9"/>
   </outline>
 </glyph>

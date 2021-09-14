@@ -2,6 +2,7 @@
 <glyph name="_gafBar_dot3u" format="2">
   <anchor x="102" y="0" name="_above"/>
   <outline>
+    <component base="_dot3u" xOffset="336" yOffset="782"/>
     <contour>
       <point x="1044" y="699" type="curve"/>
       <point x="1044" y="707"/>
@@ -28,6 +29,5 @@
       <point x="1027" y="666"/>
       <point x="1044" y="695"/>
     </contour>
-    <component base="_dot3u" xOffset="336" yOffset="782"/>
   </outline>
 </glyph>

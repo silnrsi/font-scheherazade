@@ -3,6 +3,8 @@
   <anchor x="239" y="1436" name="_diaA"/>
   <anchor x="187" y="2752" name="diaA"/>
   <outline>
+    <component base="shadda-ar"/>
+    <component base="_damma" xOffset="378" yOffset="2129"/>
     <contour>
       <point x="-4" y="2114" type="curve" smooth="yes" name="hr01"/>
       <point x="74" y="2114"/>
@@ -38,7 +40,5 @@
       <point x="-97" y="2211"/>
       <point x="-87" y="2114"/>
     </contour>
-    <component base="shadda-ar"/>
-    <component base="_damma" xOffset="378" yOffset="2129"/>
   </outline>
 </glyph>

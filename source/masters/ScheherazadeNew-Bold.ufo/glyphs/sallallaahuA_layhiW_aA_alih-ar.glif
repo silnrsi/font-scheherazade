@@ -4,6 +4,10 @@
   <unicode hex="FD46"/>
   <unicode hex="E00C"/>
   <outline>
+    <component base="_smallv.cal" xOffset="417" yOffset="-180"/>
+    <component base="_comma.cal" xOffset="2011" yOffset="-75"/>
+    <component base="_comma.cal" xOffset="1806" yOffset="930"/>
+    <component base="_smallv.cal" xOffset="277" yOffset="934"/>
     <contour>
       <point x="343" y="832" type="line"/>
       <point x="325" y="819"/>
@@ -899,9 +903,5 @@
       <point x="1628" y="1472"/>
       <point x="1657" y="1442"/>
     </contour>
-    <component base="_smallv.cal" xOffset="417" yOffset="-180"/>
-    <component base="_comma.cal" xOffset="2011" yOffset="-75"/>
-    <component base="_comma.cal" xOffset="1806" yOffset="930"/>
-    <component base="_smallv.cal" xOffset="277" yOffset="934"/>
   </outline>
 </glyph>

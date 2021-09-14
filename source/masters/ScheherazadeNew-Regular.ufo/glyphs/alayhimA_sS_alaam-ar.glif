@@ -4,6 +4,9 @@
   <unicode hex="FD48"/>
   <unicode hex="E004"/>
   <outline>
+    <component base="_comma.cal" xOffset="854" yOffset="-55"/>
+    <component base="_comma.cal" xOffset="824" yOffset="685"/>
+    <component base="_comma.cal" xOffset="184" yOffset="475"/>
     <contour>
       <point x="670" y="813" type="curve" smooth="yes"/>
       <point x="670" y="824"/>
@@ -640,8 +643,5 @@
       <point x="1830" y="301"/>
       <point x="1878" y="335"/>
     </contour>
-    <component base="_comma.cal" xOffset="854" yOffset="-55"/>
-    <component base="_comma.cal" xOffset="824" yOffset="685"/>
-    <component base="_comma.cal" xOffset="184" yOffset="475"/>
   </outline>
 </glyph>

@@ -3,6 +3,7 @@
   <anchor x="0" y="995" name="_below"/>
   <anchor x="70" y="278" name="_center"/>
   <outline>
+    <component base="_dot1" xScale="0.9" yScale="0.87" xOffset="87" yOffset="102"/>
     <contour>
       <point x="-132" y="700" type="curve" smooth="yes"/>
       <point x="-132" y="686"/>
@@ -55,6 +56,5 @@
       <point x="-251" y="400"/>
       <point x="-104" y="282"/>
     </contour>
-    <component base="_dot1" xScale="0.9" yScale="0.87" xOffset="87" yOffset="102"/>
   </outline>
 </glyph>

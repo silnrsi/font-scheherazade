@@ -4,6 +4,7 @@
   <anchor x="-51" y="515" name="_diaB"/>
   <anchor x="10" y="-724" name="diaB"/>
   <outline>
+    <component base="_noon"/>
     <contour>
       <point x="221" y="-415" type="curve" smooth="yes"/>
       <point x="221" y="-408"/>
@@ -32,6 +33,5 @@
       <point x="200" y="-477"/>
       <point x="221" y="-422"/>
     </contour>
-    <component base="_noon"/>
   </outline>
 </glyph>

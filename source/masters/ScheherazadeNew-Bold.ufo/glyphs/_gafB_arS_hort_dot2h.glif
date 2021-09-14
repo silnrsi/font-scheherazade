@@ -2,6 +2,7 @@
 <glyph name="_gafBarShort_dot2h" format="2">
   <anchor x="104" y="23" name="_above"/>
   <outline>
+    <component base="_dot2h" xScale="1.05" yScale="1.05" xOffset="100" yOffset="742"/>
     <contour>
       <point x="1131" y="858" type="curve" smooth="yes"/>
       <point x="1131" y="870"/>
@@ -28,6 +29,5 @@
       <point x="1083" y="761"/>
       <point x="1131" y="841"/>
     </contour>
-    <component base="_dot2h" xScale="1.05" yScale="1.05" xOffset="100" yOffset="742"/>
   </outline>
 </glyph>

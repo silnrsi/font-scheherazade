@@ -6,6 +6,7 @@
   <anchor x="709" y="1207" name="diaA"/>
   <anchor x="665" y="-828" name="diaB"/>
   <outline>
+    <component base="_dot2h" xScale="0.927" yScale="0.927" xOffset="793" yOffset="-356"/>
     <contour>
       <point x="591" y="544" type="curve" smooth="yes"/>
       <point x="591" y="586"/>
@@ -78,7 +79,6 @@
       <point x="1028" y="725"/>
       <point x="915" y="914"/>
     </contour>
-    <component base="_dot2h" xScale="0.927" yScale="0.927" xOffset="793" yOffset="-356"/>
   </outline>
   <lib>
     <dict>

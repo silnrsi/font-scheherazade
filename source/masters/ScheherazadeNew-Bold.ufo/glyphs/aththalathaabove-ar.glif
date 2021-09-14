@@ -4,6 +4,10 @@
   <anchor x="0" y="1700" name="_diaA"/>
   <anchor x="0" y="2809" name="diaA"/>
   <outline>
+    <component base="_dot3u" xScale="0.56182" yScale="0.56182" xOffset="314" yOffset="2260"/>
+    <component base="_dot3u" xScale="0.56182" yScale="0.56182" xOffset="-314" yOffset="2260"/>
+    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="-756" yOffset="2300"/>
+    <component base="alefabove-ar" xScale="0.57143" yScale="0.57143" xOffset="-345" yOffset="1898"/>
     <contour>
       <point x="950" y="2046" type="curve"/>
       <point x="897" y="2519" type="line"/>
@@ -142,9 +146,5 @@
       <point x="-581" y="1855"/>
       <point x="-557" y="1835"/>
     </contour>
-    <component base="_dot3u" xScale="0.56182" yScale="0.56182" xOffset="314" yOffset="2260"/>
-    <component base="_dot3u" xScale="0.56182" yScale="0.56182" xOffset="-314" yOffset="2260"/>
-    <component base="_dot2h" xScale="0.56182" yScale="0.56182" xOffset="-756" yOffset="2300"/>
-    <component base="alefabove-ar" xScale="0.57143" yScale="0.57143" xOffset="-345" yOffset="1898"/>
   </outline>
 </glyph>

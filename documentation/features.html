@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Scheherazade New - Font Features</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Scheherazade New - Font Features</h1>
+    </header>
+    <p>Scheherazade New is a TrueType font with smart font capabilities added using OpenType and Graphite font technologies. The Scheherazade New font includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerates the details of these features. Whether these features are available to users will depend on both the application and the rendering technology (<a href="http://graphite.sil.org/">Graphite</a> or OpenType) being used. Most features are available in both Graphite and OpenType, though there may be minor differences in their implementation. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner</a> creates tuned fonts that use the variant glyph in place of the standard glyph. TypeTuner also provides the ability to turn on support for the Kurdish, Kyrgyz, Rohingya, Sindhi, Urdu, and Wolof languages variants.</p>
+    <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType and Graphite font technologies.</p>
+    <p>This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Scheherazade New as a web font see <a href="../web/ScheherazadeNew-webfont-example.html">Scheherazade New Webfont Example</a>. For detailed information see <a href="http://software.sil.org/fonts/webfonts">Using SIL Fonts on Web Pages</a>.</p>
+    <p><em>If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.</em></p>
+    <h2 id="customizing-with-typetuner">Customizing with TypeTuner</h2>
+    <p>For applications that do not make use of Graphite features or the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read the <a href="https://software.sil.org/scheherazade/support/smart-font-features/#user">Scheherazade New Font Features</a>, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
+    <h3 id="test-rendering-engine-choice">Test rendering engine choice</h3>
+    <p>Here is a simple test to see if Graphite is working in your browser. If it is, the following will say "RenderingGraphite". If your browser does not support Graphite it should say "RenderingOpentype". Firefox is currently the only browser that supports Graphite. See the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_firefox#switchon">instructions on how to enable Graphite in Firefox</a>.</p>
+    <table>
+    <tbody>
+    <tr class="odd">
+    <td>Check</td>
+    <td><span class="scheherazadenew-R normal">RenderingUnknown</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="language">Language</h3>
+    <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+0647, U+0626, U+060C, U+061B, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span></p>
+    <p>Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.</p>
+    <table>
+    <colgroup>
+    <col style="width: 31%" />
+    <col style="width: 36%" />
+    <col style="width: 31%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Language</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>default</td>
+    <td><span class="scheherazadenew-R normal">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td></td>
+    </tr>
+    <tr class="even">
+    <td>Kurdish (Northern)</td>
+    <td><span class="scheherazadenew-R normal" lang="kmr">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=kmr</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Kyrgyz</td>
+    <td><span class="scheherazadenew-R normal" lang="kir">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=ky</code></td>
+    </tr>
+    <tr class="even">
+    <td>Rohingya</td>
+    <td><span class="scheherazadenew-R normal" lang="rhg">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=rhg</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Sindhi</td>
+    <td><span class="scheherazadenew-R normal" lang="sd">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=sd</code></td>
+    </tr>
+    <tr class="even">
+    <td>Urdu</td>
+    <td><span class="scheherazadenew-R normal" lang="ur">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=ur</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Wolof</td>
+    <td><span class="scheherazadenew-R normal" lang="wol">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه  ئ ئئئ  ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td><code>lang=wo</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="character-variants">Character variants</h3>
+    <p>There are some character shape differences in different languages which use the Arabic script. These can be accessed by using Graphite features, OpenType Character Variants, or through the language support mentioned above.</p>
+    <h4 id="dal">Dal</h4>
+    <p><span class="affects">Affects: U+062F, U+0630, U+0688, U+0689, U+068A, U+068B, U+068C, U+068D, U+068E, U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal"> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span></td>
+    <td><code>cv12=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Alternate</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv12&quot; 1"> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span></td>
+    <td><code>cv12=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="meem">Meem</h4>
+    <p><span class="affects">Affects: U+0645, U+0765, U+0766, U+08A7</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span></td>
+    <td><code>cv44=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Sindhi-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv44&quot; 1"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span></td>
+    <td><code>cv44=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="heh">Heh</h4>
+    <p><span class="affects">Affects: U+0647</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal"> ه ههه </span></td>
+    <td><code>cv48=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Kurdish-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv48&quot; 3"> ه ههه </span></td>
+    <td><code>cv48=3</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Sindhi-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv48&quot; 1"> ه ههه </span></td>
+    <td><code>cv48=1</code></td>
+    </tr>
+    <tr class="even">
+    <td>Urdu-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv48&quot; 2"> ه ههه </span></td>
+    <td><code>cv48=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="kirghiz-oe">Kirghiz OE</h4>
+    <p><span class="affects">Affects: U+06C5</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Loop</td>
+    <td><span class="scheherazadenew-R normal">ۅ</span></td>
+    <td><code>cv51=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Bar</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv51&quot; 1">ۅ</span></td>
+    <td><code>cv51=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="yeh-hamza">Yeh Hamza</h4>
+    <p><span class="affects">Affects: U+0626</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal">ئ ‍ئ</span></td>
+    <td><code>cv54=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Right hamza</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv54&quot; 1">ئ ‍ئ</span></td>
+    <td><code>cv54=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="maddah">Maddah</h4>
+    <p><span class="affects">Affects: U+0622, U+0627, U+0653, U+0653</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Small</td>
+    <td><span class="scheherazadenew-R normal"> آ آ ◌ٓ </span></td>
+    <td><code>cv60=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Large</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv60&quot; 1">آ آ ◌ٓ </span></td>
+    <td><code>cv60=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="shaddakasra-placement">Shadda+kasra placement</h4>
+    <p><span class="affects">Affects: U+064D, U+0650 with U+0651</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Raised</td>
+    <td><span class="scheherazadenew-R normal"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
+    <td><code>cv62=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Lowered</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv62&quot; 1"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
+    <td><code>cv62=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="damma">Damma</h4>
+    <p><span class="affects">Affects: U+064F</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal"> بُ ◌ُ</span></td>
+    <td><code>cv70=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Filled</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv70&quot; 1">بُ ◌ُ</span></td>
+    <td><code>cv70=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Short</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv70&quot; 2">بُ ◌ُ</span></td>
+    <td><code>cv70=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="dammatan">Dammatan</h4>
+    <p><span class="affects">Affects: U+064C</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal">بٌ ◌ٌ</span></td>
+    <td><code>cv72=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Six-nine</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv72&quot; 1">بٌ ◌ٌ</span></td>
+    <td><code>cv72=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="inverted-damma">Inverted Damma</h4>
+    <p><span class="affects">Affects: U+0657</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal">بٗ ◌ٗ</span></td>
+    <td><code>cv74=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Hollow</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv74&quot; 1">بٗ ◌ٗ</span></td>
+    <td><code>cv74=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="superscript-alef">Superscript Alef</h4>
+    <p><span class="affects">Affects: U+0670 on all yeh, sad and seen-like characters U+0649 U+064A U+06D0 U+06D1 U+0777 U+06CC U+0635 U+0636 U+069D U+069E U+06FB U+08AF U+0633 U+0634 U+069A U+069B U+069C U+06FA U+075C U+076D U+0770 U+077D U+077E</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 31%" />
+    <col style="width: 36%" />
+    <col style="width: 31%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Small</td>
+    <td><span class="scheherazadenew-R normal">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
+    <td><code>cv76=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Large</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv76&quot; 1">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
+    <td><code>cv76=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="sukun">Sukun</h4>
+    <p><span class="affects">Affects: U+0652</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Closed</td>
+    <td><span class="scheherazadenew-R normal">بْ ◌ْ</span></td>
+    <td><code>cv78=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Open down</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv78&quot; 1">بْ ◌ْ</span></td>
+    <td><code>cv78=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Open left</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv78&quot; 2">بْ ◌ْ</span></td>
+    <td><code>cv78=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="end-of-ayah">End of ayah</h4>
+    <p><span class="affects">Affects: U+06DD</span></p>
+    <p>Firefox allows you to use U+06DD followed by the digits and proper rendering occurs. Some applications require the following:</p>
+    <ul>
+    <li>precede the entire sequence (subtending mark plus following digits) with 202D LEFT-TO-RIGHT OVERRIDE</li>
+    <li>follow the entire sequence with U+202C POP DIRECTIONAL FORMATTING.</li>
+    </ul>
+    <p>Surrounding the sequence with U+202D and U+202C seems to give the most reliable results in different browsers. However, we have not found a solution that works in Internet Explorer/Edge.</p>
+    <p>In the example below, the following codepoints are used: U+202D U+06DD U+0031 U+0032 U+0033 U+202C U+202D U+06DD U+0611 U+0622 U+0663 U+202C.</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td><code>cv80=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Simplified A</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv80&quot; 1">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td><code>cv80=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Simplified B</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv80&quot; 2">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td><code>cv80=2</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <p>The new DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in the same way as End of ayah.</p>
+    <p><span class="scheherazadenew-R normal">‭࣢٣٤٥‬</span></p>
+    <h4 id="honorific-ligatures">Honorific ligatures</h4>
+    <p><span class="affects">Affects: U+FD40..U+FD4F, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Calligraphic</td>
+    <td><span class="scheherazadenew-R normal">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
+    <td><code>cv81=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Simplified</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
+    <td><code>cv81=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="eastern-digits">Eastern digits</h4>
+    <p><span class="affects">Affects: U+06F4, U+06F6, U+06F7</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="scheherazadenew-R normal">۴۶۷</span></td>
+    <td><code>cv82=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Sindhi-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv82&quot; 1">۴۶۷</span></td>
+    <td><code>cv82=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td>Urdu-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv82&quot; 2">۴۶۷</span></td>
+    <td><code>cv82=2</code></td>
+    </tr>
+    <tr class="even">
+    <td>Rohingya-style</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv82&quot; 4">۴۶۷</span></td>
+    <td><code>cv82=4</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="comma">Comma</h4>
+    <p><span class="affects">Affects: U+060C, U+061B</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature value</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Upward</td>
+    <td><span class="scheherazadenew-R normal">، ؛</span></td>
+    <td><code>cv84=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Downward</td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv84&quot; 1">، ؛</span></td>
+    <td><code>cv84=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="line-spacing">Line spacing</h4>
+    <p>Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing). This feature is only available with TypeTuner.</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature Value</th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Tight</td>
+    <td></td>
+    </tr>
+    <tr class="even">
+    <td>Normal</td>
+    <td></td>
+    </tr>
+    <tr class="odd">
+    <td>Loose</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="honorific-ligatures-1">Honorific Ligatures</h3>
+    <p>Unicode has a number of honorific ligatures. Recently, more have been approved for release in Unicode 14.0. These are included in this version of the font. As new characters, applications may have problems with rendering them in right-to-left text. In some cases, you can correct reading order problems by inserting a Right-to-Left mark (U+200F) after the honorific ligature.</p>
+    <table>
+    <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 20%" />
+    <col style="width: 20%" />
+    <col style="width: 20%" />
+    <col style="width: 20%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Unicode Name (ARABIC LIGATURE...)</th>
+    <th>USV</th>
+    <th>Glyph</th>
+    <th>Glyph simplified</th>
+    <th>Meaning</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>RAHIMAHU ALLAAH</td>
+    <td>FD40</td>
+    <td><span class="scheherazadenew-R normal">﵀</span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵀</span></td>
+    <td>May God have mercy upon him.</br>(Used for companions of the prophet or other widely recognized scholars. Can be for any believer who has passed away.)</td>
+    </tr>
+    <tr class="even">
+    <td>RADI ALLAAHU ANH</td>
+    <td>FD41</td>
+    <td><span class="scheherazadenew-R normal">﵁ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵁</span></td>
+    <td>May God be pleased with him.</br>(Used for companions of the prophet.)</td>
+    </tr>
+    <tr class="odd">
+    <td>RADI ALLAAHU ANHAA</td>
+    <td>FD42</td>
+    <td><span class="scheherazadenew-R normal">﵂ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵂</span></td>
+    <td>May God be pleased with her.</br>(Used for companions of the prophet, and in some regions for others such as Mary or Jesus’ apostles.)</td>
+    </tr>
+    <tr class="even">
+    <td>RADI ALLAAHU ANHUM</td>
+    <td>FD43</td>
+    <td><span class="scheherazadenew-R normal">﵃ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵃</span></td>
+    <td>May God be pleased with them (masculine plural, but can be used for a mixed group of men and women).</br>(Used for companions of the prophet.)</td>
+    </tr>
+    <tr class="odd">
+    <td>RADI ALLAAHU ANHUMAA</td>
+    <td>FD44</td>
+    <td><span class="scheherazadenew-R normal">﵄ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵄</span></td>
+    <td>May God be pleased with them (both).</br>(Used for companions of the prophet.)</td>
+    </tr>
+    <tr class="even">
+    <td>RADI ALLAAHU ANHUNNA</td>
+    <td>FD45</td>
+    <td><span class="scheherazadenew-R normal">﵅ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵅</span></td>
+    <td>May God be pleased with them (feminine).</br>(Used for companions of the prophet.)</td>
+    </tr>
+    <tr class="odd">
+    <td>SALLALLAAHU ALAYHI WA-AALIH</td>
+    <td>FD46</td>
+    <td><span class="scheherazadenew-R normal">﵆ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵆</span></td>
+    <td>Blessings of God be upon him and the people of his household.</br>(Used particularly in Shia Islam for leaders who come from the bloodline of the prophet.)</td>
+    </tr>
+    <tr class="even">
+    <td>ALAYHI AS-SALAAM</td>
+    <td>FD47</td>
+    <td><span class="scheherazadenew-R normal">﵇ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵇</span></td>
+    <td>Peace be upon him.</br>(The normal honorific used after a prophet's or an Archangel's name.)</td>
+    </tr>
+    <tr class="odd">
+    <td>ALAYHIM AS-SALAAM</td>
+    <td>FD48</td>
+    <td><span class="scheherazadenew-R normal">﵈ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵈</span></td>
+    <td>Peace be upon them.</br>(Used for two or more prophets.)</td>
+    </tr>
+    <tr class="even">
+    <td>ALAYHIMAA AS-SALAAM</td>
+    <td>FD49</td>
+    <td><span class="scheherazadenew-R normal">﵉ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵉</span></td>
+    <td>Peace be upon them (both).</br>(Used for prophets and angels.)</td>
+    </tr>
+    <tr class="odd">
+    <td>ALAYHI AS-SALAATU WAS-SALAAM</td>
+    <td>FD4A</td>
+    <td><span class="scheherazadenew-R normal">﵊ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵊</span></td>
+    <td>Blessings and Peace be upon him.</br>(A lesser used honorific used after a prophet's or an Archangel's name.)</td>
+    </tr>
+    <tr class="even">
+    <td>QUDDISA SIRRAH</td>
+    <td>FD4B</td>
+    <td><span class="scheherazadenew-R normal">﵋ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵋</span></td>
+    <td>May his secret be sanctified.</br>(Used for Sufi saints, and refers to their shrines where people come to worship.)</td>
+    </tr>
+    <tr class="odd">
+    <td>SALLALLAHU ALAYHI WA-AALIHEE WA-SALLAM</td>
+    <td>FD4C</td>
+    <td><span class="scheherazadenew-R normal">﵌ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵌</span></td>
+    <td>The blessings of God and peace be upon him and the people of his household.</br>(Used by all Muslims, but particularly in Shia Islam for the prophet Muhammad.)</td>
+    </tr>
+    <tr class="even">
+    <td>ALAYHAA AS-SALAAM</td>
+    <td>FD4D</td>
+    <td><span class="scheherazadenew-R normal">﵍ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵍</span></td>
+    <td>Peace be upon her.</br>(Used after the name of a woman who was the mother of a prophet.)</td>
+    </tr>
+    <tr class="odd">
+    <td>TABAARAKA WA-TAAALAA</td>
+    <td>FD4E</td>
+    <td><span class="scheherazadenew-R normal">﵎ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵎</span></td>
+    <td>May he be blessed and exalted (Blessed and Lofty).</br>(One of the honorifics used only for God himself.)</td>
+    </tr>
+    <tr class="even">
+    <td>RAHIMAHUM ALLAAH</td>
+    <td>FD4F</td>
+    <td><span class="scheherazadenew-R normal">﵏ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﵏</span></td>
+    <td>God have mercy upon them (masculine).</br>(Used for widely recognized scholars. Also used for ordinary believers.)</td>
+    </tr>
+    <tr class="odd">
+    <td>SALAAMUHU ALAYNAA</td>
+    <td>FDCF</td>
+    <td><span class="scheherazadenew-R normal">﷏ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﷏</span></td>
+    <td>His peace be upon us.</br>(Used by some followers of Jesus to give special honor to him.)</td>
+    </tr>
+    <tr class="even">
+    <td>SALLALLAHOU ALAYHEWASALLAM</td>
+    <td>FDFA</td>
+    <td><span class="scheherazadenew-R normal">ﷺ</span> &lt;</td>
+    <td><span class="scheherazadenew-R normal">ﷺ </span></td>
+    <td>The blessings and peace of God be upon him. </br>(Used after the name of a major prophet, especially the prophet of Islam.)</td>
+    </tr>
+    <tr class="odd">
+    <td>JALLAJALALOUHOU</td>
+    <td>FDFB</td>
+    <td><span class="scheherazadenew-R normal">ﷻ</span></td>
+    <td><span class="scheherazadenew-R normal">ﷻ </span></td>
+    <td>May His glory be glorified.</br>(Used after the name of God.)</td>
+    </tr>
+    <tr class="even">
+    <td>BISMILLAH AR-RAHMAN AR-RAHEEM</td>
+    <td>FDFD</td>
+    <td><span class="scheherazadenew-R normal">﷽ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1">﷽ </span></td>
+    <td>In the name of God, the most merciful, the most compassionate.</br>(Used as the opening of each action in order to receive blessing from God.)</td>
+    </tr>
+    <tr class="odd">
+    <td>SUBHAANAHU WA TAAALAA</td>
+    <td>FDFE</td>
+    <td><span class="scheherazadenew-R normal">﷾ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﷾</span></td>
+    <td>May He be praised and exalted (Glorified and Lofty).</br>(The most common honorific for God.)</td>
+    </tr>
+    <tr class="even">
+    <td>AZZA WA JALL</td>
+    <td>FDFF</td>
+    <td><span class="scheherazadenew-R normal">﷿ </span></td>
+    <td><span class="scheherazadenew-R normal" style="font-feature-settings: &quot;cv81&quot; 1"> ﷿</span></td>
+    <td>The Glorified/Exalted/Mighty and Sublime (Prestigious and Majestic).</br>(The second most common honorific for God.)</td>
+    </tr>
+    </tbody>
+    </table>
+    <!-- PRODUCT SITE ONLY
+    [font id='scheherazadenew' face='ScheherazadeNew-Regular' size='150%' rtl=1]
+    -->
+    <footer class="footer">
+        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 3.200 and is copyright © 1994-2021 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

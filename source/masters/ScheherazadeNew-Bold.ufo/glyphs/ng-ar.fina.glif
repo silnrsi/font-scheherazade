@@ -5,6 +5,8 @@
   <anchor x="744" y="1980" name="diaA"/>
   <anchor x="806" y="-404" name="diaB"/>
   <outline>
+    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="885" yOffset="1214"/>
+    <component base="_kafSquiggle" xOffset="590"/>
     <contour>
       <point x="1995" y="138" type="curve" smooth="yes"/>
       <point x="1995" y="228"/>
@@ -60,8 +62,6 @@
       <point x="1989" y="0"/>
       <point x="1995" y="33"/>
     </contour>
-    <component base="_dot3u" xScale="0.927" yScale="0.927" xOffset="885" yOffset="1214"/>
-    <component base="_kafSquiggle" xOffset="590"/>
   </outline>
   <lib>
     <dict>
