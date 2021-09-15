@@ -8,5 +8,9 @@ Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
     font-family: ScheherazadeNew-R;
     src: url("../../../web/ScheherazadeNew-Regular.woff2") format("woff2");
 }
-
+@font-face {
+    font-family: ScheherazadeNew-B;
+    src: url("../../../web/ScheherazadeNew-Bold.woff2") format("woff2");
+}
 .scheherazadenew-R { font-family: ScheherazadeNew-R; direction: rtl; text-align: right;}
+.scheherazadenew-B { font-family: ScheherazadeNew-B; direction: rtl; text-align: right;}
