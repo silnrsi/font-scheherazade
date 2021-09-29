@@ -26,6 +26,8 @@ echo "     > history.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/history.md -o documentation/history.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > honorifics.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/honorifics.md -o documentation/honorifics.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > allah.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/allah.md -o documentation/allah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > resources.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/resources.md -o documentation/resources.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > sample.html"
@@ -64,6 +66,9 @@ weasyprint documentation/source/pdftemp/history.html documentation/pdf/history.p
 echo "     > honorifics.html > honorifics.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/honorifics.md -o documentation/source/pdftemp/honorifics.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/honorifics.html documentation/pdf/honorifics.pdf
+echo "     > allah.html > allah.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/allah.md -o documentation/source/pdftemp/allah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/allah.html documentation/pdf/allah.pdf
 echo "     > resources.html > resources.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/resources.md -o documentation/source/pdftemp/resources.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/resources.html documentation/pdf/resources.pdf
@@ -95,6 +100,8 @@ echo "     > history.md"
 python3 documentation/source/makepsmd.py documentation/source/history.md documentation/source/productsite/history.md -q
 echo "     > honorifics.md"
 python3 documentation/source/makepsmd.py documentation/source/honorifics.md documentation/source/productsite/honorifics.md -q
+echo "     > allah.md"
+python3 documentation/source/makepsmd.py documentation/source/allah.md documentation/source/productsite/allah.md -q
 echo "     > resources.md"
 python3 documentation/source/makepsmd.py documentation/source/resources.md documentation/source/productsite/resources.md -q
 echo "     > sample.md"
