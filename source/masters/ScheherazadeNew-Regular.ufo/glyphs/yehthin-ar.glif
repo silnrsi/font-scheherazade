@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="yehthin-ar" format="2">
-  <advance width="634"/>
-  <unicode hex="0886"/>
+  <advance width="1639"/>
+  <unicode hex="064A"/>
+  <anchor x="632" y="847" name="alef"/>
+  <anchor x="570" y="1031" name="diaA"/>
+  <anchor x="574" y="-905" name="diaB"/>
   <outline>
-    <component base="_dot2h" xOffset="320" yOffset="-180"/>
-    <contour>
-      <point x="535" y="370" type="qcurve"/>
-      <point x="535" y="263"/>
-      <point x="486" y="120"/>
-      <point x="402" y="35"/>
-      <point x="288" y="0"/>
-      <point x="223" y="0" type="qcurve"/>
-      <point x="171" y="0" type="line"/>
-      <point x="144" y="0"/>
-      <point x="102" y="14"/>
-      <point x="94" y="49"/>
-      <point x="98" y="80"/>
-      <point x="113" y="104"/>
-      <point x="144" y="119"/>
-      <point x="171" y="119" type="qcurve"/>
-      <point x="223" y="119" type="line"/>
-      <point x="297" y="119"/>
-      <point x="405" y="139"/>
-      <point x="437" y="154" type="qcurve"/>
-      <point x="468" y="176"/>
-      <point x="483" y="248"/>
-      <point x="483" y="270" type="qcurve"/>
-      <point x="483" y="279"/>
-      <point x="469" y="374"/>
-      <point x="430" y="463"/>
-      <point x="403" y="507"/>
-      <point x="403" y="514" type="qcurve"/>
-      <point x="416" y="539"/>
-      <point x="427" y="560"/>
-      <point x="447" y="599"/>
-      <point x="468" y="629"/>
-      <point x="472" y="634" type="qcurve"/>
-      <point x="504" y="564"/>
-      <point x="535" y="437"/>
-    </contour>
+    <component base="yeh-ar.noDots"/>
+    <component base="_dot2h" xOffset="592" yOffset="-622"/>
   </outline>
   <lib>
     <dict>

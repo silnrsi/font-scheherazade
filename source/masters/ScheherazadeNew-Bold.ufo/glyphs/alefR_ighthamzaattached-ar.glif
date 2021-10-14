@@ -2,11 +2,12 @@
 <glyph name="alefRighthamzaattached-ar" format="2">
   <advance width="536"/>
   <unicode hex="0881"/>
-  <anchor x="186" y="1563" name="diaA"/>
-  <anchor x="168" y="-261" name="diaB"/>
+  <anchor x="-14" y="1000" name="alef"/>
+  <anchor x="204" y="1559" name="diaA"/>
+  <anchor x="187" y="-242" name="diaB"/>
   <outline>
     <component base="alef-ar"/>
-    <component base="_hamza" xScale="0.75" yScale="0.75" xOffset="361" yOffset="747"/>
+    <component base="_hamza" xScale="0.75" yScale="0.75" xOffset="371" yOffset="747"/>
   </outline>
   <lib>
     <dict>
