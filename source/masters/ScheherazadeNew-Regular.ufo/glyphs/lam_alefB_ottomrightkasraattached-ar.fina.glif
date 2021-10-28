@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="lam_alefRighthamzaattached-ar.fina" format="2">
+<glyph name="lam_alefBottomrightkasraattached-ar.fina" format="2">
   <advance width="1482"/>
   <anchor x="893" y="1294" name="alef"/>
   <anchor x="435" y="-223" name="dia2B"/>
@@ -10,7 +10,7 @@
   <outline>
     <component base="alef-ar.fina.postLamMed"/>
     <component base="lam-ar.medi.preAlef" xOffset="725"/>
-    <component base="_hamza" xScale="0.75" yScale="0.75" xOffset="627" yOffset="1002"/>
+    <component base="kasra-ar" xOffset="1293" yOffset="1273"/>
   </outline>
   <lib>
     <dict>

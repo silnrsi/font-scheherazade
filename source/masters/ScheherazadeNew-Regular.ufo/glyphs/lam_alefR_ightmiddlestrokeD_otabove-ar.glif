@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="lam_alefRighthamzaattached-ar" format="2">
+<glyph name="lam_alefRightmiddlestrokeDotabove-ar" format="2">
   <advance width="1318"/>
   <anchor x="793" y="1509" name="alef"/>
   <anchor x="290" y="-197" name="dia2B"/>
   <anchor x="1036" y="1853" name="diaA_1"/>
-  <anchor x="116" y="1827" name="diaA_2"/>
+  <anchor x="81" y="2015" name="diaA_2"/>
   <anchor x="870" y="-145" name="diaB_1"/>
   <anchor x="609" y="-145" name="diaB_2"/>
   <outline>
     <component base="alef-ar.fina.postLamIni"/>
     <component base="lam-ar.init.preAlef" xOffset="776"/>
-    <component base="_hamza" xScale="0.75" yScale="0.75" xOffset="547" yOffset="1250"/>
+    <component base="_dot1" xOffset="91" yOffset="1813"/>
+    <component base="fathasmall-ar" xOffset="631" yOffset="-640"/>
   </outline>
   <lib>
     <dict>
