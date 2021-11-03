@@ -2,11 +2,11 @@
 <glyph name="tahThreedotsbelow-ar.fina" format="2">
   <advance width="1583"/>
   <anchor x="290" y="998" name="alef"/>
-  <anchor x="566" y="1798" name="diaA"/>
-  <anchor x="764" y="-794" name="diaB"/>
+  <anchor x="618" y="1745" name="diaA"/>
+  <anchor x="640" y="-1074" name="diaB"/>
   <outline>
     <component base="tah-ar.fina"/>
-    <component base="_dot3d" xOffset="733" yOffset="-314"/>
+    <component base="_dot3d" xScale="0.927" yScale="0.927" xOffset="735" yOffset="-324"/>
   </outline>
   <lib>
     <dict>

@@ -2,11 +2,11 @@
 <glyph name="noonVinvertedabove-ar.fina" format="2">
   <advance width="1334"/>
   <anchor x="336" y="696" name="alef"/>
-  <anchor x="499" y="1183" name="diaA"/>
-  <anchor x="631" y="-870" name="diaB"/>
+  <anchor x="563" y="899" name="diaA"/>
+  <anchor x="598" y="-915" name="diaB"/>
   <outline>
     <component base="noonghunna-ar.fina"/>
-    <component base="_hat" xOffset="648" yOffset="483"/>
+    <component base="_hat" xScale="0.927" yScale="0.927" xOffset="647" yOffset="499"/>
   </outline>
   <lib>
     <dict>
