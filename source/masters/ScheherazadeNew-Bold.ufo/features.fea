@@ -242,7 +242,7 @@
 # Positioning classes and statements
 
 # AP: above
-@above = [A E I N O S U Y Z a ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah alef-ar.fina.postLamIni alef-ar.fina.postLamMed behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF e fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar hah-ar.fina hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina hehgoal-ar.init hehgoal-ar.medi idotless kaf-ar kaf-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina kehehElongatedhamzaabove-ar kehehElongatedhamzaabove-ar.fina lam-ar lam-ar.fina lam-ar.init lam-ar.init.preAlef lam-ar.medi lam-ar.medi.preAlef meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meem-ar.init meem-ar.medi n noonghunna-ar noonghunna-ar.fina o qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina s sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi u waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina y yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina z];
+@above = [A E I N O S U Y Z a ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah alef-ar.fina.postLamIni alef-ar.fina.postLamMed behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi yehthin-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF e fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar hah-ar.fina hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina hehgoal-ar.init hehgoal-ar.medi idotless kaf-ar kaf-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina kehehElongatedhamzaabove-ar kehehElongatedhamzaabove-ar.fina lam-ar lam-ar.fina lam-ar.init lam-ar.init.preAlef lam-ar.medi lam-ar.medi.preAlef meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meem-ar.init meem-ar.medi n noonghunna-ar noonghunna-ar.fina o qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina s sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi u waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina y yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina z];
 # baseClass A <anchor 666 1308> @above;
 # baseClass E <anchor 636 1308> @above;
 # baseClass I <anchor 358 1308> @above;
@@ -267,7 +267,7 @@
 # baseClass behDotless-ar <anchor 992 651> @above;
 # baseClass behDotless-ar.fina <anchor 962 561> @above;
 # baseClass behDotless-ar.init <anchor 275 926> @above;
-# baseClass behDotless-ar.medi <anchor 304 523> @above;
+# baseClass [behDotless-ar.medi yehthin-ar.medi] <anchor 304 523> @above;
 # baseClass dal-ar <anchor 448 973> @above;
 # baseClass dal-ar.fina <anchor 752 1094> @above;
 # baseClass dal-ar.loclWLF <anchor 404 1261> @above;
@@ -344,7 +344,7 @@
 # baseClass z <anchor 484 912> @above;
 
 # AP: below
-@below = [C ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah alef-ar.fina.postLamIni alef-ar.fina.postLamMed behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi c dal-ar dal-ar.fina dal-ar.loclWLF fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina kaf-ar kaf-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina kehehElongatedhamzaabove-ar kehehElongatedhamzaabove-ar.fina lam-ar lam-ar.fina lam-ar.init lam-ar.init.preAlef lam-ar.medi lam-ar.medi.preAlef meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meem-ar.init meem-ar.medi noonghunna-ar noonghunna-ar.fina qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina];
+@below = [C ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah alef-ar.fina.postLamIni alef-ar.fina.postLamMed behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi yehthin-ar.medi c dal-ar dal-ar.fina dal-ar.loclWLF fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina kaf-ar kaf-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina kehehElongatedhamzaabove-ar kehehElongatedhamzaabove-ar.fina lam-ar lam-ar.fina lam-ar.init lam-ar.init.preAlef lam-ar.medi lam-ar.medi.preAlef meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meem-ar.init meem-ar.medi noonghunna-ar noonghunna-ar.fina qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina];
 # baseClass C <anchor 751 -86> @below;
 # baseClass ae-ar <anchor 382 -74> @below;
 # baseClass ae-ar.fina <anchor 469 -68> @below;
@@ -360,7 +360,7 @@
 # baseClass behDotless-ar <anchor 884 -132> @below;
 # baseClass behDotless-ar.fina <anchor 871 -177> @below;
 # baseClass behDotless-ar.init <anchor 243 -95> @below;
-# baseClass behDotless-ar.medi <anchor 293 -68> @below;
+# baseClass [behDotless-ar.medi yehthin-ar.medi] <anchor 293 -68> @below;
 # baseClass c <anchor 458 -78> @below;
 # baseClass dal-ar <anchor 460 -78> @below;
 # baseClass dal-ar.fina <anchor 634 -68> @below;
@@ -2149,9 +2149,9 @@ markClass zainabove-ar <anchor 506 1378> @_diaA;
 # baseClass [alef-ar.fina.postLamMed alefHamzaabove-ar.fina.postLamMed alefHamzabelow-ar.fina.postLamMed alefMadda-ar.fina.postLamMed alefMadda-ar.fina.postLamMed.small alefThreeabove-ar.fina.postLamMed alefTwoabove-ar.fina.postLamMed alefWasla-ar.fina.postLamMed alefWavyhamzaabove-ar.fina.postLamMed alefWavyhamzabelow-ar.fina.postLamMed highhamzaAlef-ar.fina.postLamMed] <anchor 932 313> @entry;
 
 # AP: diaBtailUp
-@diaBtailUp = [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonVinvertedabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonVinvertedabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi tehTehabove-ar.init tehTehabove-ar.medi];
+@diaBtailUp = [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonVinvertedabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonVinvertedabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi yehthin-ar.medi tehTehabove-ar.init tehTehabove-ar.medi];
 # baseClass [alefMaksura-ar.init behDotless-ar.init behVabove-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonVabove-ar.init noonVinvertedabove-ar.init noonghunna-ar.init rnoon-ar.init teh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init teheh-ar.init theh-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init yehHamzaabove-ar.init] <anchor 163 -168> @diaBtailUp;
-# baseClass [alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonVinvertedabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi] <anchor 221 -168> @diaBtailUp;
+# baseClass [alefMaksura-ar.medi behDotless-ar.medi behVabove-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonVinvertedabove-ar.medi noonghunna-ar.medi rnoon-ar.medi teh-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi teheh-ar.medi theh-ar.medi tteh-ar.medi ttehVabove-ar.medi tteheh-ar.medi yehHamzaabove-ar.medi yehthin-ar.medi] <anchor 221 -168> @diaBtailUp;
 # baseClass tehTehabove-ar.init <anchor 263 -168> @diaBtailUp;
 # baseClass tehTehabove-ar.medi <anchor 301 -168> @diaBtailUp;
 
@@ -2234,11 +2234,11 @@ markClass tonetwodotsbelow-ar <anchor 186 -763> @_diaBtailDown;
 markClass wavyhamzabelow-ar <anchor 200 -603> @_diaBtailDown;
 
 # AP: ring
-@ring = [behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina noonghunna-ar noonghunna-ar.fina reh-ar reh-ar.fina waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina];
+@ring = [behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi yehthin-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina noonghunna-ar noonghunna-ar.fina reh-ar reh-ar.fina waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina];
 # baseClass behDotless-ar <anchor 915 15> @ring;
 # baseClass behDotless-ar.fina <anchor 881 -41> @ring;
 # baseClass behDotless-ar.init <anchor 322 123> @ring;
-# baseClass behDotless-ar.medi <anchor 347 140> @ring;
+# baseClass [behDotless-ar.medi yehthin-ar.medi] <anchor 347 140> @ring;
 # baseClass dal-ar <anchor 500 79> @ring;
 # baseClass dal-ar.fina <anchor 487 123> @ring;
 # baseClass dal-ar.loclWLF <anchor 515 41> @ring;
