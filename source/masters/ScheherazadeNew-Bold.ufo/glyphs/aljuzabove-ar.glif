@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="aljuzabove-ar" format="2">
   <unicode hex="0898"/>
-  <anchor x="0" y="1479" name="_diaA"/>
-  <anchor x="0" y="2561" name="diaA"/>
+  <anchor x="0" y="1419" name="_diaA"/>
+  <anchor x="0" y="2681" name="diaA"/>
   <outline>
     <component base="alef-ar" xScale="0.5" yScale="0.5" xOffset="350" yOffset="1730"/>
     <component base="jeem-ar.init" xScale="0.5" yScale="0.5" xOffset="-290" yOffset="1730"/>
     <component base="zain-ar.fina" xScale="0.5" yScale="0.5" xOffset="-680" yOffset="1730"/>
     <component base="hamza-ar" xScale="0.5" yScale="0.5" xOffset="-900" yOffset="1730"/>
-    <component base="lam-ar.init" xScale="0.5" yScale="0.5" xOffset="-105" yOffset="1730"/>
+    <contour>
+      <point x="47" y="2264" type="curve" smooth="yes"/>
+      <point x="47" y="2339"/>
+      <point x="29" y="2361"/>
+      <point x="29" y="2432" type="curve" smooth="yes" name="hr01"/>
+      <point x="29" y="2475"/>
+      <point x="71" y="2500"/>
+      <point x="71" y="2504" type="curve" smooth="yes"/>
+      <point x="71" y="2508"/>
+      <point x="-5" y="2601"/>
+      <point x="-7" y="2601" type="curve" smooth="yes"/>
+      <point x="-35" y="2601"/>
+      <point x="-76" y="2545"/>
+      <point x="-76" y="2499" type="curve" smooth="yes"/>
+      <point x="-76" y="2398"/>
+      <point x="-11" y="2262"/>
+      <point x="-11" y="2211" type="curve" smooth="yes" name="hr02"/>
+      <point x="-11" y="2153"/>
+      <point x="-62" y="2135"/>
+      <point x="-129" y="2135" type="curve" smooth="yes"/>
+      <point x="-151" y="2135"/>
+      <point x="-172" y="2101"/>
+      <point x="-172" y="2066" type="curve" smooth="yes"/>
+      <point x="-172" y="2031"/>
+      <point x="-156" y="2010"/>
+      <point x="-129" y="2010" type="curve" smooth="yes"/>
+      <point x="-47" y="2010"/>
+      <point x="-1" y="2076"/>
+      <point x="24" y="2141" type="curve" smooth="yes"/>
+      <point x="43" y="2190"/>
+      <point x="47" y="2240"/>
+    </contour>
   </outline>
   <lib>
     <dict>
