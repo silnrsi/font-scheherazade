@@ -2,11 +2,11 @@
 <glyph name="kashidaWaw-ar" format="2">
   <advance width="781"/>
   <unicode hex="0884"/>
-  <anchor x="331" y="768" name="alef"/>
-  <anchor x="497" y="941" name="diaA"/>
+  <anchor x="331" y="786" name="alef"/>
+  <anchor x="497" y="959" name="diaA"/>
   <anchor x="367" y="-846" name="diaB"/>
   <outline>
-    <component base="waw-ar"/>
+    <component base="waw-ar" yScale="1.05" yOffset="40"/>
     <contour>
       <point x="840" y="91" type="curve" smooth="yes"/>
       <point x="840" y="136"/>
