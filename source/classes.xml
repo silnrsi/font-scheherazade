@@ -208,6 +208,8 @@
         hehVinvertedabove-ar heh-ar hehgoal-ar hehgoalHamzaabove-ar
         tehTehabove-ar pehVabove-ar tehVabove-ar ttehVabove-ar tchehVabove-ar jeemThreedotsabove-ar 
         jeemThreedotsbelow-ar ghainThreedotsabove-ar qafThreedotsaboveAfrican-ar kehehVabove-ar lamTahabove-ar
+        noonVinvertedabove-ar hahVinvertedabove-ar tahDotbelow-ar qafDotbelowNodotsabove-ar 
+        kehehTwodotsverticalbelow-ar kehehElongatedhamzaabove-ar
     </class>
     
     <class name="DualLinkFina" fixed="0">
@@ -238,6 +240,8 @@
         hehVinvertedabove-ar.fina heh-ar.fina hehgoal-ar.fina hehgoalHamzaabove-ar.fina
         tehTehabove-ar.fina pehVabove-ar.fina tehVabove-ar.fina ttehVabove-ar.fina tchehVabove-ar.fina jeemThreedotsabove-ar.fina
         jeemThreedotsbelow-ar.fina ghainThreedotsabove-ar.fina qafThreedotsaboveAfrican-ar.fina kehehVabove-ar.fina lamTahabove-ar.fina
+        noonVinvertedabove-ar.fina hahVinvertedabove-ar.fina tahDotbelow-ar.fina qafDotbelowNodotsabove-ar.fina 
+        kehehTwodotsverticalbelow-ar.fina kehehElongatedhamzaabove-ar.fina
     </class>
 
     <class name="DualLinkMedi" fixed="0">
@@ -271,6 +275,8 @@
         hehVinvertedabove-ar.medi heh-ar.medi hehgoal-ar.medi hehgoalHamzaabove-ar.medi
         tehTehabove-ar.medi pehVabove-ar.medi tehVabove-ar.medi ttehVabove-ar.medi tchehVabove-ar.medi jeemThreedotsabove-ar.medi
         jeemThreedotsbelow-ar.medi ghainThreedotsabove-ar.medi qafThreedotsaboveAfrican-ar.medi kehehVabove-ar.medi lamTahabove-ar.medi
+        noonVinvertedabove-ar.medi hahVinvertedabove-ar.medi tahDotbelow-ar.medi qafDotbelowNodotsabove-ar .medi
+        kehehTwodotsverticalbelow-ar.medi kehehElongatedhamzaabove-ar.medi
     </class>
 
     <class name="DualLinkInit" fixed="0">
@@ -300,10 +306,12 @@
         lamThreedotsabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init meem-ar.init meemDotabove-ar.init		
         meemDotbelow-ar.init meemThreedotsabove-ar.init noon-ar.init noonDotbelow-ar.init noonghunna-ar.init noonAfrican-ar.init rnoon-ar.init		
         noonRing-ar.init noonThreedotsabove-ar.init 
-        noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init hehDoachashmee-ar.init		
+        noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init hehDoachashmee-ar.init	
         hehVinvertedabove-ar.init heh-ar.init hehgoal-ar.init hehgoalHamzaabove-ar.init
         tehTehabove-ar.init pehVabove-ar.init tehVabove-ar.init ttehVabove-ar.init tchehVabove-ar.init jeemThreedotsabove-ar.init 
         jeemThreedotsbelow-ar.init ghainThreedotsabove-ar.init qafThreedotsaboveAfrican-ar.init kehehVabove-ar.init lamTahabove-ar.init
+        noonVinvertedabove-ar.init hahVinvertedabove-ar.init tahDotbelow-ar.init qafDotbelowNodotsabove-ar.init 
+        kehehTwodotsverticalbelow-ar.init kehehElongatedhamzaabove-ar.init
     </class>
 
     <!-- OBSOLETE
@@ -610,8 +618,10 @@
     <class name="TakesMediumDigits">
         number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt		
         endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 number-ar.2 number-ar.3 year-ar.2		
-        year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 samvat-ar.2 samvat-ar.3		
-        samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 	
+        year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4
+        samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 
+        poundmarkabove-ar poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4
+        piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4
     </class>
 
     <class name="TakesSmallDigits">
