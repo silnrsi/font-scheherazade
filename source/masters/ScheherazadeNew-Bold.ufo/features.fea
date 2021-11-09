@@ -2276,7 +2276,7 @@ markClass toneonedotbelow-ar <anchor 184 -737> @_diaBtailUp;
 markClass tonetwodotsbelow-ar <anchor 186 -763> @_diaBtailUp;
 
 # AP: digitR
-@digitR = [disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3 eight-ar.medium eight-persian.medium eight.medium five-ar.medium five-persian.medium five.medium four-ar.medium four-persian.medium four-persian.roh.medium four-persian.urdu.medium four.medium nine-ar.medium nine-persian.medium nine.medium one-ar.medium one-persian.medium one.medium seven-ar.medium seven-persian.medium seven-persian.urdu.medium seven.medium six-ar.medium six-persian.medium six-persian.urdu.medium six.medium three-ar.medium three-persian.medium three.medium two-ar.medium two-persian.medium two.medium zero-ar.medium zero-persian.medium zero.medium eight-ar.small eight-persian.small eight.small five-ar.small five-persian.small five.small four-ar.small four-persian.roh.small four-persian.small four-persian.urdu.small four.small nine-ar.small nine-persian.small nine.small one-ar.small one-persian.small one.small seven-ar.small seven-persian.small seven-persian.urdu.small seven.small six-ar.small six-persian.small six-persian.urdu.small six.small three-ar.small three-persian.small three.small two-ar.small two-persian.small two.small zero-ar.small zero-persian.small zero.small endofayah-ar endofayah-ar.2 endofayah-ar.3 endofayah-ar.alt endofayah-ar.altB endofayah-ar.alt.2 endofayah-ar.altB.2 endofayah-ar.alt.3 samvat-ar.3 endofayah-ar.altB.3 footnotemarker-ar footnotemarker-ar.2 number-ar number-ar.2 number-ar.3 numbermark-ar numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 pagenumber-ar pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4 poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4 samvat-ar samvat-ar.2 samvat-ar.4 year-ar year-ar.2 year-ar.3 year-ar.4];
+@digitR = [disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3 eight-ar.medium eight-persian.medium eight.medium five-ar.medium five-persian.medium five.medium four-ar.medium four-persian.medium four-persian.roh.medium four-persian.urdu.medium four.medium nine-ar.medium nine-persian.medium nine.medium one-ar.medium one-persian.medium one.medium seven-ar.medium seven-persian.medium seven-persian.urdu.medium seven.medium six-ar.medium six-persian.medium six-persian.urdu.medium six.medium three-ar.medium three-persian.medium three.medium two-ar.medium two-persian.medium two.medium zero-ar.medium zero-persian.medium zero.medium eight-ar.small eight-persian.small eight.small five-ar.small five-persian.small five.small four-ar.small four-persian.roh.small four-persian.small four-persian.urdu.small four.small nine-ar.small nine-persian.small nine.small one-ar.small one-persian.small one.small seven-ar.small seven-persian.small seven-persian.urdu.small seven.small six-ar.small six-persian.small six-persian.urdu.small six.small three-ar.small three-persian.small three.small two-ar.small two-persian.small two.small zero-ar.small zero-persian.small zero.small endofayah-ar endofayah-ar.2 endofayah-ar.3 endofayah-ar.alt endofayah-ar.altB endofayah-ar.alt.2 endofayah-ar.altB.2 endofayah-ar.alt.3 samvat-ar.3 endofayah-ar.altB.3 footnotemarker-ar footnotemarker-ar.2 number-ar number-ar.2 number-ar.3 numbermark-ar numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 pagenumber-ar pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 piastremarkabove-ar poundmarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4 poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4 samvat-ar samvat-ar.2 samvat-ar.4 year-ar year-ar.2 year-ar.3 year-ar.4];
 @digitR_MarkBase = [footnotemarkerabove-ar];
 # baseClass disputedendofayah-ar <anchor 215 -420> @digitR;
 # baseClass disputedendofayah-ar.2 <anchor 190 -420> @digitR;
@@ -2299,7 +2299,13 @@ markClass tonetwodotsbelow-ar <anchor 186 -763> @_diaBtailUp;
 # baseClass [pagenumber-ar pagenumber-ar.2] <anchor 228 0> @digitR;
 # baseClass pagenumber-ar.3 <anchor 305 0> @digitR;
 # baseClass pagenumber-ar.4 <anchor 329 0> @digitR;
-# baseClass [piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4 poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4] <anchor 101 0> @digitR;
+# baseClass [piastremarkabove-ar poundmarkabove-ar] <anchor 574 0> @digitR;
+# baseClass piastremarkabove-ar.2 <anchor 179 0> @digitR;
+# baseClass piastremarkabove-ar.3 <anchor 100 0> @digitR;
+# baseClass piastremarkabove-ar.4 <anchor 64 0> @digitR;
+# baseClass poundmarkabove-ar.2 <anchor 299 0> @digitR;
+# baseClass poundmarkabove-ar.3 <anchor 220 0> @digitR;
+# baseClass poundmarkabove-ar.4 <anchor 204 0> @digitR;
 # baseClass [samvat-ar samvat-ar.2] <anchor 457 0> @digitR;
 # baseClass samvat-ar.4 <anchor 162 0> @digitR;
 # baseClass year-ar <anchor 806 0> @digitR;
@@ -2309,8 +2315,9 @@ markClass tonetwodotsbelow-ar <anchor 186 -763> @_diaBtailUp;
 # baseClass footnotemarkerabove-ar <anchor 838 0> @digitR_MarkBase;
 
 # AP: digitL
-@digitL = [eight-ar.medium eight-ar.small eight-persian.medium eight-persian.small eight.medium eight.small five-ar.medium five-ar.small five-persian.medium five-persian.small five.medium five.small four-ar.medium four-ar.small four-persian.medium four-persian.roh.medium four-persian.roh.small four-persian.small four-persian.urdu.medium four-persian.urdu.small four.medium four.small nine-ar.medium nine-ar.small nine-persian.medium nine-persian.small nine.medium nine.small one-ar.medium one-ar.small one-persian.medium one-persian.small one.medium one.small seven-ar.medium seven-ar.small seven-persian.medium seven-persian.small seven-persian.urdu.medium seven-persian.urdu.small seven.medium seven.small six-ar.medium six-ar.small six-persian.medium six-persian.small six-persian.urdu.medium six-persian.urdu.small six.medium six.small three-ar.medium three-ar.small three-persian.medium three-persian.small three.medium three.small two-ar.medium two-ar.small two-persian.medium two-persian.small two.medium two.small zero-ar.medium zero-ar.small zero-persian.medium zero-persian.small zero.medium zero.small];
+@digitL = [eight-ar.medium eight-ar.small eight-persian.medium eight-persian.small eight.medium eight.small five-ar.medium five-ar.small five-persian.medium five-persian.small five.medium five.small four-ar.medium four-ar.small four-persian.medium four-persian.roh.medium four-persian.roh.small four-persian.small four-persian.urdu.medium four-persian.urdu.small four.medium four.small nine-ar.medium nine-ar.small nine-persian.medium nine-persian.small nine.medium nine.small one-ar.medium one-ar.small one-persian.medium one-persian.small one.medium one.small seven-ar.medium seven-ar.small seven-persian.medium seven-persian.small seven-persian.urdu.medium seven-persian.urdu.small seven.medium seven.small six-ar.medium six-ar.small six-persian.medium six-persian.small six-persian.urdu.medium six-persian.urdu.small six.medium six.small three-ar.medium three-ar.small three-persian.medium three-persian.small three.medium three.small two-ar.medium two-ar.small two-persian.medium two-persian.small two.medium two.small zero-ar.medium zero-ar.small zero-persian.medium zero-persian.small zero.medium zero.small poundmarkabove-ar];
 # baseClass [eight-ar.medium eight-ar.small eight-persian.medium eight-persian.small eight.medium eight.small five-ar.medium five-ar.small five-persian.medium five-persian.small five.medium five.small four-ar.medium four-ar.small four-persian.medium four-persian.roh.medium four-persian.roh.small four-persian.small four-persian.urdu.medium four-persian.urdu.small four.medium four.small nine-ar.medium nine-ar.small nine-persian.medium nine-persian.small nine.medium nine.small one-ar.medium one-ar.small one-persian.medium one-persian.small one.medium one.small seven-ar.medium seven-ar.small seven-persian.medium seven-persian.small seven-persian.urdu.medium seven-persian.urdu.small seven.medium seven.small six-ar.medium six-ar.small six-persian.medium six-persian.small six-persian.urdu.medium six-persian.urdu.small six.medium six.small three-ar.medium three-ar.small three-persian.medium three-persian.small three.medium three.small two-ar.medium two-ar.small two-persian.medium two-persian.small two.medium two.small zero-ar.medium zero-ar.small zero-persian.medium zero-persian.small zero.medium zero.small] <anchor 0 0> @digitL;
+# baseClass poundmarkabove-ar <anchor 573 0> @digitL;
 
 # AP: L
 @L_MarkBase = [graphemejoinercomb];
@@ -3891,10 +3898,10 @@ lookup SubtendingMarks {
         pos @DigitsAnyMedium' <-954 0 -667 0> @DigitsAnyMedium' <-1621 0 -667 0> @DigitsAnyMedium' <-2288 0 -667 0> @DigitsAnyMedium' <-2955 0 -667 0> numbermark-ar.4;
         pos pagenumber-ar.4 @DigitsAnyMedium' <-4038 0 -667 0> @DigitsAnyMedium' <-3371 0 -667 0> @DigitsAnyMedium' <-2704 0 -667 0> @DigitsAnyMedium' <-2037 0 -667 0>;
         pos @DigitsAnyMedium' <-2037 0 -667 0> @DigitsAnyMedium' <-2704 0 -667 0> @DigitsAnyMedium' <-3371 0 -667 0> @DigitsAnyMedium' <-4038 0 -667 0> pagenumber-ar.4;
-        pos piastremarkabove-ar.4 @DigitsAnyMedium' <-2228 0 -667 0> @DigitsAnyMedium' <-1561 0 -667 0> @DigitsAnyMedium' <-894 0 -667 0> @DigitsAnyMedium' <-227 0 -667 0>;
-        pos @DigitsAnyMedium' <-227 0 -667 0> @DigitsAnyMedium' <-894 0 -667 0> @DigitsAnyMedium' <-1561 0 -667 0> @DigitsAnyMedium' <-2228 0 -667 0> piastremarkabove-ar.4;
-        pos poundmarkabove-ar.4 @DigitsAnyMedium' <-2655 0 -667 0> @DigitsAnyMedium' <-1988 0 -667 0> @DigitsAnyMedium' <-1321 0 -667 0> @DigitsAnyMedium' <-654 0 -667 0>;
-        pos @DigitsAnyMedium' <-654 0 -667 0> @DigitsAnyMedium' <-1321 0 -667 0> @DigitsAnyMedium' <-1988 0 -667 0> @DigitsAnyMedium' <-2655 0 -667 0> poundmarkabove-ar.4;
+        pos piastremarkabove-ar.4 @DigitsAnyMedium' <-2892 0 -667 0> @DigitsAnyMedium' <-2225 0 -667 0> @DigitsAnyMedium' <-1558 0 -667 0> @DigitsAnyMedium' <-891 0 -667 0>;
+        pos @DigitsAnyMedium' <-891 0 -667 0> @DigitsAnyMedium' <-1558 0 -667 0> @DigitsAnyMedium' <-2225 0 -667 0> @DigitsAnyMedium' <-2892 0 -667 0> piastremarkabove-ar.4;
+        pos poundmarkabove-ar.4 @DigitsAnyMedium' <-2752 0 -667 0> @DigitsAnyMedium' <-2085 0 -667 0> @DigitsAnyMedium' <-1418 0 -667 0> @DigitsAnyMedium' <-751 0 -667 0>;
+        pos @DigitsAnyMedium' <-751 0 -667 0> @DigitsAnyMedium' <-1418 0 -667 0> @DigitsAnyMedium' <-2085 0 -667 0> @DigitsAnyMedium' <-2752 0 -667 0> poundmarkabove-ar.4;
         pos samvat-ar.4 @DigitsAnyMedium' <-4107 0 -667 0> @DigitsAnyMedium' <-3440 0 -667 0> @DigitsAnyMedium' <-2773 0 -667 0> @DigitsAnyMedium' <-2106 0 -667 0>;
         pos @DigitsAnyMedium' <-2106 0 -667 0> @DigitsAnyMedium' <-2773 0 -667 0> @DigitsAnyMedium' <-3440 0 -667 0> @DigitsAnyMedium' <-4107 0 -667 0> samvat-ar.4;
         pos year-ar.4 @DigitsAnyMedium' <-3116 0 -667 0> @DigitsAnyMedium' <-2449 0 -667 0> @DigitsAnyMedium' <-1782 0 -667 0> @DigitsAnyMedium' <-1115 0 -667 0>;
@@ -3911,10 +3918,10 @@ lookup SubtendingMarks {
         pos @DigitsAnyMedium' <-2123 0 -667 0> @DigitsAnyMedium' <-2790 0 -667 0> @DigitsAnyMedium' <-3457 0 -667 0> samvat-ar.3;
         pos numbermark-ar.3 @DigitsAnyMedium' <-2328 0 -667 0> @DigitsAnyMedium' <-1661 0 -667 0> @DigitsAnyMedium' <-994 0 -667 0>;
         pos @DigitsAnyMedium' <-994 0 -667 0> @DigitsAnyMedium' <-1661 0 -667 0> @DigitsAnyMedium' <-2328 0 -667 0> numbermark-ar.3;
-        pos poundmarkabove-ar.3 @DigitsAnyMedium' <-2215 0 -667 0> @DigitsAnyMedium' <-1548 0 -667 0> @DigitsAnyMedium' <-881 0 -667 0>;
-        pos @DigitsAnyMedium' <-881 0 -667 0> @DigitsAnyMedium' <-1548 0 -667 0> @DigitsAnyMedium' <-2215 0 -667 0> poundmarkabove-ar.3;
-        pos piastremarkabove-ar.3 @DigitsAnyMedium' <-2233 0 -667 0> @DigitsAnyMedium' <-1566 0 -667 0> @DigitsAnyMedium' <-899 0 -667 0>;
-        pos @DigitsAnyMedium' <-899 0 -667 0> @DigitsAnyMedium' <-1566 0 -667 0> @DigitsAnyMedium' <-2233 0 -667 0> piastremarkabove-ar.3;
+        pos poundmarkabove-ar.3 @DigitsAnyMedium' <-2096 0 -667 0> @DigitsAnyMedium' <-1429 0 -667 0> @DigitsAnyMedium' <-762 0 -667 0>;
+        pos @DigitsAnyMedium' <-762 0 -667 0> @DigitsAnyMedium' <-1429 0 -667 0> @DigitsAnyMedium' <-2096 0 -667 0> poundmarkabove-ar.3;
+        pos piastremarkabove-ar.3 @DigitsAnyMedium' <-2216 0 -667 0> @DigitsAnyMedium' <-1549 0 -667 0> @DigitsAnyMedium' <-882 0 -667 0>;
+        pos @DigitsAnyMedium' <-882 0 -667 0> @DigitsAnyMedium' <-1549 0 -667 0> @DigitsAnyMedium' <-2216 0 -667 0> piastremarkabove-ar.3;
 
             # Those that take 2 small digits
         pos endofayah-ar.3 @DigitsAnySmall' <-1716 0 -468 0> @DigitsAnySmall' <-1248 0 -468 0> @DigitsAnySmall' <-780 0 -468 0>;
@@ -3947,10 +3954,10 @@ lookup SubtendingMarks {
         pos @DigitsAnyMedium' <-1060 0 -667 0> @DigitsAnyMedium' <-1727 0 -667 0> numbermark-ar.2;
         pos pagenumber-ar.2 @DigitsAnyMedium' <-2573 0 -667 0> @DigitsAnyMedium' <-1906 0 -667 0>;
         pos @DigitsAnyMedium' <-1906 0 -667 0> @DigitsAnyMedium' <-2573 0 -667 0> pagenumber-ar.2;
-        pos piastremarkabove-ar.2 @DigitsAnyMedium' <-2237 0 -667 0> @DigitsAnyMedium' <-1570 0 -667 0>;
-        pos @DigitsAnyMedium' <-1570 0 -667 0> @DigitsAnyMedium' <-2237 0 -667 0> piastremarkabove-ar.2;
-        pos poundmarkabove-ar.2 @DigitsAnyMedium' <-1715 0 -667 0> @DigitsAnyMedium' <-1048 0 -667 0>;
-        pos @DigitsAnyMedium' <-1048 0 -667 0> @DigitsAnyMedium' <-1715 0 -667 0> poundmarkabove-ar.2;
+        pos piastremarkabove-ar.2 @DigitsAnyMedium' <-1637 0 -667 0> @DigitsAnyMedium' <-970 0 -667 0>;
+        pos @DigitsAnyMedium' <-970 0 -667 0> @DigitsAnyMedium' <-1637 0 -667 0> piastremarkabove-ar.2;
+        pos poundmarkabove-ar.2 @DigitsAnyMedium' <-1517 0 -667 0> @DigitsAnyMedium' <-850 0 -667 0>;
+        pos @DigitsAnyMedium' <-850 0 -667 0> @DigitsAnyMedium' <-1517 0 -667 0> poundmarkabove-ar.2;
         pos samvat-ar.2 @DigitsAnyMedium' <-2826 0 -667 0> @DigitsAnyMedium' <-2159 0 -667 0>;
         pos @DigitsAnyMedium' <-2159 0 -667 0> @DigitsAnyMedium' <-2826 0 -667 0> samvat-ar.2;
         pos year-ar.2 @DigitsAnyMedium' <-1731 0 -667 0> @DigitsAnyMedium' <-1064 0 -667 0>;
@@ -3976,10 +3983,10 @@ lookup SubtendingMarks {
         pos @DigitsAnyMedium' <-950 0 -667 0> numbermark-ar;
         pos pagenumber-ar @DigitsAnyMedium' <-1877 0 -667 0>;
         pos @DigitsAnyMedium' <-1877 0 -667 0> pagenumber-ar;
-        pos piastremarkabove-ar @DigitsAnyMedium' <-2228 0 -667 0>;
-        pos @DigitsAnyMedium' <-2228 0 -667 0> piastremarkabove-ar;
-        pos poundmarkabove-ar @DigitsAnyMedium' <-1816 0 -667 0>;
-        pos @DigitsAnyMedium' <-1816 0 -667 0> poundmarkabove-ar;
+        pos piastremarkabove-ar @DigitsAnyMedium' <-1242 0 -667 0>;
+        pos @DigitsAnyMedium' <-1242 0 -667 0> piastremarkabove-ar;
+        pos poundmarkabove-ar @DigitsAnyMedium' <-1242 0 -667 0>;
+        pos @DigitsAnyMedium' <-1242 0 -667 0> poundmarkabove-ar;
         pos samvat-ar @DigitsAnyMedium' <-2172 0 -667 0>;
         pos @DigitsAnyMedium' <-2172 0 -667 0> samvat-ar;
         pos year-ar @DigitsAnyMedium' <-1065 0 -667 0>;
