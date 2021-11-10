@@ -345,6 +345,22 @@ commaAlt {
     default = up;
 }
 
+decimalSepAlt {
+    id = "cv85";
+    name.1033 = string("Decimal separator");
+    settings {
+        reh {
+            value = 0;
+            name.1033 = string("Small reh");
+        }
+        slash {
+            value = 1;
+            name.1033 = string("Slash");
+        }
+    }
+    default = reh;
+}
+
 /* --- OBSOLETE HACKS ---
 jehHack {
 	id = "cv90";

@@ -353,6 +353,10 @@ pass(5)	// Features, special behaviors
 		cno_Downward  >  cDownward;
 	endif;
 	
+	if (decimalSepAlt == slash)
+	  g_decimalseparator_ar  >  g_decimalseparator_ar_slash;
+	endif;
+	
 	if (honLigs == simplified)
 	  cHonLigCall  >  cHonLigSmpl;
 	endif;
@@ -364,6 +368,8 @@ pass(5)	// Features, special behaviors
 		cInvisible > g_zerowidthspace {directionality = @1.directionality};
 		
 	//endif; 
+	
+	g_kashida_ar  >  g_kashida_ar_wide  /  _  cAnyMarks;
 	
 endpass; // 5
 
