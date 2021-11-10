@@ -42,8 +42,7 @@
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>/salaamuhuAlaynaa-ar/noon-ar.fina/jeem-ar.init/quddisaSirrah-ar/tchehDotabove-ar/azzaWaJall-ar/waw-ar.fina/lam-ar.init/alayhaaAsSalaam-ar/ain-ar.fina/seen-ar.init/alayhiAsSalaam-ar/heh-ar/alayhimAsSalaam-ar/qaf-ar/alayhimaaAsSalaam-ar/teh-ar/alayhiAsSalaatuWaSalaam-ar/dal-ar/lam-ar/sallallahuAlayhiWaAaliheeWaSallam-ar/meem-ar/sallallaahuAlayhiWaAalih-ar/beh-ar.fina/sad-ar.init/subhaanahuWaTaaalaa-ar/seen-ar/radiAllaahuAnh-ar/ghain-ar/radiAllaahuAnhaa-ar/lam_alef-ar/rahimahumAllaah-ar/lamThreedotsabove-ar/radiAllaahuAnhum-ar/meem-ar.fina/meem-ar.init/radiAllaahuAnhumaa-ar/feh-ar/radiAllaahuAnhunna-ar/reh-ar.fina/seen-ar.medi/lam-ar.init/rahimahuAllaah-ar/meem-ar/jallajalalouhou-ar/peh-ar/bismillah-ar/space/lamTahabove-ar/space/behDotless-ar/alayhiAsSalaatuWaSalaam-ar</string>
-    <string>/yehthin-ar/yehthin-ar.fina/teh-ar.medi/yeh-ar.medi/behDotless-ar.medi/yehthin-ar.medi/noon-ar.medi/yehthin-ar.init/space/yeh-ar.fina/yeh-ar.init</string>
-    <string>/year-ar.3/space/sad-ar.medi/space/six-ar.medium/four-persian.medium/three.medium/eight.medium/one-ar.medium/two-ar.medium/six-ar.medium/zero-ar.medium/four-ar.medium/five-ar.medium/nine-ar.medium/three-ar.medium/seven-ar.medium/eight-ar.medium/one-persian.medium/two-persian.medium/six-persian.medium/zero-persian.medium/four-persian.medium/five-persian.medium/space/poundmarkabove-ar/poundmarkabove-ar.2/poundmarkabove-ar.3/poundmarkabove-ar.4/space/piastremarkabove-ar/piastremarkabove-ar.2/piastremarkabove-ar.3/piastremarkabove-ar.4/space</string>
+    <string>///seven-ar/six-ar/decimalseparator-ar.slash/four-ar/decimalseparator-ar</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -1401,8 +1400,8 @@
     <string>kashidaHamza-ar</string>
     <string>kashidaWaw-ar</string>
     <string>kashidaTwobelow-ar</string>
-    <string>sadabove-ar</string>
-    <string>ainabove-ar</string>
+    <string>sallallahouAlayheWassallamcomb-ar</string>
+    <string>alayheAssallamcomb-ar</string>
     <string>takhallusabove-ar</string>
     <string>tahabove-ar</string>
     <string>alefLamYehabove-ar</string>
@@ -3240,8 +3239,8 @@
     <string>kashidaHamza-ar</string>
     <string>kashidaWaw-ar</string>
     <string>kashidaTwobelow-ar</string>
-    <string>sadabove-ar</string>
-    <string>ainabove-ar</string>
+    <string>sallallahouAlayheWassallamcomb-ar</string>
+    <string>alayheAssallamcomb-ar</string>
     <string>takhallusabove-ar</string>
     <string>tahabove-ar</string>
     <string>alefLamYehabove-ar</string>
@@ -3831,14 +3830,14 @@
     <string>uni075F.init</string>
     <key>ainTwodotsverticalabove-ar.medi</key>
     <string>uni075F.medi</string>
-    <key>ainabove-ar</key>
-    <string>uni0611</string>
     <key>ainaboveStandard-ar</key>
     <string>uni08D6</string>
     <key>alayhaaAsSalaam-ar</key>
     <string>uniFD4D</string>
     <key>alayhaaAsSalaam-ar.smpl</key>
     <string>uniFD4D.smpl</string>
+    <key>alayheAssallamcomb-ar</key>
+    <string>uni0611</string>
     <key>alayhiAsSalaam-ar</key>
     <string>uniFD47</string>
     <key>alayhiAsSalaam-ar.smpl</key>
@@ -5993,8 +5992,6 @@
     <string>uni069D.init</string>
     <key>sadTwodotsbelow-ar.medi</key>
     <string>uni069D.medi</string>
-    <key>sadabove-ar</key>
-    <string>uni0610</string>
     <key>sadaboveStandard-ar</key>
     <string>uni08D5</string>
     <key>safhaabove-ar</key>
@@ -6013,6 +6010,8 @@
     <string>uniFD46</string>
     <key>sallallaahuAlayhiWaAalih-ar.smpl</key>
     <string>uniFD46.smpl</string>
+    <key>sallallahouAlayheWassallamcomb-ar</key>
+    <string>uni0610</string>
     <key>sallallahuAlayhiWaAaliheeWaSallam-ar</key>
     <string>uniFD4C</string>
     <key>sallallahuAlayhiWaAaliheeWaSallam-ar.smpl</key>
