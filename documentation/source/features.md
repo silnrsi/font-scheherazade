@@ -237,6 +237,16 @@ Feature value | Sample |  Feature setting
 Upward | <span dir="rtl" class='scheherazadenew-R normal'>، ؛</span> | `cv84=0`
 Downward | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv84" 1'>، ؛</span>| `cv84=1`
 
+#### Decimal separator 
+
+<span class='affects'>Affects: U+066B</span>
+
+Feature value | Sample |  Feature setting
+------------- | ---------------: | ------------- 
+Small reh | <span dir="rtl" class='scheherazadenew-R normal'>&#x066B;</span> | `cv85=0`
+Slash | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| `cv85=1`
+
+
 #### Line spacing 
 
 Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing). This feature is only available with TypeTuner.

@@ -2,22 +2,10 @@ DOCUMENTATION
 Scheherazade New
 ========================
 
-This file describes the documentation files included with the Scheherazade 
-New font. This information should be distributed along with the 
-Scheherazade New font and any derivative works.
+The documentation for this project is listed in index.html.
 
-Primary documentation for the Scheherazade New font is on the Scheherazade 
-website (http://software.sil.org/scheherazade/).
+There are also PDF versions in the `pdf` folder.
 
-The ScheherazadeNew-features.pdf file illustrates the use of OpenType and 
-Graphite features.
-
-The ScheherazadeNew-features.odt file illustrates the use of OpenType and 
-Graphite features (source file for the pdf).
-
-The ScheherazadeNew-typesample.pdf file gives a sample of all the characters in 
-the font.
-
-The ScheherazadeNew-typesample.odt file gives a sample of all the characters in 
-the font (source file for the pdf).
-
+These are produced from markdown sources (in `source`) using pandoc,
+weasyprint, and custom python scripts. See the `makedocs` shell script
+in the main project folder.

@@ -20,6 +20,7 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Developer information](developer.md) — How to modify and build the fonts
 - [Versions](versions.md) - Sources for alternate versions
 - [Version history](history.md) - Complete version history
+- [Announcement](announcement.md) - Source for News announcement
 
 Additional information is also provided in other project files: [README.txt](../README.txt), [OFL.txt](../OFL.txt), [OFL-FAQ.txt](../OFL-FAQ.txt), and [FONTLOG.txt](../FONTLOG.txt).
 
