@@ -1,9 +1,11 @@
 ---
 title: Scheherazade New - Resources
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 The SIL Arabic script fonts are encoded according to Unicode, so your application must support Unicode text in order to access letters other than the standard ANSI characters. Most applications now provide basic Unicode support. You will, however, need some way of entering Unicode text into your document.
+
+Arabic script is a complex and difficult script, and this complexity is compounded by the fact that Arabic script is used for [many different languages](http://scriptsource.org/scr/Arab) and cultures with variations in acceptable calligraphic style. From a computer perspective at least, the technologies used to implement Arabic script are not yet fully mature. The result is that while a given font might work for one set of languages on a given software platform, the same font might not work for other languages or on other platforms. This means that it is very difficult to give an accurate answer to the question of software requirements. 
 
 ## Requirements
 
@@ -41,3 +43,4 @@ One page that may prove helpful is: [Roman Script to Arabic Script Conversion](h
 
 Other suggestions are listed here: [Introduction to Text Conversion and Transliteration](http://scriptsource.org/entry/xlzd6n5aqt).
 
+See also: [Arabic Fonts -- Resources](http://software.sil.org/arabicfonts/resources/).

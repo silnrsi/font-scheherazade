@@ -9,11 +9,27 @@ Two fonts from this typeface family are included in the *Scheherazade New* relea
 
 ## Type Samples
 
-Type samples showing some of the inventory of glyphs can be downloaded here: 
-[Scheherazade New Font Type Sample](https://software.sil.org/scheherazade/wp-content/uploads/sites/29/2021/07/ScheherazadeNew-typesample.pdf) -- This document was produced with [LibreOffice 7.0](https://www.libreoffice.org/). 
+Type samples showing some of the inventory of glyphs can be found here: 
+[Scheherazade New Type Sample](sample).
 
 An example of some text is shown below. 
 
 <img class='fullsize' alt='Scheherazade New Sample - Genesis 11' src='https://software.sil.org/scheherazade/wp-content/uploads/sites/29/2016/03/ScheherazadeGen11.png' />
 [caption]<em>Scheherazade New Sample - Genesis 11</em>[/caption]
 
+## Character Set
+
+For a complete list of characters included in Scheherazade New, see [Character Set Support](charset).
+
+## Honorific Ligatures
+
+For a complete list of honorific ligatures included in Scheherazade New, see [Honorific Ligatures](honorifics).
+
+## Formation of Allah Ligature
+
+In certain types of literature, the name *Allah* and words related to this name are given unique rendering. For a list of the rendering rules, see [Formation of Allah Ligature](allah).
+
+
+## Font Features
+
+Alternate glyphs that are available through features are demonstrated in the [Features](features) document. 

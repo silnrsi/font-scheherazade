@@ -16,17 +16,22 @@
     </header>
     <p>Scheherazade New is a TrueType font with smart font capabilities added using OpenType and Graphite font technologies. The Scheherazade New font includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerates the details of these features. Whether these features are available to users will depend on both the application and the rendering technology (<a href="http://graphite.sil.org/">Graphite</a> or OpenType) being used. Most features are available in both Graphite and OpenType, though there may be minor differences in their implementation. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner</a> creates tuned fonts that use the variant glyph in place of the standard glyph. TypeTuner also provides the ability to turn on support for the Kurdish, Kyrgyz, Rohingya, Sindhi, Urdu, and Wolof languages variants.</p>
     <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType and Graphite font technologies.</p>
+    <p>See also <a href="http://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType and <a href="http://graphite.sil.org">Graphite</a> font technologies.</p>
     <p>This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Scheherazade New as a web font see <a href="../web/ScheherazadeNew-webfont-example.html">Scheherazade New Webfont Example</a>. For detailed information see <a href="http://software.sil.org/fonts/webfonts">Using SIL Fonts on Web Pages</a>.</p>
     <p><em>If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.</em></p>
+    <h2 id="end-of-ayah-u06dd-disputed-end-of-ayah-u08e2-and-subtending-marks-u0600..u0605">End of Ayah (U+06DD), Disputed End of Ayah (U+08E2), and subtending marks (U+0600..U+0605)</h2>
+    <p>These Arabic characters are intended to enclose or hold one or more digits.</p>
+    <p>Specific technical details of how to use them are discussed in the <a href="http://software.sil.org/arabicfonts/support/faq#Ayah">Arabic fonts FAQ -- Subtending marks</a>.</p>
+    <p>Additionally, Scheherazade New includes two simplified alternates for U+06DD ARABIC END OF AYAH under the Stylistic Alternates (salt) feature, but at this time we know of no OpenType-based applications that can access these. The two alternates are also available through the Character Variants feature discussed below.</p>
     <h2 id="customizing-with-typetuner">Customizing with TypeTuner</h2>
-    <p>For applications that do not make use of Graphite features or the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read the <a href="https://software.sil.org/scheherazade/support/smart-font-features/#user">Scheherazade New Font Features</a>, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
+    <p>For applications that do not make use of Graphite features or the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
     <h3 id="test-rendering-engine-choice">Test rendering engine choice</h3>
     <p>Here is a simple test to see if Graphite is working in your browser. If it is, the following will say "RenderingGraphite". If your browser does not support Graphite it should say "RenderingOpentype". Firefox is currently the only browser that supports Graphite. See the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_firefox#switchon">instructions on how to enable Graphite in Firefox</a>.</p>
     <table>
     <tbody>
     <tr class="odd">
     <td>Check</td>
-    <td><span class="scheherazadenew-R normal">RenderingUnknown</span></td>
+    <td><span class="scheherazadenewL-R normal">RenderingUnknown</span></td>
     </tr>
     </tbody>
     </table>
@@ -55,32 +60,32 @@
     </tr>
     <tr class="even">
     <td>Kurdish (Northern)</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </span></br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="ku">ه ههه</span></br><span class="scheherazadenew-R normal" dir="rtl" lang="ku">ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=ku</code></td>
     </tr>
     <tr class="odd">
     <td>Kyrgyz</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</span></br> <span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="ky">ئ ئئئ</span></br><span class="scheherazadenew-R normal" dir="rtl" lang="ky"> ، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=ky</code></td>
     </tr>
     <tr class="even">
     <td>Rohingya</td>
-    <td style="text-align: right;"><span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ <span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="rhg">۴ ۶ ۷ </br>بِّ</span> <span class="scheherazadenew-R normal" dir="rtl" lang="rhg">بُ</span><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="rhg"> بٌ</span><span class="scheherazadenew-R normal" dir="rtl" lang="rhg"> بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=rhg</code></td>
     </tr>
     <tr class="odd">
     <td>Sindhi</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ</span></br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="sd">م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ </span></br><span class="scheherazadenew-R normal" dir="rtl" lang="sd">ه ههه</br> ئ ئئئ</span></br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="sd">، ؛ ۴ ۶</span> <span class="scheherazadenew-R normal" dir="rtl" lang="sd">۷</span></br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="sd">بِّ</span> <span class="scheherazadenew-R normal" dir="rtl" lang="sd">بُ بٌ بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=sd</code></td>
     </tr>
     <tr class="even">
     <td>Urdu</td>
-    <td style="text-align: right;"><span dir="rtl" class='scheherazadenew-R normal' lang='ur'>د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ <span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="ur">۴ ۶ ۷ </span></br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="ur">بِّ</span><span class="scheherazadenew-R normal" dir="rtl" lang="ur"> بُ بٌ بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=ur</code></td>
     </tr>
     <tr class="odd">
     <td>Wolof</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="wo">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span></br><span dir="rtl" class='scheherazadenew-R normal' lang='wo'>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br><span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="wo">بِّ</span> بُ <span class="scheherazadenew-R normal" dir="rtl" style="color:red;" lang="wo">بٌ بٗ</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </br>م ممم ݥ ݥݥݥ ݦ ݦݦݦ  ࢧ ࢧࢧࢧ  </br>ه ههه</br> ئ ئئئ</br>، ؛ ۴ ۶ ۷ </br>بِّ بُ بٌ بٗ</span></td>
     <td><code>lang=wo</code></td>
     </tr>
     </tbody>
@@ -529,10 +534,12 @@
     </tbody>
     </table>
     <!-- PRODUCT SITE ONLY
-    [font id='scheherazadenew' face='ScheherazadeNew-Regular' size='150%' rtl=1]
+    [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1]
+    [font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' ltr=1]
+    
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 3.200 and is copyright © 1994-2021 SIL International.</p>
+        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 3.300 and is copyright © 1994-2021 SIL International.</p>
     </footer>
 </article>
 </div>

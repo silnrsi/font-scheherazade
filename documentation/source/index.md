@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Documentation
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 Thank you for your interest in the Scheherazade New font. Scheherazade New includes full support for Unicode 13.0 Arabic ranges (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).

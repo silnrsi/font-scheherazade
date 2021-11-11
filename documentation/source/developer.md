@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Developer information
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 Scheherazade New is a mature product with no major changes anticipated. We will be releasing maintenance updates to fix bugs. 

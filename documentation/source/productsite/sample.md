@@ -5,33 +5,33 @@ This document demonstrates all of the characters in the font. It is organized by
 
 ### Basic Latin:
 
-Regular:<span class='scheherazadenew-R normal'> ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</span>
+Regular:<span class='scheherazadenewL-R normal'> ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</span>
 
-**Bold:** <span class='scheherazadenew-B normal'>! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</span>
+**Bold:** <span class='scheherazadenewL-B normal'>! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</span>
 
 ### Latin-1 Supplement:
 
-Regular:<span class='scheherazadenew-R normal'>   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ</span> 
+Regular:<span class='scheherazadenewL-R normal'>   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ</span> 
 
-**Bold:** <span class='scheherazadenew-B normal'>   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ</span>
+**Bold:** <span class='scheherazadenewL-B normal'>   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ</span>
 
 ### Latin Extended-A:
 
-Regular:<span class='scheherazadenew-R normal'> ı Œ œ Š š Ÿ Ž ž</span>
+Regular:<span class='scheherazadenewL-R normal'> ı Œ œ Š š Ÿ Ž ž</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> ı Œ œ Š š Ÿ Ž ž</span>
+**Bold:** <span class='scheherazadenewL-B normal'> ı Œ œ Š š Ÿ Ž ž</span>
 
 ### Latin Extended-B:
 
-Regular:<span class='scheherazadenew-R normal'> ƒ</span>
+Regular:<span class='scheherazadenewL-R normal'> ƒ</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> ƒ </span>
+**Bold:** <span class='scheherazadenewL-B normal'> ƒ </span>
 
 ### Spacing Modifier Letters:
 
-Regular:<span class='scheherazadenew-R normal'> ˆ ˇ ˉ ː ˘ ˙ ˚ ˛ ˜ ˝</span>
+Regular:<span class='scheherazadenewL-R normal'> ˆ ˇ ˉ ː ˘ ˙ ˚ ˛ ˜ ˝</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> ˆ ˇ ˉ ː ˘ ˙ ˚ ˛ ˜ ˝</span>
+**Bold:** <span class='scheherazadenewL-B normal'> ˆ ˇ ˉ ː ˘ ˙ ˚ ˛ ˜ ˝</span>
 
 ### Combining Diacritical Marks:
 
@@ -39,27 +39,27 @@ CGJ (U+034F)
 
 ### Greek and Coptic:
 
-Regular:<span class='scheherazadenew-R normal'> π </span>
+Regular:<span class='scheherazadenewL-R normal'> π </span>
 
-**Bold:** <span class='scheherazadenew-B normal'> π</span>
+**Bold:** <span class='scheherazadenewL-B normal'> π</span>
 
 ### General Punctuation, Supplemental Punctuation:
 
-Regular:<span class='scheherazadenew-R normal'> ‐ ‑ ‒ – — ― ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁏ ⹁</span>
+Regular:<span class='scheherazadenewL-R normal'> ‐ ‑ ‒ – — ― ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁏ ⹁</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> ‐ ‑ ‒ – — ― ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁏ ⹁</span>
+**Bold:** <span class='scheherazadenewL-B normal'> ‐ ‑ ‒ – — ― ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁏ ⹁</span>
 
 ### Currency Symbols:
 
-Regular:<span class='scheherazadenew-R normal'> €</span>
+Regular:<span class='scheherazadenewL-R normal'> €</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> €</span>
+**Bold:** <span class='scheherazadenewL-B normal'> €</span>
 
 ### Letterlike Symbols, Mathematical Operators, Control Pictures, Geometric Shapes, Miscellaneous Mathematical Symbols-B: 
 
-Regular:<span class='scheherazadenew-R normal'> ™ Ω ∂ ∉ ∏ ∑ − ∕ ∙ √ ∞ ∫ ≈ ≠ ≤ ≥ ␣ U+25ca ◌ ⧵</span>
+Regular:<span class='scheherazadenewL-R normal'> ™ Ω ∂ ∉ ∏ ∑ − ∕ ∙ √ ∞ ∫ ≈ ≠ ≤ ≥ ␣ U+25ca ◌ ⧵</span>
 
-**Bold:** <span class='scheherazadenew-B normal'> ™ Ω ∂ ∉ ∏ ∑ − ∕ ∙ √ ∞ ∫ ≈ ≠ ≤ ≥ ␣ ◊ ◌ ⧵</span>
+**Bold:** <span class='scheherazadenewL-B normal'> ™ Ω ∂ ∉ ∏ ∑ − ∕ ∙ √ ∞ ∫ ≈ ≠ ≤ ≥ ␣ ◊ ◌ ⧵</span>
 
 ### Arabic:
 
@@ -124,4 +124,11 @@ Regular:<span class='scheherazadenew-R normal'> ™ Ω ∂ ∉ ∏ ∑ − ∕ 
 <p dir="rtl"><span class='scheherazadenew-R normal'>يجب أن تهدف التربية إلى إنماء شخصية الإنسان إنماء كاملا، وإلى تعزيز احترام الإنسان والحريات الأساسية وتنمية التفاهم والتسامح والصداقة بين جميع الشعوب والجماعات العنصرية أو الدينية، وإلى زيادة مجهود الأمم المتحدة لحفظ السلام.</span></p>
 
 <p dir="rtl"><span class='scheherazadenew-R normal'>للآباء الحق الأول في اختيار نوع تربية أولادهم.</span></p>
+
+
+
+
+[font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1]
+[font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%']
+
 

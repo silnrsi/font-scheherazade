@@ -30,7 +30,7 @@ It is impossible for us to add every glyph that every person desires, but we do 
 
 #### *What is so special about Scheherazade?*
 
-This font is designed to work with two advanced font technologies, [Graphite](http://graphite.sil.org) and OpenType. To take advantage of the advanced typographic capabilities of this font, you must be using applications that provide an adequate level of support for Graphite or OpenType. These advanced capabilities provide access to the variant character forms used in some languages. See [Smart Font Features](http://software.sil.org/scheherazade/support/smart-font-features/).
+This font is designed to work with two advanced font technologies, [Graphite](http://graphite.sil.org) and OpenType. To take advantage of the advanced typographic capabilities of this font, you must be using applications that provide an adequate level of support for Graphite or OpenType. These advanced capabilities provide access to the variant character forms used in some languages. See [Smart Font Features](features).
 
 #### *Why is the line spacing in Scheherazade so much looser than earlier versions?*
 

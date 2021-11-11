@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Version History
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 ### 2021-07-15 (SIL WSTech team) Scheherazade New Version 3.200 (official release)
