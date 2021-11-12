@@ -232,6 +232,15 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
 endpass; // 4
 
+table(glyph)
+
+cLam1NoAllah = (g_lam_ar_init  g_lam_ar_medi);
+cLam1Allah = (g_lam_ar_init_allah1  g_lam_ar_medi_allah1);
+
+cHehNoAllah = (g_heh_ar_fina g_hehgoal_ar_fina);
+cHehAllah = (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah);
+
+endtable;
 
 pass(5)	// Features, special behaviors
 
@@ -240,34 +249,29 @@ pass(5)	// Features, special behaviors
 	// Allah ligatures:
 	// Also see pass 6 below.
 
-	// Rule 3:
+	// Rule 3: isolate alef present
 	
 	// alefIso-lam-lam-heh
-	g_alef_ar  g_lam_ar_init  g_lam_ar_medi  _  _  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_alef_ar_allah  g_lam_ar_init_allah1  g_lam_ar_medi_allah2=L  g_shadda_ar:L  g_alefabove_ar:L  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah) 
-		/ _ MARKS _ _ _ _ _;
+	g_alef_ar  g_lam_ar_init  g_lam_ar_medi  _  _  cHehNoAllah 
+		> g_alef_ar_allah  g_lam_ar_init_allah1  g_lam_ar_medi_allah2=L  g_shadda_ar:L  g_alefabove_ar:L  cHehAllah 
+		/ _ MARKS _ g_kasra_ar? _ _ _ _;
 
 	// Rule 2:
 
-	// lamInit-lam-shadda-alef-heh
-	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_init_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
-		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
+	// lam-lam-shadda-dalef-heh
+	cLam1NoAllah  g_lam_ar_medi  cHehNoAllah
+		>  cLam1Allah  g_lam_ar_medi_allah2  cHehAllah
+		/  _  g_kasra_ar?  _  g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
 
-	// lamInit-lam-alef-shadda-heh
-	g_lam_ar_init  g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_init_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
-		/ (cRightLinkIsol cRightLinkFina) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
+	// lam-lam-dalef-shadda-heh
+	cLam1NoAllah  g_lam_ar_medi  cHehNoAllah
+		>  cLam1Allah  g_lam_ar_medi_allah2  cHehAllah
+		/  _  g_kasra_ar?   _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
 
-	// lamMedi-lam-shadda-alef-heh
-	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_medi_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
-		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ g_shadda_ar (g_alefabove_ar g_fatha_ar) _;
-
-	// lamMedi-lam-alef-shadda-heh
-	g_lam_ar_medi g_lam_ar_medi  (g_heh_ar_fina g_hehgoal_ar_fina) 
-		> g_lam_ar_medi_allah1  g_lam_ar_medi_allah2  (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah)
-		/ (cDualLinkInit cDualLinkMedi) MARKS _ _ (g_alefabove_ar g_fatha_ar) g_shadda_ar _;
+	// lam-lam-shadda-heh
+	cLam1NoAllah  g_lam_ar_medi  _ cHehNoAllah
+		>  cLam1Allah  g_lam_ar_medi_allah2  g_alefabove_ar:S  cHehAllah
+		/  _ g_kasra_ar?  _ g_shadda_ar=S _=DA _;
 	
 	// Features
 
