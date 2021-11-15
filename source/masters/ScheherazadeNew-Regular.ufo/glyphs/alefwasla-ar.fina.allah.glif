@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="alef-ar.fina.allah" format="2">
+<glyph name="alefwasla-ar.fina.allah" format="2">
   <advance width="379"/>
-  <anchor x="51" y="1512" name="above"/>
-  <anchor x="-78" y="1176" name="aboveLeft"/>
-  <anchor x="-152" y="992" name="alef"/>
-  <anchor x="183" y="-73" name="below"/>
-  <anchor x="16" y="1659" name="diaA"/>
+  <anchor x="16" y="2018" name="diaA"/>
   <anchor x="114" y="-260" name="diaB"/>
   <outline>
+    <component base="_wasla" xOffset="101" yOffset="1697"/>
     <component base="alef-ar.fina" xOffset="-146"/>
   </outline>
   <lib>

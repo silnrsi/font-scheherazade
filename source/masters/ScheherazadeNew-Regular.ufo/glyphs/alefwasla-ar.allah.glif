@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="alef-ar.allah" format="2">
+<glyph name="alefwasla-ar.allah" format="2">
   <advance width="287"/>
-  <anchor x="16" y="1659" name="diaA"/>
+  <anchor x="16" y="2018" name="diaA"/>
   <anchor x="91" y="-261" name="diaB"/>
   <outline>
+    <component base="_wasla" xOffset="124" yOffset="1691"/>
     <component base="alef-ar" xOffset="-133"/>
   </outline>
 </glyph>
