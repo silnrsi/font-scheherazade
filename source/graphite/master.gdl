@@ -232,15 +232,6 @@ pass(4)	// Contextual forms, lam-alef ligature, subtending marks
 
 endpass; // 4
 
-table(glyph)
-
-cLam1NoAllah = (g_lam_ar_init  g_lam_ar_medi);
-cLam1Allah = (g_lam_ar_init_allah1  g_lam_ar_medi_allah1);
-
-cHehNoAllah = (g_heh_ar_fina g_hehgoal_ar_fina);
-cHehAllah = (g_heh_ar_fina_allah g_hehgoal_ar_fina_allah);
-
-endtable;
 
 pass(5)	// Features, special behaviors
 
@@ -249,12 +240,12 @@ pass(5)	// Features, special behaviors
 	// Allah ligatures:
 	// Also see pass 6 below.
 
-	// Rule 3: isolate alef present
+	// Rule 3: isolate alef present, no shadda
 	
 	// alefIso-lam-lam-heh
-	g_alef_ar  g_lam_ar_init  g_lam_ar_medi  _  _  cHehNoAllah 
-		> g_alef_ar_allah  g_lam_ar_init_allah1  g_lam_ar_medi_allah2=L  g_shadda_ar:L  g_alefabove_ar:L  cHehAllah 
-		/ _ MARKS _ g_kasra_ar? _ _ _ _;
+	cAlefNoAllahIsol  g_lam_ar_init  g_lam_ar_medi  _  _  cHehNoAllah 
+		>  cAlefAllahIsol  g_lam_ar_init_allah1  g_lam_ar_medi_allah2=L  g_shadda_ar:L  g_alefabove_ar:L  cHehAllah 
+		/  _ MARKS _ g_kasra_ar? _ _ _ _;
 
 	// Rule 2:
 
@@ -272,7 +263,8 @@ pass(5)	// Features, special behaviors
 	cLam1NoAllah  g_lam_ar_medi  _ cHehNoAllah
 		>  cLam1Allah  g_lam_ar_medi_allah2  g_alefabove_ar:S  cHehAllah
 		/  _ g_kasra_ar?  _ g_shadda_ar=S _=DA _;
-	
+
+
 	// Features
 
 	if (dalAlt == senegal)
@@ -375,13 +367,12 @@ pass(5)	// Features, special behaviors
 	
 	g_kashida_ar  >  g_kashida_ar_wide  /  _  cAnyMarks;
 	
-endpass; // 5
+endpass; // 
 
 
 pass(6)
 	// Allah clean-up: use appropriate form of alef.
-	(g_alef_ar  g_alef_ar_fina)                >  (g_alef_ar_allah g_alef_ar_fina_allah)          /  _  MARKS  g_lam_ar_init_allah1;
-	(g_alef_wasla_ar g_alef_wasla_ar_fina)  _  >  (g_alef_ar_allah g_alef_ar_fina_allah):1  g__wasla:1 /  _  _ MARKS  g_lam_ar_init_allah1;
+	cAlefNoAllah  >  cAlefAllah  /  _  MARKS  g_lam_ar_init_allah1;
 
 	// Use appropriate form of shadda-dagger-alef.
 	g_shadda_ar  g_alefabove_ar  >  g_shadda_alef_ar:(2 3)  _ /  g_lam_ar_medi_allah2  _  _;

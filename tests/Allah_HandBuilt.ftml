@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>400</fontscale>
+    <!-- <fontsrc>url(../references/Scheherazade-Regular.ttf)</fontsrc> -->
+    <fontsrc>url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <!-- <fontsrc>url(../results/ScheherazadeNew-Bold.ttf)</fontsrc> -->
+    <!-- <fontsrc>url(../results/tests/ftml/fonts/ScheherazadeNew-Bold_ot_arab.ttf)</fontsrc> -->
+    <styles>
+      <style lang="ku" name="ku"/>
+      <style lang="rhg" name="rhg"/>
+      <style lang="sd" name="sd"/>
+      <style lang="ur" name="ur"/>
+      <style lang="wo" name="wo"/>
+    </styles>
+    <title>Allah</title>
+  </head>
+  <testgroup label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Allah ligatures">
+    <test background="#dddddd" label="RULE 1">
+      <string />
+    </test>
+    <test label="FDF2" rtl="True">
+      <string>ﷲ</string>
+    </test>
+    <test background="#dddddd" label="RULE 2">
+      <string />
+    </test>
+    <test label="l-l-s-hf" rtl="True">
+      <string>للّه</string>
+    </test>
+    <test label="init-l-l-s-hgf" rtl="True">
+      <string>فللّہ</string>
+    </test>
+    <test label="medi-l-l-s-hf" rtl="True">
+      <string>فسللّه</string>
+    </test>
+    <test class="fset1410" label="isol-l-l-s-hgf" rtl="True">
+      <string>رللّہ</string>
+    </test>
+    <test label="l-mark-a-l-l-s-da-hgf-mark" rtl="True">
+      <string>لْاللّٰہْ</string>
+    </test>
+    <test class="fset1410" label="la.fina-mark-l-l-s-f-hg" rtl="True">
+      <string>فلاْللَّہ</string>
+    </test>
+    <test background="#dddddd" label="RULE 2a">
+      <string />
+    </test>
+    <test label="a-mark-l-l-s-da-hf" rtl="True">
+      <comment>alef with shadda</comment>
+      <string>اَللّٰه</string>
+    </test>
+    <test background="#dddddd" label="RULE 2b">
+      <string />
+    </test>
+    <test label="a-l-k-l-s-hf" rtl="True">
+      <string>الِلّه</string>
+    </test>
+    <test label="l-k-l-s-da-hf" rtl="True">
+      <string>لِلّٰه</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 2c" rtl="True">
+      <string />
+    </test>
+    <test label="a-l-l-s-hf" rtl="True">
+      <string>اللّه</string>
+    </test>
+    <test background="#dddddd" label="RULE 2d">
+      <string />
+    </test>
+    <test class="fset1410" label="l-l-s-hf" rtl="True">
+      <string>للّه</string>
+    </test>
+    <test label="l-l-s-da-hf" rtl="True">
+      <string>للّٰه</string>
+    </test>
+    <test label="l-l-s-f-hf" rtl="True">
+      <string>للَّه</string>
+    </test>
+    <test label="l-l-f-s-hf" rtl="True">
+      <string>للَّه</string>
+    </test>
+    <test label="l-l-da-s-hf" rtl="True">
+      <string>للّٰه</string>
+    </test>
+    <test background="#dddddd" label="RULE 2e">
+      <string />
+    </test>
+    <test class="fset1410" label="l-l-s-hgf" rtl="True">
+      <string>للّہ</string>
+    </test>
+    <test label="l-l-s-da-hgf" rtl="True">
+      <string>للّٰہ</string>
+    </test>
+    <test label="l-l-s-f-hgf" rtl="True">
+      <string>للَّہ</string>
+    </test>
+    <test label="l-l-f-s-hgf" rtl="True">
+      <string>للَّہ</string>
+    </test>
+    <test label="l-l-da-s-hgf" rtl="True">
+      <string>للّٰہ</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 3" rtl="True">
+      <string />
+    </test>
+    <test label="a-mark-l-l-hgf" rtl="True">
+      <string>اۜللہ</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 3a" rtl="True">
+      <string />
+    </test>
+    <test label="a-mark-l-l-hf" rtl="True">
+      <string>اٰلله</string>
+    </test>
+    <test background="#dddddd" label="RULE 3a, 3b">
+      <string />
+    </test>
+    <test label="a-mark-l-k-l-hf" rtl="True">
+      <string>اۜلِله</string>
+    </test>
+    <test background="#dddddd" label="RULE 3a, 3d">
+      <string />
+    </test>
+    <test class="fset1410" label="a-mark-l-l-hgf" rtl="True">
+      <string>واّللہ</string>
+    </test>
+    <test background="#dddddd" label="RULE 3c">
+      <string />
+    </test>
+    <test label="a-l-l-hf" rtl="True">
+      <string>الله</string>
+    </test>
+    <test background="#dddddd" label="RULE 3d">
+      <string />
+    </test>
+    <test label="a-l-l-s-da-hgf" rtl="True">
+      <string>اللّٰہ</string>
+    </test>
+    <test label="a-mark-l-l-s-f-hgf" rtl="True">
+      <string>اٰللَّہ</string>
+    </test>
+    <test label="a-l-l-f-da-hgf" rtl="True">
+      <string>اللَّہ</string>
+    </test>
+    <test label="a-mark-l-l-da-s-hgf" rtl="True">
+      <string>اَللّٰہ</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 6 - alef variations, NFC" rtl="True">
+      <string />
+    </test>
+    <test class="fset1410" label="a-hamza-l-l-hg" rtl="True">
+      <string>أللہ</string>
+    </test>
+    <test class="fset1410" label="a-hamza-l-k-l-s-h" rtl="True">
+      <string>ألِلّه</string>
+    </test>
+    <test class="fset1410" label="a.fina-hamza-l-l-s-da-h" rtl="True">
+      <string>بألِلّه</string>
+    </test>
+    <test class="fset1410" label="a-madda-l-l-h" rtl="True">
+      <string>آلله</string>
+    </test>
+    <test class="fset1410" label="a-madda-l-k-l-hg" rtl="True">
+      <string>آلِلہ</string>
+    </test>
+    <test class="fset1410" label="a.fina-madda-l-l-f-s-hg" rtl="True">
+      <string>قآللَّہ</string>
+    </test>
+    <test class="fset1410" label="a-hamzabelow-l-l-h" rtl="True">
+      <string>إلله</string>
+    </test>
+    <test class="fset1410" label="a-hamzabelow-mark-l-l-s-da-h" rtl="True">
+      <string>إْللّٰه</string>
+    </test>
+    <test class="fset1410" label="a.fina-hamzabelow-mark-l-l-s-h" rtl="True">
+      <string>مإُللّه</string>
+    </test>
+    <test class="fset1410" label="a-wasla-l-l-hg" rtl="True">
+      <string>ٱللہ</string>
+    </test>
+    <test class="fset1410" label="a-wasla-l-l-s-h" rtl="True">
+      <string>ٱللّه</string>
+    </test>
+    <test class="fset1410" label="a.fina-wasla-l-k-l-da-s-h" rtl="True">
+      <string>سٱلِلّٰه</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 6 - alef variations, NFD" rtl="True">
+      <string />
+    </test>
+    <test class="fset1410" label="a-hamza-l-l-hg" rtl="True">
+      <string>أللہ</string>
+    </test>
+    <test class="fset1410" label="a-hamza-l-k-l-s-h" rtl="True">
+      <string>ألِلّه</string>
+    </test>
+    <test class="fset1410" label="a.fina-hamza-l-l-s-da-h" rtl="True">
+      <string>بألِلّه</string>
+    </test>
+    <test class="fset1410" label="a-madda-l-l-h" rtl="True">
+      <string>آلله</string>
+    </test>
+    <test class="fset1410" label="a-madda-l-k-l-hg" rtl="True">
+      <string>آلِلہ</string>
+    </test>
+    <test class="fset1410" label="a.fina-madda-l-l-f-s-hg" rtl="True">
+      <string>قآللَّہ</string>
+    </test>
+    <test class="fset1410" label="a-hamzabelow-l-l-h" rtl="True">
+      <string>إلله</string>
+    </test>
+    <test class="fset1410" label="a-hamzabelow-mark-l-l-s-da-h" rtl="True">
+      <string>إْللّٰه</string>
+    </test>
+    <test class="fset1410" label="a.fina-hamzabelow-mark-l-l-s-h" rtl="True">
+      <string>مإُللّه</string>
+    </test>
+
+  </testgroup>
+  
+  <testgroup label="NO ligature">
+    <test background="#dddddd" label="RULE 2">
+      <string />
+    </test>
+    <test label="l-l-s-hg.MEDI-etc" rtl="True">
+      <comment>heh not final</comment>
+      <string>للّها</string>
+    </test>
+    <test label="l-k-l-s-hg.MEDI-etc" rtl="True">
+      <comment>hehgoal not final</comment>
+      <string>لَلّہج</string>
+    </test>
+    <test class="fset1410" label="lamtah-l-h" rtl="True">
+      <comment>lamtah is not a lam</comment>
+      <string>ࣇله</string>
+    </test>
+    <test background="#dddddd" label="RULE 2c">
+      <string />
+    </test>
+    <test class="fset1410" label="l-l-hgf" rtl="True">
+      <comment>no shadda or alef</comment>
+      <string>للہ</string>
+    </test>
+    <test label="l-l-da-hf" rtl="True">
+      <comment>no shadda or alef</comment>
+      <string>للٰه</string>
+    </test>
+    <test background="#dddddd" label="RULE 3a/3c">
+      <string />
+    </test>
+    <test label="a.FINA-l-l-hf" rtl="True">
+      <comment>alef is not isolate, and no shadda</comment>
+      <string>مالله</string>
+    </test>
+    <test class="fset1410" label="a.FINA-wasla-l-k-l-h" rtl="True">
+      <comment>alef not isolate, and no shadda</comment>
+      <string>سٱلِله</string>
+    </test>
+    <test background="#dddddd" label="RULE 2b">
+      <string />
+    </test>
+    <test label="l-MARK-l-f-da-hf" rtl="True">
+      <comment>first lam has fatha, not kasra</comment>
+      <string>لَلَٰه</string>
+    </test>
+    <test label="a-l-MARK-l-s-da-hf" rtl="True">
+      <comment>first lam has damma, not kasra</comment>
+      <string>الُلّٰه</string>
+    </test>
+    <test background="#dddddd" label="RULE 3b">
+      <string />
+    </test>
+    <test label="a-l-MARK-l-hf" rtl="True">
+      <comment>first lam has fatha, not kasra</comment>
+      <string>الَله</string>
+    </test>
+    <test background="#dddddd" class="fset1410" label="RULE 3c" rtl="True">
+      <string />
+    </test>
+    <test class="fset1410" label="a-l-l-da-hg" rtl="True">
+      <comment>no shadda</comment>
+      <string>اللٰه</string>
+    </test>
+    <test background="#dddddd" label="RULE 4">
+      <string />
+    </test>
+    <test label="l-ZWJ-l-s-hf" rtl="True">
+      <comment>ZWJ</comment>
+      <string>ل‍لّه</string>
+    </test>
+    <test label="a-l-ZWJ-l-s-f-hgf" rtl="True">
+      <comment>ZWJ</comment>
+      <string>ال‍لَّہ</string>
+    </test>
+    <test label="a-l-l-ZWJ-hf" rtl="True">
+      <comment>ZWJ</comment>
+      <string>الل‍ه</string>
+    </test>
+	</testgroup>
+</ftml>

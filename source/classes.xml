@@ -791,6 +791,29 @@
     </class>
 -->
 
+
+    <!--
+    ===========================
+          Allah Ligatures
+    ===========================
+    -->
+    
+    <!-- These pairs of classes must match.  -->
+    
+    <class name="Lam1NoAllah" fixed="0">lam-ar.init        lam-ar.medi</class>
+    <class name="Lam1Allah"   fixed="0">lam-ar.init.allah1 lam-ar.medi.allah1</class>
+
+    <class name="HehNoAllah" fixed="0">heh-ar.fina       hehgoal-ar.fina</class>
+    <class name="HehAllah"   fixed="0">heh-ar.fina.allah hehgoal-ar.fina.allah</class>
+
+    <class name="AlefNoAllah" fixed="0">alef-ar       alef-ar.fina       alefWasla-ar       alefWasla-ar.fina</class>
+    <class name="AlefAllah"   fixed="0">alef-ar.allah alef-ar.fina.allah alefWasla-ar.allah alefWasla-ar.fina.allah</class>
+
+    <!-- Note that we don't need to include alef-hamza or alef-madda because they are decomposed. -->
+    <class name="AlefNoAllahIsol" fixed="0">alef-ar       alefWasla-ar</class>
+    <class name="AlefAllahIsol"   fixed="0">alef-ar.allah alefWasla-ar.allah</class>
+
+
     <!-- 
     ============================
     Kerning and collision fixing
