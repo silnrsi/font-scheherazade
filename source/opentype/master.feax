@@ -79,22 +79,22 @@ lookup FontCheck2 {
 
 lookup ltrFina {
   lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkFina ;
-    sub @RightLinkIsol by @RightLinkFina ;
+    sub @DualLinkIsol  by  @DualLinkFina ;
+    sub @RightLinkIsol by  @RightLinkFina ;
 } ltrFina;
 
 #---  medi feature  ---
 
 lookup ltrMedi {
   lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkMedi ;
+    sub @DualLinkIsol  by  @DualLinkMedi ;
 } ltrMedi;
 
 #---  init  feature  ---
 
 lookup ltrInit {
   lookupflag IgnoreMarks ;
-    sub @DualLinkIsol by @DualLinkInit ;
+    sub @DualLinkIsol  by  @DualLinkInit ;
 } ltrInit;
 
 
@@ -691,12 +691,15 @@ lookup LamAlefLigatures_OLD {
 
 lookup LamAlefLigatures {
 	lookupflag IgnoreMarks ;
-		sub @LamNoLig  alef-ar.fina                by  @LamAlefLig ;
-		sub @LamNoLig  alefWasla-ar.fina           by  @LamAlefWaslaLig ;
-		sub @LamNoLig  alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
-		sub @LamNoLig  alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
-		sub @LamNoLig  alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
-		sub @LamNoLig  alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
+		sub @LamNoLig   alef-ar.fina                by  @LamAlefLig ;
+		sub @LamNoLig   alefWasla-ar.fina           by  @LamAlefWaslaLig ;
+		sub @LamNoLig   alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
+		sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
+		sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
+		sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
+		
+		sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
+		sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
 } LamAlefLigatures;
 
 

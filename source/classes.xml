@@ -208,7 +208,7 @@
         hehVinvertedabove-ar heh-ar hehgoal-ar hehgoalHamzaabove-ar
         tehTehabove-ar pehVabove-ar tehVabove-ar ttehVabove-ar tchehVabove-ar jeemThreedotsabove-ar 
         jeemThreedotsbelow-ar ghainThreedotsabove-ar qafThreedotsaboveAfrican-ar kehehVabove-ar lamTahabove-ar
-        noonVinvertedabove-ar hahVinvertedabove-ar tahDotbelow-ar qafDotbelowNodotsabove-ar 
+        noonVinvertedabove-ar hahVinvertedbelow-ar tahDotbelow-ar tahThreedotsbelow-ar qafDotbelowNodotsabove-ar 
         kehehTwodotsverticalbelow-ar kehehElongatedhamzaabove-ar
     </class>
     
@@ -240,7 +240,7 @@
         hehVinvertedabove-ar.fina heh-ar.fina hehgoal-ar.fina hehgoalHamzaabove-ar.fina
         tehTehabove-ar.fina pehVabove-ar.fina tehVabove-ar.fina ttehVabove-ar.fina tchehVabove-ar.fina jeemThreedotsabove-ar.fina
         jeemThreedotsbelow-ar.fina ghainThreedotsabove-ar.fina qafThreedotsaboveAfrican-ar.fina kehehVabove-ar.fina lamTahabove-ar.fina
-        noonVinvertedabove-ar.fina hahVinvertedabove-ar.fina tahDotbelow-ar.fina qafDotbelowNodotsabove-ar.fina 
+        noonVinvertedabove-ar.fina hahVinvertedbelow-ar.fina tahDotbelow-ar.fina tahThreedotsbelow-ar.fina qafDotbelowNodotsabove-ar.fina 
         kehehTwodotsverticalbelow-ar.fina kehehElongatedhamzaabove-ar.fina
     </class>
 
@@ -275,7 +275,7 @@
         hehVinvertedabove-ar.medi heh-ar.medi hehgoal-ar.medi hehgoalHamzaabove-ar.medi
         tehTehabove-ar.medi pehVabove-ar.medi tehVabove-ar.medi ttehVabove-ar.medi tchehVabove-ar.medi jeemThreedotsabove-ar.medi
         jeemThreedotsbelow-ar.medi ghainThreedotsabove-ar.medi qafThreedotsaboveAfrican-ar.medi kehehVabove-ar.medi lamTahabove-ar.medi
-        noonVinvertedabove-ar.medi hahVinvertedabove-ar.medi tahDotbelow-ar.medi qafDotbelowNodotsabove-ar.medi
+        noonVinvertedabove-ar.medi hahVinvertedbelow-ar.medi tahDotbelow-ar.medi tahThreedotsbelow-ar.medi qafDotbelowNodotsabove-ar.medi
         kehehTwodotsverticalbelow-ar.medi kehehElongatedhamzaabove-ar.medi
     </class>
 
@@ -310,13 +310,13 @@
         hehVinvertedabove-ar.init heh-ar.init hehgoal-ar.init hehgoalHamzaabove-ar.init
         tehTehabove-ar.init pehVabove-ar.init tehVabove-ar.init ttehVabove-ar.init tchehVabove-ar.init jeemThreedotsabove-ar.init 
         jeemThreedotsbelow-ar.init ghainThreedotsabove-ar.init qafThreedotsaboveAfrican-ar.init kehehVabove-ar.init lamTahabove-ar.init
-        noonVinvertedabove-ar.init hahVinvertedabove-ar.init tahDotbelow-ar.init qafDotbelowNodotsabove-ar.init 
+        noonVinvertedabove-ar.init hahVinvertedbelow-ar.init tahDotbelow-ar.init tahThreedotsbelow-ar.init qafDotbelowNodotsabove-ar.init 
         kehehTwodotsverticalbelow-ar.init kehehElongatedhamzaabove-ar.init
     </class>
 
     <!-- OBSOLETE
     <class name="FinalTailUnder">
-        yehbarree-ar.fina yehbarreeHamzaabove-ar.fina yehbarreeTwoabove-ar.fina yehbarreeThreeabove-ar.fina ain-ar.fina ghain-ar.fina		
+        yehbarree-ar.fina yehbarreeHamzaaboveha-ar.fina yehbarreeTwoabove-ar.fina yehbarreeThreeabove-ar.fina ain-ar.fina ghain-ar.fina		
         ainThreedots-ar.fina ghainDotbelow-ar.fina ainTwodotshorizontalabove-ar.fina ainThreedotsdownabove-ar.fina ainTwodotsverticalabove-ar.fina 	
     </class>
 		-->
@@ -515,6 +515,36 @@
     	@LamAlefLig  @LamAlefWaslaLig  @LamAlefWavyHAboveLig  @LamAlefWavyHBelowLig  @LamAlefTwoAboveLig  @LamAlefThreeAboveLig
     </class>
     
+    <!-- *NEXT 3 CLASSES MUST MATCH* -->
+    
+    <!-- These  alefs ONLY form ligatures with the plain lam. They are rare characters. -->
+    <class name="AlefRareNoLig">
+    	alefFathaattached-ar  alefToprightfathaattached-ar  alefRightmiddlestroke-ar  alefLeftmiddlestroke-ar
+      alefKasraattached-ar  alefBottomrightkasraattached-ar  alefRounddotaboveattached-ar  alefRightrounddotattached-ar
+      alefLeftrounddotattached-ar  alefRounddotbelowattached-ar  alefDotabove-ar  alefToprightfathaattachedDotabove-ar
+      alefRightmiddlestrokeDotabove-ar  alefBottomrightkasraattachedDotabove-ar  alefToprightfathaattachedLeftring-ar
+      alefRightmiddlestrokeLeftring-ar  alefBottomrightkasraattachedLeftring-ar  alefRighthamzaattached-ar
+      alefLefthamzaattached-ar
+    </class>
+    
+    <class name="LamAlefRareLig">
+    	lam_alefFathaattached-ar  lam_alefToprightfathaattached-ar  lam_alefRightmiddlestroke-ar  lam_alefLeftmiddlestroke-ar
+      lam_alefKasraattached-ar  lam_alefBottomrightkasraattached-ar  lam_alefRounddotaboveattached-ar  lam_alefRightrounddotattached-ar
+      lam_alefLeftrounddotattached-ar  lam_alefRounddotbelowattached-ar  lam_alefDotabove-ar  lam_alefToprightfathaattachedDotabove-ar
+      lam_alefRightmiddlestrokeDotabove-ar  lam_alefBottomrightkasraattachedDotabove-ar  lam_alefToprightfathaattachedLeftring-ar
+      lam_alefRightmiddlestrokeLeftring-ar  lam_alefBottomrightkasraattachedLeftring-ar  lam_alefRighthamzaattached-ar
+      lam_alefLefthamzaattached-ar
+    </class>
+    
+    <class name="LamAlefRareLigFina">
+    	lam_alefFathaattached-ar.fina  lam_alefToprightfathaattached-ar.fina  lam_alefRightmiddlestroke-ar.fina  lam_alefLeftmiddlestroke-ar.fina
+      lam_alefKasraattached-ar.fina  lam_alefBottomrightkasraattached-ar.fina  lam_alefRounddotaboveattached-ar.fina  lam_alefRightrounddotattached-ar.fina
+      lam_alefLeftrounddotattached-ar.fina  lam_alefRounddotbelowattached-ar.fina  lam_alefDotabove-ar.fina  lam_alefToprightfathaattachedDotabove-ar.fina
+      lam_alefRightmiddlestrokeDotabove-ar.fina  lam_alefBottomrightkasraattachedDotabove-ar.fina  lam_alefToprightfathaattachedLeftring-ar.fina
+      lam_alefRightmiddlestrokeLeftring-ar.fina  lam_alefBottomrightkasraattachedLeftring-ar.fina  lam_alefRighthamzaattached-ar.fina
+      lam_alefLefthamzaattached-ar.fina
+    </class>
+    
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="LowHamzaBase" fixed="0">
         waw-ar yeh-ar ae-ar hehgoal-ar
@@ -562,7 +592,13 @@
         rreh-ar.fina	rehNoonabove-ar.fina  rehv-ar.fina  rehRing-ar.fina  rehDotbelow-ar.fina  rehVbelow-ar.fina  rehDotbelowdotabove-ar.fina		
         rehTwodots-ar.fina  jeh-ar.fina  rehFourdots-ar.fina  rehTwodotsverticalabove-ar.fina  rehHamzaabove-ar.fina  rehTwodotshorizontalaboveTahabove-ar.fina		
         zainVinvertedabove-ar.fina  rehVinvertedabove-ar.fina  rehStroke-ar.fina  rehLoop-ar.fina  yehTail-ar.fina  wawStraight-ar.fina  yehbarree-ar.fina		
-        yehbarreeHamzaabove-ar.fina  yehRohingya-ar.fina  ae-ar.fina  tehMarbuta-ar.fina  hehHamzaabove-ar.fina  tehMarbutagoal-ar.fina 	
+        yehbarreeHamzaabove-ar.fina  yehRohingya-ar.fina  ae-ar.fina  tehMarbuta-ar.fina  hehHamzaabove-ar.fina  tehMarbutagoal-ar.fina
+        alefFathaattached-ar.fina  alefToprightfathaattached-ar.fina  alefRightmiddlestroke-ar.fina  alefLeftmiddlestroke-ar.fina
+        alefKasraattached-ar.fina  alefBottomrightkasraattached-ar.fina  alefRounddotaboveattached-ar.fina  alefRightrounddotattached-ar.fina
+        alefLeftrounddotattached-ar.fina  alefRounddotbelowattached-ar.fina  alefDotabove-ar.fina  alefToprightfathaattachedDotabove-ar.fina
+        alefRightmiddlestrokeDotabove-ar.fina  alefBottomrightkasraattachedDotabove-ar.fina  alefToprightfathaattachedLeftring-ar.fina
+        alefRightmiddlestrokeLeftring-ar.fina  alefBottomrightkasraattachedLeftring-ar.fina  alefRighthamzaattached-ar.fina
+        alefLefthamzaattached-ar.fina
     </class>
 
     <class name="RightLinkIsol" fixed="0">
@@ -576,7 +612,13 @@
         rreh-ar  rehNoonabove-ar  rehv-ar  rehRing-ar  rehDotbelow-ar  rehVbelow-ar  rehDotbelowdotabove-ar
         rehTwodots-ar  jeh-ar	 rehFourdots-ar  rehTwodotsverticalabove-ar  rehHamzaabove-ar  rehTwodotshorizontalaboveTahabove-ar
         zainVinvertedabove-ar  rehVinvertedabove-ar  rehStroke-ar  rehLoop-ar  yehTail-ar  wawStraight-ar  yehbarree-ar
-        yehbarreeHamzaabove-ar  yehRohingya-ar  ae-ar  tehMarbuta-ar  hehHamzaabove-ar  tehMarbutagoal-ar 	
+        yehbarreeHamzaabove-ar  yehRohingya-ar  ae-ar  tehMarbuta-ar  hehHamzaabove-ar  tehMarbutagoal-ar
+        alefFathaattached-ar  alefToprightfathaattached-ar  alefRightmiddlestroke-ar  alefLeftmiddlestroke-ar
+        alefKasraattached-ar  alefBottomrightkasraattached-ar  alefRounddotaboveattached-ar  alefRightrounddotattached-ar
+        alefLeftrounddotattached-ar  alefRounddotbelowattached-ar  alefDotabove-ar  alefToprightfathaattachedDotabove-ar
+        alefRightmiddlestrokeDotabove-ar  alefBottomrightkasraattachedDotabove-ar  alefToprightfathaattachedLeftring-ar
+        alefRightmiddlestrokeLeftring-ar  alefBottomrightkasraattachedLeftring-ar  alefRighthamzaattached-ar
+        alefLefthamzaattached-ar
     </class>
 
 		<!-- *NEXT 2 CLASSES MUST MATCH* -->
