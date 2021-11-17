@@ -517,7 +517,7 @@
     
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
     
-    <!-- These  alefs ONLY form ligatures with the plain lam. They are rare characters. -->
+    <!-- These alefs form ligatures ONLY with the plain lam. They are rare characters. -->
     <class name="AlefRareNoLig">
     	alefFathaattached-ar  alefToprightfathaattached-ar  alefRightmiddlestroke-ar  alefLeftmiddlestroke-ar
       alefKasraattached-ar  alefBottomrightkasraattached-ar  alefRounddotaboveattached-ar  alefRightrounddotattached-ar
@@ -727,6 +727,8 @@
     <class name='UTR53_220other'>
         alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar
         meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar
+        largerounddotbelow-ar sukunbelow-ar largecirclebelow-ar largerounddotbelow-ar largerounddotinsidecirclebelow-ar yehbarreeTwobelowabove-ar 
+        ishmaambelow-ar imaalabelow-ar tasheel-ar
     </class>
 
     <class name='UTR53_230other'>
@@ -736,7 +738,8 @@
         maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar rehDadabove-ar rehHahabove-ar
         rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar sukunoval-ar
         sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar
-        vinvertedabove-ar zainabove-ar
+        vinvertedabove-ar zainabove-ar yehabove-farsi sahabove-ar zahabove-ar largerounddotabove-ar aljuzabove-ar
+				maddawaajib-ar alefmokhassasabove-ar maddadoubled-ar halfmaddaovermadda-ar
     </class>
 
     <!-- For OpenType sorting -->
@@ -842,18 +845,18 @@
     
     <!-- These pairs of classes must match.  -->
     
-    <class name="Lam1NoAllah" fixed="0">lam-ar.init        lam-ar.medi</class>
-    <class name="Lam1Allah"   fixed="0">lam-ar.init.allah1 lam-ar.medi.allah1</class>
+    <class name="Lam1NoAllah" fixed="0">lam-ar.init         lam-ar.medi</class>
+    <class name="Lam1Allah"   fixed="0">lam-ar.init.allah1  lam-ar.medi.allah1</class>
 
-    <class name="HehNoAllah" fixed="0">heh-ar.fina       hehgoal-ar.fina</class>
-    <class name="HehAllah"   fixed="0">heh-ar.fina.allah hehgoal-ar.fina.allah</class>
+    <class name="HehNoAllah" fixed="0">heh-ar.fina        hehgoal-ar.fina</class>
+    <class name="HehAllah"   fixed="0">heh-ar.fina.allah  hehgoal-ar.fina.allah</class>
 
-    <class name="AlefNoAllah" fixed="0">alef-ar       alef-ar.fina       alefWasla-ar       alefWasla-ar.fina</class>
-    <class name="AlefAllah"   fixed="0">alef-ar.allah alef-ar.fina.allah alefWasla-ar.allah alefWasla-ar.fina.allah</class>
+    <class name="AlefNoAllah" fixed="0">alef-ar        alef-ar.fina        alefWasla-ar        alefWasla-ar.fina</class>
+    <class name="AlefAllah"   fixed="0">alef-ar.allah  alef-ar.fina.allah  alefWasla-ar.allah  alefWasla-ar.fina.allah</class>
 
     <!-- Note that we don't need to include alef-hamza or alef-madda because they are decomposed. -->
-    <class name="AlefNoAllahIsol" fixed="0">alef-ar       alefWasla-ar</class>
-    <class name="AlefAllahIsol"   fixed="0">alef-ar.allah alefWasla-ar.allah</class>
+    <class name="AlefNoAllahIsol" fixed="0">alef-ar        alefWasla-ar</class>
+    <class name="AlefAllahIsol"   fixed="0">alef-ar.allah  alefWasla-ar.allah</class>
 
 
     <!-- 
