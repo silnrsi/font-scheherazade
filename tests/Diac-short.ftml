@@ -6357,25 +6357,15 @@ U+0670" stylename="cv76_2_cv81_1">
     </test>
   </testgroup>
   <testgroup label="All Arabic diacritics on representative bases">
-    <test background="#ffe0e0" label="U+0627
+    <test label="U+0627
 U+0610">
       <comment>alef-ar sallallahouAlayheWassallamcomb-ar</comment>
-      <string>\u000627\u000610 \u00200D\u000627\u000610 </string>
+      <string>\u000627\u000610 \u00200D\u000627\u000610  \u000628\u000610 \u000628\u000610\u000628\u000610\u000628\u000610 </string>
     </test>
-    <test background="#ffe0e0" label="U+0628
-U+0610">
-      <comment>beh-ar sallallahouAlayheWassallamcomb-ar</comment>
-      <string>\u000628\u000610 \u000628\u000610\u000628\u000610\u000628\u000610 </string>
-    </test>
-    <test background="#ffe0e0" label="U+0627
+    <test label="U+0627
 U+0611">
       <comment>alef-ar alayheAssallamcomb-ar</comment>
-      <string>\u000627\u000611 \u00200D\u000627\u000611 </string>
-    </test>
-    <test background="#ffe0e0" label="U+0628
-U+0611">
-      <comment>beh-ar alayheAssallamcomb-ar</comment>
-      <string>\u000628\u000611 \u000628\u000611\u000628\u000611\u000628\u000611 </string>
+      <string>\u000627\u000611 \u00200D\u000627\u000611  \u000628\u000611 \u000628\u000611\u000628\u000611\u000628\u000611 </string>
     </test>
     <test label="U+0627
 U+0612">
@@ -6937,15 +6927,25 @@ U+08D4">
       <comment>alef-ar arrubabove-ar</comment>
       <string>\u000627\u0008D4 \u00200D\u000627\u0008D4  \u000628\u0008D4 \u000628\u0008D4\u000628\u0008D4\u000628\u0008D4 </string>
     </test>
-    <test label="U+0627
+    <test background="#ffe0e0" label="U+0627
 U+08D5">
       <comment>alef-ar sadaboveStandard-ar</comment>
-      <string>\u000627\u0008D5 \u00200D\u000627\u0008D5  \u000628\u0008D5 \u000628\u0008D5\u000628\u0008D5\u000628\u0008D5 </string>
+      <string>\u000627\u0008D5 \u00200D\u000627\u0008D5 </string>
     </test>
-    <test label="U+0627
+    <test background="#ffe0e0" label="U+0628
+U+08D5">
+      <comment>beh-ar sadaboveStandard-ar</comment>
+      <string>\u000628\u0008D5 \u000628\u0008D5\u000628\u0008D5\u000628\u0008D5 </string>
+    </test>
+    <test background="#ffe0e0" label="U+0627
 U+08D6">
       <comment>alef-ar ainaboveStandard-ar</comment>
-      <string>\u000627\u0008D6 \u00200D\u000627\u0008D6  \u000628\u0008D6 \u000628\u0008D6\u000628\u0008D6\u000628\u0008D6 </string>
+      <string>\u000627\u0008D6 \u00200D\u000627\u0008D6 </string>
+    </test>
+    <test background="#ffe0e0" label="U+0628
+U+08D6">
+      <comment>beh-ar ainaboveStandard-ar</comment>
+      <string>\u000628\u0008D6 \u000628\u0008D6\u000628\u0008D6\u000628\u0008D6 </string>
     </test>
     <test label="U+0627
 U+08D7">
