@@ -703,11 +703,12 @@
     <!-- NB: The following 7 classes were generated algorithmically based on Unicode properties (see tools/absgenclasses.py) -->
 
     <class name='UTR53_220MCM'>
-        hamzabelow-ar seenbelow-ar wawbelow-ar
+        hamzabelow-ar seenbelow-ar wawbelow-ar largerounddotbelow-ar 
     </class>
 
     <class name='UTR53_230MCM'>
-        hamzaabove-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar
+        hamzaabove-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar yehabove-farsi zahabove-ar 
+        yehbarreeTwobelowabove-ar largerounddotabove-ar 
     </class>
 
     <class name='UTR53_shadda'>
@@ -727,18 +728,19 @@
     <class name='UTR53_220other'>
         alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar
         meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar
-        largerounddotbelow-ar sukunbelow-ar largecirclebelow-ar largerounddotbelow-ar largerounddotinsidecirclebelow-ar yehbarreeTwobelowabove-ar 
+        largerounddotbelow-ar sukunbelow-ar largecirclebelow-ar largerounddotinsidecirclebelow-ar 
         ishmaambelow-ar imaalabelow-ar tasheel-ar
     </class>
 
     <class name='UTR53_230other'>
-        ainabove-ar alefLamYehabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammareversed-ar dammatanCurly-ar
+        ainabove-ar alayheAssallamcomb-ar alefLamYehabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammareversed-ar dammatanCurly-ar
         dotStopabove-ar doublerightarrowheadDotabove-ar doublerightarrowheadabove-ar fathaCurly-ar fathaDotabove-ar fathaHorizont-ar
-        fathaRing-ar fathatanCurly-ar fathatwodots-ar hahabove-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar madda-ar madda-ar.small
-        maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar rehDadabove-ar rehHahabove-ar
-        rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar sukunoval-ar
-        sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar
-        vinvertedabove-ar zainabove-ar yehabove-farsi sahabove-ar zahabove-ar largerounddotabove-ar aljuzabove-ar
+        fathaRing-ar fathatanCurly-ar fathatwodots-ar hahabove-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar 
+        madda-ar madda-ar.small maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar 
+        rehDadabove-ar rehHahabove-ar rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar 
+        sadLamAlefMaksuraabove-ar sadabove-ar sallallahouAlayheWassallamcomb-ar sukunoval-ar sukunround-ar tahabove-ar 
+        takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar
+        vinvertedabove-ar zainabove-ar sahabove-ar aljuzabove-ar
 				maddawaajib-ar alefmokhassasabove-ar maddadoubled-ar halfmaddaovermadda-ar
     </class>
 
@@ -802,12 +804,12 @@
 
     <!-- GRAPHITE -->
     <class name="MarkGroup5A">
-        toneonedotabove-ar tonetwodotsabove-ar toneloopabove-ar sadLamAlefMaksuraabove-ar qafLamAlefMaksuraabove-ar		
+        ainabove-ar toneonedotabove-ar tonetwodotsabove-ar toneloopabove-ar sadLamAlefMaksuraabove-ar qafLamAlefMaksuraabove-ar		
         meemabove-ar lamAlefabove-ar jeemabove-ar threedotsabove-ar seenabove-ar		
         sukunround-ar sukunoval-ar meemStopabove-ar maddalong-ar yehabove-ar		
-        noonabove-ar rhombusStopabove-ar dotStopabove-ar sadabove-ar ainabove-ar		
-        rehHahabove-ar rehDadabove-ar takhallusabove-ar tahabove-ar alefLamYehabove-ar zainabove-ar		
-        highwaw-ar 	
+        noonabove-ar rhombusStopabove-ar dotStopabove-ar sadabove-ar alayheAssallamcomb-ar	
+        sallallahouAlayheWassallamcomb-ar rehHahabove-ar rehDadabove-ar takhallusabove-ar tahabove-ar 
+        alefLamYehabove-ar zainabove-ar	highwaw-ar 	
     </class>
 
 		<!-- GRAPHITE -->
