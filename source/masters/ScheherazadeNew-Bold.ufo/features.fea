@@ -157,7 +157,7 @@
 @ToothPlusAbove = [pehVabove-ar.init teh-ar.init tehRing-ar.init tehThreedotsdown-ar.init tehVabove-ar.init tteh-ar.init theh-ar.init ttehVabove-ar.init tteheh-ar.init teheh-ar.init behThreedotsupabove-ar.init tehThreedotsupbelow-ar.init behTwodotsbelowDotabove-ar.init behVabove-ar.init behhamzaabove-ar.init tehTehabove-ar.init behMeemabove-ar.init pehMeemabove-ar.init noon-ar.init noonDotbelow-ar.init rnoon-ar.init noonRing-ar.init noonThreedotsabove-ar.init noonTwodotsbelow-ar.init noonTahabove-ar.init noonVabove-ar.init noonAfrican-ar.init yehHamzaabove-ar.init yehVabove-ar.init yehTwodotsabove-farsi.init yehTwodotsabove-farsi.init yehVinverted-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehTwodotsbelowNoonabove-ar.init yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init pehVabove-ar.medi teh-ar.medi tehRing-ar.medi tehThreedotsdown-ar.medi tehVabove-ar.medi tteh-ar.medi theh-ar.medi ttehVabove-ar.medi tteheh-ar.medi teheh-ar.medi behThreedotsupabove-ar.medi tehThreedotsupbelow-ar.medi behTwodotsbelowDotabove-ar.medi behVabove-ar.medi behhamzaabove-ar.medi tehTehabove-ar.medi behMeemabove-ar.medi pehMeemabove-ar.medi noon-ar.medi noonDotbelow-ar.medi rnoon-ar.medi noonRing-ar.medi noonThreedotsabove-ar.medi noonTwodotsbelow-ar.medi noonTahabove-ar.medi noonVabove-ar.medi noonAfrican-ar.medi yehHamzaabove-ar.medi yehVabove-ar.medi yehTwodotsabove-farsi.medi yehTwodotsabove-farsi.medi yehVinverted-farsi.medi yehTwodotsabove-farsi.medi yehThreedotsabove-farsi.medi yehTwoabove-farsi.medi yehThreeabove-farsi.medi yehTwodotsbelowNoonabove-ar.medi yehbarreeTwoabove-ar.medi yehbarreeThreeabove-ar.medi];
 @ToothRing = [noonRing-ar.init tehRing-ar.init noonRing-ar.medi tehRing-ar.medi];
 @UTR53_220MCM = [hamzabelow-ar seenbelow-ar wawbelow-ar largerounddotbelow-ar];
-@UTR53_220other = [alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar largerounddotbelow-ar sukunbelow-ar largecirclebelow-ar largerounddotinsidecirclebelow-ar ishmaambelow-ar imaalabelow-ar tasheel-ar];
+@UTR53_220other = [alefbelow-ar dammaturnedbelow-ar dotvowelbelow-ar kasraCurly-ar kasraDotbelow-ar kasratanCurly-ar leftarrowheadbelow-ar meembelow-ar rhombusStopbelow-ar rightarrowheadbelow-ar toneloopbelow-ar toneonedotbelow-ar tonetwodotsbelow-ar wavyhamzabelow-ar sukunbelow-ar largecirclebelow-ar largerounddotinsidecirclebelow-ar ishmaambelow-ar imaalabelow-ar tasheel-ar];
 @UTR53_230MCM = [hamzaabove-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar yehabove-farsi zahabove-ar yehbarreeTwobelowabove-ar largerounddotabove-ar];
 @UTR53_230other = [ainabove-ar alayheAssallamcomb-ar alefLamYehabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammareversed-ar dammatanCurly-ar dotStopabove-ar doublerightarrowheadDotabove-ar doublerightarrowheadabove-ar fathaCurly-ar fathaDotabove-ar fathaHorizont-ar fathaRing-ar fathatanCurly-ar fathatwodots-ar hahabove-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar madda-ar madda-ar.small maddalong-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar qafLamAlefMaksuraabove-ar rehDadabove-ar rehHahabove-ar rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar sallallahouAlayheWassallamcomb-ar sukunoval-ar sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar vinvertedabove-ar zainabove-ar sahabove-ar aljuzabove-ar maddawaajib-ar alefmokhassasabove-ar maddadoubled-ar halfmaddaovermadda-ar];
 @UTR53_alef = [alefabove-ar alefabove-ar.large];
@@ -2776,7 +2776,6 @@ lookup _ReorderMaddaVowel1 {
     sub toneonedotbelow-ar by toneonedotbelow-ar madda-ar.small;
     sub tonetwodotsbelow-ar by tonetwodotsbelow-ar madda-ar.small;
     sub wavyhamzabelow-ar by wavyhamzabelow-ar madda-ar.small;
-    sub largerounddotbelow-ar by largerounddotbelow-ar madda-ar.small;
     sub sukunbelow-ar by sukunbelow-ar madda-ar.small;
     sub largecirclebelow-ar by largecirclebelow-ar madda-ar.small;
     sub largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar madda-ar.small;
@@ -2833,7 +2832,6 @@ lookup _ReorderMaddaVowel2 {
     sub madda-ar.small toneonedotbelow-ar by toneonedotbelow-ar;
     sub madda-ar.small tonetwodotsbelow-ar by tonetwodotsbelow-ar;
     sub madda-ar.small wavyhamzabelow-ar by wavyhamzabelow-ar;
-    sub madda-ar.small largerounddotbelow-ar by largerounddotbelow-ar;
     sub madda-ar.small sukunbelow-ar by sukunbelow-ar;
     sub madda-ar.small largecirclebelow-ar by largecirclebelow-ar;
     sub madda-ar.small largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar;
