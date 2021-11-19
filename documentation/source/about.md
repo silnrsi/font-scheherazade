@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - About
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 ## About this project

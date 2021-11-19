@@ -1,7 +1,3 @@
----
-title: Scheherazade New - Announcement
-fontversion: 3.300
----
 
 #### Changes
 

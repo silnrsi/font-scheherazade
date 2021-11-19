@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Scheherazade New - Announcement</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="../../assets/css/themepdf.css">
+    <link rel="stylesheet" href="../../assets/css/webfontsttf.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Scheherazade New - Announcement</h1>
+    </header>
+    <h4 id="changes">Changes</h4>
+    <p>This release includes the following changes for this version:</p>
+    <ul>
+    <li>Added U+0870..U+088E, U+0890..U+0891, U+0898..U+089F, U+08B5, U+08C8..U+08D2</li>
+    <li>Added bold version of glyph for U+08AD ARABIC LETTER LOW ALEF</li>
+    <li>Added decimal separator feature (cv85)</li>
+    <li>Added a longer kashida for cases where diacritics are above or below U+0640 ARABIC TATWEEL</li>
+    <li>Revised rules for forming Allah ligature</li>
+    </ul>
+    <p>Both desktop and web fonts are provided in a single, all-platforms package on the <a href="../../pdf/https://software.sil.org/scheherazade/download/">Download Page</a>.</p>
+    <h4 id="known-issues">Known issues</h4>
+    <ul>
+    <li>Medial and Final high hamza characters may have collisions as these likely do not occur.</li>
+    <li>Lam/high hamza alef ligature does not form as it likely does not occur.</li>
+    <li>Many OpenType applications do not yet support Unicode 13.0 or 14.0 and may not correctly handle the characters in ranges U+0870..U+089F, U+08BE..U+08C7, U+FD40..U+FD4F, U+FDCF, and U+FDFE..U+FDFF.</li>
+    <li>The honorific ligatures that are currently encoded in the Private Use Area (PUA) of Unicode do not have right-to-left properties. In some cases, you can correct reading order problems by inserting a Right-to-Left mark (U+200F) after the honorific ligature. These have also been encoded using Unicode 14.0 codepoints, and because most applications do not support Unicode 14.0 users will still run into some issues in using them.</li>
+    <li>The more calligraphic honorifics do not yet have a bold.</li>
+    </ul>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 3.300 and is copyright © 1994-2021 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Honorific ligatures
-fontversion: 3.200
+fontversion: 3.300
 ---
 
 Unicode has a number of honorific ligatures. A significant number of them were added to Unicode 14.0. The below chart should aid in understanding in what context they should be used. As new characters, applications may have problems with rendering them in right-to-left text. In some cases, you can correct reading order problems by inserting a Right-to-Left mark (U+200F) after the honorific ligature.
@@ -37,6 +37,6 @@ AZZA WA JALL | FDFF | <span class='scheherazadenew-R normal'>﷿ </span> | The G
 
 
 <!-- PRODUCT SITE ONLY
-[font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='250%' rtl=1]
-[font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='250%']
+[font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%' rtl=1]
+[font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%']
 -->

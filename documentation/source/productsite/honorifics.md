@@ -32,5 +32,5 @@ AZZA WA JALL | FDFF | <span class='scheherazadenew-R normal'>﷿ </span> | The G
 
 
 
-[font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='250%' rtl=1]
-[font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='250%']
+[font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%' rtl=1]
+[font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%']
