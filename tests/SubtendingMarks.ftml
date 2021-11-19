@@ -73,6 +73,14 @@
       <comment>numbermark-ar</comment>
       <string>\u000628\u000605\u000645 \u0006052 \u00060522 \u000605222 \u0006052222 \u00060512</string>
     </test>
+    <test background="#ffc8a0" label="U+0890 latn">
+      <comment>poundmarkabove-ar</comment>
+      <string>\u000628\u000890\u000645 \u0008902 \u00089022 \u000890222 \u0008902222 \u00089012</string>
+    </test>
+    <test background="#ffc8a0" label="U+0891 latn">
+      <comment>piastremarkabove-ar</comment>
+      <string>\u000628\u000891\u000645 \u0008912 \u00089122 \u000891222 \u0008912222 \u00089112</string>
+    </test>
     <test label="U+06DD latn">
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD2 \u0006DD22 \u0006DD222 \u0006DD12</string>
@@ -109,6 +117,14 @@
       <comment>numbermark-ar</comment>
       <string>\u000628\u000605\u000645 \u000605\u000668 \u000605\u000668\u000668 \u000605\u000668\u000668\u000668 \u000605\u000668\u000668\u000668\u000668 \u000605\u000661\u000662</string>
     </test>
+    <test background="#ffc8a0" label="U+0890 arab">
+      <comment>poundmarkabove-ar</comment>
+      <string>\u000628\u000890\u000645 \u000890\u000668 \u000890\u000668\u000668 \u000890\u000668\u000668\u000668 \u000890\u000668\u000668\u000668\u000668 \u000890\u000661\u000662</string>
+    </test>
+    <test background="#ffc8a0" label="U+0891 arab">
+      <comment>piastremarkabove-ar</comment>
+      <string>\u000628\u000891\u000645 \u000891\u000668 \u000891\u000668\u000668 \u000891\u000668\u000668\u000668 \u000891\u000668\u000668\u000668\u000668 \u000891\u000661\u000662</string>
+    </test>
     <test label="U+06DD arab">
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD\u000668 \u0006DD\u000668\u000668 \u0006DD\u000668\u000668\u000668 \u0006DD\u000661\u000662</string>
@@ -144,6 +160,14 @@
     <test label="U+0605 urdu">
       <comment>numbermark-ar</comment>
       <string>\u000628\u000605\u000645 \u000605\u0006F8 \u000605\u0006F8\u0006F8 \u000605\u0006F8\u0006F8\u0006F8 \u000605\u0006F8\u0006F8\u0006F8\u0006F8 \u000605\u0006F1\u0006F2</string>
+    </test>
+    <test background="#ffc8a0" label="U+0890 urdu">
+      <comment>poundmarkabove-ar</comment>
+      <string>\u000628\u000890\u000645 \u000890\u0006F8 \u000890\u0006F8\u0006F8 \u000890\u0006F8\u0006F8\u0006F8 \u000890\u0006F8\u0006F8\u0006F8\u0006F8 \u000890\u0006F1\u0006F2</string>
+    </test>
+    <test background="#ffc8a0" label="U+0891 urdu">
+      <comment>piastremarkabove-ar</comment>
+      <string>\u000628\u000891\u000645 \u000891\u0006F8 \u000891\u0006F8\u0006F8 \u000891\u0006F8\u0006F8\u0006F8 \u000891\u0006F8\u0006F8\u0006F8\u0006F8 \u000891\u0006F1\u0006F2</string>
     </test>
     <test label="U+06DD urdu">
       <comment>endofayah-ar</comment>
