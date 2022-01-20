@@ -9,3 +9,5 @@ There are also PDF versions in the `pdf` folder.
 These are produced from markdown sources (in `source`) using pandoc,
 weasyprint, and custom python scripts. See the `makedocs` shell script
 in the main project folder.
+
+FYI: We get a better pdf result for features.pdf and honorifics.pdf if we produce them manually from the html files.

@@ -3,7 +3,7 @@
 
 This release includes the following changes for this version:
 
-- Added U+0870..U+088E, U+0890..U+0891, U+0898..U+089F, U+08B5, U+08C8..U+08D2
+- Added U+061D, U+0870..U+088E, U+0890..U+0891, U+0898..U+089F, U+08B5, U+08C8..U+08D2
 - Added bold version of glyph for U+08AD ARABIC LETTER LOW ALEF
 - Added decimal separator feature (cv85)
 - Added a longer kashida for cases where diacritics are above or below U+0640 ARABIC TATWEEL

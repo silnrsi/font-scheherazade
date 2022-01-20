@@ -1,7 +1,7 @@
 
 ## About this project
 
-Scheherazade New, named after the heroine of the classic Arabian Nights tale, is designed in a similar style to traditional typefaces such as Monotype Naskh, extended to cover the Unicode Arabic repertoire through Unicode 13.0.
+Scheherazade New, named after the heroine of the classic Arabian Nights tale, is designed in a similar style to traditional typefaces such as Monotype Naskh, extended to cover the Unicode Arabic repertoire through Unicode 14.0.
 
 For more information on the visual characteristics of the font see [Design](design).
 
