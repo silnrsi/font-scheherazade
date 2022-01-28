@@ -7,9 +7,10 @@ Unicode has a number of honorific ligatures. A significant number of them were a
 
 To view the simplified alternate glyphs and for instructions in accessing the simplified alternate glyphs, see the [Features](features.md) document.
 
+###
 
-Unicode Name (ARABIC LIGATURE...) | USV | Glyph | Meaning
-------------- | ---- | ---- | ------------- 
+Unicode Name</br>(ARABIC LIGATURE...) | USV | Glyph | Meaning
+------------- | --- | --- | ------------- 
 RAHIMAHU ALLAAH | FD40 | <span class='scheherazadenew-R normal'>﵀</span>  | May God have mercy upon him.</br>(Used for companions of the prophet or other widely recognized scholars. Can be for any believer who has passed away.)
 RADI ALLAAHU ANH | FD41 | <span class='scheherazadenew-R normal'>﵁ </span>  | May God be pleased with him.</br>(Used for companions of the prophet.)
 RADI ALLAAHU ANHAA | FD42 | <span class='scheherazadenew-R normal'>﵂ </span>  | May God be pleased with her.</br>(Used for companions of the prophet, and in some regions for others such as Mary or Jesus’ apostles.)
@@ -20,6 +21,11 @@ SALLALLAAHU ALAYHI WA-AALIH | FD46 | <span class='scheherazadenew-R normal'>﵆ 
 ALAYHI AS-SALAAM | FD47 | <span class='scheherazadenew-R normal'>﵇ </span>  | Peace be upon him.</br>(The normal honorific used after a prophet's or an Archangel's name.)
 ALAYHIM AS-SALAAM | FD48 | <span class='scheherazadenew-R normal'>﵈ </span>  | Peace be upon them.</br>(Used for two or more prophets.)
 ALAYHIMAA AS-SALAAM | FD49 | <span class='scheherazadenew-R normal'>﵉ </span>  | Peace be upon them (both).</br>(Used for prophets and angels.)
+
+###
+
+Unicode Name</br>(ARABIC LIGATURE...) | USV | Glyph | Meaning
+------------- | --- | --- | ------------- 
 ALAYHI AS-SALAATU WAS-SALAAM | FD4A | <span class='scheherazadenew-R normal'>﵊ </span> | Blessings and Peace be upon him.</br>(A lesser used honorific used after a prophet's or an Archangel's name.)
 QUDDISA SIRRAH | FD4B | <span class='scheherazadenew-R normal'>﵋ </span> | May his secret be sanctified.</br>(Used for Sufi saints, and refers to their shrines where people come to worship.)
 SALLALLAHU ALAYHI WA-AALIHEE WA-SALLAM | FD4C | <span class='scheherazadenew-R normal'>﵌ </span> | The blessings of God and peace be upon him and the people of his household.</br>(Used by all Muslims, but particularly in Shia Islam for the prophet Muhammad.)
@@ -30,9 +36,10 @@ SALAAMUHU ALAYNAA | FDCF | <span class='scheherazadenew-R normal'>﷏ </span> | 
 SALLALLAHOU ALAYHEWASALLAM  | FDFA | <span class='scheherazadenew-R normal'>ﷺ</span> | The blessings and peace of God be upon him. </br>(Used after the name of a major prophet, especially the prophet of Islam.)
 JALLAJALALOUHOU | FDFB | <span class='scheherazadenew-R normal'>ﷻ</span> | May His glory be glorified.</br>(Used after the name of God.)
 BISMILLAH AR-RAHMAN AR-RAHEEM | FDFD | <span
-  class='scheherazadenew-R normal'>﷽ </span> | In the name of God, the most merciful, the most compassionate.</br>(Used as the opening of each action in order to receive blessing from God.)
+  class='scheherazadenew-R small'>﷽ </span> | In the name of God, the most merciful, the most compassionate.</br>(Used as the opening of each action in order to receive blessing from God.)
 SUBHAANAHU WA TAAALAA | FDFE | <span class='scheherazadenew-R normal'>﷾ </span> | May He be praised and exalted (Glorified and Lofty).</br>(The most common honorific for God.)
 AZZA WA JALL | FDFF | <span class='scheherazadenew-R normal'>﷿ </span> | The Glorified/Exalted/Mighty and Sublime (Prestigious and Majestic).</br>(The second most common honorific for God.)
+
 
 
 

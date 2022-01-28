@@ -10,4 +10,5 @@ These are produced from markdown sources (in `source`) using pandoc,
 weasyprint, and custom python scripts. See the `makedocs` shell script
 in the main project folder.
 
-FYI: We get a better pdf result for features.pdf and honorifics.pdf if we produce them manually from the html files.
+FYI: There is a problem with language features for kir/ky and wol/wo in features.md. 
+Our pdf maker requires the 3 letter codes and html requires 2 letter codes.
