@@ -17,15 +17,19 @@
     <p>In certain types of literature, the name <em>Allah</em> and words related to this name are given unique rendering. Unicode has a <em>presentation form</em> character (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) that implements this rendering and, while this can work (in some fonts) for the word in isolation, it doesn’t help users obtain special rendering in other contexts where it is desired. </p>
     <p>Starting with v3.300, Scheherazade New provides the special rendering for sequences of Arabic letters that meet specific patterns, giving much more flexibility to document authors.</p>
     <ul>
-    <li>Under certain conditions, a sequence of lam-lam-heh will form an Allah ligature:
+    <li>The special Unicode character U+FDF2 will always display the Allah ligature (equivalent to the sequence recommended by Unicode: isolate <em>alef</em> + <em>lam</em> + <em>lam</em> + <em>shadda</em> + <em>superscript-alef</em> + final <em>heh</em>).</li>
+    <li>Under certain conditions, a sequence of <em>lam</em> + <em>lam</em> + <em>heh</em> (optionally preceded by other characters) will form an Allah ligature:
     <ul>
-    <li>The sequence must include either a preceding isolate <em>alef</em> or a <em>shadda</em> on the second <em>lam</em>, or both.</li>
-    <li>If there is an isolate <em>alef</em> but no <em>shadda</em>, a <em>shadda-superscript-alef</em> will be automatically displayed.</li>
-    <li>The <em>shadda</em> may be followed or preceded by either a <em>superscript-alef</em> diacritic or a <em>fatha</em>.</li>
-    <li>The <em>heh</em> maybe either the standard <em>heh</em> (0647) or the <em>heh-goal</em> (06C1).</li>
-    <li>The <em>alef</em>, if present may have marks. Similar characters such as <em>alef-hamza</em>, <em>alef-hamza-below</em>, <em>alef-madda</em>, and <em>alef-wasla</em> will also form the ligature.</li>
-    <li>The first <em>lam</em> may include a <em>kasra</em>, but no other diacritics.</li>
-    <li>The special Unicode character U+FDF2 will always display the Allah ligature.</li>
+    <li>The <em>heh</em> must be final form and may be either the standard <em>heh</em> (0647) or the <em>heh-goal</em> (06C1) and may have marks.</li>
+    <li>The <em>lam</em> must be the standard <em>lam</em> (0644).</li>
+    <li>The sequence must include either a preceding isolate <em>alef</em> or a <em>shadda</em> (0651) on the second <em>lam</em>, or both.</li>
+    <li>If <em>alef</em> precedes the first <em>lam</em>:
+    <ul>
+    <li>The <em>alef</em> may have marks or be a related character such as <em>alef-hamza</em>, <em>alef-hamza-below</em>, <em>alef-madda</em>, or <em>alef-wasla</em> (any character in the <code>ALEF</code> joining group).</li>
+    <li>If it is an isolate <em>alef</em> but there are no marks on the second <em>lam</em>, a <em>shadda-superscript-alef</em> will be automatically displayed.</li>
+    </ul></li>
+    <li>The first <em>lam</em> may include a <em>kasra</em>, but no other marks.</li>
+    <li>The <em>shadda</em> may be followed or preceded by either a <em>superscript-alef</em> (0670) or a <em>fatha</em> (064E). If neither is present, then a <em>superscript-alef</em> will be added to the display.</li>
     </ul></li>
     </ul>
     <p>To disable the special ligature, insert a zero-width joiner character (200D) somewhere in the sequence.</p>

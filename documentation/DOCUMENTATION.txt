@@ -11,4 +11,5 @@ weasyprint, and custom python scripts. See the `makedocs` shell script
 in the main project folder.
 
 FYI: There is a problem with language features for kir/ky and wol/wo in features.md. 
-Our pdf maker requires the 3 letter codes and html requires 2 letter codes.
+Our pdf maker requires the 3 letter codes and html requires 2 letter codes. It is best
+to open the .html file and create a pdf manually.
