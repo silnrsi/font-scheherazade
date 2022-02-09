@@ -12,4 +12,4 @@ cp $GLYPHS_FILE $GLYPHS_FILE_COPY
 # Create UFO from Glyphs file
 echo
 echo "Converting UFO3 to .glyphs..."
-psfufo2glyphs source/ScheherazadeNew.designspace $GLYPHS_FILE -l source/logs/ufo2g.log
+psfufo2glyphs --nofea source/ScheherazadeNew.designspace $GLYPHS_FILE -l source/logs/ufo2g.log
