@@ -8,22 +8,16 @@ In certain types of literature, the name *Allah* and words related to this name 
 
 Starting with v3.300, Scheherazade New provides the special rendering for sequences of Arabic letters that meet specific patterns, giving much more flexibility to document authors. 
 
-* The special Unicode character U+FDF2 will always display the Allah ligature (equivalent to the sequence recommended by Unicode: isolate *alef* + *lam* + *lam* + *shadda* + *superscript-alef* + final *heh*).
-* Under certain conditions, a sequence of *lam* + *lam* + *heh* (optionally preceded by other characters) will form an Allah ligature:
-  * The *heh* must be final form and may be either the standard *heh* (0647) or the *heh-goal* (06C1) and may have marks.
-  * The *lam* must be the standard *lam* (0644).
-  * The sequence must include either a preceding isolate *alef* or a *shadda* (0651) on the second *lam*, or both.
-  * If *alef* precedes the first *lam*:
-    * The *alef* may have marks or be a related character such as *alef-hamza*, *alef-hamza-below*, *alef-madda*, or *alef-wasla* (any character in the `ALEF` joining group).
-    * If it is an isolate *alef* but there are no marks on the second *lam*, a *shadda-superscript-alef* will be automatically displayed.
-  * The first *lam* may include a *kasra*, but no other marks.
-  * The *shadda* may be followed or preceded by either a *superscript-alef* (0670) or a *fatha* (064E). If neither is present, then a *superscript-alef* will be added to the display.
-
-
+* Under certain conditions, a sequence of lam-lam-heh will form an Allah ligature:
+  * The sequence must include either a preceding isolate *alef* or a *shadda* on the second *lam*, or both.
+  * If there is an isolate *alef* but no *shadda*, a *shadda-superscript-alef* will be automatically displayed.
+  * The *shadda* may be followed or preceded by either a *superscript-alef* diacritic or a *fatha*.
+  * The *heh* maybe either the standard *heh* (0647) or the *heh-goal* (06C1).
+  * The *alef*, if present may have marks. Similar characters such as *alef-hamza*, *alef-hamza-below*, *alef-madda*, and *alef-wasla* will also form the ligature.
+  * The first *lam* may include a *kasra*, but no other diacritics.
+  * The special Unicode character U+FDF2 will always display the Allah ligature.
 
 To disable the special ligature, insert a zero-width joiner character (200D) somewhere in the sequence.
-
-
 
 Characters | → | Glyph | Comment
 ---------- | - | ----  | -------
