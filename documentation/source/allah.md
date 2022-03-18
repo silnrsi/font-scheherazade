@@ -1,5 +1,5 @@
 ---
-title: Scheherazade New - Special rules for rendering Allah
+title: Scheherazade New - Rendering the Allah ligature
 fontversion: 3.300
 ---
 
