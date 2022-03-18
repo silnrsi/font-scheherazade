@@ -32,7 +32,7 @@ For a complete list of honorific ligatures included in Scheherazade New, see [Ho
 
 ## Rendering the Allah ligature
 
-In certain types of literature, the name *Allah* and words related to this name are given unique rendering. For a list of the rendering rules, see [Formation of Allah Ligature](allah.md).
+In certain types of literature, the name *Allah* and words related to this name are given unique rendering. For a list of the rendering rules, see [Rendering the Allah ligature](allah.md).
 
 
 ## Font Features
