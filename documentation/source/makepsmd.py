@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 '''Process font documentation .md files for use on product sites '''
 __url__ = 'http://github.com/silnrsi/fontdocs'
-__copyright__ = 'Copyright (c) 2021-2022 SIL International (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2021 SIL International (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Victor Gaultney'
 
@@ -20,7 +20,10 @@ def doit(args):
     firstline = True
     inheader = False
     inpsonly = False
+    infontsc = False
     
+    classes = []
+
     temptext = ""
 
     # remove YAML header and uncomment the [font] shortcode
@@ -40,15 +43,17 @@ def doit(args):
             if line.startswith("-->"):
                 inpsonly = False
                 continue
+        if line.startswith("[font") and infontsc == False:
+            infontsc = True
+            fontscre = re.compile(r"\[font id='(\w+)'(.+)\]")
+            fontsc = fontscre.match(line)
+            fontscid = fontsc.group(1)
+            fontscend = fontsc.group(2)
         temptext = temptext + line
 
     # reconfigure image markup
-    # mdimage = re.compile(r"!\[(.*?)\]\((\S+\.\w+)\)\{\.(\S+)\}\n?<!--\sPRODUCT\sSITE\sIMAGE\sSRC\s(\S+)\s-->")
-    # temptext = mdimage.sub(r"<img class='\3' alt='\1' src='\4' />\n[caption]<em>\1</em>[/caption]", temptext)
-
     mdimage = re.compile(r"!\[(.*?)\]\((\S+\.\w+)\)\{\.(\S+)\}\n?<!--\sPRODUCT\sSITE\sIMAGE\sSRC\s(\S+)\s-->")
     temptext = mdimage.sub(r"<img class='\3' alt='\1' src='\4' />", temptext)
-
     mdimagecap = re.compile(r"<figcaption>(.*?)<\/figcaption>")
     temptext = mdimagecap.sub(r"[caption]<em>\1</em>[/caption]", temptext)
 
@@ -57,6 +62,19 @@ def doit(args):
 
     # replace links to external markdown files
     temptext = temptext.replace(".rawmd",".md")
+
+    # make a list of new classes needed for font shortcode
+    fontclass = re.compile(r"style='font-feature-settings:\s\"(\w+\d*)\"\s(\d+)'")
+    for match in fontclass.finditer(temptext):
+         classes.append(("-" + match.group(1) + "-" + match.group(2), match.group(1) + " " + match.group(2)))
+
+    # transform explicit font feature settings into classes
+    fontspan = re.compile(r"class='(\w+)+-(\w+)+\snormal'\sstyle='font-feature-settings:\s\"(\w+\d*)\"\s(\d+)'>")
+    temptext = fontspan.sub(r"class='\1-\3-\4-\2 normal'>", temptext)
+
+    # add new font sortcodes for added classes
+    for c in classes:
+        temptext = temptext + "[font id='" + fontscid + c[0] + "'" + fontscend + " feats='" + c[1] + "']\n"
 
     outfile.write(temptext)
 

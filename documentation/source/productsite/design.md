@@ -3,8 +3,8 @@ Scheherazade New provides a “simplified” rendering of Arabic script, using b
 
 Two fonts from this typeface family are included in the *Scheherazade New* release:
 
-* Scheherazade New Regular
-* Scheherazade New Bold
+- Scheherazade New Regular
+- Scheherazade New Bold
 
 
 ## Type Samples
@@ -25,9 +25,9 @@ For a complete list of characters included in Scheherazade New, see [Character S
 
 For a complete list of honorific ligatures included in Scheherazade New, see [Honorific Ligatures](honorifics).
 
-## Formation of Allah Ligature
+## Rendering the Allah ligature
 
-In certain types of literature, the name *Allah* and words related to this name are given unique rendering. For a list of the rendering rules, see [Formation of Allah Ligature](allah).
+In certain types of literature, the name *Allah* and words related to this name are given unique rendering. For a list of the rendering rules, see [Rendering the Allah ligature](allah).
 
 
 ## Font Features
