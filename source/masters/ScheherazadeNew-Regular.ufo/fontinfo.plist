@@ -90,7 +90,7 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1. </s
     </dict>
   </array>
   <key>openTypeHeadCreated</key>
-  <string>2021/12/01 12:13:22</string>
+  <string>2022/04/08 15:58:03</string>
   <key>openTypeHheaAscender</key>
   <integer>2750</integer>
   <key>openTypeHheaDescender</key>
@@ -286,6 +286,81 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <integer>3</integer>
   <key>versionMinor</key>
   <integer>301</integer>
+  <key>woffMetadataCredits</key>
+  <dict>
+    <key>credits</key>
+    <array>
+      <dict>
+        <key>name</key>
+        <string>Sharon Correll</string>
+        <key>role</key>
+        <string>Contributing Designer, Graphite, OpenType, and TypeTuner code, and build support</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Bob Hallissy</string>
+        <key>role</key>
+        <string>Graphite, OpenType, and TypeTuner code, and build support</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Becca Hirsbrunner Spalinger</string>
+        <key>role</key>
+        <string>Contributing Designer</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Jonathan Kew</string>
+        <key>role</key>
+        <string>Original Designer</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Peter Martin</string>
+        <key>role</key>
+        <string>Contributing Designer</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Iska Routamaa</string>
+        <key>role</key>
+        <string>Contributing Designer</string>
+        <key>url</key>
+        <string>http://scripts.sil.org/</string>
+      </dict>
+    </array>
+  </dict>
+  <key>woffMetadataDescription</key>
+  <dict>
+    <key>text</key>
+    <array>
+      <dict>
+        <key>text</key>
+        <string>Scheherazade New, named after the heroine of the classic Arabian Nights tale,
+is designed in a similar style to traditional typefaces such as Monotype Naskh,
+extended to cover the full Unicode Arabic repertoire.
+
+This font provides a simplified rendering of Arabic script, using basic
+connecting glyphs but not including a wide variety of additional ligatures
+or contextual alternates (only the required lam-alef ligatures). This
+simplified style is often preferred for clarity, especially in non-Arabic
+languages, but may be considered unattractive in more traditional and
+literate communities.</string>
+      </dict>
+    </array>
+    <key>url</key>
+    <string>https://software.sil.org/scheherazade/history/</string>
+  </dict>
   <key>xHeight</key>
   <integer>684</integer>
 </dict>
