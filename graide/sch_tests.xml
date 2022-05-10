@@ -512,26 +512,39 @@
     <test class="fset1410" label="word 1" rtl="True">
       <string>نعوذ باللّہ</string>
     </test>
-    <test class="fset1410" label="word 2" rtl="True">
+    <test class="fset1410" label="alhamduilillah" rtl="True">
+      <comment>praise to God</comment>
       <string>الحمدللّہ</string>
     </test>
-    <test class="fset1410" label="word 3" rtl="True">
+    <test class="fset1410" label="ana Allah" rtl="True">
+      <comment>I am God</comment>
+      <string>انا اللّہ</string>
+    </test>
+    <test class="fset1410" label="ana le Allah" rtl="True">
+      <comment>I belong to God</comment>
       <string>انا للّہ</string>
+    </test>
+    <test class="fset1410" label="le Allah" rtl="True">
+      <comment>to/for God</comment>
+      <string>لِلّهِ</string>
+    </test>
+    <test class="fset1410" label="le Allah" rtl="True">
+      <comment>to/for God</comment>
+      <string>لِلّهْ</string>
+    </test>
+    <test class="fset1410" label="be Allah" rtl="True">
+      <comment>with/in God</comment>
+      <string>بِللّه</string>
+    </test>
+    <test class="fset1410" label="al-Allah" rtl="True">
+      <comment>that God (relative clause)</comment>
+      <string>الْاللّٰهْ</string>
+    </test>
+    <test class="fset1410" label="the Word that God spoke?" rtl="True">
+      <string>لْاللّٰہْ</string>
     </test>
     <test class="fset1410" label="phrase" rtl="True">
       <string>اِنّا لِلّہِ وَ اِنّا اِلیہِ راجِعُون</string>
-    </test>
-    <test class="fset1410" label="the Word that God spoke" rtl="True">
-      <string>لْاللّٰہْ</string>
-    </test>
-    <test class="fset1410" label="word 4" rtl="True">
-      <string>لِلّہِ</string>
-    </test>
-    <test class="fset1410" label="le Allah" rtl="True">
-      <string>لِلّهْ</string>
-    </test>
-    <test class="fset1410" label="be Allah - to God?" rtl="True">
-      <string>بِللّه</string>
     </test>
   </testgroup>
   <testgroup label="Allah - OLD">
