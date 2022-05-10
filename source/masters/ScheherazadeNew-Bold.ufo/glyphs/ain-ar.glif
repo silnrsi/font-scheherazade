@@ -2,7 +2,6 @@
 <glyph name="ain-ar" format="2">
   <advance width="1524"/>
   <unicode hex="0639"/>
-  <anchor x="535" y="1097" name="above"/>
   <anchor x="273" y="1144" name="alef"/>
   <anchor x="706" y="124" name="below"/>
   <anchor x="473" y="1363" name="diaA"/>
@@ -28,9 +27,9 @@
       <point x="943" y="414"/>
       <point x="1120" y="663"/>
       <point x="1120" y="673" type="curve" smooth="yes"/>
-      <point x="1120" y="679"/>
-      <point x="1102" y="709"/>
-      <point x="1099" y="709" type="curve"/>
+      <point x="1120" y="681"/>
+      <point x="1103" y="709"/>
+      <point x="1099" y="709" type="curve" smooth="yes"/>
       <point x="1094" y="709"/>
       <point x="822" y="573"/>
       <point x="719" y="526" type="curve" smooth="yes"/>
@@ -49,8 +48,11 @@
       <point x="805" y="825"/>
       <point x="815" y="842"/>
       <point x="813" y="849" type="curve" smooth="yes"/>
-      <point x="785" y="932"/>
-      <point x="673" y="1028"/>
+      <point x="793" y="910"/>
+      <point x="727" y="977"/>
+      <point x="658" y="1009" type="curve" smooth="yes"/>
+      <point x="632" y="1021"/>
+      <point x="605" y="1028"/>
       <point x="580" y="1028" type="curve" smooth="yes"/>
       <point x="546" y="1028"/>
       <point x="483" y="1023"/>

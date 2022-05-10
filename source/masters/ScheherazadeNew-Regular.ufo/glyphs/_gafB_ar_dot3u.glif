@@ -3,31 +3,6 @@
   <anchor x="102" y="0" name="_above"/>
   <outline>
     <component base="_dot3u" xOffset="336" yOffset="782"/>
-    <contour>
-      <point x="1044" y="699" type="curve"/>
-      <point x="1044" y="707"/>
-      <point x="1039" y="712"/>
-      <point x="1032" y="712" type="curve" smooth="yes"/>
-      <point x="1018" y="712"/>
-      <point x="731" y="576"/>
-      <point x="663" y="538" type="curve" smooth="yes"/>
-      <point x="441" y="415"/>
-      <point x="183" y="261"/>
-      <point x="16" y="102" type="curve" smooth="yes"/>
-      <point x="-3" y="84"/>
-      <point x="-51" y="-7"/>
-      <point x="-51" y="-26" type="curve" smooth="yes"/>
-      <point x="-51" y="-33"/>
-      <point x="-43" y="-28"/>
-      <point x="-39" y="-26" type="curve" smooth="yes"/>
-      <point x="173" y="116"/>
-      <point x="728" y="432"/>
-      <point x="945" y="516" type="curve" smooth="yes"/>
-      <point x="972" y="526"/>
-      <point x="993" y="563"/>
-      <point x="1003" y="593" type="curve" smooth="yes"/>
-      <point x="1027" y="666"/>
-      <point x="1044" y="695"/>
-    </contour>
+    <component base="_gafBar"/>
   </outline>
 </glyph>

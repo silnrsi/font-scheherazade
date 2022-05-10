@@ -4,6 +4,8 @@
   <anchor x="100" y="0" name="digitR"/>
   <outline>
     <contour>
+      <point x="187" y="1423" type="line"/>
+      <point x="6" y="1215" type="line"/>
       <point x="2129" y="1215" type="line"/>
       <point x="2310" y="1421" type="line"/>
       <point x="1421" y="1421" type="line"/>
@@ -22,23 +24,21 @@
       <point x="694" y="1491"/>
       <point x="636" y="1450"/>
       <point x="560" y="1423" type="curve"/>
-      <point x="187" y="1423" type="line"/>
-      <point x="6" y="1215" type="line"/>
     </contour>
     <contour>
-      <point x="868" y="1423" type="line"/>
-      <point x="926" y="1462"/>
-      <point x="981" y="1503"/>
-      <point x="1033" y="1546" type="curve" smooth="yes"/>
-      <point x="1137" y="1632"/>
-      <point x="1205" y="1650"/>
-      <point x="1290" y="1650" type="curve" smooth="yes"/>
-      <point x="1361" y="1650"/>
-      <point x="1414" y="1609"/>
+      <point x="1119" y="1617"/>
+      <point x="1217" y="1651"/>
+      <point x="1293" y="1651" type="curve" smooth="yes"/>
+      <point x="1364" y="1651"/>
+      <point x="1414" y="1621"/>
       <point x="1414" y="1562" type="curve" smooth="yes"/>
       <point x="1414" y="1509"/>
       <point x="1392" y="1472"/>
       <point x="1350" y="1421" type="curve"/>
+      <point x="868" y="1423" type="line"/>
+      <point x="926" y="1462"/>
+      <point x="981" y="1503"/>
+      <point x="1033" y="1546" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>
