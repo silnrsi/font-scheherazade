@@ -125,7 +125,7 @@ lookup _AllahSub_Heh {
 } _AllahSub_Heh;
 
 lookup _AllahSub_Shadda_insertA {
-		sub shadda-ar     by   shadda_alef-ar;
+    sub shadda-ar     by   shadda_alef-ar;
 } _AllahSub_Shadda_insertA;
 
 
@@ -158,14 +158,14 @@ lookup AllahLigatures {
     #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
         
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
         
@@ -173,7 +173,7 @@ lookup AllahLigatures {
         @MarksAny' 
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
         
@@ -197,21 +197,21 @@ lookup AllahLigatures {
         
     # Rule 2b: lam-kasra-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
         
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
         
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-    		kasra-ar'
+        kasra-ar'
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
@@ -265,7 +265,7 @@ lookup HamzaLigatures {
 # Shadda ligation
 
 # Including graphemejoinercomb allows it to interrupt the ligature formation,
-#		otherwise the lookupflag causes it to be ignored.
+#    otherwise the lookupflag causes it to be ignored.
 @ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb ] ;
 lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
@@ -336,8 +336,8 @@ lookup WolofCALT {
 } WolofCALT;
 
 lookup KirghizCALT {
-	lookupflag 0;
-	  sub @cno_loclKIR  by  @c_loclKIR ;
+  lookupflag 0;
+    sub @cno_loclKIR  by  @c_loclKIR ;
 } KirghizCALT;
 
 
@@ -465,15 +465,15 @@ lookup DammatanAlternate {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
-  	#   0=default (filled);        1=hollow;                2=filled
+    #   0=default (filled);        1=hollow;                2=filled
     sub dammainverted-ar      from [ dammainverted-ar.open  dammainverted-ar ];
     sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
 } DammaInvertedAlternates;
 
 lookup _DaggerAlefToLarge_target {
   lookupflag 0 ;
-  	# 0=default;            1=large;            2=small
-  	sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
+    # 0=default;            1=large;            2=small
+    sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
     #sub alefabove-ar by alefabove-ar.large ;
 } _DaggerAlefToLarge_target ;
 
@@ -495,21 +495,21 @@ lookup AyahAlternates {  # salt feature
 } AyahAlternates;
 
 lookup HonLigAlternates {
-	lookupflag 0;
-		sub @HonLigCall from @HonLigSmpl ;
+  lookupflag 0;
+    sub @HonLigCall from @HonLigSmpl ;
 } HonLigAlternates;
 
 lookup KirghizOeAlternates {
-	lookupflag 0;
-		sub @cno_bar  by  @c_bar;
+  lookupflag 0;
+    sub @cno_bar  by  @c_bar;
 } KirghizOeAlternates;
 
 lookup YehHamzaAlternates {
-	lookupflag 0;
-		sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
-		#sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
-		#sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
-		sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
+  lookupflag 0;
+    sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
+    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
+    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
+    sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
 } YehHamzaAlternates;
 
 #********
@@ -573,8 +573,8 @@ lookup CommaAlternates {
 } CommaAlternates;
 
 lookup DecimalSepAlternate {
-	lookupflag IgnoreMarks ;
-		sub decimalseparator-ar by decimalseparator-ar.slash;
+  lookupflag IgnoreMarks ;
+    sub decimalseparator-ar by decimalseparator-ar.slash;
 } DecimalSepAlternate;
 
 
@@ -690,25 +690,25 @@ lookup LamAlefLigatures_OLD {
 # ======================
 
 lookup LamAlefLigatures {
-	lookupflag IgnoreMarks ;
-		sub @LamNoLig   alef-ar.fina                by  @LamAlefLig ;
-		sub @LamNoLig   alefWasla-ar.fina           by  @LamAlefWaslaLig ;
-		sub @LamNoLig   alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
-		sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
-		sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
-		sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
-		
-		sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
-		sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
+  lookupflag IgnoreMarks ;
+    sub @LamNoLig   alef-ar.fina                by  @LamAlefLig ;
+    sub @LamNoLig   alefWasla-ar.fina           by  @LamAlefWaslaLig ;
+    sub @LamNoLig   alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
+    sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
+    sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
+    sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
+    
+    sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
+    sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
 } LamAlefLigatures;
 
 
 # Must be after LamAlefLigatures
 lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
-	lookupflag IgnoreMarks;
-#		sub alef-ar'       lam-ar.init.allah1  by  alef-ar.allah;
-#		sub alef-ar.fina'  lam-ar.init.allah1  by  alef-ar.fina.allah;
-		sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
+  lookupflag IgnoreMarks;
+#    sub alef-ar'       lam-ar.init.allah1  by  alef-ar.allah;
+#    sub alef-ar.fina'  lam-ar.init.allah1  by  alef-ar.fina.allah;
+    sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
 } AllahAlef;
 
 
@@ -727,89 +727,89 @@ do if opt("nokern") != "yes";
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
 # OBSOLETE
 lookup _InsertKashida {
-	# all tooth forms:
-	sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
-	sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
-	sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
-#	sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;  # redundant
-#	sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;  # redundant
-#	sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;  # redundant
-#	sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;  # redundant
-#	sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;  # redundant
-#	sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # redundant
-#	sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # redundant
-	sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
-	sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
-	sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
-	sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
-	sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
-	sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
-	sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
-	
-	sub @MarksAny  by  @MarksAny  absAutoKashida;
+  # all tooth forms:
+  sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
+  sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
+  sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
+#  sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;  # redundant
+#  sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;  # redundant
+#  sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;  # redundant
+#  sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;  # redundant
+#  sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;  # redundant
+#  sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # redundant
+#  sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # redundant
+  sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
+  sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
+  sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
+  sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
+  sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
+  sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
+  sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
+  
+  sub @MarksAny  by  @MarksAny  absAutoKashida;
 } _InsertKashida;
 
 # OBSOLETE
 lookup _Insert2Kashidas {
-	sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
-	sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
+  sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
+  sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
 } _Insert2Kashidas;
 
 lookup _InsertKashidaBefore {
-	sub @RnoonLikeNarrow  by  absAutoKashida  @RnoonLikeNarrow;
+  sub @RnoonLikeNarrow  by  absAutoKashida  @RnoonLikeNarrow;
 } _InsertKashidaBefore;
 
 lookup _Insert2KashidasBefore {
-	sub @RnoonLikeNarrow  by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
+  sub @RnoonLikeNarrow  by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
 } _Insert2KashidasBefore;
 
 
 # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
 
 lookup ToothKashidasIM {  # initial + medial
-	lookupflag IgnoreMarks;
-		sub @Tooth2w3wBelowInit  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
-		sub @Tooth2w3wBelowInit  @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;
-		
-		sub tehTehabove-ar.init  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
-		sub @Tooth2wwAboveInit   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
-		
-		# also qaf is similar to an initial (high) tooth
+  lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelowInit  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
+    sub @Tooth2w3wBelowInit  @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;
+    
+    sub tehTehabove-ar.init  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+    sub @Tooth2wwAboveInit   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
+    
+    # also qaf is similar to an initial (high) tooth
 ifinfo(styleName, "Bold") {
-		sub @Tooth2wAboveInit    @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
-		sub @FehQaf2wAboveInit   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+    sub @Tooth2wAboveInit    @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+    sub @FehQaf2wAboveInit   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
 }
 
 } ToothKashidasIM;
 
 
 lookup ToothKashidasMM {  # medial + medial
-	lookupflag IgnoreMarks;		
-		sub @Tooth2w3wBelowMedi  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
-		# 2w + 2w doesn't need a kashida
+  lookupflag IgnoreMarks;    
+    sub @Tooth2w3wBelowMedi  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
+    # 2w + 2w doesn't need a kashida
 
-		sub tehTehabove-ar.medi  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
-		sub @Tooth2wwAboveMedi   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
+    sub tehTehabove-ar.medi  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+    sub @Tooth2wwAboveMedi   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
 
 ifinfo(styleName, "Bold") {
-  	sub @Tooth2wBelowMedi    @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;   # BOLD
-		sub @Tooth2wAboveMedi    @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;   # BOLD
-		
-		sub @FehQaf2wAboveMedi   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+    sub @Tooth2wBelowMedi    @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;   # BOLD
+    sub @Tooth2wAboveMedi    @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;   # BOLD
+    
+    sub @FehQaf2wAboveMedi   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
 }
-		
+    
 } ToothKashidasMM;
 
 
 lookup ToothKashidasIMF {  #initial/medial + final
-	lookupflag IgnoreMarks;
-		sub @Tooth2w3wBelow  @YehLikeFina' lookup _InsertKashidaBefore;
+  lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelow  @YehLikeFina' lookup _InsertKashidaBefore;
 } ToothKashidasIMF;
 
 
 lookup MiscKashidas {
-	lookupflag IgnoreMarks;
-  	sub @KafLikeInitMedi   @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+  lookupflag IgnoreMarks;
+    sub @KafLikeInitMedi   @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
     sub @JeemLikeInitMedi  @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
     sub noon-ar.medi       @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
         
@@ -818,20 +818,20 @@ lookup MiscKashidas {
 
 # kashidas needed due to colliding marks
 lookup MarkKashidas {
-		# Add kashida when upper diacritics are next to each other.
-		# Note that we should ideally break this into separate rules to handle medial-medial separately, but I'm lazy.
-		ignore sub @Tooth alefabove-ar  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
-		ignore sub @Tooth @MarksAbove   @Tooth alefabove-ar;
-		sub @Tooth  @MarksAbove' lookup _InsertKashida  @Tooth  @MarksAbove;
-		
-		sub @Tooth  @MarksAbove' lookup _InsertKashida  tehMarbuta-ar.fina;
+    # Add kashida when upper diacritics are next to each other.
+    # Note that we should ideally break this into separate rules to handle medial-medial separately, but I'm lazy.
+    ignore sub @Tooth alefabove-ar  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
+    ignore sub @Tooth @MarksAbove   @Tooth alefabove-ar;
+    sub @Tooth  @MarksAbove' lookup _InsertKashida  @Tooth  @MarksAbove;
+    
+    sub @Tooth  @MarksAbove' lookup _InsertKashida  tehMarbuta-ar.fina;
 } MarkKashidas;
 
-}	# end of do - kerning substitutions
+}  # end of do - kerning substitutions
 
 
 lookup WideKashida {
-	sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
+  sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
 } WideKashida;
 
 
@@ -935,7 +935,7 @@ lookup SubtendingMarks {
 
 
 do if opt("nokern") != "yes";
-{	# start of kerning positioning lookups
+{  # start of kerning positioning lookups
 
 #********
 # Kerning for collision avoidance
@@ -1034,145 +1034,145 @@ lookup _kern_580 {
 
 # Break this into a separate lookup to handle a sequence like waw + reh + alef
 lookup RehWawKerning1 {
-	lookupflag IgnoreMarks;
-	
+  lookupflag IgnoreMarks;
+  
 ifinfo(styleName, "Bold") {
   pos @WawLike' lookup _kern50  @RehLikeIsol; 
 }
 ifinfo(styleName, "Regular") {
-	# bogus, but it seems to be needed to make the build happy:
+  # bogus, but it seems to be needed to make the build happy:
   ignore pos @WawLike @RehLikeIsol;
 }
-	# standard spacing is pretty good - don't futz with it.
-	#ignore pos @RehWawAll  @RehWawAll;
+  # standard spacing is pretty good - don't futz with it.
+  #ignore pos @RehWawAll  @RehWawAll;
 } RehWawKerning1;
 
 
 lookup RehWawKerning {
-	# does not ignore diacritics
-	
-	# Tighten to following gaf-like
+  # does not ignore diacritics
+  
+  # Tighten to following gaf-like
 ifinfo(styleName, "Bold") {
-	pos @RehWawTighten' lookup _kern_380                @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_380 @_diaB         @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_380                @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_380 @_diaB         @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
 }
 ifinfo(styleName, "Regular") {
-	pos u-ar' lookup _kern_410                @RehKernKaf ;  # special case
-	pos u-ar' lookup _kern_410 @_diaB         @RehKernKaf ;
-	pos u-ar' lookup _kern_410 @_diaB @_diaB  @RehKernKaf ;
+  pos u-ar' lookup _kern_410                @RehKernKaf ;  # special case
+  pos u-ar' lookup _kern_410 @_diaB         @RehKernKaf ;
+  pos u-ar' lookup _kern_410 @_diaB @_diaB  @RehKernKaf ;
 
-	pos @RehWawTighten' lookup _kern_550                @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_550 @_diaB         @RehKernKaf ;
-	pos @RehWawTighten' lookup _kern_550 @_diaB @_diaB  @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_550                @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_550 @_diaB         @RehKernKaf ;
+  pos @RehWawTighten' lookup _kern_550 @_diaB @_diaB  @RehKernKaf ;
 }
 
-	# Loosen from following alef/lam when it has something below it
-	pos reh-ar' lookup _kern290                      alefWavyhamzabelow-ar ;
-	pos reh-ar' lookup _kern290 @MarksAny            alefWavyhamzabelow-ar ;
-	pos reh-ar' lookup _kern290 @MarksAny @MarksAny  alefWavyhamzabelow-ar ;
-		
-	pos @RehWawAll' lookup _kern215                      @AlefLamWBelow ;
-	pos @RehWawAll' lookup _kern215 @MarksAny            @AlefLamWBelow ;
-	pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefLamWBelow ;
-	
-	pos @RehWawAll' lookup _kern215                      @AlefIso @_diaB ;
-	pos @RehWawAll' lookup _kern215 @MarksAny            @AlefIso @_diaB ;
-	pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefIso @_diaB ;
-	
-	# Loosen from following narrow initials with something below:
-	pos @RehWawAll' lookup _kern130                      @NarrowIni @_diaB ;
-	pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni @_diaB ;
-	pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
+  # Loosen from following alef/lam when it has something below it
+  pos reh-ar' lookup _kern290                      alefWavyhamzabelow-ar ;
+  pos reh-ar' lookup _kern290 @MarksAny            alefWavyhamzabelow-ar ;
+  pos reh-ar' lookup _kern290 @MarksAny @MarksAny  alefWavyhamzabelow-ar ;
+    
+  pos @RehWawAll' lookup _kern215                      @AlefLamWBelow ;
+  pos @RehWawAll' lookup _kern215 @MarksAny            @AlefLamWBelow ;
+  pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefLamWBelow ;
+  
+  pos @RehWawAll' lookup _kern215                      @AlefIso @_diaB ;
+  pos @RehWawAll' lookup _kern215 @MarksAny            @AlefIso @_diaB ;
+  pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefIso @_diaB ;
+  
+  # Loosen from following narrow initials with something below:
+  pos @RehWawAll' lookup _kern130                      @NarrowIni @_diaB ;
+  pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni @_diaB ;
+  pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
 
 ifinfo(styleName, "Bold") {
-	# Loosen from following narrow initials with dots below:
-	pos @RehWawAll' lookup _kern150                      @Tooth2wBelowInit ;
-	pos @RehWawAll' lookup _kern150 @MarksAny            @Tooth2wBelowInit ;
-	pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @Tooth2wBelowInit ;
+  # Loosen from following narrow initials with dots below:
+  pos @RehWawAll' lookup _kern150                      @Tooth2wBelowInit ;
+  pos @RehWawAll' lookup _kern150 @MarksAny            @Tooth2wBelowInit ;
+  pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @Tooth2wBelowInit ;
 }
 
-	# Leave certain cases alone:
-	ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
-	ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            
-	ignore pos @RehWawTighten @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
-	
-	ignore pos @RehWawTighten @_diaA               @RehKernOtherMA ;
-	ignore pos @RehWawTighten @MarksAny @_diaA     @RehKernOtherMA ;
-	
-	# Kirghiz-OE (waw-loop) has a different shape:
-	ignore pos kirghizoe-ar noon-ar;
-	ignore pos kirghizoe-ar yehbarree-ar;
-	ignore pos kirghizoe-ar.fina noon-ar;
-	ignore pos kirghizoe-ar.fina yehbarree-ar;
+  # Leave certain cases alone:
+  ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
+  ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            
+  ignore pos @RehWawTighten @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
+  
+  ignore pos @RehWawTighten @_diaA               @RehKernOtherMA ;
+  ignore pos @RehWawTighten @MarksAny @_diaA     @RehKernOtherMA ;
+  
+  # Kirghiz-OE (waw-loop) has a different shape:
+  ignore pos kirghizoe-ar noon-ar;
+  ignore pos kirghizoe-ar yehbarree-ar;
+  ignore pos kirghizoe-ar.fina noon-ar;
+  ignore pos kirghizoe-ar.fina yehbarree-ar;
 
-	# Otherwise tighten against most things:
-	pos @RehWawTighten' lookup _kern_190                @RehKernAlef;
-	pos @RehWawTighten' lookup _kern_190 @_diaB         @RehKernAlef;
-	pos @RehWawTighten' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
-	
-	pos @RehWawTighten' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
-	pos @RehWawTighten' lookup _kern_190 @MarksAny            @RehKernMost;
-	pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
-	
-	ignore pos @RehWawTighten                      @AinLikeInit @_diaB;
-	ignore pos @RehWawTighten @MarksAny            @AinLikeInit @_diaB;
-	ignore pos @RehWawTighten @MarksAny @MarksAny  @AinLikeInit @_diaB;
-	
-	pos @RehWawTightenToAin' lookup _kern_215                      @AinLikeInit;
-	pos @RehWawTightenToAin' lookup _kern_215 @MarksAny            @AinLikeInit;
-	pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
-	
-	pos @RehWawTightenToAinX' lookup _kern_290                      @AinLikeInit;
-	pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny            @AinLikeInit;
-	pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
-	
-	pos @RehWawTightenToAinIsol' lookup _kern_580                      @AinLikeIsol;
-	pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny            @AinLikeIsol;
-	pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
-		
+  # Otherwise tighten against most things:
+  pos @RehWawTighten' lookup _kern_190                @RehKernAlef;
+  pos @RehWawTighten' lookup _kern_190 @_diaB         @RehKernAlef;
+  pos @RehWawTighten' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
+  
+  pos @RehWawTighten' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
+  pos @RehWawTighten' lookup _kern_190 @MarksAny            @RehKernMost;
+  pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
+  
+  ignore pos @RehWawTighten                      @AinLikeInit @_diaB;
+  ignore pos @RehWawTighten @MarksAny            @AinLikeInit @_diaB;
+  ignore pos @RehWawTighten @MarksAny @MarksAny  @AinLikeInit @_diaB;
+  
+  pos @RehWawTightenToAin' lookup _kern_215                      @AinLikeInit;
+  pos @RehWawTightenToAin' lookup _kern_215 @MarksAny            @AinLikeInit;
+  pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
+  
+  pos @RehWawTightenToAinX' lookup _kern_290                      @AinLikeInit;
+  pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny            @AinLikeInit;
+  pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
+  
+  pos @RehWawTightenToAinIsol' lookup _kern_580                      @AinLikeIsol;
+  pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny            @AinLikeIsol;
+  pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
+    
 } RehWawKerning;
 
 lookup LamAlefKerning {
-	lookupflag IgnoreMarks;
+  lookupflag IgnoreMarks;
 
 ifinfo(styleName, "Bold") {
-		pos @AlefFinPostLamIni <-30 0 -30 0>  @LamAlefKern;
+    pos @AlefFinPostLamIni <-30 0 -30 0>  @LamAlefKern;
 }
 ifinfo(styleName, "Regular") {
-	  pos @AlefFinPostLamIni <-70 0 -70 0>  @LamAlefKern;
+    pos @AlefFinPostLamIni <-70 0 -70 0>  @LamAlefKern;
 }
 
 } LamAlefKerning;
 
 lookup MiscKerning {
-	lookupflag IgnoreMarks;
-		pos @AlefForms' lookup _kern70  rreh-ar;
-		
-		# beh + reh-stroke
-		pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
-		pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;	
+  lookupflag IgnoreMarks;
+    pos @AlefForms' lookup _kern70  rreh-ar;
+    
+    # beh + reh-stroke
+    pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
+    pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;  
 
-		pos highhamza-ar' lookup _kern130  @Tooth2wAboveInit;
+    pos highhamza-ar' lookup _kern130  @Tooth2wAboveInit;
 
 } MiscKerning;
 
 lookup MiscKerningWDiacs {
-	# does not ignore diacritics
-	
-		# alef-maddah + gaf
-		pos @AlefForms' lookup _kern130  madda-ar.small  @GafIsolInit;      # also see shift rules below
-		pos @AlefForms' lookup _kern170  madda-ar        @GafIsolInit;
-		pos @AlefForms' lookup _kern170  madda-ar        @LamLikeIsolInit;
+  # does not ignore diacritics
+  
+    # alef-maddah + gaf
+    pos @AlefForms' lookup _kern130  madda-ar.small  @GafIsolInit;      # also see shift rules below
+    pos @AlefForms' lookup _kern170  madda-ar        @GafIsolInit;
+    pos @AlefForms' lookup _kern170  madda-ar        @LamLikeIsolInit;
 
-		# beh-like + something above + reh-tah
-		pos @Tooth' lookup _kern140  @MarksAbove  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see shift rule below
-		
-		# AE + kaf
-		pos ae-ar'      lookup _kern_300          @KafLikeInit;
-		pos ae-ar'      lookup _kern_300  @_diaB  @KafLikeInit;
-		pos ae-ar.fina' lookup _kern_300          @KafLikeInit;
-		pos ae-ar.fina' lookup _kern_300  @_diaB  @KafLikeInit;
+    # beh-like + something above + reh-tah
+    pos @Tooth' lookup _kern140  @MarksAbove  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see shift rule below
+    
+    # AE + kaf
+    pos ae-ar'      lookup _kern_300          @KafLikeInit;
+    pos ae-ar'      lookup _kern_300  @_diaB  @KafLikeInit;
+    pos ae-ar.fina' lookup _kern_300          @KafLikeInit;
+    pos ae-ar.fina' lookup _kern_300  @_diaB  @KafLikeInit;
 } MiscKerningWDiacs;
 
 # Note that shifting in RTL works the opposite in OpenType compared to Graphite.
@@ -1224,71 +1224,71 @@ lookup _kkern_240 {
 
 
 lookup ToothKashidaKerningIM {
-	lookupflag IgnoreMarks;
-		ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
+  lookupflag IgnoreMarks;
+    ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
 ifinfo(styleName, "Regular") {
-		pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
+    pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
 }
-		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
-		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
-		
+    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
+    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
+    
 ifinfo(styleName, "Bold") {
-  	pos @Tooth2wBelowMedi absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
-		pos @Tooth2wAboveMedi absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
-		
-		pos @Tooth2wAboveInit'  absAutoKashida' lookup _kkern_100  @FehQaf2wAboveMedi;  # BOLD
-		pos @FehQaf2wAboveInit' absAutoKashida' lookup _kkern_60   @FehQaf2wAboveMedi;  # BOLD		
-		
-		pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
-		
-		# teh + waw w/ something above
-		pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFinaMA;  # no kashida
-		
-		# kaf + teh
-		pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
-		
-		pos alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
-		pos alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
+    pos @Tooth2wBelowMedi absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
+    pos @Tooth2wAboveMedi absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
+    
+    pos @Tooth2wAboveInit'  absAutoKashida' lookup _kkern_100  @FehQaf2wAboveMedi;  # BOLD
+    pos @FehQaf2wAboveInit' absAutoKashida' lookup _kkern_60   @FehQaf2wAboveMedi;  # BOLD    
+    
+    pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
+    
+    # teh + waw w/ something above
+    pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFinaMA;  # no kashida
+    
+    # kaf + teh
+    pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
+    
+    pos alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
+    pos alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
 }
 
 } ToothKashidaKerningIM;
 
 lookup ToothKashidaKerningMM {
-	lookupflag IgnoreMarks;
+  lookupflag IgnoreMarks;
 ifinfo(styleName, "Regular") {
-		pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
+    pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
 }
-		pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
-		
+    pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
+    
 ifinfo(styleName, "Bold") {
-		pos @FehQaf2wAboveMedi' absAutoKashida' lookup _kkern_240  @FehQaf2wAboveMedi;  # BOLD		
+    pos @FehQaf2wAboveMedi' absAutoKashida' lookup _kkern_240  @FehQaf2wAboveMedi;  # BOLD    
 }
 
 } ToothKashidaKerningMM;
 
 lookup ToothKashidaKerningIMF {
-	lookupflag IgnoreMarks;
-		pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
-		
-		pos @Tooth absAutoKashida' lookup _kkern_100  tehMarbuta-ar.fina;
+  lookupflag IgnoreMarks;
+    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
+    
+    pos @Tooth absAutoKashida' lookup _kkern_100  tehMarbuta-ar.fina;
 } ToothKashidaKerningIMF;
 
 lookup MiscKashidaKerning {
-	lookupflag IgnoreMarks;
-		pos @KafLikeInitMedi   absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-		pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-		pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-		
-		#pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
+  lookupflag IgnoreMarks;
+    pos @KafLikeInitMedi   absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+    pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+    pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
+    
+    #pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
 } MiscKashidaKerning;
 
-}	# end of do - kashida positioning lookups
+}  # end of do - kashida positioning lookups
 
 
 #---  curs feature  ---
 
 lookup cursive_exit_entry {
-	lookupflag IgnoreMarks RightToLeft;
+  lookupflag IgnoreMarks RightToLeft;
   pos cursive @entry @exit;
 } cursive_exit_entry;
 
@@ -1297,50 +1297,50 @@ lookup cursive_exit_entry {
 
 lookup mark_to_base {
   lookupflag 0;
-  	pos base @diaA  mark @_diaA;
-  	pos base @diaB  mark @_diaB;
+    pos base @diaA  mark @_diaA;
+    pos base @diaB  mark @_diaB;
 } mark_to_base;
 
 # Override mark positioning in the case of dagger-alef on certain chars:
 lookup alef_to_base {
   lookupflag 0;
-  	pos base @alef  mark @_alef;
+    pos base @alef  mark @_alef;
 } alef_to_base;
 
 
 lookup mark_to_lig {
-	lookupflag 0;
-	
-  	pos ligature @LamAlefLig						@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  	pos ligature @LamAlefWaslaLig				@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  	pos ligature @LamAlefWavyHAboveLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  	pos ligature @LamAlefWavyHBelowLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  	pos ligature @LamAlefTwoAboveLig		@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
-  	pos ligature @LamAlefThreeAboveLig	@diaA_1 mark @_diaA  	@diaB_1 mark @_diaB
-  						ligComponent							@diaA_2 mark @_diaA		@diaB_2 mark @_diaB;
+  lookupflag 0;
+  
+    pos ligature @LamAlefLig            @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWaslaLig        @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWavyHAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWavyHBelowLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefTwoAboveLig    @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
 } mark_to_lig;
 
 
 # Use the dia2B AP when you have two diacritics below a lam-alef.
 ##lookup _mark2_to_base {
 ##  lookupflag 0;
-##  	# Class are not expanded recursively, so enumerate them. :-(
-##  	pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-##  	pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-##  	pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-##  	pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-##  	pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-##  	pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    # Class are not expanded recursively, so enumerate them. :-(
+##    pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+##    pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 ##} _mark2_to_base;
 
 ##lookup LamAlefMark2Adjust {
-##	lookupflag UseMarkFilteringSet @MarksBelow;
-##		pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
+##  lookupflag UseMarkFilteringSet @MarksBelow;
+##    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
 ##} LamAlefMark2Adjust;
 
 
@@ -1368,58 +1368,58 @@ do if opt("nokern") != "yes";
 
 lookup DiacShifting {
 
-	# alef + takhallus (name marker)
-	pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
-	pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
-	pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
+  # alef + takhallus (name marker)
+  pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
+  pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
+  pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
 ifinfo(styleName, "Bold") {
-	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 550 220  0 0>;  # BOLD
-	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 550 430  0 0>;  # BOLD
+  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 550 220  0 0>;  # BOLD
+  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 550 430  0 0>;  # BOLD
 }
 ifinfo(styleName, "Regular") {
-	pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;  # REGULAR
-	pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;  # REGULAR
+  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;  # REGULAR
+  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;  # REGULAR
 }
 
-	# beh + kasra +jeem/ain/yeh-barree finals
+  # beh + kasra +jeem/ain/yeh-barree finals
 ifinfo(styleName, "Bold") {
-	pos @ToothRing  kasra-ar'    <  0   75 0 0>  @YehBarreeFina;  # special case - BOLD
-	pos @ToothRing  kasratan-ar' <120 -450 0 0>  @YehBarreeFina;  # special case - BOLD
+  pos @ToothRing  kasra-ar'    <  0   75 0 0>  @YehBarreeFina;  # special case - BOLD
+  pos @ToothRing  kasratan-ar' <120 -450 0 0>  @YehBarreeFina;  # special case - BOLD
 }
 ifinfo(styleName, "Regular") {
-	ignore pos @ToothRing  kasra-ar'                @YehBarreeFina;  # okay with yeh-barree - REGULAR
-	pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case - REGULAR
+  ignore pos @ToothRing  kasra-ar'                @YehBarreeFina;  # okay with yeh-barree - REGULAR
+  pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case - REGULAR
 }
-	
+  
 ifinfo(styleName, "Bold") {
-	pos @Tooth1hBelow  kasra-ar'    <  0 -300 0 0>  @YehBarreeFina;  # BOLD
-	pos @Tooth1hBelow  kasratan-ar' <100 -200 0 0>  @YehBarreeFina;  # BOLD
+  pos @Tooth1hBelow  kasra-ar'    <  0 -300 0 0>  @YehBarreeFina;  # BOLD
+  pos @Tooth1hBelow  kasratan-ar' <100 -200 0 0>  @YehBarreeFina;  # BOLD
 }
 ifinfo(styleName, "Regular") {
-	pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;  # REGULAR
-	pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;  # REGULAR
+  pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;  # REGULAR
+  pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;  # REGULAR
 }
-	pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
-	pos @Tooth2hBelow  kasratan-ar' <  0 -100 0 0>  @YehBarreeFina;
-	pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
-	
+  pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
+  pos @Tooth2hBelow  kasratan-ar' <  0 -100 0 0>  @YehBarreeFina;
+  pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
+  
 ifinfo(styleName, "Bold") {
-	pos @Tooth1hBelow  kasra-ar'    < 10 -300 0 0>  @JeemAinLikeFina;  # BOLD
+  pos @Tooth1hBelow  kasra-ar'    < 10 -300 0 0>  @JeemAinLikeFina;  # BOLD
 }
 ifinfo(styleName, "Regular") {
-	pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;  # REGULAR
+  pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;  # REGULAR
 }
-	pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
-	pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
-	pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
-	pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
-	
-	pos @AlefForms  madda-ar.small' < 20 0 0 0>  @GafIsolInit;  # also see kern rules above
-	pos @AlefForms  madda-ar'       < 90 0 0 0>  @GafIsolInit;
-	pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
-	
-	pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
-	
+  pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
+  pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
+  pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
+  pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
+  
+  pos @AlefForms  madda-ar.small' < 20 0 0 0>  @GafIsolInit;  # also see kern rules above
+  pos @AlefForms  madda-ar'       < 90 0 0 0>  @GafIsolInit;
+  pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
+  
+  pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
+  
 } DiacShifting;
 
 } # end of kerning substitutions
@@ -1432,12 +1432,12 @@ ifinfo(styleName, "Regular") {
 #--- Substitution ---
 
 feature rtlm {  # Right-To-Left Mirrored Forms
-		lookup Mirror;
+    lookup Mirror;
 } rtlm ;
 
 
 feature ccmp {  # Glyph Composition/Decomposition
-		# Same for latin & arabic:
+    # Same for latin & arabic:
         lookup SmallMaddah;
         lookup FontCheck1;
         lookup FontCheck2;
@@ -1495,9 +1495,9 @@ feature init {  # Initial Forms
 
 
 feature rlig {  # Required Ligatures
-		# lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
+    # lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
     script arab;
-    		lookup AllahLigatures;
+        lookup AllahLigatures;
         #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
         lookup ComposeLowHamzaAbove;
         lookup HamzaLigatures;
@@ -1515,7 +1515,7 @@ feature rlig {  # Required Ligatures
 
 
 feature calt {  # Contextual Alternates
-		script arab;
+    script arab;
         #lookup SignWithDigits;  # moved to liga feature
         
 do if opt("nokern") != "yes";
@@ -1527,7 +1527,7 @@ do if opt("nokern") != "yes";
         lookup MarkKashidas;
 }   # end of kerning substitutions
 
-				lookup WideKashida;
+        lookup WideKashida;
 
       language dflt ;   # Must have a lookup here for TypeTuner to work.
         lookup dfltCALT ;
@@ -1542,7 +1542,7 @@ do if opt("nokern") != "yes";
       language WLF ; # Wolof
         lookup WolofCALT ;
       language KIR ; # Kirghiz
-      	lookup KirghizCALT ;
+        lookup KirghizCALT ;
 } calt ;
 
 
@@ -1573,7 +1573,7 @@ feature cv12 {  # Character Variant 12
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
             } ;
 } cv12 ;
 
@@ -1591,7 +1591,7 @@ feature cv44 {  # Character Variant 44
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
+        ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
     } ;
 } cv44 ;
 
@@ -1617,37 +1617,37 @@ feature cv48 {  # Character Variant 48
 
 feature cv51 {  # Character Variant 51
     # Same for latin & arabic:
-    	lookup KirghizOeAlternates;
+      lookup KirghizOeAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kyrgyz OE" ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
     } ;
 } cv51 ;
 
 feature cv54 {  # Character Variant 54
     # Same for latin & arabic:
-    	lookup YehHamzaAlternates;
+      lookup YehHamzaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Yeh-Hamza" ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
     } ;
 } cv54 ;
 
 feature cv60 {  # Character Variant 60
-		# Same for latin & arabic:
-			lookup MaddahAlternate;
+    # Same for latin & arabic:
+      lookup MaddahAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
     } ;
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
     # Same for latin & arabic:
-    	lookup KasraAlternates;
+      lookup KasraAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1658,7 +1658,7 @@ feature cv62 {  # Character Variant 62
 
 feature cv70 {  # Character Variant 70
     # Same for latin & arabic:
-    	lookup DammaAlternates;
+      lookup DammaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1669,38 +1669,38 @@ feature cv70 {  # Character Variant 70
 
 
 feature cv72 {  # Character Variant 72
-		# Same for latin & arabic:
-			lookup DammatanAlternate;
+    # Same for latin & arabic:
+      lookup DammatanAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
     } ;
 } cv72 ;
 
 feature cv74 {  # Character Variant 74
-		# Same for latin & arabic:
-			lookup DammaInvertedAlternates;
+    # Same for latin & arabic:
+      lookup DammaInvertedAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
     } ;
 } cv74 ;
 
 feature cv76 {  # Character Variant 76
-		# Same for latin & arabic:
-			lookup DaggerAlefToLarge;
+    # Same for latin & arabic:
+      lookup DaggerAlefToLarge;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
     } ;
 } cv76 ;
 
 feature cv78 {  # Character Variant 78
-		# Same for latin & arabic:
-			lookup SukunAlternates;
+    # Same for latin & arabic:
+      lookup SukunAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Sukun"     ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
@@ -1710,8 +1710,8 @@ feature cv78 {  # Character Variant 78
 } cv78 ;
 
 feature cv80 {  # Character Variant 80
-		# Same for latin & arabic:
-			lookup AyahAlternates;
+    # Same for latin & arabic:
+      lookup AyahAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "End of ayah"  ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
@@ -1721,13 +1721,13 @@ feature cv80 {  # Character Variant 80
 } cv80 ;
 
 feature cv81 {  # Character Variant 81
-		# Same for latin and arabic:
-			lookup HonLigAlternates;
-		cvParameters {
-			FeatUILabelNameID  { name 3 1 0x0409 "Honorific ligatures" ; };
-		 #ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
-			ParamUILabelNameID { name 3 1 0x0409 "Simplified" ; };
-		} ;
+    # Same for latin and arabic:
+      lookup HonLigAlternates;
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Honorific ligatures" ; };
+       #ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Simplified" ; };
+    } ;
 } cv81 ;
 
 feature cv82 {  # Character Variant 82
@@ -1744,22 +1744,22 @@ feature cv82 {  # Character Variant 82
 } cv82 ;
 
 feature cv84 {  # Character Variant 84
-		# Same for latin & arabic:
-			lookup CommaAlternates;
+    # Same for latin & arabic:
+      lookup CommaAlternates;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Comma"    ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
     } ;
 } cv84 ;
 
 feature cv85 {  # Character Variant 85
-		# Same for latin & arabic:
-			lookup DecimalSepAlternate;
+    # Same for latin & arabic:
+      lookup DecimalSepAlternate;
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Decmal separator"    ; };
        #ParamUILabelNameID { name 3 1 0x0409 "Small reh"   ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Slash" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Slash" ; };
     } ;
 } cv85 ;
 
@@ -1825,7 +1825,7 @@ feature mark {  # Mark to base Positioning
         lookup mark_to_base;
         lookup alef_to_base;
     script arab;
-    		lookup mark_to_lig;
+        lookup mark_to_lig;
         #####lookup LamAlefMark2Adjust;
       # Force other languages to include Arabic script lookups
       language KIR ;
