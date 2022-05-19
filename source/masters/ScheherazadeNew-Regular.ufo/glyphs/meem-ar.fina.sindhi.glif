@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="meem-ar.fina.sindhi" format="2">
   <advance width="1340"/>
+  <anchor x="997" y="747" name="above"/>
   <anchor x="563" y="731" name="alef"/>
+  <anchor x="878" y="-120" name="below"/>
   <anchor x="725" y="1067" name="diaA"/>
   <anchor x="800" y="-360" name="diaB"/>
   <outline>
@@ -72,7 +74,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.827,0.600,1</string>
+      <string>0.99,0.62,0.11,1</string>
     </dict>
   </lib>
 </glyph>

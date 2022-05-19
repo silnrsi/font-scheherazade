@@ -2,6 +2,7 @@
 <glyph name="rehLoop-ar" format="2">
   <advance width="873"/>
   <unicode hex="08AA"/>
+  <anchor x="624" y="571" name="above"/>
   <anchor x="267" y="539" name="alef"/>
   <anchor x="360" y="1067" name="diaA"/>
   <anchor x="322" y="-769" name="diaB"/>
@@ -54,7 +55,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.827,0.600,1</string>
+      <string>0.99,0.62,0.11,1</string>
     </dict>
   </lib>
 </glyph>

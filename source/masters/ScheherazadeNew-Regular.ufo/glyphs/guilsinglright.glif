@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="guilsinglright" format="2">
-  <advance width="617"/>
+  <advance width="492"/>
   <unicode hex="203A"/>
   <outline>
-    <contour>
-      <point x="509" y="418" type="line"/>
-      <point x="160" y="846" type="line"/>
-      <point x="110" y="846" type="line"/>
-      <point x="331" y="418" type="line"/>
-      <point x="110" y="-7" type="line"/>
-      <point x="160" y="-7" type="line"/>
-    </contour>
+    <component base="guilsinglleft" xScale="-1" xOffset="492"/>
   </outline>
 </glyph>
