@@ -1,5 +1,9 @@
 WHAT THIS FOLDER IS ABOUT
 
+Building composites is NOT a regular part of the Scheherazade New build system. Composites MAY be built initially, but we have not been rerunning the composite builder for the same glyphs again.
+Thus, these files are placed here for an example if needed for future building, but they should not be rerun without intentional thought.
+---
+
 This folder is used to generate glyphs from components. The component definitions are stored in absGlyphList.xslx/csv/txt. Two utility scripts are run to modify the UFO files.
 
 * psfcsv2comp -i glyphs2build.csv compdefns.txt
