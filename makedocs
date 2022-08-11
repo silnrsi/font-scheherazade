@@ -40,6 +40,7 @@ echo "     > announcement.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/announcement.md -o documentation/announcement.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 echo "     >>> PDF (documentation/pdf/)"
+mkdir -p documentation/source/pdftemp
 
 echo "     > index.html > index.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/index.md -o documentation/source/pdftemp/index.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
