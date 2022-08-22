@@ -20,7 +20,7 @@ argspec = [
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
     ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'name of the test to generate', 'default': None}, {}),
-    ('-s','--fontsrc', {'help': 'font source: "url()" or "local()" optionally followed by "=label"', 'action': 'append'}, {}),
+    ('-s','--fontsrc', {'help': 'font source: "url()" or "local()" optionally followed by "|label"', 'action': 'append'}, {}),
     ('--scale', {'help': 'percentage to scale rendered text (default 100)'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
     ('-w', '--width', {'help': 'total width of all <string> column (default automatic)'}, {}),
@@ -96,7 +96,7 @@ def doit(args):
     labels = []
     for sl in args.fontsrc:
         try:
-            s, l = sl.split('=',1)
+            s, l = sl.split('|',1)
             fontsrc.append(s)
             labels.append(l)
         except ValueError:
