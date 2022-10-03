@@ -10,6 +10,9 @@
 # details including an FAQ.
 #**********************************
 
+# MMM Lateef includes oldStyleKerning.fea
+
+# MMM In Lateef, mark attachment happens before subtending mark handling.
 
 #**********************************
 #  Positioning Lookups
@@ -115,6 +118,7 @@ do if opt("nokern") != "yes";
 
 #********
 # Kerning for collision avoidance
+# MMM Scheherazade only
 
 @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
 @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
@@ -463,10 +467,13 @@ lookup MiscKashidaKerning {
 
 #---  curs feature  ---
 
-lookup cursive_exit_entry {
-  lookupflag IgnoreMarks RightToLeft;
-  pos cursive @entry @exit;
-} cursive_exit_entry;
+# MMM missing from Lateef; 
+# obsolete because this only affects lam-alef pieces which are no longer used.
+
+###lookup cursive_exit_entry {
+###  lookupflag IgnoreMarks RightToLeft;
+###  pos cursive @entry @exit;
+###} cursive_exit_entry;
 
 
 #---  mark feature  ---
@@ -486,10 +493,9 @@ lookup alef_to_base {
 
 lookup mark_to_lig {
   lookupflag 0;
-  
     pos ligature @LamAlefLig            @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefWaslaLig        @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+    pos ligature @LamAlefWaslaLig       @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
     pos ligature @LamAlefWavyHAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
@@ -525,20 +531,24 @@ lookup mark_to_lig {
 @MarkFilter_diaA = [@diaA_MarkBase @_diaA];
 lookup mark_to_mark_above {
   lookupflag UseMarkFilteringSet @MarkFilter_diaA;
-  pos mark @diaA_MarkBase mark @_diaA;
+    pos mark @diaA_MarkBase mark @_diaA;
 } mark_to_mark_above;
 
 @MarkFilter_diaB = [@diaB_MarkBase @_diaB];
 lookup mark_to_mark_below {
   lookupflag UseMarkFilteringSet @MarkFilter_diaB;
-  pos mark @diaB_MarkBase mark @_diaB;
+    pos mark @diaB_MarkBase mark @_diaB;
 } mark_to_mark_below;
+
+# MMM L has raiseMadda lookup
 
 
 #---  kern feature (cont'd)  ---
 
+# MMM Sch only
+
 do if opt("nokern") != "yes";
-{   # more kerning substitutions
+{   # more kerning adjustments
 
 # These need to go after mark attachment.
 
@@ -598,7 +608,7 @@ ifinfo(styleName, "Regular") {
   
 } DiacShifting;
 
-} # end of kerning substitutions
+} # end of kerning adjustments
 
 
 #**********************************
@@ -610,6 +620,7 @@ ifinfo(styleName, "Regular") {
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
+        
 do if opt("nokern") != "yes";
 {   # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
@@ -627,22 +638,25 @@ do if opt("nokern") != "yes";
 } kern ;
 
 
-feature curs {  # Cursive Positioning
-    script arab;
-      lookup cursive_exit_entry;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
-} curs ;
+# obsolete
+###feature curs {  # Cursive Positioning
+###    script arab;
+###      lookup cursive_exit_entry; -- obsolete
+###      # Force other languages to include Arabic script lookups
+###      language KIR ;
+###      language KUR ;
+###      language RHG ;
+###      language SND ;
+###      language URD ;
+###      language WLF ;
+###} curs ;
+
 
 feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
         lookup mark_to_base;
         lookup alef_to_base;
+        # MMM Lateef includes raiseMadda lookup
     script arab;
         lookup mark_to_lig;
         #####lookup LamAlefMark2Adjust;
