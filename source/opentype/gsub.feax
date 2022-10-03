@@ -21,7 +21,7 @@ languagesystem arab KUR  ;    # Kurdish
 languagesystem arab RHG  ;    # Rohingya -- supported by Harfbuzz
 languagesystem arab SND  ;    # Sindhi
 languagesystem arab URD  ;    # Urdu
-languagesystem arab WLF  ;    # Wolof
+languagesystem arab WLF  ;    # Wolof - MMM not in Lateef
 languagesystem latn dflt ;
 
 @MarksAbove = [@_diaA] ;
@@ -30,30 +30,36 @@ languagesystem latn dflt ;
 
 
 #**********************************
-#  Substitution Lookups
+# GSUB (Subtitution) lookups **
 #**********************************
 
 #---  rtlm feature  ---
 
 lookup Mirror {
-  lookupflag IgnoreMarks ;
+  lookupflag IgnoreMarks ;   # MMM not in Lateef
     sub @cno_rtl by @c_rtl ;
 } Mirror;
 
+# HB PAUSE
 
 #---  ccmp feature  ---
 
-lookup SmallMaddah {
-  lookupflag 0 ;
+# MMM not present in L   \/  \/  \/
+lookup SmallMadda {
+  lookupflag 0 ;		# MMM L has IgnoreMarks
     sub @Maddah by @Maddah.small ;
-} SmallMaddah;
+} SmallMadda;
+
+# For full UTR53 stacks, this decomposition will already have been done.
+# Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
 
 lookup DecomposeForColor {
-  lookupflag 0 ;
+  lookupflag 0 ;		# MMM L has IgnoreMarks
     sub @AlefPlusMark by alef-ar @AlefMark ;
 } DecomposeForColor;
 
 
+# MMMMMM presumably can just substitute L code here
 lookup _FontCheck1_target {
   lookupflag IgnoreMarks ;
     sub U n k n o w n by O ;
@@ -74,6 +80,13 @@ lookup FontCheck2 {
     sub [ R ]e n d e r i n g O' lookup _FontCheck2_target ;
 } FontCheck2;
 
+# MMMMMMMMMMMMMMMMMMM
+
+# MMM L has ReorderMadda...
+
+# MMM L has Latin Punctuation
+
+# MMM L has Kasra position
 
 #---  fina feature  ---
 
@@ -273,6 +286,7 @@ lookup ShaddaLigatures {
     sub @ShaddaMarks shadda-ar  by  @ShaddaLigatures ;
 } ShaddaLigatures;
 
+# MMM not present in L
 # In theory we could do this up where we create the Allah ligature, but this simpler:
 lookup ShaddaAlefLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
@@ -280,13 +294,16 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'  by  shadda_alef-ar;
 } ShaddaAlefLigatures;
 
+# MMM L includes shrtail - short-tail variants of reh and waw, but disabled
+
+# HB PAUSE
 
 #---  calt feature  ---
 
 #********
 # Language-specific shaping
 
-lookup dfltCALT {
+lookup dfltCALT {		# MMM not present in Lateef
   lookupflag 0 ;
      sub tab by tab;   # Need a dummy lookup for Typetuner
 } dfltCALT;
@@ -296,6 +313,11 @@ lookup KurdishCALT {
     sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
 } KurdishCALT;
+
+lookup KirghizCALT {   # MMM names are different
+  lookupflag 0;
+    sub @cno_loclKIR  by  @c_loclKIR ;
+} KirghizCALT;
 
 lookup RohingyaCALT {
   lookupflag 0 ;
@@ -335,11 +357,10 @@ lookup WolofCALT {
     sub dammainverted-ar by  dammainverted-ar.open ;
 } WolofCALT;
 
-lookup KirghizCALT {
-  lookupflag 0;
-    sub @cno_loclKIR  by  @c_loclKIR ;
-} KirghizCALT;
+# HB PAUSE
 
+# MMM L handles madda above
+# The logic of the code is virtually the same. What is the deal with madda-ar.small?
 
 #********************
 # Reordering of madda: moving it beyond any mark with 0 < ccc < 230
@@ -370,28 +391,24 @@ lookup ReorderMaddaVowel2 {
     sub madda-ar.small' lookup _ReorderMaddaVowel2  @MaddaSkip madda-ar.small ;
 } ReorderMaddaVowel2;
 
+# MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+# MMM L includes meem alternate here
 
 #********
 # Heh alternates
 
 lookup SindhiHeh {
-  lookupflag IgnoreMarks ;
+  lookupflag IgnoreMarks ;		# MMM L does not have IgnoreMarks
   # Used only by TypeTuner
     sub heh-ar.medi by heh-ar.medi.knottedHigh ;
     sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
 } SindhiHeh;
 
-lookup KurdishHeh {
-  lookupflag IgnoreMarks ;
-  # Used only by TypeTuner
-    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
-    sub heh-ar by heh-ar.knotted ;
-} KurdishHeh;
-
 # heh-hook is no longer defined for Urdu; used only for TypeTuner
 lookup UrduHeh {
-  lookupflag IgnoreMarks ;
+  lookupflag IgnoreMarks ;		# MMM L does not have IgnoreMarks
     sub heh-ar.init by heh-ar.init.hooked ;
     sub heh-ar.medi by heh-ar.medi.hooked ;
     sub heh-ar.fina by heh-ar.fina.hooked ;
@@ -400,6 +417,12 @@ lookup UrduHeh {
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked ;
 } UrduHeh;
 
+lookup KurdishHeh {
+  lookupflag IgnoreMarks ;		# MMM L does not have IgnoreMarks
+  # Used only by TypeTuner
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
+    sub heh-ar by heh-ar.knotted ;
+} KurdishHeh;
 
 lookup HehAlternates {
   lookupflag IgnoreMarks ;
@@ -417,33 +440,50 @@ lookup HehAlternates {
 #********
 # Other alternates
 
-lookup DalAlternate {
+lookup DalAlternate {						# cv12 - MMM not in L
   lookupflag IgnoreMarks ;
     sub @DalIso by @DalIso.sen ;
 } DalAlternate;
 
-lookup MeemAlternate {
+lookup MeemAlternate {					# cv44 - MMM move up
   lookupflag IgnoreMarks ;
     sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
 } MeemAlternate;
 
-lookup MaddahAlternate {
+lookup MaddaAlternate {				# MMM not in L
   lookupflag 0 ;
     sub @Maddah.small by @Maddah ;
-} MaddahAlternate;
+} MaddaAlternate;
+
+lookup KirghizOeAlternates {		# cv51
+  lookupflag 0;
+    sub @cno_bar  by  @c_bar;
+} KirghizOeAlternates;
+
+lookup YehHamzaAlternates {			# cv54
+  lookupflag 0;
+    sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
+    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
+    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
+    sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
+} YehHamzaAlternates;
 
 #TypeTuner lookups:
+# MMM not just for TT in L
 lookup KasraLow {
   lookupflag 0 ;
     sub @Kasra by @Kasra_lowered;
 } KasraLow;
 
+# MMM missing from L  \/   \/   \/
 lookup KasraHigh {
   lookupflag 0 ;
     sub @Kasra_lowered by @Kasra;
 } KasraHigh;
 
-lookup KasraAlternates {
+# MMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+lookup KasraAlternates {			# cv62
   lookupflag 0 ;
     # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
     #   0=default (raised)    1=lowered       2=raised
@@ -451,14 +491,14 @@ lookup KasraAlternates {
     sub @Kasra         from [ @Kasra_lowered  @Kasra ];
 } KasraAlternates;
 
-lookup DammaAlternates {
+lookup DammaAlternates {			# cv70
   lookupflag 0 ;
     sub @Damma        from [ @Damma_filled  @Damma_short ];
     sub @Damma_filled from [ @Damma_filled  @Damma_short ];
     sub @Damma_short  from [ @Damma_filled  @Damma_short ];
 } DammaAlternates;
 
-lookup DammatanAlternate {
+lookup DammatanAlternate {		# cv72
   lookupflag 0 ;
     sub @Dammatan by @Dammatan.sixNine ;
 } DammatanAlternate;
@@ -477,40 +517,27 @@ lookup _DaggerAlefToLarge_target {
     #sub alefabove-ar by alefabove-ar.large ;
 } _DaggerAlefToLarge_target ;
 
-lookup DaggerAlefToLarge {
+lookup DaggerAlefAlternates {
   lookupflag 0 ;
     sub @TakesLargeDaggerAlef alefabove-ar' lookup _DaggerAlefToLarge_target ;
-} DaggerAlefToLarge;
+} DaggerAlefAlternates;
 
-lookup SukunAlternates {
+lookup SukunAlternates {			# cv78
   lookupflag 0 ;
     sub sukun-ar from [ sukun-ar.downOpen sukun-ar.leftOpen ] ;
 } SukunAlternates;
 
-lookup AyahAlternates {  # salt feature
+lookup AyahAlternates {  # cv80 - salt feature
   lookupflag 0 ;
     sub endofayah-ar   from [ endofayah-ar.alt    endofayah-ar.altB ] ;
     sub endofayah-ar.2 from [ endofayah-ar.alt.2  endofayah-ar.altB.2 ] ;
     sub endofayah-ar.3 from [ endofayah-ar.alt.3  endofayah-ar.altB.3 ] ;
 } AyahAlternates;
 
-lookup HonLigAlternates {
+lookup HonLigAlternates {  # MMM not present in L
   lookupflag 0;
     sub @HonLigCall from @HonLigSmpl ;
 } HonLigAlternates;
-
-lookup KirghizOeAlternates {
-  lookupflag 0;
-    sub @cno_bar  by  @c_bar;
-} KirghizOeAlternates;
-
-lookup YehHamzaAlternates {
-  lookupflag 0;
-    sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
-    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
-    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
-    sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
-} YehHamzaAlternates;
 
 #********
 # Digit alternates
@@ -548,6 +575,7 @@ lookup DigitRohingya {
     sub seven-persian       by seven-persian.urdu;
 } DigitRohingya;
 
+# MMM are these used?
 @FourPersian = [ four-persian  four-persian.medium four-persian.small ];
 @FourPersianUrdu = [ four-persian.urdu  four-persian.urdu.medium four-persian.urdu.small ];
 @FourPersianRoh = [ four-persian.roh  four-persian.roh.medium four-persian.roh.small ];
@@ -566,13 +594,13 @@ lookup DigitAlternates {
     sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu   seven-persian       seven-persian.urdu];
 } DigitAlternates;
 
-lookup CommaAlternates {
+lookup CommaAlternates {				# cv84
   lookupflag IgnoreMarks ;
     sub comma-ar by comma-ar.downward ;
     sub semicolon-ar by semicolon-ar.downward ;
 } CommaAlternates;
 
-lookup DecimalSepAlternate {
+lookup DecimalSepAlternate {		# cv85
   lookupflag IgnoreMarks ;
     sub decimalseparator-ar by decimalseparator-ar.slash;
 } DecimalSepAlternate;
@@ -583,6 +611,9 @@ lookup DecimalSepAlternate {
 #********
 # Shadda+kasra handling
 
+# MMM lookupflag is different in L, but logically equivalent.
+# MMM Lateef does not handle graphemejoinercomb, but otherwise I think the code can be
+# made more like Lateef. The ShaddaLigatureParts class seems overly generous/flexible.
 lookup ShaddaKasraLigatures {
   lookupflag MarkAttachmentType @ShaddaLigatureParts;
     sub @ShaddaKasraMarks                    shadda-ar  by  @ShaddaKasraLigatures ;
@@ -590,6 +621,59 @@ lookup ShaddaKasraLigatures {
     sub shadda-ar                    @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
     sub shadda-ar graphemejoinercomb @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
 } ShaddaKasraLigatures;
+
+
+#********
+# Lam-Alef Ligatures
+
+# =====  obsolete  =====
+lookup _LamAlefLig_Part1 {
+  lookupflag IgnoreMarks ;
+    sub @LamIni by @LamIniPreAlef ;
+    sub @LamMed by @LamMedPreAlef ;
+} _LamAlefLig_Part1 ;
+
+lookup _LamAlefLig_Part2a {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinPostLamIni ;
+} _LamAlefLig_Part2a ;
+
+lookup _LamAlefLig_Part2b {
+  lookupflag IgnoreMarks ;
+    sub @AlefFin by @AlefFinPostLamMed ;
+} _LamAlefLig_Part2b ;
+
+lookup LamAlefLigatures_OLD {
+  lookupflag IgnoreMarks ;
+  # Subtable: Ligatures\Part1
+    sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
+  # Subtable: Ligatures\Part2a
+    sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
+  # Subtable: Ligatures\Part2b
+    sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
+} LamAlefLigatures_OLD;
+# ======================
+
+# MMM L does not handle AlefRareNoLig
+lookup LamAlefLigatures {
+  lookupflag IgnoreMarks ;
+    sub @LamNoLig   alef-ar.fina                by  @LamAlefLig ;
+    sub @LamNoLig   alefWasla-ar.fina           by  @LamAlefWaslaLig ;
+    sub @LamNoLig   alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
+    sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
+    sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
+    sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
+    
+    sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
+    sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
+} LamAlefLigatures;
+
+
+# Must be after LamAlefLigatures
+lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
+  lookupflag IgnoreMarks;
+    sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
+} AllahAlef;
 
 
 #********
@@ -621,6 +705,8 @@ lookup SignDigits_ToSmall_target {
   lookupflag IgnoreMarks ;
     sub @DigitsAny by @DigitsAnySmall ;
 } SignDigits_ToSmall_target ;
+
+# MMM L does not include poundmarkabove or piastremarkabove or disputedendofayah
 
 # Keep after cv82, so that the right digit alternates are already selected by now:
 lookup SignWithDigits {
@@ -657,59 +743,6 @@ lookup SignWithDigits {
         [ disputedendofayah-ar ];
 } SignWithDigits;
 
-
-#********
-# Lam-Alef Ligatures
-
-# =====  obsolete  =====
-lookup _LamAlefLig_Part1 {
-  lookupflag IgnoreMarks ;
-    sub @LamIni by @LamIniPreAlef ;
-    sub @LamMed by @LamMedPreAlef ;
-} _LamAlefLig_Part1 ;
-
-lookup _LamAlefLig_Part2a {
-  lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinPostLamIni ;
-} _LamAlefLig_Part2a ;
-
-lookup _LamAlefLig_Part2b {
-  lookupflag IgnoreMarks ;
-    sub @AlefFin by @AlefFinPostLamMed ;
-} _LamAlefLig_Part2b ;
-
-lookup LamAlefLigatures_OLD {
-  lookupflag IgnoreMarks ;
-  # Subtable: Ligatures\Part1
-    sub [ @LamIni @LamMed ]' lookup _LamAlefLig_Part1 @AlefFin ;
-  # Subtable: Ligatures\Part2a
-    sub @LamIniPreAlef @AlefFin' lookup _LamAlefLig_Part2a ;
-  # Subtable: Ligatures\Part2b
-    sub @LamMedPreAlef @AlefFin' lookup _LamAlefLig_Part2b ;
-} LamAlefLigatures_OLD;
-# ======================
-
-lookup LamAlefLigatures {
-  lookupflag IgnoreMarks ;
-    sub @LamNoLig   alef-ar.fina                by  @LamAlefLig ;
-    sub @LamNoLig   alefWasla-ar.fina           by  @LamAlefWaslaLig ;
-    sub @LamNoLig   alefWavyhamzaabove-ar.fina  by  @LamAlefWavyHAboveLig ;
-    sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
-    sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
-    sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
-    
-    sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
-    sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
-} LamAlefLigatures;
-
-
-# Must be after LamAlefLigatures
-lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
-  lookupflag IgnoreMarks;
-#    sub alef-ar'       lam-ar.init.allah1  by  alef-ar.allah;
-#    sub alef-ar.fina'  lam-ar.init.allah1  by  alef-ar.fina.allah;
-    sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
-} AllahAlef;
 
 
 do if opt("nokern") != "yes";
@@ -829,10 +862,12 @@ lookup MarkKashidas {
 
 }  # end of do - kerning substitutions
 
-
+# MMM not included in L
 lookup WideKashida {
   sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
 } WideKashida;
+
+# MMM L has ProportionalFigures and TabularFigures
 
 
 #**********************************
@@ -844,11 +879,14 @@ feature rtlm {  # Right-To-Left Mirrored Forms
     lookup Mirror;
 } rtlm ;
 
+# HB PAUSE
+
+# MMM L includes LatinPunctuation. Kasras are handled differently.
 
 feature ccmp {  # Glyph Composition/Decomposition
     # Same for latin & arabic:
-        lookup SmallMaddah;
-        lookup FontCheck1;
+        lookup SmallMadda;			# MMM not present in L
+        lookup FontCheck1;			# MMM different in L
         lookup FontCheck2;
         lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;            
@@ -863,12 +901,18 @@ feature ccmp {  # Glyph Composition/Decomposition
       language WLF ;
       
     script latn;
-        lookup KasraHigh;
+        lookup KasraHigh;  #### why is this needed for latn?
 } ccmp ;
+
+# feature locl (not used)
+
+# HB PAUSE
+
+# MMM WLF not defined in L
 
 feature fina {  # Terminal Forms
     script arab;
-      lookup ltrFina;
+      	lookup ltrFina;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
@@ -880,7 +924,7 @@ feature fina {  # Terminal Forms
 
 feature medi {  # Medial Forms
     script arab;
-      lookup ltrMedi;
+      	lookup ltrMedi;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
@@ -892,7 +936,7 @@ feature medi {  # Medial Forms
 
 feature init {  # Initial Forms
     script arab;
-      lookup ltrInit;
+      	lookup ltrInit;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
@@ -902,6 +946,9 @@ feature init {  # Initial Forms
       language WLF ;
 } init ;
 
+# HB PAUSE
+
+# MMM shadda + kasra is handled differently in Lateef
 
 feature rlig {  # Required Ligatures
     # lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
@@ -922,12 +969,13 @@ feature rlig {  # Required Ligatures
       language WLF ;
 } rlig ;
 
+# HB PAUSE
 
 feature calt {  # Contextual Alternates
     script arab;
         #lookup SignWithDigits;  # moved to liga feature
         
-do if opt("nokern") != "yes";
+do if opt("nokern") != "yes";          # MMM not present in L
 {   # start of kerning substitutions
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
@@ -936,10 +984,12 @@ do if opt("nokern") != "yes";
         lookup MarkKashidas;
 }   # end of kerning substitutions
 
-        lookup WideKashida;
+        lookup WideKashida;            # MMM not present in L
 
-      language dflt ;   # Must have a lookup here for TypeTuner to work.
+      language dflt ;   # Must have a lookup here for TypeTuner to work. - MMM not in L
         lookup dfltCALT ;
+      language KIR ; # Kirghiz
+        lookup KirghizCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
       language RHG ; #Rohingya
@@ -950,10 +1000,11 @@ do if opt("nokern") != "yes";
         lookup UrduCALT ;
       language WLF ; # Wolof
         lookup WolofCALT ;
-      language KIR ; # Kirghiz
-        lookup KirghizCALT ;
 } calt ;
 
+# HB PAUSE
+
+# HB puts everything else (clig, liga, cvXX, ssXX, salt) in one pass:
 
 feature salt {  # Stylistic Alternates
     script arab;
@@ -969,10 +1020,11 @@ feature salt {  # Stylistic Alternates
 
 #--- Character Variants ---
 
+# MMM L is missing \/   \/   \/
 feature cv12 {  # Character Variant 12
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
     } ;
     script arab;
@@ -990,24 +1042,24 @@ feature cv12 {  # Character Variant 12
 feature cv44 {  # Character Variant 44
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
     } ;
     script arab;
         lookup MeemAlternate;
       # Force other languages to include Arabic script lookups
-      language URD;  # Urdu
       language KIR;  # Kirghiz
       language KUR;  # Kurdish
       language RHG;  # Rohingya
       # language SND; -- but not this one since we enable it in SindhiCALT
+      language URD;  # Urdu
       language WLF;  # Wolof
 } cv44 ;
 
 feature cv48 {  # Character Variant 48
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
@@ -1027,7 +1079,7 @@ feature cv48 {  # Character Variant 48
 feature cv51 {  # Character Variant 51
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kyrgyz OE" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Loop" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
     } ;
     # Same for latin & arabic:
@@ -1037,27 +1089,28 @@ feature cv51 {  # Character Variant 51
 feature cv54 {  # Character Variant 54
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Yeh-Hamza" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Right hamza"   ; };
     } ;
     # Same for latin & arabic:
       lookup YehHamzaAlternates;
 } cv54 ;
 
+# MMM L is missing \/   \/   \/
 feature cv60 {  # Character Variant 60
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Large"    ; };
     } ;
     # Same for latin & arabic:
-      lookup MaddahAlternate;
+      lookup MaddaAlternate;
 } cv60 ;
 
 feature cv62 {  # Character Variant 62
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Lowered" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
     } ;
@@ -1068,49 +1121,52 @@ feature cv62 {  # Character Variant 62
 feature cv70 {  # Character Variant 70
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };   # MMM not present in L
     } ;
     # Same for latin & arabic:
       lookup DammaAlternates;
 } cv70 ;
 
+# MMM in L Rohingya includes exclude_dflt  \/   \/   \/
 
 feature cv72 {  # Character Variant 72
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
     } ;
     # Same for latin & arabic:
       lookup DammatanAlternate;
 } cv72 ;
 
+# MMM missing from L  \/   \/   \/
 feature cv74 {  # Character Variant 74
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
     } ;
     # Same for latin & arabic:
       lookup DammaInvertedAlternates;
 } cv74 ;
 
+# MMM L includes "default" setting
 feature cv76 {  # Character Variant 76
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
         ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
     } ;
     # Same for latin & arabic:
-      lookup DaggerAlefToLarge;
+      lookup DaggerAlefAlternates;
 } cv76 ;
 
 feature cv78 {  # Character Variant 78
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Sukun"     ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open down" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open left" ; };
     } ;
@@ -1121,7 +1177,7 @@ feature cv78 {  # Character Variant 78
 feature cv80 {  # Character Variant 80
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "End of ayah"  ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified A" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified B" ; };
     } ;
@@ -1129,10 +1185,11 @@ feature cv80 {  # Character Variant 80
       lookup AyahAlternates;
 } cv80 ;
 
+# MMM missing from L  \/   \/   \/
 feature cv81 {  # Character Variant 81
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Honorific ligatures" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified" ; };
     } ;
     # Same for latin and arabic:
@@ -1142,7 +1199,7 @@ feature cv81 {  # Character Variant 81
 feature cv82 {  # Character Variant 82
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Eastern digits" ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
@@ -1155,7 +1212,7 @@ feature cv82 {  # Character Variant 82
 feature cv84 {  # Character Variant 84
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Comma"    ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Downward" ; };
     } ;
     # Same for latin & arabic:
@@ -1165,7 +1222,7 @@ feature cv84 {  # Character Variant 84
 feature cv85 {  # Character Variant 85
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Decmal separator"    ; };
-       #ParamUILabelNameID { name 3 1 0x0409 "Small reh"   ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Small reh"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Slash" ; };
     } ;
     # Same for latin & arabic:
@@ -1193,3 +1250,5 @@ feature liga {  # Ligatures  -- we use this because liga is done in the same pas
         lookup LamAlefLigatures;         # Must be after all mark ligatures (including cv62)
         lookup AllahAlef;                # Must be after lam-alef lig
 } liga ;
+
+# MMM L includes tnum and pnum features
