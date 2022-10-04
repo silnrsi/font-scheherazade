@@ -15,8 +15,6 @@
 #  Positioning Lookups
 #**********************************
 
-# MMM Lateef includes oldStyleKerning.fea
-
 include(../../source/opentype/customKerning.feax); 
 
 #---  curs feature  ---
@@ -203,6 +201,7 @@ lookup SubtendingMarks {
 
 include(../../source/opentype/customShifting.feax);
 
+
 # Lateef only; others have an empty lookup
 
 lookup KernPairs {
@@ -223,9 +222,11 @@ feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
         lookup KernPairs;       # Lateef
-        
-do if opt("nokern") != "yes";
-{   # start of kerning positioning
+
+# Scheherazade lookups:
+do let f = info("familyName");
+   if f.find("Scheherazade") != -1 and opt("nokern") != "yes"; {
+   # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup LamAlefKerning;
@@ -237,7 +238,14 @@ do if opt("nokern") != "yes";
         lookup MiscKashidaKerning;
         # after mark attachment:
         lookup DiacShifting;
-}   # end of kerning positioning
+}   # SchNew and not nokern
+
+# Lateef lookups:
+do let f = info("familyName");
+   if f.find("Lateef") != -1; {
+        lookup OldStyleKerning;
+}   # Lateef
+
 } kern ;
 
 
