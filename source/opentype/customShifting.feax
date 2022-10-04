@@ -1,0 +1,79 @@
+#**********************************
+# This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
+# and is Copyright (c) 1994-2022 SIL International (http://www.sil.org/),
+# with Reserved Font Names "Scheherazade" and "SIL".
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+#
+# You should have received a copy of the license along with this Font Software.
+# If this is not the case, go to (http://scripts.sil.org/OFL) for all the
+# details including an FAQ.
+#**********************************
+
+# This file performs the shifting that is needed for collision avoidance.
+# It must go after mark attachment.
+
+#---  kern feature  ---
+
+
+do if opt("nokern") != "yes";
+{   
+
+lookup DiacShifting {
+
+  # alef + takhallus (name marker)
+  pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
+  pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
+  pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
+ifinfo(styleName, "Bold") {
+  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 550 220  0 0>;  # BOLD
+  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 550 430  0 0>;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;  # REGULAR
+  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;  # REGULAR
+}
+
+  # beh + kasra +jeem/ain/yeh-barree finals
+ifinfo(styleName, "Bold") {
+  pos @ToothRing  kasra-ar'    <  0   75 0 0>  @YehBarreeFina;  # special case - BOLD
+  pos @ToothRing  kasratan-ar' <120 -450 0 0>  @YehBarreeFina;  # special case - BOLD
+}
+ifinfo(styleName, "Regular") {
+  ignore pos @ToothRing  kasra-ar'                @YehBarreeFina;  # okay with yeh-barree - REGULAR
+  pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case - REGULAR
+}
+  
+ifinfo(styleName, "Bold") {
+  pos @Tooth1hBelow  kasra-ar'    <  0 -300 0 0>  @YehBarreeFina;  # BOLD
+  pos @Tooth1hBelow  kasratan-ar' <100 -200 0 0>  @YehBarreeFina;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+  pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;  # REGULAR
+  pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;  # REGULAR
+}
+  pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
+  pos @Tooth2hBelow  kasratan-ar' <  0 -100 0 0>  @YehBarreeFina;
+  pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
+  
+ifinfo(styleName, "Bold") {
+  pos @Tooth1hBelow  kasra-ar'    < 10 -300 0 0>  @JeemAinLikeFina;  # BOLD
+}
+ifinfo(styleName, "Regular") {
+  pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;  # REGULAR
+}
+  pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
+  pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
+  pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
+  pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
+  
+  pos @AlefForms  madda-ar.small' < 20 0 0 0>  @GafIsolInit;  # also see kern rules above
+  pos @AlefForms  madda-ar'       < 90 0 0 0>  @GafIsolInit;
+  pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
+  
+  pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
+  
+} DiacShifting;
+
+} # end of collision adjustments
+

@@ -10,395 +10,41 @@
 # details including an FAQ.
 #**********************************
 
-# MMM Lateef includes oldStyleKerning.fea
-
-# MMM In Lateef, mark attachment happens before subtending mark handling.
 
 #**********************************
 #  Positioning Lookups
 #**********************************
 
-#---  kern feature  ---
+# MMM Lateef includes oldStyleKerning.fea
 
-do if opt("nokern") != "yes";
-{  # start of kerning positioning lookups
-
-#********
-# Kerning for collision avoidance
-# MMM Scheherazade only
-
-@RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
-@RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
-@RehKernMost = [@RehKernOther @RehKernOtherMB];
-
-@AlefForms = [alef-ar alef-ar.fina];
-@AlefDigit = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
-
-lookup _kern50 {
-  pos @RehWawAll    <50 0  50 0>;
-  pos highhamza-ar  <50 0  50 0>;
-} _kern50;
-
-lookup _kern70 {
-  pos @RehWawAll <70 0  70 0>;
-} _kern70;
-
-lookup _kern90 {
-  pos @Tooth2wAboveInit        <90 0  90 0>;
-  pos alef-ar.fina.postLamIni  <90 0  90 0>;
-  pos alef-ar.fina.postLamMed  <90 0  90 0>; 
-} _kern90;
-
-lookup _kern100 {
-  pos @Tooth1hBelow <100 0  100 0>;
-  pos @Tooth2hBelow <100 0  100 0>;
-  pos teheh-ar.init <100 0  100 0>;
-  pos @KafLikeInit  <100 0  100 0>;
-} _kern100;
-
-lookup _kern130 {
-  pos @RehWawAll      <130 0  130 0>;
-  pos @ToothPlusAbove <130 0  130 0>;
-  pos @AlefForms      <130 0  130 0>;
-  pos highhamza-ar    <130 0  130 0>;
-} _kern130;
-
-lookup _kern140 {
-  pos @Tooth  <140 0  140 0>;
-} _kern140;
-
-lookup _kern150 {
-  pos @RehWawAll  <150 0  150 0>;
-} _kern150;
-
-lookup _kern170 {
-  pos @RehWawAll         <170 0  170 0>;
-  pos @Tooth2wBelowRstrk <170 0  170 0>;
-  pos @AlefForms         <170 0  170 0>;
-} _kern170;
-
-lookup _kern215 {
-  pos @RehWawAll <215 0  215 0>;
-} _kern215;
-
-lookup _kern290 {
-  pos @RehWawTighten <200 0  200 0>;
-} _kern290;
-
-lookup _kern_190 {
-  pos @RehWawTighten <-190 0  -190 0>;
-} _kern_190;
-
-lookup _kern_215 {
-  pos @RehWawTighten <-215 0  -215 0>;
-} _kern_215;
-
-lookup _kern_290 {
-  pos @RehWawTighten <-290 0  -290 0>;
-} _kern_290;
-
-lookup _kern_300 {
-  pos ae-ar       <-300 0  -300 0>;
-  pos ae-ar.fina  <-300 0  -300 0>;
-} _kern_300;
-
-lookup _kern_380 {
-  pos @RehWawTighten <-380 0  -380 0>;
-} _kern_380;
-
-lookup _kern_410 {
-  pos @RehWawTighten <-410 0  -410 0>;
-} _kern_410;
-
-lookup _kern_550 {
-  pos @RehWawTighten <-550 0  -550 0>;
-} _kern_550;
-
-lookup _kern_580 {
-  pos @RehWawTighten <-580 0  -580 0>;
-} _kern_580;
-
-
-# Break this into a separate lookup to handle a sequence like waw + reh + alef
-lookup RehWawKerning1 {
-  lookupflag IgnoreMarks;
-  
-ifinfo(styleName, "Bold") {
-  pos @WawLike' lookup _kern50  @RehLikeIsol; 
-}
-ifinfo(styleName, "Regular") {
-  # bogus, but it seems to be needed to make the build happy:
-  ignore pos @WawLike @RehLikeIsol;
-}
-  # standard spacing is pretty good - don't futz with it.
-  #ignore pos @RehWawAll  @RehWawAll;
-} RehWawKerning1;
-
-
-lookup RehWawKerning {
-  # does not ignore diacritics
-  
-  # Tighten to following gaf-like
-ifinfo(styleName, "Bold") {
-  pos @RehWawTighten' lookup _kern_380                @RehKernKaf ;
-  pos @RehWawTighten' lookup _kern_380 @_diaB         @RehKernKaf ;
-  pos @RehWawTighten' lookup _kern_380 @_diaB @_diaB  @RehKernKaf ;
-}
-ifinfo(styleName, "Regular") {
-  pos u-ar' lookup _kern_410                @RehKernKaf ;  # special case
-  pos u-ar' lookup _kern_410 @_diaB         @RehKernKaf ;
-  pos u-ar' lookup _kern_410 @_diaB @_diaB  @RehKernKaf ;
-
-  pos @RehWawTighten' lookup _kern_550                @RehKernKaf ;
-  pos @RehWawTighten' lookup _kern_550 @_diaB         @RehKernKaf ;
-  pos @RehWawTighten' lookup _kern_550 @_diaB @_diaB  @RehKernKaf ;
-}
-
-  # Loosen from following alef/lam when it has something below it
-  pos reh-ar' lookup _kern290                      alefWavyhamzabelow-ar ;
-  pos reh-ar' lookup _kern290 @MarksAny            alefWavyhamzabelow-ar ;
-  pos reh-ar' lookup _kern290 @MarksAny @MarksAny  alefWavyhamzabelow-ar ;
-    
-  pos @RehWawAll' lookup _kern215                      @AlefLamWBelow ;
-  pos @RehWawAll' lookup _kern215 @MarksAny            @AlefLamWBelow ;
-  pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefLamWBelow ;
-  
-  pos @RehWawAll' lookup _kern215                      @AlefIso @_diaB ;
-  pos @RehWawAll' lookup _kern215 @MarksAny            @AlefIso @_diaB ;
-  pos @RehWawAll' lookup _kern215 @MarksAny @MarksAny  @AlefIso @_diaB ;
-  
-  # Loosen from following narrow initials with something below:
-  pos @RehWawAll' lookup _kern130                      @NarrowIni @_diaB ;
-  pos @RehWawAll' lookup _kern130 @MarksAny            @NarrowIni @_diaB ;
-  pos @RehWawAll' lookup _kern130 @MarksAny @MarksAny  @NarrowIni @_diaB ;
-
-ifinfo(styleName, "Bold") {
-  # Loosen from following narrow initials with dots below:
-  pos @RehWawAll' lookup _kern150                      @Tooth2wBelowInit ;
-  pos @RehWawAll' lookup _kern150 @MarksAny            @Tooth2wBelowInit ;
-  pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny  @Tooth2wBelowInit ;
-}
-
-  # Leave certain cases alone:
-  ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
-  ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            
-  ignore pos @RehWawTighten @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
-  
-  ignore pos @RehWawTighten @_diaA               @RehKernOtherMA ;
-  ignore pos @RehWawTighten @MarksAny @_diaA     @RehKernOtherMA ;
-  
-  # Kirghiz-OE (waw-loop) has a different shape:
-  ignore pos kirghizoe-ar noon-ar;
-  ignore pos kirghizoe-ar yehbarree-ar;
-  ignore pos kirghizoe-ar.fina noon-ar;
-  ignore pos kirghizoe-ar.fina yehbarree-ar;
-
-  # Otherwise tighten against most things:
-  pos @RehWawTighten' lookup _kern_190                @RehKernAlef;
-  pos @RehWawTighten' lookup _kern_190 @_diaB         @RehKernAlef;
-  pos @RehWawTighten' lookup _kern_190 @_diaB @_diaB  @RehKernAlef;
-  
-  pos @RehWawTighten' lookup _kern_190                      @RehKernMost;  #@RehKernOther + @RehKernOtherMB
-  pos @RehWawTighten' lookup _kern_190 @MarksAny            @RehKernMost;
-  pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
-  
-  ignore pos @RehWawTighten                      @AinLikeInit @_diaB;
-  ignore pos @RehWawTighten @MarksAny            @AinLikeInit @_diaB;
-  ignore pos @RehWawTighten @MarksAny @MarksAny  @AinLikeInit @_diaB;
-  
-  pos @RehWawTightenToAin' lookup _kern_215                      @AinLikeInit;
-  pos @RehWawTightenToAin' lookup _kern_215 @MarksAny            @AinLikeInit;
-  pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @MarksAny  @AinLikeInit;
-  
-  pos @RehWawTightenToAinX' lookup _kern_290                      @AinLikeInit;
-  pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny            @AinLikeInit;
-  pos @RehWawTightenToAinX' lookup _kern_290 @MarksAny @MarksAny  @AinLikeInit;
-  
-  pos @RehWawTightenToAinIsol' lookup _kern_580                      @AinLikeIsol;
-  pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny            @AinLikeIsol;
-  pos @RehWawTightenToAinIsol' lookup _kern_580 @MarksAny @MarksAny  @AinLikeIsol;
-    
-} RehWawKerning;
-
-lookup LamAlefKerning {
-  lookupflag IgnoreMarks;
-
-ifinfo(styleName, "Bold") {
-    pos @AlefFinPostLamIni <-30 0 -30 0>  @LamAlefKern;
-}
-ifinfo(styleName, "Regular") {
-    pos @AlefFinPostLamIni <-70 0 -70 0>  @LamAlefKern;
-}
-
-} LamAlefKerning;
-
-lookup MiscKerning {
-  lookupflag IgnoreMarks;
-    pos @AlefForms' lookup _kern70  rreh-ar;
-    
-    # beh + reh-stroke
-    pos @Tooth1hBelow' lookup _kern100  rehStroke-ar.fina;
-    pos @Tooth2hBelow' lookup _kern100  rehStroke-ar.fina;  
-
-    pos highhamza-ar' lookup _kern130  @Tooth2wAboveInit;
-
-} MiscKerning;
-
-lookup MiscKerningWDiacs {
-  # does not ignore diacritics
-  
-    # alef-maddah + gaf
-    pos @AlefForms' lookup _kern130  madda-ar.small  @GafIsolInit;      # also see shift rules below
-    pos @AlefForms' lookup _kern170  madda-ar        @GafIsolInit;
-    pos @AlefForms' lookup _kern170  madda-ar        @LamLikeIsolInit;
-
-    # beh-like + something above + reh-tah
-    pos @Tooth' lookup _kern140  @MarksAbove  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see shift rule below
-    
-    # AE + kaf
-    pos ae-ar'      lookup _kern_300          @KafLikeInit;
-    pos ae-ar'      lookup _kern_300  @_diaB  @KafLikeInit;
-    pos ae-ar.fina' lookup _kern_300          @KafLikeInit;
-    pos ae-ar.fina' lookup _kern_300  @_diaB  @KafLikeInit;
-} MiscKerningWDiacs;
-
-# Note that shifting in RTL works the opposite in OpenType compared to Graphite.
-
-#********
-# Kashida kerning for yeh/peh forms, etc.
-
-# When we kern the kashida, we shift it a bit further to the right, just to avoid it hanging too far
-# off the left edge of the following glyph. Not really necessary, but a precaution.
-# (In Graphite we do this by splitting the kerning between the kashida and the following glyph.)
-
-# Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
-
-lookup _kkern_40 {
-  pos absAutoKashida     <-20 0  -40 0>;
-} _kkern_40;
-
-lookup _kkern_60 {
-  pos absAutoKashida     <-30 0  -60 0>;
-} _kkern_60;
-
-lookup _kkern_80 {
-  pos absAutoKashida     <-40 0  -80 0>;
-} _kkern_80;
-
-lookup _kkern_100 {
-  pos absAutoKashida     <-50 0  -100 0>;
-} _kkern_100;
-
-lookup _kkern_120 {
-  pos absAutoKashida     <-60 0  -120 0>;
-} _kkern_120;
-
-lookup _kkern_140 {
-  pos absAutoKashida     <-70 0  -140 0>;
-} _kkern_140;
-
-lookup _kkern_160 {
-  pos absAutoKashida     <-80 0  -160 0>;
-} _kkern_160;
-
-lookup _kkern_180 {
-  pos absAutoKashida     <-90 0  -180 0>;
-} _kkern_180;
-
-lookup _kkern_240 {
-  pos absAutoKashida     <-120 0  -240 0>;
-} _kkern_240;
-
-
-lookup ToothKashidaKerningIM {
-  lookupflag IgnoreMarks;
-    ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
-ifinfo(styleName, "Regular") {
-    pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
-}
-    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_140  absAutoKashida   @Tooth3wBelowMedi;
-    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80   @Tooth2wBelowMedi;
-    
-ifinfo(styleName, "Bold") {
-    pos @Tooth2wBelowMedi absAutoKashida' lookup _kkern_60   @Tooth2wBelowMedi;  # BOLD
-    pos @Tooth2wAboveMedi absAutoKashida' lookup _kkern_60   @Tooth2wAboveMedi;  # BOLD
-    
-    pos @Tooth2wAboveInit'  absAutoKashida' lookup _kkern_100  @FehQaf2wAboveMedi;  # BOLD
-    pos @FehQaf2wAboveInit' absAutoKashida' lookup _kkern_60   @FehQaf2wAboveMedi;  # BOLD    
-    
-    pos teheh-ar.init' lookup _kern100  teheh-ar.medi;
-    
-    # teh + waw w/ something above
-    pos @Tooth2wAboveInit' lookup _kern90  @WawLikeFinaMA;  # no kashida
-    
-    # kaf + teh
-    pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
-    
-    pos alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
-    pos alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
-}
-
-} ToothKashidaKerningIM;
-
-lookup ToothKashidaKerningMM {
-  lookupflag IgnoreMarks;
-ifinfo(styleName, "Regular") {
-    pos @Tooth3wBelowMedi  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
-}
-    pos @Tooth2wBelowMedi  absAutoKashida' lookup _kkern_140  absAutoKashida  @Tooth3wBelowMedi;
-    
-ifinfo(styleName, "Bold") {
-    pos @FehQaf2wAboveMedi' absAutoKashida' lookup _kkern_240  @FehQaf2wAboveMedi;  # BOLD    
-}
-
-} ToothKashidaKerningMM;
-
-lookup ToothKashidaKerningIMF {
-  lookupflag IgnoreMarks;
-    pos @Tooth2wBelowInit  absAutoKashida' lookup _kkern_80  @YehLikeFina;
-    
-    pos @Tooth absAutoKashida' lookup _kkern_100  tehMarbuta-ar.fina;
-} ToothKashidaKerningIMF;
-
-lookup MiscKashidaKerning {
-  lookupflag IgnoreMarks;
-    pos @KafLikeInitMedi   absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-    pos @JeemLikeInitMedi  absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-    pos noon-ar.medi       absAutoKashida' lookup _kkern_120  @RnoonLikeNarrow;
-    
-    #pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
-} MiscKashidaKerning;
-
-}  # end of do - kashida positioning lookups
-
+include(../../source/opentype/customKerning.feax); 
 
 #---  curs feature  ---
 
 # MMM missing from Lateef; 
 # obsolete because this only affects lam-alef pieces which are no longer used.
-
-###lookup cursive_exit_entry {
+###lookup CursiveExitEntry {
 ###  lookupflag IgnoreMarks RightToLeft;
-###  pos cursive @entry @exit;
-###} cursive_exit_entry;
+###    pos cursive @entry @exit;
+###} CursiveExitEntry;
 
 
 #---  mark feature  ---
 
-lookup mark_to_base {
+lookup MarkToBase {
   lookupflag 0;
-    pos base @diaA  mark @_diaA;
-    pos base @diaB  mark @_diaB;
-} mark_to_base;
+    pos  base @diaA  mark @_diaA;
+    pos  base @diaB  mark @_diaB;
+} MarkToBase;
 
 # Override mark positioning in the case of dagger-alef on certain chars:
-lookup alef_to_base {
+lookup AlefToBase {
   lookupflag 0;
-    pos base @alef  mark @_alef;
-} alef_to_base;
+    pos  base @alef  mark @_alef;
+} AlefToBase;
 
 
-lookup mark_to_lig {
+lookup MarkToLig {
   lookupflag 0;
     pos ligature @LamAlefLig            @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
@@ -412,7 +58,7 @@ lookup mark_to_lig {
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
     pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-} mark_to_lig;
+} MarkToLig;
 
 
 # Use the dia2B AP when you have two diacritics below a lam-alef.
@@ -436,18 +82,29 @@ lookup mark_to_lig {
 #---  mkmk feature  ---
 
 @MarkFilter_diaA = [@diaA_MarkBase @_diaA];
-lookup mark_to_mark_above {
+lookup MarkToMarkAbove {
   lookupflag UseMarkFilteringSet @MarkFilter_diaA;
     pos mark @diaA_MarkBase mark @_diaA;
-} mark_to_mark_above;
+} MarkToMarkAbove;
 
 @MarkFilter_diaB = [@diaB_MarkBase @_diaB];
-lookup mark_to_mark_below {
+lookup MarkToMarkBelow {
   lookupflag UseMarkFilteringSet @MarkFilter_diaB;
     pos mark @diaB_MarkBase mark @_diaB;
-} mark_to_mark_below;
+} MarkToMarkAbove;
 
-# MMM L has raiseMadda lookup
+
+# Lateef only; others have an empty lookup
+
+# Increase vertical separation between maddah and fatha for sequences like:
+# alefMaddah + lam-initial + fatha (for all initial lam-like glyphs that have 
+# no nukta above) [ABS-2762]
+lookup RaiseMadda {
+  lookupflag 0;
+ifinfo(familyName, "Lateef") {
+  pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
+}
+} RaiseMadda ;
 
 
 #---  kern feature (cont'd)  ---
@@ -544,70 +201,16 @@ lookup SubtendingMarks {
 } SubtendingMarks;
 
 
-# MMM Sch only
+include(../../source/opentype/customShifting.feax);
 
-do if opt("nokern") != "yes";
-{   
+# Lateef only; others have an empty lookup
 
-# More adjustments for collisions. These need to go after mark attachment.
-
-lookup DiacShifting {
-
-  # alef + takhallus (name marker)
-  pos @AlefForms  hehgoal-ar.init  takhallusabove-ar' <-350 300  0 0>;
-  pos @AlefForms  tehMarbuta-ar    takhallusabove-ar' <   0 150  0 0>;
-  pos @AlefForms  @HehLikeIsolate  takhallusabove-ar' <   0 320  0 0>;
-ifinfo(styleName, "Bold") {
-  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 550 220  0 0>;  # BOLD
-  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 550 430  0 0>;  # BOLD
+lookup KernPairs {
+  lookupflag IgnoreMarks;
+ifinfo(familyName, "Lateef") {
+    kernpairs;
 }
-ifinfo(styleName, "Regular") {
-  pos @AlefDigit  tehMarbuta-ar    takhallusabove-ar' < 450 220  0 0>;  # REGULAR
-  pos @AlefDigit  @HehLikeIsolate  takhallusabove-ar' < 350 430  0 0>;  # REGULAR
-}
-
-  # beh + kasra +jeem/ain/yeh-barree finals
-ifinfo(styleName, "Bold") {
-  pos @ToothRing  kasra-ar'    <  0   75 0 0>  @YehBarreeFina;  # special case - BOLD
-  pos @ToothRing  kasratan-ar' <120 -450 0 0>  @YehBarreeFina;  # special case - BOLD
-}
-ifinfo(styleName, "Regular") {
-  ignore pos @ToothRing  kasra-ar'                @YehBarreeFina;  # okay with yeh-barree - REGULAR
-  pos @ToothRing     kasratan-ar' <120  180 0 0>  @YehBarreeFina;  # special case - REGULAR
-}
-  
-ifinfo(styleName, "Bold") {
-  pos @Tooth1hBelow  kasra-ar'    <  0 -300 0 0>  @YehBarreeFina;  # BOLD
-  pos @Tooth1hBelow  kasratan-ar' <100 -200 0 0>  @YehBarreeFina;  # BOLD
-}
-ifinfo(styleName, "Regular") {
-  pos @Tooth1hBelow  kasra-ar'    <  0  145 0 0>  @YehBarreeFina;  # REGULAR
-  pos @Tooth1hBelow  kasratan-ar' <200  290 0 0>  @YehBarreeFina;  # REGULAR
-}
-  pos @Tooth2hBelow  kasra-ar'    <  0 -200 0 0>  @YehBarreeFina;
-  pos @Tooth2hBelow  kasratan-ar' <  0 -100 0 0>  @YehBarreeFina;
-  pos @Tooth0Below   kasratan-ar' <  0  150 0 0>  @YehBarreeFina;
-  
-ifinfo(styleName, "Bold") {
-  pos @Tooth1hBelow  kasra-ar'    < 10 -300 0 0>  @JeemAinLikeFina;  # BOLD
-}
-ifinfo(styleName, "Regular") {
-  pos @Tooth1hBelow  kasra-ar'    <120  150 0 0>  @JeemAinLikeFina;  # REGULAR
-}
-  pos @Tooth1hBelow  kasratan-ar' <100   30 0 0>  @JeemAinLikeFina;
-  pos @Tooth2hBelow  kasra-ar'    <  0 -100 0 0>  @JeemAinLikeFina;
-  pos @Tooth2hBelow  kasratan-ar' < 50    0 0 0>  @JeemAinLikeFina;
-  pos @Tooth0Below   kasratan-ar' <100    0 0 0>  @JeemAinLikeFina;
-  
-  pos @AlefForms  madda-ar.small' < 20 0 0 0>  @GafIsolInit;  # also see kern rules above
-  pos @AlefForms  madda-ar'       < 90 0 0 0>  @GafIsolInit;
-  pos @AlefForms  madda-ar'       < 70 0 0 0>  @LamLikeIsolInit;
-  
-  pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
-  
-} DiacShifting;
-
-} # end of collision adjustments
+} KernPairs;
 
 
 #**********************************
@@ -619,6 +222,7 @@ ifinfo(styleName, "Regular") {
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
+        lookup KernPairs;       # Lateef
         
 do if opt("nokern") != "yes";
 {   # start of kerning positioning
@@ -640,7 +244,7 @@ do if opt("nokern") != "yes";
 # obsolete
 ###feature curs {  # Cursive Positioning
 ###    script arab;
-###      lookup cursive_exit_entry; -- obsolete
+###      lookup CursiveExitEntry; -- obsolete
 ###      # Force other languages to include Arabic script lookups
 ###      language KIR ;
 ###      language KUR ;
@@ -653,11 +257,11 @@ do if opt("nokern") != "yes";
 
 feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
-        lookup mark_to_base;
-        lookup alef_to_base;
-        # MMM Lateef includes raiseMadda lookup
+        lookup MarkToBase;
+        lookup AlefToBase;
+        lookup RaiseMadda;    # Lateef
     script arab;
-        lookup mark_to_lig;
+        lookup MarkToLig;
         #####lookup LamAlefMark2Adjust;
       # Force other languages to include Arabic script lookups
       language KIR ;
@@ -670,6 +274,6 @@ feature mark {  # Mark to base Positioning
 
 feature mkmk {  # Mark to mark Positioning
     # Same for latin & arabic:
-        lookup mark_to_mark_above;
-        lookup mark_to_mark_below;
+        lookup MarkToMarkAbove;
+        lookup MarkToMarkBelow;
 } mkmk ;
