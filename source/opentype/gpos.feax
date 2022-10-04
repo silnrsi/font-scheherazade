@@ -91,7 +91,7 @@ lookup MarkToMarkAbove {
 lookup MarkToMarkBelow {
   lookupflag UseMarkFilteringSet @MarkFilter_diaB;
     pos mark @diaB_MarkBase mark @_diaB;
-} MarkToMarkAbove;
+} MarkToMarkBelow;
 
 
 # Lateef only; others have an empty lookup
