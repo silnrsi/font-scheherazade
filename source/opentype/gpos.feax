@@ -12,7 +12,7 @@
 
 
 #**********************************
-#  Positioning Lookups
+# GPOS (Positioning) lookups
 #**********************************
 
 include(../../source/opentype/customKerning.feax); 
@@ -213,10 +213,8 @@ ifinfo(familyName, "Lateef") {
 
 
 #**********************************
-#  FEATURES
+#  GPOS FEATURES
 #**********************************
-
-#--- Positioning ---
 
 feature kern {  # Kerning
     # Same behavior for latin & arabic:

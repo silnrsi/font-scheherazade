@@ -16,7 +16,7 @@
 #**********************************
 
 languagesystem arab dflt ;
-languagesystem arab KIR  ;    # Kirghiz
+languagesystem arab KIR  ;    # Kyrgyz
 languagesystem arab KUR  ;    # Kurdish
 languagesystem arab RHG  ;    # Rohingya -- supported by Harfbuzz
 languagesystem arab SND  ;    # Sindhi
@@ -30,7 +30,7 @@ languagesystem latn dflt ;
 
 
 #**********************************
-# GSUB (Subtitution) lookups **
+# GSUB (Subtitution) lookups
 #**********************************
 
 #---  rtlm feature  ---
@@ -58,35 +58,77 @@ lookup DecomposeForColor {
     sub @AlefPlusMark by alef-ar @AlefMark ;
 } DecomposeForColor;
 
+#********************
+# Font rendering check
+#
+# The following three lookups change "RenderingUnknown" to "RenderingOpenType"
 
-# MMMMMM presumably can just substitute L code here
-lookup _FontCheck1_target {
+lookup _FontCheck_Unknow {
+  lookupflag IgnoreMarks;
+    sub [U n k o w ] by [O p e T y];
+} _FontCheck_Unknow;
+
+lookup _FontCheck_n {
+  lookupflag IgnoreMarks;
+    sub n by p e;
+} _FontCheck_n;
+
+lookup FontCheck {
   lookupflag IgnoreMarks ;
-    sub U n k n o w n by O ;
-} _FontCheck1_target ;
+    sub [R] e n d e r i n g 
+      U' lookup _FontCheck_Unknow 
+      n' lookup _FontCheck_Unknow
+      k' lookup _FontCheck_Unknow
+      n'  
+      o' lookup _FontCheck_Unknow 
+      w' lookup _FontCheck_Unknow 
+      n' lookup _FontCheck_n;
+} FontCheck;
 
-lookup FontCheck1 {
-  lookupflag IgnoreMarks ;
-    sub [ R ]e n d e r i n g U' lookup _FontCheck1_target n'  k'  n'  o'  w'  n'  ;
-} FontCheck1;
 
-lookup _FontCheck2_target {
-  lookupflag IgnoreMarks ;
-    sub O by O p e n T y p e ;
-} _FontCheck2_target ;
+# Reordering of madda: moving it beyond any mark with 0 < ccc < 230
+#
+# If Harfbuzz is rendering, UTR53 will already have been executed, thus the following will do nothing
+# Otherwise, we can't do a lot of reordering but we'll move the madda out past vowels
+# in a way that is compatible with UTR53.
 
-lookup FontCheck2 {
-  lookupflag IgnoreMarks ;
-    sub [ R ]e n d e r i n g O' lookup _FontCheck2_target ;
-} FontCheck2;
+@MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
 
-# MMMMMMMMMMMMMMMMMMM
+lookup _ReorderMaddaVowel1 {
+  lookupflag 0 ;
+    sub @MaddaSkip by @MaddaSkip madda-ar.small ;
+} _ReorderMaddaVowel1 ;
 
-# MMM L has ReorderMadda...
+lookup ReorderMaddaVowel1 {
+  lookupflag 0 ;
+    sub madda-ar.small @MaddaSkip' lookup _ReorderMaddaVowel1 ;
+} ReorderMaddaVowel1;
 
-# MMM L has Latin Punctuation
+lookup _ReorderMaddaVowel2 {
+  lookupflag 0 ;
+    sub madda-ar.small @MaddaSkip by @MaddaSkip ;
+} _ReorderMaddaVowel2 ;
 
-# MMM L has Kasra position
+lookup ReorderMaddaVowel2 {
+  lookupflag 0 ;
+    sub madda-ar.small' lookup _ReorderMaddaVowel2  @MaddaSkip madda-ar.small ;
+} ReorderMaddaVowel2;
+
+
+# Replace Arabic punctuation glyphs with Latin ones:
+lookup LatinPunctuation {
+  lookupflag 0 ;
+    sub @cno_latn by @c_latn ;
+} LatinPunctuation ;
+
+
+# Kasra position
+lookup KasraLow {
+  lookupflag 0 ;
+    sub @Kasra by @Kasra_lowered;
+} KasraLow;
+
+# HB PAUSE
 
 #---  fina feature  ---
 
@@ -113,7 +155,6 @@ lookup ltrInit {
 
 #---  rlig feature  ---
 
-#********
 # Allah "ligature" (implemented by variant forms for glyphs rather than by ligature glyph):
 
 lookup _AllahSub_Alef {
@@ -232,6 +273,15 @@ lookup AllahLigatures {
 } AllahLigatures;
 
 
+# Ligatures of marks
+
+# NB: This includes required ligatures other than the shadda-kasra rule, which
+#     must execute after cv67; See notes with feature liga.
+
+# These compositions have to strike a balance between
+# trying to do something useful for DirectWrite (which doesn't reorder glyphs) without
+# violating the rules of UTR53.
+
 #********
 # Hamza ligation
 
@@ -286,7 +336,8 @@ lookup ShaddaLigatures {
     sub @ShaddaMarks shadda-ar  by  @ShaddaLigatures ;
 } ShaddaLigatures;
 
-# MMM not present in L
+# MMM not present in L    \/   \/   \/
+
 # In theory we could do this up where we create the Allah ligature, but this simpler:
 lookup ShaddaAlefLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
@@ -296,16 +347,29 @@ lookup ShaddaAlefLigatures {
 
 # MMM L includes shrtail - short-tail variants of reh and waw, but disabled
 
+   
+lookup DaggerAlefToLarge {
+  lookupflag 0 ;
+ifinfo(familyName, "Lateef") {
+      sub @TakesLargeDaggerAlef alefabove-ar' by alefabove-ar.large ;   # Lateef
+}
+} DaggerAlefToLarge;
+
+
 # HB PAUSE
+
+# Language-independent CALTs
 
 #---  calt feature  ---
 
 #********
 # Language-specific shaping
 
+# Note: Setting default kasra is done in ccmp
+
 lookup dfltCALT {		# MMM not present in Lateef
   lookupflag 0 ;
-     sub tab by tab;   # Need a dummy lookup for Typetuner
+     sub tab by tab;   # Need a dummy lookup for TypeTuner - OBSOLETE???
 } dfltCALT;
 
 lookup KurdishCALT {
@@ -314,10 +378,10 @@ lookup KurdishCALT {
     sub heh-ar by heh-ar.knotted ;
 } KurdishCALT;
 
-lookup KirghizCALT {   # MMM names are different
+lookup KyrgyzCALT {
   lookupflag 0;
     sub @cno_loclKIR  by  @c_loclKIR ;
-} KirghizCALT;
+} KyrgyzCALT;
 
 lookup RohingyaCALT {
   lookupflag 0 ;
@@ -351,10 +415,12 @@ lookup UrduCALT {
 
 lookup WolofCALT {
   lookupflag 0 ;
+ifinfo(familyName, "Scheherazade New") {
     sub @cno_loclWLF     by  @c_loclWLF ;
     sub @Damma           by  @Damma_short ;
     sub @Kasra           by  @Kasra_lowered ;
     sub dammainverted-ar by  dammainverted-ar.open ;
+}  # Sch
 } WolofCALT;
 
 # HB PAUSE
@@ -362,34 +428,6 @@ lookup WolofCALT {
 # MMM L handles madda above
 # The logic of the code is virtually the same. What is the deal with madda-ar.small?
 
-#********************
-# Reordering of madda: moving it beyond any mark with 0 < ccc < 230
-#
-# If Harfbuzz is rendering, UTR53 will already have been executed, thus the following will do nothing
-# Otherwise, we can't do a lot of reordering but we'll move the madda out past vowels
-# in a way that is compatible with UTR53.
-
-@MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
-
-lookup _ReorderMaddaVowel1 {
-  lookupflag 0 ;
-    sub @MaddaSkip by @MaddaSkip madda-ar.small ;
-} _ReorderMaddaVowel1 ;
-
-lookup ReorderMaddaVowel1 {
-  lookupflag 0 ;
-    sub madda-ar.small @MaddaSkip' lookup _ReorderMaddaVowel1 ;
-} ReorderMaddaVowel1;
-
-lookup _ReorderMaddaVowel2 {
-  lookupflag 0 ;
-    sub madda-ar.small @MaddaSkip by @MaddaSkip ;
-} _ReorderMaddaVowel2 ;
-
-lookup ReorderMaddaVowel2 {
-  lookupflag 0 ;
-    sub madda-ar.small' lookup _ReorderMaddaVowel2  @MaddaSkip madda-ar.small ;
-} ReorderMaddaVowel2;
 
 # MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
@@ -455,10 +493,10 @@ lookup MaddaAlternate {				# MMM not in L
     sub @Maddah.small by @Maddah ;
 } MaddaAlternate;
 
-lookup KirghizOeAlternates {		# cv51
+lookup KyrgyzOeAlternates {		# cv51
   lookupflag 0;
     sub @cno_bar  by  @c_bar;
-} KirghizOeAlternates;
+} KyrgyzOeAlternates;
 
 lookup YehHamzaAlternates {			# cv54
   lookupflag 0;
@@ -468,20 +506,12 @@ lookup YehHamzaAlternates {			# cv54
     sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
 } YehHamzaAlternates;
 
-#TypeTuner lookups:
-# MMM not just for TT in L
-lookup KasraLow {
-  lookupflag 0 ;
-    sub @Kasra by @Kasra_lowered;
-} KasraLow;
-
 # MMM missing from L  \/   \/   \/
-lookup KasraHigh {
-  lookupflag 0 ;
-    sub @Kasra_lowered by @Kasra;
-} KasraHigh;
+###lookup KasraHigh {
+###  lookupflag 0 ;
+###    sub @Kasra_lowered by @Kasra;
+###} KasraHigh;
 
-# MMMMMMMMMMMMMMMMMMMMMMMMMMM
 
 lookup KasraAlternates {			# cv62
   lookupflag 0 ;
@@ -862,18 +892,38 @@ lookup MarkKashidas {
 
 }  # end of do - kerning substitutions
 
-# MMM not included in L
+# Scheherazade only:
 lookup WideKashida {
+ifinfo(familyName, "Scheherazade New") {
   sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
+}
 } WideKashida;
 
-# MMM L has ProportionalFigures and TabularFigures
+
+# Lateef only
+do let f = info("familyName");
+   if f.find("Lateef") != -1; {
+   
+# Proportional Figures: pnum
+
+lookup ProportionalFigures {
+  lookupflag IgnoreMarks ;
+    sub @cno_pnum by @c_pnum ;
+} ProportionalFigures ;
+
+# Tabular Figures: tnum
+
+lookup TabularFigures {
+  lookupflag IgnoreMarks ;
+    sub @cno_tnum by @c_tnum ;
+} TabularFigures ;
+
+}  # end do - Lateef
 
 
 #**********************************
-#  FEATURES
+#  GSUB FEATURES
 #**********************************
-#--- Substitution ---
 
 feature rtlm {  # Right-To-Left Mirrored Forms
     lookup Mirror;
@@ -881,27 +931,31 @@ feature rtlm {  # Right-To-Left Mirrored Forms
 
 # HB PAUSE
 
-# MMM L includes LatinPunctuation. Kasras are handled differently.
 
 feature ccmp {  # Glyph Composition/Decomposition
     # Same for latin & arabic:
         lookup SmallMadda;			# MMM not present in L
-        lookup FontCheck1;			# MMM different in L
-        lookup FontCheck2;
+        lookup FontCheck;
         lookup ReorderMaddaVowel1;
-        lookup ReorderMaddaVowel2;            
+        lookup ReorderMaddaVowel2;
+    script latn;
+        lookup LatinPunctuation;           
     script arab;
         lookup DecomposeForColor;
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
+      language RHG  ;
+        lookup KasraLow ;
+      language SND  ;
+        lookup KasraLow ;
+      language URD  ;
+        lookup KasraLow ;
+      language WLF  ;
+        lookup KasraLow ;
       
-    script latn;
-        lookup KasraHigh;  #### why is this needed for latn?
+###    script latn;
+###        lookup KasraHigh;  #### why is this needed for latn?
 } ccmp ;
 
 # feature locl (not used)
@@ -974,9 +1028,15 @@ feature rlig {  # Required Ligatures
 feature calt {  # Contextual Alternates
     script arab;
         #lookup SignWithDigits;  # moved to liga feature
-        
-do if opt("nokern") != "yes";          # MMM not present in L
-{   # start of kerning substitutions
+ifinfo(familyName, "Lateef") {
+        lookup DaggerAlefToLarge;
+##      lookup ShortTailRehWaw ;   Lateef only; short-tail reh/waw variants disabled for now
+}
+
+# Sch only:        
+do let f = info("familyName");
+   if f.find("Scherherazade") != -1 and opt("nokern") != "yes"; {
+     # start of kerning substitutions
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
@@ -987,9 +1047,9 @@ do if opt("nokern") != "yes";          # MMM not present in L
         lookup WideKashida;            # MMM not present in L
 
       language dflt ;   # Must have a lookup here for TypeTuner to work. - MMM not in L
-        lookup dfltCALT ;
-      language KIR ; # Kirghiz
-        lookup KirghizCALT ;
+        lookup dfltCALT ;     		# OBSOLETE???
+      language KIR ; # Kyrgyz
+        lookup KyrgyzCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
       language RHG ; #Rohingya
@@ -1010,7 +1070,7 @@ feature salt {  # Stylistic Alternates
     script arab;
         lookup AyahAlternates;
       # Force other languages to include Arabic script lookups
-      language KIR ;  # Kirghiz
+      language KIR ;  # Kyrgyz
       language KUR ;  # Kurdish
       language RHG ;  # Rohingya
       language SND ;  # Sindhi
@@ -1048,7 +1108,7 @@ feature cv44 {  # Character Variant 44
     script arab;
         lookup MeemAlternate;
       # Force other languages to include Arabic script lookups
-      language KIR;  # Kirghiz
+      language KIR;  # Kyrgyz
       language KUR;  # Kurdish
       language RHG;  # Rohingya
       # language SND; -- but not this one since we enable it in SindhiCALT
@@ -1083,7 +1143,7 @@ feature cv51 {  # Character Variant 51
         ParamUILabelNameID { name 3 1 0x0409 "Bar"   ; };
     } ;
     # Same for latin & arabic:
-      lookup KirghizOeAlternates;
+      lookup KyrgyzOeAlternates;
 } cv51 ;
 
 feature cv54 {  # Character Variant 54
@@ -1251,4 +1311,20 @@ feature liga {  # Ligatures  -- we use this because liga is done in the same pas
         lookup AllahAlef;                # Must be after lam-alef lig
 } liga ;
 
-# MMM L includes tnum and pnum features
+
+# Lateef only:
+
+do let f = info("familyName");
+   if f.find("Lateef") != -1; {
+   
+feature tnum {  # Tabular figures
+    # default for latin, select for arabic:
+    lookup TabularFigures ;            # must execute after SignWithDigits
+} tnum ;
+
+feature pnum {  # Proportional figures
+    # default for arabic, select for latin:
+    lookup ProportionalFigures ;       # must execute after SignWithDigits
+} pnum ;
+   
+}  # end of do - Lateef
