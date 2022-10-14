@@ -1,0 +1,129 @@
+#**********************************
+# This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
+# and is Copyright (c) 1994-2022 SIL International (http://www.sil.org/),
+# with Reserved Font Names "Scheherazade" and "SIL".
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+#
+# You should have received a copy of the license along with this Font Software.
+# If this is not the case, go to (http://scripts.sil.org/OFL) for all the
+# details including an FAQ.
+#**********************************
+
+
+do if opt("nokern") != "yes";
+{   # start of kerning substitutions
+
+#********
+# Kashida insertion to handle collision avoidance
+
+@Tooth3wBelowIM = [ @Tooth3wBelowInit @Tooth3wBelowMedi ];
+@Tooth2wBelowIM = [ @Tooth2wBelowInit @Tooth2wBelowMedi ];
+@Tooth2w3wBelowInit = [ @Tooth2wBelowInit @Tooth3wBelowInit ];
+@Tooth2w3wBelowMedi = [ @Tooth2wBelowMedi @Tooth3wBelowMedi ];
+@Tooth2w3wBelow = [ @Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi ];
+
+# When the class expansion bug gets fixed, replace the small classes with the bigger ones.
+# OBSOLETE
+lookup _InsertKashida {
+  # all tooth forms:
+  sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
+  sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
+  sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
+#  sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;  # redundant
+#  sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;  # redundant
+#  sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;  # redundant
+#  sub @Tooth2wBelowMedi   by  @Tooth2wBelowMedi   absAutoKashida;  # redundant
+#  sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;  # redundant
+#  sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # redundant
+#  sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # redundant
+  sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
+  sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
+  sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
+  sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
+  sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
+  sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
+  sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
+  
+  sub @MarksAny  by  @MarksAny  absAutoKashida;
+} _InsertKashida;
+
+# OBSOLETE
+lookup _Insert2Kashidas {
+  sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
+  sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
+} _Insert2Kashidas;
+
+lookup _InsertKashidaBefore {
+  sub @RnoonLikeNarrow  by  absAutoKashida  @RnoonLikeNarrow;
+} _InsertKashidaBefore;
+
+lookup _Insert2KashidasBefore {
+  sub @RnoonLikeNarrow  by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
+} _Insert2KashidasBefore;
+
+
+# Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
+
+lookup ToothKashidasIM {  # initial + medial
+  lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelowInit  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
+    sub @Tooth2w3wBelowInit  @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;
+    
+    sub tehTehabove-ar.init  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+    sub @Tooth2wwAboveInit   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
+    
+    # also qaf is similar to an initial (high) tooth
+ifinfo(styleName, "Bold") {
+    sub @Tooth2wAboveInit    @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+    sub @FehQaf2wAboveInit   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+}
+
+} ToothKashidasIM;
+
+
+lookup ToothKashidasMM {  # medial + medial
+  lookupflag IgnoreMarks;    
+    sub @Tooth2w3wBelowMedi  @Tooth3wBelowMedi'   lookup _Insert2KashidasBefore;
+    # 2w + 2w doesn't need a kashida
+
+    sub tehTehabove-ar.medi  @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;
+    sub @Tooth2wwAboveMedi   @Tooth2wwAboveMedi'  lookup _InsertKashidaBefore;
+
+ifinfo(styleName, "Bold") {
+    sub @Tooth2wBelowMedi    @Tooth2wBelowMedi'   lookup _InsertKashidaBefore;   # BOLD
+    sub @Tooth2wAboveMedi    @Tooth2wAboveMedi'   lookup _InsertKashidaBefore;   # BOLD
+    
+    sub @FehQaf2wAboveMedi   @FehQaf2wAboveMedi'  lookup _InsertKashidaBefore;  # BOLD
+}
+    
+} ToothKashidasMM;
+
+
+lookup ToothKashidasIMF {  #initial/medial + final
+  lookupflag IgnoreMarks;
+    sub @Tooth2w3wBelow  @YehLikeFina' lookup _InsertKashidaBefore;
+} ToothKashidasIMF;
+
+
+lookup MiscKashidas {
+  lookupflag IgnoreMarks;
+    sub @KafLikeInitMedi   @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+    sub @JeemLikeInitMedi  @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+    sub noon-ar.medi       @RnoonLikeNarrow'  lookup _InsertKashidaBefore;
+        
+    sub @Tooth2wBelowRstrk rehStroke-ar.fina' lookup _InsertKashidaBefore;
+} MiscKashidas;
+
+# kashidas needed due to colliding marks
+lookup MarkKashidas {
+    # Add kashida when upper diacritics are next to each other.
+    # Note that we should ideally break this into separate rules to handle medial-medial separately, but I'm lazy.
+    ignore sub @Tooth alefabove-ar  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
+    ignore sub @Tooth @MarksAbove   @Tooth alefabove-ar;
+    sub @Tooth  @MarksAbove' lookup _InsertKashida  @Tooth  @MarksAbove;
+    
+    sub @Tooth  @MarksAbove' lookup _InsertKashida  tehMarbuta-ar.fina;
+} MarkKashidas;
+
+}  # end of do - kerning substitutions

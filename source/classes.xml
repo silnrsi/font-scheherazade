@@ -47,11 +47,11 @@
         endofayah-ar  endofayah-ar.2  endofayah-ar.3
     </class>
 
-    <class name="Ayah.alt" fixed="0">
+    <class name="AyahCircle" fixed="0">
         endofayah-ar.alt  endofayah-ar.alt.2  endofayah-ar.alt.3 	
     </class>
 
-    <class name="Ayah.altB" fixed="0">
+    <class name="AyahSquare" fixed="0">
         endofayah-ar.altB  endofayah-ar.altB.2  endofayah-ar.altB.3 	
     </class>
     
@@ -60,7 +60,7 @@
     </class>
 
     <class name="AyahAny">
-        @Ayah  @Ayah.alt  @Ayah.altB 	@AyahDisputed
+        @Ayah  @AyahCircle  @AyahSquare 	@AyahDisputed
     </class>
 
     <!-- OBSOLETE
@@ -107,6 +107,10 @@
     <class name="Dammatan.sixNine" fixed="0">
         dammatan-ar.sixNine  shadda_dammatan-ar.sixNine 	
     </class>
+    
+    <!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <class name="DammaInverted">    dammainverted-ar</class>
+    <class name="DammaInvertedOpen">dammainverted-ar.open</class>
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
     <class name="DigitsArabic" fixed="0">
@@ -861,6 +865,16 @@
     <!-- Note that we don't need to include alef-hamza or alef-madda because they are decomposed. -->
     <class name="AlefNoAllahIsol" fixed="0">alef-ar        alefWasla-ar</class>
     <class name="AlefAllahIsol"   fixed="0">alef-ar.allah  alefWasla-ar.allah</class>
+
+
+    <!--
+    ==============================
+          For OT unification
+    ==============================
+    -->
+    
+    <!-- These pairs of classes must match.  -->
+        
 
 
     <!-- 
