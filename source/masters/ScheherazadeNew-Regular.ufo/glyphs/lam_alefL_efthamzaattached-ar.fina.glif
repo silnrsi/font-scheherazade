@@ -8,8 +8,8 @@
   <anchor x="1098" y="-145" name="diaB_1"/>
   <anchor x="609" y="-145" name="diaB_2"/>
   <outline>
-    <component base="alef-ar.fina.postLamMed"/>
-    <component base="lam-ar.medi.preAlef" xOffset="725"/>
+    <component base="_alef-ar.fina.postLamMed"/>
+    <component base="_lam-ar.medi.preAlef" xOffset="725"/>
     <component base="_hamza" xOffset="567" yOffset="500"/>
   </outline>
   <lib>

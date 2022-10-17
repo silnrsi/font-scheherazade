@@ -8,9 +8,9 @@
   <anchor x="1091" y="-212" name="diaB_1"/>
   <anchor x="528" y="-220" name="diaB_2"/>
   <outline>
-    <component base="alef-ar.fina.postLamMed"/>
+    <component base="_alef-ar.fina.postLamMed"/>
     <component base="_wavyHamza" xScale="0.927" yScale="0.927" xOffset="102" yOffset="1557"/>
-    <component base="lam-ar.medi.preAlef" xOffset="691"/>
+    <component base="_lam-ar.medi.preAlef" xOffset="691"/>
     <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1083" yOffset="801"/>
     <component base="_bar" xScale="0.927" yScale="0.927" xOffset="1083" yOffset="983"/>
   </outline>

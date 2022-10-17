@@ -1,5 +1,5 @@
 #**********************************
-# This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
+# This file is part of Scheherazade font family (http://software.sil.org/scheherazade/)
 # and is Copyright (c) 1994-2022 SIL International (http://www.sil.org/),
 # with Reserved Font Names "Scheherazade" and "SIL".
 #
@@ -31,7 +31,7 @@ languagesystem latn dflt ;
 # Notes:
 #   I've tried to arrange the lookups themselves, and then the features that refer to them,
 #   grouped into ordered passes as the rendering engines (esp Harfbuzz) will execute them.
-#   The boundaries between passes are indicated by the comment 
+#   The boundaries between passes are indicated by the comment
 #       # HB PAUSE
 #   in the code.
 
@@ -85,13 +85,13 @@ lookup _FontCheck_n {
 
 lookup FontCheck {
   lookupflag IgnoreMarks ;
-    sub [R] e n d e r i n g 
-      U' lookup _FontCheck_Unknow 
+    sub [R] e n d e r i n g
+      U' lookup _FontCheck_Unknow
       n' lookup _FontCheck_Unknow
       k' lookup _FontCheck_Unknow
-      n'  
-      o' lookup _FontCheck_Unknow 
-      w' lookup _FontCheck_Unknow 
+      n'
+      o' lookup _FontCheck_Unknow
+      w' lookup _FontCheck_Unknow
       n' lookup _FontCheck_n;
 } FontCheck;
 
@@ -210,60 +210,60 @@ lookup AllahLigatures {
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-        
+
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-        
+
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
-        @MarksAny' 
+        @MarksAny'
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-    
+
     #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
         kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-        
+
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-        
+
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
-        @MarksAny' 
+        @MarksAny'
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         kasra-ar'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
-        
+
     # Rule 2: lam-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
     # Rule 2b: lam-kasra-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         kasra-ar'
@@ -271,20 +271,20 @@ lookup AllahLigatures {
         shadda-ar'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         kasra-ar'
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         kasra-ar'
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
-        
+
 } AllahLigatures;
 
 
@@ -320,8 +320,8 @@ lookup _LigateHamzaMarks {
 @HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks shadda-ar ] ;
 lookup HamzaLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureFilter ;
-    # shouldn't ligate hamza + following fatha|damma when hamza preceded by non-MCM 230 because 
-    # UTR53 would have moved the fatha|damma to before the 230 marks but could not move the 
+    # shouldn't ligate hamza + following fatha|damma when hamza preceded by non-MCM 230 because
+    # UTR53 would have moved the fatha|damma to before the 230 marks but could not move the
     # hamza as it isn't at the beginning of the 230 sequence.
     ignore sub @UTR53_230other               hamzaabove-ar' ;
     ignore sub @UTR53_230other @UTR53_230MCM hamzaabove-ar' ;
@@ -336,7 +336,7 @@ lookup HamzaLigatures {
     sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other [ @UTR53_230other @UTR53_230MCM ] @HamzaMarks ;
     sub @HamzaMarks'   lookup _LigateHamzaMarks                 hamzaabove-ar ;
     sub @HamzaMarks'   lookup _LigateHamzaMarks @UTR53_230MCM   hamzaabove-ar ;
-} HamzaLigatures; 
+} HamzaLigatures;
 
 
 #********
@@ -365,7 +365,7 @@ lookup ShaddaAlefLigatures {
 # MMM L includes shrtail - short-tail variants of reh and waw, but disabled
 
 ifinfo(familyName, "Lateef") {
-   
+
 lookup DaggerAlefToLarge {
   lookupflag 0 ;
       sub @TakesLargeDaggerAlef alefabove-ar' by alefabove-ar.large ;   # Lateef
@@ -467,7 +467,7 @@ lookup MeemAlternate {
 # Madda alternate
 
 ifinfo(familyName, "Scheherazade New") {
-	 
+
 lookup MaddaAlternate {				# MMM not in L
   lookupflag 0 ;
     sub @Maddah.small by @Maddah ;
@@ -727,7 +727,7 @@ lookup LamAlefLigatures {
     sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
     sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
     sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
-    
+
     sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
     sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
 } LamAlefLigatures;
@@ -776,13 +776,13 @@ lookup SignDigits_ToSmall_target {
 lookup SignWithDigits {
   lookupflag IgnoreMarks ;
   # Uniscribe or HarfBuzz 'latn'
-    sub [ year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_4digits_target 
+    sub [ year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_4digits_target
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
-    sub [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_3digits_target 
+    sub [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_3digits_target
         @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target ;
-    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup SignWith_3digits_target 
+    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup SignWith_3digits_target
         @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target ;
-    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar  poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target 
+    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar  poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target
         @DigitsAny' lookup SignDigits_ToMedium_target  @DigitsAny' lookup SignDigits_ToMedium_target ;
     sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]
         @DigitsAny' lookup SignDigits_ToMedium_target ;
@@ -791,15 +791,15 @@ lookup SignWithDigits {
     sub [ disputedendofayah-ar ]
         @DigitsAny' lookup SignDigits_ToSmall_target;
   # HarfBuzz 'arab'
-    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target
         [ year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_4digits_target ;
-    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target
         [ number-ar year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar ]' lookup SignWith_3digits_target ;
-    sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  
+    sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target
         [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup SignWith_3digits_target ;
-    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target 
+    sub @DigitsAny' lookup SignDigits_ToMedium_target @DigitsAny' lookup SignDigits_ToMedium_target
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup SignWith_2digits_target ;
-    sub @DigitsAny' lookup SignDigits_ToMedium_target 
+    sub @DigitsAny' lookup SignDigits_ToMedium_target
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ] ;
     sub @DigitsAny' lookup SignDigits_ToSmall_target  @DigitsAny' lookup SignDigits_ToSmall_target
         [ disputedendofayah-ar ]'  lookup SignWith_2digits_target;
@@ -810,7 +810,7 @@ lookup SignWithDigits {
 
 # Lateef only
 ifinfo(familyName, "Lateef") {
-   
+
 # Proportional Figures: pnum
 
 lookup ProportionalFigures {
@@ -828,7 +828,7 @@ lookup TabularFigures {
 }  # Lateef
 
 
-include(../../source/opentype/customCollisionSubs.feax); 
+include(../../source/opentype/customCollisionSubs.feax);
 
 
 # Scheherazade only:
@@ -860,7 +860,7 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;
     script latn;
-        lookup LatinPunctuation;           
+        lookup LatinPunctuation;
     script arab;
         lookup DecomposeForColor;
       # Force other languages to include Arabic script lookups
@@ -874,7 +874,7 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup KasraLow ;
       language WLF  ;
         lookup KasraLow ;
-      
+
 ###    script latn;
 ###        lookup KasraHigh;  #### why is this needed for latn?
 } ccmp ;
@@ -960,7 +960,7 @@ ifinfo(familyName, "Lateef") {
 ##      lookup ShortTailRehWaw ;   Lateef only; short-tail reh/waw variants disabled for now
 }
 
-# Sch only:        
+# Sch only:
 do let f = info("familyName");
    if f.find("Scherherazade") != -1 and opt("nokern") != "yes"; {
      # start of kerning substitutions
@@ -1113,7 +1113,7 @@ feature cv54 {  # Character Variant 54
 
 do let f = info("familyName");
    if f.find("Scheherazade New") != -1; {
-   
+
 feature cv60 {  # Character Variant 60
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Maddah"   ; };
@@ -1127,7 +1127,7 @@ feature cv60 {  # Character Variant 60
 }   # end - Sch
 
 
-feature cv62 {  
+feature cv62 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1143,7 +1143,7 @@ feature cv62 {
 
 do let f = info("familyName");
 	 if f.find("Scheherazade New") != -1; {
-	 
+
 feature cv70 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
@@ -1159,7 +1159,7 @@ feature cv70 {
 
 do let f = info("familyName");
 	 if f.find("Lateef") != -1; {
-	 
+
 feature cv70 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
@@ -1191,7 +1191,7 @@ feature cv72 {  # Character Variant 72
 
 do let f = info("familyName");
    if f.find("Scheherazade New") != -1; {
-   
+
 feature cv74 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
@@ -1210,11 +1210,11 @@ feature cv74 {
 do let f = info("familyName");
 	 if f.find("Lateef") != -1; {
 
-feature cv76 {  
+feature cv76 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Large"            ; }; 
+        ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
     } ;
 
     # Same for latin & arabic:
@@ -1227,7 +1227,7 @@ feature cv76 {
 do let f = info("familyName");
 	 if f.find("Lateef") != -1; {
 
-feature cv76 {  
+feature cv76 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default"          ; };
@@ -1327,7 +1327,7 @@ feature cv85 {  # Character Variant 85
 # executed at the same time as cvXX.
 
 # When rendered with Uniscribe or Word, cv62 is never executed [as of this writing, at any rate].
-# But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't 
+# But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't
 # fire clig, so liga must be the one to use!
 
 # Finally, the LamAlefLigatures must execute after we've ligated mark combinations, including shadda-kasra,
@@ -1348,7 +1348,7 @@ feature liga {  # Ligatures  -- we use this because liga is done in the same pas
 
 do let f = info("familyName");
    if f.find("Lateef") != -1; {
-   
+
 feature tnum {  # Tabular figures
     # default for latin, select for arabic:
     lookup TabularFigures ;            # must execute after SignWithDigits
@@ -1358,5 +1358,5 @@ feature pnum {  # Proportional figures
     # default for arabic, select for latin:
     lookup ProportionalFigures ;       # must execute after SignWithDigits
 } pnum ;
-   
+
 }  # end of do - Lateef

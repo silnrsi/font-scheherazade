@@ -8,9 +8,9 @@
   <anchor x="905" y="-214" name="diaB_1"/>
   <anchor x="564" y="-204" name="diaB_2"/>
   <outline>
-    <component base="alef-ar.fina.postLamIni" xScale="1.03" yScale="1.03"/>
+    <component base="_alef-ar.fina.postLamIni" xScale="1.03" yScale="1.03"/>
     <component base="_wasla" xScale="0.927" yScale="0.927" xOffset="131" yOffset="1893"/>
-    <component base="lam-ar.init.preAlef" xOffset="689"/>
+    <component base="_lam-ar.init.preAlef" xOffset="689"/>
     <component base="_dot1" xScale="0.927" yScale="0.927" xOffset="999" yOffset="1961"/>
   </outline>
 </glyph>
