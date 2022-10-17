@@ -51,12 +51,14 @@ lookup Mirror {
 
 #---  ccmp feature  ---
 
+ifinfo(familyName, "Scheherazade New") {
+
 lookup SmallMadda {
   lookupflag 0 ;
-ifinfo(familyName, "Scheherazade New") {
     sub @Maddah by @Maddah.small ;
-}
 } SmallMadda;
+
+} # Sch
 
 # For full UTR53 stacks, this decomposition will already have been done.
 # Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
@@ -362,12 +364,14 @@ lookup ShaddaAlefLigatures {
 
 # MMM L includes shrtail - short-tail variants of reh and waw, but disabled
 
+ifinfo(familyName, "Lateef") {
+   
 lookup DaggerAlefToLarge {
   lookupflag 0 ;
-ifinfo(familyName, "Lateef") {
       sub @TakesLargeDaggerAlef alefabove-ar' by alefabove-ar.large ;   # Lateef
-}
 } DaggerAlefToLarge;
+
+}  # Lateef
 
 # HB PAUSE
 
@@ -441,16 +445,36 @@ ifinfo(familyName, "Scheherazade New") {
 # MMM L handles madda above
 # The logic of the code is virtually the same. What is the deal with madda-ar.small?
 
+# Lookups for user-selectable features
 
-do let f = info("familyName");
-	 if f.find("Lateef") != -1; {
+ifinfo(familyName, "Scheherazade New") {
+
+lookup DalAlternate {
+  lookupflag IgnoreMarks ;
+    sub @DalIso by @DalIso.sen ;
+} DalAlternate;
+
+}  # Sch
+
+# Meem alternate: cv44
 
 lookup MeemAlternate {
   lookupflag IgnoreMarks ;
     sub @cno_sindhi by @c_sindhi;
 } MeemAlternate;
 
-}  # end do - Lateef
+
+# Madda alternate
+
+ifinfo(familyName, "Scheherazade New") {
+	 
+lookup MaddaAlternate {				# MMM not in L
+  lookupflag 0 ;
+    sub @Maddah.small by @Maddah ;
+} MaddaAlternate;
+
+}  # Sch
+
 
 #********
 # Heh alternates
@@ -493,26 +517,6 @@ lookup HehAlternates {
     sub heh-ar.fina.knottedHigh from   [ heh-ar.fina.knottedHigh heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
 } HehAlternates;
 
-
-#********
-# Other alternates
-
-lookup DalAlternate {						# cv12 - MMM not in L
-  lookupflag IgnoreMarks ;
-    sub @DalIso by @DalIso.sen ;
-} DalAlternate;
-
-lookup MeemAlternate {					# cv44
-  lookupflag IgnoreMarks ;
-    sub @Meem by @Meem.sindhi ;  # also used by Kurdish and Urdu
-} MeemAlternate;
-
-lookup MaddaAlternate {				# MMM not in L
-  lookupflag 0 ;
-ifinfo(familyName, "Scheherazade New") {
-    sub @Maddah.small by @Maddah ;
-}
-} MaddaAlternate;
 
 lookup KyrgyzOeAlternates {		# cv51
   lookupflag 0;
@@ -558,9 +562,11 @@ lookup DammatanAlternate {		# cv72
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
+ifinfo(familyName, "Scheherazade New") {
     #   0=default (filled);        1=hollow;                2=filled
-    sub dammainverted-ar      from [ dammainverted-ar.open  dammainverted-ar ];
-    sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
+    sub @DammaInvertedAll      from [ @DammaInvertedOpen  @DammaInverted ];
+    #sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
+}
 } DammaInvertedAlternates;
 
 
@@ -593,12 +599,14 @@ lookup AyahAlternates {  # cv80 - salt feature
 } AyahAlternates;
 
 
+ifinfo(familyName, "Scheherazade New") {
+
 lookup HonLigAlternates {			# cv81
   lookupflag 0;
-ifinfo(familyName, "Scheherazade New") {
     sub @HonLigCall from @HonLigSmpl ;
-}
 } HonLigAlternates;
+
+}  # Sch
 
 
 #********
@@ -801,8 +809,7 @@ lookup SignWithDigits {
 
 
 # Lateef only
-do let f = info("familyName");
-   if f.find("Lateef") != -1; {
+ifinfo(familyName, "Lateef") {
    
 # Proportional Figures: pnum
 
@@ -818,7 +825,7 @@ lookup TabularFigures {
     sub @cno_tnum by @c_tnum ;
 } TabularFigures ;
 
-}  # end do - Lateef
+}  # Lateef
 
 
 include(../../source/opentype/customCollisionSubs.feax); 
@@ -847,7 +854,8 @@ feature rtlm {  # Right-To-Left Mirrored Forms
 
 feature ccmp {  # Glyph Composition/Decomposition
     # Same for latin & arabic:
-        lookup SmallMadda;			# MMM not present in L
+        # DecomposeForColor executes here for Arabic
+        lookup SmallMadda;
         lookup FontCheck;
         lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;
@@ -875,8 +883,6 @@ feature ccmp {  # Glyph Composition/Decomposition
 
 # HB PAUSE
 
-# MMM WLF not defined in L
-
 feature fina {  # Terminal Forms
     script arab;
       	lookup ltrFina;
@@ -889,6 +895,8 @@ feature fina {  # Terminal Forms
       language WLF ;
 } fina ;
 
+# HB PAUSE
+
 feature medi {  # Medial Forms
     script arab;
       	lookup ltrMedi;
@@ -900,6 +908,8 @@ feature medi {  # Medial Forms
       language URD ;
       language WLF ;
 } medi ;
+
+# HB PAUSE
 
 feature init {  # Initial Forms
     script arab;
@@ -961,7 +971,7 @@ do let f = info("familyName");
         lookup MarkKashidas;
 }   # end of kerning substitutions
 
-        lookup WideKashida;            # MMM not present in L
+        lookup WideKashida;
 
       language dflt ;   # Must have a lookup here for TypeTuner to work. - MMM not in L
         lookup dfltCALT ;     		# OBSOLETE???
@@ -978,6 +988,8 @@ do let f = info("familyName");
       language WLF ; # Wolof
         lookup WolofCALT ;
 } calt ;
+
+# feature rclt
 
 # HB PAUSE
 
@@ -998,7 +1010,7 @@ feature salt {  # Stylistic Alternates
 #--- Character Variants ---
 
 do let f = info("familyName");
-   if f.find("Scheherazade New"); {
+   if f.find("Scheherazade New") != -1; {
 
 feature cv12 {  # Character Variant 12 - Scheherazade only
     cvParameters {
@@ -1100,7 +1112,7 @@ feature cv54 {  # Character Variant 54
 # Character Variant 60
 
 do let f = info("familyName");
-   if f.find("Scheherazade New"); {
+   if f.find("Scheherazade New") != -1; {
    
 feature cv60 {  # Character Variant 60
     cvParameters {
@@ -1145,7 +1157,6 @@ feature cv70 {
 
 }  # end do - Sch
 
-
 do let f = info("familyName");
 	 if f.find("Lateef") != -1; {
 	 
@@ -1179,7 +1190,7 @@ feature cv72 {  # Character Variant 72
 # Character Variant 74
 
 do let f = info("familyName");
-   if f.find("Scheherazade New"); {
+   if f.find("Scheherazade New") != -1; {
    
 feature cv74 {
     cvParameters {

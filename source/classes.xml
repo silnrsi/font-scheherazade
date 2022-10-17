@@ -111,6 +111,8 @@
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="DammaInverted">    dammainverted-ar</class>
     <class name="DammaInvertedOpen">dammainverted-ar.open</class>
+    
+    <class name="DammaInvertedAll"> dammainverted-ar dammainverted-ar.open</class>
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
     <class name="DigitsArabic" fixed="0">
@@ -874,8 +876,12 @@
     -->
     
     <!-- These pairs of classes must match.  -->
-        
-
+    
+    <class name="cno_pnum">alef-ar</class>
+    <class name="c_pnum">alef-ar</class>
+    
+    <class name="cno_tnum">alef-ar</class>
+    <class name="c_tnum">alef-ar</class>
 
     <!-- 
     ============================
