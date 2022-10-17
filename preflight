@@ -23,8 +23,8 @@ echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/*.designspace
 
 echo "Building internal fea..."
-psfmakefea -q -o source/masters/ScheherazadeNew-Regular.ufo/features.fea -l source/logs/ScheherazadeNew-Regular-psfmakefea.log -i source/opentype/master.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" -c source/classes.xml source/masters/*-Regular.ufo &
-psfmakefea -q -o source/masters/ScheherazadeNew-Bold.ufo/features.fea    -l source/logs/ScheherazadeNew-Bold-psfmakefea.log    -i source/opentype/master.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" -c source/classes.xml source/masters/*-Bold.ufo   &
+psfmakefea -q -o source/masters/ScheherazadeNew-Regular.ufo/features.fea -l source/logs/ScheherazadeNew-Regular-psfmakefea.log -i source/opentype/main.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" -c source/classes.xml source/masters/*-Regular.ufo &
+psfmakefea -q -o source/masters/ScheherazadeNew-Bold.ufo/features.fea    -l source/logs/ScheherazadeNew-Bold-psfmakefea.log    -i source/opentype/main.feax --omitaps "topright, ogonek, caret_1, caret_2, caret_3, top_1, top_2, top_3, top_4, top_alef, bottom_1, bottom_2" -c source/classes.xml source/masters/*-Bold.ufo   &
 wait
 
 echo "preflight completed!"
