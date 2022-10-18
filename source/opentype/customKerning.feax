@@ -38,8 +38,8 @@ lookup _kern70 {
 
 lookup _kern90 {
   pos @Tooth2wAboveInit        <90 0  90 0>;
-  pos alef-ar.fina.postLamIni  <90 0  90 0>;
-  pos alef-ar.fina.postLamMed  <90 0  90 0>; 
+  pos _alef-ar.fina.postLamIni  <90 0  90 0>;
+  pos _alef-ar.fina.postLamMed  <90 0  90 0>; 
 } _kern90;
 
 lookup _kern100 {
@@ -327,8 +327,8 @@ ifinfo(styleName, "Bold") {
     # kaf + teh
     pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
     
-    pos alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
-    pos alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
+    pos _alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
+    pos _alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
 }
 
 } ToothKashidaKerningIM;
