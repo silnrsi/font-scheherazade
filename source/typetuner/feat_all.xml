@@ -50,8 +50,8 @@
 			<!-- <cmd name="lookup_del" args="GSUB {calt_arab_dflt} {dfltCALT}"/> -->
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WolofCALT}"/>	
 			<cmd name="gr_feat" args="{gr_cv12} 1"/>	 <!-- dal alternates -->
-			<cmd name="gr_feat" args="{gr_cv70} 2"/>	 <!-- damma short -->
 			<cmd name="gr_feat" args="{gr_cv62} 1"/>   <!-- shadda+kasra lowered -->
+			<cmd name="gr_feat" args="{gr_cv70} 2"/>	 <!-- damma short -->
 			<cmd name="gr_feat" args="{gr_cv74} 1"/>   <!-- hollow inverted damma -->
 		</value>
 	</feature>

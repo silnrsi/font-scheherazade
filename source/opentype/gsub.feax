@@ -560,13 +560,11 @@ lookup DammatanAlternate {		# cv72
     sub @Dammatan by @Dammatan.sixNine ;
 } DammatanAlternate;
 
-lookup DammaInvertedAlternates {
+lookup DammaInvertedAlternates {    # cv74
   lookupflag 0 ;
-ifinfo(familyName, "Scheherazade New") {
-    #   0=default (filled);        1=hollow;                2=filled
-    sub @DammaInvertedAll      from [ @DammaInvertedOpen  @DammaInverted ];
-    #sub dammainverted-ar.open from [ dammainverted-ar.open  dammainverted-ar ];
-}
+    #   0=default (filled);        1=hollow;           2=filled
+    sub @DammaInverted     from  [ @DammaInvertedOpen  @DammaInverted ];
+    sub @DammaInvertedOpen from  [ @DammaInvertedOpen  @DammaInverted ];
 } DammaInvertedAlternates;
 
 
@@ -1141,36 +1139,16 @@ feature cv62 {
 
 # Character variants 70
 
-do let f = info("familyName");
-	 if f.find("Scheherazade New") != -1; {
-
 feature cv70 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };   # MMM not present in L
+        ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
     } ;
     # Same for latin & arabic:
       lookup DammaAlternates;
 } cv70 ;
-
-}  # end do - Sch
-
-do let f = info("familyName");
-	 if f.find("Lateef") != -1; {
-
-feature cv70 {
-    cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
-    ### ParamUILabelNameID { name 3 1 0x0409 "Short" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
-    } ;
-    # Same for latin & arabic:
-      lookup DammaAlternates;
-} cv70 ;
-
-}  # end do - Lateef
 
 
 feature cv72 {  # Character Variant 72
