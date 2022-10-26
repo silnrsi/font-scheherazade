@@ -10,11 +10,11 @@
 # details including an FAQ.
 #**********************************
 
+#--- liga feature ---
 
 do if opt("nokern") != "yes";
 {   # start of kerning substitutions
 
-#********
 # Kashida insertion to handle collision avoidance
 
 @Tooth3wBelowIM = [ @Tooth3wBelowInit @Tooth3wBelowMedi ];
@@ -127,3 +127,11 @@ lookup MarkKashidas {
 } MarkKashidas;
 
 }  # end of do - kerning substitutions
+
+
+# For Harmattan compatibility:
+lookup YehBarreeToWideAlways {
+} YehBarreeToWideAlways;
+
+lookup YehBarreeToWideWithMarks {
+} YehBarreeToWideWithMarks;

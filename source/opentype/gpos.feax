@@ -244,6 +244,19 @@ do let f = info("familyName");
         lookup OldStyleKerning;
 }   # Lateef
 
+# Harmattan:
+do let f = info("familyName");
+   if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {	# enable kerning for now
+    script arab;  # Arabic
+        lookup mainkern;
+      # Force other languages to include Arabic script lookups
+      language KUR  ;
+      language RHG  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
+}
+
 } kern ;
 
 

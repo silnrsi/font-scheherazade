@@ -129,8 +129,6 @@ lookup ReorderMaddaVowel2 {
 
 # Replace Arabic punctuation glyphs with Latin ones:
 
-# MMM Missing in Har
-
 lookup LatinPunctuation {
   lookupflag 0 ;
     sub @cno_latn by @c_latn ;
@@ -508,6 +506,31 @@ lookup WolofCALT {
     sub dammainverted-ar by  dammainverted-ar.open ;  # MMM not in Har
 } WolofCALT;
 
+# Warsh alternates - TypeTuner only
+
+do let f = info("familyName");
+   if f.find("Harmattan") != -1; {
+   
+lookup WarshAlternatesTT1 {
+  lookupflag IgnoreMarks ;
+    sub alefHamzaabove-ar by alefHamzaabove-ar.warsh ;
+    sub alefHamzaabove-ar.fina by alefHamzaabove-ar.fina.warsh ;
+    sub alefHamzabelow-ar by alefHamzabelow-ar.warsh ;
+    sub alefHamzabelow-ar.fina by alefHamzabelow-ar.fina.warsh ;
+} WarshAlternatesTT1;
+
+lookup WarshAlternatesTT2 {
+  lookupflag IgnoreMarks ;
+    sub alefHamzaabove-ar by alefHamzaabove-ar.warsh ;
+    sub alefHamzaabove-ar.fina by alefHamzaabove-ar.fina.warsh ;
+    sub alefHamzabelow-ar by alefHamzabelow-ar.warsh ;
+    sub alefHamzabelow-ar.fina by alefHamzabelow-ar.fina.warsh ;
+    sub alef_fatha-ar by alef_fatha-ar.warsh ;
+    sub alef_kasra-ar by alef_kasra-ar.warsh ;
+} WarshAlternatesTT2;
+
+}    # end do - Harmattan
+
 # HB PAUSE
 
 #--- remaining subs features (salt, cvxx, liga) ---
@@ -515,13 +538,22 @@ lookup WolofCALT {
 # Lookups for user-selectable features
 
 
-lookup DalAlternate {        # has no effect in Lateef
+do let f = info("familyName");
+   if f.find("Harmattan") != -1; {
+
+# Warsh alternates: cv02
+
+lookup WarshAlternates {
   lookupflag IgnoreMarks ;
-    sub @cno_loclWLF by @c_loclWLF;
-} DalAlternate;
-
-
-ifinfo(familyName, "Harmattan") {
+    # Hamza touching is for cv02=1 or cv02=2 :
+    sub alefHamzaabove-ar from [ alefHamzaabove-ar.warsh alefHamzaabove-ar.warsh ] ;
+    sub alefHamzaabove-ar.fina from [ alefHamzaabove-ar.fina.warsh alefHamzaabove-ar.fina.warsh ] ;
+    sub alefHamzabelow-ar from [ alefHamzabelow-ar.warsh alefHamzabelow-ar.warsh ] ;
+    sub alefHamzabelow-ar.fina from [ alefHamzabelow-ar.fina.warsh alefHamzabelow-ar.fina.warsh ] ;
+    # fatha and kasra touching isolate alef happens with cv02=2 :
+    sub alef_fatha-ar from [ alef_fatha-ar alef_fatha-ar.warsh ] ;
+    sub alef_kasra-ar from [ alef_kasra-ar alef_kasra-ar.warsh ] ;
+} WarshAlternates;
 
 # Jeem/Hah medial alternate: cv08
 
@@ -537,7 +569,13 @@ lookup SadDadAlternate {
     sub @cno_half by @c_half ;
 } SadDadAlternate;
 
-}  # Harmattan
+}  # end do - Harmattan
+
+
+lookup DalAlternate {        # has no effect in Lateef
+  lookupflag IgnoreMarks ;
+    sub @cno_loclWLF by @c_loclWLF;
+} DalAlternate;
 
 
 # Meem alternate: cv44
@@ -565,6 +603,7 @@ lookup UrduHeh {           # TypeTuner only}
     sub heh-ar.init by heh-ar.init.hooked ;
     sub heh-ar.medi by heh-ar.medi.hooked ;
     sub heh-ar.fina by heh-ar.fina.hooked ;
+    # MMM  \/   \/   \/  not in Harmattan
     # In case Lang=Kurdish set:
     sub heh-ar.knotted by heh-ar;
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked ;
@@ -820,14 +859,15 @@ ifinfo(familyName, "Scheherazade New") {
     sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
 }
 ifinfo(familyName, "Harmattan") {
-    sub @LamInitMedi  alefHamzaabove-ar.fina    by  @LamAlefHamzaaboveLig ;
-    sub @LamInitMedi  alefHamzabelow-ar.fina    by  @LamAlefHamzabelowLig ;
+    sub @LamNoLig   alefHamzaabove-ar.fina      by  @LamAlefHamzaaboveLig ;
+    sub @LamNoLig   alefHamzabelow-ar.fina      by  @LamAlefHamzabelowLig ;
 }
 
 } LamAlefLigatures;
 
 
 # Must be after LamAlefLigatures
+# MMM  fix Harmattan...
 lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
   lookupflag IgnoreMarks;
     sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
@@ -922,17 +962,6 @@ lookup TabularFigures {
 
 
 include(../../source/opentype/customCollisionSubs.feax);
-
-do let f = info("familyName");
-   if f.find("Harmattan") == -1; {  # NOT Harmattan
-   
-lookup YehBarreeToWideAlways {
-} YehBarreeToWideAlways;
-
-lookup YehBarreeToWideWithMarks {
-} YehBarreeToWideWithMarks;
-
-}  # end do - NOT Harmattan
 
 
 # Scheherazade only:
@@ -1075,7 +1104,7 @@ ifinfo(familyName, "Lateef") {
 
 # Sch only:
 do let f = info("familyName");
-   if f.find("Scherherazade") != -1 and opt("nokern") != "yes"; {
+   if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
      # start of kerning substitutions
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
