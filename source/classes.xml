@@ -72,6 +72,7 @@
     -->
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <!-- REMOVE - these duplicate loclWLF
     <class name="DalIso" fixed="0">
         dal-ar  thal-ar  ddal-ar  dalRing-ar  dalDotbelow-ar  dalDotbelowTah-ar
         dahal-ar  ddahal-ar  dul-ar	 dalThreedotsdown-ar  dalFourdots-ar
@@ -85,6 +86,7 @@
         dalVinvertedabove-ar.loclWLF  dalTwodotsverticalbelowTah-ar.loclWLF
         dalVinvertedbelow-ar.loclWLF  dalThreedotsbelow-ar.loclWLF
     </class>
+    -->
 
 		<!-- *NEXT 3 CLASSES MUST MATCH* -->
     <class name="Damma" fixed="0">
@@ -575,6 +577,8 @@
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
+    <!-- REMOVE - duplicates .sindhi classes
+    
     <class name="Meem" fixed="0">
         meem-ar  meemDotabove-ar  meemDotbelow-ar  meemThreedotsabove-ar meem-ar.fina
         meemDotabove-ar.fina  meemDotbelow-ar.fina  meemThreedotsabove-ar.fina
@@ -584,6 +588,7 @@
         meem-ar.sindhi  meemDotabove-ar.sindhi  meemDotbelow-ar.sindhi  meemThreedotsabove-ar.sindhi  meem-ar.fina.sindhi
         meemDotabove-ar.fina.sindhi  meemDotbelow-ar.fina.sindhi  meemThreedotsabove-ar.fina.sindhi
     </class>
+    -->
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="RightLinkFina" fixed="0">
@@ -875,12 +880,25 @@
     -->
 
     <!-- These pairs of classes must match.  -->
+    
+    <class name="U">       waw-ar</class>
+    <class name="U_filled">waw-ar</class>
+    
+    <class name="cno_half">sad-ar</class>
+    <class name="c_half">  sad-ar</class>
+    
+    <class name="cno_hand">hah-ar.medi</class>
+    <class name="c_hand">  hah-ar.medi</class>
 
     <class name="cno_pnum">alef-ar</class>
-    <class name="c_pnum">alef-ar</class>
+    <class name="c_pnum">  alef-ar</class>
 
     <class name="cno_tnum">alef-ar</class>
-    <class name="c_tnum">alef-ar</class>
+    <class name="c_tnum">  alef-ar</class>
+    
+    <class name="LamInitMedi">lam-ar.init</class>
+    <class name="LamAlefHamzaaboveLig">lam-ar.init</class>
+    <class name="LamAlefHamzabelowLig">lam-ar.init</class>
 
     <!--
     ============================
