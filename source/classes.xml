@@ -879,7 +879,10 @@
     ==============================
     -->
 
-    <!-- These pairs of classes must match.  -->
+    <!-- These classes should never be used and the lookups that use them should be compiled away
+         via the FEAX conditional mechanisms. But they are needed to allow the FEAX->FEA conversion
+         process to work happily.
+    -->
     
     <class name="U">       waw-ar</class>
     <class name="U_filled">waw-ar</class>
