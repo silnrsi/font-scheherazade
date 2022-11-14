@@ -2,6 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
     <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -18,6 +19,7 @@
       <style feats="'cv60' 1" name="cv60_1"/>
     </styles>
     <title>Kerning (auto)</title>
+    <widths string="19%"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -27,149 +29,149 @@
   <testgroup label="All the rehs">
     <test label="U+0631">
       <comment>reh-ar</comment>
-      <string>\u000631\u00066E\u00200D \u00200D\u000631\u00066E\u00200D</string>
+      <string>\u000631\u00066E\u000631\u00066E\u000627</string>
     </test>
     <test label="U+0632">
       <comment>zain-ar</comment>
-      <string>\u000632\u00066E\u00200D \u00200D\u000632\u00066E\u00200D</string>
+      <string>\u000632\u00066E\u000632\u00066E\u000627</string>
     </test>
     <test label="U+0691">
       <comment>rreh-ar</comment>
-      <string>\u000691\u00066E\u00200D \u00200D\u000691\u00066E\u00200D</string>
+      <string>\u000691\u00066E\u000691\u00066E\u000627</string>
     </test>
     <test label="U+0692">
       <comment>rehv-ar</comment>
-      <string>\u000692\u00066E\u00200D \u00200D\u000692\u00066E\u00200D</string>
+      <string>\u000692\u00066E\u000692\u00066E\u000627</string>
     </test>
     <test label="U+0693">
       <comment>rehRing-ar</comment>
-      <string>\u000693\u00066E\u00200D \u00200D\u000693\u00066E\u00200D</string>
+      <string>\u000693\u00066E\u000693\u00066E\u000627</string>
     </test>
     <test label="U+0694">
       <comment>rehDotbelow-ar</comment>
-      <string>\u000694\u00066E\u00200D \u00200D\u000694\u00066E\u00200D</string>
+      <string>\u000694\u00066E\u000694\u00066E\u000627</string>
     </test>
     <test label="U+0695">
       <comment>rehVbelow-ar</comment>
-      <string>\u000695\u00066E\u00200D \u00200D\u000695\u00066E\u00200D</string>
+      <string>\u000695\u00066E\u000695\u00066E\u000627</string>
     </test>
     <test label="U+0696">
       <comment>rehDotbelowdotabove-ar</comment>
-      <string>\u000696\u00066E\u00200D \u00200D\u000696\u00066E\u00200D</string>
+      <string>\u000696\u00066E\u000696\u00066E\u000627</string>
     </test>
     <test label="U+0697">
       <comment>rehTwodots-ar</comment>
-      <string>\u000697\u00066E\u00200D \u00200D\u000697\u00066E\u00200D</string>
+      <string>\u000697\u00066E\u000697\u00066E\u000627</string>
     </test>
     <test label="U+0698">
       <comment>jeh-ar</comment>
-      <string>\u000698\u00066E\u00200D \u00200D\u000698\u00066E\u00200D</string>
+      <string>\u000698\u00066E\u000698\u00066E\u000627</string>
     </test>
     <test label="U+0699">
       <comment>rehFourdots-ar</comment>
-      <string>\u000699\u00066E\u00200D \u00200D\u000699\u00066E\u00200D</string>
+      <string>\u000699\u00066E\u000699\u00066E\u000627</string>
     </test>
     <test label="U+06EF">
       <comment>rehVinvertedabove-ar</comment>
-      <string>\u0006EF\u00066E\u00200D \u00200D\u0006EF\u00066E\u00200D</string>
+      <string>\u0006EF\u00066E\u0006EF\u00066E\u000627</string>
     </test>
     <test label="U+075B">
       <comment>rehStroke-ar</comment>
-      <string>\u00075B\u00066E\u00200D \u00200D\u00075B\u00066E\u00200D</string>
+      <string>\u00075B\u00066E\u00075B\u00066E\u000627</string>
     </test>
     <test label="U+076B">
       <comment>rehTwodotsverticalabove-ar</comment>
-      <string>\u00076B\u00066E\u00200D \u00200D\u00076B\u00066E\u00200D</string>
+      <string>\u00076B\u00066E\u00076B\u00066E\u000627</string>
     </test>
     <test label="U+076C">
       <comment>rehHamzaabove-ar</comment>
-      <string>\u00076C\u00066E\u00200D \u00200D\u00076C\u00066E\u00200D</string>
+      <string>\u00076C\u00066E\u00076C\u00066E\u000627</string>
     </test>
     <test label="U+0771">
       <comment>rehTwodotshorizontalaboveTahabove-ar</comment>
-      <string>\u000771\u00066E\u00200D \u00200D\u000771\u00066E\u00200D</string>
+      <string>\u000771\u00066E\u000771\u00066E\u000627</string>
     </test>
     <test label="U+08AA">
       <comment>rehLoop-ar</comment>
-      <string>\u0008AA\u00066E\u00200D \u00200D\u0008AA\u00066E\u00200D</string>
+      <string>\u0008AA\u00066E\u0008AA\u00066E\u000627</string>
     </test>
     <test label="U+08B2">
       <comment>zainVinvertedabove-ar</comment>
-      <string>\u0008B2\u00066E\u00200D \u00200D\u0008B2\u00066E\u00200D</string>
+      <string>\u0008B2\u00066E\u0008B2\u00066E\u000627</string>
     </test>
     <test label="U+08B9">
       <comment>rehNoonabove-ar</comment>
-      <string>\u0008B9\u00066E\u00200D \u00200D\u0008B9\u00066E\u00200D</string>
+      <string>\u0008B9\u00066E\u0008B9\u00066E\u000627</string>
     </test>
   </testgroup>
   <testgroup label="All the waws">
     <test label="U+0624">
       <comment>wawHamzaabove-ar</comment>
-      <string>\u000624\u00066E\u00200D \u00200D\u000624\u00066E\u00200D</string>
+      <string>\u000624\u00066E\u000624\u00066E\u000627</string>
     </test>
     <test label="U+0648">
       <comment>waw-ar</comment>
-      <string>\u000648\u00066E\u00200D \u00200D\u000648\u00066E\u00200D</string>
+      <string>\u000648\u00066E\u000648\u00066E\u000627</string>
     </test>
     <test label="U+0676">
       <comment>highhamzaWaw-ar</comment>
-      <string>\u000676\u00066E\u00200D \u00200D\u000676\u00066E\u00200D</string>
+      <string>\u000676\u00066E\u000676\u00066E\u000627</string>
     </test>
     <test label="U+0677">
       <comment>uHamzaabove-ar</comment>
-      <string>\u000677\u00066E\u00200D \u00200D\u000677\u00066E\u00200D</string>
+      <string>\u000677\u00066E\u000677\u00066E\u000627</string>
     </test>
     <test label="U+06C4">
       <comment>wawring-ar</comment>
-      <string>\u0006C4\u00066E\u00200D \u00200D\u0006C4\u00066E\u00200D</string>
+      <string>\u0006C4\u00066E\u0006C4\u00066E\u000627</string>
     </test>
     <test label="U+06C5">
       <comment>kirghizoe-ar</comment>
-      <string>\u0006C5\u00066E\u00200D \u00200D\u0006C5\u00066E\u00200D</string>
+      <string>\u0006C5\u00066E\u0006C5\u00066E\u000627</string>
     </test>
     <test label="U+06C5" stylename="cv51_1">
       <comment>kirghizoe-ar</comment>
-      <string>\u0006C5\u00066E\u00200D \u00200D\u0006C5\u00066E\u00200D</string>
+      <string>\u0006C5\u00066E\u0006C5\u00066E\u000627</string>
     </test>
     <test label="U+06C6">
       <comment>oe-ar</comment>
-      <string>\u0006C6\u00066E\u00200D \u00200D\u0006C6\u00066E\u00200D</string>
+      <string>\u0006C6\u00066E\u0006C6\u00066E\u000627</string>
     </test>
     <test label="U+06C7">
       <comment>u-ar</comment>
-      <string>\u0006C7\u00066E\u00200D \u00200D\u0006C7\u00066E\u00200D</string>
+      <string>\u0006C7\u00066E\u0006C7\u00066E\u000627</string>
     </test>
     <test label="U+06C8">
       <comment>yu-ar</comment>
-      <string>\u0006C8\u00066E\u00200D \u00200D\u0006C8\u00066E\u00200D</string>
+      <string>\u0006C8\u00066E\u0006C8\u00066E\u000627</string>
     </test>
     <test label="U+06C9">
       <comment>kirghizyu-ar</comment>
-      <string>\u0006C9\u00066E\u00200D \u00200D\u0006C9\u00066E\u00200D</string>
+      <string>\u0006C9\u00066E\u0006C9\u00066E\u000627</string>
     </test>
     <test label="U+06CA">
       <comment>wawTwodots-ar</comment>
-      <string>\u0006CA\u00066E\u00200D \u00200D\u0006CA\u00066E\u00200D</string>
+      <string>\u0006CA\u00066E\u0006CA\u00066E\u000627</string>
     </test>
     <test label="U+06CB">
       <comment>ve-ar</comment>
-      <string>\u0006CB\u00066E\u00200D \u00200D\u0006CB\u00066E\u00200D</string>
+      <string>\u0006CB\u00066E\u0006CB\u00066E\u000627</string>
     </test>
     <test label="U+06CF">
       <comment>wawDotabove-ar</comment>
-      <string>\u0006CF\u00066E\u00200D \u00200D\u0006CF\u00066E\u00200D</string>
+      <string>\u0006CF\u00066E\u0006CF\u00066E\u000627</string>
     </test>
     <test label="U+0778">
       <comment>wawTwoabove-ar</comment>
-      <string>\u000778\u00066E\u00200D \u00200D\u000778\u00066E\u00200D</string>
+      <string>\u000778\u00066E\u000778\u00066E\u000627</string>
     </test>
     <test label="U+0779">
       <comment>wawThreeAbove-ar</comment>
-      <string>\u000779\u00066E\u00200D \u00200D\u000779\u00066E\u00200D</string>
+      <string>\u000779\u00066E\u000779\u00066E\u000627</string>
     </test>
     <test label="U+08AB">
       <comment>wawDotcenter-ar</comment>
-      <string>\u0008AB\u00066E\u00200D \u00200D\u0008AB\u00066E\u00200D</string>
+      <string>\u0008AB\u00066E\u0008AB\u00066E\u000627</string>
     </test>
   </testgroup>
   <testgroup label="Reh + all the others">
