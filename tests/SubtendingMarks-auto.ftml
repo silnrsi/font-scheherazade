@@ -83,6 +83,10 @@
       <comment>piastremarkabove-ar</comment>
       <string>\u000628\u000891\u000645 \u0008912 \u00089122 \u000891222 \u0008912222 \u00089112</string>
     </test>
+    <test label="U+08E2 latn">
+      <comment>disputedendofayah-ar</comment>
+      <string>\u000628\u0008E2\u000645 \u0008E22 \u0008E222 \u0008E2222 \u0008E212</string>
+    </test>
     <test label="U+06DD latn">
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD2 \u0006DD22 \u0006DD222 \u0006DD12</string>
@@ -127,6 +131,10 @@
       <comment>piastremarkabove-ar</comment>
       <string>\u000628\u000891\u000645 \u000891\u000668 \u000891\u000668\u000668 \u000891\u000668\u000668\u000668 \u000891\u000668\u000668\u000668\u000668 \u000891\u000661\u000662</string>
     </test>
+    <test label="U+08E2 arab">
+      <comment>disputedendofayah-ar</comment>
+      <string>\u000628\u0008E2\u000645 \u0008E2\u000668 \u0008E2\u000668\u000668 \u0008E2\u000668\u000668\u000668 \u0008E2\u000661\u000662</string>
+    </test>
     <test label="U+06DD arab">
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD\u000668 \u0006DD\u000668\u000668 \u0006DD\u000668\u000668\u000668 \u0006DD\u000661\u000662</string>
@@ -170,6 +178,10 @@
     <test label="U+0891 urdu">
       <comment>piastremarkabove-ar</comment>
       <string>\u000628\u000891\u000645 \u000891\u0006F8 \u000891\u0006F8\u0006F8 \u000891\u0006F8\u0006F8\u0006F8 \u000891\u0006F8\u0006F8\u0006F8\u0006F8 \u000891\u0006F1\u0006F2</string>
+    </test>
+    <test label="U+08E2 urdu">
+      <comment>disputedendofayah-ar</comment>
+      <string>\u000628\u0008E2\u000645 \u0008E2\u0006F8 \u0008E2\u0006F8\u0006F8 \u0008E2\u0006F8\u0006F8\u0006F8 \u0008E2\u0006F1\u0006F2</string>
     </test>
     <test label="U+06DD urdu">
       <comment>endofayah-ar</comment>
@@ -279,18 +291,6 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
-    <test label="U+06DD urdu" stylename="wo">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
-    <test label="U+06DD urdu" stylename="wo_cv80_1">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
-    <test label="U+06DD urdu" stylename="wo_cv80_2">
-      <comment>4 6 7</comment>
-      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
-    </test>
     <test label="U+06DD urdu" stylename="rhg">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -312,6 +312,18 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD urdu" stylename="ky_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="wo">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="wo_cv80_1">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD urdu" stylename="wo_cv80_2">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>

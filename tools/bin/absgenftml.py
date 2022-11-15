@@ -407,7 +407,7 @@ def doit(args):
         # and Extended Arabic-Indic digits are included.
         for digitSample in filter(lambda x: x in builder.uids(), (0x0032, 0x0668, 0x06F8)):
             digitOne = (digitSample & 0xFFF0) + 1
-            for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x0890,4], [0x0891,4], [0x06DD,3])):
+            for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x0890,4], [0x0891,4], [0x08E2,3], [0x06DD,3])):
                 c = chr(uid)
                 label = "U+{0:04X} {1}".format(uid, 'latn' if digitOne == 0x0031 else 'arab' if digitOne == 0x0661 else 'urdu')
                 comment = builder.char(uid).basename
