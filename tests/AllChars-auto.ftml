@@ -2231,7 +2231,23 @@
     </test>
     <test label="U+2018">
       <comment>quoteleft</comment>
-      <string>\u002018 \u002019 \u00201A \u00201B \u00201C \u00201D \u00201E \u00201F \u002020 \u002021 \u002022</string>
+      <string>\u002018 \u002019 \u00201A</string>
+    </test>
+    <test background="#f0fff0" label="U+201B">
+      <comment>quotereversed</comment>
+      <string>\u00201B</string>
+    </test>
+    <test label="U+201C">
+      <comment>quotedblleft</comment>
+      <string>\u00201C \u00201D \u00201E</string>
+    </test>
+    <test background="#f0fff0" label="U+201F">
+      <comment>quotedblrightreversed</comment>
+      <string>\u00201F</string>
+    </test>
+    <test label="U+2020">
+      <comment>dagger</comment>
+      <string>\u002020 \u002021 \u002022</string>
     </test>
     <test label="U+2026">
       <comment>ellipsis</comment>
@@ -3216,11 +3232,6 @@ U+0673">
       <string>\u000644\u000673 \u000628\u000644\u000673 </string>
     </test>
     <test label="U+0644
-U+0675">
-      <comment>lam-ar highhamzaAlef-ar</comment>
-      <string>\u000644\u000675 \u000628\u000644\u000675 </string>
-    </test>
-    <test label="U+0644
 U+0773">
       <comment>lam-ar alefTwoabove-ar</comment>
       <string>\u000644\u000773 \u000628\u000644\u000773 </string>
@@ -3366,11 +3377,6 @@ U+0673">
       <string>\u0006B5\u000673 \u000628\u0006B5\u000673 </string>
     </test>
     <test label="U+06B5
-U+0675">
-      <comment>lamVabove-ar highhamzaAlef-ar</comment>
-      <string>\u0006B5\u000675 \u000628\u0006B5\u000675 </string>
-    </test>
-    <test label="U+06B5
 U+0773">
       <comment>lamVabove-ar alefTwoabove-ar</comment>
       <string>\u0006B5\u000773 \u000628\u0006B5\u000773 </string>
@@ -3379,101 +3385,6 @@ U+0773">
 U+0774">
       <comment>lamVabove-ar alefThreeabove-ar</comment>
       <string>\u0006B5\u000774 \u000628\u0006B5\u000774 </string>
-    </test>
-    <test label="U+06B5
-U+0870">
-      <comment>lamVabove-ar alefFathaattached-ar</comment>
-      <string>\u0006B5\u000870 \u000628\u0006B5\u000870 </string>
-    </test>
-    <test label="U+06B5
-U+0871">
-      <comment>lamVabove-ar alefToprightfathaattached-ar</comment>
-      <string>\u0006B5\u000871 \u000628\u0006B5\u000871 </string>
-    </test>
-    <test label="U+06B5
-U+0872">
-      <comment>lamVabove-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0006B5\u000872 \u000628\u0006B5\u000872 </string>
-    </test>
-    <test label="U+06B5
-U+0873">
-      <comment>lamVabove-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0006B5\u000873 \u000628\u0006B5\u000873 </string>
-    </test>
-    <test label="U+06B5
-U+0874">
-      <comment>lamVabove-ar alefKasraattached-ar</comment>
-      <string>\u0006B5\u000874 \u000628\u0006B5\u000874 </string>
-    </test>
-    <test label="U+06B5
-U+0875">
-      <comment>lamVabove-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0006B5\u000875 \u000628\u0006B5\u000875 </string>
-    </test>
-    <test label="U+06B5
-U+0876">
-      <comment>lamVabove-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0006B5\u000876 \u000628\u0006B5\u000876 </string>
-    </test>
-    <test label="U+06B5
-U+0877">
-      <comment>lamVabove-ar alefRightrounddotattached-ar</comment>
-      <string>\u0006B5\u000877 \u000628\u0006B5\u000877 </string>
-    </test>
-    <test label="U+06B5
-U+0878">
-      <comment>lamVabove-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0006B5\u000878 \u000628\u0006B5\u000878 </string>
-    </test>
-    <test label="U+06B5
-U+0879">
-      <comment>lamVabove-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0006B5\u000879 \u000628\u0006B5\u000879 </string>
-    </test>
-    <test label="U+06B5
-U+087A">
-      <comment>lamVabove-ar alefDotabove-ar</comment>
-      <string>\u0006B5\u00087A \u000628\u0006B5\u00087A </string>
-    </test>
-    <test label="U+06B5
-U+087B">
-      <comment>lamVabove-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0006B5\u00087B \u000628\u0006B5\u00087B </string>
-    </test>
-    <test label="U+06B5
-U+087C">
-      <comment>lamVabove-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0006B5\u00087C \u000628\u0006B5\u00087C </string>
-    </test>
-    <test label="U+06B5
-U+087D">
-      <comment>lamVabove-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0006B5\u00087D \u000628\u0006B5\u00087D </string>
-    </test>
-    <test label="U+06B5
-U+087E">
-      <comment>lamVabove-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0006B5\u00087E \u000628\u0006B5\u00087E </string>
-    </test>
-    <test label="U+06B5
-U+087F">
-      <comment>lamVabove-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0006B5\u00087F \u000628\u0006B5\u00087F </string>
-    </test>
-    <test label="U+06B5
-U+0880">
-      <comment>lamVabove-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0006B5\u000880 \u000628\u0006B5\u000880 </string>
-    </test>
-    <test label="U+06B5
-U+0881">
-      <comment>lamVabove-ar alefRighthamzaattached-ar</comment>
-      <string>\u0006B5\u000881 \u000628\u0006B5\u000881 </string>
-    </test>
-    <test label="U+06B5
-U+0882">
-      <comment>lamVabove-ar alefLefthamzaattached-ar</comment>
-      <string>\u0006B5\u000882 \u000628\u0006B5\u000882 </string>
     </test>
     <test label="U+06B6
 U+0622">
@@ -3516,11 +3427,6 @@ U+0673">
       <string>\u0006B6\u000673 \u000628\u0006B6\u000673 </string>
     </test>
     <test label="U+06B6
-U+0675">
-      <comment>lamDotabove-ar highhamzaAlef-ar</comment>
-      <string>\u0006B6\u000675 \u000628\u0006B6\u000675 </string>
-    </test>
-    <test label="U+06B6
 U+0773">
       <comment>lamDotabove-ar alefTwoabove-ar</comment>
       <string>\u0006B6\u000773 \u000628\u0006B6\u000773 </string>
@@ -3529,101 +3435,6 @@ U+0773">
 U+0774">
       <comment>lamDotabove-ar alefThreeabove-ar</comment>
       <string>\u0006B6\u000774 \u000628\u0006B6\u000774 </string>
-    </test>
-    <test label="U+06B6
-U+0870">
-      <comment>lamDotabove-ar alefFathaattached-ar</comment>
-      <string>\u0006B6\u000870 \u000628\u0006B6\u000870 </string>
-    </test>
-    <test label="U+06B6
-U+0871">
-      <comment>lamDotabove-ar alefToprightfathaattached-ar</comment>
-      <string>\u0006B6\u000871 \u000628\u0006B6\u000871 </string>
-    </test>
-    <test label="U+06B6
-U+0872">
-      <comment>lamDotabove-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0006B6\u000872 \u000628\u0006B6\u000872 </string>
-    </test>
-    <test label="U+06B6
-U+0873">
-      <comment>lamDotabove-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0006B6\u000873 \u000628\u0006B6\u000873 </string>
-    </test>
-    <test label="U+06B6
-U+0874">
-      <comment>lamDotabove-ar alefKasraattached-ar</comment>
-      <string>\u0006B6\u000874 \u000628\u0006B6\u000874 </string>
-    </test>
-    <test label="U+06B6
-U+0875">
-      <comment>lamDotabove-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0006B6\u000875 \u000628\u0006B6\u000875 </string>
-    </test>
-    <test label="U+06B6
-U+0876">
-      <comment>lamDotabove-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0006B6\u000876 \u000628\u0006B6\u000876 </string>
-    </test>
-    <test label="U+06B6
-U+0877">
-      <comment>lamDotabove-ar alefRightrounddotattached-ar</comment>
-      <string>\u0006B6\u000877 \u000628\u0006B6\u000877 </string>
-    </test>
-    <test label="U+06B6
-U+0878">
-      <comment>lamDotabove-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0006B6\u000878 \u000628\u0006B6\u000878 </string>
-    </test>
-    <test label="U+06B6
-U+0879">
-      <comment>lamDotabove-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0006B6\u000879 \u000628\u0006B6\u000879 </string>
-    </test>
-    <test label="U+06B6
-U+087A">
-      <comment>lamDotabove-ar alefDotabove-ar</comment>
-      <string>\u0006B6\u00087A \u000628\u0006B6\u00087A </string>
-    </test>
-    <test label="U+06B6
-U+087B">
-      <comment>lamDotabove-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0006B6\u00087B \u000628\u0006B6\u00087B </string>
-    </test>
-    <test label="U+06B6
-U+087C">
-      <comment>lamDotabove-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0006B6\u00087C \u000628\u0006B6\u00087C </string>
-    </test>
-    <test label="U+06B6
-U+087D">
-      <comment>lamDotabove-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0006B6\u00087D \u000628\u0006B6\u00087D </string>
-    </test>
-    <test label="U+06B6
-U+087E">
-      <comment>lamDotabove-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0006B6\u00087E \u000628\u0006B6\u00087E </string>
-    </test>
-    <test label="U+06B6
-U+087F">
-      <comment>lamDotabove-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0006B6\u00087F \u000628\u0006B6\u00087F </string>
-    </test>
-    <test label="U+06B6
-U+0880">
-      <comment>lamDotabove-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0006B6\u000880 \u000628\u0006B6\u000880 </string>
-    </test>
-    <test label="U+06B6
-U+0881">
-      <comment>lamDotabove-ar alefRighthamzaattached-ar</comment>
-      <string>\u0006B6\u000881 \u000628\u0006B6\u000881 </string>
-    </test>
-    <test label="U+06B6
-U+0882">
-      <comment>lamDotabove-ar alefLefthamzaattached-ar</comment>
-      <string>\u0006B6\u000882 \u000628\u0006B6\u000882 </string>
     </test>
     <test label="U+06B7
 U+0622">
@@ -3666,11 +3477,6 @@ U+0673">
       <string>\u0006B7\u000673 \u000628\u0006B7\u000673 </string>
     </test>
     <test label="U+06B7
-U+0675">
-      <comment>lamThreedotsabove-ar highhamzaAlef-ar</comment>
-      <string>\u0006B7\u000675 \u000628\u0006B7\u000675 </string>
-    </test>
-    <test label="U+06B7
 U+0773">
       <comment>lamThreedotsabove-ar alefTwoabove-ar</comment>
       <string>\u0006B7\u000773 \u000628\u0006B7\u000773 </string>
@@ -3679,101 +3485,6 @@ U+0773">
 U+0774">
       <comment>lamThreedotsabove-ar alefThreeabove-ar</comment>
       <string>\u0006B7\u000774 \u000628\u0006B7\u000774 </string>
-    </test>
-    <test label="U+06B7
-U+0870">
-      <comment>lamThreedotsabove-ar alefFathaattached-ar</comment>
-      <string>\u0006B7\u000870 \u000628\u0006B7\u000870 </string>
-    </test>
-    <test label="U+06B7
-U+0871">
-      <comment>lamThreedotsabove-ar alefToprightfathaattached-ar</comment>
-      <string>\u0006B7\u000871 \u000628\u0006B7\u000871 </string>
-    </test>
-    <test label="U+06B7
-U+0872">
-      <comment>lamThreedotsabove-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0006B7\u000872 \u000628\u0006B7\u000872 </string>
-    </test>
-    <test label="U+06B7
-U+0873">
-      <comment>lamThreedotsabove-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0006B7\u000873 \u000628\u0006B7\u000873 </string>
-    </test>
-    <test label="U+06B7
-U+0874">
-      <comment>lamThreedotsabove-ar alefKasraattached-ar</comment>
-      <string>\u0006B7\u000874 \u000628\u0006B7\u000874 </string>
-    </test>
-    <test label="U+06B7
-U+0875">
-      <comment>lamThreedotsabove-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0006B7\u000875 \u000628\u0006B7\u000875 </string>
-    </test>
-    <test label="U+06B7
-U+0876">
-      <comment>lamThreedotsabove-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0006B7\u000876 \u000628\u0006B7\u000876 </string>
-    </test>
-    <test label="U+06B7
-U+0877">
-      <comment>lamThreedotsabove-ar alefRightrounddotattached-ar</comment>
-      <string>\u0006B7\u000877 \u000628\u0006B7\u000877 </string>
-    </test>
-    <test label="U+06B7
-U+0878">
-      <comment>lamThreedotsabove-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0006B7\u000878 \u000628\u0006B7\u000878 </string>
-    </test>
-    <test label="U+06B7
-U+0879">
-      <comment>lamThreedotsabove-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0006B7\u000879 \u000628\u0006B7\u000879 </string>
-    </test>
-    <test label="U+06B7
-U+087A">
-      <comment>lamThreedotsabove-ar alefDotabove-ar</comment>
-      <string>\u0006B7\u00087A \u000628\u0006B7\u00087A </string>
-    </test>
-    <test label="U+06B7
-U+087B">
-      <comment>lamThreedotsabove-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0006B7\u00087B \u000628\u0006B7\u00087B </string>
-    </test>
-    <test label="U+06B7
-U+087C">
-      <comment>lamThreedotsabove-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0006B7\u00087C \u000628\u0006B7\u00087C </string>
-    </test>
-    <test label="U+06B7
-U+087D">
-      <comment>lamThreedotsabove-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0006B7\u00087D \u000628\u0006B7\u00087D </string>
-    </test>
-    <test label="U+06B7
-U+087E">
-      <comment>lamThreedotsabove-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0006B7\u00087E \u000628\u0006B7\u00087E </string>
-    </test>
-    <test label="U+06B7
-U+087F">
-      <comment>lamThreedotsabove-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0006B7\u00087F \u000628\u0006B7\u00087F </string>
-    </test>
-    <test label="U+06B7
-U+0880">
-      <comment>lamThreedotsabove-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0006B7\u000880 \u000628\u0006B7\u000880 </string>
-    </test>
-    <test label="U+06B7
-U+0881">
-      <comment>lamThreedotsabove-ar alefRighthamzaattached-ar</comment>
-      <string>\u0006B7\u000881 \u000628\u0006B7\u000881 </string>
-    </test>
-    <test label="U+06B7
-U+0882">
-      <comment>lamThreedotsabove-ar alefLefthamzaattached-ar</comment>
-      <string>\u0006B7\u000882 \u000628\u0006B7\u000882 </string>
     </test>
     <test label="U+06B8
 U+0622">
@@ -3816,11 +3527,6 @@ U+0673">
       <string>\u0006B8\u000673 \u000628\u0006B8\u000673 </string>
     </test>
     <test label="U+06B8
-U+0675">
-      <comment>lamThreedotsbelow-ar highhamzaAlef-ar</comment>
-      <string>\u0006B8\u000675 \u000628\u0006B8\u000675 </string>
-    </test>
-    <test label="U+06B8
 U+0773">
       <comment>lamThreedotsbelow-ar alefTwoabove-ar</comment>
       <string>\u0006B8\u000773 \u000628\u0006B8\u000773 </string>
@@ -3829,101 +3535,6 @@ U+0773">
 U+0774">
       <comment>lamThreedotsbelow-ar alefThreeabove-ar</comment>
       <string>\u0006B8\u000774 \u000628\u0006B8\u000774 </string>
-    </test>
-    <test label="U+06B8
-U+0870">
-      <comment>lamThreedotsbelow-ar alefFathaattached-ar</comment>
-      <string>\u0006B8\u000870 \u000628\u0006B8\u000870 </string>
-    </test>
-    <test label="U+06B8
-U+0871">
-      <comment>lamThreedotsbelow-ar alefToprightfathaattached-ar</comment>
-      <string>\u0006B8\u000871 \u000628\u0006B8\u000871 </string>
-    </test>
-    <test label="U+06B8
-U+0872">
-      <comment>lamThreedotsbelow-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0006B8\u000872 \u000628\u0006B8\u000872 </string>
-    </test>
-    <test label="U+06B8
-U+0873">
-      <comment>lamThreedotsbelow-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0006B8\u000873 \u000628\u0006B8\u000873 </string>
-    </test>
-    <test label="U+06B8
-U+0874">
-      <comment>lamThreedotsbelow-ar alefKasraattached-ar</comment>
-      <string>\u0006B8\u000874 \u000628\u0006B8\u000874 </string>
-    </test>
-    <test label="U+06B8
-U+0875">
-      <comment>lamThreedotsbelow-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0006B8\u000875 \u000628\u0006B8\u000875 </string>
-    </test>
-    <test label="U+06B8
-U+0876">
-      <comment>lamThreedotsbelow-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0006B8\u000876 \u000628\u0006B8\u000876 </string>
-    </test>
-    <test label="U+06B8
-U+0877">
-      <comment>lamThreedotsbelow-ar alefRightrounddotattached-ar</comment>
-      <string>\u0006B8\u000877 \u000628\u0006B8\u000877 </string>
-    </test>
-    <test label="U+06B8
-U+0878">
-      <comment>lamThreedotsbelow-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0006B8\u000878 \u000628\u0006B8\u000878 </string>
-    </test>
-    <test label="U+06B8
-U+0879">
-      <comment>lamThreedotsbelow-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0006B8\u000879 \u000628\u0006B8\u000879 </string>
-    </test>
-    <test label="U+06B8
-U+087A">
-      <comment>lamThreedotsbelow-ar alefDotabove-ar</comment>
-      <string>\u0006B8\u00087A \u000628\u0006B8\u00087A </string>
-    </test>
-    <test label="U+06B8
-U+087B">
-      <comment>lamThreedotsbelow-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0006B8\u00087B \u000628\u0006B8\u00087B </string>
-    </test>
-    <test label="U+06B8
-U+087C">
-      <comment>lamThreedotsbelow-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0006B8\u00087C \u000628\u0006B8\u00087C </string>
-    </test>
-    <test label="U+06B8
-U+087D">
-      <comment>lamThreedotsbelow-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0006B8\u00087D \u000628\u0006B8\u00087D </string>
-    </test>
-    <test label="U+06B8
-U+087E">
-      <comment>lamThreedotsbelow-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0006B8\u00087E \u000628\u0006B8\u00087E </string>
-    </test>
-    <test label="U+06B8
-U+087F">
-      <comment>lamThreedotsbelow-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0006B8\u00087F \u000628\u0006B8\u00087F </string>
-    </test>
-    <test label="U+06B8
-U+0880">
-      <comment>lamThreedotsbelow-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0006B8\u000880 \u000628\u0006B8\u000880 </string>
-    </test>
-    <test label="U+06B8
-U+0881">
-      <comment>lamThreedotsbelow-ar alefRighthamzaattached-ar</comment>
-      <string>\u0006B8\u000881 \u000628\u0006B8\u000881 </string>
-    </test>
-    <test label="U+06B8
-U+0882">
-      <comment>lamThreedotsbelow-ar alefLefthamzaattached-ar</comment>
-      <string>\u0006B8\u000882 \u000628\u0006B8\u000882 </string>
     </test>
     <test label="U+076A
 U+0622">
@@ -3966,11 +3577,6 @@ U+0673">
       <string>\u00076A\u000673 \u000628\u00076A\u000673 </string>
     </test>
     <test label="U+076A
-U+0675">
-      <comment>lamBar-ar highhamzaAlef-ar</comment>
-      <string>\u00076A\u000675 \u000628\u00076A\u000675 </string>
-    </test>
-    <test label="U+076A
 U+0773">
       <comment>lamBar-ar alefTwoabove-ar</comment>
       <string>\u00076A\u000773 \u000628\u00076A\u000773 </string>
@@ -3979,101 +3585,6 @@ U+0773">
 U+0774">
       <comment>lamBar-ar alefThreeabove-ar</comment>
       <string>\u00076A\u000774 \u000628\u00076A\u000774 </string>
-    </test>
-    <test label="U+076A
-U+0870">
-      <comment>lamBar-ar alefFathaattached-ar</comment>
-      <string>\u00076A\u000870 \u000628\u00076A\u000870 </string>
-    </test>
-    <test label="U+076A
-U+0871">
-      <comment>lamBar-ar alefToprightfathaattached-ar</comment>
-      <string>\u00076A\u000871 \u000628\u00076A\u000871 </string>
-    </test>
-    <test label="U+076A
-U+0872">
-      <comment>lamBar-ar alefRightmiddlestroke-ar</comment>
-      <string>\u00076A\u000872 \u000628\u00076A\u000872 </string>
-    </test>
-    <test label="U+076A
-U+0873">
-      <comment>lamBar-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u00076A\u000873 \u000628\u00076A\u000873 </string>
-    </test>
-    <test label="U+076A
-U+0874">
-      <comment>lamBar-ar alefKasraattached-ar</comment>
-      <string>\u00076A\u000874 \u000628\u00076A\u000874 </string>
-    </test>
-    <test label="U+076A
-U+0875">
-      <comment>lamBar-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u00076A\u000875 \u000628\u00076A\u000875 </string>
-    </test>
-    <test label="U+076A
-U+0876">
-      <comment>lamBar-ar alefRounddotaboveattached-ar</comment>
-      <string>\u00076A\u000876 \u000628\u00076A\u000876 </string>
-    </test>
-    <test label="U+076A
-U+0877">
-      <comment>lamBar-ar alefRightrounddotattached-ar</comment>
-      <string>\u00076A\u000877 \u000628\u00076A\u000877 </string>
-    </test>
-    <test label="U+076A
-U+0878">
-      <comment>lamBar-ar alefLeftrounddotattached-ar</comment>
-      <string>\u00076A\u000878 \u000628\u00076A\u000878 </string>
-    </test>
-    <test label="U+076A
-U+0879">
-      <comment>lamBar-ar alefRounddotbelowattached-ar</comment>
-      <string>\u00076A\u000879 \u000628\u00076A\u000879 </string>
-    </test>
-    <test label="U+076A
-U+087A">
-      <comment>lamBar-ar alefDotabove-ar</comment>
-      <string>\u00076A\u00087A \u000628\u00076A\u00087A </string>
-    </test>
-    <test label="U+076A
-U+087B">
-      <comment>lamBar-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u00076A\u00087B \u000628\u00076A\u00087B </string>
-    </test>
-    <test label="U+076A
-U+087C">
-      <comment>lamBar-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u00076A\u00087C \u000628\u00076A\u00087C </string>
-    </test>
-    <test label="U+076A
-U+087D">
-      <comment>lamBar-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u00076A\u00087D \u000628\u00076A\u00087D </string>
-    </test>
-    <test label="U+076A
-U+087E">
-      <comment>lamBar-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u00076A\u00087E \u000628\u00076A\u00087E </string>
-    </test>
-    <test label="U+076A
-U+087F">
-      <comment>lamBar-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u00076A\u00087F \u000628\u00076A\u00087F </string>
-    </test>
-    <test label="U+076A
-U+0880">
-      <comment>lamBar-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u00076A\u000880 \u000628\u00076A\u000880 </string>
-    </test>
-    <test label="U+076A
-U+0881">
-      <comment>lamBar-ar alefRighthamzaattached-ar</comment>
-      <string>\u00076A\u000881 \u000628\u00076A\u000881 </string>
-    </test>
-    <test label="U+076A
-U+0882">
-      <comment>lamBar-ar alefLefthamzaattached-ar</comment>
-      <string>\u00076A\u000882 \u000628\u00076A\u000882 </string>
     </test>
     <test label="U+08A6
 U+0622">
@@ -4116,11 +3627,6 @@ U+0673">
       <string>\u0008A6\u000673 \u000628\u0008A6\u000673 </string>
     </test>
     <test label="U+08A6
-U+0675">
-      <comment>lamDoublebar-ar highhamzaAlef-ar</comment>
-      <string>\u0008A6\u000675 \u000628\u0008A6\u000675 </string>
-    </test>
-    <test label="U+08A6
 U+0773">
       <comment>lamDoublebar-ar alefTwoabove-ar</comment>
       <string>\u0008A6\u000773 \u000628\u0008A6\u000773 </string>
@@ -4129,101 +3635,6 @@ U+0773">
 U+0774">
       <comment>lamDoublebar-ar alefThreeabove-ar</comment>
       <string>\u0008A6\u000774 \u000628\u0008A6\u000774 </string>
-    </test>
-    <test label="U+08A6
-U+0870">
-      <comment>lamDoublebar-ar alefFathaattached-ar</comment>
-      <string>\u0008A6\u000870 \u000628\u0008A6\u000870 </string>
-    </test>
-    <test label="U+08A6
-U+0871">
-      <comment>lamDoublebar-ar alefToprightfathaattached-ar</comment>
-      <string>\u0008A6\u000871 \u000628\u0008A6\u000871 </string>
-    </test>
-    <test label="U+08A6
-U+0872">
-      <comment>lamDoublebar-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0008A6\u000872 \u000628\u0008A6\u000872 </string>
-    </test>
-    <test label="U+08A6
-U+0873">
-      <comment>lamDoublebar-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0008A6\u000873 \u000628\u0008A6\u000873 </string>
-    </test>
-    <test label="U+08A6
-U+0874">
-      <comment>lamDoublebar-ar alefKasraattached-ar</comment>
-      <string>\u0008A6\u000874 \u000628\u0008A6\u000874 </string>
-    </test>
-    <test label="U+08A6
-U+0875">
-      <comment>lamDoublebar-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0008A6\u000875 \u000628\u0008A6\u000875 </string>
-    </test>
-    <test label="U+08A6
-U+0876">
-      <comment>lamDoublebar-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0008A6\u000876 \u000628\u0008A6\u000876 </string>
-    </test>
-    <test label="U+08A6
-U+0877">
-      <comment>lamDoublebar-ar alefRightrounddotattached-ar</comment>
-      <string>\u0008A6\u000877 \u000628\u0008A6\u000877 </string>
-    </test>
-    <test label="U+08A6
-U+0878">
-      <comment>lamDoublebar-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0008A6\u000878 \u000628\u0008A6\u000878 </string>
-    </test>
-    <test label="U+08A6
-U+0879">
-      <comment>lamDoublebar-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0008A6\u000879 \u000628\u0008A6\u000879 </string>
-    </test>
-    <test label="U+08A6
-U+087A">
-      <comment>lamDoublebar-ar alefDotabove-ar</comment>
-      <string>\u0008A6\u00087A \u000628\u0008A6\u00087A </string>
-    </test>
-    <test label="U+08A6
-U+087B">
-      <comment>lamDoublebar-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0008A6\u00087B \u000628\u0008A6\u00087B </string>
-    </test>
-    <test label="U+08A6
-U+087C">
-      <comment>lamDoublebar-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0008A6\u00087C \u000628\u0008A6\u00087C </string>
-    </test>
-    <test label="U+08A6
-U+087D">
-      <comment>lamDoublebar-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0008A6\u00087D \u000628\u0008A6\u00087D </string>
-    </test>
-    <test label="U+08A6
-U+087E">
-      <comment>lamDoublebar-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0008A6\u00087E \u000628\u0008A6\u00087E </string>
-    </test>
-    <test label="U+08A6
-U+087F">
-      <comment>lamDoublebar-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0008A6\u00087F \u000628\u0008A6\u00087F </string>
-    </test>
-    <test label="U+08A6
-U+0880">
-      <comment>lamDoublebar-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0008A6\u000880 \u000628\u0008A6\u000880 </string>
-    </test>
-    <test label="U+08A6
-U+0881">
-      <comment>lamDoublebar-ar alefRighthamzaattached-ar</comment>
-      <string>\u0008A6\u000881 \u000628\u0008A6\u000881 </string>
-    </test>
-    <test label="U+08A6
-U+0882">
-      <comment>lamDoublebar-ar alefLefthamzaattached-ar</comment>
-      <string>\u0008A6\u000882 \u000628\u0008A6\u000882 </string>
     </test>
     <test label="U+08C7
 U+0622">
@@ -4266,11 +3677,6 @@ U+0673">
       <string>\u0008C7\u000673 \u000628\u0008C7\u000673 </string>
     </test>
     <test label="U+08C7
-U+0675">
-      <comment>lamTahabove-ar highhamzaAlef-ar</comment>
-      <string>\u0008C7\u000675 \u000628\u0008C7\u000675 </string>
-    </test>
-    <test label="U+08C7
 U+0773">
       <comment>lamTahabove-ar alefTwoabove-ar</comment>
       <string>\u0008C7\u000773 \u000628\u0008C7\u000773 </string>
@@ -4279,101 +3685,6 @@ U+0773">
 U+0774">
       <comment>lamTahabove-ar alefThreeabove-ar</comment>
       <string>\u0008C7\u000774 \u000628\u0008C7\u000774 </string>
-    </test>
-    <test label="U+08C7
-U+0870">
-      <comment>lamTahabove-ar alefFathaattached-ar</comment>
-      <string>\u0008C7\u000870 \u000628\u0008C7\u000870 </string>
-    </test>
-    <test label="U+08C7
-U+0871">
-      <comment>lamTahabove-ar alefToprightfathaattached-ar</comment>
-      <string>\u0008C7\u000871 \u000628\u0008C7\u000871 </string>
-    </test>
-    <test label="U+08C7
-U+0872">
-      <comment>lamTahabove-ar alefRightmiddlestroke-ar</comment>
-      <string>\u0008C7\u000872 \u000628\u0008C7\u000872 </string>
-    </test>
-    <test label="U+08C7
-U+0873">
-      <comment>lamTahabove-ar alefLeftmiddlestroke-ar</comment>
-      <string>\u0008C7\u000873 \u000628\u0008C7\u000873 </string>
-    </test>
-    <test label="U+08C7
-U+0874">
-      <comment>lamTahabove-ar alefKasraattached-ar</comment>
-      <string>\u0008C7\u000874 \u000628\u0008C7\u000874 </string>
-    </test>
-    <test label="U+08C7
-U+0875">
-      <comment>lamTahabove-ar alefBottomrightkasraattached-ar</comment>
-      <string>\u0008C7\u000875 \u000628\u0008C7\u000875 </string>
-    </test>
-    <test label="U+08C7
-U+0876">
-      <comment>lamTahabove-ar alefRounddotaboveattached-ar</comment>
-      <string>\u0008C7\u000876 \u000628\u0008C7\u000876 </string>
-    </test>
-    <test label="U+08C7
-U+0877">
-      <comment>lamTahabove-ar alefRightrounddotattached-ar</comment>
-      <string>\u0008C7\u000877 \u000628\u0008C7\u000877 </string>
-    </test>
-    <test label="U+08C7
-U+0878">
-      <comment>lamTahabove-ar alefLeftrounddotattached-ar</comment>
-      <string>\u0008C7\u000878 \u000628\u0008C7\u000878 </string>
-    </test>
-    <test label="U+08C7
-U+0879">
-      <comment>lamTahabove-ar alefRounddotbelowattached-ar</comment>
-      <string>\u0008C7\u000879 \u000628\u0008C7\u000879 </string>
-    </test>
-    <test label="U+08C7
-U+087A">
-      <comment>lamTahabove-ar alefDotabove-ar</comment>
-      <string>\u0008C7\u00087A \u000628\u0008C7\u00087A </string>
-    </test>
-    <test label="U+08C7
-U+087B">
-      <comment>lamTahabove-ar alefToprightfathaattachedDotabove-ar</comment>
-      <string>\u0008C7\u00087B \u000628\u0008C7\u00087B </string>
-    </test>
-    <test label="U+08C7
-U+087C">
-      <comment>lamTahabove-ar alefRightmiddlestrokeDotabove-ar</comment>
-      <string>\u0008C7\u00087C \u000628\u0008C7\u00087C </string>
-    </test>
-    <test label="U+08C7
-U+087D">
-      <comment>lamTahabove-ar alefBottomrightkasraattachedDotabove-ar</comment>
-      <string>\u0008C7\u00087D \u000628\u0008C7\u00087D </string>
-    </test>
-    <test label="U+08C7
-U+087E">
-      <comment>lamTahabove-ar alefToprightfathaattachedLeftring-ar</comment>
-      <string>\u0008C7\u00087E \u000628\u0008C7\u00087E </string>
-    </test>
-    <test label="U+08C7
-U+087F">
-      <comment>lamTahabove-ar alefRightmiddlestrokeLeftring-ar</comment>
-      <string>\u0008C7\u00087F \u000628\u0008C7\u00087F </string>
-    </test>
-    <test label="U+08C7
-U+0880">
-      <comment>lamTahabove-ar alefBottomrightkasraattachedLeftring-ar</comment>
-      <string>\u0008C7\u000880 \u000628\u0008C7\u000880 </string>
-    </test>
-    <test label="U+08C7
-U+0881">
-      <comment>lamTahabove-ar alefRighthamzaattached-ar</comment>
-      <string>\u0008C7\u000881 \u000628\u0008C7\u000881 </string>
-    </test>
-    <test label="U+08C7
-U+0882">
-      <comment>lamTahabove-ar alefLefthamzaattached-ar</comment>
-      <string>\u0008C7\u000882 \u000628\u0008C7\u000882 </string>
     </test>
   </testgroup>
   <testgroup label="Low-hamza combinations">
