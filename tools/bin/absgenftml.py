@@ -138,8 +138,10 @@ def doit(args):
             ftml.clearBackground()
 
     # Some lists shared used by multiple tests:
+    # all lam-like:
     lamlist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Lam', builder.uids()))
-    aleflist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Alef', builder.uids()))
+    # all alef-like except high-hamza-alef:
+    aleflist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Alef' and uid != 0x0675, builder.uids()))
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -183,6 +185,10 @@ def doit(args):
         builder.joinBefore = '\u0628'
         for lam in lamlist:
             for alef in aleflist:
+                # For the alef composites in Arabic Extended-B (U+0870 .. U+0882) we support
+                # lam-alef ligatures only with the plain lam U+0644
+                if lam != 0x0644 and 0x0870 <= alef <= 0x0882:
+                    continue
                 setBackgroundColor((lam, alef))
                 for featlist in builder.permuteFeatures(uids=(lam, alef)):
                     ftml.setFeatures(featlist)
@@ -365,6 +371,8 @@ def doit(args):
         diaB  = 0x064D  # kasratan
         for lam in lamlist:
             for alef in aleflist:
+                if lam != 0x0644 and 0x0870 <= alef <= 0x0882:
+                    continue
                 setBackgroundColor((lam,alef))
                 for featlist in builder.permuteFeatures(uids=(lam,alef)):
                     ftml.setFeatures(featlist)
