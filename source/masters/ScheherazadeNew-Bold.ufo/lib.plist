@@ -322,7 +322,7 @@
     <string>alefHamzaabove-ar</string>
     <string>alefHamzaabove-ar.fina</string>
     <string>_alefHamzaabove-ar.fina.postLamIni</string>
-    <string>_alefHam_zaabove-ar.fina.postLamMed</string>
+    <string>_alefHamzaabove-ar.fina.postLamMed</string>
     <string>alefHamzabelow-ar</string>
     <string>alefHamzabelow-ar.fina</string>
     <string>_alefHamzabelow-ar.fina.postLamIni</string>
@@ -1092,9 +1092,9 @@
     <string>lamDotabove_alef-ar.fina</string>
     <string>lamDotabove_alefWavyhamzaabove-ar</string>
     <string>lamDotabove_alefWavyhamzaabove-ar.fina</string>
+    <string>lamDotabove_alefWasla-ar</string>
     <string>lamDotabove_alefWavyhamzabelow-ar</string>
     <string>lamDotabove_alefWavyhamzabelow-ar.fina</string>
-    <string>lamDotabove_alefWasla-ar</string>
     <string>lamDotabove_alefWasla-ar.fina</string>
     <string>lamDotabove_alefTwoabove-ar</string>
     <string>lamDotabove_alefTwoabove-ar.fina</string>
@@ -1480,11 +1480,14 @@
     <string>assajdaabove-ar</string>
     <string>annisfabove-ar</string>
     <string>saktaabove-ar</string>
+    <string>saktabelow-ar</string>
     <string>qifabove-ar</string>
     <string>waqfaabove-ar</string>
+    <string>qasrbelow-ar</string>
     <string>aljuzabove-ar</string>
     <string>ishmaambelow-ar</string>
     <string>imaalabelow-ar</string>
+    <string>wordmaddabelow-ar</string>
     <string>tasheel-ar</string>
     <string>footnotemarkerabove-ar</string>
     <string>safhaabove-ar</string>
@@ -2177,7 +2180,7 @@
     <string>alefHamzaabove-ar</string>
     <string>alefHamzaabove-ar.fina</string>
     <string>_alefHamzaabove-ar.fina.postLamIni</string>
-    <string>_alefHam_zaabove-ar.fina.postLamMed</string>
+    <string>_alefHamzaabove-ar.fina.postLamMed</string>
     <string>alefHamzabelow-ar</string>
     <string>alefHamzabelow-ar.fina</string>
     <string>_alefHamzabelow-ar.fina.postLamIni</string>
@@ -2947,9 +2950,9 @@
     <string>lamDotabove_alef-ar.fina</string>
     <string>lamDotabove_alefWavyhamzaabove-ar</string>
     <string>lamDotabove_alefWavyhamzaabove-ar.fina</string>
+    <string>lamDotabove_alefWasla-ar</string>
     <string>lamDotabove_alefWavyhamzabelow-ar</string>
     <string>lamDotabove_alefWavyhamzabelow-ar.fina</string>
-    <string>lamDotabove_alefWasla-ar</string>
     <string>lamDotabove_alefWasla-ar.fina</string>
     <string>lamDotabove_alefTwoabove-ar</string>
     <string>lamDotabove_alefTwoabove-ar.fina</string>
@@ -3335,11 +3338,14 @@
     <string>assajdaabove-ar</string>
     <string>annisfabove-ar</string>
     <string>saktaabove-ar</string>
+    <string>saktabelow-ar</string>
     <string>qifabove-ar</string>
     <string>waqfaabove-ar</string>
+    <string>qasrbelow-ar</string>
     <string>aljuzabove-ar</string>
     <string>ishmaambelow-ar</string>
     <string>imaalabelow-ar</string>
+    <string>wordmaddabelow-ar</string>
     <string>tasheel-ar</string>
     <string>footnotemarkerabove-ar</string>
     <string>safhaabove-ar</string>
@@ -5780,6 +5786,8 @@
     <string>uni08C4.medi</string>
     <key>qafabove-ar</key>
     <string>uni08D7</string>
+    <key>qasrbelow-ar</key>
+    <string>u10EFE</string>
     <key>qifabove-ar</key>
     <string>uni08DE</string>
     <key>quddisaSirrah-ar</key>
@@ -5968,6 +5976,8 @@
     <string>uni06E9</string>
     <key>saktaabove-ar</key>
     <string>uni08DD</string>
+    <key>saktabelow-ar</key>
+    <string>u10EFD</string>
     <key>salaamuhuAlaynaa-ar</key>
     <string>uniFDCF</string>
     <key>salaamuhuAlaynaa-ar.smpl</key>
@@ -6474,6 +6484,8 @@
     <string>uni06C4.fina</string>
     <key>wordjoiner</key>
     <string>uni2060</string>
+    <key>wordmaddabelow-ar</key>
+    <string>u10EFF</string>
     <key>year-ar</key>
     <string>uni0601</string>
     <key>year-ar.2</key>
