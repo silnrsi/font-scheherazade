@@ -262,10 +262,12 @@ cAnyMarksBelow = (cMark1Below cMark2Below cMark4Below);
 cMark234 = (cMark2 cMark3 cMark4);
 cMark34  = (cMark3 cMark4);
 
-// Cursive attachment
+/****  No longer using separate glyphs for lam-alef ligs
+// Cursive attachment 
 
 cHasExit  = (cLamIniPreAlef   cLamMedPreAlef  );
 cHasEntry = (cAlefFinPostLamIni cAlefFinPostLamMed);
+****/
 
 endtable; // glyph
 

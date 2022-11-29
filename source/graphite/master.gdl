@@ -432,9 +432,11 @@ pass(1)
 		/ cTakesdiaB_2Dia MARKS g_alefPlaceholder   _=DA _=DB;
 
 
+/****
 	// Lam-alef components:
 	cHasExit=L {alefAttached = true}  cHasEntry=A {attach {to=@L; at=exitS; with=entryS}; insert=true}
 		/ ^ _ {alefAttached == false}  MARKS  _;
+****/
 	
 	// Mark attachment
 

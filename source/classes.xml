@@ -440,20 +440,10 @@
         lamThreedotsbelow-ar.init  lamBar-ar.init  lamDoublebar-ar.init	lamTahabove-ar.init
     </class>
 
-    <class name="LamIniPreAlef" fixed="0">
-        _lam-ar.init.preAlef  _lamVabove-ar.init.preAlef  _lamDotabove-ar.init.preAlef  _lamThreedotsabove-ar.init.preAlef
-        _lamThreedotsbelow-ar.init.preAlef  _lamBar-ar.init.preAlef  _lamDoublebar-ar.init.preAlef  _lamTahabove-ar.init.preAlef
-    </class>
-
     <!-- also used for collision fixing -->
     <class name="LamMed" fixed="0">
         lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi
         lamThreedotsbelow-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi  lamTahabove-ar.medi
-    </class>
-
-    <class name="LamMedPreAlef" fixed="0">
-        _lam-ar.medi.preAlef  _lamVabove-ar.medi.preAlef  _lamDotabove-ar.medi.preAlef  _lamThreedotsabove-ar.medi.preAlef
-        _lamThreedotsbelow-ar.medi.preAlef  _lamBar-ar.medi.preAlef  _lamDoublebar-ar.medi.preAlef  _lamTahabove-ar.medi.preAlef
     </class>
 
     <class name="LamFin" fixed="0">
