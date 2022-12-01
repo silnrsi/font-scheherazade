@@ -4,9 +4,9 @@
   <head>
     <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
-    <fontsrc label="v2.1">url(../references/Scheherazade-Regular.ttf)</fontsrc>
-    <fontsrc label="Graphite">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc label="OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="ref">url(../references/Scheherazade-Regular.ttf)</fontsrc>
+    <fontsrc label="flo">url(https://fonts.languagetechnology.org/fonts/sil/scheherazadenew/web/ScheherazadeNew-Regular.woff2)</fontsrc>
+    <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
       <style feats="'cv44' 1" name="cv44_1"/>
