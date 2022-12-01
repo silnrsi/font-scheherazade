@@ -417,7 +417,7 @@ def doit(args):
             digitOne = (digitSample & 0xFFF0) + 1
             for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x0890,4], [0x0891,4], [0x08E2,3], [0x06DD,3])):
                 c = chr(uid)
-                label = "U+{0:04X} {1}".format(uid, 'latn' if digitOne == 0x0031 else 'arab' if digitOne == 0x0661 else 'urdu')
+                label = f'U+{uid:04X} {"latn" if digitOne == 0x0031 else "arab" if digitOne == 0x0661 else "extd"}'
                 comment = builder.char(uid).basename
                 setBackgroundColor((uid,))
                 for featlist in builder.permuteFeatures(uids=(uid,)):
@@ -450,7 +450,7 @@ def doit(args):
                     ftml.clearLang()
                     ftml.closeTest()
         # One more test to evaluate vertical position of digits over all the marks
-        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in [*range(0x0600, 0x0606), 0x06DD]])
+        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in [*range(0x0600, 0x0606), 0x0890, 0x0891, 0x08E2, 0x06DD]])
         ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
         ftml.closeTest()
 
