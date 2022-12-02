@@ -1,6 +1,5 @@
 <classes>
 
-    <!-- *NEXT 4 CLASSES MUST MATCH* -->
     <class name="AlefIso" fixed="0">
         alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar
         alefHamzabelow-ar  alef-ar  alefWavyhamzaabove-ar
@@ -22,18 +21,7 @@
         _alefWasla-ar.fina.postLamIni	 _alefTwoabove-ar.fina.postLamIni  _alefThreeabove-ar.fina.postLamIni
     </class>
 
-    <class name="AlefFinPostLamMed" fixed="0">
-        _alefMadda-ar.fina.postLamMed  _alefMadda-ar.fina.postLamMed.small  _alefHamzaabove-ar.fina.postLamMed
-        _alefHamzabelow-ar.fina.postLamMed  _alef-ar.fina.postLamMed  _alefWavyhamzaabove-ar.fina.postLamMed
-        _alefWavyhamzabelow-ar.fina.postLamMed  _highhamzaAlef-ar.fina.postLamMed
-        _alefWasla-ar.fina.postLamMed  _alefTwoabove-ar.fina.postLamMed  _alefThreeabove-ar.fina.postLamMed
-    </class>
-
-    <class name="AlefFinPostLamAll">
-        @AlefFinPostLamIni  @AlefFinPostLamMed
-    </class>
-
-		<!-- *NEXT 2 CLASSES MUST MATCH* -->
+	<!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="AlefMark" fixed="0">
         madda-ar  madda-ar.small  hamzaabove-ar  hamzabelow-ar
     </class>
