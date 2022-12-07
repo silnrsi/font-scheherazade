@@ -9,6 +9,8 @@ import re
 from silfont.core import execute
 import silfont.ftml_builder as FB
 from palaso.unicode.ucd import get_ucd
+from collections import OrderedDict
+
 
 argspec = [
     ('ifont', {'help': 'Input UFO'}, {'type': 'infont'}),
@@ -413,9 +415,13 @@ def doit(args):
         # Generates sample data for all subtending marks. Data includes sequences of 0 to n+1
         # digits, where n is the maximum expected to be supported on the mark. Latin, Arbic-Indic,
         # and Extended Arabic-Indic digits are included.
+
+        marks = OrderedDict(filter(lambda x: x[0] in builder.uids(), ([0x600, 3], [0x0601, 4], [0x0602, 2], [0x0603, 4],
+             [0x0604, 4], [0x0605, 4], [0x0890, 4], [0x0891, 4], [0x08E2, 3], [0x06DD, 3])))
+
         for digitSample in filter(lambda x: x in builder.uids(), (0x0032, 0x0668, 0x06F8)):
             digitOne = (digitSample & 0xFFF0) + 1
-            for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x0890,4], [0x0891,4], [0x08E2,3], [0x06DD,3])):
+            for uid, lgt in marks.items():
                 c = chr(uid)
                 label = f'U+{uid:04X} {"latn" if digitOne == 0x0031 else "arab" if digitOne == 0x0661 else "extd"}'
                 comment = builder.char(uid).basename
@@ -450,7 +456,7 @@ def doit(args):
                     ftml.clearLang()
                     ftml.closeTest()
         # One more test to evaluate vertical position of digits over all the marks
-        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in filter(lambda x: x in builder.uids(), (*range(0x0600, 0x0606), 0x0890, 0x0891, 0x08E2, 0x06DD))])
+        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in marks.keys()])
         ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
         ftml.closeTest()
 
