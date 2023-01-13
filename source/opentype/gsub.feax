@@ -1354,7 +1354,7 @@ feature cv60 {  # Character Variant 60
 }   # end do - Sch or Har
 
 
-feature cv62 {
+feature cv62 {  # Character Variant 62
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -1371,7 +1371,7 @@ feature cv62 {
 feature cv70 {
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Damma"    ; };
-    ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
     } ;
@@ -1473,8 +1473,6 @@ feature cv80 {  # Character Variant 80
 } cv80 ;
 
 
-# Character variable cv81
-
 do let f = info("familyName");
 	 if f.find("Scheherazade New") != -1; {
 
@@ -1541,6 +1539,9 @@ feature cv85 {  # Character Variant 85
 # When rendered with Uniscribe or Word, cv62 is never executed [as of this writing, at any rate].
 # But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't
 # fire clig, so liga must be the one to use!
+
+# Similarly, the yehbarree contextual substitution must execute after cv48, so they are
+# included in liga (with the lookups ordered after cv48)
 
 # Finally, the LamAlefLigatures must execute after we've ligated mark combinations, including shadda-kasra,
 # or otherwise Word gets confused and ligates shadda-kasra in a sequence such as lam-shadda-alef-kasra.
