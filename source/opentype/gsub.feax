@@ -21,7 +21,7 @@ languagesystem arab KUR  ;    # Kurdish
 languagesystem arab RHG  ;    # Rohingya -- supported by Harfbuzz
 languagesystem arab SND  ;    # Sindhi
 languagesystem arab URD  ;    # Urdu
-languagesystem arab WLF  ;    # Wolof - MMM not in Lateef
+languagesystem arab WLF  ;    # Wolof
 languagesystem latn dflt ;
 
 @MarksAbove = [@_diaA] ;
@@ -66,7 +66,7 @@ lookup SmallMadda {
 # Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
 
 lookup DecomposeForColor {
-  lookupflag 0 ;		# MMM L has IgnoreMarks
+  lookupflag IgnoreMarks ;
     sub @AlefPlusMark by alef-ar @AlefMark ;
 } DecomposeForColor;
 
@@ -100,9 +100,9 @@ lookup FontCheck {
 
 # Reordering of madda: moving it beyond any mark with 0 < ccc < 230
 #
-# If Harfbuzz is rendering, UTR53 will already have been executed, thus the following will do nothing
-# Otherwise, we can't do a lot of reordering but we'll move the madda out past vowels
-# in a way that is compatible with UTR53.
+# For full UTR53 stacks this will already have been executed, thus the following will do nothing.
+# Otherwise (e.g. for HarfBuzz as of 2021-09), we can't do a lot of reordering but we'll move 
+# the madda out past vowels in a way that is compatible with UTR53.
 
 @MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
 
@@ -129,6 +129,7 @@ lookup ReorderMaddaVowel2 {
 
 # Replace Arabic punctuation glyphs with Latin ones:
 
+# Has no effect in Harmattan:
 lookup LatinPunctuation {
   lookupflag 0 ;
     sub @cno_latn by @c_latn ;
@@ -136,6 +137,7 @@ lookup LatinPunctuation {
 
 
 # Kasra position
+
 lookup KasraLow {
   lookupflag 0 ;
     sub @Kasra by @Kasra_lowered;
@@ -404,12 +406,12 @@ lookup HamzaLigatures {
 # Shadda ligation
 
 # Including graphemejoinercomb allows it to interrupt the ligature formation,
-#    otherwise the lookupflag causes it to be ignored.
+#   otherwise the lookupflag causes it to be ignored.
 @ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb ] ;
 lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
-    sub shadda-ar @ShaddaMarks  by  @ShaddaLigatures ;
-    sub @ShaddaMarks shadda-ar  by  @ShaddaLigatures ;
+    sub shadda-ar @ShaddaMarks by @ShaddaLigatures ;
+    sub @ShaddaMarks shadda-ar by @ShaddaLigatures ;
 } ShaddaLigatures;
 
 # In theory we could do this up where we create the Allah ligature, but this simpler:
