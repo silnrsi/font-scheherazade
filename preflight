@@ -27,9 +27,9 @@ echo
 echo "Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/*.designspace
 
-# echo
-# echo "Updating classes.xml..."
-# tools/bin/absgenclasses.py -c source/classes.xml -i source/glyph_data.csv source/masters/ScheherazadeNew-Regular.ufo source/classes.xml
+echo
+echo "Updating classes.xml..."
+python3 tools/bin/absgenclasses.py -c source/classes.xml -i source/glyph_data.csv source/masters/*-Regular.ufo source/classes.xml
 
 echo
 echo "Building internal fea..."
