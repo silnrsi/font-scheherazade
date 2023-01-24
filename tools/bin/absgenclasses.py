@@ -460,7 +460,7 @@ def doit(args):
                'in every project; manually copy those that are into source/classes.xml.', 'P')
 
     if len(ufomissing):
-        logger.log(f'UFO is missing glyphs: {" ".join(sorted(ufomissing))}', 'E')
+        logger.log(f'UFO is missing glyphs: {" ".join(sorted(ufomissing))}', 'W')
 
 def cmd(): execute('FP', doit, argspec)
 if __name__ == '__main__': cmd()
