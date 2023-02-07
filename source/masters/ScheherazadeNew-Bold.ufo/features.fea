@@ -2458,7 +2458,7 @@ languagesystem arab SND;
 languagesystem arab URD;
 # Urdu
 languagesystem arab WLF;
-# Wolof - MMM not in Lateef
+# Wolof
 languagesystem latn dflt;
 @MarksAbove = [@_diaA];
 @MarksBelow = [@_diaB];
@@ -2490,8 +2490,7 @@ lookup Mirror {
 
 
 lookup DecomposeForColor {
-    lookupflag 0;
-    # MMM L has IgnoreMarks
+    lookupflag IgnoreMarks;
     sub alefMadda-ar by alef-ar madda-ar;
     sub alefMadda-ar.small by alef-ar madda-ar.small;
     sub alefHamzaabove-ar by alef-ar hamzaabove-ar;
@@ -2518,9 +2517,9 @@ lookup FontCheck {
 
 # Reordering of madda: moving it beyond any mark with 0 < ccc < 230
 #
-# If Harfbuzz is rendering, UTR53 will already have been executed, thus the following will do nothing
-# Otherwise, we can't do a lot of reordering but we'll move the madda out past vowels
-# in a way that is compatible with UTR53.
+# For full UTR53 stacks this will already have been executed, thus the following will do nothing.
+# Otherwise (e.g. for HarfBuzz as of 2021-09), we can't do a lot of reordering but we'll move 
+# the madda out past vowels in a way that is compatible with UTR53.
 @MaddaSkip = [@UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other];
 lookup _ReorderMaddaVowel1 {
     lookupflag 0;
@@ -2635,6 +2634,7 @@ lookup ReorderMaddaVowel2 {
 } ReorderMaddaVowel2;
 
 # Replace Arabic punctuation glyphs with Latin ones:
+# Has no effect in Harmattan:
 lookup LatinPunctuation {
     lookupflag 0;
     sub @cno_latn by @c_latn;
@@ -2823,7 +2823,7 @@ lookup HamzaLigatures {
 
 # Shadda ligation
 # Including graphemejoinercomb allows it to interrupt the ligature formation,
-#    otherwise the lookupflag causes it to be ignored.
+#   otherwise the lookupflag causes it to be ignored.
 @ShaddaLigatureFilter = [@ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb];
 lookup ShaddaLigatures {
     lookupflag UseMarkFilteringSet @ShaddaLigatureFilter;
@@ -2883,9 +2883,6 @@ lookup RohingyaCALT {
 
 lookup SindhiCALT {
     lookupflag 0;
-    #sub heh-ar.medi  by heh-ar.medi.knottedHigh ; -- done by HehAlternates
-    #sub heh-ar.fina  by heh-ar.fina.knottedHigh ;
-    #sub heh-ar       by heh-ar.knotted ;
     sub six-persian by six-persian.urdu;
     sub seven-persian by seven-persian.urdu;
     sub @cno_sindhi by @c_sindhi;
@@ -2949,7 +2946,6 @@ lookup MeemAlternate {
 lookup SindhiHeh {
     # TypeTuner only
     lookupflag IgnoreMarks;
-    # Used only by TypeTuner
     sub heh-ar.medi by heh-ar.medi.knottedHigh;
     sub heh-ar.fina by heh-ar.fina.knottedHigh;
     sub heh-ar by heh-ar.knotted;
@@ -2961,7 +2957,6 @@ lookup UrduHeh {
     sub heh-ar.init by heh-ar.init.hooked;
     sub heh-ar.medi by heh-ar.medi.hooked;
     sub heh-ar.fina by heh-ar.fina.hooked;
-    # MMM  \/   \/   \/  not in Harmattan
     # In case Lang=Kurdish set:
     sub heh-ar.knotted by heh-ar;
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked;
@@ -2975,9 +2970,10 @@ lookup KurdishHeh {
     sub heh-ar by heh-ar.knotted;
 } KurdishHeh;
 
+# Heh alternates: cv48
 lookup HehAlternates {
     lookupflag IgnoreMarks;
-    #   0=default;              1=Sindhi;                        2=Urdu;             3=Kurdish
+    #   0=default                       1=Sindhi-style           2=Urdu-style        3=Kurdish-style
     sub heh-ar from [heh-ar.knotted heh-ar heh-ar.knotted];
     sub heh-ar.init from [heh-ar.init heh-ar.init.hooked heh-ar.init];
     sub heh-ar.medi from [heh-ar.medi.knottedHigh heh-ar.medi.hooked heh-ar.medi];
@@ -3024,7 +3020,7 @@ lookup KasraAlternates {
     # cv62
     lookupflag 0;
     # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
-    #   0=default (raised)    1=lowered       2=raised
+    #   0=default             1=lowered       2=raised
     sub kasra-ar.lowered from [kasra-ar.lowered kasra-ar];
     sub kasratan-ar.lowered from [kasratan-ar.lowered kasratan-ar];
     sub kasra-ar from [kasra-ar.lowered kasra-ar];
@@ -3155,12 +3151,13 @@ lookup DigitRohingya {
     sub seven-persian by seven-persian.urdu;
 } DigitRohingya;
 
+# Eastern digit alternates: cv82
 # Only used for cv82, not language-specific modifications:
 # We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
 # They are simply the standard Persian forms.
 lookup DigitAlternates {
     lookupflag 0;
-    #        1 = Sindhi-style     2 = Urdu-style       3 = Kurdish-style   4 = Rohingya-style
+    #       1 = Sindhi-style      2 = Urdu-style      3 = Kurdish-style  4 = Rohingya-style
     sub four-persian from [four-persian four-persian.urdu four-persian four-persian.roh];
     sub four-persian.urdu from [four-persian four-persian.urdu four-persian four-persian.roh];
     sub four-persian.roh from [four-persian four-persian.urdu four-persian four-persian.roh];
@@ -3176,19 +3173,17 @@ lookup CommaAlternates {
     sub @cno_downward by @c_downward;
 } CommaAlternates;
 
+lookup DecimalSepAlternate {
     # cv85
-    # end do - Sch or Lateef
-    #---  liga feature  ---
-    # Shadda+kasra handling
-    # MMM lookupflag is different in L and H, but logically equivalent.
-    # MMM Lateef does not handle graphemejoinercomb, but otherwise I think the code can be
-    # made more like Lateef. The ShaddaLigatureParts class seems overly generous/flexible.
-    lookup DecimalSepAlternate {
-        lookupflag IgnoreMarks;
-        sub @cno_slash by @c_slash;
-    } DecimalSepAlternate;
+    lookupflag IgnoreMarks;
+    sub @cno_slash by @c_slash;
+} DecimalSepAlternate;
 
-
+#---  liga feature  ---
+# Shadda+kasra handling
+# MMM lookupflag is different in L and H, but logically equivalent.
+# MMM Lateef does not handle graphemejoinercomb, but otherwise I think the code can be
+# made more like Lateef. The ShaddaLigatureParts class seems overly generous/flexible.
 lookup ShaddaKasraLigatures {
     lookupflag MarkAttachmentType @ShaddaLigatureParts;
     sub kasratan-ar shadda-ar by shadda_kasratan-ar;
@@ -4043,8 +4038,8 @@ lookup SignWithDigits {
     } MiscKashidas;
 
     lookup MarkKashidas {
-        ignore sub @Tooth alefabove-ar @Tooth @MarksAbove;
-        ignore sub @Tooth @MarksAbove @Tooth alefabove-ar;
+        ignore sub @Tooth' alefabove-ar @Tooth @MarksAbove;
+        ignore sub @Tooth' @MarksAbove @Tooth alefabove-ar;
         sub @Tooth @MarksAbove' lookup _InsertKashida @Tooth @MarksAbove;
         sub @Tooth @MarksAbove' lookup _InsertKashida tehMarbuta-ar.fina;
     } MarkKashidas;
@@ -4237,9 +4232,9 @@ feature salt {
 } salt;
 
 #--- Character Variants ---
+# Character Variant 02 - Harmattan only
     
 
-# Character Variant 02 - Harmattan only
 ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
 # Arabic
 # Force other languages to include Arabic script lookups
@@ -4248,7 +4243,7 @@ feature salt {
 # Arabic
 # Force other languages to include Arabic script lookups
 # end do - Harmattan
-    # Character Variant 12 - Sch/Har
+# Character Variant 12 - Sch/Har
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
     # Force other languages to include Arabic script lookups
     # language WLF;  -- but not this one since we enable it in the WolofCALT
@@ -4301,16 +4296,11 @@ feature cv44 {
     lookup MeemAlternate;
     # Force other languages to include Arabic script lookups
     language KIR;
-    # Kyrgyz
     language KUR;
-    # Kurdish
     language RHG;
-    # Rohingya
     # language SND; -- but not this one since we enable it in SindhiCALT
     language URD;
-    # Urdu
     language WLF;
-    # Wolof
 } cv44;
 
 feature cv48 {
@@ -4340,15 +4330,15 @@ feature cv48 {
     # Force other languages to include Arabic script lookups
     language KIR;
     language KUR;
-    language SND;
     language RHG;
+    language SND;
     language URD;
     language WLF;
 } cv48;
 
+# Character Variant 50
     
 
-# Character Variant 50
 ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
 # Arabic
 # Force other languages to include Arabic script lookups
@@ -4414,6 +4404,7 @@ feature cv48 {
     ### ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
     # Same for latin & arabic:
     # end do - Sch or Har
+    # Character Variant 62
         feature cv60 {
                 cvParameters {
                         FeatUILabelNameID {
@@ -4458,7 +4449,7 @@ feature cv70 {
             name "Damma";
         };
 
-        ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+        ### ParamUILabelNameID { name 3 1 0x0409 "Default"  ; };
                 ParamUILabelNameID {
             name "Filled";
         };
@@ -4473,8 +4464,8 @@ feature cv70 {
     lookup DammaAlternates;
 } cv70;
 
+# Character Variant 72
 feature cv72 {
-    # Character Variant 72
         cvParameters {
                 FeatUILabelNameID {
             name "Dammatan";
@@ -4584,7 +4575,6 @@ feature cv80 {
     lookup AyahAlternates;
 } cv80;
 
-# Character variable cv81
     # Character Variant 81
     ### ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
     # Same for latin and arabic:
@@ -4666,6 +4656,8 @@ feature cv84 {
     # When rendered with Uniscribe or Word, cv62 is never executed [as of this writing, at any rate].
     # But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't
     # fire clig, so liga must be the one to use!
+    # Similarly, the yehbarree contextual substitution must execute after cv48, so they are
+    # included in liga (with the lookups ordered after cv48)
     # Finally, the LamAlefLigatures must execute after we've ligated mark combinations, including shadda-kasra,
     # or otherwise Word gets confused and ligates shadda-kasra in a sequence such as lam-shadda-alef-kasra.
         feature cv85 {
@@ -4905,24 +4897,24 @@ feature liga {
             pos @RehWawAll' lookup _kern150 @MarksAny @Tooth2wBelowInit;
             pos @RehWawAll' lookup _kern150 @MarksAny @MarksAny @Tooth2wBelowInit;
 
-        ignore pos @RehWawTighten @RehKernAlefOrOther @_diaB;
-        ignore pos @RehWawTighten @MarksAny @RehKernAlefOrOther @_diaB;
-        ignore pos @RehWawTighten @MarksAny @MarksAny @RehKernAlefOrOther @_diaB;
-        ignore pos @RehWawTighten @_diaA @RehKernOtherMA;
-        ignore pos @RehWawTighten @MarksAny @_diaA @RehKernOtherMA;
-        ignore pos kirghizoe-ar noon-ar;
-        ignore pos kirghizoe-ar yehbarree-ar;
-        ignore pos kirghizoe-ar.fina noon-ar;
-        ignore pos kirghizoe-ar.fina yehbarree-ar;
+        ignore pos @RehWawTighten' @RehKernAlefOrOther @_diaB;
+        ignore pos @RehWawTighten' @MarksAny @RehKernAlefOrOther @_diaB;
+        ignore pos @RehWawTighten' @MarksAny @MarksAny @RehKernAlefOrOther @_diaB;
+        ignore pos @RehWawTighten' @_diaA @RehKernOtherMA;
+        ignore pos @RehWawTighten' @MarksAny @_diaA @RehKernOtherMA;
+        ignore pos kirghizoe-ar' noon-ar;
+        ignore pos kirghizoe-ar' yehbarree-ar;
+        ignore pos kirghizoe-ar.fina' noon-ar;
+        ignore pos kirghizoe-ar.fina' yehbarree-ar;
         pos @RehWawTighten' lookup _kern_190 @RehKernAlef;
         pos @RehWawTighten' lookup _kern_190 @_diaB @RehKernAlef;
         pos @RehWawTighten' lookup _kern_190 @_diaB @_diaB @RehKernAlef;
         pos @RehWawTighten' lookup _kern_190 @RehKernMost;
         pos @RehWawTighten' lookup _kern_190 @MarksAny @RehKernMost;
         pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny @RehKernMost;
-        ignore pos @RehWawTighten @AinLikeInit @_diaB;
-        ignore pos @RehWawTighten @MarksAny @AinLikeInit @_diaB;
-        ignore pos @RehWawTighten @MarksAny @MarksAny @AinLikeInit @_diaB;
+        ignore pos @RehWawTighten' @AinLikeInit @_diaB;
+        ignore pos @RehWawTighten' @MarksAny @AinLikeInit @_diaB;
+        ignore pos @RehWawTighten' @MarksAny @MarksAny @AinLikeInit @_diaB;
         pos @RehWawTightenToAin' lookup _kern_215 @AinLikeInit;
         pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @AinLikeInit;
         pos @RehWawTightenToAin' lookup _kern_215 @MarksAny @MarksAny @AinLikeInit;
@@ -4998,7 +4990,7 @@ feature liga {
 
     lookup ToothKashidaKerningIM {
         lookupflag IgnoreMarks;
-        ignore pos @Tooth2wwBelowInit absAutoKashida @Tooth2wwBelowMedi;
+        ignore pos @Tooth2wwBelowInit' absAutoKashida @Tooth2wwBelowMedi;
         
         pos @Tooth2wBelowInit absAutoKashida' lookup _kkern_140 absAutoKashida @Tooth3wBelowMedi;
         pos @Tooth2wBelowInit absAutoKashida' lookup _kkern_80 @Tooth2wBelowMedi;

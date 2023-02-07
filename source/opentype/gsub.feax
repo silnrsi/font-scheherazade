@@ -813,15 +813,10 @@ lookup CommaAlternates {        # cv84
 } CommaAlternates;
 
 
-do let f = info("familyName");
-   if f.find("Scheherazade New") != -1 or f.find("Lateef") != -1; {
-
 lookup DecimalSepAlternate {    # cv85
   lookupflag IgnoreMarks ;
 		sub @cno_slash by @c_slash;
 } DecimalSepAlternate;
-
-}  # end do - Sch or Lateef
 
 
 #---  liga feature  ---
