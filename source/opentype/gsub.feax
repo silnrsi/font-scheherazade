@@ -242,14 +242,14 @@ lookup AllahLigatures {
     #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
 
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
 
@@ -257,7 +257,7 @@ lookup AllahLigatures {
         @MarksAny'
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_Heh;
 
@@ -281,21 +281,21 @@ lookup AllahLigatures {
 
     # Rule 2b: lam-kasra-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
-        kasra-ar'
+        @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
