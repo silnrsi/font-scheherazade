@@ -66,6 +66,7 @@
 @KafLikeMedi = [kaf-ar.medi kafDotbelow-ar.medi keheh-ar.medi kehehThreedotsbelow-ar.medi kehehDotabove-ar.medi kehehThreedotsabove-ar.medi kehehThreedotsupbelow-ar.medi kehehVabove-ar.medi gaf-ar.medi gafRing-ar.medi gafThreedots-ar.medi kafRing-ar.medi kafDotabove-ar.medi kafTwodotshorizontalabove-ar.medi kafThreedotsbelow-ar.medi gafTwodotsbelow-ar.medi gafInvertedstroke-ar.medi ng-ar.medi ngoeh-ar.medi gueh-ar.medi];
 @KafLikeInitMedi = [@KafLikeInit @KafLikeMedi];
 @Kasra = [kasra-ar kasratan-ar];
+@KasraInAllah = [kasra-ar];
 @Kasra_lowered = [kasra-ar.lowered kasratan-ar.lowered];
 @Lam1Allah = [lam-ar.init.allah1 lam-ar.medi.allah1];
 @Lam1NoAllah = [lam-ar.init lam-ar.medi];
@@ -2588,17 +2589,17 @@ lookup AllahLigatures {
     sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
     sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
     #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
-    sub @AlefNoAllahIsol' lookup _AllahSub_Alef lam-ar.init' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
-    sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
-    sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
+    sub @AlefNoAllahIsol' lookup _AllahSub_Alef lam-ar.init' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
+    sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
+    sub @AlefNoAllahIsol' lookup _AllahSub_Alef @MarksAny' @MarksAny' lam-ar.init' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2_insertSA @HehNoAllah' lookup _AllahSub_Heh;
     # Rule 2: lam-lam-shadda-heh
     sub @Lam1NoAllah' lookup _AllahSub_Lam1 lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' [alefabove-ar fatha-ar]' @HehNoAllah' lookup _AllahSub_Heh;
     sub @Lam1NoAllah' lookup _AllahSub_Lam1 lam-ar.medi' lookup _AllahSub_Lam2 [alefabove-ar fatha-ar]' shadda-ar' @HehNoAllah' lookup _AllahSub_Heh;
     sub @Lam1NoAllah' lookup _AllahSub_Lam1 lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' lookup _AllahSub_Shadda_insertA @HehNoAllah' lookup _AllahSub_Heh;
     # Rule 2b: lam-kasra-lam-shadda-heh
-    sub @Lam1NoAllah' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' [alefabove-ar fatha-ar]' @HehNoAllah' lookup _AllahSub_Heh;
-    sub @Lam1NoAllah' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2 [alefabove-ar fatha-ar]' shadda-ar' @HehNoAllah' lookup _AllahSub_Heh;
-    sub @Lam1NoAllah' lookup _AllahSub_Lam1 kasra-ar' lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' lookup _AllahSub_Shadda_insertA @HehNoAllah' lookup _AllahSub_Heh;
+    sub @Lam1NoAllah' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' [alefabove-ar fatha-ar]' @HehNoAllah' lookup _AllahSub_Heh;
+    sub @Lam1NoAllah' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2 [alefabove-ar fatha-ar]' shadda-ar' @HehNoAllah' lookup _AllahSub_Heh;
+    sub @Lam1NoAllah' lookup _AllahSub_Lam1 @KasraInAllah' lam-ar.medi' lookup _AllahSub_Lam2 shadda-ar' lookup _AllahSub_Shadda_insertA @HehNoAllah' lookup _AllahSub_Heh;
 } AllahLigatures;
 
 # Ligatures of marks
@@ -2726,23 +2727,27 @@ lookup ShaddaAlefLigatures {
 # Lateef
 # HB PAUSE
 # Language-specific shaping
-# Note: Setting default kasra is done in ccmp
 lookup dfltCALT {
-    # MMM not present in Lateef
+    # (need at least a dummy lookup for TT)
     lookupflag 0;
-    sub tab by tab;
-    # Need a dummy lookup for TypeTuner - used in Har MMM
+            sub @Kasra_lowered by @Kasra;
+
+    
 } dfltCALT;
 
 lookup KurdishCALT {
     lookupflag 0;
     sub heh-ar.fina by heh-ar.fina.knottedHigh;
     sub heh-ar by heh-ar.knotted;
+    # Sch/Lateef default kasra behavior is high = ABS system default
+    
 } KurdishCALT;
 
 lookup KyrgyzCALT {
     lookupflag 0;
     sub @cno_loclKIR by @c_loclKIR;
+    # Sch/Lateef default kasra behavior is high = ABS system default
+    
 } KyrgyzCALT;
 
 lookup RohingyaCALT {
@@ -2759,12 +2764,12 @@ lookup SindhiCALT {
     sub six-persian by six-persian.urdu;
     sub seven-persian by seven-persian.urdu;
     sub @cno_sindhi by @c_sindhi;
-    sub @Kasra by @Kasra_lowered;
     # MMM
-    # MMM  removed from Lateef - ABS-2469; should these be consistent?
-            sub comma-ar by comma-ar.downward;
+            # removed from Lateef 2021-11:  ABS-2469
+        sub comma-ar by comma-ar.downward;
         sub semicolon-ar by semicolon-ar.downward;
 
+    sub @Kasra by @Kasra_lowered;
 } SindhiCALT;
 
 lookup UrduCALT {
@@ -2773,17 +2778,14 @@ lookup UrduCALT {
     sub six-persian by six-persian.urdu;
     sub seven-persian by seven-persian.urdu;
     sub @Kasra by @Kasra_lowered;
-    # MMM - Sch and Lat
 } UrduCALT;
 
 lookup WolofCALT {
     lookupflag 0;
     sub @cno_loclWLF by @c_loclWLF;
     sub @Damma by @Damma_short;
-    sub @Kasra by @Kasra_lowered;
-    # MMM not in Har
     sub dammainverted-ar by dammainverted-ar.open;
-    # MMM not in Har
+    sub @Kasra by @Kasra_lowered;
 } WolofCALT;
 
 # Warsh alternates - TypeTuner only
@@ -2944,7 +2946,6 @@ lookup DaggerAlefAlternates {
     # Now return it to small if cv76=2.
             sub @TakesLargeDaggerAlef alefabove-ar' lookup _DaggerAlefAlt;
 
-    
     
 } DaggerAlefAlternates;
 
@@ -3954,17 +3955,16 @@ feature ccmp {
     language KUR;
     # Kurdish uses raised kasra
     language RHG;
-    lookup KasraLow;
+    #        lookup KasraLow ;
     language SND;
-    lookup KasraLow;
+    #        lookup KasraLow ;
     language URD;
-    lookup KasraLow;
+    #        lookup KasraLow ;
     language WLF;
-    lookup KasraLow;
-    # MMM Harmattan has language dflt
+    #        lookup KasraLow ;
+    # Harmattan has language dflt which make the kasra low by default.
     script latn;
-    lookup KasraHigh;
-    # needed for bare diacritics (on white space) in Latin text
+    #        lookup KasraHigh;  # needed for bare diacritics (on white space) in Latin text
 } ccmp;
 
 # feature locl (not used; see calt)
@@ -4054,9 +4054,8 @@ feature calt {
 
     lookup WideKashida;
     language dflt;
-    # Must have a lookup here for TypeTuner to work. - MMM not in L
+    # Must have a lookup here for TypeTuner to work.
     lookup dfltCALT;
-    # still needed by Harmattan?
     language KIR;
     # Kyrgyz
     lookup KyrgyzCALT;
@@ -4075,6 +4074,9 @@ feature calt {
     language WLF;
     # Wolof
     lookup WolofCALT;
+    script latn;
+    lookup KasraHigh;
+    # for bare diacritics (on white space) in Latin text
 } calt;
 
 # feature rclt - nothing to do

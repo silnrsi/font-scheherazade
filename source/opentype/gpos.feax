@@ -99,9 +99,9 @@ lookup MarkToMarkBelow {
 # no nukta above) [ABS-2762]
 lookup RaiseMadda {
   lookupflag 0;
-ifinfo(familyName, "Lateef") {
-  pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
-}
+	ifinfo(familyName, "Lateef") {
+  	pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
+	}
 } RaiseMadda ;
 
 
@@ -206,9 +206,9 @@ include(../../source/opentype/customShifting.feax);
 
 lookup KernPairs {
   lookupflag IgnoreMarks;
-ifinfo(familyName, "Lateef") {
+	ifinfo(familyName, "Lateef") {
     kernpairs;
-}
+	}
 } KernPairs;
 
 
