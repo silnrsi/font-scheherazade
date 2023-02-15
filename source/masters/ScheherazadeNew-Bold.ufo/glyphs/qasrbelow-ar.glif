@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="qasrbelow-ar" format="2">
+  <unicode hex="10EFE"/>
+  <anchor x="0" y="-137" name="_diaB"/>
+  <anchor x="0" y="-1278" name="diaB"/>
+  <outline>
+    <component base="qaf-ar.init" xScale="0.5" yScale="0.5" xOffset="396" yOffset="-942"/>
+    <component base="sad-ar.medi" xScale="0.5" yScale="0.5" xOffset="-450" yOffset="-942"/>
+    <component base="reh-ar.fina" xScale="0.5" yScale="0.5" xOffset="-894" yOffset="-942"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.604,0.600,1,1</string>
+    </dict>
+  </lib>
+</glyph>
