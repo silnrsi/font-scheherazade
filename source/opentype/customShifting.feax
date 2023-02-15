@@ -74,6 +74,8 @@ ifinfo(styleName, "Regular") {
   
   pos @Tooth  @MarksAbove' < 50 0 0 0>  rehTwodotshorizontalaboveTahabove-ar.fina;  # also see kern rule above
   
+  pos @RehLikeNothingBelow  @_diaB' <0 -350 0 0>  @AinLikeIsol;
+  
 } DiacShifting;
 
 } # end of collision adjustments

@@ -119,8 +119,8 @@ lookup MiscKashidas {
 lookup MarkKashidas {
     # Add kashida when upper diacritics are next to each other.
     # Note that we should ideally break this into separate rules to handle medial-medial separately, but I'm lazy.
-    ignore sub @Tooth alefabove-ar  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
-    ignore sub @Tooth @MarksAbove   @Tooth alefabove-ar;
+    ignore sub @Tooth alefabove-ar'  @Tooth @MarksAbove;  # dagger-alef doesn't need kashida
+    ignore sub @Tooth @MarksAbove'   @Tooth alefabove-ar;
     sub @Tooth  @MarksAbove' lookup _InsertKashida  @Tooth  @MarksAbove;
     
     sub @Tooth  @MarksAbove' lookup _InsertKashida  tehMarbuta-ar.fina;

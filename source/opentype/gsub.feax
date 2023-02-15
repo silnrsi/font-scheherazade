@@ -387,8 +387,8 @@ lookup HamzaLigatures {
     # shouldn't ligate hamza + following fatha|damma when hamza preceded by non-MCM 230 because
     # UTR53 would have moved the fatha|damma to before the 230 marks but could not move the
     # hamza as it isn't at the beginning of the 230 sequence.
-    ignore sub @UTR53_230other               hamzaabove-ar' ;
-    ignore sub @UTR53_230other @UTR53_230MCM hamzaabove-ar' ;
+    ignore sub @UTR53_230other'               hamzaabove-ar ;
+    ignore sub @UTR53_230other' @UTR53_230MCM hamzaabove-ar ;
     # shouldn't ligate fatha|damma + following hamza when a 230MCM follows the hamza because
     # UTR53 would have moved both hamza and following 230MCM to before the fatha|damma at which
     # point the 230MCM would be between the hamza and the fatha|damma, blocking ligation.

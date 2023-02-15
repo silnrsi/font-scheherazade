@@ -221,10 +221,10 @@ feature kern {  # Kerning
         lookup SubtendingMarks;
         lookup KernPairs;       # Lateef
 
-# Scheherazade lookups:
-do let f = info("familyName");
-   if f.find("Scheherazade") != -1 and opt("nokern") != "yes"; {
-   # start of kerning positioning
+	# Scheherazade lookups:
+	do let f = info("familyName");
+	   if f.find("Scheherazade") != -1 and opt("nokern") != "yes"; {
+        # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup LamAlefKerning;
@@ -234,19 +234,20 @@ do let f = info("familyName");
         lookup ToothKashidaKerningMM;
         lookup ToothKashidaKerningIMF;
         lookup MiscKashidaKerning;
+        
         # after mark attachment:
         lookup DiacShifting;
-}   # SchNew and not nokern
+	}   # SchNew and not nokern
 
-# Lateef lookups:
-do let f = info("familyName");
-   if f.find("Lateef") != -1; {
+	# Lateef lookups:
+	do let f = info("familyName");
+	   if f.find("Lateef") != -1; {
         lookup OldStyleKerning;
-}   # Lateef
+	}   # Lateef
 
-# Harmattan:
-do let f = info("familyName");
-   if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {	# enable kerning for now
+	# Harmattan:
+	do let f = info("familyName");
+	   if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {	# enable kerning for now
     script arab;  # Arabic
         lookup mainkern;
       # Force other languages to include Arabic script lookups
@@ -255,7 +256,7 @@ do let f = info("familyName");
       language SND  ;
       language URD  ;
       language WLF  ;
-}
+	}
 
 } kern ;
 

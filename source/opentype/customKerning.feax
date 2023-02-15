@@ -121,7 +121,7 @@ ifinfo(styleName, "Bold") {
 }
 ifinfo(styleName, "Regular") {
   # bogus, but it seems to be needed to make the build happy:
-  ignore pos @WawLike @RehLikeIsol;
+  ignore pos @WawLike' @RehLikeIsol;
 }
   # standard spacing is pretty good - don't futz with it.
   #ignore pos @RehWawAll  @RehWawAll;
@@ -305,7 +305,7 @@ lookup _kkern_240 {
 
 lookup ToothKashidaKerningIM {
   lookupflag IgnoreMarks;
-    ignore pos @Tooth2wwBelowInit absAutoKashida  @Tooth2wwBelowMedi;  # doesn't need kerning
+    ignore pos @Tooth2wwBelowInit absAutoKashida'  @Tooth2wwBelowMedi;  # doesn't need kerning
 ifinfo(styleName, "Regular") {
     pos @Tooth3wBelowInit  absAutoKashida' lookup _kkern_60   absAutoKashida   @Tooth3wBelowMedi;  # REGULAR ONLY
 }
