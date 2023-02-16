@@ -25,14 +25,15 @@ of the license along with this Font Software. If this is not the case, go to
         alefWasla-ar.fina alefWavyhamzaabove-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina
     </class>
 
-    <!-- used by Graphite until code cleanup removes remaining vestiges of old lam-alef implementation -->
+    <!-- used by Graphite until code cleanup removes remaining vestiges of old lam-alef implementation
     <class name="AlefFinPostLamIni" fixed="0">
         _alefMadda-ar.fina.postLamIni  _alefMadda-ar.fina.postLamIni.small  _alefHamzaabove-ar.fina.postLamIni
         _alefHamzabelow-ar.fina.postLamIni   _alef-ar.fina.postLamIni  _alefWavyhamzaabove-ar.fina.postLamIni
         _alefWavyhamzabelow-ar.fina.postLamIni  _highhamzaAlef-ar.fina.postLamIni
         _alefWasla-ar.fina.postLamIni	 _alefTwoabove-ar.fina.postLamIni  _alefThreeabove-ar.fina.postLamIni
     </class>
-
+    -->
+    
 	<!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="AlefMark" fixed="0">
         madda-ar  madda-ar.small  hamzaabove-ar  hamzabelow-ar

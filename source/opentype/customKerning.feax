@@ -124,7 +124,7 @@ ifinfo(styleName, "Regular") {
   ignore pos @WawLike' @RehLikeIsol;
 }
   # standard spacing is pretty good - don't futz with it.
-  #ignore pos @RehWawAll  @RehWawAll;
+  #ignore pos @RehWawAll'  @RehWawAll;
 } RehWawKerning1;
 
 
@@ -173,18 +173,18 @@ ifinfo(styleName, "Bold") {
 }
 
   # Leave certain cases alone:
-  ignore pos @RehWawTighten                       @RehKernAlefOrOther @_diaB ;                            
-  ignore pos @RehWawTighten @MarksAny             @RehKernAlefOrOther @_diaB ;                            
-  ignore pos @RehWawTighten @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
+  ignore pos @RehWawTighten'                       @RehKernAlefOrOther @_diaB ;                            
+  ignore pos @RehWawTighten' @MarksAny             @RehKernAlefOrOther @_diaB ;                            
+  ignore pos @RehWawTighten' @MarksAny @MarksAny   @RehKernAlefOrOther @_diaB ;
   
-  ignore pos @RehWawTighten @_diaA               @RehKernOtherMA ;
-  ignore pos @RehWawTighten @MarksAny @_diaA     @RehKernOtherMA ;
+  ignore pos @RehWawTighten' @_diaA               @RehKernOtherMA ;
+  ignore pos @RehWawTighten' @MarksAny @_diaA     @RehKernOtherMA ;
   
   # Kirghiz-OE (waw-loop) has a different shape:
-  ignore pos kirghizoe-ar noon-ar;
-  ignore pos kirghizoe-ar yehbarree-ar;
-  ignore pos kirghizoe-ar.fina noon-ar;
-  ignore pos kirghizoe-ar.fina yehbarree-ar;
+  ignore pos kirghizoe-ar' noon-ar;
+  ignore pos kirghizoe-ar' yehbarree-ar;
+  ignore pos kirghizoe-ar.fina' noon-ar;
+  ignore pos kirghizoe-ar.fina' yehbarree-ar;
 
   # Otherwise tighten against most things:
   pos @RehWawTighten' lookup _kern_190                @RehKernAlef;
@@ -195,9 +195,9 @@ ifinfo(styleName, "Bold") {
   pos @RehWawTighten' lookup _kern_190 @MarksAny            @RehKernMost;
   pos @RehWawTighten' lookup _kern_190 @MarksAny @MarksAny  @RehKernMost;
   
-  ignore pos @RehWawTighten                      @AinLikeInit @_diaB;
-  ignore pos @RehWawTighten @MarksAny            @AinLikeInit @_diaB;
-  ignore pos @RehWawTighten @MarksAny @MarksAny  @AinLikeInit @_diaB;
+  ignore pos @RehWawTighten'                      @AinLikeInit @_diaB;
+  ignore pos @RehWawTighten' @MarksAny            @AinLikeInit @_diaB;
+  ignore pos @RehWawTighten' @MarksAny @MarksAny  @AinLikeInit @_diaB;
   
   pos @RehWawTightenToAin' lookup _kern_215                      @AinLikeInit;
   pos @RehWawTightenToAin' lookup _kern_215 @MarksAny            @AinLikeInit;
@@ -217,10 +217,10 @@ lookup LamAlefKerning {
   lookupflag IgnoreMarks;
 
 ifinfo(styleName, "Bold") {
-    pos @AlefFinPostLamIni <-30 0 -30 0>  @LamAlefKern;
+    pos @AllLamAlefLig <-30 0 -30 0>  @LamAlefKern;
 }
 ifinfo(styleName, "Regular") {
-    pos @AlefFinPostLamIni <-70 0 -70 0>  @LamAlefKern;
+    pos @AllLamAlefLig <-70 0 -70 0>  @LamAlefKern;
 }
 
 } LamAlefKerning;
@@ -327,8 +327,7 @@ ifinfo(styleName, "Bold") {
     # kaf + teh
     pos @KafLikeInit' lookup _kern100  @Tooth2wAboveMedi;   # no kashida
     
-    pos _alef-ar.fina.postLamIni'  lookup _kern90  @Tooth2wAboveInit;
-    pos _alef-ar.fina.postLamMed'  lookup _kern90  @Tooth2wAboveInit;
+    pos @AllLamAlefLig'  lookup _kern90  @Tooth2wAboveInit;
 }
 
 } ToothKashidaKerningIM;
