@@ -491,10 +491,8 @@ lookup SindhiCALT {
     sub seven-persian by  seven-persian.urdu ;
     sub @cno_sindhi   by  @c_sindhi ;  # MMM
     
-ifinfo(familyName, "Scheherazade New") { # removed from Lateef 2021-11:  ABS-2469
-    sub comma-ar      by  comma-ar.downward ;
-    sub semicolon-ar  by  semicolon-ar.downward ;
-}
+    ##sub comma-ar      by  comma-ar.downward ;
+    ##sub semicolon-ar  by  semicolon-ar.downward ;
 
     sub @Kasra        by  @Kasra_lowered;
 } SindhiCALT ;
