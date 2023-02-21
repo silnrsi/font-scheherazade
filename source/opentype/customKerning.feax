@@ -33,13 +33,12 @@ lookup _kern50 {
 } _kern50;
 
 lookup _kern70 {
-  pos @RehWawAll <70 0  70 0>;
+  pos @RehWawAll  <70 0  70 0>;
 } _kern70;
 
 lookup _kern90 {
-  pos @Tooth2wAboveInit        <90 0  90 0>;
-  pos _alef-ar.fina.postLamIni  <90 0  90 0>;
-  pos _alef-ar.fina.postLamMed  <90 0  90 0>; 
+  pos @Tooth2wAboveInit  <90 0  90 0>;
+  pos @AllLamAlefLig     <90 0 90 0>;
 } _kern90;
 
 lookup _kern100 {
