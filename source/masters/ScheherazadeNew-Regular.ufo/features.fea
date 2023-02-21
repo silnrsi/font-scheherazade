@@ -263,7 +263,7 @@
 # Positioning classes and statements
 
 # AP: above
-@above = [A E I N O Y S U Z _alef-ar.fina.postLamIni _alef-ar.fina.postLamMed _lam-ar.init.preAlef _lam-ar.medi.preAlef a ae-ar ae-ar.fina ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF e fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar hah-ar.fina hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina hehgoal-ar.medi idotless kaf-ar kehehElongatedhamzaabove-ar kaf-ar.fina kehehElongatedhamzaabove-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina lam-ar lam-ar.fina lam-ar.init meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.init meem-ar.medi meem-ar.sindhi n noonghunna-ar noonghunna-ar.fina o qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina rehLoop-ar.fina rehLoop-ar s sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi u waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina y yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina z];
+@above = [A E I N O Y S U Z _alef-ar.fina.postLamIni _alef-ar.fina.postLamMed _lam-ar.init.preAlef _lam-ar.medi.preAlef a ae-ar ae-ar.fina ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi dal-ar dal-ar.fina dal-ar.loclWLF e fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar hah-ar.fina hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina hehgoal-ar.medi idotless kaf-ar kehehElongatedhamzaabove-ar kaf-ar.fina kehehElongatedhamzaabove-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina lam-ar lam-ar.fina lam-ar.init meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.init meem-ar.medi meem-ar.sindhi n noonghunna-ar noonghunna-ar.fina o qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina rehLoop-ar.fina rehLoop-ar s sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi u waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina y yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina z];
 # baseClass A <anchor 666 1308> @above;
 # baseClass E <anchor 565 1308> @above;
 # baseClass I <anchor 310 1308> @above;
@@ -301,8 +301,8 @@
 # baseClass hah-ar.init <anchor 639 732> @above;
 # baseClass hah-ar.medi <anchor 757 732> @above;
 # baseClass hamza-ar <anchor 306 684> @above;
-# baseClass [heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh] <anchor 513 851> @above;
-# baseClass [heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh] <anchor 426 921> @above;
+# baseClass heh-ar.fina.knottedHigh <anchor 513 851> @above;
+# baseClass heh-ar.medi.knottedHigh <anchor 426 921> @above;
 # baseClass hehDoachashmee-ar <anchor 503 945> @above;
 # baseClass hehDoachashmee-ar.fina <anchor 802 811> @above;
 # baseClass hehDoachashmee-ar.init <anchor 422 950> @above;
@@ -360,7 +360,7 @@
 # baseClass z <anchor 452 912> @above;
 
 # AP: below
-@below = [C _alef-ar.fina.postLamIni _alef-ar.fina.postLamMed _lam-ar.init.preAlef _lam-ar.medi.preAlef ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi c dal-ar dal-ar.fina dal-ar.loclWLF fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina kaf-ar kehehElongatedhamzaabove-ar kaf-ar.fina kehehElongatedhamzaabove-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina lam-ar lam-ar.fina lam-ar.init meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.init meem-ar.medi meem-ar.sindhi noonghunna-ar noonghunna-ar.fina qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina];
+@below = [C _alef-ar.fina.postLamIni _alef-ar.fina.postLamMed _lam-ar.init.preAlef _lam-ar.medi.preAlef ae-ar ae-ar.fina ain-ar ain-ar.fina ain-ar.init ain-ar.medi alef-ar alef-ar.fina alef-ar.fina.allah behDotless-ar behDotless-ar.fina behDotless-ar.init behDotless-ar.medi c dal-ar dal-ar.fina dal-ar.loclWLF fehDotless-ar fehDotless-ar.fina fehDotless-ar.init fehDotless-ar.medi hah-ar.init hah-ar.medi hamza-ar heh-ar.fina.knottedHigh heh-ar.medi.knottedHigh hehDoachashmee-ar hehDoachashmee-ar.fina hehDoachashmee-ar.init hehDoachashmee-ar.medi hehgoal-ar.fina kaf-ar kehehElongatedhamzaabove-ar kaf-ar.fina kehehElongatedhamzaabove-ar.fina kaf-ar.init kaf-ar.medi keheh-ar keheh-ar.fina lam-ar lam-ar.fina lam-ar.init meem-ar meem-ar.fina meem-ar.fina.sindhi meem-ar.init meem-ar.medi meem-ar.sindhi noonghunna-ar noonghunna-ar.fina qafDotless-ar qafDotless-ar.fina reh-ar reh-ar.fina sad-ar sad-ar.fina sad-ar.init sad-ar.medi seen-ar seen-ar.fina seen-ar.init seen-ar.medi tah-ar tah-ar.fina tah-ar.init tah-ar.medi waw-ar waw-ar.fina wawStraight-ar wawStraight-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehbarree-ar yehbarree-ar.fina];
 # baseClass C <anchor 664 -86> @below;
 # baseClass _alef-ar.fina.postLamIni <anchor 647 -83> @below;
 # baseClass _alef-ar.fina.postLamMed <anchor 635 -129> @below;
@@ -390,8 +390,8 @@
 # baseClass hah-ar.init <anchor 639 -73> @below;
 # baseClass hah-ar.medi <anchor 757 -73> @below;
 # baseClass hamza-ar <anchor 384 -225> @below;
-# baseClass [heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh] <anchor 496 -181> @below;
-# baseClass [heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh] <anchor 426 -116> @below;
+# baseClass heh-ar.fina.knottedHigh <anchor 496 -181> @below;
+# baseClass heh-ar.medi.knottedHigh <anchor 426 -116> @below;
 # baseClass hehDoachashmee-ar <anchor 503 -25> @below;
 # baseClass hehDoachashmee-ar.fina <anchor 583 -597> @below;
 # baseClass hehDoachashmee-ar.init <anchor 457 -73> @below;
