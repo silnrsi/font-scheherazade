@@ -456,8 +456,8 @@ lookup dfltCALT {  # (need at least a dummy lookup for TT)
 
 lookup KurdishCALT {
   lookupflag 0 ;
-    sub heh-ar.fina  by  heh-ar.fina.knottedHigh ;
-    sub heh-ar       by  heh-ar.knotted ;
+    sub hehDoachashmee-ar.medi  by  hehDoachashmee-ar.medi.knottedHigh ;
+    sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
     
     # Sch/Lateef default kasra behavior is high = ABS system default
 	ifinfo(familyName, "Harmattan") {
@@ -628,15 +628,29 @@ lookup KurdishHeh {        # TypeTuner only
 
 lookup HehAlternates {
   lookupflag IgnoreMarks ;
-    #   0=default                       1=Sindhi-style           2=Urdu-style        3=Kurdish-style
-    sub heh-ar                  from  [ heh-ar.knotted           heh-ar              heh-ar.knotted          ] ;
-    sub heh-ar.init             from  [ heh-ar.init              heh-ar.init.hooked  heh-ar.init             ] ;
-    sub heh-ar.medi             from  [ heh-ar.medi.knottedHigh  heh-ar.medi.hooked  heh-ar.medi             ] ;
-    sub heh-ar.fina             from  [ heh-ar.fina.knottedHigh  heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
-    # In case Kurdish lang has been selected:
-    sub heh-ar.knotted          from  [ heh-ar.knotted           heh-ar              heh-ar.knotted          ] ;
-    sub heh-ar.fina.knottedHigh from  [ heh-ar.fina.knottedHigh  heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
+    #   0=default             1=Sindhi-style           2=Urdu-style        3=Kurdish-style
+    sub heh-ar        from  [ heh-ar.knotted           heh-ar              heh-ar.knotted          ] ;
+    sub heh-ar.init   from  [ heh-ar.init              heh-ar.init.hooked  heh-ar.init             ] ;
+    sub heh-ar.medi   from  [ heh-ar.medi.knottedHigh  heh-ar.medi.hooked  heh-ar.medi             ] ;
+    sub heh-ar.fina   from  [ heh-ar.fina.knottedHigh  heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
 } HehAlternates;
+
+
+# Heh-doachashmee alternates: cv49
+
+lookup HehDoAlternates {
+  lookupflag IgnoreMarks ;
+    #   0=default                       1=knotted-style                     2=no change             3=Kurdish-style
+    sub hehDoachashmee-ar       from  [ hehDoachashmee-ar                   hehDoachashmee-ar       hehDoachashmee-ar                  ] ;
+    sub hehDoachashmee-ar.init  from  [ hehDoachashmee-ar.init              hehDoachashmee-ar.init  hehDoachashmee-ar.init             ] ;
+    sub hehDoachashmee-ar.medi  from  [ hehDoachashmee-ar.medi.knottedHigh  hehDoachashmee-ar.medi  hehDoachashmee-ar.medi             ] ;
+    sub hehDoachashmee-ar.fina  from  [ hehDoachashmee-ar.fina.knottedHigh  hehDoachashmee-ar.fina  hehDoachashmee-ar.fina.knottedHigh ] ;
+    # In case Kurdish lang has been selected, undo it's behavior where necessary:
+    sub hehDoachashmee-ar.medi.knottedHigh
+                                from  [ hehDoachashmee-ar.medi.knottedHigh  hehDoachashmee-ar.medi  hehDoachashmee-ar.medi             ] ;
+    sub hehDoachashmee-ar.fina.knottedHigh
+                                from  [ hehDoachashmee-ar.fina.knottedHigh  hehDoachashmee-ar.fina  hehDoachashmee-ar.fina.knottedHigh ] ;
+} HehDoAlternates;
 
 
 # Arabic U alternate: cv50
@@ -1127,6 +1141,7 @@ feature calt {  # Contextual Alternates
         lookup KyrgyzCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
+        lookup HehDoAlternates;
       language RHG ; #Rohingya
         lookup RohingyaCALT ;
       language SND ; # Sindhi
@@ -1267,7 +1282,7 @@ feature cv44 {  # Character Variant 44
 } cv44 ;
 
 
-feature cv48 {  # Character Variant 48
+feature cv48 {    # Character Variant 48
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Heh"            ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
@@ -1287,6 +1302,27 @@ feature cv48 {  # Character Variant 48
 } cv48 ;
 
 
+
+feature cv49 {    # Character Variant 49
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Heh Doachashmee" ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Knotted-style"   ; };
+        ParamUILabelNameID { name 3 1 0x0409 ""                ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
+		} ;
+		script arab;
+        lookup HehDoAlternates;
+      # Force other languages to include Arabic script lookups
+      language KIR  ;
+      language KUR  ;
+      language RHG  ;
+      language SND  ;
+      language URD  ;
+      language WLF  ;
+} cv49 ;
+
+
 # Character Variant 50
 
 do let f = info("familyName");
@@ -1301,6 +1337,7 @@ feature cv50 {
     script arab;  # Arabic
         lookup UAlternate;
       # Force other languages to include Arabic script lookups
+      language KIR  ;
       language KUR  ;
       language RHG  ;
       language SND  ;
@@ -1343,7 +1380,6 @@ feature cv54 {  # Character Variant 54
      lookup YehHamzaAlternates;
      # Force other languages to include Arabic script lookups
      language KIR  ;
-     language KUR  ;
      language KUR  ;
      language SND  ;
      language RHG  ;
