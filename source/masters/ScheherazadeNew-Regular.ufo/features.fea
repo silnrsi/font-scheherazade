@@ -2748,7 +2748,6 @@ lookup dfltCALT {
 
 lookup KurdishCALT {
     lookupflag 0;
-    sub hehDoachashmee-ar.medi by hehDoachashmee-ar.medi.knottedHigh;
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
     # Sch/Lateef default kasra behavior is high = ABS system default
     
@@ -2873,7 +2872,6 @@ lookup HehDoAlternates {
     sub hehDoachashmee-ar.medi from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
     sub hehDoachashmee-ar.fina from [hehDoachashmee-ar.fina.knottedHigh hehDoachashmee-ar.fina hehDoachashmee-ar.fina.knottedHigh];
     # In case Kurdish lang has been selected, undo its behavior where necessary:
-    sub hehDoachashmee-ar.medi.knottedHigh from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
     sub hehDoachashmee-ar.fina.knottedHigh from [hehDoachashmee-ar.fina.knottedHigh hehDoachashmee-ar.fina hehDoachashmee-ar.fina.knottedHigh];
 } HehDoAlternates;
 
