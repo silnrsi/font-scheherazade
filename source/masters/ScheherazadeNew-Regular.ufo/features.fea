@@ -2872,7 +2872,7 @@ lookup HehDoAlternates {
     sub hehDoachashmee-ar.init from [hehDoachashmee-ar.init hehDoachashmee-ar.init hehDoachashmee-ar.init];
     sub hehDoachashmee-ar.medi from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
     sub hehDoachashmee-ar.fina from [hehDoachashmee-ar.fina.knottedHigh hehDoachashmee-ar.fina hehDoachashmee-ar.fina.knottedHigh];
-    # In case Kurdish lang has been selected, undo it's behavior where necessary:
+    # In case Kurdish lang has been selected, undo its behavior where necessary:
     sub hehDoachashmee-ar.medi.knottedHigh from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
     sub hehDoachashmee-ar.fina.knottedHigh from [hehDoachashmee-ar.fina.knottedHigh hehDoachashmee-ar.fina hehDoachashmee-ar.fina.knottedHigh];
 } HehDoAlternates;
@@ -4245,7 +4245,7 @@ feature cv49 {
         };
 
                 ParamUILabelNameID {
-            name "";
+            name "Standard";
         };
 
                 ParamUILabelNameID {
