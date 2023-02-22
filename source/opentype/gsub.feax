@@ -1141,7 +1141,6 @@ feature calt {  # Contextual Alternates
         lookup KyrgyzCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
-        lookup HehDoAlternates;
       language RHG ; #Rohingya
         lookup RohingyaCALT ;
       language SND ; # Sindhi
@@ -1308,7 +1307,7 @@ feature cv49 {    # Character Variant 49
         FeatUILabelNameID  { name 3 1 0x0409 "Heh Doachashmee" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Knotted-style"   ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard"                ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
 		} ;
 		script arab;
