@@ -4808,6 +4808,7 @@ feature liga {
     # beh-like + something above + reh-tah
     # also see shift rule below
     # AE + kaf
+    # Also the diac is shifted down later:
     # Note that shifting in RTL works the opposite in OpenType compared to Graphite.
     #********
     # Kashida kerning for yeh/peh forms, etc.
@@ -4889,7 +4890,8 @@ feature liga {
     } _kern215;
 
     lookup _kern290 {
-        pos @RehWawTighten <200 0 200 0>;
+        pos @RehWawTighten <290 0 290 0>;
+        pos @RehLikeNothingBelow <290 0 290 0>;
     } _kern290;
 
     lookup _kern_190 {
@@ -5007,6 +5009,7 @@ feature liga {
         pos ae-ar' lookup _kern_300 @_diaB @KafLikeInit;
         pos ae-ar.fina' lookup _kern_300 @KafLikeInit;
         pos ae-ar.fina' lookup _kern_300 @_diaB @KafLikeInit;
+        pos @RehLikeNothingBelow' lookup _kern290 @_diaB @AinLikeIsol;
     } MiscKerningWDiacs;
 
     lookup _kkern_40 {
@@ -7181,7 +7184,7 @@ lookup SubtendingMarks {
         pos @AlefForms madda-ar' <90 0 0 0> @GafIsolInit;
         pos @AlefForms madda-ar' <70 0 0 0> @LamLikeIsolInit;
         pos @Tooth @MarksAbove' <50 0 0 0> rehTwodotshorizontalaboveTahabove-ar.fina;
-        pos @RehLikeNothingBelow @_diaB' <0 -350 0 0> @AinLikeIsol;
+        pos @RehLikeNothingBelow @_diaB' <150 -200 0 0> @AinLikeIsol;
     } DiacShifting;
 
 
