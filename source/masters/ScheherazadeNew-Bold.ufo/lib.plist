@@ -44,6 +44,10 @@
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
   <string>3151</string>
+  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+  <array>
+    <string>/kashida-ar/absAutoKashida/kashida-ar.wide</string>
+  </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
@@ -1254,8 +1258,8 @@
     <string>hehDoachashmee-ar.fina</string>
     <string>hehDoachashmee-ar.medi</string>
     <string>hehDoachashmee-ar.init</string>
-    <string>hehDoachashmee-ar.fina.knottedhigh</string>
-    <string>hehDoachashmee-ar.medi.knottedhigh</string>
+    <string>hehDoachashmee-ar.fina.knottedHigh</string>
+    <string>hehDoachashmee-ar.medi.knottedHigh</string>
     <string>hehVinvertedabove-ar</string>
     <string>hehVinvertedabove-ar.fina</string>
     <string>hehVinvertedabove-ar.medi</string>
@@ -1402,6 +1406,7 @@
     <string>highhamzaYeh-ar.medi</string>
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
+    <string>kashida-ar.wide</string>
     <string>absAutoKashida</string>
     <string>kashidaHamza-ar</string>
     <string>kashidaWaw-ar</string>
@@ -1917,6 +1922,7 @@
     <string>_damma.cal</string>
     <string>_shadda.cal</string>
     <string>_sukun.cal</string>
+    <string>_salem.cal</string>
   </array>
   <key>com.schriftgestaltung.keyboardIncrement</key>
   <integer>1</integer>
@@ -3114,8 +3120,8 @@
     <string>hehDoachashmee-ar.fina</string>
     <string>hehDoachashmee-ar.medi</string>
     <string>hehDoachashmee-ar.init</string>
-    <string>hehDoachashmee-ar.fina.knottedhigh</string>
-    <string>hehDoachashmee-ar.medi.knottedhigh</string>
+    <string>hehDoachashmee-ar.fina.knottedHigh</string>
+    <string>hehDoachashmee-ar.medi.knottedHigh</string>
     <string>hehVinvertedabove-ar</string>
     <string>hehVinvertedabove-ar.fina</string>
     <string>hehVinvertedabove-ar.medi</string>
@@ -3262,6 +3268,7 @@
     <string>highhamzaYeh-ar.medi</string>
     <string>highhamzaYeh-ar.init</string>
     <string>kashida-ar</string>
+    <string>kashida-ar.wide</string>
     <string>absAutoKashida</string>
     <string>kashidaHamza-ar</string>
     <string>kashidaWaw-ar</string>
@@ -3777,6 +3784,7 @@
     <string>_damma.cal</string>
     <string>_shadda.cal</string>
     <string>_sukun.cal</string>
+    <string>_salem.cal</string>
   </array>
   <key>public.postscriptNames</key>
   <dict>
@@ -4760,14 +4768,14 @@
     <string>uni06BE</string>
     <key>hehDoachashmee-ar.fina</key>
     <string>uni06BE.fina</string>
-    <key>hehDoachashmee-ar.fina.knottedhigh</key>
-    <string>uni06BE.fina.knottedhigh</string>
+    <key>hehDoachashmee-ar.fina.knottedHigh</key>
+    <string>uni06BE.fina.knottedHigh</string>
     <key>hehDoachashmee-ar.init</key>
     <string>uni06BE.init</string>
     <key>hehDoachashmee-ar.medi</key>
     <string>uni06BE.medi</string>
-    <key>hehDoachashmee-ar.medi.knottedhigh</key>
-    <string>uni06BE.medi.knottedhigh</string>
+    <key>hehDoachashmee-ar.medi.knottedHigh</key>
+    <string>uni06BE.medi.knottedHigh</string>
     <key>hehHamzaabove-ar</key>
     <string>uni06C0</string>
     <key>hehHamzaabove-ar.fina</key>
@@ -4934,6 +4942,8 @@
     <string>uni06AA.medi</string>
     <key>kashida-ar</key>
     <string>uni0640</string>
+    <key>kashida-ar.wide</key>
+    <string>uni0640.wide</string>
     <key>kashidaHamza-ar</key>
     <string>uni0883</string>
     <key>kashidaTwobelow-ar</key>
