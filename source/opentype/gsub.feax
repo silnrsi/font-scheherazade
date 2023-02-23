@@ -720,15 +720,15 @@ lookup DammaAlternates {        # cv70
 
 lookup DammatanAlternate {      # cv72
   lookupflag 0 ;
-    sub @Dammatan by @Dammatan.sixNine ;
+    sub @cno_sixNine by @c_sixNine ;
 } DammatanAlternate;
 
 
 lookup DammaInvertedAlternates {    # cv74
   lookupflag 0 ;
-    #   0=default (filled);        1=hollow;           2=filled (Har)
-    sub @DammaInverted     from  [ @DammaInvertedOpen  @DammaInverted ];
-    sub @DammaInvertedOpen from  [ @DammaInvertedOpen  @DammaInverted ];
+    #   0=default (filled);         1=hollow;            2=filled
+    sub @DammaInverted      from  [ @DammaInverted_open  @DammaInverted ];
+    sub @DammaInverted_open from  [ @DammaInverted_open  @DammaInverted ];
 } DammaInvertedAlternates;
 
 
@@ -1304,7 +1304,7 @@ feature cv49 {    # Character Variant 49
         FeatUILabelNameID  { name 3 1 0x0409 "Heh Doachashmee" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Knotted-style"   ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };  # not intended for use
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
 		} ;
 		script arab;
@@ -1458,6 +1458,7 @@ feature cv74 {
         FeatUILabelNameID  { name 3 1 0x0409 "Inverted Damma" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Hollow"         ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Filled"         ; };
     } ;
     # Same for latin & arabic:
       lookup DammaInvertedAlternates;
