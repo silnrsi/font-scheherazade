@@ -1,9 +1,9 @@
 ---
 title: Scheherazade New - Documentation
-fontversion: 3.300
+fontversion: 4.000
 ---
 
-Thank you for your interest in the Scheherazade New font. Scheherazade New includes full support for Unicode 13.0 Arabic ranges (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).
+Thank you for your interest in the Scheherazade New font. Scheherazade New includes full support for Unicode 15.0 Arabic ranges (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).
 
 This documentation is a set of HTML pages that can be viewed in any modern web browser. PDF versions of these pages are also provided. This content, plus download links and a contact form, are available from the [Scheherazade New site](https://software.sil.org/scheherazade/).
 
@@ -15,7 +15,7 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Type Sample](sample.md) — Type sample demonstrating all the characters in this font
 - [Honorific ligatures](honorifics.md) — Description of honorific ligature usage 
 - [Font features](features.md) — Using smart font features
-- [## Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
+- [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
 - [Support](support.md) — How to get additional support
 - [Developer information](developer.md) — How to modify and build the fonts
 - [Versions](versions.md) - Sources for alternate versions

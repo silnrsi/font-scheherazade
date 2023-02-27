@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Support
-fontversion: 3.300
+fontversion: 4.000
 ---
 
 ## Support options

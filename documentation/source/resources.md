@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Resources
-fontversion: 3.300
+fontversion: 4.000
 ---
 
 The SIL Arabic script fonts are encoded according to Unicode, so your application must support Unicode text in order to access letters other than the standard ANSI characters. Most applications now provide basic Unicode support. You will, however, need some way of entering Unicode text into your document.

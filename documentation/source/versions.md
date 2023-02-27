@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Versions and Changes
-fontversion: 3.300
+fontversion: 4.000
 ---
 
 ## Announcement list

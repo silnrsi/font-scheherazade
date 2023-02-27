@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Design
-fontversion: 3.300
+fontversion: 4.000
 ---
 
 Scheherazade New provides a “simplified” rendering of Arabic script, using basic connecting glyphs but not including a wide variety of additional ligatures or contextual alternates (only the required lam-alef ligatures). This simplified style is often preferred for clarity, especially in non-Arabic languages, but may not be considered appropriate in situations where a more elaborate style of calligraphy is preferred.
