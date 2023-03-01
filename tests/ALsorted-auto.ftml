@@ -14,6 +14,9 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv49' 1" name="cv49_1"/>
+      <style feats="'cv49' 2" name="cv49_2"/>
+      <style feats="'cv49' 3" name="cv49_3"/>
       <style feats="'cv51' 1" name="cv51_1"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
@@ -1308,6 +1311,42 @@
       <string>\u0006D5 \u00200D\u0006D5 </string>
     </test>
     <test label="U+06BE">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_1">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_2">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_3">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="sd">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ur">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ku">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="rhg">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ky">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="wo">
       <comment>hehDoachashmee-ar</comment>
       <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
     </test>

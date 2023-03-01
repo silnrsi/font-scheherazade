@@ -14,6 +14,9 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv49' 1" name="cv49_1"/>
+      <style feats="'cv49' 2" name="cv49_2"/>
+      <style feats="'cv49' 3" name="cv49_3"/>
       <style feats="'cv51' 1" name="cv51_1"/>
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv60' 1" name="cv60_1"/>
@@ -677,6 +680,30 @@
       <comment>dammainverted-ar</comment>
       <string>\u000628\u000657</string>
     </test>
+    <test label="U+0657" stylename="sd">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
+    <test label="U+0657" stylename="ur">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
+    <test label="U+0657" stylename="ku">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
+    <test label="U+0657" stylename="rhg">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
+    <test label="U+0657" stylename="ky">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
+    <test label="U+0657" stylename="wo">
+      <comment>dammainverted-ar</comment>
+      <string>\u000628\u000657</string>
+    </test>
     <test label="U+0658">
       <comment>noonghunnaabove-ar</comment>
       <string>\u000628\u000658 \u000628\u000659 \u000628\u00065A \u000628\u00065B \u000628\u00065C \u000628\u00065D \u000628\u00065E \u000628\u00065F \u000660 \u000661 \u000662 \u000663 \u000664 \u000665 \u000666 \u000667 \u000668 \u000669 \u00066A \u00066B</string>
@@ -1270,6 +1297,42 @@
       <string>\u0006BD \u0006BD\u00200D \u00200D\u0006BD\u00200D \u00200D\u0006BD \u0006BD\u0006BD\u0006BD </string>
     </test>
     <test label="U+06BE">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_1">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_2">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="cv49_3">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="sd">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ur">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ku">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="rhg">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="ky">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
+    </test>
+    <test label="U+06BE" stylename="wo">
       <comment>hehDoachashmee-ar</comment>
       <string>\u0006BE \u0006BE\u00200D \u00200D\u0006BE\u00200D \u00200D\u0006BE \u0006BE\u0006BE\u0006BE </string>
     </test>
@@ -2573,7 +2636,7 @@
       <comment>objectReplacementCharacter</comment>
       <string>\u00FFFC \u00FFFD</string>
     </test>
-    <test background="#ffe0e0" label="U+10EFD">
+    <test background="#ffc8a0" label="U+10EFD">
       <comment>saktabelow-ar</comment>
       <string>\u000628\u010EFD \u000628\u010EFE \u000628\u010EFF</string>
     </test>

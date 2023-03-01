@@ -13,6 +13,9 @@
       <style feats="'cv48' 1" name="cv48_1"/>
       <style feats="'cv48' 2" name="cv48_2"/>
       <style feats="'cv48' 3" name="cv48_3"/>
+      <style feats="'cv49' 1" name="cv49_1"/>
+      <style feats="'cv49' 2" name="cv49_2"/>
+      <style feats="'cv49' 3" name="cv49_3"/>
       <style feats="'cv54' 1" name="cv54_1"/>
     </styles>
     <title>Yehbarree (auto)</title>
@@ -253,6 +256,18 @@
       <string>\u0647\u06EC\u06D2 \u200D\u0647\u06EC\u06D2 \u0647\u064D\u06EC\u06D2 \u200D\u0647\u064D\u06EC\u06D2</string>
     </test>
     <test label="U+06BE">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u06BE\u06EC\u06D2 \u200D\u06BE\u06EC\u06D2 \u06BE\u064D\u06EC\u06D2 \u200D\u06BE\u064D\u06EC\u06D2</string>
+    </test>
+    <test label="U+06BE" stylename="cv49_1">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u06BE\u06EC\u06D2 \u200D\u06BE\u06EC\u06D2 \u06BE\u064D\u06EC\u06D2 \u200D\u06BE\u064D\u06EC\u06D2</string>
+    </test>
+    <test label="U+06BE" stylename="cv49_2">
+      <comment>hehDoachashmee-ar</comment>
+      <string>\u06BE\u06EC\u06D2 \u200D\u06BE\u06EC\u06D2 \u06BE\u064D\u06EC\u06D2 \u200D\u06BE\u064D\u06EC\u06D2</string>
+    </test>
+    <test label="U+06BE" stylename="cv49_3">
       <comment>hehDoachashmee-ar</comment>
       <string>\u06BE\u06EC\u06D2 \u200D\u06BE\u06EC\u06D2 \u06BE\u064D\u06EC\u06D2 \u200D\u06BE\u064D\u06EC\u06D2</string>
     </test>
