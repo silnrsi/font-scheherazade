@@ -5,15 +5,6 @@
   <outline>
     <component base="_hamza" xOffset="232" yOffset="1633"/>
     <contour>
-      <point x="-132" y="1994" type="curve"/>
-      <point x="-99" y="1968"/>
-      <point x="1" y="1933"/>
-      <point x="58" y="1933" type="curve" smooth="yes"/>
-      <point x="115" y="1933"/>
-      <point x="209" y="2004"/>
-      <point x="289" y="2097" type="curve" smooth="yes"/>
-      <point x="368" y="2191"/>
-      <point x="435" y="2307"/>
       <point x="435" y="2394" type="curve" smooth="yes"/>
       <point x="435" y="2488"/>
       <point x="392" y="2556"/>
@@ -26,20 +17,29 @@
       <point x="175" y="2155" type="curve"/>
       <point x="99" y="2098"/>
       <point x="-6" y="2040"/>
+      <point x="-132" y="1994" type="curve"/>
+      <point x="-99" y="1968"/>
+      <point x="1" y="1933"/>
+      <point x="58" y="1933" type="curve" smooth="yes"/>
+      <point x="115" y="1933"/>
+      <point x="209" y="2004"/>
+      <point x="289" y="2097" type="curve" smooth="yes"/>
+      <point x="368" y="2191"/>
+      <point x="435" y="2307"/>
     </contour>
     <contour>
-      <point x="194" y="2395" type="curve" smooth="yes"/>
-      <point x="194" y="2407"/>
-      <point x="199" y="2429"/>
-      <point x="223" y="2429" type="curve" smooth="yes"/>
-      <point x="277" y="2429"/>
-      <point x="313" y="2375"/>
       <point x="313" y="2336" type="curve" smooth="yes"/>
       <point x="313" y="2319"/>
       <point x="306" y="2300"/>
       <point x="294" y="2278" type="curve"/>
       <point x="245" y="2317"/>
       <point x="194" y="2365"/>
+      <point x="194" y="2395" type="curve" smooth="yes"/>
+      <point x="194" y="2407"/>
+      <point x="199" y="2429"/>
+      <point x="223" y="2429" type="curve" smooth="yes"/>
+      <point x="277" y="2429"/>
+      <point x="313" y="2375"/>
     </contour>
   </outline>
 </glyph>

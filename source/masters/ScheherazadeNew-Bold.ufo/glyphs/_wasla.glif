@@ -5,6 +5,9 @@
   <anchor x="-46" y="-34" name="_diaA"/>
   <outline>
     <contour>
+      <point x="259" y="116" type="curve" smooth="yes"/>
+      <point x="259" y="186"/>
+      <point x="220" y="255"/>
       <point x="128" y="255" type="curve" smooth="yes"/>
       <point x="12" y="255"/>
       <point x="-77" y="120"/>
@@ -28,10 +31,7 @@
       <point x="-87" y="-131"/>
       <point x="-10" y="-131" type="curve" smooth="yes"/>
       <point x="164" y="-131"/>
-      <point x="260" y="10"/>
-      <point x="260" y="116" type="curve" smooth="yes"/>
-      <point x="260" y="186"/>
-      <point x="220" y="255"/>
+      <point x="259" y="10"/>
     </contour>
     <contour>
       <point x="162" y="65" type="curve" smooth="yes"/>

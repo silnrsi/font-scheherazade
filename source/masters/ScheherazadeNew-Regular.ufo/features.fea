@@ -4071,30 +4071,28 @@ feature cv72 {
 } cv72;
 
 # Character Variant 74
-    ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
-    # Same for latin & arabic:
-    # end do - Sch or Harmattan
-    # Character Variant 76
-        feature cv74 {
-                cvParameters {
-                        FeatUILabelNameID {
-                name "Inverted Damma";
-            };
-
-                        ParamUILabelNameID {
-                name "Hollow";
-            };
-
-                        ParamUILabelNameID {
-                name "Filled";
-            };
-
+feature cv74 {
+        cvParameters {
+                FeatUILabelNameID {
+            name "Inverted Damma";
         };
 
-        lookup DammaInvertedAlternates;
-    } cv74;
+        ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+                ParamUILabelNameID {
+            name "Hollow";
+        };
 
+                ParamUILabelNameID {
+            name "Filled";
+        };
 
+    };
+
+    # Same for latin & arabic:
+    lookup DammaInvertedAlternates;
+} cv74;
+
+# Character Variant 76
     ### ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
     # Same for latin & arabic:
     # end do - Sch or Harmattan

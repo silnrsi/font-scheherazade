@@ -4,6 +4,9 @@
   <outline>
     <component base="_dot2h" xOffset="65" yOffset="576"/>
     <contour>
+      <point x="-51" y="-26" type="curve" smooth="yes"/>
+      <point x="-51" y="-33"/>
+      <point x="-43" y="-28"/>
       <point x="-39" y="-26" type="curve"/>
       <point x="103" y="75"/>
       <point x="680" y="370"/>
@@ -25,9 +28,6 @@
       <point x="16" y="102" type="curve" smooth="yes"/>
       <point x="-3" y="84"/>
       <point x="-51" y="-7"/>
-      <point x="-51" y="-26" type="curve" smooth="yes"/>
-      <point x="-51" y="-33"/>
-      <point x="-43" y="-28"/>
     </contour>
   </outline>
 </glyph>

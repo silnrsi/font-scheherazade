@@ -5,6 +5,12 @@
   <anchor x="136" y="-261" name="diaB"/>
   <outline>
     <contour>
+      <point x="16" y="290" type="curve" smooth="yes"/>
+      <point x="-23" y="290"/>
+      <point x="-100" y="222"/>
+      <point x="-100" y="145" type="curve" smooth="yes"/>
+      <point x="-100" y="89"/>
+      <point x="-50" y="0"/>
       <point x="0" y="0" type="curve" smooth="yes"/>
       <point x="126" y="0"/>
       <point x="203" y="106"/>
@@ -26,12 +32,6 @@
       <point x="164" y="476" type="curve" smooth="yes" name="hr01"/>
       <point x="164" y="351"/>
       <point x="102" y="290"/>
-      <point x="16" y="290" type="curve" smooth="yes"/>
-      <point x="-23" y="290"/>
-      <point x="-100" y="222"/>
-      <point x="-100" y="145" type="curve" smooth="yes"/>
-      <point x="-100" y="89"/>
-      <point x="-50" y="0"/>
     </contour>
   </outline>
 </glyph>
