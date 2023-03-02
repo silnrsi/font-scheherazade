@@ -1,38 +1,124 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!--
+    Axis-based designpsace for SIL's Scheherazade New font family
+
+-->
 <designspace format="3">
     <axes>
-        <axis name="weight" tag="wght" maximum="700" minimum="400" default="400">
+        <axis default="400.0" maximum="700.0" minimum="400.0" name="weight" tag="wght">
+            <map input="400.0" output="400.0" /> <!-- Regular -->
+            <map input="500.0" output="500.0" /> <!-- Medium -->
+            <map input="600.0" output="600.0" /> <!-- SemiBold -->
+            <map input="700.0" output="700.0" /> <!-- Bold -->
             <labelname xml:lang="en">Weight</labelname>
         </axis>
+        <axis default="100.0" maximum="100.0" minimum="100.0" name="width" tag="wdth">
+            <map input="100.0" output="100.0" />
+            <labelname xml:lang="en">Width</labelname>
+        </axis>
+        <axis default="0.0" maximum="0.0" minimum="0.0" name="custom" tag="XXXX">
+            <map input="0.0" output="0.0" />
+            <labelname xml:lang="en">Custom</labelname>
+        </axis>
     </axes>
+    
     <sources>
-        <source name="Scheherazade New Regular" familyname="Scheherazade New" filename="masters/ScheherazadeNew-Regular.ufo" stylename="Regular">
+        <source     name="ScheherazadeNew-Regular" 
+            	familyname="Scheherazade New"
+        	      filename="masters/ScheherazadeNew-Regular.ufo"
+        	     stylename="Regular">
             <lib copy="1" />
+            <groups copy="1" />
+            <features copy="1" />
             <info copy="1" />
             <location>
-                <dimension name="weight" xvalue="400" />
+                <dimension name="weight" xvalue="400.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
-        <source name="Scheherazade New Bold" familyname="Scheherazade New" filename="masters/ScheherazadeNew-Bold.ufo" stylename="Bold">
+        <source     name="ScheherazadeNew-Bold" 
+        	    familyname="Scheherazade New" 
+        	      filename="masters/ScheherazadeNew-Bold.ufo" 
+        	     stylename="Bold">
             <location>
-                <dimension name="weight" xvalue="700" />
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
     </sources>
+    
     <instances>
-        <instance name="Scheherazade New Regular" familyname="Scheherazade New" filename="instances/ScheherazadeNew-Regular.ufo" stylename="Regular">
+        <!-- stylemapfamilyname: use <familyname> for Regular and Bold, else copy <name> -->
+        <!-- stylemapstylename: use "regular" for all styles except B: use "bold" -->
+
+        <!-- Scheherazade New Regular -->
+        <instance       familyname="Scheherazade New"
+                          filename="instances/ScheherazadeNew-Regular.ufo"
+                              name="Scheherazade New Regular"
+                stylemapfamilyname="Scheherazade New"
+                 stylemapstylename="regular"
+                         stylename="Regular"
+                postscriptfontname="ScheherazadeNew-Regular">
             <location>
-                <dimension name="weight" xvalue="400" />
+                <dimension name="weight" xvalue="400.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
-            <kerning />
-            <info />
+            <info/>
+            <kerning/>
         </instance>
-        <instance name="Scheherazade New Bold" familyname="Scheherazade New" filename="instances/ScheherazadeNew-Bold.ufo" stylename="Bold">
+
+        <!-- Scheherazade New Medium -->
+        <instance       familyname="Scheherazade New"
+                          filename="instances/ScheherazadeNew-Medium.ufo"
+                              name="Scheherazade New Medium"
+                stylemapfamilyname="Scheherazade New Medium"
+                 stylemapstylename="regular"
+                         stylename="Medium"
+                postscriptfontname="ScheherazadeNew-Medium">
             <location>
-                <dimension name="weight" xvalue="700" />
+                <dimension name="weight" xvalue="500.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
             </location>
-            <kerning />
-            <info />
+            <info/>
+            <kerning/>
+        </instance>
+        
+        <!-- Scheherazade New Regular -->
+        <instance       familyname="Scheherazade New"
+                          filename="instances/ScheherazadeNew-SemiBold.ufo"
+                              name="Scheherazade New SemiBold"
+                stylemapfamilyname="Scheherazade New SemiBold"
+                 stylemapstylename="regular"
+                         stylename="SemiBold"
+                postscriptfontname="ScheherazadeNew-SemiBold">
+            <location>
+                <dimension name="weight" xvalue="600.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info/>
+            <kerning/>
+        </instance>
+        
+        <!-- Scheherazade New Regular -->
+        <instance       familyname="Scheherazade New"
+                          filename="instances/ScheherazadeNew-Bold.ufo"
+                              name="Scheherazade New Bold"
+                stylemapfamilyname="Scheherazade New"
+                 stylemapstylename="bold"
+                         stylename="Bold"
+                postscriptfontname="ScheherazadeNew-Bold">
+            <location>
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info/>
+            <kerning/>
         </instance>
     </instances>
 </designspace>

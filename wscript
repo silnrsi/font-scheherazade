@@ -53,6 +53,7 @@ designspace('source/ScheherazadeNew.designspace',
 #        make_params = omitaps + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
 #        params = '-d -q -e ${DS:FILENAME_BASE}_gdlerr.txt',
 #        ),
+
     opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
         mapfile = genout + "${DS:FILENAME_BASE}.map",
         master = 'source/opentype/main.feax',
