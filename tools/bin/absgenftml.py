@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 __doc__ = '''generate ftml tests from glyph_data.csv and UFO'''
 __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018-2022 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018-2023 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
@@ -77,9 +77,31 @@ backgroundLegend =  'Background colors: ' \
 def doit(args):
     logger = args.logger
 
+    # A note about args.fontcode:
+    # In most applications we blindly pass this to FTMLbuilder so that, in the case the user has provided `absGlyphList.csv` 
+    # (or something simialr) as the input CSV file, FTMLBuilder will be able to filter out the records appropriately. 
+    # Of course this parameter is unneeded in cases where a project-specific `glyph_data.csv` file is provided as input, and 
+    # in fact will cause an error in FTMLBuilder because processing of args.fontcode requires a `Fonts` column in the csv file.
+
+    # However, in this app args.fontcode can serve two purposes: 
+    #    - filtering records from absGlyphList.csv (as above)
+    #    - deciding what tests or test data to include in generated ftml file.
+    # Thus, in this app, it is permissible to provide args.fontcode even though project specific glyph_data.csv (rather than 
+    # absGlyphList.csv) is supplied as input. So we must be careful not to send user-supplied args.fontcode to FTMLBuilder if
+    # the input csv has no `Fonts` column. Whew.
+
+    try:
+        whichfont = args.fontcode.strip().lower()   # This will be used within this app to select appropriate tests and data
+    except AttributeError:
+        whichfont = ''
+    
+    if len(whichfont) > 1:
+                logger.log('fontcode must be a single letter', 'S')
+
     # Read input csv
-    builder = FB.FTMLBuilder(logger, incsv=args.input, fontcode=args.fontcode, font=args.ifont, ap=args.ap,
-                             rtlenable=True, langs=args.langs)
+    builder = FB.FTMLBuilder(logger, incsv=args.input, 
+                             fontcode=args.fontcode if 'Fonts' in args.input.firstline else None,  # see comments above
+                             font=args.ifont, ap=args.ap, rtlenable=True, langs=args.langs)
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
@@ -144,6 +166,10 @@ def doit(args):
     lamlist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Lam', builder.uids()))
     # all alef-like except high-hamza-alef:
     aleflist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Alef' and uid != 0x0675, builder.uids()))
+
+#--------------------------------
+# AllChars test
+#--------------------------------
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -285,6 +311,10 @@ def doit(args):
                 builder.render(digits, ftml, label='digits', comment='')
             ftml.clearFeatures()
 
+#--------------------------------
+# Arabic letters test, shape-sorted
+#--------------------------------
+
     if test.lower().startswith("al sorted"):
         # all AL chars, sorted by shape:
         ftml.startTestGroup('Arabic Letters')
@@ -300,6 +330,10 @@ def doit(args):
                     ftml.setLang(langID)
                     builder.render((uid,), ftml)
                 ftml.clearLang()
+
+#--------------------------------
+# Diacritic test
+#--------------------------------
 
     if test.lower().startswith("diac"):
         # Diac attachment:
@@ -411,6 +445,10 @@ def doit(args):
                 ftml.clearFeatures()
                 ftml.closeTest()
 
+#--------------------------------
+# Subtending marks tests
+#--------------------------------
+
     if test.lower().startswith("subtending"):
         # Generates sample data for all subtending marks. Data includes sequences of 0 to n+1
         # digits, where n is the maximum expected to be supported on the mark. Latin, Arbic-Indic,
@@ -460,6 +498,10 @@ def doit(args):
         ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
         ftml.closeTest()
 
+#--------------------------------
+# Show invisibles test (no longer used)
+#--------------------------------
+
     if test.lower().startswith("showinv"):
         # Sample data for chars that have a "show invisible" feature
         # The 'r', 'a', 'ra' indicates whether this is standard in Roman fonts, Arabic fonts, or both.
@@ -482,6 +524,11 @@ def doit(args):
             ftml.addToTest(uid, " " + c + " ", label, comment)
             ftml.closeTest()
         ftml.clearFeatures()
+
+#--------------------------------
+# Dagger-alef tests
+#--------------------------------
+
 
     if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
@@ -507,6 +554,10 @@ def doit(args):
                 builder.render((uid, 0x0670), ftml, comment=comment)
             ftml.clearFeatures()
             ftml.closeTest()
+
+#--------------------------------
+#  Kerning tests
+#--------------------------------
 
     if test.lower().startswith('kern'):
         rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids()))
@@ -602,7 +653,7 @@ def doit(args):
             # For debugging, use smaller sets:
             # rehs=rehs[0:1]
             # uids = list(filter(lambda uid: get_ucd(uid,'jg') == 'Alef', uids))
-            for uid1 in rehs + waws:
+            for uid1 in rehs if whichfont == 'h' else rehs + waws:
                 for uid2 in uids:
                     # NB: 3 decomposable chars (alefHamzaabove, alefMaddah, alefHamzaBelow) are in included in this data so they can
                     #     be tested. However, for kerning computation any strings containing hamzaabove, hamzabelow, or madda are
@@ -690,6 +741,9 @@ def doit(args):
                             builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                     ftml.closeTest()
 
+#--------------------------------
+# Chadian Arabic word list
+#--------------------------------
 
     if test.lower().startswith('chadian'):
         rehs = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'jg') == 'Reh', builder.uids()))) + ']'
@@ -724,6 +778,10 @@ def doit(args):
                         ftml.addToTest(None,res,f'line {line_no}')
                     ftml.clearFeatures()
                     ftml.closeTest()
+
+#--------------------------------
+# Yehbarree tail tests
+#--------------------------------
 
     if test.lower().startswith('yehbar'):
         # Yehbarree tail interacting with diacs below previous char
@@ -761,19 +819,24 @@ def doit(args):
                     ftml.closeTest()
                 ftml.clearFeatures()
 
+#--------------------------------
+# Feature-Language interaction test
+#--------------------------------
+
     if test.lower().startswith('feature-lang'):
         # Testing of language and feature interactions
 
         # test only the features from this list that are implemented in this font
         tests = filter(lambda x : x[0] in builder.features, (
             # feat, langs where it is expected to work (1) or not (0), data seq,  comment
-            ('cv02', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0623,), 'Warsh alternates'),
+           #('cv02', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0623,), 'Warsh alternates'),
             ('cv08', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x062C,), 'Jeem/Hah alternates'),
             ('cv12', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 0, 'ky': 1}, (0x062F,), 'Dal alternates'),
             ('cv20', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0635,), 'Sad/Dad alternates'),
             ('cv44', {'sd': 0, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0645,), 'Meem alternates'),
             ('cv48', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0647,), 'Heh alternates'),
             ('cv49', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06BE,), 'Heh Doachashmee alternates'),
+           #('cv50', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0677,), 'U alternates'),
             ('cv51', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06C5,), 'Kyrgyz OE alternate'),
             ('cv54', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 0}, (0x0626,), 'Yeh Hamza alternate'),
             ('cv60', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0622,), 'Maddah alternates'),
@@ -833,6 +896,9 @@ def doit(args):
                 ftml.clearFeatures()
             ftml.clearLang()
 
+#--------------------------------
+#  Classes test
+#--------------------------------
 
     if test.lower().startswith('classes'):
         zwj = chr(0x200D)
