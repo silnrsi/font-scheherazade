@@ -499,14 +499,15 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
 
-    <!-- These alefs form ligatures ONLY with the plain lam. They are rare characters. -->
+    <!-- These alefs form ligatures ONLY with the plain lam. They are rare characters. They need to be finals
+         since they follow the lam. -->
     <class name="AlefRareNoLig">
-    	alefFathaattached-ar  alefToprightfathaattached-ar  alefRightmiddlestroke-ar  alefLeftmiddlestroke-ar
-      alefKasraattached-ar  alefBottomrightkasraattached-ar  alefRounddotaboveattached-ar  alefRightrounddotattached-ar
-      alefLeftrounddotattached-ar  alefRounddotbelowattached-ar  alefDotabove-ar  alefToprightfathaattachedDotabove-ar
-      alefRightmiddlestrokeDotabove-ar  alefBottomrightkasraattachedDotabove-ar  alefToprightfathaattachedLeftring-ar
-      alefRightmiddlestrokeLeftring-ar  alefBottomrightkasraattachedLeftring-ar  alefRighthamzaattached-ar
-      alefLefthamzaattached-ar
+    	alefFathaattached-ar.fina  alefToprightfathaattached-ar.fina  alefRightmiddlestroke-ar.fina  alefLeftmiddlestroke-ar.fina
+      alefKasraattached-ar.fina  alefBottomrightkasraattached-ar.fina  alefRounddotaboveattached-ar.fina  alefRightrounddotattached-ar.fina
+      alefLeftrounddotattached-ar.fina  alefRounddotbelowattached-ar.fina  alefDotabove-ar.fina  alefToprightfathaattachedDotabove-ar.fina
+      alefRightmiddlestrokeDotabove-ar.fina  alefBottomrightkasraattachedDotabove-ar.fina  alefToprightfathaattachedLeftring-ar.fina
+      alefRightmiddlestrokeLeftring-ar.fina  alefBottomrightkasraattachedLeftring-ar.fina  alefRighthamzaattached-ar.fina
+      alefLefthamzaattached-ar.fina
     </class>
 
     <class name="LamAlefRareLig">

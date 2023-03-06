@@ -871,8 +871,8 @@ lookup LamAlefLigatures {
     sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
     sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
 	ifinfo(familyName, "Scheherazade New") {
-    sub lam-ar      @AlefRareNoLig              by  @LamAlefRareLig ;
-    sub lam-ar.fina @AlefRareNoLig              by  @LamAlefRareLigFina ;
+    sub lam-ar.init   @AlefRareNoLig            by  @LamAlefRareLig ;
+    sub lam-ar.medi   @AlefRareNoLig            by  @LamAlefRareLigFina ;
 	}
 	ifinfo(familyName, "Harmattan") {
     sub @LamNoLig   alefHamzaabove-ar.fina      by  @LamAlefHamzaaboveLig ;
