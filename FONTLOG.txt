@@ -25,9 +25,10 @@ simplified style is often preferred for clarity, especially in non-Arabic
 languages, but may be considered unattractive in more traditional and 
 literate communities.
 
-Two fonts from this typeface family are included in this release:
-
+Four weights for this typeface family are included:
      * Scheherazade New Regular
+     * Scheherazade New Medium
+     * Scheherazade New SemiBold
      * Scheherazade New Bold
 
 This release supports virtually all of the Unicode 13.0 Arabic character 
@@ -66,6 +67,7 @@ ChangeLog
 ### 2023-xx-xx (SIL WSTech team) Scheherazade New version 4.000
 
 #### New
+- Added Medium and SemiBold weights
 - Added Arabic-style (rounded) versions of chevron quotes
 - Added Bold calligraphic honorifics (previous ones were the same weight as Regular)
 - Added:
@@ -76,6 +78,7 @@ ChangeLog
   - U+10EFF ARABIC SMALL LOW WORD MADDA
 
 #### Improved
+- Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
 - Redesign 
   - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH
   - Slight adjustments to:
@@ -89,6 +92,8 @@ ChangeLog
 
 #### Known issues
 - Shaping for these newly added characters may not yet occur in applications
+- Medial and Final high hamza characters may have collisions as these likely do not occur
+- Lam/high hamza alef ligature does not form as it likely does not occur
 
 
 ### 2021-11-22 (SIL WSTech team) Scheherazade New Version 3.300 (official release)

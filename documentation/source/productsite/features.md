@@ -35,28 +35,28 @@ Check | <span class='scheherazadenewL-R normal'>RenderingUnknown</span>
 
 ### Language 
 
-<span class='affects'>Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+0647, U+0626, U+060C, U+061B, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span>
+<span class='affects'>Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span>
 
 Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.
 
 #### Kurdish (Northern), Rohingya, Sindhi, Urdu
 
-Language | Meem | Heh | Comma | 4 | 6 | 7 | 0650 | 064C | Feature Setting
--- | ---: | ----: | -: | -: | -: | -: | --: | --: | ---
-default | <span dir="rtl" class='scheherazadenew-R small'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R small' >&#x0647;&#x0020;&#x0647;&#x0647;&#x0647;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x060C; &#x061B;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x06F4;</span> |<span dir="rtl" class='scheherazadenew-R small'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0628;&#x064C;</span> |
-Kurdish</br>(Northern) | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku' style="color:red">&#x0647;&#x0020;&#x0647;&#x0647;&#x0647;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x060C; &#x061B;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ku'>&#x0628;&#x064C;</span> |  `lang='ku'`
-Rohingya | <span dir="rtl" class='scheherazadenew-R small' lang='rhg'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg'>&#x0647;&#x0020;&#x0647;&#x0647;&#x0647;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg'>&#x060C; &#x061B;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x0628;&#x064C;</span>| `lang='rhg'`
-Sindhi | <span dir="rtl" class='scheherazadenew-R small' lang='sd' style="color:red">&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd'>&#x0647;&#x0020;&#x0647;&#x0647;&#x0647;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd' style="color:red">&#x060C; &#x061B;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='sd'>&#x0628;&#x064C;</span> | `lang='sd'`
-Urdu | <span dir="rtl" class='scheherazadenew-R small' lang='ur'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur'>&#x0647;&#x0020;&#x0647;&#x0647;&#x0647;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur'>&#x060C; &#x061B;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ur'>&#x0628;&#x064C;</span> | `lang='ur'`
+Language | Meem | Heh Doachashmee (06BE) | 4 | 6 | 7 | 0650/064E | 064C | Feature Setting
+-- | ---: | ----: | -: | -: | -: | --: | --: | ---
+default | <span dir="rtl" class='scheherazadenew-R normal'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' >&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F4;</span> |<span dir="rtl" class='scheherazadenew-R normal'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x064C;</span> |
+Kurdish</br>(Northern) | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku' style="color:red">&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0628;&#x064C;</span> |  `lang='ku'`
+Rohingya | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x0628;&#x064C;</span>| `lang='rhg'`
+Sindhi | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x0628;&#x064C;</span> | `lang='sd'`
+Urdu | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x0628;&#x064C;</span> | `lang='ur'`
 
 #### Kyrgyz and Wolof
 
 
-Language | Dal  | 0626 | 0650 | 064F | 0657 | Feature Setting
+Language | Dal  | 0626 | 0650/064E | 064F | 0657 | Feature Setting
 -- | -: |  ---: | --: | --: | --: | ---
-default | <span dir="rtl" class='scheherazadenew-R small'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R small'>&#x0628;&#x0657;</span>|
-Kyrgyz | <span dir="rtl" class='scheherazadenew-R small' lang='ky'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ky' style="color:red">&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ky'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ky'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='ky'>&#x0628;&#x0657;</span>| `lang='ky'`
-Wolof | <span dir="rtl" class='scheherazadenew-R small' lang='wo' style="color:red"> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='wo'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='wo' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='wo' style="color:red">&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='wo' style="color:red">&#x0628;&#x0657;</span>| `lang='wo'`
+default | <span dir="rtl" class='scheherazadenew-R normal'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0657;</span>|
+Kyrgyz | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky' style="color:red">&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0657;</span>| `lang='ky'`
+Wolof | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red"> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0657;</span>| `lang='wo'`
 
 
 ### Character variants
@@ -92,6 +92,16 @@ Standard | <span dir="rtl" class='scheherazadenew-R normal'> ه ههه </span>| 
 Kurdish-style | <span dir="rtl" class='scheherazadenew-cv48-3-R normal'> ه ههه </span>| `cv48=3`
 Sindhi-style | <span dir="rtl" class='scheherazadenew-cv48-1-R normal'> ه ههه </span>| `cv48=1`
 Urdu-style | <span dir="rtl" class='scheherazadenew-cv48-2-R normal'> ه ههه </span>| `cv48=2`
+
+#### Heh Doachashmee 
+
+<span class='affects'>Affects: U+06BE</span>
+
+Feature | Sample | Feature setting
+------------- | ------ | ------------- 
+Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=0`
+Knotted-style | <span dir="rtl" class='scheherazadenew-cv49-1-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=1`
+Kurdish-style | <span dir="rtl" class='scheherazadenew-cv49-3-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=3`
 
 #### Kirghiz OE 
 
@@ -131,7 +141,6 @@ Raised | <span dir="rtl" class='scheherazadenew-R normal'> بِّ ◌ِّ بٍّ
 Lowered | <span dir="rtl" class='scheherazadenew-cv62-1-R normal'> بِّ ◌ِّ بٍّ ◌ٍّ </span>| `cv62=1`
 
 #### Damma 
-
 
 <span class='affects'>Affects: U+064F</span>
 
@@ -201,7 +210,7 @@ Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x202D;&#x6DD;&#x31
 Simplified A | <span dir="rtl" class='scheherazadenew-cv80-1-R normal'>&#x202D;&#x6DD;&#x31;&#x32;&#x33;&#x202C; &#x202D;&#x6DD;&#x0661;&#x0662;&#x0663;&#x202C;</span>| `cv80=1`
 Simplified B | <span dir="rtl" class='scheherazadenew-cv80-2-R normal'>&#x202D;&#x6DD;&#x31;&#x32;&#x33;&#x202C; &#x202D;&#x6DD;&#x0661;&#x0662;&#x0663;&#x202C;</span>| `cv80=2`
 
-The new DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in the same way as End of ayah. 
+The DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in the same way as End of ayah. 
 
 <span dir="rtl" class='scheherazadenew-R normal'>&#x202D;&#x8E2;&#x663;&#x664;&#x665;&#x202C;</span>
 
@@ -270,6 +279,8 @@ Loose |
 [font id='scheherazadenew-cv48-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 3']
 [font id='scheherazadenew-cv48-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 1']
 [font id='scheherazadenew-cv48-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 2']
+[font id='scheherazadenew-cv49-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv49 1']
+[font id='scheherazadenew-cv49-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv49 3']
 [font id='scheherazadenew-cv51-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv51 1']
 [font id='scheherazadenew-cv54-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv54 1']
 [font id='scheherazadenew-cv60-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv60 1']

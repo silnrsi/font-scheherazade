@@ -6,6 +6,7 @@ fontversion: 4.000
 ### Changes
 
 #### New
+- Added Medium and SemiBold weights
 - Added Arabic-style (rounded) versions of chevron quotes
 - Added Bold calligraphic honorifics (previous ones were the same weight as Regular)
 - Added:
@@ -16,6 +17,7 @@ fontversion: 4.000
   - U+10EFF ARABIC SMALL LOW WORD MADDA
 
 #### Improved
+- Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
 - Redesign 
   - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH
   - Slight adjustments to:
@@ -27,10 +29,8 @@ fontversion: 4.000
 #### Removed
 - Removed support for Sindhi-style comma when Sindhi language is selected
 
-Both desktop and web fonts are provided in a single, all-platforms package on the [Download Page](https://software.sil.org/scheherazade/download/).
-
 #### Known issues
-- Shaping for these newly added characters may not yet occur in some applications
+- Shaping for these newly added characters may not yet occur in applications
 - Medial and Final high hamza characters may have collisions as these likely do not occur
 - Lam/high hamza alef ligature does not form as it likely does not occur
 

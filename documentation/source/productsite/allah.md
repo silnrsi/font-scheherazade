@@ -8,7 +8,7 @@ Starting with v3.300, Scheherazade New provides the special rendering for sequen
   * The sequence must include either a preceding isolate *alef* or a *shadda* on the second *lam*, or both.
   * If there is an isolate *alef* but no *shadda*, a *shadda-superscript-alef* will be automatically displayed.
   * The *shadda* may be followed or preceded by either a *superscript-alef* diacritic or a *fatha*.
-  * The *heh* maybe either the standard *heh* (0647) or the *heh-goal* (06C1).
+  * The *heh* may be either the standard *heh* (0647) or the *heh-goal* (06C1).
   * The *alef*, if present may have marks. Similar characters such as *alef-hamza*, *alef-hamza-below*, *alef-madda*, and *alef-wasla* will also form the ligature.
   * The first *lam* may include a *kasra*, but no other diacritics.
   * The special Unicode character U+FDF2 will always display the Allah ligature.

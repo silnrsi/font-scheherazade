@@ -6,6 +6,7 @@ fontversion: 4.000
 ### 2023-xx-xx (SIL WSTech team) Scheherazade New version 4.000
 
 #### New
+- Added Medium and SemiBold weights
 - Added Arabic-style (rounded) versions of chevron quotes
 - Added Bold calligraphic honorifics (previous ones were the same weight as Regular)
 - Added:
@@ -16,6 +17,7 @@ fontversion: 4.000
   - U+10EFF ARABIC SMALL LOW WORD MADDA
 
 #### Improved
+- Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
 - Redesign 
   - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH
   - Slight adjustments to:
@@ -26,6 +28,11 @@ fontversion: 4.000
 
 #### Removed
 - Removed support for Sindhi-style comma when Sindhi language is selected
+
+#### Known issues
+- Shaping for these newly added characters may not yet occur in applications
+- Medial and Final high hamza characters may have collisions as these likely do not occur
+- Lam/high hamza alef ligature does not form as it likely does not occur
 
 ### 2021-11-22 (SIL WSTech team) Scheherazade New Version 3.300 (official release)
 - Added U+0870..U+088E, U+0890..U+0891, U+0898..U+089F, U+08B5, U+08C8..U+08D2
