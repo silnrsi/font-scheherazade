@@ -14,27 +14,17 @@
     <header>
         <h1 class="title">Scheherazade New - Font Features</h1>
     </header>
-    <p>Scheherazade New is a TrueType font with smart font capabilities added using OpenType and Graphite font technologies. The Scheherazade New font includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerates the details of these features. Whether these features are available to users will depend on both the application and the rendering technology (<a href="http://graphite.sil.org/">Graphite</a> or OpenType) being used. Most features are available in both Graphite and OpenType, though there may be minor differences in their implementation. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner</a> creates tuned fonts that use the variant glyph in place of the standard glyph. TypeTuner also provides the ability to turn on support for the Kurdish, Kyrgyz, Rohingya, Sindhi, Urdu, and Wolof languages variants.</p>
-    <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType and Graphite font technologies.</p>
-    <p>See also <a href="http://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType and <a href="http://graphite.sil.org">Graphite</a> font technologies.</p>
+    <p>Scheherazade New is an OpenType-enabled font family that supports the Arabic script. It includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner</a> creates tuned fonts that use the variant glyph in place of the standard glyph. TypeTuner also provides the ability to turn on support for the Kurdish, Kyrgyz, Rohingya, Sindhi, Urdu, and Wolof language variants.</p>
+    <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType font technology.</p>
+    <p>See also <a href="http://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType font technology.</p>
     <p>This page uses web fonts (WOFF) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Scheherazade New as a web font see <em>ScheherazadeNew-webfont-example.html</em> in the font package web folder.</p>
     <p><em>If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.</em></p>
-    <h2 id="end-of-ayah-u06dd-disputed-end-of-ayah-u08e2-and-subtending-marks-u0600..u0605">End of Ayah (U+06DD), Disputed End of Ayah (U+08E2), and subtending marks (U+0600..U+0605)</h2>
+    <h2 id="end-of-ayah-u06dd-disputed-end-of-ayah-u08e2-and-subtending-marks-u0600..u0605-u0890..u0891">End of Ayah (U+06DD), Disputed End of Ayah (U+08E2), and subtending marks (U+0600..U+0605, U+0890..U+0891)</h2>
     <p>These Arabic characters are intended to enclose or hold one or more digits.</p>
     <p>Specific technical details of how to use them are discussed in the <a href="http://software.sil.org/arabicfonts/support/faq#Ayah">Arabic fonts FAQ -- Subtending marks</a>.</p>
     <p>Additionally, Scheherazade New includes two simplified alternates for U+06DD ARABIC END OF AYAH under the Stylistic Alternates (salt) feature, but at this time we know of no OpenType-based applications that can access these. The two alternates are also available through the Character Variants feature discussed below.</p>
     <h2 id="customizing-with-typetuner">Customizing with TypeTuner</h2>
-    <p>For applications that do not make use of Graphite features or the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
-    <h3 id="test-rendering-engine-choice">Test rendering engine choice</h3>
-    <p>Here is a simple test to see if Graphite is working in your browser. If it is, the following will say "RenderingGraphite". If your browser does not support Graphite it should say "RenderingOpentype". Firefox is currently the only browser that supports Graphite. See the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_firefox#switchon">instructions on how to enable Graphite in Firefox</a>.</p>
-    <table>
-    <tbody>
-    <tr class="odd">
-    <td>Check</td>
-    <td><span class="scheherazadenewL-R normal">RenderingUnknown</span></td>
-    </tr>
-    </tbody>
-    </table>
+    <p>For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
     <h3 id="language">Language</h3>
     <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span></p>
     <p>Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.</p>
@@ -155,7 +145,7 @@
     </tbody>
     </table>
     <h3 id="character-variants">Character variants</h3>
-    <p>There are some character shape differences in different languages which use the Arabic script. These can be accessed by using Graphite features, OpenType Character Variants, or through the language support mentioned above.</p>
+    <p>There are some character shape differences in different languages which use the Arabic script. These can be accessed by using OpenType Character Variants, or through the language support mentioned above.</p>
     <h4 id="dal">Dal</h4>
     <p><span class="affects">Affects: U+062F, U+0630, U+0688, U+0689, U+068A, U+068B, U+068C, U+068D, U+068E, U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE</span></p>
     <table>
