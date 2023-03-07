@@ -52,15 +52,12 @@ lookup Mirror {
 
 #---  ccmp feature  ---
 
-do let f = info("familyName");
-	 if f.find("Scheherazade New") != -1 or f.find("Harmattan") != -1; {
 
 lookup SmallMadda {
   lookupflag 0 ;
     sub @Maddah by @Maddah.small ;
 } SmallMadda;
 
-} # Sch or Har
 
 # For full UTR53 stacks, this decomposition will already have been done.
 # Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
@@ -385,7 +382,7 @@ lookup ComposeLowHamzaAbove {
 lookup _LigateHamzaMarks {
   lookupflag UseMarkFilteringSet @LigateHamzaMarksFilter ;
     sub hamzaabove-ar @HamzaMarks   by  @HamzaLigatures ;
-    sub @HamzaMarks   hamzaabove-ar by  @HamzaLigatures ;  # MMM missing from Har
+    sub @HamzaMarks   hamzaabove-ar by  @HamzaLigatures ;
 } _LigateHamzaMarks;
 
 @HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks shadda-ar ] ;
@@ -492,13 +489,13 @@ lookup RohingyaCALT {
     sub @cno_sixNine  by  @c_sixNine ;
     
     sub @Kasra        by  @Kasra_lowered ;
-} RohingyaCALT  ;
+} RohingyaCALT ;
 
 lookup SindhiCALT {
   lookupflag 0 ;
     sub six-persian   by  six-persian.urdu ;
     sub seven-persian by  seven-persian.urdu ;
-    sub @cno_sindhi by @c_sindhi ;
+    sub @cno_sindhi   by  @c_sindhi ;
     
     ##sub comma-ar      by  comma-ar.downward ;
     ##sub semicolon-ar  by  semicolon-ar.downward ;
@@ -707,6 +704,7 @@ lookup DammaInvertedAlternates {
 
 # DaggerAlef alternates: cv76
 
+# Scheherazade only:
 lookup _DaggerAlefAlt {
   lookupflag 0 ;
     # 0=default;            1=large;            2=small
@@ -861,7 +859,7 @@ lookup LamAlefLigatures {
 
 
 # Must be after LamAlefLigatures
-# MMM  fix Harmattan...
+
 lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
   lookupflag IgnoreMarks;
     sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
@@ -1264,7 +1262,7 @@ feature cv49 {    # Character Variant 49
         FeatUILabelNameID  { name 3 1 0x0409 "Heh Doachashmee" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Knotted-style"   ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };  # not intended for use
+        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };  # placeholder; not intended for use
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
 		} ;
 		script arab;
