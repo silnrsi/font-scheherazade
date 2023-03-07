@@ -551,6 +551,15 @@ of the license along with this Font Software. If this is not the case, go to
         alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small  _alefMadda-ar.fina.postLamIni.small
         _alefMadda-ar.fina.postLamMed.small
     </class>
+    
+    <!-- UTR53 algorithm -->
+    <class name="MaddaPlain">
+    	madda-ar  madda-ar.small
+    </class>
+    
+    <class name="MaddaInsert">
+      madda-ar.small
+    </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <!-- REMOVE - duplicates .sindhi classes
