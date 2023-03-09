@@ -132,20 +132,6 @@ lookup LatinPunctuation {
     sub @cno_latn by @c_latn ;
 } LatinPunctuation ;
 
-
-# Kasra position
-
-lookup KasraLow {
-  lookupflag 0 ;
-    sub @Kasra by @Kasra_lowered;
-} KasraLow;
-
-lookup KasraHigh {
-  lookupflag 0 ;
-    sub @Kasra_lowered by @Kasra;
-} KasraHigh;
-
-
 # HB PAUSE
 
 #---  fina feature  ---
@@ -522,6 +508,19 @@ lookup WolofCALT {
     sub @Kasra           by  @Kasra_lowered ;
 } WolofCALT ;
 
+
+# Kasra position - TypeTuner only
+# Must be located physically after language-specific CALT lookups.
+
+lookup KasraLowTT {
+  lookupflag 0 ;
+    sub @Kasra by @Kasra_lowered;
+} KasraLowTT;
+
+lookup KasraHighTT {
+  lookupflag 0 ;
+    sub @Kasra_lowered by @Kasra;
+} KasraHighTT;
 
 # HB PAUSE
 
@@ -989,21 +988,16 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup LatinPunctuation;
     script arab;
         lookup DecomposeForColor;
+        # kasra behavior has been moved to calt
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
-        # Kurdish uses raised kasra
       language RHG  ;
-#        lookup KasraLow ;
       language SND  ;
-#        lookup KasraLow ;
       language URD  ;
-#        lookup KasraLow ;
       language WLF  ;
-#        lookup KasraLow ;
 
     script latn;
-#        lookup KasraHigh;  # needed for bare diacritics (on white space) in Latin text
 } ccmp ;
 
 # feature locl (not used; see calt)
@@ -1121,7 +1115,7 @@ feature calt {  # Contextual Alternates
         lookup WolofCALT ;
         
       script latn ;
-      	lookup KasraHigh ;  # for bare diacritics (on white space) in Latin text
+      	lookup dfltCALT ;  # for bare diacritics (on white space) in Latin text
 } calt ;
 
 # feature rclt - nothing to do

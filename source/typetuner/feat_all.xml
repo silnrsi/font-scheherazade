@@ -20,21 +20,27 @@
 		</value>
 		<value name="Kurdish" tag="Kur">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KurdishCALT}"/>
 		</value>
 		<value name="Kyrgyz" tag="Kyr">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KirghizCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KyrgyzCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KyrgyzCALT}"/>
 		</value>
 		<value name="Rohingya" tag="Rhg">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {RohingyaCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {RohingyaCALT}"/>
 		</value>
 		<value name="Sindhi" tag="Snd">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiCALT}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SindhiCALT}"/>	
 		</value>
 		<value name="Urdu" tag="Urd">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduCALT}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {UrduCALT}"/>	
 		</value>
 		<value name="Wolof" tag="Wol">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {WolofCALT}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {WolofCALT}"/>	
 		</value>
 	</feature>
 	
@@ -102,7 +108,7 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Bar" tag="Bar">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KirghizOeAlternates}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KyrgyzOeAlternates}"/>
 		</value>
 	</feature>
 	
@@ -133,10 +139,12 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Lowered" tag="Low">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraLow}"/> 
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraLowTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KasraLowTT}"/> 
 		</value>
 		<value name="Raised" tag="High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHigh}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHighTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KasraHighTT}"/> 
 		</value>
 	</feature>
 
@@ -310,33 +318,35 @@
 			<cmd name="line_metrics_scaled" args="null"/>
 		</value>
 	</feature>
-
+	
+	<!--
 	<interactions>	    
 		<test select="Lng-Def Kas-Low">
-			<!-- <cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/> -->
+			- <cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_del" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
-		<test select="Lng-Kur Kas-Low"> <!-- default=high -->
-			<!-- <cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/> -->
+		<test select="Lng-Kur Kas-Low">     - default=high
+			- <cmd name="lookup_del" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_del" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
-		<test select="Lng-Rhg Kas-High"> <!-- undo lowering -->
+		<test select="Lng-Rhg Kas-High">    - undo lowering
 			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
-		<test select="Lng-Snd Kas-High"> <!-- undo lowering -->
+		<test select="Lng-Snd Kas-High">    - undo lowering
 			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
-		<test select="Lng-Urd Kas-High"> <!-- undo lowering -->
+		<test select="Lng-Urd Kas-High">    - undo lowering
 			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
-		<test select="Lng-Wol Kas-High"> <!-- undo lowering -->
+		<test select="Lng-Wol Kas-High">    - undo lowering
 			<cmd name="lookup_add" args="GSUB {ccmp_arab_dflt} {KasraHigh}"/>
 			<cmd name="lookup_add" args="GSUB {ccmp_latn_dflt} {KasraHigh}"/>
 		</test>
 	</interactions>
+-->
 
 	<cmd_blocks/>
 
