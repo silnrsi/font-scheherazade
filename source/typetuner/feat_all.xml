@@ -92,13 +92,13 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish-style" tag="Ku">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHeh}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHehTT}"/>	
 		</value>
 		<value name="Sindhi-style" tag="Sn">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiHeh}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SindhiHehTT}"/>	
 		</value>
 		<value name="Urdu-style" tag="Ur">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduHeh}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduHehTT}"/>	
 		</value>
 	</feature>
 
@@ -240,16 +240,16 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Kurdish-style" tag="Ku">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitKurdish}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitKurdishTT}"/>
 		</value>
 				<value name="Rohingya-style" tag="Ro">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitRohingya}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitRohingyaTT}"/>
 		</value>
 		<value name="Sindhi-style" tag="Sn">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitSindhi}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitSindhiTT}"/>
 		</value>
 		<value name="Urdu-style" tag="Ur">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitUrdu}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitUrduTT}"/>
 		</value>
 	</feature>
 	

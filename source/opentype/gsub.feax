@@ -583,29 +583,29 @@ lookup MeemAlternate {
 
 # Heh alternates: cv48
 
-lookup SindhiHeh {         # TypeTuner only
+lookup KurdishHehTT {        # TypeTuner only
+  lookupflag IgnoreMarks ;
+    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
+    sub heh-ar by heh-ar.knotted ;
+} KurdishHehTT;
+
+lookup SindhiHehTT {         # TypeTuner only
   lookupflag IgnoreMarks ;
     sub heh-ar.medi by heh-ar.medi.knottedHigh ;
     sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
-} SindhiHeh;
+} SindhiHehTT;
 
-lookup UrduHeh {           # TypeTuner only}
+lookup UrduHehTT {           # TypeTuner only}
   lookupflag IgnoreMarks ;
     sub heh-ar.init by heh-ar.init.hooked ;
     sub heh-ar.medi by heh-ar.medi.hooked ;
     sub heh-ar.fina by heh-ar.fina.hooked ;
-    # In case Lang=Kurdish set:
+    # In case Lang=Kurdish is set:
     sub heh-ar.knotted by heh-ar;
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked ;
-} UrduHeh;
+} UrduHehTT;
 
-lookup KurdishHeh {        # TypeTuner only
-  lookupflag IgnoreMarks ;
-  # Used only by TypeTuner
-    sub heh-ar.fina by heh-ar.fina.knottedHigh ;
-    sub heh-ar by heh-ar.knotted ;
-} KurdishHeh;
 
 # Heh alternates: cv48
 
@@ -756,36 +756,36 @@ lookup HonLigAlternates {      # cv81
 
 # TypeTuner lookups:
 
-lookup DigitSindhi {
+lookup DigitSindhiTT {
   lookupflag 0;
     sub four-persian.urdu   by four-persian;
     sub four-persian.roh    by four-persian;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitSindhi;
+} DigitSindhiTT;
 
-lookup DigitUrdu {
+lookup DigitUrduTT {
   lookupflag 0;
     sub four-persian        by four-persian.urdu;
     sub four-persian.roh    by four-persian.urdu;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitUrdu;
+} DigitUrduTT;
 
-lookup DigitKurdish {
+lookup DigitKurdishTT {
   lookupflag 0;
     sub four-persian.urdu   by four-persian;
     sub four-persian.roh    by four-persian;
     sub six-persian.urdu    by six-persian;
     sub seven-persian.urdu  by seven-persian;
-} DigitKurdish;
+} DigitKurdishTT;
 
-lookup DigitRohingya {
+lookup DigitRohingyaTT {
     sub four-persian        by four-persian.roh;
     sub four-persian.urdu   by four-persian.roh;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitRohingya;
+} DigitRohingyaTT;
 
 
 # Eastern digit alternates: cv82
