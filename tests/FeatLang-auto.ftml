@@ -4,7 +4,8 @@
   <head>
     <comment>In this test, the comment column indicates whether the feature is expected to function with the given language tag. </comment>
     <fontscale>200</fontscale>
-    <fontsrc label="flo">url(https://fonts.languagetechnology.org/fonts/sil/scheherazadenew/web/ScheherazadeNew-Regular.woff2)</fontsrc>
+    <fontsrc label="3.3">url(../references/v3.300/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv12' 1" name="cv12_1"/>
@@ -288,7 +289,7 @@
       <style feats="'cv85' 1" lang="wo" name="wo_cv85_1"/>
     </styles>
     <title>Feature-Language Interactions (auto)</title>
-    <widths string="38%"/>
+    <widths string="25%"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
