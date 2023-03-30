@@ -2537,7 +2537,7 @@ lookup HehAlternates {
 # Heh-doachashmee alternates: cv49
 lookup HehDoAlternates {
     lookupflag IgnoreMarks;
-    #   0=default                       1=knotted-style                     2=no change             3=Kurdish-style
+    #   0=default                       1=knotted                           2=no change             3=Kurdish-style
     sub hehDoachashmee-ar from [hehDoachashmee-ar hehDoachashmee-ar hehDoachashmee-ar];
     sub hehDoachashmee-ar.init from [hehDoachashmee-ar.init hehDoachashmee-ar.init hehDoachashmee-ar.init];
     sub hehDoachashmee-ar.medi from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
@@ -3891,7 +3891,7 @@ feature cv49 {
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
                 ParamUILabelNameID {
-            name "Knotted-style";
+            name "Knotted";
         };
 
                 ParamUILabelNameID {
@@ -4220,10 +4220,10 @@ feature cv85 {
     # Character Variant 85
         cvParameters {
                 FeatUILabelNameID {
-            name "Decmal separator";
+            name "Decimal separator";
         };
 
-        ### ParamUILabelNameID { name 3 1 0x0409 "Small reh"       ; };
+        ### ParamUILabelNameID { name 3 1 0x0409 "Small reh"        ; };
                 ParamUILabelNameID {
             name "Slash";
         };
