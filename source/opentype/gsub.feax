@@ -1292,7 +1292,7 @@ feature cv51 {  # Character Variant 51
 
 feature cv54 {  # Character Variant 54
     cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Yeh-Hamza"   ; };
+        FeatUILabelNameID  { name 3 1 0x0409 "Yeh Hamza"   ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Right hamza" ; };
     } ;
