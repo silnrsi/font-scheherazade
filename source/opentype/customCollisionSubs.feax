@@ -54,12 +54,14 @@ lookup _Insert2Kashidas {
   sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
 } _Insert2Kashidas;
 
+
 lookup _InsertKashidaBefore {
   sub @RnoonLikeNarrow  by  absAutoKashida  @RnoonLikeNarrow;
 } _InsertKashidaBefore;
 
 lookup _Insert2KashidasBefore {
-  sub @RnoonLikeNarrow  by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
+  sub @RnoonLikeNarrow     by  absAutoKashida  absAutoKashida  @RnoonLikeNarrow;
+  sub @Tooth3wBelowMedi    by  absAutoKashida  absAutoKashida  @Tooth3wBelowMedi;
 } _Insert2KashidasBefore;
 
 
