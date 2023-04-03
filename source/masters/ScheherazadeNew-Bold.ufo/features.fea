@@ -2654,6 +2654,20 @@ lookup HehAlternates {
 } HehAlternates;
 
 # Heh-doachashmee alternates: cv49
+lookup KurdishHehDoTT {
+    # TypeTuner only
+    lookupflag IgnoreMarks;
+    # Used only by TypeTuner
+    sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
+} KurdishHehDoTT;
+
+lookup KnottedHehDoTT {
+    # TypeTuner only
+    lookupflag IgnoreMarks;
+    sub hehDoachashmee-ar.medi by hehDoachashmee-ar.medi.knottedHigh;
+    sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
+} KnottedHehDoTT;
+
 lookup HehDoAlternates {
     lookupflag IgnoreMarks;
     #   0=default                       1=knotted                           2=no change             3=Kurdish-style
@@ -6303,203 +6317,204 @@ lookup MarkToLig {
     #             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
 } MarkToLig;
 
-# Use the dia2B AP when you have two diacritics below a lam-alef.
+# Scheherazade only: use the dia2B AP when you have two diacritics below a lam-alef.
 lookup _mark2_to_base {
     lookupflag 0;
-    # Class are not expanded recursively, so enumerate them. :-(
-    pos ligature lam_alef-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamVabove_alef-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDotabove_alef-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsabove_alef-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsbelow_alef-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamTahabove_alef-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamBar_alef-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDoublebar_alef-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lam_alef-ar.fina <anchor 1089 -220> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamVabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDotabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsbelow_alef-ar.fina <anchor 1144 -1023> mark @_diaB
-        ligComponent <anchor 419 -277> mark @_diaB;
-    pos ligature lamTahabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamBar_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDoublebar_alef-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lam_alefWasla-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamVabove_alefWasla-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDotabove_alefWasla-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWasla-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWasla-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamTahabove_alefWasla-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamBar_alefWasla-ar <anchor 1034 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDoublebar_alefWasla-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lam_alefWasla-ar.fina <anchor 1090 -220> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamVabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDotabove_alefWasla-ar.fina <anchor 1092 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWasla-ar.fina <anchor 1144 -1023> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamTahabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamBar_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDoublebar_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lam_alefWavyhamzaabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamVabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDotabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWavyhamzaabove-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamTahabove_alefWavyhamzaabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamBar_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDoublebar_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lam_alefWavyhamzaabove-ar.fina <anchor 1089 -220> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamVabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDotabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWavyhamzaabove-ar.fina <anchor 1144 -1023> mark @_diaB
-        ligComponent <anchor 339 -337> mark @_diaB;
-    pos ligature lamTahabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamBar_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDoublebar_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lam_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 451 -734> mark @_diaB;
-    pos ligature lamVabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 451 -734> mark @_diaB;
-    pos ligature lamDotabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 411 -734> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 411 -734> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWavyhamzabelow-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 231 -734> mark @_diaB;
-    pos ligature lamTahabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 421 -734> mark @_diaB;
-    pos ligature lamBar_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 411 -734> mark @_diaB;
-    pos ligature lamDoublebar_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
-        ligComponent <anchor 411 -734> mark @_diaB;
-    pos ligature lam_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 451 -734> mark @_diaB;
-    pos ligature lamVabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 451 -734> mark @_diaB;
-    pos ligature lamDotabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 421 -734> mark @_diaB;
-    pos ligature lamThreedotsabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 451 -734> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefWavyhamzabelow-ar.fina <anchor 1144 -1023> mark @_diaB
-        ligComponent <anchor 331 -764> mark @_diaB;
-    pos ligature lamTahabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 421 -734> mark @_diaB;
-    pos ligature lamBar_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 421 -734> mark @_diaB;
-    pos ligature lamDoublebar_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
-        ligComponent <anchor 431 -734> mark @_diaB;
-    pos ligature lam_alefTwoabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamVabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDotabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefTwoabove-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamTahabove_alefTwoabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamBar_alefTwoabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDoublebar_alefTwoabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lam_alefTwoabove-ar.fina <anchor 1089 -220> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamVabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDotabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefTwoabove-ar.fina <anchor 1144 -1033> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamTahabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamBar_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDoublebar_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lam_alefThreeabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamVabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDotabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefThreeabove-ar <anchor 985 -991> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamTahabove_alefThreeabove-ar <anchor 889 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamBar_alefThreeabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lamDoublebar_alefThreeabove-ar <anchor 905 -214> mark @_diaB
-        ligComponent <anchor 269 -243> mark @_diaB;
-    pos ligature lam_alefThreeabove-ar.fina <anchor 1089 -220> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamVabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDotabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamThreedotsbelow_alefThreeabove-ar.fina <anchor 1144 -1023> mark @_diaB
-        ligComponent <anchor 339 -307> mark @_diaB;
-    pos ligature lamTahabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamBar_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    pos ligature lamDoublebar_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
-        ligComponent <anchor 439 -277> mark @_diaB;
-    #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+            # Class are not expanded recursively, so enumerate them. :-(
+        pos ligature lam_alef-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamVabove_alef-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDotabove_alef-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsabove_alef-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsbelow_alef-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamTahabove_alef-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamBar_alef-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDoublebar_alef-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lam_alef-ar.fina <anchor 1089 -220> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamVabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDotabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsbelow_alef-ar.fina <anchor 1144 -1023> mark @_diaB
+            ligComponent <anchor 419 -277> mark @_diaB;
+        pos ligature lamTahabove_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamBar_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDoublebar_alef-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lam_alefWasla-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamVabove_alefWasla-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDotabove_alefWasla-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWasla-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWasla-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamTahabove_alefWasla-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamBar_alefWasla-ar <anchor 1034 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDoublebar_alefWasla-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lam_alefWasla-ar.fina <anchor 1090 -220> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamVabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDotabove_alefWasla-ar.fina <anchor 1092 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWasla-ar.fina <anchor 1144 -1023> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamTahabove_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamBar_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDoublebar_alefWasla-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lam_alefWavyhamzaabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamVabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDotabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWavyhamzaabove-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamTahabove_alefWavyhamzaabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamBar_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDoublebar_alefWavyhamzaabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lam_alefWavyhamzaabove-ar.fina <anchor 1089 -220> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamVabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDotabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWavyhamzaabove-ar.fina <anchor 1144 -1023> mark @_diaB
+            ligComponent <anchor 339 -337> mark @_diaB;
+        pos ligature lamTahabove_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamBar_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDoublebar_alefWavyhamzaabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lam_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 451 -734> mark @_diaB;
+        pos ligature lamVabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 451 -734> mark @_diaB;
+        pos ligature lamDotabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 411 -734> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 411 -734> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWavyhamzabelow-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 231 -734> mark @_diaB;
+        pos ligature lamTahabove_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 421 -734> mark @_diaB;
+        pos ligature lamBar_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 411 -734> mark @_diaB;
+        pos ligature lamDoublebar_alefWavyhamzabelow-ar <anchor 1055 -214> mark @_diaB
+            ligComponent <anchor 411 -734> mark @_diaB;
+        pos ligature lam_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 451 -734> mark @_diaB;
+        pos ligature lamVabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 451 -734> mark @_diaB;
+        pos ligature lamDotabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 421 -734> mark @_diaB;
+        pos ligature lamThreedotsabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 451 -734> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefWavyhamzabelow-ar.fina <anchor 1144 -1023> mark @_diaB
+            ligComponent <anchor 331 -764> mark @_diaB;
+        pos ligature lamTahabove_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 421 -734> mark @_diaB;
+        pos ligature lamBar_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 421 -734> mark @_diaB;
+        pos ligature lamDoublebar_alefWavyhamzabelow-ar.fina <anchor 1221 -212> mark @_diaB
+            ligComponent <anchor 431 -734> mark @_diaB;
+        pos ligature lam_alefTwoabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamVabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDotabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsabove_alefTwoabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefTwoabove-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamTahabove_alefTwoabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamBar_alefTwoabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDoublebar_alefTwoabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lam_alefTwoabove-ar.fina <anchor 1089 -220> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamVabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDotabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefTwoabove-ar.fina <anchor 1144 -1033> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamTahabove_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamBar_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDoublebar_alefTwoabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lam_alefThreeabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamVabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDotabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsabove_alefThreeabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefThreeabove-ar <anchor 985 -991> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamTahabove_alefThreeabove-ar <anchor 889 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamBar_alefThreeabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lamDoublebar_alefThreeabove-ar <anchor 905 -214> mark @_diaB
+            ligComponent <anchor 269 -243> mark @_diaB;
+        pos ligature lam_alefThreeabove-ar.fina <anchor 1089 -220> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamVabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDotabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamThreedotsbelow_alefThreeabove-ar.fina <anchor 1144 -1023> mark @_diaB
+            ligComponent <anchor 339 -307> mark @_diaB;
+        pos ligature lamTahabove_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamBar_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        pos ligature lamDoublebar_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
+            ligComponent <anchor 439 -277> mark @_diaB;
+        #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+
 } _mark2_to_base;
 
 lookup LamAlefMark2Adjust {
@@ -6867,7 +6882,7 @@ lookup KernPairs {
 #**********************************
 #  GPOS FEATURES
 #**********************************
-# As best as I understand, these are arranged in the order MS & HB engines execute.
+# As best as we understand, these are arranged in the order MS & HB engines execute.
 # Would love to be able to do subtending marks as either cursive connection or mark attachment
 # Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
 # same as the subtending mark and unrelated to the widths of the digits.

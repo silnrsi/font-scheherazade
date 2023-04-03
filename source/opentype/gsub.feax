@@ -619,6 +619,18 @@ lookup HehAlternates {
 
 # Heh-doachashmee alternates: cv49
 
+lookup KurdishHehDoTT {        # TypeTuner only
+  lookupflag IgnoreMarks ;
+  # Used only by TypeTuner
+    sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh ;
+} KurdishHehDoTT;
+
+lookup KnottedHehDoTT {         # TypeTuner only
+  lookupflag IgnoreMarks ;
+    sub hehDoachashmee-ar.medi by hehDoachashmee-ar.medi.knottedHigh ;
+    sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh ;
+} KnottedHehDoTT;
+
 lookup HehDoAlternates {
   lookupflag IgnoreMarks ;
     #   0=default                       1=knotted                           2=no change             3=Kurdish-style
@@ -990,7 +1002,7 @@ feature ccmp {  # Glyph Composition/Decomposition
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
-        # Kurdish uses raised kasra
+      # Kurdish uses raised kasra
       language RHG  ;
       language SND  ;
       language URD  ;

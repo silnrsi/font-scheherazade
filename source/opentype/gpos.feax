@@ -57,9 +57,11 @@ lookup MarkToLig {
 } MarkToLig;
 
 
-# Use the dia2B AP when you have two diacritics below a lam-alef.
+# Scheherazade only: use the dia2B AP when you have two diacritics below a lam-alef.
+
 lookup _mark2_to_base {
   lookupflag 0;
+  ifinfo(familyName, "Scheherazade New") {
     # Class are not expanded recursively, so enumerate them. :-(
     pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
@@ -68,6 +70,7 @@ lookup _mark2_to_base {
     pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+  }
 } _mark2_to_base;
 
 lookup LamAlefMark2Adjust {
@@ -248,7 +251,7 @@ lookup KernPairs {
 #  GPOS FEATURES
 #**********************************
 
-# As best as I understand, these are arranged in the order MS & HB engines execute.
+# As best as we understand, these are arranged in the order MS & HB engines execute.
 
 
 # Would love to be able to do subtending marks as either cursive connection or mark attachment
@@ -258,15 +261,16 @@ lookup KernPairs {
 # marks or digits (the digits get reverse ordered by the attachment process).
 # So we're back to using kerning
 
+
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
         lookup KernPairs;       # Lateef
 
-	# Scheherazade lookups:
-	do let f = info("familyName");
-	   if f.find("Scheherazade") != -1 and opt("nokern") != "yes"; {
-        # start of kerning positioning
+# Scheherazade lookups:
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
+   # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup LamAlefKerning;
