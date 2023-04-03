@@ -15,19 +15,15 @@
 # GPOS (Positioning) lookups
 #**********************************
 
+
+#********************
+# Collision-avoidance-based kerning
+
 include(../../source/opentype/customKerning.feax); 
 
-#---  curs feature  ---
-
-# MMM missing from Lateef; 
-# obsolete because this only affects lam-alef pieces which are no longer used.
-###lookup CursiveExitEntry {
-###  lookupflag IgnoreMarks RightToLeft;
-###    pos cursive @entry @exit;
-###} CursiveExitEntry;
-
-
-#---  mark feature  ---
+	
+#********************
+# Mark attachment
 
 lookup MarkToBase {
   lookupflag 0;
@@ -56,6 +52,8 @@ lookup MarkToLig {
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
     pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+#   pos ligature lam_alefHamzabelow-ar  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+#             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
 } MarkToLig;
 
 
@@ -69,6 +67,7 @@ lookup _mark2_to_base {
     pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+#   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 } _mark2_to_base;
 
 lookup LamAlefMark2Adjust {
@@ -79,7 +78,8 @@ lookup LamAlefMark2Adjust {
 } LamAlefMark2Adjust;
 
 
-#---  mkmk feature  ---
+#********************
+# Mark-to-mark attachment
 
 @MarkFilter_diaA = [@diaA_MarkBase @_diaA];
 lookup MarkToMarkAbove {
@@ -93,6 +93,35 @@ lookup MarkToMarkBelow {
     pos mark @diaB_MarkBase mark @_diaB;
 } MarkToMarkBelow;
 
+
+#********************
+# Mark adjustments after attachment
+# OSBSOLETE - Harmattan and Lateef
+
+#do let f = info("familyName");
+#   if f.find("Harmattan") != -1; {}
+
+# TODO: Determine whether needed and, if so, correct implemetation
+#
+#lookup Mark2ToBase {
+#  lookupflag 0;
+#  pos base @dia2B mark @_diaB;
+#} Mark2ToBase;
+#
+# move MarksBelow slightly left on lam-alef when appropriate:
+# lookup AlefMark2BelowAfterLam {
+#   lookupflag UseMarkFilteringSet @MarksBelow ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     #pos @MarksBelow @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     #pos lamThreedotsbelow-ar.init.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     # Unneeded in Harmattan design:
+#     #pos lamThreedotsbelow-ar.medi.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+# } AlefMark2BelowAfterLam;
+
+#}    # end do - Harmattan
 
 # Lateef only; others have an empty lookup
 
@@ -109,7 +138,8 @@ lookup RaiseMadda {
 
 #---  kern feature (cont'd)  ---
 
-#********
+
+#********************
 # Subtending mark positioning
 
 lookup SubtendingMarks {
@@ -218,6 +248,16 @@ lookup KernPairs {
 #  GPOS FEATURES
 #**********************************
 
+# As best as I understand, these are arranged in the order MS & HB engines execute.
+
+
+# Would love to be able to do subtending marks as either cursive connection or mark attachment
+# Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
+# same as the subtending mark and unrelated to the widths of the digits.
+# In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
+# marks or digits (the digits get reverse ordered by the attachment process).
+# So we're back to using kerning
+
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
         lookup SubtendingMarks;
@@ -252,30 +292,16 @@ feature kern {  # Kerning
 	   if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {	# enable kerning for now
     script arab;  # Arabic
         lookup mainkern;
-      # Force other languages to include Arabic script lookups
+      # Force other languages to include Arabic script lookups:
+      language KIR  ;
       language KUR  ;
       language RHG  ;
       language SND  ;
       language URD  ;
       language WLF  ;
-	}
+}
 
 } kern ;
-
-
-# obsolete
-###feature curs {  # Cursive Positioning
-###    script arab;
-###      lookup CursiveExitEntry; -- obsolete
-###      # Force other languages to include Arabic script lookups
-###      language KIR ;
-###      language KUR ;
-###      language RHG ;
-###      language SND ;
-###      language URD ;
-###      language WLF ;
-###} curs ;
-
 
 feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
@@ -283,8 +309,9 @@ feature mark {  # Mark to base Positioning
         lookup AlefToBase;
         lookup RaiseMadda;    # Lateef
     script arab;
-        lookup MarkToLig;
-        lookup LamAlefMark2Adjust;
+      	lookup MarkToLig;
+      	lookup LamAlefMark2Adjust;  # empty except in Sch
+#        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;

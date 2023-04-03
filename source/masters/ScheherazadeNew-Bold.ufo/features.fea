@@ -2644,7 +2644,6 @@ lookup UrduHehTT {
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked;
 } UrduHehTT;
 
-# Heh alternates: cv48
 lookup HehAlternates {
     lookupflag IgnoreMarks;
     #   0=default             1=Sindhi-style           2=Urdu-style        3=Kurdish-style
@@ -3676,6 +3675,7 @@ lookup SignWithDigits {
         sub rnoon-ar.medi by absAutoKashida absAutoKashida rnoon-ar.medi;
         sub rreh-ar.fina by absAutoKashida absAutoKashida rreh-ar.fina;
         sub highhamzaYeh-ar.medi by absAutoKashida absAutoKashida highhamzaYeh-ar.medi;
+        sub behThreedotshorizontalbelow-ar.medi by absAutoKashida absAutoKashida @Tooth3wBelowMedi;
     } _Insert2KashidasBefore;
 
     lookup ToothKashidasIM {
@@ -3761,6 +3761,7 @@ feature ccmp {
     # Force other languages to include Arabic script lookups
     language KIR;
     language KUR;
+    # Kurdish uses raised kasra
     language RHG;
     language SND;
     language URD;
@@ -4408,6 +4409,8 @@ feature liga {
 #**********************************
 # GPOS (Positioning) lookups
 #**********************************
+#********************
+# Collision-avoidance-based kerning
 #**********************************
 # This file is part of Scheherazade font family (http://software.sil.org/scheherazade/) 
 # and is Copyright (c) 1994-2023 SIL International (http://www.sil.org/),
@@ -4430,7 +4433,10 @@ feature liga {
     #ignore pos @RehWawAll'  @RehWawAll;
     # does not ignore diacritics
     # Tighten to following gaf-like
+    # or SemiBold
+    # eg 06C7 06A9
     # special case
+    # eg 0648 06A9
     # Loosen from following alef/lam when it has something below it
     # Loosen from following narrow initials with something below:
     # Loosen from following narrow initials with dots below:
@@ -4438,6 +4444,8 @@ feature liga {
     # Kirghiz-OE (waw-loop) has a different shape:
     # Otherwise tighten against most things:
     #@RehKernOther + @RehKernOtherMB
+    # and SemiBold
+    # eg 0644 0627 0645/0631
     # beh + reh-stroke
     # does not ignore diacritics
     # alef-maddah + gaf
@@ -4454,6 +4462,7 @@ feature liga {
     # (In Graphite we do this by splitting the kerning between the kashida and the following glyph.)
     # Using separate lookups for initial-medial and medial-medial allows us to handle a chain of these.
     # doesn't need kerning
+    # eg 0750 0750 0628
     # REGULAR ONLY
     # BOLD
     # BOLD
@@ -4463,18 +4472,13 @@ feature liga {
     # no kashida
     # kaf + teh
     # no kashida
+    # eg 0628 0750 0750 0628
     # REGULAR ONLY
     # BOLD    
     #pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
     # end of do - collision kerning
-    #---  curs feature  ---
-    # MMM missing from Lateef; 
-    # obsolete because this only affects lam-alef pieces which are no longer used.
-    ###lookup CursiveExitEntry {
-    ###  lookupflag IgnoreMarks RightToLeft;
-    ###    pos cursive @entry @exit;
-    ###} CursiveExitEntry;
-    #---  mark feature  ---
+    #********************
+    # Mark attachment
     @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
     @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
     @RehKernMost = [@RehKernOther @RehKernOtherMB];
@@ -6295,6 +6299,8 @@ lookup MarkToLig {
         ligComponent <anchor -36 1714> mark @_diaA <anchor 528 -220> mark @_diaB;
     pos ligature lamDoublebar_alefThreeabove-ar.fina <anchor 1088 1585> mark @_diaA <anchor 1091 -212> mark @_diaB
         ligComponent <anchor -36 1714> mark @_diaA <anchor 528 -220> mark @_diaB;
+    #   pos ligature lam_alefHamzabelow-ar  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+    #             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
 } MarkToLig;
 
 # Use the dia2B AP when you have two diacritics below a lam-alef.
@@ -6493,6 +6499,7 @@ lookup _mark2_to_base {
         ligComponent <anchor 439 -277> mark @_diaB;
     pos ligature lamDoublebar_alefThreeabove-ar.fina <anchor 1091 -212> mark @_diaB
         ligComponent <anchor 439 -277> mark @_diaB;
+    #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 } _mark2_to_base;
 
 lookup LamAlefMark2Adjust {
@@ -6501,7 +6508,8 @@ lookup LamAlefMark2Adjust {
 
 } LamAlefMark2Adjust;
 
-#---  mkmk feature  ---
+#********************
+# Mark-to-mark attachment
 @MarkFilter_diaA = [@diaA_MarkBase @_diaA];
 lookup MarkToMarkAbove {
     lookupflag UseMarkFilteringSet @MarkFilter_diaA;
@@ -6636,6 +6644,31 @@ lookup MarkToMarkBelow {
     pos mark wawbelow-ar <anchor 10 -1016> mark @_diaB;
 } MarkToMarkBelow;
 
+#********************
+# Mark adjustments after attachment
+# OSBSOLETE - Harmattan and Lateef
+#do let f = info("familyName");
+#   if f.find("Harmattan") != -1; {}
+# TODO: Determine whether needed and, if so, correct implemetation
+#
+#lookup Mark2ToBase {
+#  lookupflag 0;
+#  pos base @dia2B mark @_diaB;
+#} Mark2ToBase;
+#
+# move MarksBelow slightly left on lam-alef when appropriate:
+# lookup AlefMark2BelowAfterLam {
+#   lookupflag UseMarkFilteringSet @MarksBelow ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     #pos @MarksBelow @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     #pos lamThreedotsbelow-ar.init.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     # Unneeded in Harmattan design:
+#     #pos lamThreedotsbelow-ar.medi.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+# } AlefMark2BelowAfterLam;
+#}    # end do - Harmattan
 # Lateef only; others have an empty lookup
 # Increase vertical separation between maddah and fatha for sequences like:
 # alefMaddah + lam-initial + fatha (for all initial lam-like glyphs that have 
@@ -6646,7 +6679,7 @@ lookup RaiseMadda {
 } RaiseMadda;
 
 #---  kern feature (cont'd)  ---
-#********
+#********************
 # Subtending mark positioning
 lookup SubtendingMarks {
     lookupflag IgnoreMarks;
@@ -6834,6 +6867,13 @@ lookup KernPairs {
 #**********************************
 #  GPOS FEATURES
 #**********************************
+# As best as I understand, these are arranged in the order MS & HB engines execute.
+# Would love to be able to do subtending marks as either cursive connection or mark attachment
+# Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
+# same as the subtending mark and unrelated to the widths of the digits.
+# In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
+# marks or digits (the digits get reverse ordered by the attachment process).
+# So we're back to using kerning
 feature kern {
     # Kerning
     # Same behavior for latin & arabic:
@@ -6865,21 +6905,9 @@ feature kern {
 
     # enable kerning for now
     # Arabic
-    # Force other languages to include Arabic script lookups
+    # Force other languages to include Arabic script lookups:
 } kern;
 
-# obsolete
-###feature curs {  # Cursive Positioning
-###    script arab;
-###      lookup CursiveExitEntry; -- obsolete
-###      # Force other languages to include Arabic script lookups
-###      language KIR ;
-###      language KUR ;
-###      language RHG ;
-###      language SND ;
-###      language URD ;
-###      language WLF ;
-###} curs ;
 feature mark {
     # Mark to base Positioning
     # Same for latin & arabic:
@@ -6890,6 +6918,8 @@ feature mark {
     script arab;
     lookup MarkToLig;
     lookup LamAlefMark2Adjust;
+    # empty except in Sch
+    #        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
     # Force other languages to include Arabic script lookups
     language KIR;
     language KUR;
