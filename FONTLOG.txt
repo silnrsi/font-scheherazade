@@ -31,10 +31,10 @@ Four weights for this typeface family are included:
      * Scheherazade New SemiBold
      * Scheherazade New Bold
 
-This release supports virtually all of the Unicode 13.0 Arabic character 
+This release supports virtually all of the Unicode 15.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). Font smarts are implemented using OpenType 
-and Graphite technologies.
+recommended for normal use). Font smarts are implemented using the OpenType 
+smart font technology.
 
 For detailed documentation see the contents of the 'documentation' folder.
 
@@ -89,6 +89,7 @@ ChangeLog
 
 #### Removed
 - Removed support for Sindhi-style comma when Sindhi language is selected
+- Removed Graphite support
 
 #### Known issues
 - Shaping for these newly added characters may not yet occur in applications
@@ -286,7 +287,6 @@ ChangeLog
 ### 2005-06-03 (SIL NRSI team) Scheherazade Version 1.0
 - First public version
 - Released under the SIL Freeware License
-
 
 Information for Contributors
 ----------------------------
