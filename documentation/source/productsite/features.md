@@ -92,7 +92,7 @@ Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x0
 Knotted | <span dir="rtl" class='scheherazadenew-cv49-1-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=1`
 Kurdish-style | <span dir="rtl" class='scheherazadenew-cv49-3-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=3`
 
-#### Kirghiz OE 
+#### Kyrgyz OE 
 
 <span class='affects'>Affects: U+06C5</span>
 
@@ -221,10 +221,10 @@ Simplified | <span dir="rtl" class='scheherazadenew-cv81-1-R normal'>&#xFD40;&#x
 Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F4;&#x06F6;&#x06F7;</span> | `cv82=0`
+Kurdish-style | <span dir="rtl" class='scheherazadenew-cv82-3-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=3`
+Rohingya-style | <span dir="rtl" class='scheherazadenew-cv82-4-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
 Sindhi-style | <span dir="rtl" class='scheherazadenew-cv82-1-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=1`
 Urdu-style | <span dir="rtl" class='scheherazadenew-cv82-2-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=2`
-Rohingya-style | <span dir="rtl" class='scheherazadenew-cv82-4-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
-
 
 #### Comma 
 
@@ -286,8 +286,9 @@ Loose |
 [font id='scheherazadenew-cv80-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv80 1']
 [font id='scheherazadenew-cv80-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv80 2']
 [font id='scheherazadenew-cv81-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv81 1']
+[font id='scheherazadenew-cv82-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 3']
+[font id='scheherazadenew-cv82-4' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 4']
 [font id='scheherazadenew-cv82-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 1']
 [font id='scheherazadenew-cv82-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 2']
-[font id='scheherazadenew-cv82-4' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 4']
 [font id='scheherazadenew-cv84-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv84 1']
 [font id='scheherazadenew-cv85-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv85 1']
