@@ -2533,7 +2533,6 @@ lookup HehAlternates {
 lookup KurdishHehDoTT {
     # TypeTuner only
     lookupflag IgnoreMarks;
-    # Used only by TypeTuner
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
 } KurdishHehDoTT;
 
@@ -2613,14 +2612,14 @@ lookup DammatanAlternate {
 # Inverted Damma alternates: cv74
 lookup DammaInvertedAlternates {
     lookupflag 0;
-    #   0=default (filled);         1=hollow;            2=filled
+    #   0=default;                  1=hollow;            2=filled
     sub dammainverted-ar from [dammainverted-ar.open dammainverted-ar];
     sub dammainverted-ar.open from [dammainverted-ar.open dammainverted-ar];
 } DammaInvertedAlternates;
 
 # DaggerAlef alternates: cv76
-# Scheherazade only:
 lookup _DaggerAlefAlt {
+    # Scheherazade only
     lookupflag 0;
     # 0=default;            1=large;            2=small
     sub alefabove-ar from [alefabove-ar.large alefabove-ar];
