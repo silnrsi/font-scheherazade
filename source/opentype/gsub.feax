@@ -704,7 +704,7 @@ lookup DammatanAlternate {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
-    #   0=default (filled);         1=hollow;            2=filled
+    #   0=default;                  1=hollow;            2=filled
     sub @DammaInverted      from  [ @DammaInverted_open  @DammaInverted ];
     sub @DammaInverted_open from  [ @DammaInverted_open  @DammaInverted ];
 } DammaInvertedAlternates;
@@ -712,8 +712,7 @@ lookup DammaInvertedAlternates {
 
 # DaggerAlef alternates: cv76
 
-# Scheherazade only:
-lookup _DaggerAlefAlt {
+lookup _DaggerAlefAlt {  # Scheherazade only
   lookupflag 0 ;
     # 0=default;            1=large;            2=small
     sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
