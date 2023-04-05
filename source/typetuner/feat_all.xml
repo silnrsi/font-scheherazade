@@ -101,6 +101,19 @@
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {UrduHehTT}"/>	
 		</value>
 	</feature>
+	
+  <!-- cv49 -->
+	<feature name="Heh Doachashmee" value="Standard" tag="HehDo">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Kurdish-style" tag="Ku">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishHehDoTT}"/>	
+		</value>
+		<value name="Knotted-style" tag="Knot">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KnottedHehDoTT}"/>	
+		</value>
+	</feature>
 
   <!-- cv51 -->
 	<feature name="Kyrgyz OE" value= "Loop" tag="Koe">

@@ -621,7 +621,6 @@ lookup HehAlternates {
 
 lookup KurdishHehDoTT {        # TypeTuner only
   lookupflag IgnoreMarks ;
-  # Used only by TypeTuner
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh ;
 } KurdishHehDoTT;
 
