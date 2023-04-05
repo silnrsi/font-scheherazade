@@ -16,7 +16,7 @@ Type samples showing some of the inventory of glyphs can be found here:
 
 Examples of some text is shown below. 
 
-<img class='fullsize' alt='Scheherazade New Sample - Four weights' src='https://software.sil.org/scheherazade/wp-content/uploads/sites/29/2023/03/weights.png' />
+<img class='fullsize' alt='Scheherazade New Sample - Four weights' src='https://software.sil.org/scheherazade/wp-content/uploads/sites/29/2023/04/weights.png' />
 [caption]<em>Scheherazade New Sample - Four weights</em>[/caption]
  
 

@@ -15,7 +15,7 @@
 #### Improved
 - Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
 - Redesign 
-  - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH
+  - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH (see https://www.unicode.org/versions/Unicode15.0.0/erratafixed.html)
   - Slight adjustments to:
     - gaf-like characters (such as U+06AF ARABIC LETTER GAF)
     - U+0601 ARABIC SIGN SANAH

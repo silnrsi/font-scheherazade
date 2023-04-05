@@ -89,7 +89,7 @@ Urdu-style | <span dir="rtl" class='scheherazadenew-cv48-2-R normal'> ه ههه 
 Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=0`
-Knotted-style | <span dir="rtl" class='scheherazadenew-cv49-1-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=1`
+Knotted | <span dir="rtl" class='scheherazadenew-cv49-1-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=1`
 Kurdish-style | <span dir="rtl" class='scheherazadenew-cv49-3-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=3`
 
 #### Kirghiz OE 
