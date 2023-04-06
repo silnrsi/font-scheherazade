@@ -4,9 +4,10 @@
   <head>
     <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
-    <fontsrc label="3.3">url(../references/v3.300/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Med">url(../results/ScheherazadeNew-Medium.ttf)</fontsrc>
+    <fontsrc label="SeBld">url(../results/ScheherazadeNew-SemiBold.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
     <styles>
       <style feats="'cv12' 1" name="cv12_1"/>
@@ -22,7 +23,7 @@
       <style feats="'cv60' 1" name="cv60_1"/>
     </styles>
     <title>Kerning (auto)</title>
-    <widths string="19%"/>
+    <widths string="15%"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
