@@ -147,7 +147,6 @@
 
 	<!-- cv62 -->
 	<feature name="Shadda+kasra placement" value="Default" tag="Kas">
-		<!-- see also the interactions section -->
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
@@ -388,5 +387,5 @@
 		<old_value feature="Downward comma" name="False" tag="Up"/>
 		<old_value feature="Downward comma" name="True"  tag="Dn"/>
 	</old_names>
-
+	
 </all_features>

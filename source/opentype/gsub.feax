@@ -483,8 +483,9 @@ lookup SindhiCALT {
     sub seven-persian by  seven-persian.urdu ;
     sub @cno_sindhi   by  @c_sindhi ;
     
-    ##sub comma-ar      by  comma-ar.downward ;
-    ##sub semicolon-ar  by  semicolon-ar.downward ;
+    # Obsolete: special chars should be used instead:
+    #sub comma-ar      by  comma-ar.downward ;
+    #sub semicolon-ar  by  semicolon-ar.downward ;
 
     sub @Kasra        by  @Kasra_lowered;
 } SindhiCALT ;
