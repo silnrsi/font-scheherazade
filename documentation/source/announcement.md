@@ -18,7 +18,7 @@ fontversion: 4.000
 
 #### Improved
 - Changed Kurdish language to support a U+06BE Heh Doachashmee alternate rather than U+0647 Heh alternate
-- Redesign 
+- Redesigned
   - U+0616 ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH (see https://www.unicode.org/versions/Unicode15.0.0/erratafixed.html)
   - Slight adjustments to:
     - gaf-like characters (such as U+06AF ARABIC LETTER GAF)
@@ -28,10 +28,11 @@ fontversion: 4.000
 
 #### Removed
 - Removed support for Sindhi-style comma when Sindhi language is selected
+- Removed Graphite support
 
 #### Known issues
-- Shaping for these newly added characters may not yet occur in applications
-- Medial and Final high hamza characters may have collisions as these likely do not occur
-- Lam/high hamza alef ligature does not form as it likely does not occur
+- Shaping for the newly added characters may not yet occur in applications
+- Medial and final high hamza characters may have collisions (these likely do not occur)
+- Lam + high hamza alef ligature does not form as it likely does not occur
 
 
