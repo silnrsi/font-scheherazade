@@ -19,13 +19,13 @@ fi
 for f in absgenftml.py absgenclasses.py
 do
 	# Update only those scripts that are already in the project:
-	[ -e "tools/bin/$f" ] || continue
-	if cmp -s "tools/bin/$f" "../font-arab-tools/bin/$f" ; then
+	[ -e "tools/$f" ] || continue
+	if cmp -s "tools/$f" "../font-arab-tools/bin/$f" ; then
 		echo "$f is up-to-date"
 	else
 		echo "Updating $f"
-		cp "../font-arab-tools/bin/$f" tools/bin/
-		chmod u+x "tools/bin/$f"
+		cp "../font-arab-tools/bin/$f" tools/
+		chmod u+x "tools/$f"
 	fi
 done
 echo done.

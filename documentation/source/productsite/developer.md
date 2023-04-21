@@ -55,7 +55,7 @@ After adding characters or additional behaviors to the font, test files should b
 - `tests/SubtendingMarks-auto.ftml`
 - `tests/Yehbarree-auto.ftml`
 
-are generated automatically using `tools/bin/genftmlfiles.sh`.
+are generated automatically using `tools/genftmlfiles.sh`.
 
 `tools/ftml.xsl` can be used to view ftml documents directly in Firefox (which supports both Graphite and OpenType rendering).
 
