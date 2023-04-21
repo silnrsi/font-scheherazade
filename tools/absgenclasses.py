@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 __doc__ = '''generate linking classes for abs projects from glyph_data.csv'''
 __url__ = 'http://github.com/silnrsi/pysilfont'
 __copyright__ = 'Copyright (c) 2018-2022 SIL International  (http://www.sil.org)'

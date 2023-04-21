@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 __doc__ = '''generate ftml tests from glyph_data.csv and UFO'''
 __url__ = 'http://github.com/silnrsi/pysilfont'
 __copyright__ = 'Copyright (c) 2018-2023 SIL International  (http://www.sil.org)'
@@ -851,6 +851,7 @@ def doit(args):
             ('cv82', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7, 0x0020, 0x06DD, 0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
             ('cv84', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x060C, 0x061B), 'Comma alternates'),
             ('cv85', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x066B,), 'Decimal separator'),
+            ('pnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, tuple(ord(d) for d in '11111 77777'), 'Proportional digits'),
             ('tnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7), 'Tabular digits'),
         ))
 
