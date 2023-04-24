@@ -44,13 +44,13 @@
 *.xml text eol=lf
 
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
-octalap text eol=lf
+makedocs text eol=lf
 preflight text eol=lf
 preflightg text eol=lf
 preflightff text eol=lf
 preglyphs text eol=lf
 wscript text eol=lf
-makedocs* text eol=lf
+
 *.sh text eol=lf
 *.sfd text eol=lf
 
