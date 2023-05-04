@@ -2,7 +2,7 @@
 
 # updates tools from ../font-arab-tools/bin
 
-# Copyright (c) 2022 SIL International  (http://www.sil.org)
+# Copyright (c) 2022 SIL International  (https://www.sil.org)
 # Released under the MIT License (http://opensource.org/licenses/
 
 # Requires that we're in the project's root folder, i.e., font-scheherazade

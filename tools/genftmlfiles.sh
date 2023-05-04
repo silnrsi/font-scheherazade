@@ -2,7 +2,7 @@
 
 # This script rebuilds the algorithmically-generated ftml files. See README.md
 
-# Copyright (c) 2020-2022 SIL International  (http://www.sil.org)
+# Copyright (c) 2020-2022 SIL International  (https://www.sil.org)
 # Released under the MIT License (http://opensource.org/licenses/
 
 # Assumes we're in the root folder, i.e., font-scheherazade

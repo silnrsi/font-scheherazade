@@ -1,4 +1,4 @@
-# Scheherazade New [![Build Status](http://build.palaso.org/app/rest/builds/buildType:Fonts_ScheherazadeNew/statusIcon)](http://build.palaso.org/viewType.html?buildTypeId=Fonts_ScheherazadeNew&guest=1)
+# Scheherazade New [![Build Status](https://build.palaso.org/app/rest/builds/buildType:Fonts_ScheherazadeNew/statusIcon)](https://build.palaso.org/viewType.html?buildTypeId=Fonts_ScheherazadeNew&guest=1)
 
 Scheherazade New is a smart open font designed by SIL International. It is designed as a general-purpose Arabic style and is intended to support most of the characters in the Unicode 14.0 Arabic blocks (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).
 
