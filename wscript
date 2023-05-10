@@ -46,14 +46,6 @@ designspace('source/ScheherazadeNew.designspace',
     target = process('${DS:FILENAME_BASE}.ttf', *cmds),
     ap = genout + '${DS:FILENAME_BASE}.xml',
     version=VERSION,  # Needed to ensure dev information on version string
-
-#    graphite=gdl(genout + '${DS:FILENAME_BASE}.gdl',
-#        depends=['source/graphite/master.gdl', 'source/graphite/cp1252.gdl', 'source/graphite/SchFeatures.gdh', 'source/graphite/SchGlyphs.gdh', 'source/graphite/stddef.gdh'],
-#        master = 'source/graphite/master_${DS:STYLENAME}' + noGRkern + '.gdl',
-#        make_params = omitaps + ' --cursive "exit=entry,rtl" --cursive "_digit=digit"',
-#        params = '-d -q -e ${DS:FILENAME_BASE}_gdlerr.txt',
-#        ),
-
     opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
         mapfile = genout + "${DS:FILENAME_BASE}.map",
         master = 'source/opentype/main.feax',
