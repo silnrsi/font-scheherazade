@@ -25,7 +25,8 @@ omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_
 # smith project-specific options:
 #   --autohint - autohint the font
 #   --norename - omit glyph rename step
-opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'})
+#   --regOnly  - build just the Regular weight
+opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'}, {'opt': '--regOnly'})
 
 cmds = [cmd('ttx -m ${DEP} -o ${TGT} ${SRC}', ['source/jstf.ttx']) ]
 if '--norename' not in opts:
@@ -43,6 +44,7 @@ noGRkern = '_nokern' if '--quick' in opts else ''
 # iterate over designspace
 designspace('source/ScheherazadeNew.designspace',
     instanceparams='-l ' + genout + '${DS:FILENAME_BASE}_createintance.log',
+    instances = ['Scheherazade New Regular'] if '--regOnly' in opts else None,
     target = process('${DS:FILENAME_BASE}.ttf', *cmds),
     ap = genout + '${DS:FILENAME_BASE}.xml',
     version=VERSION,  # Needed to ensure dev information on version string
