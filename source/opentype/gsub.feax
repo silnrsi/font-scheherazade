@@ -302,61 +302,14 @@ lookup AllahLigatures {
 
 @HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb ] ;
 
-
-# Warsh ligatures - Harmattan
-
-# Ligate alef + hamza (above or below)
-
-lookup LigaturesForWarsh2 {
-  lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
-	ifinfo(familyName, "Harmattan") {
-    sub alef-ar hamzaabove-ar by alefHamzaabove-ar ;
-    sub alef-ar.fina hamzaabove-ar by alefHamzaabove-ar.fina ;
-	}
-} LigaturesForWarsh2;
-
-# Include in this filter hamzaBelow plus any mark glyphs that should stop any ligation.
-# Mark glyphs not included will be skipped over when trying to find a hamzaBelow
-@HamzaBelowFilter = [@UTR53_220MCM @UTR53_220other graphemejoinercomb ] ;
-lookup LigaturesForWarsh3 {
-  lookupflag UseMarkFilteringSet @HamzaBelowFilter ;
-	ifinfo(familyName, "Harmattan") {
-    sub alef-ar      hamzabelow-ar  by  alefHamzabelow-ar ;
-    sub alef-ar.fina hamzabelow-ar  by  alefHamzabelow-ar.fina ;
-	}
-} LigaturesForWarsh3;
-
-# Ligate alef + kasra or fatha
-
-# Assumptions for ligating alef-kasra or alef-fatha:
-#   We won't have a mix of diac above and diac below (else we should split this lookup) 
-#   Any UTR53-permitted ligation with hamza will have been done (above) and we no longer have a simple alef
-#   There may yet be a hamza in the mark sequence but by UTR53 rules it can be assumed to be
-#       beyond a non-MCM so, for non-UTR53 stacks we may look beyond such hamzas for a 
-#       kasra or fatha that, for UTR53, would have been before the hamza.
-
-# Include in this filter kasra and fatha plus any mark glyphs that should stop any ligation:
-# shadda, any MCM other than hamza, cgj.
-#@KasraFathaFilter = [ kasra-ar kasra-ar.lowered fatha-ar shadda-ar seenbelow-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar graphemejoinercomb] ;
-#lookup LigaturesForWarsh4 {
-#  lookupflag UseMarkFilteringSet @KasraFathaFilter ;
-#  ifinfo(familyName, "Harmattan") {
-#    sub alef-ar kasra-ar          by  alef_kasra-ar ;
-#    sub alef-ar kasra-ar.lowered  by  alef_kasra-ar ;
-#    sub alef-ar fatha-ar          by  alef_fatha-ar ;
-#  }
-#} LigaturesForWarsh4;
-
-
 #********
 # Ligatures of marks
 
 # NB: This includes required ligatures other than the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
 
-# Similar to LigaturesForWarsh, these compositions have to strike a balance between
-# trying to do something useful for DirectWrite (which doesn't reorder glyphs) without
-# violating the rules of UTR53.
+# These compositions have to strike a balance between trying to do something useful for 
+# DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
 
 lookup ComposeLowHamzaAbove {
   lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
@@ -532,20 +485,6 @@ lookup KasraHighTT {
 
 do let f = info("familyName");
    if f.find("Harmattan") != -1; {
-
-### REMOVE CV02
-#lookup WarshAlternates {
-#  lookupflag IgnoreMarks ;
-#    # Hamza touching is for cv02=1 or cv02=2 :
-#    sub alefHamzaabove-ar from [ alefHamzaabove-ar.warsh alefHamzaabove-ar.warsh ] ;
-#    sub alefHamzaabove-ar.fina from [ alefHamzaabove-ar.fina.warsh alefHamzaabove-ar.fina.warsh ] ;
-#    sub alefHamzabelow-ar from [ alefHamzabelow-ar.warsh alefHamzabelow-ar.warsh ] ;
-#    sub alefHamzabelow-ar.fina from [ alefHamzabelow-ar.fina.warsh alefHamzabelow-ar.fina.warsh ] ;
-#    # fatha and kasra touching isolate alef happens with cv02=2 :
-#    sub alef_fatha-ar from [ alef_fatha-ar alef_fatha-ar.warsh ] ;
-#    sub alef_kasra-ar from [ alef_kasra-ar alef_kasra-ar.warsh ] ;
-#} WarshAlternates;
-
 
 # Jeem/Hah medial alternate: cv08
 
@@ -1020,7 +959,6 @@ feature ccmp {  # Glyph Composition/Decomposition
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KUR ;
-      # Kurdish uses raised kasra
       language RHG  ;
       language SND  ;
       language URD  ;
@@ -1076,17 +1014,9 @@ feature init {  # Initial Forms
 # HB PAUSE
 
 feature rlig {  # Required Ligatures
-    # lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
     script arab;
         lookup AllahLigatures;
         #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
-        
-			  #ifinfo(familyName, "Harmattan") {
-        #lookup LigaturesForWarsh2;
-        #lookup LigaturesForWarsh3;
-        #lookup LigaturesForWarsh4;
-			  #}
-			  
         lookup ShaddaLigatures;
         lookup ComposeLowHamzaAbove;
         lookup HamzaLigatures;
