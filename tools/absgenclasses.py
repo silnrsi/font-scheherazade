@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 __doc__ = '''generate linking classes for abs projects from glyph_data.csv'''
-__url__ = 'https://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018-2022 SIL International  (https://www.sil.org)'
-__license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
+__url__ = 'https://github.com/silnrsi/font-arab-tools'
+__copyright__ = 'Copyright (c) 2018-2023 SIL International  (https://www.sil.org)'
+__license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
 import re

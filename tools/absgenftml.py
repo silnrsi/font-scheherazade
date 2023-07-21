@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 __doc__ = '''generate ftml tests from glyph_data.csv and UFO'''
-__url__ = 'https://github.com/silnrsi/pysilfont'
+__url__ = 'https://github.com/silnrsi/font-arab-tools'
 __copyright__ = 'Copyright (c) 2018-2023 SIL International  (https://www.sil.org)'
-__license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
+__license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
 import re
