@@ -79,7 +79,7 @@ def doit(args):
 
     # A note about args.fontcode:
     # In most applications we blindly pass this to FTMLbuilder so that, in the case the user has provided `absGlyphList.csv` 
-    # (or something simialr) as the input CSV file, FTMLBuilder will be able to filter out the records appropriately. 
+    # (or something similar) as the input CSV file, FTMLBuilder will be able to filter out the records appropriately. 
     # Of course this parameter is unneeded in cases where a project-specific `glyph_data.csv` file is provided as input, and 
     # in fact will cause an error in FTMLBuilder because processing of args.fontcode requires a `Fonts` column in the csv file.
 
@@ -657,7 +657,7 @@ def doit(args):
                 for uid2 in uids:
                     # NB: 3 decomposable chars (alefHamzaabove, alefMaddah, alefHamzaBelow) are in included in this data so they can
                     #     be tested. However, for kerning computation any strings containing hamzaabove, hamzabelow, or madda are
-                    #     deleted before kerning calcuations so there won't be redundant records such as alef+hamzaabove and alef+fathatan.
+                    #     deleted before kerning calculations so there won't be redundant records such as alef+hamzaabove and alef+fathatan.
                     #     It is just the latter that is used in kerning fea generation.
                     #     Also, the test cases for those 3 decomposable chars are limited to only one additional diacritic, otherwise 
                     #     the test files would appear to be wrong since, for example, alefMadda+fathatan+fathathan would decompose to a 

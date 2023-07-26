@@ -33,7 +33,7 @@ languagesystem latn dflt ;
 
 
 #**********************************
-# GSUB (Subtitution) lookups
+# GSUB (Substitution) lookups
 #**********************************
 
 #---  rtlm feature  ---
@@ -55,7 +55,7 @@ lookup SmallMadda {
 
 
 # For full UTR53 stacks, this decomposition will already have been done.
-# Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
+# However, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
 
 lookup DecomposeForColor {
   lookupflag IgnoreMarks ;
@@ -610,7 +610,7 @@ lookup MaddaAlternate {
 
 lookup KasraAlternates {        # cv62
   lookupflag 0 ;
-    # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
+    # NB: This is written so it doesn't matter which shadda-kasra behavior is default.
     #   0=default             1=lowered       2=raised
     sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
     sub @Kasra         from [ @Kasra_lowered  @Kasra ];

@@ -84,7 +84,7 @@ def doit(args):
     # In Mode1 then `f'\n\n{nd}'.join(...)` will be used to concatenate all data from newClassesXML
     nd = '    '   # Note that by default f'{nd}' is same length as nd
 
-    nClasses = 0    # Keep track of number of clases generated
+    nClasses = 0    # Keep track of number of classes generated
 
     # For all glyphs:
     basename2uid = {}   # Mapping basename to USV for encoded chars
