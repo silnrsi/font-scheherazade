@@ -47,6 +47,7 @@ files=(
     tools/absgenftml.py
     tools/absgenclasses.py
     source/opentype/gsub.feax
+    source/opentype/gpos.feax
 )
 
 # Make sure current working directory is the root one of the above repos
