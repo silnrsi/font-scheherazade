@@ -10,6 +10,33 @@
 #   Related project repo clones are all siblings in the file tree.
 #   Current working directory is the root folder of one of the related project repo clones
 
+## Configuration:
+
+# Relative path to all repo clones of related projects:
+
+repos=(
+    ../font-harmattan
+    ../font-lateef
+    ../font-scheherazade
+    ../font-arab-tools
+)
+
+# Files to be copied:
+
+# Caution: do not use wildcards unless you are very sure that the 
+#    list of matching files is the same for every every repo!
+files=(
+    tools/copycommon-shl
+    tools/absgenftml.py
+    tools/absgenclasses.py
+    source/opentype/gsub.feax
+    source/opentype/gpos.feax
+)
+
+#-----------------------------------------------------
+###### No user-servicable parts below this point #####
+#-----------------------------------------------------
+
 set -e
 
 # Allow a -q to suppress most output
@@ -29,32 +56,12 @@ while getopts 'qh' opt; do
 done
 shift "$(($OPTIND -1))"
 
-# Relative path to all repo clones of related projects:
-
-repos=(
-    ../font-harmattan
-    ../font-lateef
-    ../font-scheherazade
-    ../font-arab-tools
-)
-
-# Files to be copied:
-
-# Caution: do not use wildcards unless you are very sure that the 
-#    list of matching files is the same for every every repo!
-files=(
-    tools/abscopySHLfiles.sh
-    tools/absgenftml.py
-    tools/absgenclasses.py
-    source/opentype/gsub.feax
-    source/opentype/gpos.feax
-)
-
 # Make sure current working directory is the root one of the above repos
 me=$(basename `pwd`)
 if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
-    echo "Please cd to root of the repo to use" $(basename "$0")
-    echo "then use ./tools/nameofscript.sh"
+    scriptname=$(basename "$0")
+    echo "Please cd to root of the repo to use the $scriptname script."
+    echo "then use: tools/$scriptname"
     exit 2  
 fi
 
