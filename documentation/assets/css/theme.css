@@ -1,8 +1,7 @@
 /*
-This file is from the Scheherazade New project (https://software.sil.org/scheherazade/).
-Copyright (c) 1994-2023 SIL International (https://www.sil.org/) with Reserved
-Font Names "Scheherazade" and "SIL". This Font Software is licensed under the SIL
-Open Font License, Version 1.1 (https://scripts.sil.org/OFL).
+This file is from the SIL Fontdocs project (https://github.com/silnrsi/fontdocs).
+Copyright (c) 2021 SIL International (http://www.sil.org/). This Font Software is
+released under the MIT license (http://opensource.org/licenses/MIT).
 */
 html {
     font-family: sans-serif;
@@ -195,6 +194,7 @@ kbd{
 footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: #999999;
 }
 
 .affects {
