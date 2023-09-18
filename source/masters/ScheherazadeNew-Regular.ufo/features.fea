@@ -1740,7 +1740,7 @@ markClass fathaRing-ar <anchor 206 1412> @_diaA;
 markClass fathasmall-ar <anchor 174 1499> @_diaA;
 markClass fathatwodots-ar <anchor 152 1380> @_diaA;
 markClass footnotemarkerabove-ar <anchor 16 1229> @_diaA;
-markClass [hahabove-ar lamAlefabove-ar meemabove-ar qafLamAlefMaksuraabove-ar sadLamAlefMaksuraabove-ar] <anchor -22 1380> @_diaA;
+markClass [hahabove-ar lamAlefabove-ar meemabove-ar qafLamAlefMaksuraabove-ar] <anchor -22 1380> @_diaA;
 markClass hamzaabove-ar <anchor 189 1480> @_diaA;
 markClass highwaw-ar <anchor 158 1467> @_diaA;
 markClass jeemabove-ar <anchor -22 1382> @_diaA;
@@ -1761,6 +1761,7 @@ markClass rehHahabove-ar <anchor 763 1418> @_diaA;
 markClass rhombusStopabove-ar <anchor -22 1359> @_diaA;
 markClass rightarrowheadDotabove-ar <anchor 106 1309> @_diaA;
 markClass rightarrowheadabove-ar <anchor 126 1309> @_diaA;
+markClass sadLamAlefMaksuraabove-ar <anchor -22 1583> @_diaA;
 markClass sadabove-ar <anchor 45 1423> @_diaA;
 markClass safhaabove-ar <anchor 1 1143> @_diaA;
 markClass sahabove-ar <anchor 0 1519> @_diaA;
@@ -1968,15 +1969,10 @@ markClass rhombusStopbelow-ar <anchor 0 -290> @_diaBtailUp;
 # details including an FAQ.
 #**********************************
 #**********************************
-# This file is part of Scheherazade font family (https://software.sil.org/scheherazade/)
-# and is Copyright (c) 1994-2023 SIL International (https://www.sil.org/),
-# with Reserved Font Names "Scheherazade" and "SIL".
 #
-# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+# Copyright (c) 1994-2023 SIL International  (https://www.sil.org)
+# Released under the MIT License (https://opensource.org/licenses/MIT)
 #
-# You should have received a copy of the license along with this Font Software.
-# If this is not the case, go to (https://scripts.sil.org/OFL) for all the
-# details including an FAQ.
 #**********************************
 #**********************************
 #  Language Systems
@@ -2005,7 +2001,7 @@ languagesystem latn dflt;
 #       # HB PAUSE
 #   in the code.
 #**********************************
-# GSUB (Subtitution) lookups
+# GSUB (Substitution) lookups
 #**********************************
 #---  rtlm feature  ---
 lookup Mirror {
@@ -2021,7 +2017,7 @@ lookup SmallMadda {
 } SmallMadda;
 
 # For full UTR53 stacks, this decomposition will already have been done.
-# Howver, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
+# However, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
 lookup DecomposeForColor {
     lookupflag IgnoreMarks;
     sub alefMadda-ar by alef-ar madda-ar;
@@ -2265,46 +2261,12 @@ lookup AllahLigatures {
 # Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
 # Mark glyphs not included will be skipped over when trying to find a hamzaAbove
 @HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb];
-# Warsh ligatures - Harmattan
-# Ligate alef + hamza (above or below)
-lookup LigaturesForWarsh2 {
-    lookupflag UseMarkFilteringSet @HamzaAboveFilter;
-    
-} LigaturesForWarsh2;
-
-# Include in this filter hamzaBelow plus any mark glyphs that should stop any ligation.
-# Mark glyphs not included will be skipped over when trying to find a hamzaBelow
-@HamzaBelowFilter = [@UTR53_220MCM @UTR53_220other graphemejoinercomb];
-lookup LigaturesForWarsh3 {
-    lookupflag UseMarkFilteringSet @HamzaBelowFilter;
-    
-} LigaturesForWarsh3;
-
-# Ligate alef + kasra or fatha
-# Assumptions for ligating alef-kasra or alef-fatha:
-#   We won't have a mix of diac above and diac below (else we should split this lookup) 
-#   Any UTR53-permitted ligation with hamza will have been done (above) and we no longer have a simple alef
-#   There may yet be a hamza in the mark sequence but by UTR53 rules it can be assumed to be
-#       beyond a non-MCM so, for non-UTR53 stacks we may look beyond such hamzas for a 
-#       kasra or fatha that, for UTR53, would have been before the hamza.
-# Include in this filter kasra and fatha plus any mark glyphs that should stop any ligation:
-# shadda, any MCM other than hamza, cgj.
-#@KasraFathaFilter = [ kasra-ar kasra-ar.lowered fatha-ar shadda-ar seenbelow-ar highwaw-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar graphemejoinercomb] ;
-#lookup LigaturesForWarsh4 {
-#  lookupflag UseMarkFilteringSet @KasraFathaFilter ;
-#  ifinfo(familyName, "Harmattan") {
-#    sub alef-ar kasra-ar          by  alef_kasra-ar ;
-#    sub alef-ar kasra-ar.lowered  by  alef_kasra-ar ;
-#    sub alef-ar fatha-ar          by  alef_fatha-ar ;
-#  }
-#} LigaturesForWarsh4;
 #********
 # Ligatures of marks
 # NB: This includes required ligatures other than the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
-# Similar to LigaturesForWarsh, these compositions have to strike a balance between
-# trying to do something useful for DirectWrite (which doesn't reorder glyphs) without
-# violating the rules of UTR53.
+# These compositions have to strike a balance between trying to do something useful for 
+# DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
 lookup ComposeLowHamzaAbove {
     lookupflag UseMarkFilteringSet @HamzaAboveFilter;
     sub waw-ar hamzaabove-ar by wawHamzaabove-ar;
@@ -2461,18 +2423,6 @@ lookup KasraHighTT {
 # Lookups for user-selectable features
     
 
-### REMOVE CV02
-#lookup WarshAlternates {
-#  lookupflag IgnoreMarks ;
-#    # Hamza touching is for cv02=1 or cv02=2 :
-#    sub alefHamzaabove-ar from [ alefHamzaabove-ar.warsh alefHamzaabove-ar.warsh ] ;
-#    sub alefHamzaabove-ar.fina from [ alefHamzaabove-ar.fina.warsh alefHamzaabove-ar.fina.warsh ] ;
-#    sub alefHamzabelow-ar from [ alefHamzabelow-ar.warsh alefHamzabelow-ar.warsh ] ;
-#    sub alefHamzabelow-ar.fina from [ alefHamzabelow-ar.fina.warsh alefHamzabelow-ar.fina.warsh ] ;
-#    # fatha and kasra touching isolate alef happens with cv02=2 :
-#    sub alef_fatha-ar from [ alef_fatha-ar alef_fatha-ar.warsh ] ;
-#    sub alef_kasra-ar from [ alef_kasra-ar alef_kasra-ar.warsh ] ;
-#} WarshAlternates;
 # Jeem/Hah medial alternate: cv08
 #end do - Harmattan
 # Dal alternate: cv12
@@ -2582,7 +2532,7 @@ lookup YehHamzaAlternates {
 lookup KasraAlternates {
     # cv62
     lookupflag 0;
-    # NB: This is writen so it doesn't matter which shadda-kasra behavior is default.
+    # NB: This is written so it doesn't matter which shadda-kasra behavior is default.
     #   0=default             1=lowered       2=raised
     sub kasra-ar.lowered from [kasra-ar.lowered kasra-ar];
     sub kasratan-ar.lowered from [kasratan-ar.lowered kasratan-ar];
@@ -3267,7 +3217,6 @@ lookup SignWithDigits {
         sub lamAlefabove-ar by lamAlefabove-ar absAutoKashida;
         sub meemabove-ar by meemabove-ar absAutoKashida;
         sub qafLamAlefMaksuraabove-ar by qafLamAlefMaksuraabove-ar absAutoKashida;
-        sub sadLamAlefMaksuraabove-ar by sadLamAlefMaksuraabove-ar absAutoKashida;
         sub hamzaabove-ar by hamzaabove-ar absAutoKashida;
         sub highwaw-ar by highwaw-ar absAutoKashida;
         sub jeemabove-ar by jeemabove-ar absAutoKashida;
@@ -3289,6 +3238,7 @@ lookup SignWithDigits {
         sub rhombusStopabove-ar by rhombusStopabove-ar absAutoKashida;
         sub rightarrowheadDotabove-ar by rightarrowheadDotabove-ar absAutoKashida;
         sub rightarrowheadabove-ar by rightarrowheadabove-ar absAutoKashida;
+        sub sadLamAlefMaksuraabove-ar by sadLamAlefMaksuraabove-ar absAutoKashida;
         sub sadabove-ar by sadabove-ar absAutoKashida;
         sub safhaabove-ar by safhaabove-ar absAutoKashida;
         sub sahabove-ar by sahabove-ar absAutoKashida;
@@ -3467,7 +3417,6 @@ lookup SignWithDigits {
         sub lamAlefabove-ar by lamAlefabove-ar absAutoKashida absAutoKashida;
         sub meemabove-ar by meemabove-ar absAutoKashida absAutoKashida;
         sub qafLamAlefMaksuraabove-ar by qafLamAlefMaksuraabove-ar absAutoKashida absAutoKashida;
-        sub sadLamAlefMaksuraabove-ar by sadLamAlefMaksuraabove-ar absAutoKashida absAutoKashida;
         sub hamzaabove-ar by hamzaabove-ar absAutoKashida absAutoKashida;
         sub highwaw-ar by highwaw-ar absAutoKashida absAutoKashida;
         sub jeemabove-ar by jeemabove-ar absAutoKashida absAutoKashida;
@@ -3489,6 +3438,7 @@ lookup SignWithDigits {
         sub rhombusStopabove-ar by rhombusStopabove-ar absAutoKashida absAutoKashida;
         sub rightarrowheadDotabove-ar by rightarrowheadDotabove-ar absAutoKashida absAutoKashida;
         sub rightarrowheadabove-ar by rightarrowheadabove-ar absAutoKashida absAutoKashida;
+        sub sadLamAlefMaksuraabove-ar by sadLamAlefMaksuraabove-ar absAutoKashida absAutoKashida;
         sub sadabove-ar by sadabove-ar absAutoKashida absAutoKashida;
         sub safhaabove-ar by safhaabove-ar absAutoKashida absAutoKashida;
         sub sahabove-ar by sahabove-ar absAutoKashida absAutoKashida;
@@ -3646,7 +3596,6 @@ feature ccmp {
     # Force other languages to include Arabic script lookups
     language KIR;
     language KUR;
-    # Kurdish uses raised kasra
     language RHG;
     language SND;
     language URD;
@@ -3700,15 +3649,9 @@ feature init {
 # HB PAUSE
 feature rlig {
     # Required Ligatures
-    # lookup ShaddaKasraLigatures (where needed) has been moved to liga so it runs after cv62
     script arab;
     lookup AllahLigatures;
     #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
-    #ifinfo(familyName, "Harmattan") {
-    #lookup LigaturesForWarsh2;
-    #lookup LigaturesForWarsh3;
-    #lookup LigaturesForWarsh4;
-    #}
     lookup ShaddaLigatures;
     lookup ComposeLowHamzaAbove;
     lookup HamzaLigatures;
@@ -4281,15 +4224,10 @@ feature liga {
 # must execute after SignWithDigits
 # end of do - Lateef
 #**********************************
-# This file is part of Scheherazade font family (https://software.sil.org/scheherazade/) 
-# and is Copyright (c) 1994-2023 SIL International (https://www.sil.org/),
-# with Reserved Font Names "Scheherazade" and "SIL".
 #
-# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+# Copyright (c) 1994-2023 SIL International  (https://www.sil.org)
+# Released under the MIT License (https://opensource.org/licenses/MIT)
 #
-# You should have received a copy of the license along with this Font Software.
-# If this is not the case, go to (https://scripts.sil.org/OFL) for all the
-# details including an FAQ.
 #**********************************
 #**********************************
 # GPOS (Positioning) lookups
