@@ -17,6 +17,7 @@
 # writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
 
 *.bas text eol=crlf
+*.bat text eol=crlf
 
 # Explicitly declare the below matches to be text files, to keep LF eols when 
 # writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
@@ -50,6 +51,7 @@ preflightg text eol=lf
 preflightff text eol=lf
 preglyphs text eol=lf
 wscript text eol=lf
+copycommon-shl text eol=lf
 
 *.sh text eol=lf
 *.sfd text eol=lf

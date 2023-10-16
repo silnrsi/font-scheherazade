@@ -26,9 +26,12 @@ repos=(
 # Caution: do not use wildcards unless you are very sure that the 
 #    list of matching files is the same for every every repo!
 files=(
+    .gitattributes
     tools/copycommon-shl
     tools/absgenftml.py
     tools/absgenclasses.py
+    tools/ftml.xsl
+    tools/ftml-smith.xsl
     source/opentype/gsub.feax
     source/opentype/gpos.feax
 )
