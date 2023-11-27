@@ -14,18 +14,13 @@
     <header>
         <h1 class="title">Scheherazade New - Font Features</h1>
     </header>
-    <p>Scheherazade New is an OpenType-enabled font family that supports the Arabic script. It includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner</a> creates tuned fonts that use the variant glyph in place of the standard glyph. TypeTuner also provides the ability to turn on support for the Kurdish, Kyrgyz, Rohingya, Sindhi, Urdu, and Wolof language variants.</p>
+    <p>Scheherazade New is an OpenType-enabled font family that supports the Arabic script. It includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
     <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType font technology.</p>
     <p>See also <a href="https://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType font technology.</p>
     <p>This page uses web fonts (WOFF) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Scheherazade New as a web font see <em>ScheherazadeNew-webfont-example.html</em> in the font package web folder.</p>
     <p><em>If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.</em></p>
-    <h2 id="end-of-ayah-u06dd-disputed-end-of-ayah-u08e2-and-subtending-marks-u0600..u0605-u0890..u0891">End of Ayah (U+06DD), Disputed End of Ayah (U+08E2), and subtending marks (U+0600..U+0605, U+0890..U+0891)</h2>
-    <p>These Arabic characters are intended to enclose or hold one or more digits.</p>
-    <p>Specific technical details of how to use them are discussed in the <a href="https://software.sil.org/arabicfonts/support/faq#Ayah">Arabic fonts FAQ -- Subtending marks</a>.</p>
-    <p>Additionally, Scheherazade New includes two simplified alternates for U+06DD ARABIC END OF AYAH under the Stylistic Alternates (salt) feature, but at this time we know of no OpenType-based applications that can access these. The two alternates are also available through the Character Variants feature discussed below.</p>
-    <h2 id="customizing-with-typetuner">Customizing with TypeTuner</h2>
-    <p>For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
-    <h3 id="language">Language</h3>
+    <h2 id="complete-feature-list">Complete feature list</h2>
+    <h3 id="language-system-tags">Language system tags</h3>
     <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span></p>
     <p>Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.</p>
     <h4 id="kurdish-northern-rohingya-sindhi-urdu">Kurdish (Northern), Rohingya, Sindhi, Urdu</h4>
@@ -492,6 +487,7 @@
     </table>
     <h4 id="end-of-ayah">End of ayah</h4>
     <p><span class="affects">Affects: U+06DD</span></p>
+    <p>These alternates are also available using the Stylistic Alternates (salt) feature, but at this time we know of no OpenType-based applications that can access these.</p>
     <p>Firefox allows you to use U+06DD followed by the digits and proper rendering occurs. Some applications require the following:</p>
     <ul>
     <li>precede the entire sequence (subtending mark plus following digits) with 202D LEFT-TO-RIGHT OVERRIDE</li>
@@ -634,8 +630,10 @@
     </tr>
     </tbody>
     </table>
+    <h3 id="other-user-font-features">Other user font features</h3>
     <h4 id="line-spacing">Line spacing</h4>
-    <p>Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing). This feature is only available with TypeTuner.</p>
+    <p><em>This feature is only available in TypeTuner Web.</em></p>
+    <p>Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing).</p>
     <table>
     <thead>
     <tr class="header">
@@ -661,7 +659,7 @@
     <!-- PRODUCT SITE ONLY
     [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1]
     [font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='100%' ltr=1]
-    
+
     -->
     <footer class="footer">
         <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 4.000 and is copyright © 1994-2023 SIL International.</p>
