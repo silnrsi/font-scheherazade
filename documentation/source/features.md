@@ -244,8 +244,8 @@ _This feature is only available in TypeTuner Web._
 
 Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing). 
 
-Feature | 
-------------- | ---------------  
+Feature | |
+:------------- | ---------------  
 Tight | 
 Normal | 
 Loose |
