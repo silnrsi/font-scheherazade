@@ -4,13 +4,21 @@ Scheherazade New
 
 The documentation for this project is listed in index.html.
 
-There are also PDF versions in the `pdf` folder.
+There are also PDF versions of these files in the `pdf` folder.
 
-These are produced from markdown sources (in `source`) using pandoc,
+Some of these html files assume the Scheherazade New font is available in the
+`../web/` folder. This will be the case if you have downloaded and unpacked 
+the released font product zip. However, if you have cloned the source repo 
+from GitHub this will not be the case, and you should view the PDFs instead.
+
+Developer notes:
+
+These html and pdf files are produced from markdown sources (in `source`) using pandoc,
 weasyprint, and custom python scripts. See the `makedocs` shell script
 in the main project folder.
 
-FYI: There is a problem with language features for kir/ky and wol/wo in features.md. 
-Our pdf maker requires the 3 letter codes and html requires 2 letter codes. It is best
-to open the .html file and create a pdf manually. It might be better to do this for
-each document that uses the font: allah.html, features.html, honorifics.html, sample.html.
+For documents such as features.md that turn on language-specific rendering 
+for Kyrgyz (ky) and Wolof (wo), weasyprint requires 3-letter codes rather than 
+the standard 2-letter codes used in html. Therefore, when generating pdf for 
+features.md we temporarily replace the lang attributes with values that will 
+generate correct rendering (see `makedocs`).
