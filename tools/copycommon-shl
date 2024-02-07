@@ -34,6 +34,8 @@ files=(
     tools/ftml-smith.xsl
     source/opentype/gsub.feax
     source/opentype/gpos.feax
+    documentation/source/pandocfilters/filter-pdf.lua
+    documentation/source/pandocfilters/filter-html.lua
 )
 
 #-----------------------------------------------------

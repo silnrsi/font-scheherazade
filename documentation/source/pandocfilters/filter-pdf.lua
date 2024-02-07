@@ -12,7 +12,7 @@ function Link(el)
 end
 
 function Image(el)
-  el.src = string.gsub(el.src, "(.+)", "../../%0")
+  el.src = string.gsub(el.src, "../assets", "../../assets")
   return el
 end
 
