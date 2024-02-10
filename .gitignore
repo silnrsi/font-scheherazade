@@ -6,12 +6,22 @@
 .waf-*
 .smithpickle-*
 .lock-*
-results*/**
-*_results*/**
+results/**
 buildlinux2/**
 bin/**
 source/temp/*
+source/masters/temp/*
 source/backups/*
+
+# temporary fontdocs files
+documentation/source/pdftemp/
+documentation/source/productsite/
+web/*.woff*
+
+# diffenator2
+.ninja_log
+build.ninja
+
 
 # general backup files
 *~
@@ -53,7 +63,8 @@ current.fpr
 *.bak
 *.vfbak
 *.~tt
-+.idea/*
+.idea/*
+.vscode/*
 
 # Shares
 .AppleDB
@@ -71,7 +82,6 @@ $RECYCLE.BIN/
 # Opaque formats to keep out of git
 *.fog
 *.vfc
-*.glyphs
 
 # generated releases
 *.zip
@@ -109,3 +119,5 @@ source/logs/*
 source/masters/logs/*
 source/volt_source/*
 
+# Glyphs.App
+*.glyphs
