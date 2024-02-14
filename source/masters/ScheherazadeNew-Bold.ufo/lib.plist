@@ -629,6 +629,9 @@
     <string>dalVinvertedabove-ar</string>
     <string>dalVinvertedabove-ar.fina</string>
     <string>dalVinvertedabove-ar.loclWLF</string>
+    <string>dalTwodotsverticalbelow-ar</string>
+    <string>dalTwodotsverticalbelow-ar.fina</string>
+    <string>dalTwodotsverticalbelow-ar.loclWLF</string>
     <string>dalTwodotsverticalbelowTah-ar</string>
     <string>dalTwodotsverticalbelowTah-ar.fina</string>
     <string>dalTwodotsverticalbelowTah-ar.loclWLF</string>
@@ -770,6 +773,10 @@
     <string>tahTwodotsabove-ar.fina</string>
     <string>tahTwodotsabove-ar.medi</string>
     <string>tahTwodotsabove-ar.init</string>
+    <string>tahTwodotsverticalbelow-ar</string>
+    <string>tahTwodotsverticalbelow-ar.fina</string>
+    <string>tahTwodotsverticalbelow-ar.medi</string>
+    <string>tahTwodotsverticalbelow-ar.init</string>
     <string>ain-ar</string>
     <string>ain-ar.fina</string>
     <string>ain-ar.medi</string>
@@ -958,6 +965,10 @@
     <string>kafThreedotsbelow-ar.fina</string>
     <string>kafThreedotsbelow-ar.medi</string>
     <string>kafThreedotsbelow-ar.init</string>
+    <string>kafTwodotsverticalbelow-ar</string>
+    <string>kafTwodotsverticalbelow-ar.fina</string>
+    <string>kafTwodotsverticalbelow-ar.medi</string>
+    <string>kafTwodotsverticalbelow-ar.init</string>
     <string>gafTwodotsbelow-ar</string>
     <string>gafTwodotsbelow-ar.fina</string>
     <string>gafTwodotsbelow-ar.medi</string>
@@ -1422,6 +1433,7 @@
     <string>alefabove-ar</string>
     <string>alefabove-ar.large</string>
     <string>alefbelow-ar</string>
+    <string>alefoverlay-ar</string>
     <string>hamzaabove-ar</string>
     <string>hamzabelow-ar</string>
     <string>fathatan-ar</string>
@@ -1445,6 +1457,7 @@
     <string>alefmokhassasabove-ar</string>
     <string>maddadoubled-ar</string>
     <string>halfmaddaovermadda-ar</string>
+    <string>pepet-ar</string>
     <string>noonghunnaabove-ar</string>
     <string>dammainverted-ar</string>
     <string>dammainverted-ar.open</string>
@@ -2491,6 +2504,9 @@
     <string>dalVinvertedabove-ar</string>
     <string>dalVinvertedabove-ar.fina</string>
     <string>dalVinvertedabove-ar.loclWLF</string>
+    <string>dalTwodotsverticalbelow-ar</string>
+    <string>dalTwodotsverticalbelow-ar.fina</string>
+    <string>dalTwodotsverticalbelow-ar.loclWLF</string>
     <string>dalTwodotsverticalbelowTah-ar</string>
     <string>dalTwodotsverticalbelowTah-ar.fina</string>
     <string>dalTwodotsverticalbelowTah-ar.loclWLF</string>
@@ -2632,6 +2648,10 @@
     <string>tahTwodotsabove-ar.fina</string>
     <string>tahTwodotsabove-ar.medi</string>
     <string>tahTwodotsabove-ar.init</string>
+    <string>tahTwodotsverticalbelow-ar</string>
+    <string>tahTwodotsverticalbelow-ar.fina</string>
+    <string>tahTwodotsverticalbelow-ar.medi</string>
+    <string>tahTwodotsverticalbelow-ar.init</string>
     <string>ain-ar</string>
     <string>ain-ar.fina</string>
     <string>ain-ar.medi</string>
@@ -2820,6 +2840,10 @@
     <string>kafThreedotsbelow-ar.fina</string>
     <string>kafThreedotsbelow-ar.medi</string>
     <string>kafThreedotsbelow-ar.init</string>
+    <string>kafTwodotsverticalbelow-ar</string>
+    <string>kafTwodotsverticalbelow-ar.fina</string>
+    <string>kafTwodotsverticalbelow-ar.medi</string>
+    <string>kafTwodotsverticalbelow-ar.init</string>
     <string>gafTwodotsbelow-ar</string>
     <string>gafTwodotsbelow-ar.fina</string>
     <string>gafTwodotsbelow-ar.medi</string>
@@ -3284,6 +3308,7 @@
     <string>alefabove-ar</string>
     <string>alefabove-ar.large</string>
     <string>alefbelow-ar</string>
+    <string>alefoverlay-ar</string>
     <string>hamzaabove-ar</string>
     <string>hamzabelow-ar</string>
     <string>fathatan-ar</string>
@@ -3307,6 +3332,7 @@
     <string>alefmokhassasabove-ar</string>
     <string>maddadoubled-ar</string>
     <string>halfmaddaovermadda-ar</string>
+    <string>pepet-ar</string>
     <string>noonghunnaabove-ar</string>
     <string>dammainverted-ar</string>
     <string>dammainverted-ar.open</string>
@@ -4046,6 +4072,8 @@
     <string>uni08AD</string>
     <key>alefmokhassasabove-ar</key>
     <string>uni089D</string>
+    <key>alefoverlay-ar</key>
+    <string>u10EFC</string>
     <key>aljuzabove-ar</key>
     <string>uni0898</string>
     <key>allah-ar</key>
@@ -4254,6 +4282,12 @@
     <string>uni068F.fina</string>
     <key>dalThreedotsdown-ar.loclWLF</key>
     <string>uni068F.loclWLF</string>
+    <key>dalTwodotsverticalbelow-ar</key>
+    <string>u10EC2</string>
+    <key>dalTwodotsverticalbelow-ar.fina</key>
+    <string>u10EC2.fina</string>
+    <key>dalTwodotsverticalbelow-ar.loclWLF</key>
+    <string>u10EC2.loclWLF</string>
     <key>dalTwodotsverticalbelowTah-ar</key>
     <string>uni0759</string>
     <key>dalTwodotsverticalbelowTah-ar.fina</key>
@@ -4928,6 +4962,14 @@
     <string>uni077F.init</string>
     <key>kafTwodotshorizontalabove-ar.medi</key>
     <string>uni077F.medi</string>
+    <key>kafTwodotsverticalbelow-ar</key>
+    <string>u10EC4</string>
+    <key>kafTwodotsverticalbelow-ar.fina</key>
+    <string>u10EC4.fina</string>
+    <key>kafTwodotsverticalbelow-ar.init</key>
+    <string>u10EC4.init</string>
+    <key>kafTwodotsverticalbelow-ar.medi</key>
+    <string>u10EC4.medi</string>
     <key>kafswash-ar</key>
     <string>uni06AA</string>
     <key>kafswash-ar.fina</key>
@@ -5704,6 +5746,8 @@
     <string>uni06A6.init</string>
     <key>peheh-ar.medi</key>
     <string>uni06A6.medi</string>
+    <key>pepet-ar</key>
+    <string>uni0897</string>
     <key>percent-ar</key>
     <string>uni066A</string>
     <key>pertenthousand-ar</key>
@@ -6236,6 +6280,14 @@
     <string>uni08A3.init</string>
     <key>tahTwodotsabove-ar.medi</key>
     <string>uni08A3.medi</string>
+    <key>tahTwodotsverticalbelow-ar</key>
+    <string>u10EC3</string>
+    <key>tahTwodotsverticalbelow-ar.fina</key>
+    <string>u10EC3.fina</string>
+    <key>tahTwodotsverticalbelow-ar.init</key>
+    <string>u10EC3.init</string>
+    <key>tahTwodotsverticalbelow-ar.medi</key>
+    <string>u10EC3.medi</string>
     <key>tahabove-ar</key>
     <string>uni0615</string>
     <key>takhallusabove-ar</key>
