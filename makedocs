@@ -4,6 +4,16 @@
 # https://fonts.google.com/specimen/Roboto
 # https://fonts.google.com/specimen/Roboto+Mono
 
+# Verify fonts are built:
+if [ ! -e results/ScheherazadeNew-Regular.ttf ]
+then
+    echo "Fonts must be built before rebuilding documentation."
+    exit 1
+fi
+
+# Update woff2 fonts needed in web/ folder to build PDFs
+cp results/web/ScheherazadeNew-Regular.woff2 results/web/ScheherazadeNew-Bold.woff2 web/
+
 echo "-----Rebuilding documentation..."
 
 echo "     >>> HTML (documentation/)"
