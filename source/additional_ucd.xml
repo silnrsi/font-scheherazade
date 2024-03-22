@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ucd xmlns="http://www.unicode.org/ns/2003/ucd/1.0">
+   <description>Unicode 16 ABS additions</description>
+   <repertoire>
+      <char cp="0897"  age="16.0" gc="Mn" ccc="230" bc="NSM" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Zinh" scx="Arab" blk="Arabic_Ext_B" na="ARABIC PEPET" ></char>
+      <char cp="10EC2" age="16.0" gc="Lo" ccc="0"   bc="AL"  Bidi_M="N" jt="R" jg="Dal"              sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW"></char>
+      <char cp="10EC3" age="16.0" gc="Lo" ccc="0"   bc="AL"  Bidi_M="N" jt="D" jg="Tah"              sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC LETTER TAH WITH TWO DOTS VERTICALLY BELOW"></char>
+      <char cp="10EC4" age="16.0" gc="Lo" ccc="0"   bc="AL"  Bidi_M="N" jt="D" jg="Kaf"              sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW"></char>
+      <char cp="10EFC" age="16.0" gc="Mn" ccc="0"   bc="NSM" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC COMBINING ALEF OVERLAY"></char>
+   </repertoire>
+</ucd>
