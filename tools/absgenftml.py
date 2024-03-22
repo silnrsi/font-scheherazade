@@ -8,7 +8,7 @@ __author__ = 'Bob Hallissy'
 import re
 from silfont.core import execute
 import silfont.ftml_builder as FB
-from palaso.unicode.ucd import get_ucd
+from palaso.unicode.ucd import get_ucd, loadxml
 from collections import OrderedDict
 
 
@@ -28,6 +28,7 @@ argspec = [
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
     ('-w', '--width', {'help': 'total width of all <string> column (default automatic)'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
+    ('--ucdxml', {'help': 'File with UCD XML data for chars in the pipeline'}, {}),
 ]
 
 
@@ -65,7 +66,7 @@ joinGroupKeys = {
 def joinGoupSortKey(uid:int):
     return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
 
-ageToFlag = 15.0
+ageToFlag = 16.0
 ageColor = '#FFC8A0'      # light orange -- marks if there is a char from above Unicode version or later
 missingColor = '#FFE0E0'  # light red -- mark if a char is missing from UFO
 newColor = '#F0FFF0'      # light green -- mark if char is not in previous version (if --prevFont supplied)
@@ -76,6 +77,10 @@ backgroundLegend =  'Background colors: ' \
 
 def doit(args):
     logger = args.logger
+
+    if args.ucdxml:
+        # Update UCD module with data for relevant pipeline chars 
+        loadxml(args.ucdxml)
 
     # A note about args.fontcode:
     # In most applications we blindly pass this to FTMLbuilder so that, in the case the user has provided `absGlyphList.csv` 

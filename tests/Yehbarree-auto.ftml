@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -330,6 +330,10 @@
       <comment>kafTwodotshorizontalabove-ar</comment>
       <string>\u077F\u06EC\u06D2 \u200D\u077F\u06EC\u06D2 \u077F\u064D\u06EC\u06D2 \u200D\u077F\u064D\u06EC\u06D2</string>
     </test>
+    <test background="#ffc8a0" label="U+10EC4">
+      <comment>kafTwodotsverticalbelow-ar</comment>
+      <string>\u10EC4\u06EC\u06D2 \u200D\u10EC4\u06EC\u06D2 \u10EC4\u064D\u06EC\u06D2 \u200D\u10EC4\u064D\u06EC\u06D2</string>
+    </test>
     <test label="U+06A9">
       <comment>keheh-ar</comment>
       <string>\u06A9\u06EC\u06D2 \u200D\u06A9\u06EC\u06D2 \u06A9\u064D\u06EC\u06D2 \u200D\u06A9\u064D\u06EC\u06D2</string>
@@ -617,6 +621,10 @@
     <test label="U+08A3">
       <comment>tahTwodotsabove-ar</comment>
       <string>\u08A3\u06EC\u06D2 \u200D\u08A3\u06EC\u06D2 \u08A3\u064D\u06EC\u06D2 \u200D\u08A3\u064D\u06EC\u06D2</string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC3">
+      <comment>tahTwodotsverticalbelow-ar</comment>
+      <string>\u10EC3\u06EC\u06D2 \u200D\u10EC3\u06EC\u06D2 \u10EC3\u064D\u06EC\u06D2 \u200D\u10EC3\u064D\u06EC\u06D2</string>
     </test>
     <test label="U+0686">
       <comment>tcheh-ar</comment>

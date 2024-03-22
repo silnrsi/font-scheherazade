@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -2975,6 +2975,66 @@ U+0670" stylename="cv76_2">
       <comment>fehAfrican-ar alefabove-ar</comment>
       <string>\u0008BB\u000670 \u0008BB\u000670\u0008BB\u000670\u0008BB\u000670 </string>
     </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+064E">
+      <comment>dalTwodotsverticalbelow-ar fatha-ar</comment>
+      <string>\u010EC2\u00064E \u00200D\u010EC2\u00064E </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+064E" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar fatha-ar</comment>
+      <string>\u010EC2\u00064E \u00200D\u010EC2\u00064E </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0650">
+      <comment>dalTwodotsverticalbelow-ar kasra-ar</comment>
+      <string>\u010EC2\u000650 \u00200D\u010EC2\u000650 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0650" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar kasra-ar</comment>
+      <string>\u010EC2\u000650 \u00200D\u010EC2\u000650 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0654">
+      <comment>dalTwodotsverticalbelow-ar hamzaabove-ar</comment>
+      <string>\u010EC2\u000654 \u00200D\u010EC2\u000654 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0654" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar hamzaabove-ar</comment>
+      <string>\u010EC2\u000654 \u00200D\u010EC2\u000654 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670" stylename="cv76_1">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670" stylename="cv76_2">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670" stylename="cv12_1_cv76_1">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2
+U+0670" stylename="cv12_1_cv76_2">
+      <comment>dalTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC2\u000670 \u00200D\u010EC2\u000670 </string>
+    </test>
     <test label="U+0643
 U+064E">
       <comment>kaf-ar fatha-ar</comment>
@@ -3319,6 +3379,21 @@ U+0670" stylename="cv76_1">
 U+0670" stylename="cv76_2">
       <comment>kehehElongatedhamzaabove-ar alefabove-ar</comment>
       <string>\u0008C8\u000670 \u0008C8\u000670\u0008C8\u000670\u0008C8\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC4
+U+064E">
+      <comment>kafTwodotsverticalbelow-ar fatha-ar</comment>
+      <string>\u010EC4\u00064E \u010EC4\u00064E\u010EC4\u00064E\u010EC4\u00064E  \u010EC4\u000650 \u010EC4\u000650\u010EC4\u000650\u010EC4\u000650  \u010EC4\u000654 \u010EC4\u000654\u010EC4\u000654\u010EC4\u000654  \u010EC4\u000670 \u010EC4\u000670\u010EC4\u000670\u010EC4\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC4
+U+0670" stylename="cv76_1">
+      <comment>kafTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC4\u000670 \u010EC4\u000670\u010EC4\u000670\u010EC4\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC4
+U+0670" stylename="cv76_2">
+      <comment>kafTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC4\u000670 \u010EC4\u000670\u010EC4\u000670\u010EC4\u000670 </string>
     </test>
     <test label="U+06AA
 U+064E">
@@ -5150,6 +5225,21 @@ U+0670" stylename="cv76_2">
       <comment>wawDotcenter-ar alefabove-ar</comment>
       <string>\u0008AB\u000670 \u00200D\u0008AB\u000670 </string>
     </test>
+    <test background="#ffc8a0" label="U+10EC3
+U+064E">
+      <comment>tahTwodotsverticalbelow-ar fatha-ar</comment>
+      <string>\u010EC3\u00064E \u010EC3\u00064E\u010EC3\u00064E\u010EC3\u00064E  \u010EC3\u000650 \u010EC3\u000650\u010EC3\u000650\u010EC3\u000650  \u010EC3\u000654 \u010EC3\u000654\u010EC3\u000654\u010EC3\u000654  \u010EC3\u000670 \u010EC3\u000670\u010EC3\u000670\u010EC3\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC3
+U+0670" stylename="cv76_1">
+      <comment>tahTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC3\u000670 \u010EC3\u000670\u010EC3\u000670\u010EC3\u000670 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC3
+U+0670" stylename="cv76_2">
+      <comment>tahTwodotsverticalbelow-ar alefabove-ar</comment>
+      <string>\u010EC3\u000670 \u010EC3\u000670\u010EC3\u000670\u010EC3\u000670 </string>
+    </test>
     <test label="U+08B1
 U+064E">
       <comment>wawStraight-ar fatha-ar</comment>
@@ -6202,6 +6292,11 @@ U+06ED">
       <comment>alef-ar meembelow-ar</comment>
       <string>\u000627\u0006ED \u00200D\u000627\u0006ED  \u000628\u0006ED \u000628\u0006ED\u000628\u0006ED\u000628\u0006ED </string>
     </test>
+    <test background="#ffe0e0" label="U+0627
+U+0897">
+      <comment>alef-ar pepet-ar</comment>
+      <string>\u000627\u000897 \u00200D\u000627\u000897  \u000628\u000897 \u000628\u000897\u000628\u000897\u000628\u000897 </string>
+    </test>
     <test label="U+0627
 U+0898">
       <comment>alef-ar aljuzabove-ar</comment>
@@ -6507,17 +6602,22 @@ U+08FF">
       <comment>alef-ar marksidewaysnoonghunna-ar</comment>
       <string>\u000627\u0008FF \u00200D\u000627\u0008FF  \u000628\u0008FF \u000628\u0008FF\u000628\u0008FF\u000628\u0008FF </string>
     </test>
-    <test background="#ffc8a0" label="U+0627
+    <test background="#ffe0e0" label="U+0627
+U+10EFC">
+      <comment>alef-ar alefoverlay-ar</comment>
+      <string>\u000627\u010EFC \u00200D\u000627\u010EFC  \u000628\u010EFC \u000628\u010EFC\u000628\u010EFC\u000628\u010EFC </string>
+    </test>
+    <test background="#f0fff0" label="U+0627
 U+10EFD">
       <comment>alef-ar saktabelow-ar</comment>
       <string>\u000627\u010EFD \u00200D\u000627\u010EFD  \u000628\u010EFD \u000628\u010EFD\u000628\u010EFD\u000628\u010EFD </string>
     </test>
-    <test background="#ffc8a0" label="U+0627
+    <test background="#f0fff0" label="U+0627
 U+10EFE">
       <comment>alef-ar qasrbelow-ar</comment>
       <string>\u000627\u010EFE \u00200D\u000627\u010EFE  \u000628\u010EFE \u000628\u010EFE\u000628\u010EFE\u000628\u010EFE </string>
     </test>
-    <test background="#ffc8a0" label="U+0627
+    <test background="#f0fff0" label="U+0627
 U+10EFF">
       <comment>alef-ar wordmaddabelow-ar</comment>
       <string>\u000627\u010EFF \u00200D\u000627\u010EFF  \u000628\u010EFF \u000628\u010EFF\u000628\u010EFF\u000628\u010EFF </string>

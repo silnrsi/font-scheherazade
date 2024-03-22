@@ -7,7 +7,7 @@ __author__ = 'Bob Hallissy'
 
 import re
 from silfont.core import execute
-from palaso.unicode.ucd import get_ucd
+from palaso.unicode.ucd import get_ucd, loadxml
 from lxml import etree
 from collections import OrderedDict
 
@@ -15,6 +15,7 @@ argspec = [
     ('ifont', {'help': 'Input UFO'}, {'type': 'infont'}),
     ('output', {'help': 'Output filename (for new/merged classes in XML format)'}, {}),
     ('-i', '--input', {'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
+    ('--ucdxml', {'help': 'File with UCD XML data for chars in the pipeline'}, {}),
     ('-c', '--classfile', {'help': 'Input classes XML file'}, {}),
     ('-l', '--log', {'help': 'Set log file name'}, {'type': 'outfile', 'def': '_classes.log'}),
 ]
@@ -59,6 +60,10 @@ mcm = {
 
 def doit(args):
     logger = args.logger
+
+    if args.ucdxml:
+        # Update UCD module with data for relevant pipeline chars 
+        loadxml(args.ucdxml)
 
     # Iterate over glyph_data file looking for:
     #   Encoded glyphs whose USV shows they are Right- or Dual-joining

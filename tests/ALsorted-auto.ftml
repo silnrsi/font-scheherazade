@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 15.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -1061,6 +1061,38 @@
       <comment>fehAfrican-ar</comment>
       <string>\u0008BB \u0008BB\u00200D \u00200D\u0008BB\u00200D \u00200D\u0008BB \u0008BB\u0008BB\u0008BB </string>
     </test>
+    <test background="#ffc8a0" label="U+10EC2">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="sd">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ur">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ku">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="rhg">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ky">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="wo">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
     <test label="U+0643">
       <comment>kaf-ar</comment>
       <string>\u000643 \u000643\u00200D \u00200D\u000643\u00200D \u00200D\u000643 \u000643\u000643\u000643 </string>
@@ -1152,6 +1184,10 @@
     <test label="U+08C8">
       <comment>kehehElongatedhamzaabove-ar</comment>
       <string>\u0008C8 \u0008C8\u00200D \u00200D\u0008C8\u00200D \u00200D\u0008C8 \u0008C8\u0008C8\u0008C8 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC4">
+      <comment>kafTwodotsverticalbelow-ar</comment>
+      <string>\u010EC4 \u010EC4\u00200D \u00200D\u010EC4\u00200D \u00200D\u010EC4 \u010EC4\u010EC4\u010EC4 </string>
     </test>
     <test label="U+06AA">
       <comment>kafswash-ar</comment>
@@ -1712,6 +1748,10 @@
     <test label="U+08AB">
       <comment>wawDotcenter-ar</comment>
       <string>\u0008AB \u00200D\u0008AB </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC3">
+      <comment>tahTwodotsverticalbelow-ar</comment>
+      <string>\u010EC3 \u010EC3\u00200D \u00200D\u010EC3\u00200D \u00200D\u010EC3 \u010EC3\u010EC3\u010EC3 </string>
     </test>
     <test label="U+08B1">
       <comment>wawStraight-ar</comment>
