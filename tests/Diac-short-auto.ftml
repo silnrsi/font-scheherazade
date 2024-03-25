@@ -4,6 +4,7 @@
   <head>
     <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
+    <fontsrc label="4.0">url(../references/v4.000/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
@@ -57,7 +58,7 @@
       <style feats="'cv81' 1" name="cv81_1"/>
     </styles>
     <title>Diac Short (auto)</title>
-    <widths string="25%"/>
+    <widths string="19%"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -6607,17 +6608,17 @@ U+10EFC">
       <comment>alef-ar alefoverlay-ar</comment>
       <string>\u000627\u010EFC \u00200D\u000627\u010EFC  \u000628\u010EFC \u000628\u010EFC\u000628\u010EFC\u000628\u010EFC </string>
     </test>
-    <test background="#f0fff0" label="U+0627
+    <test label="U+0627
 U+10EFD">
       <comment>alef-ar saktabelow-ar</comment>
       <string>\u000627\u010EFD \u00200D\u000627\u010EFD  \u000628\u010EFD \u000628\u010EFD\u000628\u010EFD\u000628\u010EFD </string>
     </test>
-    <test background="#f0fff0" label="U+0627
+    <test label="U+0627
 U+10EFE">
       <comment>alef-ar qasrbelow-ar</comment>
       <string>\u000627\u010EFE \u00200D\u000627\u010EFE  \u000628\u010EFE \u000628\u010EFE\u000628\u010EFE\u000628\u010EFE </string>
     </test>
-    <test background="#f0fff0" label="U+0627
+    <test label="U+0627
 U+10EFF">
       <comment>alef-ar wordmaddabelow-ar</comment>
       <string>\u000627\u010EFF \u00200D\u000627\u010EFF  \u000628\u010EFF \u000628\u010EFF\u000628\u010EFF\u000628\u010EFF </string>

@@ -4,6 +4,7 @@
   <head>
     <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
+    <fontsrc label="4.0">url(../references/v4.000/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Med">url(../results/ScheherazadeNew-Medium.ttf)</fontsrc>
@@ -49,7 +50,7 @@
       <style lang="wo" name="wo"/>
     </styles>
     <title>AllChars (auto)</title>
-    <widths string="15%"/>
+    <widths string="12%"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -2299,23 +2300,7 @@
     </test>
     <test label="U+2018">
       <comment>quoteleft</comment>
-      <string>\u002018 \u002019 \u00201A</string>
-    </test>
-    <test background="#f0fff0" label="U+201B">
-      <comment>quotereversed</comment>
-      <string>\u00201B</string>
-    </test>
-    <test label="U+201C">
-      <comment>quotedblleft</comment>
-      <string>\u00201C \u00201D \u00201E</string>
-    </test>
-    <test background="#f0fff0" label="U+201F">
-      <comment>quotedblrightreversed</comment>
-      <string>\u00201F</string>
-    </test>
-    <test label="U+2020">
-      <comment>dagger</comment>
-      <string>\u002020 \u002021 \u002022</string>
+      <string>\u002018 \u002019 \u00201A \u00201B \u00201C \u00201D \u00201E \u00201F \u002020 \u002021 \u002022</string>
     </test>
     <test label="U+2026">
       <comment>ellipsis</comment>
@@ -2685,7 +2670,7 @@
       <comment>alefoverlay-ar</comment>
       <string>\u000628\u010EFC</string>
     </test>
-    <test background="#f0fff0" label="U+10EFD">
+    <test label="U+10EFD">
       <comment>saktabelow-ar</comment>
       <string>\u000628\u010EFD \u000628\u010EFE \u000628\u010EFF</string>
     </test>
