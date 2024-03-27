@@ -25,8 +25,9 @@ commonParams=( \
 	--xsl ../tools/ftml.xsl  \
 	--scale 200  \
 	-i source/glyph_data.csv  \
-	--langs 'sd,ur,ku,rhg,ky,wo'  \
-	-w 75% --ucdxml source/additional_ucd.xml  \
+	--langs 'sd,ur,ku,rhg,ks,ky,wo'  \
+	-w 75%  \
+	--ucdxml source/additional_ucd.xml  \
 	-s "url(../references/ScheherazadeNew-Regular.ttf)|ref"  \
 	-s "url(../results/ScheherazadeNew-Regular.ttf)|Reg" \
 )

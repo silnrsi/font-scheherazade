@@ -55,6 +55,7 @@
       <style feats="'cv76' 2, 'cv81' 1" name="cv76_2_cv81_1"/>
       <style feats="'cv78' 1" name="cv78_1"/>
       <style feats="'cv78' 2" name="cv78_2"/>
+      <style feats="'cv78' 3" name="cv78_3"/>
       <style feats="'cv81' 1" name="cv81_1"/>
     </styles>
     <title>Diac Short (auto)</title>
@@ -6048,6 +6049,11 @@ U+0652" stylename="cv78_2">
       <comment>alef-ar sukun-ar</comment>
       <string>\u000627\u000652 \u00200D\u000627\u000652 </string>
     </test>
+    <test label="U+0627
+U+0652" stylename="cv78_3">
+      <comment>alef-ar sukun-ar</comment>
+      <string>\u000627\u000652 \u00200D\u000627\u000652 </string>
+    </test>
     <test label="U+0628
 U+0652">
       <comment>beh-ar sukun-ar</comment>
@@ -6060,6 +6066,11 @@ U+0652" stylename="cv78_1">
     </test>
     <test label="U+0628
 U+0652" stylename="cv78_2">
+      <comment>beh-ar sukun-ar</comment>
+      <string>\u000628\u000652 \u000628\u000652\u000628\u000652\u000628\u000652 </string>
+    </test>
+    <test label="U+0628
+U+0652" stylename="cv78_3">
       <comment>beh-ar sukun-ar</comment>
       <string>\u000628\u000652 \u000628\u000652\u000628\u000652\u000628\u000652 </string>
     </test>

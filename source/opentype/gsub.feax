@@ -11,12 +11,13 @@
 #**********************************
 
 languagesystem arab dflt ;
-languagesystem arab KIR  ;    # Kyrgyz
-languagesystem arab KUR  ;    # Kurdish
-languagesystem arab RHG  ;    # Rohingya -- supported by Harfbuzz
-languagesystem arab SND  ;    # Sindhi
-languagesystem arab URD  ;    # Urdu
-languagesystem arab WLF  ;    # Wolof
+languagesystem arab KSH  ;    # ks: Kashmiri
+languagesystem arab KIR  ;    # ky: Kyrgyz
+languagesystem arab KUR  ;    # ku: Kurdish
+languagesystem arab RHG  ;    # rhg: Rohingya -- supported by Harfbuzz
+languagesystem arab SND  ;    # sd: Sindhi
+languagesystem arab URD  ;    # ur: Urdu
+languagesystem arab WLF  ;    # wo: Wolof
 languagesystem latn dflt ;
 
 @MarksAbove = [@_diaA] ;
@@ -395,6 +396,16 @@ lookup dfltCALT {  # (need at least a dummy lookup for TT)
 	}
 } dfltCALT ;
 
+lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of sukun
+  lookupflag 0 ;
+    sub four-persian  by  four-persian.urdu ;
+    sub six-persian   by  six-persian.urdu ;
+    sub seven-persian by  seven-persian.urdu ;
+    sub sukun-ar      by  sukun-ar.downOpen ;
+
+    sub @Kasra        by  @Kasra_lowered;
+} KashmiriCALT ;
+
 lookup KurdishCALT {
   lookupflag 0 ;
     sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
@@ -649,7 +660,7 @@ lookup DammaInvertedAlternates {
 
 lookup _DaggerAlefAlt {  # Scheherazade only
   lookupflag 0 ;
-    # 0=default;            1=large;            2=small
+    # 0=default             1=large;            2=small
     sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
     #sub alefabove-ar by alefabove-ar.large ;
 } _DaggerAlefAlt ;
@@ -673,7 +684,10 @@ lookup DaggerAlefAlternates {   # cv76
 
 lookup SukunAlternates {
   lookupflag 0 ;
-    sub sukun-ar from [ sukun-ar.downOpen sukun-ar.leftOpen ] ;
+    # 0=default;                 1=downOpen        2=leftOpen        3=closed
+    sub sukun-ar          from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
+    sub sukun-ar.downOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
+    sub sukun-ar.leftOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
 } SukunAlternates;
 
 
@@ -952,12 +966,13 @@ feature ccmp {  # Glyph Composition/Decomposition
         lookup DecomposeForColor;
         # kasra behavior has been moved to calt
       # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KUR ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;  # Kyrgyz
+      language KSH ;  # Kashmiri
+      language KUR ;  # Kurdish
+      language RHG ;  # Rohingya
+      language SND ;  # Sindhi
+      language URD ;  # Urdu
+      language WLF ;  # Wolof
 
     script latn;
 } ccmp ;
@@ -971,6 +986,7 @@ feature fina {  # Terminal Forms
       	lookup ltrFina;
       # Force other languages to include Arabic script lookups:
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
@@ -985,6 +1001,7 @@ feature medi {  # Medial Forms
       	lookup ltrMedi;
       # Force other languages to include Arabic script lookups:
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
@@ -999,6 +1016,7 @@ feature init {  # Initial Forms
       	lookup ltrInit;
       # Force other languages to include Arabic script lookups:
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
@@ -1018,12 +1036,13 @@ feature rlig {  # Required Ligatures
         lookup ShaddaAlefLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
       # Force other languages to include Arabic script lookups:
-      language KIR  ;
-      language KUR  ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } rlig ;
 
 # HB PAUSE
@@ -1053,10 +1072,10 @@ feature calt {  # Contextual Alternates
 
         lookup WideKashida;
 
-      language dflt ;   # Must have a lookup here for TypeTuner to work.
-        lookup dfltCALT ;
       language KIR ; # Kyrgyz
         lookup KyrgyzCALT ;
+      language KSH ; # Kashmiri
+        lookup KashmiriCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
       language RHG ; #Rohingya
@@ -1067,6 +1086,8 @@ feature calt {  # Contextual Alternates
         lookup UrduCALT ;
       language WLF ; # Wolof
         lookup WolofCALT ;
+      language dflt ;   # Must have a lookup here for TypeTuner to work.
+        lookup dfltCALT ;
         
       script latn ;
       	lookup dfltCALT ;  # for bare diacritics (on white space) in Latin text
@@ -1082,12 +1103,13 @@ feature salt {  # Stylistic Alternates
     script arab;
         lookup AyahAlternates;
       # Force other languages to include Arabic script lookups
-      language KIR ;  # Kyrgyz
-      language KUR ;  # Kurdish
-      language RHG ;  # Rohingya
-      language SND ;  # Sindhi
-      language URD ;  # Urdu
-      language WLF ;  # Wolof
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } salt ;
 
 #--- Character Variants ---
@@ -1106,12 +1128,13 @@ feature cv08 {  # Character Variant 08
     script arab;  # Arabic
         lookup JeemHahMedAlternate;
       # Force other languages to include Arabic script lookups:
-      language KIR  ;
-      language KUR  ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } cv08 ;
 
 }  # end do - Harmattan
@@ -1132,6 +1155,7 @@ feature cv12 {
         lookup DalAlternate;
       # Force other languages to include Arabic script lookups:
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
@@ -1154,12 +1178,13 @@ feature cv20 {  # Character Variant 20
     script arab;  # Arabic
         lookup SadDadAlternate;
       # Force other languages to include Arabic script lookups:
-      language KIR  ;
-      language KUR  ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } cv20 ;
 
 }  # end do - Harmattan
@@ -1176,6 +1201,7 @@ feature cv44 {  # Character Variant 44
         lookup MeemAlternate;
       # Force other languages to include Arabic script lookups
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       # language SND; -- but not this one since we enable it in SindhiCALT
@@ -1196,10 +1222,10 @@ feature cv48 {    # Character Variant 48
         lookup HehAlternates;
       # Force other languages to include Arabic script lookups:
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
-      language RHG ;
       language URD ;
       language WLF ;
 } cv48 ;
@@ -1216,12 +1242,13 @@ feature cv49 {    # Character Variant 49
 		script arab;
         lookup HehDoAlternates;
       # Force other languages to include Arabic script lookups
-      language KIR  ;
-      language KUR  ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } cv49 ;
 
 
@@ -1234,13 +1261,13 @@ feature cv51 {  # Character Variant 51
     script arab;  # Arabic
         lookup KyrgyzOeAlternates;
       # Force other languages to include Arabic script lookups:
-      language KIR  ;
-      language KUR  ;
-      language KUR  ;
-      language SND  ;
-      language RHG  ;
-      language URD  ;
-      language WLF  ;
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } cv51 ;
 
 
@@ -1251,14 +1278,15 @@ feature cv54 {  # Character Variant 54
         ParamUILabelNameID { name 3 1 0x0409 "Right hamza" ; };
     } ;
     script arab;  # Arabic
-     lookup YehHamzaAlternates;
-     # Force other languages to include Arabic script lookups:
-     language KIR  ;
-     language KUR  ;
-     language SND  ;
-     language RHG  ;
-     language URD  ;
-     language WLF  ;
+        lookup YehHamzaAlternates;
+      # Force other languages to include Arabic script lookups:
+      language KIR ;
+      language KSH ;
+      language KUR ;
+      language RHG ;
+      language SND ;
+      language URD ;
+      language WLF ;
 } cv54 ;
 
 

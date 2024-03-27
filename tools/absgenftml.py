@@ -834,34 +834,34 @@ def doit(args):
         # test only the features from this list that are implemented in this font
         tests = filter(lambda x : x[0] in builder.features, (
             # feat, langs where it is expected to work (1) or not (0), data seq,  comment
-           #('cv02', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0623,), 'Warsh alternates'),
-            ('cv08', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x062C,), 'Jeem/Hah alternates'),
-            ('cv12', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 0, 'ky': 1}, (0x062F,), 'Dal alternates'),
-            ('cv20', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0635,), 'Sad/Dad alternates'),
-            ('cv44', {'sd': 0, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0645,), 'Meem alternates'),
-            ('cv48', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0647,), 'Heh alternates'),
-            ('cv49', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06BE,), 'Heh Doachashmee alternates'),
-           #('cv50', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0677,), 'U alternates'),
-            ('cv51', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06C5,), 'Kyrgyz OE alternate'),
-            ('cv54', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 0}, (0x0626,), 'Yeh Hamza alternate'),
-            ('cv60', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0622,), 'Maddah alternates'),
-            ('cv62', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0651, 0x0650), 'Kasra alternates'),
-            ('cv70', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x064F,), 'Damma  alternates'),
-            ('cv72', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 0, 'wo': 1, 'ky': 1}, (0x064C,), 'Dammatan alternates'),
-            ('cv74', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0657,), 'Inverted Damma alternates'),
-            ('cv76', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0633, 0x0670), 'Superscript alef alternates'),
-            ('cv78', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x0652,), 'Sukun alternates'),
-            ('cv80', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06DD,), 'Ayah alternates'),
-            ('cv81', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0xFDFD,), 'Honorific ligatures'),
-            ('cv82', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7, 0x0020, 0x06DD, 0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
-            ('cv84', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x060C, 0x061B), 'Comma alternates'),
-            ('cv85', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x066B,), 'Decimal separator'),
-            ('pnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, tuple(ord(d) for d in '11111 77777'), 'Proportional digits'),
-            ('tnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7), 'Tabular digits'),
+           #('cv02', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0623,), 'Warsh alternates'),
+            ('cv08', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x062C,), 'Jeem/Hah alternates'),
+            ('cv12', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 0, 'ks': 1, 'ky': 1}, (0x062F,), 'Dal alternates'),
+            ('cv20', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0635,), 'Sad/Dad alternates'),
+            ('cv44', {'sd': 0, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0645,), 'Meem alternates'),
+            ('cv48', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0647,), 'Heh alternates'),
+            ('cv49', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06BE,), 'Heh Doachashmee alternates'),
+           #('cv50', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0677,), 'U alternates'),
+            ('cv51', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06C5,), 'Kyrgyz OE alternate'),
+            ('cv54', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 0}, (0x0626,), 'Yeh Hamza alternate'),
+            ('cv60', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0622,), 'Maddah alternates'),
+            ('cv62', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0651, 0x0650), 'Kasra alternates'),
+            ('cv70', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x064F,), 'Damma  alternates'),
+            ('cv72', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 0, 'wo': 1, 'ks': 1, 'ky': 1}, (0x064C,), 'Dammatan alternates'),
+            ('cv74', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0657,), 'Inverted Damma alternates'),
+            ('cv76', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0633, 0x0670), 'Superscript alef alternates'),
+            ('cv78', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0652,), 'Sukun alternates'),
+            ('cv80', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06DD,), 'Ayah alternates'),
+            ('cv81', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0xFDFD,), 'Honorific ligatures'),
+            ('cv82', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7, 0x0020, 0x06DD, 0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
+            ('cv84', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x060C, 0x061B), 'Comma alternates'),
+            ('cv85', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x066B,), 'Decimal separator'),
+            ('pnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, tuple(ord(d) for d in '11111 77777'), 'Proportional digits'),
+            ('tnum', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06F4, 0x06F6, 0x06F7), 'Tabular digits'),
         ))
 
         ftml._fxml.head.comment = 'In this test, the comment column indicates whether the feature is expected to ' \
-                                  'function with the given language tag. '
+                                  'fully function with the given language tag. '
         for (tag, expected, uids, description) in tests:
             # Skip any features that aren't in this font
             if tag not in builder.features:
