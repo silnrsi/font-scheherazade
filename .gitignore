@@ -12,23 +12,29 @@ bin/**
 source/temp/*
 source/masters/temp/*
 source/backups/*
+.tmp/*
 
 # temporary fontdocs files
 documentation/source/pdftemp/
-documentation/source/productsite/
+# documentation/source/productsite/
 web/*.woff*
+
+# graphite
+$_temp.gdl
+gdlerr.txt
+graide_dbg_output.json
+graide_image*.png
+dbg_*.txt
 
 # diffenator2
 .ninja_log
 build.ninja
-
 
 # general backup files
 *~
 *.swp
 *.autosave
 *(Autosaved)*
-
 
 # OS X
 *.DS_STORE
@@ -54,7 +60,6 @@ $RECYCLE.BIN/
 Thumbs.db
 ehthumbs.db
 *.lnk
-
 
 # AFDKO
 current.fpr
@@ -108,6 +113,7 @@ $RECYCLE.BIN/
 # Other
 .sass-cache/
 .jekyll-metadata
+tmp/
 
 # Byte-compiled / optimized files
 *.py[co]

@@ -27,6 +27,7 @@ repos=(
 #    list of matching files is the same for every every repo!
 files=(
     .gitattributes
+    .gitignore
     tools/copycommon-shl
     tools/absgenftml.py
     tools/absgenclasses.py
