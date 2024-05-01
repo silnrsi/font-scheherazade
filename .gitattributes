@@ -13,14 +13,11 @@
 # which will have eol conversion applied according to core.autocrlf and core.eol 
 * text=auto
 
-# Explicitly declare the below matches to be text files, to convert eols to CRLF when 
-# writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
-
-*.bas text eol=crlf
-*.bat text eol=crlf
-
 # Explicitly declare the below matches to be text files, to keep LF eols when 
 # writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
+# TODO: consider uncommenting the below line starting with [attr] and 
+# removing "eol=lf" from the below lines
+#[attr]text text eol=lf
 
 *.cfg text eol=lf
 *.css text eol=lf
@@ -51,7 +48,7 @@ preflightg text eol=lf
 preflightff text eol=lf
 preglyphs text eol=lf
 wscript text eol=lf
-copycommon-shl text eol=lf
+copycommon* text eol=lf
 
 *.sh text eol=lf
 *.sfd text eol=lf
@@ -59,6 +56,12 @@ copycommon-shl text eol=lf
 # Keep these as LF because vfb2ufo generates LF, even on Windows:
 *.glif text eol=lf
 *.plist text eol=lf
+
+# Explicitly declare the below matches to be text files, to convert eols to CRLF when 
+# writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
+
+# For graide-related work done on Windows:
+*.bat text eol=crlf
 
 # Declare all files that are truly binary and should not be modified.
 *.png binary
