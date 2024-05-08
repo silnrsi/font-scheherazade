@@ -281,37 +281,28 @@ lookup AllahLigatures {
 } AllahLigatures;
 
 
-# Ligatures of marks
-
-# NB: This includes required ligatures other than the shadda-kasra rule, which
-#     must execute after cv67; See notes with feature liga.
-
-# These compositions have to strike a balance between
-# trying to do something useful for DirectWrite (which doesn't reorder glyphs) without
-# violating the rules of UTR53.
-
-
-# Hamza ligation
+# Hamza ligation to base when it needs to be "low"
 
 # Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
 # Mark glyphs not included will be skipped over when trying to find a hamzaAbove
-
 @HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb ] ;
-
-#********
-# Ligatures of marks
-
-# NB: This includes required ligatures other than the shadda-kasra rule, which
-#     must execute after cv67; See notes with feature liga.
-
-# These compositions have to strike a balance between trying to do something useful for 
-# DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
 
 lookup ComposeLowHamzaAbove {
   lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
     sub @LowHamzaBase hamzaabove-ar by @LowHamzaComposed ;
 } ComposeLowHamzaAbove;
 
+
+#********
+# Ligatures of marks
+
+# We wouldn't need to ligate marks at all if UTR53 were ubiquitous, but since it isn't 
+# we do this to try to get the "correct display" in the face of variant mark orders.
+# These compositions have to strike a balance between trying to do something useful 
+# for DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
+
+
+# Hamza ligation
 
 @LigateHamzaMarksFilter = [ hamzaabove-ar @HamzaMarks ] ;
 lookup _LigateHamzaMarks {
@@ -342,11 +333,17 @@ lookup HamzaLigatures {
 } HamzaLigatures;
 
 
-# Shadda ligation
+# Shadda ligation -- except for shadda-kasra
 
-# Including graphemejoinercomb allows it to interrupt the ligature formation,
-#   otherwise the lookupflag causes it to be ignored.
-@ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb ] ;
+# NB: Here we include shadda-mark ligatures *other than* the shadda-kasra rule, which
+#     must execute after cv67; See notes with feature liga.
+
+@ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar 
+      # All the remaining are to prevent ligature formation if they are between shadda and the mark:
+      alefabove-ar graphemejoinercomb
+      # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
+      fathasmall-ar openfathatan-ar opendammatan-ar  
+    ] ;
 lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
     sub shadda-ar @ShaddaMarks by @ShaddaLigatures ;
