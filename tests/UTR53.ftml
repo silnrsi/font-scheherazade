@@ -3,9 +3,8 @@
 <ftml version="1.0">
   <head>
     <fontscale>250</fontscale>
-    <fontsrc label="Har-Gr">url(../../font-harmattan/results/Harmattan-Regular.ttf)</fontsrc>
-    <fontsrc label="Reg-Gr">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc label="Reg-OT">url(../results/tests/ftml/fonts/ScheherazadeNew-Regular_ot_arab.ttf)</fontsrc>
+    <fontsrc label="Har">url(../../font-harmattan/results/Harmattan-Regular.ttf)</fontsrc>
+    <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv62' 1" name="cv62_1"/>  <!-- lowered kasra -->
       <style feats="'cv62' 2" name="cv62_2"/>  <!-- raised kasra -->

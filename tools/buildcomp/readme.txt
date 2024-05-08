@@ -8,9 +8,9 @@ This folder is used to generate glyphs from components. The component definition
 
 * psfcsv2comp -i glyphs2build.csv compdefns.txt
 
-* psfbuildcomp -i compdefns.txt --preserve "dia[AB]|alef$" --remove "_?(above|below|center|ring|through)$" ../masters/Scheherazade-Regular.ufo
+* psfbuildcomp -i compdefns.txt --preserve "dia[AB]|alef$" --remove "_?(above|below|center|ring|through)$" ../masters/ScheherazadeNew-Regular.ufo
 
-  psfbuildcomp -i compdefns.txt --preserve "dia[AB]|alef$" --remove "_?(above|below|center|ring|through)$" ../masters/Scheherazade-Bold.ufo
+  psfbuildcomp -i compdefns.txt --preserve "dia[AB]|alef$" --remove "_?(above|below|center|ring|through)$" ../masters/ScheherazadeNew-Bold.ufo
   
 	 - Use the -a option to do a dry run and see errors before the real thing.
 	 
