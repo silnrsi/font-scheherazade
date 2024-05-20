@@ -284,10 +284,10 @@ def doit(args):
     # Step 2: read CSV data and build classes contents as we go:
 
     # RE that matches USV sequences for ligatures
-    ligatureRE = re.compile('^[0-9A-Fa-f]{4,6}(?:_[0-9A-Fa-f]{4,6})+$')
+    ligatureRE = re.compile(r'^[0-9A-Fa-f]{4,6}(?:_[0-9A-Fa-f]{4,6})+$')
     
     # RE that matches space-separated USV sequences
-    USVsRE = re.compile('^[0-9A-Fa-f]{4,6}(?:\s+[0-9A-Fa-f]{4,6})*$')
+    USVsRE = re.compile(r'^[0-9A-Fa-f]{4,6}(?:\s+[0-9A-Fa-f]{4,6})*$')
 
     # Process all records in glyph_data
     for line in incsv:
