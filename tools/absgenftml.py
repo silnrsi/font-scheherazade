@@ -239,7 +239,7 @@ def doit(args):
 
         # Add low-hamza combinations manually
         ftml.startTestGroup('Low-hamza combinations')
-        for base in (0x0647, 0x064A, 0x06C1, 0X06D5, ):
+        for base in filter(lambda x: x in builder.uids(), (0x0647, 0x064A, 0x06C1, 0X06D5, )):
             setBackgroundColor((base, 0x0654))
             for featlist in builder.permuteFeatures(uids=(base, 0x0654)):
                 ftml.setFeatures(featlist)
@@ -271,7 +271,7 @@ def doit(args):
         ftml.closeTest()
         ftml.addToTest(None, r"\u0627\u0644\u0644\u064E\u0651\u06C1", label="a-l-l-f-s-hgf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u064E\u0651\u06C1", label="a-l-M-l-s-da-hgf", comment="New Rule 3b: shouldn't match")
+        ftml.addToTest(None, r"\u0627\u0644\u065A\u0644\u064E\u0651\u06C1", label="a-l-M-l-s-da-hgf", comment="New Rule 3b: shouldn't match")
         ftml.closeTest()
         ftml.addToTest(None, r"\u0627\u0644\u0650\u0644\u064E\u0651\u06C1", label="a-l-k-l-s-da-hgf", comment="New Rule 3b: should match")
         ftml.setLang('sd')
@@ -282,7 +282,7 @@ def doit(args):
         ftml.closeTest()
         ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u064E\u0651\u06C1", label="f-a-l-l-s-da-hgf", comment="Rule 2d: not isolate alef")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u064E\u0651\u06C1", label="a-M-l-l-s-da-hgf", comment="Rule 2d: Mark")
+        ftml.addToTest(None, r"\u0627\u065A\u0644\u0644\u064E\u0651\u06C1", label="a-M-l-l-s-da-hgf", comment="Rule 2d: Mark")
         ftml.closeTest()
         ftml.addToTest(None, r" \u0644\u0644\u0651\u064E\u0647", label="space-l-l-s-da-hf", comment="Rule 2d: shouldn't match")
         ftml.closeTest()
@@ -295,11 +295,11 @@ def doit(args):
         ftml.closeTest()
         ftml.addToTest(None, r"\u0671\u0644\u0644\u0647", label="aW-l-l-h", comment="won't work")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u0647", label="a-M-l-l-h")
+        ftml.addToTest(None, r"\u0627\u065A\u0644\u0644\u0647", label="a-M-l-l-h")
         ftml.closeTest()
         ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u0647", label="f-a-l-l-h", comment="Rule 3a: shouldn't match")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u0647", label="a-l-M-l-h", comment="Rule 3d: shouldn't match")
+        ftml.addToTest(None, r"\u0627\u0644\u065A\u0644\u0647", label="a-l-M-l-h", comment="Rule 3d: shouldn't match")
         ftml.closeTest()
         ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0647", label="a-l-zwj-l-h", comment="Rule 4a: shouldn't match")
         ftml.closeTest()
