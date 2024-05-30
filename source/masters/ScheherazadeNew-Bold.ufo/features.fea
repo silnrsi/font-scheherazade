@@ -2506,15 +2506,14 @@ lookup KashmiriCALT {
 lookup KurdishCALT {
     lookupflag 0;
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
-    # Sch/Lateef default kasra behavior is high = ABS system default
-    
+    sub @Kasra_lowered by @Kasra;
 } KurdishCALT;
 
 lookup KyrgyzCALT {
     lookupflag 0;
     sub @cno_loclKIR by @c_loclKIR;
-    # Sch/Lateef default kasra behavior is high = ABS system default
-    
+    sub @Kasra_lowered by @Kasra;
+    # high kasra
 } KyrgyzCALT;
 
 lookup RohingyaCALT {
@@ -2572,14 +2571,47 @@ lookup KasraHighTT {
 
 # Jeem/Hah medial alternate: cv08
 #end do - Harmattan
-# Dal alternate: cv12
-# Has no effect in Lateef
-lookup DalAlternate {
-    lookupflag IgnoreMarks;
-    sub @cno_loclWLF by @c_loclWLF;
-} DalAlternate;
+    # Dal alternate: cv12
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    # end do - Sch or Har
+    # Sad/Dad "half" form alternate: cv20
+    lookup DalAlternate {
+        lookupflag IgnoreMarks;
+        sub dahal-ar from [dahal-ar.loclWLF dahal-ar];
+        sub dal-ar from [dal-ar.loclWLF dal-ar];
+        sub dalDotbelow-ar from [dalDotbelow-ar.loclWLF dalDotbelow-ar];
+        sub dalDotbelowTah-ar from [dalDotbelowTah-ar.loclWLF dalDotbelowTah-ar];
+        sub dalFourdots-ar from [dalFourdots-ar.loclWLF dalFourdots-ar];
+        sub dalRing-ar from [dalRing-ar.loclWLF dalRing-ar];
+        sub dalThreedotsbelow-ar from [dalThreedotsbelow-ar.loclWLF dalThreedotsbelow-ar];
+        sub dalThreedotsdown-ar from [dalThreedotsdown-ar.loclWLF dalThreedotsdown-ar];
+        sub dalTwodotsverticalbelow-ar from [dalTwodotsverticalbelow-ar.loclWLF dalTwodotsverticalbelow-ar];
+        sub dalTwodotsverticalbelowTah-ar from [dalTwodotsverticalbelowTah-ar.loclWLF dalTwodotsverticalbelowTah-ar];
+        sub dalVinvertedabove-ar from [dalVinvertedabove-ar.loclWLF dalVinvertedabove-ar];
+        sub dalVinvertedbelow-ar from [dalVinvertedbelow-ar.loclWLF dalVinvertedbelow-ar];
+        sub ddahal-ar from [ddahal-ar.loclWLF ddahal-ar];
+        sub ddal-ar from [ddal-ar.loclWLF ddal-ar];
+        sub dul-ar from [dul-ar.loclWLF dul-ar];
+        sub thal-ar from [thal-ar.loclWLF thal-ar];
+        sub dahal-ar.loclWLF from [dahal-ar.loclWLF dahal-ar];
+        sub dal-ar.loclWLF from [dal-ar.loclWLF dal-ar];
+        sub dalDotbelow-ar.loclWLF from [dalDotbelow-ar.loclWLF dalDotbelow-ar];
+        sub dalDotbelowTah-ar.loclWLF from [dalDotbelowTah-ar.loclWLF dalDotbelowTah-ar];
+        sub dalFourdots-ar.loclWLF from [dalFourdots-ar.loclWLF dalFourdots-ar];
+        sub dalRing-ar.loclWLF from [dalRing-ar.loclWLF dalRing-ar];
+        sub dalThreedotsbelow-ar.loclWLF from [dalThreedotsbelow-ar.loclWLF dalThreedotsbelow-ar];
+        sub dalThreedotsdown-ar.loclWLF from [dalThreedotsdown-ar.loclWLF dalThreedotsdown-ar];
+        sub dalTwodotsverticalbelow-ar.loclWLF from [dalTwodotsverticalbelow-ar.loclWLF dalTwodotsverticalbelow-ar];
+        sub dalTwodotsverticalbelowTah-ar.loclWLF from [dalTwodotsverticalbelowTah-ar.loclWLF dalTwodotsverticalbelowTah-ar];
+        sub dalVinvertedabove-ar.loclWLF from [dalVinvertedabove-ar.loclWLF dalVinvertedabove-ar];
+        sub dalVinvertedbelow-ar.loclWLF from [dalVinvertedbelow-ar.loclWLF dalVinvertedbelow-ar];
+        sub ddahal-ar.loclWLF from [ddahal-ar.loclWLF ddahal-ar];
+        sub ddal-ar.loclWLF from [ddal-ar.loclWLF ddal-ar];
+        sub dul-ar.loclWLF from [dul-ar.loclWLF dul-ar];
+        sub thal-ar.loclWLF from [thal-ar.loclWLF thal-ar];
+    } DalAlternate;
 
-# Sad/Dad "half" form alternate: cv20
+
 lookup SadDadAlternate {
     lookupflag IgnoreMarks;
     sub @cno_half by @c_half;
@@ -2587,8 +2619,24 @@ lookup SadDadAlternate {
 
 # Meem alternate: cv44
 lookup MeemAlternate {
+    # NB: This is written so as to allow language-specific behavior to be overridden
     lookupflag IgnoreMarks;
-    sub @cno_sindhi by @c_sindhi;
+    sub meem-ar.fina from [meem-ar.fina.sindhi meem-ar.fina];
+    sub meem-ar from [meem-ar.sindhi meem-ar];
+    sub meemDotabove-ar.fina from [meemDotabove-ar.fina.sindhi meemDotabove-ar.fina];
+    sub meemDotabove-ar from [meemDotabove-ar.sindhi meemDotabove-ar];
+    sub meemDotbelow-ar.fina from [meemDotbelow-ar.fina.sindhi meemDotbelow-ar.fina];
+    sub meemDotbelow-ar from [meemDotbelow-ar.sindhi meemDotbelow-ar];
+    sub meemThreedotsabove-ar.fina from [meemThreedotsabove-ar.fina.sindhi meemThreedotsabove-ar.fina];
+    sub meemThreedotsabove-ar from [meemThreedotsabove-ar.sindhi meemThreedotsabove-ar];
+    sub meem-ar.fina.sindhi from [meem-ar.fina.sindhi meem-ar.fina];
+    sub meem-ar.sindhi from [meem-ar.sindhi meem-ar];
+    sub meemDotabove-ar.fina.sindhi from [meemDotabove-ar.fina.sindhi meemDotabove-ar.fina];
+    sub meemDotabove-ar.sindhi from [meemDotabove-ar.sindhi meemDotabove-ar];
+    sub meemDotbelow-ar.fina.sindhi from [meemDotbelow-ar.fina.sindhi meemDotbelow-ar.fina];
+    sub meemDotbelow-ar.sindhi from [meemDotbelow-ar.sindhi meemDotbelow-ar];
+    sub meemThreedotsabove-ar.fina.sindhi from [meemThreedotsabove-ar.fina.sindhi meemThreedotsabove-ar.fina];
+    sub meemThreedotsabove-ar.sindhi from [meemThreedotsabove-ar.sindhi meemThreedotsabove-ar];
 } MeemAlternate;
 
 # Heh alternates: cv48
@@ -2643,7 +2691,8 @@ lookup KnottedHehDoTT {
 
 lookup HehDoAlternates {
     lookupflag IgnoreMarks;
-    #   0=default                       1=knotted                           2=no change             3=Kurdish-style
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default                       1=knotted                           2=bowtie (no change)    3=Kurdish-style
     sub hehDoachashmee-ar from [hehDoachashmee-ar hehDoachashmee-ar hehDoachashmee-ar];
     sub hehDoachashmee-ar.init from [hehDoachashmee-ar.init hehDoachashmee-ar.init hehDoachashmee-ar.init];
     sub hehDoachashmee-ar.medi from [hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.medi hehDoachashmee-ar.medi];
@@ -2661,10 +2710,11 @@ lookup KyrgyzOeAlternates {
 lookup YehHamzaAlternates {
     # cv54
     lookupflag 0;
-    sub yehHamzaabove-ar by yehHamzaabove-ar.loclKIR;
-    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
-    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
-    sub yehHamzaabove-ar.fina by yehHamzaabove-ar.fina.loclKIR;
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    sub yehHamzaabove-ar.fina from [yehHamzaabove-ar.fina.loclKIR yehHamzaabove-ar.fina];
+    sub yehHamzaabove-ar from [yehHamzaabove-ar.loclKIR yehHamzaabove-ar];
+    sub yehHamzaabove-ar.fina.loclKIR from [yehHamzaabove-ar.fina.loclKIR yehHamzaabove-ar.fina];
+    sub yehHamzaabove-ar.loclKIR from [yehHamzaabove-ar.loclKIR yehHamzaabove-ar];
 } YehHamzaAlternates;
 
 # Madda alternate: cv60
@@ -2679,7 +2729,8 @@ lookup YehHamzaAlternates {
 lookup KasraAlternates {
     # cv62
     lookupflag 0;
-    # NB: This is written so it doesn't matter which shadda-kasra behavior is default.
+    # NB: This is written so it doesn't matter which shadda-kasra behavior is default
+    #     and so as to allow language-specific behavior to be overridden.
     #   0=default             1=lowered       2=raised
     sub kasra-ar.lowered from [kasra-ar.lowered kasra-ar];
     sub kasratan-ar.lowered from [kasratan-ar.lowered kasratan-ar];
@@ -2690,26 +2741,34 @@ lookup KasraAlternates {
 # Damma alternates: cv70
 lookup DammaAlternates {
     lookupflag 0;
-    sub damma-ar from [damma-ar.filled damma-ar.short];
-    sub shadda_damma-ar from [shadda_damma-ar.filled shadda_damma-ar.short];
-    sub hamza_damma-ar from [hamza_damma-ar.filled hamza_damma-ar.short];
-    sub damma-ar.filled from [damma-ar.filled damma-ar.short];
-    sub shadda_damma-ar.filled from [shadda_damma-ar.filled shadda_damma-ar.short];
-    sub hamza_damma-ar.filled from [hamza_damma-ar.filled hamza_damma-ar.short];
-    sub damma-ar.short from [damma-ar.filled damma-ar.short];
-    sub shadda_damma-ar.short from [shadda_damma-ar.filled shadda_damma-ar.short];
-    sub hamza_damma-ar.short from [hamza_damma-ar.filled hamza_damma-ar.short];
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default            1=filled       2=short      3=crossed
+    sub damma-ar from [damma-ar.filled damma-ar.short damma-ar];
+    sub shadda_damma-ar from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
+    sub hamza_damma-ar from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
+    sub damma-ar.filled from [damma-ar.filled damma-ar.short damma-ar];
+    sub shadda_damma-ar.filled from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
+    sub hamza_damma-ar.filled from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
+    sub damma-ar.short from [damma-ar.filled damma-ar.short damma-ar];
+    sub shadda_damma-ar.short from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
+    sub hamza_damma-ar.short from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
 } DammaAlternates;
 
 # SixNine Dammatan: cv72
 lookup DammatanAlternate {
     lookupflag 0;
-    sub @cno_sixNine by @c_sixNine;
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default           1=sixnine  2=twonine
+    sub dammatan-ar from [dammatan-ar.sixNine dammatan-ar];
+    sub shadda_dammatan-ar from [shadda_dammatan-ar.sixNine shadda_dammatan-ar];
+    sub dammatan-ar.sixNine from [dammatan-ar.sixNine dammatan-ar];
+    sub shadda_dammatan-ar.sixNine from [shadda_dammatan-ar.sixNine shadda_dammatan-ar];
 } DammatanAlternate;
 
 # Inverted Damma alternates: cv74
 lookup DammaInvertedAlternates {
     lookupflag 0;
+    # NB: This is written so as to allow language-specific behavior to be overridden
     #   0=default;                  1=hollow;            2=filled
     sub dammainverted-ar from [dammainverted-ar.open dammainverted-ar];
     sub dammainverted-ar.open from [dammainverted-ar.open dammainverted-ar];
@@ -2737,6 +2796,7 @@ lookup DaggerAlefAlternates {
 # Sukun alternates: cv78
 lookup SukunAlternates {
     lookupflag 0;
+    # NB: This is written so as to allow language-specific behavior to be overridden
     # 0=default;                 1=downOpen        2=leftOpen        3=closed
     sub sukun-ar from [sukun-ar.downOpen sukun-ar.leftOpen sukun-ar];
     sub sukun-ar.downOpen from [sukun-ar.downOpen sukun-ar.leftOpen sukun-ar];
@@ -2817,16 +2877,17 @@ lookup DigitRohingyaTT {
 # Only used for cv82, not language-specific modifications:
 # We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
 # They are simply the standard Persian forms.
+# NB: This is written so as to allow language-specific behavior to be overridden
 lookup DigitAlternates {
     lookupflag 0;
-    #       1 = Sindhi-style      2 = Urdu-style      3 = Kurdish-style  4 = Rohingya-style
-    sub four-persian from [four-persian four-persian.urdu four-persian four-persian.roh];
-    sub four-persian.urdu from [four-persian four-persian.urdu four-persian four-persian.roh];
-    sub four-persian.roh from [four-persian four-persian.urdu four-persian four-persian.roh];
-    sub six-persian from [six-persian.urdu six-persian.urdu six-persian six-persian.urdu];
-    sub six-persian.urdu from [six-persian.urdu six-persian.urdu six-persian six-persian.urdu];
-    sub seven-persian from [seven-persian.urdu seven-persian.urdu seven-persian seven-persian.urdu];
-    sub seven-persian.urdu from [seven-persian.urdu seven-persian.urdu seven-persian seven-persian.urdu];
+    #       1 = Sindhi-style      2 = Urdu-style      3 = Kurdish-style  4 = Rohingya-style  5 = back to the default
+    sub four-persian from [four-persian four-persian.urdu four-persian four-persian.roh four-persian];
+    sub four-persian.urdu from [four-persian four-persian.urdu four-persian four-persian.roh four-persian];
+    sub four-persian.roh from [four-persian four-persian.urdu four-persian four-persian.roh four-persian];
+    sub six-persian from [six-persian.urdu six-persian.urdu six-persian six-persian.urdu six-persian];
+    sub six-persian.urdu from [six-persian.urdu six-persian.urdu six-persian six-persian.urdu six-persian];
+    sub seven-persian from [seven-persian.urdu seven-persian.urdu seven-persian seven-persian.urdu seven-persian];
+    sub seven-persian.urdu from [seven-persian.urdu seven-persian.urdu seven-persian seven-persian.urdu seven-persian];
 } DigitAlternates;
 
 # Comma alternates: cv84
@@ -3912,7 +3973,6 @@ feature salt {
 # Character Variant 12 - Sch/Har
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
     # Force other languages to include Arabic script lookups:
-    # language WLF;  -- but not this one since we enable it in the WolofCALT
     # end do - Sch or Har
         feature cv12 {
                 cvParameters {
@@ -3922,6 +3982,10 @@ feature salt {
 
                         ParamUILabelNameID {
                 name "Alternate";
+            };
+
+                        ParamUILabelNameID {
+                name "Simple";
             };
 
         };
@@ -3934,6 +3998,7 @@ feature salt {
         language RHG;
         language SND;
         language URD;
+        language WLF;
     } cv12;
 
 
@@ -3957,6 +4022,10 @@ feature cv44 {
             name "Sindhi-style";
         };
 
+                ParamUILabelNameID {
+            name "Long-tail";
+        };
+
     };
 
     script arab;
@@ -3966,7 +4035,7 @@ feature cv44 {
     language KSH;
     language KUR;
     language RHG;
-    # language SND; -- but not this one since we enable it in SindhiCALT
+    language SND;
     language URD;
     language WLF;
 } cv44;
@@ -4018,10 +4087,9 @@ feature cv49 {
         };
 
                 ParamUILabelNameID {
-            name "Standard";
+            name "Bowtie";
         };
 
-        # placeholder; not intended for use
                 ParamUILabelNameID {
             name "Kurdish-style";
         };
@@ -4077,6 +4145,10 @@ feature cv54 {
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"    ; };
                 ParamUILabelNameID {
             name "Right hamza";
+        };
+
+                ParamUILabelNameID {
+            name "Mid hamza";
         };
 
     };
@@ -4153,6 +4225,10 @@ feature cv70 {
             name "Short";
         };
 
+                ParamUILabelNameID {
+            name "Crossed";
+        };
+
     };
 
     # Same for latin & arabic:
@@ -4171,14 +4247,14 @@ feature cv72 {
             name "Six-nine";
         };
 
+                ParamUILabelNameID {
+            name "Two-nine";
+        };
+
     };
 
     # Same for latin & arabic:
     lookup DammatanAlternate;
-    # Except Rohingya where it is already set to sixNine
-    script arab;
-    language RHG exclude_dflt;
-    # MMM added to Sch
 } cv72;
 
 # Character Variant 74
@@ -4242,6 +4318,10 @@ feature cv78 {
 
                 ParamUILabelNameID {
             name "Open left";
+        };
+
+                ParamUILabelNameID {
+            name "Closed";
         };
 
     };
@@ -4314,6 +4394,10 @@ feature cv82 {
 
                 ParamUILabelNameID {
             name "Rohingya-style";
+        };
+
+                ParamUILabelNameID {
+            name "Default";
         };
 
     };

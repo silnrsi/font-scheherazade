@@ -407,20 +407,14 @@ lookup KurdishCALT {
   lookupflag 0 ;
     sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
     
-    # Sch/Lateef default kasra behavior is high = ABS system default
-	ifinfo(familyName, "Harmattan") {
-    sub @Kasra_lowered  by @Kasra;  # high kasra
-	}
+    sub @Kasra_lowered  by @Kasra;
 } KurdishCALT ;
 
 lookup KyrgyzCALT {
   lookupflag 0;
     sub @cno_loclKIR  by  @c_loclKIR ;
-
-    # Sch/Lateef default kasra behavior is high = ABS system default
-	ifinfo(familyName, "Harmattan") {
+    
     sub @Kasra_lowered  by @Kasra;  # high kasra
-	}
 } KyrgyzCALT ;
 
 lookup RohingyaCALT {
@@ -498,15 +492,19 @@ lookup JeemHahMedAlternate {
 
 }  #end do - Harmattan
 
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1 or f.find("Harmattan") != -1; {
 
 # Dal alternate: cv12
-# Has no effect in Lateef
 
 lookup DalAlternate {
+  # NB: This is written so as to allow language-specific behavior to be overridden
   lookupflag IgnoreMarks ;
-    sub @cno_loclWLF by @c_loclWLF ;
+    sub @cno_loclWLF from [ @c_loclWLF @cno_loclWLF ];
+    sub @c_loclWLF   from [ @c_loclWLF @cno_loclWLF ];
 } DalAlternate;
 
+}  # end do - Sch or Har
 
 # Sad/Dad "half" form alternate: cv20
 
@@ -519,8 +517,10 @@ lookup SadDadAlternate {
 # Meem alternate: cv44
 
 lookup MeemAlternate {
+  # NB: This is written so as to allow language-specific behavior to be overridden
   lookupflag IgnoreMarks ;
-    sub @cno_sindhi by @c_sindhi;
+    sub @cno_sindhi from [ @c_sindhi @cno_sindhi ];
+    sub @c_sindhi   from [ @c_sindhi @cno_sindhi ];
 } MeemAlternate;
 
 
@@ -575,7 +575,8 @@ lookup KnottedHehDoTT {         # TypeTuner only
 
 lookup HehDoAlternates {
   lookupflag IgnoreMarks ;
-    #   0=default                       1=knotted                           2=no change             3=Kurdish-style
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default                       1=knotted                           2=bowtie (no change)    3=Kurdish-style
     sub hehDoachashmee-ar       from  [ hehDoachashmee-ar                   hehDoachashmee-ar       hehDoachashmee-ar                  ] ;
     sub hehDoachashmee-ar.init  from  [ hehDoachashmee-ar.init              hehDoachashmee-ar.init  hehDoachashmee-ar.init             ] ;
     sub hehDoachashmee-ar.medi  from  [ hehDoachashmee-ar.medi.knottedHigh  hehDoachashmee-ar.medi  hehDoachashmee-ar.medi             ] ;
@@ -594,10 +595,9 @@ lookup KyrgyzOeAlternates {     # cv51
 
 lookup YehHamzaAlternates {			# cv54
   lookupflag 0;
-    sub yehHamzaabove-ar       by  yehHamzaabove-ar.loclKIR;
-    #sub yehHamzaabove-ar.init  by  yehHamzaabove-ar.init.loclKIR;
-    #sub yehHamzaabove-ar.medi  by  yehHamzaabove-ar.medi.loclKIR;
-    sub yehHamzaabove-ar.fina  by  yehHamzaabove-ar.fina.loclKIR;
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    sub @cno_loclKIR  from [ @c_loclKIR @cno_loclKIR ];
+    sub @c_loclKIR    from [ @c_loclKIR @cno_loclKIR ];
 } YehHamzaAlternates;
 
 
@@ -618,7 +618,8 @@ lookup MaddaAlternate {
 
 lookup KasraAlternates {        # cv62
   lookupflag 0 ;
-    # NB: This is written so it doesn't matter which shadda-kasra behavior is default.
+    # NB: This is written so it doesn't matter which shadda-kasra behavior is default
+    #     and so as to allow language-specific behavior to be overridden.
     #   0=default             1=lowered       2=raised
     sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
     sub @Kasra         from [ @Kasra_lowered  @Kasra ];
@@ -629,9 +630,11 @@ lookup KasraAlternates {        # cv62
 
 lookup DammaAlternates {
   lookupflag 0 ;
-    sub @Damma        from [ @Damma_filled  @Damma_short ];
-    sub @Damma_filled from [ @Damma_filled  @Damma_short ];
-    sub @Damma_short  from [ @Damma_filled  @Damma_short ];
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default            1=filled       2=short      3=crossed
+    sub @Damma        from [ @Damma_filled  @Damma_short @Damma ];
+    sub @Damma_filled from [ @Damma_filled  @Damma_short @Damma ];
+    sub @Damma_short  from [ @Damma_filled  @Damma_short @Damma ];
 } DammaAlternates;
 
 
@@ -639,7 +642,10 @@ lookup DammaAlternates {
 
 lookup DammatanAlternate {
   lookupflag 0 ;
-    sub @cno_sixNine by @c_sixNine ;
+    # NB: This is written so as to allow language-specific behavior to be overridden
+    #   0=default           1=sixnine  2=twonine
+    sub @cno_sixNine from [ @c_sixNine @cno_sixNine ];
+    sub @c_sixNine   from [ @c_sixNine @cno_sixNine ];
 } DammatanAlternate;
 
 
@@ -647,6 +653,7 @@ lookup DammatanAlternate {
 
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
+    # NB: This is written so as to allow language-specific behavior to be overridden
     #   0=default;                  1=hollow;            2=filled
     sub @DammaInverted      from  [ @DammaInverted_open  @DammaInverted ];
     sub @DammaInverted_open from  [ @DammaInverted_open  @DammaInverted ];
@@ -681,6 +688,7 @@ lookup DaggerAlefAlternates {   # cv76
 
 lookup SukunAlternates {
   lookupflag 0 ;
+    # NB: This is written so as to allow language-specific behavior to be overridden
     # 0=default;                 1=downOpen        2=leftOpen        3=closed
     sub sukun-ar          from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
     sub sukun-ar.downOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
@@ -747,15 +755,16 @@ lookup DigitRohingyaTT {
 # Only used for cv82, not language-specific modifications:
 # We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
 # They are simply the standard Persian forms.
+# NB: This is written so as to allow language-specific behavior to be overridden
 lookup DigitAlternates {
-  lookupflag 0 ;        #       1 = Sindhi-style      2 = Urdu-style      3 = Kurdish-style  4 = Rohingya-style
-    sub four-persian       from [four-persian         four-persian.urdu   four-persian       four-persian.roh  ];
-    sub four-persian.urdu  from [four-persian         four-persian.urdu   four-persian       four-persian.roh  ];
-    sub four-persian.roh   from [four-persian         four-persian.urdu   four-persian       four-persian.roh  ];
-    sub six-persian        from [six-persian.urdu     six-persian.urdu    six-persian        six-persian.urdu  ];
-    sub six-persian.urdu   from [six-persian.urdu     six-persian.urdu    six-persian        six-persian.urdu  ];
-    sub seven-persian      from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu];
-    sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu];
+  lookupflag 0 ;        #       1 = Sindhi-style      2 = Urdu-style      3 = Kurdish-style  4 = Rohingya-style  5 = back to the default
+    sub four-persian       from [four-persian         four-persian.urdu   four-persian       four-persian.roh    four-persian   ];
+    sub four-persian.urdu  from [four-persian         four-persian.urdu   four-persian       four-persian.roh    four-persian   ];
+    sub four-persian.roh   from [four-persian         four-persian.urdu   four-persian       four-persian.roh    four-persian   ];
+    sub six-persian        from [six-persian.urdu     six-persian.urdu    six-persian        six-persian.urdu    six-persian    ];
+    sub six-persian.urdu   from [six-persian.urdu     six-persian.urdu    six-persian        six-persian.urdu    six-persian    ];
+    sub seven-persian      from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu  seven-persian  ];
+    sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu  seven-persian  ];
 } DigitAlternates;
 
 
@@ -1147,6 +1156,7 @@ feature cv12 {
         FeatUILabelNameID  { name 3 1 0x0409 "Dal"       ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Alternate" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Simple"  ; };
     } ;
     script arab;
         lookup DalAlternate;
@@ -1157,7 +1167,7 @@ feature cv12 {
       language RHG ;
       language SND ;
       language URD ;
-      # language WLF;  -- but not this one since we enable it in the WolofCALT
+      language WLF ;
 } cv12 ;
 
 }  # end do - Sch or Har
@@ -1193,6 +1203,7 @@ feature cv44 {  # Character Variant 44
         FeatUILabelNameID  { name 3 1 0x0409 "Meem"       ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Sindhi-style"; };
+        ParamUILabelNameID { name 3 1 0x0409 "Long-tail"; };
     } ;
     script arab;
         lookup MeemAlternate;
@@ -1201,7 +1212,7 @@ feature cv44 {  # Character Variant 44
       language KSH ;
       language KUR ;
       language RHG ;
-      # language SND; -- but not this one since we enable it in SindhiCALT
+      language SND ; 
       language URD ;
       language WLF ;
 } cv44 ;
@@ -1233,7 +1244,7 @@ feature cv49 {    # Character Variant 49
         FeatUILabelNameID  { name 3 1 0x0409 "Heh Doachashmee" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Knotted"         ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };  # placeholder; not intended for use
+        ParamUILabelNameID { name 3 1 0x0409 "Bowtie"          ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
 		} ;
 		script arab;
@@ -1273,6 +1284,7 @@ feature cv54 {  # Character Variant 54
         FeatUILabelNameID  { name 3 1 0x0409 "Yeh Hamza"   ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Right hamza" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Mid hamza" ; };
     } ;
     script arab;  # Arabic
         lookup YehHamzaAlternates;
@@ -1327,6 +1339,7 @@ feature cv70 {
     ### ParamUILabelNameID { name 3 1 0x0409 "Default"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Filled"   ; };
         ParamUILabelNameID { name 3 1 0x0409 "Short"    ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Crossed"  ; };
     } ;
     # Same for latin & arabic:
       lookup DammaAlternates;
@@ -1340,12 +1353,10 @@ feature cv72 {
         FeatUILabelNameID  { name 3 1 0x0409 "Dammatan" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Six-nine" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Two-nine" ; };
     } ;
     # Same for latin & arabic:
       lookup DammatanAlternate;
-    # Except Rohingya where it is already set to sixNine
-    script arab ;
-      language RHG exclude_dflt ;    # MMM added to Sch
 } cv72 ;
 
 
@@ -1406,6 +1417,7 @@ feature cv78 {  # Character Variant 78
     ### ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open down" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Open left" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
     } ;
     # Same for latin & arabic:
       lookup SukunAlternates;
@@ -1448,6 +1460,7 @@ feature cv82 {  # Character Variant 82
         ParamUILabelNameID { name 3 1 0x0409 "Urdu-style"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"  ; };
         ParamUILabelNameID { name 3 1 0x0409 "Rohingya-style" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
     } ;
     # Same for latin & arabic:
       lookup DigitAlternates;  # Latin and Arabic

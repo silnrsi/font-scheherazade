@@ -14,15 +14,18 @@
       <style feats="'cv80' 1, 'cv82' 2" name="cv80_1_cv82_2"/>
       <style feats="'cv80' 1, 'cv82' 3" name="cv80_1_cv82_3"/>
       <style feats="'cv80' 1, 'cv82' 4" name="cv80_1_cv82_4"/>
+      <style feats="'cv80' 1, 'cv82' 5" name="cv80_1_cv82_5"/>
       <style feats="'cv80' 2" name="cv80_2"/>
       <style feats="'cv80' 2, 'cv82' 1" name="cv80_2_cv82_1"/>
       <style feats="'cv80' 2, 'cv82' 2" name="cv80_2_cv82_2"/>
       <style feats="'cv80' 2, 'cv82' 3" name="cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" name="cv80_2_cv82_4"/>
+      <style feats="'cv80' 2, 'cv82' 5" name="cv80_2_cv82_5"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv82' 2" name="cv82_2"/>
       <style feats="'cv82' 3" name="cv82_3"/>
       <style feats="'cv82' 4" name="cv82_4"/>
+      <style feats="'cv82' 5" name="cv82_5"/>
       <style lang="ks" name="ks"/>
       <style feats="'cv80' 1" lang="ks" name="ks_cv80_1"/>
       <style feats="'cv80' 2" lang="ks" name="ks_cv80_2"/>
@@ -218,6 +221,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="cv82_5">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="cv80_1">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -238,6 +245,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="cv80_1_cv82_5">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="cv80_2">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -255,6 +266,10 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="cv80_2_cv82_4">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_2_cv82_5">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
