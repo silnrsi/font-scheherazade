@@ -1379,7 +1379,7 @@ kasra-ar.lowered,uni0650.lowered,,1593,,
 shadda-ar,uni0651,0651,1594,,
 sukun-ar,uni0652,0652,1595,,
 sukun-ar.downOpen,uni0652.downOpen,,1596,ks,cv78=1
-sukun-ar.leftOpen,uni0652.leftOpen,,1597,,"cv78=2"
+sukun-ar.leftOpen,uni0652.leftOpen,,1597,,cv78=2
 madda-ar,uni0653,0653,1598,,
 madda-ar.small,uni0653.small,,1599,,cv60=1
 maddawaajib-ar,uni089C,089C,1599.1,,
@@ -1389,7 +1389,8 @@ halfmaddaovermadda-ar,uni089F,089F,1599.4,,
 pepet-ar,uni0897,0897,1599.5,,
 noonghunnaabove-ar,uni0658,0658,1600,,
 dammainverted-ar,uni0657,0657,1601,,
-dammainverted-ar.open,uni0657.open,,1603,wo,"cv74=1,2"
+dammainverted-ar.open,uni0657.open,,1603,wo,cv74=1
+dammainverted-ar.filled,uni0657.filled,,1604,,cv74=2
 fathaHorizont-ar,uni0659,0659,1605,,
 vabove-ar,uni065A,065A,1606,,
 vinvertedabove-ar,uni065B,065B,1607,,
@@ -1676,12 +1677,14 @@ rightarrowheadDotabove-ar,uni08FD,08FD,1878,,
 dammaDot-ar,uni08FE,08FE,1879,,
 marksidewaysnoonghunna-ar,uni08FF,08FF,1880,,# cv92=1
 damma_meem-ar,uni064F06E2,064F_06E2,1881,,
+damma_meem-ar.filled,uni064F06E2.filled,,1881.1,,cv70=1
+damma_meem-ar.short,uni064F06E2.short,,1881.2,,cv70=2
 fatha_meem-ar,uni064E06E2,064E_06E2,1882,,
-hamza_fatha-ar,uni0654064E,0654_064E,1883,,
-hamza_damma-ar,uni0654064F,0654_064F,1884,,
-hamza_damma-ar.filled,uni0654064F.filled,,1885,,cv70=1
-hamza_damma-ar.short,uni0654064F.short,,1886,wo,cv70=2
-kasra_meem-ar,uni065006E2,0650_06E2,1887,,
+kasra_meem-ar,uni065006ED,0650_06ED,1883,,
+hamza_fatha-ar,uni0654064E,0654_064E,1884,,
+hamza_damma-ar,uni0654064F,0654_064F,1885,,
+hamza_damma-ar.filled,uni0654064F.filled,,1886,,cv70=1
+hamza_damma-ar.short,uni0654064F.short,,1887,wo,cv70=2
 shadda_alef-ar,uni06510670,0651_0670,1888,,
 shadda_fathatan-ar,uni0651064B,0651_064B,1889,,
 shadda_dammatan-ar,uni0651064C,0651_064C,1890,,

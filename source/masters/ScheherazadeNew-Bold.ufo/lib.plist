@@ -1487,6 +1487,7 @@
     <string>noonghunnaabove-ar</string>
     <string>dammainverted-ar</string>
     <string>dammainverted-ar.open</string>
+    <string>dammainverted-ar.filled</string>
     <string>fathaHorizont-ar</string>
     <string>vabove-ar</string>
     <string>vinvertedabove-ar</string>
@@ -1773,12 +1774,14 @@
     <string>dammaDot-ar</string>
     <string>marksidewaysnoonghunna-ar</string>
     <string>damma_meem-ar</string>
+    <string>damma_meem-ar.filled</string>
+    <string>damma_meem-ar.short</string>
     <string>fatha_meem-ar</string>
+    <string>kasra_meem-ar</string>
     <string>hamza_fatha-ar</string>
     <string>hamza_damma-ar</string>
     <string>hamza_damma-ar.filled</string>
     <string>hamza_damma-ar.short</string>
-    <string>kasra_meem-ar</string>
     <string>shadda_alef-ar</string>
     <string>shadda_fathatan-ar</string>
     <string>shadda_dammatan-ar</string>
@@ -3362,6 +3365,7 @@
     <string>noonghunnaabove-ar</string>
     <string>dammainverted-ar</string>
     <string>dammainverted-ar.open</string>
+    <string>dammainverted-ar.filled</string>
     <string>fathaHorizont-ar</string>
     <string>vabove-ar</string>
     <string>vinvertedabove-ar</string>
@@ -3648,12 +3652,14 @@
     <string>dammaDot-ar</string>
     <string>marksidewaysnoonghunna-ar</string>
     <string>damma_meem-ar</string>
+    <string>damma_meem-ar.filled</string>
+    <string>damma_meem-ar.short</string>
     <string>fatha_meem-ar</string>
+    <string>kasra_meem-ar</string>
     <string>hamza_fatha-ar</string>
     <string>hamza_damma-ar</string>
     <string>hamza_damma-ar.filled</string>
     <string>hamza_damma-ar.short</string>
-    <string>kasra_meem-ar</string>
     <string>shadda_alef-ar</string>
     <string>shadda_fathatan-ar</string>
     <string>shadda_dammatan-ar</string>
@@ -4344,8 +4350,14 @@
     <string>uni08FE</string>
     <key>damma_meem-ar</key>
     <string>uni064F06E2</string>
+    <key>damma_meem-ar.filled</key>
+    <string>uni064F06E2.filled</string>
+    <key>damma_meem-ar.short</key>
+    <string>uni064F06E2.short</string>
     <key>dammainverted-ar</key>
     <string>uni0657</string>
+    <key>dammainverted-ar.filled</key>
+    <string>uni0657.filled</string>
     <key>dammainverted-ar.open</key>
     <string>uni0657.open</string>
     <key>dammareversed-ar</key>
@@ -5023,7 +5035,7 @@
     <key>kasraDotbelow-ar</key>
     <string>uni08F6</string>
     <key>kasra_meem-ar</key>
-    <string>uni065006E2</string>
+    <string>uni065006ED</string>
     <key>kasrasmall-ar</key>
     <string>uni061A</string>
     <key>kasratan-ar</key>
