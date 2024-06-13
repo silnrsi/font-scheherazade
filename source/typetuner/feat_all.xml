@@ -18,6 +18,10 @@
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Kashmiri" tag="Kas">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KashmiriCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KashmiriCALT}"/>
+		</value>
 		<value name="Kurdish" tag="Kur">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KurdishCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KurdishCALT}"/>
@@ -55,13 +59,16 @@
 	</feature>
 	-->
 
-  <!-- cv12 -->
+  <!-- cv12 - not Lateef -->
 	<feature name="Dal" value="Standard" tag="Dal"> 
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Alternate" tag="Alt">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DalAlternate}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DalAlternateTT}"/>	
+		</value>
+		<value name="Simple" tag="Smp">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DalSimpleTT}"/>	
 		</value>
 	</feature>
   
@@ -82,7 +89,10 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Sindhi-style" tag="Sn">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MeemAlternate}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MeemSindhiTT}"/>	
+		</value>
+		<value name="Long-tail" tag="Lng">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MeemLongTT}"/>	
 		</value>
 	</feature>
 
@@ -107,6 +117,9 @@
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Bowtie" tag="Bt">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {BowtieHehDoTT}"/>
+		</value>
 		<value name="Knotted" tag="Knt">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KnottedHehDoTT}"/>
 		</value>
@@ -130,8 +143,11 @@
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Mid hamza" tag="Md">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {YehHamzaMidTT}"/>
+		</value>
 		<value name="Right hamza" tag="Rt">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {YehHamzaAlternates}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {YehHamzaRightTT}"/>
 		</value>
 	</feature>
 
@@ -142,6 +158,7 @@
 		</value>
 		<value name="Large" tag="Lg">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MaddahAlternate}"/>	<!-- must be via lookup -->
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {MaddahAlternate}"/>
 		</value>
 	</feature>
 
@@ -165,11 +182,17 @@
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Crossed" tag="Cr">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaCrossedTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaCrossedTT}"/  not necessary for Har -->
+		</value>
 		<value name="Filled" tag="Fi">
-			<cmd name="encode" args="064F uni064F.filled"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaFilledTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaFilledTT}"/  not necessary for Har -->
 		</value>
 		<value name="Short" tag="Sh">
-			<cmd name="encode" args="064F uni064F.short"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaShortTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaShortTT}"/  not necessary for Har -->
 		</value>
 	</feature>
 
@@ -178,12 +201,17 @@
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Two-nine" tag="29">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanTwoNineTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanTwoNineTT}"/  not necessary for Har -->	
+		</value>
 		<value name="Six-nine" tag="69">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanAlternate}"/>	
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanSixNineTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanSixNineTT}"/  not necessary for Har -->	
 		</value>
 	</feature>
 
-	<!-- cv74: different between Sch/Lateef and Harmattan -->
+	<!-- cv74  -->
 	<feature name="Inverted Damma" value="Default" tag="IDma">
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
@@ -192,12 +220,11 @@
 			<cmd name="encode" args="0657 uni0657.open"/>
 		</value>
 		<value name="Filled" tag="Fi">
-			<cmd name="null" args="null"/>
-			<!-- <cmd name="encode" args="0657 uni0657"/> -->
+			<cmd name="encode" args="0657 uni0657.filled"/>
 		</value>
 	</feature>
 
-	<!-- cv76: different between Sch/Harmattan and Lateef -->
+	<!-- cv76: different between Sch/Harmattan and Lateef -->    <!-- TODO: Review differences -->
 	<feature name="Superscript Alef" value="Default" tag="Sal">
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
@@ -211,19 +238,26 @@
 	</feature>
 
 	<!-- cv78 -->
-	<feature name="Sukun" value="Closed" tag="Su">
-		<value name="Closed" tag="Cl">
+	<feature name="Sukun" value="Standard" tag="Su">
+		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
 		</value>
+		<value name="Closed" tag="Cl">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunClosedTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunClosedTT}"/  not necessary for Har --> 
+		</value>
 		<value name="Open down" tag="Dn">
-			<cmd name="encode" args="0652 uni0652.downOpen"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunDownTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunDownTT}"/  not necessary for Har --> 
 		</value>
 		<value name="Open left" tag="Lt">
-			<cmd name="encode" args="0652 uni08FF"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunLeftTT}"/>
+			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunLeftTT}"/  not necessary for Har --> 
 		</value>	
 	</feature>
 
 	<!-- cv80 -->
+	<!-- has no interaction with language settings so just use encoding -->
 	<feature name="End of ayah" value="Standard" tag="Ayah">
 		<value name="Standard" tag="Std">
 			<cmd name="null" args="null"/>
@@ -262,6 +296,9 @@
 		</value>
 		<value name="Urdu-style" tag="Ur">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitUrduTT}"/>
+		</value>
+		<value name="Default" tag="Def">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DigitDefaultTT}"/>
 		</value>
 	</feature>
 	
@@ -377,13 +414,13 @@
 	<aliases/>
 	
 	<old_names>
-		<old_value feature="Damma" name="Standard" tag="Def" />
+		<old_value feature="Damma" name="Standard" tag="Def" />		<!-- cv70 -->
 
-		<old_feature  name="Six-nine dammatan" tag="Dmtan"/>
+		<old_feature  name="Six-nine dammatan" tag="Dmtan"/>		<!-- cv72 -->
 		<old_value feature="Six-nine dammatan" name="False" tag="Std"/>
 		<old_value feature="Six-nine dammatan" name="True"  tag="69"/> 
 
-		<old_feature  name="Downward comma" tag="Comma"/>
+		<old_feature  name="Downward comma" tag="Comma"/>			<!-- cv84 -->
 		<old_value feature="Downward comma" name="False" tag="Up"/>
 		<old_value feature="Downward comma" name="True"  tag="Dn"/>
 	</old_names>

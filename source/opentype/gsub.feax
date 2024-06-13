@@ -42,7 +42,7 @@ languagesystem latn dflt ;
 lookup Mirror {
   lookupflag IgnoreMarks ;
     sub @cno_rtl by @c_rtl ;
-} Mirror;
+} Mirror ;
 
 # HB PAUSE
 
@@ -52,7 +52,7 @@ lookup Mirror {
 lookup SmallMadda {
   lookupflag 0 ;
     sub @Maddah by @Maddah.small ;
-} SmallMadda;
+} SmallMadda ;
 
 
 # For full UTR53 stacks, this decomposition will already have been done.
@@ -61,7 +61,7 @@ lookup SmallMadda {
 lookup DecomposeForColor {
   lookupflag IgnoreMarks ;
     sub @AlefPlusMark by alef-ar @AlefMark ;
-} DecomposeForColor;
+} DecomposeForColor ;
 
 
 # Font rendering check
@@ -71,12 +71,12 @@ lookup DecomposeForColor {
 lookup _FontCheck_Unknow {
   lookupflag IgnoreMarks;
     sub [U n k o w ] by [O p e T y];
-} _FontCheck_Unknow;
+} _FontCheck_Unknow ;
 
 lookup _FontCheck_n {
   lookupflag IgnoreMarks;
     sub n by p e;
-} _FontCheck_n;
+} _FontCheck_n ;
 
 lookup FontCheck {
   lookupflag IgnoreMarks ;
@@ -88,7 +88,7 @@ lookup FontCheck {
       o' lookup _FontCheck_Unknow
       w' lookup _FontCheck_Unknow
       n' lookup _FontCheck_n;
-} FontCheck;
+} FontCheck ;
 
 
 # Reordering of madda: moving it beyond any mark with 0 < ccc < 230
@@ -107,7 +107,7 @@ lookup _ReorderMaddaVowel1 {
 lookup ReorderMaddaVowel1 {
   lookupflag 0 ;
     sub @MaddaPlain  @MaddaSkip' lookup _ReorderMaddaVowel1 ;
-} ReorderMaddaVowel1;
+} ReorderMaddaVowel1 ;
 
 lookup _ReorderMaddaVowel2 {
   lookupflag 0 ;
@@ -117,7 +117,7 @@ lookup _ReorderMaddaVowel2 {
 lookup ReorderMaddaVowel2 {
   lookupflag 0 ;
     sub @MaddaPlain' lookup _ReorderMaddaVowel2  @MaddaSkip  @MaddaInsert ;
-} ReorderMaddaVowel2;
+} ReorderMaddaVowel2 ;
 
 
 # Replace Arabic punctuation glyphs with Latin ones:
@@ -136,7 +136,7 @@ lookup ltrFina {
   lookupflag IgnoreMarks ;
     sub @DualLinkIsol  by  @DualLinkFina ;
     sub @RightLinkIsol by  @RightLinkFina ;
-} ltrFina;
+} ltrFina ;
 
 # HB PAUSE
 
@@ -145,7 +145,7 @@ lookup ltrFina {
 lookup ltrMedi {
   lookupflag IgnoreMarks ;
     sub @DualLinkIsol  by  @DualLinkMedi ;
-} ltrMedi;
+} ltrMedi ;
 
 # HB PAUSE
 
@@ -154,7 +154,7 @@ lookup ltrMedi {
 lookup ltrInit {
   lookupflag IgnoreMarks ;
     sub @DualLinkIsol  by  @DualLinkInit ;
-} ltrInit;
+} ltrInit ;
 
 # HB PAUSE
 
@@ -167,28 +167,28 @@ lookup ltrInit {
 
 lookup _AllahSub_Alef {
     sub @AlefNoAllah  by  @AlefAllah;
-} _AllahSub_Alef;
+} _AllahSub_Alef ;
 
 lookup _AllahSub_Lam1 {
     sub @Lam1NoAllah  by  @Lam1Allah;
-} _AllahSub_Lam1;
+} _AllahSub_Lam1 ;
 
 lookup _AllahSub_Lam2 {
     sub lam-ar.medi     by lam-ar.medi.allah2;
-} _AllahSub_Lam2;
+} _AllahSub_Lam2 ;
 
 lookup _AllahSub_Lam2_insertSA {    # insert shadda-alef
   lookupflag 0;
     sub lam-ar.medi  by  lam-ar.medi.allah2  shadda_alef-ar ;
-} _AllahSub_Lam2_insertSA;
+} _AllahSub_Lam2_insertSA ;
 
 lookup _AllahSub_Heh {
     sub @HehNoAllah  by  @HehAllah;
-} _AllahSub_Heh;
+} _AllahSub_Heh ;
 
 lookup _AllahSub_Shadda_insertA {
     sub shadda-ar     by   shadda_alef-ar;
-} _AllahSub_Shadda_insertA;
+} _AllahSub_Shadda_insertA ;
 
 
 # Note:
@@ -278,7 +278,7 @@ lookup AllahLigatures {
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
 
-} AllahLigatures;
+} AllahLigatures ;
 
 
 # Hamza ligation to base when it needs to be "low"
@@ -290,7 +290,7 @@ lookup AllahLigatures {
 lookup ComposeLowHamzaAbove {
   lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
     sub @LowHamzaBase hamzaabove-ar by @LowHamzaComposed ;
-} ComposeLowHamzaAbove;
+} ComposeLowHamzaAbove ;
 
 
 #********
@@ -309,7 +309,7 @@ lookup _LigateHamzaMarks {
   lookupflag UseMarkFilteringSet @LigateHamzaMarksFilter ;
     sub hamzaabove-ar @HamzaMarks   by  @HamzaLigatures ;
     sub @HamzaMarks   hamzaabove-ar by  @HamzaLigatures ;
-} _LigateHamzaMarks;
+} _LigateHamzaMarks ;
 
 @HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks shadda-ar ] ;
 lookup HamzaLigatures {
@@ -330,7 +330,7 @@ lookup HamzaLigatures {
     sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other [ @UTR53_230other @UTR53_230MCM ] @HamzaMarks ;
     sub @HamzaMarks'   lookup _LigateHamzaMarks                 hamzaabove-ar ;
     sub @HamzaMarks'   lookup _LigateHamzaMarks @UTR53_230MCM   hamzaabove-ar ;
-} HamzaLigatures;
+} HamzaLigatures ;
 
 
 # Shadda ligation -- except for shadda-kasra
@@ -348,7 +348,7 @@ lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
     sub shadda-ar @ShaddaMarks by @ShaddaLigatures ;
     sub @ShaddaMarks shadda-ar by @ShaddaLigatures ;
-} ShaddaLigatures;
+} ShaddaLigatures ;
 
 # In theory we could do this up where we create the Allah ligature, but this simpler:
 lookup ShaddaAlefLigatures {
@@ -357,7 +357,7 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.medi.allah2 shadda-ar'    alefabove-ar'  by  shadda_alef-ar;
     sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'     by  shadda_alef-ar;
   }
-} ShaddaAlefLigatures;
+} ShaddaAlefLigatures ;
 
 
 # HB PAUSE
@@ -375,7 +375,7 @@ ifinfo(familyName, "Lateef") {
 lookup DaggerAlefToLarge {
   lookupflag 0 ;
       sub @TakesLargeDaggerAlef alefabove-ar' by alefabove-ar.large ;   # Lateef
-} DaggerAlefToLarge;
+} DaggerAlefToLarge ;
 
 }  # Lateef
 
@@ -452,7 +452,6 @@ lookup UrduCALT {
 lookup WolofCALT {
   lookupflag 0 ;
     sub @cno_loclWLF     by  @c_loclWLF ;
-    
     sub @Damma           by  @Damma_short ;
     sub dammainverted-ar by  dammainverted-ar.open ;
 
@@ -466,12 +465,12 @@ lookup WolofCALT {
 lookup KasraLowTT {
   lookupflag 0 ;
     sub @Kasra by @Kasra_lowered;
-} KasraLowTT;
+} KasraLowTT ;
 
 lookup KasraHighTT {
   lookupflag 0 ;
     sub @Kasra_lowered by @Kasra;
-} KasraHighTT;
+} KasraHighTT ;
 
 # HB PAUSE
 
@@ -479,6 +478,7 @@ lookup KasraHighTT {
 
 # Lookups for user-selectable features
 
+#NB: Lookup names ending in "TT" are used only by TypeTuner
 
 do let f = info("familyName");
    if f.find("Harmattan") != -1; {
@@ -488,7 +488,7 @@ do let f = info("familyName");
 lookup JeemHahMedAlternate {
   lookupflag IgnoreMarks ;
     sub @cno_hand by @c_hand ;
-} JeemHahMedAlternate;
+} JeemHahMedAlternate ;
 
 }  #end do - Harmattan
 
@@ -497,12 +497,22 @@ do let f = info("familyName");
 
 # Dal alternate: cv12
 
+lookup DalAlternateTT {
+  lookupflag IgnoreMarks ;
+    sub @cno_loclWLF by @c_loclWLF ;
+} DalAlternateTT ;
+
+lookup DalSimpleTT {
+  lookupflag IgnoreMarks ;
+    sub @c_loclWLF by @cno_loclWLF ;
+} DalSimpleTT ;
+
 lookup DalAlternate {
   # NB: This is written so as to allow language-specific behavior to be overridden
   lookupflag IgnoreMarks ;
     sub @cno_loclWLF from [ @c_loclWLF @cno_loclWLF ];
     sub @c_loclWLF   from [ @c_loclWLF @cno_loclWLF ];
-} DalAlternate;
+} DalAlternate ;
 
 }  # end do - Sch or Har
 
@@ -511,17 +521,27 @@ lookup DalAlternate {
 lookup SadDadAlternate {
   lookupflag IgnoreMarks ;
     sub @cno_half by @c_half ;
-} SadDadAlternate;
+} SadDadAlternate ;
 
 
 # Meem alternate: cv44
+
+lookup MeemSindhiTT {
+  lookupflag IgnoreMarks ;
+    sub @cno_sindhi by @c_sindhi   ;
+} MeemSindhiTT ;
+
+lookup MeemLongTT {
+  lookupflag IgnoreMarks ;
+    sub @c_sindhi   by @cno_sindhi ;
+} MeemLongTT ;
 
 lookup MeemAlternate {
   # NB: This is written so as to allow language-specific behavior to be overridden
   lookupflag IgnoreMarks ;
     sub @cno_sindhi from [ @c_sindhi @cno_sindhi ];
     sub @c_sindhi   from [ @c_sindhi @cno_sindhi ];
-} MeemAlternate;
+} MeemAlternate ;
 
 
 # Heh alternates: cv48
@@ -530,14 +550,14 @@ lookup KurdishHehTT {        # TypeTuner only
   lookupflag IgnoreMarks ;
     sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
-} KurdishHehTT;
+} KurdishHehTT ;
 
 lookup SindhiHehTT {         # TypeTuner only
   lookupflag IgnoreMarks ;
     sub heh-ar.medi by heh-ar.medi.knottedHigh ;
     sub heh-ar.fina by heh-ar.fina.knottedHigh ;
     sub heh-ar by heh-ar.knotted ;
-} SindhiHehTT;
+} SindhiHehTT ;
 
 lookup UrduHehTT {           # TypeTuner only}
   lookupflag IgnoreMarks ;
@@ -547,7 +567,7 @@ lookup UrduHehTT {           # TypeTuner only}
     # In case Lang=Kurdish is set:
     sub heh-ar.knotted by heh-ar;
     sub heh-ar.fina.knottedHigh by heh-ar.fina.hooked ;
-} UrduHehTT;
+} UrduHehTT ;
 
 
 lookup HehAlternates {
@@ -557,7 +577,7 @@ lookup HehAlternates {
     sub heh-ar.init   from  [ heh-ar.init              heh-ar.init.hooked  heh-ar.init             ] ;
     sub heh-ar.medi   from  [ heh-ar.medi.knottedHigh  heh-ar.medi.hooked  heh-ar.medi             ] ;
     sub heh-ar.fina   from  [ heh-ar.fina.knottedHigh  heh-ar.fina.hooked  heh-ar.fina.knottedHigh ] ;
-} HehAlternates;
+} HehAlternates ;
 
 
 # Heh-doachashmee alternates: cv49
@@ -565,13 +585,18 @@ lookup HehAlternates {
 lookup KurdishHehDoTT {        # TypeTuner only
   lookupflag IgnoreMarks ;
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh ;
-} KurdishHehDoTT;
+} KurdishHehDoTT ;
+
+lookup BowtieHehDoTT {
+  lookupflag IgnoreMarks ;
+    sub hehDoachashmee-ar.fina.knottedHigh by hehDoachashmee-ar.fina ;
+} BowtieHehDoTT ;
 
 lookup KnottedHehDoTT {         # TypeTuner only
   lookupflag IgnoreMarks ;
     sub hehDoachashmee-ar.medi by hehDoachashmee-ar.medi.knottedHigh ;
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh ;
-} KnottedHehDoTT;
+} KnottedHehDoTT ;
 
 lookup HehDoAlternates {
   lookupflag IgnoreMarks ;
@@ -584,21 +609,33 @@ lookup HehDoAlternates {
     # In case Kurdish lang has been selected, undo its behavior where necessary:
     sub hehDoachashmee-ar.fina.knottedHigh
                                 from  [ hehDoachashmee-ar.fina.knottedHigh  hehDoachashmee-ar.fina  hehDoachashmee-ar.fina.knottedHigh ] ;
-} HehDoAlternates;
+} HehDoAlternates ;
 
    
 lookup KyrgyzOeAlternates {     # cv51
   lookupflag 0;
     sub @cno_bar  by  @c_bar;
-} KyrgyzOeAlternates;
+} KyrgyzOeAlternates ;
 
 
-lookup YehHamzaAlternates {			# cv54
+# Yeh-Hamza alternates: cv54
+
+lookup YehHamzaRightTT {
+  lookupflag 0;
+    sub @cno_loclKIR  by @c_loclKIR   ;
+} YehHamzaRightTT ;
+
+lookup YehHamzaMidTT {
+  lookupflag 0;
+    sub @c_loclKIR    by @cno_loclKIR ;
+} YehHamzaMidTT ;
+
+lookup YehHamzaAlternates {	
   lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
     sub @cno_loclKIR  from [ @c_loclKIR @cno_loclKIR ];
     sub @c_loclKIR    from [ @c_loclKIR @cno_loclKIR ];
-} YehHamzaAlternates;
+} YehHamzaAlternates ;
 
 
 # Madda alternate: cv60
@@ -609,12 +646,12 @@ do let f = info("familyName");
 lookup MaddaAlternate {
   lookupflag 0 ;
     sub @Maddah.small by @Maddah ;
-} MaddaAlternate;
+} MaddaAlternate ;
 
 }  # Sch or Har
 
 
-# Kasra Alternates: cv62
+# Kasra alternates: cv62
 
 lookup KasraAlternates {        # cv62
   lookupflag 0 ;
@@ -623,10 +660,28 @@ lookup KasraAlternates {        # cv62
     #   0=default             1=lowered       2=raised
     sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
     sub @Kasra         from [ @Kasra_lowered  @Kasra ];
-} KasraAlternates;
+} KasraAlternates ;
 
 
 # Damma alternates: cv70
+
+lookup DammaFilledTT {
+  lookupflag 0 ;
+    sub @Damma       by @Damma_filled ;
+    sub @Damma_short by @Damma_filled ;
+} DammaFilledTT ;
+
+lookup DammaShortTT {
+  lookupflag 0 ;
+    sub @Damma        by @Damma_short ;
+    sub @Damma_filled by @Damma_short ;
+} DammaShortTT ;
+
+lookup DammaCrossedTT {
+  lookupflag 0 ;
+    sub @Damma_filled by @Damma ;
+    sub @Damma_short  by @Damma ;
+} DammaCrossedTT ;
 
 lookup DammaAlternates {
   lookupflag 0 ;
@@ -635,10 +690,20 @@ lookup DammaAlternates {
     sub @Damma        from [ @Damma_filled  @Damma_short @Damma ];
     sub @Damma_filled from [ @Damma_filled  @Damma_short @Damma ];
     sub @Damma_short  from [ @Damma_filled  @Damma_short @Damma ];
-} DammaAlternates;
+} DammaAlternates ;
 
 
-# SixNine Dammatan: cv72
+# Dammatan alternates: cv72
+
+lookup DammatanSixNineTT {
+  lookupflag 0;
+    sub @cno_sixNine by @c_sixNine ;
+} DammatanSixNineTT ;
+
+lookup DammatanTwoNineTT {
+  lookupflag 0;
+    sub @c_sixNine by @cno_sixNine ;
+} DammatanTwoNineTT ;
 
 lookup DammatanAlternate {
   lookupflag 0 ;
@@ -646,7 +711,7 @@ lookup DammatanAlternate {
     #   0=default           1=sixnine  2=twonine
     sub @cno_sixNine from [ @c_sixNine @cno_sixNine ];
     sub @c_sixNine   from [ @c_sixNine @cno_sixNine ];
-} DammatanAlternate;
+} DammatanAlternate ;
 
 
 # Inverted Damma alternates: cv74
@@ -654,10 +719,11 @@ lookup DammatanAlternate {
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
     # NB: This is written so as to allow language-specific behavior to be overridden
-    #   0=default;                  1=hollow;            2=filled
-    sub @DammaInverted      from  [ @DammaInverted_open  @DammaInverted ];
-    sub @DammaInverted_open from  [ @DammaInverted_open  @DammaInverted ];
-} DammaInvertedAlternates;
+    #   0=default;                      1=hollow;              2=filled
+    sub dammainverted-ar        from  [ dammainverted-ar.open  dammainverted-ar.filled ];
+    sub dammainverted-ar.open   from  [ dammainverted-ar.open  dammainverted-ar.filled ];
+    sub dammainverted-ar.filled from  [ dammainverted-ar.open  dammainverted-ar.filled ];
+} DammaInvertedAlternates ;
 
 
 # DaggerAlef alternates: cv76
@@ -681,10 +747,25 @@ lookup DaggerAlefAlternates {   # cv76
     sub alefabove-ar.large from [ alefabove-ar.large alefabove-ar ] ;
 	}
 
-} DaggerAlefAlternates;
+} DaggerAlefAlternates ;
 
 
 # Sukun alternates: cv78
+
+lookup SukunDownTT {
+  lookupflag 0 ;
+    sub [sukun-ar sukun-ar.leftOpen] by sukun-ar.downOpen ;
+} SukunDownTT ;
+
+lookup SukunLeftTT {
+  lookupflag 0 ;
+    sub [sukun-ar sukun-ar.downOpen] by sukun-ar.leftOpen ;
+} SukunLeftTT ;
+
+lookup SukunClosedTT {
+  lookupflag 0 ;
+    sub [sukun-ar.downOpen sukun-ar.leftOpen] by sukun-ar ;
+} SukunClosedTT ;
 
 lookup SukunAlternates {
   lookupflag 0 ;
@@ -693,7 +774,7 @@ lookup SukunAlternates {
     sub sukun-ar          from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
     sub sukun-ar.downOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
     sub sukun-ar.leftOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
-} SukunAlternates;
+} SukunAlternates ;
 
 
 # End of Ayah alternates: cv80
@@ -701,7 +782,7 @@ lookup SukunAlternates {
 lookup AyahAlternates {
   lookupflag 0 ;
     sub @Ayah from [ @AyahCircle  @AyahSquare ] ;
-} AyahAlternates;
+} AyahAlternates ;
 
 
 ifinfo(familyName, "Scheherazade New") {
@@ -709,12 +790,12 @@ ifinfo(familyName, "Scheherazade New") {
 lookup HonLigAlternates {      # cv81
   lookupflag 0;
     sub @HonLigCall from @HonLigSmpl ;
-} HonLigAlternates;
+} HonLigAlternates ;
 
 }  # Sch
 
 
-# Digit alternates
+# Eastern digit alternates: cv82
 
 # TypeTuner lookups:
 
@@ -724,7 +805,7 @@ lookup DigitSindhiTT {
     sub four-persian.roh    by four-persian;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitSindhiTT;
+} DigitSindhiTT ;
 
 lookup DigitUrduTT {
   lookupflag 0;
@@ -732,7 +813,7 @@ lookup DigitUrduTT {
     sub four-persian.roh    by four-persian.urdu;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitUrduTT;
+} DigitUrduTT ;
 
 lookup DigitKurdishTT {
   lookupflag 0;
@@ -740,17 +821,21 @@ lookup DigitKurdishTT {
     sub four-persian.roh    by four-persian;
     sub six-persian.urdu    by six-persian;
     sub seven-persian.urdu  by seven-persian;
-} DigitKurdishTT;
+} DigitKurdishTT ;
 
 lookup DigitRohingyaTT {
     sub four-persian        by four-persian.roh;
     sub four-persian.urdu   by four-persian.roh;
     sub six-persian         by six-persian.urdu;
     sub seven-persian       by seven-persian.urdu;
-} DigitRohingyaTT;
+} DigitRohingyaTT ;
 
-
-# Eastern digit alternates: cv82
+lookup DigitDefaultTT {
+    sub four-persian.roh    by four-persian;
+    sub four-persian.urdu   by four-persian;
+    sub six-persian.urdu    by six-persian;
+    sub seven-persian.urdu  by seven-persian;
+} DigitDefaultTT ;
 
 # Only used for cv82, not language-specific modifications:
 # We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
@@ -765,7 +850,7 @@ lookup DigitAlternates {
     sub six-persian.urdu   from [six-persian.urdu     six-persian.urdu    six-persian        six-persian.urdu    six-persian    ];
     sub seven-persian      from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu  seven-persian  ];
     sub seven-persian.urdu from [seven-persian.urdu   seven-persian.urdu  seven-persian      seven-persian.urdu  seven-persian  ];
-} DigitAlternates;
+} DigitAlternates ;
 
 
 # Comma alternates: cv84
@@ -773,7 +858,7 @@ lookup DigitAlternates {
 lookup CommaAlternates {
   lookupflag IgnoreMarks ;
     sub @cno_downward by @c_downward;
-} CommaAlternates;
+} CommaAlternates ;
 
 
 # Decimal separator alternates: cv85
@@ -781,7 +866,7 @@ lookup CommaAlternates {
 lookup DecimalSepAlternate {    # cv85
   lookupflag IgnoreMarks ;
 		sub @cno_slash by @c_slash;
-} DecimalSepAlternate;
+} DecimalSepAlternate ;
 
 
 #---  liga feature  ---
@@ -794,7 +879,7 @@ lookup ShaddaKasraLigatures {
     sub @ShaddaKasraMarks graphemejoinercomb shadda-ar  by  @ShaddaKasraLigatures ;
     sub shadda-ar                    @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
     sub shadda-ar graphemejoinercomb @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
-} ShaddaKasraLigatures;
+} ShaddaKasraLigatures ;
 
 
 # Lam-Alef Ligatures
@@ -817,7 +902,7 @@ lookup LamAlefLigatures {
     #sub @LamNoLig   alefHamzabelow-ar.fina      by  @LamAlefHamzabelowLig ; # has a decomposition
 	}
 
-} LamAlefLigatures;
+} LamAlefLigatures ;
 
 
 # Must be after LamAlefLigatures
@@ -825,7 +910,7 @@ lookup LamAlefLigatures {
 lookup AllahAlef {  # clean up: make sure alef is correct form for Allah
   lookupflag IgnoreMarks;
     sub @AlefNoAllah'  lam-ar.init.allah1  by  @AlefAllah;
-} AllahAlef;
+} AllahAlef ;
 
 
 # Subtending mark digits
@@ -910,7 +995,7 @@ lookup SignWithDigits {
         [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' ;
     sub @DigitsAny' lookup _signDigits_ToSmall
         [ disputedendofayah-ar ]' ;
-} SignWithDigits;
+} SignWithDigits ;
 
 
 # Lateef only
@@ -938,12 +1023,12 @@ lookup TabularFigures {
 include(../../source/opentype/customCollisionSubs.feax);
 
 
+	ifinfo(familyName, "Scheherazade New") {
 # Scheherazade only:
 lookup WideKashida {
-	ifinfo(familyName, "Scheherazade New") {
     sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
+} WideKashida ;
 	}
-} WideKashida;
 
 
 #**********************************
@@ -1076,8 +1161,9 @@ feature calt {  # Contextual Alternates
         lookup MarkKashidas;
     }   # end of kerning substitutions
 
+ifinfo(familyName, "Scheherazade New") {
         lookup WideKashida;
-
+}
       language KIR ; # Kyrgyz
         lookup KyrgyzCALT ;
       language KSH ; # Kashmiri
@@ -1106,16 +1192,8 @@ feature calt {  # Contextual Alternates
 # HB puts everything else (clig, liga, cvXX, ssXX, salt) in one pass:
 
 feature salt {  # Stylistic Alternates
-    script arab;
-        lookup AyahAlternates;
-      # Force other languages to include Arabic script lookups
-      language KIR ;
-      language KSH ;
-      language KUR ;
-      language RHG ;
-      language SND ;
-      language URD ;
-      language WLF ;
+    # Same for latin & arabic:
+      lookup AyahAlternates;
 } salt ;
 
 #--- Character Variants ---

@@ -1,6 +1,7 @@
 # Mapping from css feature and language tags to TypeTuner features and values
 
 # Language tag mapping,TT feat,value
+lang=ks,Language,Kashmiri
 lang=ku,Language,Kurdish
 lang=ky,Language,Kyrgyz
 lang=rhg,Language,Rohingya
@@ -9,21 +10,21 @@ lang=ur,Language,Urdu
 lang=wo,Language,Wolof
 
 # feat tag mappings,TT feat,default,value 1,value 2,value 3,value 4
-cv12,Dal,Standard,Alternate
-cv44,Meem,Standard,Sindhi-style
+cv12,Dal,Standard,Alternate,Simple
+cv44,Meem,Standard,Sindhi-style,Long-tail
 cv48,Heh,Standard,Sindhi-style,Urdu-style,Kurdish-style
-cv49,Heh Doachashmee,Standard,Knotted,Standard,Kurdish-style
+cv49,Heh Doachashmee,Standard,Knotted,Bowtie,Kurdish-style
 cv51,Kyrgyz OE,Loop,Bar
-cv54,Yeh Hamza,Standard,Right hamza
+cv54,Yeh Hamza,Standard,Right hamza,Mid hamza
 cv60,Maddah,Small,Large
 cv62,Shadda+kasra placement,Default,Lowered,Raised
-cv70,Damma,Default,Filled,Short
-cv72,Dammatan,Standard,Six-nine
+cv70,Damma,Default,Filled,Short,Crossed
+cv72,Dammatan,Standard,Six-nine,Two-nine
 cv74,Inverted Damma,Default,Hollow,Filled
 cv76,Superscript Alef,Default,Large,Small
-cv78,Sukun,Closed,Open down,Open left
+cv78,Sukun,Standard,Open down,Open left,Closed
 cv80,End of ayah,Standard,Simplified A,Simplified B
 cv81,Honorific ligatures,Calligraphic,Simplified
-cv82,Eastern digits,Standard,Sindhi-style,Urdu-style,Kurdish-style,Rohingya-style
+cv82,Eastern digits,Standard,Sindhi-style,Urdu-style,Kurdish-style,Rohingya-style,Default
 cv84,Comma,Upward,Downward
 cv85,Decimal separator,Small reh,Slash
