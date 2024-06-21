@@ -78,9 +78,18 @@ weasyprint documentation/source/pdftemp/features.html documentation/pdf/features
 echo "     > history.html > history.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/history.md -o documentation/source/pdftemp/history.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/history.html documentation/pdf/history.pdf
+echo "     > honorifics.html > honorifics.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/honorifics.md -o documentation/source/pdftemp/honorifics.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/honorifics.html documentation/pdf/honorifics.pdf
+echo "     > allah.html > allah.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/allah.md -o documentation/source/pdftemp/allah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/allah.html documentation/pdf/allah.pdf
 echo "     > resources.html > resources.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/resources.md -o documentation/source/pdftemp/resources.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/resources.html documentation/pdf/resources.pdf
+echo "     > sample.html > sample.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/sample.md -o documentation/source/pdftemp/sample.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/sample.html documentation/pdf/sample.pdf
 echo "     > support.html > support.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/support.md -o documentation/source/pdftemp/support.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/support.html documentation/pdf/support.pdf

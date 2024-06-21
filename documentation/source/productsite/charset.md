@@ -16,7 +16,7 @@ Arabic Extended-B | ✓
 Supplemental Punctuation | 2E41
 Arabic Presentation Forms-A | only includes FD3E..FD3F, FD40..FD4F, FDCF, FDF2, FDFA..FDFF
 Arabic Presentation Forms-B | ✗ 
-Arabic Extended-C | only includes 10EFD..10EFF
+Arabic Extended-C | only includes 10EC2..10EC4, 10EFC..10EFF
 Codepage 1252 (Western)¹ | ✓
 
 A selection of characters from the General Punctuation block, such as various-sized spaces, are also supported; a utility such as <a href="https://scripts.sil.org/ViewGlyph_home">SIL ViewGlyph</a> can be used to examine the exact repertoire of this font. U+204F REVERSED SEMICOLON and U+2E41 REVERSED COMMA have been added to support Sindhi punctuation.

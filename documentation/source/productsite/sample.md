@@ -86,12 +86,12 @@ Regular:<span class='scheherazadenewL-R normal'>™ Ω ∂ ∆ ∏ ∑ − ∕ 
 #### Regular:
 
 <p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E;</br></br>
-&#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
+&#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0897; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
 
 #### Bold:
 
 <p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E;</br></br>
-&#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
+&#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0897; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
 
 ### Arabic Extended-A:
 
@@ -119,11 +119,11 @@ Regular:<span class='scheherazadenewL-R normal'>™ Ω ∂ ∆ ∏ ∑ − ∕ 
 
 #### Regular:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
 
 #### Bold:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
 
 ## Arabic Shaping (some basic shapes):
 

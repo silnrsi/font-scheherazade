@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Rendering the Allah ligature
-fontversion: 4.000
+fontversion: 4.300
 ---
 
 

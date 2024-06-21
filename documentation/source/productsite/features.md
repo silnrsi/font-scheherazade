@@ -15,14 +15,14 @@ This page uses web fonts (WOFF) to demonstrate font features and should display 
 
 <span class='affects'>Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span>
 
-Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.
+Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior. In the past, it was not always possible to override language-specific behavior in cases where the language-specific variants were undesirable but, as of version 4.300, the font now supports this possibility.
 
 #### Kashmiri, Kurdish (Northern), Rohingya, Sindhi, Urdu
 
 Language | Meem | Heh Doachashmee (06BE) | 4 | 6 | 7 | 0650/064E | 064C | 0652 | Feature Setting
 :-- | ---: | ----: | -: | -: | -: | --: | --: | :--- | :---
 Default | <span dir="rtl" class='scheherazadenew-R normal'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' >&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F4;</span> |<span dir="rtl" class='scheherazadenew-R normal'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0652;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x064C;</span> |
-Kashmiri | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x0628;&#x064C;</span>| <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x0628;&#x0652;</span> | `lang='ks'`
+Kashmiri | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ks'>&#x0628;&#x064C;</span>| <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x0628;&#x0652;</span> | `lang='ks'`
 Kurdish</br>(Northern) | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku' style="color:red">&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0628;&#x064C;</span>| <span dir="rtl" class='scheherazadenew-R normal' lang='ku'>&#x0628;&#x0652;</span>|  `lang='ku'`
 Rohingya | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R small' lang='rhg' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x0628;&#x064C;</span>|<span dir="rtl" class='scheherazadenew-R normal' lang='rhg' style="color:red">&#x0628;&#x0652;</span> |`lang='rhg'`
 Sindhi | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x0628;&#x064C;</span>| <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x0628;&#x0652;</span>| `lang='sd'`
@@ -49,6 +49,7 @@ Feature        | Sample | Feature setting
 :------------- | ---------------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x062F; &#x0630; &#x0688; &#x0689; &#x068A; &#x068B; &#x068C; &#x068D; &#x068E; &#x068F; &#x0690; &#x06EE; &#x0759; &#x075A; &#x08AE; &#x10EC2;</span>| `cv12=0`
 Alternate | <span dir="rtl" class='scheherazadenew-cv12-1-R normal'>&#x062F; &#x0630; &#x0688; &#x0689; &#x068A; &#x068B; &#x068C; &#x068D; &#x068E; &#x068F; &#x0690; &#x06EE; &#x0759; &#x075A; &#x08AE; &#x10EC2;</span>| `cv12=1`
+Simple | <span dir="rtl" class='scheherazadenew-cv12-2-R normal'>&#x062F; &#x0630; &#x0688; &#x0689; &#x068A; &#x068B; &#x068C; &#x068D; &#x068E; &#x068F; &#x0690; &#x06EE; &#x0759; &#x075A; &#x08AE; &#x10EC2;</span>| `cv12=2`
 
 #### Meem 
 
@@ -58,6 +59,7 @@ Feature        | Sample           | Feature setting
 :------------- | ---------------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span> | `cv44=0`
 Sindhi-style | <span dir="rtl" class='scheherazadenew-cv44-1-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| `cv44=1`
+Long-tail | <span dir="rtl" class='scheherazadenew-cv44-2-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| `cv44=2`
 
 
 #### Heh 
@@ -79,6 +81,7 @@ Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=0`
 Knotted | <span dir="rtl" class='scheherazadenew-cv49-1-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=1`
+Bowtie | <span dir="rtl" class='scheherazadenew-cv49-2-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=2`
 Kurdish-style | <span dir="rtl" class='scheherazadenew-cv49-3-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| `cv49=3`
 
 #### Kyrgyz OE 
@@ -98,6 +101,7 @@ Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>ئ ‍ئ</span> | `cv54=0`
 Right hamza| <span dir="rtl" class='scheherazadenew-cv54-1-R normal'>ئ ‍ئ</span>| `cv54=1`
+Mid hamza| <span dir="rtl" class='scheherazadenew-cv54-2-R normal'>ئ ‍ئ</span>| `cv54=2`
 
 #### Maddah 
 
@@ -125,8 +129,9 @@ Raised | <span dir="rtl" class='scheherazadenew-cv62-2-R normal'> بِّ ◌ِّ
 Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Default | <span dir="rtl" class='scheherazadenew-R normal'> بُ ◌ُ</span> | `cv70=0`
-Filled | <span dir="rtl" class='scheherazadenew-cv70-1-R normal'>بُ ◌ُ</span>| `cv70=1`
-Short| <span dir="rtl" class='scheherazadenew-cv70-2-R normal'>بُ ◌ُ</span>| `cv70=2`
+Filled  | <span dir="rtl" class='scheherazadenew-cv70-1-R normal'>بُ ◌ُ</span>| `cv70=1`
+Short   | <span dir="rtl" class='scheherazadenew-cv70-2-R normal'>بُ ◌ُ</span>| `cv70=2`
+Crossed | <span dir="rtl" class='scheherazadenew-cv70-3-R normal'>بُ ◌ُ</span>| `cv70=3`
 
 #### Dammatan 
 
@@ -136,6 +141,7 @@ Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>بٌ ◌ٌ</span> | `cv72=0`
 Six-nine | <span dir="rtl" class='scheherazadenew-cv72-1-R normal'>بٌ ◌ٌ</span>| `cv72=1`
+Two-nine | <span dir="rtl" class='scheherazadenew-cv72-2-R normal'>بٌ ◌ٌ</span>| `cv72=2`
 
 #### Inverted Damma 
 
@@ -167,6 +173,7 @@ Feature | Sample | Feature setting
 Closed | <span dir="rtl" class='scheherazadenew-R normal'>بْ ◌ْ</span> | `cv78=0`
 Open down | <span dir="rtl" class='scheherazadenew-cv78-1-R normal'>بْ ◌ْ</span>| `cv78=1`
 Open left | <span dir="rtl" class='scheherazadenew-cv78-2-R normal'>بْ ◌ْ</span>| `cv78=2`
+Closed | <span dir="rtl" class='scheherazadenew-cv78-3-R normal'>بْ ◌ْ</span>| `cv78=3`
 
 #### End of ayah 
 
@@ -210,19 +217,20 @@ Simplified | <span dir="rtl" class='scheherazadenew-cv81-1-R normal'>&#xFD40;&#x
 Feature | Sample | Feature setting
 :------------- | ------: | :------------- 
 Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F4;&#x06F6;&#x06F7;</span> | `cv82=0`
-Kurdish-style | <span dir="rtl" class='scheherazadenew-cv82-3-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=3`
-Rohingya-style | <span dir="rtl" class='scheherazadenew-cv82-4-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
 Sindhi-style | <span dir="rtl" class='scheherazadenew-cv82-1-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=1`
 Urdu-style | <span dir="rtl" class='scheherazadenew-cv82-2-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=2`
+Kurdish-style | <span dir="rtl" class='scheherazadenew-cv82-3-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=3`
+Rohingya-style | <span dir="rtl" class='scheherazadenew-cv82-4-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
+Default | <span dir="rtl" class='scheherazadenew-cv82-2-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=5`
 
 #### Comma 
 
-<span class='affects'>Affects: U+060C, U+061B</span>
+<span class='affects'>Affects: U+060C, U+061B (This feature is not recommended for use. The Unicode Standard recommends the use of <span dir="rtl" class='scheherazadenew-R normal'>&#x2e41;</span> U+2E41 and <span dir="rtl" class='scheherazadenew-R normal'>&#x204f;</span> U+204F instead.)</span>
 
 Feature | Sample |  Feature setting
 :------------- | ------: | :------------- 
-Upward | <span dir="rtl" class='scheherazadenew-R normal'>، ؛</span> | `cv84=0`
-Downward | <span dir="rtl" class='scheherazadenew-cv84-1-R normal'>، ؛</span>| `cv84=1`
+Upward | <span dir="rtl" class='scheherazadenew-R normal'>&#x060C; &#x061B;</span> | `cv84=0`
+Downward | <span dir="rtl" class='scheherazadenew-cv84-1-R normal'>&#x060C; &#x061B;</span>| `cv84=1`
 
 #### Decimal separator 
 
@@ -255,32 +263,40 @@ Loose |
 
 
 [font id='scheherazadenew-cv12-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv12 1']
+[font id='scheherazadenew-cv12-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv12 2']
 [font id='scheherazadenew-cv44-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv44 1']
+[font id='scheherazadenew-cv44-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv44 2']
 [font id='scheherazadenew-cv48-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 3']
 [font id='scheherazadenew-cv48-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 1']
 [font id='scheherazadenew-cv48-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv48 2']
 [font id='scheherazadenew-cv49-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv49 1']
+[font id='scheherazadenew-cv49-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv49 2']
 [font id='scheherazadenew-cv49-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv49 3']
 [font id='scheherazadenew-cv51-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv51 1']
 [font id='scheherazadenew-cv54-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv54 1']
+[font id='scheherazadenew-cv54-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv54 2']
 [font id='scheherazadenew-cv60-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv60 1']
 [font id='scheherazadenew-cv62-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv62 1']
 [font id='scheherazadenew-cv62-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv62 2']
 [font id='scheherazadenew-cv70-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv70 1']
 [font id='scheherazadenew-cv70-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv70 2']
+[font id='scheherazadenew-cv70-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv70 3']
 [font id='scheherazadenew-cv72-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv72 1']
+[font id='scheherazadenew-cv72-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv72 2']
 [font id='scheherazadenew-cv74-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv74 1']
 [font id='scheherazadenew-cv74-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv74 2']
 [font id='scheherazadenew-cv76-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv76 1']
 [font id='scheherazadenew-cv76-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv76 2']
 [font id='scheherazadenew-cv78-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv78 1']
 [font id='scheherazadenew-cv78-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv78 2']
+[font id='scheherazadenew-cv78-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv78 3']
 [font id='scheherazadenew-cv80-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv80 1']
 [font id='scheherazadenew-cv80-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv80 2']
 [font id='scheherazadenew-cv81-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv81 1']
+[font id='scheherazadenew-cv82-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 1']
+[font id='scheherazadenew-cv82-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 2']
 [font id='scheherazadenew-cv82-3' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 3']
 [font id='scheherazadenew-cv82-4' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 4']
-[font id='scheherazadenew-cv82-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 1']
 [font id='scheherazadenew-cv82-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 2']
 [font id='scheherazadenew-cv84-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv84 1']
 [font id='scheherazadenew-cv85-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv85 1']

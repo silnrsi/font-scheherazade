@@ -14,17 +14,68 @@
     <header>
         <h1 class="title">Scheherazade New - Font Features</h1>
     </header>
-    <p>Scheherazade New is an OpenType-enabled font family that supports the Arabic script. It includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
-    <p>See <a href="https://software.sil.org/fonts/features/">Using Font Features</a>. Although that page is not targeted at Arabic script support, it does provide a comprehensive list of applications that make full use of the OpenType font technology.</p>
-    <p>See also <a href="https://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType font technology.</p>
-    <p>This page uses web fonts (WOFF) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Scheherazade New as a web font see <em>ScheherazadeNew-webfont-example.html</em> in the font package web folder.</p>
-    <p><em>If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.</em></p>
+    <p>Scheherazade New is an OpenType-enabled font family that supports
+    the Arabic script. It includes a number of optional features that
+    provide alternative rendering that might be preferable for use in
+    some contexts. The sections below enumerate the details of these
+    features. Whether these features are available to users will depend
+    on both the application and the rendering technology being used.
+    Some applications let the user control certain features such as
+    Character Variants to turn on the rendering of variant characters.
+    However, at this point, most applications do not make use of those
+    features so another solution is needed to show the variant
+    characters. For applications that do not make use of the OpenType
+    Character Variants, you can now download fonts customized with the
+    variant glyphs you choose. Read this document, visit <a
+    href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>,
+    then choose the variants and download your font.</p>
+    <p>See <a href="https://software.sil.org/fonts/features/">Using Font
+    Features</a>. Although that page is not targeted at Arabic script
+    support, it does provide a comprehensive list of applications that
+    make full use of the OpenType font technology.</p>
+    <p>See also <a
+    href="https://software.sil.org/arabicfonts/support/application-support/">Arabic
+    Fonts — Application Support</a>. It provides a fairly comprehensive
+    list of applications that make full use of the OpenType font
+    technology.</p>
+    <p>This page uses web fonts (WOFF) to demonstrate font features and
+    should display correctly in all modern browsers. For a more concise
+    example of how to use Scheherazade New as a web font see
+    <em>ScheherazadeNew-webfont-example.html</em> in the font package
+    web folder.</p>
+    <p><em>If this document is not displaying correctly a PDF version is
+    also provided in the documentation/pdf folder of the release
+    package.</em></p>
     <h2 id="complete-feature-list">Complete feature list</h2>
     <h3 id="language-system-tags">Language system tags</h3>
-    <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span></p>
-    <p>Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.</p>
-    <h4 id="kurdish-northern-rohingya-sindhi-urdu">Kurdish (Northern), Rohingya, Sindhi, Urdu</h4>
+    <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F,
+    U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766,
+    U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650,
+    U+064F, U+064C, U+0657</span></p>
+    <p>Unfortunately, the UI needed to access the language-specific
+    behavior is not yet present in many applications. LibreOffice and
+    Microsoft Word 2016 support language-specific behavior for Kurdish,
+    Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some
+    Harfbuzz-based apps, e.g., XeTeX, can access language-specific
+    behavior. In the past, it was not always possible to override
+    language-specific behavior in cases where the language-specific
+    variants were undesirable but, as of version 4.300, the font now
+    supports this possibility.</p>
+    <h4 id="kashmiri-kurdish-northern-rohingya-sindhi-urdu">Kashmiri,
+    Kurdish (Northern), Rohingya, Sindhi, Urdu</h4>
     <table>
+    <colgroup>
+    <col style="width: 9%" />
+    <col style="width: 12%" />
+    <col style="width: 15%" />
+    <col style="width: 6%" />
+    <col style="width: 6%" />
+    <col style="width: 6%" />
+    <col style="width: 9%" />
+    <col style="width: 9%" />
+    <col style="width: 12%" />
+    <col style="width: 12%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Language</th>
@@ -35,69 +86,169 @@
     <th style="text-align: right;">7</th>
     <th style="text-align: right;">0650/064E</th>
     <th style="text-align: right;">064C</th>
+    <th style="text-align: left;">0652</th>
     <th style="text-align: left;">Feature Setting</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">م ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">۴</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بّْ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl">بٌ</span></td>
     <td style="text-align: left;"></td>
     </tr>
     <tr class="even">
+    <td style="text-align: left;">Kashmiri</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks">م
+    ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks">ھ
+    ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks"
+    style="color:red">۴</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks"
+    style="color:red">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks"
+    style="color:red">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ks">بٌ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl" lang="ks" style="color:red">بْ</span></td>
+    <td style="text-align: left;"><code>lang='ks'</code></td>
+    </tr>
+    <tr class="odd">
     <td style="text-align: left;">Kurdish</br>(Northern)</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">بٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">م
+    ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku"
+    style="color:red">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">۴</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ku">بٌ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl" lang="ku">بْ</span></td>
     <td style="text-align: left;"><code>lang='ku'</code></td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
     <td style="text-align: left;">Rohingya</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R small" dir="rtl" lang="rhg" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">بٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg">م
+    ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg">ھ
+    ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg"
+    style="color:red">۴</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R small"
+    dir="rtl" lang="rhg" style="color:red">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg"
+    style="color:red">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="rhg"
+    style="color:red">بٌ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl" lang="rhg" style="color:red">بْ</span></td>
     <td style="text-align: left;"><code>lang='rhg'</code></td>
     </tr>
-    <tr class="even">
+    <tr class="odd">
     <td style="text-align: left;">Sindhi</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">بٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd"
+    style="color:red">م ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd">ھ
+    ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd">۴</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd"
+    style="color:red">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd"
+    style="color:red">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="sd">بٌ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl" lang="sd">بْ</span></td>
     <td style="text-align: left;"><code>lang='sd'</code></td>
     </tr>
-    <tr class="odd">
+    <tr class="even">
     <td style="text-align: left;">Urdu</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">بٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur">م
+    ممم</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur">ھ
+    ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur"
+    style="color:red">۴</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur"
+    style="color:red">۶</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur"
+    style="color:red">۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ur">بٌ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenew-R normal"
+    dir="rtl" lang="ur">بْ</span></td>
     <td style="text-align: left;"><code>lang='ur'</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="kyrgyz-and-wolof">Kyrgyz and Wolof</h4>
     <table>
+    <colgroup>
+    <col style="width: 13%" />
+    <col style="width: 9%" />
+    <col style="width: 18%" />
+    <col style="width: 13%" />
+    <col style="width: 13%" />
+    <col style="width: 13%" />
+    <col style="width: 18%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Language</th>
@@ -112,38 +263,69 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> د</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ئ ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بٗ</span></td>
     <td style="text-align: left;"></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Kyrgyz</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky"> د</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky"
+    style="color:red">ئ ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky">بُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky">بٗ</span></td>
     <td style="text-align: left;"><code>lang='ky'</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Wolof</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo"
+    style="color:red"> د</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo">ئ
+    ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo"
+    style="color:red">بُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo"
+    style="color:red">بٗ</span></td>
     <td style="text-align: left;"><code>lang='wo'</code></td>
     </tr>
     </tbody>
     </table>
     <h3 id="character-variants">Character variants</h3>
-    <p>There are some character shape differences in different languages which use the Arabic script. These can be accessed by using OpenType Character Variants, or through the language support mentioned above.</p>
+    <p>There are some character shape differences in different languages
+    which use the Arabic script. These can be accessed by using OpenType
+    Character Variants, or through the language support mentioned
+    above.</p>
     <h4 id="dal">Dal</h4>
-    <p><span class="affects">Affects: U+062F, U+0630, U+0688, U+0689, U+068A, U+068B, U+068C, U+068D, U+068E, U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE</span></p>
+    <p><span class="affects">Affects: U+062F, U+0630, U+0688, U+0689,
+    U+068A, U+068B, U+068C, U+068D, U+068E, U+068F, U+0690, U+06EE,
+    U+0759, U+075A, U+08AE U+10EC2</span></p>
     <table>
+    <colgroup>
+    <col style="width: 31%" />
+    <col style="width: 36%" />
+    <col style="width: 31%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -154,19 +336,38 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ
+    ݚ ࢮ 𐻂</span></td>
     <td style="text-align: left;"><code>cv12=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Alternate</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv12&quot; 1"> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv12&quot; 1">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ
+    ڏ ڐ ۮ ݙ ݚ ࢮ 𐻂</span></td>
     <td style="text-align: left;"><code>cv12=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: left;">Simple</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv12&quot; 2">د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ
+    ڏ ڐ ۮ ݙ ݚ ࢮ 𐻂</span></td>
+    <td style="text-align: left;"><code>cv12=2</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="meem">Meem</h4>
-    <p><span class="affects">Affects: U+0645, U+0765, U+0766, U+08A7</span></p>
+    <p><span class="affects">Affects: U+0645, U+0765, U+0766,
+    U+08A7</span></p>
     <table>
+    <colgroup>
+    <col style="width: 31%" />
+    <col style="width: 36%" />
+    <col style="width: 31%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -177,19 +378,37 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ
+    </span></td>
     <td style="text-align: left;"><code>cv44=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Sindhi-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv44&quot; 1"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv44&quot; 1"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ
+    ࢧ ࢧࢧࢧ </span></td>
     <td style="text-align: left;"><code>cv44=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: left;">Long-tail</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv44&quot; 2"> م ممم ݥ ݥݥݥ ݦ ݦݦݦ
+    ࢧ ࢧࢧࢧ </span></td>
+    <td style="text-align: left;"><code>cv44=2</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="heh">Heh</h4>
     <p><span class="affects">Affects: U+0647</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -200,22 +419,32 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> ه ههه </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> ه ههه </span></td>
     <td style="text-align: left;"><code>cv48=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Kurdish-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv48&quot; 3"> ه ههه </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv48&quot; 3"> ه ههه
+    </span></td>
     <td style="text-align: left;"><code>cv48=3</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Sindhi-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv48&quot; 1"> ه ههه </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv48&quot; 1"> ه ههه
+    </span></td>
     <td style="text-align: left;"><code>cv48=1</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Urdu-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv48&quot; 2"> ه ههه </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv48&quot; 2"> ه ههه
+    </span></td>
     <td style="text-align: left;"><code>cv48=2</code></td>
     </tr>
     </tbody>
@@ -223,6 +452,11 @@
     <h4 id="heh-doachashmee">Heh Doachashmee</h4>
     <p><span class="affects">Affects: U+06BE</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -233,17 +467,29 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ھ ھھھ</span></td>
     <td style="text-align: left;"><code>cv49=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Knotted</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv49&quot; 1">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv49&quot; 1">ھ ھھھ</span></td>
     <td style="text-align: left;"><code>cv49=1</code></td>
     </tr>
     <tr class="odd">
+    <td style="text-align: left;">Bowtie</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv49&quot; 2">ھ ھھھ</span></td>
+    <td style="text-align: left;"><code>cv49=2</code></td>
+    </tr>
+    <tr class="even">
     <td style="text-align: left;">Kurdish-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv49&quot; 3">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv49&quot; 3">ھ ھھھ</span></td>
     <td style="text-align: left;"><code>cv49=3</code></td>
     </tr>
     </tbody>
@@ -251,6 +497,11 @@
     <h4 id="kyrgyz-oe">Kyrgyz OE</h4>
     <p><span class="affects">Affects: U+06C5</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -261,12 +512,15 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Loop</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ۅ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ۅ</span></td>
     <td style="text-align: left;"><code>cv51=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Bar</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv51&quot; 1">ۅ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv51&quot; 1">ۅ</span></td>
     <td style="text-align: left;"><code>cv51=1</code></td>
     </tr>
     </tbody>
@@ -274,6 +528,11 @@
     <h4 id="yeh-hamza">Yeh Hamza</h4>
     <p><span class="affects">Affects: U+0626</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -284,19 +543,35 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ئ ‍ئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ئ ‍ئ</span></td>
     <td style="text-align: left;"><code>cv54=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Right hamza</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv54&quot; 1">ئ ‍ئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv54&quot; 1">ئ ‍ئ</span></td>
     <td style="text-align: left;"><code>cv54=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: left;">Mid hamza</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv54&quot; 2">ئ ‍ئ</span></td>
+    <td style="text-align: left;"><code>cv54=2</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="maddah">Maddah</h4>
-    <p><span class="affects">Affects: U+0622, U+0627, U+0653, U+0653</span></p>
+    <p><span class="affects">Affects: U+0622, U+0627, U+0653,
+    U+0653</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -307,19 +582,28 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Small</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> آ آ ◌ٓ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> آ آ ◌ٓ </span></td>
     <td style="text-align: left;"><code>cv60=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Large</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv60&quot; 1">آ آ ◌ٓ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv60&quot; 1">آ آ ◌ٓ </span></td>
     <td style="text-align: left;"><code>cv60=1</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="shaddakasra-placement">Shadda+kasra placement</h4>
-    <p><span class="affects">Affects: U+064D, U+0650 with U+0651</span></p>
+    <p><span class="affects">Affects: U+064D, U+0650 with
+    U+0651</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -330,17 +614,24 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
     <td style="text-align: left;"><code>cv62=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Lowered</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv62&quot; 1"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv62&quot; 1"> بِّ ◌ِّ بٍّ ◌ٍّ
+    </span></td>
     <td style="text-align: left;"><code>cv62=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Raised</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv62&quot; 2"> بِّ ◌ِّ بٍّ ◌ٍّ </span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv62&quot; 2"> بِّ ◌ِّ بٍّ ◌ٍّ
+    </span></td>
     <td style="text-align: left;"><code>cv62=2</code></td>
     </tr>
     </tbody>
@@ -348,6 +639,11 @@
     <h4 id="damma">Damma</h4>
     <p><span class="affects">Affects: U+064F</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -358,24 +654,41 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> بُ ◌ُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"> بُ ◌ُ</span></td>
     <td style="text-align: left;"><code>cv70=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Filled</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv70&quot; 1">بُ ◌ُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv70&quot; 1">بُ ◌ُ</span></td>
     <td style="text-align: left;"><code>cv70=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Short</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv70&quot; 2">بُ ◌ُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv70&quot; 2">بُ ◌ُ</span></td>
     <td style="text-align: left;"><code>cv70=2</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Crossed</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv70&quot; 3">بُ ◌ُ</span></td>
+    <td style="text-align: left;"><code>cv70=3</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="dammatan">Dammatan</h4>
     <p><span class="affects">Affects: U+064C</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -386,19 +699,34 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٌ ◌ٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بٌ ◌ٌ</span></td>
     <td style="text-align: left;"><code>cv72=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Six-nine</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv72&quot; 1">بٌ ◌ٌ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv72&quot; 1">بٌ ◌ٌ</span></td>
     <td style="text-align: left;"><code>cv72=1</code></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: left;">Two-nine</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv72&quot; 2">بٌ ◌ٌ</span></td>
+    <td style="text-align: left;"><code>cv72=2</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="inverted-damma">Inverted Damma</h4>
     <p><span class="affects">Affects: U+0657</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -409,23 +737,33 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٗ ◌ٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بٗ ◌ٗ</span></td>
     <td style="text-align: left;"><code>cv74=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Hollow</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv74&quot; 1">بٗ ◌ٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv74&quot; 1">بٗ ◌ٗ</span></td>
     <td style="text-align: left;"><code>cv74=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Filled</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv74&quot; 2">بٗ ◌ٗ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv74&quot; 2">بٗ ◌ٗ</span></td>
     <td style="text-align: left;"><code>cv74=2</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="superscript-alef">Superscript Alef</h4>
-    <p><span class="affects">Affects: U+0670 on all yeh, sad and seen-like characters U+0620, U+0626, U+0633, U+0634, U+0635, U+0636, U+063D, U+063E, U+063F, U+0649, U+064A, U+0678, U+069A, U+069B, U+069C, U+069D, U+069E, U+06CC, U+06CD, U+06CE, U+06D0, U+06D1, U+06FA, U+06FB, U+075C, U+076D, U+0770, U+077D, U+077E, U+0775, U+0776, U+0777, U+08A8, U+08A9, U+08AF, U+08BA</span></p>
+    <p><span class="affects">Affects: U+0670 on all yeh, sad and
+    seen-like characters U+0620, U+0626, U+0633, U+0634, U+0635, U+0636,
+    U+063D, U+063E, U+063F, U+0649, U+064A, U+0678, U+069A, U+069B,
+    U+069C, U+069D, U+069E, U+06CC, U+06CD, U+06CE, U+06D0, U+06D1,
+    U+06FA, U+06FB, U+075C, U+076D, U+0770, U+077D, U+077E, U+0775,
+    U+0776, U+0777, U+08A8, U+08A9, U+08AF, U+08BA</span></p>
     <table>
     <colgroup>
     <col style="width: 31%" />
@@ -442,17 +780,31 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ
+    ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ
+    بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ
+    ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Large</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv76&quot; 1">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ
+    شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ
+    یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ
+    ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Small</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv76&quot; 2">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ
+    شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ
+    یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ
+    ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=2</code></td>
     </tr>
     </tbody>
@@ -460,6 +812,11 @@
     <h4 id="sukun">Sukun</h4>
     <p><span class="affects">Affects: U+0652</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -470,32 +827,59 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Closed</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بْ ◌ْ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">بْ ◌ْ</span></td>
     <td style="text-align: left;"><code>cv78=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Open down</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv78&quot; 1">بْ ◌ْ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv78&quot; 1">بْ ◌ْ</span></td>
     <td style="text-align: left;"><code>cv78=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Open left</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv78&quot; 2">بْ ◌ْ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv78&quot; 2">بْ ◌ْ</span></td>
     <td style="text-align: left;"><code>cv78=2</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Closed</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv78&quot; 3">بْ ◌ْ</span></td>
+    <td style="text-align: left;"><code>cv78=3</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="end-of-ayah">End of ayah</h4>
     <p><span class="affects">Affects: U+06DD</span></p>
-    <p>These alternates are also available using the Stylistic Alternates (salt) feature, but at this time we know of no OpenType-based applications that can access these.</p>
-    <p>Firefox allows you to use U+06DD followed by the digits and proper rendering occurs. Some applications require the following:</p>
+    <p>These alternates are also available using the Stylistic
+    Alternates (salt) feature, but at this time we know of no
+    OpenType-based applications that can access these.</p>
+    <p>Firefox allows you to use U+06DD followed by the digits and
+    proper rendering occurs. Some applications require the
+    following:</p>
     <ul>
-    <li>precede the entire sequence (subtending mark plus following digits) with 202D LEFT-TO-RIGHT OVERRIDE</li>
-    <li>follow the entire sequence with U+202C POP DIRECTIONAL FORMATTING.</li>
+    <li>precede the entire sequence (subtending mark plus following
+    digits) with 202D LEFT-TO-RIGHT OVERRIDE</li>
+    <li>follow the entire sequence with U+202C POP DIRECTIONAL
+    FORMATTING.</li>
     </ul>
-    <p>Surrounding the sequence with U+202D and U+202C seems to give the most reliable results in different browsers. However, we have not found a solution that works in Internet Explorer/Edge.</p>
-    <p>In the example below, the following codepoints are used: U+202D U+06DD U+0031 U+0032 U+0033 U+202C U+202D U+06DD U+0611 U+0622 U+0663 U+202C.</p>
+    <p>Surrounding the sequence with U+202D and U+202C seems to give the
+    most reliable results in different browsers. However, we have not
+    found a solution that works in Internet Explorer/Edge.</p>
+    <p>In the example below, the following codepoints are used: U+202D
+    U+06DD U+0031 U+0032 U+0033 U+202C U+202D U+06DD U+0611 U+0622
+    U+0663 U+202C.</p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -506,26 +890,40 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">‭۝123‬ ‭۝١٢٣‬</span></td>
     <td style="text-align: left;"><code>cv80=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Simplified A</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv80&quot; 1">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv80&quot; 1">‭۝123‬
+    ‭۝١٢٣‬</span></td>
     <td style="text-align: left;"><code>cv80=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Simplified B</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv80&quot; 2">‭۝123‬ ‭۝١٢٣‬</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv80&quot; 2">‭۝123‬
+    ‭۝١٢٣‬</span></td>
     <td style="text-align: left;"><code>cv80=2</code></td>
     </tr>
     </tbody>
     </table>
-    <p>The DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in the same way as End of ayah.</p>
+    <p>The DISPUTED END OF AYAH (U+08E2) is also now available in the
+    font. It works in the same way as End of ayah.</p>
     <p><span class="scheherazadenew-R normal" dir="rtl">‭࣢٣٤٥‬</span></p>
     <h4 id="honorific-ligatures">Honorific ligatures</h4>
-    <p><span class="affects">Affects: U+FD40..U+FD4F, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span></p>
+    <p><span class="affects">Affects: U+FD40..U+FD4F, U+FDCF,
+    U+FDFA..U+FDFB, U+FDFD..U+FDFF</span></p>
     <table>
+    <colgroup>
+    <col style="width: 31%" />
+    <col style="width: 36%" />
+    <col style="width: 31%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -536,12 +934,16 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Calligraphic</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal"
+    dir="rtl">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
     <td style="text-align: left;"><code>cv81=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Simplified</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv81&quot; 1">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv81&quot; 1">﵀﵁﵂﵃﵄﵅﵆﵇﵈﵉﵊﵋﵌﵍﵎﵏</br>﷏ﷺﷻ﷽﷿﷿</span></td>
     <td style="text-align: left;"><code>cv81=1</code></td>
     </tr>
     </tbody>
@@ -549,6 +951,11 @@
     <h4 id="eastern-digits">Eastern digits</h4>
     <p><span class="affects">Affects: U+06F4, U+06F6, U+06F7</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -559,34 +966,59 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Standard</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۴۶۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">۴۶۷</span></td>
     <td style="text-align: left;"><code>cv82=0</code></td>
     </tr>
     <tr class="even">
-    <td style="text-align: left;">Kurdish-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv82&quot; 3">۴۶۷</span></td>
-    <td style="text-align: left;"><code>cv82=3</code></td>
-    </tr>
-    <tr class="odd">
-    <td style="text-align: left;">Rohingya-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv82&quot; 4">۴۶۷</span></td>
-    <td style="text-align: left;"><code>cv82=4</code></td>
-    </tr>
-    <tr class="even">
     <td style="text-align: left;">Sindhi-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv82&quot; 1">۴۶۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv82&quot; 1">۴۶۷</span></td>
     <td style="text-align: left;"><code>cv82=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Urdu-style</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv82&quot; 2">۴۶۷</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv82&quot; 2">۴۶۷</span></td>
     <td style="text-align: left;"><code>cv82=2</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Kurdish-style</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv82&quot; 3">۴۶۷</span></td>
+    <td style="text-align: left;"><code>cv82=3</code></td>
+    </tr>
+    <tr class="odd">
+    <td style="text-align: left;">Rohingya-style</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv82&quot; 4">۴۶۷</span></td>
+    <td style="text-align: left;"><code>cv82=4</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv82&quot; 2">۴۶۷</span></td>
+    <td style="text-align: left;"><code>cv82=5</code></td>
     </tr>
     </tbody>
     </table>
     <h4 id="comma">Comma</h4>
-    <p><span class="affects">Affects: U+060C, U+061B</span></p>
+    <p><span class="affects">Affects: U+060C, U+061B (This feature is
+    not recommended for use. The Unicode Standard recommends the use of
+    <span class="scheherazadenew-R normal" dir="rtl">⹁</span> U+2E41 and
+    <span class="scheherazadenew-R normal" dir="rtl">⁏</span> U+204F
+    instead.)</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -597,12 +1029,15 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Upward</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">، ؛</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">، ؛</span></td>
     <td style="text-align: left;"><code>cv84=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Downward</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv84&quot; 1">، ؛</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv84&quot; 1">، ؛</span></td>
     <td style="text-align: left;"><code>cv84=1</code></td>
     </tr>
     </tbody>
@@ -610,6 +1045,11 @@
     <h4 id="decimal-separator">Decimal separator</h4>
     <p><span class="affects">Affects: U+066B</span></p>
     <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Feature</th>
@@ -620,12 +1060,15 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Small reh</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">٫</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">٫</span></td>
     <td style="text-align: left;"><code>cv85=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Slash</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv85&quot; 1">٫</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv85&quot; 1">٫</span></td>
     <td style="text-align: left;"><code>cv85=1</code></td>
     </tr>
     </tbody>
@@ -633,7 +1076,8 @@
     <h3 id="other-user-font-features">Other user font features</h3>
     <h4 id="line-spacing">Line spacing</h4>
     <p><em>This feature is only available in TypeTuner Web.</em></p>
-    <p>Allows for adjustment of the default line spacing in the font (values shown are ordered in increasing line spacing).</p>
+    <p>Allows for adjustment of the default line spacing in the font
+    (values shown are ordered in increasing line spacing).</p>
     <table>
     <thead>
     <tr class="header">
@@ -662,7 +1106,7 @@
 
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 4.000 and is copyright © 1994-2024 SIL International.</p>
+        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 4.3 and is copyright © 1994-2024 SIL International.</p>
     </footer>
 </article>
 </div>
