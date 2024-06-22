@@ -105,7 +105,7 @@ def doit(args):
     alefsRare = set()   # alef-like from Unicode 14 (U+0870 .. U+0882)
     rehs = set()        # reh-like
     waws = set()        # waw-like
-    takesLargeAlef = set()  # has bowl (final yehs, seens, etc)
+    takesLargeAlef = set(('space', 'nbspace', 'kashida-ar'))  # has bowl (final yehs, seens, etc) or is special
 
     # Sets of mark glyphs needed for UTR53
     utr53_220MCM = set()

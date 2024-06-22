@@ -184,15 +184,15 @@
 		</value>
 		<value name="Crossed" tag="Cr">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaCrossedTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaCrossedTT}"/  not necessary for Har -->
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaCrossedTT}"/>
 		</value>
 		<value name="Filled" tag="Fi">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaFilledTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaFilledTT}"/  not necessary for Har -->
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaFilledTT}"/>
 		</value>
 		<value name="Short" tag="Sh">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammaShortTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaShortTT}"/  not necessary for Har -->
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammaShortTT}"/>
 		</value>
 	</feature>
 
@@ -203,11 +203,11 @@
 		</value>
 		<value name="Two-nine" tag="29">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanTwoNineTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanTwoNineTT}"/  not necessary for Har -->	
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanTwoNineTT}"/>	
 		</value>
 		<value name="Six-nine" tag="69">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DammatanSixNineTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanSixNineTT}"/  not necessary for Har -->	
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {DammatanSixNineTT}"/>	
 		</value>
 	</feature>
 
@@ -224,13 +224,13 @@
 		</value>
 	</feature>
 
-	<!-- cv76: different between Sch/Harmattan and Lateef -->    <!-- TODO: Review differences -->
+	<!-- cv76 -->
 	<feature name="Superscript Alef" value="Default" tag="Sal">
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Large" tag="Lg">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DaggerAlefToLarge}"/>	<!-- must be via lookup -->
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {DaggerAlefToLarge}"/>
 		</value>
 		<value name="Small" tag="Sm">
 			<cmd name="null" args="null"/>
@@ -244,15 +244,15 @@
 		</value>
 		<value name="Closed" tag="Cl">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunClosedTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunClosedTT}"/  not necessary for Har --> 
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunClosedTT}"/>
 		</value>
 		<value name="Open down" tag="Dn">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunDownTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunDownTT}"/  not necessary for Har --> 
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunDownTT}"/>
 		</value>
 		<value name="Open left" tag="Lt">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {SukunLeftTT}"/>
-			<!-- cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunLeftTT}"/  not necessary for Har --> 
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {SukunLeftTT}"/>
 		</value>	
 	</feature>
 

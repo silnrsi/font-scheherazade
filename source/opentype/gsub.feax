@@ -367,30 +367,22 @@ lookup ShaddaAlefLigatures {
 
 # Language-independent shaping
 
+ifinfo(familyName, "Lateef") {
 # Lateef short tail variants of reh and waw -- disabled for now.
 #include(../../source/opentype/customShaping.feax)
-
-ifinfo(familyName, "Lateef") {
-
-lookup DaggerAlefToLarge {
-  lookupflag 0 ;
-      sub @TakesLargeDaggerAlef alefabove-ar' by alefabove-ar.large ;   # Lateef
-} DaggerAlefToLarge ;
-
 }  # Lateef
 
-# HB PAUSE
 
 # Language-specific shaping
 
 lookup dfltCALT {  # (need at least a dummy lookup for TT)
   lookupflag 0 ;
-	ifinfo(familyName, "Scheherazade New|Lateef") {
+  ifinfo(familyName, "Scheherazade New|Lateef") {
      sub @Kasra_lowered  by  @Kasra;
-	}
-	ifinfo(familyName, "Harmattan") {
+  }
+  ifinfo(familyName, "Harmattan") {
      sub @Kasra  by  @Kasra_lowered;
-	}
+  }
 } dfltCALT ;
 
 lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of sukun
@@ -471,6 +463,15 @@ lookup KasraHighTT {
   lookupflag 0 ;
     sub @Kasra_lowered by @Kasra;
 } KasraHighTT ;
+
+# Increase size of dagger alef
+# This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
+
+lookup DaggerAlefToLarge {
+  lookupflag 0;
+    sub alefabove-ar by alefabove-ar.large ;
+} DaggerAlefToLarge ;
+
 
 # HB PAUSE
 
@@ -719,7 +720,7 @@ lookup DammatanAlternate {
 lookup DammaInvertedAlternates {
   lookupflag 0 ;
     # NB: This is written so as to allow language-specific behavior to be overridden
-    #   0=default;                      1=hollow;              2=filled
+    #   0=default                       1=hollow;              2=filled
     sub dammainverted-ar        from  [ dammainverted-ar.open  dammainverted-ar.filled ];
     sub dammainverted-ar.open   from  [ dammainverted-ar.open  dammainverted-ar.filled ];
     sub dammainverted-ar.filled from  [ dammainverted-ar.open  dammainverted-ar.filled ];
@@ -728,25 +729,11 @@ lookup DammaInvertedAlternates {
 
 # DaggerAlef alternates: cv76
 
-lookup _DaggerAlefAlt {  # Scheherazade only
+lookup DaggerAlefAlternates { 
   lookupflag 0 ;
-    # 0=default             1=large;            2=small
-    sub alefabove-ar from [ alefabove-ar.large  alefabove-ar ];
-    #sub alefabove-ar by alefabove-ar.large ;
-} _DaggerAlefAlt ;
-
-lookup DaggerAlefAlternates {   # cv76
-  lookupflag 0 ;
-	  # By this time, we've already changed to alefabove-ar.large in contexts where it might be wanted (eg, in Sch).
-	  # Now return it to small if cv76=2.
-  
-	ifinfo(familyName, "Scheherazade New|Harmattan") {
-    sub @TakesLargeDaggerAlef alefabove-ar' lookup _DaggerAlefAlt ;
-	}
-	ifinfo(familyName, "Lateef") {
+    #   0=default                 1=large            2=small
+    sub alefabove-ar       from [ alefabove-ar.large alefabove-ar ] ;
     sub alefabove-ar.large from [ alefabove-ar.large alefabove-ar ] ;
-	}
-
 } DaggerAlefAlternates ;
 
 
@@ -770,7 +757,7 @@ lookup SukunClosedTT {
 lookup SukunAlternates {
   lookupflag 0 ;
     # NB: This is written so as to allow language-specific behavior to be overridden
-    # 0=default;                 1=downOpen        2=leftOpen        3=closed
+    # 0=default                  1=downOpen        2=leftOpen        3=closed
     sub sukun-ar          from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
     sub sukun-ar.downOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
     sub sukun-ar.leftOpen from [ sukun-ar.downOpen sukun-ar.leftOpen sukun-ar ] ;
@@ -865,7 +852,7 @@ lookup CommaAlternates {
 
 lookup DecimalSepAlternate {    # cv85
   lookupflag IgnoreMarks ;
-		sub @cno_slash by @c_slash;
+    sub @cno_slash by @c_slash;
 } DecimalSepAlternate ;
 
 
@@ -881,6 +868,14 @@ lookup ShaddaKasraLigatures {
     sub shadda-ar graphemejoinercomb @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
 } ShaddaKasraLigatures ;
 
+# DaggerAlef will be .large if Lateef default or cv76=1. But if it is, we need
+# to verify the context is correct, otherwise revert to the small. 
+
+lookup DaggerAlefFixup {
+  lookupflag 0 ;
+      ignore sub @TakesLargeDaggerAlef alefabove-ar.large';
+      sub alefabove-ar.large' by alefabove-ar ;
+} DaggerAlefFixup ;
 
 # Lam-Alef Ligatures
 
@@ -893,14 +888,14 @@ lookup LamAlefLigatures {
     sub @LamNoLig   alefWavyhamzabelow-ar.fina  by  @LamAlefWavyHBelowLig ;
     sub @LamNoLig   alefTwoabove-ar.fina        by  @LamAlefTwoAboveLig ;
     sub @LamNoLig   alefThreeabove-ar.fina      by  @LamAlefThreeAboveLig ;
-	ifinfo(familyName, "Scheherazade New") {
+  ifinfo(familyName, "Scheherazade New") {
     sub lam-ar.init   @AlefRareNoLig            by  @LamAlefRareLig ;
     sub lam-ar.medi   @AlefRareNoLig            by  @LamAlefRareLigFina ;
-	}
-	ifinfo(familyName, "Harmattan") {
+  }
+  ifinfo(familyName, "Harmattan") {
     #sub @LamNoLig   alefHamzaabove-ar.fina      by  @LamAlefHamzaaboveLig ;
     #sub @LamNoLig   alefHamzabelow-ar.fina      by  @LamAlefHamzabelowLig ; # has a decomposition
-	}
+  }
 
 } LamAlefLigatures ;
 
@@ -1023,12 +1018,12 @@ lookup TabularFigures {
 include(../../source/opentype/customCollisionSubs.feax);
 
 
-	ifinfo(familyName, "Scheherazade New") {
+ifinfo(familyName, "Scheherazade New") {
 # Scheherazade only:
 lookup WideKashida {
     sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
 } WideKashida ;
-	}
+  }
 
 
 #**********************************
@@ -1074,7 +1069,7 @@ feature ccmp {  # Glyph Composition/Decomposition
 
 feature fina {  # Terminal Forms
     script arab;
-      	lookup ltrFina;
+        lookup ltrFina;
       # Force other languages to include Arabic script lookups:
       language KIR ;
       language KSH ;
@@ -1089,7 +1084,7 @@ feature fina {  # Terminal Forms
 
 feature medi {  # Medial Forms
     script arab;
-      	lookup ltrMedi;
+        lookup ltrMedi;
       # Force other languages to include Arabic script lookups:
       language KIR ;
       language KSH ;
@@ -1104,7 +1099,7 @@ feature medi {  # Medial Forms
 
 feature init {  # Initial Forms
     script arab;
-      	lookup ltrInit;
+        lookup ltrInit;
       # Force other languages to include Arabic script lookups:
       language KIR ;
       language KSH ;
@@ -1144,22 +1139,21 @@ feature rlig {  # Required Ligatures
 
 feature calt {  # Contextual Alternates
     script arab;
-        #lookup SignWithDigits;  # moved to liga feature
       ifinfo(familyName, "Lateef") {
         lookup DaggerAlefToLarge;
-##      lookup ShortTailRehWaw ;   Lateef only; short-tail reh/waw variants disabled for now
-	    }
+##      lookup ShortTailRehWaw;   short-tail reh/waw variants disabled for now
+      }
 
 # Sch only:
     do let f = info("familyName");
-       if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
+      if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
          # start of kerning substitutions
         lookup ToothKashidasIM;
         lookup ToothKashidasMM;
         lookup ToothKashidasIMF;
         lookup MiscKashidas;
         lookup MarkKashidas;
-    }   # end of kerning substitutions
+      }   # end of kerning substitutions
 
 ifinfo(familyName, "Scheherazade New") {
         lookup WideKashida;
@@ -1182,7 +1176,7 @@ ifinfo(familyName, "Scheherazade New") {
         lookup dfltCALT ;
         
       script latn ;
-      	lookup dfltCALT ;  # for bare diacritics (on white space) in Latin text
+        lookup dfltCALT ;  # for bare diacritics (on white space) in Latin text
 } calt ;
 
 # feature rclt - nothing to do
@@ -1324,8 +1318,8 @@ feature cv49 {    # Character Variant 49
         ParamUILabelNameID { name 3 1 0x0409 "Knotted"         ; };
         ParamUILabelNameID { name 3 1 0x0409 "Bowtie"          ; };
         ParamUILabelNameID { name 3 1 0x0409 "Kurdish-style"   ; };
-		} ;
-		script arab;
+    } ;
+    script arab;
         lookup HehDoAlternates;
       # Force other languages to include Arabic script lookups
       language KIR ;
@@ -1452,29 +1446,7 @@ feature cv74 {
 } cv74 ;
 
 
-# Character Variant 76
-
-do let f = info("familyName");
-	 if f.find("Scheherazade New") != -1 or f.find("Harmattan") != -1; {
-
-feature cv76 {
-    cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
-    ### ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Large"            ; };
-    } ;
-
-    # Same for latin & arabic:
-        lookup DaggerAlefAlternates;
-} cv76 ;
-
-}   # end do - Sch or Harmattan
-
-
-do let f = info("familyName");
-	 if f.find("Lateef") != -1; {
-
-feature cv76 {
+feature cv76 {  # Character Variant 76
     cvParameters {
         FeatUILabelNameID  { name 3 1 0x0409 "Superscript Alef" ; };
     ### ParamUILabelNameID { name 3 1 0x0409 "Default"          ; };
@@ -1485,8 +1457,6 @@ feature cv76 {
     # Same for latin & arabic:
         lookup DaggerAlefAlternates;
 } cv76 ;
-
-}  # end do - Lateef
 
 
 feature cv78 {  # Character Variant 78
@@ -1515,7 +1485,7 @@ feature cv80 {  # Character Variant 80
 
 
 do let f = info("familyName");
-	 if f.find("Scheherazade New") != -1; {
+   if f.find("Scheherazade New") != -1; {
 
 feature cv81 {  # Character Variant 81
     cvParameters {
@@ -1585,14 +1555,15 @@ feature cv85 {  # Character Variant 85
 
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cv62
     # Same for latin & arabic:
-        lookup ShaddaKasraLigatures;     # Must be after language-specific CALTs and cv62
-		ifinfo(familyName, "Harmattan") {
+        lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
+        lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
+    ifinfo(familyName, "Harmattan") {
         lookup YehBarreeToWideAlways;    # Must execute after language-specific CALTs and cv48
         lookup YehBarreeToWideWithMarks; # Must execute after language-specific CALTs and cv48
-		}
+    }
         lookup SignWithDigits;
-        lookup LamAlefLigatures;         # Must be after all mark ligatures (including cv62)
-        lookup AllahAlef;                # Must be after lam-alef lig
+        lookup LamAlefLigatures;         # Must execute after all mark ligatures (including cv62)
+        lookup AllahAlef;                # Must execute after lam-alef lig
 } liga ;
 
 
