@@ -1138,13 +1138,13 @@ feature rlig {  # Required Ligatures
 #     to execute after init/medi/fina lookups, but locl executes before.
 
 feature calt {  # Contextual Alternates
-    script arab;
+    # Same for latin & arabic:
       ifinfo(familyName, "Lateef") {
         lookup DaggerAlefToLarge;
-##      lookup ShortTailRehWaw;   short-tail reh/waw variants disabled for now
       }
 
-# Sch only:
+    script arab;
+    # Sch only:
     do let f = info("familyName");
       if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
          # start of kerning substitutions
@@ -1154,10 +1154,15 @@ feature calt {  # Contextual Alternates
         lookup MiscKashidas;
         lookup MarkKashidas;
       }   # end of kerning substitutions
-
-ifinfo(familyName, "Scheherazade New") {
+      ifinfo(familyName, "Scheherazade New") {
         lookup WideKashida;
-}
+      }
+
+      ifinfo(familyName, "Lateef") {
+      ## lookup ShortTailRehWaw;   short-tail reh/waw variants disabled for now
+      }
+
+      # Force other languages to include Arabic script default rules plus some others:
       language KIR ; # Kyrgyz
         lookup KyrgyzCALT ;
       language KSH ; # Kashmiri

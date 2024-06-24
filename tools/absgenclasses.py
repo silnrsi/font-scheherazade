@@ -105,7 +105,7 @@ def doit(args):
     alefsRare = set()   # alef-like from Unicode 14 (U+0870 .. U+0882)
     rehs = set()        # reh-like
     waws = set()        # waw-like
-    takesLargeAlef = set(('space', 'nbspace', 'kashida-ar'))  # has bowl (final yehs, seens, etc) or is special
+    takesLargeAlef = set(('space', 'nbspace'))  # has bowl (final yehs, seens, etc) or is special
 
     # Sets of mark glyphs needed for UTR53
     utr53_220MCM = set()
@@ -179,6 +179,9 @@ def doit(args):
             elif jg == 'Waw' and encoded:
                 waws.add(gname)
 
+            if basename == 'kashida-ar':
+                takesLargeAlef.add(gname)
+                
             if gname not in args.ifont:
                 ufomissing.add(gname)
 
