@@ -130,7 +130,7 @@
 @ShaddaLigatures = [shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar];
 @ShaddaMarks = [fathatan-ar dammatan-ar fatha-ar damma-ar];
 @ShaddaLigatureParts = [@ShaddaMarks kasratan-ar kasra-ar shadda-ar graphemejoinercomb];
-@TakesLargeDaggerAlef = [alefMaksura-ar alefMaksura-ar.fina dad-ar dad-ar.fina dadDotbelow-ar dadDotbelow-ar.fina e-ar e-ar.fina highhamzaYeh-ar highhamzaYeh-ar.fina sad-ar sad-ar.fina sadThreedots-ar sadThreedots-ar.fina sadThreedotsbelow-ar sadThreedotsbelow-ar.fina sadTwodotsbelow-ar sadTwodotsbelow-ar.fina seen-ar seen-ar.fina seenDotbelowDotabove-ar seenDotbelowDotabove-ar.fina seenFourabove-ar seenFourabove-ar.fina seenFourdotsabove-ar seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar seenVinvertedabove-ar.fina sheen-ar sheen-ar.fina sheenDotbelow-ar sheenDotbelow-ar.fina sheenThreedotsbelow-ar sheenThreedotsbelow-ar.fina yeh-ar yeh-ar.fina yeh-farsi yeh-farsi.fina yehFourbelow-farsi yehFourbelow-farsi.fina yehHamzaabove-ar yehHamzaabove-ar.fina yehKashmiri-ar yehKashmiri-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehThreeabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehThreedotsbelow-ar yehThreedotsbelow-ar.fina yehTwoabove-farsi yehTwoabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehTwodotsbelowHamzaabove-ar yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowNoonabove-ar yehTwodotsbelowNoonabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVinverted-farsi yehVinverted-farsi.fina];
+@TakesLargeDaggerAlef = [alefMaksura-ar alefMaksura-ar.fina dad-ar dad-ar.fina dadDotbelow-ar dadDotbelow-ar.fina e-ar e-ar.fina highhamzaYeh-ar highhamzaYeh-ar.fina kashida-ar kashida-ar.wide nbspace sad-ar sad-ar.fina sadThreedots-ar sadThreedots-ar.fina sadThreedotsbelow-ar sadThreedotsbelow-ar.fina sadTwodotsbelow-ar sadTwodotsbelow-ar.fina seen-ar seen-ar.fina seenDotbelowDotabove-ar seenDotbelowDotabove-ar.fina seenFourabove-ar seenFourabove-ar.fina seenFourdotsabove-ar seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar seenVinvertedabove-ar.fina sheen-ar sheen-ar.fina sheenDotbelow-ar sheenDotbelow-ar.fina sheenThreedotsbelow-ar sheenThreedotsbelow-ar.fina space yeh-ar yeh-ar.fina yeh-farsi yeh-farsi.fina yehFourbelow-farsi yehFourbelow-farsi.fina yehHamzaabove-ar yehHamzaabove-ar.fina yehKashmiri-ar yehKashmiri-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehThreeabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehThreedotsbelow-ar yehThreedotsbelow-ar.fina yehTwoabove-farsi yehTwoabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehTwodotsbelowHamzaabove-ar yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowNoonabove-ar yehTwodotsbelowNoonabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVinverted-farsi yehVinverted-farsi.fina];
 @TakesMediumDigits = [number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 number-ar.2 number-ar.3 year-ar.2 year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 poundmarkabove-ar poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4 piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4];
 @TakesSmallDigits = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3];
 @Tooth0Below = [teh-ar.init theh-ar.init tteh-ar.init tteheh-ar.init behVabove-ar.init tehThreedotsdown-ar.init teheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.init yeh-ar.noDots.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonghunna-ar.init rnoon-ar.init noonVabove-ar.init noonAfrican-ar.init noonThreedotsabove-ar.init teh-ar.medi theh-ar.medi tteh-ar.medi tteheh-ar.medi behVabove-ar.medi tehThreedotsdown-ar.medi teheh-ar.medi yehHamzaabove-ar.medi alefMaksura-ar.medi yeh-ar.noDots.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonghunna-ar.medi rnoon-ar.medi noonVabove-ar.medi noonAfrican-ar.medi noonThreedotsabove-ar.medi];
@@ -1352,7 +1352,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass [_alef-ar.fina.postLamMed _alefHamzaabove-ar.fina.postLamMed _alefHamzabelow-ar.fina.postLamMed _alefMadda-ar.fina.postLamMed _alefMadda-ar.fina.postLamMed.small _alefThreeabove-ar.fina.postLamMed _alefTwoabove-ar.fina.postLamMed _alefWasla-ar.fina.postLamMed _alefWavyhamzaabove-ar.fina.postLamMed _alefWavyhamzabelow-ar.fina.postLamMed _highhamzaAlef-ar.fina.postLamMed] <anchor 932 313> @entry;
 
 # AP: alef
-@alef = [_lam-ar.init.preAlef _lam-ar.medi.preAlef _lamBar-ar.init.preAlef _lamBar-ar.medi.preAlef _lamDotabove-ar.init.preAlef _lamDotabove-ar.medi.preAlef _lamDoublebar-ar.init.preAlef _lamDoublebar-ar.medi.preAlef _lamTahabove-ar.init.preAlef _lamTahabove-ar.medi.preAlef _lamThreedotsabove-ar.init.preAlef _lamThreedotsabove-ar.medi.preAlef _lamThreedotsbelow-ar.init.preAlef _lamThreedotsbelow-ar.medi.preAlef _lamVabove-ar.init.preAlef _lamVabove-ar.medi.preAlef absAutoKashida ae-ar heh-ar hehgoal-ar ae-ar.fina heh-ar.fina heh-ar.fina.allah ain-ar ainThreedotsbelow-ar ain-ar.fina ainThreedotsbelow-ar.fina ain-ar.init ain-ar.medi ainThreedotsbelow-ar.medi ainThreedots-ar ainThreedots-ar.fina ainThreedots-ar.init ainThreedots-ar.medi ainThreedotsbelow-ar.init ainThreedotsdownabove-ar ainThreedotsdownabove-ar.fina ainThreedotsdownabove-ar.init ainThreedotsdownabove-ar.medi ainTwodotshorizontalabove-ar ainTwodotshorizontalabove-ar.fina ainTwodotshorizontalabove-ar.init ainTwodotshorizontalabove-ar.medi ainTwodotsverticalabove-ar ainTwodotsverticalabove-ar.fina ainTwodotsverticalabove-ar.init ainTwodotsverticalabove-ar.medi alef-ar alefBottomrightkasraattached-ar alefKasraattached-ar alefRighthamzaattached-ar alefRightmiddlestroke-ar alefRightrounddotattached-ar alefRounddotbelowattached-ar alefToprightfathaattached-ar alef-ar.allah alef-ar.fina alefBottomrightkasraattached-ar.fina alefKasraattached-ar.fina alefRighthamzaattached-ar.fina alefRightmiddlestroke-ar.fina alefRightrounddotattached-ar.fina alefRounddotbelowattached-ar.fina alefToprightfathaattached-ar.fina alef-ar.fina.allah alefHamzabelow-ar alefWavyhamzabelow-ar alefHamzabelow-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina alefMaksura-ar e-ar highhamzaYeh-ar yeh-ar yeh-farsi yehFourbelow-farsi yehThreedotsbelow-ar yehthin-ar alefMaksura-ar.fina e-ar.fina yeh-ar.fina yeh-farsi.fina yehFourbelow-farsi.fina yehThreedotsbelow-ar.fina yehthin-ar.fina alefMaksura-ar.init beeh-ar.init beh-ar.init behDotless-ar.init behThreedotsupbelow-ar.init behVbelow-ar.init behVinvertedbelow-ar.init beheh-ar.init e-ar.init noonThreedotsabove-ar.init noonghunna-ar.init peh-ar.init yeh-ar.init yeh-ar.noDots.init yeh-farsi.init yehFourbelow-farsi.init yehKashmiri-ar.init yehThreedotsbelow-ar.init alefMaksura-ar.medi beeh-ar.medi beh-ar.medi behDotless-ar.medi behThreedotshorizontalbelow-ar.medi behThreedotsupbelow-ar.medi behVbelow-ar.medi behVinvertedbelow-ar.medi beheh-ar.medi e-ar.medi noonThreedotsabove-ar.medi noonghunna-ar.medi peh-ar.medi yeh-ar.medi yeh-ar.noDots.medi yeh-farsi.medi yehFourbelow-farsi.medi yehKashmiri-ar.medi yehThreedotsbelow-ar.medi yehthin-ar.medi beeh-ar beh-ar behDotless-ar behThreedotshorizontalbelow-ar behThreedotsupbelow-ar behVbelow-ar behVinvertedbelow-ar beheh-ar peh-ar beeh-ar.fina beh-ar.fina behDotless-ar.fina behThreedotshorizontalbelow-ar.fina behThreedotsupbelow-ar.fina behVbelow-ar.fina behVinvertedbelow-ar.fina beheh-ar.fina peh-ar.fina behMeemabove-ar behMeemabove-ar.fina pehMeemabove-ar.fina behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar theh-ar behThreedotsupabove-ar.fina theh-ar.fina behThreedotsupabove-ar.init theh-ar.init yehThreedotsabove-farsi.init behThreedotsupabove-ar.medi theh-ar.medi yehThreedotsabove-farsi.medi behTwodotsbelowDotabove-ar behTwodotsbelowDotabove-ar.fina behTwodotsbelowDotabove-ar.init highhamzaYeh-ar.init noon-ar.init noonDotbelow-ar.init noonRing-ar.init noonTwodotsbelow-ar.init yehTwodotsbelowDotabove-ar.init behTwodotsbelowDotabove-ar.medi noon-ar.medi noonAfrican-ar.medi noonDotbelow-ar.medi noonRing-ar.medi noonTwodotsbelow-ar.medi yehTwodotsbelowDotabove-ar.medi behVabove-ar behVabove-ar.fina behVabove-ar.init yehVabove-ar.init behVabove-ar.medi behhamzaabove-ar behhamzaabove-ar.fina behhamzaabove-ar.init yehHamzaabove-ar.init yehTwodotsbelowHamzaabove-ar.init behhamzaabove-ar.medi yehHamzaabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi dad-ar dadDotbelow-ar sad-ar sadThreedots-ar sadThreedotsbelow-ar sadTwodotsbelow-ar dad-ar.fina dadDotbelow-ar.fina sad-ar.fina sadThreedots-ar.fina sadThreedotsbelow-ar.fina sadTwodotsbelow-ar.fina dad-ar.init dad-ar.medi dadDotbelow-ar.init dadDotbelow-ar.medi dahal-ar dahal-ar.loclWLF dal-ar dalDotbelow-ar dalRing-ar dalThreedotsbelow-ar dalTwodotsverticalbelow-ar dalVinvertedbelow-ar ddahal-ar dal-ar.fina dalDotbelow-ar.fina dalRing-ar.fina dalThreedotsbelow-ar.fina dalTwodotsverticalbelow-ar.fina dalVinvertedbelow-ar.fina ddahal-ar.fina dal-ar.loclWLF dalDotbelow-ar.loclWLF dalRing-ar.loclWLF dalThreedotsbelow-ar.loclWLF dalTwodotsverticalbelow-ar.loclWLF dalVinvertedbelow-ar.loclWLF ddahal-ar.loclWLF dalDotbelowTah-ar dalTwodotsverticalbelowTah-ar dalDotbelowTah-ar.fina dalTwodotsverticalbelowTah-ar.fina ddal-ar.fina dalDotbelowTah-ar.loclWLF dalTwodotsverticalbelowTah-ar.loclWLF ddal-ar.loclWLF dalFourdots-ar dalFourdots-ar.loclWLF dalThreedotsdown-ar dalThreedotsdown-ar.loclWLF dalVinvertedabove-ar.fina ddal-ar dottedCircle dul-ar dul-ar.fina dul-ar.loclWLF dyeh-ar hah-ar hahFourbelow-ar hahTahTwodotshorizontalbelow-ar hahTahbelow-ar hahThreedotsupbelow-ar hahVinvertedbelow-ar jeem-ar jeemThreedotsbelow-ar nyeh-ar tcheh-ar tcheheh-ar dyeh-ar.fina hahFourbelow-ar.fina hahTahTwodotshorizontalbelow-ar.fina hahTahbelow-ar.fina hahThreedotsupbelow-ar.fina jeem-ar.fina jeemThreedotsbelow-ar.fina nyeh-ar.fina tcheh-ar.fina tcheheh-ar.fina dyeh-ar.init hah-ar.init hahFourbelow-ar.init hahTahTwodotshorizontalbelow-ar.init hahTahbelow-ar.init hahThreedotsupbelow-ar.init hahVinvertedbelow-ar.init jeem-ar.init jeemThreedotsbelow-ar.init nyeh-ar.init tcheh-ar.init tcheheh-ar.init dyeh-ar.medi hah-ar.medi hahFourbelow-ar.medi hahTahTwodotshorizontalbelow-ar.medi hahTahbelow-ar.medi hahThreedotsupbelow-ar.medi hahVinvertedbelow-ar.medi jeem-ar.medi jeemThreedotsbelow-ar.medi nyeh-ar.medi tcheh-ar.medi tcheheh-ar.medi emquad emspace enquad enspace feh-ar fehAfrican-ar fehDotbelow-ar fehDotbelowThreedotsabove-ar fehDotless-ar fehDotmovedbelow-ar fehThreedotsbelow-ar fehThreedotsupbelow-ar fehTwodotsbelow-ar peheh-ar veh-ar feh-ar.fina fehAfrican-ar.fina fehDotbelow-ar.fina fehDotbelowThreedotsabove-ar.fina fehDotless-ar.fina fehDotmovedbelow-ar.fina fehThreedotsbelow-ar.fina fehThreedotsupbelow-ar.fina fehTwodotsbelow-ar.fina peheh-ar.fina veh-ar.fina feh-ar.init fehDotbelow-ar.init qafDotabove-ar.init feh-ar.medi fehDotbelow-ar.medi qafDotabove-ar.medi fehAfrican-ar.init fehDotless-ar.init fehAfrican-ar.medi fehDotless-ar.medi fehDotmovedbelow-ar.medi fehThreedotsbelow-ar.medi fehThreedotsupbelow-ar.medi fehTwodotsbelow-ar.medi qafAfrican-ar.medi qafDotless-ar.medi fehDotbelowThreedotsabove-ar.init qafThreedotsabove-ar.init veh-ar.init fehDotbelowThreedotsabove-ar.medi qafThreedotsabove-ar.medi veh-ar.medi fehDotmovedbelow-ar.init fehThreedotsbelow-ar.init fehThreedotsupbelow-ar.init fehTwodotsbelow-ar.init qafDotless-ar.init figurespace fourperemspace gaf-ar gafInvertedstroke-ar gafRing-ar gafThreedots-ar gafTwodotsbelow-ar gueh-ar kafRing-ar keheh-ar kehehDotabove-ar kehehElongatedhamzaabove-ar kehehThreedotsabove-ar kehehThreedotsbelow-ar kehehThreedotsupbelow-ar kehehTwodotshorizontalabove-ar kehehTwodotsverticalbelow-ar ngoeh-ar gaf-ar.fina gafInvertedstroke-ar.fina gafRing-ar.fina gafThreedots-ar.fina gafTwodotsbelow-ar.fina gueh-ar.fina kafRing-ar.fina keheh-ar.fina kehehDotabove-ar.fina kehehElongatedhamzaabove-ar.fina kehehThreedotsabove-ar.fina kehehThreedotsbelow-ar.fina kehehThreedotsupbelow-ar.fina kehehTwodotshorizontalabove-ar.fina kehehTwodotsverticalbelow-ar.fina ngoeh-ar.fina gaf-ar.init gafRing-ar.init gafTwodotsbelow-ar.init gueh-ar.init kehehElongatedhamzaabove-ar.init gaf-ar.medi gafRing-ar.medi gafTwodotsbelow-ar.medi gueh-ar.medi kehehElongatedhamzaabove-ar.medi gafInvertedstroke-ar.init kaf-ar.init kafDotbelow-ar.init kafThreedotsbelow-ar.init kafTwodotsverticalbelow-ar.init keheh-ar.init kehehThreedotsbelow-ar.init kehehThreedotsupbelow-ar.init kehehTwodotsverticalbelow-ar.init gafInvertedstroke-ar.medi gafThreedots-ar.init gafThreedots-ar.medi ghain-ar ghain-ar.fina ghainDotbelow-ar.fina ghain-ar.init ghainDotbelow-ar.init ghain-ar.medi ghainDotbelow-ar.medi ghainDotbelow-ar ghainThreedotsabove-ar ghainThreedotsabove-ar.fina ghainThreedotsabove-ar.init ghainThreedotsabove-ar.medi hah-ar.fina hahVinvertedbelow-ar.fina hahHamzaabove-ar hahHamzaabove-ar.fina hahHamzaabove-ar.init hahHamzaabove-ar.medi hahTahabove-ar hahTahabove-ar.fina hahTahabove-ar.init hahTahabove-ar.medi hahThreedotsabove-ar hahThreedotsabove-ar.fina hahThreedotsabove-ar.init hahThreedotsabove-ar.medi hahTwodotshorizontalabove-ar jeemTwodotsabove-ar hahTwodotshorizontalabove-ar.fina jeemTwodotsabove-ar.fina hahTwodotshorizontalabove-ar.init jeemTwodotsabove-ar.init hahTwodotshorizontalabove-ar.medi jeemTwodotsabove-ar.medi hahTwodotsverticalabove-ar hahTwodotsverticalabove-ar.fina hahTwodotsverticalabove-ar.init hahTwodotsverticalabove-ar.medi hairspace heh-ar.fina.hooked hehgoal-ar.fina hehgoal-ar.fina.allah heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh heh-ar.init hehDoachashmee-ar.init heh-ar.init.hooked hehgoal-ar.init heh-ar.knotted hehDoachashmee-ar heh-ar.medi hehDoachashmee-ar.medi heh-ar.medi.hooked hehgoal-ar.medi heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.fina hehHamzaabove-ar hehgoalHamzaabove-ar hehHamzaabove-ar.fina hehVinvertedabove-ar hehVinvertedabove-ar.fina hehVinvertedabove-ar.init hehVinvertedabove-ar.medi hehgoalHamzaabove-ar.fina hehgoalHamzaabove-ar.init hehgoalHamzaabove-ar.medi highhamzaAlef-ar highhamzaWaw-ar highhamzaWaw-ar.fina highhamzaYeh-ar.fina highhamzaYeh-ar.medi jeemThreedotsabove-ar jeemThreedotsabove-ar.fina jeemThreedotsabove-ar.init jeemThreedotsabove-ar.medi kaf-ar kafTwodotsverticalbelow-ar kaf-ar.fina kafDotbelow-ar.fina kafThreedotsbelow-ar.fina kafTwodotsverticalbelow-ar.fina kaf-ar.medi kafDotbelow-ar.medi kafRing-ar.medi kafThreedotsbelow-ar.medi kafTwodotsverticalbelow-ar.medi keheh-ar.medi kehehThreedotsbelow-ar.medi kehehThreedotsupbelow-ar.medi kehehTwodotsverticalbelow-ar.medi kafDotabove-ar kafDotabove-ar.fina kafDotabove-ar.init kehehDotabove-ar.init kafDotabove-ar.medi kehehDotabove-ar.medi kafDotbelow-ar kafThreedotsbelow-ar kafRing-ar.init kafTwodotshorizontalabove-ar kafTwodotshorizontalabove-ar.fina kafTwodotshorizontalabove-ar.init kehehTwodotshorizontalabove-ar.init kafTwodotshorizontalabove-ar.medi kehehTwodotshorizontalabove-ar.medi kafswash-ar kafswash-ar.fina kafswash-ar.init kafswash-ar.medi kashidaWaw-ar kehehThreedotsabove-ar.init kehehThreedotsabove-ar.medi kehehVabove-ar kehehVabove-ar.fina kehehVabove-ar.init kehehVabove-ar.medi khah-ar tchehDotabove-ar khah-ar.fina tchehDotabove-ar.fina khah-ar.init tchehDotabove-ar.init khah-ar.medi tchehDotabove-ar.medi kirghizoe-ar kirghizoe-ar.bar waw-ar wawDotcenter-ar wawring-ar kirghizoe-ar.fina kirghizoe-ar.fina.bar waw-ar.fina wawDotcenter-ar.fina wawring-ar.fina kirghizyu-ar kirghizyu-ar.fina lam-ar lamBar-ar lamDotabove-ar lamDoublebar-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamVabove-ar lam-ar.fina lamBar-ar.fina lamDoublebar-ar.fina lamThreedotsbelow-ar.fina lam-ar.init lamThreedotsbelow-ar.init lam-ar.medi lamThreedotsbelow-ar.medi lamBar-ar.init lamBar-ar.medi lamBar_alef-ar lamBar_alefThreeabove-ar lamBar_alefTwoabove-ar lamBar_alefWasla-ar lamBar_alefWavyhamzaabove-ar lamBar_alefWavyhamzabelow-ar lamBar_alef-ar.fina lamBar_alefThreeabove-ar.fina lamBar_alefTwoabove-ar.fina lamBar_alefWasla-ar.fina lamBar_alefWavyhamzaabove-ar.fina lamBar_alefWavyhamzabelow-ar.fina lamDotabove-ar.fina lamThreedotsabove-ar.fina lamVabove-ar.fina lamDotabove-ar.init lamDotabove-ar.medi lamDotabove_alef-ar lamDotabove_alefThreeabove-ar lamDotabove_alefTwoabove-ar lamDotabove_alefWasla-ar lamDotabove_alefWavyhamzaabove-ar lamDotabove_alefWavyhamzabelow-ar lamDotabove_alef-ar.fina lamDotabove_alefThreeabove-ar.fina lamDotabove_alefTwoabove-ar.fina lamDotabove_alefWavyhamzaabove-ar.fina lamDotabove_alefWavyhamzabelow-ar.fina lamDotabove_alefWasla-ar.fina lamDoublebar-ar.init lamDoublebar-ar.medi lamDoublebar_alef-ar lamDoublebar_alefThreeabove-ar lamDoublebar_alefTwoabove-ar lamDoublebar_alefWasla-ar lamDoublebar_alefWavyhamzaabove-ar lamDoublebar_alefWavyhamzabelow-ar lamDoublebar_alef-ar.fina lamDoublebar_alefThreeabove-ar.fina lamDoublebar_alefTwoabove-ar.fina lamDoublebar_alefWasla-ar.fina lamDoublebar_alefWavyhamzaabove-ar.fina lamDoublebar_alefWavyhamzabelow-ar.fina lamTahabove-ar lamTahabove-ar.fina lamTahabove-ar.init lamTahabove-ar.medi lamTahabove_alef-ar lamTahabove_alefThreeabove-ar lamTahabove_alefTwoabove-ar lamTahabove_alefWasla-ar lamTahabove_alefWavyhamzaabove-ar lamTahabove_alefWavyhamzabelow-ar lamTahabove_alef-ar.fina lamTahabove_alefThreeabove-ar.fina lamTahabove_alefTwoabove-ar.fina lamTahabove_alefWasla-ar.fina lamTahabove_alefWavyhamzaabove-ar.fina lamTahabove_alefWavyhamzabelow-ar.fina lamThreedotsabove-ar.init lamThreedotsabove-ar.medi lamThreedotsabove_alef-ar lamThreedotsabove_alefThreeabove-ar lamThreedotsabove_alefTwoabove-ar lamThreedotsabove_alefWasla-ar lamThreedotsabove_alefWavyhamzaabove-ar lamThreedotsabove_alefWavyhamzabelow-ar lamThreedotsabove_alef-ar.fina lamThreedotsabove_alefThreeabove-ar.fina lamThreedotsabove_alefTwoabove-ar.fina lamThreedotsabove_alefWasla-ar.fina lamThreedotsabove_alefWavyhamzaabove-ar.fina lamThreedotsabove_alefWavyhamzabelow-ar.fina lamThreedotsbelow_alef-ar lamThreedotsbelow_alefThreeabove-ar lamThreedotsbelow_alefTwoabove-ar lamThreedotsbelow_alefWasla-ar lamThreedotsbelow_alefWavyhamzaabove-ar lamThreedotsbelow_alefWavyhamzabelow-ar lamThreedotsbelow_alef-ar.fina lamThreedotsbelow_alefThreeabove-ar.fina lamThreedotsbelow_alefWasla-ar.fina lamThreedotsbelow_alefWavyhamzaabove-ar.fina lamThreedotsbelow_alefWavyhamzabelow-ar.fina lamThreedotsbelow_alefTwoabove-ar.fina lamVabove-ar.init lamVabove-ar.medi lamVabove_alef-ar lamVabove_alefThreeabove-ar lamVabove_alefTwoabove-ar lamVabove_alefWasla-ar lamVabove_alefWavyhamzaabove-ar lamVabove_alefWavyhamzabelow-ar lamVabove_alef-ar.fina lamVabove_alefThreeabove-ar.fina lamVabove_alefTwoabove-ar.fina lamVabove_alefWasla-ar.fina lamVabove_alefWavyhamzaabove-ar.fina lamVabove_alefWavyhamzabelow-ar.fina lam_alef-ar lam_alefThreeabove-ar lam_alefTwoabove-ar lam_alefWasla-ar lam_alefWavyhamzaabove-ar lam_alefWavyhamzabelow-ar lam_alef-ar.fina lam_alefThreeabove-ar.fina lam_alefTwoabove-ar.fina lam_alefWavyhamzaabove-ar.fina lam_alefWavyhamzabelow-ar.fina lam_alefBottomrightkasraattached-ar lam_alefBottomrightkasraattachedDotabove-ar lam_alefBottomrightkasraattachedLeftring-ar lam_alefDotabove-ar lam_alefFathaattached-ar lam_alefKasraattached-ar lam_alefLefthamzaattached-ar lam_alefLeftmiddlestroke-ar lam_alefLeftrounddotattached-ar lam_alefRighthamzaattached-ar lam_alefRightmiddlestroke-ar lam_alefRightmiddlestrokeDotabove-ar lam_alefRightmiddlestrokeLeftring-ar lam_alefRightrounddotattached-ar lam_alefRounddotaboveattached-ar lam_alefRounddotbelowattached-ar lam_alefToprightfathaattached-ar lam_alefToprightfathaattachedDotabove-ar lam_alefToprightfathaattachedLeftring-ar lam_alefBottomrightkasraattached-ar.fina lam_alefBottomrightkasraattachedDotabove-ar.fina lam_alefBottomrightkasraattachedLeftring-ar.fina lam_alefDotabove-ar.fina lam_alefFathaattached-ar.fina lam_alefKasraattached-ar.fina lam_alefLefthamzaattached-ar.fina lam_alefLeftmiddlestroke-ar.fina lam_alefLeftrounddotattached-ar.fina lam_alefRighthamzaattached-ar.fina lam_alefRightmiddlestroke-ar.fina lam_alefRightmiddlestrokeDotabove-ar.fina lam_alefRightmiddlestrokeLeftring-ar.fina lam_alefRightrounddotattached-ar.fina lam_alefRounddotaboveattached-ar.fina lam_alefRounddotbelowattached-ar.fina lam_alefToprightfathaattached-ar.fina lam_alefToprightfathaattachedDotabove-ar.fina lam_alefToprightfathaattachedLeftring-ar.fina lam_alefWasla-ar.fina meem-ar meemDotbelow-ar meem-ar.fina meemDotbelow-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meemDotbelow-ar.fina.sindhi meemDotbelow-ar.sindhi meem-ar.init meemDotbelow-ar.init meem-ar.medi meemDotbelow-ar.medi meemDotabove-ar meemDotabove-ar.fina meemDotabove-ar.fina.sindhi meemDotabove-ar.sindhi meemDotabove-ar.init meemDotabove-ar.medi meemThreedotsabove-ar meemThreedotsabove-ar.fina meemThreedotsabove-ar.fina.sindhi meemThreedotsabove-ar.sindhi meemThreedotsabove-ar.init meemThreedotsabove-ar.medi misraComma-ar narrownbspace nbspace space ng-ar ng-ar.fina ng-ar.init ng-ar.medi ngoeh-ar.init ngoeh-ar.medi noon-ar noonDotbelow-ar noonRing-ar noonTwodotsbelow-ar noon-ar.fina noonDotbelow-ar.fina noonRing-ar.fina noonTwodotsbelow-ar.fina rnoon-ar.fina noonAfrican-ar noonghunna-ar noonAfrican-ar.fina noonghunna-ar.fina noonTahabove-ar noonTahabove-ar.fina noonThreedotsabove-ar noonThreedotsabove-ar.fina noonVabove-ar noonVabove-ar.fina noonVabove-ar.init noonVabove-ar.medi noonVinvertedabove-ar noonVinvertedabove-ar.fina pehMeemabove-ar pehVabove-ar pehVabove-ar.fina pehVabove-ar.init pehVabove-ar.medi peheh-ar.init peheh-ar.medi punctuationspace qaf-ar qafAfrican-ar qafDotabove-ar qafDotbelow-ar qafDotbelowNodotsabove-ar qafDotless-ar qafThreedotsabove-ar qaf-ar.fina qafAfrican-ar.fina qafDotabove-ar.fina qafDotbelow-ar.fina qafDotbelowNodotsabove-ar.fina qafDotless-ar.fina qafThreedotsabove-ar.fina qaf-ar.init qafDotbelow-ar.init qaf-ar.medi qafDotbelow-ar.medi qafDotbelowNodotsabove-ar.init qafDotbelowNodotsabove-ar.medi qafThreedotsaboveAfrican-ar qafThreedotsaboveAfrican-ar.fina qafThreedotsaboveAfrican-ar.init qafThreedotsaboveAfrican-ar.medi reh-ar rehDotbelow-ar rehDotbelowdotabove-ar rehRing-ar rehStroke-ar rehVbelow-ar reh-ar.fina rehDotbelow-ar.fina rehDotbelowdotabove-ar.fina rehRing-ar.fina rehStroke-ar.fina rehVbelow-ar.fina rehHamzaabove-ar rehHamzaabove-ar.fina rehLoop-ar rehLoop-ar.fina rehNoonabove-ar rehNoonabove-ar.fina rehTwodotshorizontalaboveTahabove-ar rehTwodotshorizontalaboveTahabove-ar.fina rehTwodotsverticalabove-ar rehTwodotsverticalabove-ar.fina rehv-ar rehv-ar.fina rnoon-ar rreh-ar rreh-ar.fina sad-ar.init sadThreedotsbelow-ar.init sadTwodotsbelow-ar.init sad-ar.medi sadThreedotsbelow-ar.medi sadTwodotsbelow-ar.medi sadThreedots-ar.init sadThreedots-ar.medi seen-ar seenDotbelowDotabove-ar seenFourabove-ar seenFourdotsabove-ar seenTahTwodotshorizontalabove-ar seenThreedotsbelow-ar seenTwodotsverticalabove-ar seenVinvertedabove-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar seen-ar.fina seenDotbelowDotabove-ar.fina seenFourabove-ar.fina seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar.fina sheen-ar.fina sheenDotbelow-ar.fina sheenThreedotsbelow-ar.fina seen-ar.init seenThreedotsbelow-ar.init seen-ar.medi seenThreedotsbelow-ar.medi seenDotbelowDotabove-ar.init seenDotbelowDotabove-ar.medi seenFourabove-ar.init seenFourabove-ar.medi seenFourdotsabove-ar.init seenFourdotsabove-ar.medi seenTahTwodotshorizontalabove-ar.init seenTahTwodotshorizontalabove-ar.medi seenTwodotsverticalabove-ar.init seenTwodotsverticalabove-ar.medi seenVinvertedabove-ar.init seenVinvertedabove-ar.medi sheen-ar.init sheenDotbelow-ar.init sheenThreedotsbelow-ar.init sheen-ar.medi sheenDotbelow-ar.medi sheenThreedotsbelow-ar.medi sindhipostpositionmen-ar sixperemspace tah-ar tahDotbelow-ar tahTwodotsverticalbelow-ar tah-ar.fina tahDotbelow-ar.fina tahThreedots-ar.fina tahTwodotsabove-ar.fina tahTwodotsverticalbelow-ar.fina tah-ar.init tahDotbelow-ar.init tahThreedots-ar.init tahTwodotsabove-ar.init tahTwodotsverticalbelow-ar.init tah-ar.medi tahDotbelow-ar.medi tahThreedots-ar.medi tahTwodotsabove-ar.medi tahTwodotsverticalbelow-ar.medi tahThreedots-ar tahTwodotsabove-ar zah-ar tahThreedotsbelow-ar tahThreedotsbelow-ar.fina tahThreedotsbelow-ar.init tahThreedotsbelow-ar.medi tchehVabove-ar tchehVabove-ar.fina tchehVabove-ar.init tchehVabove-ar.medi teh-ar tehRing-ar tehThreedotsupbelow-ar teh-ar.fina tehRing-ar.fina tehThreedotsupbelow-ar.fina teh-ar.init tehRing-ar.init tehThreedotsupbelow-ar.init yehTwodotsabove-farsi.init teh-ar.medi tehRing-ar.medi tehThreedotsupbelow-ar.medi yehTwodotsabove-farsi.medi tehMarbuta-ar tehMarbutagoal-ar tehMarbuta-ar.fina tehMarbutagoal-ar.fina tehTehabove-ar tehTehabove-ar.fina tehTehabove-ar.init tehTehabove-ar.medi tehThreedotsdown-ar tehThreedotsdown-ar.fina tehThreedotsdown-ar.init teheh-ar.init tehThreedotsdown-ar.medi tehVabove-ar tehVabove-ar.fina tehVabove-ar.init tehVabove-ar.medi teheh-ar teheh-ar.fina teheh-ar.medi thal-ar thal-ar.fina thal-ar.loclWLF thinspace threeperemspace tteh-ar tteh-ar.fina ttehVabove-ar ttehVabove-ar.fina ttehVabove-ar.init ttehVabove-ar.medi tteheh-ar tteheh-ar.fina u-ar u-ar.fina ve-ar ve-ar.fina wawDotabove-ar wawDotabove-ar.fina wawStraight-ar wawStraight-ar.fina wawTwodots-ar wawTwodots-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina yehHamzaabove-ar.fina.loclKIR yehHamzaabove-ar.loclKIR yehKashmiri-ar yehKashmiri-ar.fina yehRohingya-ar yehRohingya-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehTwoabove-farsi yehThreeabove-farsi.fina yehTwoabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVabove-ar.medi yehVinverted-farsi yehVinverted-farsi.fina yehVinverted-farsi.init yehVinverted-farsi.medi yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar yehbarreeHamzaabove-ar.fina yehbarreeThreeabove-ar yehbarreeTwoabove-ar yehbarreeThreeabove-ar.fina yehbarreeTwoabove-ar.fina yehthin-ar.init yu-ar yu-ar.fina zah-ar.fina zah-ar.init zah-ar.medi zain-ar zain-ar.fina zerowidthspace];
+@alef = [_lam-ar.init.preAlef _lam-ar.medi.preAlef _lamBar-ar.init.preAlef _lamBar-ar.medi.preAlef _lamDotabove-ar.init.preAlef _lamDotabove-ar.medi.preAlef _lamDoublebar-ar.init.preAlef _lamDoublebar-ar.medi.preAlef _lamTahabove-ar.init.preAlef _lamTahabove-ar.medi.preAlef _lamThreedotsabove-ar.init.preAlef _lamThreedotsabove-ar.medi.preAlef _lamThreedotsbelow-ar.init.preAlef _lamThreedotsbelow-ar.medi.preAlef _lamVabove-ar.init.preAlef _lamVabove-ar.medi.preAlef absAutoKashida ae-ar heh-ar hehgoal-ar ae-ar.fina heh-ar.fina heh-ar.fina.allah ain-ar ainThreedotsbelow-ar ain-ar.fina ainThreedotsbelow-ar.fina ain-ar.init ain-ar.medi ainThreedotsbelow-ar.medi ainThreedots-ar ainThreedots-ar.fina ainThreedots-ar.init ainThreedots-ar.medi ainThreedotsbelow-ar.init ainThreedotsdownabove-ar ainThreedotsdownabove-ar.fina ainThreedotsdownabove-ar.init ainThreedotsdownabove-ar.medi ainTwodotshorizontalabove-ar ainTwodotshorizontalabove-ar.fina ainTwodotshorizontalabove-ar.init ainTwodotshorizontalabove-ar.medi ainTwodotsverticalabove-ar ainTwodotsverticalabove-ar.fina ainTwodotsverticalabove-ar.init ainTwodotsverticalabove-ar.medi alef-ar alefBottomrightkasraattached-ar alefKasraattached-ar alefRighthamzaattached-ar alefRightmiddlestroke-ar alefRightrounddotattached-ar alefRounddotbelowattached-ar alefToprightfathaattached-ar alef-ar.allah alef-ar.fina alefBottomrightkasraattached-ar.fina alefKasraattached-ar.fina alefRighthamzaattached-ar.fina alefRightmiddlestroke-ar.fina alefRightrounddotattached-ar.fina alefRounddotbelowattached-ar.fina alefToprightfathaattached-ar.fina alef-ar.fina.allah alefHamzabelow-ar alefWavyhamzabelow-ar alefHamzabelow-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina alefMaksura-ar e-ar highhamzaYeh-ar yeh-ar yeh-farsi yehFourbelow-farsi yehThreedotsbelow-ar yehthin-ar alefMaksura-ar.fina e-ar.fina yeh-ar.fina yeh-farsi.fina yehFourbelow-farsi.fina yehThreedotsbelow-ar.fina yehthin-ar.fina alefMaksura-ar.init beeh-ar.init beh-ar.init behDotless-ar.init behThreedotsupbelow-ar.init behVbelow-ar.init behVinvertedbelow-ar.init beheh-ar.init e-ar.init noonThreedotsabove-ar.init noonghunna-ar.init peh-ar.init yeh-ar.init yeh-ar.noDots.init yeh-farsi.init yehFourbelow-farsi.init yehKashmiri-ar.init yehThreedotsbelow-ar.init alefMaksura-ar.medi beeh-ar.medi beh-ar.medi behDotless-ar.medi behThreedotshorizontalbelow-ar.medi behThreedotsupbelow-ar.medi behVbelow-ar.medi behVinvertedbelow-ar.medi beheh-ar.medi e-ar.medi noonThreedotsabove-ar.medi noonghunna-ar.medi peh-ar.medi yeh-ar.medi yeh-ar.noDots.medi yeh-farsi.medi yehFourbelow-farsi.medi yehKashmiri-ar.medi yehThreedotsbelow-ar.medi yehthin-ar.medi beeh-ar beh-ar behDotless-ar behThreedotshorizontalbelow-ar behThreedotsupbelow-ar behVbelow-ar behVinvertedbelow-ar beheh-ar peh-ar beeh-ar.fina beh-ar.fina behDotless-ar.fina behThreedotshorizontalbelow-ar.fina behThreedotsupbelow-ar.fina behVbelow-ar.fina behVinvertedbelow-ar.fina beheh-ar.fina peh-ar.fina behMeemabove-ar behMeemabove-ar.fina pehMeemabove-ar.fina behThreedotshorizontalbelow-ar.init behThreedotsupabove-ar theh-ar behThreedotsupabove-ar.fina theh-ar.fina behThreedotsupabove-ar.init theh-ar.init yehThreedotsabove-farsi.init behThreedotsupabove-ar.medi theh-ar.medi yehThreedotsabove-farsi.medi behTwodotsbelowDotabove-ar behTwodotsbelowDotabove-ar.fina behTwodotsbelowDotabove-ar.init highhamzaYeh-ar.init noon-ar.init noonDotbelow-ar.init noonRing-ar.init noonTwodotsbelow-ar.init yehTwodotsbelowDotabove-ar.init behTwodotsbelowDotabove-ar.medi noon-ar.medi noonAfrican-ar.medi noonDotbelow-ar.medi noonRing-ar.medi noonTwodotsbelow-ar.medi yehTwodotsbelowDotabove-ar.medi behVabove-ar behVabove-ar.fina behVabove-ar.init yehVabove-ar.init behVabove-ar.medi behhamzaabove-ar behhamzaabove-ar.fina behhamzaabove-ar.init yehHamzaabove-ar.init yehTwodotsbelowHamzaabove-ar.init behhamzaabove-ar.medi yehHamzaabove-ar.medi yehTwodotsbelowHamzaabove-ar.medi dad-ar dadDotbelow-ar sad-ar sadThreedots-ar sadThreedotsbelow-ar sadTwodotsbelow-ar dad-ar.fina dadDotbelow-ar.fina sad-ar.fina sadThreedots-ar.fina sadThreedotsbelow-ar.fina sadTwodotsbelow-ar.fina dad-ar.init dad-ar.medi dadDotbelow-ar.init dadDotbelow-ar.medi dahal-ar dahal-ar.loclWLF dal-ar dalDotbelow-ar dalRing-ar dalThreedotsbelow-ar dalTwodotsverticalbelow-ar dalVinvertedbelow-ar ddahal-ar dal-ar.fina dalDotbelow-ar.fina dalRing-ar.fina dalThreedotsbelow-ar.fina dalTwodotsverticalbelow-ar.fina dalVinvertedbelow-ar.fina ddahal-ar.fina dal-ar.loclWLF dalDotbelow-ar.loclWLF dalRing-ar.loclWLF dalThreedotsbelow-ar.loclWLF dalTwodotsverticalbelow-ar.loclWLF dalVinvertedbelow-ar.loclWLF ddahal-ar.loclWLF dalDotbelowTah-ar dalTwodotsverticalbelowTah-ar dalDotbelowTah-ar.fina dalTwodotsverticalbelowTah-ar.fina ddal-ar.fina dalDotbelowTah-ar.loclWLF dalTwodotsverticalbelowTah-ar.loclWLF ddal-ar.loclWLF dalFourdots-ar dalFourdots-ar.loclWLF dalThreedotsdown-ar dalThreedotsdown-ar.loclWLF dalVinvertedabove-ar.fina ddal-ar dottedCircle dul-ar dul-ar.fina dul-ar.loclWLF dyeh-ar hah-ar hahFourbelow-ar hahTahTwodotshorizontalbelow-ar hahTahbelow-ar hahThreedotsupbelow-ar hahVinvertedbelow-ar jeem-ar jeemThreedotsbelow-ar nyeh-ar tcheh-ar tcheheh-ar dyeh-ar.fina hahFourbelow-ar.fina hahTahTwodotshorizontalbelow-ar.fina hahTahbelow-ar.fina hahThreedotsupbelow-ar.fina jeem-ar.fina jeemThreedotsbelow-ar.fina nyeh-ar.fina tcheh-ar.fina tcheheh-ar.fina dyeh-ar.init hah-ar.init hahFourbelow-ar.init hahTahTwodotshorizontalbelow-ar.init hahTahbelow-ar.init hahThreedotsupbelow-ar.init hahVinvertedbelow-ar.init jeem-ar.init jeemThreedotsbelow-ar.init nyeh-ar.init tcheh-ar.init tcheheh-ar.init dyeh-ar.medi hah-ar.medi hahFourbelow-ar.medi hahTahTwodotshorizontalbelow-ar.medi hahTahbelow-ar.medi hahThreedotsupbelow-ar.medi hahVinvertedbelow-ar.medi jeem-ar.medi jeemThreedotsbelow-ar.medi nyeh-ar.medi tcheh-ar.medi tcheheh-ar.medi emquad emspace enquad enspace feh-ar fehAfrican-ar fehDotbelow-ar fehDotbelowThreedotsabove-ar fehDotless-ar fehDotmovedbelow-ar fehThreedotsbelow-ar fehThreedotsupbelow-ar fehTwodotsbelow-ar peheh-ar veh-ar feh-ar.fina fehAfrican-ar.fina fehDotbelow-ar.fina fehDotbelowThreedotsabove-ar.fina fehDotless-ar.fina fehDotmovedbelow-ar.fina fehThreedotsbelow-ar.fina fehThreedotsupbelow-ar.fina fehTwodotsbelow-ar.fina peheh-ar.fina veh-ar.fina feh-ar.init fehDotbelow-ar.init qafDotabove-ar.init feh-ar.medi fehDotbelow-ar.medi qafDotabove-ar.medi fehAfrican-ar.init fehDotless-ar.init fehAfrican-ar.medi fehDotless-ar.medi fehDotmovedbelow-ar.medi fehThreedotsbelow-ar.medi fehThreedotsupbelow-ar.medi fehTwodotsbelow-ar.medi qafAfrican-ar.medi qafDotless-ar.medi fehDotbelowThreedotsabove-ar.init qafThreedotsabove-ar.init veh-ar.init fehDotbelowThreedotsabove-ar.medi qafThreedotsabove-ar.medi veh-ar.medi fehDotmovedbelow-ar.init fehThreedotsbelow-ar.init fehThreedotsupbelow-ar.init fehTwodotsbelow-ar.init qafDotless-ar.init figurespace fourperemspace gaf-ar gafInvertedstroke-ar gafRing-ar gafThreedots-ar gafTwodotsbelow-ar gueh-ar kafRing-ar keheh-ar kehehDotabove-ar kehehElongatedhamzaabove-ar kehehThreedotsabove-ar kehehThreedotsbelow-ar kehehThreedotsupbelow-ar kehehTwodotshorizontalabove-ar kehehTwodotsverticalbelow-ar ngoeh-ar gaf-ar.fina gafInvertedstroke-ar.fina gafRing-ar.fina gafThreedots-ar.fina gafTwodotsbelow-ar.fina gueh-ar.fina kafRing-ar.fina keheh-ar.fina kehehDotabove-ar.fina kehehElongatedhamzaabove-ar.fina kehehThreedotsabove-ar.fina kehehThreedotsbelow-ar.fina kehehThreedotsupbelow-ar.fina kehehTwodotshorizontalabove-ar.fina kehehTwodotsverticalbelow-ar.fina ngoeh-ar.fina gaf-ar.init gafRing-ar.init gafTwodotsbelow-ar.init gueh-ar.init kehehElongatedhamzaabove-ar.init gaf-ar.medi gafRing-ar.medi gafTwodotsbelow-ar.medi gueh-ar.medi kehehElongatedhamzaabove-ar.medi gafInvertedstroke-ar.init kaf-ar.init kafDotbelow-ar.init kafThreedotsbelow-ar.init kafTwodotsverticalbelow-ar.init keheh-ar.init kehehThreedotsbelow-ar.init kehehThreedotsupbelow-ar.init kehehTwodotsverticalbelow-ar.init gafInvertedstroke-ar.medi gafThreedots-ar.init gafThreedots-ar.medi ghain-ar ghain-ar.fina ghainDotbelow-ar.fina ghain-ar.init ghainDotbelow-ar.init ghain-ar.medi ghainDotbelow-ar.medi ghainDotbelow-ar ghainThreedotsabove-ar ghainThreedotsabove-ar.fina ghainThreedotsabove-ar.init ghainThreedotsabove-ar.medi hah-ar.fina hahVinvertedbelow-ar.fina hahHamzaabove-ar hahHamzaabove-ar.fina hahHamzaabove-ar.init hahHamzaabove-ar.medi hahTahabove-ar hahTahabove-ar.fina hahTahabove-ar.init hahTahabove-ar.medi hahThreedotsabove-ar hahThreedotsabove-ar.fina hahThreedotsabove-ar.init hahThreedotsabove-ar.medi hahTwodotshorizontalabove-ar jeemTwodotsabove-ar hahTwodotshorizontalabove-ar.fina jeemTwodotsabove-ar.fina hahTwodotshorizontalabove-ar.init jeemTwodotsabove-ar.init hahTwodotshorizontalabove-ar.medi jeemTwodotsabove-ar.medi hahTwodotsverticalabove-ar hahTwodotsverticalabove-ar.fina hahTwodotsverticalabove-ar.init hahTwodotsverticalabove-ar.medi hairspace heh-ar.fina.hooked hehgoal-ar.fina hehgoal-ar.fina.allah heh-ar.fina.knottedHigh hehDoachashmee-ar.fina.knottedHigh heh-ar.init hehDoachashmee-ar.init heh-ar.init.hooked hehgoal-ar.init heh-ar.knotted hehDoachashmee-ar heh-ar.medi hehDoachashmee-ar.medi heh-ar.medi.hooked hehgoal-ar.medi heh-ar.medi.knottedHigh hehDoachashmee-ar.medi.knottedHigh hehDoachashmee-ar.fina hehHamzaabove-ar hehgoalHamzaabove-ar hehHamzaabove-ar.fina hehVinvertedabove-ar hehVinvertedabove-ar.fina hehVinvertedabove-ar.init hehVinvertedabove-ar.medi hehgoalHamzaabove-ar.fina hehgoalHamzaabove-ar.init hehgoalHamzaabove-ar.medi highhamzaAlef-ar highhamzaWaw-ar highhamzaWaw-ar.fina highhamzaYeh-ar.fina highhamzaYeh-ar.medi jeemThreedotsabove-ar jeemThreedotsabove-ar.fina jeemThreedotsabove-ar.init jeemThreedotsabove-ar.medi kaf-ar kafTwodotsverticalbelow-ar kaf-ar.fina kafDotbelow-ar.fina kafThreedotsbelow-ar.fina kafTwodotsverticalbelow-ar.fina kaf-ar.medi kafDotbelow-ar.medi kafRing-ar.medi kafThreedotsbelow-ar.medi kafTwodotsverticalbelow-ar.medi keheh-ar.medi kehehThreedotsbelow-ar.medi kehehThreedotsupbelow-ar.medi kehehTwodotsverticalbelow-ar.medi kafDotabove-ar kafDotabove-ar.fina kafDotabove-ar.init kehehDotabove-ar.init kafDotabove-ar.medi kehehDotabove-ar.medi kafDotbelow-ar kafThreedotsbelow-ar kafRing-ar.init kafTwodotshorizontalabove-ar kafTwodotshorizontalabove-ar.fina kafTwodotshorizontalabove-ar.init kehehTwodotshorizontalabove-ar.init kafTwodotshorizontalabove-ar.medi kehehTwodotshorizontalabove-ar.medi kafswash-ar kafswash-ar.fina kafswash-ar.init kafswash-ar.medi kashida-ar kashida-ar.wide kashidaWaw-ar kehehThreedotsabove-ar.init kehehThreedotsabove-ar.medi kehehVabove-ar kehehVabove-ar.fina kehehVabove-ar.init kehehVabove-ar.medi khah-ar tchehDotabove-ar khah-ar.fina tchehDotabove-ar.fina khah-ar.init tchehDotabove-ar.init khah-ar.medi tchehDotabove-ar.medi kirghizoe-ar kirghizoe-ar.bar waw-ar wawDotcenter-ar wawring-ar kirghizoe-ar.fina kirghizoe-ar.fina.bar waw-ar.fina wawDotcenter-ar.fina wawring-ar.fina kirghizyu-ar kirghizyu-ar.fina lam-ar lamBar-ar lamDotabove-ar lamDoublebar-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamVabove-ar lam-ar.fina lamBar-ar.fina lamDoublebar-ar.fina lamThreedotsbelow-ar.fina lam-ar.init lamThreedotsbelow-ar.init lam-ar.medi lamThreedotsbelow-ar.medi lamBar-ar.init lamBar-ar.medi lamBar_alef-ar lamBar_alefThreeabove-ar lamBar_alefTwoabove-ar lamBar_alefWasla-ar lamBar_alefWavyhamzaabove-ar lamBar_alefWavyhamzabelow-ar lamBar_alef-ar.fina lamBar_alefThreeabove-ar.fina lamBar_alefTwoabove-ar.fina lamBar_alefWasla-ar.fina lamBar_alefWavyhamzaabove-ar.fina lamBar_alefWavyhamzabelow-ar.fina lamDotabove-ar.fina lamThreedotsabove-ar.fina lamVabove-ar.fina lamDotabove-ar.init lamDotabove-ar.medi lamDotabove_alef-ar lamDotabove_alefThreeabove-ar lamDotabove_alefTwoabove-ar lamDotabove_alefWasla-ar lamDotabove_alefWavyhamzaabove-ar lamDotabove_alefWavyhamzabelow-ar lamDotabove_alef-ar.fina lamDotabove_alefThreeabove-ar.fina lamDotabove_alefTwoabove-ar.fina lamDotabove_alefWavyhamzaabove-ar.fina lamDotabove_alefWavyhamzabelow-ar.fina lamDotabove_alefWasla-ar.fina lamDoublebar-ar.init lamDoublebar-ar.medi lamDoublebar_alef-ar lamDoublebar_alefThreeabove-ar lamDoublebar_alefTwoabove-ar lamDoublebar_alefWasla-ar lamDoublebar_alefWavyhamzaabove-ar lamDoublebar_alefWavyhamzabelow-ar lamDoublebar_alef-ar.fina lamDoublebar_alefThreeabove-ar.fina lamDoublebar_alefTwoabove-ar.fina lamDoublebar_alefWasla-ar.fina lamDoublebar_alefWavyhamzaabove-ar.fina lamDoublebar_alefWavyhamzabelow-ar.fina lamTahabove-ar lamTahabove-ar.fina lamTahabove-ar.init lamTahabove-ar.medi lamTahabove_alef-ar lamTahabove_alefThreeabove-ar lamTahabove_alefTwoabove-ar lamTahabove_alefWasla-ar lamTahabove_alefWavyhamzaabove-ar lamTahabove_alefWavyhamzabelow-ar lamTahabove_alef-ar.fina lamTahabove_alefThreeabove-ar.fina lamTahabove_alefTwoabove-ar.fina lamTahabove_alefWasla-ar.fina lamTahabove_alefWavyhamzaabove-ar.fina lamTahabove_alefWavyhamzabelow-ar.fina lamThreedotsabove-ar.init lamThreedotsabove-ar.medi lamThreedotsabove_alef-ar lamThreedotsabove_alefThreeabove-ar lamThreedotsabove_alefTwoabove-ar lamThreedotsabove_alefWasla-ar lamThreedotsabove_alefWavyhamzaabove-ar lamThreedotsabove_alefWavyhamzabelow-ar lamThreedotsabove_alef-ar.fina lamThreedotsabove_alefThreeabove-ar.fina lamThreedotsabove_alefTwoabove-ar.fina lamThreedotsabove_alefWasla-ar.fina lamThreedotsabove_alefWavyhamzaabove-ar.fina lamThreedotsabove_alefWavyhamzabelow-ar.fina lamThreedotsbelow_alef-ar lamThreedotsbelow_alefThreeabove-ar lamThreedotsbelow_alefTwoabove-ar lamThreedotsbelow_alefWasla-ar lamThreedotsbelow_alefWavyhamzaabove-ar lamThreedotsbelow_alefWavyhamzabelow-ar lamThreedotsbelow_alef-ar.fina lamThreedotsbelow_alefThreeabove-ar.fina lamThreedotsbelow_alefWasla-ar.fina lamThreedotsbelow_alefWavyhamzaabove-ar.fina lamThreedotsbelow_alefWavyhamzabelow-ar.fina lamThreedotsbelow_alefTwoabove-ar.fina lamVabove-ar.init lamVabove-ar.medi lamVabove_alef-ar lamVabove_alefThreeabove-ar lamVabove_alefTwoabove-ar lamVabove_alefWasla-ar lamVabove_alefWavyhamzaabove-ar lamVabove_alefWavyhamzabelow-ar lamVabove_alef-ar.fina lamVabove_alefThreeabove-ar.fina lamVabove_alefTwoabove-ar.fina lamVabove_alefWasla-ar.fina lamVabove_alefWavyhamzaabove-ar.fina lamVabove_alefWavyhamzabelow-ar.fina lam_alef-ar lam_alefThreeabove-ar lam_alefTwoabove-ar lam_alefWasla-ar lam_alefWavyhamzaabove-ar lam_alefWavyhamzabelow-ar lam_alef-ar.fina lam_alefThreeabove-ar.fina lam_alefTwoabove-ar.fina lam_alefWavyhamzaabove-ar.fina lam_alefWavyhamzabelow-ar.fina lam_alefBottomrightkasraattached-ar lam_alefBottomrightkasraattachedDotabove-ar lam_alefBottomrightkasraattachedLeftring-ar lam_alefDotabove-ar lam_alefFathaattached-ar lam_alefKasraattached-ar lam_alefLefthamzaattached-ar lam_alefLeftmiddlestroke-ar lam_alefLeftrounddotattached-ar lam_alefRighthamzaattached-ar lam_alefRightmiddlestroke-ar lam_alefRightmiddlestrokeDotabove-ar lam_alefRightmiddlestrokeLeftring-ar lam_alefRightrounddotattached-ar lam_alefRounddotaboveattached-ar lam_alefRounddotbelowattached-ar lam_alefToprightfathaattached-ar lam_alefToprightfathaattachedDotabove-ar lam_alefToprightfathaattachedLeftring-ar lam_alefBottomrightkasraattached-ar.fina lam_alefBottomrightkasraattachedDotabove-ar.fina lam_alefBottomrightkasraattachedLeftring-ar.fina lam_alefDotabove-ar.fina lam_alefFathaattached-ar.fina lam_alefKasraattached-ar.fina lam_alefLefthamzaattached-ar.fina lam_alefLeftmiddlestroke-ar.fina lam_alefLeftrounddotattached-ar.fina lam_alefRighthamzaattached-ar.fina lam_alefRightmiddlestroke-ar.fina lam_alefRightmiddlestrokeDotabove-ar.fina lam_alefRightmiddlestrokeLeftring-ar.fina lam_alefRightrounddotattached-ar.fina lam_alefRounddotaboveattached-ar.fina lam_alefRounddotbelowattached-ar.fina lam_alefToprightfathaattached-ar.fina lam_alefToprightfathaattachedDotabove-ar.fina lam_alefToprightfathaattachedLeftring-ar.fina lam_alefWasla-ar.fina meem-ar meemDotbelow-ar meem-ar.fina meemDotbelow-ar.fina meem-ar.fina.sindhi meem-ar.sindhi meemDotbelow-ar.fina.sindhi meemDotbelow-ar.sindhi meem-ar.init meemDotbelow-ar.init meem-ar.medi meemDotbelow-ar.medi meemDotabove-ar meemDotabove-ar.fina meemDotabove-ar.fina.sindhi meemDotabove-ar.sindhi meemDotabove-ar.init meemDotabove-ar.medi meemThreedotsabove-ar meemThreedotsabove-ar.fina meemThreedotsabove-ar.fina.sindhi meemThreedotsabove-ar.sindhi meemThreedotsabove-ar.init meemThreedotsabove-ar.medi misraComma-ar narrownbspace nbspace space ng-ar ng-ar.fina ng-ar.init ng-ar.medi ngoeh-ar.init ngoeh-ar.medi noon-ar noonDotbelow-ar noonRing-ar noonTwodotsbelow-ar noon-ar.fina noonDotbelow-ar.fina noonRing-ar.fina noonTwodotsbelow-ar.fina rnoon-ar.fina noonAfrican-ar noonghunna-ar noonAfrican-ar.fina noonghunna-ar.fina noonTahabove-ar noonTahabove-ar.fina noonThreedotsabove-ar noonThreedotsabove-ar.fina noonVabove-ar noonVabove-ar.fina noonVabove-ar.init noonVabove-ar.medi noonVinvertedabove-ar noonVinvertedabove-ar.fina pehMeemabove-ar pehVabove-ar pehVabove-ar.fina pehVabove-ar.init pehVabove-ar.medi peheh-ar.init peheh-ar.medi punctuationspace qaf-ar qafAfrican-ar qafDotabove-ar qafDotbelow-ar qafDotbelowNodotsabove-ar qafDotless-ar qafThreedotsabove-ar qaf-ar.fina qafAfrican-ar.fina qafDotabove-ar.fina qafDotbelow-ar.fina qafDotbelowNodotsabove-ar.fina qafDotless-ar.fina qafThreedotsabove-ar.fina qaf-ar.init qafDotbelow-ar.init qaf-ar.medi qafDotbelow-ar.medi qafDotbelowNodotsabove-ar.init qafDotbelowNodotsabove-ar.medi qafThreedotsaboveAfrican-ar qafThreedotsaboveAfrican-ar.fina qafThreedotsaboveAfrican-ar.init qafThreedotsaboveAfrican-ar.medi reh-ar rehDotbelow-ar rehDotbelowdotabove-ar rehRing-ar rehStroke-ar rehVbelow-ar reh-ar.fina rehDotbelow-ar.fina rehDotbelowdotabove-ar.fina rehRing-ar.fina rehStroke-ar.fina rehVbelow-ar.fina rehHamzaabove-ar rehHamzaabove-ar.fina rehLoop-ar rehLoop-ar.fina rehNoonabove-ar rehNoonabove-ar.fina rehTwodotshorizontalaboveTahabove-ar rehTwodotshorizontalaboveTahabove-ar.fina rehTwodotsverticalabove-ar rehTwodotsverticalabove-ar.fina rehv-ar rehv-ar.fina rnoon-ar rreh-ar rreh-ar.fina sad-ar.init sadThreedotsbelow-ar.init sadTwodotsbelow-ar.init sad-ar.medi sadThreedotsbelow-ar.medi sadTwodotsbelow-ar.medi sadThreedots-ar.init sadThreedots-ar.medi seen-ar seenDotbelowDotabove-ar seenFourabove-ar seenFourdotsabove-ar seenTahTwodotshorizontalabove-ar seenThreedotsbelow-ar seenTwodotsverticalabove-ar seenVinvertedabove-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar seen-ar.fina seenDotbelowDotabove-ar.fina seenFourabove-ar.fina seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar.fina sheen-ar.fina sheenDotbelow-ar.fina sheenThreedotsbelow-ar.fina seen-ar.init seenThreedotsbelow-ar.init seen-ar.medi seenThreedotsbelow-ar.medi seenDotbelowDotabove-ar.init seenDotbelowDotabove-ar.medi seenFourabove-ar.init seenFourabove-ar.medi seenFourdotsabove-ar.init seenFourdotsabove-ar.medi seenTahTwodotshorizontalabove-ar.init seenTahTwodotshorizontalabove-ar.medi seenTwodotsverticalabove-ar.init seenTwodotsverticalabove-ar.medi seenVinvertedabove-ar.init seenVinvertedabove-ar.medi sheen-ar.init sheenDotbelow-ar.init sheenThreedotsbelow-ar.init sheen-ar.medi sheenDotbelow-ar.medi sheenThreedotsbelow-ar.medi sindhipostpositionmen-ar sixperemspace tah-ar tahDotbelow-ar tahTwodotsverticalbelow-ar tah-ar.fina tahDotbelow-ar.fina tahThreedots-ar.fina tahTwodotsabove-ar.fina tahTwodotsverticalbelow-ar.fina tah-ar.init tahDotbelow-ar.init tahThreedots-ar.init tahTwodotsabove-ar.init tahTwodotsverticalbelow-ar.init tah-ar.medi tahDotbelow-ar.medi tahThreedots-ar.medi tahTwodotsabove-ar.medi tahTwodotsverticalbelow-ar.medi tahThreedots-ar tahTwodotsabove-ar zah-ar tahThreedotsbelow-ar tahThreedotsbelow-ar.fina tahThreedotsbelow-ar.init tahThreedotsbelow-ar.medi tchehVabove-ar tchehVabove-ar.fina tchehVabove-ar.init tchehVabove-ar.medi teh-ar tehRing-ar tehThreedotsupbelow-ar teh-ar.fina tehRing-ar.fina tehThreedotsupbelow-ar.fina teh-ar.init tehRing-ar.init tehThreedotsupbelow-ar.init yehTwodotsabove-farsi.init teh-ar.medi tehRing-ar.medi tehThreedotsupbelow-ar.medi yehTwodotsabove-farsi.medi tehMarbuta-ar tehMarbutagoal-ar tehMarbuta-ar.fina tehMarbutagoal-ar.fina tehTehabove-ar tehTehabove-ar.fina tehTehabove-ar.init tehTehabove-ar.medi tehThreedotsdown-ar tehThreedotsdown-ar.fina tehThreedotsdown-ar.init teheh-ar.init tehThreedotsdown-ar.medi tehVabove-ar tehVabove-ar.fina tehVabove-ar.init tehVabove-ar.medi teheh-ar teheh-ar.fina teheh-ar.medi thal-ar thal-ar.fina thal-ar.loclWLF thinspace threeperemspace tteh-ar tteh-ar.fina ttehVabove-ar ttehVabove-ar.fina ttehVabove-ar.init ttehVabove-ar.medi tteheh-ar tteheh-ar.fina u-ar u-ar.fina ve-ar ve-ar.fina wawDotabove-ar wawDotabove-ar.fina wawStraight-ar wawStraight-ar.fina wawTwodots-ar wawTwodots-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yehHamzaabove-ar yehTwodotsbelowHamzaabove-ar yehHamzaabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina yehHamzaabove-ar.fina.loclKIR yehHamzaabove-ar.loclKIR yehKashmiri-ar yehKashmiri-ar.fina yehRohingya-ar yehRohingya-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehTwoabove-farsi yehThreeabove-farsi.fina yehTwoabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVabove-ar.medi yehVinverted-farsi yehVinverted-farsi.fina yehVinverted-farsi.init yehVinverted-farsi.medi yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar yehbarreeHamzaabove-ar.fina yehbarreeThreeabove-ar yehbarreeTwoabove-ar yehbarreeThreeabove-ar.fina yehbarreeTwoabove-ar.fina yehthin-ar.init yu-ar yu-ar.fina zah-ar.fina zah-ar.init zah-ar.medi zain-ar zain-ar.fina zerowidthspace];
 # baseClass _lam-ar.init.preAlef <anchor 71 1262> @alef;
 # baseClass _lam-ar.medi.preAlef <anchor 164 1033> @alef;
 # baseClass _lamBar-ar.init.preAlef <anchor 114 1307> @alef;
@@ -1547,6 +1547,8 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass [kafswash-ar kafswash-ar.fina] <anchor 346 1108> @alef;
 # baseClass kafswash-ar.init <anchor 243 1225> @alef;
 # baseClass kafswash-ar.medi <anchor 272 1182> @alef;
+# baseClass kashida-ar <anchor 133 575> @alef;
+# baseClass kashida-ar.wide <anchor 233 575> @alef;
 # baseClass kashidaWaw-ar <anchor 331 786> @alef;
 # baseClass kehehThreedotsabove-ar.init <anchor 300 2152> @alef;
 # baseClass kehehThreedotsabove-ar.medi <anchor 428 2292> @alef;
@@ -2479,11 +2481,8 @@ lookup ShaddaAlefLigatures {
 # HB PAUSE
 #---  calt feature  ---
 # Language-independent shaping
-# Lateef short tail variants of reh and waw -- disabled for now.
-#include(../../source/opentype/customShaping.feax)
 
 # Lateef
-# HB PAUSE
 # Language-specific shaping
 lookup dfltCALT {
     # (need at least a dummy lookup for TT)
@@ -2564,9 +2563,17 @@ lookup KasraHighTT {
     sub @Kasra_lowered by @Kasra;
 } KasraHighTT;
 
+# Increase size of dagger alef
+# This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
+lookup DaggerAlefToLarge {
+    lookupflag 0;
+    sub alefabove-ar by alefabove-ar.large;
+} DaggerAlefToLarge;
+
 # HB PAUSE
 #--- remaining subs features (salt, cvxx, liga) ---
 # Lookups for user-selectable features
+#NB: Lookup names ending in "TT" are used only by TypeTuner
     
 
 # Jeem/Hah medial alternate: cv08
@@ -2575,6 +2582,16 @@ lookup KasraHighTT {
     # NB: This is written so as to allow language-specific behavior to be overridden
     # end do - Sch or Har
     # Sad/Dad "half" form alternate: cv20
+    lookup DalAlternateTT {
+        lookupflag IgnoreMarks;
+        sub @cno_loclWLF by @c_loclWLF;
+    } DalAlternateTT;
+
+    lookup DalSimpleTT {
+        lookupflag IgnoreMarks;
+        sub @c_loclWLF by @cno_loclWLF;
+    } DalSimpleTT;
+
     lookup DalAlternate {
         lookupflag IgnoreMarks;
         sub dahal-ar from [dahal-ar.loclWLF dahal-ar];
@@ -2618,6 +2635,16 @@ lookup SadDadAlternate {
 } SadDadAlternate;
 
 # Meem alternate: cv44
+lookup MeemSindhiTT {
+    lookupflag IgnoreMarks;
+    sub @cno_sindhi by @c_sindhi;
+} MeemSindhiTT;
+
+lookup MeemLongTT {
+    lookupflag IgnoreMarks;
+    sub @c_sindhi by @cno_sindhi;
+} MeemLongTT;
+
 lookup MeemAlternate {
     # NB: This is written so as to allow language-specific behavior to be overridden
     lookupflag IgnoreMarks;
@@ -2682,6 +2709,11 @@ lookup KurdishHehDoTT {
     sub hehDoachashmee-ar.fina by hehDoachashmee-ar.fina.knottedHigh;
 } KurdishHehDoTT;
 
+lookup BowtieHehDoTT {
+    lookupflag IgnoreMarks;
+    sub hehDoachashmee-ar.fina.knottedHigh by hehDoachashmee-ar.fina;
+} BowtieHehDoTT;
+
 lookup KnottedHehDoTT {
     # TypeTuner only
     lookupflag IgnoreMarks;
@@ -2707,8 +2739,18 @@ lookup KyrgyzOeAlternates {
     sub @cno_bar by @c_bar;
 } KyrgyzOeAlternates;
 
+# Yeh-Hamza alternates: cv54
+lookup YehHamzaRightTT {
+    lookupflag 0;
+    sub @cno_loclKIR by @c_loclKIR;
+} YehHamzaRightTT;
+
+lookup YehHamzaMidTT {
+    lookupflag 0;
+    sub @c_loclKIR by @cno_loclKIR;
+} YehHamzaMidTT;
+
 lookup YehHamzaAlternates {
-    # cv54
     lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
     sub yehHamzaabove-ar.fina from [yehHamzaabove-ar.fina.loclKIR yehHamzaabove-ar.fina];
@@ -2719,7 +2761,7 @@ lookup YehHamzaAlternates {
 
 # Madda alternate: cv60
     # Sch or Har
-    # Kasra Alternates: cv62
+    # Kasra alternates: cv62
     lookup MaddaAlternate {
         lookupflag 0;
         sub @Maddah.small by @Maddah;
@@ -2739,6 +2781,24 @@ lookup KasraAlternates {
 } KasraAlternates;
 
 # Damma alternates: cv70
+lookup DammaFilledTT {
+    lookupflag 0;
+    sub @Damma by @Damma_filled;
+    sub @Damma_short by @Damma_filled;
+} DammaFilledTT;
+
+lookup DammaShortTT {
+    lookupflag 0;
+    sub @Damma by @Damma_short;
+    sub @Damma_filled by @Damma_short;
+} DammaShortTT;
+
+lookup DammaCrossedTT {
+    lookupflag 0;
+    sub @Damma_filled by @Damma;
+    sub @Damma_short by @Damma;
+} DammaCrossedTT;
+
 lookup DammaAlternates {
     lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
@@ -2754,7 +2814,17 @@ lookup DammaAlternates {
     sub hamza_damma-ar.short from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
 } DammaAlternates;
 
-# SixNine Dammatan: cv72
+# Dammatan alternates: cv72
+lookup DammatanSixNineTT {
+    lookupflag 0;
+    sub @cno_sixNine by @c_sixNine;
+} DammatanSixNineTT;
+
+lookup DammatanTwoNineTT {
+    lookupflag 0;
+    sub @c_sixNine by @cno_sixNine;
+} DammatanTwoNineTT;
+
 lookup DammatanAlternate {
     lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
@@ -2769,35 +2839,40 @@ lookup DammatanAlternate {
 lookup DammaInvertedAlternates {
     lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
-    #   0=default;                  1=hollow;            2=filled
-    sub dammainverted-ar from [dammainverted-ar.open dammainverted-ar];
-    sub dammainverted-ar.open from [dammainverted-ar.open dammainverted-ar];
+    #   0=default                       1=hollow;              2=filled
+    sub dammainverted-ar from [dammainverted-ar.open dammainverted-ar.filled];
+    sub dammainverted-ar.open from [dammainverted-ar.open dammainverted-ar.filled];
+    sub dammainverted-ar.filled from [dammainverted-ar.open dammainverted-ar.filled];
 } DammaInvertedAlternates;
 
 # DaggerAlef alternates: cv76
-lookup _DaggerAlefAlt {
-    # Scheherazade only
-    lookupflag 0;
-    # 0=default             1=large;            2=small
-    sub alefabove-ar from [alefabove-ar.large alefabove-ar];
-    #sub alefabove-ar by alefabove-ar.large ;
-} _DaggerAlefAlt;
-
 lookup DaggerAlefAlternates {
-    # cv76
     lookupflag 0;
-    # By this time, we've already changed to alefabove-ar.large in contexts where it might be wanted (eg, in Sch).
-    # Now return it to small if cv76=2.
-            sub @TakesLargeDaggerAlef alefabove-ar' lookup _DaggerAlefAlt;
-
-    
+    #   0=default                 1=large            2=small
+    sub alefabove-ar from [alefabove-ar.large alefabove-ar];
+    sub alefabove-ar.large from [alefabove-ar.large alefabove-ar];
 } DaggerAlefAlternates;
 
 # Sukun alternates: cv78
+lookup SukunDownTT {
+    lookupflag 0;
+    sub [sukun-ar sukun-ar.leftOpen] by sukun-ar.downOpen;
+} SukunDownTT;
+
+lookup SukunLeftTT {
+    lookupflag 0;
+    sub [sukun-ar sukun-ar.downOpen] by sukun-ar.leftOpen;
+} SukunLeftTT;
+
+lookup SukunClosedTT {
+    lookupflag 0;
+    sub [sukun-ar.downOpen sukun-ar.leftOpen] by sukun-ar;
+} SukunClosedTT;
+
 lookup SukunAlternates {
     lookupflag 0;
     # NB: This is written so as to allow language-specific behavior to be overridden
-    # 0=default;                 1=downOpen        2=leftOpen        3=closed
+    # 0=default                  1=downOpen        2=leftOpen        3=closed
     sub sukun-ar from [sukun-ar.downOpen sukun-ar.leftOpen sukun-ar];
     sub sukun-ar.downOpen from [sukun-ar.downOpen sukun-ar.leftOpen sukun-ar];
     sub sukun-ar.leftOpen from [sukun-ar.downOpen sukun-ar.leftOpen sukun-ar];
@@ -2840,7 +2915,7 @@ lookup AyahAlternates {
 
 
 # Sch
-# Digit alternates
+# Eastern digit alternates: cv82
 # TypeTuner lookups:
 lookup DigitSindhiTT {
     lookupflag 0;
@@ -2873,7 +2948,13 @@ lookup DigitRohingyaTT {
     sub seven-persian by seven-persian.urdu;
 } DigitRohingyaTT;
 
-# Eastern digit alternates: cv82
+lookup DigitDefaultTT {
+    sub four-persian.roh by four-persian;
+    sub four-persian.urdu by four-persian;
+    sub six-persian.urdu by six-persian;
+    sub seven-persian.urdu by seven-persian;
+} DigitDefaultTT;
+
 # Only used for cv82, not language-specific modifications:
 # We include the Kurdish forms as a place holder for value 3, even though they are not offered as a supported value.
 # They are simply the standard Persian forms.
@@ -2916,6 +2997,14 @@ lookup ShaddaKasraLigatures {
     sub shadda-ar graphemejoinercomb kasratan-ar by shadda_kasratan-ar;
     sub shadda-ar graphemejoinercomb kasra-ar by shadda_kasra-ar;
 } ShaddaKasraLigatures;
+
+# DaggerAlef will be .large if Lateef default or cv76=1. But if it is, we need
+# to verify the context is correct, otherwise revert to the small. 
+lookup DaggerAlefFixup {
+    lookupflag 0;
+    ignore sub @TakesLargeDaggerAlef alefabove-ar.large';
+    sub alefabove-ar.large' by alefabove-ar;
+} DaggerAlefFixup;
 
 # Lam-Alef Ligatures
 # Create ligatures for characters that do NOT have a decomposition.
@@ -3788,11 +3877,11 @@ lookup YehBarreeToWideWithMarks {
     
 } YehBarreeToWideWithMarks;
 
-# Scheherazade only:
-lookup WideKashida {
-            sub kashida-ar' @MarksAny by kashida-ar.wide;
+    # Scheherazade only:
+    lookup WideKashida {
+        sub kashida-ar' @MarksAny by kashida-ar.wide;
+    } WideKashida;
 
-} WideKashida;
 
 #**********************************
 #  GSUB FEATURES
@@ -3908,9 +3997,9 @@ feature rlig {
 #     to execute after init/medi/fina lookups, but locl executes before.
 feature calt {
     # Contextual Alternates
-    script arab;
-    #lookup SignWithDigits;  # moved to liga feature
+    # Same for latin & arabic:
     
+    script arab;
     # Sch only:
             # start of kerning substitutions
         # end of kerning substitutions
@@ -3920,7 +4009,10 @@ feature calt {
         lookup MiscKashidas;
         lookup MarkKashidas;
 
-    lookup WideKashida;
+            lookup WideKashida;
+
+    
+    # Force other languages to include Arabic script default rules plus some others:
     language KIR;
     # Kyrgyz
     lookup KyrgyzCALT;
@@ -3955,16 +4047,8 @@ feature calt {
 # HB puts everything else (clig, liga, cvXX, ssXX, salt) in one pass:
 feature salt {
     # Stylistic Alternates
-    script arab;
+    # Same for latin & arabic:
     lookup AyahAlternates;
-    # Force other languages to include Arabic script lookups
-    language KIR;
-    language KSH;
-    language KUR;
-    language RHG;
-    language SND;
-    language URD;
-    language WLF;
 } salt;
 
 #--- Character Variants ---
@@ -4285,31 +4369,28 @@ feature cv74 {
     lookup DammaInvertedAlternates;
 } cv74;
 
-# Character Variant 76
-    ### ParamUILabelNameID { name 3 1 0x0409 "Small"            ; };
-    # Same for latin & arabic:
-    # end do - Sch or Harmattan
-        feature cv76 {
-                cvParameters {
-                        FeatUILabelNameID {
-                name "Superscript Alef";
-            };
-
-                        ParamUILabelNameID {
-                name "Large";
-            };
-
+feature cv76 {
+    # Character Variant 76
+        cvParameters {
+                FeatUILabelNameID {
+            name "Superscript Alef";
         };
 
-        lookup DaggerAlefAlternates;
-    } cv76;
+        ### ParamUILabelNameID { name 3 1 0x0409 "Default"          ; };
+                ParamUILabelNameID {
+            name "Large";
+        };
 
+                ParamUILabelNameID {
+            name "Small";
+        };
 
-    
+    };
 
-### ParamUILabelNameID { name 3 1 0x0409 "Default"          ; };
-# Same for latin & arabic:
-# end do - Lateef
+    # Same for latin & arabic:
+    lookup DaggerAlefAlternates;
+} cv76;
+
 feature cv78 {
     # Character Variant 78
         cvParameters {
@@ -4465,13 +4546,15 @@ feature liga {
     # Ligatures  -- we use this because liga is done in the same pass as cv62
     # Same for latin & arabic:
     lookup ShaddaKasraLigatures;
-    # Must be after language-specific CALTs and cv62
+    # Must execute after language-specific CALTs and cv62
+    lookup DaggerAlefFixup;
+    # Must execute after language-specific CALTs and cv76
     
     lookup SignWithDigits;
     lookup LamAlefLigatures;
-    # Must be after all mark ligatures (including cv62)
+    # Must execute after all mark ligatures (including cv62)
     lookup AllahAlef;
-    # Must be after lam-alef lig
+    # Must execute after lam-alef lig
 } liga;
 
 # Lateef only:
@@ -5947,6 +6030,8 @@ lookup AlefToBase {
     pos base [kafswash-ar kafswash-ar.fina] <anchor 346 1108> mark @_alef;
     pos base kafswash-ar.init <anchor 243 1225> mark @_alef;
     pos base kafswash-ar.medi <anchor 272 1182> mark @_alef;
+    pos base kashida-ar <anchor 133 575> mark @_alef;
+    pos base kashida-ar.wide <anchor 233 575> mark @_alef;
     pos base kashidaWaw-ar <anchor 331 786> mark @_alef;
     pos base kehehThreedotsabove-ar.init <anchor 300 2152> mark @_alef;
     pos base kehehThreedotsabove-ar.medi <anchor 428 2292> mark @_alef;
