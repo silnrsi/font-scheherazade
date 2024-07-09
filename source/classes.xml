@@ -866,7 +866,7 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- Narrow initials for reh/waw kerning - loosen when there is a mark below. -->
     <class name="NarrowIni">
-        yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init
+        yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init yehHamzaabove-ar.init yeh-ar.init 
         highhamzaYeh-ar.init yeh-farsi.init yehTwoabove-farsi.init yehThreeabove-farsi.init yehVinverted-farsi.init
         yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init yehVabove-ar.init e-ar.init yehThreedotsbelow-ar.init
         yehFourbelow-farsi.init alefMaksura-ar.init yehKashmiri-ar.init yehTwodotsbelowHamzaabove-ar.init
@@ -965,7 +965,7 @@ of the license along with this Font Software. If this is not the case, go to
         meem-ar.sindhi meemDotabove-ar meemDotabove-ar.sindhi meemDotbelow-ar meemDotbelow-ar.sindhi meemThreedotsabove-ar
         meemThreedotsabove-ar.sindhi hehDoachashmee-ar hehVinvertedabove-ar heh-ar heh-ar.knotted ae-ar tehMarbuta-ar hehHamzaabove-ar
         hehgoal-ar hehgoalHamzaabove-ar tehMarbutagoal-ar yehbarreeTwoabove-ar.init yehbarreeThreeabove-ar.init
-        yehHamzaabove-ar.init yeh-ar.init yeh-ar.noDots.init highhamzaYeh-ar.init yeh-farsi.init yehTwoabove-farsi.init
+        yehHamzaabove-ar.init yeh-ar.init highhamzaYeh-ar.init yeh-farsi.init yehTwoabove-farsi.init
         yehThreeabove-farsi.init yehVinverted-farsi.init yehTwodotsabove-farsi.init yehThreedotsabove-farsi.init
         yehVabove-ar.init e-ar.init yehThreedotsbelow-ar.init yehFourbelow-farsi.init alefMaksura-ar.init yehKashmiri-ar.init
         yehTwodotsbelowHamzaabove-ar.init yehTwodotsbelowNoonabove-ar.init yehTwodotsbelowDotabove-ar.init behDotless-ar.init beh-ar.init
@@ -1186,7 +1186,7 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <class name="YehLikeFina">
-        alefMaksura-ar.fina yeh-ar.fina yeh-ar.noDots.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina
+        alefMaksura-ar.fina yeh-ar.fina yehHamzaabove-ar.fina yehVabove-ar.fina yehTwodotsbelowHamzaabove-ar.fina
         yehTwodotsbelowDotabove-ar.fina yehVinverted-farsi.fina yeh-farsi.fina yehTwodotsabove-farsi.fina yehThreedotsabove-farsi.fina
         yehTwoabove-farsi.fina yehThreeabove-farsi.fina yehFourbelow-farsi.fina yehTail-ar.fina yehKashmiri-ar.fina
         highhamzaYeh-ar.fina
@@ -1316,13 +1316,13 @@ of the license along with this Font Software. If this is not the case, go to
     <class name="Tooth0Below">
         teh-ar.init  theh-ar.init  tteh-ar.init  tteheh-ar.init
         behVabove-ar.init  tehThreedotsdown-ar.init  teheh-ar.init
-        yehHamzaabove-ar.init  alefMaksura-ar.init  yeh-ar.noDots.init  highhamzaYeh-ar.init
+        yehHamzaabove-ar.init  alefMaksura-ar.init  highhamzaYeh-ar.init
         noon-ar.init  noonTahabove-ar.init  noonghunna-ar.init  rnoon-ar.init  noonVabove-ar.init
         noonAfrican-ar.init  noonThreedotsabove-ar.init
 
         teh-ar.medi  theh-ar.medi  tteh-ar.medi  tteheh-ar.medi
         behVabove-ar.medi  tehThreedotsdown-ar.medi  teheh-ar.medi
-        yehHamzaabove-ar.medi  alefMaksura-ar.medi  yeh-ar.noDots.medi  highhamzaYeh-ar.medi
+        yehHamzaabove-ar.medi  alefMaksura-ar.medi  highhamzaYeh-ar.medi
         noon-ar.medi  noonTahabove-ar.medi  noonghunna-ar.medi  rnoon-ar.medi  noonVabove-ar.medi
         noonAfrican-ar.medi  noonThreedotsabove-ar.medi
     </class>
