@@ -5826,6 +5826,10 @@ lookup MarkToBase {
     pos base [yehbarree-ar.fina yehbarreeHamzaabove-ar.fina yehbarreeThreeabove-ar.fina yehbarreeTwoabove-ar.fina] <anchor 696 -1294> mark @_diaB;
     pos base yehthin-ar.init <anchor 279 -409> mark @_diaB;
     pos base zerowidthspace <anchor 0 -273> mark @_diaB;
+    pos base lam-ar <anchor 966 748> mark @_diaO;
+    pos base lam-ar.fina <anchor 919 807> mark @_diaO;
+    pos base lam-ar.init <anchor 317 816> mark @_diaO;
+    pos base lam-ar.medi <anchor 316 877> mark @_diaO;
 } MarkToBase;
 
 # Override mark positioning in the case of dagger-alef on certain chars:

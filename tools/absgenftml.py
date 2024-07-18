@@ -122,6 +122,11 @@ def doit(args):
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
 
+    # define some generally useful chars:
+    shadda   = 0x0651
+    fathatan = 0x064B
+    kasratan = 0x064D 
+
     def basenameSortKey(uid:int):
         return builder.char(uid).basename.lower()
 
@@ -394,7 +399,7 @@ def doit(args):
             # ignore non-ABS marks
             if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue
             c = builder.char(uid)
-            if c.general == 'Mn':
+            if c.general == 'Mn' and uid != 0x10EFC:  # all combining marks except alefoverlay (which isn't general purpose)
                 for base in repBase:
                     setBackgroundColor((uid,base))
                     for featlist in builder.permuteFeatures(uids=(uid,base)):
@@ -415,24 +420,25 @@ def doit(args):
         ftml.startTestGroup('Special cases')
         builder.render((0x064A, 0x064E), ftml)   # Yeh + Fatha should keep dots
         builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should lose dots
+        setBackgroundColor((0x10EFC,))
+        builder.render((0x0644, 0x10EFC), ftml)  # Lam + alefoverlay
+        builder.render((0x0644, shadda, 0x10EFC, 0x0653, kasratan), ftml)  # same with some marks!
         ftml.closeTest()
 
         ftml.startTestGroup('Lam-Alef ligatures')
-        diaA1 = 0x0651  # shadda
-        diaA2 = 0x064B  # fathatan
-        diaB  = 0x064D  # kasratan
         for lam in lamlist:
             for alef in aleflist:
                 if lam != 0x0644 and 0x0870 <= alef <= 0x0882:
+                    # ligatures with "alef with attached ..." chars are implemented only for 0644 lam
                     continue
                 setBackgroundColor((lam,alef))
                 for featlist in builder.permuteFeatures(uids=(lam,alef)):
                     ftml.setFeatures(featlist)
-                    builder.render((lam, alef),               ftml, addBreaks=False)
-                    builder.render((lam, diaA1, alef, diaA2), ftml, addBreaks=False)
-                    builder.render((lam, diaB, alef),         ftml, addBreaks=False)
-                    builder.render((lam, alef, diaB),         ftml, addBreaks=False)
-                    builder.render((lam, diaB, alef, diaB),   ftml, addBreaks=False)
+                    builder.render((lam, alef),                     ftml, addBreaks=False)
+                    builder.render((lam, shadda, alef, fathatan),   ftml, addBreaks=False)
+                    builder.render((lam, kasratan, alef),           ftml, addBreaks=False)
+                    builder.render((lam, alef, kasratan),           ftml, addBreaks=False)
+                    builder.render((lam, kasratan, alef, kasratan), ftml, addBreaks=False)
                 ftml.clearFeatures()
                 ftml.closeTest()
 

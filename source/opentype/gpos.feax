@@ -24,6 +24,7 @@ lookup MarkToBase {
   lookupflag 0;
     pos  base @diaA  mark @_diaA;
     pos  base @diaB  mark @_diaB;
+    pos  base @diaO  mark @_diaO;
 } MarkToBase;
 
 # Override mark positioning in the case of dagger-alef on certain chars:

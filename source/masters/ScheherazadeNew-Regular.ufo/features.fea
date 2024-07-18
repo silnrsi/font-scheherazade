@@ -5675,6 +5675,10 @@ lookup MarkToBase {
     pos base yehthin-ar.fina <anchor 632 -1159> mark @_diaB;
     pos base yehthin-ar.init <anchor 159 -409> mark @_diaB;
     pos base zerowidthspace <anchor 0 -273> mark @_diaB;
+    pos base lam-ar <anchor 1010 801> mark @_diaO;
+    pos base lam-ar.fina <anchor 927 808> mark @_diaO;
+    pos base lam-ar.init <anchor 262 903> mark @_diaO;
+    pos base lam-ar.medi <anchor 283 901> mark @_diaO;
 } MarkToBase;
 
 # Override mark positioning in the case of dagger-alef on certain chars:
