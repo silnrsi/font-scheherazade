@@ -2778,28 +2778,7 @@ lookup AyahAlternates {
     lookup HonLigAlternates {
         # cv81
         lookupflag 0;
-        sub allahlong-ar from [allahlong-ar.smpl];
-        sub jallajalalouhou-ar from [jallajalalouhou-ar.smpl];
-        sub bismillah-ar from [bismillah-ar.smpl];
-        sub salaamuhuAlaynaa-ar from [salaamuhuAlaynaa-ar.smpl];
-        sub alayhiAsSalaam-ar from [alayhiAsSalaam-ar.smpl];
-        sub alayhimAsSalaam-ar from [alayhimAsSalaam-ar.smpl];
-        sub alayhaaAsSalaam-ar from [alayhaaAsSalaam-ar.smpl];
-        sub rahimahuAllaah-ar from [rahimahuAllaah-ar.smpl];
-        sub rahimahumAllaah-ar from [rahimahumAllaah-ar.smpl];
-        sub radiAllaahuAnh-ar from [radiAllaahuAnh-ar.smpl];
-        sub radiAllaahuAnhaa-ar from [radiAllaahuAnhaa-ar.smpl];
-        sub radiAllaahuAnhum-ar from [radiAllaahuAnhum-ar.smpl];
-        sub radiAllaahuAnhumaa-ar from [radiAllaahuAnhumaa-ar.smpl];
-        sub radiAllaahuAnhunna-ar from [radiAllaahuAnhunna-ar.smpl];
-        sub sallallaahuAlayhiWaAalih-ar from [sallallaahuAlayhiWaAalih-ar.smpl];
-        sub alayhimaaAsSalaam-ar from [alayhimaaAsSalaam-ar.smpl];
-        sub alayhiAsSalaatuWaSalaam-ar from [alayhiAsSalaatuWaSalaam-ar.smpl];
-        sub quddisaSirrah-ar from [quddisaSirrah-ar.smpl];
-        sub sallallahuAlayhiWaAaliheeWaSallam-ar from [sallallahuAlayhiWaAaliheeWaSallam-ar.smpl];
-        sub subhaanahuWaTaaalaa-ar from [subhaanahuWaTaaalaa-ar.smpl];
-        sub azzaWaJall-ar from [azzaWaJall-ar.smpl];
-        sub tabaarakaWaTaaalaa-ar from [tabaarakaWaTaaalaa-ar.smpl];
+        sub @HonLigCall by @HonLigSmpl;
     } HonLigAlternates;
 
 

@@ -776,7 +776,7 @@ ifinfo(familyName, "Scheherazade New") {
 
 lookup HonLigAlternates {      # cv81
   lookupflag 0;
-    sub @HonLigCall from @HonLigSmpl ;
+    sub @HonLigCall by @HonLigSmpl ;
 } HonLigAlternates ;
 
 }  # Sch
