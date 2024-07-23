@@ -17,11 +17,11 @@
 @AyahDisputed = [disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3];
 @AyahSquare = [endofayah-ar.altB endofayah-ar.altB.2 endofayah-ar.altB.3];
 @AyahAny = [@Ayah @AyahCircle @AyahSquare @AyahDisputed];
-@Damma = [damma-ar shadda_damma-ar hamza_damma-ar];
+@Damma = [damma-ar shadda_damma-ar hamza_damma-ar damma_meem-ar];
 @DammaInverted = [dammainverted-ar];
 @DammaInverted_open = [dammainverted-ar.open];
-@Damma_filled = [damma-ar.filled shadda_damma-ar.filled hamza_damma-ar.filled];
-@Damma_short = [damma-ar.short shadda_damma-ar.short hamza_damma-ar.short];
+@Damma_filled = [damma-ar.filled shadda_damma-ar.filled hamza_damma-ar.filled damma_meem-ar.filled];
+@Damma_short = [damma-ar.short shadda_damma-ar.short hamza_damma-ar.short damma_meem-ar.short];
 @DigitsArabic = [zero-ar one-ar two-ar three-ar four-ar five-ar six-ar seven-ar eight-ar nine-ar];
 @DigitsArabicMedium = [zero-ar.medium one-ar.medium two-ar.medium three-ar.medium four-ar.medium five-ar.medium six-ar.medium seven-ar.medium eight-ar.medium nine-ar.medium];
 @DigitsArabicSmall = [zero-ar.small one-ar.small two-ar.small three-ar.small four-ar.small five-ar.small six-ar.small seven-ar.small eight-ar.small nine-ar.small];
@@ -2459,7 +2459,7 @@ lookup HamzaLigatures {
 # Shadda ligation -- except for shadda-kasra
 # NB: Here we include shadda-mark ligatures *other than* the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
-@ShaddaLigatureFilter = [@ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb fathasmall-ar openfathatan-ar opendammatan-ar];
+@ShaddaLigatureFilter = [@ShaddaMarks @ShaddaKasraMarks shadda-ar alefabove-ar graphemejoinercomb fathasmall-ar dammasmall-ar openfathatan-ar opendammatan-ar];
 # All the remaining are to prevent ligature formation if they are between shadda and the mark:
 # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
 lookup ShaddaLigatures {
@@ -2479,6 +2479,21 @@ lookup ShaddaAlefLigatures {
     lookupflag UseMarkFilteringSet @ShaddaLigatureFilter;
     
 } ShaddaAlefLigatures;
+
+# Meem mark ligation
+# For now, don't try anything fancy for UTR53 but ligate only if they 
+# are next to each other (in either order)
+#
+# But do this before calt so the ligatures with alternate dammas work
+lookup MeemMarkLigatures {
+    lookupflag 0;
+    sub meemStopabove-ar damma-ar by damma_meem-ar;
+    sub meemStopabove-ar fatha-ar by fatha_meem-ar;
+    sub damma-ar meemStopabove-ar by damma_meem-ar;
+    sub fatha-ar meemStopabove-ar by fatha_meem-ar;
+    sub meembelow-ar kasra-ar by kasra_meem-ar;
+    sub kasra-ar meembelow-ar by kasra_meem-ar;
+} MeemMarkLigatures;
 
 # HB PAUSE
 #---  calt feature  ---
@@ -2808,12 +2823,15 @@ lookup DammaAlternates {
     sub damma-ar from [damma-ar.filled damma-ar.short damma-ar];
     sub shadda_damma-ar from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
     sub hamza_damma-ar from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
+    sub damma_meem-ar from [damma_meem-ar.filled damma_meem-ar.short damma_meem-ar];
     sub damma-ar.filled from [damma-ar.filled damma-ar.short damma-ar];
     sub shadda_damma-ar.filled from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
     sub hamza_damma-ar.filled from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
+    sub damma_meem-ar.filled from [damma_meem-ar.filled damma_meem-ar.short damma_meem-ar];
     sub damma-ar.short from [damma-ar.filled damma-ar.short damma-ar];
     sub shadda_damma-ar.short from [shadda_damma-ar.filled shadda_damma-ar.short shadda_damma-ar];
     sub hamza_damma-ar.short from [hamza_damma-ar.filled hamza_damma-ar.short hamza_damma-ar];
+    sub damma_meem-ar.short from [damma_meem-ar.filled damma_meem-ar.short damma_meem-ar];
 } DammaAlternates;
 
 # Dammatan alternates: cv72
@@ -3959,6 +3977,7 @@ feature rlig {
     lookup ComposeLowHamzaAbove;
     lookup HamzaLigatures;
     lookup ShaddaAlefLigatures;
+    lookup MeemMarkLigatures;
     #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
     # Force other languages to include Arabic script lookups:
     language KIR;

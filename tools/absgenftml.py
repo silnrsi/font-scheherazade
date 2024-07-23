@@ -10,6 +10,7 @@ from silfont.core import execute
 import silfont.ftml_builder as FB
 from palaso.unicode.ucd import get_ucd, loadxml
 from collections import OrderedDict
+from itertools import permutations
 
 
 argspec = [
@@ -210,19 +211,27 @@ def doit(args):
                 ftml.clearLang()
 
         # Add specials and ligatures that were in the glyph_data:
-        ftml.startTestGroup('Specials & ligatures from glyph_data')
+        ftml.startTestGroup('Specials & ligatures (other than lam-alef) from glyph_data')
         for basename in sorted(builder.specials()):
             special = builder.special(basename)
-            setBackgroundColor(special.uids)
-            for featlist in builder.permuteFeatures(uids=special.uids, feats=special.feats):
+            uids = special.uids
+            # Omit lam-alef ligatures as they are handled in the next section
+            if uids[0] in lamlist:
+                continue
+            setBackgroundColor(uids)
+            # At this point in time the only other specials in absGlyphList are mark ligatures,
+            # so prepare to test them in all character orders:
+            uidCombos = tuple(permutations(uids))
+            for featlist in builder.permuteFeatures(uids=uids, feats=special.feats):
                 ftml.setFeatures(featlist)
-                builder.render(special.uids, ftml)
+                for uids2 in uidCombos:
+                    builder.render(uids2, ftml)
                 ftml.closeTest()
             ftml.clearFeatures()
             if len(special.langs):
                 for langID in builder.allLangs:
                     ftml.setLang(langID)
-                    builder.render(special.uids, ftml)
+                    builder.render(uids, ftml)
                     ftml.closeTest()
                 ftml.clearLang()
 

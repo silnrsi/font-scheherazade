@@ -342,7 +342,7 @@ lookup HamzaLigatures {
       # All the remaining are to prevent ligature formation if they are between shadda and the mark:
       alefabove-ar graphemejoinercomb
       # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
-      fathasmall-ar openfathatan-ar opendammatan-ar  
+      fathasmall-ar dammasmall-ar openfathatan-ar opendammatan-ar  
     ] ;
 lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
@@ -358,6 +358,22 @@ lookup ShaddaAlefLigatures {
     sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'     by  shadda_alef-ar;
   }
 } ShaddaAlefLigatures ;
+
+
+# Meem mark ligation
+
+# For now, don't try anything fancy for UTR53 but ligate only if they 
+# are next to each other (in either order)
+#
+# But do this before calt so the ligatures with alternate dammas work
+
+lookup MeemMarkLigatures {
+  lookupflag 0;
+    sub meemStopabove-ar     [damma-ar fatha-ar] by [damma_meem-ar fatha_meem-ar];
+    sub [damma-ar fatha-ar]  meemStopabove-ar    by [damma_meem-ar fatha_meem-ar];
+    sub meembelow-ar         kasra-ar            by kasra_meem-ar ;
+    sub kasra-ar             meembelow-ar        by kasra_meem-ar ;
+} MeemMarkLigatures ;
 
 
 # HB PAUSE
@@ -1120,6 +1136,7 @@ feature rlig {  # Required Ligatures
         lookup ComposeLowHamzaAbove;
         lookup HamzaLigatures;
         lookup ShaddaAlefLigatures;
+        lookup MeemMarkLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
       # Force other languages to include Arabic script lookups:
       language KIR ;
