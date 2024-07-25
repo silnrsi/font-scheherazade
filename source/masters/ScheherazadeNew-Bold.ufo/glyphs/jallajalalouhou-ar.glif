@@ -6,12 +6,33 @@
     <component base="_damma.cal" xOffset="135" yOffset="503"/>
     <component base="_fatha-kasra.cal" xOffset="1788" yOffset="802"/>
     <component base="_fatha-kasra.cal" xOffset="915" yOffset="1366"/>
-    <component base="_fatha-kasra.cal" xOffset="490" yOffset="1171"/>
     <component base="_fatha-kasra.cal" xScale="1.85848" xyScale="0.39503" yxScale="-0.19336" yScale="0.90968" xOffset="1432" yOffset="836"/>
     <component base="_shadda.cal" xOffset="921" yOffset="1133"/>
     <component base="_dot1.cal" xOffset="2059" yOffset="-53"/>
     <component base="_dot1.cal" xOffset="1815" yOffset="-227"/>
+    <component base="_damma.cal" xOffset="419" yOffset="1166"/>
     <contour>
+      <point x="855" y="-273" type="curve" smooth="yes"/>
+      <point x="1056" y="-273"/>
+      <point x="1160" y="-182"/>
+      <point x="1224" y="-70" type="curve" smooth="yes"/>
+      <point x="1269" y="9"/>
+      <point x="1274" y="66"/>
+      <point x="1274" y="153" type="curve"/>
+      <point x="1326" y="28"/>
+      <point x="1419" y="-26"/>
+      <point x="1528" y="-26" type="curve" smooth="yes"/>
+      <point x="1858" y="-26"/>
+      <point x="2032" y="418"/>
+      <point x="2191" y="418" type="curve" smooth="yes" name="hr02"/>
+      <point x="2346" y="418"/>
+      <point x="2472" y="421"/>
+      <point x="2474" y="429" type="curve" smooth="yes"/>
+      <point x="2478" y="442"/>
+      <point x="2495" y="544"/>
+      <point x="2495" y="551" type="curve" smooth="yes"/>
+      <point x="2495" y="555"/>
+      <point x="2402" y="556"/>
       <point x="2348" y="558" type="curve" smooth="yes"/>
       <point x="2260" y="562"/>
       <point x="2188" y="577"/>
@@ -69,27 +90,6 @@
       <point x="524" y="0" type="curve" smooth="yes"/>
       <point x="524" y="-144"/>
       <point x="638" y="-273"/>
-      <point x="855" y="-273" type="curve" smooth="yes"/>
-      <point x="1056" y="-273"/>
-      <point x="1160" y="-182"/>
-      <point x="1224" y="-70" type="curve" smooth="yes"/>
-      <point x="1269" y="9"/>
-      <point x="1274" y="66"/>
-      <point x="1274" y="153" type="curve"/>
-      <point x="1326" y="28"/>
-      <point x="1419" y="-26"/>
-      <point x="1528" y="-26" type="curve" smooth="yes"/>
-      <point x="1858" y="-26"/>
-      <point x="2032" y="418"/>
-      <point x="2191" y="418" type="curve" smooth="yes" name="hr02"/>
-      <point x="2346" y="418"/>
-      <point x="2472" y="421"/>
-      <point x="2474" y="429" type="curve" smooth="yes"/>
-      <point x="2478" y="442"/>
-      <point x="2495" y="544"/>
-      <point x="2495" y="551" type="curve" smooth="yes"/>
-      <point x="2495" y="555"/>
-      <point x="2402" y="556"/>
     </contour>
     <contour>
       <point x="2368" y="798" type="curve" smooth="yes"/>
