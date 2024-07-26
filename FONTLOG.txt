@@ -64,7 +64,7 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-### 2024-xx-xx (SIL WSTech team) Scheherazade New version 4.xxx
+### 2024-xx-xx (SIL WSTech team) Scheherazade New version 4.300
 
 #### New
 
@@ -75,6 +75,13 @@ ChangeLog
   - U+10EC4 ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW
   - U+10EFC ARABIC COMBINING ALEF OVERLAY
   - Added support for Kashmiri language
+  - Added facility to override default language behavior through feature selection
+  - Added support for cv76 (dagger alef) on space, nbspace, and tatweel
+
+#### Improved
+- Minor anchor adjustment on U+06D6
+- Enhanced positioning of U+06E2 ARABIC SMALL HIGH MEEM ISOLATED FORM next to adjacent vowel marks
+- Tweaks to the design of some of the honorifics
 
 ### 2023-04-14 (SIL WSTech team) Scheherazade New version 4.000
 

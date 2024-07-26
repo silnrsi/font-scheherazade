@@ -2951,4 +2951,59 @@
       <string>سِباعٌ و ضِباعٌ و عِراكٌ</string>
     </test>
   </testgroup>
+  <testgroup label="Alef overlay">
+    <test label="Proposal">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x0881;&#x064f;&#x0648;&#x0652;&#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x0650;&#x0643;&#x064e; / &#x0881;&#x064f; &#x0648;&#x0652; &#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x0650;&#x0643;&#x064e;</string>
+    </test>
+    <test label="Proposal">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x0648;&#x064e;&#x0644;&#x064e;&#x10efc;&#x0653;&#x06a9;&#x0650;&#x0646; / &#x0648;&#x064e; &#x0644;&#x064e;&#x10efc;&#x0653;&#x06a9;&#x0650;&#x0646;</string>
+    </test>
+    <test label="">
+      <comment></comment>
+      <string>&#x064A;&#x0644;&#x064e;&#x10efc;&#x06A1;&#x0650;</string>
+    </test>
+    <test label="Tijaniya Quran p 117">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x0645;&#x064e;&#x0629;&#x064e;&#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0650;&#x0645;&#x064d; / &#x0645;&#x064e;&#x0629;&#x064e; &#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0650;&#x0645;&#x064d;</string>
+    </test>
+    <test label="Tijaniya Quran p 118">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x0882;&#x064f;&#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x06aa;&#x064e; / &#x0882;&#x064f; &#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x06aa;&#x064e;</string>
+    </test>
+    <test label="Tijaniya Quran">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x087c;&#x0621;&#x064e;&#x0644;&#x0652;&#x10efc;&#x0646;&#x064e; / &#x087c; &#x0621;&#x064e; &#x0644;&#x0652;&#x10efc;&#x0646;&#x064e;</string>
+    </test>
+    <test label="Tijaniya Quran">
+      <comment>2nd word uses spaces</comment>
+      <string>&#x06a2;&#x064e;&#x0882;&#x064f;&#x0648;&#x0652;&#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x06aa;&#x064e; / &#x06a2;&#x064e;&#x0882;&#x064f; &#x0648;&#x0652; &#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x06aa;&#x064e;</string>
+    </test>
+    <test label="Tijaniya Quran">
+      <comment>medial</comment>
+      <string>&#x0639;&#x064e;&#x0644;&#x064e;&#x10efc;&#x0646;&#x0650;&#x064a;&#x064e;&#x0629;&#x064e;</string>
+    </test>
+    <test label="Tijaniya Quran p 198">
+      <comment>medial</comment>
+      <string>&#x0628;&#x0650;&#x062e;&#x064e;&#x0644;&#x064e;&#x10efc;&#x0641;&#x0650;&#x06aa;&#x064f;&#x0645;&#x0652; </string>
+    </test>
+    <test label="Tijaniya Quran p 199">
+      <comment>medial</comment>
+      <string>&#x0633;&#x0652;&#x0644;&#x064e;&#x10efc;&#x0645;&#x0650;&#x0647;&#x0650;&#x0645;&#x0652; </string>
+    </test>
+    <test label="Tijaniya Quran p 206">
+      <comment>medial</comment>
+      <string>&#x0644;&#x062b;&#x0651;&#x064e;&#x0644;&#x064e;&#x10efc;&#x062b;&#x064e;&#x0629;&#x0650;</string>
+    </test>
+    <test label="Tijaniya Quran p 209">
+      <comment>medial with madda</comment>
+      <string>&#x062e;&#x064e;&#x0644;&#x064e;&#x10efc;&#x0653;&#x066e;&#x0655;&#x06a1;&#x064e;</string>
+    </test>
+    <test label="Tijaniya Quran p 481">
+      <comment>medial with madda</comment>
+      <string>&#x0628;&#x0650;&#x0638;&#x064e;&#x0644;&#x0651;&#x064e;&#x10efc;&#x0645;&#x064d;</string>
+    </test>
+  </testgroup>
+
 </ftml>
