@@ -318,7 +318,7 @@ def doit(args):
         ftml.closeTest()
         ftml.addToTest(None, r"\u0623\u0644\u0644\u0647", label="aH-l-l-h")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0671\u0644\u0644\u0647", label="aW-l-l-h", comment="won't work")
+        ftml.addToTest(None, r"\u0671\u0644\u0644\u0647", label="aW-l-l-h")
         ftml.closeTest()
         ftml.addToTest(None, r"\u0627\u065A\u0644\u0644\u0647", label="a-M-l-l-h")
         ftml.closeTest()
