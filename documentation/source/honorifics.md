@@ -3,7 +3,7 @@ title: Scheherazade New - Honorific ligatures
 fontversion: 4.300
 ---
 
-Unicode has a number of honorific ligatures. The below chart should aid in understanding in what context they should be used. As new characters, applications may have problems with rendering them in right-to-left text. In some cases, you can correct reading order problems by inserting a Right-to-Left mark (U+200F) after the honorific ligature.
+Unicode has a number of honorific ligatures. The below chart should aid in understanding in what context they should be used. As new characters, applications may have problems with rendering them in right-to-left text. In some cases, you can correct reading order problems by inserting U+200F RIGHT-TO-LEFT MARK after the honorific ligature.
 
 To view the simplified alternate glyphs and for instructions in accessing the simplified alternate glyphs, see the [Features](features.md) document.
 
