@@ -1579,7 +1579,7 @@ feature liga {  # Ligatures  -- we use this because liga is done in the same pas
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
-    ifinfo(familyName, "Harmattan") {
+    ifinfo(familyName, "Harmattan|Lateef") {
         lookup YehBarreeToWideAlways;    # Must execute after language-specific CALTs and cv48
         lookup YehBarreeToWideWithMarks; # Must execute after language-specific CALTs and cv48
     }
