@@ -294,6 +294,7 @@ do let f = info("familyName");
         lookup mainkern;
       # Force other languages to include Arabic script lookups:
       language KIR  ;
+      language KSH ;
       language KUR  ;
       language RHG  ;
       language SND  ;
@@ -314,6 +315,7 @@ feature mark {  # Mark to base Positioning
 #        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
       # Force other languages to include Arabic script lookups
       language KIR ;
+      language KSH ;
       language KUR ;
       language RHG ;
       language SND ;
