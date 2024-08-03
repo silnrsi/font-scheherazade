@@ -57,7 +57,8 @@ lookup MarkToLig {
 
 lookup _mark2_to_base {
   lookupflag 0;
-  ifinfo(familyName, "Scheherazade New") {
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1 ; {
     # Class are not expanded recursively, so enumerate them. :-(
     pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
