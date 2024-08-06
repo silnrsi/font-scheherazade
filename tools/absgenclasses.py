@@ -65,6 +65,9 @@ def doit(args):
         # Update UCD module with data for relevant pipeline chars 
         loadxml(args.ucdxml)
 
+    # Get list of glyphs that UFO says not to export
+    skipglyphset = set(args.ifont.lib.get('public.skipExportGlyphs', []))
+    
     # Iterate over glyph_data file looking for:
     #   Encoded glyphs whose USV shows they are Right- or Dual-joining
     #     Warn if their name has an extension
@@ -300,7 +303,8 @@ def doit(args):
         if len(gname) == 0:
             logger.log('empty glyph name in glyph_data; ignored', 'W')
             continue
-        if re.match('[#._]|nonmarkingreturn|tab|absAutoKashida', gname):
+        # Skip glyphs whose names start with #, ., or _  or if the name is in public.skipExportGlyphs
+        if re.match('[#._]|nonmarkingreturn|tab|absAutoKashida', gname) or gname in skipglyphset:
             continue
 
         # remember glyph ordering for all glyphs
