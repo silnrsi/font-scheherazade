@@ -509,13 +509,11 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="Maddah" fixed="0">
-        alefMadda-ar alefMadda-ar.fina madda-ar  _alefMadda-ar.fina.postLamIni
-        _alefMadda-ar.fina.postLamMed
+        alefMadda-ar alefMadda-ar.fina madda-ar
     </class>
 
     <class name="Maddah.small" fixed="0">
-        alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small  _alefMadda-ar.fina.postLamIni.small
-        _alefMadda-ar.fina.postLamMed.small
+        alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small
     </class>
     
     <!-- UTR53 algorithm -->
@@ -944,9 +942,7 @@ of the license along with this Font Software. If this is not the case, go to
         qafThreedotsaboveAfrican-ar.init
         lam-ar  lamVabove-ar  lamDotabove-ar lamThreedotsabove-ar lamBar-ar lamDoublebar-ar
         lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamBar-ar.init
-        lamDoublebar-ar.init _lam-ar.init.preAlef
-        _lamVabove-ar.init.preAlef _lamDotabove-ar.init.preAlef _lamThreedotsabove-ar.init.preAlef _lamDoublebar-ar.init.preAlef
-        meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init meemThreedotsabove-ar.init
+        lamDoublebar-ar.init meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init meemThreedotsabove-ar.init
         meem-ar.sindhi meemDotabove-ar.sindhi meemDotbelow-ar.sindhi meemThreedotsabove-ar.sindhi
         noon-ar.init  noonghunna-ar.init  noonAfrican-ar.init rnoon-ar.init noonTahabove-ar.init noonVabove-ar.init
         hehDoachashmee-ar hehVinvertedabove-ar
