@@ -108,7 +108,7 @@ def doit(args):
     alefsRare = set()   # alef-like from Unicode 14 (U+0870 .. U+0882)
     rehs = set()        # reh-like
     waws = set()        # waw-like
-    takesLargeAlef = set(('space', 'nbspace'))  # has bowl (final yehs, seens, etc) or is special
+    takesLargeAlef = set()  # has bowl (final yehs, seens, etc) or is whitespace
 
     # Sets of mark glyphs needed for UTR53
     utr53_220MCM = set()
@@ -154,6 +154,9 @@ def doit(args):
     def addToClasses(gname, uid, basename, ext, encoded):
         """ given a glyph with its information, add it to needed classes"""
         # Note that if the glyph is not encoded, the uid will be that of the encoded variant of it.
+        # Use large dagger-alef for all whitespace
+        if get_ucd(uid, 'gc') == 'Zs':
+            takesLargeAlef.add(gname)
         # Ignore anything not in arabic blocks
         if get_ucd(uid, 'blk').startswith('Arabic'):
             jt = get_ucd(uid, 'jt')

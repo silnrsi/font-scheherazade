@@ -130,7 +130,7 @@
 @ShaddaLigatures = [shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar];
 @ShaddaMarks = [fathatan-ar dammatan-ar fatha-ar damma-ar];
 @ShaddaLigatureParts = [@ShaddaMarks kasratan-ar kasra-ar shadda-ar graphemejoinercomb];
-@TakesLargeDaggerAlef = [alefMaksura-ar alefMaksura-ar.fina dad-ar dad-ar.fina dadDotbelow-ar dadDotbelow-ar.fina e-ar e-ar.fina highhamzaYeh-ar highhamzaYeh-ar.fina kashida-ar kashida-ar.wide nbspace sad-ar sad-ar.fina sadThreedots-ar sadThreedots-ar.fina sadThreedotsbelow-ar sadThreedotsbelow-ar.fina sadTwodotsbelow-ar sadTwodotsbelow-ar.fina seen-ar seen-ar.fina seenDotbelowDotabove-ar seenDotbelowDotabove-ar.fina seenFourabove-ar seenFourabove-ar.fina seenFourdotsabove-ar seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar seenVinvertedabove-ar.fina sheen-ar sheen-ar.fina sheenDotbelow-ar sheenDotbelow-ar.fina sheenThreedotsbelow-ar sheenThreedotsbelow-ar.fina space yeh-ar yeh-ar.fina yeh-farsi yeh-farsi.fina yehFourbelow-farsi yehFourbelow-farsi.fina yehHamzaabove-ar yehHamzaabove-ar.fina yehKashmiri-ar yehKashmiri-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehThreeabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehThreedotsbelow-ar yehThreedotsbelow-ar.fina yehTwoabove-farsi yehTwoabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehTwodotsbelowHamzaabove-ar yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowNoonabove-ar yehTwodotsbelowNoonabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVinverted-farsi yehVinverted-farsi.fina];
+@TakesLargeDaggerAlef = [alefMaksura-ar alefMaksura-ar.fina dad-ar dad-ar.fina dadDotbelow-ar dadDotbelow-ar.fina e-ar e-ar.fina emquad emspace enquad enspace figurespace fourperemspace hairspace highhamzaYeh-ar highhamzaYeh-ar.fina kashida-ar kashida-ar.wide narrownbspace nbspace punctuationspace sad-ar sad-ar.fina sadThreedots-ar sadThreedots-ar.fina sadThreedotsbelow-ar sadThreedotsbelow-ar.fina sadTwodotsbelow-ar sadTwodotsbelow-ar.fina seen-ar seen-ar.fina seenDotbelowDotabove-ar seenDotbelowDotabove-ar.fina seenFourabove-ar seenFourabove-ar.fina seenFourdotsabove-ar seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar seenVinvertedabove-ar.fina sheen-ar sheen-ar.fina sheenDotbelow-ar sheenDotbelow-ar.fina sheenThreedotsbelow-ar sheenThreedotsbelow-ar.fina sixperemspace space thinspace threeperemspace yeh-ar yeh-ar.fina yeh-farsi yeh-farsi.fina yehFourbelow-farsi yehFourbelow-farsi.fina yehHamzaabove-ar yehHamzaabove-ar.fina yehKashmiri-ar yehKashmiri-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehThreeabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehThreedotsbelow-ar yehThreedotsbelow-ar.fina yehTwoabove-farsi yehTwoabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehTwodotsbelowHamzaabove-ar yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowNoonabove-ar yehTwodotsbelowNoonabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVinverted-farsi yehVinverted-farsi.fina];
 @TakesMediumDigits = [number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 number-ar.2 number-ar.3 year-ar.2 year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 poundmarkabove-ar poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4 piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4];
 @TakesSmallDigits = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3];
 @Tooth0Below = [teh-ar.init theh-ar.init tteh-ar.init tteheh-ar.init behVabove-ar.init tehThreedotsdown-ar.init teheh-ar.init yehHamzaabove-ar.init alefMaksura-ar.init highhamzaYeh-ar.init noon-ar.init noonTahabove-ar.init noonghunna-ar.init rnoon-ar.init noonVabove-ar.init noonAfrican-ar.init noonThreedotsabove-ar.init teh-ar.medi theh-ar.medi tteh-ar.medi tteheh-ar.medi behVabove-ar.medi tehThreedotsdown-ar.medi teheh-ar.medi yehHamzaabove-ar.medi alefMaksura-ar.medi highhamzaYeh-ar.medi noon-ar.medi noonTahabove-ar.medi noonghunna-ar.medi rnoon-ar.medi noonVabove-ar.medi noonAfrican-ar.medi noonThreedotsabove-ar.medi];
@@ -6168,6 +6168,7 @@ lookup MarkToLig {
 lookup _mark2_to_base {
     lookupflag 0;
             # Class are not expanded recursively, so enumerate them. :-(
+        #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
         pos ligature lam_alef-ar <anchor 870 -145> mark @_diaB
             ligComponent <anchor 290 -197> mark @_diaB;
         pos ligature lamVabove_alef-ar <anchor 882 -145> mark @_diaB
@@ -6360,7 +6361,6 @@ lookup _mark2_to_base {
             ligComponent <anchor 435 -223> mark @_diaB;
         pos ligature lamDoublebar_alefThreeabove-ar.fina <anchor 1103 -145> mark @_diaB
             ligComponent <anchor 435 -223> mark @_diaB;
-        #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 
 } _mark2_to_base;
 
@@ -6786,6 +6786,7 @@ feature mark {
     #        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
     # Force other languages to include Arabic script lookups
     language KIR;
+    language KSH;
     language KUR;
     language RHG;
     language SND;

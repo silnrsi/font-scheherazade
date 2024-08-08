@@ -564,14 +564,14 @@ def doit(args):
     if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
             if get_ucd(uid,'jg') not in ('Sad', 'Seen', 'Yeh', 'Farsi_Yeh', 'Yeh_With_Tail') and \
-               uid not in (0x0020, 0x00A0, 0x0640):
-                # If not Yeh, Sad or Seen joining groups or some special char, then we're not interested
+               get_ucd(uid,'gc') != 'Zs':
+                # If not Yeh, Sad or Seen joining groups or whitespace, then we're not interested
                 continue
             if "special" not in test:
                 setBackgroundColor((uid,))
                 for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
                     ftml.setFeatures(featlist)
-                    if uid in (0x20, 0xA0):
+                    if get_ucd(uid,'gc') == 'Zs':
                         builder.render((uid, 0x0670, 0x0627, uid), ftml, rtl=True)
                     else:
                         builder.render((uid, 0x0670),              ftml, rtl=True),

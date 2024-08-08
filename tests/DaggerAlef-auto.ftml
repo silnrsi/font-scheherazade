@@ -639,20 +639,257 @@ U+00A0" rtl="True" stylename="cv76_2">
       <comment>nbspace alefabove-ar alef-ar nbspace</comment>
       <string>\u00F130\u0000A0\u000670\u000627\u0000A0\u00F131</string>
     </test>
-    <test label="U+0640
-U+0670" rtl="True">
-      <comment>kashida-ar alefabove-ar</comment>
-      <string>\u000640\u000670</string>
+    <test label="U+2000
+U+0670
+U+0627
+U+2000" rtl="True">
+      <comment>enquad alefabove-ar alef-ar enquad</comment>
+      <string>\u00F130\u002000\u000670\u000627\u002000\u00F131</string>
     </test>
-    <test label="U+0640
-U+0670" rtl="True" stylename="cv76_1">
-      <comment>kashida-ar alefabove-ar</comment>
-      <string>\u000640\u000670</string>
+    <test label="U+2000
+U+0670
+U+0627
+U+2000" rtl="True" stylename="cv76_1">
+      <comment>enquad alefabove-ar alef-ar enquad</comment>
+      <string>\u00F130\u002000\u000670\u000627\u002000\u00F131</string>
     </test>
-    <test label="U+0640
-U+0670" rtl="True" stylename="cv76_2">
-      <comment>kashida-ar alefabove-ar</comment>
-      <string>\u000640\u000670</string>
+    <test label="U+2000
+U+0670
+U+0627
+U+2000" rtl="True" stylename="cv76_2">
+      <comment>enquad alefabove-ar alef-ar enquad</comment>
+      <string>\u00F130\u002000\u000670\u000627\u002000\u00F131</string>
+    </test>
+    <test label="U+2001
+U+0670
+U+0627
+U+2001" rtl="True">
+      <comment>emquad alefabove-ar alef-ar emquad</comment>
+      <string>\u00F130\u002001\u000670\u000627\u002001\u00F131</string>
+    </test>
+    <test label="U+2001
+U+0670
+U+0627
+U+2001" rtl="True" stylename="cv76_1">
+      <comment>emquad alefabove-ar alef-ar emquad</comment>
+      <string>\u00F130\u002001\u000670\u000627\u002001\u00F131</string>
+    </test>
+    <test label="U+2001
+U+0670
+U+0627
+U+2001" rtl="True" stylename="cv76_2">
+      <comment>emquad alefabove-ar alef-ar emquad</comment>
+      <string>\u00F130\u002001\u000670\u000627\u002001\u00F131</string>
+    </test>
+    <test label="U+2002
+U+0670
+U+0627
+U+2002" rtl="True">
+      <comment>enspace alefabove-ar alef-ar enspace</comment>
+      <string>\u00F130\u002002\u000670\u000627\u002002\u00F131</string>
+    </test>
+    <test label="U+2002
+U+0670
+U+0627
+U+2002" rtl="True" stylename="cv76_1">
+      <comment>enspace alefabove-ar alef-ar enspace</comment>
+      <string>\u00F130\u002002\u000670\u000627\u002002\u00F131</string>
+    </test>
+    <test label="U+2002
+U+0670
+U+0627
+U+2002" rtl="True" stylename="cv76_2">
+      <comment>enspace alefabove-ar alef-ar enspace</comment>
+      <string>\u00F130\u002002\u000670\u000627\u002002\u00F131</string>
+    </test>
+    <test label="U+2003
+U+0670
+U+0627
+U+2003" rtl="True">
+      <comment>emspace alefabove-ar alef-ar emspace</comment>
+      <string>\u00F130\u002003\u000670\u000627\u002003\u00F131</string>
+    </test>
+    <test label="U+2003
+U+0670
+U+0627
+U+2003" rtl="True" stylename="cv76_1">
+      <comment>emspace alefabove-ar alef-ar emspace</comment>
+      <string>\u00F130\u002003\u000670\u000627\u002003\u00F131</string>
+    </test>
+    <test label="U+2003
+U+0670
+U+0627
+U+2003" rtl="True" stylename="cv76_2">
+      <comment>emspace alefabove-ar alef-ar emspace</comment>
+      <string>\u00F130\u002003\u000670\u000627\u002003\u00F131</string>
+    </test>
+    <test label="U+2004
+U+0670
+U+0627
+U+2004" rtl="True">
+      <comment>threeperemspace alefabove-ar alef-ar threeperemspace</comment>
+      <string>\u00F130\u002004\u000670\u000627\u002004\u00F131</string>
+    </test>
+    <test label="U+2004
+U+0670
+U+0627
+U+2004" rtl="True" stylename="cv76_1">
+      <comment>threeperemspace alefabove-ar alef-ar threeperemspace</comment>
+      <string>\u00F130\u002004\u000670\u000627\u002004\u00F131</string>
+    </test>
+    <test label="U+2004
+U+0670
+U+0627
+U+2004" rtl="True" stylename="cv76_2">
+      <comment>threeperemspace alefabove-ar alef-ar threeperemspace</comment>
+      <string>\u00F130\u002004\u000670\u000627\u002004\u00F131</string>
+    </test>
+    <test label="U+2005
+U+0670
+U+0627
+U+2005" rtl="True">
+      <comment>fourperemspace alefabove-ar alef-ar fourperemspace</comment>
+      <string>\u00F130\u002005\u000670\u000627\u002005\u00F131</string>
+    </test>
+    <test label="U+2005
+U+0670
+U+0627
+U+2005" rtl="True" stylename="cv76_1">
+      <comment>fourperemspace alefabove-ar alef-ar fourperemspace</comment>
+      <string>\u00F130\u002005\u000670\u000627\u002005\u00F131</string>
+    </test>
+    <test label="U+2005
+U+0670
+U+0627
+U+2005" rtl="True" stylename="cv76_2">
+      <comment>fourperemspace alefabove-ar alef-ar fourperemspace</comment>
+      <string>\u00F130\u002005\u000670\u000627\u002005\u00F131</string>
+    </test>
+    <test label="U+2006
+U+0670
+U+0627
+U+2006" rtl="True">
+      <comment>sixperemspace alefabove-ar alef-ar sixperemspace</comment>
+      <string>\u00F130\u002006\u000670\u000627\u002006\u00F131</string>
+    </test>
+    <test label="U+2006
+U+0670
+U+0627
+U+2006" rtl="True" stylename="cv76_1">
+      <comment>sixperemspace alefabove-ar alef-ar sixperemspace</comment>
+      <string>\u00F130\u002006\u000670\u000627\u002006\u00F131</string>
+    </test>
+    <test label="U+2006
+U+0670
+U+0627
+U+2006" rtl="True" stylename="cv76_2">
+      <comment>sixperemspace alefabove-ar alef-ar sixperemspace</comment>
+      <string>\u00F130\u002006\u000670\u000627\u002006\u00F131</string>
+    </test>
+    <test label="U+2007
+U+0670
+U+0627
+U+2007" rtl="True">
+      <comment>figurespace alefabove-ar alef-ar figurespace</comment>
+      <string>\u00F130\u002007\u000670\u000627\u002007\u00F131</string>
+    </test>
+    <test label="U+2007
+U+0670
+U+0627
+U+2007" rtl="True" stylename="cv76_1">
+      <comment>figurespace alefabove-ar alef-ar figurespace</comment>
+      <string>\u00F130\u002007\u000670\u000627\u002007\u00F131</string>
+    </test>
+    <test label="U+2007
+U+0670
+U+0627
+U+2007" rtl="True" stylename="cv76_2">
+      <comment>figurespace alefabove-ar alef-ar figurespace</comment>
+      <string>\u00F130\u002007\u000670\u000627\u002007\u00F131</string>
+    </test>
+    <test label="U+2008
+U+0670
+U+0627
+U+2008" rtl="True">
+      <comment>punctuationspace alefabove-ar alef-ar punctuationspace</comment>
+      <string>\u00F130\u002008\u000670\u000627\u002008\u00F131</string>
+    </test>
+    <test label="U+2008
+U+0670
+U+0627
+U+2008" rtl="True" stylename="cv76_1">
+      <comment>punctuationspace alefabove-ar alef-ar punctuationspace</comment>
+      <string>\u00F130\u002008\u000670\u000627\u002008\u00F131</string>
+    </test>
+    <test label="U+2008
+U+0670
+U+0627
+U+2008" rtl="True" stylename="cv76_2">
+      <comment>punctuationspace alefabove-ar alef-ar punctuationspace</comment>
+      <string>\u00F130\u002008\u000670\u000627\u002008\u00F131</string>
+    </test>
+    <test label="U+2009
+U+0670
+U+0627
+U+2009" rtl="True">
+      <comment>thinspace alefabove-ar alef-ar thinspace</comment>
+      <string>\u00F130\u002009\u000670\u000627\u002009\u00F131</string>
+    </test>
+    <test label="U+2009
+U+0670
+U+0627
+U+2009" rtl="True" stylename="cv76_1">
+      <comment>thinspace alefabove-ar alef-ar thinspace</comment>
+      <string>\u00F130\u002009\u000670\u000627\u002009\u00F131</string>
+    </test>
+    <test label="U+2009
+U+0670
+U+0627
+U+2009" rtl="True" stylename="cv76_2">
+      <comment>thinspace alefabove-ar alef-ar thinspace</comment>
+      <string>\u00F130\u002009\u000670\u000627\u002009\u00F131</string>
+    </test>
+    <test label="U+200A
+U+0670
+U+0627
+U+200A" rtl="True">
+      <comment>hairspace alefabove-ar alef-ar hairspace</comment>
+      <string>\u00F130\u00200A\u000670\u000627\u00200A\u00F131</string>
+    </test>
+    <test label="U+200A
+U+0670
+U+0627
+U+200A" rtl="True" stylename="cv76_1">
+      <comment>hairspace alefabove-ar alef-ar hairspace</comment>
+      <string>\u00F130\u00200A\u000670\u000627\u00200A\u00F131</string>
+    </test>
+    <test label="U+200A
+U+0670
+U+0627
+U+200A" rtl="True" stylename="cv76_2">
+      <comment>hairspace alefabove-ar alef-ar hairspace</comment>
+      <string>\u00F130\u00200A\u000670\u000627\u00200A\u00F131</string>
+    </test>
+    <test label="U+202F
+U+0670
+U+0627
+U+202F" rtl="True">
+      <comment>narrownbspace alefabove-ar alef-ar narrownbspace</comment>
+      <string>\u00F130\u00202F\u000670\u000627\u00202F\u00F131</string>
+    </test>
+    <test label="U+202F
+U+0670
+U+0627
+U+202F" rtl="True" stylename="cv76_1">
+      <comment>narrownbspace alefabove-ar alef-ar narrownbspace</comment>
+      <string>\u00F130\u00202F\u000670\u000627\u00202F\u00F131</string>
+    </test>
+    <test label="U+202F
+U+0670
+U+0627
+U+202F" rtl="True" stylename="cv76_2">
+      <comment>narrownbspace alefabove-ar alef-ar narrownbspace</comment>
+      <string>\u00F130\u00202F\u000670\u000627\u00202F\u00F131</string>
     </test>
   </testgroup>
 </ftml>
