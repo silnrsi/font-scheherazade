@@ -431,7 +431,10 @@ def doit(args):
         builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should lose dots
         setBackgroundColor((0x10EFC,))
         builder.render((0x0644, 0x10EFC), ftml)  # Lam + alefoverlay
-        builder.render((0x0644, shadda, 0x10EFC, 0x0653, kasratan), ftml)  # same with some marks!
+        for featlist in builder.permuteFeatures(uids=(0x0653,)):  # include madda variants if in the font
+            ftml.setFeatures(featlist)
+            builder.render((0x0644, shadda, 0x10EFC, 0x0653, kasratan), ftml)  # same with some marks!
+        ftml.clearFeatures()
         ftml.closeTest()
 
         ftml.startTestGroup('Lam-Alef ligatures')

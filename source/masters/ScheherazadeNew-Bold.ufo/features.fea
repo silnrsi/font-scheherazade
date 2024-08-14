@@ -90,8 +90,6 @@
 @LamNoLigIsolFina = [lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamTahabove-ar lamBar-ar lamDoublebar-ar lam-ar.fina lamVabove-ar.fina lamDotabove-ar.fina lamThreedotsabove-ar.fina lamThreedotsbelow-ar.fina lamTahabove-ar.fina lamBar-ar.fina lamDoublebar-ar.fina];
 @LowHamzaBase = [waw-ar yeh-ar ae-ar hehgoal-ar waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init];
 @LowHamzaComposed = [wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar wawHamzaabove-ar.fina yehHamzaabove-ar.fina hehHamzaabove-ar.fina hehgoalHamzaabove-ar.fina yehHamzaabove-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init hehgoalHamzaabove-ar.init];
-@MaddaInsert = [madda-ar.small];
-@MaddaPlain = [madda-ar madda-ar.small];
 @Maddah = [alefMadda-ar alefMadda-ar.fina madda-ar];
 @Maddah.small = [alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small];
 @MarkGroup1A = [shadda-ar hamzaabove-ar noonghunnaabove-ar];
@@ -2079,11 +2077,6 @@ lookup Mirror {
 
 # HB PAUSE
 #---  ccmp feature  ---
-lookup SmallMadda {
-    lookupflag 0;
-    sub @Maddah by @Maddah.small;
-} SmallMadda;
-
 # For full UTR53 stacks, this decomposition will already have been done.
 # However, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
 lookup DecomposeForColor {
@@ -2120,121 +2113,128 @@ lookup FontCheck {
 @MaddaSkip = [@UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other];
 lookup _ReorderMaddaVowel1 {
     lookupflag 0;
-    sub shadda-ar by shadda-ar @MaddaInsert;
-    sub damma-ar by damma-ar @MaddaInsert;
-    sub damma-ar.filled by damma-ar.filled @MaddaInsert;
-    sub damma-ar.short by damma-ar.short @MaddaInsert;
-    sub dammasmall-ar by dammasmall-ar @MaddaInsert;
-    sub dammatan-ar by dammatan-ar @MaddaInsert;
-    sub dammatan-ar.sixNine by dammatan-ar.sixNine @MaddaInsert;
-    sub fatha-ar by fatha-ar @MaddaInsert;
-    sub fathasmall-ar by fathasmall-ar @MaddaInsert;
-    sub fathatan-ar by fathatan-ar @MaddaInsert;
-    sub kasra-ar by kasra-ar @MaddaInsert;
-    sub kasra-ar.lowered by kasra-ar.lowered @MaddaInsert;
-    sub kasrasmall-ar by kasrasmall-ar @MaddaInsert;
-    sub kasratan-ar by kasratan-ar @MaddaInsert;
-    sub kasratan-ar.lowered by kasratan-ar.lowered @MaddaInsert;
-    sub opendammatan-ar by opendammatan-ar @MaddaInsert;
-    sub openfathatan-ar by openfathatan-ar @MaddaInsert;
-    sub openkasratan-ar by openkasratan-ar @MaddaInsert;
-    sub sukun-ar by sukun-ar @MaddaInsert;
-    sub sukun-ar.downOpen by sukun-ar.downOpen @MaddaInsert;
-    sub sukun-ar.leftOpen by sukun-ar.leftOpen @MaddaInsert;
-    sub alefabove-ar by alefabove-ar @MaddaInsert;
-    sub alefabove-ar.large by alefabove-ar.large @MaddaInsert;
-    sub hamzabelow-ar by hamzabelow-ar @MaddaInsert;
-    sub largerounddotbelow-ar by largerounddotbelow-ar @MaddaInsert;
-    sub seenbelow-ar by seenbelow-ar @MaddaInsert;
-    sub wawbelow-ar by wawbelow-ar @MaddaInsert;
-    sub alefbelow-ar by alefbelow-ar @MaddaInsert;
-    sub dammaturnedbelow-ar by dammaturnedbelow-ar @MaddaInsert;
-    sub dotvowelbelow-ar by dotvowelbelow-ar @MaddaInsert;
-    sub imaalabelow-ar by imaalabelow-ar @MaddaInsert;
-    sub ishmaambelow-ar by ishmaambelow-ar @MaddaInsert;
-    sub kasraCurly-ar by kasraCurly-ar @MaddaInsert;
-    sub kasraDotbelow-ar by kasraDotbelow-ar @MaddaInsert;
-    sub kasratanCurly-ar by kasratanCurly-ar @MaddaInsert;
-    sub largecirclebelow-ar by largecirclebelow-ar @MaddaInsert;
-    sub largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar @MaddaInsert;
-    sub leftarrowheadbelow-ar by leftarrowheadbelow-ar @MaddaInsert;
-    sub meembelow-ar by meembelow-ar @MaddaInsert;
-    sub qasrbelow-ar by qasrbelow-ar @MaddaInsert;
-    sub rhombusStopbelow-ar by rhombusStopbelow-ar @MaddaInsert;
-    sub rightarrowheadbelow-ar by rightarrowheadbelow-ar @MaddaInsert;
-    sub saktabelow-ar by saktabelow-ar @MaddaInsert;
-    sub sukunbelow-ar by sukunbelow-ar @MaddaInsert;
-    sub tasheel-ar by tasheel-ar @MaddaInsert;
-    sub toneloopbelow-ar by toneloopbelow-ar @MaddaInsert;
-    sub toneonedotbelow-ar by toneonedotbelow-ar @MaddaInsert;
-    sub tonetwodotsbelow-ar by tonetwodotsbelow-ar @MaddaInsert;
-    sub wavyhamzabelow-ar by wavyhamzabelow-ar @MaddaInsert;
-    sub wordmaddabelow-ar by wordmaddabelow-ar @MaddaInsert;
+    sub shadda-ar by shadda-ar madda-ar;
+    sub damma-ar by damma-ar madda-ar;
+    sub damma-ar.filled by damma-ar.filled madda-ar;
+    sub damma-ar.short by damma-ar.short madda-ar;
+    sub dammasmall-ar by dammasmall-ar madda-ar;
+    sub dammatan-ar by dammatan-ar madda-ar;
+    sub dammatan-ar.sixNine by dammatan-ar.sixNine madda-ar;
+    sub fatha-ar by fatha-ar madda-ar;
+    sub fathasmall-ar by fathasmall-ar madda-ar;
+    sub fathatan-ar by fathatan-ar madda-ar;
+    sub kasra-ar by kasra-ar madda-ar;
+    sub kasra-ar.lowered by kasra-ar.lowered madda-ar;
+    sub kasrasmall-ar by kasrasmall-ar madda-ar;
+    sub kasratan-ar by kasratan-ar madda-ar;
+    sub kasratan-ar.lowered by kasratan-ar.lowered madda-ar;
+    sub opendammatan-ar by opendammatan-ar madda-ar;
+    sub openfathatan-ar by openfathatan-ar madda-ar;
+    sub openkasratan-ar by openkasratan-ar madda-ar;
+    sub sukun-ar by sukun-ar madda-ar;
+    sub sukun-ar.downOpen by sukun-ar.downOpen madda-ar;
+    sub sukun-ar.leftOpen by sukun-ar.leftOpen madda-ar;
+    sub alefabove-ar by alefabove-ar madda-ar;
+    sub alefabove-ar.large by alefabove-ar.large madda-ar;
+    sub hamzabelow-ar by hamzabelow-ar madda-ar;
+    sub largerounddotbelow-ar by largerounddotbelow-ar madda-ar;
+    sub seenbelow-ar by seenbelow-ar madda-ar;
+    sub wawbelow-ar by wawbelow-ar madda-ar;
+    sub alefbelow-ar by alefbelow-ar madda-ar;
+    sub dammaturnedbelow-ar by dammaturnedbelow-ar madda-ar;
+    sub dotvowelbelow-ar by dotvowelbelow-ar madda-ar;
+    sub imaalabelow-ar by imaalabelow-ar madda-ar;
+    sub ishmaambelow-ar by ishmaambelow-ar madda-ar;
+    sub kasraCurly-ar by kasraCurly-ar madda-ar;
+    sub kasraDotbelow-ar by kasraDotbelow-ar madda-ar;
+    sub kasratanCurly-ar by kasratanCurly-ar madda-ar;
+    sub largecirclebelow-ar by largecirclebelow-ar madda-ar;
+    sub largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar madda-ar;
+    sub leftarrowheadbelow-ar by leftarrowheadbelow-ar madda-ar;
+    sub meembelow-ar by meembelow-ar madda-ar;
+    sub qasrbelow-ar by qasrbelow-ar madda-ar;
+    sub rhombusStopbelow-ar by rhombusStopbelow-ar madda-ar;
+    sub rightarrowheadbelow-ar by rightarrowheadbelow-ar madda-ar;
+    sub saktabelow-ar by saktabelow-ar madda-ar;
+    sub sukunbelow-ar by sukunbelow-ar madda-ar;
+    sub tasheel-ar by tasheel-ar madda-ar;
+    sub toneloopbelow-ar by toneloopbelow-ar madda-ar;
+    sub toneonedotbelow-ar by toneonedotbelow-ar madda-ar;
+    sub tonetwodotsbelow-ar by tonetwodotsbelow-ar madda-ar;
+    sub wavyhamzabelow-ar by wavyhamzabelow-ar madda-ar;
+    sub wordmaddabelow-ar by wordmaddabelow-ar madda-ar;
 } _ReorderMaddaVowel1;
 
 lookup ReorderMaddaVowel1 {
     lookupflag 0;
-    sub @MaddaPlain @MaddaSkip' lookup _ReorderMaddaVowel1;
+    sub madda-ar @MaddaSkip' lookup _ReorderMaddaVowel1;
 } ReorderMaddaVowel1;
 
 lookup _ReorderMaddaVowel2 {
     lookupflag 0;
-    sub @MaddaPlain shadda-ar by shadda-ar;
-    sub @MaddaPlain damma-ar by damma-ar;
-    sub @MaddaPlain damma-ar.filled by damma-ar.filled;
-    sub @MaddaPlain damma-ar.short by damma-ar.short;
-    sub @MaddaPlain dammasmall-ar by dammasmall-ar;
-    sub @MaddaPlain dammatan-ar by dammatan-ar;
-    sub @MaddaPlain dammatan-ar.sixNine by dammatan-ar.sixNine;
-    sub @MaddaPlain fatha-ar by fatha-ar;
-    sub @MaddaPlain fathasmall-ar by fathasmall-ar;
-    sub @MaddaPlain fathatan-ar by fathatan-ar;
-    sub @MaddaPlain kasra-ar by kasra-ar;
-    sub @MaddaPlain kasra-ar.lowered by kasra-ar.lowered;
-    sub @MaddaPlain kasrasmall-ar by kasrasmall-ar;
-    sub @MaddaPlain kasratan-ar by kasratan-ar;
-    sub @MaddaPlain kasratan-ar.lowered by kasratan-ar.lowered;
-    sub @MaddaPlain opendammatan-ar by opendammatan-ar;
-    sub @MaddaPlain openfathatan-ar by openfathatan-ar;
-    sub @MaddaPlain openkasratan-ar by openkasratan-ar;
-    sub @MaddaPlain sukun-ar by sukun-ar;
-    sub @MaddaPlain sukun-ar.downOpen by sukun-ar.downOpen;
-    sub @MaddaPlain sukun-ar.leftOpen by sukun-ar.leftOpen;
-    sub @MaddaPlain alefabove-ar by alefabove-ar;
-    sub @MaddaPlain alefabove-ar.large by alefabove-ar.large;
-    sub @MaddaPlain hamzabelow-ar by hamzabelow-ar;
-    sub @MaddaPlain largerounddotbelow-ar by largerounddotbelow-ar;
-    sub @MaddaPlain seenbelow-ar by seenbelow-ar;
-    sub @MaddaPlain wawbelow-ar by wawbelow-ar;
-    sub @MaddaPlain alefbelow-ar by alefbelow-ar;
-    sub @MaddaPlain dammaturnedbelow-ar by dammaturnedbelow-ar;
-    sub @MaddaPlain dotvowelbelow-ar by dotvowelbelow-ar;
-    sub @MaddaPlain imaalabelow-ar by imaalabelow-ar;
-    sub @MaddaPlain ishmaambelow-ar by ishmaambelow-ar;
-    sub @MaddaPlain kasraCurly-ar by kasraCurly-ar;
-    sub @MaddaPlain kasraDotbelow-ar by kasraDotbelow-ar;
-    sub @MaddaPlain kasratanCurly-ar by kasratanCurly-ar;
-    sub @MaddaPlain largecirclebelow-ar by largecirclebelow-ar;
-    sub @MaddaPlain largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar;
-    sub @MaddaPlain leftarrowheadbelow-ar by leftarrowheadbelow-ar;
-    sub @MaddaPlain meembelow-ar by meembelow-ar;
-    sub @MaddaPlain qasrbelow-ar by qasrbelow-ar;
-    sub @MaddaPlain rhombusStopbelow-ar by rhombusStopbelow-ar;
-    sub @MaddaPlain rightarrowheadbelow-ar by rightarrowheadbelow-ar;
-    sub @MaddaPlain saktabelow-ar by saktabelow-ar;
-    sub @MaddaPlain sukunbelow-ar by sukunbelow-ar;
-    sub @MaddaPlain tasheel-ar by tasheel-ar;
-    sub @MaddaPlain toneloopbelow-ar by toneloopbelow-ar;
-    sub @MaddaPlain toneonedotbelow-ar by toneonedotbelow-ar;
-    sub @MaddaPlain tonetwodotsbelow-ar by tonetwodotsbelow-ar;
-    sub @MaddaPlain wavyhamzabelow-ar by wavyhamzabelow-ar;
-    sub @MaddaPlain wordmaddabelow-ar by wordmaddabelow-ar;
+    sub madda-ar shadda-ar by shadda-ar;
+    sub madda-ar damma-ar by damma-ar;
+    sub madda-ar damma-ar.filled by damma-ar.filled;
+    sub madda-ar damma-ar.short by damma-ar.short;
+    sub madda-ar dammasmall-ar by dammasmall-ar;
+    sub madda-ar dammatan-ar by dammatan-ar;
+    sub madda-ar dammatan-ar.sixNine by dammatan-ar.sixNine;
+    sub madda-ar fatha-ar by fatha-ar;
+    sub madda-ar fathasmall-ar by fathasmall-ar;
+    sub madda-ar fathatan-ar by fathatan-ar;
+    sub madda-ar kasra-ar by kasra-ar;
+    sub madda-ar kasra-ar.lowered by kasra-ar.lowered;
+    sub madda-ar kasrasmall-ar by kasrasmall-ar;
+    sub madda-ar kasratan-ar by kasratan-ar;
+    sub madda-ar kasratan-ar.lowered by kasratan-ar.lowered;
+    sub madda-ar opendammatan-ar by opendammatan-ar;
+    sub madda-ar openfathatan-ar by openfathatan-ar;
+    sub madda-ar openkasratan-ar by openkasratan-ar;
+    sub madda-ar sukun-ar by sukun-ar;
+    sub madda-ar sukun-ar.downOpen by sukun-ar.downOpen;
+    sub madda-ar sukun-ar.leftOpen by sukun-ar.leftOpen;
+    sub madda-ar alefabove-ar by alefabove-ar;
+    sub madda-ar alefabove-ar.large by alefabove-ar.large;
+    sub madda-ar hamzabelow-ar by hamzabelow-ar;
+    sub madda-ar largerounddotbelow-ar by largerounddotbelow-ar;
+    sub madda-ar seenbelow-ar by seenbelow-ar;
+    sub madda-ar wawbelow-ar by wawbelow-ar;
+    sub madda-ar alefbelow-ar by alefbelow-ar;
+    sub madda-ar dammaturnedbelow-ar by dammaturnedbelow-ar;
+    sub madda-ar dotvowelbelow-ar by dotvowelbelow-ar;
+    sub madda-ar imaalabelow-ar by imaalabelow-ar;
+    sub madda-ar ishmaambelow-ar by ishmaambelow-ar;
+    sub madda-ar kasraCurly-ar by kasraCurly-ar;
+    sub madda-ar kasraDotbelow-ar by kasraDotbelow-ar;
+    sub madda-ar kasratanCurly-ar by kasratanCurly-ar;
+    sub madda-ar largecirclebelow-ar by largecirclebelow-ar;
+    sub madda-ar largerounddotinsidecirclebelow-ar by largerounddotinsidecirclebelow-ar;
+    sub madda-ar leftarrowheadbelow-ar by leftarrowheadbelow-ar;
+    sub madda-ar meembelow-ar by meembelow-ar;
+    sub madda-ar qasrbelow-ar by qasrbelow-ar;
+    sub madda-ar rhombusStopbelow-ar by rhombusStopbelow-ar;
+    sub madda-ar rightarrowheadbelow-ar by rightarrowheadbelow-ar;
+    sub madda-ar saktabelow-ar by saktabelow-ar;
+    sub madda-ar sukunbelow-ar by sukunbelow-ar;
+    sub madda-ar tasheel-ar by tasheel-ar;
+    sub madda-ar toneloopbelow-ar by toneloopbelow-ar;
+    sub madda-ar toneonedotbelow-ar by toneonedotbelow-ar;
+    sub madda-ar tonetwodotsbelow-ar by tonetwodotsbelow-ar;
+    sub madda-ar wavyhamzabelow-ar by wavyhamzabelow-ar;
+    sub madda-ar wordmaddabelow-ar by wordmaddabelow-ar;
 } _ReorderMaddaVowel2;
 
 lookup ReorderMaddaVowel2 {
     lookupflag 0;
-    sub @MaddaPlain' lookup _ReorderMaddaVowel2 @MaddaSkip @MaddaInsert;
+    sub madda-ar' lookup _ReorderMaddaVowel2 @MaddaSkip madda-ar;
 } ReorderMaddaVowel2;
+
+# Default for both Scheherazade and Harmattan is the small maddah; 
+# Lateef doesn't have an alternate but defines the two classes identically
+lookup SmallMadda {
+    lookupflag 0;
+    sub @Maddah by @Maddah.small;
+} SmallMadda;
 
 # Replace Arabic punctuation glyphs with Latin ones:
 # Has no effect in Harmattan:
@@ -2705,7 +2705,8 @@ lookup YehHamzaAlternates {
     # Kasra alternates: cv62
     lookup MaddaAlternate {
         lookupflag 0;
-        sub @Maddah.small by @Maddah;
+        ignore sub alefoverlay-ar @Maddah.small';
+        sub @Maddah.small' by @Maddah;
     } MaddaAlternate;
 
 

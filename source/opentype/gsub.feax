@@ -49,11 +49,6 @@ lookup Mirror {
 #---  ccmp feature  ---
 
 
-lookup SmallMadda {
-  lookupflag 0 ;
-    sub @Maddah by @Maddah.small ;
-} SmallMadda ;
-
 
 # For full UTR53 stacks, this decomposition will already have been done.
 # However, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
@@ -101,23 +96,31 @@ lookup FontCheck {
 
 lookup _ReorderMaddaVowel1 {
   lookupflag 0 ;
-    sub @MaddaSkip  by  @MaddaSkip  @MaddaInsert ;
+    sub @MaddaSkip  by  @MaddaSkip  madda-ar ;
 } _ReorderMaddaVowel1 ;
 
 lookup ReorderMaddaVowel1 {
   lookupflag 0 ;
-    sub @MaddaPlain  @MaddaSkip' lookup _ReorderMaddaVowel1 ;
+    sub madda-ar  @MaddaSkip' lookup _ReorderMaddaVowel1 ;
 } ReorderMaddaVowel1 ;
 
 lookup _ReorderMaddaVowel2 {
   lookupflag 0 ;
-    sub @MaddaPlain  @MaddaSkip by @MaddaSkip ;
+    sub madda-ar  @MaddaSkip by @MaddaSkip ;
 } _ReorderMaddaVowel2 ;
 
 lookup ReorderMaddaVowel2 {
   lookupflag 0 ;
-    sub @MaddaPlain' lookup _ReorderMaddaVowel2  @MaddaSkip  @MaddaInsert ;
+    sub madda-ar' lookup _ReorderMaddaVowel2  @MaddaSkip  madda-ar ;
 } ReorderMaddaVowel2 ;
+
+
+# Default for both Scheherazade and Harmattan is the small maddah; 
+# Lateef doesn't have an alternate but defines the two classes identically
+lookup SmallMadda {
+  lookupflag 0 ;
+    sub @Maddah by @Maddah.small ;
+} SmallMadda ;
 
 
 # Replace Arabic punctuation glyphs with Latin ones:
@@ -662,7 +665,8 @@ do let f = info("familyName");
 
 lookup MaddaAlternate {
   lookupflag 0 ;
-    sub @Maddah.small by @Maddah ;
+    ignore sub alefoverlay-ar @Maddah.small' ;
+    sub @Maddah.small' by @Maddah ;
 } MaddaAlternate ;
 
 }  # Sch or Har

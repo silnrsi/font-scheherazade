@@ -508,21 +508,12 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Maddah" fixed="0">
+    <class name="Maddah">
         alefMadda-ar alefMadda-ar.fina madda-ar
     </class>
 
-    <class name="Maddah.small" fixed="0">
+    <class name="Maddah.small">
         alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small
-    </class>
-    
-    <!-- UTR53 algorithm -->
-    <class name="MaddaPlain">
-        madda-ar  madda-ar.small
-    </class>
-    
-    <class name="MaddaInsert">
-        madda-ar.small
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
