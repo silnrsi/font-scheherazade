@@ -2,6 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
+    <comment>In comment column, marks with non-zero CCC include the CCC value as part of name, followed by 'M' if they are MCM. Light orange highlight color indicates characters from Unicode version 15.0 or later.</comment>
     <fontscale>250</fontscale>
     <fontsrc label="Ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -18,103 +19,110 @@
     </test>
   </testgroup>
   <testgroup label="MCM Characters (USV order)">
-  <test label="U+0628 U+0618 U+0619 U+064e U+064f U+0654 U+0658 U+0653 U+0654 U+0651 U+0656 U+0651 U+065c U+0655 U+0650"><comment>UTR53 Artificial Test Case</comment><string>\u0628\u0618\u0619\u064e\u064f\u0654\u0658\u0653\u0654\u0651\u0656\u0651\u065c\u0655\u0650</string></test>
-  <test background="#f0f0f0" label="U+0654"><comment>ARABIC HAMZA ABOVE</comment><string>\u25cc\u0654</string></test>
-  <test label="U+0628 U+064F U+0654 "><comment>BEH damma-31 hamza-230M </comment><string>\u0628\u064F\u0654</string></test>
-  <test label="U+0628 U+064F U+034F U+0654 "><comment>BEH damma-31 cgj hamza-230M </comment><string>\u0628\u064F\u034F\u0654</string></test>
-  <test label="U+0628 U+0654 U+064F "><comment>BEH hamza-230M damma-31 </comment><string>\u0628\u0654\u064F</string></test>
-  <test label="U+0628 U+0654 U+034F U+064F "><comment>BEH hamza-230M cgj damma-31 </comment><string>\u0628\u0654\u034F\u064F</string></test>
-  <test label="U+0628 U+0654 U+0670 U+064F "><comment>BEH hamza-230M alef-35 damma-31 </comment><string>\u0628\u0654\u0670\u064F</string></test>
-  <test label="U+0628 U+0617 U+0654 U+0670 U+064F "><comment>BEH zain-230 hamza-230M alef-35 damma-31 </comment><string>\u0628\u0617\u0654\u0670\u064F</string></test>
-  <test label="U+0628 U+0654 U+06E7 U+064F "><comment>BEH hamza-230M yeh-230M damma-31 </comment><string>\u0628\u0654\u06E7\u064F</string></test>
-  <test label="U+0628 U+0654 U+0617 U+064F "><comment>BEH hamza-230M zain-230 damma-31 </comment><string>\u0628\u0654\u0617\u064F</string></test>
-  <test label="U+0628 U+0654 U+0617 U+06E7 U+064F "><comment>BEH hamza-230M zain-230 yeh-230M damma-31 </comment><string>\u0628\u0654\u0617\u06E7\u064F</string></test>
-  <test label="U+0628 U+064F U+0670 U+0654 "><comment>BEH damma-31 alef-35 hamza-230M </comment><string>\u0628\u064F\u0670\u0654</string></test>
-  <test label="U+0628 U+064F U+06E7 U+0654 "><comment>BEH damma-31 yeh-230M hamza-230M </comment><string>\u0628\u064F\u06E7\u0654</string></test>
-  <test label="U+0628 U+064F U+06E7 U+0654 U+06E8 "><comment>BEH damma-31 yeh-230M hamza-230M noon-230M </comment><string>\u0628\u064F\u06E7\u0654\u06E8</string></test>
-  <test label="U+0628 U+064F U+0617 U+0654 "><comment>BEH damma-31 zain-230 hamza-230M </comment><string>\u0628\u064F\u0617\u0654</string></test>
-  <test background="#f0f0f0" label="U+0655"><comment>ARABIC HAMZA BELOW</comment><string>\u25cc\u0655</string></test>
-  <test label="U+0649 U+0650 U+0655 "><comment>ALEFMAKSURA kasra-32 hamza-220M </comment><string>\u0649\u0650\u0655</string></test>
-  <test label="U+0649 U+0650 U+034F U+0655 "><comment>ALEFMAKSURA kasra-32 cgj hamza-220M </comment><string>\u0649\u0650\u034F\u0655</string></test>
-  <test label="U+0649 U+0655 U+0650 "><comment>ALEFMAKSURA hamza-220M kasra-32 </comment><string>\u0649\u0655\u0650</string></test>
-  <test label="U+0649 U+0655 U+034F U+0650 "><comment>ALEFMAKSURA hamza-220M cgj kasra-32 </comment><string>\u0649\u0655\u034F\u0650</string></test>
-  <test background="#f0f0f0" label="U+0658"><comment>ARABIC MARK NOON GHUNNA</comment><string>\u25cc\u0658</string></test>
-  <test label="U+0628 U+064E U+0658 "><comment>BEH fatha-30 noonGhunna-230M </comment><string>\u0628\u064E\u0658</string></test>
-  <test label="U+0628 U+064E U+034F U+0658 "><comment>BEH fatha-30 cgj noonGhunna-230M </comment><string>\u0628\u064E\u034F\u0658</string></test>
-  <test label="U+0628 U+0658 U+064E "><comment>BEH noonGhunna-230M fatha-30 </comment><string>\u0628\u0658\u064E</string></test>
-  <test label="U+0628 U+0658 U+034F U+064E "><comment>BEH noonGhunna-230M cgj fatha-30 </comment><string>\u0628\u0658\u034F\u064E</string></test>
-  <test background="#f0f0f0" label="U+06DC"><comment>ARABIC SMALL HIGH SEEN</comment><string>\u25cc\u06DC</string></test>
-  <test label="U+0635 U+06DC U+0652 "><comment>SAD seen-230M sukun-34 </comment><string>\u0635\u06DC\u0652</string></test>
-  <test label="U+0635 U+06DC U+034F U+0652 "><comment>SAD seen-230M cgj sukun-34 </comment><string>\u0635\u06DC\u034F\u0652</string></test>
-  <test label="U+0635 U+0652 U+06DC "><comment>SAD sukun-34 seen-230M </comment><string>\u0635\u0652\u06DC</string></test>
-  <test label="U+0635 U+0652 U+034F U+06DC "><comment>SAD sukun-34 cgj seen-230M </comment><string>\u0635\u0652\u034F\u06DC</string></test>
-  <test background="#f0f0f0" label="U+06E3"><comment>ARABIC SMALL LOW SEEN</comment><string>\u25cc\u06E3</string></test>
-  <test label="U+0647 U+0650 U+06E3 "><comment>HEH kasra-32 seen-220M </comment><string>\u0647\u0650\u06E3</string></test>
-  <test label="U+0647 U+0650 U+034F U+06E3 "><comment>HEH kasra-32 cgj seen-220M </comment><string>\u0647\u0650\u034F\u06E3</string></test>
-  <test label="U+0647 U+06E3 U+0650 "><comment>HEH seen-220M kasra-32 </comment><string>\u0647\u06E3\u0650</string></test>
-  <test label="U+0647 U+06E3 U+034F U+0650 "><comment>HEH seen-220M cgj kasra-32 </comment><string>\u0647\u06E3\u034F\u0650</string></test>
-  <test background="#f0f0f0" label="U+06E7"><comment>ARABIC SMALL HIGH YEH</comment><string>\u25cc\u06E7</string></test>
-  <test label="U+0641 U+0650 U+0651 "><comment>FEH kasra-32 shadda-33 </comment><string>\u0641\u0650\u0651</string></test>
-  <test label="U+0641 U+0650 U+034F U+0651 "><comment>FEH kasra-32 cgj shadda-33 </comment><string>\u0641\u0650\u034F\u0651</string></test>
-  <test label="U+0641 U+0650 U+0651 " stylename="cv62_1"><comment>FEH kasra-32 shadda-33 </comment><string>\u0641\u0650\u0651</string></test>
-  <test label="U+0641 U+0650 U+034F U+0651 " stylename="cv62_1"><comment>FEH kasra-32 cgj shadda-33 </comment><string>\u0641\u0650\u034F\u0651</string></test>
-  <test label="U+0641 U+0650 U+0651 " stylename="cv62_2"><comment>FEH kasra-32 shadda-33 </comment><string>\u0641\u0650\u0651</string></test>
-  <test label="U+0641 U+0650 U+034F U+0651 " stylename="cv62_2"><comment>FEH kasra-32 cgj shadda-33 </comment><string>\u0641\u0650\u034F\u0651</string></test>
-  <test label="U+0640 U+0650 U+0651 U+06E7 "><comment>TATWEEL kasra-32 shadda-33 yeh-230M </comment><string>\u0640\u0650\u0651\u06E7</string></test>
-  <test label="U+0640 U+0650 U+0651 U+034F U+06E7 "><comment>TATWEEL kasra-32 shadda-33 cgj yeh-230M </comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
-  <test label="U+0640 U+0650 U+06E7 U+0651 "><comment>TATWEEL kasra-32 yeh-230M shadda-33 </comment><string>\u0640\u0650\u06E7\u0651</string></test>
-  <test label="U+0640 U+0650 U+06E7 U+034F U+0651 "><comment>TATWEEL kasra-32 yeh-230M cgj shadda-33 </comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
-  <test label="U+0640 U+0650 U+0651 U+06E7 " stylename="cv62_1"><comment>TATWEEL kasra-32 shadda-33 yeh-230M </comment><string>\u0640\u0650\u0651\u06E7</string></test>
-  <test label="U+0640 U+0650 U+0651 U+034F U+06E7 " stylename="cv62_1"><comment>TATWEEL kasra-32 shadda-33 cgj yeh-230M </comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
-  <test label="U+0640 U+0650 U+06E7 U+0651 " stylename="cv62_1"><comment>TATWEEL kasra-32 yeh-230M shadda-33 </comment><string>\u0640\u0650\u06E7\u0651</string></test>
-  <test label="U+0640 U+0650 U+06E7 U+034F U+0651 " stylename="cv62_1"><comment>TATWEEL kasra-32 yeh-230M cgj shadda-33 </comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
-  <test label="U+062A U+0650 U+0651 U+06E7 " stylename="cv62_2"><comment>TEH kasra-32 shadda-33 yeh-230M </comment><string>\u062A\u0650\u0651\u06E7</string></test>
-  <test label="U+062A U+0650 U+0651 U+034F U+06E7 " stylename="cv62_2"><comment>TEH kasra-32 shadda-33 cgj yeh-230M </comment><string>\u062A\u0650\u0651\u034F\u06E7</string></test>
-  <test label="U+062A U+0650 U+06E7 U+0651 " stylename="cv62_2"><comment>TEH kasra-32 yeh-230M shadda-33 </comment><string>\u062A\u0650\u06E7\u0651</string></test>
-  <test label="U+062A U+0650 U+06E7 U+034F U+0651 " stylename="cv62_2"><comment>TEH kasra-32 yeh-230M cgj shadda-33 </comment><string>\u062A\u0650\u06E7\u034F\u0651</string></test>
-  <test background="#f0f0f0" label="U+06E8"><comment>ARABIC SMALL HIGH NOON</comment><string>\u25cc\u06E8</string></test>
-  <test label="U+0640 U+0652 U+06E8 "><comment>TATWEEL sukun-34 noon-230M </comment><string>\u0640\u0652\u06E8</string></test>
-  <test label="U+0640 U+0652 U+034F U+06E8 "><comment>TATWEEL sukun-34 cgj noon-230M </comment><string>\u0640\u0652\u034F\u06E8</string></test>
-  <test label="U+0640 U+06E8 U+0652 "><comment>TATWEEL noon-230M sukun-34 </comment><string>\u0640\u06E8\u0652</string></test>
-  <test label="U+0640 U+06E8 U+034F U+0652 "><comment>TATWEEL noon-230M cgj sukun-34 </comment><string>\u0640\u06E8\u034F\u0652</string></test>
-  <test label="U+0648 U+064F U+06E8 "><comment>WAW damma-31 noon-230M </comment><string>\u0648\u064F\u06E8</string></test>
-  <test label="U+0648 U+064F U+034F U+06E8 "><comment>WAW damma-31 cgj noon-230M </comment><string>\u0648\u064F\u034F\u06E8</string></test>
-  <test label="U+0648 U+06E8 U+064F "><comment>WAW noon-230M damma-31 </comment><string>\u0648\u06E8\u064F</string></test>
-  <test label="U+0648 U+06E8 U+034F U+064F "><comment>WAW noon-230M cgj damma-31 </comment><string>\u0648\u06E8\u034F\u064F</string></test>
-  <test background="#f0f0f0" label="U+08CA"><comment>ARABIC SMALL HIGH FARSI YEH </comment><string>\u25cc\u08CA</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+08CA "><comment>BEH fatha-30 farsiYeh-230M </comment><string>\u0628\u064E\u08CA</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CA "><comment>BEH fatha-30 cgj farsiYeh-230M </comment><string>\u0628\u064E\u034F\u08CA</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CA U+064E "><comment>BEH farsiYeh-230M fatha-30 </comment><string>\u0628\u08CA\u064E</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CA U+034F U+064E "><comment>BEH farsiYeh-230M cgj fatha-30 </comment><string>\u0628\u08CA\u034F\u064E</string></test>
-  <test background="#f0f0f0" label="U+08CB"><comment>ARABIC SMALL HIGH YEH BARREE WITH TWO DOTS BELOW</comment><string>\u25cc\u08Cb</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+08CB "><comment>BEH fatha-30 yehBarree-230M </comment><string>\u0628\u064E\u08CB</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CB "><comment>BEH fatha-30 cgj yehBarree-230M </comment><string>\u0628\u064E\u034F\u08CB</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CB U+064E "><comment>BEH yehBarree-230M fatha-30 </comment><string>\u0628\u08CB\u064E</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CB U+034F U+064E "><comment>BEH yehBarree-230M cgj fatha-30 </comment><string>\u0628\u08CB\u034F\u064E</string></test>
-  <test background="#f0f0f0" label="U+08CD"><comment>ARABIC SMALL HIGH ZAH</comment><string>\u25cc\u08Cd</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+08CD "><comment>BEH fatha-30 zah-230M </comment><string>\u0628\u064E\u08CD</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CD "><comment>BEH fatha-30 cgj zah-230M </comment><string>\u0628\u064E\u034F\u08CD</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CD U+064E "><comment>BEH zah-230M fatha-30 </comment><string>\u0628\u08CD\u064E</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CD U+034F U+064E "><comment>BEH zah-230M cgj fatha-30 </comment><string>\u0628\u08CD\u034F\u064E</string></test>
-  <test background="#f0f0f0" label="U+08CE"><comment>ARABIC LARGE ROUND DOT ABOVE</comment><string>\u25cc\u08Ce</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+08CE "><comment>BEH fatha-30 dot-230M </comment><string>\u0628\u064E\u08CE</string></test>
-  <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CE "><comment>BEH fatha-30 cgj dot-230M </comment><string>\u0628\u064E\u034F\u08CE</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CE U+064E "><comment>BEH dot-230M fatha-30 </comment><string>\u0628\u08CE\u064E</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CE U+034F U+064E "><comment>BEH dot-230M cgj fatha-30 </comment><string>\u0628\u08CE\u034F\u064E</string></test>
-  <test background="#f0f0f0" label="U+08CF"><comment>ARABIC LARGE ROUND DOT BELOW</comment><string>\u25cc\u08CF</string></test>
-  <test background="#ffc8a0" label="U+0628 U+0650 U+08CF "><comment>BEH kasra-32 dot-220M </comment><string>\u0628\u0650\u08CF</string></test>
-  <test background="#ffc8a0" label="U+0628 U+0650 U+034F U+08CF "><comment>BEH kasra-32 cgj dot-220M </comment><string>\u0628\u0650\u034F\u08CF</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CF U+0650 "><comment>BEH dot-220M kasra-32 </comment><string>\u0628\u08CF\u0650</string></test>
-  <test background="#ffc8a0" label="U+0628 U+08CF U+034F U+0650 "><comment>BEH dot-220M cgj kasra-32 </comment><string>\u0628\u08CF\u034F\u0650</string></test>
-  <test background="#f0f0f0" label="U+08D3"><comment>ARABIC SMALL LOW WAW</comment><string>\u25cc\u08D3</string></test>
-  <test label="U+0628 U+0650 U+08D3 "><comment>BEH kasra-32 waw-220M </comment><string>\u0628\u0650\u08D3</string></test>
-  <test label="U+0628 U+0650 U+034F U+08D3 "><comment>BEH kasra-32 cgj waw-220M </comment><string>\u0628\u0650\u034F\u08D3</string></test>
-  <test label="U+0628 U+08D3 U+0650 "><comment>BEH waw-220M kasra-32 </comment><string>\u0628\u08D3\u0650</string></test>
-  <test label="U+0628 U+08D3 U+034F U+0650 "><comment>BEH waw-220M cgj kasra-32 </comment><string>\u0628\u08D3\u034F\u0650</string></test>
-  <test background="#f0f0f0" label="U+08F3"><comment>ARABIC SMALL HIGH WAW </comment><string>\u25cc\u08F3</string></test>
-  <test label="U+0628 U+064E U+08F3 "><comment>BEH fatha-30 waw-230M </comment><string>\u0628\u064E\u08F3</string></test>
-  <test label="U+0628 U+064E U+034F U+08F3 "><comment>BEH fatha-30 cgj waw-230M </comment><string>\u0628\u064E\u034F\u08F3</string></test>
-  <test label="U+0628 U+08F3 U+064E "><comment>BEH waw-230M fatha-30 </comment><string>\u0628\u08F3\u064E</string></test>
-  <test label="U+0628 U+08F3 U+034F U+064E "><comment>BEH waw-230M cgj fatha-30 </comment><string>\u0628\u08F3\u034F\u064E</string></test>
+    <test label="U+0628 U+0618 U+0619 U+064e U+064f U+0654 U+0658 U+0653 U+0654 U+0651 U+0656 U+0651 U+065c U+0655 U+0650"><comment>UTR53 Artificial Test Case</comment><string>\u0628\u0618\u0619\u064e\u064f\u0654\u0658\u0653\u0654\u0651\u0656\u0651\u065c\u0655\u0650</string></test>
+    <test background="#f0f0f0" label="U+0654"><comment>ARABIC HAMZA ABOVE</comment><string>\u25cc\u0654</string></test>
+    <test label="U+0628 U+064F U+0654"><comment>BEH damma-31 hamza-230M</comment><string>\u0628\u064F\u0654</string></test>
+    <test label="U+0628 U+064F U+034F U+0654"><comment>BEH damma-31 cgj hamza-230M</comment><string>\u0628\u064F\u034F\u0654</string></test>
+    <test label="U+0628 U+0654 U+064F"><comment>BEH hamza-230M damma-31</comment><string>\u0628\u0654\u064F</string></test>
+    <test label="U+0628 U+0654 U+034F U+064F"><comment>BEH hamza-230M cgj damma-31</comment><string>\u0628\u0654\u034F\u064F</string></test>
+    <test label="U+0628 U+0654 U+0670 U+064F"><comment>BEH hamza-230M alef-35 damma-31</comment><string>\u0628\u0654\u0670\u064F</string></test>
+    <test label="U+0628 U+0617 U+0654 U+0670 U+064F"><comment>BEH zain-230 hamza-230M alef-35 damma-31</comment><string>\u0628\u0617\u0654\u0670\u064F</string></test>
+    <test label="U+0628 U+0654 U+06E7 U+064F"><comment>BEH hamza-230M yeh-230M damma-31</comment><string>\u0628\u0654\u06E7\u064F</string></test>
+    <test label="U+0628 U+0654 U+0617 U+064F"><comment>BEH hamza-230M zain-230 damma-31</comment><string>\u0628\u0654\u0617\u064F</string></test>
+    <test label="U+0628 U+0654 U+0617 U+06E7 U+064F"><comment>BEH hamza-230M zain-230 yeh-230M damma-31</comment><string>\u0628\u0654\u0617\u06E7\u064F</string></test>
+    <test label="U+0628 U+064F U+0670 U+0654"><comment>BEH damma-31 alef-35 hamza-230M</comment><string>\u0628\u064F\u0670\u0654</string></test>
+    <test label="U+0628 U+064F U+06E7 U+0654"><comment>BEH damma-31 yeh-230M hamza-230M</comment><string>\u0628\u064F\u06E7\u0654</string></test>
+    <test label="U+0628 U+064F U+06E7 U+0654 U+06E8"><comment>BEH damma-31 yeh-230M hamza-230M noon-230M</comment><string>\u0628\u064F\u06E7\u0654\u06E8</string></test>
+    <test label="U+0628 U+064F U+0617 U+0654"><comment>BEH damma-31 zain-230 hamza-230M</comment><string>\u0628\u064F\u0617\u0654</string></test>
+    <test background="#f0f0f0" label="U+0655"><comment>ARABIC HAMZA BELOW</comment><string>\u25cc\u0655</string></test>
+    <test label="U+0649 U+0650 U+0655"><comment>ALEFMAKSURA kasra-32 hamza-220M</comment><string>\u0649\u0650\u0655</string></test>
+    <test label="U+0649 U+0650 U+034F U+0655"><comment>ALEFMAKSURA kasra-32 cgj hamza-220M</comment><string>\u0649\u0650\u034F\u0655</string></test>
+    <test label="U+0649 U+0655 U+0650"><comment>ALEFMAKSURA hamza-220M kasra-32</comment><string>\u0649\u0655\u0650</string></test>
+    <test label="U+0649 U+0655 U+034F U+0650"><comment>ALEFMAKSURA hamza-220M cgj kasra-32</comment><string>\u0649\u0655\u034F\u0650</string></test>
+    <test background="#f0f0f0" label="U+0658"><comment>ARABIC MARK NOON GHUNNA</comment><string>\u25cc\u0658</string></test>
+    <test label="U+0628 U+064E U+0658"><comment>BEH fatha-30 noonGhunna-230M</comment><string>\u0628\u064E\u0658</string></test>
+    <test label="U+0628 U+064E U+034F U+0658"><comment>BEH fatha-30 cgj noonGhunna-230M</comment><string>\u0628\u064E\u034F\u0658</string></test>
+    <test label="U+0628 U+0658 U+064E"><comment>BEH noonGhunna-230M fatha-30</comment><string>\u0628\u0658\u064E</string></test>
+    <test label="U+0628 U+0658 U+034F U+064E"><comment>BEH noonGhunna-230M cgj fatha-30</comment><string>\u0628\u0658\u034F\u064E</string></test>
+    <test background="#f0f0f0" label="U+06DC"><comment>ARABIC SMALL HIGH SEEN</comment><string>\u25cc\u06DC</string></test>
+    <test label="U+0635 U+06DC U+0652"><comment>SAD seen-230M sukun-34</comment><string>\u0635\u06DC\u0652</string></test>
+    <test label="U+0635 U+06DC U+034F U+0652"><comment>SAD seen-230M cgj sukun-34</comment><string>\u0635\u06DC\u034F\u0652</string></test>
+    <test label="U+0635 U+0652 U+06DC"><comment>SAD sukun-34 seen-230M</comment><string>\u0635\u0652\u06DC</string></test>
+    <test label="U+0635 U+0652 U+034F U+06DC"><comment>SAD sukun-34 cgj seen-230M</comment><string>\u0635\u0652\u034F\u06DC</string></test>
+    <test background="#f0f0f0" label="U+06E3"><comment>ARABIC SMALL LOW SEEN</comment><string>\u25cc\u06E3</string></test>
+    <test label="U+0647 U+0650 U+06E3"><comment>HEH kasra-32 seen-220M</comment><string>\u0647\u0650\u06E3</string></test>
+    <test label="U+0647 U+0650 U+034F U+06E3"><comment>HEH kasra-32 cgj seen-220M</comment><string>\u0647\u0650\u034F\u06E3</string></test>
+    <test label="U+0647 U+06E3 U+0650"><comment>HEH seen-220M kasra-32</comment><string>\u0647\u06E3\u0650</string></test>
+    <test label="U+0647 U+06E3 U+034F U+0650"><comment>HEH seen-220M cgj kasra-32</comment><string>\u0647\u06E3\u034F\u0650</string></test>
+    <test background="#f0f0f0" label="U+06E7"><comment>ARABIC SMALL HIGH YEH</comment><string>\u25cc\u06E7</string></test>
+    <test label="U+0641 U+0650 U+0651"><comment>FEH kasra-32 shadda-33</comment><string>\u0641\u0650\u0651</string></test>
+    <test label="U+0641 U+0650 U+034F U+0651"><comment>FEH kasra-32 cgj shadda-33</comment><string>\u0641\u0650\u034F\u0651</string></test>
+    <test label="U+0641 U+0650 U+0651" stylename="cv62_1"><comment>FEH kasra-32 shadda-33</comment><string>\u0641\u0650\u0651</string></test>
+    <test label="U+0641 U+0650 U+034F U+0651" stylename="cv62_1"><comment>FEH kasra-32 cgj shadda-33</comment><string>\u0641\u0650\u034F\u0651</string></test>
+    <test label="U+0641 U+0650 U+0651" stylename="cv62_2"><comment>FEH kasra-32 shadda-33</comment><string>\u0641\u0650\u0651</string></test>
+    <test label="U+0641 U+0650 U+034F U+0651" stylename="cv62_2"><comment>FEH kasra-32 cgj shadda-33</comment><string>\u0641\u0650\u034F\u0651</string></test>
+    <test label="U+0640 U+0650 U+0651 U+06E7"><comment>TATWEEL kasra-32 shadda-33 yeh-230M</comment><string>\u0640\u0650\u0651\u06E7</string></test>
+    <test label="U+0640 U+0650 U+0651 U+034F U+06E7"><comment>TATWEEL kasra-32 shadda-33 cgj yeh-230M</comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
+    <test label="U+0640 U+0650 U+06E7 U+0651"><comment>TATWEEL kasra-32 yeh-230M shadda-33</comment><string>\u0640\u0650\u06E7\u0651</string></test>
+    <test label="U+0640 U+0650 U+06E7 U+034F U+0651"><comment>TATWEEL kasra-32 yeh-230M cgj shadda-33</comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
+    <test label="U+0640 U+0650 U+0651 U+06E7" stylename="cv62_1"><comment>TATWEEL kasra-32 shadda-33 yeh-230M</comment><string>\u0640\u0650\u0651\u06E7</string></test>
+    <test label="U+0640 U+0650 U+0651 U+034F U+06E7" stylename="cv62_1"><comment>TATWEEL kasra-32 shadda-33 cgj yeh-230M</comment><string>\u0640\u0650\u0651\u034F\u06E7</string></test>
+    <test label="U+0640 U+0650 U+06E7 U+0651" stylename="cv62_1"><comment>TATWEEL kasra-32 yeh-230M shadda-33</comment><string>\u0640\u0650\u06E7\u0651</string></test>
+    <test label="U+0640 U+0650 U+06E7 U+034F U+0651" stylename="cv62_1"><comment>TATWEEL kasra-32 yeh-230M cgj shadda-33</comment><string>\u0640\u0650\u06E7\u034F\u0651</string></test>
+    <test label="U+062A U+0650 U+0651 U+06E7" stylename="cv62_2"><comment>TEH kasra-32 shadda-33 yeh-230M</comment><string>\u062A\u0650\u0651\u06E7</string></test>
+    <test label="U+062A U+0650 U+0651 U+034F U+06E7" stylename="cv62_2"><comment>TEH kasra-32 shadda-33 cgj yeh-230M</comment><string>\u062A\u0650\u0651\u034F\u06E7</string></test>
+    <test label="U+062A U+0650 U+06E7 U+0651" stylename="cv62_2"><comment>TEH kasra-32 yeh-230M shadda-33</comment><string>\u062A\u0650\u06E7\u0651</string></test>
+    <test label="U+062A U+0650 U+06E7 U+034F U+0651" stylename="cv62_2"><comment>TEH kasra-32 yeh-230M cgj shadda-33</comment><string>\u062A\u0650\u06E7\u034F\u0651</string></test>
+    <test background="#f0f0f0" label="U+06E8"><comment>ARABIC SMALL HIGH NOON</comment><string>\u25cc\u06E8</string></test>
+    <test label="U+0640 U+0652 U+06E8"><comment>TATWEEL sukun-34 noon-230M</comment><string>\u0640\u0652\u06E8</string></test>
+    <test label="U+0640 U+0652 U+034F U+06E8"><comment>TATWEEL sukun-34 cgj noon-230M</comment><string>\u0640\u0652\u034F\u06E8</string></test>
+    <test label="U+0640 U+06E8 U+0652"><comment>TATWEEL noon-230M sukun-34</comment><string>\u0640\u06E8\u0652</string></test>
+    <test label="U+0640 U+06E8 U+034F U+0652"><comment>TATWEEL noon-230M cgj sukun-34</comment><string>\u0640\u06E8\u034F\u0652</string></test>
+    <test label="U+0648 U+064F U+06E8"><comment>WAW damma-31 noon-230M</comment><string>\u0648\u064F\u06E8</string></test>
+    <test label="U+0648 U+064F U+034F U+06E8"><comment>WAW damma-31 cgj noon-230M</comment><string>\u0648\u064F\u034F\u06E8</string></test>
+    <test label="U+0648 U+06E8 U+064F"><comment>WAW noon-230M damma-31</comment><string>\u0648\u06E8\u064F</string></test>
+    <test label="U+0648 U+06E8 U+034F U+064F"><comment>WAW noon-230M cgj damma-31</comment><string>\u0648\u06E8\u034F\u064F</string></test>
+    <test background="#f0f0f0" label="U+08CA"><comment>ARABIC SMALL HIGH FARSI YEH</comment><string>\u25cc\u08CA</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+08CA"><comment>BEH fatha-30 farsiYeh-230M</comment><string>\u0628\u064E\u08CA</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CA"><comment>BEH fatha-30 cgj farsiYeh-230M</comment><string>\u0628\u064E\u034F\u08CA</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CA U+064E"><comment>BEH farsiYeh-230M fatha-30</comment><string>\u0628\u08CA\u064E</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CA U+034F U+064E"><comment>BEH farsiYeh-230M cgj fatha-30</comment><string>\u0628\u08CA\u034F\u064E</string></test>
+    <test background="#f0f0f0" label="U+08CB"><comment>ARABIC SMALL HIGH YEH BARREE WITH TWO DOTS BELOW</comment><string>\u25cc\u08Cb</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+08CB"><comment>BEH fatha-30 yehBarree-230M</comment><string>\u0628\u064E\u08CB</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CB"><comment>BEH fatha-30 cgj yehBarree-230M</comment><string>\u0628\u064E\u034F\u08CB</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CB U+064E"><comment>BEH yehBarree-230M fatha-30</comment><string>\u0628\u08CB\u064E</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CB U+034F U+064E"><comment>BEH yehBarree-230M cgj fatha-30</comment><string>\u0628\u08CB\u034F\u064E</string></test>
+    <test background="#f0f0f0" label="U+08CD"><comment>ARABIC SMALL HIGH ZAH</comment><string>\u25cc\u08Cd</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+08CD"><comment>BEH fatha-30 zah-230M</comment><string>\u0628\u064E\u08CD</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CD"><comment>BEH fatha-30 cgj zah-230M</comment><string>\u0628\u064E\u034F\u08CD</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CD U+064E"><comment>BEH zah-230M fatha-30</comment><string>\u0628\u08CD\u064E</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CD U+034F U+064E"><comment>BEH zah-230M cgj fatha-30</comment><string>\u0628\u08CD\u034F\u064E</string></test>
+    <test background="#f0f0f0" label="U+08CE"><comment>ARABIC LARGE ROUND DOT ABOVE</comment><string>\u25cc\u08Ce</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+08CE"><comment>BEH fatha-30 dot-230M</comment><string>\u0628\u064E\u08CE</string></test>
+    <test background="#ffc8a0" label="U+0628 U+064E U+034F U+08CE"><comment>BEH fatha-30 cgj dot-230M</comment><string>\u0628\u064E\u034F\u08CE</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CE U+064E"><comment>BEH dot-230M fatha-30</comment><string>\u0628\u08CE\u064E</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CE U+034F U+064E"><comment>BEH dot-230M cgj fatha-30</comment><string>\u0628\u08CE\u034F\u064E</string></test>
+    <test background="#f0f0f0" label="U+08CF"><comment>ARABIC LARGE ROUND DOT BELOW</comment><string>\u25cc\u08CF</string></test>
+    <test background="#ffc8a0" label="U+0628 U+0650 U+08CF"><comment>BEH kasra-32 dot-220M</comment><string>\u0628\u0650\u08CF</string></test>
+    <test background="#ffc8a0" label="U+0628 U+0650 U+034F U+08CF"><comment>BEH kasra-32 cgj dot-220M</comment><string>\u0628\u0650\u034F\u08CF</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CF U+0650"><comment>BEH dot-220M kasra-32</comment><string>\u0628\u08CF\u0650</string></test>
+    <test background="#ffc8a0" label="U+0628 U+08CF U+034F U+0650"><comment>BEH dot-220M cgj kasra-32</comment><string>\u0628\u08CF\u034F\u0650</string></test>
+    <test background="#f0f0f0" label="U+08D3"><comment>ARABIC SMALL LOW WAW</comment><string>\u25cc\u08D3</string></test>
+    <test label="U+0628 U+0650 U+08D3"><comment>BEH kasra-32 waw-220M</comment><string>\u0628\u0650\u08D3</string></test>
+    <test label="U+0628 U+0650 U+034F U+08D3"><comment>BEH kasra-32 cgj waw-220M</comment><string>\u0628\u0650\u034F\u08D3</string></test>
+    <test label="U+0628 U+08D3 U+0650"><comment>BEH waw-220M kasra-32</comment><string>\u0628\u08D3\u0650</string></test>
+    <test label="U+0628 U+08D3 U+034F U+0650"><comment>BEH waw-220M cgj kasra-32</comment><string>\u0628\u08D3\u034F\u0650</string></test>
+    <test background="#f0f0f0" label="U+08F3"><comment>ARABIC SMALL HIGH WAW</comment><string>\u25cc\u08F3</string></test>
+    <test label="U+0628 U+064E U+08F3"><comment>BEH fatha-30 waw-230M</comment><string>\u0628\u064E\u08F3</string></test>
+    <test label="U+0628 U+064E U+034F U+08F3"><comment>BEH fatha-30 cgj waw-230M</comment><string>\u0628\u064E\u034F\u08F3</string></test>
+    <test label="U+0628 U+08F3 U+064E"><comment>BEH waw-230M fatha-30</comment><string>\u0628\u08F3\u064E</string></test>
+    <test label="U+0628 U+08F3 U+034F U+064E"><comment>BEH waw-230M cgj fatha-30</comment><string>\u0628\u08F3\u034F\u064E</string></test>
+  </testgroup>
+  <testgroup label="Maddah reordering">
+    <test label="U+0627 U+0653 U+0670"><comment>ALEF madda-230 alef-35</comment><string>\u0627\u0653\u0670</string></test>
+    <test label="U+0622 U+0670"><comment>ALEFMADDA alef-35</comment><string>\u0622\u0670</string></test>
+    <test label="U+0622 U+0670 U+0651 U+064E U+065C U+064E"><comment>ALEFMADDA alef-35 shadda-33 fatha-30 dot-220 fatha-30</comment><string>\u0622\u0670\u0651\u064E\u065C\u064E</string></test>
+    <test label="U+0622 U+064E U+0617"><comment>ALEFMADDA fatha-30 zain-230</comment><string>\u0622\u064E\u0617</string></test>
+    <test label="U+0622 U+064E U+034F U+064E"><comment>ALEFMADDA fatha-30 cgj fatha-30</comment><string>\u0622\u064E\u034F\u064E</string></test>
   </testgroup>
 </ftml>

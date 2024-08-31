@@ -111,7 +111,7 @@ lookup _ReorderMaddaVowel2 {
 
 lookup ReorderMaddaVowel2 {
   lookupflag 0 ;
-    sub madda-ar' lookup _ReorderMaddaVowel2  @MaddaSkip  madda-ar ;
+    sub madda-ar' lookup _ReorderMaddaVowel2  @MaddaSkip'  madda-ar ;
 } ReorderMaddaVowel2 ;
 
 
