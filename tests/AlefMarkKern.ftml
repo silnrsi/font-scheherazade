@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='../tools/ftml.xsl'?>
+<ftml version='1.0'>
+  <head>
+    <fontscale>300</fontscale>
+    <fontsrc label="4.0">url(../references/v4.000/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <title>Alef+Mark kerning tests</title>
+  </head>
+  <testgroup label='Rendering check'>
+    <test label='Check'><string>RenderingUnknown</string></test>
+  </testgroup>
+  <testgroup label='Alef+Mark tests'>
+    <test label="alef+hamza + alef+hamza" rtl="True">
+      <string>أَأَنْتَ تاَأَتَ تݳَأَتَ</string>
+    </test>
+    <test label="alef+hamza + lam+fatha" rtl="True">
+      <string>أَلَه سَأَلَه</string>
+    </test>
+    <test label="lam+alef+hamza + noon+sukun" rtl="True">
+      <string>لأَنْب بلاَنْب ڶاَنْب</string>
+    </test>
+    <test label="lam+alef-hamza + noon+shadda" rtl="True">
+      <string>لأنَّهُ ظلأنَّهُ ظڷأنَّهُ</string>
+    </test>
+    <test label="lam-alef+hamza + lam+damma" rtl="True">
+      <string>لألُ سلأَلُ ڶأَلُ</string>
+    </test>
+    <test label="lam+alef+fatha + noon+sukun" rtl="True">
+      <string>لاَنْب كلاَنْب كڷݴَنْب</string>
+    </test>
+    <test label="alef-madda + alef+sukun" rtl="True">
+      <string>آاْ ضآاْ  ضآݴْ</string>
+    </test>
+    <test label="alef-madda + lam+hamza" rtl="True">
+      <string>\u0622\u0644\u0654 \u0642\u0622\u0644\u0654 \u0636\u0622\u06B7</string>
+    </test>
+    <test label="alef-wasla + alef+fatha" rtl="True">
+      <string>ٱَاَ مٱاَ مٱݳ</string>
+    </test>
+    <test label="alef-wasla + lam+damma" rtl="True">
+      <string>ٱَلّ مٱلّ مٱڷ</string>
+    </test>
+    <test label="lam+alef-madda + alef+madda" rtl="True">
+      <string>\u0644\u0622\u064e\u0622 \u0633\u0644\u0622\u064e\u0622 \u076A\u0622\u0622</string>
+    </test>
+    <test label="lam+alef-madda + alef+wavyhamza" rtl="True">
+      <string>لآَٲ سلآَٲ سݪآَٲ</string>
+    </test>
+    <test label="lam+alef-madda + beh+shadda" rtl="True">
+    	<string>\u0644\u0622\u0646\u0652\u0633 \u0641\u0644\u0622\u0646\u0652\u0633</string>
+    </test>
+    <test label="lam+alef-wasla + lam+fatha" rtl="True">
+      <string>\u0644\u0671\u0644\u064E \u0645\u0644\u0671\u0644\u064E \u0645\u06B5\u0671\u08c7</string>
+    </test>
+    <test label="alef-madda + alef-wasla" rtl="True">
+      <string>آٱ ضآٱ ضآݴ</string>
+    </test>
+    <test label="alef-wasla + alef-madda" rtl="True">
+      <string>ٱآ ضٱآ</string>
+    </test>
+    <test label="lam-alef-wasla + alef-madda" rtl="True">
+      <string>لٱآّ شلٱآّ</string>
+    </test>
+    <test label="lam-bar-alef+hamza + lam+fatha" rtl="True">
+      <string>ݪأڷ</string>
+    </test>
+    <test label="alef-two alef-three" rtl="True">
+      <string>ݳݴ ݴڷ</string>
+    </test>
+  </testgroup>
+</ftml>
