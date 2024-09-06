@@ -271,6 +271,7 @@ do let f = info("familyName");
         lookup RehWawKerning1;  # a separate lookup to handle chains
         lookup RehWawKerning;
         lookup LamAlefKerning;
+        lookup AlefMarksAbove;
         lookup MiscKerning;
         lookup MiscKerningWDiacs;
         lookup ToothKashidaKerningIM;
@@ -290,9 +291,14 @@ do let f = info("familyName");
 
 	# Harmattan:
 	do let f = info("familyName");
-	   if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {	# enable kerning for now
-    script arab;  # Arabic
-        lookup mainkern;
+    if f.find("Harmattan") != -1; {
+      script arab;  # Arabic
+    }
+    if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {
+    	lookup mainkern;   # Graphite-based kerning
+    }
+    if f.find("Harmattan") != -1; {
+      lookup AlefMarksAbove;
       # Force other languages to include Arabic script lookups:
       language KIR  ;
       language KSH ;
@@ -301,7 +307,8 @@ do let f = info("familyName");
       language SND  ;
       language URD  ;
       language WLF  ;
-}
+		}
+	# Harmattan
 
 } kern ;
 

@@ -228,6 +228,93 @@ ifinfo(styleName, "Regular|Medium") {
 
 } LamAlefKerning;
 
+@AlefLamIsoInit = [@AlefIso @LamLikeIsolInit];
+@AlefLamBehWUpper = [@AlefIso @LamLikeIsolInit @BehLikeWAboveInit];
+@AlefDigitAbove = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
+
+lookup AlefMarksAbove {
+	# general rules
+		lookupflag UseMarkFilteringSet @MarksAbove;
+		
+		# madda + wasla
+		
+		pos @AlefPlain' <238 0 238 0> @MaddaPlain             alefWasla-ar;
+		pos @AlefPlain' <238 0 238 0> @MaddaPlain @MarksAbove alefWasla-ar;
+		
+		pos @AlefWasla' <160 0 160 0> @AlefAll @MaddaPlain;
+		
+		pos @LamAlefWaslaLig' <300 0 300 0>             @AlefIso             @MaddaPlain;
+		pos @LamAlefWaslaLig' <300 0 300 0>             @AlefIso @MarksAbove @MaddaPlain;
+		pos @LamAlefWaslaLig' <300 0 300 0> @MarksAbove @AlefIso             @MaddaPlain;
+		pos @LamAlefWaslaLig' <300 0 300 0> @MarksAbove @AlefIso @MarksAbove @MaddaPlain;
+		
+		# madda - wider, needs more space than hamza, fatha, etc below
+		
+		pos @AlefPlain' <175 0 175 0>             @MaddaPlain @AlefLamIsoInit @MarksAbove;
+		pos @AlefPlain' <175 0 175 0> @MarksAbove @MaddaPlain @AlefLamIsoInit @MarksAbove;
+		
+		pos @AlefPlain' <176 0 176 0>             @MaddaPlain @AlefLamWUpperComposed;
+		pos @AlefPlain' <176 0 176 0> @MarksAbove @MaddaPlain @AlefLamWUpperComposed;
+
+ifinfo(styleName, "Regular|Medium") {
+		# madda + madda needs a little more:
+		pos @AllLamAlefLig' <365 0 365 0>             @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+		pos @AllLamAlefLig' <365 0 365 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+
+		pos @AllLamAlefLig' <335 0 335 0>             @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+		pos @AllLamAlefLig' <335 0 335 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+			
+		pos @AllLamAlefLig' <336 0 336 0>             @MaddaPlain @AlefLamWUpperComposed;
+		pos @AllLamAlefLig' <336 0 336 0> @MarksAbove @MaddaPlain @AlefLamWUpperComposed;
+}
+ifinfo(styleName, "Bold") {
+		# madda + madda needs a little more:
+		pos @AllLamAlefLig' <415 0 415 0>             @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+		pos @AllLamAlefLig' <415 0 415 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+
+		pos @AllLamAlefLig' <385 0 385 0>             @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+		pos @AllLamAlefLig' <385 0 385 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+			
+		pos @AllLamAlefLig' <386 0 386 0>             @MaddaPlain @AlefLamWUpperComposed;
+		pos @AllLamAlefLig' <386 0 386 0> @MarksAbove @MaddaPlain @AlefLamWUpperComposed;
+}
+
+		# wasla - composed and needs more space
+		
+		pos @AlefWasla' <185 0 185 0>             @AlefLamIsoInit @MarksAbove;
+		pos @AlefWasla' <185 0 185 0> @MarksAbove @AlefLamIsoInit @MarksAbove;
+		
+		pos @AlefWasla' <186 0 186 0>             @AlefLamWUpperComposed;
+		pos @AlefWasla' <186 0 186 0> @MarksAbove @AlefLamWUpperComposed;
+		
+		pos @LamAlefWaslaLig' <220 0 220 0>             @AlefLamBehWUpper @MarksAbove;
+		pos @LamAlefWaslaLig' <220 0 220 0> @MarksAbove @AlefLamBehWUpper @MarksAbove;
+		
+		pos @LamAlefWaslaLig' <221 0 221 0>             @AlefLamWUpperComposed;
+		pos @LamAlefWaslaLig' <221 0 221 0> @MarksAbove @AlefLamWUpperComposed;		
+
+		# other marks
+		
+		pos @AlefDigitAbove' <175 0 175 0>             @AlefLamIsoInit @MarksAbove;
+		pos @AlefDigitAbove' <175 0 175 0> @MarksAbove @AlefLamIsoInit @MarksAbove;
+				
+		pos @AlefAll' <130 0 130 0> @MarksAbove             @AlefLamIsoInit @MarksAbove;
+		pos @AlefAll' <130 0 130 0> @MarksAbove @MarksAbove @AlefLamIsoInit @MarksAbove;
+		
+		pos @AlefAll' <131 0 131 0> @MarksAbove             @AlefLamWUpperComposed;
+		pos @AlefAll' <131 0 131 0> @MarksAbove @MarksAbove @AlefLamWUpperComposed;
+		
+		pos @AllLamAlefLig' <150 0 150 0> @MarksAbove             @AlefLamBehWUpper @MarksAbove;
+		pos @AllLamAlefLig' <150 0 150 0> @MarksAbove @MarksAbove @AlefLamBehWUpper @MarksAbove;
+		
+		pos @AllLamAlefLig' <151 0 151 0> @MarksAbove             @AlefLamWUpperComposed;
+		pos @AllLamAlefLig' <151 0 151 0> @MarksAbove @MarksAbove @AlefLamWUpperComposed;
+		
+		pos @AlefWUpperComposed' <220 0 220 0>             @AlefLamWUpperComposed;
+		pos @AlefWUpperComposed' <220 0 220 0> @MarksAbove @AlefLamWUpperComposed;
+
+} AlefMarksAbove;
+
 lookup MiscKerning {
   lookupflag IgnoreMarks;
     pos @AlefForms' lookup _kern70  rreh-ar;

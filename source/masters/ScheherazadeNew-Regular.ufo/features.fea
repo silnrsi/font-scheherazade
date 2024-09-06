@@ -6,17 +6,24 @@
 @AlefAllahIsol = [alef-ar.allah alefWasla-ar.allah];
 @AlefFin = [alef-ar.fina alefHamzaabove-ar.fina alefHamzabelow-ar.fina alefMadda-ar.fina alefThreeabove-ar.fina alefTwoabove-ar.fina alefWasla-ar.fina alefWavyhamzaabove-ar.fina alefWavyhamzabelow-ar.fina highhamzaAlef-ar.fina];
 @AlefIso = [alef-ar alefHamzaabove-ar alefHamzabelow-ar alefMadda-ar alefThreeabove-ar alefTwoabove-ar alefWasla-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar highhamzaAlef-ar];
+@AlefAll = [@AlefIso @AlefFin];
 @AlefLamWBelow = [alefHamzabelow-ar alefWavyhamzabelow-ar lamThreedotsbelow-ar lamThreedotsbelow-ar.init];
+@AlefLamWLowerComposed = [alefWavyhamzabelow-ar lamThreedotsbelow-ar];
 @AlefMark = [madda-ar madda-ar.small hamzaabove-ar hamzabelow-ar];
 @AlefNoAllah = [alef-ar alef-ar.fina alefWasla-ar alefWasla-ar.fina];
 @AlefNoAllahIsol = [alef-ar alefWasla-ar];
+@AlefPlain = [alef-ar alef-ar.fina];
 @AlefPlusMark = [alefMadda-ar alefMadda-ar.small alefHamzaabove-ar alefHamzabelow-ar];
 @AlefRareNoLig = [alefFathaattached-ar.fina alefToprightfathaattached-ar.fina alefRightmiddlestroke-ar.fina alefLeftmiddlestroke-ar.fina alefKasraattached-ar.fina alefBottomrightkasraattached-ar.fina alefRounddotaboveattached-ar.fina alefRightrounddotattached-ar.fina alefLeftrounddotattached-ar.fina alefRounddotbelowattached-ar.fina alefDotabove-ar.fina alefToprightfathaattachedDotabove-ar.fina alefRightmiddlestrokeDotabove-ar.fina alefBottomrightkasraattachedDotabove-ar.fina alefToprightfathaattachedLeftring-ar.fina alefRightmiddlestrokeLeftring-ar.fina alefBottomrightkasraattachedLeftring-ar.fina alefRighthamzaattached-ar.fina alefLefthamzaattached-ar.fina];
+@AlefWUpperComposed = [alefTwoabove-ar alefThreeabove-ar alefWavyhamzaabove-ar];
+@AlefLamWUpperComposed = [@AlefWUpperComposed lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamTahabove-ar];
+@AlefWasla = [alefWasla-ar alefWasla-ar.fina];
 @Ayah = [endofayah-ar endofayah-ar.2 endofayah-ar.3];
 @AyahCircle = [endofayah-ar.alt endofayah-ar.alt.2 endofayah-ar.alt.3];
 @AyahDisputed = [disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3];
 @AyahSquare = [endofayah-ar.altB endofayah-ar.altB.2 endofayah-ar.altB.3];
 @AyahAny = [@Ayah @AyahCircle @AyahSquare @AyahDisputed];
+@BehLikeWAboveInit = [noon-ar.init teh-ar.init theh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init tteh-ar.init ttehVabove-ar.init tteheh-ar.init teheh-ar.init tehThreedotsupbelow-ar.init behVabove-ar.init behhamzaabove-ar.init tehTehabove-ar.init behMeemabove-ar.init pehMeemabove-ar.init];
 @Damma = [damma-ar shadda_damma-ar hamza_damma-ar damma_meem-ar];
 @DammaInverted = [dammainverted-ar];
 @DammaInverted_open = [dammainverted-ar.open];
@@ -71,6 +78,7 @@
 @LamAlefHamzabelowLig = [lam-ar.init];
 @LamAlefKern = [dal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalVinvertedbelow-ar dalThreedotsbelow-ar dal-ar.loclWLF ddahal-ar.loclWLF dalRing-ar.loclWLF dalDotbelow-ar.loclWLF dalVinvertedbelow-ar.loclWLF dalThreedotsbelow-ar.loclWLF reh-ar zain-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehStroke-ar rehLoop-ar rehv-ar rehVinvertedabove-ar rehTwodots-ar meem-ar meemDotabove-ar meemDotbelow-ar meem-ar.sindhi meemDotabove-ar.sindhi meemDotbelow-ar.sindhi meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init seen-ar seenDotbelowDotabove-ar seenThreedotsbelow-ar seenVinvertedabove-ar seen-ar.init seenDotbelowDotabove-ar.init seenThreedotsbelow-ar.init seenVinvertedabove-ar.init heh-ar heh-ar.knotted hehgoal-ar ae-ar heh-ar.init heh-ar.init.hooked hehgoal-ar.init hehDoachashmee-ar tehMarbuta-ar hehDoachashmee-ar.init beh-ar peh-ar pehVabove-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar tehVabove-ar theh-ar tteh-ar ttehVabove-ar tteheh-ar teheh-ar behThreedotshorizontalbelow-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar tehTehabove-ar behMeemabove-ar pehMeemabove-ar behDotless-ar.init beh-ar.init peh-ar.init beeh-ar.init beheh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupbelow-ar.init behVinvertedbelow-ar.init behVbelow-ar.init jeem-ar.init tcheh-ar.init tcheheh-ar.init tchehDotabove-ar tchehVabove-ar.init nyeh-ar.init dyeh-ar.init hah-ar.init hehHamzaabove-ar hahTwodotsverticalabove-ar.init hahTwodotshorizontalabove-ar.init hahThreedotsabove-ar.init hahThreedotsupbelow-ar.init khah-ar.init hahTahbelow-ar.init hahTahTwodotshorizontalbelow-ar.init hahTahabove-ar hahFourbelow-ar.init jeemTwodotsabove-ar.init jeemThreedotsabove-ar.init jeemThreedotsbelow-ar.init];
 @LamAlefLig = [lam_alef-ar lamVabove_alef-ar lamDotabove_alef-ar lamThreedotsabove_alef-ar lamThreedotsbelow_alef-ar lamTahabove_alef-ar lamBar_alef-ar lamDoublebar_alef-ar lam_alef-ar.fina lamVabove_alef-ar.fina lamDotabove_alef-ar.fina lamThreedotsabove_alef-ar.fina lamThreedotsbelow_alef-ar.fina lamTahabove_alef-ar.fina lamBar_alef-ar.fina lamDoublebar_alef-ar.fina];
+@LamAlefPlain = [lam_alef-ar lam_alef-ar.fina];
 @LamAlefRareLig = [lam_alefFathaattached-ar lam_alefToprightfathaattached-ar lam_alefRightmiddlestroke-ar lam_alefLeftmiddlestroke-ar lam_alefKasraattached-ar lam_alefBottomrightkasraattached-ar lam_alefRounddotaboveattached-ar lam_alefRightrounddotattached-ar lam_alefLeftrounddotattached-ar lam_alefRounddotbelowattached-ar lam_alefDotabove-ar lam_alefToprightfathaattachedDotabove-ar lam_alefRightmiddlestrokeDotabove-ar lam_alefBottomrightkasraattachedDotabove-ar lam_alefToprightfathaattachedLeftring-ar lam_alefRightmiddlestrokeLeftring-ar lam_alefBottomrightkasraattachedLeftring-ar lam_alefRighthamzaattached-ar lam_alefLefthamzaattached-ar];
 @LamAlefRareLigFina = [lam_alefFathaattached-ar.fina lam_alefToprightfathaattached-ar.fina lam_alefRightmiddlestroke-ar.fina lam_alefLeftmiddlestroke-ar.fina lam_alefKasraattached-ar.fina lam_alefBottomrightkasraattached-ar.fina lam_alefRounddotaboveattached-ar.fina lam_alefRightrounddotattached-ar.fina lam_alefLeftrounddotattached-ar.fina lam_alefRounddotbelowattached-ar.fina lam_alefDotabove-ar.fina lam_alefToprightfathaattachedDotabove-ar.fina lam_alefRightmiddlestrokeDotabove-ar.fina lam_alefBottomrightkasraattachedDotabove-ar.fina lam_alefToprightfathaattachedLeftring-ar.fina lam_alefRightmiddlestrokeLeftring-ar.fina lam_alefBottomrightkasraattachedLeftring-ar.fina lam_alefRighthamzaattached-ar.fina lam_alefLefthamzaattached-ar.fina];
 @LamAlefThreeAboveLig = [lam_alefThreeabove-ar lamVabove_alefThreeabove-ar lamDotabove_alefThreeabove-ar lamThreedotsabove_alefThreeabove-ar lamThreedotsbelow_alefThreeabove-ar lamTahabove_alefThreeabove-ar lamBar_alefThreeabove-ar lamDoublebar_alefThreeabove-ar lam_alefThreeabove-ar.fina lamVabove_alefThreeabove-ar.fina lamDotabove_alefThreeabove-ar.fina lamThreedotsabove_alefThreeabove-ar.fina lamThreedotsbelow_alefThreeabove-ar.fina lamTahabove_alefThreeabove-ar.fina lamBar_alefThreeabove-ar.fina lamDoublebar_alefThreeabove-ar.fina];
@@ -83,13 +91,14 @@
 @LamIni = [lam-ar.init lamBar-ar.init lamDotabove-ar.init lamDoublebar-ar.init lamTahabove-ar.init lamThreedotsabove-ar.init lamThreedotsbelow-ar.init lamVabove-ar.init];
 @LamInitMedi = [lam-ar.init];
 @LamIso = [lam-ar lamBar-ar lamDotabove-ar lamDoublebar-ar lamTahabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamVabove-ar];
-@LamLikeIsolInit = [lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamTahabove-ar lamThreedotsbelow-ar lamBar-ar lamDoublebar-ar lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamTahabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init];
+@LamLikeIsolInit = [lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamTahabove-ar lamThreedotsbelow-ar lamBar-ar lamDoublebar-ar lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamTahabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamTahabove-ar lamThreedotsbelow-ar lamBar-ar lamDoublebar-ar lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamTahabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init];
 @LamMed = [lam-ar.medi lamBar-ar.medi lamDotabove-ar.medi lamDoublebar-ar.medi lamTahabove-ar.medi lamThreedotsabove-ar.medi lamThreedotsbelow-ar.medi lamVabove-ar.medi];
 @LamLikeInitMedi = [@LamIni @LamMed];
 @LamNoLig = [lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init lamThreedotsbelow-ar.init lamTahabove-ar.init lamBar-ar.init lamDoublebar-ar.init lam-ar.medi lamVabove-ar.medi lamDotabove-ar.medi lamThreedotsabove-ar.medi lamThreedotsbelow-ar.medi lamTahabove-ar.medi lamBar-ar.medi lamDoublebar-ar.medi];
 @LamNoLigIsolFina = [lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar lamTahabove-ar lamBar-ar lamDoublebar-ar lam-ar.fina lamVabove-ar.fina lamDotabove-ar.fina lamThreedotsabove-ar.fina lamThreedotsbelow-ar.fina lamTahabove-ar.fina lamBar-ar.fina lamDoublebar-ar.fina];
 @LowHamzaBase = [waw-ar yeh-ar ae-ar hehgoal-ar waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init];
 @LowHamzaComposed = [wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar wawHamzaabove-ar.fina yehHamzaabove-ar.fina hehHamzaabove-ar.fina hehgoalHamzaabove-ar.fina yehHamzaabove-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init hehgoalHamzaabove-ar.init];
+@MaddaPlain = [madda-ar madda-ar.small];
 @Maddah = [alefMadda-ar alefMadda-ar.fina madda-ar];
 @Maddah.small = [alefMadda-ar.small alefMadda-ar.fina.small madda-ar.small];
 @MarkGroup1A = [shadda-ar hamzaabove-ar noonghunnaabove-ar];
@@ -2123,7 +2132,7 @@ lookup _ReorderMaddaVowel2 {
 
 lookup ReorderMaddaVowel2 {
     lookupflag 0;
-    sub madda-ar' lookup _ReorderMaddaVowel2 @MaddaSkip madda-ar;
+    sub madda-ar' lookup _ReorderMaddaVowel2 @MaddaSkip' madda-ar;
 } ReorderMaddaVowel2;
 
 # Default for both Scheherazade and Harmattan is the small maddah; 
@@ -4424,6 +4433,13 @@ feature liga {
     #@RehKernOther + @RehKernOtherMB
     # and SemiBold
     # eg 0644 0627 0645/0631
+    # general rules
+    # madda + wasla
+    # madda - wider, needs more space than hamza, fatha, etc below
+    # madda + madda needs a little more:
+    # madda + madda needs a little more:
+    # wasla - composed and needs more space
+    # other marks
     # beh + reh-stroke
     # does not ignore diacritics
     # alef-maddah + gaf
@@ -4610,6 +4626,52 @@ feature liga {
                     pos @AllLamAlefLig @LamAlefKern <-70 0 -70 0>;
 
     } LamAlefKerning;
+
+    @AlefLamIsoInit = [@AlefIso @LamLikeIsolInit];
+    @AlefLamBehWUpper = [@AlefIso @LamLikeIsolInit @BehLikeWAboveInit];
+    @AlefDigitAbove = [alefTwoabove-ar alefThreeabove-ar alefTwoabove-ar.fina alefThreeabove-ar.fina];
+    lookup AlefMarksAbove {
+        lookupflag UseMarkFilteringSet @MarksAbove;
+        pos @AlefPlain' <238 0 238 0> @MaddaPlain alefWasla-ar;
+        pos @AlefPlain' <238 0 238 0> @MaddaPlain @MarksAbove alefWasla-ar;
+        pos @AlefWasla' <160 0 160 0> @AlefAll @MaddaPlain;
+        pos @LamAlefWaslaLig' <300 0 300 0> @AlefIso @MaddaPlain;
+        pos @LamAlefWaslaLig' <300 0 300 0> @AlefIso @MarksAbove @MaddaPlain;
+        pos @LamAlefWaslaLig' <300 0 300 0> @MarksAbove @AlefIso @MaddaPlain;
+        pos @LamAlefWaslaLig' <300 0 300 0> @MarksAbove @AlefIso @MarksAbove @MaddaPlain;
+        pos @AlefPlain' <175 0 175 0> @MaddaPlain @AlefLamIsoInit @MarksAbove;
+        pos @AlefPlain' <175 0 175 0> @MarksAbove @MaddaPlain @AlefLamIsoInit @MarksAbove;
+        pos @AlefPlain' <176 0 176 0> @MaddaPlain @AlefLamWUpperComposed;
+        pos @AlefPlain' <176 0 176 0> @MarksAbove @MaddaPlain @AlefLamWUpperComposed;
+                    pos @AllLamAlefLig' <365 0 365 0> @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+            pos @AllLamAlefLig' <365 0 365 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MaddaPlain;
+            pos @AllLamAlefLig' <335 0 335 0> @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+            pos @AllLamAlefLig' <335 0 335 0> @MarksAbove @MaddaPlain @AlefLamBehWUpper @MarksAbove;
+            pos @AllLamAlefLig' <336 0 336 0> @MaddaPlain @AlefLamWUpperComposed;
+            pos @AllLamAlefLig' <336 0 336 0> @MarksAbove @MaddaPlain @AlefLamWUpperComposed;
+
+        
+        pos @AlefWasla' <185 0 185 0> @AlefLamIsoInit @MarksAbove;
+        pos @AlefWasla' <185 0 185 0> @MarksAbove @AlefLamIsoInit @MarksAbove;
+        pos @AlefWasla' <186 0 186 0> @AlefLamWUpperComposed;
+        pos @AlefWasla' <186 0 186 0> @MarksAbove @AlefLamWUpperComposed;
+        pos @LamAlefWaslaLig' <220 0 220 0> @AlefLamBehWUpper @MarksAbove;
+        pos @LamAlefWaslaLig' <220 0 220 0> @MarksAbove @AlefLamBehWUpper @MarksAbove;
+        pos @LamAlefWaslaLig' <221 0 221 0> @AlefLamWUpperComposed;
+        pos @LamAlefWaslaLig' <221 0 221 0> @MarksAbove @AlefLamWUpperComposed;
+        pos @AlefDigitAbove' <175 0 175 0> @AlefLamIsoInit @MarksAbove;
+        pos @AlefDigitAbove' <175 0 175 0> @MarksAbove @AlefLamIsoInit @MarksAbove;
+        pos @AlefAll' <130 0 130 0> @MarksAbove @AlefLamIsoInit @MarksAbove;
+        pos @AlefAll' <130 0 130 0> @MarksAbove @MarksAbove @AlefLamIsoInit @MarksAbove;
+        pos @AlefAll' <131 0 131 0> @MarksAbove @AlefLamWUpperComposed;
+        pos @AlefAll' <131 0 131 0> @MarksAbove @MarksAbove @AlefLamWUpperComposed;
+        pos @AllLamAlefLig' <150 0 150 0> @MarksAbove @AlefLamBehWUpper @MarksAbove;
+        pos @AllLamAlefLig' <150 0 150 0> @MarksAbove @MarksAbove @AlefLamBehWUpper @MarksAbove;
+        pos @AllLamAlefLig' <151 0 151 0> @MarksAbove @AlefLamWUpperComposed;
+        pos @AllLamAlefLig' <151 0 151 0> @MarksAbove @MarksAbove @AlefLamWUpperComposed;
+        pos @AlefWUpperComposed' <220 0 220 0> @AlefLamWUpperComposed;
+        pos @AlefWUpperComposed' <220 0 220 0> @MarksAbove @AlefLamWUpperComposed;
+    } AlefMarksAbove;
 
     lookup MiscKerning {
         lookupflag IgnoreMarks;
@@ -6754,6 +6816,7 @@ feature kern {
         lookup RehWawKerning1;
         lookup RehWawKerning;
         lookup LamAlefKerning;
+        lookup AlefMarksAbove;
         lookup MiscKerning;
         lookup MiscKerningWDiacs;
         lookup ToothKashidaKerningIM;
@@ -6768,9 +6831,10 @@ feature kern {
     # Harmattan:
             
 
-    # enable kerning for now
     # Arabic
+    # Graphite-based kerning
     # Force other languages to include Arabic script lookups:
+    # Harmattan
 } kern;
 
 feature mark {
