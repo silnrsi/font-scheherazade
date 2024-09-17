@@ -16,7 +16,7 @@
 
 include(../../source/opentype/customKerning.feax); 
 
-	
+
 #********************
 # Mark attachment
 
@@ -72,9 +72,9 @@ do let f = info("familyName");
 
 lookup LamAlefMark2Adjust {
   lookupflag UseMarkFilteringSet @MarksBelow;
-	ifinfo(familyName, "Scheherazade New") {
+  ifinfo(familyName, "Scheherazade New") {
     pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
-	}
+  }
 } LamAlefMark2Adjust;
 
 
@@ -130,9 +130,9 @@ lookup MarkToMarkBelow {
 # no nukta above) [ABS-2762]
 lookup RaiseMadda {
   lookupflag 0;
-	ifinfo(familyName, "Lateef") {
-  	pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
-	}
+  ifinfo(familyName, "Lateef") {
+    pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
+  }
 } RaiseMadda ;
 
 
@@ -238,9 +238,9 @@ include(../../source/opentype/customShifting.feax);
 
 lookup KernPairs {
   lookupflag IgnoreMarks;
-	ifinfo(familyName, "Lateef") {
+  ifinfo(familyName, "Lateef") {
     kernpairs;
-	}
+  }
 } KernPairs;
 
 
@@ -264,8 +264,8 @@ feature kern {  # Kerning
         lookup SubtendingMarks;
         lookup KernPairs;       # Lateef
 
-# Scheherazade lookups:
-do let f = info("familyName");
+  # Scheherazade lookups:
+  do let f = info("familyName");
    if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
    # start of kerning positioning
         lookup RehWawKerning1;  # a separate lookup to handle chains
@@ -281,21 +281,22 @@ do let f = info("familyName");
         
         # after mark attachment:
         lookup DiacShifting;
-	}   # SchNew and not nokern
+  }   # SchNew and not nokern
 
-	# Lateef lookups:
-	do let f = info("familyName");
-	   if f.find("Lateef") != -1; {
+  # Lateef lookups:
+  do let f = info("familyName");
+     if f.find("Lateef") != -1; {
+        lookup AlefMarksAbove;
         lookup OldStyleKerning;
-	}   # Lateef
+  }   # Lateef
 
-	# Harmattan:
-	do let f = info("familyName");
+  # Harmattan:
+  do let f = info("familyName");
     if f.find("Harmattan") != -1; {
       script arab;  # Arabic
     }
     if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {
-    	lookup mainkern;   # Graphite-based kerning
+      lookup mainkern;   # Graphite-based kerning
     }
     if f.find("Harmattan") != -1; {
       lookup AlefMarksAbove;
@@ -307,8 +308,8 @@ do let f = info("familyName");
       language SND  ;
       language URD  ;
       language WLF  ;
-		}
-	# Harmattan
+    }
+  # Harmattan
 
 } kern ;
 
@@ -318,8 +319,8 @@ feature mark {  # Mark to base Positioning
         lookup AlefToBase;
         lookup RaiseMadda;    # Lateef
     script arab;
-      	lookup MarkToLig;
-      	lookup LamAlefMark2Adjust;  # empty except in Sch
+        lookup MarkToLig;
+        lookup LamAlefMark2Adjust;  # empty except in Sch
 #        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
       # Force other languages to include Arabic script lookups
       language KIR ;
