@@ -21,6 +21,8 @@ The fonts are built using a completely free and open source workflow using indus
 
 Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [SIL Font Development Guide](https://silnrsi.github.io/silfontdev/).
 
+In addition, much of the code for Scheherazade New, Harmattan, and Lateef is shared. Carefully review the [font-arab-tools developer](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/developer.md) documentation to see how the code is shared.
+
 ## Building
 
 The Scheherazade New project can be built from source using [smith](https://github.com/silnrsi/smith). This is done via the sequence:
