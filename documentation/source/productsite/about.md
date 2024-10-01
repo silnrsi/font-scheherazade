@@ -32,7 +32,7 @@ Our font announcements are also available through X (formerly Twitter) [@silfont
 
 ## Supporting the project
 
-This font is  provided at no cost, however it is expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://donate.givedirect.org/?cid=13536&n=206909) and designate your gift for _Scripts & Fonts_. **Thank you!** 
+These fonts are provided at no cost; however, they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://give.sil.org/give/485238). **Thank you!** 
 
 ## About SIL Global
 
