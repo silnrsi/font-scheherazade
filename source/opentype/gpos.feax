@@ -1,146 +1,41 @@
 #**********************************
 #
-# Copyright (c) 1994-2024 SIL Global (https://www.sil.org)
+# Copyright (c) 1994-2024 SIL International  (https://www.sil.org)
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 #
 #**********************************
+
+# Three features are implemented: kern, mark, and mkmk. 
+#
+# As best we understand it, all shapers now work per the OT spec in regard to GPOS lookup order of 
+# execution, namely that lookups for all enabled features are executed in one pass in lookup order.
+#
+# Note that prior to around September 2024, HarfBuzz executed mark attachment in a separate
+# pass after all base adjustments, but this caused compatibility issues with CoreText and Uniscribe
+# (see https://github.com/harfbuzz/harfbuzz/issues/4596)
+
+# To make sure the newer Harfbuzz doesn't cause problems we now put all base-positioning lookups 
+# (kern and, if we had it, curs) before any mark positioning lookups (mark, mkmk).
 
 
 #**********************************
 # GPOS (Positioning) lookups
 #**********************************
 
-
 #********************
-# Collision-avoidance-based kerning
+# Base positioning (kerning) 
 
 include(../../source/opentype/customKerning.feax); 
 
-
-#********************
-# Mark attachment
-
-lookup MarkToBase {
-  lookupflag 0;
-    pos  base @diaA  mark @_diaA;
-    pos  base @diaB  mark @_diaB;
-    pos  base @diaO  mark @_diaO;
-} MarkToBase;
-
-# Override mark positioning in the case of dagger-alef on certain chars:
-lookup AlefToBase {
-  lookupflag 0;
-    pos  base @alef  mark @_alef;
-} AlefToBase;
-
-
-lookup MarkToLig {
-  lookupflag 0;
-    pos ligature @LamAlefLig            @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefWaslaLig       @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefWavyHAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefWavyHBelowLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefTwoAboveLig    @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-    pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-#   pos ligature lam_alefHamzabelow-ar  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
-#             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
-} MarkToLig;
-
-
-# Scheherazade only: use the dia2B AP when you have two diacritics below a lam-alef.
-
-lookup _mark2_to_base {
-  lookupflag 0;
-do let f = info("familyName");
-   if f.find("Scheherazade New") != -1 ; {
-    # Class are not expanded recursively, so enumerate them. :-(
-    pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-#   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  }
-} _mark2_to_base;
-
-lookup LamAlefMark2Adjust {
-  lookupflag UseMarkFilteringSet @MarksBelow;
-  ifinfo(familyName, "Scheherazade New") {
-    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
-  }
-} LamAlefMark2Adjust;
-
-
-#********************
-# Mark-to-mark attachment
-
-@MarkFilter_diaA = [@diaA_MarkBase @_diaA];
-lookup MarkToMarkAbove {
-  lookupflag UseMarkFilteringSet @MarkFilter_diaA;
-    pos mark @diaA_MarkBase mark @_diaA;
-} MarkToMarkAbove;
-
-@MarkFilter_diaB = [@diaB_MarkBase @_diaB];
-lookup MarkToMarkBelow {
-  lookupflag UseMarkFilteringSet @MarkFilter_diaB;
-    pos mark @diaB_MarkBase mark @_diaB;
-} MarkToMarkBelow;
-
-
-#********************
-# Mark adjustments after attachment
-# OBSOLETE - Harmattan and Lateef
-
-#do let f = info("familyName");
-#   if f.find("Harmattan") != -1; {}
-
-# TODO: Determine whether needed and, if so, correct implemetation
-#
-#lookup Mark2ToBase {
-#  lookupflag 0;
-#  pos base @dia2B mark @_diaB;
-#} Mark2ToBase;
-#
-# move MarksBelow slightly left on lam-alef when appropriate:
-# lookup AlefMark2BelowAfterLam {
-#   lookupflag UseMarkFilteringSet @MarksBelow ;
-#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksBelow' ;
-#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
-#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksBelow' ;
-#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
-#     #pos @MarksBelow @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
-#     #pos lamThreedotsbelow-ar.init.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
-#     # Unneeded in Harmattan design:
-#     #pos lamThreedotsbelow-ar.medi.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
-# } AlefMark2BelowAfterLam;
-
-#}    # end do - Harmattan
-
-# Lateef only; others have an empty lookup
-
-# Increase vertical separation between maddah and fatha for sequences like:
-# alefMaddah + lam-initial + fatha (for all initial lam-like glyphs that have 
-# no nukta above) [ABS-2762]
-lookup RaiseMadda {
-  lookupflag 0;
-  ifinfo(familyName, "Lateef") {
-    pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
-  }
-} RaiseMadda ;
-
-
-#---  kern feature (cont'd)  ---
-
-
 #********************
 # Subtending mark positioning
+
+# Would love to be able to do subtending marks as either cursive connection or mark attachment
+# Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
+# same as the subtending mark and unrelated to the widths of the digits.
+# In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
+# marks or digits (the digits get reverse ordered by the attachment process).
+# So we're back to using kerning
 
 lookup SubtendingMarks {
   lookupflag IgnoreMarks ;
@@ -231,9 +126,6 @@ lookup SubtendingMarks {
 } SubtendingMarks;
 
 
-include(../../source/opentype/customShifting.feax);
-
-
 # Lateef only; others have an empty lookup
 
 lookup KernPairs {
@@ -244,19 +136,137 @@ lookup KernPairs {
 } KernPairs;
 
 
+
+#********************
+# Mark positioning
+
+lookup MarkToBase {
+  lookupflag 0;
+    pos  base @diaA  mark @_diaA;
+    pos  base @diaB  mark @_diaB;
+    pos  base @diaO  mark @_diaO;
+} MarkToBase;
+
+# Override mark positioning in the case of dagger-alef on certain chars:
+lookup AlefToBase {
+  lookupflag 0;
+    pos  base @alef  mark @_alef;
+} AlefToBase;
+
+
+lookup MarkToLig {
+  lookupflag 0;
+    pos ligature @LamAlefLig            @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWaslaLig       @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWavyHAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefWavyHBelowLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefTwoAboveLig    @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+#   pos ligature lam_alefHamzabelow-ar  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+#             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+} MarkToLig;
+
+
+# Scheherazade only: use the dia2B AP when you have two diacritics below a lam-alef.
+
+lookup _mark2_to_base {
+  lookupflag 0;
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1 ; {
+    # Class are not expanded recursively, so enumerate them. :-(
+    pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+#   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+  }
+} _mark2_to_base;
+
+lookup LamAlefMark2Adjust {
+  lookupflag UseMarkFilteringSet @MarksBelow;
+  ifinfo(familyName, "Scheherazade New") {
+    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
+  }
+} LamAlefMark2Adjust;
+
+
+#********************
+# Mark-to-mark attachment
+
+@MarkFilter_diaA = [@diaA_MarkBase @_diaA];
+lookup MarkToMarkAbove {
+  lookupflag UseMarkFilteringSet @MarkFilter_diaA;
+    pos mark @diaA_MarkBase mark @_diaA;
+} MarkToMarkAbove;
+
+@MarkFilter_diaB = [@diaB_MarkBase @_diaB];
+lookup MarkToMarkBelow {
+  lookupflag UseMarkFilteringSet @MarkFilter_diaB;
+    pos mark @diaB_MarkBase mark @_diaB;
+} MarkToMarkBelow;
+
+
+#********************
+# Mark adjustments after attachment
+
+
+# OBSOLETE - Harmattan and Lateef
+#do let f = info("familyName");
+#   if f.find("Harmattan") != -1; {}
+
+# TODO: Determine whether needed and, if so, correct implemetation
+#
+#lookup Mark2ToBase {
+#  lookupflag 0;
+#  pos base @dia2B mark @_diaB;
+#} Mark2ToBase;
+#
+# move MarksBelow slightly left on lam-alef when appropriate:
+# lookup AlefMark2BelowAfterLam {
+#   lookupflag UseMarkFilteringSet @MarksBelow ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksBelow' ;
+#     pos [lamThreedotsbelow-ar.init.preAlef @MarksBelow] @MarksAbove @dia2B' lookup Mark2ToBase @MarksAbove' @MarksBelow' ;
+#     #pos @MarksBelow @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     #pos lamThreedotsbelow-ar.init.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+#     # Unneeded in Harmattan design:
+#     #pos lamThreedotsbelow-ar.medi.preAlef @AllAlefFinAfterLam @MarksBelow' <-50 0 0 0> ;
+# } AlefMark2BelowAfterLam;
+
+#}    # end do - Harmattan
+
+
+# Lateef only; others have an empty lookup
+
+# Increase vertical separation between maddah and fatha for sequences like:
+# alefMaddah + lam-initial + fatha (for all initial lam-like glyphs that have 
+# no nukta above) [ABS-2762]
+lookup RaiseMadda {
+  lookupflag 0;
+  ifinfo(familyName, "Lateef") {
+    pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
+  }
+} RaiseMadda ;
+
+
+#---  mark positioning (cont'd)  ---
+
+include(../../source/opentype/customShifting.feax);
+
+
+
 #**********************************
 #  GPOS FEATURES
 #**********************************
-
-# As best as we understand, these are arranged in the order MS & HB engines execute.
-
-
-# Would love to be able to do subtending marks as either cursive connection or mark attachment
-# Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
-# same as the subtending mark and unrelated to the widths of the digits.
-# In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
-# marks or digits (the digits get reverse ordered by the attachment process).
-# So we're back to using kerning
 
 
 feature kern {  # Kerning
