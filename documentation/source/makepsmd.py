@@ -58,7 +58,8 @@ def doit(args):
     temptext = mdimagecap.sub(r"[caption]<em>\1</em>[/caption]", temptext)
 
     # replace local links with site references
-    temptext = temptext.replace(".md","")
+    mdlink = re.compile(r"\((?!https://)(?P<path>[^()]*).md\)")
+    temptext = mdlink.sub(r"(\g<path>)",temptext)
 
     # replace links to external markdown files
     temptext = temptext.replace(".rawmd",".md")
