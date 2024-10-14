@@ -1098,21 +1098,6 @@ U+0670" stylename="cv76_2">
       <comment>ttehVabove-ar alefabove-ar</comment>
       <string>\u0008C0\u000670 \u0008C0\u000670\u0008C0\u000670\u0008C0\u000670 </string>
     </test>
-    <test label="U+0620
-U+064E">
-      <comment>yehKashmiri-ar fatha-ar</comment>
-      <string>\u000620\u00064E \u000620\u00064E\u000620\u00064E\u000620\u00064E  \u000620\u000650 \u000620\u000650\u000620\u000650\u000620\u000650  \u000620\u000654 \u000620\u000654\u000620\u000654\u000620\u000654  \u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
-    <test label="U+0620
-U+0670" stylename="cv76_1">
-      <comment>yehKashmiri-ar alefabove-ar</comment>
-      <string>\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
-    <test label="U+0620
-U+0670" stylename="cv76_2">
-      <comment>yehKashmiri-ar alefabove-ar</comment>
-      <string>\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
     <test label="U+0626
 U+064E">
       <comment>yehHamzaabove-ar fatha-ar</comment>
@@ -5942,6 +5927,21 @@ U+0670" stylename="cv76_1">
 U+0670" stylename="cv76_2">
       <comment>misraComma-ar alefabove-ar</comment>
       <string>\u00060F\u000670</string>
+    </test>
+    <test label="U+0620
+U+064E">
+      <comment>yehKashmiri-ar fatha-ar</comment>
+      <string>\u000620\u00064E \u000620\u00064E\u000620\u00064E\u000620\u00064E  \u000620\u000650 \u000620\u000650\u000620\u000650\u000620\u000650  \u000620\u000654 \u000620\u000654\u000620\u000654\u000620\u000654  \u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
+    </test>
+    <test label="U+0620
+U+0670" stylename="cv76_1">
+      <comment>yehKashmiri-ar alefabove-ar</comment>
+      <string>\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
+    </test>
+    <test label="U+0620
+U+0670" stylename="cv76_2">
+      <comment>yehKashmiri-ar alefabove-ar</comment>
+      <string>\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
     </test>
     <test label="U+0621
 U+064E">

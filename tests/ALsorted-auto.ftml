@@ -306,10 +306,6 @@
       <comment>ttehVabove-ar</comment>
       <string>\u0008C0 \u0008C0\u00200D \u00200D\u0008C0\u00200D \u00200D\u0008C0 \u0008C0\u0008C0\u0008C0 </string>
     </test>
-    <test label="U+0620">
-      <comment>yehKashmiri-ar</comment>
-      <string>\u000620 \u000620\u00200D \u00200D\u000620\u00200D \u00200D\u000620 \u000620\u000620\u000620 </string>
-    </test>
     <test label="U+0626">
       <comment>yehHamzaabove-ar</comment>
       <string>\u000626 \u000626\u00200D \u00200D\u000626\u00200D \u00200D\u000626 \u000626\u000626\u000626 </string>
@@ -1961,6 +1957,10 @@
     <test label="U+061C">
       <comment>mark-ar</comment>
       <string>\u00061C \u00061D \u00061E \u00061F</string>
+    </test>
+    <test label="U+0620">
+      <comment>yehKashmiri-ar</comment>
+      <string>\u000620 \u000620\u00200D \u00200D\u000620\u00200D \u00200D\u000620 \u000620\u000620\u000620 </string>
     </test>
     <test label="U+0621">
       <comment>hamza-ar</comment>

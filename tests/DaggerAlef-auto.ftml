@@ -27,21 +27,6 @@
     </test>
   </testgroup>
   <testgroup label="Group">
-    <test label="U+0620
-U+0670" rtl="True">
-      <comment>yehKashmiri-ar alefabove-ar</comment>
-      <string>\u000620\u000670 \u000620\u000670\u00200D \u00200D\u000620\u000670\u00200D \u00200D\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
-    <test label="U+0620
-U+0670" rtl="True" stylename="cv76_1">
-      <comment>yehKashmiri-ar alefabove-ar</comment>
-      <string>\u000620\u000670 \u000620\u000670\u00200D \u00200D\u000620\u000670\u00200D \u00200D\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
-    <test label="U+0620
-U+0670" rtl="True" stylename="cv76_2">
-      <comment>yehKashmiri-ar alefabove-ar</comment>
-      <string>\u000620\u000670 \u000620\u000670\u00200D \u00200D\u000620\u000670\u00200D \u00200D\u000620\u000670 \u000620\u000670\u000620\u000670\u000620\u000670 </string>
-    </test>
     <test label="U+0626
 U+0670" rtl="True">
       <comment>yehHamzaabove-ar alefabove-ar</comment>
