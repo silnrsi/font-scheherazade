@@ -36,6 +36,9 @@ files=(
     source/additional_ucd.xml
     source/opentype/gsub.feax
     source/opentype/gpos.feax
+    documentation/source/makepsmd.py
+    documentation/assets/css/theme.css
+    documentation/assets/css/themepdf.css
     documentation/source/pandocfilters/filter-pdf.lua
     documentation/source/pandocfilters/filter-html.lua
 )
