@@ -3,7 +3,7 @@ title: Scheherazade New - Version History
 fontversion: 4.300
 ---
 
-### 2024-xx-xx (SIL WSTech team) Scheherazade New version 4.300
+### 2024-10-21 (SIL WSTech team) Scheherazade New version 4.300
 
 #### New
 
@@ -13,16 +13,18 @@ fontversion: 4.300
   - U+10EC3 ARABIC LETTER TAH WITH TWO DOTS VERTICALLY BELOW
   - U+10EC4 ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW
   - U+10EFC ARABIC COMBINING ALEF OVERLAY
-  - Added support for Kashmiri language
-  - Added facility to override default language behavior through feature selection
-  - Added support for cv76 (dagger alef) on space, nbspace, and tatweel
+- Added support for Kashmiri language
+- Added facility to override default language behavior through feature selection
+- Added support for cv76 (dagger alef) on spacing characters and tatweel
 
 #### Improved
+
 - Minor anchor adjustment on U+06D6
 - Enhanced positioning of U+06E2 ARABIC SMALL HIGH MEEM ISOLATED FORM next to adjacent vowel marks
 - Tweaks to the design of some of the honorifics
 - Improved alef+mark positioning to reduce collisions
 - Improved madda reordering to comply with UAX #53
+- Documentation enhancements
 
 ### 2023-04-14 (SIL WSTech team) Scheherazade New version 4.000
 

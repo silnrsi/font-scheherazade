@@ -64,7 +64,7 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
-### 2024-xx-xx (SIL WSTech team) Scheherazade New version 4.300
+### 2024-10-21 (SIL WSTech team) Scheherazade New version 4.300
 
 #### New
 
@@ -76,13 +76,13 @@ ChangeLog
   - U+10EFC ARABIC COMBINING ALEF OVERLAY
 - Added support for Kashmiri language
 - Added facility to override default language behavior through feature selection
-- Added support for cv76 (dagger alef) on space, nbspace, and tatweel
+- Added support for cv76 (dagger alef) on spacing characters and tatweel
 
 #### Improved
+
 - Minor anchor adjustment on U+06D6
 - Enhanced positioning of U+06E2 ARABIC SMALL HIGH MEEM ISOLATED FORM next to adjacent vowel marks
 - Tweaks to the design of some of the honorifics
-- Implemented damma_meem, fatha_meem, and kasra_meem ligatures to reduce vertical space
 - Improved alef+mark positioning to reduce collisions
 - Improved madda reordering to comply with UAX #53
 - Documentation enhancements

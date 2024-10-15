@@ -15,20 +15,22 @@ fontversion: 4.300
   - U+10EFC ARABIC COMBINING ALEF OVERLAY
 - Added support for Kashmiri language
 - Added facility to override default language behavior through feature selection
-- Added support for cv76 (dagger alef) on space, nbspace, and tatweel
+- Added support for cv76 (dagger alef) on spacing characters and tatweel
 
 #### Improved
+
 - Minor anchor adjustment on U+06D6
 - Enhanced positioning of U+06E2 ARABIC SMALL HIGH MEEM ISOLATED FORM next to adjacent vowel marks
 - Tweaks to the design of some of the honorifics
 - Improved alef+mark positioning to reduce collisions
 - Improved madda reordering to comply with UAX #53
-
+- Documentation enhancements
 
 
 #### Known issues
 - Shaping for the newly added characters may not yet occur in applications
 - Medial and final high hamza characters may have collisions (these likely do not occur)
 - Lam + high hamza alef ligature does not form as it likely does not occur
+- In InDesign: some behaviors, such as the _lam-alef_ ligature, raised _kasra_ with _shadda_, and subtending marks, will not function correctly unless **Ligatures** is turned on in the **Characters** panel.
 
 
