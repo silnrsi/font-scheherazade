@@ -1940,7 +1940,7 @@ markClass rhombusStopbelow-ar <anchor 0 -290> @_diaBtailUp;
 #**********************************
 #**********************************
 #
-# Copyright (c) 1994-2024 SIL Global  (https://www.sil.org)
+# Copyright (c) 1994-2024 SIL Global (https://www.sil.org)
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 #
 #**********************************
@@ -4393,11 +4393,21 @@ feature liga {
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 #
 #**********************************
+# Three features are implemented: kern, mark, and mkmk. 
+#
+# As best we understand it, all shapers now work per the OT spec in regard to GPOS lookup order of 
+# execution, namely that lookups for all enabled features are executed in one pass in lookup order.
+#
+# Note that prior to around September 2024, HarfBuzz executed mark attachment in a separate
+# pass after all base adjustments, but this caused compatibility issues with CoreText and Uniscribe
+# (see https://github.com/harfbuzz/harfbuzz/issues/4596)
+# To make sure the newer Harfbuzz doesn't cause problems we now put all base-positioning lookups 
+# (kern and, if we had it, curs) before any mark positioning lookups (mark, mkmk).
 #**********************************
 # GPOS (Positioning) lookups
 #**********************************
 #********************
-# Collision-avoidance-based kerning
+# Base positioning (kerning) 
 #**********************************
 # This file is part of Scheherazade font family (https://software.sil.org/scheherazade/) 
 # and is Copyright (c) 1994-2024 SIL Global (https://www.sil.org/),
@@ -4472,7 +4482,13 @@ feature liga {
     #pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
     # end of do - collision kerning
     #********************
-    # Mark attachment
+    # Subtending mark positioning
+    # Would love to be able to do subtending marks as either cursive connection or mark attachment
+    # Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
+    # same as the subtending mark and unrelated to the widths of the digits.
+    # In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
+    # marks or digits (the digits get reverse ordered by the attachment process).
+    # So we're back to using kerning
     @RehKernAlefOrOther = [@RehKernAlef @RehKernOther];
     @RehKernAlefOrMB = [@RehKernAlef @RehKernOtherMB];
     @RehKernMost = [@RehKernOther @RehKernOtherMB];
@@ -4761,6 +4777,124 @@ feature liga {
     } MiscKashidaKerning;
 
 
+lookup SubtendingMarks {
+    lookupflag IgnoreMarks;
+    # In Graphite we use mark attachment rules. However, in OpenType positioning digits on 
+    # subtending marks has to be done with adjustments rather than attachment since for some 
+    # engines the digits will ordered *before* the subtending mark.
+    # Additionally, the adjustment value records depend on font face (e.g. bold vs regular). Therefore
+    # we use feax extentions to calculate the value records based on glyph advancewidths and digit AP coordinates.
+    # In each "do" template, the first rule is ordered for Uniscribe or HarfBuzz 'latin', the second for HarfBuzz 'arab'
+    # Those that take 4 medium digits
+            # Those that take 3 medium digits
+        pos numbermark-ar.4 @DigitsAnyMedium' <-2740 0 -653 0> @DigitsAnyMedium' <-2087 0 -653 0> @DigitsAnyMedium' <-1434 0 -653 0> @DigitsAnyMedium' <-781 0 -653 0>;
+        pos @DigitsAnyMedium' <-781 0 -653 0> @DigitsAnyMedium' <-1434 0 -653 0> @DigitsAnyMedium' <-2087 0 -653 0> @DigitsAnyMedium' <-2740 0 -653 0> numbermark-ar.4;
+        pos pagenumber-ar.4 @DigitsAnyMedium' <-3691 0 -653 0> @DigitsAnyMedium' <-3038 0 -653 0> @DigitsAnyMedium' <-2385 0 -653 0> @DigitsAnyMedium' <-1732 0 -653 0>;
+        pos @DigitsAnyMedium' <-1732 0 -653 0> @DigitsAnyMedium' <-2385 0 -653 0> @DigitsAnyMedium' <-3038 0 -653 0> @DigitsAnyMedium' <-3691 0 -653 0> pagenumber-ar.4;
+        pos piastremarkabove-ar.4 @DigitsAnyMedium' <-2694 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-735 0 -653 0>;
+        pos @DigitsAnyMedium' <-735 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-2694 0 -653 0> piastremarkabove-ar.4;
+        pos poundmarkabove-ar.4 @DigitsAnyMedium' <-2694 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-735 0 -653 0>;
+        pos @DigitsAnyMedium' <-735 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-2694 0 -653 0> poundmarkabove-ar.4;
+        pos samvat-ar.4 @DigitsAnyMedium' <-3812 0 -653 0> @DigitsAnyMedium' <-3159 0 -653 0> @DigitsAnyMedium' <-2506 0 -653 0> @DigitsAnyMedium' <-1853 0 -653 0>;
+        pos @DigitsAnyMedium' <-1853 0 -653 0> @DigitsAnyMedium' <-2506 0 -653 0> @DigitsAnyMedium' <-3159 0 -653 0> @DigitsAnyMedium' <-3812 0 -653 0> samvat-ar.4;
+        pos year-ar.4 @DigitsAnyMedium' <-2935 0 -653 0> @DigitsAnyMedium' <-2282 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
+        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-2282 0 -653 0> @DigitsAnyMedium' <-2935 0 -653 0> year-ar.4;
+
+            # Those that take 3 small digits (default for @c_3)
+        pos number-ar.3 @DigitsAnyMedium' <-2965 0 -653 0> @DigitsAnyMedium' <-2312 0 -653 0> @DigitsAnyMedium' <-1659 0 -653 0>;
+        pos @DigitsAnyMedium' <-1659 0 -653 0> @DigitsAnyMedium' <-2312 0 -653 0> @DigitsAnyMedium' <-2965 0 -653 0> number-ar.3;
+        pos year-ar.3 @DigitsAnyMedium' <-2256 0 -653 0> @DigitsAnyMedium' <-1603 0 -653 0> @DigitsAnyMedium' <-950 0 -653 0>;
+        pos @DigitsAnyMedium' <-950 0 -653 0> @DigitsAnyMedium' <-1603 0 -653 0> @DigitsAnyMedium' <-2256 0 -653 0> year-ar.3;
+        pos pagenumber-ar.3 @DigitsAnyMedium' <-3023 0 -653 0> @DigitsAnyMedium' <-2370 0 -653 0> @DigitsAnyMedium' <-1717 0 -653 0>;
+        pos @DigitsAnyMedium' <-1717 0 -653 0> @DigitsAnyMedium' <-2370 0 -653 0> @DigitsAnyMedium' <-3023 0 -653 0> pagenumber-ar.3;
+        pos samvat-ar.3 @DigitsAnyMedium' <-3308 0 -653 0> @DigitsAnyMedium' <-2655 0 -653 0> @DigitsAnyMedium' <-2002 0 -653 0>;
+        pos @DigitsAnyMedium' <-2002 0 -653 0> @DigitsAnyMedium' <-2655 0 -653 0> @DigitsAnyMedium' <-3308 0 -653 0> samvat-ar.3;
+        pos numbermark-ar.3 @DigitsAnyMedium' <-2146 0 -653 0> @DigitsAnyMedium' <-1493 0 -653 0> @DigitsAnyMedium' <-840 0 -653 0>;
+        pos @DigitsAnyMedium' <-840 0 -653 0> @DigitsAnyMedium' <-1493 0 -653 0> @DigitsAnyMedium' <-2146 0 -653 0> numbermark-ar.3;
+        pos poundmarkabove-ar.3 @DigitsAnyMedium' <-2085 0 -653 0> @DigitsAnyMedium' <-1432 0 -653 0> @DigitsAnyMedium' <-779 0 -653 0>;
+        pos @DigitsAnyMedium' <-779 0 -653 0> @DigitsAnyMedium' <-1432 0 -653 0> @DigitsAnyMedium' <-2085 0 -653 0> poundmarkabove-ar.3;
+        pos piastremarkabove-ar.3 @DigitsAnyMedium' <-2185 0 -653 0> @DigitsAnyMedium' <-1532 0 -653 0> @DigitsAnyMedium' <-879 0 -653 0>;
+        pos @DigitsAnyMedium' <-879 0 -653 0> @DigitsAnyMedium' <-1532 0 -653 0> @DigitsAnyMedium' <-2185 0 -653 0> piastremarkabove-ar.3;
+
+            # Those that take 2 small digits
+        pos endofayah-ar.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
+        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.3;
+        pos endofayah-ar.alt.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
+        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.alt.3;
+        pos endofayah-ar.altB.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
+        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.altB.3;
+        pos disputedendofayah-ar.3 @DigitsAnySmall' <-1574 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-648 -380 -463 0>;
+        pos @DigitsAnySmall' <-648 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-1574 -380 -463 0> disputedendofayah-ar.3;
+
+            # Those that take 2 medium digits (default for @c_2)
+        pos disputedendofayah-ar.2 @DigitsAnySmall' <-1042 -380 -463 0> @DigitsAnySmall' <-579 -380 -463 0>;
+        pos @DigitsAnySmall' <-579 -380 -463 0> @DigitsAnySmall' <-1042 -380 -463 0> disputedendofayah-ar.2;
+
+            # Those that take 1 small digit
+        pos disputedendofayah-ar.2 @DigitsAnyMedium' <-1042 -380 -653 0> @DigitsAnyMedium' <-389 -380 -653 0>;
+        pos @DigitsAnyMedium' <-389 -380 -653 0> @DigitsAnyMedium' <-1042 -380 -653 0> disputedendofayah-ar.2;
+        pos endofayah-ar.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
+        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.2;
+        pos endofayah-ar.alt.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
+        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.alt.2;
+        pos endofayah-ar.altB.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
+        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.altB.2;
+        pos footnotemarker-ar.2 @DigitsAnyMedium' <-1469 0 -653 0> @DigitsAnyMedium' <-816 0 -653 0>;
+        pos @DigitsAnyMedium' <-816 0 -653 0> @DigitsAnyMedium' <-1469 0 -653 0> footnotemarker-ar.2;
+        pos number-ar.2 @DigitsAnyMedium' <-2309 0 -653 0> @DigitsAnyMedium' <-1656 0 -653 0>;
+        pos @DigitsAnyMedium' <-1656 0 -653 0> @DigitsAnyMedium' <-2309 0 -653 0> number-ar.2;
+        pos numbermark-ar.2 @DigitsAnyMedium' <-1555 0 -653 0> @DigitsAnyMedium' <-902 0 -653 0>;
+        pos @DigitsAnyMedium' <-902 0 -653 0> @DigitsAnyMedium' <-1555 0 -653 0> numbermark-ar.2;
+        pos pagenumber-ar.2 @DigitsAnyMedium' <-2371 0 -653 0> @DigitsAnyMedium' <-1718 0 -653 0>;
+        pos @DigitsAnyMedium' <-1718 0 -653 0> @DigitsAnyMedium' <-2371 0 -653 0> pagenumber-ar.2;
+        pos piastremarkabove-ar.2 @DigitsAnyMedium' <-1563 0 -653 0> @DigitsAnyMedium' <-910 0 -653 0>;
+        pos @DigitsAnyMedium' <-910 0 -653 0> @DigitsAnyMedium' <-1563 0 -653 0> piastremarkabove-ar.2;
+        pos poundmarkabove-ar.2 @DigitsAnyMedium' <-1563 0 -653 0> @DigitsAnyMedium' <-910 0 -653 0>;
+        pos @DigitsAnyMedium' <-910 0 -653 0> @DigitsAnyMedium' <-1563 0 -653 0> poundmarkabove-ar.2;
+        pos samvat-ar.2 @DigitsAnyMedium' <-2623 0 -653 0> @DigitsAnyMedium' <-1970 0 -653 0>;
+        pos @DigitsAnyMedium' <-1970 0 -653 0> @DigitsAnyMedium' <-2623 0 -653 0> samvat-ar.2;
+        pos year-ar.2 @DigitsAnyMedium' <-1631 0 -653 0> @DigitsAnyMedium' <-978 0 -653 0>;
+        pos @DigitsAnyMedium' <-978 0 -653 0> @DigitsAnyMedium' <-1631 0 -653 0> year-ar.2;
+
+            # Those that take 1 medium digit (default)
+        pos disputedendofayah-ar @DigitsAnySmall' <-711 -380 -463 0>;
+        pos @DigitsAnySmall' <-711 -380 -463 0> disputedendofayah-ar;
+
+            pos disputedendofayah-ar @DigitsAnyMedium' <-711 -380 -653 0>;
+        pos @DigitsAnyMedium' <-711 -380 -653 0> disputedendofayah-ar;
+        pos endofayah-ar @DigitsAnyMedium' <-1310 0 -653 0>;
+        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar;
+        pos endofayah-ar.alt @DigitsAnyMedium' <-1310 0 -653 0>;
+        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar.alt;
+        pos endofayah-ar.altB @DigitsAnyMedium' <-1310 0 -653 0>;
+        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar.altB;
+        pos footnotemarker-ar @DigitsAnyMedium' <-845 0 -653 0>;
+        pos @DigitsAnyMedium' <-845 0 -653 0> footnotemarker-ar;
+        pos number-ar @DigitsAnyMedium' <-1669 0 -653 0>;
+        pos @DigitsAnyMedium' <-1669 0 -653 0> number-ar;
+        pos numbermark-ar @DigitsAnyMedium' <-877 0 -653 0>;
+        pos @DigitsAnyMedium' <-877 0 -653 0> numbermark-ar;
+        pos pagenumber-ar @DigitsAnyMedium' <-1718 0 -653 0>;
+        pos @DigitsAnyMedium' <-1718 0 -653 0> pagenumber-ar;
+        pos piastremarkabove-ar @DigitsAnyMedium' <-1235 0 -653 0>;
+        pos @DigitsAnyMedium' <-1235 0 -653 0> piastremarkabove-ar;
+        pos poundmarkabove-ar @DigitsAnyMedium' <-1150 0 -653 0>;
+        pos @DigitsAnyMedium' <-1150 0 -653 0> poundmarkabove-ar;
+        pos samvat-ar @DigitsAnyMedium' <-2009 0 -653 0>;
+        pos @DigitsAnyMedium' <-2009 0 -653 0> samvat-ar;
+        pos year-ar @DigitsAnyMedium' <-977 0 -653 0>;
+        pos @DigitsAnyMedium' <-977 0 -653 0> year-ar;
+
+} SubtendingMarks;
+
+# Lateef only; others have an empty lookup
+lookup KernPairs {
+    lookupflag IgnoreMarks;
+    
+} KernPairs;
+
+#********************
+# Mark positioning
 lookup MarkToBase {
     lookupflag 0;
     pos base absAutoKashida <anchor 90 1141> mark @_diaA;
@@ -6605,119 +6739,7 @@ lookup RaiseMadda {
     
 } RaiseMadda;
 
-#---  kern feature (cont'd)  ---
-#********************
-# Subtending mark positioning
-lookup SubtendingMarks {
-    lookupflag IgnoreMarks;
-    # In Graphite we use mark attachment rules. However, in OpenType positioning digits on 
-    # subtending marks has to be done with adjustments rather than attachment since for some 
-    # engines the digits will ordered *before* the subtending mark.
-    # Additionally, the adjustment value records depend on font face (e.g. bold vs regular). Therefore
-    # we use feax extentions to calculate the value records based on glyph advancewidths and digit AP coordinates.
-    # In each "do" template, the first rule is ordered for Uniscribe or HarfBuzz 'latin', the second for HarfBuzz 'arab'
-    # Those that take 4 medium digits
-            # Those that take 3 medium digits
-        pos numbermark-ar.4 @DigitsAnyMedium' <-2740 0 -653 0> @DigitsAnyMedium' <-2087 0 -653 0> @DigitsAnyMedium' <-1434 0 -653 0> @DigitsAnyMedium' <-781 0 -653 0>;
-        pos @DigitsAnyMedium' <-781 0 -653 0> @DigitsAnyMedium' <-1434 0 -653 0> @DigitsAnyMedium' <-2087 0 -653 0> @DigitsAnyMedium' <-2740 0 -653 0> numbermark-ar.4;
-        pos pagenumber-ar.4 @DigitsAnyMedium' <-3691 0 -653 0> @DigitsAnyMedium' <-3038 0 -653 0> @DigitsAnyMedium' <-2385 0 -653 0> @DigitsAnyMedium' <-1732 0 -653 0>;
-        pos @DigitsAnyMedium' <-1732 0 -653 0> @DigitsAnyMedium' <-2385 0 -653 0> @DigitsAnyMedium' <-3038 0 -653 0> @DigitsAnyMedium' <-3691 0 -653 0> pagenumber-ar.4;
-        pos piastremarkabove-ar.4 @DigitsAnyMedium' <-2694 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-735 0 -653 0>;
-        pos @DigitsAnyMedium' <-735 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-2694 0 -653 0> piastremarkabove-ar.4;
-        pos poundmarkabove-ar.4 @DigitsAnyMedium' <-2694 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-735 0 -653 0>;
-        pos @DigitsAnyMedium' <-735 0 -653 0> @DigitsAnyMedium' <-1388 0 -653 0> @DigitsAnyMedium' <-2041 0 -653 0> @DigitsAnyMedium' <-2694 0 -653 0> poundmarkabove-ar.4;
-        pos samvat-ar.4 @DigitsAnyMedium' <-3812 0 -653 0> @DigitsAnyMedium' <-3159 0 -653 0> @DigitsAnyMedium' <-2506 0 -653 0> @DigitsAnyMedium' <-1853 0 -653 0>;
-        pos @DigitsAnyMedium' <-1853 0 -653 0> @DigitsAnyMedium' <-2506 0 -653 0> @DigitsAnyMedium' <-3159 0 -653 0> @DigitsAnyMedium' <-3812 0 -653 0> samvat-ar.4;
-        pos year-ar.4 @DigitsAnyMedium' <-2935 0 -653 0> @DigitsAnyMedium' <-2282 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
-        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-2282 0 -653 0> @DigitsAnyMedium' <-2935 0 -653 0> year-ar.4;
-
-            # Those that take 3 small digits (default for @c_3)
-        pos number-ar.3 @DigitsAnyMedium' <-2965 0 -653 0> @DigitsAnyMedium' <-2312 0 -653 0> @DigitsAnyMedium' <-1659 0 -653 0>;
-        pos @DigitsAnyMedium' <-1659 0 -653 0> @DigitsAnyMedium' <-2312 0 -653 0> @DigitsAnyMedium' <-2965 0 -653 0> number-ar.3;
-        pos year-ar.3 @DigitsAnyMedium' <-2256 0 -653 0> @DigitsAnyMedium' <-1603 0 -653 0> @DigitsAnyMedium' <-950 0 -653 0>;
-        pos @DigitsAnyMedium' <-950 0 -653 0> @DigitsAnyMedium' <-1603 0 -653 0> @DigitsAnyMedium' <-2256 0 -653 0> year-ar.3;
-        pos pagenumber-ar.3 @DigitsAnyMedium' <-3023 0 -653 0> @DigitsAnyMedium' <-2370 0 -653 0> @DigitsAnyMedium' <-1717 0 -653 0>;
-        pos @DigitsAnyMedium' <-1717 0 -653 0> @DigitsAnyMedium' <-2370 0 -653 0> @DigitsAnyMedium' <-3023 0 -653 0> pagenumber-ar.3;
-        pos samvat-ar.3 @DigitsAnyMedium' <-3308 0 -653 0> @DigitsAnyMedium' <-2655 0 -653 0> @DigitsAnyMedium' <-2002 0 -653 0>;
-        pos @DigitsAnyMedium' <-2002 0 -653 0> @DigitsAnyMedium' <-2655 0 -653 0> @DigitsAnyMedium' <-3308 0 -653 0> samvat-ar.3;
-        pos numbermark-ar.3 @DigitsAnyMedium' <-2146 0 -653 0> @DigitsAnyMedium' <-1493 0 -653 0> @DigitsAnyMedium' <-840 0 -653 0>;
-        pos @DigitsAnyMedium' <-840 0 -653 0> @DigitsAnyMedium' <-1493 0 -653 0> @DigitsAnyMedium' <-2146 0 -653 0> numbermark-ar.3;
-        pos poundmarkabove-ar.3 @DigitsAnyMedium' <-2085 0 -653 0> @DigitsAnyMedium' <-1432 0 -653 0> @DigitsAnyMedium' <-779 0 -653 0>;
-        pos @DigitsAnyMedium' <-779 0 -653 0> @DigitsAnyMedium' <-1432 0 -653 0> @DigitsAnyMedium' <-2085 0 -653 0> poundmarkabove-ar.3;
-        pos piastremarkabove-ar.3 @DigitsAnyMedium' <-2185 0 -653 0> @DigitsAnyMedium' <-1532 0 -653 0> @DigitsAnyMedium' <-879 0 -653 0>;
-        pos @DigitsAnyMedium' <-879 0 -653 0> @DigitsAnyMedium' <-1532 0 -653 0> @DigitsAnyMedium' <-2185 0 -653 0> piastremarkabove-ar.3;
-
-            # Those that take 2 small digits
-        pos endofayah-ar.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
-        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.3;
-        pos endofayah-ar.alt.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
-        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.alt.3;
-        pos endofayah-ar.altB.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
-        pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.altB.3;
-        pos disputedendofayah-ar.3 @DigitsAnySmall' <-1574 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-648 -380 -463 0>;
-        pos @DigitsAnySmall' <-648 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-1574 -380 -463 0> disputedendofayah-ar.3;
-
-            # Those that take 2 medium digits (default for @c_2)
-        pos disputedendofayah-ar.2 @DigitsAnySmall' <-1042 -380 -463 0> @DigitsAnySmall' <-579 -380 -463 0>;
-        pos @DigitsAnySmall' <-579 -380 -463 0> @DigitsAnySmall' <-1042 -380 -463 0> disputedendofayah-ar.2;
-
-            # Those that take 1 small digit
-        pos disputedendofayah-ar.2 @DigitsAnyMedium' <-1042 -380 -653 0> @DigitsAnyMedium' <-389 -380 -653 0>;
-        pos @DigitsAnyMedium' <-389 -380 -653 0> @DigitsAnyMedium' <-1042 -380 -653 0> disputedendofayah-ar.2;
-        pos endofayah-ar.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
-        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.2;
-        pos endofayah-ar.alt.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
-        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.alt.2;
-        pos endofayah-ar.altB.2 @DigitsAnyMedium' <-1629 0 -653 0> @DigitsAnyMedium' <-976 0 -653 0>;
-        pos @DigitsAnyMedium' <-976 0 -653 0> @DigitsAnyMedium' <-1629 0 -653 0> endofayah-ar.altB.2;
-        pos footnotemarker-ar.2 @DigitsAnyMedium' <-1469 0 -653 0> @DigitsAnyMedium' <-816 0 -653 0>;
-        pos @DigitsAnyMedium' <-816 0 -653 0> @DigitsAnyMedium' <-1469 0 -653 0> footnotemarker-ar.2;
-        pos number-ar.2 @DigitsAnyMedium' <-2309 0 -653 0> @DigitsAnyMedium' <-1656 0 -653 0>;
-        pos @DigitsAnyMedium' <-1656 0 -653 0> @DigitsAnyMedium' <-2309 0 -653 0> number-ar.2;
-        pos numbermark-ar.2 @DigitsAnyMedium' <-1555 0 -653 0> @DigitsAnyMedium' <-902 0 -653 0>;
-        pos @DigitsAnyMedium' <-902 0 -653 0> @DigitsAnyMedium' <-1555 0 -653 0> numbermark-ar.2;
-        pos pagenumber-ar.2 @DigitsAnyMedium' <-2371 0 -653 0> @DigitsAnyMedium' <-1718 0 -653 0>;
-        pos @DigitsAnyMedium' <-1718 0 -653 0> @DigitsAnyMedium' <-2371 0 -653 0> pagenumber-ar.2;
-        pos piastremarkabove-ar.2 @DigitsAnyMedium' <-1563 0 -653 0> @DigitsAnyMedium' <-910 0 -653 0>;
-        pos @DigitsAnyMedium' <-910 0 -653 0> @DigitsAnyMedium' <-1563 0 -653 0> piastremarkabove-ar.2;
-        pos poundmarkabove-ar.2 @DigitsAnyMedium' <-1563 0 -653 0> @DigitsAnyMedium' <-910 0 -653 0>;
-        pos @DigitsAnyMedium' <-910 0 -653 0> @DigitsAnyMedium' <-1563 0 -653 0> poundmarkabove-ar.2;
-        pos samvat-ar.2 @DigitsAnyMedium' <-2623 0 -653 0> @DigitsAnyMedium' <-1970 0 -653 0>;
-        pos @DigitsAnyMedium' <-1970 0 -653 0> @DigitsAnyMedium' <-2623 0 -653 0> samvat-ar.2;
-        pos year-ar.2 @DigitsAnyMedium' <-1631 0 -653 0> @DigitsAnyMedium' <-978 0 -653 0>;
-        pos @DigitsAnyMedium' <-978 0 -653 0> @DigitsAnyMedium' <-1631 0 -653 0> year-ar.2;
-
-            # Those that take 1 medium digit (default)
-        pos disputedendofayah-ar @DigitsAnySmall' <-711 -380 -463 0>;
-        pos @DigitsAnySmall' <-711 -380 -463 0> disputedendofayah-ar;
-
-            pos disputedendofayah-ar @DigitsAnyMedium' <-711 -380 -653 0>;
-        pos @DigitsAnyMedium' <-711 -380 -653 0> disputedendofayah-ar;
-        pos endofayah-ar @DigitsAnyMedium' <-1310 0 -653 0>;
-        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar;
-        pos endofayah-ar.alt @DigitsAnyMedium' <-1310 0 -653 0>;
-        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar.alt;
-        pos endofayah-ar.altB @DigitsAnyMedium' <-1310 0 -653 0>;
-        pos @DigitsAnyMedium' <-1310 0 -653 0> endofayah-ar.altB;
-        pos footnotemarker-ar @DigitsAnyMedium' <-845 0 -653 0>;
-        pos @DigitsAnyMedium' <-845 0 -653 0> footnotemarker-ar;
-        pos number-ar @DigitsAnyMedium' <-1669 0 -653 0>;
-        pos @DigitsAnyMedium' <-1669 0 -653 0> number-ar;
-        pos numbermark-ar @DigitsAnyMedium' <-877 0 -653 0>;
-        pos @DigitsAnyMedium' <-877 0 -653 0> numbermark-ar;
-        pos pagenumber-ar @DigitsAnyMedium' <-1718 0 -653 0>;
-        pos @DigitsAnyMedium' <-1718 0 -653 0> pagenumber-ar;
-        pos piastremarkabove-ar @DigitsAnyMedium' <-1235 0 -653 0>;
-        pos @DigitsAnyMedium' <-1235 0 -653 0> piastremarkabove-ar;
-        pos poundmarkabove-ar @DigitsAnyMedium' <-1150 0 -653 0>;
-        pos @DigitsAnyMedium' <-1150 0 -653 0> poundmarkabove-ar;
-        pos samvat-ar @DigitsAnyMedium' <-2009 0 -653 0>;
-        pos @DigitsAnyMedium' <-2009 0 -653 0> samvat-ar;
-        pos year-ar @DigitsAnyMedium' <-977 0 -653 0>;
-        pos @DigitsAnyMedium' <-977 0 -653 0> year-ar;
-
-} SubtendingMarks;
-
+#---  mark positioning (cont'd)  ---
 #**********************************
 # This file is part of Scheherazade font family (https://software.sil.org/scheherazade/) 
 # and is Copyright (c) 1994-2024 SIL Global (https://www.sil.org/),
@@ -6751,7 +6773,9 @@ lookup SubtendingMarks {
     # also see kern rules above
     # also see kern rule above
     # end of collision adjustments
-    # Lateef only; others have an empty lookup
+    #**********************************
+    #  GPOS FEATURES
+    #**********************************
     lookup DiacShifting {
         pos @AlefForms hehgoal-ar.init takhallusabove-ar' <-350 300 0 0>;
         pos @AlefForms tehMarbuta-ar takhallusabove-ar' <0 150 0 0>;
@@ -6786,21 +6810,6 @@ lookup SubtendingMarks {
     } DiacShifting;
 
 
-lookup KernPairs {
-    lookupflag IgnoreMarks;
-    
-} KernPairs;
-
-#**********************************
-#  GPOS FEATURES
-#**********************************
-# As best as we understand, these are arranged in the order MS & HB engines execute.
-# Would love to be able to do subtending marks as either cursive connection or mark attachment
-# Cursive connection doesn't work because the width of the resultant cluster needs to be exactly the
-# same as the subtending mark and unrelated to the widths of the digits.
-# In Firefox at least, mark attachment works for 06DD (end of Ayah) and latin digits, but no other 
-# marks or digits (the digits get reverse ordered by the attachment process).
-# So we're back to using kerning
 feature kern {
     # Kerning
     # Same behavior for latin & arabic:
