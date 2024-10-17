@@ -29,13 +29,10 @@ The Scheherazade New project can be built from source using [smith](https://gith
     smith alltests
 ```
 
-Because of the complex kerning and collision avoidance logic, builds can take up to 15 minutes or longer, depending on hardware. If the complex kerning is _not_ needed (such as for debugging other font logic), the `--quick` parameter can be supplied:
-```
-    smith distclean
-    smith configure
-    smith build --quick
-```
-The resulting files will not have functional kerning or collision avoidance, but will be otherwise usable.
+This project implements two additional `smith build` options that are useful during development:
+
+- `--regOnly` -- build only the Regular weight instead of all weights
+- `--norename` -- keep the working names for glyphs rather than change them to production names
 
 ### Adding characters
 

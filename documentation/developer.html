@@ -69,16 +69,14 @@
     smith configure
     smith build
     smith alltests</code></pre>
-    <p>Because of the complex kerning and collision avoidance logic,
-    builds can take up to 15 minutes or longer, depending on hardware.
-    If the complex kerning is <em>not</em> needed (such as for debugging
-    other font logic), the <code>--quick</code> parameter can be
-    supplied:</p>
-    <pre><code>    smith distclean
-    smith configure
-    smith build --quick</code></pre>
-    <p>The resulting files will not have functional kerning or collision
-    avoidance, but will be otherwise usable.</p>
+    <p>This project implements two additional <code>smith build</code>
+    options that are useful during development:</p>
+    <ul>
+    <li><code>--regOnly</code> -- build only the Regular weight instead
+    of all weights</li>
+    <li><code>--norename</code> -- keep the working names for glyphs
+    rather than change them to production names</li>
+    </ul>
     <h3 id="adding-characters">Adding characters</h3>
     <p>After adding glyphs (other than used only as components for
     building other glyphs) to the font, the following files will also
