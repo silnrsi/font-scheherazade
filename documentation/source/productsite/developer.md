@@ -15,7 +15,7 @@ Font sources are in the [UFO3](https://unifiedfontobject.org/versions/ufo3/) for
 
 The fonts are built using a completely free and open source workflow using industry-standard tools ([fonttools](https://github.com/fonttools/fonttools)), a package of custom python scripts ([pysilfont](https://github.com/silnrsi/pysilfont)), and a build and packaging system ([Smith](https://github.com/silnrsi/smith)). The whole toolchain is available as a Docker container. 
 
-Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [SIL Font Development Guide](https://silnrsi.github.io/silfontdev/).
+Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [SIL Font Development Guide](https://silnrsi.github.io/silfontdev/). Additional developer information specific to SIL's Arabic fonts can be found at [font-arab-tools README](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/README.md).
 
 In addition, much of the code for Scheherazade New, Harmattan, and Lateef is shared. Carefully review the [font-arab-tools developer](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/developer.md) documentation to see how the code is shared.
 
@@ -39,7 +39,8 @@ The resulting files will not have functional kerning or collision avoidance, but
 
 ### Adding characters
 
-After base characters to the font, the following files will also need updating:
+After adding glyphs (other than used only as components for building other glyphs) to the font, the following files will also need updating:
+
 - `glyph_data.csv` -- used to set glyph orders and psnames in the built font
 - `classes.xml` -- used to define classes used by OpenType. Note that some of the classes defined therein are noted to be "automatically generated" -- these will be updated (from glyph_data.csv) the next time `./preflight` is run.
 - `opentype/*.feax` -- modify as needed to add needed OpenType behavior
@@ -48,6 +49,7 @@ After base characters to the font, the following files will also need updating:
 ### Generated test files
 
 After adding characters or additional behaviors to the font, test files should be created or enhanced to test the new behaviors. The test files:
+
 - `tests/AllChars-auto.ftml`
 - `tests/ALsorted-auto.ftml`
 - `tests/DaggerAlef-auto.ftml`
@@ -58,21 +60,10 @@ After adding characters or additional behaviors to the font, test files should b
 - `tests/SubtendingMarks-auto.ftml`
 - `tests/Yehbarree-auto.ftml`
 
-are generated automatically using `tools/genftmlfiles.sh`.
+are generated automatically using `tools/genftmlfiles.sh`. This script, in turn, calls `tools/absgenftml.py` 
+to create each test file. A lot of test generation logic is driven by Unicode character properties and the `glyph_data.csv` file, but sometimes `absgenftml.py` itself needs to be enhanced. 
 
-`tools/ftml.xsl` can be used to view ftml documents directly in Firefox.
-
-### About ftml tests
-
-After a successful build, the results/ folder will contain, along with the built ttf and woff fonts, a number of
-test files in an xml-based format called FTML. Examples are AllChars-auto.ftml, DiacTest1-auto.ftml. 
-There is an ftml.xsl file that can be used to view these ftml documents directly in Firefox. 
-
-However, in order for Firefox to access the .xsl file, you need to relax its "strict URI" policy by going to about:config and
-setting [security.fileuri.strict_origin_policy](https://kb.mozillazine.org/Security.fileuri.strict_origin_policy) to false.
-
-Once you have this setting in effect, you can load the FTML documents directly into Firefox and see the built font rendered.
-
+For more information about testing, see [font-arab-tools testing](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/testing.md).
 
 ## Contributing to the project
 

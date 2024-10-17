@@ -16,7 +16,7 @@ Starting with v3.300, Scheherazade New provides the special rendering for sequen
 To disable the special ligature, insert a zero-width joiner character (200D) somewhere in the sequence.
 
 Characters | → | Glyph | Comment
----------- | - | ----  | -------
+:---------- | :- | :----  | :-------
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0627; + &#x0644; + &#x0644; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'> الله	</span> | Ligature is formed (U+0647)
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0627; + &#x0644; + &#x0644; + &#x06c1;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>اللہ	</span> | Ligature is formed (U+06C1)
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0671; + &#x0644; + &#x0644; + &#x0651; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'> ٱللّه </span> | Ligature is formed

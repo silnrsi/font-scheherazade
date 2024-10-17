@@ -8,7 +8,7 @@ The Scheherazade New font contains complete coverage of all the characters defin
 The following character ranges are supported by this font:
 
 Unicode block | Scheherazade New support
-------------- | ---------------
+:------------- | :---------------
 Arabic 	| ✓
 Arabic Supplement | ✓
 Arabic Extended-A | ✓ 

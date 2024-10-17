@@ -40,7 +40,7 @@
     href="https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html">.fea</a>
     format in the UFO (features.fea) but is maintained in a separate
     file using the more efficient and powerful <a
-    href="https://github.com/silnrsi/feax/blob/main/docs/feaextensions.html">.feax</a>
+    href="https://github.com/silnrsi/feax/blob/main/docs/feaextensions.md">.feax</a>
     format.</p>
     <p>The fonts are built using a completely free and open source
     workflow using industry-standard tools (<a
@@ -53,16 +53,19 @@
     <p>Full instructions for setting up the tools and building SIL fonts
     are available on a dedicated web site: <a
     href="https://silnrsi.github.io/silfontdev/">SIL Font Development
-    Guide</a>.</p>
+    Guide</a>. Additional developer information specific to SIL's Arabic
+    fonts can be found at <a
+    href="https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/README.md">font-arab-tools
+    README</a>.</p>
     <p>In addition, much of the code for Scheherazade New, Harmattan,
     and Lateef is shared. Carefully review the <a
-    href="https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/developer.html">font-arab-tools
+    href="https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/developer.md">font-arab-tools
     developer</a> documentation to see how the code is shared.</p>
     <h2 id="building">Building</h2>
     <p>The Scheherazade New project can be built from source using <a
     href="https://github.com/silnrsi/smith">smith</a>. This is done via
     the sequence:</p>
-    <pre><code>        smith distclean
+    <pre><code>    smith distclean
     smith configure
     smith build
     smith alltests</code></pre>
@@ -71,50 +74,50 @@
     If the complex kerning is <em>not</em> needed (such as for debugging
     other font logic), the <code>--quick</code> parameter can be
     supplied:</p>
-    <pre><code>        smith distclean
+    <pre><code>    smith distclean
     smith configure
     smith build --quick</code></pre>
     <p>The resulting files will not have functional kerning or collision
     avoidance, but will be otherwise usable.</p>
     <h3 id="adding-characters">Adding characters</h3>
-    <p>After base characters to the font, the following files will also
-    need updating: - <code>glyph_data.csv</code> -- used to set glyph
-    orders and psnames in the built font - <code>classes.xml</code> --
-    used to define classes used by OpenType. Note that some of the
-    classes defined therein are noted to be "automatically generated" --
-    these will be updated (from glyph_data.csv) the next time
-    <code>./preflight</code> is run. - <code>opentype/*.feax</code> --
-    modify as needed to add needed OpenType behavior -
-    <code>tests/*.ftml</code> -- see below</p>
+    <p>After adding glyphs (other than used only as components for
+    building other glyphs) to the font, the following files will also
+    need updating:</p>
+    <ul>
+    <li><code>glyph_data.csv</code> -- used to set glyph orders and
+    psnames in the built font</li>
+    <li><code>classes.xml</code> -- used to define classes used by
+    OpenType. Note that some of the classes defined therein are noted to
+    be "automatically generated" -- these will be updated (from
+    glyph_data.csv) the next time <code>./preflight</code> is run.</li>
+    <li><code>opentype/*.feax</code> -- modify as needed to add needed
+    OpenType behavior</li>
+    <li><code>tests/*.ftml</code> -- see below</li>
+    </ul>
     <h3 id="generated-test-files">Generated test files</h3>
     <p>After adding characters or additional behaviors to the font, test
     files should be created or enhanced to test the new behaviors. The
-    test files: - <code>tests/AllChars-auto.ftml</code> -
-    <code>tests/ALsorted-auto.ftml</code> -
-    <code>tests/DaggerAlef-auto.ftml</code> -
-    <code>tests/Diac-auto.ftml</code> -
-    <code>tests/Diac-short-auto.ftml</code> -
-    <code>tests/FeatLang-auto.ftml</code> -
-    <code>tests/Kern-auto.ftml</code> -
-    <code>tests/SubtendingMarks-auto.ftml</code> -
-    <code>tests/Yehbarree-auto.ftml</code></p>
+    test files:</p>
+    <ul>
+    <li><code>tests/AllChars-auto.ftml</code></li>
+    <li><code>tests/ALsorted-auto.ftml</code></li>
+    <li><code>tests/DaggerAlef-auto.ftml</code></li>
+    <li><code>tests/Diac-auto.ftml</code></li>
+    <li><code>tests/Diac-short-auto.ftml</code></li>
+    <li><code>tests/FeatLang-auto.ftml</code></li>
+    <li><code>tests/Kern-auto.ftml</code></li>
+    <li><code>tests/SubtendingMarks-auto.ftml</code></li>
+    <li><code>tests/Yehbarree-auto.ftml</code></li>
+    </ul>
     <p>are generated automatically using
-    <code>tools/genftmlfiles.sh</code>.</p>
-    <p><code>tools/ftml.xsl</code> can be used to view ftml documents
-    directly in Firefox.</p>
-    <h3 id="about-ftml-tests">About ftml tests</h3>
-    <p>After a successful build, the results/ folder will contain, along
-    with the built ttf and woff fonts, a number of test files in an
-    xml-based format called FTML. Examples are AllChars-auto.ftml,
-    DiacTest1-auto.ftml. There is an ftml.xsl file that can be used to
-    view these ftml documents directly in Firefox.</p>
-    <p>However, in order for Firefox to access the .xsl file, you need
-    to relax its "strict URI" policy by going to about:config and
-    setting <a
-    href="https://kb.mozillazine.org/Security.fileuri.strict_origin_policy">security.fileuri.strict_origin_policy</a>
-    to false.</p>
-    <p>Once you have this setting in effect, you can load the FTML
-    documents directly into Firefox and see the built font rendered.</p>
+    <code>tools/genftmlfiles.sh</code>. This script, in turn, calls
+    <code>tools/absgenftml.py</code> to create each test file. A lot of
+    test generation logic is driven by Unicode character properties and
+    the <code>glyph_data.csv</code> file, but sometimes
+    <code>absgenftml.py</code> itself needs to be enhanced.</p>
+    <p>For more information about testing, see <a
+    href="https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/testing.md">font-arab-tools
+    testing</a>.</p>
     <h2 id="contributing-to-the-project">Contributing to the
     project</h2>
     <p>We warmly welcome contributions to the fonts, such as new glyphs,
