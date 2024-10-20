@@ -65,7 +65,7 @@ joinGroupKeys = {
 }
 
 def joinGoupSortKey(uid:int):
-    return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
+    return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 0x20000 + uid
 
 ageToFlag = 16.0
 ageColor = '#FFC8A0'      # light orange -- marks if there is a char from above Unicode version or later
@@ -675,10 +675,10 @@ def doit(args):
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
                         if get_ucd(uid2, 'jt') == 'D':
-                            ftml.addToTest(uid2, zwj + c1 + c2 + zwj, label, comment)
-                            ftml.addToTest(uid2,       c1 + c2 + zwj)
-                        ftml.addToTest(    uid2, zwj + c1 + c2      , label, comment)
-                        ftml.addToTest(    uid2,       c1 + c2      )
+                            ftml.addToTest(uid2,       c1 + c2 + zwj, label, comment)
+                            ftml.addToTest(uid2, zwj + c1 + c2 + zwj)
+                        ftml.addToTest(    uid2,       c1 + c2      , label, comment)
+                        ftml.addToTest(    uid2, zwj + c1 + c2      )
                     ftml.clearFeatures()
                     ftml.closeTest()
 

@@ -1146,6 +1146,46 @@
       <comment>dalThreedotsbelow-ar</comment>
       <string>\u0008AE \u00200D\u0008AE </string>
     </test>
+    <test background="#ffc8a0" label="U+10EC2">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="cv12_1">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="cv12_2">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="sd">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ur">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ku">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="rhg">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ks">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="ky">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC2" stylename="wo">
+      <comment>dalTwodotsverticalbelow-ar</comment>
+      <string>\u010EC2 \u00200D\u010EC2 </string>
+    </test>
     <test label="U+0641">
       <comment>feh-ar</comment>
       <string>\u000641 \u000641\u00200D \u00200D\u000641\u00200D \u00200D\u000641 \u000641\u000641\u000641 </string>
@@ -1190,46 +1230,6 @@
       <comment>fehAfrican-ar</comment>
       <string>\u0008BB \u0008BB\u00200D \u00200D\u0008BB\u00200D \u00200D\u0008BB \u0008BB\u0008BB\u0008BB </string>
     </test>
-    <test background="#ffc8a0" label="U+10EC2">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="cv12_1">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="cv12_2">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="sd">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="ur">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="ku">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="rhg">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="ks">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="ky">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC2" stylename="wo">
-      <comment>dalTwodotsverticalbelow-ar</comment>
-      <string>\u010EC2 \u00200D\u010EC2 </string>
-    </test>
     <test label="U+0643">
       <comment>kaf-ar</comment>
       <string>\u000643 \u000643\u00200D \u00200D\u000643\u00200D \u00200D\u000643 \u000643\u000643\u000643 </string>
@@ -1253,6 +1253,10 @@
     <test label="U+08B4">
       <comment>kafDotbelow-ar</comment>
       <string>\u0008B4 \u0008B4\u00200D \u00200D\u0008B4\u00200D \u00200D\u0008B4 \u0008B4\u0008B4\u0008B4 </string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC4">
+      <comment>kafTwodotsverticalbelow-ar</comment>
+      <string>\u010EC4 \u010EC4\u00200D \u00200D\u010EC4\u00200D \u00200D\u010EC4 \u010EC4\u010EC4\u010EC4 </string>
     </test>
     <test label="U+063B">
       <comment>kehehTwodotshorizontalabove-ar</comment>
@@ -1321,10 +1325,6 @@
     <test label="U+08C8">
       <comment>kehehElongatedhamzaabove-ar</comment>
       <string>\u0008C8 \u0008C8\u00200D \u00200D\u0008C8\u00200D \u00200D\u0008C8 \u0008C8\u0008C8\u0008C8 </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC4">
-      <comment>kafTwodotsverticalbelow-ar</comment>
-      <string>\u010EC4 \u010EC4\u00200D \u00200D\u010EC4\u00200D \u00200D\u010EC4 \u010EC4\u010EC4\u010EC4 </string>
     </test>
     <test label="U+06AA">
       <comment>kafswash-ar</comment>
@@ -1858,6 +1858,10 @@
       <comment>tahTwodotsabove-ar</comment>
       <string>\u0008A3 \u0008A3\u00200D \u00200D\u0008A3\u00200D \u00200D\u0008A3 \u0008A3\u0008A3\u0008A3 </string>
     </test>
+    <test background="#ffc8a0" label="U+10EC3">
+      <comment>tahTwodotsverticalbelow-ar</comment>
+      <string>\u010EC3 \u010EC3\u00200D \u00200D\u010EC3\u00200D \u00200D\u010EC3 \u010EC3\u010EC3\u010EC3 </string>
+    </test>
     <test label="U+0624">
       <comment>wawHamzaabove-ar</comment>
       <string>\u000624 \u00200D\u000624 </string>
@@ -1925,10 +1929,6 @@
     <test label="U+08AB">
       <comment>wawDotcenter-ar</comment>
       <string>\u0008AB \u00200D\u0008AB </string>
-    </test>
-    <test background="#ffc8a0" label="U+10EC3">
-      <comment>tahTwodotsverticalbelow-ar</comment>
-      <string>\u010EC3 \u010EC3\u00200D \u00200D\u010EC3\u00200D \u00200D\u010EC3 \u010EC3\u010EC3\u010EC3 </string>
     </test>
     <test label="U+08B1">
       <comment>wawStraight-ar</comment>
