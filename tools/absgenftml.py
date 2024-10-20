@@ -195,11 +195,13 @@ def doit(args):
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
+        saveDiacBase = builder.diacBase
         ftml.startTestGroup('Encoded characters')
         for uid in sorted(builder.uids()):
             if uid < 32: continue
             c = builder.char(uid)
             setBackgroundColor((uid,))
+            builder.diacBase = 0x0644 if uid == 0x10EFC  else saveDiacBase  # Special base for alefOverlay
             for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
@@ -209,6 +211,7 @@ def doit(args):
                     ftml.setLang(langID)
                     builder.render((uid,), ftml)
                 ftml.clearLang()
+        builder.diacBase = saveDiacBase
 
         # Add specials and ligatures that were in the glyph_data:
         ftml.startTestGroup('Specials & ligatures (other than lam-alef) from glyph_data')
