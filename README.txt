@@ -5,9 +5,9 @@ Scheherazade New
 Thank you for your interest in the Scheherazade New font.
 We hope you find it useful!
 
-Scheherazade New supports most of the Unicode 15.0 Arabic character 
+This release supports most of the Unicode 16.0 Arabic character 
 repertoire (excluding the Arabic Presentation Forms blocks, which are not 
-recommended for normal use). 
+recommended for normal use).
 
 Font smarts are implemented using the OpenType smart font technology. 
 A number of glyph variations are accessible through font features
