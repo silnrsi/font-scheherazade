@@ -126,19 +126,8 @@ lookup SubtendingMarks {
 } SubtendingMarks;
 
 
-# Lateef only; others have an empty lookup
-
-lookup KernPairs {
-  lookupflag IgnoreMarks;
-  ifinfo(familyName, "Lateef") {
-    kernpairs;
-  }
-} KernPairs;
-
-
-
 #********************
-# Mark positioning
+# Mark-to-base positioning
 
 lookup MarkToBase {
   lookupflag 0;
@@ -173,29 +162,9 @@ lookup MarkToLig {
 } MarkToLig;
 
 
-# Scheherazade only: use the dia2B AP when you have two diacritics below a lam-alef.
+#---  mark attach (cont'd)  ---
 
-lookup _mark2_to_base {
-  lookupflag 0;
-do let f = info("familyName");
-   if f.find("Scheherazade New") != -1 ; {
-    # Class are not expanded recursively, so enumerate them. :-(
-    pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-    pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-#   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
-  }
-} _mark2_to_base;
-
-lookup LamAlefMark2Adjust {
-  lookupflag UseMarkFilteringSet @MarksBelow;
-  ifinfo(familyName, "Scheherazade New") {
-    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
-  }
-} LamAlefMark2Adjust;
+include(../../source/opentype/customMarkAttach.feax);
 
 
 #********************
@@ -245,19 +214,6 @@ lookup MarkToMarkBelow {
 #}    # end do - Harmattan
 
 
-# Lateef only; others have an empty lookup
-
-# Increase vertical separation between maddah and fatha for sequences like:
-# alefMaddah + lam-initial + fatha (for all initial lam-like glyphs that have 
-# no nukta above) [ABS-2762]
-lookup RaiseMadda {
-  lookupflag 0;
-  ifinfo(familyName, "Lateef") {
-    pos [alef-ar alef-ar.fina] madda-ar' <0 -40 0 0 >  [lam-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init]' fatha-ar' <0 100 0 0>;
-  }
-} RaiseMadda ;
-
-
 #---  mark positioning (cont'd)  ---
 
 include(../../source/opentype/customShifting.feax);
@@ -271,67 +227,16 @@ include(../../source/opentype/customShifting.feax);
 
 feature kern {  # Kerning
     # Same behavior for latin & arabic:
-        lookup SubtendingMarks;
-        lookup KernPairs;       # Lateef
-
-  # Scheherazade lookups:
-  do let f = info("familyName");
-   if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
-   # start of kerning positioning
-        lookup RehWawKerning1;  # a separate lookup to handle chains
-        lookup RehWawKerning;
-        lookup LamAlefKerning;
-        lookup AlefMarksAbove;
-        lookup MiscKerning;
-        lookup MiscKerningWDiacs;
-        lookup ToothKashidaKerningIM;
-        lookup ToothKashidaKerningMM;
-        lookup ToothKashidaKerningIMF;
-        lookup MiscKashidaKerning;
-        
-        # after mark attachment:
-        lookup DiacShifting;
-  }   # SchNew and not nokern
-
-  # Lateef lookups:
-  do let f = info("familyName");
-     if f.find("Lateef") != -1; {
-        lookup AlefMarksAbove;
-        lookup OldStyleKerning;
-  }   # Lateef
-
-  # Harmattan:
-  do let f = info("familyName");
-    if f.find("Harmattan") != -1; {
-      script arab;  # Arabic
-    }
-    if f.find("Harmattan") != -1 and opt("noOTkern") == ""; {
-      lookup mainkern;   # Graphite-based kerning
-    }
-    if f.find("Harmattan") != -1; {
-      lookup AlefMarksAbove;
-      # Force other languages to include Arabic script lookups:
-      language KIR  ;
-      language KSH ;
-      language KUR  ;
-      language RHG  ;
-      language SND  ;
-      language URD  ;
-      language WLF  ;
-    }
-  # Harmattan
-
+      lookup SubtendingMarks;
 } kern ;
 
 feature mark {  # Mark to base Positioning
     # Same for latin & arabic:
-        lookup MarkToBase;
-        lookup AlefToBase;
-        lookup RaiseMadda;    # Lateef
+      lookup MarkToBase;
+      lookup AlefToBase;
     script arab;
-        lookup MarkToLig;
-        lookup LamAlefMark2Adjust;  # empty except in Sch
-#        lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
+      lookup MarkToLig;
+#      lookup AlefMark2BelowAfterLam;  -- obsolete, Har & Lateef
       # Force other languages to include Arabic script lookups
       language KIR ;
       language KSH ;
@@ -344,6 +249,6 @@ feature mark {  # Mark to base Positioning
 
 feature mkmk {  # Mark to mark Positioning
     # Same for latin & arabic:
-        lookup MarkToMarkAbove;
-        lookup MarkToMarkBelow;
+      lookup MarkToMarkAbove;
+      lookup MarkToMarkBelow;
 } mkmk ;

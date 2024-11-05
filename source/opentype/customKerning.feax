@@ -456,6 +456,19 @@ lookup MiscKashidaKerning {
     #pos @Tooth2wBelowRstrk      absAutoKashida' lookup _kkern_180  rehStroke-ar.fina; 
 } MiscKashidaKerning;
 
+
+
+feature kern {  # Kerning
+    lookup RehWawKerning1;  # a separate lookup to handle chains
+    lookup RehWawKerning;
+    lookup LamAlefKerning;
+    lookup AlefMarksAbove;
+    lookup MiscKerning;
+    lookup MiscKerningWDiacs;
+    lookup ToothKashidaKerningIM;
+    lookup ToothKashidaKerningMM;
+    lookup ToothKashidaKerningIMF;
+    lookup MiscKashidaKerning;
+} kern ;
+
 }  # end of do - collision kerning
-
-

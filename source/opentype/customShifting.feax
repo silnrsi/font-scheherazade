@@ -10,11 +10,8 @@
 # details including an FAQ.
 #**********************************
 
-# This file performs the shifting that is needed for collision avoidance.
+# This file performs the mark shifting that is needed, e.g., for collision avoidance.
 # It must go after mark attachment.
-
-
-#---  kern feature  ---
 
 
 do if opt("nokern") != "yes";
@@ -77,6 +74,11 @@ ifinfo(styleName, "Regular") {
   pos @RehLikeNothingBelow   @_diaB' <150 -200 0 0>  @AinLikeIsol;
   
 } DiacShifting;
+
+feature kern {  # Kerning
+      # after mark attachment:
+      lookup DiacShifting;
+} kern ;
 
 } # end of collision adjustments
 

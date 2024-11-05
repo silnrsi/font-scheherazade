@@ -1,0 +1,37 @@
+#**********************************
+# This file is part of Scheherazade font family (https://software.sil.org/lateef/) 
+# and is Copyright (c) 2001-2024 SIL Global (https://www.sil.org/),
+# with Reserved Font Names "Lateef" and "SIL".
+#
+# This Font Software is licensed under the SIL Open Font License, Version 1.1.
+#
+# You should have received a copy of the license along with this Font Software.
+# If this is not the case, go to (https://openfontlicense.org/) for all the
+# details including an FAQ.
+#**********************************
+
+# Any project-specific mark attachment lookups go here
+
+# use the dia2B AP when you have two diacritics below a lam-alef.
+
+lookup _mark2_to_base {
+  lookupflag 0;
+    # Class are not expanded recursively, so enumerate them. :-(
+    pos ligature @LamAlefLig             @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWaslaLig        @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWavyHAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+#   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+} _mark2_to_base;
+
+lookup LamAlefMark2Adjust {
+  lookupflag UseMarkFilteringSet @MarksBelow;
+    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
+} LamAlefMark2Adjust;
+
+
+feature mark {
+    lookup LamAlefMark2Adjust ;
+} mark;
