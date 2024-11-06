@@ -10,6 +10,9 @@
 # details including an FAQ.
 #**********************************
 
+# Project-specific substitutions needed, e.g. to handle collisions.
+
+
 #--- liga feature ---
 
 do if opt("nokern") != "yes";
@@ -128,12 +131,36 @@ lookup MarkKashidas {
     sub @Tooth  @MarksAbove' lookup _InsertKashida  tehMarbuta-ar.fina;
 } MarkKashidas;
 
+
 }  # end of do - kerning substitutions
 
 
-# For Harmattan compatibility:
-lookup YehBarreeToWideAlways {
-} YehBarreeToWideAlways;
+# Kashida with marks is always wide
+lookup WideKashida {
+    sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
+} WideKashida ;
 
-lookup YehBarreeToWideWithMarks {
-} YehBarreeToWideWithMarks;
+
+feature calt {  # Contextual Alternates
+    script arab;
+      do if opt("nokern") != "yes"; {
+         # start of kerning substitutions
+        lookup ToothKashidasIM;
+        lookup ToothKashidasMM;
+        lookup ToothKashidasIMF;
+        lookup MiscKashidas;
+        lookup MarkKashidas;
+      }   # end of kerning substitutions
+
+        lookup WideKashida;
+
+      # Force other languages to include Arabic script default rules plus some others:
+      language KIR ; # Kyrgyz
+      language KSH ; # Kashmiri
+      language KUR ; # Kurdish
+      language RHG ; #Rohingya
+      language SND ; # Sindhi
+      language URD ; # Urdu
+      language WLF ; # Wolof
+} calt ;
+

@@ -1013,37 +1013,10 @@ lookup SignWithDigits {
 } SignWithDigits ;
 
 
-# Lateef only
-ifinfo(familyName, "Lateef") {
 
-# Proportional Figures: pnum
-
-lookup ProportionalFigures {
-  lookupflag IgnoreMarks ;
-    sub @cno_pnum by @c_pnum ;
-} ProportionalFigures ;
-
-# Tabular Figures: tnum
-
-lookup TabularFigures {
-  lookupflag IgnoreMarks ;
-    sub @cno_tnum by @c_tnum ;
-} TabularFigures ;
-
-}  # Lateef
-
-
-# Must be after lang-specific CALTs and cv48.
+# Must be after lang-specific CALTs and cvXX.
 
 include(../../source/opentype/customCollisionSubs.feax);
-
-
-ifinfo(familyName, "Scheherazade New") {
-# Scheherazade only:
-lookup WideKashida {
-    sub kashida-ar'  @MarksAny  by  kashida-ar.wide;
-} WideKashida ;
-  }
 
 
 #**********************************
@@ -1079,8 +1052,6 @@ feature ccmp {  # Glyph Composition/Decomposition
       language SND ;  # Sindhi
       language URD ;  # Urdu
       language WLF ;  # Wolof
-
-    script latn;
 } ccmp ;
 
 # feature locl (not used; see calt)
@@ -1165,24 +1136,6 @@ feature calt {  # Contextual Alternates
       }
 
     script arab;
-    # Sch only:
-    do let f = info("familyName");
-      if f.find("Scheherazade New") != -1 and opt("nokern") != "yes"; {
-         # start of kerning substitutions
-        lookup ToothKashidasIM;
-        lookup ToothKashidasMM;
-        lookup ToothKashidasIMF;
-        lookup MiscKashidas;
-        lookup MarkKashidas;
-      }   # end of kerning substitutions
-      ifinfo(familyName, "Scheherazade New") {
-        lookup WideKashida;
-      }
-
-      ifinfo(familyName, "Lateef") {
-      ## lookup ShortTailRehWaw;   short-tail reh/waw variants disabled for now
-      }
-
       # Force other languages to include Arabic script default rules plus some others:
       language KIR ; # Kyrgyz
         lookup KyrgyzCALT ;
@@ -1573,39 +1526,15 @@ feature cv85 {  # Character Variant 85
 # But we still need the ShaddaKasraLigatures lookup to fire. Presently Microsoft doesn't
 # fire clig, so liga must be the one to use!
 
-# Similarly, the yehbarree contextual substitution must execute after cv48, so they are
-# included in liga (with the lookups ordered after cv48)
-
 # Finally, the LamAlefLigatures must execute after we've ligated mark combinations, including shadda-kasra,
 # or otherwise Word gets confused and ligates shadda-kasra in a sequence such as lam-shadda-alef-kasra.
 
-feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cv62
+feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cvXX
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
-    ifinfo(familyName, "Harmattan|Lateef") {
-        lookup YehBarreeToWideAlways;    # Must execute after language-specific CALTs and cv48
-        lookup YehBarreeToWideWithMarks; # Must execute after language-specific CALTs and cv48
-    }
         lookup SignWithDigits;
         lookup LamAlefLigatures;         # Must execute after all mark ligatures (including cv62)
         lookup AllahAlef;                # Must execute after lam-alef lig
 } liga ;
 
-
-# Lateef only:
-
-do let f = info("familyName");
-   if f.find("Lateef") != -1; {
-
-feature tnum {  # Tabular figures
-    # default for latin, select for arabic:
-    lookup TabularFigures ;            # must execute after SignWithDigits
-} tnum ;
-
-feature pnum {  # Proportional figures
-    # default for arabic, select for latin:
-    lookup ProportionalFigures ;       # must execute after SignWithDigits
-} pnum ;
-
-}  # end of do - Lateef
