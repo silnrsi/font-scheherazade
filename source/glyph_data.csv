@@ -242,8 +242,9 @@ graphemejoinercomb,uni034F,034F,280,,# invs
 pi,pi,03C0,281,,
 hamza-ar,uni0621,0621,282,,
 highhamza-ar,uni0674,0674,283,,
-rounddotbaseline-ar,uni0887,0887,283.1,,
-rounddotraised-ar,uni0888,0888,283.2,,
+highhamza-ar.loclMLY,uni0674.loclMLY,,283.1,ms,
+rounddotbaseline-ar,uni0887,0887,283.2,,
+rounddotraised-ar,uni0888,0888,283.3,,
 alef-ar,uni0627,0627,284,,
 alef-ar.fina,uni0627.fina,,291,,
 _alef-ar.fina.postLamIni,,,298,,
@@ -1144,6 +1145,10 @@ noonRing-ar,uni06BC,06BC,1305,,
 noonRing-ar.fina,uni06BC.fina,,1306,,
 noonRing-ar.medi,uni06BC.medi,,1307,,
 noonRing-ar.init,uni06BC.init,,1308,,
+noonRingabove-ar,uni088F,088F,1308.1,,
+noonRingabove-ar.fina,uni088F.fina,,1308.2,,
+noonRingabove-ar.medi,uni088F.medi,,1308.3,,
+noonRingabove-ar.init,uni088F.init,,1308.4,,
 noonThreedotsabove-ar,uni06BD,06BD,1309,,
 noonThreedotsabove-ar.fina,uni06BD.fina,,1310,,
 noonThreedotsabove-ar.medi,uni06BD.medi,,1311,,
@@ -1168,6 +1173,10 @@ noonAfrican-ar,uni08BD,08BD,1330,,
 noonAfrican-ar.fina,uni08BD.fina,,1331,,
 noonAfrican-ar.medi,uni08BD.medi,,1332,,
 noonAfrican-ar.init,uni08BD.init,,1333,,
+noonthin-ar,u10EC6,10EC6,1338.1,,
+noonthin-ar.fina,u10EC6.fina,,1338.2,,
+noonthin-ar.medi,u10EC6.medi,,1338.3,,
+noonthin-ar.init,u10EC6.init,,1338.4,,
 ae-ar,uni06D5,06D5,1339,,
 ae-ar.fina,uni06D5.fina,,1340,,
 heh-ar,uni0647,0647,1341,,
@@ -1301,6 +1310,10 @@ yehFourbelow-farsi,uni0777,0777,1514,,
 yehFourbelow-farsi.fina,uni0777.fina,,1515,,
 yehFourbelow-farsi.medi,uni0777.medi,,1516,,
 yehFourbelow-farsi.init,uni0777.init,,1517,,
+yehFourbelow-ar,u10EC7,10EC7,1517.1,,
+yehFourbelow-ar.fina,u10EC7.fina,,1517.2,,
+yehFourbelow-ar.medi,u10EC7.medi,,1517.3,,
+yehFourbelow-ar.init,u10EC7.init,,1517.4,,
 yehTail-ar,uni06CD,06CD,1518,,
 yehTail-ar.fina,uni06CD.fina,,1519,,
 yehKashmiri-ar,uni0620,0620,1520,,
@@ -1409,8 +1422,10 @@ seenbelow-ar,uni06E3,06E3,1624,,
 maddalong-ar,uni06E4,06E4,1625,,
 wawSmall-ar,uni06E5,06E5,1626,,
 yehSmall-ar,uni06E6,06E6,1627,,
+yehSmallTwobelow-ar,u10EC5,10EC5,1627.1,,
 yehabove-ar,uni06E7,06E7,1628,,
 noonabove-ar,uni06E8,06E8,1629,,
+noonbelow-ar,u10EFB,10EFB,1629.1,,
 wawbelow-ar,uni08D3,08D3,1630,,
 arrubabove-ar,uni08D4,08D4,1631,,
 sadabove-ar,uni08D5,08D5,1632,,
@@ -1425,8 +1440,8 @@ saktaabove-ar,uni08DD,08DD,1640,,
 saktabelow-ar,u10EFD,10EFD,1640.1,,
 qifabove-ar,uni08DE,08DE,1641,,
 waqfaabove-ar,uni08DF,08DF,1642,,
-qasrbelow-ar,u10EFE,10EFE,1642.1,,
 aljuzabove-ar,uni0898,0898,1642.1,,
+qasrbelow-ar,u10EFE,10EFE,1642.1,,
 ishmaambelow-ar,uni0899,0899,1642.2,,
 imaalabelow-ar,uni089A,089A,1642.3,,
 wordmaddabelow-ar,u10EFF,10EFF,1642.4,,
@@ -1576,6 +1591,8 @@ verseComma-ar,uni060E,060E,1766,,
 misraComma-ar,uni060F,060F,1767,,
 sindhiampersand-ar,uni06FD,06FD,1768,,
 sindhipostpositionmen-ar,uni06FE,06FE,1769,,
+doubleverticalbarbelow-ar,u10EFA,10EFA,1769.1,,
+biblicalendofverse-ar,u10ED0,10ED0,1769.2,,
 endofayah-ar,uni06DD,06DD,1770,,
 endofayah-ar.2,uni06DD.2,,1771,,
 endofayah-ar.3,uni06DD.3,,1772,,
@@ -1601,7 +1618,7 @@ hehgoal-ar.fina.allah,uni06C1.fina.allah,,1799,,
 allahlong-ar,uniFDFA,FDFA,1807,,
 allahlong-ar.smpl,uniFDFA.smpl,,1808,,cv81=1
 jallajalalouhou-ar,uniFDFB,FDFB,1809,,
-jallajalalouhou-ar.smpl,uniFDFB.smpl,,1810,,cv81=1
+jallajalalouhou-ar.smpl,uniFDFB.smpl,,1809.1,,cv81=1
 rial,uniFDFC,FDFC,1811,,
 bismillah-ar,uniFDFD,FDFD,1812,,
 bismillah-ar.smpl,uniFDFD.smpl,,1813,,cv81=1
@@ -1615,24 +1632,34 @@ alayhaaAsSalaam-ar,uniFD4D,FD4D,1820,,
 alayhaaAsSalaam-ar.smpl,uniFD4D.smpl,,1821,,cv81=1
 rahimahuAllaah-ar,uniFD40, FD40,1822,,
 rahimahuAllaah-ar.smpl,uniFD40.smpl,,1823,,cv81=1
-radiAllaahuAnh-ar,uniFD41, FD41,1824,,
-radiAllaahuAnh-ar.smpl,uniFD41.smpl,,1825,,cv81=1
-radiAllaahuAnhaa-ar,uniFD42, FD42,1826,,
-radiAllaahuAnhaa-ar.smpl,uniFD42.smpl,,1827,,cv81=1
-radiAllaahuAnhum-ar,uniFD43, FD43,1828,,
-radiAllaahuAnhum-ar.smpl,uniFD43.smpl,,1829,,cv81=1
-radiAllaahuAnhumaa-ar,uniFD44, FD44,1830,,
-radiAllaahuAnhumaa-ar.smpl,uniFD44.smpl,,1831,,cv81=1
-radiAllaahuAnhunna-ar,uniFD45, FD45,1832,,
-radiAllaahuAnhunna-ar.smpl,uniFD45.smpl,,1833,,cv81=1
+rahimahumAllaah-ar,uniFD4F,FD4F,1823.5,,
+rahimahumAllaah-ar.smpl,uniFD4F.smpl,,1823.6,,cv81=1
+rahmatuAllaahiAlayh-ar,uniFD90,FD90,1823.7,,
+rahmatuAllaahiAlayh-ar.smpl,uniFD90.smpl,,1823.8,,cv81=1
+rahmatuAllaahiAlayhaa-ar,uniFD91,FD91,1823.9,,
+rahmatuAllaahiAlayhaa-ar.smpl,uniFD91.smpl,,1824,,cv81=1
+rahmatuAllaahiAlayhim-ar,uniFBC6,FBC6,1824.1,,
+rahmatuAllaahiAlayhim-ar.smpl,uniFBC6.smpl,,1824.2,,cv81=1
+rahmatuAllaahiAlayhimaa-ar,uniFBC7,FBC7,1824.3,,
+rahmatuAllaahiAlayhimaa-ar.smpl,uniFBC7.smpl,,1824.4,,cv81=1
+radiAllaahuAnh-ar,uniFD41, FD41,1825.3,,
+radiAllaahuAnh-ar.smpl,uniFD41.smpl,,1825.4,,cv81=1
+radiAllaahuAnhaa-ar,uniFD42, FD42,1825.6,,
+radiAllaahuAnhaa-ar.smpl,uniFD42.smpl,,1825.7,,cv81=1
+radiAllaahuAnhum-ar,uniFD43, FD43,1825.8,,
+radiAllaahuAnhum-ar.smpl,uniFD43.smpl,,1825.9,,cv81=1
+radiAllaahuAnhumaa-ar,uniFD44, FD44,1826,,
+radiAllaahuAnhumaa-ar.smpl,uniFD44.smpl,,1826.1,,cv81=1
+radiAllaahuAnhunna-ar,uniFD45, FD45,1826.2,,
+radiAllaahuAnhunna-ar.smpl,uniFD45.smpl,,1826.3,,cv81=1
 sallallaahuAlayhiWaAalih-ar,uniFD46,FD46,1834,,
 sallallaahuAlayhiWaAalih-ar.smpl,uniFD46.smpl,,1835,,cv81=1
 alayhimaaAsSalaam-ar,uniFD49,FD49,1836,,
 alayhimaaAsSalaam-ar.smpl,uniFD49.smpl,,1837,,cv81=1
 alayhiAsSalaatuWaSalaam-ar,uniFD4A,FD4A,1838,,
 alayhiAsSalaatuWaSalaam-ar.smpl,uniFD4A.smpl,,1839,,cv81=1
-quddisaSirrah-ar,uniFD4B,FD4B,1840,,
-quddisaSirrah-ar.smpl,uniFD4B.smpl,,1841,,cv81=1
+quddisaSirrah-ar,uniFD4B,FD4B,1840.1,,
+quddisaSirrah-ar.smpl,uniFD4B.smpl,,1840.2,,cv81=1
 sallallahuAlayhiWaAaliheeWaSallam-ar,uniFD4C,FD4C,1842,,
 sallallahuAlayhiWaAaliheeWaSallam-ar.smpl,uniFD4C.smpl,,1843,,cv81=1
 subhaanahuWaTaaalaa-ar,uniFDFE,FDFE,1844,,
@@ -1641,8 +1668,6 @@ azzaWaJall-ar,uniFDFF,FDFF,1846,,
 azzaWaJall-ar.smpl,uniFDFF.smpl,,1847,,cv81=1
 tabaarakaWaTaaalaa-ar,uniFD4E,FD4E,1848,,
 tabaarakaWaTaaalaa-ar.smpl,uniFD4E.smpl,,1849,,cv81=1
-rahimahumAllaah-ar,uniFD4F,FD4F,1850,,
-rahimahumAllaah-ar.smpl,uniFD4F.smpl,,1851,,cv81=1
 dammaturnedbelow-ar,uni08E3,08E3,1852,,
 fathaCurly-ar,uni08E4,08E4,1853,,
 dammaCurly-ar,uni08E5,08E5,1854,,
