@@ -67,7 +67,7 @@ joinGroupKeys = {
 def joinGoupSortKey(uid:int):
     return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 0x20000 + uid
 
-ageToFlag = 16.0
+ageToFlag = 17.0
 ageColor = '#FFC8A0'      # light orange -- marks if there is a char from above Unicode version or later
 missingColor = '#FFE0E0'  # light red -- mark if a char is missing from UFO
 newColor = '#F0FFF0'      # light green -- mark if char is not in previous version (if --prevFont supplied)

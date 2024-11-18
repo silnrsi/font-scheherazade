@@ -2,9 +2,9 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 16.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
-    <fontsrc label="4.0">url(../references/v4.000/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="4.3">url(../references/v4.300/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
@@ -35,6 +35,9 @@
       <style lang="ky" name="ky"/>
       <style feats="'cv80' 1" lang="ky" name="ky_cv80_1"/>
       <style feats="'cv80' 2" lang="ky" name="ky_cv80_2"/>
+      <style lang="ms" name="ms"/>
+      <style feats="'cv80' 1" lang="ms" name="ms_cv80_1"/>
+      <style feats="'cv80' 2" lang="ms" name="ms_cv80_2"/>
       <style lang="rhg" name="rhg"/>
       <style feats="'cv80' 1" lang="rhg" name="rhg_cv80_1"/>
       <style feats="'cv80' 2" lang="rhg" name="rhg_cv80_2"/>
@@ -342,6 +345,18 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="ky_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="ms">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="ms_cv80_1">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="ms_cv80_2">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>

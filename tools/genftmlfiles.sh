@@ -15,8 +15,8 @@ then
 	exit 2
 fi
 
-prevfont="references/v4.000/ScheherazadeNew-Regular.ttf"
-prevver="4.0"
+prevfont="references/v4.300/ScheherazadeNew-Regular.ttf"
+prevver="4.3"
 
 commonParams=( \
 	--prevfont "$prevfont"  \
@@ -25,7 +25,7 @@ commonParams=( \
 	--xsl ../tools/ftml.xsl  \
 	--scale 200  \
 	-i source/glyph_data.csv  \
-	--langs 'sd,ur,ku,rhg,ks,ky,wo'  \
+	--langs 'sd,ur,ku,rhg,ks,ky,ms,wo'  \
 	-w 75%  \
 	--ucdxml source/additional_ucd.xml  \
 	-s "url(../references/ScheherazadeNew-Regular.ttf)|ref"  \
