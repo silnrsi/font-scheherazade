@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonRingabove-ar.fina" format="2">
+  <advance width="1385"/>
+  <anchor x="210" y="556" name="alef"/>
+  <anchor x="677" y="1034" name="diaA"/>
+  <anchor x="598" y="-915" name="diaB"/>
+  <outline>
+    <component base="noonghunna-ar.fina"/>
+    <component base="_ring" xOffset="668" yOffset="528"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>
