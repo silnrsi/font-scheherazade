@@ -7,7 +7,7 @@ New fonts and any derivative works.
 
 These files are part of the Scheherazade New font family 
 (https://software.sil.org/scheherazade/) and are 
-Copyright (c) 1994-2024 SIL Global (https://www.sil.org/),
+Copyright (c) 1994-2025 SIL Global (https://www.sil.org/),
 with Reserved Font Names "Scheherazade" and "SIL".
 
 This Font Software is licensed under the SIL Open Font License,

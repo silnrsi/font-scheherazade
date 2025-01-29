@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 __doc__ = '''generate ftml tests from glyph_data.csv and UFO'''
 __url__ = 'https://github.com/silnrsi/font-arab-tools'
-__copyright__ = 'Copyright (c) 2018-2024 SIL Global  (https://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018-2025 SIL Global  (https://www.sil.org)'
 __license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 

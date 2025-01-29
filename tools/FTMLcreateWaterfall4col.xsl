@@ -3,7 +3,7 @@
 <xsl:output method="html" encoding="utf-8"/>
 
 <!-- https://github.com/silnrsi/pysilfont -->
-<!-- Copyright (c) 2015-2024 SIL Global (https://www.sil.org) -->
+<!-- Copyright (c) 2015-2025 SIL Global (https://www.sil.org) -->
 <!-- Released under the MIT License (http://opensource.org/licenses/MIT) -->
 
 <!-- set variables from head element -->
