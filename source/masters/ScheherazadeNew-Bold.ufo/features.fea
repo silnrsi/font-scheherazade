@@ -4020,11 +4020,15 @@ feature salt {
     
 
 # Character Variant 08
+# English US
+# English US
 ### ParamUILabelNameID { name 3 1 0x0409 "Standard"    ; };
 # Arabic
 # Force other languages to include Arabic script lookups:
 # end do - Harmattan
 # Character Variant 12 - Sch/Har
+    # English US
+    # English US
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
     # Force other languages to include Arabic script lookups:
     # end do - Sch or Har
@@ -4032,6 +4036,14 @@ feature salt {
                 cvParameters {
                         FeatUILabelNameID {
                 name "Dal";
+            };
+
+                        FeatUITooltipTextNameID {
+                name "Senegal-style of Dal-based characters";
+            };
+
+                        SampleTextNameID {
+                name "&#x0628;&#x062F; &#x062F; &#x0628;&#x0630; &#x0630;";
             };
 
                         ParamUILabelNameID {
@@ -4059,6 +4071,8 @@ feature salt {
     
 
 # Character Variant 20
+# English US
+# English US
 ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
 # Arabic
 # Force other languages to include Arabic script lookups:
@@ -4069,6 +4083,16 @@ feature cv44 {
         cvParameters {
                 FeatUILabelNameID {
             name "Meem";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Short tail Sindhi-style of Meem-based characters";
+            # English US
+        };
+
+                SampleTextNameID {
+            name "بم م بݥ ݥ";
+            # English US &#x0628;&#x0645; &#x0645; &#x0628;&#x0765; &#x0765;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"   ; };
@@ -4099,6 +4123,16 @@ feature cv48 {
         cvParameters {
                 FeatUILabelNameID {
             name "Heh";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Heh character alternates";
+            # English US (Kurdish- Sindhi-, Urdu-style are alternates)
+        };
+
+                SampleTextNameID {
+            name "ههه ه";
+            # English US &#x0647;&#x0647;&#x0647; &#x0647;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
@@ -4135,6 +4169,16 @@ feature cv49 {
             name "Heh Doachashmee";
         };
 
+                FeatUITooltipTextNameID {
+            name "Heh Doachashmee alternates";
+            # English US (Knotted, Bowtie, Kurdish-style is an alternate)
+        };
+
+                SampleTextNameID {
+            name "ھھھ ھ";
+            # English US &#x06BE;&#x06BE;&#x06BE; &#x06BE;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
                 ParamUILabelNameID {
             name "Knotted";
@@ -4169,6 +4213,16 @@ feature cv51 {
             name "Kyrgyz OE";
         };
 
+                FeatUITooltipTextNameID {
+            name "Bar-style of Kyrgyz OE";
+            # English US (Loop is default)
+        };
+
+                SampleTextNameID {
+            name "بۅ ۅ";
+            # English US &#x0628;&#x06C5; &#x06C5;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Loop"      ; };
                 ParamUILabelNameID {
             name "Bar";
@@ -4194,6 +4248,16 @@ feature cv54 {
         cvParameters {
                 FeatUILabelNameID {
             name "Yeh Hamza";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Kyrgyz-style of Yeh Hamza";
+            # English US
+        };
+
+                SampleTextNameID {
+            name "ئئئ ئ";
+            # English US &#x0626;&#x0626;&#x0626; &#x0626;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"    ; };
@@ -4222,6 +4286,8 @@ feature cv54 {
 
 # Character Variant 60
     # Character Variant 60
+    # English US
+    # English US &#x0622;
     ### ParamUILabelNameID { name 3 1 0x0409 "Small"    ; };
     # Same for latin & arabic:
     # end do - Sch or Har
@@ -4230,6 +4296,14 @@ feature cv54 {
                 cvParameters {
                         FeatUILabelNameID {
                 name "Maddah";
+            };
+
+                        FeatUITooltipTextNameID {
+                name "Large Madda";
+            };
+
+                        SampleTextNameID {
+                name "آ";
             };
 
                         ParamUILabelNameID {
@@ -4246,6 +4320,16 @@ feature cv62 {
         cvParameters {
                 FeatUILabelNameID {
             name "Kasra";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Raised position of shadda+kasra";
+            # English US (Lowered is default or alternate)
+        };
+
+                SampleTextNameID {
+            name "بِّ";
+            # English US &#x0628;&#x0651;&#x0650;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
@@ -4268,6 +4352,16 @@ feature cv70 {
         cvParameters {
                 FeatUILabelNameID {
             name "Damma";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Damma alternates";
+            # English US # (Filled and Short is an alternate)
+        };
+
+                SampleTextNameID {
+            name "بُ";
+            # English US &#x0628;&#x064F;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Default"  ; };
@@ -4296,6 +4390,16 @@ feature cv72 {
             name "Dammatan";
         };
 
+                FeatUITooltipTextNameID {
+            name "Dammatan alternates";
+            # English US 
+        };
+
+                SampleTextNameID {
+            name "بٌ";
+            # English US &#x0628;&#x064C;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
                 ParamUILabelNameID {
             name "Six-nine";
@@ -4316,6 +4420,16 @@ feature cv74 {
         cvParameters {
                 FeatUILabelNameID {
             name "Inverted Damma";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Inverted Damma alternates";
+            # English US # (Filled is an altenate or default)
+        };
+
+                SampleTextNameID {
+            name "بٗ";
+            # English US &#x0628;&#x0657;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
@@ -4340,6 +4454,16 @@ feature cv76 {
             name "Superscript Alef";
         };
 
+                FeatUITooltipTextNameID {
+            name "Large Superscript Alef";
+            # English US # (Small is an alternate or default)
+        };
+
+                SampleTextNameID {
+            name "بيٰ يٰ";
+            # English US &#x0628;&#x064a;&#x0670; &#x064a;&#x0670;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Default"          ; };
                 ParamUILabelNameID {
             name "Large";
@@ -4360,6 +4484,16 @@ feature cv78 {
         cvParameters {
                 FeatUILabelNameID {
             name "Sukun";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Sukun alternates";
+            # English US # (Open left is another alternate, Closed is default)
+        };
+
+                SampleTextNameID {
+            name "بْ";
+            # English US &#x0628;&#x0652;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Closed"    ; };
@@ -4388,6 +4522,16 @@ feature cv80 {
             name "End of ayah";
         };
 
+                FeatUITooltipTextNameID {
+            name "End of ayah alternates";
+            # English US
+        };
+
+                SampleTextNameID {
+            name "۝ْ";
+            # English US &#x06DD;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
                 ParamUILabelNameID {
             name "Simplified A";
@@ -4404,6 +4548,8 @@ feature cv80 {
 } cv80;
 
     # Character Variant 81
+    # English US (Calligraphic is default)
+    # English US &#xFD4C;&#xFDFD;
     ### ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
     # Same for latin and arabic:
     # end do - Sch
@@ -4411,6 +4557,14 @@ feature cv80 {
                 cvParameters {
                         FeatUILabelNameID {
                 name "Honorific ligatures";
+            };
+
+                        FeatUITooltipTextNameID {
+                name "Simplified Honorific ligatures";
+            };
+
+                        SampleTextNameID {
+                name "﵌ ﷽";
             };
 
                         ParamUILabelNameID {
@@ -4428,6 +4582,16 @@ feature cv82 {
         cvParameters {
                 FeatUILabelNameID {
             name "Eastern digits";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Eastern digit alternates";
+            # English US
+        };
+
+                SampleTextNameID {
+            name "۴۶۷";
+            # English US &#x06F4;&#x06F6;&#x06F7;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Standard"       ; };
@@ -4465,6 +4629,16 @@ feature cv84 {
             name "Comma";
         };
 
+                FeatUITooltipTextNameID {
+            name "Downward Comma";
+            # English US (Upward is default)
+        };
+
+                SampleTextNameID {
+            name "،؛";
+            # English US &#x060C;&#x061B;
+        };
+
         ### ParamUILabelNameID { name 3 1 0x0409 "Upward"   ; };
                 ParamUILabelNameID {
             name "Downward";
@@ -4481,6 +4655,16 @@ feature cv85 {
         cvParameters {
                 FeatUILabelNameID {
             name "Decimal separator";
+        };
+
+                FeatUITooltipTextNameID {
+            name "Slash for Decimal separator";
+            # English US (Small reh is default)
+        };
+
+                SampleTextNameID {
+            name "٫";
+            # English US &#x066B;
         };
 
         ### ParamUILabelNameID { name 3 1 0x0409 "Small reh"        ; };
