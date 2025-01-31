@@ -34,6 +34,8 @@ if '--norename' not in opts:
 if '--autohint' in opts:
     # Note: in some fonts ttfautohint-generated hints don't maintain stroke thickness at joins; test thoroughly
     cmds.append(cmd('${TTFAUTOHINT} -n -c  -D arab -W ${DEP} ${TGT}'))
+else:
+    cmds.append(cmd('gftools fix-nonhinting --no-backup -q ${DEP} ${TGT}'))
 
 # To shrink font files for release - no longer needed?
 #cmds.append(cmd('ttfsubset -s arab,latn ${DEP} ${TGT}'))
