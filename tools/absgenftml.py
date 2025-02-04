@@ -570,8 +570,8 @@ def doit(args):
     if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
             if get_ucd(uid,'jg') not in ('Sad', 'Seen', 'Yeh', 'Farsi_Yeh', 'Yeh_With_Tail') and \
-               get_ucd(uid,'gc') != 'Zs':
-                # If not Yeh, Sad or Seen joining groups or whitespace, then we're not interested
+               get_ucd(uid,'gc') != 'Zs' and uid != 0x0640:
+                # If not Yeh, Sad or Seen joining groups or whitespace or tatweel, then we're not interested
                 continue
             if "special" not in test:
                 setBackgroundColor((uid,))

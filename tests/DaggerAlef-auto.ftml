@@ -624,6 +624,21 @@ U+00A0" rtl="True" stylename="cv76_2">
       <comment>nbspace alefabove-ar alef-ar nbspace</comment>
       <string>\u00F130\u0000A0\u000670\u000627\u0000A0\u00F131</string>
     </test>
+    <test label="U+0640
+U+0670" rtl="True">
+      <comment>kashida-ar alefabove-ar</comment>
+      <string>\u000640\u000670</string>
+    </test>
+    <test label="U+0640
+U+0670" rtl="True" stylename="cv76_1">
+      <comment>kashida-ar alefabove-ar</comment>
+      <string>\u000640\u000670</string>
+    </test>
+    <test label="U+0640
+U+0670" rtl="True" stylename="cv76_2">
+      <comment>kashida-ar alefabove-ar</comment>
+      <string>\u000640\u000670</string>
+    </test>
     <test label="U+2000
 U+0670
 U+0627
