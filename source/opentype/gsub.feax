@@ -1220,7 +1220,7 @@ feature cv12 {
         };
       
         SampleTextNameID {
-         name 3 1 0x0409 "&#x0628;&#x062F; &#x062F; &#x0628;&#x0630; &#x0630;";  # English US
+         name 3 1 0x0409 "بد د بذ ذ";  # English US &#x0628;&#x062F; &#x062F; &#x0628;&#x0630; &#x0630;
         };
 
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"  ; };
@@ -1254,7 +1254,7 @@ feature cv20 {  # Character Variant 20
         };
       
         SampleTextNameID {
-         name 3 1 0x0409 "&#x0628;&#x0635; &#x0635; &#x0628;&#x0636; &#x0636;";  # English US
+         name 3 1 0x0409 "بص ص بض ض"; # "&#x0628;&#x0635; &#x0635; &#x0628;&#x0636; &#x0636;";  # English US
         };
 
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard" ; };
