@@ -91,9 +91,7 @@
   <array>
     <string>.notdef</string>
     <string>.null</string>
-    <string>nonmarkingreturn</string>
     <string>space</string>
-    <string>tab</string>
     <string>exclam</string>
     <string>quotedbl</string>
     <string>numbersign</string>
@@ -1990,9 +1988,7 @@
   <array>
     <string>.notdef</string>
     <string>.null</string>
-    <string>nonmarkingreturn</string>
     <string>space</string>
-    <string>tab</string>
     <string>exclam</string>
     <string>quotedbl</string>
     <string>numbersign</string>
@@ -4603,6 +4599,8 @@
     <string>uni0760.init</string>
     <key>fehTwodotsbelow-ar.medi</key>
     <string>uni0760.medi</string>
+    <key>fi</key>
+    <string>uniFB01</string>
     <key>figurespace</key>
     <string>uni2007</string>
     <key>firststrongisolate</key>
@@ -4621,6 +4619,8 @@
     <string>uni06F5.medium</string>
     <key>five-persian.small</key>
     <string>uni06F5.small</string>
+    <key>fl</key>
+    <string>uniFB02</string>
     <key>footnotemarker-ar</key>
     <string>uni0602</string>
     <key>footnotemarker-ar.2</key>
@@ -5608,7 +5608,7 @@
     <key>meembelow-ar</key>
     <string>uni06ED</string>
     <key>micro</key>
-    <string>uni00B5</string>
+    <string>mu</string>
     <key>misraComma-ar</key>
     <string>uni060F</string>
     <key>narrownbspace</key>
@@ -5791,6 +5791,8 @@
     <string>uni06F1.medium</string>
     <key>one-persian.small</key>
     <string>uni06F1.small</string>
+    <key>onesuperior</key>
+    <string>uni00B9</string>
     <key>opendammatan-ar</key>
     <string>uni08F1</string>
     <key>openfathatan-ar</key>
@@ -6539,6 +6541,8 @@
     <string>uni06DB</string>
     <key>threeperemspace</key>
     <string>uni2004</string>
+    <key>threesuperior</key>
+    <string>uni00B3</string>
     <key>toneloopabove-ar</key>
     <string>uni08EC</string>
     <key>toneloopbelow-ar</key>
@@ -6587,6 +6591,8 @@
     <string>uni06F2.medium</string>
     <key>two-persian.small</key>
     <string>uni06F2.small</string>
+    <key>twosuperior</key>
+    <string>uni00B2</string>
     <key>u-ar</key>
     <string>uni06C7</string>
     <key>u-ar.fina</key>

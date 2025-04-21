@@ -245,6 +245,16 @@ Feature | Sample |  Feature setting
 Small reh | <span dir="rtl" class='scheherazadenew-R normal'>&#x066B;</span> | `cv85=0`
 Slash | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| `cv85=1`
 
+#### Guillemet 
+
+<span class='affects'>Affects: U+00AB U+00BB U+2039 U+203A</span>
+
+Feature | Sample |  Feature setting
+:------------- | ------: | :------------- 
+Rounded | <span dir="rtl" class='scheherazadenew-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> | `cv88=0`
+Angled | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=1`
+Default | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 2'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=2`
+
 ### Other user font features
 
 #### Line spacing 

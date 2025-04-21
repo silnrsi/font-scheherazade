@@ -356,6 +356,19 @@
 		</value>
 	</feature>
 
+	<!-- cv88 -->
+	<feature name="Guillemet" value="Rounded" tag="Guil">
+		<value name="Rounded" tag="Rd">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Angled" tag="Agl">
+			<cmd name="encode" args="00AB guillemotleft.latn"/>
+			<cmd name="encode" args="00BB guillemotright.latn"/>
+			<cmd name="encode" args="2039 guilsinglleft.latn"/>
+			<cmd name="encode" args="203A guilsinglright.latn"/>
+		</value>
+	</feature>
+
 	<feature name="Line spacing" value="Normal"	tag="LnSp">
 		<value name="Normal" tag="Nrml">
 			<cmd name="null" args="2750 1427"/>
