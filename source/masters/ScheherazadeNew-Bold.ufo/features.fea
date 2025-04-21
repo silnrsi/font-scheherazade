@@ -910,7 +910,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass hehgoalHamzaabove-ar.init <anchor 246 1708> @diaA;
 # baseClass hehgoalHamzaabove-ar.medi <anchor 555 1398> @diaA;
 # baseClass highhamza-ar <anchor 146 1618> @diaA;
-# baseClass highhamza-ar.loclMLY <anchor 274 1898> @diaA;
+# baseClass highhamza-ar.loclMLY <anchor 274 1568> @diaA;
 # baseClass [highhamzaAlef-ar highhamzaAlef-ar.fina] <anchor 231 1657> @diaA;
 # baseClass highhamzaWaw-ar <anchor 295 1338> @diaA;
 # baseClass highhamzaWaw-ar.fina <anchor 433 1429> @diaA;
@@ -1527,7 +1527,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass hehDoachashmee-ar.fina <anchor 660 -777> @diaB;
 # baseClass hehgoal-ar.fina.allah <anchor 278 -354> @diaB;
 # baseClass highhamza-ar <anchor 196 1006> @diaB;
-# baseClass highhamza-ar.loclMLY <anchor 421 892> @diaB;
+# baseClass highhamza-ar.loclMLY <anchor 421 562> @diaB;
 # baseClass highhamzaAlef-ar <anchor 135 -242> @diaB;
 # baseClass [highhamzaWaw-ar kashidaWaw-ar kirghizoe-ar kirghizoe-ar.bar kirghizyu-ar oe-ar uHamzaabove-ar ve-ar waw-ar wawDotabove-ar wawDotcenter-ar wawThreeAbove-ar wawTwoabove-ar wawTwodots-ar wawring-ar yu-ar] <anchor 367 -846> @diaB;
 # baseClass [highhamzaWaw-ar.fina kirghizoe-ar.fina kirghizoe-ar.fina.bar kirghizyu-ar.fina oe-ar.fina u-ar.fina uHamzaabove-ar.fina ve-ar.fina waw-ar.fina wawDotabove-ar.fina wawDotcenter-ar.fina wawHamzaabove-ar.fina wawThreeAbove-ar.fina wawTwoabove-ar.fina wawTwodots-ar.fina wawring-ar.fina yu-ar.fina] <anchor 422 -806> @diaB;
@@ -5472,7 +5472,7 @@ lookup MarkToBase {
     pos base hehgoalHamzaabove-ar.init <anchor 246 1708> mark @_diaA;
     pos base hehgoalHamzaabove-ar.medi <anchor 555 1398> mark @_diaA;
     pos base highhamza-ar <anchor 146 1618> mark @_diaA;
-    pos base highhamza-ar.loclMLY <anchor 274 1898> mark @_diaA;
+    pos base highhamza-ar.loclMLY <anchor 274 1568> mark @_diaA;
     pos base [highhamzaAlef-ar highhamzaAlef-ar.fina] <anchor 231 1657> mark @_diaA;
     pos base highhamzaWaw-ar <anchor 295 1338> mark @_diaA;
     pos base highhamzaWaw-ar.fina <anchor 433 1429> mark @_diaA;
@@ -5991,7 +5991,7 @@ lookup MarkToBase {
     pos base hehDoachashmee-ar.fina <anchor 660 -777> mark @_diaB;
     pos base hehgoal-ar.fina.allah <anchor 278 -354> mark @_diaB;
     pos base highhamza-ar <anchor 196 1006> mark @_diaB;
-    pos base highhamza-ar.loclMLY <anchor 421 892> mark @_diaB;
+    pos base highhamza-ar.loclMLY <anchor 421 562> mark @_diaB;
     pos base highhamzaAlef-ar <anchor 135 -242> mark @_diaB;
     pos base [highhamzaWaw-ar kashidaWaw-ar kirghizoe-ar kirghizoe-ar.bar kirghizyu-ar oe-ar uHamzaabove-ar ve-ar waw-ar wawDotabove-ar wawDotcenter-ar wawThreeAbove-ar wawTwoabove-ar wawTwodots-ar wawring-ar yu-ar] <anchor 367 -846> mark @_diaB;
     pos base [highhamzaWaw-ar.fina kirghizoe-ar.fina kirghizoe-ar.fina.bar kirghizyu-ar.fina oe-ar.fina u-ar.fina uHamzaabove-ar.fina ve-ar.fina waw-ar.fina wawDotabove-ar.fina wawDotcenter-ar.fina wawHamzaabove-ar.fina wawThreeAbove-ar.fina wawTwoabove-ar.fina wawTwodots-ar.fina wawring-ar.fina yu-ar.fina] <anchor 422 -806> mark @_diaB;

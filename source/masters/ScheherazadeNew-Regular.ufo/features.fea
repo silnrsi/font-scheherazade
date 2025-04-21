@@ -839,7 +839,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass hehgoalHamzaabove-ar.init <anchor 203 1415> @diaA;
 # baseClass hehgoalHamzaabove-ar.medi <anchor 432 1221> @diaA;
 # baseClass highhamza-ar <anchor 162 1531> @diaA;
-# baseClass highhamza-ar.loclMLY <anchor 309 1804> @diaA;
+# baseClass highhamza-ar.loclMLY <anchor 309 1504> @diaA;
 # baseClass highhamzaAlef-ar.fina <anchor 186 1595> @diaA;
 # baseClass highhamzaWaw-ar <anchor 326 1305> @diaA;
 # baseClass highhamzaWaw-ar.fina <anchor 394 1305> @diaA;
@@ -1448,7 +1448,7 @@ markClass [VS1 VS10 VS11 VS12 VS13 VS14 VS15 VS16 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS
 # baseClass hehgoal-ar.fina.allah <anchor 290 -385> @diaB;
 # baseClass [hehgoalHamzaabove-ar.fina tehMarbutagoal-ar.fina] <anchor 290 -363> @diaB;
 # baseClass highhamza-ar <anchor 218 851> @diaB;
-# baseClass highhamza-ar.loclMLY <anchor 357 907> @diaB;
+# baseClass highhamza-ar.loclMLY <anchor 357 607> @diaB;
 # baseClass [jeem-ar.init jeemTwodotsabove-ar.init] <anchor 619 -526> @diaB;
 # baseClass [jeem-ar.medi jeemTwodotsabove-ar.medi] <anchor 682 -576> @diaB;
 # baseClass jeemThreedotsabove-ar.init <anchor 600 -658> @diaB;
@@ -5331,7 +5331,7 @@ lookup MarkToBase {
     pos base hehgoalHamzaabove-ar.init <anchor 203 1415> mark @_diaA;
     pos base hehgoalHamzaabove-ar.medi <anchor 432 1221> mark @_diaA;
     pos base highhamza-ar <anchor 162 1531> mark @_diaA;
-    pos base highhamza-ar.loclMLY <anchor 309 1804> mark @_diaA;
+    pos base highhamza-ar.loclMLY <anchor 309 1504> mark @_diaA;
     pos base highhamzaAlef-ar.fina <anchor 186 1595> mark @_diaA;
     pos base highhamzaWaw-ar <anchor 326 1305> mark @_diaA;
     pos base highhamzaWaw-ar.fina <anchor 394 1305> mark @_diaA;
@@ -5839,7 +5839,7 @@ lookup MarkToBase {
     pos base hehgoal-ar.fina.allah <anchor 290 -385> mark @_diaB;
     pos base [hehgoalHamzaabove-ar.fina tehMarbutagoal-ar.fina] <anchor 290 -363> mark @_diaB;
     pos base highhamza-ar <anchor 218 851> mark @_diaB;
-    pos base highhamza-ar.loclMLY <anchor 357 907> mark @_diaB;
+    pos base highhamza-ar.loclMLY <anchor 357 607> mark @_diaB;
     pos base [jeem-ar.init jeemTwodotsabove-ar.init] <anchor 619 -526> mark @_diaB;
     pos base [jeem-ar.medi jeemTwodotsabove-ar.medi] <anchor 682 -576> mark @_diaB;
     pos base jeemThreedotsabove-ar.init <anchor 600 -658> mark @_diaB;
