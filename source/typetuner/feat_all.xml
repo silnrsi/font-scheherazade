@@ -30,6 +30,10 @@
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KyrgyzCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KyrgyzCALT}"/>
 		</value>
+		<value name="Malay" tag="Mly">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MalayCALT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {MalayCALT}"/>
+		</value>
 		<value name="Rohingya" tag="Rhg">
 			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {RohingyaCALT}"/>
 			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {RohingyaCALT}"/>

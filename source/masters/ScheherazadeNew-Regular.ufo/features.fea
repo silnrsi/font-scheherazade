@@ -1980,6 +1980,8 @@ languagesystem arab KIR;
 # ky: Kyrgyz
 languagesystem arab KUR;
 # ku: Kurdish
+languagesystem arab MLY;
+# ms: Malay
 languagesystem arab RHG;
 # rhg: Rohingya -- supported by Harfbuzz
 languagesystem arab SND;
@@ -2391,6 +2393,12 @@ lookup KyrgyzCALT {
     sub @Kasra_lowered by @Kasra;
     # high kasra
 } KyrgyzCALT;
+
+lookup MalayCALT {
+    lookupflag 0;
+    sub highhamza-ar by highhamza-ar.loclMLY;
+    sub @Kasra by @Kasra_lowered;
+} MalayCALT;
 
 lookup RohingyaCALT {
     lookupflag 0;
@@ -3794,6 +3802,8 @@ feature ccmp {
     # Kashmiri
     language KUR;
     # Kurdish
+    language MLY;
+    # Malay
     language RHG;
     # Rohingya
     language SND;
@@ -3814,6 +3824,7 @@ feature fina {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -3829,6 +3840,7 @@ feature medi {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -3844,6 +3856,7 @@ feature init {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -3866,6 +3879,7 @@ feature rlig {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -3891,6 +3905,9 @@ feature calt {
     language KUR;
     # Kurdish
     lookup KurdishCALT;
+    language MLY;
+    # Malay
+    lookup MalayCALT;
     language RHG;
     #Rohingya
     lookup RohingyaCALT;
@@ -3966,6 +3983,7 @@ feature salt {
         language KIR;
         language KSH;
         language KUR;
+        language MLY;
         language RHG;
         language SND;
         language URD;
@@ -4017,6 +4035,7 @@ feature cv44 {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -4061,6 +4080,7 @@ feature cv48 {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -4105,6 +4125,7 @@ feature cv49 {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -4142,6 +4163,7 @@ feature cv51 {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;
@@ -4183,6 +4205,7 @@ feature cv54 {
     language KIR;
     language KSH;
     language KUR;
+    language MLY;
     language RHG;
     language SND;
     language URD;

@@ -14,6 +14,7 @@ languagesystem arab dflt ;
 languagesystem arab KSH  ;    # ks: Kashmiri
 languagesystem arab KIR  ;    # ky: Kyrgyz
 languagesystem arab KUR  ;    # ku: Kurdish
+languagesystem arab MLY  ;    # ms: Malay
 languagesystem arab RHG  ;    # rhg: Rohingya -- supported by Harfbuzz
 languagesystem arab SND  ;    # sd: Sindhi
 languagesystem arab URD  ;    # ur: Urdu
@@ -427,6 +428,13 @@ lookup KyrgyzCALT {
     
     sub @Kasra_lowered  by @Kasra;  # high kasra
 } KyrgyzCALT ;
+
+lookup MalayCALT {
+  lookupflag 0;
+    sub highhamza-ar  by  highhamza-ar.loclMLY ;
+    
+    sub @Kasra  by @Kasra_lowered;
+} MalayCALT ;
 
 lookup RohingyaCALT {
   lookupflag 0 ;
@@ -1057,6 +1065,7 @@ feature ccmp {  # Glyph Composition/Decomposition
       language KIR ;  # Kyrgyz
       language KSH ;  # Kashmiri
       language KUR ;  # Kurdish
+      language MLY ;  # Malay
       language RHG ;  # Rohingya
       language SND ;  # Sindhi
       language URD ;  # Urdu
@@ -1074,6 +1083,7 @@ feature fina {  # Terminal Forms
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1089,6 +1099,7 @@ feature medi {  # Medial Forms
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1104,6 +1115,7 @@ feature init {  # Initial Forms
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1126,6 +1138,7 @@ feature rlig {  # Required Ligatures
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1152,6 +1165,8 @@ feature calt {  # Contextual Alternates
         lookup KashmiriCALT ;
       language KUR ; # Kurdish
         lookup KurdishCALT ;
+      language MLY ; # Malay
+        lookup MalayCALT ;
       language RHG ; #Rohingya
         lookup RohingyaCALT ;
       language SND ; # Sindhi
@@ -1206,6 +1221,7 @@ feature cv08 {  # Character Variant 08
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1242,6 +1258,7 @@ feature cv12 {
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1275,6 +1292,7 @@ feature cv20 {  # Character Variant 20
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1307,6 +1325,7 @@ feature cv44 {  # Character Variant 44
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ; 
       language URD ;
@@ -1337,6 +1356,7 @@ feature cv48 {    # Character Variant 48
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1367,6 +1387,7 @@ feature cv49 {    # Character Variant 49
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1395,6 +1416,7 @@ feature cv51 {  # Character Variant 51
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
@@ -1424,6 +1446,7 @@ feature cv54 {  # Character Variant 54
       language KIR ;
       language KSH ;
       language KUR ;
+      language MLY ;
       language RHG ;
       language SND ;
       language URD ;
