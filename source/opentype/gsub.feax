@@ -134,6 +134,11 @@ lookup LatinPunctuation {
 
 # HB PAUSE
 
+#---  isol feature  ---
+# We don't use this as all chars are encoded with their isolate glyph
+
+# HB PAUSE
+
 #---  fina feature  ---
 
 lookup ltrFina {
@@ -885,12 +890,16 @@ lookup DecimalSepAlternate {    # cv85
 
 lookup GuillemetAlternate {    # cv88
   lookupflag IgnoreMarks ;
-    # NB: This is written so as to allow language-specific behavior to be overridden
-    # 0=default              1=Angled            2=Rounded
-    sub guillemetleft  from [guillemetleft.latn  guillemetleft];
-    sub guillemetright from [guillemetright.latn guillemetright];
-    sub guilsinglleft  from [guilsinglleft.latn  guilsinglleft];
-    sub guilsinglright from [guilsinglright.latn guilsinglright];
+    # NB: This is written so as to allow script-specific behavior to be overridden
+    #                             1=Angled            2=Rounded
+    sub guillemetleft       from [guillemetleft.latn  guillemetleft ];
+    sub guillemetright      from [guillemetright.latn guillemetright];
+    sub guilsinglleft       from [guilsinglleft.latn  guilsinglleft ];
+    sub guilsinglright      from [guilsinglright.latn guilsinglright];
+    sub guillemetleft.latn  from [guillemetleft.latn  guillemetleft ];
+    sub guillemetright.latn from [guillemetright.latn guillemetright];
+    sub guilsinglleft.latn  from [guilsinglleft.latn  guilsinglleft ];
+    sub guilsinglright.latn from [guilsinglright.latn guilsinglright];
 } GuillemetAlternate ;
 
 #---  liga feature  ---
@@ -1739,9 +1748,9 @@ feature cv88 {  # Character Variant 88
          name 3 1 0x0409 "«‹›»";  # English US x00AB x2039  x203A x00BB;
         };
 
-    ### ParamUILabelNameID { name 3 1 0x0409 "Rounded"        ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Angled"         ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Rounded"        ; };
     } ;
     # Same for latin & arabic:
       lookup GuillemetAlternate;
