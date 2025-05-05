@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonthin-ar.medi" format="2">
-  <advance width="1646"/>
+  <advance width="574"/>
+  <anchor x="359" y="536" name="above"/>
+  <anchor x="212" y="1400" name="alef"/>
+  <anchor x="233" y="-142" name="below"/>
+  <anchor x="230" y="1639" name="diaA"/>
+  <anchor x="221" y="-322" name="diaB"/>
+  <anchor x="347" y="140" name="ring"/>
   <outline>
-    <component base=".notdef"/>
+    <component base="_dot1" xOffset="249" yOffset="1088"/>
+    <contour>
+      <point x="666" y="140" type="curve" smooth="yes"/>
+      <point x="666" y="228"/>
+      <point x="660" y="275"/>
+      <point x="592" y="275" type="curve"/>
+      <point x="-15" y="275" type="line"/>
+      <point x="-83" y="275"/>
+      <point x="-90" y="225"/>
+      <point x="-90" y="140" type="curve" smooth="yes"/>
+      <point x="-90" y="48"/>
+      <point x="-83" y="0"/>
+      <point x="-15" y="0" type="curve"/>
+      <point x="592" y="0" type="line"/>
+      <point x="660" y="0"/>
+      <point x="666" y="53"/>
+    </contour>
+    <contour>
+      <point x="374" y="768" type="line"/>
+      <point x="340" y="765"/>
+      <point x="213" y="751"/>
+      <point x="213" y="727" type="curve" smooth="yes"/>
+      <point x="213" y="702"/>
+      <point x="233" y="378"/>
+      <point x="239" y="152" type="curve"/>
+      <point x="374" y="152" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CPP</string>
       <key>public.markColor</key>
       <string>0.5,0.09,0.79,1</string>
     </dict>

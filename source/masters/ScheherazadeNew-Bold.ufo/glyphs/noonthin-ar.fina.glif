@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="noonthin-ar.fina" format="2">
-  <advance width="1646"/>
+  <advance width="1385"/>
+  <anchor x="332" y="672" name="alef"/>
+  <anchor x="550" y="1018" name="diaA"/>
+  <anchor x="598" y="-915" name="diaB"/>
   <outline>
-    <component base=".notdef"/>
+    <component base="noon-ar.fina"/>
   </outline>
   <lib>
     <dict>

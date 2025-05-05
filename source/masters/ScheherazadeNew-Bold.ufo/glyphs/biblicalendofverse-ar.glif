@@ -3,7 +3,40 @@
   <advance width="1646"/>
   <unicode hex="10ED0"/>
   <outline>
-    <component base=".notdef"/>
+    <contour>
+      <point x="823" y="444" type="curve" smooth="yes"/>
+      <point x="1123" y="444"/>
+      <point x="1366" y="687"/>
+      <point x="1366" y="988" type="curve" smooth="yes"/>
+      <point x="1366" y="1288"/>
+      <point x="1123" y="1531"/>
+      <point x="823" y="1531" type="curve" smooth="yes"/>
+      <point x="522" y="1531"/>
+      <point x="279" y="1288"/>
+      <point x="279" y="988" type="curve" smooth="yes"/>
+      <point x="279" y="687"/>
+      <point x="522" y="444"/>
+    </contour>
+    <contour>
+      <point x="823" y="644" type="curve" smooth="yes"/>
+      <point x="633" y="644"/>
+      <point x="479" y="798"/>
+      <point x="479" y="988" type="curve" smooth="yes"/>
+      <point x="479" y="1177"/>
+      <point x="633" y="1331"/>
+      <point x="823" y="1331" type="curve" smooth="yes"/>
+      <point x="1012" y="1331"/>
+      <point x="1166" y="1177"/>
+      <point x="1166" y="988" type="curve" smooth="yes"/>
+      <point x="1166" y="798"/>
+      <point x="1012" y="644"/>
+    </contour>
+    <contour>
+      <point x="243" y="200" type="line"/>
+      <point x="243" y="0" type="line"/>
+      <point x="1402" y="0" type="line"/>
+      <point x="1402" y="200" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
