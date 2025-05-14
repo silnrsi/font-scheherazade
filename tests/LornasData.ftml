@@ -35,6 +35,7 @@
       <style feats="'cv12' 1, 'cv70' 1" name="cv12_1, cv70_1"/>
       <style feats="'cv12' 1, 'cv70' 2" name="cv12_1, cv70_2"/>
       <style feats="'cv60' 1, 'cv74' 1" name="cv60_1, cv74_1"/>
+      <style feats="'cv88' 1" name="cv88_1"/>
       <style lang="ku" name="ku"/>
       <style lang="rhg" name="rhg"/>
       <style lang="sd" name="sd"/>
@@ -2949,6 +2950,18 @@
     <test label="Line 636" stylename="cv72_1">
       <comment>dammatan</comment>
       <string>سِباعٌ و ضِباعٌ و عِراكٌ</string>
+    </test>
+    <test label="">
+      <comment>angled guillemot</comment>
+      <string>ب ‹ب› ب ب «ب» ب</string>
+    </test>
+    <test label="" stylename="cv88_1">
+      <comment>angled guillemot</comment>
+      <string>ب ‹ب› ب ب «ب» ب</string>
+    </test>
+    <test label="" stylename="cv88_2">
+      <comment>angled guillemot</comment>
+      <string>ب ‹ب› ب ب «ب» ب</string>
     </test>
   </testgroup>
 </ftml>
