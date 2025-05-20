@@ -49,6 +49,7 @@
       <style feats="'cv82' 5" name="cv82_5"/>
       <style feats="'cv84' 1" name="cv84_1"/>
       <style feats="'cv85' 1" name="cv85_1"/>
+      <style feats="'cv88' 1" name="cv88_1"/>
       <style lang="ks" name="ks"/>
       <style lang="ku" name="ku"/>
       <style lang="ky" name="ky"/>
@@ -139,11 +140,19 @@
       <comment>guillemetleft</comment>
       <string>\u0000AB LTR: \u00202A\u0000AB\u00202C RTL: \u00202B\u0000AB\u00202C</string>
     </test>
+    <test label="U+00AB" stylename="cv88_1">
+      <comment>guillemetleft</comment>
+      <string>\u0000AB LTR: \u00202A\u0000AB\u00202C RTL: \u00202B\u0000AB\u00202C</string>
+    </test>
     <test label="U+00AC">
       <comment>logicalnot</comment>
       <string>\u0000AC \u0000AD \u0000AE \u0000AF \u0000B0 \u0000B1 \u0000B2 \u0000B3 \u0000B4 \u0000B5 \u0000B6 \u0000B7 \u0000B8 \u0000B9 \u0000BA</string>
     </test>
     <test label="U+00BB">
+      <comment>guillemetright</comment>
+      <string>\u0000BB LTR: \u00202A\u0000BB\u00202C RTL: \u00202B\u0000BB\u00202C</string>
+    </test>
+    <test label="U+00BB" stylename="cv88_1">
       <comment>guillemetright</comment>
       <string>\u0000BB LTR: \u00202A\u0000BB\u00202C RTL: \u00202B\u0000BB\u00202C</string>
     </test>
@@ -2663,7 +2672,15 @@
       <comment>guilsinglleft</comment>
       <string>\u002039 LTR: \u00202A\u002039\u00202C RTL: \u00202B\u002039\u00202C</string>
     </test>
+    <test label="U+2039" stylename="cv88_1">
+      <comment>guilsinglleft</comment>
+      <string>\u002039 LTR: \u00202A\u002039\u00202C RTL: \u00202B\u002039\u00202C</string>
+    </test>
     <test label="U+203A">
+      <comment>guilsinglright</comment>
+      <string>\u00203A LTR: \u00202A\u00203A\u00202C RTL: \u00202B\u00203A\u00202C</string>
+    </test>
+    <test label="U+203A" stylename="cv88_1">
       <comment>guilsinglright</comment>
       <string>\u00203A LTR: \u00202A\u00203A\u00202C RTL: \u00202B\u00203A\u00202C</string>
     </test>

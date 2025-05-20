@@ -8,7 +8,6 @@
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv88' 1" name="cv88_1"/>
-      <style feats="'cv88' 2" name="cv88_2"/>
     </styles>
     <title>Latin Punctuation</title>
     <widths string="20em"/>
@@ -24,11 +23,5 @@
     <test label="latn-rtl" stylename="cv88_1" rtl="True"><string><em>(</em>A bb<em>:</em> <em>« “</em>Cc <em>‹ ‘</em>ddd<em>’ ›!</em><em>” »</em> ff <em>‟ ‛ ‚ „</em> ggg<em>*</em> hh.<em>)</em></string></test>
     <test label="arab-ltr" stylename="cv88_1"           ><string><em>(</em>ا بب<em>:</em> <em>« ”</em>شش <em>‹ ’</em>ددد<em>‘ ›</em><em>“ »</em> فف  <em>‟ ‛ ‚ „</em> گگگ<em>*</em> هه.<em>)</em></string></test>
     <test label="arab-rtl" stylename="cv88_1" rtl="True"><string><em>(</em>ا بب<em>:</em> <em>« ”</em>شش <em>‹ ’</em>ددد<em>‘ ›</em><em>“ »</em> فف  <em>‟ ‛ ‚ „</em> گگگ<em>*</em> هه.<em>)</em></string></test>
-  </testgroup>
-  <testgroup label="cv88=2 Rounded"> 
-    <test label="latn-ltr" stylename="cv88_2"           ><string><em>(</em>A bb<em>:</em> <em>« “</em>Cc <em>‹ ‘</em>ddd<em>’ ›!</em><em>” »</em> ff <em>‟ ‛ ‚ „</em> ggg<em>*</em> hh.<em>)</em></string></test>
-    <test label="latn-rtl" stylename="cv88_2" rtl="True"><string><em>(</em>A bb<em>:</em> <em>« “</em>Cc <em>‹ ‘</em>ddd<em>’ ›!</em><em>” »</em> ff <em>‟ ‛ ‚ „</em> ggg<em>*</em> hh.<em>)</em></string></test>
-    <test label="arab-ltr" stylename="cv88_2"           ><string><em>(</em>ا بب<em>:</em> <em>« ”</em>شش <em>‹ ’</em>ددد<em>‘ ›</em><em>“ »</em> فف  <em>‟ ‛ ‚ „</em> گگگ<em>*</em> هه.<em>)</em></string></test>
-    <test label="arab-rtl" stylename="cv88_2" rtl="True"><string><em>(</em>ا بب<em>:</em> <em>« ”</em>شش <em>‹ ’</em>ددد<em>‘ ›</em><em>“ »</em> فف  <em>‟ ‛ ‚ „</em> گگگ<em>*</em> هه.<em>)</em></string></test>
   </testgroup>
 </ftml>

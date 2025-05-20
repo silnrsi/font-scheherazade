@@ -126,7 +126,6 @@ lookup SmallMadda {
 
 # Replace Arabic punctuation glyphs with Latin ones:
 
-# Has no effect in Harmattan:
 lookup LatinPunctuation {
   lookupflag 0 ;
     sub @cno_latn by @c_latn ;
@@ -644,8 +643,10 @@ lookup HehDoAlternates {
                                 from  [ hehDoachashmee-ar.fina.knottedHigh  hehDoachashmee-ar.fina  hehDoachashmee-ar.fina.knottedHigh ] ;
 } HehDoAlternates ;
 
+
+# Kyrgyz OE Alternates: cv51
    
-lookup KyrgyzOeAlternates {     # cv51
+lookup KyrgyzOeAlternates {
   lookupflag 0;
     sub @cno_bar  by  @c_bar;
 } KyrgyzOeAlternates ;
@@ -687,7 +688,7 @@ lookup MaddaAlternate {
 
 # Kasra alternates: cv62
 
-lookup KasraAlternates {        # cv62
+lookup KasraAlternates {
   lookupflag 0 ;
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
     #     and so as to allow language-specific behavior to be overridden.
@@ -807,7 +808,9 @@ lookup AyahAlternates {
 
 ifinfo(familyName, "Scheherazade New") {
 
-lookup HonLigAlternates {      # cv81
+# Simplified Honorifics: cv81
+
+lookup HonLigAlternates {
   lookupflag 0;
     sub @HonLigCall by @HonLigSmpl ;
 } HonLigAlternates ;
@@ -883,23 +886,19 @@ lookup CommaAlternates {
 
 # Decimal separator alternates: cv85
 
-lookup DecimalSepAlternate {    # cv85
+lookup DecimalSepAlternate {
   lookupflag IgnoreMarks ;
     sub @cno_slash by @c_slash;
 } DecimalSepAlternate ;
 
-lookup GuillemetAlternate {    # cv88
+# Angled Guillemet: cv88
+
+lookup GuillemetAlternate {
   lookupflag IgnoreMarks ;
-    # NB: This is written so as to allow script-specific behavior to be overridden
-    #                             1=Angled            2=Rounded
-    sub guillemetleft       from [guillemetleft.latn  guillemetleft ];
-    sub guillemetright      from [guillemetright.latn guillemetright];
-    sub guilsinglleft       from [guilsinglleft.latn  guilsinglleft ];
-    sub guilsinglright      from [guilsinglright.latn guilsinglright];
-    sub guillemetleft.latn  from [guillemetleft.latn  guillemetleft ];
-    sub guillemetright.latn from [guillemetright.latn guillemetright];
-    sub guilsinglleft.latn  from [guilsinglleft.latn  guilsinglleft ];
-    sub guilsinglright.latn from [guilsinglright.latn guilsinglright];
+    sub guillemetleft   by guillemetleft.latn ;
+    sub guillemetright  by guillemetright.latn;
+    sub guilsinglleft   by guilsinglleft.latn ;
+    sub guilsinglright  by guilsinglright.latn;
 } GuillemetAlternate ;
 
 #---  liga feature  ---
@@ -1741,16 +1740,15 @@ feature cv88 {  # Character Variant 88
         FeatUILabelNameID  { name 3 1 0x0409 "Guillemet"; };
 
         FeatUITooltipTextNameID {
-         name 3 1 0x0409 "Angled for Guillemet";  # English US (Rounded is default for Arabic)
+         name 3 1 0x0409 "Angled Guillemet";  # English US (Rounded is default for Arabic)
         };
       
         SampleTextNameID {
          name 3 1 0x0409 "«‹›»";  # English US x00AB x2039  x203A x00BB;
         };
 
-    ### ParamUILabelNameID { name 3 1 0x0409 "Default"        ; };
+    ### ParamUILabelNameID { name 3 1 0x0409 "Rounded"        ; };
         ParamUILabelNameID { name 3 1 0x0409 "Angled"         ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Rounded"        ; };
     } ;
     # Same for latin & arabic:
       lookup GuillemetAlternate;
