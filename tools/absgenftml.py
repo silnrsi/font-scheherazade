@@ -408,6 +408,10 @@ def doit(args):
                                 builder.render((uid, diac, 0x0654), ftml, addBreaks=False, dualJoinMode=2)
                                 builder.render((uid, 0x0654, diac), ftml, addBreaks=False, dualJoinMode=2)
                     ftml.clearFeatures()
+                    for langID in sorted(c.langs):
+                        ftml.setLang(langID)
+                        builder.render((uid,diac), ftml, dualJoinMode=2)
+                    ftml.clearLang()
                 ftml.closeTest()
 
         ftml.startTestGroup('All Arabic diacritics on representative bases')
