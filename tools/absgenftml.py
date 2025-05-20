@@ -32,13 +32,16 @@ argspec = [
     ('--ucdxml', {'help': 'File with UCD XML data for chars in the pipeline'}, {}),
 ]
 
+# The joinGroupKeys dictionary is used for sorting according to shape (e.g., for "AL sorted" test).
+# The keys must be the value of the UCD XML "jg" attribute which is normally 
+# spelled in title case with underscores separating words.
 
 joinGroupKeys = {
     'Ain' : 1,
     'Alef' : 2,
     'Beh' : 3,
-    'Yeh' : 4, 'Farsi_Yeh' : 4, # Near Beh Due To Medial Form
-    'Noon' :5, 'African_Noon' : 5,  # Near Yeh Due To Medial Form
+    'Yeh' : 4, 'Farsi_Yeh' : 4, 'Kashmiri_Yeh' : 4, 'Thin_Yeh' : 4, # Near Beh Due To Medial Form
+    'Noon' :5, 'African_Noon' : 5, 'Thin_Noon' : 5, # Near Yeh Due To Medial Form
     'Nya' : 6,  # Near Noon Due To Final Form
     'Sad' : 7,  # Near Noon Due To Final Form
     'Seen' : 8,
@@ -62,10 +65,11 @@ joinGroupKeys = {
     'Tah' : 26,
     'Waw' : 27,
     'Straight_Waw' : 28,
+    'Vertical_Tail' : 29,
 }
 
 def joinGoupSortKey(uid:int):
-    return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 0x20000 + uid
+    return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 0x200000 + uid
 
 ageToFlag = 17.0
 ageColor = '#FFC8A0'      # light orange -- marks if there is a char from above Unicode version or later
