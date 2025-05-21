@@ -55,10 +55,10 @@
     <p>Unfortunately, the UI needed to access the language-specific
     behavior is not yet present in many applications. LibreOffice and
     Microsoft Word 2016 support language-specific behavior for Kashmiri,
-    Kurdish, Sindhi and Urdu. Microsoft Word 2019, but not LibreOffice,
-    supports language-specific behavior for Kyrgyz. Neither application
-    provides support for the Rohingya or Wolof languages. Some
-    Harfbuzz-based apps, e.g., XeTeX, can access language-specific
+    Kurdish, Malay, Sindhi, and Urdu. Microsoft Word 2019, but not
+    LibreOffice, supports language-specific behavior for Kyrgyz. Neither
+    application provides support for the Rohingya or Wolof languages.
+    Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific
     behavior. In the past, it was not always possible to override
     language-specific behavior in cases where the language-specific
     variants were undesirable but, as of version 4.300, the font now
@@ -242,22 +242,24 @@
     </tr>
     </tbody>
     </table>
-    <h4 id="kyrgyz-and-wolof">Kyrgyz and Wolof</h4>
+    <h4 id="kyrgyz-malay-and-wolof">Kyrgyz, Malay, and Wolof</h4>
     <table>
     <colgroup>
-    <col style="width: 13%" />
-    <col style="width: 9%" />
-    <col style="width: 18%" />
-    <col style="width: 13%" />
-    <col style="width: 13%" />
-    <col style="width: 13%" />
-    <col style="width: 18%" />
+    <col style="width: 12%" />
+    <col style="width: 8%" />
+    <col style="width: 16%" />
+    <col style="width: 12%" />
+    <col style="width: 12%" />
+    <col style="width: 12%" />
+    <col style="width: 12%" />
+    <col style="width: 16%" />
     </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Language</th>
     <th style="text-align: right;">Dal</th>
     <th style="text-align: right;">0626</th>
+    <th style="text-align: right;">0674</th>
     <th style="text-align: right;">0650/064E</th>
     <th style="text-align: right;">064F</th>
     <th style="text-align: right;">0657</th>
@@ -271,6 +273,8 @@
     class="scheherazadenew-R normal" dir="rtl"> د</span></td>
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl">ئ ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">اٴ</span></td>
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
     <td style="text-align: right;"><span
@@ -287,6 +291,8 @@
     class="scheherazadenew-R normal" dir="rtl" lang="ky"
     style="color:red">ئ ئئئ</span></td>
     <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ky">اٴ</span></td>
+    <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl" lang="ky">بِّ</span></td>
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl" lang="ky">بُ</span></td>
@@ -295,6 +301,25 @@
     <td style="text-align: left;"><code>lang='ky'</code></td>
     </tr>
     <tr class="odd">
+    <td style="text-align: left;">Malay</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms"> د</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms">ئ
+    ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms"
+    style="color:red">اٴ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms"
+    style="color:red">بِّ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms">بُ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="ms">بٗ</span></td>
+    <td style="text-align: left;"><code>lang='ms'</code></td>
+    </tr>
+    <tr class="even">
     <td style="text-align: left;">Wolof</td>
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl" lang="wo"
@@ -302,6 +327,8 @@
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl" lang="wo">ئ
     ئئئ</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl" lang="wo">اٴ</span></td>
     <td style="text-align: right;"><span
     class="scheherazadenew-R normal" dir="rtl" lang="wo"
     style="color:red">بِّ</span></td>
@@ -1079,6 +1106,38 @@
     </tr>
     </tbody>
     </table>
+    <h4 id="guillemet">Guillemet</h4>
+    <p><span class="affects">Affects: U+00AB U+00BB U+2039
+    U+203A</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 40%" />
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Feature</th>
+    <th style="text-align: right;">Sample</th>
+    <th style="text-align: left;">Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">Rounded</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl">«‹ب›»</span></td>
+    <td style="text-align: left;"><code>cv88=0</code></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Angled</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal" dir="rtl"
+    style="font-feature-settings: &quot;cv88&quot; 1">«‹ب›»</span></td>
+    <td style="text-align: left;"><code>cv88=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <h3 id="other-user-font-features">Other user font features</h3>
     <h4 id="line-spacing">Line spacing</h4>
     <p><em>This feature is only available in TypeTuner Web.</em></p>
@@ -1112,7 +1171,7 @@
 
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 4.3 and is copyright © 1994-2024 SIL Global.</p>
+        <p>This guide is from the <a href="https://software.sil.org/scheherazade/" title="" class="active">Scheherazade New project</a> version 4.3 and is copyright © 1994-2025 SIL Global.</p>
     </footer>
 </article>
 </div>

@@ -15,7 +15,7 @@ This page uses web fonts (WOFF) to demonstrate font features and should display 
 
 <span class='affects'>Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span>
 
-Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kashmiri, Kurdish, Sindhi and Urdu. Microsoft Word 2019, but not LibreOffice, supports language-specific behavior for Kyrgyz. Neither application provides support for the Rohingya or Wolof languages. Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior. In the past, it was not always possible to override language-specific behavior in cases where the language-specific variants were undesirable but, as of version 4.300, the font now supports this possibility.
+Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kashmiri, Kurdish, Malay, Sindhi, and Urdu. Microsoft Word 2019, but not LibreOffice, supports language-specific behavior for Kyrgyz. Neither application provides support for the Rohingya or Wolof languages. Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior. In the past, it was not always possible to override language-specific behavior in cases where the language-specific variants were undesirable but, as of version 4.300, the font now supports this possibility.
 
 #### Kashmiri, Kurdish (Northern), Rohingya, Sindhi, Urdu
 
@@ -28,13 +28,14 @@ Rohingya | <span dir="rtl" class='scheherazadenew-R normal' lang='rhg'>&#x0645;&
 Sindhi | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x0628;&#x064C;</span>| <span dir="rtl" class='scheherazadenew-R normal' lang='sd'>&#x0628;&#x0652;</span>| `lang='sd'`
 Urdu | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x0645;&#x0020;&#x0645;&#x0645;&#x0645;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F4;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F6;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x06F7;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x0628;&#x064C;</span>|<span dir="rtl" class='scheherazadenew-R normal' lang='ur'>&#x0628;&#x0652;</span> | `lang='ur'`
 
-#### Kyrgyz and Wolof
+#### Kyrgyz, Malay, and Wolof
 
-Language | Dal  | 0626 | 0650/064E | 064F | 0657 | Feature Setting
-:-- | -: |  ---: | --: | --: | --: | :---
-Default | <span dir="rtl" class='scheherazadenew-R normal'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0657;</span>|
-Kyrgyz | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky' style="color:red">&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0657;</span>| `lang='ky'`
-Wolof | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red"> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0657;</span>| `lang='wo'`
+Language | Dal  | 0626 | 0674 | 0650/064E | 064F | 0657 | Feature Setting
+:-- | -: |  ---: | --: | --: | --: | --: | :---
+Default | <span dir="rtl" class='scheherazadenew-R normal'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0627;&#x0674;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0657;</span>|
+Kyrgyz | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky' style="color:red">&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0627;&#x0674;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ky'>&#x0628;&#x0657;</span>| `lang='ky'`
+Malay | <span dir="rtl" class='scheherazadenew-R normal' lang='ms'> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ms'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ms' style="color:red">&#x0627;&#x0674;</span> |<span dir="rtl" class='scheherazadenew-R normal' lang='ms' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ms'>&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='ms'>&#x0628;&#x0657;</span>| `lang='ms'`
+Wolof | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red"> &#x062F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo'>&#x0626;&#x0020;&#x0626;&#x0626;&#x0626;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo'>&#x0627;&#x0674;</span> |<span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0651;&#x0650;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x064F;</span> | <span dir="rtl" class='scheherazadenew-R normal' lang='wo' style="color:red">&#x0628;&#x0657;</span>| `lang='wo'`
 
 
 ### Character variants
@@ -241,6 +242,15 @@ Feature | Sample |  Feature setting
 Small reh | <span dir="rtl" class='scheherazadenew-R normal'>&#x066B;</span> | `cv85=0`
 Slash | <span dir="rtl" class='scheherazadenew-cv85-1-R normal'>&#x066B;</span>| `cv85=1`
 
+#### Guillemet 
+
+<span class='affects'>Affects: U+00AB U+00BB U+2039 U+203A</span>
+
+Feature | Sample |  Feature setting
+:------------- | ------: | :------------- 
+Rounded | <span dir="rtl" class='scheherazadenew-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> | `cv88=0`
+Angled | <span dir="rtl" class='scheherazadenew-cv88-1-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=1`
+
 ### Other user font features
 
 #### Line spacing 
@@ -300,3 +310,4 @@ Loose |
 [font id='scheherazadenew-cv82-2' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv82 2']
 [font id='scheherazadenew-cv84-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv84 1']
 [font id='scheherazadenew-cv85-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv85 1']
+[font id='scheherazadenew-cv88-1' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1 feats='cv88 1']

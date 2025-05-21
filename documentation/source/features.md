@@ -254,7 +254,6 @@ Feature | Sample |  Feature setting
 :------------- | ------: | :------------- 
 Rounded | <span dir="rtl" class='scheherazadenew-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> | `cv88=0`
 Angled | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=1`
-Default | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 2'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=2`
 
 ### Other user font features
 
