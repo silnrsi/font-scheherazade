@@ -4201,97 +4201,110 @@ U+0654">
   </testgroup>
   <testgroup label="Allah ligatures">
     <test label="U+FDF2">
-      <comment>Rule 1</comment>
+      <comment>Rule 10
+(was 1)</comment>
       <string>\uFDF2</string>
     </test>
-    <test label="f-l-l-h">
-      <comment>shouldn't match</comment>
-      <string>\u0641\u0644\u0644\u0647</string>
+    <test label="a-l-l-s-da-hf-dma">
+      <comment>Rule 1b (daggeralef)
+(was 2)</comment>
+      <string>\u0627\u0644\u0644\u0651\u0670\u0647\u064F</string>
     </test>
-    <test label="a-l-l-s-da-hf">
-      <comment>Rule 2 (daggeralef)</comment>
-      <string>\u0627\u0644\u0644\u0651\u0670\u0647</string>
+    <test label="a-l-l-da-s-hf-dma">
+      <string>\u0627\u0644\u0644\u0670\u0651\u0647\u064F</string>
     </test>
-    <test label="a-l-l-da-s-hf">
-      <string>\u0627\u0644\u0644\u0670\u0651\u0647</string>
+    <test label="a-l-l-s-da-hgf-dma">
+      <string>\u0627\u0644\u0644\u0651\u0670\u06C1\u064F</string>
     </test>
-    <test label="a-l-l-s-da-hgf">
-      <string>\u0627\u0644\u0644\u0651\u0670\u06C1</string>
+    <test label="a-l-l-da-s-hgf-dma">
+      <string>\u0627\u0644\u0644\u0670\u0651\u06C1\u064F</string>
     </test>
-    <test label="a-l-l-da-s-hgf">
-      <string>\u0627\u0644\u0644\u0670\u0651\u06C1</string>
+    <test label="a-l-l-s-f-hf-dma">
+      <comment>Rule 1b+4 (fatha)
+(was 2)</comment>
+      <string>\u0627\u0644\u0644\u0651\u064E\u0647\u064F</string>
     </test>
-    <test label="a-l-l-s-f-hf">
-      <comment>Rule 2 (fatha)</comment>
-      <string>\u0627\u0644\u0644\u0651\u064E\u0647</string>
+    <test label="a-l-l-f-s-hf-dma">
+      <string>\u0627\u0644\u0644\u064E\u0651\u0647\u064F</string>
     </test>
-    <test label="a-l-l-f-s-hf">
-      <string>\u0627\u0644\u0644\u064E\u0651\u0647</string>
+    <test label="a-l-l-s-f-hgf-dma">
+      <string>\u0627\u0644\u0644\u0651\u064E\u06C1\u064F</string>
     </test>
-    <test label="a-l-l-s-f-hgf">
-      <string>\u0627\u0644\u0644\u0651\u064E\u06C1</string>
-    </test>
-    <test label="a-l-l-f-s-hgf">
-      <string>\u0627\u0644\u0644\u064E\u0651\u06C1</string>
+    <test label="a-l-l-f-s-hgf-dma">
+      <string>\u0627\u0644\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
     <test label="a-l-M-l-s-da-hgf">
-      <comment>New Rule 3b: shouldn't match</comment>
+      <comment>Rule 3: shouldn't match
+(was 3b)</comment>
       <string>\u0627\u0644\u065A\u0644\u064E\u0651\u06C1</string>
     </test>
-    <test label="a-l-k-l-s-da-hgf">
-      <comment>New Rule 3b: should match</comment>
-      <string>\u0627\u0644\u0650\u0644\u064E\u0651\u06C1</string>
+    <test label="a-l-k-l-s-da-hgf-dma">
+      <comment>Rule 3
+(was 3b)</comment>
+      <string>\u0627\u0644\u0650\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
-    <test label="a-l-k-l-s-da-hgf" stylename="sd">
-      <comment>New Rule 3b: should match</comment>
-      <string>\u0627\u0644\u0650\u0644\u064E\u0651\u06C1</string>
+    <test label="a-l-k-l-s-da-hgf-dma" stylename="sd">
+      <comment>Rule 3 (Sindhi)
+(was 3b, Sindhi)</comment>
+      <string>\u0627\u0644\u0650\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
-    <test label="f-l-l-s-da-hgf">
-      <comment>Rule 2d: non-alef</comment>
-      <string>\u0641\u0644\u0644\u064E\u0651\u06C1</string>
+    <test label="f-l-l-s-da-hgf-dma">
+      <comment>Rule 1b: non-alef
+(was 2d)</comment>
+      <string>\u0641\u0644\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
-    <test label="f-a-l-l-s-da-hgf">
-      <comment>Rule 2d: not isolate alef</comment>
-      <string>\u0641\u0627\u0644\u0644\u064E\u0651\u06C1</string>
+    <test label="f-a-l-l-s-da-hgf-dma">
+      <comment>Rule 1b: final alef
+(was 2d)</comment>
+      <string>\u0641\u0627\u0644\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
-    <test label="a-M-l-l-s-da-hgf">
-      <comment>Rule 2d: Mark</comment>
-      <string>\u0627\u065A\u0644\u0644\u064E\u0651\u06C1</string>
+    <test label="a-M-l-l-s-da-hgf-dma">
+      <comment>Rule 1b+2: Mark
+(was 2d)</comment>
+      <string>\u0627\u065A\u0644\u0644\u064E\u0651\u06C1\u064F</string>
     </test>
-    <test label="space-l-l-s-da-hf">
-      <comment>Rule 2d: shouldn't match</comment>
-      <string> \u0644\u0644\u0651\u064E\u0647</string>
+    <test label="space-l-l-s-da-hf-dma">
+      <comment>Rule 1b+4 (space before)
+(was 2)</comment>
+      <string> \u0644\u0644\u0651\u064E\u0647\u064F</string>
     </test>
-    <test label="a-l-l-h">
-      <comment>Rule 3</comment>
-      <string>\u0627\u0644\u0644\u0647</string>
+    <test label="a-l-l-h-dma">
+      <comment>Rule 1a  (various alef)
+(was 3)</comment>
+      <string>\u0627\u0644\u0644\u0647\u064F</string>
     </test>
-    <test label="aM-l-l-h">
-      <string>\u0622\u0644\u0644\u0647</string>
+    <test label="aM-l-l-h-dma">
+      <string>\u0622\u0644\u0644\u0647\u064F</string>
     </test>
-    <test label="aH-l-l-h">
-      <string>\u0623\u0644\u0644\u0647</string>
+    <test label="aH-l-l-h-dma">
+      <string>\u0623\u0644\u0644\u0647\u064F</string>
     </test>
-    <test label="aW-l-l-h">
-      <string>\u0671\u0644\u0644\u0647</string>
+    <test label="aW-l-l-h-dma">
+      <string>\u0671\u0644\u0644\u0647\u064F</string>
     </test>
-    <test label="a-M-l-l-h">
-      <string>\u0627\u065A\u0644\u0644\u0647</string>
+    <test label="a-M-l-l-h-dma">
+      <string>\u0627\u065A\u0644\u0644\u0647\u064F</string>
+    </test>
+    <test label="f-l-l-h">
+      <comment>Rule 1 not satisfied: shouldn't match</comment>
+      <string>\u0641\u0644\u0644\u0647</string>
     </test>
     <test label="f-a-l-l-h">
-      <comment>Rule 3a: shouldn't match</comment>
+      <comment>Rule 1 not satisfied: shouldn't match</comment>
       <string>\u0641\u0627\u0644\u0644\u0647</string>
     </test>
     <test label="a-l-M-l-h">
-      <comment>Rule 3d: shouldn't match</comment>
+      <comment>Rule 1 not satisfied: shouldn't match</comment>
       <string>\u0627\u0644\u065A\u0644\u0647</string>
     </test>
     <test label="a-l-zwj-l-h">
-      <comment>Rule 4a: shouldn't match</comment>
+      <comment>Rule 9 (ZWJ): shouldn't match
+(was 4a)</comment>
       <string>\u0627\u0644\u200D\u0644\u0647</string>
     </test>
     <test label="a-l-zwj-l-s-da-h">
-      <comment>Rule 4a: shouldn't match</comment>
+      <comment>Rule 9 (ZWJ): shouldn't match
+(was 4a)</comment>
       <string>\u0627\u0644\u200D\u0644\u0651\u0670\u0647</string>
     </test>
   </testgroup>

@@ -173,6 +173,26 @@ lookup ltrInit {
 
 # The Allah is formed by variant forms for glyphs rather than by ligature glyphs.
 
+# We implement the rules described in UTN #46 Rendering the Allah ligature, which are (with additional indentifiers):
+#
+#  A sequence of lam lam heh should be rendered with the ligature form if all the following conditions are met:
+#    1. One or both of the following are true:
+#      a. the sequence is immediately preceded by an isolate alef
+#      b. a shadda follows the second lam
+#    2. Characters immediately preceding the first lam, if any, may have marks.
+#    3. The first lam may include a kasra (0650), but no other marks
+#    4. The shadda may be followed or preceded by either a superscript-alef or a fatha but no other marks.
+#    5. The heh must be final form and may have marks
+# For the purposes of the above rules:
+#    6. alef can be any alef-like character, including alef, alef-hamza, alef-hamza-below, alef-madda, alefwasla, etc.
+#    7. heh can be either heh (0647) or heh-goal (06C1)
+# Additional:
+#    8. If there is an isolate alef but no marks on the second lam then shadda superscript-alef should be displayed on that lam.
+#    9. To disable the special rendering, insert a zero-width-joiner (200D) somewhere in the sequence.
+#    10. U+FDF2 should always display as if it were initial alef lam lam shadda superscript-alef final heh.`
+#
+# The rule numbers will be used in the comments below.
+
 lookup _AllahSub_Alef {
     sub @AlefNoAllah  by  @AlefAllah;
 } _AllahSub_Alef ;
@@ -207,12 +227,12 @@ lookup _AllahSub_Shadda_insertA {
 
 # Note:
 # The shadda-alef ligature is created later in a separate lookup - ShaddaAlefLigatures.
-# Also the special form of the alef is created later (except in the case of Rule 3) - lookup AllahAlef -
+# Also the special form of the alef is created later (except in the case of Rule 1a) - lookup AllahAlef -
 # in order to allow for the lam-alef ligature exception.
 
 lookup AllahLigatures {
   lookupflag 0;
-    # Rule 3: alefIso-lam-lam-heh (no shadda-alef)
+    # Rule 1a+6+8: alefIso-[marks]-lam-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
@@ -231,7 +251,7 @@ lookup AllahLigatures {
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_SAHeh;
 
-    #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
+    #Rule 1a+3+6+8: alefIso-[marks]-lam-kasra-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
         @KasraInAllah'
@@ -253,25 +273,27 @@ lookup AllahLigatures {
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
         @HehNoAllah'        lookup _AllahSub_SAHeh;
 
-    # Rule 2: lam-lam-shadda-heh
+    # Rule 1b+4: lam-lam-shadda-alef_or_fatha-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
+    # Rule 1b+4: lam-lam-alef_or_fatha-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
+    # Rule 1b: lam-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         shadda-ar'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
 
-    # Rule 2b: lam-kasra-lam-shadda-heh
+    # Rule 1b+3+4: lam-kasra-lam-shadda-alef_or_fatha-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
@@ -279,6 +301,7 @@ lookup AllahLigatures {
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
+    # Rule 1b+3+4: lam-kasra-alef_or_fatha-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
@@ -286,6 +309,7 @@ lookup AllahLigatures {
         shadda-ar'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
+    # Rule 1b+3: lam-kasra-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
