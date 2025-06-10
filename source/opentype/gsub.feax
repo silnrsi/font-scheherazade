@@ -194,6 +194,12 @@ lookup _AllahSub_Heh {
     sub @HehNoAllah  by  @HehAllah;
 } _AllahSub_Heh ;
 
+lookup _AllahSub_SAHeh {
+    # This rule is the same as previous but handles the case where a shadda-alef glyph has been inserted.
+    # Inserted glyphs result in the target lookup being applied to the inserted glyph instead of the heh that follows.
+    sub shadda_alef-ar' @HehNoAllah' lookup _AllahSub_Heh;
+} _AllahSub_SAHeh ;
+
 lookup _AllahSub_Shadda_insertA {
     sub shadda-ar     by   shadda_alef-ar;
 } _AllahSub_Shadda_insertA ;
@@ -210,34 +216,34 @@ lookup AllahLigatures {
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     #Rule 3b: alefIso-lam-kasra-lam-heh (no shadda-alef)
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         lam-ar.init'        lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
         lam-ar.init'        lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     sub @AlefNoAllahIsol'   lookup _AllahSub_Alef
         @MarksAny'
@@ -245,7 +251,7 @@ lookup AllahLigatures {
         lam-ar.init'        lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'        lookup _AllahSub_Lam2_insertSA
-        @HehNoAllah'        lookup _AllahSub_Heh;
+        @HehNoAllah'        lookup _AllahSub_SAHeh;
 
     # Rule 2: lam-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
