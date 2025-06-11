@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Type Sample
-fontversion: 4.300
+fontversion: 4.400
 ---
 
 This document demonstrates all of the characters in the font. It is organized by Unicode block. Alternate glyphs that are available through features are demonstrated in the [Features](features.md) document. At the end is a sample demonstrating Arabic shaping and another example of running text.
@@ -89,12 +89,12 @@ Regular:<span class='scheherazadenewL-R normal'>™ Ω ∂ ∆ ∏ ∑ − ∕ 
 
 #### Regular:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E;</br></br>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E; &#x088F;</br></br>
 &#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0897; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
 
 #### Bold:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E;</br></br>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x0870; &#x0871; &#x0872; &#x0873; &#x0874; &#x0875; &#x0876; &#x0877; &#x0878; &#x0879; &#x087A; &#x087B; &#x087C; &#x087D; &#x087E; &#x087F; &#x0880; &#x0881; &#x0882; &#x0883; &#x0884; &#x0885; &#x0887; &#x0888; &#x0889; &#x088A; &#x088B; &#x088C; &#x088D; &#x088E; &#x088F;</br></br>
 &#x25cc;&#x0890; &#x25cc;&#x0891; &#x25cc;&#x0897; &#x25cc;&#x0898; &#x25cc;&#x0899; &#x25cc;&#x089A; &#x25cc;&#x089B; &#x25cc;&#x089C; &#x25cc;&#x089D; &#x25cc;&#x089E; &#x25cc;&#x089F;</span></p>
 
 ### Arabic Extended-A:
@@ -113,21 +113,21 @@ Regular:<span class='scheherazadenewL-R normal'>™ Ω ∂ ∆ ∏ ∑ − ∕ 
 
 #### Regular:
 
-<p dir="rtl"><span class='scheherazadenew-R normal'>&#xFD3E; &#x0628; &#xFD3F; &#x0628; &#xFD40; &#x0628; &#xFD41; &#x0628; &#xFD42; &#x0628; &#xFD43; &#x0628; &#xFD44; &#x0628; &#xFD45; &#x0628; &#xFD46; &#x0628; &#xFD47; &#x0628; &#xFD47; &#x0628; &#xFD48; &#x0628; &#xFD49; &#x0628; &#xFD4a; &#x0628; &#xFD4b; &#x0628; &#xFD4c; &#x0628; &#xFD4d; &#x0628; &#xFD4e; &#x0628; &#xFD4f; &#x0628; &#xFDCF; &#x0628; &#xFDF2; &#x0628; &#xFDFA; &#x0628; &#xFDFB; &#x0628; &#xFDFC; &#x0628; &#xFDFD; &#x0628; &#xFDFe;&#x0628; &#xFDFf;</span></p>
+<p dir="rtl"><span class='scheherazadenew-R normal'>&#xFBC6; &#x0628; &#xFBC7; &#x0628; &#xFD3E; &#x0628; &#xFD3F; &#x0628; &#xFD40; &#x0628; &#xFD41; &#x0628; &#xFD42; &#x0628; &#xFD43; &#x0628; &#xFD44; &#x0628; &#xFD45; &#x0628; &#xFD46; &#x0628; &#xFD47; &#x0628; &#xFD47; &#x0628; &#xFD48; &#x0628; &#xFD49; &#x0628; &#xFD4a; &#x0628; &#xFD4b; &#x0628; &#xFD4c; &#x0628; &#xFD4d; &#x0628; &#xFD4e; &#x0628; &#xFD4f; &#x0628; &#xFD90; &#x0628; &#xFD91; &#x0628; &#xFDCF; &#x0628; &#xFDF2; &#x0628; &#xFDFA; &#x0628; &#xFDFB; &#x0628; &#xFDFC; &#x0628; &#xFDFD; &#x0628; &#xFDFe;&#x0628; &#xFDFf;</span></p>
 
 #### Bold: 
-<p dir="rtl"><span class='scheherazadenew-B normal'>&#xFD3E; &#x0628; &#xFD3F; &#x0628; &#xFD40; &#x0628; &#xFD41; &#x0628; &#xFD42; &#x0628; &#xFD43; &#x0628; &#xFD44; &#x0628; &#xFD45; &#x0628; &#xFD46; &#x0628; &#xFD47; &#x0628; &#xFD47; &#x0628; &#xFD48; &#x0628; &#xFD49; &#x0628; &#xFD4a; &#x0628; &#xFD4b; &#x0628; &#xFD4c; &#x0628; &#xFD4d; &#x0628; &#xFD4e; &#x0628; &#xFD4f; &#x0628; &#xFDCF; &#x0628; &#xFDF2; &#x0628; &#xFDFA; &#x0628; &#xFDFB; &#x0628; &#xFDFC; &#x0628; &#xFDFD; &#x0628; &#xFDFe;&#x0628; &#xFDFf;</span></p>
+<p dir="rtl"><span class='scheherazadenew-B normal'>&#xFBC6; &#x0628; &#xFBC7; &#x0628; &#xFD3E; &#x0628; &#xFD3F; &#x0628; &#xFD40; &#x0628; &#xFD41; &#x0628; &#xFD42; &#x0628; &#xFD43; &#x0628; &#xFD44; &#x0628; &#xFD45; &#x0628; &#xFD46; &#x0628; &#xFD47; &#x0628; &#xFD47; &#x0628; &#xFD48; &#x0628; &#xFD49; &#x0628; &#xFD4a; &#x0628; &#xFD4b; &#x0628; &#xFD4c; &#x0628; &#xFD4d; &#x0628; &#xFD4e; &#x0628; &#xFD4f; &#x0628; &#xFD90; &#x0628; &#xFD91; &#x0628; &#xFDCF; &#x0628; &#xFDF2; &#x0628; &#xFDFA; &#x0628; &#xFDFB; &#x0628; &#xFDFC; &#x0628; &#xFDFD; &#x0628; &#xFDFe;&#x0628; &#xFDFf;</span></p>
 
 
 ### Arabic Extended-C:
 
 #### Regular:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-R normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x10EC5; &#x10EC6; &#x10EC7; &#x10ED0; &#x25cc;&#x10EFA; &#x25cc;&#x10EFB; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
 
 #### Bold:
 
-<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
+<p dir="rtl"><span dir="rtl" class='scheherazadenew-B normal'>&#x10EC2; &#x10EC3; &#x10EC4; &#x10EC5; &#x10EC6; &#x10EC7; &#x10ED0; &#x25cc;&#x10EFA; &#x25cc;&#x10EFB; &#x25cc;&#x10EFC; &#x25cc;&#x10EFD; &#x25cc;&#x10EFE; &#x25cc;&#x10EFF;</span></p>
 
 ## Arabic Shaping (some basic shapes):
 

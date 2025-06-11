@@ -204,12 +204,12 @@ The DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in
 
 #### Honorific ligatures 
 
-<span class='affects'>Affects: U+FD40..U+FD4F, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span>
+<span class='affects'>Affects: U+FBC6..U+FBC7, U+FD40..U+FD4F, U+FD90..U+FD91, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span>
 
 Feature | Sample | Feature setting
 :------------- | ---------------: | :------------- 
-Calligraphic | <span dir="rtl" class='scheherazadenew-R normal'>&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;&#xFDFF;</span> | `cv81=0`
-Simplified | <span dir="rtl" class='scheherazadenew-cv81-1-R normal'>&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;&#xFDFF;</span>| `cv81=1`
+Calligraphic | <span dir="rtl" class='scheherazadenew-R normal'>&#xFBC6;&#xFBC7;&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFD90;&#xFD91;&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;</span> | `cv81=0`
+Simplified | <span dir="rtl" class='scheherazadenew-cv81-1-R normal'>&#xFBC6;&#xFBC7;&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFD90;&#xFD91;&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;</span>| `cv81=1`
 
 #### Eastern digits 
 

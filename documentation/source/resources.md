@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Resources
-fontversion: 4.300
+fontversion: 4.400
 ---
 
 The SIL Arabic script fonts are encoded according to Unicode, so your application must support Unicode text in order to access letters other than the standard ANSI characters. Most applications now provide basic Unicode support. You will, however, need some way of entering Unicode text into your document.
@@ -19,7 +19,7 @@ Install the font by decompressing the .zip archive and installing the font using
 
 This font package does not include keyboards or other software for entering text. To type the symbols in this font, use the keyboarding systems provided in your OS or use a separate utility. [Keyman](https://keyman.com/) is a cross-platform keyboarding system.
 
-Various other means may be available for different operating-system platforms to create additional input methods. Some suggestions are listed here: [Keyboard Systems Overview](https://scriptsource.org/entry/ytr8g8n6sw).
+Various other means may be available for different operating-system platforms to create additional input methods. 
 
 See [Character set support](charset.md) for details of the Unicode characters supported by this font.
 

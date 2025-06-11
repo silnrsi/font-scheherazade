@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Font Features
-fontversion: 4.300
+fontversion: 4.400
 ---
 
 Scheherazade New is an OpenType-enabled font family that supports the Arabic script. It includes a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi), then choose the variants and download your font.
@@ -208,12 +208,12 @@ The DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in
 
 #### Honorific ligatures 
 
-<span class='affects'>Affects: U+FD40..U+FD4F, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span>
+<span class='affects'>Affects: U+FBC6..U+FBC7, U+FD40..U+FD4F, U+FD90..U+FD91, U+FDCF, U+FDFA..U+FDFB, U+FDFD..U+FDFF</span>
 
 Feature | Sample | Feature setting
 :------------- | ---------------: | :------------- 
-Calligraphic | <span dir="rtl" class='scheherazadenew-R normal'>&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;&#xFDFF;</span> | `cv81=0`
-Simplified | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv81" 1'>&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;&#xFDFF;</span>| `cv81=1`
+Calligraphic | <span dir="rtl" class='scheherazadenew-R normal'>&#xFBC6;&#xFBC7;&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFD90;&#xFD91;&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;</span> | `cv81=0`
+Simplified | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv81" 1'>&#xFBC6;&#xFBC7;&#xFD40;&#xFD41;&#xFD42;&#xFD43;&#xFD44;&#xFD45;&#xFD46;&#xFD47;&#xFD48;&#xFD49;&#xFD4A;&#xFD4B;&#xFD4C;&#xFD4D;&#xFD4E;&#xFD4F;</br>&#xFD90;&#xFD91;&#xFDCF;&#xFDFA;&#xFDFB;&#xFDFD;&#xFDFF;</span>| `cv81=1`
 
 #### Eastern digits 
 

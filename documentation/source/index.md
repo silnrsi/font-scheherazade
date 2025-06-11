@@ -1,9 +1,9 @@
 ---
 title: Scheherazade New - Documentation
-fontversion: 4.300
+fontversion: 4.400
 ---
 
-Thank you for your interest in the Scheherazade New font. Scheherazade New includes full support for Unicode 16.0 Arabic ranges (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).
+Thank you for your interest in the Scheherazade New font. Scheherazade New includes full support for Unicode 17.0 Arabic ranges (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).
 
 This documentation is a set of HTML pages that can be viewed in any modern web browser. PDF versions of these pages are also provided. This content, plus download links and a contact form, are available from the [Scheherazade New site](https://software.sil.org/scheherazade/).
 

@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Developer information
-fontversion: 4.300
+fontversion: 4.400
 ---
 
 ## Welcome font developers!
