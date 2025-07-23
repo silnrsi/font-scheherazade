@@ -157,6 +157,12 @@ lookup MarkToLig {
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
     pos ligature @LamAlefThreeAboveLig  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
               ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+  ifinfo(familyName, "Scheherazade New") {
+    pos ligature @LamAlefRareLig        @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+    pos ligature @LamAlefRareLigFina    @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
+              ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
+  }
 #   pos ligature lam_alefHamzabelow-ar  @diaA_1 mark @_diaA    @diaB_1 mark @_diaB
 #             ligComponent              @diaA_2 mark @_diaA    @diaB_2 mark @_diaB;
 } MarkToLig;

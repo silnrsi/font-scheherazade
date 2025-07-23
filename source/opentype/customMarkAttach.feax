@@ -23,12 +23,14 @@ lookup _mark2_to_base {
     pos ligature @LamAlefWavyHBelowLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefTwoAboveLig     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
     pos ligature @LamAlefThreeAboveLig   @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefRareLig         @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
+    pos ligature @LamAlefRareLigFina     @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 #   pos ligature @lam_alefHamzabelow-ar  @diaB_1 mark @_diaB  ligComponent @dia2B mark @_diaB;
 } _mark2_to_base;
 
 lookup LamAlefMark2Adjust {
   lookupflag UseMarkFilteringSet @MarksBelow;
-    pos @AllLamAlefLig  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
+    pos [ @AllLamAlefLig @LamAlefRareLig @LamAlefRareLigFina ]  @MarksBelow  @MarksBelow' lookup _mark2_to_base;
 } LamAlefMark2Adjust;
 
 
