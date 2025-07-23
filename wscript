@@ -45,11 +45,9 @@ noGRkern = '_nokern' if '--quick' in opts else ''
 
 # iterate over designspace
 designspace('source/ScheherazadeNew.designspace',
-    instanceparams='-l ' + genout + '${DS:FILENAME_BASE}_createintance.log',
     instances = ['Scheherazade New Regular'] if '--regOnly' in opts else None,
     params = '-c ^_',
     target = process('${DS:FILENAME_BASE}.ttf', *cmds),
-    ap = genout + '${DS:FILENAME_BASE}.xml',
     version=VERSION,  # Needed to ensure dev information on version string
     opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
         mapfile = genout + "${DS:FILENAME_BASE}.map",
