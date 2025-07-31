@@ -18,13 +18,13 @@ Many questions can be answered by consulting the following FAQ pages. Here are a
     - *If I use the font on a web page do I have to include an acknowledgement?*
     - The full OFL-FAQ.txt is also included in the font package.
 
-A generic FAQ for all of our Arabic scripts fonts can be found here: [Arabic Fonts - FAQ](https://software.sil.org/arabicfonts/support/faq/). FAQ's specific to Scheherazade New are found below.
+A generic FAQ for all of our Arabic scripts fonts can be found here: [Arabic Fonts - FAQ](https://software.sil.org/arabicfonts/support/faq/). FAQ’s specific to Scheherazade New are found below.
 
 ### Problems with Bold weights
 
 #### *Why does my application not show the Bold weight in font menus and dialogs?*
 
-Some applications will list all the weights but leave out Bold. To access the Bold you need to choose Regular and turn on Bold using the application's UI controls such as a “B” button.
+Some applications will list all the weights but leave out Bold. To access the Bold you need to choose Regular and turn on Bold using the application’s UI controls such as a “B” button.
 
 #### *Why do I sometimes get a fake Bold?*
 
