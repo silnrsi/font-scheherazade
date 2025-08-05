@@ -22,6 +22,7 @@ argspec = [
     ('-l','--log', {'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
     ('--langs', {'help':'List of bcp47 language tags', 'default': None}, {}),
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
+    ('--nobump', {'help': 'do not bump max feature value for tests like cv12', 'action': 'store_true'}, {}),
     ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'name of the test to generate', 'default': None}, {}),
     ('-s','--fontsrc', {'help': 'font source: "url()" or "local()" optionally followed by "|label"', 'action': 'append'}, {}),
@@ -116,13 +117,15 @@ def doit(args):
     # Per ABS-3017, we want users to be able to override any and all language-specific behaviors by
     # setting relevant CV features. This typically involves adding an additional CV value whose behavior
     # is to reset glyphs back to their defaults.  To make sure these get tested, we need to increment the maxval
-    # of some of the features (those where the glyph_data.csv doesn't explicitly list this extra value):
-    for tag in ('cv12', 'cv44', 'cv54', 'cv70', 'cv72', 'cv78', 'cv82'):
-        try:
-            builder.features[tag].maxval += 1
-        except KeyError:
-            # It's okay if this font doesn't have this feature.
-            pass
+    # of some of the features (those where the glyph_data.csv doesn't explicitly list this extra value). 
+    # Supplying '--nobump' disables this behavior.
+    if not args.nobump:
+        for tag in ('cv12', 'cv44', 'cv54', 'cv70', 'cv72', 'cv78', 'cv82'):
+            try:
+                builder.features[tag].maxval += 1
+            except KeyError:
+                # It's okay if this font doesn't have this feature.
+                pass
     
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
