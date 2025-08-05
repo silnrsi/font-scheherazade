@@ -27,12 +27,12 @@ do if opt("nokern") != "yes";
 @Tooth2w3wBelow = [ @Tooth2wBelowInit @Tooth2wBelowMedi @Tooth3wBelowInit @Tooth3wBelowMedi ];
 
 # When the class expansion bug gets fixed, replace the small classes with the bigger ones.
-# OBSOLETE
+# Commented ones are now OBSOLETE
 lookup _InsertKashida {
   # all tooth forms:
-  sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
-  sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
-  sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
+#  sub @Tooth0Below        by  @Tooth0Below        absAutoKashida;
+#  sub @Tooth1hBelow       by  @Tooth1hBelow       absAutoKashida;
+#  sub @Tooth2hBelow       by  @Tooth2hBelow       absAutoKashida;
 #  sub @Tooth2wAboveInit   by  @Tooth2wAboveInit   absAutoKashida;  # redundant
 #  sub @Tooth2wAboveMedi   by  @Tooth2wAboveMedi   absAutoKashida;  # redundant
 #  sub @Tooth2wBelowRstrk  by  @Tooth2wBelowRstrk  absAutoKashida;  # redundant
@@ -40,22 +40,22 @@ lookup _InsertKashida {
 #  sub @Tooth2w3wBelow     by  @Tooth2w3wBelow     absAutoKashida;  # redundant
 #  sub @Tooth2wwAboveInit  by  @Tooth2wwAboveInit  absAutoKashida;  # redundant
 #  sub @Tooth2wwAboveMedi  by  @Tooth2wwAboveMedi  absAutoKashida;  # redundant
-  sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
-  sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
-  sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
-  sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
-  sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
-  sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
-  sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
+#  sub @FehQaf2wAboveInit  by  @FehQaf2wAboveInit  absAutoKashida;
+#  sub @FehQaf2wAboveMedi  by  @FehQaf2wAboveMedi  absAutoKashida;
+#  sub @KafLikeInit        by  @KafLikeInit        absAutoKashida;  # @KafLikeInitMedi
+#  sub @KafLikeMedi        by  @KafLikeMedi        absAutoKashida;  # @KafLikeInitMedi
+#  sub @JeemLikeInit       by  @JeemLikeInit       absAutoKashida;  # @JeemLikeInitMedi
+#  sub @JeemLikeMedi       by  @JeemLikeMedi       absAutoKashida;  # @JeemLikeInitMedi
+#  sub noon-ar.medi        by  noon-ar.medi        absAutoKashida;
   
   sub @MarksAny  by  @MarksAny  absAutoKashida;
 } _InsertKashida;
 
 # OBSOLETE
-lookup _Insert2Kashidas {
-  sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
-  sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
-} _Insert2Kashidas;
+# lookup _Insert2Kashidas {
+#   sub @Tooth2w3wBelow  by  @Tooth2w3wBelow  absAutoKashida  absAutoKashida;
+#   sub @MarksAny        by  @MarksAny  absAutoKashida  absAutoKashida;
+# } _Insert2Kashidas;
 
 
 lookup _InsertKashidaBefore {
