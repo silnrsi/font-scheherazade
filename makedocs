@@ -73,7 +73,7 @@ weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
 echo "     > features.html > features.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/features.md -o documentation/source/pdftemp/features.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 # weasyprint does not currently handle "ky" or "wo" langauge tags, but requires three-letter tags instead:
-sed -i -e s/lang=\"wo\"/lang=\"WLF\"/ -e s/lang=\"ky\"/lang=\"kir\"/   documentation/source/pdftemp/features.html
+sed -i -e s/lang=\"wo\"/lang=\"WLF\"/ -e s/lang=\"ky\"/lang=\"kir\"/ -e s/lang=\"ms\"/lang=\"MLY\"/ documentation/source/pdftemp/features.html
 weasyprint documentation/source/pdftemp/features.html documentation/pdf/features.pdf
 echo "     > history.html > history.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/history.md -o documentation/source/pdftemp/history.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
