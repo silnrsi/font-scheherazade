@@ -29,7 +29,7 @@ Characters | → | Glyph | Comment
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0627; + &#x0644; + &#x0652; + &#x0627; + &#x0644; + &#x0644; + &#x0651; + &#x0647; + &#x0652;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>الْاللّهْ	</span> | Ligature is formed
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0628; + &#x0650; + &#x0644; + &#x0644; + &#x0651; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>بِللّه	</span> | Ligature is formed
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0641; + &#x0644; + &#x0644; + &#x0651; + &#x064e; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>فللَّه	</span> | Ligature is formed
-<span class='scheherazadenewL-R normal'>&#x202d;&#x0641; + &#x0644; + &#x0644; + &#x0651; + &#x064e; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>فللَّه	</span> | Ligature is formed
+<span class='scheherazadenewL-R normal'>&#x202d;&#x0641; + &#x0644; + &#x0644; + &#x0651; + &#x0670; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>فللّٰه</span> | Ligature is formed
 <span class='scheherazadenewL-R normal'>&#x202d;&#x0641; + &#x0644; + &#x0644; + &#x064e; + &#x0647;</span> | → | <span dir="rtl" class='scheherazadenew-R normal'>فللَه	</span> | Ligature is not formed
 
 

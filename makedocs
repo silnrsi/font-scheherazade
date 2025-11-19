@@ -114,22 +114,30 @@ echo "     > faq.md"
 python3 documentation/source/makepsmd.py documentation/source/faq.md documentation/source/productsite/faq.md -q
 echo "     > features.md"
 python3 documentation/source/makepsmd.py documentation/source/features.md documentation/source/productsite/features.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/features.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/features.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/features.html documentation/source/productsite/features.wphtml -q
 echo "     > history.md"
 python3 documentation/source/makepsmd.py documentation/source/history.md documentation/source/productsite/history.md -q
 echo "     > honorifics.md"
 python3 documentation/source/makepsmd.py documentation/source/honorifics.md documentation/source/productsite/honorifics.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/honorifics.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/honorifics.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/honorifics.html documentation/source/productsite/honorifics.wphtml -q
 echo "     > allah.md"
 python3 documentation/source/makepsmd.py documentation/source/allah.md documentation/source/productsite/allah.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/allah.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/allah.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/allah.html documentation/source/productsite/allah.wphtml -q
 echo "     > resources.md"
 python3 documentation/source/makepsmd.py documentation/source/resources.md documentation/source/productsite/resources.md -q
 echo "     > sample.md"
 python3 documentation/source/makepsmd.py documentation/source/sample.md documentation/source/productsite/sample.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/sample.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/sample.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/sample.html documentation/source/productsite/sample.wphtml -q
 echo "     > support.md"
 python3 documentation/source/makepsmd.py documentation/source/support.md documentation/source/productsite/support.md -q
 echo "     > versions.md"
 python3 documentation/source/makepsmd.py documentation/source/versions.md documentation/source/productsite/versions.md -q
 echo "     > announcement.md"
 python3 documentation/source/makepsmd.py documentation/source/announcement.md documentation/source/productsite/announcement.md -q
-echo "     Markdown source for other pages is in separate repo"
+
 
 echo "-----Completed!"
