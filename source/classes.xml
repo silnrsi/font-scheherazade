@@ -406,19 +406,13 @@ of the license along with this Font Software. If this is not the case, go to
         lamVabove-ar.fina
     </class>
 
-    <!-- *NEXT 8 CLASSES MUST MATCH* -->
+    <!-- *NEXT 7 CLASSES MUST MATCH* -->
+
     <class name="LamNoLig">
         lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init
         lamThreedotsbelow-ar.init  lamTahabove-ar.init  lamBar-ar.init  lamDoublebar-ar.init
         lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi
         lamThreedotsbelow-ar.medi  lamTahabove-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi
-    </class>
-
-    <class name="LamNoLigIsolFina">  <!-- Graphite -->
-        lam-ar  lamVabove-ar  lamDotabove-ar  lamThreedotsabove-ar
-        lamThreedotsbelow-ar  lamTahabove-ar  lamBar-ar  lamDoublebar-ar
-        lam-ar.fina  lamVabove-ar.fina  lamDotabove-ar.fina  lamThreedotsabove-ar.fina
-        lamThreedotsbelow-ar.fina  lamTahabove-ar.fina  lamBar-ar.fina  lamDoublebar-ar.fina
     </class>
 
     <class name="LamAlefLig">
@@ -687,104 +681,6 @@ of the license along with this Font Software. If this is not the case, go to
         takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar vinvertedabove-ar
         waqfaabove-ar zainabove-ar
     </class>
-
-    <!-- For OpenType sorting -->
-
-    <class name="MarkGroup1A">
-        shadda-ar hamzaabove-ar noonghunnaabove-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="MarkGroup1B">
-        hamzabelow-ar
-    </class>
-
-    <class name="MarkGroup2A">
-        alefabove-ar alefabove-ar.large
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="MarkGroup2B">
-        kasratan-ar kasratan-ar.lowered kasra-ar kasra-ar.lowered alefbelow-ar dotvowelbelow-ar dammaturnedbelow-ar
-        wavyhamzabelow-ar kasraCurly-ar kasratanCurly-ar kasraDotbelow-ar leftarrowheadbelow-ar rightarrowheadbelow-ar
-        kasrasmall-ar openkasratan-ar kasra_meem-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="Mark1Below_volt">
-        @MarkGroup1B @MarkGroup2B
-    </class>
-
-    <class name="MarkGroup3A">
-        fathatan-ar dammatan-ar dammatan-ar.sixNine fatha-ar damma-ar damma-ar.short damma-ar.filled sukun-ar sukun-ar.downOpen
-        sukun-ar.leftOpen dammainverted-ar dammainverted-ar.open fathaHorizont-ar vabove-ar vinvertedabove-ar dammareversed-ar fathaCurly-ar
-        fathatanCurly-ar dammaCurly-ar dammatanCurly-ar fathaRing-ar fathaDotabove-ar leftarrowheadabove-ar rightarrowheadabove-ar
-        doublerightarrowheadabove-ar doublerightarrowheadDotabove-ar rightarrowheadDotabove-ar dammaDot-ar
-        hahabove-ar fathasmall-ar dammasmall-ar shadda_fathatan-ar shadda_dammatan-ar shadda_dammatan-ar.sixNine
-        shadda_kasratan-ar shadda_fatha-ar shadda_damma-ar shadda_damma-ar.short shadda_damma-ar.filled shadda_kasra-ar hamza_fatha-ar
-        hamza_damma-ar hamza_damma-ar.short hamza_damma-ar.filled shadda_alef-ar marksidewaysnoonghunna-ar openfathatan-ar opendammatan-ar
-        fatha_meem-ar damma_meem-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="MarkGroup3B">
-        toneonedotbelow-ar tonetwodotsbelow-ar toneloopbelow-ar seenbelow-ar rhombusStopbelow-ar meembelow-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="Mark2Below_volt">
-        @MarkGroup3B
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="MarkGroup4A">
-        madda-ar madda-ar.small fathatwodots-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="Mark1Above_volt">
-        @MarkGroup1A @MarkGroup2A @MarkGroup3A @MarkGroup4A
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="MarkGroup5A">
-        ainabove-ar toneonedotabove-ar tonetwodotsabove-ar toneloopabove-ar sadLamAlefMaksuraabove-ar qafLamAlefMaksuraabove-ar
-        meemabove-ar lamAlefabove-ar jeemabove-ar threedotsabove-ar seenabove-ar
-        sukunround-ar sukunoval-ar meemStopabove-ar maddalong-ar yehabove-ar
-        noonabove-ar rhombusStopabove-ar dotStopabove-ar sadabove-ar alayheAssallamcomb-ar
-        sallallahouAlayheWassallamcomb-ar rehHahabove-ar rehDadabove-ar takhallusabove-ar tahabove-ar
-        alefLamYehabove-ar zainabove-ar  highwaw-ar yehabove-farsi maddawaajib-ar alefmokhassasabove-ar maddadoubled-ar
-        halfmaddaovermadda-ar aljuzabove-ar ishmaambelow-ar imaalabelow-ar tasheel-ar
-        poundmarkabove-ar piastremarkabove-ar yehbarreeTwobelowabove-ar sahabove-ar zahabove-ar sukunbbelow-ar
-        largerounddotabove-ar largerounddotbelow-ar largecirclebelow-ar largerounddotinsidecirclebelow-ar
-    </class>
-
-    <!-- GRAPHITE -->
-    <class name="Mark2Above_volt">
-        @MarkGroup5A
-    </class>
-
-    <!-- GRAPHITE - avoid name conflict with OT-specific class -->
-    <class name="MarksAbove_Gr">
-        @Mark1Above_volt @Mark2Above_volt
-    </class>
-
-    <!-- GRAPHITE - avoid name conflict with OT-specific  -->
-    <class name="MarksBelow_Gr">
-        @Mark1Below_volt @Mark2Below_volt
-    </class>
-
-<!--
-    <class name="MarksAny">
-        @MarksAbove @MarksBelow
-    </class>
-
-    <class name="MarksBelowWide">
-        kasratan-ar kasratan-ar.lowered kasra-ar kasra-ar.lowered hamzabelow-ar wavyhamzabelow-ar kasraCurly-ar kasratanCurly-ar
-        kasraDotbelow-ar leftarrowheadbelow-ar rightarrowheadbelow-ar kasrasmall-ar openkasratan-ar kasra_meem-ar
-    </class>
--->
-
 
     <!--
     ===========================
