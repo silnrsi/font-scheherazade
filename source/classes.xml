@@ -26,28 +26,28 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="AlefMark" fixed="0">
+    <class name="AlefMark">
         madda-ar  madda-ar.small  hamzaabove-ar  hamzabelow-ar
     </class>
 
-    <class name="AlefPlusMark" fixed="0">
+    <class name="AlefPlusMark">
         alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar  alefHamzabelow-ar
     </class>
 
     <!-- *NEXT 4 CLASSES MUST MATCH* -->
-    <class name="Ayah" fixed="0">
+    <class name="Ayah">
         endofayah-ar  endofayah-ar.2  endofayah-ar.3
     </class>
 
-    <class name="AyahCircle" fixed="0">
+    <class name="AyahCircle">
         endofayah-ar.alt  endofayah-ar.alt.2  endofayah-ar.alt.3
     </class>
 
-    <class name="AyahSquare" fixed="0">
+    <class name="AyahSquare">
         endofayah-ar.altB  endofayah-ar.altB.2  endofayah-ar.altB.3
     </class>
 
-    <class name="AyahDisputed" fixed="0">
+    <class name="AyahDisputed">
         disputedendofayah-ar  disputedendofayah-ar.2  disputedendofayah-ar.3
     </class>
 
@@ -73,37 +73,37 @@ of the license along with this Font Software. If this is not the case, go to
     <class name="DammaInverted_open">dammainverted-ar.open</class>
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsArabic" fixed="0">
+    <class name="DigitsArabic">
         zero-ar  one-ar  two-ar  three-ar  four-ar
         five-ar  six-ar  seven-ar  eight-ar  nine-ar
     </class>
 
-    <class name="DigitsArabicMedium" fixed="0">
+    <class name="DigitsArabicMedium">
         zero-ar.medium  one-ar.medium  two-ar.medium  three-ar.medium  four-ar.medium
         five-ar.medium  six-ar.medium seven-ar.medium   eight-ar.medium  nine-ar.medium
     </class>
 
-    <class name="DigitsArabicSmall" fixed="0">
+    <class name="DigitsArabicSmall">
         zero-ar.small  one-ar.small  two-ar.small  three-ar.small  four-ar.small
         five-ar.small  six-ar.small seven-ar.small  eight-ar.small  nine-ar.small
     </class>
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsEastern" fixed="0">
+    <class name="DigitsEastern">
         zero-persian  one-persian  two-persian  three-persian  four-persian
         four-persian.urdu  four-persian.roh
         five-persian  six-persian  six-persian.urdu  seven-persian  seven-persian.urdu
         eight-persian  nine-persian
     </class>
 
-    <class name="DigitsEasternMedium" fixed="0">
+    <class name="DigitsEasternMedium">
         zero-persian.medium  one-persian.medium  two-persian.medium  three-persian.medium  four-persian.medium
         four-persian.urdu.medium  four-persian.roh.medium
         five-persian.medium  six-persian.medium  six-persian.urdu.medium  seven-persian.medium  seven-persian.urdu.medium
         eight-persian.medium  nine-persian.medium
     </class>
 
-    <class name="DigitsEasternSmall" fixed="0">
+    <class name="DigitsEasternSmall">
         zero-persian.small  one-persian.small  two-persian.small  three-persian.small  four-persian.small
         four-persian.urdu.small  four-persian.roh.small
         five-persian.small  six-persian.small  six-persian.urdu.small  seven-persian.small  seven-persian.urdu.small
@@ -111,31 +111,31 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsLatin" fixed="0">
+    <class name="DigitsLatin">
         zero  one  two  three  four
         five  six  seven  eight  nine
     </class>
 
-    <class name="DigitsLatinMedium" fixed="0">
+    <class name="DigitsLatinMedium">
         zero.medium  one.medium  two.medium  three.medium  four.medium
         five.medium  six.medium  seven.medium  eight.medium  nine.medium
     </class>
 
-    <class name="DigitsLatinSmall" fixed="0">
+    <class name="DigitsLatinSmall">
         zero.small  one.small  two.small  three.small  four.small
         five.small  six.small  seven.small  eight.small  nine.small
     </class>
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
-    <class name="DigitsAny" fixed="0">
+    <class name="DigitsAny">
         @DigitsArabic  @DigitsEastern  @DigitsLatin
     </class>
 
-    <class name="DigitsAnyMedium" fixed="0">
+    <class name="DigitsAnyMedium">
         @DigitsArabicMedium  @DigitsEasternMedium  @DigitsLatinMedium
     </class>
 
-    <class name="DigitsAnySmall" fixed="0">
+    <class name="DigitsAnySmall">
         @DigitsArabicSmall  @DigitsEasternSmall  @DigitsLatinSmall
     </class>
 
@@ -288,11 +288,11 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="HamzaLigatures" fixed="0">
+    <class name="HamzaLigatures">
         hamza_fatha-ar  hamza_damma-ar  hamza_damma-ar.short  hamza_damma-ar.filled
     </class>
 
-    <class name="HamzaMarks" fixed="0">
+    <class name="HamzaMarks">
         fatha-ar  damma-ar  damma-ar.short  damma-ar.filled
     </class>
 
@@ -346,7 +346,7 @@ of the license along with this Font Software. If this is not the case, go to
     -->
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="HonLigCall" fixed="0">
+    <class name="HonLigCall">
         allahlong-ar  jallajalalouhou-ar  bismillah-ar  salaamuhuAlaynaa-ar  alayhiAsSalaam-ar
         alayhimAsSalaam-ar  alayhaaAsSalaam-ar  rahimahuAllaah-ar  rahimahumAllaah-ar  radiAllaahuAnh-ar
         radiAllaahuAnhaa-ar  radiAllaahuAnhum-ar  radiAllaahuAnhumaa-ar  radiAllaahuAnhunna-ar
@@ -355,7 +355,7 @@ of the license along with this Font Software. If this is not the case, go to
         subhaanahuWaTaaalaa-ar  azzaWaJall-ar   tabaarakaWaTaaalaa-ar rahmatuAllaahiAlayh-ar rahmatuAllaahiAlayhaa-ar rahmatuAllaahiAlayhim-ar rahmatuAllaahiAlayhimaa-ar
     </class>
 
-    <class name="HonLigSmpl" fixed="0">
+    <class name="HonLigSmpl">
         allahlong-ar.smpl  jallajalalouhou-ar.smpl  bismillah-ar.smpl  salaamuhuAlaynaa-ar.smpl  alayhiAsSalaam-ar.smpl
         alayhimAsSalaam-ar.smpl  alayhaaAsSalaam-ar.smpl  rahimahuAllaah-ar.smpl  rahimahumAllaah-ar.smpl  radiAllaahuAnh-ar.smpl
         radiAllaahuAnhaa-ar.smpl  radiAllaahuAnhum-ar.smpl  radiAllaahuAnhumaa-ar.smpl  radiAllaahuAnhunna-ar.smpl
@@ -365,20 +365,20 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Jeh" fixed="0">
+    <class name="Jeh">
         jeh-ar  jeh-ar.fina
     </class>
 
-    <class name="Jeh.dotHat" fixed="0">
+    <class name="Jeh.dotHat">
         zainVinvertedabove-ar  zainVinvertedabove-ar.fina
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="Kasra" fixed="0">
+    <class name="Kasra">
         kasra-ar  kasratan-ar
     </class>
 
-    <class name="Kasra_lowered" fixed="0">
+    <class name="Kasra_lowered">
         kasra-ar.lowered  kasratan-ar.lowered
     </class>
 
@@ -407,56 +407,56 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 8 CLASSES MUST MATCH* -->
-    <class name="LamNoLig" fixed="0">
+    <class name="LamNoLig">
         lam-ar.init  lamVabove-ar.init  lamDotabove-ar.init  lamThreedotsabove-ar.init
         lamThreedotsbelow-ar.init  lamTahabove-ar.init  lamBar-ar.init  lamDoublebar-ar.init
         lam-ar.medi  lamVabove-ar.medi  lamDotabove-ar.medi  lamThreedotsabove-ar.medi
         lamThreedotsbelow-ar.medi  lamTahabove-ar.medi  lamBar-ar.medi  lamDoublebar-ar.medi
     </class>
 
-    <class name="LamNoLigIsolFina" fixed="0">  <!-- Graphite -->
+    <class name="LamNoLigIsolFina">  <!-- Graphite -->
         lam-ar  lamVabove-ar  lamDotabove-ar  lamThreedotsabove-ar
         lamThreedotsbelow-ar  lamTahabove-ar  lamBar-ar  lamDoublebar-ar
         lam-ar.fina  lamVabove-ar.fina  lamDotabove-ar.fina  lamThreedotsabove-ar.fina
         lamThreedotsbelow-ar.fina  lamTahabove-ar.fina  lamBar-ar.fina  lamDoublebar-ar.fina
     </class>
 
-    <class name="LamAlefLig" fixed="0">
+    <class name="LamAlefLig">
         lam_alef-ar  lamVabove_alef-ar  lamDotabove_alef-ar  lamThreedotsabove_alef-ar
         lamThreedotsbelow_alef-ar  lamTahabove_alef-ar  lamBar_alef-ar  lamDoublebar_alef-ar
         lam_alef-ar.fina  lamVabove_alef-ar.fina  lamDotabove_alef-ar.fina  lamThreedotsabove_alef-ar.fina
         lamThreedotsbelow_alef-ar.fina  lamTahabove_alef-ar.fina  lamBar_alef-ar.fina  lamDoublebar_alef-ar.fina
     </class>
 
-    <class name="LamAlefWaslaLig" fixed="0">
+    <class name="LamAlefWaslaLig">
         lam_alefWasla-ar  lamVabove_alefWasla-ar  lamDotabove_alefWasla-ar  lamThreedotsabove_alefWasla-ar
         lamThreedotsbelow_alefWasla-ar  lamTahabove_alefWasla-ar  lamBar_alefWasla-ar  lamDoublebar_alefWasla-ar
         lam_alefWasla-ar.fina  lamVabove_alefWasla-ar.fina  lamDotabove_alefWasla-ar.fina  lamThreedotsabove_alefWasla-ar.fina
         lamThreedotsbelow_alefWasla-ar.fina  lamTahabove_alefWasla-ar.fina  lamBar_alefWasla-ar.fina  lamDoublebar_alefWasla-ar.fina
     </class>
 
-    <class name="LamAlefWavyHAboveLig" fixed="0">
+    <class name="LamAlefWavyHAboveLig">
         lam_alefWavyhamzaabove-ar  lamVabove_alefWavyhamzaabove-ar  lamDotabove_alefWavyhamzaabove-ar  lamThreedotsabove_alefWavyhamzaabove-ar
         lamThreedotsbelow_alefWavyhamzaabove-ar  lamTahabove_alefWavyhamzaabove-ar  lamBar_alefWavyhamzaabove-ar  lamDoublebar_alefWavyhamzaabove-ar
         lam_alefWavyhamzaabove-ar.fina  lamVabove_alefWavyhamzaabove-ar.fina  lamDotabove_alefWavyhamzaabove-ar.fina  lamThreedotsabove_alefWavyhamzaabove-ar.fina
         lamThreedotsbelow_alefWavyhamzaabove-ar.fina  lamTahabove_alefWavyhamzaabove-ar.fina  lamBar_alefWavyhamzaabove-ar.fina  lamDoublebar_alefWavyhamzaabove-ar.fina
     </class>
 
-    <class name="LamAlefWavyHBelowLig" fixed="0">
+    <class name="LamAlefWavyHBelowLig">
         lam_alefWavyhamzabelow-ar  lamVabove_alefWavyhamzabelow-ar  lamDotabove_alefWavyhamzabelow-ar  lamThreedotsabove_alefWavyhamzabelow-ar
         lamThreedotsbelow_alefWavyhamzabelow-ar  lamTahabove_alefWavyhamzabelow-ar  lamBar_alefWavyhamzabelow-ar  lamDoublebar_alefWavyhamzabelow-ar
         lam_alefWavyhamzabelow-ar.fina  lamVabove_alefWavyhamzabelow-ar.fina  lamDotabove_alefWavyhamzabelow-ar.fina  lamThreedotsabove_alefWavyhamzabelow-ar.fina
         lamThreedotsbelow_alefWavyhamzabelow-ar.fina  lamTahabove_alefWavyhamzabelow-ar.fina  lamBar_alefWavyhamzabelow-ar.fina  lamDoublebar_alefWavyhamzabelow-ar.fina
     </class>
 
-    <class name="LamAlefTwoAboveLig" fixed="0">
+    <class name="LamAlefTwoAboveLig">
         lam_alefTwoabove-ar  lamVabove_alefTwoabove-ar  lamDotabove_alefTwoabove-ar  lamThreedotsabove_alefTwoabove-ar
         lamThreedotsbelow_alefTwoabove-ar  lamTahabove_alefTwoabove-ar  lamBar_alefTwoabove-ar  lamDoublebar_alefTwoabove-ar
         lam_alefTwoabove-ar.fina  lamVabove_alefTwoabove-ar.fina  lamDotabove_alefTwoabove-ar.fina  lamThreedotsabove_alefTwoabove-ar.fina
         lamThreedotsbelow_alefTwoabove-ar.fina  lamTahabove_alefTwoabove-ar.fina  lamBar_alefTwoabove-ar.fina  lamDoublebar_alefTwoabove-ar.fina
     </class>
 
-    <class name="LamAlefThreeAboveLig" fixed="0">
+    <class name="LamAlefThreeAboveLig">
         lam_alefThreeabove-ar  lamVabove_alefThreeabove-ar  lamDotabove_alefThreeabove-ar  lamThreedotsabove_alefThreeabove-ar
         lamThreedotsbelow_alefThreeabove-ar  lamTahabove_alefThreeabove-ar  lamBar_alefThreeabove-ar  lamDoublebar_alefThreeabove-ar
         lam_alefThreeabove-ar.fina  lamVabove_alefThreeabove-ar.fina  lamDotabove_alefThreeabove-ar.fina  lamThreedotsabove_alefThreeabove-ar.fina
@@ -499,13 +499,13 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="LowHamzaBase" fixed="0">
+    <class name="LowHamzaBase">
         waw-ar yeh-ar ae-ar hehgoal-ar
         waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina
         yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init
     </class>
 
-    <class name="LowHamzaComposed" fixed="0">
+    <class name="LowHamzaComposed">
         wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar
         wawHamzaabove-ar.fina yehHamzaabove-ar.fina hehHamzaabove-ar.fina hehgoalHamzaabove-ar.fina
         yehHamzaabove-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init hehgoalHamzaabove-ar.init
@@ -560,21 +560,21 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
-    <class name="ShaddaKasraLigatures" fixed="0">
+    <class name="ShaddaKasraLigatures">
         shadda_kasratan-ar shadda_kasra-ar
     </class>
 
-    <class name="ShaddaKasraMarks" fixed="0">
+    <class name="ShaddaKasraMarks">
         kasratan-ar kasra-ar
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <!-- shadda-alef combination is only used for Allah ligature, so it is not included here. -->
-    <class name="ShaddaLigatures" fixed="0">
+    <class name="ShaddaLigatures">
         shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar
     </class>
 
-    <class name="ShaddaMarks" fixed="0">
+    <class name="ShaddaMarks">
         fathatan-ar dammatan-ar fatha-ar damma-ar
     </class>
 
@@ -794,18 +794,18 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- These pairs of classes must match.  -->
 
-    <class name="Lam1NoAllah" fixed="0">lam-ar.init         lam-ar.medi</class>
-    <class name="Lam1Allah" fixed="0">  lam-ar.init.allah1  lam-ar.medi.allah1</class>
+    <class name="Lam1NoAllah">lam-ar.init         lam-ar.medi</class>
+    <class name="Lam1Allah">  lam-ar.init.allah1  lam-ar.medi.allah1</class>
 
-    <class name="HehNoAllah" fixed="0">heh-ar.fina        hehgoal-ar.fina</class>
-    <class name="HehAllah" fixed="0">  heh-ar.fina.allah  hehgoal-ar.fina.allah</class>
+    <class name="HehNoAllah">heh-ar.fina        hehgoal-ar.fina</class>
+    <class name="HehAllah">  heh-ar.fina.allah  hehgoal-ar.fina.allah</class>
 
-    <class name="AlefNoAllah" fixed="0">alef-ar        alef-ar.fina        alefWasla-ar        alefWasla-ar.fina</class>
-    <class name="AlefAllah" fixed="0">  alef-ar.allah  alef-ar.fina.allah  alefWasla-ar.allah  alefWasla-ar.fina.allah</class>
+    <class name="AlefNoAllah">alef-ar        alef-ar.fina        alefWasla-ar        alefWasla-ar.fina</class>
+    <class name="AlefAllah">  alef-ar.allah  alef-ar.fina.allah  alefWasla-ar.allah  alefWasla-ar.fina.allah</class>
 
     <!-- Note that we don't need to include alef-hamza or alef-madda because they are decomposed. -->
-    <class name="AlefNoAllahIsol" fixed="0">alef-ar        alefWasla-ar</class>
-    <class name="AlefAllahIsol" fixed="0">  alef-ar.allah  alefWasla-ar.allah</class>
+    <class name="AlefNoAllahIsol">alef-ar        alefWasla-ar</class>
+    <class name="AlefAllahIsol">  alef-ar.allah  alefWasla-ar.allah</class>
 
     <class name="KasraInAllah">kasra-ar</class>
 
