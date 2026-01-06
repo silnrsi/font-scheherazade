@@ -104,20 +104,48 @@ echo "     >>> PRODUCT SITE MARKDOWN (documentation/source/productsite/)"
 
 echo "     > about.md"
 python3 documentation/source/makepsmd.py documentation/source/about.md documentation/source/productsite/about.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/about.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/about.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/about.html documentation/source/productsite/about.wphtml -q
 echo "     > charset.md"
 python3 documentation/source/makepsmd.py documentation/source/charset.md documentation/source/productsite/charset.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/charset.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/charset.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/charset.html documentation/source/productsite/charset.wphtml -q
 echo "     > design.md"
 python3 documentation/source/makepsmd.py documentation/source/design.md documentation/source/productsite/design.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/design.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/design.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/design.html documentation/source/productsite/design.wphtml -q
 echo "     > developer.md"
 python3 documentation/source/makepsmd.py documentation/source/developer.md documentation/source/productsite/developer.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/developer.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/developer.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/developer.html documentation/source/productsite/developer.wphtml -q
 echo "     > faq.md"
 python3 documentation/source/makepsmd.py documentation/source/faq.md documentation/source/productsite/faq.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/faq.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/faq.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/faq.html documentation/source/productsite/faq.wphtml -q
+echo "     > history.md"
+python3 documentation/source/makepsmd.py documentation/source/history.md documentation/source/productsite/history.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/history.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/history.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/history.html documentation/source/productsite/history.wphtml -q
+echo "     > resources.md"
+python3 documentation/source/makepsmd.py documentation/source/resources.md documentation/source/productsite/resources.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/resources.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/resources.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/resources.html documentation/source/productsite/resources.wphtml -q
+echo "     > sample.md"
+python3 documentation/source/makepsmd.py documentation/source/sample.md documentation/source/productsite/sample.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/sample.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/sample.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/sample.html documentation/source/productsite/sample.wphtml -q
+echo "     > support.md"
+python3 documentation/source/makepsmd.py documentation/source/support.md documentation/source/productsite/support.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/support.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/support.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/support.html documentation/source/productsite/support.wphtml -q
+echo "     > announcement.md"
+python3 documentation/source/makepsmd.py documentation/source/announcement.md documentation/source/productsite/announcement.md -q
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/announcement.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/announcement.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/announcement.html documentation/source/productsite/announcement.wphtml -q
 echo "     > features.md"
 python3 documentation/source/makepsmd.py documentation/source/features.md documentation/source/productsite/features.md -q
 pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/features.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/features.md
 python3 documentation/source/makepshtml.py documentation/source/productsite/features.html documentation/source/productsite/features.wphtml -q
-echo "     > history.md"
-python3 documentation/source/makepsmd.py documentation/source/history.md documentation/source/productsite/history.md -q
 echo "     > honorifics.md"
 python3 documentation/source/makepsmd.py documentation/source/honorifics.md documentation/source/productsite/honorifics.md -q
 pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/honorifics.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/honorifics.md
@@ -126,18 +154,9 @@ echo "     > allah.md"
 python3 documentation/source/makepsmd.py documentation/source/allah.md documentation/source/productsite/allah.md -q
 pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/allah.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/allah.md
 python3 documentation/source/makepshtml.py documentation/source/productsite/allah.html documentation/source/productsite/allah.wphtml -q
-echo "     > resources.md"
-python3 documentation/source/makepsmd.py documentation/source/resources.md documentation/source/productsite/resources.md -q
-echo "     > sample.md"
-python3 documentation/source/makepsmd.py documentation/source/sample.md documentation/source/productsite/sample.md -q
-pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/sample.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/sample.md
-python3 documentation/source/makepshtml.py documentation/source/productsite/sample.html documentation/source/productsite/sample.wphtml -q
-echo "     > support.md"
-python3 documentation/source/makepsmd.py documentation/source/support.md documentation/source/productsite/support.md -q
 echo "     > versions.md"
 python3 documentation/source/makepsmd.py documentation/source/versions.md documentation/source/productsite/versions.md -q
-echo "     > announcement.md"
-python3 documentation/source/makepsmd.py documentation/source/announcement.md documentation/source/productsite/announcement.md -q
-
+pandoc --wrap preserve -f markdown-smart -o documentation/source/productsite/versions.html -L documentation/source/pandocfilters/filter-wp.lua documentation/source/productsite/versions.md
+python3 documentation/source/makepshtml.py documentation/source/productsite/versions.html documentation/source/productsite/versions.wphtml -q
 
 echo "-----Completed!"
