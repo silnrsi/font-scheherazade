@@ -101,6 +101,7 @@ pandoc -s -f markdown-smart --template documentation/source/templatepdf.html doc
 weasyprint documentation/source/pdftemp/announcement.html documentation/pdf/announcement.pdf
 
 echo "     >>> PRODUCT SITE MARKDOWN (documentation/source/productsite/)"
+mkdir -p documentation/source/productsite
 
 echo "     > about.md"
 python3 documentation/source/makepsmd.py documentation/source/about.md documentation/source/productsite/about.md -q

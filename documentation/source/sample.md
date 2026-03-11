@@ -55,9 +55,9 @@ Regular:<span class='scheherazadenewL-R normal'>&#x2010; &#x2011; &#x2012; &#x20
 
 ### Currency Symbols:
 
-Regular:<span class='scheherazadenewL-R normal'> €</span>
+Regular:<span class='scheherazadenewL-R normal'>&#x20AC; &#x20C1;</span>
 
-**Bold:** <span class='scheherazadenewL-B normal'> €</span>
+**Bold:** <span class='scheherazadenewL-B normal'>&#x20AC; &#x20C1;</span>
 
 ### Letterlike Symbols, Mathematical Operators, Control Pictures, Geometric Shapes, Miscellaneous Mathematical Symbols-B: 
 
