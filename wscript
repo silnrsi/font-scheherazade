@@ -26,6 +26,7 @@ omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_
 #   --autohint - autohint the font
 #   --norename - omit glyph rename step
 #   --regOnly  - build just the Regular weight
+#   --quick    - build without custom kerning, shifting, and collision avoidance
 opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'}, {'opt': '--regOnly'})
 
 cmds = [cmd('ttx -m ${DEP} -o ${TGT} ${SRC}', ['source/jstf.ttx']) ]
@@ -41,7 +42,6 @@ else:
 #cmds.append(cmd('ttfsubset -s arab,latn ${DEP} ${TGT}'))
 
 noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
-noGRkern = '_nokern' if '--quick' in opts else ''
 
 # iterate over designspace
 designspace('source/ScheherazadeNew.designspace',
