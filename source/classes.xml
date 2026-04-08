@@ -1098,7 +1098,7 @@ of the license along with this Font Software. If this is not the case, go to
 
     <class name="WawLikeFina">
         waw-ar.fina  wawHamzaabove-ar.fina  highhamzaWaw-ar.fina  uHamzaabove-ar.fina
-        wawring-ar.fina  kirghizoe-ar.fina  kirghizoe-ar.bar.fina  oe-ar.fina  u-ar.fina  yu-ar.fina
+        wawring-ar.fina  kirghizoe-ar.fina  kirghizoe-ar.fina.bar  oe-ar.fina  u-ar.fina  yu-ar.fina
         kirghizyu-ar.fina  wawTwodots-ar.fina  ve-ar.fina  wawDotabove-ar.fina  wawTwoabove-ar.fina  wawThreeAbove-ar.fina
         wawDotcenter-ar.fina
     </class>
@@ -1367,15 +1367,9 @@ of the license along with this Font Software. If this is not the case, go to
 		
 		<class name="BehLikeWAboveInit">
 			noon-ar.init teh-ar.init theh-ar.init tehThreedotsdown-ar.init tehVabove-ar.init
-			tteh-ar.init ttehVabove-ar.init tteheh-ar.init teheh-ar.init tehThreedotsupabove-ar.init 
-			tehThreedotsupbelow-ar.init behTwodotsbelow_dotabove-ar.init behVabove-ar.init 
+			tteh-ar.init ttehVabove-ar.init tteheh-ar.init teheh-ar.init behThreedotsupabove-ar.init
+			tehThreedotsupbelow-ar.init behTwodotsbelowDotabove-ar.init behVabove-ar.init 
 			behhamzaabove-ar.init tehTehabove-ar.init behMeemabove-ar.init pehMeemabove-ar.init
-		</class>
-		
-		<class name="LamLikeIsolInit">
-			lam-ar lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamTahabove-ar lamThreedotsbelow-ar
-			lamBar-ar lamDoublebar-ar lam-ar.init lamVabove-ar.init lamDotabove-ar.init lamThreedotsabove-ar.init
-			lamTahabove-ar.init lamThreedotsbelow-ar.init lamBar-ar.init lamDoublebar-ar.init
 		</class>
 		
 		<class name="AlefWUpperComposed">
