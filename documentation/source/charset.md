@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Character Set Support
-fontversion: 4.400
+fontversion: 4.401
 ---
 
 The Scheherazade New font contains complete coverage of all the characters defined in Unicode for Arabic script (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).  
@@ -21,6 +21,7 @@ Supplemental Punctuation | 2E41
 Arabic Presentation Forms-A | only includes FBC6..FBC7, FD3E..FD3F, FD40..FD4F, FD90..FD91, FDCF, FDF2, FDFA..FDFF
 Arabic Presentation Forms-B | ✗ 
 Arabic Extended-C | only includes 10EC2..10EC7, 10ED0, 10EFA..10EFF
+Currency Symbols | only includes 20AC, 20C1
 Codepage 1252 (Western)¹ | ✓
 
 A selection of characters from the General Punctuation block, such as various-sized spaces, are also supported. U+204F REVERSED SEMICOLON and U+2E41 REVERSED COMMA have been added to support Sindhi punctuation.

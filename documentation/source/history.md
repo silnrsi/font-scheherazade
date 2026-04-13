@@ -1,7 +1,14 @@
 ---
 title: Scheherazade New - Version History
-fontversion: 4.400
+fontversion: 4.401
 ---
+
+### 2026-04-17 (SIL WSTech team) Scheherazade New version 4.401
+
+#### New
+
+- Added:
+  - 20C1 SAUDI RIYAL SIGN
 
 ### 2025-08-11 (SIL WSTech team) Scheherazade New version 4.400
 
