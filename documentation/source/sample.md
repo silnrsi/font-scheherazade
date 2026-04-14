@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Type Sample
-fontversion: 4.401
+fontversion: 4.450
 ---
 
 This document demonstrates all of the characters in the font. It is organized by Unicode block. Alternate glyphs that are available through features are demonstrated in the [Features](features.md) document. At the end is a sample demonstrating Arabic shaping and another example of running text.

@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Announcement
-fontversion: 4.401
+fontversion: 4.450
 ---
 
 We are very pleased to announce a new release of Scheherazade New, an Arabic script font designed in the traditional Naskh style.
@@ -16,7 +16,11 @@ This release includes the following changes for this version:
 
 #### Improved
 
-None
+- Improved kerning: 
+  - U+067C ARABIC LETTER TEH WITH RING
+  - U+0751 ARABIC LETTER BEH WITH DOT BELOW AND THREE DOTS ABOVE
+  - U+0754 ARABIC LETTER BEH WITH TWO DOTS BELOW AND DOT ABOVE
+  - U+08BE ARABIC LETTER PEH WITH SMALL V
 
 #### Known issues
 - Shaping for the newly added characters may not yet occur in applications
