@@ -3,7 +3,7 @@ title: Scheherazade New - Version History
 fontversion: 4.450
 ---
 
-### 2026-04-17 (SIL WSTech team) Scheherazade New version 4.450
+### 2026-04-15 (SIL WSTech team) Scheherazade New version 4.450
 
 #### New
 
