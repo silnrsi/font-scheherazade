@@ -12,7 +12,7 @@ fontversion: 4.500
 
 #### Improved
 
-- Improved kerning: 
+- Improved kerning in the context of madda above: 
   - U+067C ARABIC LETTER TEH WITH RING
   - U+0751 ARABIC LETTER BEH WITH DOT BELOW AND THREE DOTS ABOVE
   - U+0754 ARABIC LETTER BEH WITH TWO DOTS BELOW AND DOT ABOVE
