@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Announcement
-fontversion: 4.450
+fontversion: 4.500
 ---
 
 We are very pleased to announce a new release of Scheherazade New, an Arabic script font designed in the traditional Naskh style.

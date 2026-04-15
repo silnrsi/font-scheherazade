@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New - Character Set Support
-fontversion: 4.450
+fontversion: 4.500
 ---
 
 The Scheherazade New font contains complete coverage of all the characters defined in Unicode for Arabic script (excluding the Arabic Presentation Forms blocks, which are not recommended for normal use).  
