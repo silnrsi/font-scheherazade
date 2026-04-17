@@ -15,8 +15,8 @@ then
 	exit 2
 fi
 
-prevfont="references/v4.400/ScheherazadeNew-Regular.ttf"
-prevver="4.4"
+prevfont="references/v4.500/ScheherazadeNew-Regular.ttf"
+prevver="4.5"
 
 commonParams=( \
 	--prevfont "$prevfont"  \
