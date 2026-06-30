@@ -135,7 +135,7 @@ fontversion: 4.500
 - Adjusted line-spacing to reflect larger characters
 - Adjusted underline and strikethrough positions and weight
 - Updated Arabic script character repertoire to support all characters in the Unicode 13.0 BMP Arabic blocks (except for U+08E2 disputed end of ayah)
-- Updated Latin script repertoire to support "Recommended characters for Non-Roman fonts" https://scriptsource.org/entry/gg5wm9hhd3
+- Updated Latin script repertoire to support "Recommended characters for Non-Roman fonts" https://github.com/silnrsi/pysilfont/blob/master/src/silfont/data/required_chars.csv
 - Added U+204F and U+2E41 for Sindhi language support
 - Added U+FDFA (sallallahou alayhe wasallam), U+FDFB (jallajalalouhou), and U+FDFD (bismillah)
 - Added Private Use Area honorific ligatures (all of these are in the Unicode pipeline at non-stable codepoints).
