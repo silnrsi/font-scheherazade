@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonFathaabove-ar" format="2">
+  <unicode hex="10EF3"/>
+  <anchor x="-4" y="1428" name="_diaA"/>
+  <anchor x="-83" y="2563" name="diaA"/>
+  <outline>
+    <component base="_noon" yOffset="1841"/>
+    <component base="fathasmall-ar" xOffset="-219" yOffset="790"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

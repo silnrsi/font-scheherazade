@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ucd xmlns="http://www.unicode.org/ns/2003/ucd/1.0">
-   <description>Unicode nn.n ABS additions</description>
+   <description>Unicode 18.0 ABS additions</description>
    <repertoire>
 <!-- ———————————  Examples of typical usage — do not discard these lines:
       <char cp="088F"  age="17.0" gc="Lo" ccc="0"   bc="AL"  Bidi_M="N" jt="D" jg="Noon"             sc="Arab" scx="Arab" blk="Arabic_Ext_B" na="ARABIC LETTER NOON WITH RING ABOVE"></char>
       <char cp="10EFA" age="17.0" gc="Mn" ccc="220" bc="NSM" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC DOUBLE VERTICAL BAR BELOW"></char>
 ————————————————  -->
+      <char cp="20C2" age="18.0" gc="Sc" ccc="0" bc="ET" Bidi_M="N" jt="T" sc="Zinh" scx="Zinh" blk="Currency_Symbols" na="RUFIYAA SIGN"></char>
+      <char cp="20C3" age="18.0" gc="Sc" ccc="0" bc="ET" Bidi_M="N" jt="T" sc="Zinh" scx="Zinh" blk="Currency_Symbols" na="UAE DIRHAM SIGN"></char>
+      <char cp="20C4" age="18.0" gc="Sc" ccc="0" bc="ET" Bidi_M="N" jt="T" sc="Zinh" scx="Zinh" blk="Currency_Symbols" na="OMANI RIAL SIGN"></char>
+      <char cp="10EC9" age="18.0" gc="Sk" ccc="0" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL BASELINE FATHA"></char>
+      <char cp="10ECA" age="18.0" gc="Sk" ccc="0" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL BASELINE DOTLESS HEAD OF KHAH"></char>
+      <char cp="10ECB" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC NORTHEAST POINTING ARROWHEAD ABOVE"></char>
+      <char cp="10ECC" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC NORTHEAST POINTING ARROWHEAD BELOW"></char>
+      <char cp="10ECD" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SOUTHWEST POINTING ARROWHEAD BELOW"></char>
+      <char cp="10ECE" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL CIRCLE ABOVE"></char>
+      <char cp="10ECF" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC LARGE CIRCLE ABOVE"></char>
+      <char cp="10EF0" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL LOW UPRIGHT RECTANGULAR ZERO"></char>
+      <char cp="10EF1" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SQUARE BELOW"></char>
+      <char cp="10EF2" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC FILLED SQUARE BELOW"></char>
+      <char cp="10EF3" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL HIGH NOON WITH FATHA"></char>
+      <char cp="10EF4" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL LOW NOON WITH FATHA"></char>
+      <char cp="10EF5" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL HIGH NOON WITH DAMMA"></char>
+      <char cp="10EF6" age="18.0" gc="Mn" ccc="220" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL LOW NOON WITH DAMMA"></char>
+      <char cp="10EF7" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL HIGH HEH INITIAL FORM"></char>
+      <char cp="10EF8" age="18.0" gc="Mn" ccc="230" bc="AL" Bidi_M="N" jt="T" jg="No_Joining_Group" sc="Arab" scx="Arab" blk="Arabic_Ext_C" na="ARABIC SMALL HIGH WORD KABBIR"></char>
    </repertoire>
 </ucd>
+

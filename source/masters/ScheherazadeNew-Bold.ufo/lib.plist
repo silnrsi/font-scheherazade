@@ -1459,6 +1459,7 @@
     <string>alefLamYehabove-ar</string>
     <string>zainabove-ar</string>
     <string>fathasmall-ar</string>
+    <string>fathasmallbaseline-ar</string>
     <string>dammasmall-ar</string>
     <string>kasrasmall-ar</string>
     <string>threedots-ar</string>
@@ -1513,7 +1514,14 @@
     <string>hizb-ar</string>
     <string>sukunround-ar</string>
     <string>sukunoval-ar</string>
+    <string>sukunovalbelow-ar</string>
+    <string>squarebelow-ar</string>
+    <string>squarefilledbelow-ar</string>
+    <string>northeastArrowheadabove-ar</string>
+    <string>northeastArrowheadbelow-ar</string>
+    <string>southwestArrowheadbelow-ar</string>
     <string>hahabove-ar</string>
+    <string>dotlessheadofkhahbaseline-ar</string>
     <string>seenbelow-ar</string>
     <string>maddalong-ar</string>
     <string>wawSmall-ar</string>
@@ -1527,8 +1535,13 @@
     <string>sadabove-ar</string>
     <string>ainabove-ar</string>
     <string>qafabove-ar</string>
+    <string>hehabove-ar</string>
     <string>noonKasraabove-ar</string>
     <string>noonKasrabelow-ar</string>
+    <string>noonFathaabove-ar</string>
+    <string>noonFathabelow-ar</string>
+    <string>noonDammaabove-ar</string>
+    <string>noonDammabelow-ar</string>
     <string>aththalathaabove-ar</string>
     <string>assajdaabove-ar</string>
     <string>annisfabove-ar</string>
@@ -1541,6 +1554,7 @@
     <string>ishmaambelow-ar</string>
     <string>imaalabelow-ar</string>
     <string>wordmaddabelow-ar</string>
+    <string>wordkabbirabove-ar</string>
     <string>tasheel-ar</string>
     <string>footnotemarkerabove-ar</string>
     <string>safhaabove-ar</string>
@@ -1558,7 +1572,9 @@
     <string>largerounddotbelow-ar</string>
     <string>sukunbelow-ar</string>
     <string>largecirclebelow-ar</string>
+    <string>largecircleabove-ar</string>
     <string>largerounddotinsidecirclebelow-ar</string>
+    <string>smallcircleabove-ar</string>
     <string>zero-ar</string>
     <string>zero-ar.medium</string>
     <string>zero-ar.small</string>
@@ -1870,6 +1886,9 @@
     <string>activateformshaping-ar</string>
     <string>euro</string>
     <string>riyalSaudi</string>
+    <string>rufiyaa</string>
+    <string>uaeDirham</string>
+    <string>omaniRial</string>
     <string>trademark</string>
     <string>Ohm</string>
     <string>partialdiff</string>
@@ -3356,6 +3375,7 @@
     <string>alefLamYehabove-ar</string>
     <string>zainabove-ar</string>
     <string>fathasmall-ar</string>
+    <string>fathasmallbaseline-ar</string>
     <string>dammasmall-ar</string>
     <string>kasrasmall-ar</string>
     <string>threedots-ar</string>
@@ -3410,7 +3430,14 @@
     <string>hizb-ar</string>
     <string>sukunround-ar</string>
     <string>sukunoval-ar</string>
+    <string>sukunovalbelow-ar</string>
+    <string>squarebelow-ar</string>
+    <string>squarefilledbelow-ar</string>
+    <string>northeastArrowheadabove-ar</string>
+    <string>northeastArrowheadbelow-ar</string>
+    <string>southwestArrowheadbelow-ar</string>
     <string>hahabove-ar</string>
+    <string>dotlessheadofkhahbaseline-ar</string>
     <string>seenbelow-ar</string>
     <string>maddalong-ar</string>
     <string>wawSmall-ar</string>
@@ -3424,8 +3451,13 @@
     <string>sadabove-ar</string>
     <string>ainabove-ar</string>
     <string>qafabove-ar</string>
+    <string>hehabove-ar</string>
     <string>noonKasraabove-ar</string>
     <string>noonKasrabelow-ar</string>
+    <string>noonFathaabove-ar</string>
+    <string>noonFathabelow-ar</string>
+    <string>noonDammaabove-ar</string>
+    <string>noonDammabelow-ar</string>
     <string>aththalathaabove-ar</string>
     <string>assajdaabove-ar</string>
     <string>annisfabove-ar</string>
@@ -3438,6 +3470,7 @@
     <string>ishmaambelow-ar</string>
     <string>imaalabelow-ar</string>
     <string>wordmaddabelow-ar</string>
+    <string>wordkabbirabove-ar</string>
     <string>tasheel-ar</string>
     <string>footnotemarkerabove-ar</string>
     <string>safhaabove-ar</string>
@@ -3455,7 +3488,9 @@
     <string>largerounddotbelow-ar</string>
     <string>sukunbelow-ar</string>
     <string>largecirclebelow-ar</string>
+    <string>largecircleabove-ar</string>
     <string>largerounddotinsidecirclebelow-ar</string>
+    <string>smallcircleabove-ar</string>
     <string>zero-ar</string>
     <string>zero-ar.medium</string>
     <string>zero-ar.small</string>
@@ -3767,6 +3802,9 @@
     <string>activateformshaping-ar</string>
     <string>euro</string>
     <string>riyalSaudi</string>
+    <string>rufiyaa</string>
+    <string>uaeDirham</string>
+    <string>omaniRial</string>
     <string>trademark</string>
     <string>Ohm</string>
     <string>partialdiff</string>
@@ -4442,6 +4480,8 @@
     <string>uni2215</string>
     <key>dotStopabove-ar</key>
     <string>uni06EC</string>
+    <key>dotlessheadofkhahbaseline-ar</key>
+    <string>u10ECA</string>
     <key>dottedCircle</key>
     <string>uni25CC</string>
     <key>dotvowelbelow-ar</key>
@@ -4530,6 +4570,8 @@
     <string>uni064E06E2</string>
     <key>fathasmall-ar</key>
     <string>uni0618</string>
+    <key>fathasmallbaseline-ar</key>
+    <string>u10EC9</string>
     <key>fathatan-ar</key>
     <string>uni064B</string>
     <key>fathatanCurly-ar</key>
@@ -4904,6 +4946,8 @@
     <string>uni06FF.init</string>
     <key>hehVinvertedabove-ar.medi</key>
     <string>uni06FF.medi</string>
+    <key>hehabove-ar</key>
+    <string>u10EF7</string>
     <key>hehgoal-ar</key>
     <string>uni06C1</string>
     <key>hehgoal-ar.fina</key>
@@ -5526,6 +5570,8 @@
     <string>uni06440673</string>
     <key>lam_alefWavyhamzabelow-ar.fina</key>
     <string>uni06440673.fina</string>
+    <key>largecircleabove-ar</key>
+    <string>u10ECF</string>
     <key>largecirclebelow-ar</key>
     <string>uni08D1</string>
     <key>largerounddotabove-ar</key>
@@ -5670,6 +5716,10 @@
     <string>uni08BD.init</string>
     <key>noonAfrican-ar.medi</key>
     <string>uni08BD.medi</string>
+    <key>noonDammaabove-ar</key>
+    <string>u10EF5</string>
+    <key>noonDammabelow-ar</key>
+    <string>u10EF6</string>
     <key>noonDotbelow-ar</key>
     <string>uni06B9</string>
     <key>noonDotbelow-ar.fina</key>
@@ -5678,6 +5728,10 @@
     <string>uni06B9.init</string>
     <key>noonDotbelow-ar.medi</key>
     <string>uni06B9.medi</string>
+    <key>noonFathaabove-ar</key>
+    <string>u10EF3</string>
+    <key>noonFathabelow-ar</key>
+    <string>u10EF4</string>
     <key>noonKasraabove-ar</key>
     <string>uni08D8</string>
     <key>noonKasrabelow-ar</key>
@@ -5760,6 +5814,10 @@
     <string>u10EC6.init</string>
     <key>noonthin-ar.medi</key>
     <string>u10EC6.medi</string>
+    <key>northeastArrowheadabove-ar</key>
+    <string>u10ECB</string>
+    <key>northeastArrowheadbelow-ar</key>
+    <string>u10ECC</string>
     <key>number-ar</key>
     <string>uni0600</string>
     <key>number-ar.2</key>
@@ -5788,6 +5846,8 @@
     <string>uni06C6</string>
     <key>oe-ar.fina</key>
     <string>uni06C6.fina</string>
+    <key>omaniRial</key>
+    <string>uni20C4</string>
     <key>one-ar</key>
     <string>uni0661</string>
     <key>one-ar.medium</key>
@@ -6116,6 +6176,8 @@
     <string>uni0691</string>
     <key>rreh-ar.fina</key>
     <string>uni0691.fina</string>
+    <key>rufiyaa</key>
+    <string>uni20C2</string>
     <key>sad-ar</key>
     <string>uni0635</string>
     <key>sad-ar.fina</key>
@@ -6344,8 +6406,16 @@
     <string>uni06F6.urdu.small</string>
     <key>sixperemspace</key>
     <string>uni2006</string>
+    <key>smallcircleabove-ar</key>
+    <string>u10ECE</string>
     <key>softhyphen</key>
     <string>uni00AD</string>
+    <key>southwestArrowheadbelow-ar</key>
+    <string>u10ECD</string>
+    <key>squarebelow-ar</key>
+    <string>u10EF1</string>
+    <key>squarefilledbelow-ar</key>
+    <string>u10EF2</string>
     <key>subhaanahuWaTaaalaa-ar</key>
     <string>uniFDFE</string>
     <key>subhaanahuWaTaaalaa-ar.smpl</key>
@@ -6360,6 +6430,8 @@
     <string>uni08D0</string>
     <key>sukunoval-ar</key>
     <string>uni06E0</string>
+    <key>sukunovalbelow-ar</key>
+    <string>u10EF0</string>
     <key>sukunround-ar</key>
     <string>uni06DF</string>
     <key>tabaarakaWaTaaalaa-ar</key>
@@ -6612,6 +6684,8 @@
     <string>uni0677</string>
     <key>uHamzaabove-ar.fina</key>
     <string>uni0677.fina</string>
+    <key>uaeDirham</key>
+    <string>uni20C3</string>
     <key>vabove-ar</key>
     <string>uni065A</string>
     <key>ve-ar</key>
@@ -6680,6 +6754,8 @@
     <string>uni06C4.fina</string>
     <key>wordjoiner</key>
     <string>uni2060</string>
+    <key>wordkabbirabove-ar</key>
+    <string>u10EF8</string>
     <key>wordmaddabelow-ar</key>
     <string>u10EFF</string>
     <key>year-ar</key>

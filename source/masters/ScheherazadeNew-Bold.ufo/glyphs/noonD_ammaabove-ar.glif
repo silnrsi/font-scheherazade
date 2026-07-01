@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="noonDammaabove-ar" format="2">
+  <unicode hex="10EF5"/>
+  <anchor x="-4" y="1428" name="_diaA"/>
+  <anchor x="-33" y="2723" name="diaA"/>
+  <outline>
+    <component base="_noon" yOffset="1841"/>
+    <component base="dammasmall-ar" xOffset="-285" yOffset="728"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

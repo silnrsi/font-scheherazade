@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="wordkabbirabove-ar" format="2">
+  <unicode hex="10EF8"/>
+  <anchor x="0" y="1698" name="_diaA"/>
+  <anchor x="0" y="2816" name="diaA"/>
+  <outline>
+    <component base="kafswash-ar.init" xScale="0.5" yScale="0.5" xOffset="-220" yOffset="2050"/>
+    <component base="beh-ar.medi" xScale="0.5" yScale="0.5" xOffset="-480" yOffset="2050"/>
+    <component base="reh-ar.fina" xScale="0.5" yScale="0.5" xOffset="-910" yOffset="2050"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.834,0.6,1</string>
+    </dict>
+  </lib>
+</glyph>
