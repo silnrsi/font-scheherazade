@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hamza_kasra-ar" format="2">
+  <anchor x="249" y="1450" name="_diaA"/>
+  <anchor x="131" y="2314" name="diaA"/>
+  <outline>
+    <component base="fatha-ar" xOffset="87"/>
+    <component base="hamzaabove-ar" xOffset="42" yOffset="244"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.834,0.6,1</string>
+    </dict>
+  </lib>
+</glyph>
