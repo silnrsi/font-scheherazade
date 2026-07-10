@@ -67,6 +67,39 @@ ChangeLog
 ---------
 (This should list both major and minor changes, most recent first.)
 
+### 2026-xx-xx (SIL WSTech team) Scheherazade New version 4.600
+
+#### New
+
+- Added characters:
+  - U+20C2 RUFIYAA SIGN
+  - U+20C3 UAE DIRHAM SIGN
+  - U+20C4 OMANI RIAL SIGN
+  - U+10EC9 ARABIC SMALL BASELINE FATHA
+  - U+10ECA ARABIC SMALL BASELINE DOTLESS HEAD OF KHAH
+  - U+10ECB ARABIC NORTHEAST POINTING ARROWHEAD ABOVE
+  - U+10ECC ARABIC NORTHEAST POINTING ARROWHEAD BELOW
+  - U+10ECD ARABIC SOUTHWEST POINTING ARROWHEAD BELOW
+  - U+10ECE ARABIC SMALL CIRCLE ABOVE
+  - U+10ECF ARABIC LARGE CIRCLE ABOVE
+  - U+10EF0 ARABIC SMALL LOW UPRIGHT RECTANGULAR ZERO
+  - U+10EF1 ARABIC SQUARE BELOW
+  - U+10EF2 ARABIC FILLED SQUARE BELOW
+  - U+10EF3 ARABIC SMALL HIGH NOON WITH FATHA
+  - U+10EF4 ARABIC SMALL LOW NOON WITH FATHA
+  - U+10EF5 ARABIC SMALL HIGH NOON WITH DAMMA
+  - U+10EF6 ARABIC SMALL LOW NOON WITH DAMMA
+  - U+10EF7 ARABIC SMALL HIGH HEH INITIAL FORM
+  - U+10EF8 ARABIC SMALL HIGH WORD KABBIR
+
+- Added features:
+  - A new 8-sided star End of Ayah to the End of ayah feature (cv08=3)
+  - Added Hamza+kasra placement feature (cv63=1) 
+
+#### Improved
+
+- Modified the design of U+06C4 ARABIC LETTER WAW WITH RING to match glyph errata notice (https://www.unicode.org/errata)
+
 ### 2026-04-15 (SIL WSTech team) Scheherazade New version 4.500
 
 #### New
