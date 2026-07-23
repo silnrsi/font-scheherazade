@@ -534,7 +534,7 @@ def doit(args):
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
                         ftml.setLang(langID)
-                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],)):
+                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],), (['cv80', '3'],)):
                             ftml.setFeatures(featlist)
                             ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                         ftml.clearFeatures()

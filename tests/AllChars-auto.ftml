@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -27,6 +27,7 @@
       <style feats="'cv60' 1" name="cv60_1"/>
       <style feats="'cv62' 1" name="cv62_1"/>
       <style feats="'cv62' 2" name="cv62_2"/>
+      <style feats="'cv63' 1" name="cv63_1"/>
       <style feats="'cv70' 1" name="cv70_1"/>
       <style feats="'cv70' 2" name="cv70_2"/>
       <style feats="'cv70' 3" name="cv70_3"/>
@@ -41,6 +42,7 @@
       <style feats="'cv78' 3" name="cv78_3"/>
       <style feats="'cv80' 1" name="cv80_1"/>
       <style feats="'cv80' 2" name="cv80_2"/>
+      <style feats="'cv80' 3" name="cv80_3"/>
       <style feats="'cv81' 1" name="cv81_1"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv82' 2" name="cv82_2"/>
@@ -1688,6 +1690,10 @@
       <comment>endofayah-ar</comment>
       <string>\u0006DD</string>
     </test>
+    <test label="U+06DD" stylename="cv80_3">
+      <comment>endofayah-ar</comment>
+      <string>\u0006DD</string>
+    </test>
     <test label="U+06DE">
       <comment>hizb-ar</comment>
       <string>\u0006DE \u000628\u0006DF \u000628\u0006E0 \u000628\u0006E1 \u000628\u0006E2 \u000628\u0006E3 \u000628\u0006E4 \u0006E5 \u0006E6 \u000628\u0006E7 \u000628\u0006E8 \u0006E9 \u000628\u0006EA \u000628\u0006EB \u000628\u0006EC \u000628\u0006ED</string>
@@ -2396,7 +2402,7 @@
       <comment>verticaltail-ar</comment>
       <string>\u00088E \u00200D\u00088E </string>
     </test>
-    <test background="#ffc8a0" label="U+088F">
+    <test label="U+088F">
       <comment>noonRingabove-ar</comment>
       <string>\u00088F \u00088F\u00200D \u00200D\u00088F\u00200D \u00200D\u00088F \u00088F\u00088F\u00088F </string>
     </test>
@@ -2712,9 +2718,13 @@
       <comment>euro</comment>
       <string>\u0020AC</string>
     </test>
-    <test background="#ffc8a0" label="U+20C1">
+    <test label="U+20C1">
       <comment>riyalSaudi</comment>
       <string>\u0020C1</string>
+    </test>
+    <test background="#ffc8a0" label="U+20C2">
+      <comment>rufiyaa</comment>
+      <string>\u0020C2 \u0020C3 \u0020C4</string>
     </test>
     <test label="U+2122">
       <comment>trademark</comment>
@@ -2808,19 +2818,19 @@
       <comment>fi</comment>
       <string>\u00FB01 \u00FB02</string>
     </test>
-    <test background="#ffc8a0" label="U+FBC6">
+    <test label="U+FBC6">
       <comment>rahmatuAllaahiAlayhim-ar</comment>
       <string>\u00FBC6</string>
     </test>
-    <test background="#ffc8a0" label="U+FBC6" stylename="cv81_1">
+    <test label="U+FBC6" stylename="cv81_1">
       <comment>rahmatuAllaahiAlayhim-ar</comment>
       <string>\u00FBC6</string>
     </test>
-    <test background="#ffc8a0" label="U+FBC7">
+    <test label="U+FBC7">
       <comment>rahmatuAllaahiAlayhimaa-ar</comment>
       <string>\u00FBC7</string>
     </test>
-    <test background="#ffc8a0" label="U+FBC7" stylename="cv81_1">
+    <test label="U+FBC7" stylename="cv81_1">
       <comment>rahmatuAllaahiAlayhimaa-ar</comment>
       <string>\u00FBC7</string>
     </test>
@@ -2952,19 +2962,19 @@
       <comment>rahimahumAllaah-ar</comment>
       <string>\u00FD4F</string>
     </test>
-    <test background="#ffc8a0" label="U+FD90">
+    <test label="U+FD90">
       <comment>rahmatuAllaahiAlayh-ar</comment>
       <string>\u00FD90</string>
     </test>
-    <test background="#ffc8a0" label="U+FD90" stylename="cv81_1">
+    <test label="U+FD90" stylename="cv81_1">
       <comment>rahmatuAllaahiAlayh-ar</comment>
       <string>\u00FD90</string>
     </test>
-    <test background="#ffc8a0" label="U+FD91">
+    <test label="U+FD91">
       <comment>rahmatuAllaahiAlayhaa-ar</comment>
       <string>\u00FD91</string>
     </test>
-    <test background="#ffc8a0" label="U+FD91" stylename="cv81_1">
+    <test label="U+FD91" stylename="cv81_1">
       <comment>rahmatuAllaahiAlayhaa-ar</comment>
       <string>\u00FD91</string>
     </test>
@@ -3084,29 +3094,33 @@
       <comment>kafTwodotsverticalbelow-ar</comment>
       <string>\u010EC4 \u010EC4\u00200D \u00200D\u010EC4\u00200D \u00200D\u010EC4 \u010EC4\u010EC4\u010EC4 </string>
     </test>
-    <test background="#ffc8a0" label="U+10EC5">
+    <test label="U+10EC5">
       <comment>yehSmallTwobelow-ar</comment>
       <string>\u010EC5</string>
     </test>
-    <test background="#ffc8a0" label="U+10EC6">
+    <test label="U+10EC6">
       <comment>noonthin-ar</comment>
       <string>\u010EC6 \u010EC6\u00200D \u00200D\u010EC6\u00200D \u00200D\u010EC6 \u010EC6\u010EC6\u010EC6 </string>
     </test>
-    <test background="#ffc8a0" label="U+10EC7">
+    <test label="U+10EC7">
       <comment>yehFourbelow-ar</comment>
       <string>\u010EC7 \u010EC7\u00200D \u00200D\u010EC7\u00200D \u00200D\u010EC7 \u010EC7\u010EC7\u010EC7 </string>
     </test>
-    <test background="#ffc8a0" label="U+10ED0">
+    <test background="#ffc8a0" label="U+10EC9">
+      <comment>fathasmallbaseline-ar</comment>
+      <string>\u010EC9 \u010ECA \u000628\u010ECB \u000628\u010ECC \u000628\u010ECD \u000628\u010ECE \u000628\u010ECF</string>
+    </test>
+    <test label="U+10ED0">
       <comment>biblicalendofverse-ar</comment>
       <string>\u010ED0</string>
     </test>
-    <test background="#ffc8a0" label="U+10EFA">
-      <comment>doubleverticalbarbelow-ar</comment>
-      <string>\u000628\u010EFA \u000628\u010EFB</string>
+    <test background="#ffc8a0" label="U+10EF0">
+      <comment>sukunovalbelow-ar</comment>
+      <string>\u000628\u010EF0 \u000628\u010EF1 \u000628\u010EF2 \u000628\u010EF3 \u000628\u010EF4 \u000628\u010EF5 \u000628\u010EF6 \u000628\u010EF7 \u000628\u010EF8</string>
     </test>
-    <test label="U+10EFC">
-      <comment>alefoverlay-ar</comment>
-      <string>\u000644\u010EFC \u000628\u010EFD \u000628\u010EFE \u000628\u010EFF</string>
+    <test label="U+10EFA">
+      <comment>doubleverticalbarbelow-ar</comment>
+      <string>\u000628\u010EFA \u000628\u010EFB \u000644\u010EFC \u000628\u010EFD \u000628\u010EFE \u000628\u010EFF</string>
     </test>
   </testgroup>
   <testgroup label="Specials &amp; ligatures (other than lam-alef) from glyph_data">
@@ -3289,6 +3303,26 @@ U+064E">
 U+0654">
       <comment>fatha-ar hamzaabove-ar</comment>
       <string>\u000628\u00064E\u000654</string>
+    </test>
+    <test label="U+0654
+U+0650">
+      <comment>hamzaabove-ar kasra-ar</comment>
+      <string>\u000628\u000654\u000650</string>
+    </test>
+    <test label="U+0650
+U+0654">
+      <comment>kasra-ar hamzaabove-ar</comment>
+      <string>\u000628\u000650\u000654</string>
+    </test>
+    <test label="U+0654
+U+0650" stylename="cv63_1">
+      <comment>hamzaabove-ar kasra-ar</comment>
+      <string>\u000628\u000654\u000650</string>
+    </test>
+    <test label="U+0650
+U+0654" stylename="cv63_1">
+      <comment>kasra-ar hamzaabove-ar</comment>
+      <string>\u000628\u000650\u000654</string>
     </test>
     <test label="U+0650
 U+06ED">

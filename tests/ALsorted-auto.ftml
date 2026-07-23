@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -423,7 +423,7 @@
       <comment>yehTwodotsbelowNoonabove-ar</comment>
       <string>\u0008BA \u0008BA\u00200D \u00200D\u0008BA\u00200D \u00200D\u0008BA \u0008BA\u0008BA\u0008BA </string>
     </test>
-    <test background="#ffc8a0" label="U+10EC7">
+    <test label="U+10EC7">
       <comment>yehFourbelow-ar</comment>
       <string>\u010EC7 \u010EC7\u00200D \u00200D\u010EC7\u00200D \u00200D\u010EC7 \u010EC7\u010EC7\u010EC7 </string>
     </test>
@@ -463,7 +463,7 @@
       <comment>noonVinvertedabove-ar</comment>
       <string>\u000889 \u000889\u00200D \u00200D\u000889\u00200D \u00200D\u000889 \u000889\u000889\u000889 </string>
     </test>
-    <test background="#ffc8a0" label="U+088F">
+    <test label="U+088F">
       <comment>noonRingabove-ar</comment>
       <string>\u00088F \u00088F\u00200D \u00200D\u00088F\u00200D \u00200D\u00088F \u00088F\u00088F\u00088F </string>
     </test>
@@ -471,7 +471,7 @@
       <comment>noonAfrican-ar</comment>
       <string>\u0008BD \u0008BD\u00200D \u00200D\u0008BD\u00200D \u00200D\u0008BD \u0008BD\u0008BD\u0008BD </string>
     </test>
-    <test background="#ffc8a0" label="U+10EC6">
+    <test label="U+10EC6">
       <comment>noonthin-ar</comment>
       <string>\u010EC6 \u010EC6\u00200D \u00200D\u010EC6\u00200D \u00200D\u010EC6 \u010EC6\u010EC6\u010EC6 </string>
     </test>
@@ -2175,9 +2175,17 @@
       <comment>rial</comment>
       <string>\u00FDFC</string>
     </test>
-    <test background="#ffc8a0" label="U+10EC5">
+    <test label="U+10EC5">
       <comment>yehSmallTwobelow-ar</comment>
       <string>\u010EC5</string>
+    </test>
+    <test background="#ffc8a0" label="U+10EC9">
+      <comment>fathasmallbaseline-ar</comment>
+      <string>\u010EC9 \u010ECA \u000628\u010ECB \u000628\u010ECC \u000628\u010ECD \u000628\u010ECE \u000628\u010ECF</string>
+    </test>
+    <test background="#ffc8a0" label="U+10EF0">
+      <comment>sukunovalbelow-ar</comment>
+      <string>\u000628\u010EF0 \u000628\u010EF1 \u000628\u010EF2 \u000628\u010EF3 \u000628\u010EF4 \u000628\u010EF5 \u000628\u010EF6 \u000628\u010EF7 \u000628\u010EF8</string>
     </test>
   </testgroup>
 </ftml>

@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -44,6 +44,12 @@
       <style feats="'cv80' 2, 'cv82' 3" name="cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" name="cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" name="cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" name="cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" name="cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" name="cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" name="cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" name="cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" name="cv80_3_cv82_5"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv82' 2" name="cv82_2"/>
       <style feats="'cv82' 3" name="cv82_3"/>
@@ -86,6 +92,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="ks" name="ks_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="ks" name="ks_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="ks" name="ks_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="ks" name="ks_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="ks" name="ks_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="ks" name="ks_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="ks" name="ks_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="ks" name="ks_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="ks" name="ks_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="ks" name="ks_cv82_1"/>
       <style feats="'cv82' 2" lang="ks" name="ks_cv82_2"/>
       <style feats="'cv82' 3" lang="ks" name="ks_cv82_3"/>
@@ -128,6 +140,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="ku" name="ku_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="ku" name="ku_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="ku" name="ku_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="ku" name="ku_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="ku" name="ku_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="ku" name="ku_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="ku" name="ku_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="ku" name="ku_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="ku" name="ku_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="ku" name="ku_cv82_1"/>
       <style feats="'cv82' 2" lang="ku" name="ku_cv82_2"/>
       <style feats="'cv82' 3" lang="ku" name="ku_cv82_3"/>
@@ -170,6 +188,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="ky" name="ky_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="ky" name="ky_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="ky" name="ky_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="ky" name="ky_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="ky" name="ky_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="ky" name="ky_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="ky" name="ky_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="ky" name="ky_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="ky" name="ky_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="ky" name="ky_cv82_1"/>
       <style feats="'cv82' 2" lang="ky" name="ky_cv82_2"/>
       <style feats="'cv82' 3" lang="ky" name="ky_cv82_3"/>
@@ -212,6 +236,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="ms" name="ms_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="ms" name="ms_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="ms" name="ms_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="ms" name="ms_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="ms" name="ms_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="ms" name="ms_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="ms" name="ms_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="ms" name="ms_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="ms" name="ms_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="ms" name="ms_cv82_1"/>
       <style feats="'cv82' 2" lang="ms" name="ms_cv82_2"/>
       <style feats="'cv82' 3" lang="ms" name="ms_cv82_3"/>
@@ -254,6 +284,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="rhg" name="rhg_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="rhg" name="rhg_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="rhg" name="rhg_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="rhg" name="rhg_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="rhg" name="rhg_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="rhg" name="rhg_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="rhg" name="rhg_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="rhg" name="rhg_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="rhg" name="rhg_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="rhg" name="rhg_cv82_1"/>
       <style feats="'cv82' 2" lang="rhg" name="rhg_cv82_2"/>
       <style feats="'cv82' 3" lang="rhg" name="rhg_cv82_3"/>
@@ -296,6 +332,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="sd" name="sd_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="sd" name="sd_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="sd" name="sd_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="sd" name="sd_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="sd" name="sd_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="sd" name="sd_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="sd" name="sd_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="sd" name="sd_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="sd" name="sd_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="sd" name="sd_cv82_1"/>
       <style feats="'cv82' 2" lang="sd" name="sd_cv82_2"/>
       <style feats="'cv82' 3" lang="sd" name="sd_cv82_3"/>
@@ -338,6 +380,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="ur" name="ur_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="ur" name="ur_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="ur" name="ur_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="ur" name="ur_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="ur" name="ur_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="ur" name="ur_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="ur" name="ur_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="ur" name="ur_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="ur" name="ur_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="ur" name="ur_cv82_1"/>
       <style feats="'cv82' 2" lang="ur" name="ur_cv82_2"/>
       <style feats="'cv82' 3" lang="ur" name="ur_cv82_3"/>
@@ -380,6 +428,12 @@
       <style feats="'cv80' 2, 'cv82' 3" lang="wo" name="wo_cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" lang="wo" name="wo_cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" lang="wo" name="wo_cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" lang="wo" name="wo_cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" lang="wo" name="wo_cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" lang="wo" name="wo_cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" lang="wo" name="wo_cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" lang="wo" name="wo_cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" lang="wo" name="wo_cv80_3_cv82_5"/>
       <style feats="'cv82' 1" lang="wo" name="wo_cv82_1"/>
       <style feats="'cv82' 2" lang="wo" name="wo_cv82_2"/>
       <style feats="'cv82' 3" lang="wo" name="wo_cv82_3"/>
@@ -1547,6 +1601,66 @@ U+0020
 U+06DD
 U+06F4
 U+06F6
+U+06F7" rtl="True" stylename="cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="cv80_3_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
 U+06F7" rtl="True" stylename="sd">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -1718,6 +1832,66 @@ U+06DD
 U+06F4
 U+06F6
 U+06F7" rtl="True" stylename="sd_cv80_2_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="sd_cv80_3_cv82_5">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06F4
@@ -1907,6 +2081,66 @@ U+0020
 U+06DD
 U+06F4
 U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ur_cv80_3_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
 U+06F7" rtl="True" stylename="ku">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -2078,6 +2312,66 @@ U+06DD
 U+06F4
 U+06F6
 U+06F7" rtl="True" stylename="ku_cv80_2_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ku_cv80_3_cv82_5">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06F4
@@ -2267,6 +2561,66 @@ U+0020
 U+06DD
 U+06F4
 U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="rhg_cv80_3_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
 U+06F7" rtl="True" stylename="ks">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -2438,6 +2792,66 @@ U+06DD
 U+06F4
 U+06F6
 U+06F7" rtl="True" stylename="ks_cv80_2_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ks_cv80_3_cv82_5">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06F4
@@ -2627,6 +3041,66 @@ U+0020
 U+06DD
 U+06F4
 U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ky_cv80_3_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
 U+06F7" rtl="True" stylename="ms">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -2807,6 +3281,66 @@ U+0020
 U+06DD
 U+06F4
 U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="ms_cv80_3_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
 U+06F7" rtl="True" stylename="wo">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -2978,6 +3512,66 @@ U+06DD
 U+06F4
 U+06F6
 U+06F7" rtl="True" stylename="wo_cv80_2_cv82_5">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3_cv82_1">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3_cv82_2">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3_cv82_3">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3_cv82_4">
+      <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06F4
+U+06F6
+U+06F7
+U+0020
+U+06DD
+U+06F4
+U+06F6
+U+06F7" rtl="True" stylename="wo_cv80_3_cv82_5">
       <string>\u0006F4\u0006F6\u0006F7 \u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
   </testgroup>

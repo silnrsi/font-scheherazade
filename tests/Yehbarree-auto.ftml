@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -485,7 +485,7 @@
       <comment>noonRing-ar</comment>
       <string>\u06BC\u06EC\u06D2 \u200D\u06BC\u06EC\u06D2 \u06BC\u064D\u06EC\u06D2 \u200D\u06BC\u064D\u06EC\u06D2</string>
     </test>
-    <test background="#ffc8a0" label="U+088F">
+    <test label="U+088F">
       <comment>noonRingabove-ar</comment>
       <string>\u088F\u06EC\u06D2 \u200D\u088F\u06EC\u06D2 \u088F\u064D\u06EC\u06D2 \u200D\u088F\u064D\u06EC\u06D2</string>
     </test>
@@ -493,7 +493,7 @@
       <comment>noonTahabove-ar</comment>
       <string>\u0768\u06EC\u06D2 \u200D\u0768\u06EC\u06D2 \u0768\u064D\u06EC\u06D2 \u200D\u0768\u064D\u06EC\u06D2</string>
     </test>
-    <test background="#ffc8a0" label="U+10EC6">
+    <test label="U+10EC6">
       <comment>noonthin-ar</comment>
       <string>\u10EC6\u06EC\u06D2 \u200D\u10EC6\u06EC\u06D2 \u10EC6\u064D\u06EC\u06D2 \u200D\u10EC6\u064D\u06EC\u06D2</string>
     </test>
@@ -733,7 +733,7 @@
       <comment>yehbarreeTwoabove-ar</comment>
       <string>\u077A\u06EC\u06D2 \u200D\u077A\u06EC\u06D2 \u077A\u064D\u06EC\u06D2 \u200D\u077A\u064D\u06EC\u06D2</string>
     </test>
-    <test background="#ffc8a0" label="U+10EC7">
+    <test label="U+10EC7">
       <comment>yehFourbelow-ar</comment>
       <string>\u10EC7\u06EC\u06D2 \u200D\u10EC7\u06EC\u06D2 \u10EC7\u064D\u06EC\u06D2 \u200D\u10EC7\u064D\u06EC\u06D2</string>
     </test>

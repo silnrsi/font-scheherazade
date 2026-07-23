@@ -2,7 +2,7 @@
 <?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
-    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 17.0 or later; else light green: a character is new in this version of the font</comment>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
     <fontscale>200</fontscale>
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
@@ -21,6 +21,12 @@
       <style feats="'cv80' 2, 'cv82' 3" name="cv80_2_cv82_3"/>
       <style feats="'cv80' 2, 'cv82' 4" name="cv80_2_cv82_4"/>
       <style feats="'cv80' 2, 'cv82' 5" name="cv80_2_cv82_5"/>
+      <style feats="'cv80' 3" name="cv80_3"/>
+      <style feats="'cv80' 3, 'cv82' 1" name="cv80_3_cv82_1"/>
+      <style feats="'cv80' 3, 'cv82' 2" name="cv80_3_cv82_2"/>
+      <style feats="'cv80' 3, 'cv82' 3" name="cv80_3_cv82_3"/>
+      <style feats="'cv80' 3, 'cv82' 4" name="cv80_3_cv82_4"/>
+      <style feats="'cv80' 3, 'cv82' 5" name="cv80_3_cv82_5"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv82' 2" name="cv82_2"/>
       <style feats="'cv82' 3" name="cv82_3"/>
@@ -29,27 +35,35 @@
       <style lang="ks" name="ks"/>
       <style feats="'cv80' 1" lang="ks" name="ks_cv80_1"/>
       <style feats="'cv80' 2" lang="ks" name="ks_cv80_2"/>
+      <style feats="'cv80' 3" lang="ks" name="ks_cv80_3"/>
       <style lang="ku" name="ku"/>
       <style feats="'cv80' 1" lang="ku" name="ku_cv80_1"/>
       <style feats="'cv80' 2" lang="ku" name="ku_cv80_2"/>
+      <style feats="'cv80' 3" lang="ku" name="ku_cv80_3"/>
       <style lang="ky" name="ky"/>
       <style feats="'cv80' 1" lang="ky" name="ky_cv80_1"/>
       <style feats="'cv80' 2" lang="ky" name="ky_cv80_2"/>
+      <style feats="'cv80' 3" lang="ky" name="ky_cv80_3"/>
       <style lang="ms" name="ms"/>
       <style feats="'cv80' 1" lang="ms" name="ms_cv80_1"/>
       <style feats="'cv80' 2" lang="ms" name="ms_cv80_2"/>
+      <style feats="'cv80' 3" lang="ms" name="ms_cv80_3"/>
       <style lang="rhg" name="rhg"/>
       <style feats="'cv80' 1" lang="rhg" name="rhg_cv80_1"/>
       <style feats="'cv80' 2" lang="rhg" name="rhg_cv80_2"/>
+      <style feats="'cv80' 3" lang="rhg" name="rhg_cv80_3"/>
       <style lang="sd" name="sd"/>
       <style feats="'cv80' 1" lang="sd" name="sd_cv80_1"/>
       <style feats="'cv80' 2" lang="sd" name="sd_cv80_2"/>
+      <style feats="'cv80' 3" lang="sd" name="sd_cv80_3"/>
       <style lang="ur" name="ur"/>
       <style feats="'cv80' 1" lang="ur" name="ur_cv80_1"/>
       <style feats="'cv80' 2" lang="ur" name="ur_cv80_2"/>
+      <style feats="'cv80' 3" lang="ur" name="ur_cv80_3"/>
       <style lang="wo" name="wo"/>
       <style feats="'cv80' 1" lang="wo" name="wo_cv80_1"/>
       <style feats="'cv80' 2" lang="wo" name="wo_cv80_2"/>
+      <style feats="'cv80' 3" lang="wo" name="wo_cv80_3"/>
     </styles>
     <title>Subtending Marks (auto)</title>
     <widths string="19%"/>
@@ -108,6 +122,10 @@
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD2 \u0006DD22 \u0006DD222 \u0006DD12</string>
     </test>
+    <test label="U+06DD latn" stylename="cv80_3">
+      <comment>endofayah-ar</comment>
+      <string>\u000628\u0006DD\u000645 \u0006DD2 \u0006DD22 \u0006DD222 \u0006DD12</string>
+    </test>
     <test label="U+0600 arab">
       <comment>number-ar</comment>
       <string>\u000628\u000600\u000645 \u000600\u000668 \u000600\u000668\u000668 \u000600\u000668\u000668\u000668 \u000600\u000661\u000662</string>
@@ -156,6 +174,10 @@
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD\u000668 \u0006DD\u000668\u000668 \u0006DD\u000668\u000668\u000668 \u0006DD\u000661\u000662</string>
     </test>
+    <test label="U+06DD arab" stylename="cv80_3">
+      <comment>endofayah-ar</comment>
+      <string>\u000628\u0006DD\u000645 \u0006DD\u000668 \u0006DD\u000668\u000668 \u0006DD\u000668\u000668\u000668 \u0006DD\u000661\u000662</string>
+    </test>
     <test label="U+0600 extd">
       <comment>number-ar</comment>
       <string>\u000628\u000600\u000645 \u000600\u0006F8 \u000600\u0006F8\u0006F8 \u000600\u0006F8\u0006F8\u0006F8 \u000600\u0006F1\u0006F2</string>
@@ -201,6 +223,10 @@
       <string>\u000628\u0006DD\u000645 \u0006DD\u0006F8 \u0006DD\u0006F8\u0006F8 \u0006DD\u0006F8\u0006F8\u0006F8 \u0006DD\u0006F1\u0006F2</string>
     </test>
     <test label="U+06DD extd" stylename="cv80_2">
+      <comment>endofayah-ar</comment>
+      <string>\u000628\u0006DD\u000645 \u0006DD\u0006F8 \u0006DD\u0006F8\u0006F8 \u0006DD\u0006F8\u0006F8\u0006F8 \u0006DD\u0006F1\u0006F2</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3">
       <comment>endofayah-ar</comment>
       <string>\u000628\u0006DD\u000645 \u0006DD\u0006F8 \u0006DD\u0006F8\u0006F8 \u0006DD\u0006F8\u0006F8\u0006F8 \u0006DD\u0006F1\u0006F2</string>
     </test>
@@ -276,6 +302,30 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="cv80_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3_cv82_1">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3_cv82_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3_cv82_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3_cv82_4">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="cv80_3_cv82_5">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="sd">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -285,6 +335,10 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="sd_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="sd_cv80_3">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -300,6 +354,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="ur_cv80_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="ku">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -309,6 +367,10 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="ku_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="ku_cv80_3">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -324,6 +386,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="rhg_cv80_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="ks">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -333,6 +399,10 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="ks_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="ks_cv80_3">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
@@ -348,6 +418,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="ky_cv80_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="ms">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -360,6 +434,10 @@
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
+    <test label="U+06DD extd" stylename="ms_cv80_3">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
     <test label="U+06DD extd" stylename="wo">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
@@ -369,6 +447,10 @@
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
     <test label="U+06DD extd" stylename="wo_cv80_2">
+      <comment>4 6 7</comment>
+      <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
+    </test>
+    <test label="U+06DD extd" stylename="wo_cv80_3">
       <comment>4 6 7</comment>
       <string>\u0006DD\u0006F4\u0006F6\u0006F7</string>
     </test>
