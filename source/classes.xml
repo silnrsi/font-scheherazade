@@ -34,7 +34,7 @@ of the license along with this Font Software. If this is not the case, go to
         alefMadda-ar  alefMadda-ar.small  alefHamzaabove-ar  alefHamzabelow-ar
     </class>
 
-    <!-- *NEXT 4 CLASSES MUST MATCH* -->
+    <!-- *NEXT 5 CLASSES MUST MATCH* -->
     <class name="Ayah">
         endofayah-ar  endofayah-ar.2  endofayah-ar.3
     </class>
@@ -47,12 +47,16 @@ of the license along with this Font Software. If this is not the case, go to
         endofayah-ar.altB  endofayah-ar.altB.2  endofayah-ar.altB.3
     </class>
 
+    <class name="AyahStar">
+        endofayah-ar.altC  endofayah-ar.altC.2  endofayah-ar.altC.3
+    </class>
+
     <class name="AyahDisputed">
         disputedendofayah-ar  disputedendofayah-ar.2  disputedendofayah-ar.3
     </class>
 
     <class name="AyahAny">
-        @Ayah  @AyahCircle  @AyahSquare   @AyahDisputed
+        @Ayah  @AyahCircle  @AyahSquare  @AyahStar  @AyahDisputed
     </class>
 
     <!-- *NEXT 3 CLASSES MUST MATCH* -->
@@ -596,7 +600,7 @@ of the license along with this Font Software. If this is not the case, go to
 
     <class name="TakesMediumDigits">
         number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt
-        endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 number-ar.2 number-ar.3 year-ar.2
+        endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 endofayah-ar.altC.2 number-ar.2 number-ar.3 year-ar.2
         year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4
         samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4
         poundmarkabove-ar poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4
@@ -604,7 +608,7 @@ of the license along with this Font Software. If this is not the case, go to
     </class>
 
     <class name="TakesSmallDigits">
-        endofayah-ar.3  endofayah-ar.alt.3  endofayah-ar.altB.3
+        endofayah-ar.3  endofayah-ar.alt.3  endofayah-ar.altB.3 endofayah-ar.altC.3
         disputedendofayah-ar  disputedendofayah-ar.2  disputedendofayah-ar.3
     </class>
 

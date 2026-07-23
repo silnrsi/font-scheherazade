@@ -272,6 +272,9 @@
 		<value name="Simplified B" tag="B">
 			<cmd name="encode" args="06DD uni06DD.altB"/>
 		</value>
+		<value name="Star" tag="St">
+			<cmd name="encode" args="06DD uni06DD.altC"/>
+		</value>
 	</feature>
 	
 	<!-- cv81 -->
