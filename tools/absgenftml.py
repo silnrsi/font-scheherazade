@@ -134,6 +134,7 @@ def doit(args):
     shadda   = 0x0651
     fathatan = 0x064B
     kasratan = 0x064D 
+    alm = 0x061C   # Arabic Letter Mark
 
     def basenameSortKey(uid:int):
         return builder.char(uid).basename.lower()
@@ -530,13 +531,13 @@ def doit(args):
                         if hasTnum:
                             continue
                         ftml.setFeatures(featlist)
-                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                        ftml.addToTest(uid, chr(alm) + c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
                         ftml.setLang(langID)
                         for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],), (['cv80', '3'],)):
                             ftml.setFeatures(featlist)
-                            ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                            ftml.addToTest(uid, chr(alm) + c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                         ftml.clearFeatures()
                     ftml.clearLang()
                     ftml.closeTest()

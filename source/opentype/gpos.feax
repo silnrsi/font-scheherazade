@@ -71,7 +71,7 @@ lookup SubtendingMarks {
     }
 
     # Those that take 3 small digits (default for @c_3)
-    do for m = [ endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3  disputedendofayah-ar.3] ;
+    do for m = [ endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 endofayah-ar.altC.3 disputedendofayah-ar.3] ;
        let y = APy(m, "digitR") - APy("zero.small", "digitL");
        let w = -ADVx("zero.small"); 
        let x1 = APx(m, "digitR") - ADVx(m); 
