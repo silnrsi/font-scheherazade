@@ -3117,18 +3117,18 @@ lookup SignWithDigits {
     # Uniscribe or HarfBuzz 'latn'
     sub [year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar]' lookup _signWith_4digits @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium;
     sub [number-ar year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar]' lookup _signWith_3digits @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium;
-    sub [endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup _signWith_3digits @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall;
-    sub [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB]' lookup _signWith_2digits @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium;
+    sub [endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC disputedendofayah-ar]' lookup _signWith_3digits @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall;
+    sub [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC]' lookup _signWith_2digits @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium;
     sub [disputedendofayah-ar]' lookup _signWith_2digits @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall;
-    sub [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB]' @DigitsAny' lookup _signDigits_ToMedium;
+    sub [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC]' @DigitsAny' lookup _signDigits_ToMedium;
     sub [disputedendofayah-ar]' @DigitsAny' lookup _signDigits_ToSmall;
     # HarfBuzz 'arab'
     sub @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium [year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar]' lookup _signWith_4digits;
     sub @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium [number-ar year-ar samvat-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar]' lookup _signWith_3digits;
-    sub @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall [endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup _signWith_3digits;
-    sub @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB]' lookup _signWith_2digits;
+    sub @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall [endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC disputedendofayah-ar]' lookup _signWith_3digits;
+    sub @DigitsAny' lookup _signDigits_ToMedium @DigitsAny' lookup _signDigits_ToMedium [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC]' lookup _signWith_2digits;
     sub @DigitsAny' lookup _signDigits_ToSmall @DigitsAny' lookup _signDigits_ToSmall [disputedendofayah-ar]' lookup _signWith_2digits;
-    sub @DigitsAny' lookup _signDigits_ToMedium [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB]';
+    sub @DigitsAny' lookup _signDigits_ToMedium [number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC]';
     sub @DigitsAny' lookup _signDigits_ToSmall [disputedendofayah-ar]';
 } SignWithDigits;
 
@@ -4787,6 +4787,8 @@ lookup SubtendingMarks {
         pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.alt.3;
         pos endofayah-ar.altB.3 @DigitsAnySmall' <-1685 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-759 0 -463 0>;
         pos @DigitsAnySmall' <-759 0 -463 0> @DigitsAnySmall' <-1222 0 -463 0> @DigitsAnySmall' <-1685 0 -463 0> endofayah-ar.altB.3;
+        pos endofayah-ar.altC.3 @DigitsAnySmall' <-1658 0 -463 0> @DigitsAnySmall' <-1195 0 -463 0> @DigitsAnySmall' <-732 0 -463 0>;
+        pos @DigitsAnySmall' <-732 0 -463 0> @DigitsAnySmall' <-1195 0 -463 0> @DigitsAnySmall' <-1658 0 -463 0> endofayah-ar.altC.3;
         pos disputedendofayah-ar.3 @DigitsAnySmall' <-1574 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-648 -380 -463 0>;
         pos @DigitsAnySmall' <-648 -380 -463 0> @DigitsAnySmall' <-1111 -380 -463 0> @DigitsAnySmall' <-1574 -380 -463 0> disputedendofayah-ar.3;
 
