@@ -578,6 +578,9 @@ lookup DalAlternate {
 
 }  # end do - Sch or Har
 
+do let f = info("familyName");
+   if f.find("Harmattan") != -1; {
+
 # Sad/Dad "half" form alternate: cv20
 
 lookup SadDadAlternate {
@@ -585,6 +588,7 @@ lookup SadDadAlternate {
     sub @cno_half by @c_half ;
 } SadDadAlternate ;
 
+}  #end do - Harmattan
 
 # Meem alternate: cv44
 

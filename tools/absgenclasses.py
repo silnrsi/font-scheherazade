@@ -96,6 +96,7 @@ def doit(args):
 
     # For all glyphs:
     basename2uid = {}   # Mapping basename to USV for encoded chars
+    uid2basename = {}   # and the reverse
     ligature2uids = {}  # Mapping basename to USV list for ligatures
     glyphOrder = {}     # dictionary to record sort order of glyphs
     ufomissing = set()  # glyphs mentioned or needed in csv that aren't in UFO
@@ -110,7 +111,7 @@ def doit(args):
     waws = set()        # waw-like
     takesLargeAlef = set()  # has bowl (final yehs, seens, etc) or is whitespace
 
-    # Sets of mark glyphs needed for UTR53
+    # Sets of mark glyph names needed for UTR53
     utr53_220MCM = set()
     utr53_230MCM = set()
     utr53_shadda = set()
@@ -118,6 +119,9 @@ def doit(args):
     utr53_alef = set()
     utr53_220other = set()
     utr53_230other = set()
+
+    # lam-alef ligature glyphs organized by uids of the lam:
+    lamAlefs = {}
 
     # needed for re-processing an existing classes xml file:
     classes = None  # root class of existing xml file, set only if args.classfile provided.
@@ -293,7 +297,7 @@ def doit(args):
     # Step 2: read CSV data and build classes contents as we go:
 
     # RE that matches USV sequences for ligatures
-    ligatureRE = re.compile(r'^[0-9A-Fa-f]{4,6}(?:_[0-9A-Fa-f]{4,6})+$')
+    USVligatureRE = re.compile(r'^[0-9A-Fa-f]{4,6}(?:_[0-9A-Fa-f]{4,6})+$')
     
     # RE that matches space-separated USV sequences
     USVsRE = re.compile(r'^[0-9A-Fa-f]{4,6}(?:\s+[0-9A-Fa-f]{4,6})*$')
@@ -325,7 +329,7 @@ def doit(args):
             # space-separated hex values:
             usvs = usvs.split()
             isLigature = False
-        elif ligatureRE.match(usvs):
+        elif USVligatureRE.match(usvs):
             # '_' separated hex values (ligatures)
             usvs = usvs.split('_')
             isLigature = True
@@ -351,13 +355,35 @@ def doit(args):
             # TODO: What should we do if glyph has multiple encodings? Right now just take first
             uid = uids[0]
             basename2uid[basename] = uid
+            uid2basename[uid] = basename
             if ext is not None:
                 logger.log(f'encoded glyph {gname} has extensions -- be sure to check construction of variant forms', 'E')
             addToClasses(gname, uid, basename, ext, True)
         else:
             # Handle ligature glyphs
             ligature2uids[basename] = uids
-            # otherwise, for now, we're ignoring ligatures
+            # At this point the only case we're interested in is lam-alef isolates (for kerning purposes)
+            if len(uids) == 2 and get_ucd(uids[0],'jg') == 'Lam' and get_ucd(uids[1], 'jg') == 'Alef':
+                # Got a lam-alef of some sort...
+                # For now, save the USVs organized around the lam uid:
+                lamAlefs.setdefault(uids[0], {})[uids[1]] = basename
+
+    ##############################
+    # Step 3: build ligature classes for ligatures (which can't be done until we've got all the CSV read)
+
+    # Now that we have all the lam-alef ligatures, let's build kerning classes that Lateef needs:
+    lamAlefKernClasses = OrderedDict()
+    for lamUid in sorted(lamAlefs.keys(), key=lambda x: glyphOrder[uid2basename[x]]):
+        lam = uid2basename[lamUid]
+        # make up class name from lam name, e.g., 'lam_alefIsol'
+        cname = lam.removesuffix('-ar') + '_alefIsol'
+        for alefUid in sorted(lamAlefs[lamUid].keys(), key=lambda x: glyphOrder[uid2basename[x]]):
+            alef = uid2basename[alefUid]
+            if alef not in alefsRare or lam == 'lam-ar':
+                lamAlefKernClasses.setdefault(cname, []).append(lamAlefs[lamUid][alefUid])
+
+
+            
 
     ##############################
     # Step 4: figure out what the indent string should be:
@@ -418,6 +444,10 @@ def doit(args):
     outputMatchingClasses('TakesLargeDaggerAlef', takesLargeAlef)
     outputMatchingClasses('RehAll', rehs, exts='.fina')
     outputMatchingClasses('WawAll', waws, exts='.fina')
+
+    # Lam-alef classes for Lateef:
+    for cname, glyphs in lamAlefKernClasses.items():
+        outputMatchingClasses(cname, glyphs)
 
     ##############################
     # Step 6: write new (or update existing) classes file:

@@ -695,6 +695,23 @@ def doit(args):
                         ftml.addToTest(    uid2, zwj + c1 + c2      )
                     ftml.clearFeatures()
                     ftml.closeTest()
+                # Add all lam-alef ligs
+                for lam in lamlist:
+                    for alef in aleflist: 
+                        if 0x0870 <= alef <= 0x0882:
+                            # Skip "rare" alef chars as we don't have ligatures for them
+                            continue
+                        comment = f'{builder.char(lam).basename} + {builder.char(alef).basename}'
+                        label = f'U+{lam:04X} U+{alef:04X}'
+                        setBackgroundColor((uid1,lam,alef))
+                        for featlist in builder.permuteFeatures(uids=(uid1,lam,alef)):
+                            ftml.setFeatures(featlist)
+                            ftml.addToTest(  lam,       c1 + chr(lam) + chr(alef), label, comment)
+                            ftml.addToTest(  lam, zwj + c1 + chr(lam) + chr(alef))
+                        ftml.clearFeatures()
+                        ftml.closeTest()
+                                            
+
 
         else:
             # exhaustive test for kerning data extraction
