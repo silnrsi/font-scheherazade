@@ -971,11 +971,6 @@ lookup LamAlefLigatures {
     sub lam-ar.init   @AlefRareNoLig            by  @LamAlefRareLig ;
     sub lam-ar.medi   @AlefRareNoLig            by  @LamAlefRareLigFina ;
   }
-  ifinfo(familyName, "Harmattan") {
-    #sub @LamNoLig   alefHamzaabove-ar.fina      by  @LamAlefHamzaaboveLig ;
-    #sub @LamNoLig   alefHamzabelow-ar.fina      by  @LamAlefHamzabelowLig ; # has a decomposition
-  }
-
 } LamAlefLigatures ;
 
 
