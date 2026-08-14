@@ -161,23 +161,38 @@
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Large" tag="Lg">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MaddahAlternate}"/>	<!-- must be via lookup -->
-			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {MaddahAlternate}"/>
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {MaddaAlternate}"/>	<!-- must be via lookup -->
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {MaddaAlternate}"/>
 		</value>
 	</feature>
 
 	<!-- cv62 -->
-	<feature name="Shadda+kasra placement" value="Default" tag="Kas">
+	<feature name="Shadda+kasra placement" value="Default" tag="ShdKas">
 		<value name="Default" tag="Def">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="Lowered" tag="Low">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraLowTT}"/>
-			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KasraLowTT}"/> 
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {ShaddaKasraLowTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {ShaddaKasraLowTT}"/> 
 		</value>
 		<value name="Raised" tag="High">
-			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {KasraHighTT}"/>
-			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {KasraHighTT}"/> 
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {ShaddaKasraHighTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {ShaddaKasraHighTT}"/> 
+		</value>
+	</feature>
+
+	<!-- cv63 -->
+	<feature name="Hamza+kasra placement" value="Default" tag="HmzKas">
+		<value name="Default" tag="Def">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Lowered" tag="Low">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {HamzaKasraLowTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {HamzaKasraLowTT}"/> 
+		</value>
+		<value name="Raised" tag="High">
+			<cmd name="lookup_add" args="GSUB {calt_arab_dflt} {HamzaKasraHighTT}"/>
+			<cmd name="lookup_add" args="GSUB {calt_latn_dflt} {HamzaKasraHighTT}"/> 
 		</value>
 	</feature>
 
@@ -434,6 +449,7 @@
 	<aliases/>
 	
 	<old_names>
+		<old_feature name="Shadda+Kasra Placement" tag="ShdKas"  /> <!-- cv62 tag changed -->
 		<old_value feature="Damma" name="Standard" tag="Def" />		<!-- cv70 -->
 
 		<old_feature  name="Six-nine dammatan" tag="Dmtan"/>		<!-- cv72 -->

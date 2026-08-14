@@ -1494,8 +1494,12 @@
   <string>hamza_fatha-ar.glif</string>
   <key>hamza_kasra-ar</key>
   <string>hamza_kasra-ar.glif</string>
+  <key>hamza_kasratan-ar</key>
+  <string>hamza_kasratan-ar.glif</string>
   <key>hamzaabove-ar</key>
   <string>hamzaabove-ar.glif</string>
+  <key>hamzaabove-ar.kasLow</key>
+  <string>hamzaabove-ar.kasL_ow.glif</string>
   <key>hamzabelow-ar</key>
   <string>hamzabelow-ar.glif</string>
   <key>heh-ar</key>
@@ -1748,8 +1752,6 @@
   <string>kashidaW_aw-ar.glif</string>
   <key>kasra-ar</key>
   <string>kasra-ar.glif</string>
-  <key>kasra-ar.lowered</key>
-  <string>kasra-ar.lowered.glif</string>
   <key>kasraCurly-ar</key>
   <string>kasraC_urly-ar.glif</string>
   <key>kasraDotbelow-ar</key>
@@ -1760,8 +1762,6 @@
   <string>kasrasmall-ar.glif</string>
   <key>kasratan-ar</key>
   <string>kasratan-ar.glif</string>
-  <key>kasratan-ar.lowered</key>
-  <string>kasratan-ar.lowered.glif</string>
   <key>kasratanCurly-ar</key>
   <string>kasratanC_urly-ar.glif</string>
   <key>keheh-ar</key>
@@ -3122,6 +3122,8 @@
   <string>seven.small.glif</string>
   <key>shadda-ar</key>
   <string>shadda-ar.glif</string>
+  <key>shadda-ar.kasLow</key>
+  <string>shadda-ar.kasL_ow.glif</string>
   <key>shadda_alef-ar</key>
   <string>shadda_alef-ar.glif</string>
   <key>shadda_damma-ar</key>

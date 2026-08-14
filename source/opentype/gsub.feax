@@ -340,7 +340,7 @@ lookup ComposeLowHamzaAbove {
 # for DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
 
 
-# Hamza ligation
+# Hamza ligation -- except for hamza-kasra
 
 @LigateHamzaMarksFilter = [ hamzaabove-ar @HamzaMarks ] ;
 lookup _LigateHamzaMarks {
@@ -376,7 +376,7 @@ lookup HamzaLigatures {
 # NB: Here we include shadda-mark ligatures *other than* the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
 
-@ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar 
+@ShaddaLigatureFilter = [ @ShaddaMarks @KasraMarks shadda-ar 
       # All the remaining are to prevent ligature formation if they are between shadda and the mark:
       alefabove-ar graphemejoinercomb
       # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
@@ -432,11 +432,14 @@ ifinfo(familyName, "Lateef") {
 lookup dfltCALT {  # (need at least a dummy lookup for TT)
   lookupflag 0 ;
   ifinfo(familyName, "Scheherazade New|Lateef") {
-     sub @Kasra_lowered  by  @Kasra;
+    #sub @Kasra_lowered   by  @Kasra;
+     sub shadda-ar.kasLow by shadda-ar;
   }
   ifinfo(familyName, "Harmattan") {
-     sub @Kasra  by  @Kasra_lowered;
+    #sub @Kasra     by  @Kasra_lowered;
+     sub shadda-ar  by shadda-ar.kasLow;
   }
+  sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } dfltCALT ;
 
 lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of sukun
@@ -446,28 +449,36 @@ lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of suku
     sub seven-persian by  seven-persian.urdu ;
     sub sukun-ar      by  sukun-ar.downOpen ;
 
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow ;
 } KashmiriCALT ;
 
 lookup KurdishCALT {
   lookupflag 0 ;
     sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
     
-    sub @Kasra_lowered  by @Kasra;
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KurdishCALT ;
 
 lookup KyrgyzCALT {
   lookupflag 0;
-    sub @cno_loclKIR  by  @c_loclKIR ;
+    sub @cno_loclKIR     by  @c_loclKIR ;
     
-    sub @Kasra_lowered  by @Kasra;  # high kasra
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KyrgyzCALT ;
 
 lookup MalayCALT {
   lookupflag 0;
     sub highhamza-ar  by  highhamza-ar.loclMLY ;
     
-    sub @Kasra  by @Kasra_lowered;
+   #sub @Kasra        by @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } MalayCALT ;
 
 lookup RohingyaCALT {
@@ -477,7 +488,9 @@ lookup RohingyaCALT {
     sub seven-persian by  seven-persian.urdu ;
     sub @cno_sixNine  by  @c_sixNine ;
     
-    sub @Kasra        by  @Kasra_lowered ;
+   #sub @Kasra        by  @Kasra_lowered ;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } RohingyaCALT ;
 
 lookup SindhiCALT {
@@ -487,10 +500,12 @@ lookup SindhiCALT {
     sub @cno_sindhi   by  @c_sindhi ;
     
     # Obsolete: special chars should be used instead:
-    #sub comma-ar      by  comma-ar.downward ;
-    #sub semicolon-ar  by  semicolon-ar.downward ;
+   #sub comma-ar      by  comma-ar.downward ;
+   #sub semicolon-ar  by  semicolon-ar.downward ;
 
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } SindhiCALT ;
 
 lookup UrduCALT {
@@ -499,7 +514,9 @@ lookup UrduCALT {
     sub six-persian   by  six-persian.urdu ;
     sub seven-persian by  seven-persian.urdu ;
     
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } UrduCALT ;
 
 lookup WolofCALT {
@@ -508,22 +525,38 @@ lookup WolofCALT {
     sub @Damma           by  @Damma_short ;
     sub dammainverted-ar by  dammainverted-ar.open ;
 
-    sub @Kasra           by  @Kasra_lowered ;
+   #sub @Kasra           by  @Kasra_lowered ;
+    sub shadda-ar        by shadda-ar.kasLow;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } WolofCALT ;
 
 
 # Kasra position - TypeTuner only
 # Must be located physically after language-specific CALT lookups.
 
-lookup KasraLowTT {
+lookup ShaddaKasraLowTT {
   lookupflag 0 ;
-    sub @Kasra by @Kasra_lowered;
-} KasraLowTT ;
+   #sub @Kasra     by @Kasra_lowered;
+    sub shadda-ar  by shadda-ar.kasLow;
+} ShaddaKasraLowTT ;
 
-lookup KasraHighTT {
+lookup ShaddaKasraHighTT {
   lookupflag 0 ;
-    sub @Kasra_lowered by @Kasra;
-} KasraHighTT ;
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+} ShaddaKasraHighTT ;
+
+lookup HamzaKasraLowTT {
+  lookupflag 0 ;
+   #sub @Kasra     by @Kasra_lowered;
+    sub hamzaabove-ar  by hamzaabove-ar.kasLow;
+} HamzaKasraLowTT ;
+
+lookup HamzaKasraHighTT {
+  lookupflag 0 ;
+   #sub @Kasra_lowered   by @Kasra;
+    sub hamzaabove-ar.kasLow by hamzaabove-ar;
+} HamzaKasraHighTT ;
 
 # Increase size of dagger alef
 # This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
@@ -720,16 +753,31 @@ lookup MaddaAlternate {
 }  # Sch or Har
 
 
-# Kasra alternates: cv62
+# Shadda-Kasra position: cv62
 
-lookup KasraAlternates {
+lookup ShaddaKasraAlternates {
   lookupflag 0 ;
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
-    #     and so as to allow language-specific behavior to be overridden.
+    #     so as to allow language-specific behavior to be overridden.
     #   0=default             1=lowered       2=raised
-    sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
-    sub @Kasra         from [ @Kasra_lowered  @Kasra ];
-} KasraAlternates ;
+   #sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
+   #sub @Kasra         from [ @Kasra_lowered  @Kasra ];
+    sub shadda-ar        from [ shadda-ar.kasLow  shadda-ar ];
+    sub shadda-ar.kasLow from [ shadda-ar.kasLow  shadda-ar ];
+} ShaddaKasraAlternates ;
+
+
+# Hamza-Kasra position: cv63
+
+lookup HamzaKasraAlternates {
+  lookupflag 0 ;
+    # NB: This is written so it doesn't matter which hamza-kasra behavior is default
+    #     so as to allow language-specific behavior to be overridden even though
+    #     at this point all langauges are configured to keep kasra low in context of hamzaabove
+    #   0=default             1=lowered       2=raised
+    sub hamzaabove-ar        from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
+    sub hamzaabove-ar.kasLow from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
+} HamzaKasraAlternates ;
 
 
 # Damma alternates: cv70
@@ -940,12 +988,23 @@ lookup GuillemetAlternate {
 # Shadda+kasra handling - see notes with liga feature
 
 lookup ShaddaKasraLigatures {
-  lookupflag MarkAttachmentType @ShaddaLigatureParts;
-    sub @ShaddaKasraMarks                    shadda-ar  by  @ShaddaKasraLigatures ;
-    sub @ShaddaKasraMarks graphemejoinercomb shadda-ar  by  @ShaddaKasraLigatures ;
-    sub shadda-ar                    @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
-    sub shadda-ar graphemejoinercomb @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
+  lookupflag UseMarkFilteringSet @ShaddaLigatureParts;
+    sub @KasraMarks                    shadda-ar  by  @ShaddaKasraLigatures ;
+    sub @KasraMarks graphemejoinercomb shadda-ar  by  @ShaddaKasraLigatures ;
+    sub shadda-ar                      @KasraMarks  by  @ShaddaKasraLigatures ;
+    sub shadda-ar   graphemejoinercomb @KasraMarks  by  @ShaddaKasraLigatures ;
 } ShaddaKasraLigatures ;
+
+# Hamza+kasra handling - see notes with liga feature
+
+lookup HamzaKasraLigatures {
+  lookupflag UseMarkFilteringSet @HamzaLigatureParts;
+    sub @KasraMarks                      hamzaabove-ar  by  @HamzaKasraLigatures ;
+    sub @KasraMarks   graphemejoinercomb hamzaabove-ar  by  @HamzaKasraLigatures ;
+    sub hamzaabove-ar                    @KasraMarks  by  @HamzaKasraLigatures ;
+    sub hamzaabove-ar graphemejoinercomb @KasraMarks  by  @HamzaKasraLigatures ;
+} HamzaKasraLigatures ;
+
 
 # DaggerAlef will be .large if Lateef default or cv76=1. But if it is, we need
 # to verify the context is correct, otherwise revert to the small. 
@@ -1522,10 +1581,10 @@ feature cv60 {  # Character Variant 60
 
 feature cv62 {
     cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
+        FeatUILabelNameID  { name 3 1 0x0409 "Shadda Kasra"   ; };
 
         FeatUITooltipTextNameID {
-         name 3 1 0x0409 "Raised position of shadda+kasra";  # English US (Lowered is default or alternate)
+         name 3 1 0x0409 "Position of kasra when used with shadda";  # English US
         };
       
         SampleTextNameID {
@@ -1537,8 +1596,31 @@ feature cv62 {
         ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
     } ;
     # Same for latin & arabic:
-      lookup KasraAlternates;
+      lookup ShaddaKasraAlternates;
 } cv62 ;
+
+
+# Character Variant 63
+
+feature cv63 {
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Hamza Kasra"   ; };
+
+        FeatUITooltipTextNameID {
+         name 3 1 0x0409 "Position of kasra in when used with hamzaabove";  # English US 
+        };
+      
+        SampleTextNameID {
+         name 3 1 0x0409 "بِٔ";  # English US &#x0628;&#x0654;&#x0650;
+        };
+
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Lowered" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
+    } ;
+    # Same for latin & arabic:
+      lookup HamzaKasraAlternates;
+} cv63 ;
 
 
 # Character variant 70
@@ -1800,6 +1882,8 @@ feature cv88 {  # Character Variant 88
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cvXX
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
+        lookup HamzaKasraLigatures;      # Must execute after cv63
+
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
         lookup SignWithDigits;
         lookup LamAlefLigatures;         # Must execute after all mark ligatures (including cv62)

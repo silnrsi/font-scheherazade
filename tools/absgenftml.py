@@ -906,7 +906,8 @@ def doit(args):
         #('cv51', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x06C5,), 'Kyrgyz OE alternate'),
         ('cv54', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0626,), 'Yeh Hamza alternate'),
         #('cv60', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0622,), 'Maddah alternates'),
-        ('cv62', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0651, 0x0650), 'Kasra alternates'),
+        ('cv62', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0651, 0x0650, 0x0631, 0x0651, 0x064D), 'Shadda-Kasra position'),
+        ('cv63', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0654, 0x0650, 0x0631, 0x0654, 0x064D), 'Hamza-Kasra position'),
         ('cv70', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x064F,), 'Damma  alternates'),
         ('cv72', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x064C,), 'Dammatan alternates'),
         ('cv74', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1, 'ks': 1, 'ky': 1}, (0x0657,), 'Inverted Damma alternates'),
@@ -946,7 +947,7 @@ def doit(args):
         #                           'fully function with the given language tag. '
         for (tag, expected, uids, description) in tests:
             ftml.startTestGroup(f'{tag} {description}')
-            featcombinations = list(builder.permuteFeatures(uids=uids))
+            featcombinations = list(builder.permuteFeatures(uids=uids, feats=[tag,]))
             if len(featcombinations) == 1:
                 # Hm... see if we can find this uid list in specials:
                 for basename in builder.specials():
