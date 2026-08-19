@@ -2818,6 +2818,10 @@
       <comment>fi</comment>
       <string>\u00FB01 \u00FB02</string>
     </test>
+    <test background="#f0fff0" label="U+FBC3">
+      <comment>jallaWaAlaa-ar</comment>
+      <string>\u00FBC3 \u00FBC4</string>
+    </test>
     <test label="U+FBC6">
       <comment>rahmatuAllaahiAlayhim-ar</comment>
       <string>\u00FBC6</string>
@@ -2833,6 +2837,22 @@
     <test label="U+FBC7" stylename="cv81_1">
       <comment>rahmatuAllaahiAlayhimaa-ar</comment>
       <string>\u00FBC7</string>
+    </test>
+    <test background="#f0fff0" label="U+FBC9">
+      <comment>rahimahumaaAllaah-ar</comment>
+      <string>\u00FBC9</string>
+    </test>
+    <test background="#f0fff0" label="U+FBCC">
+      <comment>hafizahuAllaah-ar</comment>
+      <string>\u00FBCC</string>
+    </test>
+    <test background="#f0fff0" label="U+FBCE">
+      <comment>hafizahumAllaahuTaaalaa-ar</comment>
+      <string>\u00FBCE \u00FBCF</string>
+    </test>
+    <test background="#f0fff0" label="U+FBD1">
+      <comment>ajjalAllaahuFarajahuAshShareef-ar</comment>
+      <string>\u00FBD1 \u00FBD2</string>
     </test>
     <test label="U+FD3E">
       <comment>parenleft-ar</comment>
@@ -2978,6 +2998,10 @@
       <comment>rahmatuAllaahiAlayhaa-ar</comment>
       <string>\u00FD91</string>
     </test>
+    <test background="#f0fff0" label="U+FDCE">
+      <comment>karramaAllaahuWajhah-ar</comment>
+      <string>\u00FDCE</string>
+    </test>
     <test label="U+FDCF">
       <comment>salaamuhuAlaynaa-ar</comment>
       <string>\u00FDCF</string>
@@ -3113,6 +3137,10 @@
     <test label="U+10ED0">
       <comment>biblicalendofverse-ar</comment>
       <string>\u010ED0</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED1">
+      <comment>alayhaaAsSalaatuWasSalaam-ar</comment>
+      <string>\u010ED1 \u010ED2 \u010ED3 \u010ED4 \u010ED5 \u010ED6 \u010ED7 \u010ED8</string>
     </test>
     <test background="#ffc8a0" label="U+10EF0">
       <comment>sukunovalbelow-ar</comment>
