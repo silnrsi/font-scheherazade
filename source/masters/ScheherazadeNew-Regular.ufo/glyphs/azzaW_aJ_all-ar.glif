@@ -12,49 +12,7 @@
     <component base="_dot1.cal" xOffset="332" yOffset="651"/>
     <component base="_shadda.cal" xOffset="525" yOffset="926"/>
     <component base="_dot1.cal" xOffset="1216" yOffset="-24"/>
-    <contour>
-      <point x="1668" y="91" type="curve" smooth="yes"/>
-      <point x="1668" y="245"/>
-      <point x="1605" y="313"/>
-      <point x="1555" y="313" type="curve" smooth="yes"/>
-      <point x="1515" y="313"/>
-      <point x="1437" y="192"/>
-      <point x="1437" y="106" type="curve" smooth="yes"/>
-      <point x="1437" y="48"/>
-      <point x="1490" y="6"/>
-      <point x="1533" y="6" type="curve" smooth="yes"/>
-      <point x="1569" y="6"/>
-      <point x="1597" y="37"/>
-      <point x="1615" y="59" type="curve"/>
-      <point x="1621" y="-95"/>
-      <point x="1435" y="-211"/>
-      <point x="1307" y="-211" type="curve" smooth="yes"/>
-      <point x="1278" y="-211"/>
-      <point x="1208" y="-190"/>
-      <point x="1202" y="-190" type="curve" smooth="yes"/>
-      <point x="1199" y="-190"/>
-      <point x="1195" y="-198"/>
-      <point x="1195" y="-203" type="curve" smooth="yes"/>
-      <point x="1195" y="-210"/>
-      <point x="1289" y="-273"/>
-      <point x="1394" y="-273" type="curve" smooth="yes"/>
-      <point x="1552" y="-273"/>
-      <point x="1668" y="-85"/>
-    </contour>
-    <contour>
-      <point x="1569" y="159" type="curve"/>
-      <point x="1562" y="143"/>
-      <point x="1542" y="128"/>
-      <point x="1529" y="128" type="curve" smooth="yes"/>
-      <point x="1514" y="128"/>
-      <point x="1503" y="145"/>
-      <point x="1503" y="154" type="curve" smooth="yes"/>
-      <point x="1503" y="172"/>
-      <point x="1509" y="188"/>
-      <point x="1526" y="188" type="curve" smooth="yes"/>
-      <point x="1537" y="188"/>
-      <point x="1557" y="178"/>
-    </contour>
+    <component base="_waw.cal" xOffset="1166"/>
     <contour>
       <point x="693" y="697" type="curve"/>
       <point x="710" y="695"/>
@@ -253,7 +211,7 @@
   <lib>
     <dict>
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
-      <string>CCCCCCCCCPPPPP</string>
+      <string>CCCCCCCCCCPPP</string>
       <key>public.markColor</key>
       <string>0.65,0.48,0.2,1</string>
     </dict>
