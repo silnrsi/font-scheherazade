@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
+    <fontscale>400</fontscale>
+    <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Med">url(../results/ScheherazadeNew-Medium.ttf)</fontsrc>
+    <fontsrc label="SeBld">url(../results/ScheherazadeNew-SemiBold.ttf)</fontsrc>
+    <fontsrc label="Bold">url(../results/ScheherazadeNew-Bold.ttf)</fontsrc>
+    <styles>
+   </styles>
+    <title>Honorifics</title>
+    <widths string="20%"/>
+  </head>
+  <testgroup background="#f0f0f0" label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Encoded characters">
+    <test background="#f0fff0" label="U+FBC3">
+      <comment>jallaWaAlaa-ar (int)</comment>
+      <string>\u0628\u0644\u00FBC3\u0628\u0644</string>
+    </test>
+    <test background="#f0fff0" label="U+FBC4">
+      <comment>daamatBarakaatuhum-ar</comment>
+      <string>\u0628\u0644\u00FBC4\u0628\u0644</string>
+    </test>
+    <test label="U+FBC6">
+      <comment>rahmatuAllaahiAlayhim-ar (int)</comment>
+      <string>\u0628\u0644\u00FBC6\u0628\u0644</string>
+    </test>
+    <test label="U+FBC7">
+      <comment>rahmatuAllaahiAlayhimaa-ar (int)</comment>
+      <string>\u00FBC7</string>
+    </test>
+    <test background="#f0fff0" label="U+FBC9">
+      <comment>rahimahumaaAllaah-ar (int)</comment>
+      <string>\u00FBC9</string>
+    </test>
+    <test background="#f0fff0" label="U+FBCC">
+      <comment>hafizahuAllaah-ar</comment>
+      <string>\u00FBCC</string>
+    </test>
+    <test background="#f0fff0" label="U+FBCE">
+      <comment>hafizahumAllaahuTaaalaa-ar</comment>
+      <string>\u00FBCE</string>
+    </test>
+    <test background="#f0fff0" label="U+FBCF">
+      <comment>hafizahumaaAllaahuTaaalaa-ar</comment>
+      <string>\u00FBCF</string>
+    </test>
+    <test background="#f0fff0" label="U+FBD1">
+      <comment>ajjalAllaahuFarajahuAshShareef-ar</comment>
+      <string>\u00FBD1</string>
+    </test>
+    <test background="#f0fff0" label="U+FBD2">
+      <comment>alayhiArRahmah-ar (int)</comment>
+      <string>\u00FBD2</string>
+    </test>
+    <test label="U+FD40">
+      <comment>rahimahuAllaah-ar (int)</comment>
+      <string>\u00FD40</string>
+    </test>
+    <test label="U+FD41">
+      <comment>radiAllaahuAnh-ar (int)</comment>
+      <string>\u00FD41</string>
+    </test>
+    <test label="U+FD42">
+      <comment>radiAllaahuAnhaa-ar (int)</comment>
+      <string>\u00FD42</string>
+    </test>
+    <test label="U+FD43">
+      <comment>radiAllaahuAnhum-ar (int)</comment>
+      <string>\u00FD43</string>
+    </test>
+    <test label="U+FD44">
+      <comment>radiAllaahuAnhumaa-ar (int)</comment>
+      <string>\u00FD44</string>
+    </test>
+    <test label="U+FD45">
+      <comment>radiAllaahuAnhunna-ar (int)</comment>
+      <string>\u00FD45</string>
+    </test>
+    <test label="U+FD46">
+      <comment>sallallaahuAlayhiWaAalih-ar (int)</comment>
+      <string>\u00FD46</string>
+    </test>
+    <test label="U+FD47">
+      <comment>alayhiAsSalaam-ar (int)</comment>
+      <string>\u00FD47</string>
+    </test>
+    <test label="U+FD48">
+      <comment>alayhimAsSalaam-ar</comment>
+      <string>\u00FD48</string>
+    </test>
+    <test label="U+FD49">
+      <comment>alayhimaaAsSalaam-ar</comment>
+      <string>\u00FD49</string>
+    </test>
+    <test label="U+FD4A">
+      <comment>alayhiAsSalaatuWaSalaam-ar (int)</comment>
+      <string>\u00FD4A</string>
+    </test>
+    <test label="U+FD4B">
+      <comment>quddisaSirrah-ar (int)</comment>
+      <string>\u00FD4B</string>
+    </test>
+    <test label="U+FD4C">
+      <comment>sallallahuAlayhiWaAaliheeWaSallam-ar (int)</comment>
+      <string>\u00FD4C</string>
+    </test>
+    <test label="U+FD4D">
+      <comment>alayhaaAsSalaam-ar (int)</comment>
+      <string>\u00FD4D</string>
+    </test>
+    <test label="U+FD4E">
+      <comment>tabaarakaWaTaaalaa-ar (int)</comment>
+      <string>\u00FD4E</string>
+    </test>
+    <test label="U+FD4F">
+      <comment>rahimahumAllaah-ar (int)</comment>
+      <string>\u00FD4F</string>
+    </test>
+    <test label="U+FD90">
+      <comment>rahmatuAllaahiAlayh-ar (int)</comment>
+      <string>\u00FD90</string>
+    </test>
+    <test label="U+FD91">
+      <comment>rahmatuAllaahiAlayhaa-ar (int)</comment>
+      <string>\u00FD91</string>
+    </test>
+    <test background="#f0fff0" label="U+FDCE">
+      <comment>karramaAllaahuWajhah-ar</comment>
+      <string>\u00FDCE</string>
+    </test>
+    <test label="U+FDCF">
+      <comment>salaamuhuAlaynaa-ar</comment>
+      <string>\u00FDCF</string>
+    </test>
+    <test label="U+FDF2">
+      <comment>allah-ar</comment>
+      <string>\u00FDF2</string>
+    </test>
+    <test label="U+FDFA">
+      <comment>allahlong-ar (int)</comment>
+      <string>\u00FDFA</string>
+    </test>
+    <test label="U+FDFB">
+      <comment>jallajalalouhou-ar (int)</comment>
+      <string>\u00FDFB</string>
+    </test>
+    <test label="U+FDFD">
+      <comment>bismillah-ar</comment>
+      <string>\u00FDFD</string>
+    </test>
+    <test label="U+FDFE">
+      <comment>subhaanahuWaTaaalaa-ar</comment>
+      <string>\u00FDFE</string>
+    </test>
+    <test label="U+FDFF">
+      <comment>azzaWaJall-ar (int)</comment>
+      <string>\u00FDFF</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED1">
+      <comment>alayhaaAsSalaatuWasSalaam-ar (int)</comment>
+      <string>\u010ED1</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED2">
+      <comment>alayhimAsSalaatuWasSalaam-ar</comment>
+      <string>\u010ED2</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED3">
+      <comment>alayhimaaAsSalaatuWasSalaam-ar</comment>
+      <string>\u010ED3</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED4">
+      <comment>qaddasaAllaahuSirrah-ar (int)</comment>
+      <string>\u010ED4</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED5">
+      <comment>quddisaSirruhum-ar (int)</comment>
+      <string>\u010ED5</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED6">
+      <comment>quddisaSirruhumaa-ar (int)</comment>
+      <string>\u010ED6</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED7">
+      <comment>quddisatAsraaruhum-ar (int)</comment>
+      <string>\u010ED7</string>
+    </test>
+    <test background="#f0fff0" label="U+10ED8">
+      <comment>nawwaraAllaahuMarqadah-ar</comment>
+      <string>\u010ED8</string>
+    </test>
+  </testgroup>
+</ftml>

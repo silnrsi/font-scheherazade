@@ -44,7 +44,7 @@ else:
 noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
 
 # iterate over designspace
-designspace('source/ScheherazadeNew-edit.designspace',
+designspace('source/ScheherazadeNew.designspace',
     instances = ['Scheherazade New Regular'] if '--regOnly' in opts else None,
     params = '-c ^_',
     target = process('${DS:FILENAME_BASE}.ttf', *cmds),
