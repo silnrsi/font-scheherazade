@@ -319,7 +319,7 @@ of the license along with this Font Software. If this is not the case, go to
 
 
     <class name="HamzaAbove">
-        hamzaabove-ar
+        hamzaabove-ar hamzaabove-ar.kasLow
     </class>
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
@@ -522,13 +522,13 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="LowHamzaBase">
-        waw-ar yeh-ar ae-ar hehgoal-ar
+        waw-ar yeh-ar ae-ar hehgoal-ar yehbarree-ar
         waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina
         yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init
     </class>
 
     <class name="LowHamzaComposed">
-        wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar
+        wawHamzaabove-ar yehHamzaabove-ar hehHamzaabove-ar hehgoalHamzaabove-ar yehbarreeHamzaabove-ar
         wawHamzaabove-ar.fina yehHamzaabove-ar.fina hehHamzaabove-ar.fina hehgoalHamzaabove-ar.fina
         yehHamzaabove-ar.medi hehgoalHamzaabove-ar.medi yehHamzaabove-ar.init hehgoalHamzaabove-ar.init
     </class>

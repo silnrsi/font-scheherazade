@@ -9,6 +9,7 @@ import re
 from silfont.core import execute
 import silfont.ftml_builder as FB
 from palaso.unicode.ucd import get_ucd, loadxml
+from palaso.unicode.uax53 import uax53
 from collections import OrderedDict
 from itertools import permutations
 
@@ -80,6 +81,7 @@ backgroundLegend =  'Background colors: ' \
                     'light red: a character is missing from UFO; else ' + \
                     f'light orange: includes a character from Unicode version {ageToFlag} or later; else ' + \
                     'light green: a character is new in this version of the font'
+gray94 = '#F0F0F0'        # A light gray color used for dividers
 
 def doit(args):
     logger = args.logger
@@ -135,6 +137,7 @@ def doit(args):
     fathatan = 0x064B
     kasratan = 0x064D 
     alm = 0x061C   # Arabic Letter Mark
+    dottedcircle = 0x25CC
 
     def basenameSortKey(uid:int):
         return builder.char(uid).basename.lower()
@@ -1018,6 +1021,132 @@ def doit(args):
             ftml.clearFeatures()
             ftml.closeTest()
 
+#--------------------------------
+#  UTR53 test
+#--------------------------------
+    if test.lower().startswith('uax#53'):
+        # Character data for samples:
+        name2usv = {'BEH': 0x0628, 'ALEFMAKSURA': 0x649, 'SAD': 0x0635, 'HEH': 0x0647, 
+                    'FEH': 0x0641, 'TATWEEL': 0x0640, 'TEH': 0x062A, 'WAW': 0x0648, 'ALEF': 0x0627,
+                    'ALEFMADDA': 0x0622, 'YEH': 0x064A, 'YEHHAMZA': 0x00626, 'UHAMZA': 0x0677, 'YEHBARHAMZA': 0x06D3,
+
+                    'fathatan-27': 0x064B, 'dammatan-28': 0x064C, 'kasratan-29': 0x064D, 
+                    'fatha-30': 0x064E, 'fatha-sm-30': 0x0618, 'damma-31': 0x064F, 'damma-sm-31': 0x0619,
+                    'kasra-32': 0x0650, 
+                    'shadda-33': 0x0651, 'sukun-34': 0x0652, 'alef-35': 0x0670,
+
+                    'hamza-220M': 0x0655, 'seen-220M': 0x06E3, 'waw-220M': 0x08D3,
+                    'alef-220': 0x0656, 'dot-220': 0x065C, 'meem-220': 0x06ED,
+
+                    'hamza-230M': 0x0654, 'yeh-230M': 0x06E7, 'noonGhunna-230M': 0x0658, 'seen-230M' : 0x06DC, 
+                    'farsiYeh-230M':0x08CA, 'yehBarree-230M': 0x08CB, 'zah-230M': 0x08CD, 
+                    'madda-230': 0x0653, 'zain-230': 0x0617, 'meem-230': 0x06E2,
+
+                    'cgj': 0x034F, 
+                    }
+        usv2name = {usv: name for name, usv in name2usv.items()}
+        assert len(name2usv) == len(usv2name), "Something wrong in the character data"
+        cgj = name2usv['cgj']
+
+        def add_line(uids, comment = None):
+            label = '\n'.join(f'U+{uid:04X}' for uid in uids)
+            if comment is None:
+                if len(nonames := list(filter(lambda uid: uid not in usv2name, uids))):
+                    print(f'uids without names: {' '.join(f'{uid:04X}' for uid in nonames)}')
+                comment = f'{' '.join(usv2name[u] for u in uids)} \u279C \n{' '.join(usv2name[u] for u in uax53(uids, get_ucd))}'
+            ftml.addToTest(None, ''.join(map(chr,uids)), label=label, comment=comment)
+            ftml.closeTest()
+
+        def addByNames (namelist, mcm = None, comment = None):
+            base = name2usv[namelist.pop(0)]
+            usvlist = [name2usv[n] for n in namelist]
+            if mcm:
+                # Special handling when named mcm is supplied:
+                mcm = name2usv[mcm]
+                # Separator record with just the MCM and comment:
+                ftml.setBackground(gray94)
+                add_line([dottedcircle, mcm], comment)
+                ftml.clearBackground()
+                # Now see if mcm reorders correctly
+                add_line([base, *usvlist,      mcm  ])
+                add_line([base, *usvlist, cgj, mcm  ])
+            else:
+                add_line([base, *usvlist])
+
+
+        ftml.startTestGroup('UAX#53 Artificial Test Case')
+        add_line(uids=[0x0628, 0x0618, 0x0619, 0x064e, 0x064f, 0x0654, 0x0658, 0x0653, 0x0654, 0x0651, 0x0656, 0x0651, 0x065c, 0x0655, 0x0650])
+
+        ftml.startTestGroup('MCM plus one mark')
+        addByNames(['BEH', 'damma-31'],         'hamza-230M',      'ARABIC HAMZA ABOVE')
+        addByNames(['ALEFMAKSURA', 'kasra-32'], 'hamza-220M',      'ARABIC HAMZA BELOW')
+        addByNames(['BEH', 'fatha-30'],         'noonGhunna-230M', 'ARABIC MARK NOON GHUNNA' )
+        addByNames(['SAD', 'sukun-34'],         'seen-230M',       'ARABIC SMALL HIGH SEEN')
+        addByNames(['HEH', 'kasra-32'],         'seen-220M',       'ARABIC SMALL LOW SEEN')
+  
+        ftml.startTestGroup('Misc sequences')
+        addByNames('BEH hamza-230M zain-230 damma-31'.split())
+        addByNames('BEH zain-230 hamza-230M damma-31'.split())
+        addByNames('BEH damma-31 yeh-230M hamza-230M'.split())
+
+        ftml.startTestGroup('Madda reordering')
+        addByNames('ALEF madda-230 alef-35'.split())
+        addByNames('ALEFMADDA alef-35'.split())
+        addByNames('ALEFMADDA alef-35 shadda-33 fatha-30 dot-220 fatha-30'.split())
+        addByNames('ALEFMADDA fatha-30 zain-230'.split())
+        addByNames('ALEFMADDA fatha-30 cgj fatha-30'.split())
+
+        ftml.startTestGroup('Shadda-Kasra')
+        addByNames('FEH kasra-32 shadda-33'.split())
+        addByNames('FEH kasra-32 cgj shadda-33'.split())
+        ftml.setFeatures([['cv62','1'],])
+        addByNames('FEH kasra-32 shadda-33'.split())
+        addByNames('FEH kasra-32 cgj shadda-33'.split())
+        ftml.setFeatures([['cv62','2'],])
+        addByNames('FEH kasra-32 shadda-33'.split())
+        addByNames('FEH kasra-32 cgj shadda-33'.split())
+        ftml.clearFeatures
+
+        ftml.startTestGroup('Hamza-Kasra') 
+        addByNames('YEHHAMZA dot-220 kasra-32'.split())
+        addByNames('YEHHAMZA dot-220 cgj kasra-32'.split())
+        ftml.setFeatures([['cv63','1'],])
+        addByNames('YEHHAMZA dot-220 kasra-32'.split())
+        addByNames('YEHHAMZA dot-220 cgj kasra-32'.split())
+        ftml.setFeatures([['cv63','2'],])
+        addByNames('YEHHAMZA dot-220 kasra-32'.split())
+        addByNames('YEHHAMZA dot-220 cgj kasra-32'.split())
+        ftml.clearFeatures()
+
+        ftml.startTestGroup('Mark ligatures in Sch should form in first two')
+        addByNames('BEH fatha-30     meem-230'.split())
+        addByNames('BEH meem-230     fatha-30'.split())
+        addByNames('BEH meem-230 cgj fatha-30'.split())
+
+        ftml.startTestGroup('Telltale tests')
+        addByNames('BEH seen-230M zain-230 damma-31'.split())
+        addByNames('BEH zain-230 seen-230M damma-31'.split())
+        addByNames('BEH seen-220M dot-220 kasra-32'.split())
+        addByNames('BEH dot-220 seen-220M kasra-32'.split())
+        addByNames('ALEFMADDA alef-35'.split())
+        addByNames('ALEF madda-230 alef-35'.split())
+        addByNames('ALEF alef-35 madda-230'.split())
+        addByNames('YEHHAMZA seen-220M'.split())
+        addByNames('YEH hamza-230M seen-220M'.split())
+        addByNames('YEH seen-220M hamza-230M'.split())
+        addByNames('YEHHAMZA kasra-32'.split())
+        addByNames('YEH hamza-230M kasra-32'.split())
+        ftml.setFeatures([['cv63','2'],])
+        addByNames('YEHHAMZA kasra-32'.split())
+        addByNames('YEH hamza-230M kasra-32'.split())
+        ftml.setFeatures([['ss20','1'],])
+        addByNames('YEHHAMZA kasra-32'.split())
+        addByNames('YEH hamza-230M kasra-32'.split())
+
+
+#--------------------------------
+#  Wrap up -- write out the ftml file
+#--------------------------------
 
     ftml.writeFile(args.output)
 
