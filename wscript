@@ -25,9 +25,10 @@ omitaps = '--omitaps "_above,_below,_center,_ring,_through,_aboveLeft,_H,_L,_O,_
 # smith project-specific options:
 #   --autohint - autohint the font
 #   --norename - omit glyph rename step
+#   --noUTR53  - omit UTR53 simulations (for testing only)
 #   --regOnly  - build just the Regular weight
 #   --quick    - build without custom kerning, shifting, and collision avoidance
-opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--quick'}, {'opt': '--regOnly'})
+opts = preprocess_args({'opt': '--autohint'}, {'opt': '--norename'}, {'opt': '--noUTR53'}, {'opt': '--quick'}, {'opt': '--regOnly'})
 
 cmds = [cmd('ttx -m ${DEP} -o ${TGT} ${SRC}', ['source/jstf.ttx']) ]
 if '--norename' not in opts:
@@ -44,28 +45,51 @@ else:
 noOTkern = ' -D nokern=yes ' if '--quick' in opts else ''
 
 # iterate over designspace
-designspace('source/ScheherazadeNew.designspace',
-    instances = ['Scheherazade New Regular'] if '--regOnly' in opts else None,
-    params = '-c ^_',
-    target = process('${DS:FILENAME_BASE}.ttf', *cmds),
-    version=VERSION,  # Needed to ensure dev information on version string
-    opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
-        mapfile = genout + "${DS:FILENAME_BASE}.map",
-        master = 'source/opentype/main.feax',
-        make_params = '--ignoreglyphs ' + omitaps + noOTkern,
-        depends = ['source/opentype/gsub.feax', 'source/opentype/gpos.feax', 
-                   'source/opentype/customCollisionSubs.feax',
-                   'source/opentype/customKerning.feax',
-                   'source/opentype/customShifting.feax',]
-        ),
-    typetuner = typetuner("source/typetuner/feat_all.xml"),
-    classes = 'source/classes.xml',
-    script='arab',
-    pdf=fret(genout + '${DS:FILENAME_BASE}-fret.pdf', params='-r -o i -m 48'),
-    woff = woff('web/${DS:FILENAME_BASE}.woff',
-        metadata=f'../source/{FAMILY}-WOFF-metadata.xml',
-        ),
-    )
+if '--noUTR53' not in opts:
+    designspace('source/ScheherazadeNew.designspace',
+        instances = ['Scheherazade New Regular'] if '--regOnly' in opts else None,
+        params = '-c ^_',
+        target = process('${DS:FILENAME_BASE}.ttf', *cmds),
+        version=VERSION,  # Needed to ensure dev information on version string
+        opentype = fea(genout + '${DS:FILENAME_BASE}.fea',
+            mapfile = genout + "${DS:FILENAME_BASE}.map",
+            master = 'source/opentype/main.feax',
+            make_params = '--ignoreglyphs ' + omitaps + noOTkern,
+            depends = ['source/opentype/gsub.feax', 'source/opentype/gpos.feax', 
+                    'source/opentype/customCollisionSubs.feax',
+                    'source/opentype/customKerning.feax',
+                    'source/opentype/customShifting.feax',]
+            ),
+        typetuner = typetuner("source/typetuner/feat_all.xml"),
+        classes = 'source/classes.xml',
+        script='arab',
+        pdf=fret(genout + '${DS:FILENAME_BASE}-fret.pdf', params='-r -o i -m 48'),
+        woff = woff('web/${DS:FILENAME_BASE}.woff',
+            metadata=f'../source/{FAMILY}-WOFF-metadata.xml',
+            ),
+        )
+
+# Specifying --noUTR53 on smith command line invokes the following build process that
+#   - builds only Regular weight, and does so directly from the UFO
+#   - doesn't bother to utilize extra *cmds processing (from above), most notably doesn't rename glyphs
+#   - renames the resulting font file ScheherazadeNoUTR53-Regular.ttf, with family name ScheherazadeNoUTR53
+#   - sets both `noutr53` and `nokern` flags to `yes` to remove utr 53 simulation and extra kerning
+
+if '--noUTR53' in opts:
+    font(target = process('ScheherazadeNoUTR53-Regular.ttf', name('ScheherazadeNoUTR53')),
+        source = 'source/masters/ScheherazadeNew-Regular.ufo',
+        params = '-c ^_',
+        version=VERSION,  # Needed to ensure dev information on version string
+        opentype = fea(genout + 'ScheherazadeNoUTR53-Regular.fea',
+            mapfile = genout + 'ScheherazadeNoUTR53-Regular.map',
+            master = 'source/opentype/main.feax',
+            make_params = '--ignoreglyphs -D noutr53=yes -D nokern=yes ' + omitaps,
+            depends = ['source/opentype/gsub.feax', 'source/opentype/gpos.feax'], 
+            ),
+        classes = 'source/classes.xml',
+        script='arab',
+        )
 
 def configure(ctx):
     ctx.find_program('ttfautohint')
+    ctx.find_program('ttfname')    # Needed for --noUTR53 builds

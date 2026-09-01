@@ -49,14 +49,16 @@ lookup Mirror {
 
 #---  ccmp feature  ---
 
-
-
-# For full UTR53 stacks, this decomposition will already have been done.
-# However, as of 2021-09 Harfbuzz does NOT do this See https://github.com/harfbuzz/harfbuzz/issues/3179
+# For full UTR53 stacks, these decompositions will already have been done.
+# However, as of 2021-09 Harfbuzz does NOT decompose alef-madda this See https://github.com/harfbuzz/harfbuzz/issues/3179
+# and as of 2026-08 it looks like it also does not decompose the low-hamza composites such as 
+#     U+0626: ARABIC LETTER YEH WITH HAMZA ABOVE
+#     U+06D3: ARABIC LETTER YEH BARREE WITH HAMZA ABOVE
 
 lookup DecomposeForColor {
   lookupflag IgnoreMarks ;
     sub @AlefPlusMark by alef-ar @AlefMark ;
+    sub @LowHamzaComposed by @LowHamzaBase hamzaabove-ar ;
 } DecomposeForColor ;
 
 
@@ -221,7 +223,7 @@ lookup _AllahSub_SAHeh {
 } _AllahSub_SAHeh ;
 
 lookup _AllahSub_Shadda_insertA {
-    sub shadda-ar     by   shadda_alef-ar;
+    sub @UTR53_shadda     by   shadda_alef-ar;
 } _AllahSub_Shadda_insertA ;
 
 
@@ -276,7 +278,7 @@ lookup AllahLigatures {
     # Rule 1b+4: lam-lam-shadda-alef_or_fatha-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
-        shadda-ar'
+        @UTR53_shadda'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
@@ -284,20 +286,20 @@ lookup AllahLigatures {
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
-        shadda-ar'
+        @UTR53_shadda'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
     # Rule 1b: lam-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         lam-ar.medi'             lookup _AllahSub_Lam2
-        shadda-ar'               lookup _AllahSub_Shadda_insertA
+        @UTR53_shadda'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
 
     # Rule 1b+3+4: lam-kasra-lam-shadda-alef_or_fatha-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
-        shadda-ar'
+        @UTR53_shadda'
         [alefabove-ar fatha-ar]'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
@@ -306,29 +308,17 @@ lookup AllahLigatures {
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
         [alefabove-ar fatha-ar]'
-        shadda-ar'
+        @UTR53_shadda'
         @HehNoAllah'             lookup _AllahSub_Heh;
 
     # Rule 1b+3: lam-kasra-lam-shadda-heh
     sub @Lam1NoAllah'            lookup _AllahSub_Lam1
         @KasraInAllah'
         lam-ar.medi'             lookup _AllahSub_Lam2
-        shadda-ar'               lookup _AllahSub_Shadda_insertA
+        @UTR53_shadda'               lookup _AllahSub_Shadda_insertA
         @HehNoAllah'             lookup _AllahSub_Heh;
 
 } AllahLigatures ;
-
-
-# Hamza ligation to base when it needs to be "low"
-
-# Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
-# Mark glyphs not included will be skipped over when trying to find a hamzaAbove
-@HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb ] ;
-
-lookup ComposeLowHamzaAbove {
-  lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
-    sub @LowHamzaBase hamzaabove-ar by @LowHamzaComposed ;
-} ComposeLowHamzaAbove ;
 
 
 #********
@@ -340,34 +330,38 @@ lookup ComposeLowHamzaAbove {
 # for DirectWrite (which doesn't reorder glyphs) without violating the rules of UTR53.
 
 
-# Hamza ligation
+# Hamza ligation -- except for hamza-kasra
 
-@LigateHamzaMarksFilter = [ hamzaabove-ar @HamzaMarks ] ;
+@LigateHamzaMarksFilter = [ @HamzaAbove @HamzaMarks ] ;
 lookup _LigateHamzaMarks {
   lookupflag UseMarkFilteringSet @LigateHamzaMarksFilter ;
-    sub hamzaabove-ar @HamzaMarks   by  @HamzaLigatures ;
-    sub @HamzaMarks   hamzaabove-ar by  @HamzaLigatures ;
+    sub @HamzaAbove @HamzaMarks   by  @HamzaLigatures ;
+    sub @HamzaMarks @HamzaAbove   by  @HamzaLigatures ;
 } _LigateHamzaMarks ;
 
-@HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks shadda-ar ] ;
+# Include in this filter hamzaAbove plus any mark glyphs that should stop any ligation.
+# Mark glyphs not included will be skipped over when trying to find a hamzaAbove
+@HamzaAboveFilter = [@UTR53_230MCM @UTR53_230other graphemejoinercomb ] ;
+
+@HamzaLigatureFilter = [ @HamzaAboveFilter @HamzaMarks @UTR53_shadda ] ;
 lookup HamzaLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureFilter ;
     # shouldn't ligate hamza + following fatha|damma when hamza preceded by non-MCM 230 because
     # UTR53 would have moved the fatha|damma to before the 230 marks but could not move the
     # hamza as it isn't at the beginning of the 230 sequence.
-    ignore sub @UTR53_230other'               hamzaabove-ar ;
-    ignore sub @UTR53_230other' @UTR53_230MCM hamzaabove-ar ;
+    ignore sub @UTR53_230other'               @HamzaAbove ;
+    ignore sub @UTR53_230other' @UTR53_230MCM @HamzaAbove ;
     # shouldn't ligate fatha|damma + following hamza when a 230MCM follows the hamza because
     # UTR53 would have moved both hamza and following 230MCM to before the fatha|damma at which
     # point the 230MCM would be between the hamza and the fatha|damma, blocking ligation.
-    ignore sub @HamzaMarks'                  hamzaabove-ar @UTR53_230MCM ;
-    ignore sub @HamzaMarks'    @UTR53_230MCM hamzaabove-ar @UTR53_230MCM ;
+    ignore sub @HamzaMarks'                  @HamzaAbove @UTR53_230MCM ;
+    ignore sub @HamzaMarks'    @UTR53_230MCM @HamzaAbove @UTR53_230MCM ;
     # otherwise we can ligate in these situations:
-    sub hamzaabove-ar' lookup _LigateHamzaMarks                                                   @HamzaMarks ;
-    sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other                                   @HamzaMarks ;
-    sub hamzaabove-ar' lookup _LigateHamzaMarks @UTR53_230other [ @UTR53_230other @UTR53_230MCM ] @HamzaMarks ;
-    sub @HamzaMarks'   lookup _LigateHamzaMarks                 hamzaabove-ar ;
-    sub @HamzaMarks'   lookup _LigateHamzaMarks @UTR53_230MCM   hamzaabove-ar ;
+    sub @HamzaAbove' lookup _LigateHamzaMarks                                                   @HamzaMarks ;
+    sub @HamzaAbove' lookup _LigateHamzaMarks @UTR53_230other                                   @HamzaMarks ;
+    sub @HamzaAbove' lookup _LigateHamzaMarks @UTR53_230other [ @UTR53_230other @UTR53_230MCM ] @HamzaMarks ;
+    sub @HamzaMarks'   lookup _LigateHamzaMarks                 @HamzaAbove ;
+    sub @HamzaMarks'   lookup _LigateHamzaMarks @UTR53_230MCM   @HamzaAbove ;
 } HamzaLigatures ;
 
 
@@ -376,7 +370,7 @@ lookup HamzaLigatures {
 # NB: Here we include shadda-mark ligatures *other than* the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
 
-@ShaddaLigatureFilter = [ @ShaddaMarks @ShaddaKasraMarks shadda-ar 
+@ShaddaLigatureFilter = [ @ShaddaMarks @KasraMarks @UTR53_shadda 
       # All the remaining are to prevent ligature formation if they are between shadda and the mark:
       alefabove-ar graphemejoinercomb
       # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
@@ -384,16 +378,16 @@ lookup HamzaLigatures {
     ] ;
 lookup ShaddaLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
-    sub shadda-ar @ShaddaMarks by @ShaddaLigatures ;
-    sub @ShaddaMarks shadda-ar by @ShaddaLigatures ;
+    sub @UTR53_shadda @ShaddaMarks by @ShaddaLigatures ;
+    sub @ShaddaMarks @UTR53_shadda by @ShaddaLigatures ;
 } ShaddaLigatures ;
 
 # In theory we could do this up where we create the Allah ligature, but this simpler:
 lookup ShaddaAlefLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureFilter ;
   ifinfo(familyName, "ScheherzadeNew") {
-    sub lam-ar.medi.allah2 shadda-ar'    alefabove-ar'  by  shadda_alef-ar;
-    sub lam-ar.medi.allah2 alefabove-ar' shadda-ar'     by  shadda_alef-ar;
+    sub lam-ar.medi.allah2 @UTR53_shadda'    alefabove-ar'  by  shadda_alef-ar;
+    sub lam-ar.medi.allah2 alefabove-ar' @UTR53_shadda'     by  shadda_alef-ar;
   }
 } ShaddaAlefLigatures ;
 
@@ -407,10 +401,14 @@ lookup ShaddaAlefLigatures {
 
 lookup MeemMarkLigatures {
   lookupflag 0;
-    sub meemStopabove-ar     [damma-ar fatha-ar] by [damma_meem-ar fatha_meem-ar];
     sub [damma-ar fatha-ar]  meemStopabove-ar    by [damma_meem-ar fatha_meem-ar];
-    sub meembelow-ar         kasra-ar            by kasra_meem-ar ;
     sub kasra-ar             meembelow-ar        by kasra_meem-ar ;
+# NoUTR53: this changed to ligate only if the marks are in correct UTR53 order
+do if opt("noutr53") != "yes";        
+{
+    #sub meemStopabove-ar     [damma-ar fatha-ar] by [damma_meem-ar fatha_meem-ar];
+    #sub meembelow-ar         kasra-ar            by kasra_meem-ar ;
+}
 } MeemMarkLigatures ;
 
 
@@ -432,11 +430,14 @@ ifinfo(familyName, "Lateef") {
 lookup dfltCALT {  # (need at least a dummy lookup for TT)
   lookupflag 0 ;
   ifinfo(familyName, "Scheherazade New|Lateef") {
-     sub @Kasra_lowered  by  @Kasra;
+    #sub @Kasra_lowered   by  @Kasra;
+     sub shadda-ar.kasLow by shadda-ar;
   }
   ifinfo(familyName, "Harmattan") {
-     sub @Kasra  by  @Kasra_lowered;
+    #sub @Kasra     by  @Kasra_lowered;
+     sub shadda-ar  by shadda-ar.kasLow;
   }
+  sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } dfltCALT ;
 
 lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of sukun
@@ -446,28 +447,36 @@ lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of suku
     sub seven-persian by  seven-persian.urdu ;
     sub sukun-ar      by  sukun-ar.downOpen ;
 
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow ;
 } KashmiriCALT ;
 
 lookup KurdishCALT {
   lookupflag 0 ;
     sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
     
-    sub @Kasra_lowered  by @Kasra;
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KurdishCALT ;
 
 lookup KyrgyzCALT {
   lookupflag 0;
-    sub @cno_loclKIR  by  @c_loclKIR ;
+    sub @cno_loclKIR     by  @c_loclKIR ;
     
-    sub @Kasra_lowered  by @Kasra;  # high kasra
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KyrgyzCALT ;
 
 lookup MalayCALT {
   lookupflag 0;
     sub highhamza-ar  by  highhamza-ar.loclMLY ;
     
-    sub @Kasra  by @Kasra_lowered;
+   #sub @Kasra        by @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } MalayCALT ;
 
 lookup RohingyaCALT {
@@ -477,7 +486,9 @@ lookup RohingyaCALT {
     sub seven-persian by  seven-persian.urdu ;
     sub @cno_sixNine  by  @c_sixNine ;
     
-    sub @Kasra        by  @Kasra_lowered ;
+   #sub @Kasra        by  @Kasra_lowered ;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } RohingyaCALT ;
 
 lookup SindhiCALT {
@@ -487,10 +498,12 @@ lookup SindhiCALT {
     sub @cno_sindhi   by  @c_sindhi ;
     
     # Obsolete: special chars should be used instead:
-    #sub comma-ar      by  comma-ar.downward ;
-    #sub semicolon-ar  by  semicolon-ar.downward ;
+   #sub comma-ar      by  comma-ar.downward ;
+   #sub semicolon-ar  by  semicolon-ar.downward ;
 
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } SindhiCALT ;
 
 lookup UrduCALT {
@@ -499,7 +512,9 @@ lookup UrduCALT {
     sub six-persian   by  six-persian.urdu ;
     sub seven-persian by  seven-persian.urdu ;
     
-    sub @Kasra        by  @Kasra_lowered;
+   #sub @Kasra        by  @Kasra_lowered;
+    sub shadda-ar     by shadda-ar.kasLow;
+    sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } UrduCALT ;
 
 lookup WolofCALT {
@@ -508,22 +523,38 @@ lookup WolofCALT {
     sub @Damma           by  @Damma_short ;
     sub dammainverted-ar by  dammainverted-ar.open ;
 
-    sub @Kasra           by  @Kasra_lowered ;
+   #sub @Kasra           by  @Kasra_lowered ;
+    sub shadda-ar        by shadda-ar.kasLow;
+    sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } WolofCALT ;
 
 
 # Kasra position - TypeTuner only
 # Must be located physically after language-specific CALT lookups.
 
-lookup KasraLowTT {
+lookup ShaddaKasraLowTT {
   lookupflag 0 ;
-    sub @Kasra by @Kasra_lowered;
-} KasraLowTT ;
+   #sub @Kasra     by @Kasra_lowered;
+    sub shadda-ar  by shadda-ar.kasLow;
+} ShaddaKasraLowTT ;
 
-lookup KasraHighTT {
+lookup ShaddaKasraHighTT {
   lookupflag 0 ;
-    sub @Kasra_lowered by @Kasra;
-} KasraHighTT ;
+   #sub @Kasra_lowered   by @Kasra;
+    sub shadda-ar.kasLow by shadda-ar;
+} ShaddaKasraHighTT ;
+
+lookup HamzaKasraLowTT {
+  lookupflag 0 ;
+   #sub @Kasra     by @Kasra_lowered;
+    sub hamzaabove-ar  by hamzaabove-ar.kasLow;
+} HamzaKasraLowTT ;
+
+lookup HamzaKasraHighTT {
+  lookupflag 0 ;
+   #sub @Kasra_lowered   by @Kasra;
+    sub hamzaabove-ar.kasLow by hamzaabove-ar;
+} HamzaKasraHighTT ;
 
 # Increase size of dagger alef
 # This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
@@ -720,16 +751,31 @@ lookup MaddaAlternate {
 }  # Sch or Har
 
 
-# Kasra alternates: cv62
+# Shadda-Kasra position: cv62
 
-lookup KasraAlternates {
+lookup ShaddaKasraAlternates {
   lookupflag 0 ;
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
-    #     and so as to allow language-specific behavior to be overridden.
+    #     so as to allow language-specific behavior to be overridden.
     #   0=default             1=lowered       2=raised
-    sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
-    sub @Kasra         from [ @Kasra_lowered  @Kasra ];
-} KasraAlternates ;
+   #sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
+   #sub @Kasra         from [ @Kasra_lowered  @Kasra ];
+    sub shadda-ar        from [ shadda-ar.kasLow  shadda-ar ];
+    sub shadda-ar.kasLow from [ shadda-ar.kasLow  shadda-ar ];
+} ShaddaKasraAlternates ;
+
+
+# Hamza-Kasra position: cv63
+
+lookup HamzaKasraAlternates {
+  lookupflag 0 ;
+    # NB: This is written so it doesn't matter which hamza-kasra behavior is default
+    #     so as to allow language-specific behavior to be overridden even though
+    #     at this point all langauges are configured to keep kasra low in context of hamzaabove
+    #   0=default             1=lowered       2=raised
+    sub hamzaabove-ar        from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
+    sub hamzaabove-ar.kasLow from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
+} HamzaKasraAlternates ;
 
 
 # Damma alternates: cv70
@@ -940,12 +986,45 @@ lookup GuillemetAlternate {
 # Shadda+kasra handling - see notes with liga feature
 
 lookup ShaddaKasraLigatures {
-  lookupflag MarkAttachmentType @ShaddaLigatureParts;
-    sub @ShaddaKasraMarks                    shadda-ar  by  @ShaddaKasraLigatures ;
-    sub @ShaddaKasraMarks graphemejoinercomb shadda-ar  by  @ShaddaKasraLigatures ;
-    sub shadda-ar                    @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
-    sub shadda-ar graphemejoinercomb @ShaddaKasraMarks  by  @ShaddaKasraLigatures ;
+  lookupflag UseMarkFilteringSet @ShaddaLigatureParts;
+    sub @KasraMarks                    shadda-ar  by  @ShaddaKasraLigatures ;
+    sub @KasraMarks graphemejoinercomb shadda-ar  by  @ShaddaKasraLigatures ;
+    sub shadda-ar                      @KasraMarks  by  @ShaddaKasraLigatures ;
+    sub shadda-ar   graphemejoinercomb @KasraMarks  by  @ShaddaKasraLigatures ;
 } ShaddaKasraLigatures ;
+
+# Hamza+kasra handling - see notes with liga feature
+
+lookup HamzaKasraLigatures {
+  lookupflag UseMarkFilteringSet @HamzaLigatureParts;
+    sub @KasraMarks                      hamzaabove-ar  by  @HamzaKasraLigatures ;
+    sub @KasraMarks   graphemejoinercomb hamzaabove-ar  by  @HamzaKasraLigatures ;
+    sub hamzaabove-ar                    @KasraMarks  by  @HamzaKasraLigatures ;
+    sub hamzaabove-ar graphemejoinercomb @KasraMarks  by  @HamzaKasraLigatures ;
+} HamzaKasraLigatures ;
+
+
+# Hamza ligation to base when it needs to be "low"
+
+# Must be after HamzaKasraLigatures else it would prevent those ligatures
+
+lookup ComposeLowHamzaAbove {
+do if opt("noutr53") == "yes";        
+{
+  # For noutr53, we just look for marks above
+  lookupflag MarkAttachmentType @MarksAbove ;
+}
+do if opt("noutr53") != "yes";
+{
+  # For utr53 simulations we'll skip over some of the upper marks to see if we can find a hamza above
+  lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
+}
+    # At this point the hamaza-kasra ligatures have been made if there is a kasra present
+    # This rule needs to find any remaining hamza
+    sub @LowHamzaBase @HamzaAbove by @LowHamzaComposed ;
+} ComposeLowHamzaAbove ;
+
+
 
 # DaggerAlef will be .large if Lateef default or cv76=1. But if it is, we need
 # to verify the context is correct, otherwise revert to the small. 
@@ -1088,15 +1167,21 @@ feature rtlm {  # Right-To-Left Mirrored Forms
 
 feature ccmp {  # Glyph Composition/Decomposition
     # Same for latin & arabic:
-        lookup SmallMadda;
-        # DecomposeForColor executes here for Arabic
+        # (DecomposeForColor executes here for Arabic)
         lookup FontCheck;
+do if opt("noutr53") != "yes";        
+{
         lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;
-    script latn;
+}
+        lookup SmallMadda;
+        script latn;
         lookup LatinPunctuation;
     script arab;
-        lookup DecomposeForColor;
+do if opt("noutr53") != "yes";        
+{
+        lookup DecomposeForColor;    # NoUTR53:  disable this so font isn't decomposing alef-mark and low-hamza ligatures
+}
         # kasra behavior has been moved to calt
       # Force other languages to include Arabic script lookups
       language KIR ;  # Kyrgyz
@@ -1165,10 +1250,12 @@ feature rlig {  # Required Ligatures
     script arab;
         lookup AllahLigatures;
         #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
+do if opt("noutr53") != "yes";        
+{
         lookup ShaddaLigatures;
-        lookup ComposeLowHamzaAbove;
         lookup HamzaLigatures;
         lookup ShaddaAlefLigatures;
+}
         lookup MeemMarkLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
       # Force other languages to include Arabic script lookups:
@@ -1522,10 +1609,10 @@ feature cv60 {  # Character Variant 60
 
 feature cv62 {
     cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Kasra"   ; };
+        FeatUILabelNameID  { name 3 1 0x0409 "Shadda Kasra"   ; };
 
         FeatUITooltipTextNameID {
-         name 3 1 0x0409 "Raised position of shadda+kasra";  # English US (Lowered is default or alternate)
+         name 3 1 0x0409 "Position of kasra when used with shadda";  # English US
         };
       
         SampleTextNameID {
@@ -1537,8 +1624,31 @@ feature cv62 {
         ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
     } ;
     # Same for latin & arabic:
-      lookup KasraAlternates;
+      lookup ShaddaKasraAlternates;
 } cv62 ;
+
+
+# Character Variant 63
+
+feature cv63 {
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Hamza Kasra"   ; };
+
+        FeatUITooltipTextNameID {
+         name 3 1 0x0409 "Position of kasra in when used with hamzaabove";  # English US 
+        };
+      
+        SampleTextNameID {
+         name 3 1 0x0409 "بِٔ";  # English US &#x0628;&#x0654;&#x0650;
+        };
+
+    ### ParamUILabelNameID { name 3 1 0x0409 "Default" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Lowered" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Raised"  ; };
+    } ;
+    # Same for latin & arabic:
+      lookup HamzaKasraAlternates;
+} cv63 ;
 
 
 # Character variant 70
@@ -1784,6 +1894,17 @@ feature cv88 {  # Character Variant 88
       lookup GuillemetAlternate;
 } cv88 ;
 
+
+# For testing purposes, if building the "noutr" version of the font, provide a Stylist Set
+# that mimics cv63=2 (for those apps that don't support cvxx)
+# do if opt("noutr53") == "yes";
+# {
+feature ss20 {
+        lookup HamzaKasraHighTT;
+} ss20 ;
+# }
+
+
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
 # same or later pass as cv62 itself, and it has to execute whether or not cv62 feature is requested,
 # so it has to be part of some other feature. In Harfbuzz, we could use either clig or liga, since they
@@ -1800,6 +1921,9 @@ feature cv88 {  # Character Variant 88
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cvXX
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
+        lookup HamzaKasraLigatures;      # Must execute after cv63
+        lookup ComposeLowHamzaAbove;     # Must execute after HamzaKasraLigatures
+
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
         lookup SignWithDigits;
         lookup LamAlefLigatures;         # Must execute after all mark ligatures (including cv62)

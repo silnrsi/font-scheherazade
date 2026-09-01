@@ -42,6 +42,7 @@ tools/absgenftml.py -q -t 'DaggerAlef (auto)'                    source/masters/
 tools/absgenftml.py -q -t 'Kerning (auto)'                       source/masters/ScheherazadeNew-Regular.ufo  tests/Kern-auto.ftml            -l tests/logs/Kerning.log          "${commonParams[@]}" -s 'url(../results/ScheherazadeNew-Medium.ttf)|Med' -s 'url(../results/ScheherazadeNew-SemiBold.ttf)|SeBld'  -s 'url(../results/ScheherazadeNew-Bold.ttf)|Bold' &
 tools/absgenftml.py -q -t 'Yehbarree (auto)'                     source/masters/ScheherazadeNew-Regular.ufo  tests/Yehbarree-auto.ftml       -l tests/logs/Yehbarree.log        "${commonParams[@]}" -s 'url(../results/ScheherazadeNew-Bold.ttf)|Bold' &
 tools/absgenftml.py -q -t 'Feature-Language Interactions (auto)' source/masters/ScheherazadeNew-Regular.ufo  tests/FeatLang-auto.ftml        -l tests/logs/FeatLang.log         "${commonParams[@]}"  &
+tools/absgenftml.py -q -t 'UAX#53 (auto)'                        source/masters/ScheherazadeNew-Regular.ufo  tests/UAX53-auto.ftml           -l tests/logs/UAX53.log            "${commonParams[@]}" -s 'url(../results/ScheherazadeNoUTR53-Regular.ttf)|noUTR' -w 10em  &
 
 wait
 echo done.

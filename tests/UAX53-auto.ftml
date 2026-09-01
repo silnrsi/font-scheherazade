@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <comment>Background colors: light red: a character is missing from UFO; else light orange: includes a character from Unicode version 18.0 or later; else light green: a character is new in this version of the font</comment>
+    <fontscale>200</fontscale>
+    <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
+    <fontsrc label="noUTR">url(../results/ScheherazadeNoUTR53-Regular.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv62' 1" name="cv62_1"/>
+      <style feats="'cv62' 2" name="cv62_2"/>
+      <style feats="'cv63' 1" name="cv63_1"/>
+      <style feats="'cv63' 2" name="cv63_2"/>
+      <style feats="'ss20' 1" name="ss20_1"/>
+    </styles>
+    <title>UAX#53 (auto)</title>
+    <widths string="2em"/>
+  </head>
+  <testgroup background="#f0f0f0" label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="UAX#53 Artificial Test Case">
+    <test label="U+0628
+U+0618
+U+0619
+U+064E
+U+064F
+U+0654
+U+0658
+U+0653
+U+0654
+U+0651
+U+0656
+U+0651
+U+065C
+U+0655
+U+0650">
+      <comment>BEH fatha-sm-30 damma-sm-31 fatha-30 damma-31 hamza-230M noonGhunna-230M madda-230 hamza-230M shadda-33 alef-220 shadda-33 dot-220 hamza-220M kasra-32 ➜ 
+BEH hamza-230M noonGhunna-230M shadda-33 shadda-33 fatha-sm-30 fatha-30 damma-sm-31 damma-31 kasra-32 alef-220 dot-220 hamza-220M madda-230 hamza-230M</comment>
+      <string>\u000628\u000618\u000619\u00064E\u00064F\u000654\u000658\u000653\u000654\u000651\u000656\u000651\u00065C\u000655\u000650</string>
+    </test>
+  </testgroup>
+  <testgroup label="MCM plus one mark">
+    <test background="#f0f0f0" label="U+25CC
+U+0654">
+      <comment>ARABIC HAMZA ABOVE</comment>
+      <string>\u0025CC\u000654</string>
+    </test>
+    <test label="U+0628
+U+064F
+U+0654">
+      <comment>BEH damma-31 hamza-230M ➜ 
+BEH hamza-230M damma-31</comment>
+      <string>\u000628\u00064F\u000654</string>
+    </test>
+    <test label="U+0628
+U+064F
+U+034F
+U+0654">
+      <comment>BEH damma-31 cgj hamza-230M ➜ 
+BEH damma-31 cgj hamza-230M</comment>
+      <string>\u000628\u00064F\u00034F\u000654</string>
+    </test>
+    <test background="#f0f0f0" label="U+25CC
+U+0655">
+      <comment>ARABIC HAMZA BELOW</comment>
+      <string>\u0025CC\u000655</string>
+    </test>
+    <test label="U+0649
+U+0650
+U+0655">
+      <comment>ALEFMAKSURA kasra-32 hamza-220M ➜ 
+ALEFMAKSURA hamza-220M kasra-32</comment>
+      <string>\u000649\u000650\u000655</string>
+    </test>
+    <test label="U+0649
+U+0650
+U+034F
+U+0655">
+      <comment>ALEFMAKSURA kasra-32 cgj hamza-220M ➜ 
+ALEFMAKSURA kasra-32 cgj hamza-220M</comment>
+      <string>\u000649\u000650\u00034F\u000655</string>
+    </test>
+    <test background="#f0f0f0" label="U+25CC
+U+0658">
+      <comment>ARABIC MARK NOON GHUNNA</comment>
+      <string>\u0025CC\u000658</string>
+    </test>
+    <test label="U+0628
+U+064E
+U+0658">
+      <comment>BEH fatha-30 noonGhunna-230M ➜ 
+BEH noonGhunna-230M fatha-30</comment>
+      <string>\u000628\u00064E\u000658</string>
+    </test>
+    <test label="U+0628
+U+064E
+U+034F
+U+0658">
+      <comment>BEH fatha-30 cgj noonGhunna-230M ➜ 
+BEH fatha-30 cgj noonGhunna-230M</comment>
+      <string>\u000628\u00064E\u00034F\u000658</string>
+    </test>
+    <test background="#f0f0f0" label="U+25CC
+U+06DC">
+      <comment>ARABIC SMALL HIGH SEEN</comment>
+      <string>\u0025CC\u0006DC</string>
+    </test>
+    <test label="U+0635
+U+0652
+U+06DC">
+      <comment>SAD sukun-34 seen-230M ➜ 
+SAD sukun-34 seen-230M</comment>
+      <string>\u000635\u000652\u0006DC</string>
+    </test>
+    <test label="U+0635
+U+0652
+U+034F
+U+06DC">
+      <comment>SAD sukun-34 cgj seen-230M ➜ 
+SAD sukun-34 cgj seen-230M</comment>
+      <string>\u000635\u000652\u00034F\u0006DC</string>
+    </test>
+    <test background="#f0f0f0" label="U+25CC
+U+06E3">
+      <comment>ARABIC SMALL LOW SEEN</comment>
+      <string>\u0025CC\u0006E3</string>
+    </test>
+    <test label="U+0647
+U+0650
+U+06E3">
+      <comment>HEH kasra-32 seen-220M ➜ 
+HEH seen-220M kasra-32</comment>
+      <string>\u000647\u000650\u0006E3</string>
+    </test>
+    <test label="U+0647
+U+0650
+U+034F
+U+06E3">
+      <comment>HEH kasra-32 cgj seen-220M ➜ 
+HEH kasra-32 cgj seen-220M</comment>
+      <string>\u000647\u000650\u00034F\u0006E3</string>
+    </test>
+  </testgroup>
+  <testgroup label="Misc sequences">
+    <test label="U+0628
+U+0654
+U+0617
+U+064F">
+      <comment>BEH hamza-230M zain-230 damma-31 ➜ 
+BEH hamza-230M damma-31 zain-230</comment>
+      <string>\u000628\u000654\u000617\u00064F</string>
+    </test>
+    <test label="U+0628
+U+0617
+U+0654
+U+064F">
+      <comment>BEH zain-230 hamza-230M damma-31 ➜ 
+BEH damma-31 zain-230 hamza-230M</comment>
+      <string>\u000628\u000617\u000654\u00064F</string>
+    </test>
+    <test label="U+0628
+U+064F
+U+06E7
+U+0654">
+      <comment>BEH damma-31 yeh-230M hamza-230M ➜ 
+BEH yeh-230M hamza-230M damma-31</comment>
+      <string>\u000628\u00064F\u0006E7\u000654</string>
+    </test>
+  </testgroup>
+  <testgroup label="Madda reordering">
+    <test label="U+0627
+U+0653
+U+0670">
+      <comment>ALEF madda-230 alef-35 ➜ 
+ALEF alef-35 madda-230</comment>
+      <string>\u000627\u000653\u000670</string>
+    </test>
+    <test label="U+0622
+U+0670">
+      <comment>ALEFMADDA alef-35 ➜ 
+ALEF alef-35 madda-230</comment>
+      <string>\u000622\u000670</string>
+    </test>
+    <test label="U+0622
+U+0670
+U+0651
+U+064E
+U+065C
+U+064E">
+      <comment>ALEFMADDA alef-35 shadda-33 fatha-30 dot-220 fatha-30 ➜ 
+ALEF shadda-33 fatha-30 fatha-30 alef-35 dot-220 madda-230</comment>
+      <string>\u000622\u000670\u000651\u00064E\u00065C\u00064E</string>
+    </test>
+    <test label="U+0622
+U+064E
+U+0617">
+      <comment>ALEFMADDA fatha-30 zain-230 ➜ 
+ALEF fatha-30 madda-230 zain-230</comment>
+      <string>\u000622\u00064E\u000617</string>
+    </test>
+    <test label="U+0622
+U+064E
+U+034F
+U+064E">
+      <comment>ALEFMADDA fatha-30 cgj fatha-30 ➜ 
+ALEF fatha-30 madda-230 cgj fatha-30</comment>
+      <string>\u000622\u00064E\u00034F\u00064E</string>
+    </test>
+  </testgroup>
+  <testgroup label="Shadda-Kasra">
+    <test label="U+0641
+U+0650
+U+0651">
+      <comment>FEH kasra-32 shadda-33 ➜ 
+FEH shadda-33 kasra-32</comment>
+      <string>\u000641\u000650\u000651</string>
+    </test>
+    <test label="U+0641
+U+0650
+U+034F
+U+0651">
+      <comment>FEH kasra-32 cgj shadda-33 ➜ 
+FEH kasra-32 cgj shadda-33</comment>
+      <string>\u000641\u000650\u00034F\u000651</string>
+    </test>
+    <test label="U+0641
+U+0650
+U+0651" stylename="cv62_1">
+      <comment>FEH kasra-32 shadda-33 ➜ 
+FEH shadda-33 kasra-32</comment>
+      <string>\u000641\u000650\u000651</string>
+    </test>
+    <test label="U+0641
+U+0650
+U+034F
+U+0651" stylename="cv62_1">
+      <comment>FEH kasra-32 cgj shadda-33 ➜ 
+FEH kasra-32 cgj shadda-33</comment>
+      <string>\u000641\u000650\u00034F\u000651</string>
+    </test>
+    <test label="U+0641
+U+0650
+U+0651" stylename="cv62_2">
+      <comment>FEH kasra-32 shadda-33 ➜ 
+FEH shadda-33 kasra-32</comment>
+      <string>\u000641\u000650\u000651</string>
+    </test>
+    <test label="U+0641
+U+0650
+U+034F
+U+0651" stylename="cv62_2">
+      <comment>FEH kasra-32 cgj shadda-33 ➜ 
+FEH kasra-32 cgj shadda-33</comment>
+      <string>\u000641\u000650\u00034F\u000651</string>
+    </test>
+  </testgroup>
+  <testgroup label="Hamza-Kasra">
+    <test label="U+0626
+U+065C
+U+0650">
+      <comment>YEHHAMZA dot-220 kasra-32 ➜ 
+YEH hamza-230M kasra-32 dot-220</comment>
+      <string>\u000626\u00065C\u000650</string>
+    </test>
+    <test label="U+0626
+U+065C
+U+034F
+U+0650">
+      <comment>YEHHAMZA dot-220 cgj kasra-32 ➜ 
+YEH hamza-230M dot-220 cgj kasra-32</comment>
+      <string>\u000626\u00065C\u00034F\u000650</string>
+    </test>
+    <test label="U+0626
+U+065C
+U+0650" stylename="cv63_1">
+      <comment>YEHHAMZA dot-220 kasra-32 ➜ 
+YEH hamza-230M kasra-32 dot-220</comment>
+      <string>\u000626\u00065C\u000650</string>
+    </test>
+    <test label="U+0626
+U+065C
+U+034F
+U+0650" stylename="cv63_1">
+      <comment>YEHHAMZA dot-220 cgj kasra-32 ➜ 
+YEH hamza-230M dot-220 cgj kasra-32</comment>
+      <string>\u000626\u00065C\u00034F\u000650</string>
+    </test>
+    <test label="U+0626
+U+065C
+U+0650" stylename="cv63_2">
+      <comment>YEHHAMZA dot-220 kasra-32 ➜ 
+YEH hamza-230M kasra-32 dot-220</comment>
+      <string>\u000626\u00065C\u000650</string>
+    </test>
+    <test label="U+0626
+U+065C
+U+034F
+U+0650" stylename="cv63_2">
+      <comment>YEHHAMZA dot-220 cgj kasra-32 ➜ 
+YEH hamza-230M dot-220 cgj kasra-32</comment>
+      <string>\u000626\u00065C\u00034F\u000650</string>
+    </test>
+  </testgroup>
+  <testgroup label="Mark ligatures in Sch should form in first two">
+    <test label="U+0628
+U+064E
+U+06E2">
+      <comment>BEH fatha-30 meem-230 ➜ 
+BEH fatha-30 meem-230</comment>
+      <string>\u000628\u00064E\u0006E2</string>
+    </test>
+    <test label="U+0628
+U+06E2
+U+064E">
+      <comment>BEH meem-230 fatha-30 ➜ 
+BEH fatha-30 meem-230</comment>
+      <string>\u000628\u0006E2\u00064E</string>
+    </test>
+    <test label="U+0628
+U+06E2
+U+034F
+U+064E">
+      <comment>BEH meem-230 cgj fatha-30 ➜ 
+BEH meem-230 cgj fatha-30</comment>
+      <string>\u000628\u0006E2\u00034F\u00064E</string>
+    </test>
+  </testgroup>
+  <testgroup label="Telltale tests">
+    <test label="U+0628
+U+06DC
+U+0617
+U+064F">
+      <comment>BEH seen-230M zain-230 damma-31 ➜ 
+BEH seen-230M damma-31 zain-230</comment>
+      <string>\u000628\u0006DC\u000617\u00064F</string>
+    </test>
+    <test label="U+0628
+U+0617
+U+06DC
+U+064F">
+      <comment>BEH zain-230 seen-230M damma-31 ➜ 
+BEH damma-31 zain-230 seen-230M</comment>
+      <string>\u000628\u000617\u0006DC\u00064F</string>
+    </test>
+    <test label="U+0628
+U+06E3
+U+065C
+U+0650">
+      <comment>BEH seen-220M dot-220 kasra-32 ➜ 
+BEH seen-220M kasra-32 dot-220</comment>
+      <string>\u000628\u0006E3\u00065C\u000650</string>
+    </test>
+    <test label="U+0628
+U+065C
+U+06E3
+U+0650">
+      <comment>BEH dot-220 seen-220M kasra-32 ➜ 
+BEH kasra-32 dot-220 seen-220M</comment>
+      <string>\u000628\u00065C\u0006E3\u000650</string>
+    </test>
+    <test label="U+0622
+U+0670">
+      <comment>ALEFMADDA alef-35 ➜ 
+ALEF alef-35 madda-230</comment>
+      <string>\u000622\u000670</string>
+    </test>
+    <test label="U+0627
+U+0653
+U+0670">
+      <comment>ALEF madda-230 alef-35 ➜ 
+ALEF alef-35 madda-230</comment>
+      <string>\u000627\u000653\u000670</string>
+    </test>
+    <test label="U+0627
+U+0670
+U+0653">
+      <comment>ALEF alef-35 madda-230 ➜ 
+ALEF alef-35 madda-230</comment>
+      <string>\u000627\u000670\u000653</string>
+    </test>
+    <test label="U+0626
+U+06E3">
+      <comment>YEHHAMZA seen-220M ➜ 
+YEH seen-220M hamza-230M</comment>
+      <string>\u000626\u0006E3</string>
+    </test>
+    <test label="U+064A
+U+0654
+U+06E3">
+      <comment>YEH hamza-230M seen-220M ➜ 
+YEH seen-220M hamza-230M</comment>
+      <string>\u00064A\u000654\u0006E3</string>
+    </test>
+    <test label="U+064A
+U+06E3
+U+0654">
+      <comment>YEH seen-220M hamza-230M ➜ 
+YEH seen-220M hamza-230M</comment>
+      <string>\u00064A\u0006E3\u000654</string>
+    </test>
+    <test label="U+0626
+U+0650">
+      <comment>YEHHAMZA kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u000626\u000650</string>
+    </test>
+    <test label="U+064A
+U+0654
+U+0650">
+      <comment>YEH hamza-230M kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000654\u000650</string>
+    </test>
+    <test label="U+0626
+U+0650" stylename="cv63_2">
+      <comment>YEHHAMZA kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u000626\u000650</string>
+    </test>
+    <test label="U+064A
+U+0654
+U+0650" stylename="cv63_2">
+      <comment>YEH hamza-230M kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000654\u000650</string>
+    </test>
+    <test label="U+0626
+U+0650" stylename="ss20_1">
+      <comment>YEHHAMZA kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u000626\u000650</string>
+    </test>
+    <test label="U+064A
+U+0654
+U+0650" stylename="ss20_1">
+      <comment>YEH hamza-230M kasra-32 ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000654\u000650</string>
+    </test>
+  </testgroup>
+</ftml>

@@ -1476,19 +1476,19 @@
     <string>alefbelow-ar</string>
     <string>alefoverlay-ar</string>
     <string>hamzaabove-ar</string>
+    <string>hamzaabove-ar.kasLow</string>
     <string>hamzabelow-ar</string>
     <string>fathatan-ar</string>
     <string>dammatan-ar</string>
     <string>dammatan-ar.sixNine</string>
     <string>kasratan-ar</string>
-    <string>kasratan-ar.lowered</string>
     <string>fatha-ar</string>
     <string>damma-ar</string>
     <string>damma-ar.filled</string>
     <string>damma-ar.short</string>
     <string>kasra-ar</string>
-    <string>kasra-ar.lowered</string>
     <string>shadda-ar</string>
+    <string>shadda-ar.kasLow</string>
     <string>sukun-ar</string>
     <string>sukun-ar.downOpen</string>
     <string>sukun-ar.leftOpen</string>
@@ -1845,6 +1845,7 @@
     <string>hamza_damma-ar.filled</string>
     <string>hamza_damma-ar.short</string>
     <string>hamza_kasra-ar</string>
+    <string>hamza_kasratan-ar</string>
     <string>shadda_alef-ar</string>
     <string>shadda_fathatan-ar</string>
     <string>shadda_dammatan-ar</string>
@@ -3413,19 +3414,19 @@
     <string>alefbelow-ar</string>
     <string>alefoverlay-ar</string>
     <string>hamzaabove-ar</string>
+    <string>hamzaabove-ar.kasLow</string>
     <string>hamzabelow-ar</string>
     <string>fathatan-ar</string>
     <string>dammatan-ar</string>
     <string>dammatan-ar.sixNine</string>
     <string>kasratan-ar</string>
-    <string>kasratan-ar.lowered</string>
     <string>fatha-ar</string>
     <string>damma-ar</string>
     <string>damma-ar.filled</string>
     <string>damma-ar.short</string>
     <string>kasra-ar</string>
-    <string>kasra-ar.lowered</string>
     <string>shadda-ar</string>
+    <string>shadda-ar.kasLow</string>
     <string>sukun-ar</string>
     <string>sukun-ar.downOpen</string>
     <string>sukun-ar.leftOpen</string>
@@ -3782,6 +3783,7 @@
     <string>hamza_damma-ar.filled</string>
     <string>hamza_damma-ar.short</string>
     <string>hamza_kasra-ar</string>
+    <string>hamza_kasratan-ar</string>
     <string>shadda_alef-ar</string>
     <string>shadda_fathatan-ar</string>
     <string>shadda_dammatan-ar</string>
@@ -4970,8 +4972,12 @@
     <string>uni0654064E</string>
     <key>hamza_kasra-ar</key>
     <string>uni06540650</string>
+    <key>hamza_kasratan-ar</key>
+    <string>uni0654064D</string>
     <key>hamzaabove-ar</key>
     <string>uni0654</string>
+    <key>hamzaabove-ar.kasLow</key>
+    <string>uni0654.kasLow</string>
     <key>hamzabelow-ar</key>
     <string>uni0655</string>
     <key>heh-ar</key>
@@ -5200,8 +5206,6 @@
     <string>uni0884</string>
     <key>kasra-ar</key>
     <string>uni0650</string>
-    <key>kasra-ar.lowered</key>
-    <string>uni0650.lowered</string>
     <key>kasraCurly-ar</key>
     <string>uni08E6</string>
     <key>kasraDotbelow-ar</key>
@@ -5212,8 +5216,6 @@
     <string>uni061A</string>
     <key>kasratan-ar</key>
     <string>uni064D</string>
-    <key>kasratan-ar.lowered</key>
-    <string>uni064D.lowered</string>
     <key>kasratanCurly-ar</key>
     <string>uni08E9</string>
     <key>keheh-ar</key>
@@ -6428,6 +6430,8 @@
     <string>uni06F7.urdu.small</string>
     <key>shadda-ar</key>
     <string>uni0651</string>
+    <key>shadda-ar.kasLow</key>
+    <string>uni0651.kasLow</string>
     <key>shadda_alef-ar</key>
     <string>uni06510670</string>
     <key>shadda_damma-ar</key>
