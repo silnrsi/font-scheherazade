@@ -522,9 +522,9 @@ of the license along with this Font Software. If this is not the case, go to
 
     <!-- *NEXT 2 CLASSES MUST MATCH* -->
     <class name="LowHamzaBase">
-        waw-ar yeh-ar ae-ar hehgoal-ar yehbarree-ar
-        waw-ar.fina yeh-ar.fina ae-ar.fina hehgoal-ar.fina
-        yeh-ar.medi hehgoal-ar.medi yeh-ar.init hehgoal-ar.init
+        waw-ar yeh-ar.noDots ae-ar hehgoal-ar yehbarree-ar
+        waw-ar.fina yeh-ar.noDots.fina ae-ar.fina hehgoal-ar.fina
+        yeh-ar.noDots.medi hehgoal-ar.medi yeh-ar.noDots.init hehgoal-ar.init
     </class>
 
     <class name="LowHamzaComposed">
