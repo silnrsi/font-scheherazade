@@ -174,7 +174,7 @@ def doit(args):
                         alefsRare.add(gname)
                     else:
                         alefs.add(gname)
-            elif jt == 'D' and encoded:
+            elif jt == 'D' and (encoded or gname == 'yeh-ar.noDots'):  # yeh-ar.noDots is special case
                 djoining.add(gname)
                 if jg == 'Lam':
                     lams.add(gname)

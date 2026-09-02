@@ -7,8 +7,10 @@
     <fontsrc>url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
     <styles>
-      <style feats="'cv62' 1" name="cv62_1"/>  <!-- lowered kasra -->
-      <style feats="'cv62' 2" name="cv62_2"/>  <!-- raised kasra -->
+      <style feats="'cv62' 1" name="cv62_1"/>  <!-- lowered shadda-kasra -->
+      <style feats="'cv62' 2" name="cv62_2"/>  <!-- raised shadda-kasra -->
+      <style feats="'cv63' 1" name="cv63_1"/>  <!-- lowered hamza-kasra -->
+      <style feats="'cv63' 2" name="cv63_2"/>  <!-- raised hamza-kasra -->
     </styles>
     <title>UTR53 AMTRA test</title>
     <widths comment='20em' string='3em' label='5em'/>
@@ -124,5 +126,10 @@
     <test label="U+0622 U+0670 U+0651 U+064E U+065C U+064E"><comment>ALEFMADDA alef-35 shadda-33 fatha-30 dot-220 fatha-30</comment><string>\u0622\u0670\u0651\u064E\u065C\u064E</string></test>
     <test label="U+0622 U+064E U+0617"><comment>ALEFMADDA fatha-30 zain-230</comment><string>\u0622\u064E\u0617</string></test>
     <test label="U+0622 U+064E U+034F U+064E"><comment>ALEFMADDA fatha-30 cgj fatha-30</comment><string>\u0622\u064E\u034F\u064E</string></test>
+  </testgroup>
+  <testgroup label="Hamza-Kasra">
+    <test><string>\u006d2\u0654\u0650 \u0628\u006d2\u0654\u0650 \u0064a\u0654\u0650 \u0628\u0064a\u0654\u0650 \u006d3\u0650 \u0628\u006d3\u0650</string></test>
+    <test stylename="cv63_1"><string>\u006d2\u0654\u0650 \u0628\u006d2\u0654\u0650 \u0064a\u0654\u0650 \u0628\u0064a\u0654\u0650 \u006d3\u0650 \u0628\u006d3\u0650</string></test>
+    <test stylename="cv63_2"><string>\u006d2\u0654\u0650 \u0628\u006d2\u0654\u0650 \u0064a\u0654\u0650 \u0628\u0064a\u0654\u0650 \u006d3\u0650 \u0628\u006d3\u0650</string></test>
   </testgroup>
 </ftml>
