@@ -19,9 +19,9 @@ Font sources are in the [UFO3](https://unifiedfontobject.org/versions/ufo3/) for
 
 The fonts are built using a completely free and open source workflow using industry-standard tools ([fonttools](https://github.com/fonttools/fonttools)), a package of custom python scripts ([pysilfont](https://github.com/silnrsi/pysilfont)), and a build and packaging system ([Smith](https://github.com/silnrsi/smith)). The whole toolchain is available as a Docker container. 
 
-Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [Building and Modifying SIL Fonts](https://writingsystems.info/topics/fonts/building-and-modifying-sil-fonts/). Additional developer information specific to SIL’s Arabic fonts can be found at [font-arab-tools README](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/README.md).
+Full instructions for setting up the tools and building SIL fonts are available on a dedicated web site: [Building and Modifying SIL Fonts](https://writingsystems.info/topics/fonts/building-and-modifying-sil-fonts/). Additional developer information specific to SIL’s Arabic fonts can be found at [font-arabic README](https://github.com/silnrsi/font-arabic/blob/master/documentation/developer/README.md).
 
-In addition, much of the code for Scheherazade New, Harmattan, and Lateef is shared. Carefully review the [font-arab-tools developer](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/developer.md) documentation to see how the code is shared.
+In addition, much of the code for Scheherazade New, Harmattan, and Lateef is shared. Carefully review the [font-arabic developer](https://github.com/silnrsi/font-arabic/blob/master/documentation/developer/developer.md) documentation to see how the code is shared.
 
 ## Building
 
@@ -64,7 +64,7 @@ After adding characters or additional behaviors to the font, test files should b
 are generated automatically using `tools/genftmlfiles.sh`. This script, in turn, calls `tools/absgenftml.py` 
 to create each test file. A lot of test generation logic is driven by Unicode character properties and the `glyph_data.csv` file, but sometimes `absgenftml.py` itself needs to be enhanced. 
 
-For more information about testing, see [font-arab-tools testing](https://github.com/silnrsi/font-arab-tools/blob/master/documentation/developer/testing.md).
+For more information about testing, see [font-arabic testing](https://github.com/silnrsi/font-arabic/blob/master/documentation/developer/testing.md).
 
 ## Contributing to the project
 

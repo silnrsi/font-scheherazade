@@ -44,7 +44,6 @@
       <style feats="'cv80' 1" name="cv80_1"/>
       <style feats="'cv80' 2" name="cv80_2"/>
       <style feats="'cv80' 3" name="cv80_3"/>
-      <style feats="'cv81' 1" name="cv81_1"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv82' 2" name="cv82_2"/>
       <style feats="'cv82' 3" name="cv82_3"/>
@@ -2825,19 +2824,7 @@
     </test>
     <test label="U+FBC6">
       <comment>rahmatuAllaahiAlayhim-ar</comment>
-      <string>\u00FBC6</string>
-    </test>
-    <test label="U+FBC6" stylename="cv81_1">
-      <comment>rahmatuAllaahiAlayhim-ar</comment>
-      <string>\u00FBC6</string>
-    </test>
-    <test label="U+FBC7">
-      <comment>rahmatuAllaahiAlayhimaa-ar</comment>
-      <string>\u00FBC7</string>
-    </test>
-    <test label="U+FBC7" stylename="cv81_1">
-      <comment>rahmatuAllaahiAlayhimaa-ar</comment>
-      <string>\u00FBC7</string>
+      <string>\u00FBC6 \u00FBC7</string>
     </test>
     <test background="#f0fff0" label="U+FBC9">
       <comment>rahimahumaaAllaah-ar</comment>
@@ -2857,147 +2844,11 @@
     </test>
     <test label="U+FD3E">
       <comment>parenleft-ar</comment>
-      <string>\u00FD3E \u00FD3F \u00FD40</string>
-    </test>
-    <test label="U+FD40" stylename="cv81_1">
-      <comment>rahimahuAllaah-ar</comment>
-      <string>\u00FD40</string>
-    </test>
-    <test label="U+FD41">
-      <comment>radiAllaahuAnh-ar</comment>
-      <string>\u00FD41</string>
-    </test>
-    <test label="U+FD41" stylename="cv81_1">
-      <comment>radiAllaahuAnh-ar</comment>
-      <string>\u00FD41</string>
-    </test>
-    <test label="U+FD42">
-      <comment>radiAllaahuAnhaa-ar</comment>
-      <string>\u00FD42</string>
-    </test>
-    <test label="U+FD42" stylename="cv81_1">
-      <comment>radiAllaahuAnhaa-ar</comment>
-      <string>\u00FD42</string>
-    </test>
-    <test label="U+FD43">
-      <comment>radiAllaahuAnhum-ar</comment>
-      <string>\u00FD43</string>
-    </test>
-    <test label="U+FD43" stylename="cv81_1">
-      <comment>radiAllaahuAnhum-ar</comment>
-      <string>\u00FD43</string>
-    </test>
-    <test label="U+FD44">
-      <comment>radiAllaahuAnhumaa-ar</comment>
-      <string>\u00FD44</string>
-    </test>
-    <test label="U+FD44" stylename="cv81_1">
-      <comment>radiAllaahuAnhumaa-ar</comment>
-      <string>\u00FD44</string>
-    </test>
-    <test label="U+FD45">
-      <comment>radiAllaahuAnhunna-ar</comment>
-      <string>\u00FD45</string>
-    </test>
-    <test label="U+FD45" stylename="cv81_1">
-      <comment>radiAllaahuAnhunna-ar</comment>
-      <string>\u00FD45</string>
-    </test>
-    <test label="U+FD46">
-      <comment>sallallaahuAlayhiWaAalih-ar</comment>
-      <string>\u00FD46</string>
-    </test>
-    <test label="U+FD46" stylename="cv81_1">
-      <comment>sallallaahuAlayhiWaAalih-ar</comment>
-      <string>\u00FD46</string>
-    </test>
-    <test label="U+FD47">
-      <comment>alayhiAsSalaam-ar</comment>
-      <string>\u00FD47</string>
-    </test>
-    <test label="U+FD47" stylename="cv81_1">
-      <comment>alayhiAsSalaam-ar</comment>
-      <string>\u00FD47</string>
-    </test>
-    <test label="U+FD48">
-      <comment>alayhimAsSalaam-ar</comment>
-      <string>\u00FD48</string>
-    </test>
-    <test label="U+FD48" stylename="cv81_1">
-      <comment>alayhimAsSalaam-ar</comment>
-      <string>\u00FD48</string>
-    </test>
-    <test label="U+FD49">
-      <comment>alayhimaaAsSalaam-ar</comment>
-      <string>\u00FD49</string>
-    </test>
-    <test label="U+FD49" stylename="cv81_1">
-      <comment>alayhimaaAsSalaam-ar</comment>
-      <string>\u00FD49</string>
-    </test>
-    <test label="U+FD4A">
-      <comment>alayhiAsSalaatuWaSalaam-ar</comment>
-      <string>\u00FD4A</string>
-    </test>
-    <test label="U+FD4A" stylename="cv81_1">
-      <comment>alayhiAsSalaatuWaSalaam-ar</comment>
-      <string>\u00FD4A</string>
-    </test>
-    <test label="U+FD4B">
-      <comment>quddisaSirrah-ar</comment>
-      <string>\u00FD4B</string>
-    </test>
-    <test label="U+FD4B" stylename="cv81_1">
-      <comment>quddisaSirrah-ar</comment>
-      <string>\u00FD4B</string>
-    </test>
-    <test label="U+FD4C">
-      <comment>sallallahuAlayhiWaAaliheeWaSallam-ar</comment>
-      <string>\u00FD4C</string>
-    </test>
-    <test label="U+FD4C" stylename="cv81_1">
-      <comment>sallallahuAlayhiWaAaliheeWaSallam-ar</comment>
-      <string>\u00FD4C</string>
-    </test>
-    <test label="U+FD4D">
-      <comment>alayhaaAsSalaam-ar</comment>
-      <string>\u00FD4D</string>
-    </test>
-    <test label="U+FD4D" stylename="cv81_1">
-      <comment>alayhaaAsSalaam-ar</comment>
-      <string>\u00FD4D</string>
-    </test>
-    <test label="U+FD4E">
-      <comment>tabaarakaWaTaaalaa-ar</comment>
-      <string>\u00FD4E</string>
-    </test>
-    <test label="U+FD4E" stylename="cv81_1">
-      <comment>tabaarakaWaTaaalaa-ar</comment>
-      <string>\u00FD4E</string>
-    </test>
-    <test label="U+FD4F">
-      <comment>rahimahumAllaah-ar</comment>
-      <string>\u00FD4F</string>
-    </test>
-    <test label="U+FD4F" stylename="cv81_1">
-      <comment>rahimahumAllaah-ar</comment>
-      <string>\u00FD4F</string>
+      <string>\u00FD3E \u00FD3F \u00FD40 \u00FD41 \u00FD42 \u00FD43 \u00FD44 \u00FD45 \u00FD46 \u00FD47 \u00FD48 \u00FD49 \u00FD4A \u00FD4B \u00FD4C \u00FD4D \u00FD4E \u00FD4F</string>
     </test>
     <test label="U+FD90">
       <comment>rahmatuAllaahiAlayh-ar</comment>
-      <string>\u00FD90</string>
-    </test>
-    <test label="U+FD90" stylename="cv81_1">
-      <comment>rahmatuAllaahiAlayh-ar</comment>
-      <string>\u00FD90</string>
-    </test>
-    <test label="U+FD91">
-      <comment>rahmatuAllaahiAlayhaa-ar</comment>
-      <string>\u00FD91</string>
-    </test>
-    <test label="U+FD91" stylename="cv81_1">
-      <comment>rahmatuAllaahiAlayhaa-ar</comment>
-      <string>\u00FD91</string>
+      <string>\u00FD90 \u00FD91</string>
     </test>
     <test background="#f0fff0" label="U+FDCE">
       <comment>karramaAllaahuWajhah-ar</comment>
@@ -3007,57 +2858,13 @@
       <comment>salaamuhuAlaynaa-ar</comment>
       <string>\u00FDCF</string>
     </test>
-    <test label="U+FDCF" stylename="cv81_1">
-      <comment>salaamuhuAlaynaa-ar</comment>
-      <string>\u00FDCF</string>
-    </test>
     <test label="U+FDF2">
       <comment>allah-ar</comment>
       <string>\u00FDF2</string>
     </test>
     <test label="U+FDFA">
       <comment>allahlong-ar</comment>
-      <string>\u00FDFA</string>
-    </test>
-    <test label="U+FDFA" stylename="cv81_1">
-      <comment>allahlong-ar</comment>
-      <string>\u00FDFA</string>
-    </test>
-    <test label="U+FDFB">
-      <comment>jallajalalouhou-ar</comment>
-      <string>\u00FDFB</string>
-    </test>
-    <test label="U+FDFB" stylename="cv81_1">
-      <comment>jallajalalouhou-ar</comment>
-      <string>\u00FDFB</string>
-    </test>
-    <test label="U+FDFC">
-      <comment>rial</comment>
-      <string>\u00FDFC \u00FDFD</string>
-    </test>
-    <test label="U+FDFD" stylename="cv81_1">
-      <comment>bismillah-ar</comment>
-      <string>\u00FDFD</string>
-    </test>
-    <test label="U+FDFE">
-      <comment>subhaanahuWaTaaalaa-ar</comment>
-      <string>\u00FDFE</string>
-    </test>
-    <test label="U+FDFE" stylename="cv81_1">
-      <comment>subhaanahuWaTaaalaa-ar</comment>
-      <string>\u00FDFE</string>
-    </test>
-    <test label="U+FDFF">
-      <comment>azzaWaJall-ar</comment>
-      <string>\u00FDFF</string>
-    </test>
-    <test label="U+FDFF" stylename="cv81_1">
-      <comment>azzaWaJall-ar</comment>
-      <string>\u00FDFF</string>
-    </test>
-    <test label="U+FE00">
-      <comment>VS1</comment>
-      <string>\u000628\u00FE00 \u000628\u00FE01 \u000628\u00FE02 \u000628\u00FE03 \u000628\u00FE04 \u000628\u00FE05 \u000628\u00FE06 \u000628\u00FE07 \u000628\u00FE08 \u000628\u00FE09 \u000628\u00FE0A \u000628\u00FE0B \u000628\u00FE0C \u000628\u00FE0D \u000628\u00FE0E \u000628\u00FE0F</string>
+      <string>\u00FDFA \u00FDFB \u00FDFC \u00FDFD \u00FDFE \u00FDFF \u000628\u00FE00 \u000628\u00FE01 \u000628\u00FE02 \u000628\u00FE03 \u000628\u00FE04 \u000628\u00FE05 \u000628\u00FE06 \u000628\u00FE07 \u000628\u00FE08 \u000628\u00FE09 \u000628\u00FE0A \u000628\u00FE0B \u000628\u00FE0C \u000628\u00FE0D \u000628\u00FE0E \u000628\u00FE0F</string>
     </test>
     <test label="U+FEFF">
       <comment>zeroWidthNoBreakSpace</comment>

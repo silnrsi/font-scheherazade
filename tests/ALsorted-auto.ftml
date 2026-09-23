@@ -23,7 +23,6 @@
       <style feats="'cv54' 1" name="cv54_1"/>
       <style feats="'cv54' 2" name="cv54_2"/>
       <style feats="'cv60' 1" name="cv60_1"/>
-      <style feats="'cv81' 1" name="cv81_1"/>
       <style feats="'cv84' 1" name="cv84_1"/>
       <style lang="ks" name="ks"/>
       <style lang="ku" name="ku"/>
@@ -2157,23 +2156,7 @@
     </test>
     <test label="U+FDFA">
       <comment>allahlong-ar</comment>
-      <string>\u00FDFA</string>
-    </test>
-    <test label="U+FDFA" stylename="cv81_1">
-      <comment>allahlong-ar</comment>
-      <string>\u00FDFA</string>
-    </test>
-    <test label="U+FDFB">
-      <comment>jallajalalouhou-ar</comment>
-      <string>\u00FDFB</string>
-    </test>
-    <test label="U+FDFB" stylename="cv81_1">
-      <comment>jallajalalouhou-ar</comment>
-      <string>\u00FDFB</string>
-    </test>
-    <test label="U+FDFC">
-      <comment>rial</comment>
-      <string>\u00FDFC</string>
+      <string>\u00FDFA \u00FDFB \u00FDFC</string>
     </test>
     <test label="U+10EC5">
       <comment>yehSmallTwobelow-ar</comment>

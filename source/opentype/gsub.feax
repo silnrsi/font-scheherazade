@@ -900,18 +900,6 @@ lookup AyahAlternates {
 } AyahAlternates ;
 
 
-ifinfo(familyName, "Scheherazade New") {
-
-# Simplified Honorifics: cv81
-
-lookup HonLigAlternates {
-  lookupflag 0;
-    sub @HonLigCall by @HonLigSmpl ;
-} HonLigAlternates ;
-
-}  # Sch
-
-
 # Eastern digit alternates: cv82
 
 # TypeTuner lookups:
@@ -1796,31 +1784,6 @@ feature cv80 {  # Character Variant 80
     # Same for latin & arabic:
       lookup AyahAlternates;
 } cv80 ;
-
-
-do let f = info("familyName");
-   if f.find("Scheherazade New") != -1; {
-
-feature cv81 {  # Character Variant 81
-    cvParameters {
-        FeatUILabelNameID  { name 3 1 0x0409 "Honorific ligatures" ; };
-
-        FeatUITooltipTextNameID {
-         name 3 1 0x0409 "Simplified Honorific ligatures";  # English US (Calligraphic is default)
-        };
-      
-        SampleTextNameID {
-         name 3 1 0x0409 "﵌ ﷽";  # English US &#xFD4C;&#xFDFD;
-        };
-
-    ### ParamUILabelNameID { name 3 1 0x0409 "Calligraphic" ; };
-        ParamUILabelNameID { name 3 1 0x0409 "Simplified" ; };
-    } ;
-    # Same for latin and arabic:
-      lookup HonLigAlternates;
-} cv81 ;
-
-}  # end do - Sch
 
 
 feature cv82 {  # Character Variant 82
