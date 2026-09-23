@@ -416,6 +416,13 @@ U+0650">
 YEH hamza-230M kasra-32</comment>
       <string>\u00064A\u000654\u000650</string>
     </test>
+    <test label="U+064A
+U+0650
+U+0654">
+      <comment>YEH kasra-32 hamza-230M ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000650\u000654</string>
+    </test>
     <test label="U+0626
 U+0650" stylename="cv63_2">
       <comment>YEHHAMZA kasra-32 ➜ 
@@ -429,6 +436,21 @@ U+0650" stylename="cv63_2">
 YEH hamza-230M kasra-32</comment>
       <string>\u00064A\u000654\u000650</string>
     </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv63_2">
+      <comment>YEH kasra-32 hamza-230M ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000650\u000654</string>
+    </test>
+    <test label="U+064A
+U+0650
+U+034F
+U+0654" stylename="cv63_2">
+      <comment>YEH kasra-32 cgj hamza-230M ➜ 
+YEH kasra-32 cgj hamza-230M</comment>
+      <string>\u00064A\u000650\u00034F\u000654</string>
+    </test>
     <test label="U+0626
 U+0650" stylename="ss20_1">
       <comment>YEHHAMZA kasra-32 ➜ 
@@ -441,6 +463,21 @@ U+0650" stylename="ss20_1">
       <comment>YEH hamza-230M kasra-32 ➜ 
 YEH hamza-230M kasra-32</comment>
       <string>\u00064A\u000654\u000650</string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="ss20_1">
+      <comment>YEH kasra-32 hamza-230M ➜ 
+YEH hamza-230M kasra-32</comment>
+      <string>\u00064A\u000650\u000654</string>
+    </test>
+    <test label="U+064A
+U+0650
+U+034F
+U+0654" stylename="ss20_1">
+      <comment>YEH kasra-32 cgj hamza-230M ➜ 
+YEH kasra-32 cgj hamza-230M</comment>
+      <string>\u00064A\u000650\u00034F\u000654</string>
     </test>
   </testgroup>
 </ftml>

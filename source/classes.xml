@@ -314,7 +314,7 @@ of the license along with this Font Software. If this is not the case, go to
     <!-- Including graphemejoinercomb allows it to interrupt the ligature formation,
           otherwise the lookupflag causes it to be ignored. -->
     <class name="ShaddaLigatureParts">
-        shadda-ar @ShaddaMarks @KasraMarks graphemejoinercomb
+        shadda-ar @ShaddaMarks @KasraMarks
     </class>
 
 
@@ -334,7 +334,7 @@ of the license along with this Font Software. If this is not the case, go to
     <!-- Including graphemejoinercomb allows it to interrupt the ligature formation,
           otherwise the lookupflag causes it to be ignored. -->
     <class name="HamzaLigatureParts">
-        @HamzaAbove @HamzaMarks @KasraMarks graphemejoinercomb
+        @HamzaAbove @HamzaMarks @KasraMarks 
     </class>
 
     <!-- OBSOLETE

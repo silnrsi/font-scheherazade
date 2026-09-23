@@ -1136,13 +1136,17 @@ def doit(args):
         addByNames('YEH seen-220M hamza-230M'.split())
         addByNames('YEHHAMZA kasra-32'.split())
         addByNames('YEH hamza-230M kasra-32'.split())
+        addByNames('YEH kasra-32 hamza-230M'.split())
         ftml.setFeatures([['cv63','2'],])
         addByNames('YEHHAMZA kasra-32'.split())
         addByNames('YEH hamza-230M kasra-32'.split())
+        addByNames('YEH kasra-32 hamza-230M'.split())
+        addByNames('YEH kasra-32 cgj hamza-230M'.split())
         ftml.setFeatures([['ss20','1'],])
         addByNames('YEHHAMZA kasra-32'.split())
         addByNames('YEH hamza-230M kasra-32'.split())
-
+        addByNames('YEH kasra-32 hamza-230M'.split())
+        addByNames('YEH kasra-32 cgj hamza-230M'.split())
 
 #--------------------------------
 #  Wrap up -- write out the ftml file
