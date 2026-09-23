@@ -72,7 +72,7 @@
 @KafLikeInitMedi = [@KafLikeInit @KafLikeMedi];
 @KasraInAllah = [kasra-ar];
 @KasraMarks = [kasratan-ar kasra-ar];
-@HamzaLigatureParts = [@HamzaAbove @HamzaMarks @KasraMarks graphemejoinercomb];
+@HamzaLigatureParts = [@HamzaAbove @HamzaMarks @KasraMarks];
 @Lam1Allah = [lam-ar.init.allah1 lam-ar.medi.allah1];
 @Lam1NoAllah = [lam-ar.init lam-ar.medi];
 @LamAlefKern = [dal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalVinvertedbelow-ar dalThreedotsbelow-ar dal-ar.loclWLF ddahal-ar.loclWLF dalRing-ar.loclWLF dalDotbelow-ar.loclWLF dalVinvertedbelow-ar.loclWLF dalThreedotsbelow-ar.loclWLF reh-ar zain-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehStroke-ar rehLoop-ar rehv-ar rehVinvertedabove-ar rehTwodots-ar meem-ar meemDotabove-ar meemDotbelow-ar meem-ar.sindhi meemDotabove-ar.sindhi meemDotbelow-ar.sindhi meem-ar.init meemDotabove-ar.init meemDotbelow-ar.init seen-ar seenDotbelowDotabove-ar seenThreedotsbelow-ar seenVinvertedabove-ar seen-ar.init seenDotbelowDotabove-ar.init seenThreedotsbelow-ar.init seenVinvertedabove-ar.init heh-ar heh-ar.knotted hehgoal-ar ae-ar heh-ar.init heh-ar.init.hooked hehgoal-ar.init hehDoachashmee-ar tehMarbuta-ar hehDoachashmee-ar.init beh-ar peh-ar pehVabove-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar tehVabove-ar theh-ar tteh-ar ttehVabove-ar tteheh-ar teheh-ar behThreedotshorizontalbelow-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar tehTehabove-ar behMeemabove-ar pehMeemabove-ar behDotless-ar.init beh-ar.init peh-ar.init beeh-ar.init beheh-ar.init behThreedotshorizontalbelow-ar.init behThreedotsupbelow-ar.init behVinvertedbelow-ar.init behVbelow-ar.init jeem-ar.init tcheh-ar.init tcheheh-ar.init tchehDotabove-ar tchehVabove-ar.init nyeh-ar.init dyeh-ar.init hah-ar.init hehHamzaabove-ar hahTwodotsverticalabove-ar.init hahTwodotshorizontalabove-ar.init hahThreedotsabove-ar.init hahThreedotsupbelow-ar.init khah-ar.init hahTahbelow-ar.init hahTahTwodotshorizontalbelow-ar.init hahTahabove-ar hahFourbelow-ar.init jeemTwodotsabove-ar.init jeemThreedotsabove-ar.init jeemThreedotsbelow-ar.init];
@@ -118,7 +118,7 @@
 @ShaddaKasraLigatures = [shadda_kasratan-ar shadda_kasra-ar];
 @ShaddaLigatures = [shadda_fathatan-ar shadda_dammatan-ar shadda_fatha-ar shadda_damma-ar];
 @ShaddaMarks = [fathatan-ar dammatan-ar fatha-ar damma-ar];
-@ShaddaLigatureParts = [shadda-ar @ShaddaMarks @KasraMarks graphemejoinercomb];
+@ShaddaLigatureParts = [shadda-ar @ShaddaMarks @KasraMarks];
 @TakesLargeDaggerAlef = [alefMaksura-ar alefMaksura-ar.fina dad-ar dad-ar.fina dadDotbelow-ar dadDotbelow-ar.fina e-ar e-ar.fina emquad emspace enquad enspace figurespace fourperemspace hairspace highhamzaYeh-ar highhamzaYeh-ar.fina kashida-ar kashida-ar.wide narrownbspace nbspace punctuationspace sad-ar sad-ar.fina sadThreedots-ar sadThreedots-ar.fina sadThreedotsbelow-ar sadThreedotsbelow-ar.fina sadTwodotsbelow-ar sadTwodotsbelow-ar.fina seen-ar seen-ar.fina seenDotbelowDotabove-ar seenDotbelowDotabove-ar.fina seenFourabove-ar seenFourabove-ar.fina seenFourdotsabove-ar seenFourdotsabove-ar.fina seenTahTwodotshorizontalabove-ar seenTahTwodotshorizontalabove-ar.fina seenThreedotsbelow-ar seenThreedotsbelow-ar.fina seenTwodotsverticalabove-ar seenTwodotsverticalabove-ar.fina seenVinvertedabove-ar seenVinvertedabove-ar.fina sheen-ar sheen-ar.fina sheenDotbelow-ar sheenDotbelow-ar.fina sheenThreedotsbelow-ar sheenThreedotsbelow-ar.fina sixperemspace space thinspace threeperemspace yeh-ar yeh-ar.fina yeh-farsi yeh-farsi.fina yehFourbelow-ar yehFourbelow-ar.fina yehFourbelow-farsi yehFourbelow-farsi.fina yehHamzaabove-ar yehHamzaabove-ar.fina yehTail-ar yehTail-ar.fina yehThreeabove-farsi yehThreeabove-farsi.fina yehThreedotsabove-farsi yehThreedotsabove-farsi.fina yehThreedotsbelow-ar yehThreedotsbelow-ar.fina yehTwoabove-farsi yehTwoabove-farsi.fina yehTwodotsabove-farsi yehTwodotsabove-farsi.fina yehTwodotsbelowDotabove-ar yehTwodotsbelowDotabove-ar.fina yehTwodotsbelowHamzaabove-ar yehTwodotsbelowHamzaabove-ar.fina yehTwodotsbelowNoonabove-ar yehTwodotsbelowNoonabove-ar.fina yehVabove-ar yehVabove-ar.fina yehVinverted-farsi yehVinverted-farsi.fina];
 @TakesMediumDigits = [number-ar year-ar footnotemarker-ar pagenumber-ar samvat-ar numbermark-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.2 endofayah-ar.alt.2 endofayah-ar.altB.2 endofayah-ar.altC.2 number-ar.2 number-ar.3 year-ar.2 year-ar.3 year-ar.4 footnotemarker-ar.2 pagenumber-ar.2 pagenumber-ar.3 pagenumber-ar.4 samvat-ar.2 samvat-ar.3 samvat-ar.4 numbermark-ar.2 numbermark-ar.3 numbermark-ar.4 poundmarkabove-ar poundmarkabove-ar.2 poundmarkabove-ar.3 poundmarkabove-ar.4 piastremarkabove-ar piastremarkabove-ar.2 piastremarkabove-ar.3 piastremarkabove-ar.4];
 @TakesSmallDigits = [endofayah-ar.3 endofayah-ar.alt.3 endofayah-ar.altB.3 endofayah-ar.altC.3 disputedendofayah-ar disputedendofayah-ar.2 disputedendofayah-ar.3];
@@ -2050,6 +2050,19 @@ lookup DecomposeForColor {
     sub hehgoalHamzaabove-ar.init by hehgoal-ar.init hamzaabove-ar;
 } DecomposeForColor;
 
+# If a yeh-ar appears with a hamza-above *anywhere in the mark sequence*
+# then we should go ahead and remove the dots in case subsequent composition 
+# to yehHamzaabove-ar is not possible
+lookup _RemoveYehDots {
+    sub yeh-ar by yeh-ar.noDots;
+} _RemoveYehDots;
+
+lookup RemoveYehDots {
+    lookupflag UseMarkFilteringSet @HamzaAbove;
+    # Looking for hamzaabove *anywhere* in the diacritic sequence
+    sub yeh-ar' lookup _RemoveYehDots @HamzaAbove;
+} RemoveYehDots;
+
 # Font rendering check
 #
 # The following three lookups change "RenderingUnknown" to "RenderingOpenType"
@@ -2388,14 +2401,15 @@ lookup ShaddaAlefLigatures {
 # are next to each other (in either order)
 #
 # But do this before calt so the ligatures with alternate dammas work
+# NoUTR53: this changed to ligate only if the marks are in correct UTR53 order
 lookup MeemMarkLigatures {
     lookupflag 0;
     sub damma-ar meemStopabove-ar by damma_meem-ar;
     sub fatha-ar meemStopabove-ar by fatha_meem-ar;
     sub kasra-ar meembelow-ar by kasra_meem-ar;
-    # NoUTR53: this changed to ligate only if the marks are in correct UTR53 order
-            #sub meemStopabove-ar     [damma-ar fatha-ar] by [damma_meem-ar fatha_meem-ar];
-        #sub meembelow-ar         kasra-ar            by kasra_meem-ar ;
+            sub meemStopabove-ar damma-ar by damma_meem-ar;
+        sub meemStopabove-ar fatha-ar by fatha_meem-ar;
+        sub meembelow-ar kasra-ar by kasra_meem-ar;
 
 } MeemMarkLigatures;
 
@@ -2947,12 +2961,8 @@ lookup ShaddaKasraLigatures {
     lookupflag UseMarkFilteringSet @ShaddaLigatureParts;
     sub kasratan-ar shadda-ar by shadda_kasratan-ar;
     sub kasra-ar shadda-ar by shadda_kasra-ar;
-    sub kasratan-ar graphemejoinercomb shadda-ar by shadda_kasratan-ar;
-    sub kasra-ar graphemejoinercomb shadda-ar by shadda_kasra-ar;
     sub shadda-ar kasratan-ar by shadda_kasratan-ar;
     sub shadda-ar kasra-ar by shadda_kasra-ar;
-    sub shadda-ar graphemejoinercomb kasratan-ar by shadda_kasratan-ar;
-    sub shadda-ar graphemejoinercomb kasra-ar by shadda_kasra-ar;
 } ShaddaKasraLigatures;
 
 # Hamza+kasra handling - see notes with liga feature
@@ -2960,12 +2970,8 @@ lookup HamzaKasraLigatures {
     lookupflag UseMarkFilteringSet @HamzaLigatureParts;
     sub kasratan-ar hamzaabove-ar by hamza_kasratan-ar;
     sub kasra-ar hamzaabove-ar by hamza_kasra-ar;
-    sub kasratan-ar graphemejoinercomb hamzaabove-ar by hamza_kasratan-ar;
-    sub kasra-ar graphemejoinercomb hamzaabove-ar by hamza_kasra-ar;
     sub hamzaabove-ar kasratan-ar by hamza_kasratan-ar;
     sub hamzaabove-ar kasra-ar by hamza_kasra-ar;
-    sub hamzaabove-ar graphemejoinercomb kasratan-ar by hamza_kasratan-ar;
-    sub hamzaabove-ar graphemejoinercomb kasra-ar by hamza_kasra-ar;
 } HamzaKasraLigatures;
 
 # Hamza ligation to base when it needs to be "low"
@@ -2973,10 +2979,11 @@ lookup HamzaKasraLigatures {
 lookup ComposeLowHamzaAbove {
             
 
-    # For noutr53, we just look for marks above
+    # For noutr53, we look through all marks above plus cgj -- any non-hamza will stop the ligation
             # For utr53 simulations we'll skip over some of the upper marks to see if we can find a hamza above
+        # that would have been move to be adjacent to the base.
         # At this point the hamaza-kasra ligatures have been made if there is a kasra present
-        # This rule needs to find any remaining hamza
+        # This rule will then find any additional hamza
         lookupflag UseMarkFilteringSet @HamzaAboveFilter;
 
     sub waw-ar @HamzaAbove by wawHamzaabove-ar;
@@ -3526,7 +3533,7 @@ feature rtlm {
 feature ccmp {
     # Glyph Composition/Decomposition
     # Same for latin & arabic:
-    # (DecomposeForColor executes here for Arabic)
+    # (DecomposeForColor and RemoveYehDots execute here for Arabic)
     lookup FontCheck;
             lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;
@@ -3536,10 +3543,11 @@ feature ccmp {
     lookup LatinPunctuation;
     script arab;
             # NoUTR53:  disable this so font isn't decomposing alef-mark and low-hamza ligatures
-        # kasra behavior has been moved to calt
-        # Force other languages to include Arabic script lookups
         lookup DecomposeForColor;
 
+    lookup RemoveYehDots;
+    # kasra behavior has been moved to calt
+    # Force other languages to include Arabic script lookups
     language KIR;
     # Kyrgyz
     language KSH;
@@ -4416,13 +4424,8 @@ feature cv88 {
 
 # For testing purposes, if building the "noutr" version of the font, provide a Stylist Set
 # that mimics cv63=2 (for those apps that don't support cvxx)
-# do if opt("noutr53") == "yes";
-# {
-feature ss20 {
-    lookup HamzaKasraHighTT;
-} ss20;
+    
 
-# }
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
 # same or later pass as cv62 itself, and it has to execute whether or not cv62 feature is requested,
 # so it has to be part of some other feature. In Harfbuzz, we could use either clig or liga, since they
