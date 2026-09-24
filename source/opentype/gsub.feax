@@ -412,17 +412,12 @@ lookup ShaddaAlefLigatures {
 #
 # But do this before calt so the ligatures with alternate dammas work
 
-# NoUTR53: this changed to ligate only if the marks are in correct UTR53 order
-
 lookup MeemMarkLigatures {
   lookupflag 0;
     sub [damma-ar fatha-ar]  meemStopabove-ar    by [damma_meem-ar fatha_meem-ar];
     sub kasra-ar             meembelow-ar        by kasra_meem-ar ;
-do if opt("noutr53") != "yes";        
-{
     sub meemStopabove-ar     [damma-ar fatha-ar] by [damma_meem-ar fatha_meem-ar];
     sub meembelow-ar         kasra-ar            by kasra_meem-ar ;
-}
 } MeemMarkLigatures ;
 
 
@@ -1007,17 +1002,10 @@ lookup HamzaKasraLigatures {
 # Must be after HamzaKasraLigatures else it would prevent those ligatures
 
 lookup ComposeLowHamzaAbove {
-do if opt("noutr53") == "yes";        
-{
-  # For noutr53, we look through all marks above plus cgj -- any non-hamza will stop the ligation
-  lookupflag MarkAttachmentType [ @MarksAbove graphemejoinercomb ];
-}
-do if opt("noutr53") != "yes";
-{
   # For utr53 simulations we'll skip over some of the upper marks to see if we can find a hamza above
   # that would have been move to be adjacent to the base.
   lookupflag UseMarkFilteringSet @HamzaAboveFilter ;
-}
+
     # At this point the hamaza-kasra ligatures have been made if there is a kasra present
     # This rule will then find any additional hamza
     sub @LowHamzaBase @HamzaAbove by @LowHamzaComposed ;
@@ -1167,19 +1155,13 @@ feature ccmp {  # Glyph Composition/Decomposition
     # Same for latin & arabic:
         # (DecomposeForColor and RemoveYehDots execute here for Arabic)
         lookup FontCheck;
-do if opt("noutr53") != "yes";        
-{
         lookup ReorderMaddaVowel1;
         lookup ReorderMaddaVowel2;
-}
         lookup SmallMadda;
     script latn;
         lookup LatinPunctuation;
     script arab;
-do if opt("noutr53") != "yes";        
-{
-        lookup DecomposeForColor;    # NoUTR53:  disable this so font isn't decomposing alef-mark and low-hamza ligatures
-}
+        lookup DecomposeForColor;
         lookup RemoveYehDots;
       # kasra behavior has been moved to calt
       # Force other languages to include Arabic script lookups
@@ -1249,12 +1231,9 @@ feature rlig {  # Required Ligatures
     script arab;
         lookup AllahLigatures;
         #lookup LamAlefLigatures; -- move to liga to go after ShaddaKasraLigatures
-do if opt("noutr53") != "yes";        
-{
         lookup ShaddaLigatures;
         lookup HamzaLigatures;
         lookup ShaddaAlefLigatures;
-}
         lookup MeemMarkLigatures;
         #lookup ShaddaKasraLigatures; -- move to liga so it runs after cv62
       # Force other languages to include Arabic script lookups:
@@ -1867,16 +1846,6 @@ feature cv88 {  # Character Variant 88
     # Same for latin & arabic:
       lookup GuillemetAlternate;
 } cv88 ;
-
-
-# For testing purposes, if building the "noutr" version of the font, provide a Stylist Set
-# that mimics cv63=2 (for those apps that don't support cvxx)
-do if opt("noutr53") == "yes";
-{
-feature ss20 {
-        lookup HamzaKasraHighTT;
-} ss20 ;
-}
 
 
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the

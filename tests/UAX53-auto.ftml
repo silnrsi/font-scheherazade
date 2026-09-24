@@ -7,16 +7,15 @@
     <fontsrc label="4.5">url(../references/v4.500/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="ref">url(../references/ScheherazadeNew-Regular.ttf)</fontsrc>
     <fontsrc label="Reg">url(../results/ScheherazadeNew-Regular.ttf)</fontsrc>
-    <fontsrc label="noUTR">url(../results/ScheherazadeNoUTR53-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv62' 1" name="cv62_1"/>
       <style feats="'cv62' 2" name="cv62_2"/>
       <style feats="'cv63' 1" name="cv63_1"/>
       <style feats="'cv63' 2" name="cv63_2"/>
-      <style feats="'ss20' 1" name="ss20_1"/>
+      <style feats="'cv54' 1, 'cv63' 2" name="cv63_2_cv54_1"/>
     </styles>
     <title>UAX#53 (auto)</title>
-    <widths string="2em"/>
+    <widths string="3em"/>
   </head>
   <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
@@ -452,21 +451,21 @@ YEH kasra-32 cgj hamza-230M</comment>
       <string>\u00064A\u000650\u00034F\u000654</string>
     </test>
     <test label="U+0626
-U+0650" stylename="ss20_1">
+U+0650" stylename="cv63_2_cv54_1">
       <comment>YEHHAMZA kasra-32 ➜ 
 YEH hamza-230M kasra-32</comment>
       <string>\u000626\u000650</string>
     </test>
     <test label="U+064A
 U+0654
-U+0650" stylename="ss20_1">
+U+0650" stylename="cv63_2_cv54_1">
       <comment>YEH hamza-230M kasra-32 ➜ 
 YEH hamza-230M kasra-32</comment>
       <string>\u00064A\u000654\u000650</string>
     </test>
     <test label="U+064A
 U+0650
-U+0654" stylename="ss20_1">
+U+0654" stylename="cv63_2_cv54_1">
       <comment>YEH kasra-32 hamza-230M ➜ 
 YEH hamza-230M kasra-32</comment>
       <string>\u00064A\u000650\u000654</string>
@@ -474,7 +473,7 @@ YEH hamza-230M kasra-32</comment>
     <test label="U+064A
 U+0650
 U+034F
-U+0654" stylename="ss20_1">
+U+0654" stylename="cv63_2_cv54_1">
       <comment>YEH kasra-32 cgj hamza-230M ➜ 
 YEH kasra-32 cgj hamza-230M</comment>
       <string>\u00064A\u000650\u00034F\u000654</string>
