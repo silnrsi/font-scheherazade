@@ -8,7 +8,8 @@ __author__ = 'Bob Hallissy'
 import re
 from silfont.core import execute
 import silfont.ftml_builder as FB
-from palaso.unicode.ucd import get_ucd, loadxml
+#from palaso.unicode.ucd import get_ucd, loadxml
+from ucdinfo.ucd import get_ucd, loadxml
 from palaso.unicode.uax53 import uax53
 from collections import OrderedDict
 from itertools import permutations
@@ -81,7 +82,6 @@ backgroundLegend =  'Background colors: ' \
                     'light red: a character is missing from UFO; else ' + \
                     f'light orange: includes a character from Unicode version {ageToFlag} or later; else ' + \
                     'light green: a character is new in this version of the font'
-gray94 = '#F0F0F0'        # A light gray color used for dividers
 
 def doit(args):
     logger = args.logger
@@ -199,6 +199,7 @@ def doit(args):
     lamlist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Lam', builder.uids()))
     # all alef-like except high-hamza-alef:
     aleflist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Alef' and uid != 0x0675, builder.uids()))
+    lowHamzaComposit = sorted(filter(lambda uid: get_ucd(uid, 'dm').endswith('\u0654'), builder.uids()))
 
 #--------------------------------
 # AllChars test
@@ -387,11 +388,10 @@ def doit(args):
         if doLongTest:
             repDiac = list(filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2)))
             repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC)))
-            kasralist = list(filter(lambda x: x in builder.uids(), (0x0650, 0x064D)))
         else:
             repDiac = list(filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x0654, 0x0670)))
             repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628)))
-            kasralist = list(filter(lambda x: x in builder.uids(), (0x0650,)))
+        kasralist = list(filter(lambda x: x in builder.uids(), (0x0650, 0x064D)))
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
@@ -495,6 +495,20 @@ def doit(args):
                     builder.render((base,kasra,shadda), ftml, addBreaks=False)
                 ftml.clearFeatures()
                 ftml.closeTest()
+
+        if 'cv63' in builder.features:
+            ftml.startTestGroup('Hamza + Kasra')
+            hamza = 0x0654
+            # base = 0x064A  # yeh. This chosen to confirm that dots are gone and cv54 work
+            for composit in lowHamzaComposit:
+                base = ord(get_ucd(composit,'dm')[0])
+                feats=('cv63','cv54') if base == 0x0626 else ('cv63',)
+                for kasra in kasralist:
+                    for featlist in builder.permuteFeatures(feats=feats):
+                        ftml.setFeatures(featlist)
+                        builder.render((base,kasra,hamza), ftml, addBreaks=False)
+                    ftml.clearFeatures()
+                    ftml.closeTest()
 
 #--------------------------------
 # Subtending marks tests
@@ -1064,7 +1078,7 @@ def doit(args):
                 # Special handling when named mcm is supplied:
                 mcm = name2usv[mcm]
                 # Separator record with just the MCM and comment:
-                ftml.setBackground(gray94)
+                ftml.setBackground('gray94')
                 add_line([dottedcircle, mcm], comment)
                 ftml.clearBackground()
                 # Now see if mcm reorders correctly

@@ -776,14 +776,22 @@ lookup ShaddaKasraAlternates {
 
 # Hamza-Kasra position: cv63
 
+@HamzaKasraBases1 = [yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init 
+                     yehbarree-ar yehbarree-ar.fina] ;
+@HamzaKasraBases2 = [waw-ar waw-ar.fina  
+                     ae-ar ae-ar.fina 
+                     hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init] ;
+
 lookup HamzaKasraAlternates {
   lookupflag 0 ;
     # NB: This is written so it doesn't matter which hamza-kasra behavior is default
     #     so as to allow language-specific behavior to be overridden even though
     #     at this point all langauges are configured to keep kasra low in context of hamzaabove
-    #   0=default             1=lowered       2=raised
-    sub hamzaabove-ar        from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
-    sub hamzaabove-ar.kasLow from [ hamzaabove-ar.kasLow  hamzaabove-ar ];
+    #                            0=default             1=lowered             2=depends on base    3=raised
+    sub @HamzaKasraBases1 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar        hamzaabove-ar ];
+    sub @HamzaKasraBases1 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar        hamzaabove-ar ];
+    sub @HamzaKasraBases2 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar.kasLow hamzaabove-ar ];
+    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar.kasLow hamzaabove-ar ];
 } HamzaKasraAlternates ;
 
 
@@ -990,10 +998,17 @@ lookup ShaddaKasraLigatures {
 
 # Hamza+kasra handling - see notes with liga feature
 
-lookup HamzaKasraLigatures {
+lookup _HamzaKasraLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureParts;
     sub @KasraMarks   hamzaabove-ar by  @HamzaKasraLigatures ;
     sub hamzaabove-ar @KasraMarks   by  @HamzaKasraLigatures ;
+} _HamzaKasraLigatures ;
+
+@lowHamzaKasraBases = [yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init 
+                        yehbarree-ar yehbarree-ar.fina] ;
+lookup HamzaKasraLigatures {
+  lookupflag UseMarkFilteringSet @HamzaLigatureParts;
+    sub @lowHamzaKasraBases [@KasraMarks hamzaabove-ar]' lookup _HamzaKasraLigatures ;
 } HamzaKasraLigatures ;
 
 
@@ -1864,7 +1879,7 @@ feature cv88 {  # Character Variant 88
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cvXX
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
-        lookup HamzaKasraLigatures;      # Must execute after cv63
+        lookup _HamzaKasraLigatures;      # Must execute after cv63
         lookup ComposeLowHamzaAbove;     # Must execute after HamzaKasraLigatures
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
         lookup SignWithDigits;

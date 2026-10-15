@@ -29,6 +29,7 @@
       <style feats="'cv62' 2" name="cv62_2"/>
       <style feats="'cv63' 1" name="cv63_1"/>
       <style feats="'cv63' 2" name="cv63_2"/>
+      <style feats="'cv63' 3" name="cv63_3"/>
       <style feats="'cv70' 1" name="cv70_1"/>
       <style feats="'cv70' 2" name="cv70_2"/>
       <style feats="'cv70' 3" name="cv70_3"/>
@@ -3171,6 +3172,16 @@ U+0654" stylename="cv63_2">
       <string>\u000628\u000650\u000654</string>
     </test>
     <test label="U+0654
+U+0650" stylename="cv63_3">
+      <comment>hamzaabove-ar kasra-ar</comment>
+      <string>\u000628\u000654\u000650</string>
+    </test>
+    <test label="U+0650
+U+0654" stylename="cv63_3">
+      <comment>kasra-ar hamzaabove-ar</comment>
+      <string>\u000628\u000650\u000654</string>
+    </test>
+    <test label="U+0654
 U+064D">
       <comment>hamzaabove-ar kasratan-ar</comment>
       <string>\u000628\u000654\u00064D</string>
@@ -3197,6 +3208,16 @@ U+064D" stylename="cv63_2">
     </test>
     <test label="U+064D
 U+0654" stylename="cv63_2">
+      <comment>kasratan-ar hamzaabove-ar</comment>
+      <string>\u000628\u00064D\u000654</string>
+    </test>
+    <test label="U+0654
+U+064D" stylename="cv63_3">
+      <comment>hamzaabove-ar kasratan-ar</comment>
+      <string>\u000628\u000654\u00064D</string>
+    </test>
+    <test label="U+064D
+U+0654" stylename="cv63_3">
       <comment>kasratan-ar hamzaabove-ar</comment>
       <string>\u000628\u00064D\u000654</string>
     </test>

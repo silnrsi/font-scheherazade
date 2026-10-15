@@ -44,7 +44,7 @@ BEH hamza-230M noonGhunna-230M shadda-33 shadda-33 fatha-sm-30 fatha-30 damma-sm
     </test>
   </testgroup>
   <testgroup label="MCM plus one mark">
-    <test background="#f0f0f0" label="U+25CC
+    <test background="#F0F0F0" label="U+25CC
 U+0654">
       <comment>ARABIC HAMZA ABOVE</comment>
       <string>\u0025CC\u000654</string>
@@ -64,7 +64,7 @@ U+0654">
 BEH damma-31 cgj hamza-230M</comment>
       <string>\u000628\u00064F\u00034F\u000654</string>
     </test>
-    <test background="#f0f0f0" label="U+25CC
+    <test background="#F0F0F0" label="U+25CC
 U+0655">
       <comment>ARABIC HAMZA BELOW</comment>
       <string>\u0025CC\u000655</string>
@@ -84,7 +84,7 @@ U+0655">
 ALEFMAKSURA kasra-32 cgj hamza-220M</comment>
       <string>\u000649\u000650\u00034F\u000655</string>
     </test>
-    <test background="#f0f0f0" label="U+25CC
+    <test background="#F0F0F0" label="U+25CC
 U+0658">
       <comment>ARABIC MARK NOON GHUNNA</comment>
       <string>\u0025CC\u000658</string>
@@ -104,7 +104,7 @@ U+0658">
 BEH fatha-30 cgj noonGhunna-230M</comment>
       <string>\u000628\u00064E\u00034F\u000658</string>
     </test>
-    <test background="#f0f0f0" label="U+25CC
+    <test background="#F0F0F0" label="U+25CC
 U+06DC">
       <comment>ARABIC SMALL HIGH SEEN</comment>
       <string>\u0025CC\u0006DC</string>
@@ -124,7 +124,7 @@ U+06DC">
 SAD sukun-34 cgj seen-230M</comment>
       <string>\u000635\u000652\u00034F\u0006DC</string>
     </test>
-    <test background="#f0f0f0" label="U+25CC
+    <test background="#F0F0F0" label="U+25CC
 U+06E3">
       <comment>ARABIC SMALL LOW SEEN</comment>
       <string>\u0025CC\u0006E3</string>
