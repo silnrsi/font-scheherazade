@@ -91,14 +91,17 @@ ChangeLog
   - U+10EF6 ARABIC SMALL LOW NOON WITH DAMMA
   - U+10EF7 ARABIC SMALL HIGH HEH INITIAL FORM
   - U+10EF8 ARABIC SMALL HIGH WORD KABBIR
-
 - Added features:
   - A new 8-sided star End of Ayah to the End of ayah feature (cv08=3)
-  - Added Hamza+kasra placement feature (cv63=1) 
+  - Hamza+kasra placement feature (cv63=1) 
+  - Bismillah Alternate (cv90=1)
+- Removed features:
+  - Honorific ligatures (Simplified) 
 
 #### Improved
 
 - Modified the design of U+06C4 ARABIC LETTER WAW WITH RING to match glyph errata notice (https://www.unicode.org/errata)
+- Redesign of all Honorifics
 
 ### 2026-04-15 (SIL WSTech team) Scheherazade New version 4.500
 
@@ -429,6 +432,10 @@ N: Bob Hallissy
 E: fonts@sil.org
 W: https://software.sil.org/wstech/
 D: Graphite, OpenType, and TypeTuner code, and build support
+
+N: Husada Tsalitsa Mardiansyah
+E: husada@baalwi.net
+D: Design of Honorific ligatures
 
 N: Becca Hirsbrunner Spalinger
 E: fonts@sil.org
