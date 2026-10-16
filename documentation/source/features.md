@@ -220,15 +220,6 @@ The DISPUTED END OF AYAH (U+08E2) is also now available in the font. It works in
 
 <span dir="rtl" class='scheherazadenew-R normal'>&#x202D;&#x8E2;&#x663;&#x664;&#x665;&#x202C;</span>
 
-#### Bismillah alternate 
-
-<span class='affects'>Affects: U+FDFD</span>
-
-Feature | Sample | Feature setting
-:------------- | ---------------: | :------------- 
-Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#xFDFD;</span> | `cv81=0`
-Compact | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv79" 1'>&#xFDFD;</span>| `cv79=1`
-
 #### Eastern digits 
 
 <span class='affects'>Affects: U+06F4, U+06F6, U+06F7</span>
@@ -268,6 +259,15 @@ Feature | Sample |  Feature setting
 :------------- | ------: | :------------- 
 Rounded | <span dir="rtl" class='scheherazadenew-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> | `cv88=0`
 Angled | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| `cv88=1`
+
+#### Bismillah alternate 
+
+<span class='affects'>Affects: U+FDFD</span>
+
+Feature | Sample | Feature setting
+:------------- | ---------------: | :------------- 
+Standard | <span dir="rtl" class='scheherazadenew-R normal'>&#xFDFD;</span> | `cv90=0`
+Compact | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv90" 1'>&#xFDFD;</span>| `cv90=1`
 
 ### Other user font features
 

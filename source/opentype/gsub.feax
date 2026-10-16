@@ -986,6 +986,13 @@ lookup GuillemetAlternate {
     sub guilsinglright  by guilsinglright.latn;
 } GuillemetAlternate ;
 
+# Bismillah: cv90
+
+lookup BismillahAlternate {
+  lookupflag IgnoreMarks ;
+    sub bismillah-ar   by bismillah-ar.cal ;
+} BismillahAlternate ;
+
 #---  liga feature  ---
 
 # Shadda+kasra handling - see notes with liga feature
@@ -1862,6 +1869,28 @@ feature cv88 {  # Character Variant 88
       lookup GuillemetAlternate;
 } cv88 ;
 
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1; {
+
+feature cv90 {  # Character Variant 90
+    cvParameters {
+        FeatUILabelNameID  { name 3 1 0x0409 "Bismillah"; };
+
+        FeatUITooltipTextNameID {
+         name 3 1 0x0409 "Compact Bismillah";  # English US 
+        };
+      
+        SampleTextNameID {
+         name 3 1 0x0409 "﷽";  # English US xFDFD;
+        };
+
+    ### ParamUILabelNameID { name 3 1 0x0409 "Standard"        ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Compact"         ; };
+    } ;
+    # Same for latin & arabic:
+      lookup BismillahAlternate;
+} cv90 ;
+}   # end do - Sch
 
 # In order for the cv62 lookup to function, we need to execute the ShaddaKasraLigatures in the
 # same or later pass as cv62 itself, and it has to execute whether or not cv62 feature is requested,

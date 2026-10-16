@@ -381,6 +381,16 @@
 		</value>
 	</feature>
 
+	<!-- cv90 Sch only -->
+	<feature name="Bismillah" value="Standard" tag="Bis">
+		<value name="Standard" tag="Std">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Compact" tag="Cmp">
+			<cmd name="encode" args="FDFD uniFDF.cal"/>
+		</value>
+	</feature>
+
 	<feature name="Line spacing" value="Normal"	tag="LnSp">
 		<value name="Normal" tag="Nrml">
 			<cmd name="null" args="2750 1427"/>
