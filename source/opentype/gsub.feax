@@ -538,32 +538,6 @@ lookup WolofCALT {
 } WolofCALT ;
 
 
-# Kasra position - TypeTuner only
-# Must be located physically after language-specific CALT lookups.
-
-lookup ShaddaKasraLowTT {
-  lookupflag 0 ;
-   #sub @Kasra     by @Kasra_lowered;
-    sub shadda-ar  by shadda-ar.kasLow;
-} ShaddaKasraLowTT ;
-
-lookup ShaddaKasraHighTT {
-  lookupflag 0 ;
-   #sub @Kasra_lowered   by @Kasra;
-    sub shadda-ar.kasLow by shadda-ar;
-} ShaddaKasraHighTT ;
-
-lookup HamzaKasraLowTT {
-  lookupflag 0 ;
-   #sub @Kasra     by @Kasra_lowered;
-    sub hamzaabove-ar  by hamzaabove-ar.kasLow;
-} HamzaKasraLowTT ;
-
-lookup HamzaKasraHighTT {
-  lookupflag 0 ;
-   #sub @Kasra_lowered   by @Kasra;
-    sub hamzaabove-ar.kasLow by hamzaabove-ar;
-} HamzaKasraHighTT ;
 
 # Increase size of dagger alef
 # This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
@@ -762,6 +736,21 @@ lookup MaddaAlternate {
 
 # Shadda-Kasra position: cv62
 
+# TypeTuner lookups
+# Must be located physically after language-specific CALT lookups.
+
+lookup ShaddaKasraLowTT {
+  lookupflag 0 ;
+    sub shadda-ar  by shadda-ar.kasLow;
+} ShaddaKasraLowTT ;
+
+lookup ShaddaKasraHighTT {
+  lookupflag 0 ;
+    sub shadda-ar.kasLow by shadda-ar;
+} ShaddaKasraHighTT ;
+
+# Feature lookup
+
 lookup ShaddaKasraAlternates {
   lookupflag 0 ;
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
@@ -776,22 +765,36 @@ lookup ShaddaKasraAlternates {
 
 # Hamza-Kasra position: cv63
 
-@HamzaKasraBases1 = [yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init 
-                     yehbarree-ar yehbarree-ar.fina] ;
-@HamzaKasraBases2 = [waw-ar waw-ar.fina  
-                     ae-ar ae-ar.fina 
-                     hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init] ;
+# NB: These are written so it doesn't matter which hamza-kasra behavior is default
+#     so as to allow language-specific behavior to be overridden even though
+#     at this point all langauges are configured to keep kasra low in context of hamzaabove
+
+@HamzaKasraBases2 = [yehbarree-ar yehbarree-ar.fina 
+                     yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init ] ;
+# @HamzaKasraBases3 = [waw-ar waw-ar.fina  
+#                      ae-ar ae-ar.fina 
+#                      hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init] ;
+# @HamzaKasraBases4 = [alef-ar alef-ar.fina] ;
+
+# TypeTuner lookups:
+
+lookup HamzaKasraLowTT {
+  lookupflag 0 ;
+    sub hamzaabove-ar' by hamzaabove-ar.kasLow ;
+} HamzaKasraLowTT ;
+
+lookup HamzaKasraHighTT {
+  lookupflag 0 ;
+    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' by hamzaabove-ar ;
+} HamzaKasraHighTT ;
+
+# Feature lookup
 
 lookup HamzaKasraAlternates {
   lookupflag 0 ;
-    # NB: This is written so it doesn't matter which hamza-kasra behavior is default
-    #     so as to allow language-specific behavior to be overridden even though
-    #     at this point all langauges are configured to keep kasra low in context of hamzaabove
-    #                            0=default             1=lowered             2=depends on base    3=raised
-    sub @HamzaKasraBases1 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar        hamzaabove-ar ];
-    sub @HamzaKasraBases1 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar        hamzaabove-ar ];
-    sub @HamzaKasraBases2 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar.kasLow hamzaabove-ar ];
-    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar.kasLow hamzaabove-ar ];
+    #                            0=default             1=lowered             2=yeh or yehbarre      
+    sub @HamzaKasraBases2 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
+    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
 } HamzaKasraAlternates ;
 
 

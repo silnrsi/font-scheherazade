@@ -500,7 +500,7 @@ def doit(args):
             ftml.startTestGroup('Hamza + Kasra')
             hamza = 0x0654
             # base = 0x064A  # yeh. This chosen to confirm that dots are gone and cv54 work
-            for composit in lowHamzaComposit:
+            for composit in (0x06D3, 0x0626):   # yehbarreeHamzaabove-ar, yehHamzaabove-ar
                 base = ord(get_ucd(composit,'dm')[0])
                 feats=('cv63','cv54') if base == 0x0626 else ('cv63',)
                 for kasra in kasralist:

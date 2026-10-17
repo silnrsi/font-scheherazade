@@ -24,7 +24,6 @@
       <style feats="'cv62' 2" name="cv62_2"/>
       <style feats="'cv63' 1" name="cv63_1"/>
       <style feats="'cv63' 2" name="cv63_2"/>
-      <style feats="'cv63' 3" name="cv63_3"/>
       <style feats="'cv70' 1" name="cv70_1"/>
       <style feats="'cv70' 2" name="cv70_2"/>
       <style feats="'cv70' 3" name="cv70_3"/>
@@ -75,7 +74,6 @@
       <style feats="'cv62' 2" lang="ks" name="ks_cv62_2"/>
       <style feats="'cv63' 1" lang="ks" name="ks_cv63_1"/>
       <style feats="'cv63' 2" lang="ks" name="ks_cv63_2"/>
-      <style feats="'cv63' 3" lang="ks" name="ks_cv63_3"/>
       <style feats="'cv70' 1" lang="ks" name="ks_cv70_1"/>
       <style feats="'cv70' 2" lang="ks" name="ks_cv70_2"/>
       <style feats="'cv70' 3" lang="ks" name="ks_cv70_3"/>
@@ -126,7 +124,6 @@
       <style feats="'cv62' 2" lang="ku" name="ku_cv62_2"/>
       <style feats="'cv63' 1" lang="ku" name="ku_cv63_1"/>
       <style feats="'cv63' 2" lang="ku" name="ku_cv63_2"/>
-      <style feats="'cv63' 3" lang="ku" name="ku_cv63_3"/>
       <style feats="'cv70' 1" lang="ku" name="ku_cv70_1"/>
       <style feats="'cv70' 2" lang="ku" name="ku_cv70_2"/>
       <style feats="'cv70' 3" lang="ku" name="ku_cv70_3"/>
@@ -177,7 +174,6 @@
       <style feats="'cv62' 2" lang="ky" name="ky_cv62_2"/>
       <style feats="'cv63' 1" lang="ky" name="ky_cv63_1"/>
       <style feats="'cv63' 2" lang="ky" name="ky_cv63_2"/>
-      <style feats="'cv63' 3" lang="ky" name="ky_cv63_3"/>
       <style feats="'cv70' 1" lang="ky" name="ky_cv70_1"/>
       <style feats="'cv70' 2" lang="ky" name="ky_cv70_2"/>
       <style feats="'cv70' 3" lang="ky" name="ky_cv70_3"/>
@@ -228,7 +224,6 @@
       <style feats="'cv62' 2" lang="ms" name="ms_cv62_2"/>
       <style feats="'cv63' 1" lang="ms" name="ms_cv63_1"/>
       <style feats="'cv63' 2" lang="ms" name="ms_cv63_2"/>
-      <style feats="'cv63' 3" lang="ms" name="ms_cv63_3"/>
       <style feats="'cv70' 1" lang="ms" name="ms_cv70_1"/>
       <style feats="'cv70' 2" lang="ms" name="ms_cv70_2"/>
       <style feats="'cv70' 3" lang="ms" name="ms_cv70_3"/>
@@ -279,7 +274,6 @@
       <style feats="'cv62' 2" lang="rhg" name="rhg_cv62_2"/>
       <style feats="'cv63' 1" lang="rhg" name="rhg_cv63_1"/>
       <style feats="'cv63' 2" lang="rhg" name="rhg_cv63_2"/>
-      <style feats="'cv63' 3" lang="rhg" name="rhg_cv63_3"/>
       <style feats="'cv70' 1" lang="rhg" name="rhg_cv70_1"/>
       <style feats="'cv70' 2" lang="rhg" name="rhg_cv70_2"/>
       <style feats="'cv70' 3" lang="rhg" name="rhg_cv70_3"/>
@@ -330,7 +324,6 @@
       <style feats="'cv62' 2" lang="sd" name="sd_cv62_2"/>
       <style feats="'cv63' 1" lang="sd" name="sd_cv63_1"/>
       <style feats="'cv63' 2" lang="sd" name="sd_cv63_2"/>
-      <style feats="'cv63' 3" lang="sd" name="sd_cv63_3"/>
       <style feats="'cv70' 1" lang="sd" name="sd_cv70_1"/>
       <style feats="'cv70' 2" lang="sd" name="sd_cv70_2"/>
       <style feats="'cv70' 3" lang="sd" name="sd_cv70_3"/>
@@ -381,7 +374,6 @@
       <style feats="'cv62' 2" lang="ur" name="ur_cv62_2"/>
       <style feats="'cv63' 1" lang="ur" name="ur_cv63_1"/>
       <style feats="'cv63' 2" lang="ur" name="ur_cv63_2"/>
-      <style feats="'cv63' 3" lang="ur" name="ur_cv63_3"/>
       <style feats="'cv70' 1" lang="ur" name="ur_cv70_1"/>
       <style feats="'cv70' 2" lang="ur" name="ur_cv70_2"/>
       <style feats="'cv70' 3" lang="ur" name="ur_cv70_3"/>
@@ -432,7 +424,6 @@
       <style feats="'cv62' 2" lang="wo" name="wo_cv62_2"/>
       <style feats="'cv63' 1" lang="wo" name="wo_cv63_1"/>
       <style feats="'cv63' 2" lang="wo" name="wo_cv63_2"/>
-      <style feats="'cv63' 3" lang="wo" name="wo_cv63_3"/>
       <style feats="'cv70' 1" lang="wo" name="wo_cv70_1"/>
       <style feats="'cv70' 2" lang="wo" name="wo_cv70_2"/>
       <style feats="'cv70' 3" lang="wo" name="wo_cv70_3"/>
@@ -1161,13 +1152,6 @@ U+064D" rtl="True" stylename="cv63_2">
 U+0650
 U+0631
 U+0654
-U+064D" rtl="True" stylename="cv63_3">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
 U+064D" rtl="True" stylename="sd">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
@@ -1183,13 +1167,6 @@ U+0650
 U+0631
 U+0654
 U+064D" rtl="True" stylename="sd_cv63_2">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
-U+064D" rtl="True" stylename="sd_cv63_3">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
     <test label="U+0654
@@ -1217,13 +1194,6 @@ U+064D" rtl="True" stylename="ur_cv63_2">
 U+0650
 U+0631
 U+0654
-U+064D" rtl="True" stylename="ur_cv63_3">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
 U+064D" rtl="True" stylename="ku">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
@@ -1239,13 +1209,6 @@ U+0650
 U+0631
 U+0654
 U+064D" rtl="True" stylename="ku_cv63_2">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
-U+064D" rtl="True" stylename="ku_cv63_3">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
     <test label="U+0654
@@ -1273,13 +1236,6 @@ U+064D" rtl="True" stylename="rhg_cv63_2">
 U+0650
 U+0631
 U+0654
-U+064D" rtl="True" stylename="rhg_cv63_3">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
 U+064D" rtl="True" stylename="ks">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
@@ -1295,13 +1251,6 @@ U+0650
 U+0631
 U+0654
 U+064D" rtl="True" stylename="ks_cv63_2">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
-U+064D" rtl="True" stylename="ks_cv63_3">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
     <test label="U+0654
@@ -1329,13 +1278,6 @@ U+064D" rtl="True" stylename="ky_cv63_2">
 U+0650
 U+0631
 U+0654
-U+064D" rtl="True" stylename="ky_cv63_3">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
 U+064D" rtl="True" stylename="ms">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
@@ -1357,13 +1299,6 @@ U+064D" rtl="True" stylename="ms_cv63_2">
 U+0650
 U+0631
 U+0654
-U+064D" rtl="True" stylename="ms_cv63_3">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
 U+064D" rtl="True" stylename="wo">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
@@ -1379,13 +1314,6 @@ U+0650
 U+0631
 U+0654
 U+064D" rtl="True" stylename="wo_cv63_2">
-      <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
-    </test>
-    <test label="U+0654
-U+0650
-U+0631
-U+0654
-U+064D" rtl="True" stylename="wo_cv63_3">
       <string>\u000628\u000654\u000650\u000631\u000654\u00064D</string>
     </test>
   </testgroup>

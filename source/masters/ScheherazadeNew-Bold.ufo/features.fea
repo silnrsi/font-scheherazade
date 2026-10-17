@@ -148,7 +148,7 @@
 @UTR53_230MCM = [hamzaabove-ar hamzaabove-ar.kasLow highwaw-ar largerounddotabove-ar noonabove-ar noonghunnaabove-ar seenabove-ar yehabove-ar yehabove-farsi yehbarreeTwobelowabove-ar zahabove-ar];
 @UTR53_230other = [ainabove-ar alayheAssallamcomb-ar alefLamYehabove-ar alefmokhassasabove-ar aljuzabove-ar annisfabove-ar arrubabove-ar assajdaabove-ar aththalathaabove-ar dammaCurly-ar dammaDot-ar dammainverted-ar dammainverted-ar.filled dammainverted-ar.open dammareversed-ar dammatanCurly-ar dotStopabove-ar doublerightarrowheadDotabove-ar doublerightarrowheadabove-ar fathaCurly-ar fathaDotabove-ar fathaHorizont-ar fathaRing-ar fathatanCurly-ar fathatwodots-ar footnotemarkerabove-ar hahabove-ar halfmaddaovermadda-ar jeemabove-ar lamAlefabove-ar leftarrowheadabove-ar madda-ar madda-ar.small maddadoubled-ar maddalong-ar maddawaajib-ar marksidewaysnoonghunna-ar meemStopabove-ar meemabove-ar noonKasraabove-ar noonKasrabelow-ar pepet-ar qafLamAlefMaksuraabove-ar qafabove-ar qifabove-ar rehDadabove-ar rehHahabove-ar rhombusStopabove-ar rightarrowheadDotabove-ar rightarrowheadabove-ar sadLamAlefMaksuraabove-ar sadabove-ar safhaabove-ar sahabove-ar saktaabove-ar sallallahouAlayheWassallamcomb-ar sukunoval-ar sukunround-ar tahabove-ar takhallusabove-ar threedotsabove-ar toneloopabove-ar toneonedotabove-ar tonetwodotsabove-ar vabove-ar vinvertedabove-ar waqfaabove-ar zainabove-ar];
 @UTR53_alef = [alefabove-ar alefabove-ar.large];
-@UTR53_fixedPos = [damma-ar damma-ar.filled damma-ar.short dammasmall-ar dammatan-ar dammatan-ar.sixNine fatha-ar fathasmall-ar fathatan-ar kasra-ar kasrasmall-ar kasratan-ar opendammatan-ar openfathatan-ar openkasratan-ar sukun-ar sukun-ar.downOpen sukun-ar.leftOpen];
+@UTR53_fixedPos = [alefabove-ar alefabove-ar.large damma-ar damma-ar.filled damma-ar.short dammasmall-ar dammatan-ar dammatan-ar.sixNine fatha-ar fathasmall-ar fathatan-ar kasra-ar kasrasmall-ar kasratan-ar opendammatan-ar openfathatan-ar openkasratan-ar sukun-ar sukun-ar.downOpen sukun-ar.leftOpen];
 @UTR53_shadda = [shadda-ar shadda-ar.kasLow];
 @WawLikeFina = [waw-ar.fina wawHamzaabove-ar.fina highhamzaWaw-ar.fina uHamzaabove-ar.fina wawring-ar.fina kirghizoe-ar.fina kirghizoe-ar.fina.bar oe-ar.fina u-ar.fina yu-ar.fina kirghizyu-ar.fina wawTwodots-ar.fina ve-ar.fina wawDotabove-ar.fina wawTwoabove-ar.fina wawThreeAbove-ar.fina wawDotcenter-ar.fina];
 @WawLikeFinaMA = [wawHamzaabove-ar.fina highhamzaWaw-ar.fina uHamzaabove-ar.fina oe-ar.fina u-ar.fina kirghizyu-ar.fina wawTwodots-ar.fina ve-ar.fina wawDotabove-ar.fina wawTwoabove-ar.fina wawThreeAbove-ar.fina];
@@ -2191,11 +2191,13 @@ lookup FontCheck {
 # For full UTR53 stacks this will already have been executed, thus the following will do nothing.
 # Otherwise (e.g. for HarfBuzz as of 2021-09), we can't do a lot of reordering but we'll move 
 # the madda out past vowels in a way that is compatible with UTR53.
-@MaddaSkip = [@UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other];
+@MaddaSkip = [@UTR53_shadda @UTR53_fixedPos @UTR53_220MCM @UTR53_220other];
 lookup _ReorderMaddaVowel1 {
     lookupflag 0;
     sub shadda-ar by shadda-ar madda-ar;
     sub shadda-ar.kasLow by shadda-ar.kasLow madda-ar;
+    sub alefabove-ar by alefabove-ar madda-ar;
+    sub alefabove-ar.large by alefabove-ar.large madda-ar;
     sub damma-ar by damma-ar madda-ar;
     sub damma-ar.filled by damma-ar.filled madda-ar;
     sub damma-ar.short by damma-ar.short madda-ar;
@@ -2214,8 +2216,6 @@ lookup _ReorderMaddaVowel1 {
     sub sukun-ar by sukun-ar madda-ar;
     sub sukun-ar.downOpen by sukun-ar.downOpen madda-ar;
     sub sukun-ar.leftOpen by sukun-ar.leftOpen madda-ar;
-    sub alefabove-ar by alefabove-ar madda-ar;
-    sub alefabove-ar.large by alefabove-ar.large madda-ar;
     sub hamzabelow-ar by hamzabelow-ar madda-ar;
     sub largerounddotbelow-ar by largerounddotbelow-ar madda-ar;
     sub seenbelow-ar by seenbelow-ar madda-ar;
@@ -2256,6 +2256,8 @@ lookup _ReorderMaddaVowel2 {
     lookupflag 0;
     sub madda-ar shadda-ar by shadda-ar;
     sub madda-ar shadda-ar.kasLow by shadda-ar.kasLow;
+    sub madda-ar alefabove-ar by alefabove-ar;
+    sub madda-ar alefabove-ar.large by alefabove-ar.large;
     sub madda-ar damma-ar by damma-ar;
     sub madda-ar damma-ar.filled by damma-ar.filled;
     sub madda-ar damma-ar.short by damma-ar.short;
@@ -2274,8 +2276,6 @@ lookup _ReorderMaddaVowel2 {
     sub madda-ar sukun-ar by sukun-ar;
     sub madda-ar sukun-ar.downOpen by sukun-ar.downOpen;
     sub madda-ar sukun-ar.leftOpen by sukun-ar.leftOpen;
-    sub madda-ar alefabove-ar by alefabove-ar;
-    sub madda-ar alefabove-ar.large by alefabove-ar.large;
     sub madda-ar hamzabelow-ar by hamzabelow-ar;
     sub madda-ar largerounddotbelow-ar by largerounddotbelow-ar;
     sub madda-ar seenbelow-ar by seenbelow-ar;
@@ -2612,32 +2612,6 @@ lookup WolofCALT {
     sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } WolofCALT;
 
-# Kasra position - TypeTuner only
-# Must be located physically after language-specific CALT lookups.
-lookup ShaddaKasraLowTT {
-    lookupflag 0;
-    #sub @Kasra     by @Kasra_lowered;
-    sub shadda-ar by shadda-ar.kasLow;
-} ShaddaKasraLowTT;
-
-lookup ShaddaKasraHighTT {
-    lookupflag 0;
-    #sub @Kasra_lowered   by @Kasra;
-    sub shadda-ar.kasLow by shadda-ar;
-} ShaddaKasraHighTT;
-
-lookup HamzaKasraLowTT {
-    lookupflag 0;
-    #sub @Kasra     by @Kasra_lowered;
-    sub hamzaabove-ar by hamzaabove-ar.kasLow;
-} HamzaKasraLowTT;
-
-lookup HamzaKasraHighTT {
-    lookupflag 0;
-    #sub @Kasra_lowered   by @Kasra;
-    sub hamzaabove-ar.kasLow by hamzaabove-ar;
-} HamzaKasraHighTT;
-
 # Increase size of dagger alef
 # This lookup used in Lateef calt and manipulated (for all fonts) by TypeTuner
 lookup DaggerAlefToLarge {
@@ -2839,6 +2813,8 @@ lookup YehHamzaAlternates {
 # Madda alternate: cv60
     # Sch or Har
     # Shadda-Kasra position: cv62
+    # TypeTuner lookups
+    # Must be located physically after language-specific CALT lookups.
     lookup MaddaAlternate {
         lookupflag 0;
         ignore sub alefoverlay-ar @Maddah.small';
@@ -2846,6 +2822,17 @@ lookup YehHamzaAlternates {
     } MaddaAlternate;
 
 
+lookup ShaddaKasraLowTT {
+    lookupflag 0;
+    sub shadda-ar by shadda-ar.kasLow;
+} ShaddaKasraLowTT;
+
+lookup ShaddaKasraHighTT {
+    lookupflag 0;
+    sub shadda-ar.kasLow by shadda-ar;
+} ShaddaKasraHighTT;
+
+# Feature lookup
 lookup ShaddaKasraAlternates {
     lookupflag 0;
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
@@ -2858,18 +2845,31 @@ lookup ShaddaKasraAlternates {
 } ShaddaKasraAlternates;
 
 # Hamza-Kasra position: cv63
-@HamzaKasraBases1 = [yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init yehbarree-ar yehbarree-ar.fina];
-@HamzaKasraBases2 = [waw-ar waw-ar.fina ae-ar ae-ar.fina hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init];
+# NB: These are written so it doesn't matter which hamza-kasra behavior is default
+#     so as to allow language-specific behavior to be overridden even though
+#     at this point all langauges are configured to keep kasra low in context of hamzaabove
+@HamzaKasraBases2 = [yehbarree-ar yehbarree-ar.fina yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init];
+# @HamzaKasraBases3 = [waw-ar waw-ar.fina  
+#                      ae-ar ae-ar.fina 
+#                      hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init] ;
+# @HamzaKasraBases4 = [alef-ar alef-ar.fina] ;
+# TypeTuner lookups:
+lookup HamzaKasraLowTT {
+    lookupflag 0;
+    sub hamzaabove-ar' by hamzaabove-ar.kasLow;
+} HamzaKasraLowTT;
+
+lookup HamzaKasraHighTT {
+    lookupflag 0;
+    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' by hamzaabove-ar;
+} HamzaKasraHighTT;
+
+# Feature lookup
 lookup HamzaKasraAlternates {
     lookupflag 0;
-    # NB: This is written so it doesn't matter which hamza-kasra behavior is default
-    #     so as to allow language-specific behavior to be overridden even though
-    #     at this point all langauges are configured to keep kasra low in context of hamzaabove
-    #                            0=default             1=lowered             2=depends on base    3=raised
-    sub @HamzaKasraBases1 hamzaabove-ar' from [hamzaabove-ar.kasLow hamzaabove-ar hamzaabove-ar];
-    sub @HamzaKasraBases1 hamzaabove-ar.kasLow' from [hamzaabove-ar.kasLow hamzaabove-ar hamzaabove-ar];
-    sub @HamzaKasraBases2 hamzaabove-ar' from [hamzaabove-ar.kasLow hamzaabove-ar.kasLow hamzaabove-ar];
-    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [hamzaabove-ar.kasLow hamzaabove-ar.kasLow hamzaabove-ar];
+    #                            0=default             1=lowered             2=yeh or yehbarre      
+    sub @HamzaKasraBases2 hamzaabove-ar' from [hamzaabove-ar.kasLow hamzaabove-ar];
+    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [hamzaabove-ar.kasLow hamzaabove-ar];
 } HamzaKasraAlternates;
 
 # Damma alternates: cv70
