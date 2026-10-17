@@ -108,7 +108,7 @@ lookup FontCheck {
 # Otherwise (e.g. for HarfBuzz as of 2021-09), we can't do a lot of reordering but we'll move 
 # the madda out past vowels in a way that is compatible with UTR53.
 
-@MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_alef @UTR53_220MCM @UTR53_220other ] ;
+@MaddaSkip = [ @UTR53_shadda @UTR53_fixedPos @UTR53_220MCM @UTR53_220other ] ;
 
 lookup _ReorderMaddaVowel1 {
   lookupflag 0 ;

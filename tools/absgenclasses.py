@@ -116,7 +116,6 @@ def doit(args):
     utr53_230MCM = set()
     utr53_shadda = set()
     utr53_fixedPos = set()
-    utr53_alef = set()
     utr53_220other = set()
     utr53_230other = set()
 
@@ -143,10 +142,8 @@ def doit(args):
                 logger.log(f'glyph {gname} (uid {uid:04X}) claims to be MCM but has ccc {ccc}', 'S')
         elif ccc == 33:
             utr53_shadda.add(gname)
-        elif 0 < ccc < 35:
+        elif 0 < ccc < 220:
             utr53_fixedPos.add(gname)
-        elif ccc == 35:
-            utr53_alef.add(gname)
         elif ccc == 220:
             utr53_220other.add(gname)
         elif ccc == 230:
@@ -431,8 +428,8 @@ def doit(args):
         f'{nd}===============================\n'
         f'{nd}-->')
 
-    for clname, glist in zip(('UTR53_220MCM', 'UTR53_230MCM', 'UTR53_shadda', 'UTR53_fixedPos', 'UTR53_alef', 'UTR53_220other', 'UTR53_230other'),
-                             (utr53_220MCM, utr53_230MCM, utr53_shadda, utr53_fixedPos, utr53_alef, utr53_220other, utr53_230other)):
+    for clname, glist in zip(('UTR53_220MCM', 'UTR53_230MCM', 'UTR53_shadda', 'UTR53_fixedPos', 'UTR53_220other', 'UTR53_230other'),
+                             (utr53_220MCM, utr53_230MCM, utr53_shadda, utr53_fixedPos, utr53_220other, utr53_230other)):
         outputMatchingClasses(clname, glist)
 
     addAnonomousElement('<!--\n' 
