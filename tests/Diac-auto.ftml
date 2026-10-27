@@ -76,9 +76,13 @@
       <style feats="'cv51' 1, 'cv76' 1" name="cv51_1_cv76_1"/>
       <style feats="'cv51' 1, 'cv76' 2" name="cv51_1_cv76_2"/>
       <style feats="'cv54' 1" name="cv54_1"/>
+      <style feats="'cv54' 1, 'cv63' 1" name="cv54_1_cv63_1"/>
+      <style feats="'cv54' 1, 'cv63' 2" name="cv54_1_cv63_2"/>
       <style feats="'cv54' 1, 'cv76' 1" name="cv54_1_cv76_1"/>
       <style feats="'cv54' 1, 'cv76' 2" name="cv54_1_cv76_2"/>
       <style feats="'cv54' 2" name="cv54_2"/>
+      <style feats="'cv54' 2, 'cv63' 1" name="cv54_2_cv63_1"/>
+      <style feats="'cv54' 2, 'cv63' 2" name="cv54_2_cv63_2"/>
       <style feats="'cv54' 2, 'cv76' 1" name="cv54_2_cv76_1"/>
       <style feats="'cv54' 2, 'cv76' 2" name="cv54_2_cv76_2"/>
       <style feats="'cv60' 1" name="cv60_1"/>
@@ -15342,6 +15346,42 @@ U+0654" stylename="cv63_2">
       <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
     </test>
     <test label="U+064A
+U+0650
+U+0654" stylename="cv54_1">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv54_1_cv63_1">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv54_1_cv63_2">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv54_2">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv54_2_cv63_1">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
+U+0650
+U+0654" stylename="cv54_2_cv63_2">
+      <comment>yeh-ar kasra-ar hamzaabove-ar</comment>
+      <string>\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654\u00200D \u00200D\u00064A\u000650\u000654 \u00064A\u000650\u000654\u00064A\u000650\u000654\u00064A\u000650\u000654 </string>
+    </test>
+    <test label="U+064A
 U+064D
 U+0654">
       <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
@@ -15356,6 +15396,42 @@ U+0654" stylename="cv63_1">
     <test label="U+064A
 U+064D
 U+0654" stylename="cv63_2">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_1">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_1_cv63_1">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_1_cv63_2">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_2">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_2_cv63_1">
+      <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
+      <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
+    </test>
+    <test label="U+064A
+U+064D
+U+0654" stylename="cv54_2_cv63_2">
       <comment>yeh-ar kasratan-ar hamzaabove-ar</comment>
       <string>\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654\u00200D \u00200D\u00064A\u00064D\u000654 \u00064A\u00064D\u000654\u00064A\u00064D\u000654\u00064A\u00064D\u000654 </string>
     </test>

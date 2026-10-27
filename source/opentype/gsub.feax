@@ -439,11 +439,9 @@ ifinfo(familyName, "Lateef") {
 lookup dfltCALT {  # (need at least a dummy lookup for TT)
   lookupflag 0 ;
   ifinfo(familyName, "Scheherazade New|Lateef") {
-    #sub @Kasra_lowered   by  @Kasra;
      sub shadda-ar.kasLow by shadda-ar;
   }
   ifinfo(familyName, "Harmattan") {
-    #sub @Kasra     by  @Kasra_lowered;
      sub shadda-ar  by shadda-ar.kasLow;
   }
   sub hamzaabove-ar by hamzaabove-ar.kasLow;
@@ -456,7 +454,6 @@ lookup KashmiriCALT {  # Kashmiri is same behavior as Urdu with addition of suku
     sub seven-persian by  seven-persian.urdu ;
     sub sukun-ar      by  sukun-ar.downOpen ;
 
-   #sub @Kasra        by  @Kasra_lowered;
     sub shadda-ar     by shadda-ar.kasLow;
     sub hamzaabove-ar by hamzaabove-ar.kasLow ;
 } KashmiriCALT ;
@@ -465,7 +462,6 @@ lookup KurdishCALT {
   lookupflag 0 ;
     sub hehDoachashmee-ar.fina  by  hehDoachashmee-ar.fina.knottedHigh ;
     
-   #sub @Kasra_lowered   by @Kasra;
     sub shadda-ar.kasLow by shadda-ar;
     sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KurdishCALT ;
@@ -474,7 +470,6 @@ lookup KyrgyzCALT {
   lookupflag 0;
     sub @cno_loclKIR     by  @c_loclKIR ;
     
-   #sub @Kasra_lowered   by @Kasra;
     sub shadda-ar.kasLow by shadda-ar;
     sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } KyrgyzCALT ;
@@ -483,7 +478,6 @@ lookup MalayCALT {
   lookupflag 0;
     sub highhamza-ar  by  highhamza-ar.loclMLY ;
     
-   #sub @Kasra        by @Kasra_lowered;
     sub shadda-ar     by shadda-ar.kasLow;
     sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } MalayCALT ;
@@ -495,7 +489,6 @@ lookup RohingyaCALT {
     sub seven-persian by  seven-persian.urdu ;
     sub @cno_sixNine  by  @c_sixNine ;
     
-   #sub @Kasra        by  @Kasra_lowered ;
     sub shadda-ar     by shadda-ar.kasLow;
     sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } RohingyaCALT ;
@@ -510,7 +503,6 @@ lookup SindhiCALT {
    #sub comma-ar      by  comma-ar.downward ;
    #sub semicolon-ar  by  semicolon-ar.downward ;
 
-   #sub @Kasra        by  @Kasra_lowered;
     sub shadda-ar     by shadda-ar.kasLow;
     sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } SindhiCALT ;
@@ -521,7 +513,6 @@ lookup UrduCALT {
     sub six-persian   by  six-persian.urdu ;
     sub seven-persian by  seven-persian.urdu ;
     
-   #sub @Kasra        by  @Kasra_lowered;
     sub shadda-ar     by shadda-ar.kasLow;
     sub hamzaabove-ar by hamzaabove-ar.kasLow;
 } UrduCALT ;
@@ -532,7 +523,6 @@ lookup WolofCALT {
     sub @Damma           by  @Damma_short ;
     sub dammainverted-ar by  dammainverted-ar.open ;
 
-   #sub @Kasra           by  @Kasra_lowered ;
     sub shadda-ar        by shadda-ar.kasLow;
     sub hamzaabove-ar    by hamzaabove-ar.kasLow;
 } WolofCALT ;
@@ -720,10 +710,10 @@ lookup YehHamzaAlternates {
 } YehHamzaAlternates ;
 
 
-# Madda alternate: cv60
-
 do let f = info("familyName");
    if f.find("Scheherazade New") != -1 or f.find("Harmattan") != -1; {
+
+# Madda alternate: cv60
 
 lookup MaddaAlternate {
   lookupflag 0 ;
@@ -731,7 +721,7 @@ lookup MaddaAlternate {
     sub @Maddah.small' by @Maddah ;
 } MaddaAlternate ;
 
-}  # Sch or Har
+}  # end do - Schehrazade or Harmattan
 
 
 # Shadda-Kasra position: cv62
@@ -756,8 +746,6 @@ lookup ShaddaKasraAlternates {
     # NB: This is written so it doesn't matter which shadda-kasra behavior is default
     #     so as to allow language-specific behavior to be overridden.
     #   0=default             1=lowered       2=raised
-   #sub @Kasra_lowered from [ @Kasra_lowered  @Kasra ];
-   #sub @Kasra         from [ @Kasra_lowered  @Kasra ];
     sub shadda-ar        from [ shadda-ar.kasLow  shadda-ar ];
     sub shadda-ar.kasLow from [ shadda-ar.kasLow  shadda-ar ];
 } ShaddaKasraAlternates ;
@@ -769,12 +757,9 @@ lookup ShaddaKasraAlternates {
 #     so as to allow language-specific behavior to be overridden even though
 #     at this point all langauges are configured to keep kasra low in context of hamzaabove
 
-@HamzaKasraBases2 = [yehbarree-ar yehbarree-ar.fina 
+@HamzaKasraBases = [yehbarree-ar yehbarree-ar.fina 
+                     yeh-ar.noDots.loclKIR  yeh-ar.noDots.fina.loclKIR
                      yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init ] ;
-# @HamzaKasraBases3 = [waw-ar waw-ar.fina  
-#                      ae-ar ae-ar.fina 
-#                      hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init] ;
-# @HamzaKasraBases4 = [alef-ar alef-ar.fina] ;
 
 # TypeTuner lookups:
 
@@ -785,7 +770,7 @@ lookup HamzaKasraLowTT {
 
 lookup HamzaKasraHighTT {
   lookupflag 0 ;
-    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' by hamzaabove-ar ;
+    sub @HamzaKasraBases hamzaabove-ar.kasLow' by hamzaabove-ar ;
 } HamzaKasraHighTT ;
 
 # Feature lookup
@@ -793,8 +778,8 @@ lookup HamzaKasraHighTT {
 lookup HamzaKasraAlternates {
   lookupflag 0 ;
     #                            0=default             1=lowered             2=yeh or yehbarre      
-    sub @HamzaKasraBases2 hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
-    sub @HamzaKasraBases2 hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
+    sub @HamzaKasraBases hamzaabove-ar'        from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
+    sub @HamzaKasraBases hamzaabove-ar.kasLow' from [ hamzaabove-ar.kasLow  hamzaabove-ar   ] ; 
 } HamzaKasraAlternates ;
 
 
@@ -989,12 +974,19 @@ lookup GuillemetAlternate {
     sub guilsinglright  by guilsinglright.latn;
 } GuillemetAlternate ;
 
+
+do let f = info("familyName");
+   if f.find("Scheherazade New") != -1; {
+
 # Bismillah: cv90
 
 lookup BismillahAlternate {
   lookupflag IgnoreMarks ;
     sub bismillah-ar   by bismillah-ar.cal ;
 } BismillahAlternate ;
+
+} # end do - Scheherazade
+
 
 #---  liga feature  ---
 
@@ -1014,11 +1006,9 @@ lookup _HamzaKasraLigatures {
     sub hamzaabove-ar @KasraMarks   by  @HamzaKasraLigatures ;
 } _HamzaKasraLigatures ;
 
-@lowHamzaKasraBases = [yeh-ar.noDots yeh-ar.noDots.fina yeh-ar.noDots.medi yeh-ar.noDots.init 
-                        yehbarree-ar yehbarree-ar.fina] ;
 lookup HamzaKasraLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureParts;
-    sub @lowHamzaKasraBases [@KasraMarks hamzaabove-ar]' lookup _HamzaKasraLigatures ;
+    sub @HamzaKasraBases [@KasraMarks hamzaabove-ar]' lookup _HamzaKasraLigatures ;
 } HamzaKasraLigatures ;
 
 
