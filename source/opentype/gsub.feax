@@ -383,7 +383,7 @@ lookup HamzaLigatures {
 # NB: Here we include shadda-mark ligatures *other than* the shadda-kasra rule, which
 #     must execute after cv67; See notes with feature liga.
 
-@ShaddaLigatureFilter = [ @ShaddaMarks @KasraMarks @UTR53_shadda 
+@ShaddaLigatureFilter = [ @ShaddaMarks @Kasras @UTR53_shadda 
       # All the remaining are to prevent ligature formation if they are between shadda and the mark:
       alefabove-ar graphemejoinercomb
       # Note: The following are unlikely in real life, but UTR53's "Artificial test case" has one:
@@ -994,21 +994,21 @@ lookup BismillahAlternate {
 
 lookup ShaddaKasraLigatures {
   lookupflag UseMarkFilteringSet @ShaddaLigatureParts;
-    sub @KasraMarks   shadda-ar    by  @ShaddaKasraLigatures ;
-    sub shadda-ar     @KasraMarks  by  @ShaddaKasraLigatures ;
+    sub @Kasras    shadda-ar  by  @ShaddaKasraLigatures ;
+    sub shadda-ar  @Kasras    by  @ShaddaKasraLigatures ;
 } ShaddaKasraLigatures ;
 
 # Hamza+kasra handling - see notes with liga feature
 
 lookup _HamzaKasraLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureParts;
-    sub @KasraMarks   hamzaabove-ar by  @HamzaKasraLigatures ;
-    sub hamzaabove-ar @KasraMarks   by  @HamzaKasraLigatures ;
+    sub @Kasras        hamzaabove-ar  by  @HamzaKasraLigatures ;
+    sub hamzaabove-ar  @Kasras        by  @HamzaKasraLigatures ;
 } _HamzaKasraLigatures ;
 
 lookup HamzaKasraLigatures {
   lookupflag UseMarkFilteringSet @HamzaLigatureParts;
-    sub @HamzaKasraBases [@KasraMarks hamzaabove-ar]' lookup _HamzaKasraLigatures ;
+    sub @HamzaKasraBases [@Kasras hamzaabove-ar]' lookup _HamzaKasraLigatures ;
 } HamzaKasraLigatures ;
 
 
@@ -1901,7 +1901,7 @@ feature cv90 {  # Character Variant 90
 feature liga {  # Ligatures  -- we use this because liga is done in the same pass as cvXX
     # Same for latin & arabic:
         lookup ShaddaKasraLigatures;     # Must execute after language-specific CALTs and cv62
-        lookup _HamzaKasraLigatures;      # Must execute after cv63
+        lookup HamzaKasraLigatures;      # Must execute after cv63
         lookup ComposeLowHamzaAbove;     # Must execute after HamzaKasraLigatures
         lookup DaggerAlefFixup;          # Must execute after language-specific CALTs and cv76
         lookup SignWithDigits;
