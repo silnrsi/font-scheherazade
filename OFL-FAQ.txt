@@ -1,6 +1,6 @@
 ﻿OFL FAQ - Frequently Asked Questions about the SIL Open Font License (OFL)
-Version 1.1-update7 - November 2023
-The OFL FAQ is Copyright (c) 2005-2023, SIL International (https://www.sil.org)
+Version 1.1-update8 - November 2026
+The OFL FAQ is Copyright (c) 2005-2026, SIL Global (https://www.sil.org)
 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 (See https://openfontlicense.org/ofl-faq for updates)
 
@@ -14,7 +14,7 @@ CONTENTS OF THIS FAQ
 6  ABOUT THE FONTLOG
 7  MAKING CONTRIBUTIONS TO OFL PROJECTS
 8  ABOUT THE LICENSE ITSELF
-9  ABOUT SIL INTERNATIONAL
+9  ABOUT SIL GLOBAL (SIL INTERNATIONAL)
 APPENDIX A - FONTLOG EXAMPLE
 
 1  USING AND DISTRIBUTING FONTS LICENSED UNDER THE OFL
@@ -81,10 +81,10 @@ Consult the copyright statement(s) in the license for ways to contact the origin
 1.19  What do you mean in condition 4 of the OFL's permissions and conditions? Can you provide examples of abusive promotion / endorsement / advertisement vs. normal acknowledgement?
 The intent is that the goodwill and reputation of the author(s) should not be used in a way that makes it sound like the original author(s) endorse or approve of a specific Modified Version or software bundle. For example, it would not be right to advertise a word processor by naming the author(s) in a listing of software features, or to promote a Modified Version on a website by saying "designed by ...". However, it would be appropriate to acknowledge the author(s) if your software package has a list of people who deserve thanks. We realize that this can seem to be a grey area, but the standard used to judge an acknowledgement is that if the acknowledgement benefits the author(s) it is allowed, but if it primarily benefits other parties, or could reflect poorly on the author(s), then it is not.
 
-1.20  I'm writing a small app for mobile platforms, do I need to include the whole package? 
+1.20  I'm writing a small app for mobile platforms, do I need to include the whole package?
 If you bundle a font under the OFL with your mobile app you must comply with the terms of the license. At a minimum you must include the copyright statement, the license notice and the license text. A mention of this information in your About box or Changelog, with a link to where the font package is from, is good practice, and the extra space needed to carry these items is very small. You do not, however, need to include the full contents of the font package - only the fonts you use and the copyright and license that apply to them. For example, if you only use the regular weight in your app, you do not need to include the italic and bold versions.
 
-1.21  What about including OFL fonts by default in my firmware or dedicated operating system? 
+1.21  What about including OFL fonts by default in my firmware or dedicated operating system?
 Many such systems are restricted and turned into appliances so that users cannot study or modify them. Using open fonts to increase quality and language coverage is a great idea, but you need to be aware that if there is a way for users to extract fonts you cannot legally prevent them from doing that. The fonts themselves, including any changes you make to them, must be distributed under the OFL even if your firmware has a more restrictive license. If you do transform the fonts and change their formats when you include them in your firmware you must respect any names reserved by the font authors via the RFN mechanism and pick your own font name. Alternatively if you directly add a font under the OFL to the font folder of your firmware without modifying or optimizing it you are simply bundling the font like with any other software collection, and do not need to make any further changes.
 
 1.22  Can I make and publish CMS themes or templates that use OFL fonts? Can I include the fonts themselves in the themes or templates? Can I sell the whole package?
@@ -168,7 +168,7 @@ You are allowed to change anything, as long as such changes do not violate the t
 Yes, but if you distribute that font to others it must be under the OFL, and include the information mentioned in condition 2 of the license.
 
 3.3  Can I charge people for my additional work? In other words, if I add a bunch of special glyphs or OpenType/Graphite/AAT code, can I sell the enhanced font?
-Not by itself. Derivative fonts must be released under the OFL and cannot be sold by themselves. It is permitted, however, to include them in a larger software package (such as text editors, office suites or operating systems), even if the larger package is sold. In that case, you are strongly encouraged, but not required, to also make that derived font easily and freely available outside of the larger package.
+Not by itself. Derivative fonts do not have to be distributed to others (see 3.6). Personal copies are allowed, but if they are distributed they must be released under the OFL and cannot be sold by themselves. It is permitted, however, to include them in a larger software package (such as text editors, office suites or operating systems), even if the larger package is sold. In that case, you are strongly encouraged, but not required, to also make that derived font easily and freely available outside of the larger package.
 
 3.4  Can I pay someone to enhance the fonts for my use and distribution?
 Yes. This is a good way to fund the further development of the fonts. Keep in mind, however, that if the font is distributed to others it must be under the OFL. You won't be able to recover your investment by exclusively selling the font, but you will be making a valuable contribution to the community. Please remember how you have benefited from the contributions of others.
@@ -184,6 +184,9 @@ Yes. Any trademark notices must remain in any derivative fonts to respect tradem
 
 3.8  If I commit changes to a font (or publish a branch in a DVCS) as part of a public open source software project, do I have to change the internal font names? 
 Only if there are declared RFNs. Making a public commit or publishing a public branch is effectively redistributing your modifications, so any change to the font will require that you do not use the RFNs. Even if there are no RFNs, it may be useful to change the name or add a suffix indicating that a particular version of the font is still in development and not released yet. This will clearly indicate to users and fellow designers that this particular font is not ready for release yet. See section 5 for more details.
+
+3.9  Can I modify existing fonts under the OFL with AI-based font design tools, like AI assistants or AI-generated scripts?
+Yes, but if you do then any font that is produced and released based on that OFL source must be released under the OFL and fulfill all the normal requirements for derivative fonts including copyright notices and any other acknowledgements. This is no different than modification with tools that are not AI-based. You might consider disclosing if you have used these tools in the documentation of your font but it's not a requirement.
 
 
 4  LICENSING YOUR ORIGINAL FONTS UNDER THE OFL
@@ -222,15 +225,15 @@ Here are a few of the many good reasons:
 - to allow your font to be included in Libre Software operating systems like Ubuntu
 - to give your font world status and wide, unrestricted distribution
 - to educate students about quality typeface and font design
-- to expand your test base and get more useful feedback 
+- to expand your test base and get more useful feedback
 - to extend your reach to new markets when users see your metadata and go to your website
 - to get your font more easily into one of the webfont online services
 - to attract attention for your commercial fonts
 - to make money through webfont services
 - to make money by bundling fonts with applications
 - to make money adjusting and extending existing open fonts
-- to get a better chance that foundations, NGOs, charities, or companies who commission fonts will pick you 
-- to be part of a sharing design and development community 
+- to get a better chance that foundations, NGOs, charities, or companies who commission fonts will pick you
+- to be part of a sharing design and development community
 - to give back and contribute to a growing body of font sources
 
 4.6  Can I cancel or undo the OFL license for a font that I've already released under it?
@@ -322,14 +325,14 @@ No. The Copyright Holder(s) still retain(s) all the rights to their creation; th
 The OFL is a worldwide license based on international copyright agreements and conventions. It is not a contract and so does not require you to sign it to have legal validity. By using, modifying and redistributing components under the OFL you indicate that you accept the license.
 
 8.4  I really like the terms of the OFL, but want to change it a little. Am I allowed to take ideas and actual wording from the OFL and put them into my own custom license for distributing my fonts?
-We strongly recommend against creating your very own unique open licensing model. Using a modified or derivative license will likely cut you off - along with the font(s) under that license - from the community of designers using the OFL, potentially expose you and your users to legal liabilities, and possibly put your work and rights at risk. The OFL went though a community and legal review process that took years of effort, and that review is only applicable to an unmodified OFL. The text of the OFL has been written by SIL (with review and consultation from the community) and is copyright (c) 2005-2023 SIL International. You may re-use the ideas and wording (in part, not in whole) in another non-proprietary license provided that you call your license by another unambiguous name, that you do not use the preamble, that you do not mention SIL and that you clearly present your license as different from the OFL so as not to cause confusion by being too similar to the original. If you feel the OFL does not meet your needs for an open license, please contact us.
+We strongly recommend against creating your very own unique open licensing model. Using a modified or derivative license will likely cut you off - along with the font(s) under that license - from the community of designers using the OFL, potentially expose you and your users to legal liabilities, and possibly put your work and rights at risk. The OFL went though a community and legal review process that took years of effort, and that review is only applicable to an unmodified OFL. The text of the OFL has been written by SIL (with review and consultation from the community) and is copyright (c) 2005-2026 SIL Global. You may re-use the ideas and wording (in part, not in whole) in another non-proprietary license provided that you call your license by another unambiguous name, that you do not use the preamble, that you do not mention SIL and that you clearly present your license as different from the OFL so as not to cause confusion by being too similar to the original. If you feel the OFL does not meet your needs for an open license, please contact us.
 
 8.5  Can I quote from the OFL FAQ?
 Yes, SIL gives permission to quote from the OFL FAQ (OFL-FAQ.txt), in whole or in part, provided that the quoted text is:
 
 - unmodified,
 - used to help explain the intent of the OFL, rather than cause misunderstanding, and
-- accompanied with the following attribution: "From the OFL FAQ (OFL-FAQ.txt), copyright (c) 2005-2023 SIL International. Used by permission. https://openfontlicense.org/OFL-FAQ".
+- accompanied with the following attribution: "From the OFL FAQ (OFL-FAQ.txt), copyright (c) 2005-2026 SIL Global. Used by permission. https://openfontlicense.org/OFL-FAQ".
 
 8.6  Can I translate the license and the FAQ into other languages?
 SIL certainly recognises the need for people who are not familiar with English to be able to understand the OFL and its use. Making the license very clear and readable has been a key goal for the OFL, but we know that people understand their own language best.
@@ -338,7 +341,7 @@ If you are an experienced translator, you are very welcome to translate the OFL 
 
 SIL gives permission to publish unofficial translations into other languages provided that they comply with the following guidelines:
 
-Put the following disclaimer in both English and the target language stating clearly that the translation is unofficial: "This is an unofficial translation of the SIL Open Font License into <language_name>. It was not published by SIL International, and does not legally state the distribution terms for fonts that use the OFL. A release under the OFL is only valid when using the original English text. However, we recognize that this unofficial translation will help users and designers not familiar with English to better understand and use the OFL. We encourage designers who consider releasing their creation under the OFL to read the OFL-FAQ in their own language if it is available. Please go to https://openfontlicense.org for the official version of the license and the accompanying OFL-FAQ."
+Put the following disclaimer in both English and the target language stating clearly that the translation is unofficial: "This is an unofficial translation of the SIL Open Font License into <language_name>. It was not published by SIL Global, and does not legally state the distribution terms for fonts that use the OFL. A release under the OFL is only valid when using the original English text. However, we recognize that this unofficial translation will help users and designers not familiar with English to better understand and use the OFL. We encourage designers who consider releasing their creation under the OFL to read the OFL-FAQ in their own language if it is available. Please go to https://openfontlicense.org for the official version of the license and the accompanying OFL-FAQ."
 
 Keep your unofficial translation current and update it at our request if needed, for example if there is any ambiguity which could lead to confusion. If you start such an unofficial translation effort of the OFL and OFL-FAQ please let us know.
 
@@ -352,10 +355,10 @@ This is by design, with the goals of establishing clear trust and of preventing 
 The OFL is pronounced as three individual letters /ˈɑː.əf.əl/ or OH-EFF-ELL.
 
 
-9  ABOUT SIL INTERNATIONAL
+9  ABOUT SIL GLOBAL (SIL INTERNATIONAL)
 
-9.1  Who is SIL International and what do they do?
-SIL is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. SIL serves language communities worldwide, building their capacity for sustainable language development, by means of research, translation, training and materials development. SIL makes its services available to all without regard to religious belief, political ideology, gender, race, or ethnic background. SIL's members and volunteers share a Christian commitment.
+9.1  Who is SIL Global (also know as SIL International) and what do they do?
+SIL Global (a.k.a. SIL International or SIL) is a nonprofit community of local organizations that partner with minority language communities to help them use their languages to know God, learn freely, and live with dignity. SIL serves language communities worldwide, building their capacity for sustainable language development, by means of research, translation, training and materials development. SIL makes its services available to all without regard to religious belief, political ideology, gender, race, or ethnic background. SIL staff share a Christian commitment.
 
 9.2  What does this have to do with font licensing?
 The ability to read, write, type and publish in one's own language is one of the most critical needs for millions of people around the world. This requires fonts that are widely available and support lesser-known languages. SIL develops - and encourages others to develop - a complete stack of writing systems implementation components available under open licenses. This open stack includes input methods, smart fonts, smart rendering libraries and smart applications. There has been a need for a common open license that is specifically applicable to fonts and related software (a crucial component of this stack), so SIL developed the SIL Open Font License with the help of the Free/Libre and Open Source Software community.
@@ -363,8 +366,12 @@ The ability to read, write, type and publish in one's own language is one of the
 9.3  How can I contact SIL?
 Our main website is: https://www.sil.org/
 Our main site about fonts and software is: https://software.sil.org/
-Our site about complex scripts is: https://scriptsource.org/
+Our site about supporting writing systems on computers is: https://writingsystems.info/
 Information about this license (and contact information) is at: https://openfontlicense.org 
+
+9.4  What about the name change? Is it SIL International or SIL Global? 
+SIL International and SIL Global are both DBAs (Doing Business As) names of SIL.
+The SIL Global name was introduced in 2024 to reflect the wider diversity of SIL partners in various countries and is now the preferred name. You may still find resources released under the SIL International name. This does not cause problems, and it is not necessary to change font files to refer to SIL Global instead of SIL International in derivative fonts.
 
 
 APPENDIX A - FONTLOG EXAMPLE
