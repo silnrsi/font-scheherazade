@@ -556,10 +556,19 @@ def doit(args):
                             ftml.addToTest(uid, chr(alm) + c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                         ftml.clearFeatures()
                     ftml.clearLang()
+
+                    # Special to check 3-digit sequences in "star"
+                    ftml.setFeatures((['cv80', '3'],))
+                    for i in range(100, 180):
+                        number = str(i)
+                        number = ''.join([chr(digitOne - 1 + int(d)) for d in number])
+                        ftml.addToTest(uid, chr(alm) + c + number + ' ', "100 - 179")
+                    ftml.clearFeatures()
                     ftml.closeTest()
+        
         # One more test to evaluate vertical position of digits over all the marks
-        str = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in marks.keys()])
-        ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
+        str1 = r' \u0640 '.join([r'\u{:06X}2'.format(u) for u in marks.keys()])
+        ftml.addToTest(None, str1, label='Vert alignment', rtl=True,);
         ftml.closeTest()
 
 #--------------------------------
@@ -650,10 +659,10 @@ def doit(args):
                 for uid1 in digits:
                     c = chr(uid1)
                     label = 'U+{0:04X}'.format(uid1)
-                    str = '.'.join(f'<em>{c}{chr(uid2)}{c}</em>' for uid2 in digits)
+                    str1 = '.'.join(f'<em>{c}{chr(uid2)}{c}</em>' for uid2 in digits)
                     for rtl in (True,):  # (False, True):
                         comment = f"{builder.char(uid1).basename} {'rtl' if rtl else 'ltr'}"
-                        str2 = f"{strongRTL if rtl else strongLTR} {str} {strongRTL if rtl else strongLTR}"
+                        str2 = f"{strongRTL if rtl else strongLTR} {str1} {strongRTL if rtl else strongLTR}"
                         ftml.addToTest(uid1, str2, label, comment, rtl=rtl)
                         if True:  #Always doing this for now.
                             # Include an unkerned line for comparison:
